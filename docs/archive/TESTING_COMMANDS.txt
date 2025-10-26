@@ -1,0 +1,32 @@
+# Quick Test Script - Run in-game via /run command
+
+# Test 1: Verify addon loaded
+/run print("=== ADDON TEST 1: LOAD STATUS ===")
+/run print("AV_VanityItems exists:", AV_VanityItems ~= nil and "YES" or "NO")
+/run print("AV_GenericDrops exists:", AV_GenericDrops ~= nil and "YES" or "NO")
+/run print("Helper function exists:", AV_GetVanityItemsForCreature ~= nil and "YES" or "NO")
+
+# Test 2: Count items in database
+/run print("=== ADDON TEST 2: DATABASE SIZE ===")
+/run local count = 0; for _ in pairs(AV_VanityItems) do count = count + 1 end; print("Total items in database:", count)
+
+# Test 3: Test helper function with known NPC
+/run print("=== ADDON TEST 3: LOOKUP TEST ===")
+/run local items = AV_GetVanityItemsForCreature(3425); print("Savannah Prowler (3425):", items and #items or 0, "items")
+/run local items = AV_GetVanityItemsForCreature(3425); if items and #items > 0 then for i,v in ipairs(items) do print("  Item ID:", v) end end
+
+# Test 4: Verify item data retrieval
+/run print("=== ADDON TEST 4: ITEM NAMES ===")
+/run local items = AV_GetVanityItemsForCreature(3425); if items and #items > 0 then local name = GetItemInfo(items[1]); print("First item name:", name or "Loading...") end
+
+# Test 5: Check tooltip integration
+/run print("=== ADDON TEST 5: TOOLTIP HOOK ===")
+/run print("GameTooltip hook:", GameTooltip:GetScript("OnTooltipSetUnit") ~= nil and "YES" or "NO")
+
+# Test 6: Sample some random NPCs
+/run print("=== ADDON TEST 6: RANDOM SAMPLES ===")
+/run local testNPCs = {21817, 3773, 32323, 3241, 10083}; for _,npc in ipairs(testNPCs) do local items = AV_GetVanityItemsForCreature(npc); print("NPC", npc..":", items and #items or 0, "items") end
+
+# Test 7: Enable script errors for debugging
+/console scriptErrors 1
+/reload

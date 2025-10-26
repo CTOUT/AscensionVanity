@@ -1,0 +1,36 @@
+# AscensionVanity .gitignore
+# Excludes temporary files, cache, and development artifacts
+
+# Cache directories (from extraction script)
+.cache/
+*.cache
+*.meta.json
+
+# Temporary/test files
+test_*.html
+test_*.txt
+*_sample.txt
+
+# Development/diagnostic output files
+MissingItems_Report.txt
+SkippedItems_Detailed.txt
+
+# Editor/IDE files
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# PowerShell/debugging
+*.ps1.bak
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.old

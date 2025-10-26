@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: Ascension Vanity Tracker
+## Notes: Shows vanity item drops in creature tooltips
+## Author: CMTout
+## Version: 1.0.0
+## SavedVariables: AscensionVanityDB
+
+VanityDB.lua
+Core.lua
