@@ -23,9 +23,16 @@
 # - Darkweaver Syth: 4 Elemental Lodestones (need to defeat boss to confirm)
 # - Ironhand Guardian: 1 Elemental Lodestone (need to find NPC)
 # - Lady Vaalethri: 1 Summoner's Stone (waypoint location needs investigation)
+#
+# USAGE:
+#   .\ExtractDatabase.ps1              # Normal extraction with caching
+#   .\ExtractDatabase.ps1 -Force       # Bypass cache, fetch fresh data
+#   .\ExtractDatabase.ps1 -Verbose     # Enable detailed logging
+#   .\ExtractDatabase.ps1 -Force -Verbose  # Combine both options
 
+[CmdletBinding()]
 param(
-    [switch]$Force  # Bypass cache and fetch fresh data
+    [switch]$Force   # Bypass cache and fetch fresh data
 )
 
 # Configuration
@@ -54,6 +61,9 @@ if ($Force) {
 } else {
     Write-Host "Cache: ENABLED (using cached data when available)" -ForegroundColor Green
 }
+if ($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent) {
+    Write-Host "Verbose Mode: ENABLED (detailed logging active)" -ForegroundColor Magenta
+}
 Write-Host ""
 
 # Create cache directories if they don't exist
@@ -68,7 +78,7 @@ if (-not (Test-Path $cacheDir)) {
 # Data structures
 $specificCreatures = @{}
 $genericDrops = @{}
-$validationErrors = @()
+$validationErrors = @{}
 $stats = @{
     TotalItems = 0
     SpecificCreatures = 0
