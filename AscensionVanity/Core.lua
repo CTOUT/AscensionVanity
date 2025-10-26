@@ -19,12 +19,13 @@ local COLOR_VANITY_UNLEARNED = "|cFFFFFF00" -- Yellow
 local COLOR_RESET = "|r"
 
 -- Item type icons (icon IDs from Ascension database)
+-- Icons verified from https://db.ascension.gg/?icon=<ID>
 local ITEM_ICONS = {
-    ["Beastmaster's Whistle"] = "|TInterface\\Icons\\INV_Misc_Horn_02:16|t",  -- Icon 455
-    ["Blood Soaked Vellum"] = "|TInterface\\Icons\\INV_Scroll_11:16|t",  -- Icon 13479
-    ["Summoner's Stone"] = "|TInterface\\Icons\\INV_Stone_15:16|t",  -- Icon 19474
-    ["Draconic Warhorn"] = "|TInterface\\Icons\\INV_Misc_Bell_01:16|t",  -- Icon 1550
-    ["Elemental Lodestone"] = "|TInterface\\Icons\\INV_Enchant_EssenceCosmicGreater:16|t",  -- Icon 62794
+    ["Beastmaster's Whistle"] = "|TInterface\\Icons\\ability_hunter_beastcall:16|t",  -- Icon 455
+    ["Blood Soaked Vellum"] = "|TInterface\\Icons\\inv_glyph_primedeathknight:16|t",  -- Icon 13479
+    ["Summoner's Stone"] = "|TInterface\\Icons\\inv_misc_uncutgemnormal1:16|t",  -- Icon 19474
+    ["Draconic Warhorn"] = "|TInterface\\Icons\\inv_misc_horn_01:16|t",  -- Icon 1550
+    ["Elemental Lodestone"] = "|TInterface\\Icons\\custom_t_nhance_rpg_icons_arcanestone_border:16|t",  -- Icon 62794
 }
 
 -- Local reference to GameTooltip
@@ -38,32 +39,21 @@ local function DebugPrint(...)
 end
 
 -- Utility: Check if player has learned a vanity item
--- Note: This will need to be adapted to Project Ascension's specific API
+-- Uses Ascension's C_VanityCollection.IsCollectionItemOwned API
 local function IsVanityItemLearned(itemID, itemName)
-    -- Ascension uses a custom vanity collection system
-    -- Let's try to discover the API by checking global functions
-    
-    -- Try various possible API names
-    if C_VanityCollection and C_VanityCollection.IsCollected then
-        return C_VanityCollection.IsCollected(itemID)
-    elseif C_VanityCollection and C_VanityCollection.HasItem then
-        return C_VanityCollection.HasItem(itemID)
-    elseif IsVanityCollected then
-        return IsVanityCollected(itemID)
-    elseif HasVanityItem then
-        return HasVanityItem(itemID)
+    if not itemID then
+        return nil
     end
     
-    -- Check if item is in bags or bank (fallback - not reliable for learned status)
-    if itemID then
-        local hasItem = GetItemCount(itemID, true) > 0 -- true includes bank
-        if hasItem then
-            DebugPrint("Player has item", itemID, "in bags/bank (not collection check)")
-        end
+    -- Use Ascension's official vanity collection API
+    if C_VanityCollection and C_VanityCollection.IsCollectionItemOwned then
+        local isOwned = C_VanityCollection.IsCollectionItemOwned(itemID)
+        DebugPrint("Item", itemID, "owned status:", isOwned)
+        return isOwned
     end
     
-    -- Return nil to indicate unknown status
-    -- This will show items without checkmarks until we find the correct API
+    -- Fallback: API not available
+    DebugPrint("C_VanityCollection.IsCollectionItemOwned not available")
     return nil
 end
 
@@ -176,23 +166,27 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     local isLearned = IsVanityItemLearned(itemID, itemName)
                     
                     if isLearned == true then
+                        -- Learned: Green with WoW checkmark icon
+                        local checkmark = "|TInterface\\RaidFrame\\ReadyCheck-Ready:16|t"
                         if AscensionVanityDB.colorCode then
-                            itemText = COLOR_VANITY_LEARNED .. "✓ " .. itemText .. COLOR_RESET
+                            itemText = COLOR_VANITY_LEARNED .. checkmark .. " " .. itemText .. COLOR_RESET
                         else
-                            itemText = "✓ " .. itemText
+                            itemText = checkmark .. " " .. itemText
                         end
                     elseif isLearned == false then
+                        -- Unlearned: Yellow, no indicator (just color difference)
                         if AscensionVanityDB.colorCode then
-                            itemText = COLOR_VANITY_UNLEARNED .. "✗ " .. itemText .. COLOR_RESET
+                            itemText = COLOR_VANITY_UNLEARNED .. "   " .. itemText .. COLOR_RESET
                         else
-                            itemText = "✗ " .. itemText
+                            itemText = "   " .. itemText
                         end
                     else
-                        -- Unknown status, just show the item
-                        itemText = "  " .. itemText
+                        -- Unknown status: Default color, no indicator
+                        itemText = "   " .. itemText
                     end
                 else
-                    itemText = "• " .. itemText
+                    -- Learned status disabled: No indicator, default color
+                    itemText = "   " .. itemText
                 end
                 
                 tooltip:AddLine(itemText, 1, 1, 1, true) -- White text, word wrap enabled

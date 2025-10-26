@@ -2040,3 +2040,20 @@ AV_GenericDrops = {
     1777428,
 }
 
+-- Lookup function: Get all vanity items for a specific creature
+-- Database format: AV_VanityItems[creatureID] = itemID
+function AV_GetVanityItemsForCreature(creatureID)
+    if not creatureID then
+        return nil
+    end
+    
+    -- Direct lookup: creature ID is the key in the table
+    local itemID = AV_VanityItems[creatureID]
+    
+    if itemID then
+        -- Return single item as array for consistency
+        return {itemID}
+    end
+    
+    return nil
+end
