@@ -40,21 +40,31 @@ end
 -- Utility: Check if player has learned a vanity item
 -- Note: This will need to be adapted to Project Ascension's specific API
 local function IsVanityItemLearned(itemID, itemName)
-    -- TODO: Replace with actual Ascension API call
-    -- Possible approaches:
-    -- 1. Check if item is in player's collection
-    -- 2. Use custom Ascension API if available
-    -- 3. Scan player's spellbook/pet journal
+    -- Ascension uses a custom vanity collection system
+    -- Let's try to discover the API by checking global functions
     
-    -- For now, return nil (unknown status)
-    -- When Ascension API is known, implement proper check here
+    -- Try various possible API names
+    if C_VanityCollection and C_VanityCollection.IsCollected then
+        return C_VanityCollection.IsCollected(itemID)
+    elseif C_VanityCollection and C_VanityCollection.HasItem then
+        return C_VanityCollection.HasItem(itemID)
+    elseif IsVanityCollected then
+        return IsVanityCollected(itemID)
+    elseif HasVanityItem then
+        return HasVanityItem(itemID)
+    end
     
-    -- Example pattern for standard WoW (won't work on Ascension without modification):
-    -- if itemID then
-    --     return C_PetJournal.GetNumCollectedInfo(itemID) > 0
-    -- end
+    -- Check if item is in bags or bank (fallback - not reliable for learned status)
+    if itemID then
+        local hasItem = GetItemCount(itemID, true) > 0 -- true includes bank
+        if hasItem then
+            DebugPrint("Player has item", itemID, "in bags/bank (not collection check)")
+        end
+    end
     
-    return nil -- Unknown status
+    -- Return nil to indicate unknown status
+    -- This will show items without checkmarks until we find the correct API
+    return nil
 end
 
 -- Utility: Get creature type from tooltip
@@ -261,12 +271,42 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             print("|cFF00FF96AscensionVanity:|r Debug mode disabled")
         end
         
+    elseif msg == "api" then
+        -- Scan for Ascension's vanity collection API
+        print("|cFF00FF96AscensionVanity:|r Scanning for Ascension vanity APIs...")
+        
+        -- Check for C_VanityCollection
+        if C_VanityCollection then
+            print("  |cFF00FF00Found:|r C_VanityCollection")
+            for k, v in pairs(C_VanityCollection) do
+                print("    - C_VanityCollection." .. k .. " (" .. type(v) .. ")")
+            end
+        else
+            print("  |cFFFF0000Not found:|r C_VanityCollection")
+        end
+        
+        -- Check for common global functions
+        local checkFunctions = {
+            "IsVanityCollected",
+            "HasVanityItem",
+            "GetVanityItemInfo",
+            "C_Vanity",
+            "VanityCollection_IsCollected"
+        }
+        
+        for _, funcName in ipairs(checkFunctions) do
+            if _G[funcName] then
+                print("  |cFF00FF00Found:|r " .. funcName .. " (" .. type(_G[funcName]) .. ")")
+            end
+        end
+        
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print("  |cFFFFFF00/av|r or |cFFFFFF00/av toggle|r - Toggle addon on/off")
         print("  |cFFFFFF00/av learned|r - Toggle learned status display")
         print("  |cFFFFFF00/av color|r - Toggle color coding")
         print("  |cFFFFFF00/av debug|r - Toggle debug mode")
+        print("  |cFFFFFF00/av api|r - Scan for Ascension vanity APIs (debug)")
         print("  |cFFFFFF00/av help|r - Show this help")
         
     else
