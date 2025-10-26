@@ -275,6 +275,54 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             for k, v in pairs(C_VanityCollection) do
                 print("    - C_VanityCollection." .. k .. " (" .. type(v) .. ")")
             end
+            
+            -- Test GetNum if available
+            if C_VanityCollection.GetNum then
+                local numItems = C_VanityCollection.GetNum()
+                print(" ")
+                print("  |cFF00FFFF=== Testing GetNum() ===|r")
+                print("  Total items:", numItems, "(" .. type(numItems) .. ")")
+            end
+            
+            -- Test GetItem if available
+            if C_VanityCollection.GetItem then
+                print(" ")
+                print("  |cFF00FFFF=== Testing GetItem() ===|r")
+                
+                -- Try getting item by index
+                local success, result = pcall(C_VanityCollection.GetItem, 1)
+                if success then
+                    print("  GetItem(1) result type:", type(result))
+                    if type(result) == "table" then
+                        print("  Sample fields:")
+                        for k, v in pairs(result) do
+                            local valueStr = tostring(v)
+                            if type(v) == "table" then valueStr = "<table>" end
+                            print("    " .. tostring(k) .. " = " .. valueStr .. " (" .. type(v) .. ")")
+                            if k == "itemId" or k == "creaturePreview" then
+                                print("      |cFF00FF00^^ KEY FIELD!|r")
+                            end
+                        end
+                    else
+                        print("  Value:", tostring(result))
+                    end
+                else
+                    print("  |cFFFF0000Error:|r", result)
+                end
+                
+                -- Try known item ID (79626 = Savannah Prowler)
+                print(" ")
+                print("  Testing with known item ID 79626:")
+                success, result = pcall(C_VanityCollection.GetItem, 79626)
+                if success and result then
+                    print("  |cFF00FF00Found by item ID!|r")
+                    if type(result) == "table" and result.creaturePreview then
+                        print("  creaturePreview:", result.creaturePreview)
+                    end
+                else
+                    print("  Not found by item ID (or wrong parameter)")
+                end
+            end
         else
             print("  |cFFFF0000Not found:|r C_VanityCollection")
         end
@@ -323,25 +371,57 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
                     end
                 end
                 
+                -- Helper: Search for item ID in ANY field recursively
+                local function searchInTable(tbl, targetID)
+                    for k, v in pairs(tbl) do
+                        if type(v) == "number" and v == targetID then
+                            return true, k
+                        elseif type(v) == "table" then
+                            local found, path = searchInTable(v, targetID)
+                            if found then
+                                return true, k .. "." .. path
+                            end
+                        end
+                    end
+                    return false, nil
+                end
+                
                 -- Search for the specific item
                 local found = false
+                local totalItems = 0
+                
                 for k, v in pairs(items) do
+                    totalItems = totalItems + 1
+                    
+                    -- Check direct match (array index)
+                    if k == itemID then
+                        found = true
+                        print(" ")
+                        print(string.format("|cFF00FF00===== FOUND (Array Index Match) =====|r"))
+                        print("Item ID:", itemID)
+                        printTable(v, "  ", 10)
+                        break
+                    end
+                    
+                    -- Check if item data contains the ID in any field
                     if type(v) == "table" then
-                        -- Check if this item matches the itemID
-                        if v.itemId == itemID or v.itemID == itemID or v.id == itemID then
+                        local hasMatch, fieldPath = searchInTable(v, itemID)
+                        if hasMatch then
                             found = true
                             print(" ")
-                            print(string.format("|cFF00FF00===== FOUND Item %d =====|r", itemID))
-                            print("Array Index:", k)
-                            printTable(v, "  ", 10)  -- Show up to 10 levels deep
+                            print(string.format("|cFF00FF00===== FOUND (Field Match: %s) =====|r", fieldPath))
+                            print("Collection Index:", k)
+                            printTable(v, "  ", 10)
                             break
                         end
                     end
                 end
                 
                 if not found then
-                    print("|cFFFF0000Not Found:|r Item", itemID, "not in vanity collection")
-                    print("|cFFFFFF00Tip:|r Try a different item ID or use /av dump to see available items")
+                    print("|cFFFF0000Not Found:|r Item", itemID, "not in collection")
+                    print(string.format("|cFFFFFF00Total items in collection: %d|r", totalItems))
+                    print("|cFFFFFF00Hypothesis:|r API might only return items you OWN")
+                    print("|cFFFFFF00Try:|r /av dump to see what items ARE in your collection")
                 end
             else
                 print("|cFFFF0000Error:|r GetAllItems() returned nil")
