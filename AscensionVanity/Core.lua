@@ -294,6 +294,127 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             end
         end
         
+    elseif msg:match("^dumpitem%s+(%d+)") then
+        -- Dump specific item by ID
+        local itemID = tonumber(msg:match("^dumpitem%s+(%d+)"))
+        
+        print("|cFF00FF96AscensionVanity:|r Searching for item", itemID, "in vanity collection...")
+        
+        if C_VanityCollection and C_VanityCollection.GetAllItems then
+            local items = C_VanityCollection.GetAllItems()
+            
+            if items then
+                -- Helper function to recursively print nested tables
+                local function printTable(tbl, indent, maxDepth)
+                    indent = indent or ""
+                    maxDepth = maxDepth or 10
+                    if maxDepth <= 0 then
+                        print(indent .. "<max depth reached>")
+                        return
+                    end
+                    
+                    for k, v in pairs(tbl) do
+                        if type(v) == "table" then
+                            print(string.format("%s%s = <table>:", indent, tostring(k)))
+                            printTable(v, indent .. "  ", maxDepth - 1)
+                        else
+                            print(string.format("%s%s = %s (%s)", indent, tostring(k), tostring(v), type(v)))
+                        end
+                    end
+                end
+                
+                -- Search for the specific item
+                local found = false
+                for k, v in pairs(items) do
+                    if type(v) == "table" then
+                        -- Check if this item matches the itemID
+                        if v.itemId == itemID or v.itemID == itemID or v.id == itemID then
+                            found = true
+                            print(" ")
+                            print(string.format("|cFF00FF00===== FOUND Item %d =====|r", itemID))
+                            print("Array Index:", k)
+                            printTable(v, "  ", 10)  -- Show up to 10 levels deep
+                            break
+                        end
+                    end
+                end
+                
+                if not found then
+                    print("|cFFFF0000Not Found:|r Item", itemID, "not in vanity collection")
+                    print("|cFFFFFF00Tip:|r Try a different item ID or use /av dump to see available items")
+                end
+            else
+                print("|cFFFF0000Error:|r GetAllItems() returned nil")
+            end
+        else
+            print("|cFFFF0000Error:|r C_VanityCollection.GetAllItems not available")
+        end
+        
+    elseif msg == "dump" then
+        -- Dump vanity collection data from Ascension API
+        print("|cFF00FF96AscensionVanity:|r Dumping vanity collection data...")
+        
+        if C_VanityCollection and C_VanityCollection.GetAllItems then
+            local items = C_VanityCollection.GetAllItems()
+            
+            if items then
+                print("|cFF00FF00Found:|r Vanity collection data")
+                print("Data type:", type(items))
+                
+                -- Helper function to recursively print nested tables
+                local function printTable(tbl, indent, maxDepth)
+                    indent = indent or ""
+                    maxDepth = maxDepth or 3
+                    if maxDepth <= 0 then
+                        print(indent .. "<...>")
+                        return
+                    end
+                    
+                    for k, v in pairs(tbl) do
+                        if type(v) == "table" then
+                            print(string.format("%s%s = <table>:", indent, tostring(k)))
+                            printTable(v, indent .. "  ", maxDepth - 1)
+                        else
+                            print(string.format("%s%s = %s (%s)", indent, tostring(k), tostring(v), type(v)))
+                        end
+                    end
+                end
+                
+                -- Print first 2 items in FULL DETAIL (avoid chat spam)
+                local count = 0
+                local maxSamples = 2
+                
+                print("|cFFFFFF00Showing first", maxSamples, "items in FULL DETAIL:|r")
+                for k, v in pairs(items) do
+                    count = count + 1
+                    if count <= maxSamples then
+                        print(" ")
+                        print(string.format("|cFF00FFFF========== Item #%d ==========|r", count))
+                        print("Array Index:", k, "(" .. type(k) .. ")")
+                        
+                        if type(v) == "table" then
+                            printTable(v, "  ", 5)  -- Show up to 5 levels deep
+                        else
+                            print("Value:", v, "(" .. type(v) .. ")")
+                        end
+                    end
+                end
+                
+                print(" ")
+                print(string.format("|cFF00FF00Total items in collection: %d|r", count))
+                
+                if count > maxSamples then
+                    print("|cFFFFFF00Note:|r Only showing first", maxSamples, "items in full detail to avoid chat spam")
+                    print("|cFFFFFF00Tip:|r Use '/av dumpitem <itemID>' to search for a specific item")
+                    print("|cFFFFFF00Example:|r /av dumpitem 79626  (Savannah Prowler whistle)")
+                end
+            else
+                print("|cFFFF0000Error:|r GetAllItems() returned nil")
+            end
+        else
+            print("|cFFFF0000Error:|r C_VanityCollection.GetAllItems not available")
+        end
+        
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print("  |cFFFFFF00/av|r or |cFFFFFF00/av toggle|r - Toggle addon on/off")
@@ -301,6 +422,9 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("  |cFFFFFF00/av color|r - Toggle color coding")
         print("  |cFFFFFF00/av debug|r - Toggle debug mode")
         print("  |cFFFFFF00/av api|r - Scan for Ascension vanity APIs (debug)")
+        print("  |cFFFFFF00/av dump|r - Dump vanity collection data structure (debug)")
+        print("  |cFFFFFF00/av dumpitem <itemID>|r - Dump specific item details (debug)")
+        print("    |cFF808080Example: /av dumpitem 79626|r")
         print("  |cFFFFFF00/av help|r - Show this help")
         
     else
