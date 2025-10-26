@@ -9,6 +9,7 @@ AscensionVanityDB = AscensionVanityDB or {
     enabled = true,
     showLearnedStatus = true,
     colorCode = true,
+    debug = false,  -- Debug mode off by default
 }
 
 -- Color codes for tooltip text
@@ -17,8 +18,24 @@ local COLOR_VANITY_LEARNED = "|cFF00FF00" -- Green
 local COLOR_VANITY_UNLEARNED = "|cFFFFFF00" -- Yellow
 local COLOR_RESET = "|r"
 
+-- Item type icons (icon IDs from Ascension database)
+local ITEM_ICONS = {
+    ["Beastmaster's Whistle"] = "|TInterface\\Icons\\INV_Misc_Horn_02:16|t",  -- Icon 455
+    ["Blood Soaked Vellum"] = "|TInterface\\Icons\\INV_Scroll_11:16|t",  -- Icon 13479
+    ["Summoner's Stone"] = "|TInterface\\Icons\\INV_Stone_15:16|t",  -- Icon 19474
+    ["Draconic Warhorn"] = "|TInterface\\Icons\\INV_Misc_Bell_01:16|t",  -- Icon 1550
+    ["Elemental Lodestone"] = "|TInterface\\Icons\\INV_Enchant_EssenceCosmicGreater:16|t",  -- Icon 62794
+}
+
 -- Local reference to GameTooltip
 local tooltip = GameTooltip
+
+-- Utility: Debug print (only prints if debug mode enabled)
+local function DebugPrint(...)
+    if AscensionVanityDB.debug then
+        print("|cFF00FF96[AV Debug]|r", ...)
+    end
+end
 
 -- Utility: Check if player has learned a vanity item
 -- Note: This will need to be adapted to Project Ascension's specific API
@@ -78,8 +95,33 @@ local function AddVanityInfoToTooltip(tooltip, unit)
     end
     
     -- Extract creature ID from GUID
-    -- GUID format: Creature-0-[server]-[instance]-[counter]-[creatureID]-[spawnUID]
-    local creatureID = tonumber(select(6, strsplit("-", guid)))
+    -- Ascension uses hex GUID format: 0xF130001D0DC005B0F
+    -- Creature ID is embedded in the hex value
+    -- Format: 0x [F1] [3000] [1D0DC0] [05B0F]
+    --            ^    ^      ^        ^
+    --            |    |      |        spawn UID
+    --            |    |      creature ID (middle 6 hex digits)
+    --            |    type
+    --            flags
+    
+    local creatureID = nil
+    
+    -- Convert hex GUID to number and extract creature ID
+    if guid and type(guid) == "string" then
+        DebugPrint("GUID:", guid)
+        
+        -- Remove 0x prefix if present
+        local hexGuid = guid:gsub("^0x", "")
+        
+        -- Extract creature ID from hex GUID (bits 32-63, middle section)
+        -- For 0xF130001D0DC005B0F, creature ID is 0x1D0DC0 = 1904064
+        if #hexGuid >= 10 then
+            local creatureIDHex = hexGuid:sub(5, 10)  -- Get middle 6 hex digits
+            creatureID = tonumber(creatureIDHex, 16)  -- Convert from hex to decimal
+            DebugPrint("Creature ID:", creatureID, "(hex:", creatureIDHex, ")")
+        end
+    end
+    
     if not creatureID then
         return
     end
@@ -88,6 +130,8 @@ local function AddVanityInfoToTooltip(tooltip, unit)
     if not UnitIsPlayer(unit) and UnitExists(unit) then
         -- Look up vanity items for this creature by ID
         local vanityItems = AV_GetVanityItemsForCreature(creatureID)
+        
+        DebugPrint("Found", vanityItems and #vanityItems or 0, "items for creature", creatureID)
         
         if vanityItems and #vanityItems > 0 then
             -- Add separator line
@@ -106,7 +150,16 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     itemName = "Loading..."
                 end
                 
-                local itemText = itemName
+                -- Extract item type from name to get the icon
+                local itemIcon = ""
+                for itemType, icon in pairs(ITEM_ICONS) do
+                    if string.find(itemName, itemType, 1, true) then
+                        itemIcon = icon .. " "
+                        break
+                    end
+                end
+                
+                local itemText = itemIcon .. itemName
                 
                 -- Check if player has learned this item (optional feature)
                 if AscensionVanityDB.showLearnedStatus then
@@ -200,28 +253,23 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             print("|cFF00FF96AscensionVanity:|r Color coding disabled")
         end
         
+    elseif msg == "debug" then
+        AscensionVanityDB.debug = not AscensionVanityDB.debug
+        if AscensionVanityDB.debug then
+            print("|cFF00FF96AscensionVanity:|r Debug mode enabled")
+        else
+            print("|cFF00FF96AscensionVanity:|r Debug mode disabled")
+        end
+        
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print("  |cFFFFFF00/av|r or |cFFFFFF00/av toggle|r - Toggle addon on/off")
         print("  |cFFFFFF00/av learned|r - Toggle learned status display")
         print("  |cFFFFFF00/av color|r - Toggle color coding")
+        print("  |cFFFFFF00/av debug|r - Toggle debug mode")
         print("  |cFFFFFF00/av help|r - Show this help")
         
     else
         print("|cFF00FF96AscensionVanity:|r Unknown command. Type |cFFFFFF00/av help|r for help")
-    end
-end
-
--- Debug function (can be removed in production)
-function AV_Debug(creatureName, creatureType)
-    print("=== AscensionVanity Debug ===")
-    print("Creature Name:", creatureName or "nil")
-    print("Creature Type:", creatureType or "nil")
-    
-    local items = AV_GetVanityItemsForCreature(creatureName, creatureType)
-    print("Found", #items, "vanity items")
-    
-    for i, item in ipairs(items) do
-        print("  " .. i .. ":", item.itemName)
     end
 end

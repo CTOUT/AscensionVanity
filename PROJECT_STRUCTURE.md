@@ -38,6 +38,7 @@ AscensionVanity/
 │   ├── DiagnoseSourcemore.ps1            # Analyzes sourcemore field
 │   └── ExtractDatabaseVerbose.ps1        # Verbose extraction script
 │
+├── DeployAddon.ps1               # 🚀 DEPLOYMENT SCRIPT (Deploy addon to WoW for testing)
 ├── ExtractDatabase.ps1           # 🚀 MAIN EXTRACTION SCRIPT (Run this to update database)
 ├── README.md                     # 📖 PROJECT README (Start here!)
 ├── .gitignore                    # Git ignore rules
@@ -57,6 +58,12 @@ AscensionVanity/
   - Contains the `.toc`, `.lua` files needed to run in-game
 
 ### Development Files (For updating/maintaining)
+
+- **DeployAddon.ps1** - Deploy addon to WoW for testing
+  - Run this to copy addon files to your WoW AddOns folder
+  - Use `-Watch` to automatically deploy on file changes
+  - Use `-Force` to re-deploy all files
+  - Configurable WoW path with `-WoWPath` parameter
 
 - **ExtractDatabase.ps1** - Main script to regenerate the database
   - Run this when you want to update `VanityDB.lua`

@@ -324,6 +324,7 @@ function Get-ItemDropSources {
         
         # Process each NPC in the data array
         $validNPCs = @()
+        $uniqueBaseNames = @{}
         
         foreach ($npc in $npcData) {
             $npcId = $npc.id
@@ -335,19 +336,29 @@ function Get-ItemDropSources {
             
             # Validate NPC name matches expected creature name
             if (Test-NPCMatchesItem -npcName $npcName -expectedName $expectedCreatureName) {
-                $validNPCs += @{
-                    ID = $npcId
-                    Name = $npcName
-                    URL = "$baseUrl/?npc=$npcId"
+                # Remove difficulty suffixes to get base creature name
+                $baseName = $npcName -replace '\s*-\s*(Heroic|Mythic|Normal)$', ''
+                
+                # Only add if we haven't seen this base creature name before
+                if (-not $uniqueBaseNames.ContainsKey($baseName)) {
+                    $uniqueBaseNames[$baseName] = $npcId
+                    $validNPCs += @{
+                        ID = $npcId
+                        Name = $baseName  # Use base name without difficulty suffix
+                        URL = "$baseUrl/?npc=$npcId"
+                    }
+                    Write-Host "  ✓ Valid: $npcName (ID: $npcId)" -ForegroundColor Green
+                } else {
+                    Write-Verbose "  Skipped duplicate: $npcName (base: $baseName already added)"
                 }
-                Write-Host "  ✓ Valid: $npcName (ID: $npcId)" -ForegroundColor Green
             } else {
                 Write-Host "  ✗ Skipped: $npcName (doesn't match '$expectedCreatureName')" -ForegroundColor Yellow
                 $script:stats.SkippedInvalid++
             }
         }
         
-        return $validNPCs
+        # Force PowerShell to treat the array as a single object by using the comma operator
+        return ,$validNPCs
         
     } catch {
         Write-Warning "Failed to parse item page: $_"
@@ -580,122 +591,69 @@ function Process-VanityItem {
     
     Write-Host "  Expected creature: $expectedCreature" -ForegroundColor Gray
     
-    # Check sourcemore data from the category page
-    if ($item.SourceType -eq 1 -and $item.SourceName) {
-        # Specific creature drop - sourcemore format: [1, npcId, npcName]
-        Write-Host "  Source Type: Specific NPC ($($item.SourceName))" -ForegroundColor Gray
+    # ALWAYS fetch item page to get complete drop sources
+    # The sourcemore data from category pages is incomplete and misses many valid drops
+    Write-Host "  Fetching complete drop sources from item page..." -ForegroundColor Gray
+    
+    $dropSources = Get-ItemDropSources -itemUrl $item.URL -expectedCreatureName $expectedCreature
+    
+    Write-Verbose "  Found $($dropSources.Count) unique NPC(s) after deduplication"
+    if ($dropSources.Count -gt 0) {
+        Write-Verbose "  NPC list: $($dropSources | ForEach-Object { "$($_.Name) (ID: $($_.ID))" } | Join-String -Separator ', ')"
+    }
+    
+    if ($dropSources.Count -eq 0) {
+        # NO VALID DROP SOURCES FOUND
+        # This happens when:
+        # 1. Item has no "Dropped by" tab on its database page
+        # 2. "Dropped by" tab exists but no NPCs match the expected creature name
+        # 3. Item is from vendors, tokens, or events (intentionally excluded)
         
-        # VALIDATION LOGIC:
-        # The NPC name from the database must match the creature name from the item
-        # This prevents false positives where vendors or bosses are incorrectly listed as drop sources
-        #
-        # COMMON VALIDATION FAILURES:
-        # - Vendor items: "Argent Quartermaster" listed instead of actual creature (10 items)
-        # - Token exchanges: "High Inquisitor Qormaladon" listed for exchangeable items (5 items)
-        # - Event items: "Millhouse Manastorm" listed for event rewards (3 items)
-        # - Achievement rewards: "Lil' Al'ar" listed instead of actual drop source (1 item)
-        #
-        # These items are INTENTIONALLY EXCLUDED as they're not world drops
-        # See SKIPPED_ITEMS_ANALYSIS.md for complete list
-        #
-        # FUTURE INVESTIGATION:
-        # Some items may have incorrect database entries where a boss drops an item but it's not
-        # reflected in the "Dropped by" tab. See TODO_FUTURE_INVESTIGATIONS.md for items that
-        # need manual verification (e.g., Warchief Rend Blackhand, Darkweaver Syth)
+        Write-Warning "  No valid drop sources found - adding to generic drops as fallback"
         
-        if (Test-NPCMatchesItem -npcName $item.SourceName -expectedName $expectedCreature) {
-            # Add to specific creatures table
-            $creatureName = $item.SourceName
-            
-            if (-not $script:specificCreatures.ContainsKey($creatureName)) {
-                $script:specificCreatures[$creatureName] = @{
-                    ItemID = $item.ID
-                    ItemName = $item.Name
-                    NPCID = $item.SourceID
-                }
-                $script:stats.SpecificCreatures++
-                $script:stats.ValidatedDrops++
-                Write-Host "  → Added as specific creature drop" -ForegroundColor Green
-            }
-        } else {
-            # Validation failed - NPC name doesn't match item name
-            # This is expected for vendor/token/event items and is WORKING AS INTENDED
-            $script:validationErrors += "Item '$($item.Name)' lists NPC '$($item.SourceName)' which doesn't match expected '$expectedCreature'"
-            $script:stats.SkippedInvalid++
-            Write-Warning "  ✗ Validation failed: NPC '$($item.SourceName)' doesn't match '$expectedCreature'"
+        # Add to generic drops as fallback
+        if (-not $script:genericDrops.ContainsKey("All")) {
+            $script:genericDrops["All"] = @()
         }
         
+        if ($script:genericDrops["All"] -notcontains $item.ID) {
+            $script:genericDrops["All"] += $item.ID
+            $script:stats.GenericDrops++
+            Write-Host "  → Added as generic drop (fallback)" -ForegroundColor Yellow
+        }
+        return
+    }
+    
+    if ($dropSources.Count -eq 1) {
+        # Single specific creature
+        $npc = $dropSources[0]
+        $creatureName = $npc.Name
+        
+        if (-not $script:specificCreatures.ContainsKey($creatureName)) {
+            $script:specificCreatures[$creatureName] = @{
+                ItemID = $item.ID
+                ItemName = $item.Name
+                NPCID = $npc.ID
+            }
+            $script:stats.SpecificCreatures++
+            $script:stats.ValidatedDrops++
+            Write-Host "  → Added as specific creature drop (NPC: $($npc.ID))" -ForegroundColor Green
+        }
     } else {
-        # Any other source type (Drop, Quest, generic, etc.) - fetch item page to get actual drop sources
-        Write-Host "  Source Type: $($item.SourceType) - fetching drop sources..." -ForegroundColor Gray
+        # Multiple NPCs - treat as generic drop
         
-        $dropSources = Get-ItemDropSources -itemUrl $item.URL -expectedCreatureName $expectedCreature
-        
-        if ($dropSources.Count -eq 0) {
-            # NO VALID DROP SOURCES FOUND
-            # This happens when:
-            # 1. Item has no "Dropped by" tab on its database page
-            # 2. "Dropped by" tab exists but no NPCs match the expected creature name
-            # 3. Item is a boss drop but database doesn't have the boss in "Dropped by" list
-            #
-            # KNOWN CASES (20 items total):
-            # - Boss drops without database entries (9 items - need manual verification)
-            #   * Warchief Rend Blackhand: 3 items (Chromatic dragons, Gyth)
-            #   * Darkweaver Syth: 4 items (elemental lodestones)
-            #   * Ironhand Guardian: 1 item
-            #   * Lady Vaalethri: 1 item
-            #
-            # - Duplicates or unobtainable items (10 items)
-            #   * Cobalt Whelp, Dreadwing (duplicates)
-            #   * Various Chromatic Whelp variants (no sources)
-            #   * Bronze Drakonid, Ley-Guardian Eregos (no sources)
-            #   * Treant Ally, Raven's Wood Sapling (no sources)
-            #   * Apolyon, Sulkaia (no sources)
-            #
-            # - Event exclusive (1 item)
-            #   * Arktos (Manastorm event cache reward)
-            #
-            # See TODO_FUTURE_INVESTIGATIONS.md for items that need verification
-            # See SKIPPED_ITEMS_ANALYSIS.md for complete categorization
-            
-            Write-Warning "  No valid drop sources found - skipping"
-            $script:stats.SkippedInvalid++
-            return
+        if (-not $script:genericDrops.ContainsKey("All")) {
+            $script:genericDrops["All"] = @()
         }
         
-        if ($dropSources.Count -eq 1) {
-            # Single specific creature
-            $npc = $dropSources[0]
-            $creatureName = $npc.Name
-            
-            if (-not $script:specificCreatures.ContainsKey($creatureName)) {
-                $script:specificCreatures[$creatureName] = @{
-                    ItemID = $item.ID
-                    ItemName = $item.Name
-                    NPCID = $npc.ID
-                }
-                $script:stats.SpecificCreatures++
-                $script:stats.ValidatedDrops++
-                Write-Host "  → Added as specific creature drop" -ForegroundColor Green
-            }
-        } else {
-            # Multiple NPCs - treat as generic drop
-            
-            if (-not $script:genericDrops.ContainsKey("All")) {
-                $script:genericDrops["All"] = @()
-            }
-            
-            if ($script:genericDrops["All"] -notcontains $item.ID) {
-                $script:genericDrops["All"] += $item.ID
-                $script:stats.GenericDrops++
-                $script:stats.ValidatedDrops++
-                Write-Host "  → Added as generic drop" -ForegroundColor Green
-            }
+        if ($script:genericDrops["All"] -notcontains $item.ID) {
+            $script:genericDrops["All"] += $item.ID
+            $script:stats.GenericDrops++
+            $script:stats.ValidatedDrops++
+            Write-Host "  → Added as generic drop ($($dropSources.Count) NPCs)" -ForegroundColor Green
         }
     }
 }
-
-
 # Function to generate Lua code
 function Generate-LuaCode {
     param(

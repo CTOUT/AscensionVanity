@@ -94,6 +94,29 @@ AscensionVanity/
 
 ## Development
 
+### Testing the Addon
+
+Deploy the addon to your WoW AddOns folder for in-game testing:
+
+```powershell
+# Deploy once (copies files to WoW)
+.\DeployAddon.ps1
+
+# Deploy and watch for changes (auto-deploys on file save)
+.\DeployAddon.ps1 -Watch
+
+# Force re-deploy all files
+.\DeployAddon.ps1 -Force
+
+# Deploy to custom WoW path
+.\DeployAddon.ps1 -WoWPath "C:\Games\WoW\Interface\AddOns"
+```
+
+After deployment:
+1. Launch World of Warcraft
+2. Type `/reload` to reload UI
+3. Type `/av help` to verify addon loaded
+
 ### Database Extraction
 
 The database is automatically generated from the Project Ascension database:

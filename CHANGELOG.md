@@ -4,19 +4,30 @@ All notable changes to the AscensionVanity project will be documented in this fi
 
 ## [Unreleased] - 2025-10-26
 
-### Changed
-- **BREAKING**: Renamed `VanityData_Generated.lua` to `VanityDB.lua` for better clarity and consistency
-  - Updated all script references (ExtractDatabase.ps1, utilities/*)
-  - Updated all documentation files
-  - Updated AscensionVanity.toc manifest
-
 ### Added
+- **Deployment System**: Created `DeployAddon.ps1` script for easy testing
+  - Automatically copies addon files to WoW AddOns directory
+  - Smart copying: only updates changed files (compares timestamps)
+  - Watch mode: auto-deploy on file save (`-Watch` parameter)
+  - Force mode: re-deploy all files regardless of state (`-Force` parameter)
+  - Configurable WoW path with `-WoWPath` parameter
+  - Default path: `D:\OneDrive\Warcraft`
+  - Debounce protection: prevents multiple rapid deployments
+  - Comprehensive error handling and user feedback
+  - Documentation: Added [DEPLOYMENT_GUIDE.md](docs/guides/DEPLOYMENT_GUIDE.md)
+
 - **Cache Versioning System**: Added intelligent cache change detection
   - Content hashing (SHA256) to detect database changes
   - Metadata files (`.meta.json`) track content hash and timestamp
   - `Test-CacheChanged()` function validates if cached content has changed
   - Cache statistics report shows efficiency and metadata file count
   - Even if cache hasn't expired (24 hours), content changes are detected
+
+### Changed
+- **BREAKING**: Renamed `VanityData_Generated.lua` to `VanityDB.lua` for better clarity and consistency
+  - Updated all script references (ExtractDatabase.ps1, utilities/*)
+  - Updated all documentation files
+  - Updated AscensionVanity.toc manifest
 
 ### Improved
 - Enhanced `Set-CachedContent()` to save metadata alongside cached pages
@@ -26,6 +37,8 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Metadata files created
   - Web requests made vs cache hits
   - Cache efficiency percentage
+- Updated README.md with deployment workflow and testing instructions
+- Updated PROJECT_STRUCTURE.md to include deployment script
 
 ### Technical Details
 - Cache metadata stored as JSON with structure:
