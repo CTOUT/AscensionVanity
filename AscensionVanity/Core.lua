@@ -2,15 +2,10 @@
 -- Hooks into tooltips to display vanity item information
 
 local AddonName = "AscensionVanity"
-local VERSION = "1.0.0"
+local VERSION = "2.0.0"
 
--- Initialize saved variables
-AscensionVanityDB = AscensionVanityDB or {
-    enabled = true,
-    showLearnedStatus = true,
-    colorCode = true,
-    debug = false,  -- Debug mode off by default
-}
+-- Saved variables initialized in AscensionVanityConfig.lua
+AscensionVanityDB = AscensionVanityDB or {}
 
 -- Color codes for tooltip text
 local COLOR_VANITY_HEADER = "|cFF00FF96" -- Teal/cyan
@@ -142,20 +137,32 @@ local function AddVanityInfoToTooltip(tooltip, unit)
             
             -- Add each vanity item
             for _, itemID in ipairs(vanityItems) do
-                -- Fetch localized item name from game API (language-independent)
-                local itemName = GetItemInfo(itemID)
-                if not itemName then
-                    -- Item not yet cached, skip for now
-                    -- Game will cache it and show on next tooltip
-                    itemName = "Loading..."
+                -- Get item data from new database format
+                local itemData = AV_GetItemData(itemID)
+                
+                if not itemData then
+                    -- Fallback to game API if database entry missing
+                    local itemName = GetItemInfo(itemID)
+                    if itemName then
+                        itemData = { name = itemName, icon = nil }
+                    else
+                        itemData = { name = "Loading...", icon = nil }
+                    end
                 end
                 
-                -- Extract item type from name to get the icon
+                local itemName = itemData.name
+                
+                -- Use actual item icon from database (if available)
                 local itemIcon = ""
-                for itemType, icon in pairs(ITEM_ICONS) do
-                    if string.find(itemName, itemType, 1, true) then
-                        itemIcon = icon .. " "
-                        break
+                if itemData.icon and itemData.icon ~= "" then
+                    itemIcon = "|T" .. itemData.icon .. ":16|t "
+                else
+                    -- Fallback to category-based icon detection
+                    for itemType, icon in pairs(ITEM_ICONS) do
+                        if string.find(itemName, itemType, 1, true) then
+                            itemIcon = icon .. " "
+                            break
+                        end
                     end
                 end
                 
@@ -191,6 +198,15 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                 end
                 
                 tooltip:AddLine(itemText, 1, 1, 1, true) -- White text, word wrap enabled
+                
+                -- Add region information (optional feature)
+                if AscensionVanityDB.showRegions then
+                    local region = AV_GetItemRegion(itemID)
+                    if region and region ~= "" then
+                        local regionText = "      |cFF888888Location: " .. region .. COLOR_RESET
+                        tooltip:AddLine(regionText, 1, 1, 1, true)
+                    end
+                end
             end
             
             -- Show tooltip updates
