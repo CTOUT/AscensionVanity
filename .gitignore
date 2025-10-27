@@ -15,6 +15,10 @@ test_*.txt
 MissingItems_Report.txt
 SkippedItems_Detailed.txt
 
+# Imported data from game (may contain user-specific info)
+data/
+*.SavedVariables.lua
+
 # Editor/IDE files
 .vscode/
 .vs/
@@ -34,3 +38,7 @@ Desktop.ini
 *.bak
 *.backup
 *.old
+
+# Local configuration (contains user-specific paths)
+local.config.ps1
+local.paths.json

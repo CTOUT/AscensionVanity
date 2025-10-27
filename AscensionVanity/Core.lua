@@ -495,16 +495,232 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             print("|cFFFF0000Error:|r C_VanityCollection.GetAllItems not available")
         end
         
+    elseif msg == "apidump" then
+        -- Dump complete API data to SavedVariables for offline analysis
+        print("|cFF00FF96AscensionVanity:|r Dumping complete API data to SavedVariables...")
+        
+        if not (C_VanityCollection and C_VanityCollection.GetAllItems) then
+            print("|cFFFF0000Error:|r C_VanityCollection.GetAllItems not available")
+            return
+        end
+        
+        local items = C_VanityCollection.GetAllItems()
+        if not items then
+            print("|cFFFF0000Error:|r GetAllItems() returned nil")
+            return
+        end
+        
+        -- Create dump structure
+        AscensionVanityDB.APIDump = {
+            timestamp = date("%Y-%m-%d %H:%M:%S"),
+            version = VERSION,
+            totalItems = 0,
+            items = {},
+            itemsByCreature = {},
+            categories = {},
+            errors = {}
+        }
+        
+        local dump = AscensionVanityDB.APIDump
+        local processedCount = 0
+        local errorCount = 0
+        
+        print("|cFFFFFF00Processing API data...|r")
+        
+        for idx, itemData in pairs(items) do
+            processedCount = processedCount + 1
+            
+            if type(itemData) == "table" then
+                local itemID = itemData.itemId or itemData.id or idx
+                local creatureID = itemData.creaturePreview or itemData.sourceId
+                local itemName = itemData.name or "Unknown"
+                
+                -- Store full item data
+                dump.items[itemID] = {
+                    itemId = itemID,
+                    name = itemName,
+                    creaturePreview = creatureID,
+                    rawData = itemData  -- Store everything for analysis
+                }
+                
+                -- Build reverse lookup: creature -> items
+                if creatureID and creatureID > 0 then
+                    if not dump.itemsByCreature[creatureID] then
+                        dump.itemsByCreature[creatureID] = {}
+                    end
+                    table.insert(dump.itemsByCreature[creatureID], itemID)
+                end
+                
+                -- Categorize by item name prefix
+                local category = "Unknown"
+                if string.find(itemName, "Beastmaster's Whistle") then
+                    category = "Beastmaster's Whistle"
+                elseif string.find(itemName, "Blood Soaked Vellum") then
+                    category = "Blood Soaked Vellum"
+                elseif string.find(itemName, "Summoner's Stone") then
+                    category = "Summoner's Stone"
+                elseif string.find(itemName, "Draconic Warhorn") then
+                    category = "Draconic Warhorn"
+                elseif string.find(itemName, "Elemental Lodestone") then
+                    category = "Elemental Lodestone"
+                end
+                
+                dump.categories[category] = (dump.categories[category] or 0) + 1
+            else
+                errorCount = errorCount + 1
+                table.insert(dump.errors, {
+                    index = idx,
+                    type = type(itemData),
+                    value = tostring(itemData)
+                })
+            end
+        end
+        
+        dump.totalItems = processedCount
+        
+        print(" ")
+        print("|cFF00FF00=== API DUMP COMPLETE ===|r")
+        print("Total items processed:", processedCount)
+        print("Items with creature sources:", #dump.itemsByCreature)
+        print("Errors encountered:", errorCount)
+        print(" ")
+        print("|cFFFFFF00Categories found:|r")
+        for category, count in pairs(dump.categories) do
+            print(string.format("  %s: %d items", category, count))
+        end
+        print(" ")
+        print("|cFF00FF00Data saved to:|r SavedVariables/AscensionVanity.lua")
+        print("|cFFFFFF00Next step:|r /reload to save data, then check the file")
+        print("|cFFFFFF00Validation:|r Use '/av validate' to compare API vs database")
+        
+    elseif msg == "validate" then
+        -- Compare API data with our static database
+        print("|cFF00FF96AscensionVanity:|r Validating database against API...")
+        
+        if not AscensionVanityDB.APIDump then
+            print("|cFFFF0000Error:|r No API dump found. Run '/av apidump' first")
+            return
+        end
+        
+        local apiDump = AscensionVanityDB.APIDump
+        local apiItems = apiDump.items
+        local apiByCreature = apiDump.itemsByCreature
+        
+        -- Validation results
+        local results = {
+            apiTotal = 0,
+            dbTotal = 0,
+            matches = 0,
+            apiOnly = {},
+            dbOnly = {},
+            mismatches = {}
+        }
+        
+        -- Count API items
+        for _ in pairs(apiItems) do
+            results.apiTotal = results.apiTotal + 1
+        end
+        
+        -- Count DB items
+        for _ in pairs(AV_VanityItems) do
+            results.dbTotal = results.dbTotal + 1
+        end
+        
+        print(" ")
+        print("|cFFFFFF00=== DATABASE VALIDATION ===|r")
+        print(string.format("API items: %d", results.apiTotal))
+        print(string.format("Database items: %d", results.dbTotal))
+        print(" ")
+        
+        -- Find items in API but not in database
+        print("|cFFFFFF00Checking for items in API but missing from database...|r")
+        for itemID, itemData in pairs(apiItems) do
+            local creatureID = itemData.creaturePreview
+            if creatureID and creatureID > 0 then
+                if AV_VanityItems[creatureID] then
+                    -- Check if this specific item is mapped
+                    if AV_VanityItems[creatureID] == itemID then
+                        results.matches = results.matches + 1
+                    else
+                        -- Creature exists but different item
+                        table.insert(results.mismatches, {
+                            creatureID = creatureID,
+                            apiItem = itemID,
+                            dbItem = AV_VanityItems[creatureID],
+                            apiName = itemData.name
+                        })
+                    end
+                else
+                    -- Creature not in our database
+                    table.insert(results.apiOnly, {
+                        creatureID = creatureID,
+                        itemID = itemID,
+                        name = itemData.name
+                    })
+                end
+            end
+        end
+        
+        print(string.format("Exact matches: %d", results.matches))
+        print(string.format("In API only: %d", #results.apiOnly))
+        print(string.format("Mismatches: %d", #results.mismatches))
+        print(" ")
+        
+        -- Show sample missing items
+        if #results.apiOnly > 0 then
+            print("|cFFFF0000Items in API but missing from database:|r")
+            local showCount = math.min(10, #results.apiOnly)
+            for i = 1, showCount do
+                local item = results.apiOnly[i]
+                print(string.format("  [%d] Item %d: %s", item.creatureID, item.itemID, item.name))
+            end
+            if #results.apiOnly > showCount then
+                print(string.format("  ... and %d more", #results.apiOnly - showCount))
+            end
+            print(" ")
+        end
+        
+        -- Show sample mismatches
+        if #results.mismatches > 0 then
+            print("|cFFFFFF00Items with different mappings:|r")
+            local showCount = math.min(5, #results.mismatches)
+            for i = 1, showCount do
+                local item = results.mismatches[i]
+                print(string.format("  Creature %d: API has item %d, DB has item %d", 
+                    item.creatureID, item.apiItem, item.dbItem))
+                print(string.format("    API name: %s", item.apiName))
+            end
+            if #results.mismatches > showCount then
+                print(string.format("  ... and %d more", #results.mismatches - showCount))
+            end
+        end
+        
+        -- Store validation results
+        AscensionVanityDB.ValidationResults = results
+        print(" ")
+        print("|cFF00FF00Results saved to SavedVariables|r")
+        print("|cFFFFFF00Use /reload to save, then check SavedVariables/AscensionVanity.lua|r")
+        
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
+        print(" ")
+        print("|cFFFFFF00=== Basic Commands ===|r")
         print("  |cFFFFFF00/av|r or |cFFFFFF00/av toggle|r - Toggle addon on/off")
         print("  |cFFFFFF00/av learned|r - Toggle learned status display")
         print("  |cFFFFFF00/av color|r - Toggle color coding")
         print("  |cFFFFFF00/av debug|r - Toggle debug mode")
-        print("  |cFFFFFF00/av api|r - Scan for Ascension vanity APIs (debug)")
-        print("  |cFFFFFF00/av dump|r - Dump vanity collection data structure (debug)")
-        print("  |cFFFFFF00/av dumpitem <itemID>|r - Dump specific item details (debug)")
+        print(" ")
+        print("|cFFFFFF00=== Database Validation ===|r")
+        print("  |cFFFFFF00/av apidump|r - Dump complete API data to SavedVariables")
+        print("  |cFFFFFF00/av validate|r - Compare API data vs static database")
+        print("    |cFF808080(Run apidump first, then reload, then validate)|r")
+        print(" ")
+        print("|cFFFFFF00=== Debug Commands ===|r")
+        print("  |cFFFFFF00/av api|r - Scan for Ascension vanity APIs")
+        print("  |cFFFFFF00/av dump|r - Dump vanity collection data structure")
+        print("  |cFFFFFF00/av dumpitem <itemID>|r - Dump specific item details")
         print("    |cFF808080Example: /av dumpitem 79626|r")
+        print(" ")
         print("  |cFFFFFF00/av help|r - Show this help")
         
     else

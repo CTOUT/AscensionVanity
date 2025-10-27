@@ -2,7 +2,58 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
-## [Unreleased] - 2025-10-26
+## [Unreleased] - 2025-10-27
+
+### Added
+- **API Validation System**: Complete database validation using Ascension's official API
+  - New `/av apidump` command: Extracts complete vanity collection data from C_VanityCollection
+  - New `/av validate` command: Compares API data vs static database to find discrepancies
+  - Exports full API data to SavedVariables for offline analysis
+  - Identifies missing items (in API but not in database)
+  - Detects incorrect mappings (mismatches between API and database)
+  - Organizes data by creature ID, item ID, and category
+  - Tracks validation metrics: total items, matches, missing, mismatches
+
+- **PowerShell Analysis Tools**:
+  - `AnalyzeAPIDump.ps1`: Analyzes SavedVariables and generates validation reports
+  - `UpdateDatabaseFromAPI.ps1`: Auto-generates updated VanityDB.lua from API data
+  - Both tools support detailed reporting and backup functionality
+  - Exports data to `API_Analysis/` folder with timestamped reports
+
+- **Comprehensive Documentation**:
+  - [API_VALIDATION_GUIDE.md](docs/guides/API_VALIDATION_GUIDE.md): Complete step-by-step validation process
+  - [API_QUICK_REFERENCE.md](docs/guides/API_QUICK_REFERENCE.md): Quick reference card for all commands
+  - Troubleshooting guide for common issues
+  - Workflow summaries for quick validation, full analysis, and database updates
+
+### Changed
+- **Enhanced Help Command**: Updated `/av help` to include new API validation commands
+  - Organized into sections: Basic Commands, Database Validation, Debug Commands
+  - Improved formatting and clarity
+  - Added examples for complex commands
+
+### Technical Details
+- API dump structure includes:
+  - `items`: Complete item data with names, creature sources, and raw API data
+  - `itemsByCreature`: Reverse lookup mapping creatures to their item drops
+  - `categories`: Item counts by category (Whistles, Vellums, Stones, etc.)
+  - `errors`: Tracks any parsing errors during extraction
+- Validation results track:
+  - Exact matches between API and database
+  - Items present in API but missing from database (the 144 missing items!)
+  - Mismatched mappings (incorrect creature → item associations)
+- SavedVariables integration allows offline analysis and automated database updates
+
+### Purpose
+This update enables complete validation of the static database against Ascension's official API, helping to:
+1. Find the 144 missing items identified in earlier analysis
+2. Fix any incorrect mappings inherited from web scraping
+3. Ensure 100% database accuracy and completeness
+4. Provide automated tools for future database maintenance
+
+---
+
+## [2025-10-26]
 
 ### Added
 - **Deployment System**: Created `DeployAddon.ps1` script for easy testing

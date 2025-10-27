@@ -2,13 +2,17 @@
 
 [![Coverage](https://img.shields.io/badge/Coverage-96.7%25-brightgreen)](docs/analysis/SKIPPED_ITEMS_ANALYSIS.md)
 [![Items](https://img.shields.io/badge/Items-2032%2F2101-blue)](docs/analysis/SKIPPED_ITEMS_ANALYSIS.md)
-[![Version](https://img.shields.io/badge/Version-1.0.0-orange)](AscensionVanity/AscensionVanity.toc)
+[![Version](https://img.shields.io/badge/Version-2.1--dev-orange)](AscensionVanity/AscensionVanity.toc)
+[![Validation](https://img.shields.io/badge/API_Validation-Ready-success)](docs/guides/API_VALIDATION_GUIDE.md)
 
 ## Overview
 
-AscensionVanity is a World of Warcraft addon for **Project Ascension** that enhances creature tooltips by displaying which vanity items (Beastmaster Whistles, Summoner Stones, etc.) they can drop.
+AscensionVanity is a World of Warcraft addon for **Project Ascension** that helps players track **pet taming items** by enhancing creature tooltips to display which vanity items they can drop.
 
-**Current Status**: ✅ **Production Ready** - 96.7% database coverage (2,032 of 2,101 items)
+**Primary Focus**: 🐾 **Pet Taming Items** - Beastmaster's Whistle, Blood Soaked Vellum, Summoner's Stone, Draconic Warhorn, Elemental Lodestone
+
+**Current Status**: ✅ **Production Ready** - 96.7% database coverage (2,032 of 2,101 items)  
+**NEW**: 🔍 **API Validation System** - Validate and update database using official Ascension API
 
 ## Features
 
@@ -59,10 +63,41 @@ Vanity Items:
 
 ### Slash Commands
 
+#### Basic Commands
 - `/av` or `/av toggle` - Enable/disable addon
 - `/av learned` - Toggle learned status display (requires API detection)
 - `/av color` - Toggle color coding
 - `/av help` - Show help menu
+
+#### Database Validation (NEW in v2.1)
+- `/av apidump` - Extract complete API data to SavedVariables
+- `/av validate` - Compare API data vs static database
+- `/av api` - Scan for available Ascension vanity APIs
+- `/av dump` - Dump vanity collection data structure
+- `/av dumpitem <itemID>` - Search for specific item in API data
+
+See [API Validation Guide](docs/guides/API_VALIDATION_GUIDE.md) for complete validation workflow.
+
+### Database Validation System (v2.1)
+
+The addon now includes a comprehensive validation system using Ascension's official `C_VanityCollection` API:
+
+**Quick Validation Workflow**:
+1. In-game: `/av apidump` → Wait for completion
+2. Type: `/reload` → Save data
+3. Type: `/av validate` → Review results
+4. PowerShell: `.\utilities\AnalyzeAPIDump.ps1` → Detailed analysis
+
+**Purpose**: 
+- ✅ Validate static database against official API
+- ✅ Find missing items (the 144 items not in our database)
+- ✅ Fix incorrect mappings inherited from web scraping
+- ✅ Generate automated database updates
+
+**Documentation**:
+- [API Validation Guide](docs/guides/API_VALIDATION_GUIDE.md) - Complete step-by-step process
+- [Quick Reference](docs/guides/API_QUICK_REFERENCE.md) - Command cheat sheet
+- [Testing Checklist](docs/TESTING_CHECKLIST.md) - First-time testing guide
 
 ## Project Structure
 
