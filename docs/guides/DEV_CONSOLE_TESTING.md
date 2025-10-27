@@ -398,7 +398,7 @@ end)
 
 2. **Find the file**:
    ```
-   D:\OneDrive\Warcraft\WTF\Account\CTOUT\SavedVariables\AscensionVanity.lua
+   <YOUR_WOW_PATH>\WTF\Account\<YOUR_ACCOUNT_NAME>\SavedVariables\AscensionVanity.lua
    ```
 
 3. **Analyze with PowerShell**:

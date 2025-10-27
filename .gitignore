@@ -42,3 +42,16 @@ Desktop.ini
 # Local configuration (contains user-specific paths)
 local.config.ps1
 local.paths.json
+# Analysis/comparison output files (added during cleanup)
+DatabaseComparison_Report.txt
+*_Report.txt
+*Comparison*.txt
+API_Analysis/
+
+# Large test/extraction files (added during cleanup)
+npc_*.html
+extracted_*.txt
+
+# Temporary extraction data (added during cleanup)
+data/*.txt
+data/*.json

@@ -123,7 +123,7 @@ Test the new API validation system in-game to:
 
 9. **Open SavedVariables file**:
    ```
-   D:\OneDrive\Warcraft\WTF\Account\CTOUT\SavedVariables\AscensionVanity.lua
+   <YOUR_WOW_PATH>\WTF\Account\<YOUR_ACCOUNT_NAME>\SavedVariables\AscensionVanity.lua
    ```
    - ✅ Search for `APIDump = {`
    - ✅ Find `totalItems =` and note the count
@@ -255,7 +255,7 @@ end)
 
 ### If PowerShell script can't find SavedVariables
 - Update the path in the script: `-SavedVariablesPath "YOUR_PATH"`
-- Default path: `D:\OneDrive\Warcraft\WTF\Account\CTOUT\SavedVariables\AscensionVanity.lua`
+- Default path: `<YOUR_WOW_PATH>\WTF\Account\<YOUR_ACCOUNT_NAME>\SavedVariables\AscensionVanity.lua`
 - Make sure you ran `/reload` after `/av apidump`
 
 ### If validation shows 0 matches

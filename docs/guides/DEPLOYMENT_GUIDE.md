@@ -44,7 +44,7 @@ Watch mode automatically deploys the addon whenever you save changes to any file
 
 ## Default Configuration
 
-**Default WoW Path:** `D:\OneDrive\Warcraft`
+**Default WoW Path:** `<YOUR_WOW_PATH>`
 
 To change the default path permanently:
 1. Edit `DeployAddon.ps1`

@@ -3,7 +3,7 @@
 
 param(
     [Parameter(Mandatory=$false)]
-    [string]$SavedVariablesPath = "D:\OneDrive\Warcraft\WTF\Account\CTOUT\SavedVariables\AscensionVanity.lua",
+    [string]$SavedVariablesPath,
     
     [Parameter(Mandatory=$false)]
     [switch]$Detailed,
@@ -17,6 +17,85 @@ Write-Host "  AscensionVanity - API Dump Analyzer" -ForegroundColor Cyan
 Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
 Write-Host ""
 
+# Function to detect WoW installation path from registry
+function Get-WoWInstallPath {
+    try {
+        $regPath = "HKLM:\SOFTWARE\WOW6432Node\Blizzard Entertainment\World of Warcraft"
+        if (Test-Path $regPath) {
+            $installPath = (Get-ItemProperty -Path $regPath -Name "InstallPath" -ErrorAction SilentlyContinue).InstallPath
+            if ($installPath -and (Test-Path $installPath)) {
+                Write-Host "Detected WoW installation from registry: $installPath" -ForegroundColor Green
+                return $installPath
+            }
+        }
+    } catch {
+        Write-Verbose "Registry detection failed: $_"
+    }
+    return $null
+}
+
+# Function to find SavedVariables file
+function Find-SavedVariablesPath {
+    param([string]$WoWPath)
+    
+    if (-not $WoWPath) { return $null }
+    
+    $wtfPath = Join-Path $WoWPath "WTF\Account"
+    if (-not (Test-Path $wtfPath)) { return $null }
+    
+    # Search for any account folder with AscensionVanity.lua
+    $accountFolders = Get-ChildItem -Path $wtfPath -Directory -ErrorAction SilentlyContinue
+    foreach ($accountFolder in $accountFolders) {
+        $savedVarsPath = Join-Path $accountFolder.FullName "SavedVariables\AscensionVanity.lua"
+        if (Test-Path $savedVarsPath) {
+            Write-Host "Found SavedVariables for account: $($accountFolder.Name)" -ForegroundColor Green
+            return $savedVarsPath
+        }
+    }
+    
+    return $null
+}
+
+# Determine SavedVariables path
+if (-not $SavedVariablesPath) {
+    Write-Host "No path specified, attempting auto-detection..." -ForegroundColor Yellow
+    
+    # Try to import local.config.ps1 first
+    $localConfigPath = Join-Path $PSScriptRoot "..\local.config.ps1"
+    if (Test-Path $localConfigPath) {
+        Write-Host "Loading configuration from local.config.ps1..." -ForegroundColor Cyan
+        try {
+            Import-Module $localConfigPath -ErrorAction Stop
+            $SavedVariablesPath = $script:SavedVariablesPath
+            Write-Host "Using path from local.config.ps1" -ForegroundColor Green
+        } catch {
+            Write-Warning "Failed to load local.config.ps1: $_"
+        }
+    }
+    
+    # If not found, try registry detection
+    if (-not $SavedVariablesPath) {
+        Write-Host "Attempting registry-based detection..." -ForegroundColor Cyan
+        $wowPath = Get-WoWInstallPath
+        if ($wowPath) {
+            $SavedVariablesPath = Find-SavedVariablesPath -WoWPath $wowPath
+        }
+    }
+    
+    # Final fallback: prompt user
+    if (-not $SavedVariablesPath) {
+        Write-Host ""
+        Write-Host "ERROR: Could not auto-detect SavedVariables path!" -ForegroundColor Red
+        Write-Host ""
+        Write-Host "Please specify the path manually:" -ForegroundColor Yellow
+        Write-Host "  .\utilities\AnalyzeAPIDump.ps1 -SavedVariablesPath '<YOUR_PATH>'" -ForegroundColor Yellow
+        Write-Host ""
+        Write-Host "Or create a local.config.ps1 file in the repository root." -ForegroundColor Yellow
+        Write-Host "See local.config.example.ps1 for template." -ForegroundColor Yellow
+        exit 1
+    }
+}
+
 # Check if SavedVariables file exists
 if (-not (Test-Path $SavedVariablesPath)) {
     Write-Host "ERROR: SavedVariables file not found!" -ForegroundColor Red
@@ -26,6 +105,9 @@ if (-not (Test-Path $SavedVariablesPath)) {
     Write-Host "  1. Run '/av apidump' in-game" -ForegroundColor Yellow
     Write-Host "  2. Type '/reload' to save the data" -ForegroundColor Yellow
     Write-Host "  3. Run this script again" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "Or specify the correct path:" -ForegroundColor Yellow
+    Write-Host "  .\utilities\AnalyzeAPIDump.ps1 -SavedVariablesPath '<YOUR_PATH>'" -ForegroundColor Yellow
     exit 1
 }
 

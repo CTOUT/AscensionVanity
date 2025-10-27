@@ -5,6 +5,42 @@ All notable changes to the AscensionVanity project will be documented in this fi
 ## [Unreleased] - 2025-10-27
 
 ### Added
+- **Improved Path Detection in AnalyzeAPIDump.ps1**:
+  - Registry-based auto-detection of WoW installation path
+  - Automatic discovery of SavedVariables file across all account folders
+  - Integration with `local.config.ps1` for consistent path management
+  - Fallback to manual path specification if auto-detection fails
+  - No more hardcoded paths or incorrect default locations
+
+- **PII Sanitization**:
+  - Removed all personally identifiable information from tracked files
+  - Replaced email addresses, usernames, and local paths with placeholders
+  - Repository is now safe for public sharing
+
+- **Multiple Items Per Creature Support**:
+  - Updated VanityDB.lua to support multiple vanity items from a single creature
+  - Database now uses arrays for creatures that drop multiple items: `[creatureID] = {item1, item2}`
+  - Tooltip displays all items when multiple are available
+  - Example: Creature 7045 (Scalding Drake) now shows both Warhorn variants
+
+- **API Export & Comparison System**:
+  - New `/av export` command: Exports API data in VanityDB.lua format for easy comparison
+  - New `/av showexport` command: Displays exported data in chat (paginated)
+  - Exports data to SavedVariables in the exact same format as static database
+  - Enables trivial line-by-line comparison between API and database
+
+- **PowerShell Comparison Tool**:
+  - `CompareAPIExport.ps1`: Automated comparison of API export vs static database
+  - Identifies exact matches, mismatches, API-only, and DB-only entries
+  - Exports detailed results to CSV files for analysis
+  - Shows summary statistics and sample discrepancies
+
+- **Comprehensive Comparison Documentation**:
+  - [API_EXPORT_COMPARISON.md](docs/guides/API_EXPORT_COMPARISON.md): Complete guide for export/comparison workflow
+  - Step-by-step instructions for data synchronization
+  - Data quality checks and verification procedures
+  - Best practices for maintaining database accuracy
+
 - **API Validation System**: Complete database validation using Ascension's official API
   - New `/av apidump` command: Extracts complete vanity collection data from C_VanityCollection
   - New `/av validate` command: Compares API data vs static database to find discrepancies
@@ -27,7 +63,16 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Workflow summaries for quick validation, full analysis, and database updates
 
 ### Changed
-- **Enhanced Help Command**: Updated `/av help` to include new API validation commands
+- **Enhanced Help Command**: Updated `/av help` to include new API export and validation commands
+- **Removed Hardcoded Paths**: Fixed hardcoded OneDrive/user-specific paths in utility scripts
+  - `AnalyzeAPIDump.ps1`: Now uses standard WoW SavedVariables path
+  - `UpdateDatabaseFromAPI.ps1`: Now uses standard WoW SavedVariables path
+  - `CompareAPIExport.ps1`: Uses environment variables for default paths
+
+### Fixed
+- **Creature 7045 Database Entry**: Updated to include both item drops {1180254, 1180256}
+  - Previously only showed one of two available Draconic Warhorn variants
+  - Both items now appear in tooltip when targeting Scalding Drake
   - Organized into sections: Basic Commands, Database Validation, Debug Commands
   - Improved formatting and clarity
   - Added examples for complex commands
@@ -62,7 +107,7 @@ This update enables complete validation of the static database against Ascension
   - Watch mode: auto-deploy on file save (`-Watch` parameter)
   - Force mode: re-deploy all files regardless of state (`-Force` parameter)
   - Configurable WoW path with `-WoWPath` parameter
-  - Default path: `D:\OneDrive\Warcraft`
+  - Default path: `<YOUR_WOW_PATH>`
   - Debounce protection: prevents multiple rapid deployments
   - Comprehensive error handling and user feedback
   - Documentation: Added [DEPLOYMENT_GUIDE.md](docs/guides/DEPLOYMENT_GUIDE.md)

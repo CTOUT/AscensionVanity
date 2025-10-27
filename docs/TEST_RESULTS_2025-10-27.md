@@ -92,7 +92,7 @@ D:\Repos\AscensionVanity\data\AscensionVanity_SavedVariables.lua
 ###Original SavedVariables (Game)
 ```
 D:\Program Files\Ascension Launcher\resources\client\WTF\
-Account\chris-tout@outlook.com\SavedVariables\AscensionVanity.lua
+Account\<YOUR_ACCOUNT_EMAIL>\SavedVariables\AscensionVanity.lua
 ```
 
 ---

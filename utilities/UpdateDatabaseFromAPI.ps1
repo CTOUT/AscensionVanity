@@ -3,7 +3,7 @@
 
 param(
     [Parameter(Mandatory=$false)]
-    [string]$SavedVariablesPath = "D:\OneDrive\Warcraft\WTF\Account\CTOUT\SavedVariables\AscensionVanity.lua",
+    [string]$SavedVariablesPath = "$env:USERPROFILE\AppData\Local\Ascension Launcher\World of Warcraft\WTF\Account\YOUR_ACCOUNT\SavedVariables\AscensionVanity.lua",
     
     [Parameter(Mandatory=$false)]
     [string]$OutputPath = "$PSScriptRoot\..\AscensionVanity\VanityDB_Updated.lua",

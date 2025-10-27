@@ -1,6 +1,7 @@
 -- AscensionVanity - Vanity Items Database
 -- Auto-generated from Project Ascension database
 -- Total items: 1857
+-- Note: Some creatures drop multiple vanity items (stored as arrays)
 
 AV_VanityItems = {    [18285] = 80533, -- Beastmaster's Whistle: "Count" Ungula
     [8545] = 88304, -- Blood Soaked Vellum: Abomination
@@ -1310,7 +1311,7 @@ AV_VanityItems = {    [18285] = 80533, -- Beastmaster's Whistle: "Count" Ungula
     [1082] = 79418, -- Beastmaster's Whistle: Sawtooth Crocolisk
     [1087] = 79421, -- Beastmaster's Whistle: Sawtooth Snapper
     [7048] = 1180259, -- Draconic Warhorn: Scalding Broodling
-    [7045] = 1180253, -- Draconic Warhorn: Scalding Drake
+    [7045] = {1180254, 1180256}, -- Draconic Warhorn: Scalding Drake (multiple drops)
     [10756] = 600413, -- Elemental Lodestone: Scalding Elemental
     [2725] = 1180172, -- Draconic Warhorn: Scalding Whelp
     [745] = 1180122, -- Draconic Warhorn: Scalebane Captain
@@ -2048,11 +2049,16 @@ function AV_GetVanityItemsForCreature(creatureID)
     end
     
     -- Direct lookup: creature ID is the key in the table
-    local itemID = AV_VanityItems[creatureID]
+    local value = AV_VanityItems[creatureID]
     
-    if itemID then
-        -- Return single item as array for consistency
-        return {itemID}
+    if value then
+        -- Check if value is already an array (table with numeric indices)
+        if type(value) == "table" then
+            return value  -- Already an array, return as-is
+        else
+            -- Single item ID, wrap in array for consistency
+            return {value}
+        end
     end
     
     return nil

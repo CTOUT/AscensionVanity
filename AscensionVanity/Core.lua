@@ -174,9 +174,10 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                             itemText = checkmark .. " " .. itemText
                         end
                     elseif isLearned == false then
-                        -- Unlearned: Yellow, no indicator (just color difference)
+                        local cross = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:16|t"
+                        -- Unlearned: Yellow with WoW cross icon
                         if AscensionVanityDB.colorCode then
-                            itemText = COLOR_VANITY_UNLEARNED .. "   " .. itemText .. COLOR_RESET
+                            itemText = COLOR_VANITY_UNLEARNED .. cross .. " " .. itemText .. COLOR_RESET
                         else
                             itemText = "   " .. itemText
                         end
@@ -701,6 +702,116 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFF00FF00Results saved to SavedVariables|r")
         print("|cFFFFFF00Use /reload to save, then check SavedVariables/AscensionVanity.lua|r")
         
+    elseif msg == "export" then
+        -- Export API dump in VanityDB.lua format for easy comparison
+        print("|cFF00FF96AscensionVanity:|r Exporting API data in VanityDB format...")
+        
+        if not AscensionVanityDB.APIDump then
+            print("|cFFFF0000Error:|r No API dump found. Run '/av apidump' first")
+            return
+        end
+        
+        local apiDump = AscensionVanityDB.APIDump
+        local itemsByCreature = apiDump.itemsByCreature
+        
+        if not itemsByCreature then
+            print("|cFFFF0000Error:|r API dump missing itemsByCreature data")
+            return
+        end
+        
+        -- Build export data structure
+        local exportData = {
+            header = "-- AscensionVanity - API Export in VanityDB Format",
+            timestamp = "-- Generated: " .. (apiDump.timestamp or "Unknown"),
+            totalCreatures = 0,
+            totalItems = 0,
+            entries = {}
+        }
+        
+        -- Convert API data to VanityDB format
+        -- Sort by creature ID for easier comparison
+        local sortedCreatures = {}
+        for creatureID, items in pairs(itemsByCreature) do
+            table.insert(sortedCreatures, {id = creatureID, items = items})
+        end
+        
+        table.sort(sortedCreatures, function(a, b) return a.id < b.id end)
+        
+        -- Format each entry
+        for _, creature in ipairs(sortedCreatures) do
+            local creatureID = creature.id
+            local items = creature.items
+            
+            exportData.totalCreatures = exportData.totalCreatures + 1
+            
+            -- Get item name from first item for comment
+            local firstItemID = items[1]
+            local itemData = apiDump.items[firstItemID]
+            local itemName = itemData and itemData.name or "Unknown"
+            
+            -- Format: single item or array
+            local formattedEntry
+            if #items == 1 then
+                formattedEntry = string.format("    [%d] = %d, -- %s", creatureID, items[1], itemName)
+                exportData.totalItems = exportData.totalItems + 1
+            else
+                -- Multiple items - format as array
+                local itemsList = table.concat(items, ", ")
+                formattedEntry = string.format("    [%d] = {%s}, -- %s (multiple drops: %d items)", 
+                    creatureID, itemsList, itemName, #items)
+                exportData.totalItems = exportData.totalItems + #items
+            end
+            
+            table.insert(exportData.entries, formattedEntry)
+        end
+        
+        -- Store in SavedVariables
+        AscensionVanityDB.ExportedData = exportData
+        
+        print(" ")
+        print("|cFF00FF00=== EXPORT COMPLETE ===|r")
+        print(string.format("Total creatures: %d", exportData.totalCreatures))
+        print(string.format("Total items: %d", exportData.totalItems))
+        print(" ")
+        print("|cFF00FF00Data saved to:|r SavedVariables/AscensionVanity.lua")
+        print("|cFFFFFF00Next step:|r /reload to save, then check AscensionVanityDB.ExportedData")
+        print(" ")
+        print("|cFFFFFF00To view formatted output:|r /av showexport")
+        
+    elseif msg == "showexport" then
+        -- Display exported data in chat (paginated)
+        print("|cFF00FF96AscensionVanity:|r Displaying exported API data...")
+        
+        if not AscensionVanityDB.ExportedData then
+            print("|cFFFF0000Error:|r No export found. Run '/av export' first")
+            return
+        end
+        
+        local exportData = AscensionVanityDB.ExportedData
+        
+        print(" ")
+        print(exportData.header)
+        print(exportData.timestamp)
+        print(string.format("-- Total creatures: %d, Total items: %d", 
+            exportData.totalCreatures, exportData.totalItems))
+        print(" ")
+        print("AV_VanityItems_API_Export = {")
+        
+        -- Show first 50 entries to avoid chat spam
+        local maxShow = math.min(50, #exportData.entries)
+        for i = 1, maxShow do
+            print(exportData.entries[i])
+        end
+        
+        if #exportData.entries > maxShow then
+            print(string.format("    -- ... and %d more entries", #exportData.entries - maxShow))
+        end
+        
+        print("}")
+        print(" ")
+        print("|cFFFFFF00Full data available in:|r SavedVariables/AscensionVanity.lua")
+        print("|cFFFFFF00Look for:|r AscensionVanityDB.ExportedData.entries")
+        
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print(" ")
@@ -713,7 +824,9 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFFFFFF00=== Database Validation ===|r")
         print("  |cFFFFFF00/av apidump|r - Dump complete API data to SavedVariables")
         print("  |cFFFFFF00/av validate|r - Compare API data vs static database")
-        print("    |cFF808080(Run apidump first, then reload, then validate)|r")
+        print("  |cFFFFFF00/av export|r - Export API data in VanityDB.lua format")
+        print("  |cFFFFFF00/av showexport|r - Display exported data in chat")
+        print("    |cFF808080(Run: apidump → reload → export → reload → showexport)|r")
         print(" ")
         print("|cFFFFFF00=== Debug Commands ===|r")
         print("  |cFFFFFF00/av api|r - Scan for Ascension vanity APIs")

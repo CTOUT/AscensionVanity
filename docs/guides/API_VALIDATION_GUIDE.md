@@ -100,6 +100,17 @@ Items with different mappings:
 2. Run: `.\utilities\AnalyzeAPIDump.ps1`
 3. For detailed reports: `.\utilities\AnalyzeAPIDump.ps1 -Detailed`
 
+**Path Auto-Detection:**
+The script will automatically detect your SavedVariables path using:
+1. `local.config.ps1` (if configured)
+2. Windows Registry (WoW installation path)
+3. Automatic search in detected WoW installation
+
+**Manual Path (if needed):**
+```powershell
+.\utilities\AnalyzeAPIDump.ps1 -SavedVariablesPath "<YOUR_PATH>\AscensionVanity.lua"
+```
+
 **What This Does:**
 - Reads the SavedVariables file
 - Extracts validation statistics
@@ -216,8 +227,9 @@ AV_VanityItems = {
 - The SavedVariables folder doesn't exist (enable addon first)
 
 ### "SavedVariables file not found" (PowerShell script)
-- Update the path in `AnalyzeAPIDump.ps1` to match your WoW installation
-- Default: `D:\OneDrive\Warcraft\WTF\Account\CTOUT\SavedVariables\AscensionVanity.lua`
+- The script will auto-detect your path using registry or `local.config.ps1`
+- If auto-detection fails, specify manually: `-SavedVariablesPath "<YOUR_PATH>"`
+- Make sure you ran `/av apidump` and `/reload` in-game first
 
 ### Validation shows 0 matches
 - Run `/av apidump` again
