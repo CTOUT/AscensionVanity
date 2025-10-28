@@ -37,13 +37,14 @@ end
 -- Uses Ascension's C_VanityCollection.IsCollectionItemOwned API
 local function IsVanityItemLearned(itemID, itemName)
     if not itemID then
+        DebugPrint("IsVanityItemLearned: No itemID provided")
         return nil
     end
     
     -- Use Ascension's official vanity collection API
     if C_VanityCollection and C_VanityCollection.IsCollectionItemOwned then
         local isOwned = C_VanityCollection.IsCollectionItemOwned(itemID)
-        DebugPrint("Item", itemID, "owned status:", isOwned)
+        DebugPrint("Item", itemID, "(", itemName, ") owned status:", isOwned)
         return isOwned
     end
     
@@ -233,6 +234,13 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         -- Addon loaded
         print("|cFF00FF96AscensionVanity|r v" .. VERSION .. " loaded!")
         print("Type |cFFFFFF00/av help|r for commands")
+        
+        -- Check if Ascension's vanity collection API is available
+        if C_VanityCollection and C_VanityCollection.IsCollectionItemOwned then
+            print("|cFF00FF96AscensionVanity:|r C_VanityCollection API detected ✓")
+        else
+            print("|cFFFFAA00AscensionVanity:|r C_VanityCollection API not available (learned status disabled)")
+        end
         
     elseif event == "PLAYER_LOGIN" then
         -- Hook into GameTooltip after player login

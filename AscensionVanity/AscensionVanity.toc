@@ -3,7 +3,7 @@
 ## Notes: Shows vanity item drops in creature tooltips with region info
 ## Author: CMTout
 ## Version: 2.0.0
-## SavedVariables: AscensionVanityDB
+## SavedVariables: AscensionVanityDB, AscensionVanityDump
 
 # Configuration (loads first, sets defaults)
 AscensionVanityConfig.lua
@@ -14,6 +14,10 @@ VanityDB_Regions.lua
 
 # Database loader (provides lookup functions)
 VanityDB_Loader.lua
+
+# API Scanner (in-game data export tool)
+APIScanner.lua
+ScannerUI.lua
 
 # Core functionality
 Core.lua

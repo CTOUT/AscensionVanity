@@ -115,19 +115,25 @@ local item = GetItemFromCreature(11021)
 ### Before (Web Scrape)
 ```lua
 -- Simple mapping: creatureID = itemID
-[80533] = 18285, -- Beastmaster's Whistle: "Count" Ungula
+[18285] = 80533, -- Beastmaster's Whistle: "Count" Ungula
 ```
 
 **Fields**: creatureID (key), itemID (value), name (comment only)
 
 ### After (API Dump)
 ```lua
--- Rich data structure
-[18285] = {
-    itemid = 18285,
+-- Rich data structure with 5 pet item categories:
+-- • Beastmaster's Whistles (Hunter)
+-- • Blood Soaked Vellums (Death Knight)
+-- • Summoner's Stones (Warlock)
+-- • Draconic Warhorns (Mage)
+-- • Elemental Lodestones (Shaman)
+
+[80533] = {
+    itemid = 80533,
     name = "Beastmaster's Whistle: \"Count\" Ungula",
-    creaturePreview = 80533,
-    description = "Has a chance to drop from \"Count\" Ungula within Elwynn Forest",
+    creaturePreview = 18285,
+    description = "Has a chance to drop from \"Count\" Ungula within Zangarmarsh",
     icon = "Interface/Icons/Ability_Hunter_BeastCall"
 }
 ```
