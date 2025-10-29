@@ -5,6 +5,7 @@
 -- Forward declarations (actual data loaded from separate files)
 AV_VanityItems = AV_VanityItems or {}
 AV_Regions = AV_Regions or {}
+AV_IconList = AV_IconList or {}  -- Icon lookup table
 
 -- Build reverse lookup: creatureID -> itemIDs
 -- This is generated on-demand for performance
@@ -43,12 +44,29 @@ end
 
 -- Get full item data by itemID
 -- Returns: table with { itemid, name, creaturePreview, description, icon }
+-- Note: icon is resolved from AV_IconList if it's a number
 function AV_GetItemData(itemID)
     if not itemID then
         return nil
     end
     
-    return AV_VanityItems[itemID]
+    local itemData = AV_VanityItems[itemID]
+    if not itemData then
+        return nil
+    end
+    
+    -- Create a copy to avoid modifying the original
+    local result = {}
+    for k, v in pairs(itemData) do
+        result[k] = v
+    end
+    
+    -- Resolve icon if it's an index
+    if result.icon and type(result.icon) == "number" then
+        result.icon = AV_IconList[result.icon] or result.icon
+    end
+    
+    return result
 end
 
 -- Get item name by itemID

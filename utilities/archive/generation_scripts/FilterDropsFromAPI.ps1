@@ -31,8 +31,8 @@ foreach ($line in $lines) {
     }
     
     if ($inAPIDump) {
-        # Capture top-level name
-        if ($line -match '^\s*\["name"\]\s*=\s*"([^"]+)"') {
+        # Capture top-level name (handle escaped quotes in Lua strings)
+        if ($line -match '^\s*\["name"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
             $currentItem.Name = $matches[1]
         }
         
@@ -46,8 +46,8 @@ foreach ($line in $lines) {
             $currentItem.CreatureId = $matches[1]
         }
         
-        # Capture description from rawData
-        if ($line -match '^\s*\["description"\]\s*=\s*"([^"]*)"') {
+        # Capture description from rawData (handle escaped quotes in Lua strings)
+        if ($line -match '^\s*\["description"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
             $currentItem.Description = $matches[1]
         }
         

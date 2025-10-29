@@ -1,48 +1,64 @@
-# AscensionVanity - Vanity Item Tracker
+# AscensionVanity - Combat Pet Tracker
 
-[![Coverage](https://img.shields.io/badge/Coverage-96.7%25-brightgreen)](docs/analysis/SKIPPED_ITEMS_ANALYSIS.md)
-[![Items](https://img.shields.io/badge/Items-2032%2F2101-blue)](docs/analysis/SKIPPED_ITEMS_ANALYSIS.md)
-[![Version](https://img.shields.io/badge/Version-2.1--dev-orange)](AscensionVanity/AscensionVanity.toc)
-[![Validation](https://img.shields.io/badge/API_Validation-Ready-success)](docs/guides/API_VALIDATION_GUIDE.md)
+[![Coverage](https://img.shields.io/badge/Description_Coverage-99.95%25-brightgreen)](DESCRIPTION_ENRICHMENT_FINAL_REPORT.md)
+[![Items](https://img.shields.io/badge/Combat_Pets-2,174-blue)](AscensionVanity/VanityDB.lua)
+[![Version](https://img.shields.io/badge/Version-2.0--dev-orange)](AscensionVanity/AscensionVanity.toc)
+[![Automation](https://img.shields.io/badge/Workflow-95%25_Automated-success)](utilities/MasterDescriptionEnrichment.ps1)
 
 ## Overview
 
-AscensionVanity is a World of Warcraft addon for **Project Ascension** that helps players track **pet taming items** by enhancing creature tooltips to display which vanity items they can drop.
+AscensionVanity is a World of Warcraft addon for **Project Ascension** that helps players track **combat pet taming items** by enhancing creature tooltips to display which vanity items they can drop.
 
-**Primary Focus**: 🐾 **Pet Taming Items** - Beastmaster's Whistle, Blood Soaked Vellum, Summoner's Stone, Draconic Warhorn, Elemental Lodestone
+**Primary Focus**: 🐾 **Combat Pet Items** - All 2,174 combat pets available in Ascension  
+**Vanity Types**: Beastmaster's Whistle, Blood Soaked Vellum, Summoner's Stone, Draconic Warhorn, Elemental Lodestone
 
-**Current Status**: ✅ **Production Ready** - 96.7% database coverage (2,032 of 2,101 items)  
-**NEW**: 🔍 **API Validation System** - Validate and update database using official Ascension API
+**Current Status**: ✅ **99.95% Complete** - 2,173 items with descriptions (1 correctly blank)  
+**Workflow**: 🤖 **95% Automated** - Master enrichment script handles everything
 
 ## Features
 
 ### ✨ Current Features
+
 - **Creature Tooltip Enhancement**: Shows vanity items when mousing over creatures
-- **Smart Detection**: Identifies creatures by name and validates drop sources
-- **Comprehensive Database**: 2,032 vanity items from all 5 categories
-- **Visual Indicators**: Color-coded display (when learned status detection is available)
+- **Smart Detection**: Identifies creatures by NPC ID with location descriptions
+- **Comprehensive Database**: 2,174 combat pets with 99.95% description coverage
+- **Visual Indicators**: Clean, informative tooltip display
 - **Toggleable Options**: Enable/disable via slash commands
 - **Lightweight**: Minimal performance impact
 
-### � Database Coverage
+### � Database Quality
 
-| Category | Coverage | Notes |
-|----------|----------|-------|
-| **Beastmaster's Whistle** | 97.8% | Excellent |
-| **Blood Soaked Vellum** | 96.4% | Excellent |
-| **Summoner's Stones** | 96.3% | Excellent |
-| **Draconic Warhorns** | 96.0% | Excellent |
-| **Elemental Lodestones** | 96.3% | Excellent |
+| Metric | Status | Notes |
+|--------|--------|-------|
+| **Total Combat Pets** | 2,174 | Complete Ascension database |
+| **With Descriptions** | 2,173 (99.95%) | Excellent coverage |
+| **Empty (Correct)** | 1 (0.05%) | Captain Claws (NPC doesn't exist) |
+| **Description Sources** | db.ascension.gg + Wowhead WOTLK | Multi-source validation |
 
-See [Coverage Analysis](docs/analysis/SKIPPED_ITEMS_ANALYSIS.md) for details on the 69 skipped items.
+### 🤖 Automated Workflow
+
+The project includes a fully automated enrichment workflow:
+
+**Master Script**: `utilities/MasterDescriptionEnrichment.ps1`
+
+- **95-97% Automation**: Only 3-5% need manual research
+- **Multi-Source Search**: db.ascension.gg (primary) + Wowhead WOTLK (fallback)
+- **Safe Updates**: Pattern matching + dry-run mode
+- **Comprehensive Reporting**: CSV, JSON, and manual research lists
+
+**Run anytime**: Simply execute the master script to find and enrich any empty descriptions automatically.
+
+See [Master Enrichment Workflow](docs/MASTER_ENRICHMENT_WORKFLOW.md) for complete documentation.
 
 ## Installation
 
 1. **Download** or clone this repository
 2. **Copy** the `AscensionVanity` folder to:
-   ```
+
+   ```text
    World of Warcraft\Interface\AddOns\AscensionVanity\
    ```
+
 3. **Restart** WoW or reload UI (`/reload`)
 4. The addon loads automatically
 
@@ -50,23 +66,25 @@ See [Coverage Analysis](docs/analysis/SKIPPED_ITEMS_ANALYSIS.md) for details on 
 
 ### Basic Usage
 
-Mouse over any creature in-game. If it drops vanity items, you'll see:
+Mouse over any creature in-game. If it drops combat pet vanity items, you'll see:
 
-```
+```text
 [Creature Name]
 Level XX Type
 
 Vanity Items:
 • Beastmaster's Whistle: Savannah Patriarch
-• Blood Soaked Vellum: Savannah Prowler
+• Summoner's Stone: Savannah Prowler
+  Found in Barrens (Southern Barrens)
 ```
 
 ### Slash Commands
 
 #### Basic Commands
+
 - `/av` or `/av toggle` - Enable/disable addon
-- `/av learned` - Toggle learned status display (requires API detection)
-- `/av color` - Toggle color coding
+- `/av status` - Show current addon status
+- `/av help` - Display help information
 - `/av help` - Show help menu
 
 #### Database Validation (NEW in v2.1)
@@ -214,21 +232,22 @@ See [TODO: Future Investigations](docs/guides/TODO_FUTURE_INVESTIGATIONS.md) for
 
 ## Contributing
 
-Found a boss that drops a vanity item but it's not showing in tooltips?
+Found a combat pet vanity item that's missing or has incorrect information?
 
-1. Check [TODO: Future Investigations](docs/guides/TODO_FUTURE_INVESTIGATIONS.md) to see if it's already documented
-2. Defeat the boss and verify the drop
+1. Check the [Issue Tracker](https://github.com/CTOUT/AscensionVanity/issues) to see if it's already documented
+2. Verify the creature and drop in-game
 3. Report it with:
-   - Boss name and location
-   - Item name
+   - NPC ID and name
+   - Item name and type
+   - Location/zone information
    - Screenshot of drop or loot table
 
 ## Credits
 
 - **Author**: CMTout
-- **Data Source**: [Project Ascension Database](https://db.ascension.gg)
-- **Extraction Tool**: PowerShell with intelligent validation
-- **Coverage**: 96.7% (2,032 items)
+- **Data Source**: [Project Ascension Database](https://db.ascension.gg) + Wowhead WOTLK
+- **Extraction Tool**: PowerShell with automated enrichment workflow
+- **Database Coverage**: 99.95% (2,173/2,174 combat pets with descriptions)
 
 ## License
 
@@ -236,9 +255,10 @@ This addon is provided as-is for use with Project Ascension.
 
 ---
 
-**Last Updated**: October 26, 2025  
-**Database Version**: 1.0.0  
-**Coverage**: 96.7% (2,032/2,101 items)
+**Last Updated**: October 29, 2025  
+**Version**: 2.0-dev  
+**Database**: 2,174 combat pets | 99.95% description coverage  
+**Automation**: Master enrichment workflow with 95-97% automation
 - Observer
 - Doomguard
 - Nathrezim (Dreadlord)

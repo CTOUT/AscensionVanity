@@ -77,9 +77,11 @@ AV_VanityItems = {
 $sortedItems = $items | Sort-Object { [int]$_.itemId }
 
 foreach ($item in $sortedItems) {
-    # Escape quotes in name and description
-    $safeName = $item.name -replace '"', '\"'
-    $safeDesc = $item.description -replace '"', '\"'
+    # The JSON input already contains Lua-escaped strings (e.g., \" for quotes)
+    # We can use them directly without re-escaping
+    # Note: If future sources have unescaped quotes, add .Replace('"', '\"') here
+    $safeName = $item.name
+    $safeDesc = $item.description
     
     $dbContent += @"
 

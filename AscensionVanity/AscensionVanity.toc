@@ -8,9 +8,8 @@
 # Configuration (loads first, sets defaults)
 AscensionVanityConfig.lua
 
-# Database files (V2 format)
+# Database files (V2 format - consolidated icon index in VanityDB.lua)
 VanityDB.lua
-VanityDB_Regions.lua
 
 # Database loader (provides lookup functions)
 VanityDB_Loader.lua

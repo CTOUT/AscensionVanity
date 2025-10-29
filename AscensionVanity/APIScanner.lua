@@ -6,18 +6,32 @@ local AddonName = "AscensionVanity"
 -- Saved variable for API dump (separate from main addon config)
 AscensionVanityDump = AscensionVanityDump or {
     APIDump = {},
-    ValidationResults = {},
     LastScanDate = nil,
-    ScanVersion = "2.0"
+    ScanVersion = "2.0",
+    TotalItems = 0
 }
 
 -- Combat Pet Vanity Categories (for filtering)
 local COMBAT_PET_PREFIXES = {
-    "Beastmaster",
-    "Blood",
-    "Summoner",
-    "Draconic",
-    "Elemental"
+    "Beastmaster's Whistle:",
+    "Blood Soaked Vellum:",
+    "Summoner's Stone:",
+    "Draconic Warhorn:",
+    "Elemental Lodestone:"
+}
+
+-- Exclusion filters - items to EXCLUDE even if they match quality/prefix
+local EXCLUSION_KEYWORDS = {
+    "purchase",
+    "website",
+    "previously",
+    "bazaar",
+    "seasonal",
+    "reward",
+    "promotional",
+    "promo",
+    "event",
+    "limited"
 }
 
 -- Quality filter (6 = Artifact/Legendary - used for vanity items)
@@ -39,7 +53,7 @@ local function Print(msg)
 end
 
 -- Utility: Check if item is a combat pet vanity item
--- Filters by quality (6) AND name prefix
+-- Filters by quality (6) AND name prefix AND exclusion keywords
 local function IsCombatPetVanityItem(itemData)
     if not itemData then
         return false
@@ -52,13 +66,28 @@ local function IsCombatPetVanityItem(itemData)
     
     -- Check if name starts with one of our combat pet prefixes
     local name = itemData.name or ""
+    local nameLower = name:lower()
+    
+    local hasValidPrefix = false
     for _, prefix in ipairs(COMBAT_PET_PREFIXES) do
         if name:find("^" .. prefix) then
-            return true
+            hasValidPrefix = true
+            break
         end
     end
     
-    return false
+    if not hasValidPrefix then
+        return false
+    end
+    
+    -- Check exclusion keywords (after prefix to avoid filtering "Blood" prefix)
+    for _, keyword in ipairs(EXCLUSION_KEYWORDS) do
+        if nameLower:find(keyword:lower()) then
+            return false
+        end
+    end
+    
+    return true
 end
 
 -- Utility: Process raw item data from API
@@ -91,16 +120,6 @@ local function ProcessItemData(itemData, itemID)
     }
 end
 
--- Utility: Simple validation record
-local function ValidateItemAgainstDB(gameItemId, itemName)
-    return {
-        itemid = gameItemId,
-        name = itemName,
-        needsValidation = true,
-        scanDate = date("%Y-%m-%d %H:%M:%S")
-    }
-end
-
 -- Get all vanity items (no category filtering - get everything)
 local function GetAllVanityItems()
     local items = {}
@@ -130,7 +149,14 @@ function AV_ScanAllItems()
     end
     
     Print("Starting combat pet vanity item scan...")
-    Print("Filtering for Quality 6 items starting with: Beastmaster, Blood, Summoner, Draconic, Elemental")
+    Print("Filtering for Quality 6 items with names starting with:")
+    Print("  • Beastmaster's Whistle:")
+    Print("  • Blood Soaked Vellum:")
+    Print("  • Summoner's Stone:")
+    Print("  • Draconic Warhorn:")
+    Print("  • Elemental Lodestone:")
+    Print("")
+    Print("Excluding items containing: purchase, website, previously, bazaar, seasonal, reward, etc.")
     
     scanState.isScanning = true
     scanState.startTime = time()
@@ -138,7 +164,6 @@ function AV_ScanAllItems()
     
     -- Clear previous dump data
     AscensionVanityDump.APIDump = {}
-    AscensionVanityDump.ValidationResults = {}
     
     -- Scan all items (filtering happens in ProcessItemData)
     Print("Scanning vanity collection...")
@@ -150,12 +175,6 @@ function AV_ScanAllItems()
     for _, itemData in ipairs(items) do
         -- Store in dump using itemid as key
         AscensionVanityDump.APIDump[itemData.itemid] = itemData
-        
-        -- Add validation entry
-        AscensionVanityDump.ValidationResults[itemData.itemid] = ValidateItemAgainstDB(
-            itemData.itemid, 
-            itemData.name
-        )
         
         totalScanned = totalScanned + 1
     end
@@ -179,7 +198,13 @@ function AV_ScanAllItems()
     Print("  → Data saved to: AscensionVanity_Dump.lua")
     Print("========================================")
     Print("Filtered for Quality 6 items with names starting with:")
-    Print("  Beastmaster, Blood, Summoner, Draconic, Elemental")
+    Print("  • Beastmaster's Whistle:")
+    Print("  • Blood Soaked Vellum:")
+    Print("  • Summoner's Stone:")
+    Print("  • Draconic Warhorn:")
+    Print("  • Elemental Lodestone:")
+    Print("")
+    Print("Excluded items containing: purchase, website, previously, bazaar, seasonal, reward")
     Print("Next: Exit WoW to save data, then run utilities to process the dump.")
 end
 
@@ -188,7 +213,6 @@ function AV_ClearDumpData()
     Print("Clearing API dump data...")
     
     AscensionVanityDump.APIDump = {}
-    AscensionVanityDump.ValidationResults = {}
     AscensionVanityDump.LastScanDate = nil
     AscensionVanityDump.TotalItems = 0
     

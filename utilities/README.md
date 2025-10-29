@@ -2,7 +2,45 @@
 
 This directory contains PowerShell utilities for database management, validation, and analysis.
 
-## 🚀 **Primary Utilities**
+## � **Fresh Scan Workflow**
+
+### **PrepareForFreshScan.ps1**
+**Purpose**: Prepares for a complete fresh scan of all vanity items in-game
+
+**Features**:
+- Automatically backs up current SavedVariables with timestamp
+- Safely clears existing scan data to ensure clean slate
+- Provides step-by-step instructions for in-game scanning
+- Preserves scan history in backups directory
+
+**Usage**:
+```powershell
+# Standard fresh scan preparation (with backup)
+.\utilities\PrepareForFreshScan.ps1
+
+# Skip backup (not recommended)
+.\utilities\PrepareForFreshScan.ps1 -NoBackup
+
+# Force without confirmation prompt
+.\utilities\PrepareForFreshScan.ps1 -Force
+```
+
+**When to use**:
+- Missing DB item ID mappings for many items
+- Want to ensure complete coverage of all in-game items
+- After major game updates or patch changes
+- Starting fresh database generation from scratch
+
+**Workflow**:
+1. Run `PrepareForFreshScan.ps1` (creates backup, clears data)
+2. Launch WoW and run `/run AscensionVanity:ScanAllItems()`
+3. Wait for scan completion message
+4. Exit WoW to save the new data
+5. Run `GenerateVanityDB_V2.ps1` to build database
+
+---
+
+## �🚀 **Primary Utilities**
 
 ### **AnalyzeAPIDump.ps1**
 **Purpose**: Analyzes API dump from SavedVariables and generates validation reports
