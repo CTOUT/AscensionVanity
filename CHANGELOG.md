@@ -2,6 +2,27 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
+## [2.1-beta] - 2025-10-29
+
+### ⚠️ Breaking Changes - Clean Installation Required
+**IMPORTANT:** This release adds new files (SettingsUI.lua) that require a clean installation.
+
+**Upgrade Instructions:**
+1. **Delete** your existing AscensionVanity folder completely
+2. **Extract** the new version to your AddOns directory
+3. **Restart** WoW or `/reload`
+4. Your settings will be preserved (stored in SavedVariables)
+
+**Why?** WoW doesn't automatically remove old files when updating addons. The new SettingsUI.lua file is essential for the modern UI system to work correctly.  Older files from previous versions are also orphaned.
+
+### Release Highlights
+- Modern standalone Settings and Scanner UIs
+- Interface Options integration
+- Real-time slash command synchronization
+- Comprehensive test plan and documentation
+
+See v2.0.0 release notes below for complete feature list.
+
 ## [2.0.0] - 2025-10-29
 
 ### Added - Modern UI System
