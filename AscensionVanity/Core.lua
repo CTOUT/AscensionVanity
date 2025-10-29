@@ -156,17 +156,21 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                 -- Use actual item icon from database (if available)
                 local itemIcon = ""
                 if itemData.icon and itemData.icon ~= "" then
-                    itemIcon = "|T" .. itemData.icon .. ":16|t "
+                    -- Format icon properly with Interface\Icons\ path
+                    itemIcon = "|TInterface\\Icons\\" .. itemData.icon .. ":16|t "
+                    DebugPrint("Using database icon:", itemData.icon)
                 else
                     -- Fallback to category-based icon detection
                     for itemType, icon in pairs(ITEM_ICONS) do
                         if string.find(itemName, itemType, 1, true) then
                             itemIcon = icon .. " "
+                            DebugPrint("Using category icon for:", itemType)
                             break
                         end
                     end
                 end
                 
+                -- Start with item icon + name (no learned status yet)
                 local itemText = itemIcon .. itemName
                 
                 -- Check if player has learned this item (optional feature)
@@ -174,27 +178,27 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     local isLearned = IsVanityItemLearned(itemID, itemName)
                     
                     if isLearned == true then
-                        -- Learned: Green with WoW checkmark icon
+                        -- Learned: Green checkmark + item
                         local checkmark = "|TInterface\\RaidFrame\\ReadyCheck-Ready:16|t"
                         if AscensionVanityDB.colorCode then
-                            itemText = COLOR_VANITY_LEARNED .. checkmark .. " " .. itemText .. COLOR_RESET
+                            itemText = checkmark .. " " .. COLOR_VANITY_LEARNED .. itemText .. COLOR_RESET
                         else
                             itemText = checkmark .. " " .. itemText
                         end
                     elseif isLearned == false then
+                        -- Unlearned: Red cross + item
                         local cross = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:16|t"
-                        -- Unlearned: Yellow with WoW cross icon
                         if AscensionVanityDB.colorCode then
-                            itemText = COLOR_VANITY_UNLEARNED .. cross .. " " .. itemText .. COLOR_RESET
+                            itemText = cross .. " " .. COLOR_VANITY_UNLEARNED .. itemText .. COLOR_RESET
                         else
-                            itemText = "   " .. itemText
+                            itemText = cross .. " " .. itemText
                         end
                     else
-                        -- Unknown status: Default color, no indicator
+                        -- Unknown status: No indicator, just 3 spaces for alignment
                         itemText = "   " .. itemText
                     end
                 else
-                    -- Learned status disabled: No indicator, default color
+                    -- Learned status disabled: No indicator, just 3 spaces for alignment
                     itemText = "   " .. itemText
                 end
                 
