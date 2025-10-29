@@ -197,7 +197,7 @@ Stone: 12 items
 
 ### **For Testing:**
 1. Deploy addon: `..\DeployAddon.ps1`
-2. Run in-game: `/av apidump` then `/reload`
+2. Run in-game: `/avanity apidump` then `/reload`
 3. Analyze: `.\utilities\AnalyzeAPIDump.ps1 -Detailed`
 
 ---

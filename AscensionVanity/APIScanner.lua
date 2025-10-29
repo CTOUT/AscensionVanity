@@ -144,7 +144,7 @@ end
 -- Scan all vanity items and save to dump file
 function AV_ScanAllItems()
     if scanState.isScanning then
-        Print("Scan already in progress! Use /avscan cancel to abort.")
+        Print("Scan already in progress! Use /avanity scan cancel to abort.")
         return
     end
     
@@ -252,33 +252,8 @@ function AV_CancelScan()
     end
 end
 
--- Register slash commands
-SLASH_AVSCAN1 = "/avscan"
-SlashCmdList["AVSCAN"] = function(msg)
-    local cmd = msg:lower():trim()
-    
-    if cmd == "" or cmd == "scan" then
-        AV_ScanAllItems()
-    elseif cmd == "clear" then
-        StaticPopup_Show("AV_CONFIRM_CLEAR_DUMP")
-    elseif cmd == "stats" then
-        AV_GetScanStats()
-    elseif cmd == "cancel" then
-        AV_CancelScan()
-    elseif cmd == "help" then
-        Print("========================================")
-        Print("API Scanner Commands")
-        Print("========================================")
-        Print("/avscan scan - Scan all vanity items")
-        Print("/avscan clear - Clear dump data")
-        Print("/avscan stats - Show scan statistics")
-        Print("/avscan cancel - Cancel ongoing scan")
-        Print("/avscan help - Show this help")
-        Print("========================================")
-    else
-        Print("Unknown command. Use /avscan help for commands.")
-    end
-end
+-- Scanner commands are now integrated into main /avanity command
+-- See Core.lua for command handlers
 
 -- Confirmation dialog for clearing dump
 StaticPopupDialogs["AV_CONFIRM_CLEAR_DUMP"] = {
@@ -307,7 +282,7 @@ frame:SetScript("OnEvent", function(self, event, addonName)
         
         if itemCount > 0 then
             Print("API Scanner loaded. Last scan: " .. (AscensionVanityDump.LastScanDate or "Unknown"))
-            Print("Type /avscan help for scanner commands.")
+            Print("Type /avanity scan help for scanner commands.")
         end
     end
 end)

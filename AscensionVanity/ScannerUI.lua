@@ -3,38 +3,74 @@
 
 local AddonName = "AscensionVanity"
 
--- Create the main options panel
-local panel = CreateFrame("Frame", "AscensionVanityScannerPanel", UIParent)
-panel.name = "Vanity Scanner"
-panel.parent = "AscensionVanity"
+-- ============================================================================
+-- Main Scanner Frame (Standalone)
+-- ============================================================================
+
+-- Create standalone scanner panel with DialogBox styling
+local scannerPanel = CreateFrame("Frame", "AscensionVanityScannerFrame", UIParent)
+scannerPanel:SetSize(650, 680)  -- Increased height to show all slash commands
+scannerPanel:SetPoint("CENTER")
+scannerPanel:SetFrameStrata("DIALOG")  -- Higher strata to prevent overlap
+scannerPanel:SetMovable(true)
+scannerPanel:EnableMouse(true)
+scannerPanel:RegisterForDrag("LeftButton")
+scannerPanel:SetScript("OnDragStart", scannerPanel.StartMoving)
+scannerPanel:SetScript("OnDragStop", scannerPanel.StopMovingOrSizing)
+scannerPanel:SetClampedToScreen(true)
+scannerPanel:Hide()
+
+-- Add DialogBox backdrop for professional look
+scannerPanel:SetBackdrop({
+    bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
+    edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+    tile = true, tileSize = 32, edgeSize = 32,
+    insets = { left = 11, right = 12, top = 12, bottom = 11 }
+})
+
+-- Close on ESC key
+tinsert(UISpecialFrames, "AscensionVanityScannerFrame")
+
+-- Close button
+local closeButton = CreateFrame("Button", nil, scannerPanel, "UIPanelCloseButton")
+closeButton:SetPoint("TOPRIGHT", -5, -5)
 
 -- Title
-local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-title:SetPoint("TOPLEFT", 16, -16)
-title:SetText("Vanity Item API Scanner")
+local title = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+title:SetPoint("TOP", 0, -20)
+title:SetText("AscensionVanity Scanner")
+
+-- Version
+local version = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+version:SetPoint("TOP", title, "BOTTOM", 0, -4)
+version:SetText("Version 2.0.0")
 
 -- Description
-local desc = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
-desc:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
+local desc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+desc:SetPoint("TOP", version, "BOTTOM", 0, -12)
 desc:SetWidth(580)
-desc:SetJustifyH("LEFT")
-desc:SetText("Use this tool to scan all vanity items from the Ascension API and export them for database generation.")
+desc:SetJustifyH("CENTER")
+desc:SetText("Scan vanity items from the Ascension API and export them for database generation.")
 
 -- Separator line
-local separator1 = panel:CreateTexture(nil, "ARTWORK")
+local separator1 = scannerPanel:CreateTexture(nil, "ARTWORK")
 separator1:SetHeight(1)
-separator1:SetPoint("TOPLEFT", desc, "BOTTOMLEFT", 0, -8)
-separator1:SetPoint("RIGHT", -16, 0)
+separator1:SetPoint("TOP", desc, "BOTTOM", 0, -12)
+separator1:SetPoint("LEFT", 30, 0)
+separator1:SetPoint("RIGHT", -30, 0)
 separator1:SetColorTexture(0.25, 0.25, 0.25, 1)
 
--- Current Status Section
-local statusHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-statusHeader:SetPoint("TOPLEFT", separator1, "BOTTOMLEFT", 0, -16)
+-- ============================================================================
+-- Status Section
+-- ============================================================================
+
+local statusHeader = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+statusHeader:SetPoint("TOPLEFT", separator1, "BOTTOMLEFT", 30, -16)
 statusHeader:SetText("Current Status:")
 
-local statusText = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
-statusText:SetPoint("TOPLEFT", statusHeader, "BOTTOMLEFT", 20, -8)
-statusText:SetWidth(540)
+local statusText = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+statusText:SetPoint("TOPLEFT", statusHeader, "BOTTOMLEFT", 0, -8)
+statusText:SetWidth(580)
 statusText:SetJustifyH("LEFT")
 statusText:SetText("Loading...")
 
@@ -63,19 +99,23 @@ local function UpdateStatus()
 end
 
 -- Separator line
-local separator2 = panel:CreateTexture(nil, "ARTWORK")
+local separator2 = scannerPanel:CreateTexture(nil, "ARTWORK")
 separator2:SetHeight(1)
-separator2:SetPoint("TOPLEFT", statusText, "BOTTOMLEFT", -20, -16)
-separator2:SetPoint("RIGHT", -16, 0)
+separator2:SetPoint("TOPLEFT", statusText, "BOTTOMLEFT", 0, -16)
+separator2:SetPoint("LEFT", 30, 0)
+separator2:SetPoint("RIGHT", -30, 0)
 separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
 
+-- ============================================================================
 -- Actions Section
-local actionsHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-actionsHeader:SetPoint("TOPLEFT", separator2, "BOTTOMLEFT", 0, -16)
+-- ============================================================================
+
+local actionsHeader = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+actionsHeader:SetPoint("TOPLEFT", separator2, "BOTTOMLEFT", 30, -16)
 actionsHeader:SetText("Actions:")
 
 -- Scan Button
-local scanButton = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+local scanButton = CreateFrame("Button", nil, scannerPanel, "UIPanelButtonTemplate")
 scanButton:SetPoint("TOPLEFT", actionsHeader, "BOTTOMLEFT", 0, -8)
 scanButton:SetSize(200, 30)
 scanButton:SetText("Scan All Items")
@@ -85,14 +125,14 @@ scanButton:SetScript("OnClick", function()
 end)
 
 -- Scan button description
-local scanDesc = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+local scanDesc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
 scanDesc:SetPoint("LEFT", scanButton, "RIGHT", 8, 0)
 scanDesc:SetWidth(360)
 scanDesc:SetJustifyH("LEFT")
 scanDesc:SetText("Query the Ascension API for all vanity items")
 
 -- Clear Button
-local clearButton = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+local clearButton = CreateFrame("Button", nil, scannerPanel, "UIPanelButtonTemplate")
 clearButton:SetPoint("TOPLEFT", scanButton, "BOTTOMLEFT", 0, -8)
 clearButton:SetSize(200, 30)
 clearButton:SetText("Clear Dump Data")
@@ -101,7 +141,7 @@ clearButton:SetScript("OnClick", function()
 end)
 
 -- Clear button description
-local clearDesc = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+local clearDesc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
 clearDesc:SetPoint("LEFT", clearButton, "RIGHT", 8, 0)
 clearDesc:SetWidth(360)
 clearDesc:SetJustifyH("LEFT")
@@ -123,35 +163,83 @@ StaticPopupDialogs["AV_CONFIRM_CLEAR_DUMP_UI"] = {
 }
 
 -- Refresh Button
-local refreshButton = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+local refreshButton = CreateFrame("Button", nil, scannerPanel, "UIPanelButtonTemplate")
 refreshButton:SetPoint("TOPLEFT", clearButton, "BOTTOMLEFT", 0, -8)
 refreshButton:SetSize(200, 30)
 refreshButton:SetText("Refresh Status")
 refreshButton:SetScript("OnClick", function()
     UpdateStatus()
-    print("|cFF00FF96[AscensionVanity]|r Status refreshed.")
 end)
 
 -- Refresh button description
-local refreshDesc = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+local refreshDesc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
 refreshDesc:SetPoint("LEFT", refreshButton, "RIGHT", 8, 0)
 refreshDesc:SetWidth(360)
 refreshDesc:SetJustifyH("LEFT")
 refreshDesc:SetText("Update the status display")
 
+-- Settings Button
+local settingsButton = CreateFrame("Button", nil, scannerPanel, "UIPanelButtonTemplate")
+settingsButton:SetPoint("TOPLEFT", refreshButton, "BOTTOMLEFT", 0, -8)
+settingsButton:SetSize(200, 30)
+settingsButton:SetText("Open Settings")
+settingsButton:SetScript("OnClick", function()
+    scannerPanel:Hide()  -- Close scanner when opening settings
+    AscensionVanity_ShowSettings()
+end)
+
+-- Settings button description
+local settingsDesc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+settingsDesc:SetPoint("LEFT", settingsButton, "RIGHT", 8, 0)
+settingsDesc:SetWidth(360)
+settingsDesc:SetJustifyH("LEFT")
+settingsDesc:SetText("Configure addon settings and preferences")
+
+-- ============================================================================
+-- Developer Options
+-- ============================================================================
+
+-- Debug Mode checkbox
+local debugCheckbox = CreateFrame("CheckButton", nil, scannerPanel, "UICheckButtonTemplate")
+debugCheckbox:SetPoint("TOPLEFT", settingsButton, "BOTTOMLEFT", 0, -12)
+debugCheckbox:SetChecked(AscensionVanityDB.debug or false)
+debugCheckbox:SetScript("OnClick", function(self)
+    AscensionVanityDB.debug = self:GetChecked()
+end)
+
+-- Debug checkbox label
+local debugLabel = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+debugLabel:SetPoint("LEFT", debugCheckbox, "RIGHT", 5, 0)
+debugLabel:SetText("Debug Mode")
+
+-- Debug checkbox tooltip
+debugCheckbox:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:SetText("Debug Mode", 1, 1, 1)
+    GameTooltip:AddLine("Enable debug logging to chat for troubleshooting.", nil, nil, nil, true)
+    GameTooltip:Show()
+end)
+debugCheckbox:SetScript("OnLeave", function(self)
+    GameTooltip:Hide()
+end)
+
 -- Separator line
-local separator3 = panel:CreateTexture(nil, "ARTWORK")
+local separator3 = scannerPanel:CreateTexture(nil, "ARTWORK")
 separator3:SetHeight(1)
-separator3:SetPoint("TOPLEFT", refreshButton, "BOTTOMLEFT", 0, -16)
-separator3:SetPoint("RIGHT", -16, 0)
+separator3:SetPoint("TOPLEFT", debugCheckbox, "BOTTOMLEFT", 0, -16)
+separator3:SetPoint("LEFT", 30, 0)
+separator3:SetPoint("RIGHT", -30, 0)
 separator3:SetColorTexture(0.25, 0.25, 0.25, 1)
 
+-- ============================================================================
 -- Instructions Section
-local instructionsHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-instructionsHeader:SetPoint("TOPLEFT", separator3, "BOTTOMLEFT", 0, -16)
+-- ============================================================================
+
+local instructionsHeader = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+instructionsHeader:SetPoint("TOPLEFT", separator3, "BOTTOMLEFT", 30, -16)
 instructionsHeader:SetText("How to Use:")
 
-local instructions = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+local instructions = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 instructions:SetPoint("TOPLEFT", instructionsHeader, "BOTTOMLEFT", 0, -8)
 instructions:SetWidth(580)
 instructions:SetJustifyH("LEFT")
@@ -166,34 +254,61 @@ instructions:SetText(
 )
 
 -- Command Reference Section
-local separator4 = panel:CreateTexture(nil, "ARTWORK")
+local separator4 = scannerPanel:CreateTexture(nil, "ARTWORK")
 separator4:SetHeight(1)
 separator4:SetPoint("TOPLEFT", instructions, "BOTTOMLEFT", 0, -16)
-separator4:SetPoint("RIGHT", -16, 0)
+separator4:SetPoint("LEFT", 30, 0)
+separator4:SetPoint("RIGHT", -30, 0)
 separator4:SetColorTexture(0.25, 0.25, 0.25, 1)
 
-local commandHeader = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-commandHeader:SetPoint("TOPLEFT", separator4, "BOTTOMLEFT", 0, -16)
+local commandHeader = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+commandHeader:SetPoint("TOPLEFT", separator4, "BOTTOMLEFT", 30, -16)
 commandHeader:SetText("Slash Commands:")
 
-local commands = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+local commands = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 commands:SetPoint("TOPLEFT", commandHeader, "BOTTOMLEFT", 0, -8)
 commands:SetWidth(580)
 commands:SetJustifyH("LEFT")
 commands:SetText(
-    "|cFF00FF96/avscan scan|r - Start a new scan\n" ..
-    "|cFF00FF96/avscan clear|r - Clear dump data\n" ..
-    "|cFF00FF96/avscan stats|r - Show scan statistics\n" ..
-    "|cFF00FF96/avscan help|r - Show help"
+    "|cFF00FF96/avanity scanner|r - Open this scanner window\n" ..
+    "|cFF00FF96/avanity scan|r - Start a new scan\n" ..
+    "|cFF00FF96/avanity scan clear|r - Clear dump data\n" ..
+    "|cFF00FF96/avanity scan stats|r - Show scan statistics"
 )
 
--- Update status when panel is shown
-panel:SetScript("OnShow", function()
+-- Update status and sync UI when panel is shown
+scannerPanel:SetScript("OnShow", function()
     UpdateStatus()
+    -- Sync debug checkbox with saved variable (in case changed via slash command)
+    debugCheckbox:SetChecked(AscensionVanityDB.debug or false)
 end)
 
--- Register panel with WoW interface options
-InterfaceOptions_AddCategory(panel)
+-- ============================================================================
+-- Interface Options Integration (Launcher)
+-- ============================================================================
+
+-- Note: Scanner is now accessible via:
+-- 1. Settings UI "Open API Scanner" button
+-- 2. /avanity scanner command
+-- 3. /avanity scan command (direct scan)
+--
+-- No separate Interface Options panel needed - keeps addon list clean
+
+-- ============================================================================
+-- Global Functions
+-- ============================================================================
+
+-- Function to show scanner panel
+function AscensionVanity_ShowScanner()
+    scannerPanel:Show()
+end
+
+-- Function to sync debug checkbox (called by slash commands)
+function AscensionVanity_SyncDebugCheckbox()
+    if debugCheckbox then
+        debugCheckbox:SetChecked(AscensionVanityDB.debug or false)
+    end
+end
 
 -- Also update status on addon load
 local frame = CreateFrame("Frame")

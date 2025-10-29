@@ -16,6 +16,9 @@ VanityDB_Loader.lua
 
 # API Scanner (in-game data export tool)
 APIScanner.lua
+
+# User Interface (settings and scanner panels)
+SettingsUI.lua
 ScannerUI.lua
 
 # Core functionality

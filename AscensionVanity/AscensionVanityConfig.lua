@@ -8,7 +8,7 @@ local defaults = {
     enabled = true,              -- Enable/disable the addon
     colorCode = true,            -- Color-code tooltip text based on learned status
     showLearnedStatus = true,    -- Show "Learned" or "Not Learned" in tooltips
-    showRegions = true,          -- Show region/location information in tooltips
+    showRegions = false,         -- Show region/location information in tooltips (not yet implemented)
     debug = false                -- Enable debug logging
 }
 
@@ -23,3 +23,5 @@ end
 
 -- Call initialization when file loads
 AscensionVanity_InitConfig()
+
+-- Note: Settings UI has been moved to SettingsUI.lua for better code organization

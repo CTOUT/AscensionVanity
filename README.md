@@ -78,21 +78,51 @@ Vanity Items:
   Found in Barrens (Southern Barrens)
 ```
 
+### User Interface
+
+**Settings UI**: Modern standalone frame with professional styling
+- Access via: `/avanity` command or Interface Options
+- Configure tooltip display, learned status, and color coding
+- Quick access to API Scanner
+
+**API Scanner UI**: Developer tool for database generation
+- Access via: `/avanity scanner` command or Settings UI button
+- Scan Ascension API for all vanity items
+- Export data for processing
+- Debug mode toggle
+
+**Features**:
+- ✅ Draggable, movable frames
+- ✅ ESC key to close
+- ✅ Mutual exclusion (only one UI open at a time)
+- ✅ Real-time sync with slash commands
+- ✅ Professional DialogBox styling
+
 ### Slash Commands
 
-#### Basic Commands
+**Available Commands:** `/avanity`, `/ascvan`, or `/ascensionvanity`
 
-- `/av` or `/av toggle` - Enable/disable addon
-- `/av status` - Show current addon status
-- `/av help` - Display help information
-- `/av help` - Show help menu
+#### UI Commands
+
+- `/avanity` - Open Settings UI
+- `/avanity scanner` - Open API Scanner UI
+- `/avanity help` - Display help information
+
+#### Toggle Commands
+
+- `/avanity toggle` - Enable/disable addon
+- `/avanity learned` - Toggle learned status display
+- `/avanity color` - Toggle color coding
+- `/avanity debug` - Toggle debug mode (updates UI in real-time)
 
 #### Database Validation (NEW in v2.1)
-- `/av apidump` - Extract complete API data to SavedVariables
-- `/av validate` - Compare API data vs static database
-- `/av api` - Scan for available Ascension vanity APIs
-- `/av dump` - Dump vanity collection data structure
-- `/av dumpitem <itemID>` - Search for specific item in API data
+- `/avanity apidump` - Extract complete API data to SavedVariables
+- `/avanity validate` - Compare API data vs static database
+- `/avanity export` - Export API data in VanityDB format
+- `/avanity showexport` - Display exported data in chat
+- `/avanity api` - Scan for available Ascension vanity APIs
+- `/avanity dump` - Dump vanity collection data structure
+- `/avanity dumpitem <itemID>` - Search for specific item in API data
 
 See [API Validation Guide](docs/guides/API_VALIDATION_GUIDE.md) for complete validation workflow.
 
@@ -101,9 +131,9 @@ See [API Validation Guide](docs/guides/API_VALIDATION_GUIDE.md) for complete val
 The addon now includes a comprehensive validation system using Ascension's official `C_VanityCollection` API:
 
 **Quick Validation Workflow**:
-1. In-game: `/av apidump` → Wait for completion
+1. In-game: `/avanity apidump` → Wait for completion
 2. Type: `/reload` → Save data
-3. Type: `/av validate` → Review results
+3. Type: `/avanity validate` → Review results
 4. PowerShell: `.\utilities\AnalyzeAPIDump.ps1` → Detailed analysis
 
 **Purpose**: 
@@ -168,7 +198,7 @@ Deploy the addon to your WoW AddOns folder for in-game testing:
 After deployment:
 1. Launch World of Warcraft
 2. Type `/reload` to reload UI
-3. Type `/av help` to verify addon loaded
+3. Type `/avanity help` to verify addon loaded
 
 ### Database Extraction
 
@@ -276,9 +306,9 @@ This addon is provided as-is for use with Project Ascension.
 - Check for Lua errors using `/console scriptErrors 1`
 
 ### No vanity items showing in tooltips
-- Verify addon is enabled with `/av`
+- Verify addon is enabled with `/avanity toggle`
 - Check if the creature is in the database (currently limited dataset)
-- Try the debug function: `/run AV_Debug("CreatureName", "CreatureType")`
+- Enable debug mode with `/avanity debug` to see detailed information
 
 ### Learned status not showing
 - This feature requires Ascension-specific API implementation

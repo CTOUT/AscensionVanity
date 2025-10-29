@@ -2,6 +2,53 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
+## [2.0.0] - 2025-10-29
+
+### Added - Modern UI System
+- **Settings UI**: Professional standalone frame with DialogBox styling
+  - Accessible via `/avanity` command or Interface Options
+  - Configure tooltip display, learned status, and color coding
+  - Quick access button to API Scanner
+  - Real-time synchronization with slash commands
+  - ESC key support for closing
+  
+- **API Scanner UI**: Developer tool for database generation
+  - Accessible via `/avanity scanner` command or Settings UI button
+  - Scan Ascension API for all vanity items
+  - Export data for processing
+  - Debug mode toggle moved here (developer-focused location)
+  - Complete instructions and slash command reference
+  
+- **Interface Options Integration**: 
+  - Clean launcher panel in addon list
+  - Appears alphabetically as "AscensionVanity"
+  - Quick access to both Settings and Scanner UIs
+
+### Changed - UI Architecture
+- **Frame Management**: 
+  - Mutual exclusion - only one UI open at a time
+  - Proper frame strata (DIALOG) prevents overlap
+  - Bidirectional navigation between Settings and Scanner
+  - Draggable, movable frames with position clamping
+  
+- **Real-Time Synchronization**:
+  - Slash commands now update UI checkboxes immediately
+  - UI updates even when already open
+  - Settings sync: toggle, learned, color commands
+  - Scanner sync: debug command
+  
+- **Developer Tools Reorganization**:
+  - Debug Mode moved from Settings UI to Scanner UI
+  - Cleaner separation: user settings vs developer tools
+  - Settings UI reduced to user-facing features only
+
+### Fixed
+- UI overlapping issues resolved with proper frame strata
+- Text overlap in Settings UI footer
+- Scanner UI content cutoff (increased height)
+- Checkbox state sync when using slash commands
+- Mutual exclusion from all access points (commands, UI buttons, Interface Options)
+
 ## [Unreleased] - 2025-10-27
 
 ### Added

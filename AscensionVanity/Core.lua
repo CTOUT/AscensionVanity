@@ -237,7 +237,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
     if event == "ADDON_LOADED" and arg1 == AddonName then
         -- Addon loaded
         print("|cFF00FF96AscensionVanity|r v" .. VERSION .. " loaded!")
-        print("Type |cFFFFFF00/av help|r for commands")
+        print("Type |cFFFFFF00/avanity|r for settings or |cFFFFFF00/avanity help|r for commands")
         
         -- Check if Ascension's vanity collection API is available
         if C_VanityCollection and C_VanityCollection.IsCollectionItemOwned then
@@ -256,18 +256,31 @@ frame:SetScript("OnEvent", function(self, event, arg1)
 end)
 
 -- Slash commands
-SLASH_ASCENSIONVANITY1 = "/av"
-SLASH_ASCENSIONVANITY2 = "/ascensionvanity"
+SLASH_ASCENSIONVANITY1 = "/avanity"
+SLASH_ASCENSIONVANITY2 = "/ascvan"
+SLASH_ASCENSIONVANITY3 = "/ascensionvanity"
 
 SlashCmdList["ASCENSIONVANITY"] = function(msg)
     msg = string.lower(msg or "")
     
-    if msg == "toggle" or msg == "" then
+    if msg == "" then
+        -- Open settings UI
+        AscensionVanity_ShowSettings()
+    
+    elseif msg == "scanner" then
+        -- Open scanner UI
+        AscensionVanity_ShowScanner()
+        
+    elseif msg == "toggle" then
         AscensionVanityDB.enabled = not AscensionVanityDB.enabled
         if AscensionVanityDB.enabled then
             print("|cFF00FF96AscensionVanity:|r Enabled")
         else
             print("|cFF00FF96AscensionVanity:|r Disabled")
+        end
+        -- Sync Settings UI if it exists
+        if AscensionVanity_SyncSettingsUI then
+            AscensionVanity_SyncSettingsUI()
         end
         
     elseif msg == "learned" then
@@ -277,6 +290,10 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         else
             print("|cFF00FF96AscensionVanity:|r Learned status display disabled")
         end
+        -- Sync Settings UI if it exists
+        if AscensionVanity_SyncSettingsUI then
+            AscensionVanity_SyncSettingsUI()
+        end
         
     elseif msg == "color" then
         AscensionVanityDB.colorCode = not AscensionVanityDB.colorCode
@@ -285,6 +302,10 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         else
             print("|cFF00FF96AscensionVanity:|r Color coding disabled")
         end
+        -- Sync Settings UI if it exists
+        if AscensionVanity_SyncSettingsUI then
+            AscensionVanity_SyncSettingsUI()
+        end
         
     elseif msg == "debug" then
         AscensionVanityDB.debug = not AscensionVanityDB.debug
@@ -292,6 +313,48 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             print("|cFF00FF96AscensionVanity:|r Debug mode enabled")
         else
             print("|cFF00FF96AscensionVanity:|r Debug mode disabled")
+        end
+        -- Sync Scanner UI checkbox if it exists
+        if AscensionVanity_SyncDebugCheckbox then
+            AscensionVanity_SyncDebugCheckbox()
+        end
+        
+    -- API Scanner commands (integrated from APIScanner.lua)
+    elseif msg == "scan" or msg:match("^scan%s") then
+        local scanCmd = msg:match("^scan%s+(.+)") or ""
+        if scanCmd == "" then
+            -- Default: Start scan
+            if AV_ScanAllItems then
+                AV_ScanAllItems()
+            else
+                print("|cFFFF0000Error:|r API Scanner not loaded")
+            end
+        elseif scanCmd == "clear" then
+            StaticPopup_Show("AV_CONFIRM_CLEAR_DUMP")
+        elseif scanCmd == "stats" then
+            if AV_GetScanStats then
+                AV_GetScanStats()
+            else
+                print("|cFFFF0000Error:|r API Scanner not loaded")
+            end
+        elseif scanCmd == "cancel" then
+            if AV_CancelScan then
+                AV_CancelScan()
+            else
+                print("|cFFFF0000Error:|r API Scanner not loaded")
+            end
+        elseif scanCmd == "help" then
+            print("|cFF00FF96========================================|r")
+            print("|cFF00FF96API Scanner Commands|r")
+            print("|cFF00FF96========================================|r")
+            print("  |cFFFFFF00/avanity scan|r - Scan all vanity items")
+            print("  |cFFFFFF00/avanity scan clear|r - Clear dump data")
+            print("  |cFFFFFF00/avanity scan stats|r - Show scan statistics")
+            print("  |cFFFFFF00/avanity scan cancel|r - Cancel ongoing scan")
+            print("  |cFFFFFF00/avanity scan help|r - Show this help")
+            print("|cFF00FF96========================================|r")
+        else
+            print("|cFF00FF96AscensionVanity:|r Unknown scan command. Use |cFFFFFF00/avanity scan help|r for commands.")
         end
         
     elseif msg == "api" then
@@ -450,7 +513,7 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
                     print("|cFFFF0000Not Found:|r Item", itemID, "not in collection")
                     print(string.format("|cFFFFFF00Total items in collection: %d|r", totalItems))
                     print("|cFFFFFF00Hypothesis:|r API might only return items you OWN")
-                    print("|cFFFFFF00Try:|r /av dump to see what items ARE in your collection")
+                    print("|cFFFFFF00Try:|r /avanity dump to see what items ARE in your collection")
                 end
             else
                 print("|cFFFF0000Error:|r GetAllItems() returned nil")
@@ -514,8 +577,8 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
                 
                 if count > maxSamples then
                     print("|cFFFFFF00Note:|r Only showing first", maxSamples, "items in full detail to avoid chat spam")
-                    print("|cFFFFFF00Tip:|r Use '/av dumpitem <itemID>' to search for a specific item")
-                    print("|cFFFFFF00Example:|r /av dumpitem 79626  (Savannah Prowler whistle)")
+                    print("|cFFFFFF00Tip:|r Use '/avanity dumpitem <itemID>' to search for a specific item")
+                    print("|cFFFFFF00Example:|r /avanity dumpitem 79626  (Savannah Prowler whistle)")
                 end
             else
                 print("|cFFFF0000Error:|r GetAllItems() returned nil")
@@ -620,14 +683,14 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print(" ")
         print("|cFF00FF00Data saved to:|r SavedVariables/AscensionVanity.lua")
         print("|cFFFFFF00Next step:|r /reload to save data, then check the file")
-        print("|cFFFFFF00Validation:|r Use '/av validate' to compare API vs database")
+        print("|cFFFFFF00Validation:|r Use '/avanity validate' to compare API vs database")
         
     elseif msg == "validate" then
         -- Compare API data with our static database
         print("|cFF00FF96AscensionVanity:|r Validating database against API...")
         
         if not AscensionVanityDB.APIDump then
-            print("|cFFFF0000Error:|r No API dump found. Run '/av apidump' first")
+            print("|cFFFF0000Error:|r No API dump found. Run '/avanity apidump' first")
             return
         end
         
@@ -735,7 +798,7 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFF00FF96AscensionVanity:|r Exporting API data in VanityDB format...")
         
         if not AscensionVanityDB.APIDump then
-            print("|cFFFF0000Error:|r No API dump found. Run '/av apidump' first")
+            print("|cFFFF0000Error:|r No API dump found. Run '/avanity apidump' first")
             return
         end
         
@@ -804,14 +867,14 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFF00FF00Data saved to:|r SavedVariables/AscensionVanity.lua")
         print("|cFFFFFF00Next step:|r /reload to save, then check AscensionVanityDB.ExportedData")
         print(" ")
-        print("|cFFFFFF00To view formatted output:|r /av showexport")
+        print("|cFFFFFF00To view formatted output:|r /avanity showexport")
         
     elseif msg == "showexport" then
         -- Display exported data in chat (paginated)
         print("|cFF00FF96AscensionVanity:|r Displaying exported API data...")
         
         if not AscensionVanityDB.ExportedData then
-            print("|cFFFF0000Error:|r No export found. Run '/av export' first")
+            print("|cFFFF0000Error:|r No export found. Run '/avanity export' first")
             return
         end
         
@@ -843,28 +906,42 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print(" ")
+        print("|cFFFFFF00=== Available Slash Commands ===|r")
+        print("  |cFFFFFF00/avanity|r - Primary command")
+        print("  |cFFFFFF00/ascvan|r - Short alternative")
+        print("  |cFFFFFF00/ascensionvanity|r - Full name")
+        print(" ")
         print("|cFFFFFF00=== Basic Commands ===|r")
-        print("  |cFFFFFF00/av|r or |cFFFFFF00/av toggle|r - Toggle addon on/off")
-        print("  |cFFFFFF00/av learned|r - Toggle learned status display")
-        print("  |cFFFFFF00/av color|r - Toggle color coding")
-        print("  |cFFFFFF00/av debug|r - Toggle debug mode")
+        print("  |cFFFFFF00/avanity|r - Open settings UI")
+        print("  |cFFFFFF00/avanity scanner|r - Open scanner UI")
+        print("  |cFFFFFF00/avanity toggle|r - Quick toggle addon on/off")
+        print("  |cFFFFFF00/avanity learned|r - Toggle learned status display")
+        print("  |cFFFFFF00/avanity color|r - Toggle color coding")
+        print("  |cFFFFFF00/avanity debug|r - Toggle debug mode")
+        print(" ")
+        print("|cFFFFFF00=== API Scanner Commands ===|r")
+        print("  |cFFFFFF00/avanity scan|r - Scan all vanity items from API")
+        print("  |cFFFFFF00/avanity scan stats|r - Show scan statistics")
+        print("  |cFFFFFF00/avanity scan clear|r - Clear scanner dump data")
+        print("  |cFFFFFF00/avanity scan cancel|r - Cancel ongoing scan")
+        print("  |cFFFFFF00/avanity scan help|r - Show scanner help")
         print(" ")
         print("|cFFFFFF00=== Database Validation ===|r")
-        print("  |cFFFFFF00/av apidump|r - Dump complete API data to SavedVariables")
-        print("  |cFFFFFF00/av validate|r - Compare API data vs static database")
-        print("  |cFFFFFF00/av export|r - Export API data in VanityDB.lua format")
-        print("  |cFFFFFF00/av showexport|r - Display exported data in chat")
+        print("  |cFFFFFF00/avanity apidump|r - Dump complete API data to SavedVariables")
+        print("  |cFFFFFF00/avanity validate|r - Compare API data vs static database")
+        print("  |cFFFFFF00/avanity export|r - Export API data in VanityDB.lua format")
+        print("  |cFFFFFF00/avanity showexport|r - Display exported data in chat")
         print("    |cFF808080(Run: apidump → reload → export → reload → showexport)|r")
         print(" ")
         print("|cFFFFFF00=== Debug Commands ===|r")
-        print("  |cFFFFFF00/av api|r - Scan for Ascension vanity APIs")
-        print("  |cFFFFFF00/av dump|r - Dump vanity collection data structure")
-        print("  |cFFFFFF00/av dumpitem <itemID>|r - Dump specific item details")
-        print("    |cFF808080Example: /av dumpitem 79626|r")
+        print("  |cFFFFFF00/avanity api|r - Scan for Ascension vanity APIs")
+        print("  |cFFFFFF00/avanity dump|r - Dump vanity collection data structure")
+        print("  |cFFFFFF00/avanity dumpitem <itemID>|r - Dump specific item details")
+        print("    |cFF808080Example: /avanity dumpitem 79626|r")
         print(" ")
-        print("  |cFFFFFF00/av help|r - Show this help")
+        print("  |cFFFFFF00/avanity help|r - Show this help")
         
     else
-        print("|cFF00FF96AscensionVanity:|r Unknown command. Type |cFFFFFF00/av help|r for help")
+        print("|cFF00FF96AscensionVanity:|r Unknown command. Type |cFFFFFF00/avanity help|r for help")
     end
 end
