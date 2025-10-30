@@ -1,7 +1,7 @@
 ## Interface: 30300
 ## Title: Ascension Vanity Tracker
 ## Notes: Shows vanity item drops in creature tooltips with region info
-## Author: CMTout
+## Author: CTout
 ## Version: 2.1-beta
 ## SavedVariables: AscensionVanityDB, AscensionVanityDump
 

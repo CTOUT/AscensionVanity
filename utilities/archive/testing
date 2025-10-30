@@ -1,0 +1,121 @@
+-- Comprehensive Young Scavenger Data Dump
+-- Run this in-game: /run dofile("Interface\\AddOns\\AscensionVanity\\DumpYoungScavenger.lua")
+
+print("=======================================================")
+print("YOUNG SCAVENGER - COMPLETE RAW DATA DUMP")
+print("=======================================================")
+print(" ")
+
+if not C_VanityCollection or not C_VanityCollection.GetAllItems then
+    print("ERROR: C_VanityCollection.GetAllItems not available!")
+    return
+end
+
+local items = C_VanityCollection.GetAllItems()
+print("Total items in collection:", #items)
+print(" ")
+
+-- Function to recursively dump table
+local function DumpTable(tbl, indent)
+    indent = indent or ""
+    for k, v in pairs(tbl) do
+        local vtype = type(v)
+        if vtype == "table" then
+            print(indent .. tostring(k) .. " = {")
+            DumpTable(v, indent .. "  ")
+            print(indent .. "}")
+        else
+            print(indent .. tostring(k) .. " = " .. tostring(v) .. " (" .. vtype .. ")")
+        end
+    end
+end
+
+-- Search for Young Scavenger
+local foundCount = 0
+for index, item in ipairs(items) do
+    if item.name and item.name:find("Young Scavenger") then
+        foundCount = foundCount + 1
+        
+        print("=======================================================")
+        print("MATCH #" .. foundCount .. " - INDEX: " .. index)
+        print("=======================================================")
+        
+        -- Dump all fields
+        DumpTable(item)
+        
+        print(" ")
+        print("--- ADDITIONAL CHECKS ---")
+        
+        -- Check if this item is owned
+        if C_VanityCollection.IsCollectionItemOwned then
+            -- Try with index
+            local ownedByIndex = C_VanityCollection.IsCollectionItemOwned(index)
+            print("IsCollectionItemOwned(" .. index .. ") = " .. tostring(ownedByIndex))
+            
+            -- Try with itemidp if it exists
+            if item.itemidp then
+                local ownedByItemID = C_VanityCollection.IsCollectionItemOwned(item.itemidp)
+                print("IsCollectionItemOwned(" .. item.itemidp .. ") = " .. tostring(ownedByItemID))
+            end
+            
+            -- Try with group if it exists
+            if item.group then
+                local ownedByGroup = C_VanityCollection.IsCollectionItemOwned(item.group)
+                print("IsCollectionItemOwned(" .. item.group .. ") = " .. tostring(ownedByGroup))
+            end
+        end
+        
+        -- Try GetItem API if available
+        if C_VanityCollection.GetItem then
+            print(" ")
+            print("--- GetItem() RESULTS ---")
+            
+            -- Try with index
+            local getItemResult = C_VanityCollection.GetItem(index)
+            if getItemResult then
+                print("GetItem(" .. index .. "):")
+                DumpTable(getItemResult, "  ")
+            else
+                print("GetItem(" .. index .. ") = nil")
+            end
+            
+            -- Try with itemidp
+            if item.itemidp then
+                local getItemByID = C_VanityCollection.GetItem(item.itemidp)
+                if getItemByID then
+                    print("GetItem(" .. item.itemidp .. "):")
+                    DumpTable(getItemByID, "  ")
+                else
+                    print("GetItem(" .. item.itemidp .. ") = nil")
+                end
+            end
+        end
+        
+        -- Try GetItemInfo if available
+        if C_VanityCollection.GetItemInfo then
+            print(" ")
+            print("--- GetItemInfo() RESULTS ---")
+            local infoResult = C_VanityCollection.GetItemInfo(index)
+            if infoResult then
+                DumpTable(infoResult, "  ")
+            else
+                print("GetItemInfo(" .. index .. ") = nil")
+            end
+        end
+        
+        print(" ")
+        print("=======================================================")
+        print(" ")
+    end
+end
+
+if foundCount == 0 then
+    print("No items found matching 'Young Scavenger'")
+else
+    print("Total matches found:", foundCount)
+end
+
+print(" ")
+print("=======================================================")
+print("DUMP COMPLETE")
+print("=======================================================")

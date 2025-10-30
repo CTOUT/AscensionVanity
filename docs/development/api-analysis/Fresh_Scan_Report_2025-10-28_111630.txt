@@ -1,0 +1,10743 @@
+API SCAN ANALYSIS REPORT
+Generated: 2025-10-28 11:16:30
+========================================
+
+SCAN METADATA
+- Total items scanned: 9679
+- Items with creatures: 4641
+- Items without creatures: 5037
+- Unique creatures: 4588
+- Scan version: 2.0
+- Last scan: 2025-10-28 11:06:43
+
+DATABASE COMPARISON
+- Current DB entries: 2044
+- Exact matches: 2
+- Mismatches: 2042
+- Missing from DB: 2544
+- Only in DB: 0
+
+========================================
+MISSING FROM DATABASE (2544 total)
+========================================
+Creature 50512: Items [5547, 5657]
+Creature 11000193: Items [8906]
+Creature 11000115: Items [8840]
+Creature 117850: Items [9542]
+Creature 42078: Items [464]
+Creature 117848: Items [9540]
+Creature 67332: Items [3345]
+Creature 117845: Items [9539]
+Creature 50492: Items [4873]
+Creature 117843: Items [9537]
+Creature 378831: Items [9676]
+Creature 41841: Items [9408]
+Creature 41842: Items [9409]
+Creature 599824: Items [8359]
+Creature 42007: Items [7282]
+Creature 44329: Items [1251]
+Creature 453492: Items [9651]
+Creature 499798: Items [8700]
+Creature 111084: Items [9212]
+Creature 2145: Items [5824]
+Creature 67273: Items [9496]
+Creature 67271: Items [9494]
+Creature 67268: Items [9492]
+Creature 42010: Items [7284]
+Creature 42009: Items [7283, 7286]
+Creature 42008: Items [6100]
+Creature 40191: Items [408]
+Creature 42006: Items [7281]
+Creature 42005: Items [7280]
+Creature 42004: Items [7279]
+Creature 42003: Items [7278]
+Creature 42002: Items [7277]
+Creature 42001: Items [7276]
+Creature 79079: Items [7522]
+Creature 11000192: Items [8905]
+Creature 25147: Items [172]
+Creature 25146: Items [128]
+Creature 500145: Items [6539]
+Creature 599810: Items [8348]
+Creature 25110: Items [169]
+Creature 25109: Items [168]
+Creature 599823: Items [8358]
+Creature 11000109: Items [8833]
+Creature 43409: Items [567]
+Creature 11000084: Items [8819]
+Creature 43904: Items [1033]
+Creature 499813: Items [6441]
+Creature 111083: Items [9211]
+Creature 319742: Items [5573]
+Creature 170009: Items [5126]
+Creature 319739: Items [8753]
+Creature 319738: Items [8752]
+Creature 319737: Items [8750]
+Creature 319736: Items [8751]
+Creature 499730: Items [8722]
+Creature 117659: Items [5177]
+Creature 117658: Items [5176]
+Creature 117657: Items [5175]
+Creature 117656: Items [5174]
+Creature 11000142: Items [8864]
+Creature 10479: Items [3092]
+Creature 254488: Items [5701, 5706, 5707, 5708]
+Creature 866924: Items [7057]
+Creature 599792: Items [8324]
+Creature 41840: Items [9407]
+Creature 599822: Items [8357]
+Creature 499735: Items [8724]
+Creature 44249: Items [1212]
+Creature 237022: Items [9638]
+Creature 2143: Items [5822]
+Creature 12439: Items [9253]
+Creature 170008: Items [5125]
+Creature 79078: Items [7521]
+Creature 10500029: Items [8761]
+Creature 43374: Items [531]
+Creature 81371: Items [8808]
+Creature 201699: Items [9500]
+Creature 16520: Items [2289]
+Creature 117849: Items [9541]
+Creature 8910: Items [6804]
+Creature 180011: Items [9459]
+Creature 43985: Items [1080]
+Creature 79060: Items [7503]
+Creature 347776: Items [5876]
+Creature 43778: Items [935]
+Creature 201698: Items [9499]
+Creature 201697: Items [9498]
+Creature 357328: Items [5550]
+Creature 2196: Items [5549]
+Creature 66984: Items [3323]
+Creature 499630: Items [8684]
+Creature 499789: Items [8710]
+Creature 79142: Items [7573]
+Creature 16445: Items [69]
+Creature 122985: Items [9586]
+Creature 50009: Items [5950]
+Creature 54487: Items [1625]
+Creature 11000125: Items [9138]
+Creature 50111: Items [4554]
+Creature 50110: Items [4553]
+Creature 50109: Items [4552]
+Creature 43654: Items [822]
+Creature 10500060: Items [8783]
+Creature 347775: Items [5875]
+Creature 43918: Items [1046]
+Creature 11000106: Items [8831]
+Creature 100567: Items [3670]
+Creature 100566: Items [3669]
+Creature 50042: Items [3585]
+Creature 50041: Items [3584]
+Creature 50040: Items [3583]
+Creature 499794: Items [8704]
+Creature 50029: Items [9361]
+Creature 50022: Items [5962]
+Creature 50021: Items [5961]
+Creature 50020: Items [5960]
+Creature 50019: Items [5959]
+Creature 50017: Items [5957]
+Creature 50016: Items [5956]
+Creature 50015: Items [5955]
+Creature 50014: Items [5954]
+Creature 50013: Items [5953]
+Creature 11000058: Items [8825]
+Creature 50011: Items [5952]
+Creature 50010: Items [5951]
+Creature 44078: Items [1132]
+Creature 50008: Items [5949]
+Creature 81039: Items [4184]
+Creature 50006: Items [5947]
+Creature 50005: Items [5946]
+Creature 43653: Items [821]
+Creature 499521: Items [6360]
+Creature 322520: Items [6108]
+Creature 599819: Items [8355]
+Creature 11000105: Items [8838]
+Creature 499628: Items [8682]
+Creature 44065: Items [1127]
+Creature 16244: Items [3168]
+Creature 50007: Items [5948]
+Creature 24654: Items [161]
+Creature 24653: Items [160]
+Creature 81038: Items [4183]
+Creature 11000187: Items [8901]
+Creature 43487: Items [638]
+Creature 43652: Items [820]
+Creature 69829: Items [8327]
+Creature 75137: Items [6521]
+Creature 75136: Items [3896]
+Creature 33029: Items [240]
+Creature 75120: Items [7340]
+Creature 75119: Items [3523]
+Creature 80495: Items [6802]
+Creature 75115: Items [3522]
+Creature 599818: Items [8354]
+Creature 76: Items [6951]
+Creature 43734: Items [894]
+Creature 428690: Items [5861]
+Creature 428689: Items [5860]
+Creature 428688: Items [5859]
+Creature 43899: Items [1029]
+Creature 428685: Items [5857]
+Creature 44064: Items [1126]
+Creature 46109: Items [1589]
+Creature 36986: Items [8127]
+Creature 66645: Items [3280]
+Creature 133996: Items [9228]
+Creature 133995: Items [9227]
+Creature 1000003: Items [9367]
+Creature 254610: Items [9123]
+Creature 32944: Items [244]
+Creature 43911: Items [1040]
+Creature 10500057: Items [8786]
+Creature 322518: Items [6107]
+Creature 24669: Items [3501]
+Creature 7664: Items [2606]
+Creature 53490: Items [5606]
+Creature 599817: Items [8353]
+Creature 100264: Items [9169]
+Creature 100263: Items [9165]
+Creature 11000103: Items [8837]
+Creature 100261: Items [9163]
+Creature 24488: Items [159]
+Creature 100258: Items [9159]
+Creature 499461: Items [6316]
+Creature 100252: Items [9155]
+Creature 100251: Items [9154]
+Creature 43898: Items [1028]
+Creature 100240: Items [7346]
+Creature 100239: Items [7347]
+Creature 100238: Items [7345]
+Creature 100237: Items [7344]
+Creature 100236: Items [7352]
+Creature 170003: Items [5123]
+Creature 100230: Items [6549]
+Creature 100228: Items [3532]
+Creature 100227: Items [3530]
+Creature 100226: Items [3531]
+Creature 100223: Items [3529]
+Creature 100222: Items [3528]
+Creature 43650: Items [818]
+Creature 942100: Items [7319, 7320, 7321]
+Creature 41266: Items [9107]
+Creature 41265: Items [9106]
+Creature 41264: Items [9105]
+Creature 41258: Items [9104]
+Creature 41257: Items [9103]
+Creature 10500056: Items [8787]
+Creature 41255: Items [9101]
+Creature 41254: Items [9100]
+Creature 41247: Items [9090]
+Creature 53531: Items [9046]
+Creature 41243: Items [9088]
+Creature 41242: Items [9087]
+Creature 41241: Items [9086]
+Creature 41240: Items [9085]
+Creature 41239: Items [9084]
+Creature 41238: Items [9083]
+Creature 41237: Items [9082]
+Creature 108586: Items [9678]
+Creature 599816: Items [8352]
+Creature 11000102: Items [8836]
+Creature 7547: Items [179]
+Creature 24379: Items [152]
+Creature 41216: Items [9054]
+Creature 41214: Items [9617]
+Creature 41213: Items [9616]
+Creature 41212: Items [9615]
+Creature 7535: Items [6010]
+Creature 499788: Items [8696]
+Creature 224379: Items [7984]
+Creature 43897: Items [1027]
+Creature 24368: Items [155]
+Creature 41256: Items [9102]
+Creature 79137: Items [7569]
+Creature 319022: Items [1414]
+Creature 319021: Items [1411]
+Creature 36985: Items [8126]
+Creature 79075: Items [7518]
+Creature 12453: Items [9259]
+Creature 98482: Items [6587]
+Creature 1000001: Items [7371]
+Creature 43649: Items [817]
+Creature 11000130: Items [8853]
+Creature 125329: Items [9551]
+Creature 125328: Items [9550]
+Creature 125327: Items [9549]
+Creature 125326: Items [9548]
+Creature 125324: Items [9547]
+Creature 624379: Items [8114]
+Creature 599815: Items [8351]
+Creature 7449: Items [2164]
+Creature 100037: Items [3665]
+Creature 79136: Items [7568]
+Creature 44226: Items [1209]
+Creature 100016: Items [1420]
+Creature 100011: Items [3663]
+Creature 100010: Items [3662]
+Creature 100009: Items [3661]
+Creature 100008: Items [3655]
+Creature 100007: Items [3654]
+Creature 100006: Items [3653]
+Creature 11000183: Items [8897]
+Creature 100003: Items [3652]
+Creature 100000: Items [7349]
+Creature 43648: Items [816]
+Creature 32643: Items [243]
+Creature 116820: Items [5632]
+Creature 116819: Items [5631]
+Creature 116818: Items [5630]
+Creature 116817: Items [5628]
+Creature 7361: Items [737]
+Creature 27637: Items [196]
+Creature 34652: Items [7260]
+Creature 554565: Items [9300]
+Creature 554560: Items [9296]
+Creature 554559: Items [9295]
+Creature 554558: Items [9294]
+Creature 554557: Items [9293]
+Creature 79135: Items [7567]
+Creature 49412: Items [7337]
+Creature 11000017: Items [8812]
+Creature 43370: Items [527]
+Creature 15715: Items [7422]
+Creature 15714: Items [7423]
+Creature 11000182: Items [8896]
+Creature 43482: Items [634]
+Creature 11000139: Items [8861]
+Creature 108312: Items [5689]
+Creature 421467: Items [5555]
+Creature 34156: Items [252]
+Creature 10500053: Items [8778]
+Creature 79052: Items [3852]
+Creature 200173: Items [8395]
+Creature 599829: Items [8364]
+Creature 100262: Items [9164]
+Creature 66177: Items [3248]
+Creature 66176: Items [3247]
+Creature 499732: Items [8721]
+Creature 15649: Items [2275]
+Creature 32484: Items [283]
+Creature 499815: Items [6442]
+Creature 66150: Items [3242]
+Creature 499642: Items [8287]
+Creature 81197: Items [4219]
+Creature 11000181: Items [8895]
+Creature 43481: Items [633]
+Creature 24004: Items [149]
+Creature 3124: Items [1942]
+Creature 11000170: Items [8893]
+Creature 122988: Items [9589]
+Creature 10500052: Items [8779]
+Creature 44141: Items [1174]
+Creature 15571: Items [1077]
+Creature 11000206: Items [8918]
+Creature 599812: Items [8350]
+Creature 203858: Items [9399]
+Creature 217615: Items [5557, 7288]
+Creature 43618: Items [773]
+Creature 499786: Items [8697]
+Creature 11000015: Items [8811]
+Creature 81196: Items [4218]
+Creature 11000180: Items [8894]
+Creature 800007: Items [7367]
+Creature 11000128: Items [8851]
+Creature 43975: Items [1076]
+Creature 44140: Items [1172]
+Creature 599828: Items [8363]
+Creature 49153: Items [1419]
+Creature 49152: Items [1418]
+Creature 49151: Items [1417]
+Creature 49150: Items [1416]
+Creature 49149: Items [1415]
+Creature 11000097: Items [6576]
+Creature 141742: Items [8123]
+Creature 141741: Items [8122]
+Creature 141740: Items [8121]
+Creature 43892: Items [1023]
+Creature 10500028: Items [8790]
+Creature 44057: Items [1122]
+Creature 218937: Items [5709]
+Creature 44115: Items [1346]
+Creature 11000055: Items [8877]
+Creature 57500: Items [7143]
+Creature 67330: Items [7261]
+Creature 43644: Items [812]
+Creature 10500050: Items [8781]
+Creature 44488: Items [1294]
+Creature 44139: Items [1168]
+Creature 40631: Items [9223]
+Creature 40630: Items [9222]
+Creature 23789: Items [7853]
+Creature 40625: Items [416]
+Creature 40624: Items [415]
+Creature 32203: Items [235]
+Creature 51649: Items [1428]
+Creature 15361: Items [61]
+Creature 11000096: Items [8828]
+Creature 40611: Items [3537]
+Creature 40610: Items [3536]
+Creature 40609: Items [3535]
+Creature 6932: Items [6846]
+Creature 15666: Items [7420]
+Creature 32180: Items [7891]
+Creature 79080: Items [7523]
+Creature 43891: Items [1022]
+Creature 44056: Items [1121]
+Creature 79131: Items [7563]
+Creature 32158: Items [234]
+Creature 32157: Items [233]
+Creature 43608: Items [756]
+Creature 12447: Items [9256]
+Creature 146507: Items [5981]
+Creature 11000013: Items [8809]
+Creature 48982: Items [1341]
+Creature 11000210: Items [8922]
+Creature 40555: Items [281]
+Creature 43808: Items [952]
+Creature 11000127: Items [8850]
+Creature 116309: Items [9380]
+Creature 44138: Items [1167]
+Creature 116306: Items [9378]
+Creature 116305: Items [9454]
+Creature 116303: Items [9453]
+Creature 116301: Items [9451]
+Creature 81111: Items [8308]
+Creature 11000095: Items [8827]
+Creature 43890: Items [1021]
+Creature 79130: Items [7562]
+Creature 24743: Items [162]
+Creature 44385: Items [1271]
+Creature 81193: Items [3913]
+Creature 11000177: Items [8892]
+Creature 43477: Items [629]
+Creature 43948: Items [1064]
+Creature 10500051: Items [8780]
+Creature 15186: Items [60]
+Creature 10500048: Items [8774]
+Creature 44137: Items [1166]
+Creature 301422: Items [5984]
+Creature 301421: Items [3266]
+Creature 499675: Items [8747]
+Creature 10960: Items [8136]
+Creature 599808: Items [8338]
+Creature 81110: Items [8307]
+Creature 11000094: Items [8826]
+Creature 228425: Items [9236]
+Creature 43889: Items [1020]
+Creature 499947: Items [6318]
+Creature 79129: Items [7561]
+Creature 12445: Items [9255]
+Creature 116136: Items [5799]
+Creature 116135: Items [5798]
+Creature 116134: Items [5797]
+Creature 43311: Items [473]
+Creature 15104: Items [59]
+Creature 116131: Items [5794]
+Creature 116130: Items [5793]
+Creature 116129: Items [5792]
+Creature 116128: Items [5791]
+Creature 11000209: Items [8921]
+Creature 11000137: Items [8859]
+Creature 104864: Items [9369]
+Creature 499534: Items [6369]
+Creature 15090: Items [58]
+Creature 11000126: Items [8849]
+Creature 10500047: Items [8775]
+Creature 11000184: Items [8898]
+Creature 44136: Items [1165]
+Creature 100256: Items [9158]
+Creature 599807: Items [8337]
+Creature 43393: Items [551]
+Creature 170010: Items [5127]
+Creature 699796: Items [8312]
+Creature 23460: Items [137]
+Creature 23459: Items [140]
+Creature 23458: Items [138]
+Creature 23457: Items [139]
+Creature 23456: Items [136]
+Creature 23455: Items [135]
+Creature 228424: Items [9235]
+Creature 43888: Items [1019]
+Creature 354104: Items [9116]
+Creature 357777: Items [9197]
+Creature 499639: Items [8693]
+Creature 218942: Items [5712]
+Creature 499533: Items [6368]
+Creature 1000013: Items [7417]
+Creature 23408: Items [134]
+Creature 116016: Items [5790]
+Creature 1000009: Items [7380]
+Creature 116013: Items [5789]
+Creature 1000007: Items [7379]
+Creature 1000006: Items [7378]
+Creature 739016: Items [1683]
+Creature 1000004: Items [9368]
+Creature 6561: Items [6901]
+Creature 100219: Items [7350]
+Creature 100255: Items [9157]
+Creature 48641: Items [1336]
+Creature 599806: Items [8336]
+Creature 11000092: Items [8824]
+Creature 23355: Items [2827]
+Creature 23353: Items [2826]
+Creature 48609: Items [1335]
+Creature 43887: Items [1018]
+Creature 6499: Items [2126]
+Creature 6498: Items [2125]
+Creature 10500021: Items [8796]
+Creature 6488: Items [703]
+Creature 1219: Items [9148]
+Creature 11000208: Items [8920]
+Creature 499532: Items [6367]
+Creature 309553: Items [9306]
+Creature 309552: Items [9305]
+Creature 309551: Items [9304]
+Creature 309550: Items [9303]
+Creature 309549: Items [9302]
+Creature 499697: Items [8742]
+Creature 40629: Items [9221]
+Creature 43969: Items [1070]
+Creature 599825: Items [8360]
+Creature 99033: Items [8131]
+Creature 43721: Items [881]
+Creature 228422: Items [9233]
+Creature 43886: Items [1017]
+Creature 11000203: Items [8915]
+Creature 44051: Items [1116]
+Creature 218931: Items [6726]
+Creature 94059: Items [7245]
+Creature 23234: Items [131]
+Creature 499638: Items [8692]
+Creature 402069: Items [7336]
+Creature 402068: Items [7335]
+Creature 402067: Items [7334]
+Creature 402066: Items [7333]
+Creature 402065: Items [7332]
+Creature 402064: Items [7331]
+Creature 43638: Items [806]
+Creature 14505: Items [7494]
+Creature 10500044: Items [8777]
+Creature 519910: Items [9122]
+Creature 44133: Items [1163]
+Creature 519908: Items [9121]
+Creature 519907: Items [9110]
+Creature 519906: Items [9109]
+Creature 428686: Items [5858]
+Creature 321267: Items [9562]
+Creature 499779: Items [8715]
+Creature 43390: Items [548]
+Creature 499448: Items [6225]
+Creature 800008: Items [7368]
+Creature 228421: Items [9232]
+Creature 499778: Items [8310]
+Creature 371436: Items [9486]
+Creature 578796: Items [9652]
+Creature 218930: Items [6798]
+Creature 14712: Items [5983]
+Creature 376519: Items [9664]
+Creature 10500020: Items [8797]
+Creature 98476: Items [6596, 6597]
+Creature 599886: Items [5996]
+Creature 149399: Items [8367]
+Creature 800020: Items [5838]
+Creature 317773: Items [8051]
+Creature 44132: Items [1162]
+Creature 321266: Items [9561]
+Creature 6235: Items [700]
+Creature 43498: Items [649]
+Creature 6229: Items [699]
+Creature 6228: Items [698]
+Creature 50030: Items [9362]
+Creature 499777: Items [8311]
+Creature 218929: Items [6796]
+Creature 10500061: Items [8782]
+Creature 499637: Items [8691]
+Creature 10500018: Items [8767]
+Creature 599885: Items [5995]
+Creature 43945: Items [1062]
+Creature 10500042: Items [8770]
+Creature 48245: Items [9605]
+Creature 48243: Items [9603]
+Creature 48242: Items [1213]
+Creature 14565: Items [7495]
+Creature 22978: Items [125]
+Creature 22977: Items [124]
+Creature 22976: Items [123]
+Creature 22975: Items [122]
+Creature 45864: Items [1526]
+Creature 22958: Items [121]
+Creature 44270: Items [1222]
+Creature 499519: Items [6358]
+Creature 119315: Items [4849]
+Creature 376528: Items [9670]
+Creature 376526: Items [9669]
+Creature 376518: Items [9663]
+Creature 115535: Items [5640]
+Creature 115533: Items [5637]
+Creature 115532: Items [5636]
+Creature 115530: Items [5635]
+Creature 499595: Items [6400]
+Creature 115528: Items [5634]
+Creature 11000141: Items [8863]
+Creature 915323: Items [5466]
+Creature 915322: Items [5223]
+Creature 915321: Items [5222]
+Creature 915320: Items [5644]
+Creature 915319: Items [5643]
+Creature 915318: Items [5642]
+Creature 90248: Items [282]
+Creature 292303: Items [4389]
+Creature 292302: Items [4388]
+Creature 10500041: Items [8771]
+Creature 14502: Items [2647]
+Creature 170007: Items [5124]
+Creature 216493: Items [5167]
+Creature 499785: Items [8698]
+Creature 48107: Items [1210]
+Creature 43882: Items [1015]
+Creature 81058: Items [8290]
+Creature 22828: Items [2811]
+Creature 98598: Items [3582]
+Creature 98597: Items [3581]
+Creature 22825: Items [2809]
+Creature 31239: Items [245]
+Creature 117844: Items [9538]
+Creature 43944: Items [1061]
+Creature 124379: Items [7918]
+Creature 306: Items [6565]
+Creature 11000190: Items [8904]
+Creature 224848: Items [5688]
+Creature 224847: Items [5687]
+Creature 224846: Items [5686]
+Creature 224845: Items [5685]
+Creature 10500040: Items [8772]
+Creature 16069: Items [67]
+Creature 325866: Items [5998]
+Creature 325865: Items [5997]
+Creature 425924: Items [8120]
+Creature 43386: Items [544]
+Creature 14336: Items [98]
+Creature 14335: Items [94]
+Creature 14334: Items [92]
+Creature 14333: Items [93]
+Creature 14332: Items [95]
+Creature 14330: Items [99]
+Creature 14329: Items [96]
+Creature 43716: Items [876]
+Creature 98501: Items [8652]
+Creature 98500: Items [3520]
+Creature 98499: Items [3357]
+Creature 98497: Items [3648]
+Creature 98496: Items [3647]
+Creature 98495: Items [1438]
+Creature 98488: Items [6595]
+Creature 98487: Items [6594]
+Creature 426827: Items [5905]
+Creature 426826: Items [5904]
+Creature 426825: Items [5903]
+Creature 426824: Items [5902]
+Creature 426823: Items [5901]
+Creature 1100342: Items [1685]
+Creature 1100341: Items [3836]
+Creature 1100340: Items [3834]
+Creature 1100339: Items [3835]
+Creature 98477: Items [6584]
+Creature 31124: Items [231]
+Creature 43468: Items [621]
+Creature 67319: Items [3344]
+Creature 10500039: Items [8773]
+Creature 309548: Items [9301]
+Creature 46026: Items [1569]
+Creature 43385: Items [543]
+Creature 499718: Items [8319]
+Creature 44109: Items [1150]
+Creature 148911: Items [9177]
+Creature 10500059: Items [8784]
+Creature 79025: Items [3772]
+Creature 12436: Items [9252]
+Creature 11000167: Items [8886]
+Creature 211497: Items [5760]
+Creature 43860: Items [994]
+Creature 47841: Items [7267]
+Creature 499644: Items [8285]
+Creature 7800: Items [740]
+Creature 44127: Items [1160]
+Creature 148069: Items [7750]
+Creature 97606: Items [9145]
+Creature 43694: Items [857]
+Creature 10500038: Items [8762]
+Creature 94057: Items [7243]
+Creature 43879: Items [1012]
+Creature 499593: Items [6394]
+Creature 519909: Items [9113]
+Creature 53287: Items [5943]
+Creature 16974: Items [3833]
+Creature 43631: Items [799]
+Creature 354107: Items [9119]
+Creature 11000189: Items [8903]
+Creature 10500037: Items [8763]
+Creature 44126: Items [1159]
+Creature 371438: Items [9488]
+Creature 300285: Items [5990]
+Creature 599797: Items [8333]
+Creature 43713: Items [873]
+Creature 43878: Items [1011]
+Creature 4759: Items [5545]
+Creature 79107: Items [7540]
+Creature 308385: Items [9632]
+Creature 10500058: Items [8785]
+Creature 104867: Items [9372]
+Creature 11000165: Items [8882]
+Creature 800013: Items [7414]
+Creature 11361: Items [2215]
+Creature 223957: Items [5749]
+Creature 354106: Items [9118]
+Creature 10500036: Items [8764]
+Creature 371437: Items [9487]
+Creature 56031: Items [1628]
+Creature 357902: Items [5920]
+Creature 123380: Items [9331]
+Creature 123379: Items [9330]
+Creature 123377: Items [9329]
+Creature 123376: Items [9328]
+Creature 94055: Items [7241]
+Creature 300157: Items [5982]
+Creature 300156: Items [5980]
+Creature 300155: Items [3762]
+Creature 300154: Items [3756]
+Creature 300153: Items [3727]
+Creature 300152: Items [3699]
+Creature 300151: Items [3314]
+Creature 300150: Items [3296]
+Creature 300148: Items [6540]
+Creature 79117: Items [7550]
+Creature 123340: Items [9411]
+Creature 11000133: Items [8855]
+Creature 800012: Items [7413]
+Creature 43629: Items [797]
+Creature 55963: Items [6607]
+Creature 14331: Items [97]
+Creature 22281: Items [2807]
+Creature 499643: Items [8286]
+Creature 599820: Items [8356]
+Creature 81194: Items [3930]
+Creature 44454: Items [1283]
+Creature 499799: Items [8701]
+Creature 94054: Items [7240]
+Creature 123228: Items [9398]
+Creature 43876: Items [1009]
+Creature 81055: Items [8288]
+Creature 10500054: Items [8789]
+Creature 139981: Items [9231]
+Creature 97808: Items [6865]
+Creature 254491: Items [5704]
+Creature 11000163: Items [8885]
+Creature 43463: Items [616]
+Creature 43628: Items [796]
+Creature 21510: Items [108]
+Creature 81109: Items [8306]
+Creature 81108: Items [8305]
+Creature 81107: Items [8304]
+Creature 81106: Items [8303]
+Creature 81105: Items [8302]
+Creature 81104: Items [8301]
+Creature 81103: Items [8300]
+Creature 81102: Items [8299]
+Creature 81101: Items [8298]
+Creature 81100: Items [8297]
+Creature 5325: Items [5457]
+Creature 5324: Items [5456]
+Creature 5322: Items [5455]
+Creature 81081: Items [8295]
+Creature 81080: Items [8294]
+Creature 308390: Items [9637]
+Creature 308389: Items [9636]
+Creature 308388: Items [9635]
+Creature 308387: Items [9634]
+Creature 308386: Items [9633]
+Creature 50027: Items [9359]
+Creature 499757: Items [6336]
+Creature 139999: Items [9045]
+Creature 81064: Items [8293]
+Creature 139996: Items [9042]
+Creature 400984: Items [3514]
+Creature 400982: Items [3513]
+Creature 499933: Items [6523]
+Creature 81044: Items [1413]
+Creature 81043: Items [1412]
+Creature 81040: Items [1684]
+Creature 81037: Items [4182]
+Creature 133997: Items [9229]
+Creature 81035: Items [3625]
+Creature 81033: Items [3623]
+Creature 81032: Items [3622]
+Creature 81031: Items [3621]
+Creature 11000160: Items [8870]
+Creature 43462: Items [615]
+Creature 599800: Items [8335]
+Creature 21216: Items [6784]
+Creature 354103: Items [9115]
+Creature 653493: Items [9662]
+Creature 653492: Items [9661]
+Creature 653491: Items [9660]
+Creature 5226: Items [2074]
+Creature 43733: Items [893]
+Creature 116302: Items [9452]
+Creature 97825: Items [6890]
+Creature 81095: Items [8296]
+Creature 43544: Items [692]
+Creature 41209: Items [9613]
+Creature 699798: Items [8313, 8314]
+Creature 499549: Items [6373]
+Creature 11000132: Items [8856]
+Creature 54374: Items [6226]
+Creature 254489: Items [5702]
+Creature 180660: Items [5801]
+Creature 11000161: Items [8884]
+Creature 43461: Items [614]
+Creature 80919: Items [3518]
+Creature 117655: Items [5173]
+Creature 43626: Items [794]
+Creature 354102: Items [9114]
+Creature 116132: Items [5795]
+Creature 11000215: Items [9364]
+Creature 10500032: Items [8758]
+Creature 80899: Items [5848]
+Creature 80893: Items [3507]
+Creature 122987: Items [9588]
+Creature 122986: Items [9587]
+Creature 80890: Items [3506]
+Creature 80888: Items [3504]
+Creature 80887: Items [3503]
+Creature 80884: Items [3497]
+Creature 80883: Items [3496]
+Creature 80882: Items [3495]
+Creature 80881: Items [3494]
+Creature 80879: Items [3480]
+Creature 43543: Items [691]
+Creature 499756: Items [6425]
+Creature 43873: Items [1006]
+Creature 101231: Items [3594]
+Creature 599790: Items [8323]
+Creature 357485: Items [9149]
+Creature 499531: Items [6366]
+Creature 207118: Items [5863]
+Creature 207115: Items [5847]
+Creature 80403: Items [8130]
+Creature 5048: Items [2069]
+Creature 10500030: Items [8760]
+Creature 11000118: Items [8843]
+Creature 43625: Items [790]
+Creature 3674: Items [587]
+Creature 106067: Items [5528]
+Creature 74491: Items [8224]
+Creature 11000231: Items [9024]
+Creature 11000230: Items [8930]
+Creature 11000224: Items [8931]
+Creature 170002: Items [5122]
+Creature 11000217: Items [9366]
+Creature 11000216: Items [9365]
+Creature 11000214: Items [9363]
+Creature 97608: Items [9146]
+Creature 11000212: Items [8929]
+Creature 11000211: Items [8928]
+Creature 43542: Items [690]
+Creature 11000207: Items [8919]
+Creature 148115: Items [7834]
+Creature 11000199: Items [8911]
+Creature 22827: Items [2810]
+Creature 11000197: Items [8910]
+Creature 11000195: Items [8909]
+Creature 21818: Items [7839]
+Creature 499930: Items [6528]
+Creature 11000186: Items [8900]
+Creature 11000185: Items [8899]
+Creature 392243: Items [5919]
+Creature 392242: Items [5918]
+Creature 392241: Items [5624, 5917]
+Creature 392240: Items [5916]
+Creature 392239: Items [5623]
+Creature 392238: Items [5622]
+Creature 11000176: Items [8891]
+Creature 207016: Items [5763]
+Creature 207015: Items [5762]
+Creature 11000166: Items [8883]
+Creature 148070: Items [7753]
+Creature 43459: Items [612]
+Creature 11000156: Items [8868]
+Creature 11000155: Items [8873]
+Creature 43624: Items [789]
+Creature 11520: Items [941]
+Creature 11000123: Items [8848]
+Creature 11000120: Items [8845]
+Creature 11000116: Items [8841]
+Creature 11000110: Items [8839]
+Creature 11000108: Items [8832]
+Creature 11000107: Items [8830]
+Creature 43541: Items [689]
+Creature 499755: Items [6424]
+Creature 499599: Items [6403]
+Creature 21723: Items [2396]
+Creature 80654: Items [3493]
+Creature 80653: Items [3492]
+Creature 11000091: Items [8823]
+Creature 11000090: Items [8822]
+Creature 11000089: Items [8821]
+Creature 79111: Items [7544]
+Creature 11000083: Items [8820]
+Creature 11000068: Items [8817]
+Creature 55367: Items [1626]
+Creature 500589: Items [8048]
+Creature 11000059: Items [8829]
+Creature 800006: Items [7366]
+Creature 11000057: Items [8872]
+Creature 11000056: Items [8878]
+Creature 11000054: Items [8876]
+Creature 11000053: Items [8887]
+Creature 43623: Items [785]
+Creature 11000051: Items [8871]
+Creature 11000050: Items [8890]
+Creature 11000049: Items [8875]
+Creature 11000048: Items [8874]
+Creature 11000047: Items [8889]
+Creature 11000046: Items [8816]
+Creature 11000045: Items [8865]
+Creature 43953: Items [1068]
+Creature 554563: Items [9299]
+Creature 21656: Items [2798]
+Creature 12449: Items [9257]
+Creature 114259: Items [5660]
+Creature 11000025: Items [8923]
+Creature 89000: Items [5855]
+Creature 11000023: Items [8924]
+Creature 11000022: Items [8925]
+Creature 11000021: Items [8926]
+Creature 11000020: Items [8927]
+Creature 46898: Items [1379]
+Creature 11000016: Items [8810]
+Creature 46896: Items [1195]
+Creature 11000014: Items [8757]
+Creature 43540: Items [688]
+Creature 11000001: Items [8813]
+Creature 11000000: Items [8814]
+Creature 44035: Items [1109]
+Creature 48244: Items [9604]
+Creature 80541: Items [3484]
+Creature 4769: Items [4860]
+Creature 4768: Items [4859]
+Creature 4767: Items [4858]
+Creature 4766: Items [4857]
+Creature 4765: Items [4856]
+Creature 4764: Items [4855]
+Creature 4763: Items [4854]
+Creature 4762: Items [4853]
+Creature 4761: Items [4852]
+Creature 4760: Items [5546]
+Creature 80530: Items [3483]
+Creature 4758: Items [5544]
+Creature 4756: Items [5543]
+Creature 4755: Items [5542]
+Creature 4754: Items [5541]
+Creature 800005: Items [7365]
+Creature 105767: Items [9143]
+Creature 43622: Items [779]
+Creature 407322: Items [5878]
+Creature 80494: Items [6801]
+Creature 80493: Items [6800]
+Creature 79027: Items [3, 3775]
+Creature 44117: Items [1154]
+Creature 554562: Items [9298]
+Creature 499754: Items [6423]
+Creature 417217: Items [6135]
+Creature 407659: Items [9621]
+Creature 358262: Items [6956]
+Creature 21497: Items [7833]
+Creature 153496: Items [6557]
+Creature 354108: Items [9120]
+Creature 699754: Items [7055]
+Creature 43621: Items [778]
+Creature 11517: Items [938]
+Creature 80397: Items [7589]
+Creature 80395: Items [7588]
+Creature 80394: Items [7587]
+Creature 10500027: Items [8791]
+Creature 44116: Items [1153]
+Creature 554561: Items [9297]
+Creature 38290: Items [9312]
+Creature 116299: Items [9450]
+Creature 988501: Items [8347]
+Creature 80370: Items [7586]
+Creature 599787: Items [8321]
+Creature 43373: Items [530]
+Creature 116133: Items [5796]
+Creature 43538: Items [686]
+Creature 80355: Items [7585]
+Creature 499596: Items [6406]
+Creature 358174: Items [4550]
+Creature 80345: Items [7584]
+Creature 81051: Items [8291]
+Creature 63502: Items [2815]
+Creature 44033: Items [1107]
+Creature 407658: Items [9620]
+Creature 499629: Items [8683]
+Creature 476024: Items [5989]
+Creature 476023: Items [5988]
+Creature 476022: Items [5987]
+Creature 476020: Items [5986]
+Creature 476019: Items [5985]
+Creature 119921: Items [5906]
+Creature 11000157: Items [8869]
+Creature 80307: Items [7583]
+Creature 43620: Items [777]
+Creature 80301: Items [7582]
+Creature 38204: Items [353]
+Creature 10500026: Items [8792]
+Creature 69204: Items [8330]
+Creature 21354: Items [105]
+Creature 218966: Items [5729]
+Creature 80281: Items [7581]
+Creature 44445: Items [1282]
+Creature 80271: Items [7580]
+Creature 80269: Items [7579]
+Creature 80267: Items [7578]
+Creature 80263: Items [7577]
+Creature 43372: Items [529]
+Creature 80259: Items [7575]
+Creature 842010: Items [9497]
+Creature 499753: Items [6422]
+Creature 36687: Items [9405]
+Creature 29726: Items [218]
+Creature 105764: Items [9140]
+Creature 699753: Items [7054]
+Creature 44034: Items [1108]
+Creature 358032: Items [6953]
+Creature 21267: Items [8366]
+Creature 116298: Items [9449]
+Creature 125323: Items [9546]
+Creature 254069: Items [5693]
+Creature 44444: Items [1281]
+Creature 54907: Items [9059]
+Creature 54905: Items [9057]
+Creature 54904: Items [9053]
+Creature 43371: Items [528]
+Creature 357970: Items [6952]
+Creature 421491: Items [7459]
+Creature 79140: Items [7571]
+Creature 499924: Items [6526]
+Creature 79106: Items [7539]
+Creature 105766: Items [9142]
+Creature 273761: Items [4914]
+Creature 4351: Items [2030]
+Creature 46417: Items [5753]
+Creature 46415: Items [5752]
+Creature 46412: Items [5750]
+Creature 357913: Items [9650]
+Creature 228427: Items [9238]
+Creature 499918: Items [6420]
+Creature 125322: Items [9545]
+Creature 100233: Items [7351]
+Creature 357896: Items [5965]
+Creature 357895: Items [6577]
+Creature 357890: Items [6101]
+Creature 357889: Items [6102]
+Creature 80054: Items [6993]
+Creature 80051: Items [3478]
+Creature 123341: Items [9412]
+Creature 357872: Items [5967]
+Creature 357864: Items [5969]
+Creature 10500010: Items [8799]
+Creature 42104: Items [7285]
+Creature 10500024: Items [8793]
+Creature 153494: Items [6555]
+Creature 11000152: Items [8879]
+Creature 54741: Items [9040]
+Creature 3586: Items [578]
+Creature 599852: Items [8387]
+Creature 98479: Items [6585]
+Creature 599814: Items [8386]
+Creature 54730: Items [1529]
+Creature 10500023: Items [8794]
+Creature 357807: Items [6955]
+Creature 105765: Items [9141]
+Creature 357791: Items [6958]
+Creature 357788: Items [9208]
+Creature 357787: Items [9207]
+Creature 357786: Items [9206]
+Creature 357785: Items [9205]
+Creature 357784: Items [9204]
+Creature 357783: Items [9203]
+Creature 357780: Items [9200]
+Creature 357779: Items [9199]
+Creature 357778: Items [9198]
+Creature 842007: Items [8447]
+Creature 36684: Items [9403]
+Creature 499592: Items [6399]
+Creature 43864: Items [997]
+Creature 43599: Items [748]
+Creature 44018: Items [1103]
+Creature 141758: Items [8748]
+Creature 4132: Items [2010]
+Creature 524379: Items [8067]
+Creature 11000151: Items [8867]
+Creature 4127: Items [2007]
+Creature 357719: Items [4545]
+Creature 357718: Items [4546]
+Creature 357717: Items [4544]
+Creature 10500022: Items [8795]
+Creature 10500005: Items [8804]
+Creature 480510: Items [8279]
+Creature 52809: Items [5968]
+Creature 44111: Items [1151]
+Creature 222999: Items [5558, 7287]
+Creature 424737: Items [5667]
+Creature 357682: Items [5966]
+Creature 357681: Items [6578]
+Creature 79141: Items [7572]
+Creature 79058: Items [5939]
+Creature 44358: Items [1258]
+Creature 500759: Items [9622]
+Creature 12452: Items [9258]
+Creature 4031: Items [1998]
+Creature 46124: Items [1612]
+Creature 46123: Items [1611]
+Creature 37703: Items [6799]
+Creature 12444: Items [9254]
+Creature 46116: Items [1610]
+Creature 46115: Items [1609]
+Creature 46114: Items [1607]
+Creature 46113: Items [1606]
+Creature 46112: Items [1605]
+Creature 46111: Items [1604]
+Creature 46110: Items [1603]
+Creature 46105: Items [1588]
+Creature 46097: Items [1587]
+Creature 46096: Items [1586]
+Creature 46095: Items [1585]
+Creature 46093: Items [1584]
+Creature 46092: Items [1583]
+Creature 46091: Items [1582]
+Creature 46090: Items [1581]
+Creature 357589: Items [6103]
+Creature 80918: Items [3517]
+Creature 499792: Items [8708]
+Creature 46076: Items [1580]
+Creature 46075: Items [1579]
+Creature 46074: Items [1578]
+Creature 46073: Items [1577]
+Creature 46071: Items [1575]
+Creature 46070: Items [1574]
+Creature 46068: Items [1573]
+Creature 46062: Items [1572]
+Creature 79102: Items [7535]
+Creature 20789: Items [2748]
+Creature 10157256: Items [7295]
+Creature 46028: Items [1570]
+Creature 11000154: Items [8881]
+Creature 46021: Items [1568]
+Creature 46020: Items [1567]
+Creature 46019: Items [1566]
+Creature 46018: Items [1565]
+Creature 46017: Items [1564]
+Creature 46015: Items [1563]
+Creature 46014: Items [1562]
+Creature 46013: Items [1561]
+Creature 46011: Items [1560]
+Creature 46010: Items [1559]
+Creature 46009: Items [1558]
+Creature 46005: Items [1555]
+Creature 46004: Items [1531, 1554]
+Creature 46003: Items [1532, 1553]
+Creature 46000: Items [1552]
+Creature 45998: Items [1551]
+Creature 45997: Items [1550]
+Creature 3898: Items [2571]
+Creature 62830: Items [9052]
+Creature 45989: Items [1549]
+Creature 424735: Items [5666]
+Creature 45987: Items [1548]
+Creature 357487: Items [4285]
+Creature 45982: Items [1546]
+Creature 45981: Items [1545, 1556, 1576]
+Creature 44224: Items [1207]
+Creature 45974: Items [1544]
+Creature 492179: Items [6151]
+Creature 45970: Items [1543]
+Creature 45968: Items [1542]
+Creature 36681: Items [9401]
+Creature 180664: Items [5804]
+Creature 180663: Items [5803]
+Creature 180659: Items [5800]
+Creature 10500008: Items [8801]
+Creature 45933: Items [1541]
+Creature 104865: Items [9370]
+Creature 45931: Items [1540]
+Creature 45930: Items [1539]
+Creature 45929: Items [1538]
+Creature 29089: Items [212]
+Creature 45924: Items [1537]
+Creature 130104: Items [6950]
+Creature 43448: Items [601]
+Creature 130101: Items [8134]
+Creature 45906: Items [5603]
+Creature 45895: Items [1536]
+Creature 45894: Items [1535]
+Creature 45893: Items [1534]
+Creature 44273: Items [1233]
+Creature 424734: Items [5665]
+Creature 424733: Items [5664]
+Creature 424731: Items [5663]
+Creature 43365: Items [522]
+Creature 45870: Items [1530]
+Creature 45869: Items [1528]
+Creature 45867: Items [1527]
+Creature 45863: Items [1525]
+Creature 45862: Items [1524]
+Creature 45860: Items [1523]
+Creature 10500002: Items [8806]
+Creature 2100: Items [5613]
+Creature 180009: Items [9457]
+Creature 100253: Items [9156]
+Creature 11000153: Items [8880]
+Creature 54227: Items [1505, 6227]
+Creature 357310: Items [6954]
+Creature 43942: Items [1059]
+Creature 44272: Items [1232]
+Creature 54423: Items [1521]
+Creature 3673: Items [586]
+Creature 3671: Items [584]
+Creature 3670: Items [583]
+Creature 3669: Items [582]
+Creature 79139: Items [7570]
+Creature 3654: Items [581]
+Creature 10500007: Items [8802]
+Creature 11000135: Items [8857]
+Creature 12058: Items [9240]
+Creature 11000194: Items [8907]
+Creature 28883: Items [210]
+Creature 80261: Items [7576]
+Creature 43348: Items [505]
+Creature 15716: Items [7421]
+Creature 43776: Items [933]
+Creature 34285: Items [9555]
+Creature 10500031: Items [8759]
+Creature 44271: Items [1229]
+Creature 3581: Items [1971]
+Creature 50028: Items [9360]
+Creature 45663: Items [1512]
+Creature 45660: Items [1510]
+Creature 45659: Items [1509]
+Creature 45657: Items [1508]
+Creature 800010: Items [7411]
+Creature 43858: Items [992]
+Creature 45642: Items [1503]
+Creature 11000099: Items [8835]
+Creature 407656: Items [9619]
+Creature 509902: Items [6572]
+Creature 10500043: Items [8769]
+Creature 454009: Items [6106]
+Creature 228423: Items [9234]
+Creature 499998: Items [6537]
+Creature 45573: Items [1492]
+Creature 53985: Items [6533]
+Creature 11876: Items [2631]
+Creature 529: Items [5526]
+Creature 11000071: Items [8818]
+Creature 354105: Items [9117]
+Creature 500155: Items [254]
+Creature 424379: Items [8050]
+Creature 130100: Items [8135]
+Creature 41236: Items [9081]
+Creature 43609: Items [757]
+Creature 222302: Items [5561, 7290]
+Creature 222301: Items [5560, 7291]
+Creature 222300: Items [5559, 7289]
+Creature 499667: Items [8746]
+Creature 376523: Items [9667]
+Creature 44178: Items [1194]
+Creature 10500015: Items [8768]
+Creature 222306: Items [9649]
+Creature 20225: Items [163]
+Creature 289612: Items [7338]
+Creature 79134: Items [7566]
+Creature 79133: Items [7565]
+Creature 79132: Items [7564]
+Creature 79128: Items [7560]
+Creature 79127: Items [7559]
+Creature 79126: Items [7558]
+Creature 79125: Items [7557]
+Creature 79124: Items [7556]
+Creature 79123: Items [7555]
+Creature 79122: Items [7554]
+Creature 79121: Items [7553]
+Creature 79120: Items [7552]
+Creature 79119: Items [7551]
+Creature 45442: Items [1467]
+Creature 79116: Items [7549]
+Creature 79115: Items [7548]
+Creature 79114: Items [7547]
+Creature 79113: Items [7546]
+Creature 79112: Items [7545]
+Creature 428691: Items [5862]
+Creature 79110: Items [7543]
+Creature 79109: Items [7542]
+Creature 79108: Items [7541]
+Creature 79105: Items [7538]
+Creature 79104: Items [7537]
+Creature 79103: Items [7536]
+Creature 79101: Items [7534]
+Creature 79100: Items [7533]
+Creature 79099: Items [7532]
+Creature 79098: Items [7531]
+Creature 79081: Items [7524]
+Creature 79077: Items [7520]
+Creature 79076: Items [7519]
+Creature 79073: Items [7516]
+Creature 500022: Items [6538]
+Creature 79070: Items [7513]
+Creature 79069: Items [7512]
+Creature 79068: Items [7511]
+Creature 79067: Items [7510]
+Creature 79066: Items [7509]
+Creature 79064: Items [7507]
+Creature 79063: Items [7506]
+Creature 79062: Items [7505]
+Creature 79061: Items [7504]
+Creature 79059: Items [5675]
+Creature 79056: Items [7491]
+Creature 79055: Items [3481]
+Creature 79054: Items [3479]
+Creature 79049: Items [3851]
+Creature 79048: Items [3850]
+Creature 79047: Items [3849]
+Creature 79045: Items [3848]
+Creature 79044: Items [3847]
+Creature 79043: Items [3846]
+Creature 79042: Items [3845]
+Creature 79041: Items [3844]
+Creature 79040: Items [3843]
+Creature 79038: Items [3842]
+Creature 79037: Items [3838]
+Creature 79034: Items [3825]
+Creature 79033: Items [3778]
+Creature 79032: Items [3777]
+Creature 79031: Items [3776]
+Creature 79026: Items [3774]
+Creature 11673: Items [2218]
+Creature 3247: Items [1956]
+Creature 79014: Items [1681]
+Creature 79013: Items [1680]
+Creature 79011: Items [1678]
+Creature 79010: Items [1677, 3837]
+Creature 79009: Items [1676]
+Creature 79007: Items [1675]
+Creature 79006: Items [1674]
+Creature 36910: Items [308]
+Creature 36909: Items [9556]
+Creature 34694: Items [263]
+Creature 499943: Items [6527]
+Creature 499940: Items [3826, 6525]
+Creature 499937: Items [6524]
+Creature 407324: Items [5880]
+Creature 407323: Items [5879]
+Creature 43607: Items [755]
+Creature 599809: Items [8339]
+Creature 499921: Items [6529]
+Creature 213040: Items [5453]
+Creature 499917: Items [8143]
+Creature 699799: Items [8315]
+Creature 20030: Items [8137]
+Creature 20029: Items [8448]
+Creature 499995: Items [6536]
+Creature 44267: Items [1219]
+Creature 254057: Items [5691]
+Creature 70525: Items [8331]
+Creature 70524: Items [8332]
+Creature 499892: Items [6515]
+Creature 499891: Items [6514]
+Creature 499890: Items [6513]
+Creature 499889: Items [6512]
+Creature 499888: Items [6511]
+Creature 499887: Items [6510]
+Creature 499886: Items [6509]
+Creature 43359: Items [516]
+Creature 499884: Items [6507]
+Creature 499883: Items [6506]
+Creature 36837: Items [304]
+Creature 499881: Items [6504]
+Creature 499880: Items [6503]
+Creature 499879: Items [6502]
+Creature 499878: Items [6501]
+Creature 499877: Items [6500]
+Creature 499876: Items [6499]
+Creature 499875: Items [6498]
+Creature 499874: Items [6497]
+Creature 45247: Items [1115]
+Creature 10500046: Items [8776]
+Creature 15711: Items [65]
+Creature 19963: Items [2728]
+Creature 499845: Items [2]
+Creature 11000150: Items [8866]
+Creature 28363: Items [285]
+Creature 499824: Items [3829]
+Creature 11519: Items [940]
+Creature 11518: Items [939]
+Creature 213039: Items [5452]
+Creature 499816: Items [6443]
+Creature 499814: Items [6440]
+Creature 43936: Items [1056]
+Creature 499812: Items [6439]
+Creature 499811: Items [6355]
+Creature 499810: Items [6433]
+Creature 499809: Items [6428]
+Creature 499808: Items [6429]
+Creature 499807: Items [6430]
+Creature 499806: Items [6431]
+Creature 499805: Items [6432]
+Creature 499804: Items [8716]
+Creature 499803: Items [8719]
+Creature 499802: Items [8717]
+Creature 499801: Items [8718]
+Creature 499800: Items [8705]
+Creature 499797: Items [8702]
+Creature 499796: Items [8703]
+Creature 499795: Items [8699]
+Creature 499793: Items [8706]
+Creature 499791: Items [8707]
+Creature 499790: Items [8709]
+Creature 499787: Items [8695]
+Creature 499784: Items [8711]
+Creature 499783: Items [8712]
+Creature 499781: Items [8714]
+Creature 499780: Items [8309]
+Creature 43853: Items [987]
+Creature 499752: Items [8741]
+Creature 499751: Items [8740]
+Creature 499750: Items [8739]
+Creature 499749: Items [8738]
+Creature 499748: Items [8737]
+Creature 499747: Items [8736]
+Creature 499746: Items [8735]
+Creature 499745: Items [8730]
+Creature 499744: Items [8729]
+Creature 499743: Items [8728]
+Creature 499742: Items [8727]
+Creature 499741: Items [8734]
+Creature 499738: Items [8731]
+Creature 499737: Items [8726]
+Creature 599854: Items [8388]
+Creature 499734: Items [8723]
+Creature 499733: Items [8720]
+Creature 36686: Items [9404]
+Creature 499729: Items [8744]
+Creature 36682: Items [9402]
+Creature 36680: Items [9400]
+Creature 499721: Items [8316]
+Creature 499720: Items [8317]
+Creature 129283: Items [3052]
+Creature 129282: Items [3051]
+Creature 499663: Items [8745]
+Creature 220053: Items [5849]
+Creature 45082: Items [1437]
+Creature 45081: Items [1436]
+Creature 499705: Items [6332]
+Creature 499704: Items [6333]
+Creature 499703: Items [6334]
+Creature 499702: Items [6335]
+Creature 45073: Items [1435]
+Creature 53491: Items [5607]
+Creature 499696: Items [8320]
+Creature 45068: Items [1434]
+Creature 45065: Items [1433]
+Creature 45064: Items [1432]
+Creature 45063: Items [1431]
+Creature 45062: Items [1430]
+Creature 61883: Items [2612]
+Creature 11365: Items [2216]
+Creature 453247: Items [9590]
+Creature 11359: Items [2214]
+Creature 44017: Items [1102]
+Creature 499656: Items [4551]
+Creature 36607: Items [294]
+Creature 499636: Items [8690]
+Creature 499635: Items [8689]
+Creature 499634: Items [8688]
+Creature 499633: Items [8687]
+Creature 499632: Items [8686]
+Creature 499631: Items [8685]
+Creature 45004: Items [1427]
+Creature 11327: Items [48]
+Creature 11326: Items [50]
+Creature 11325: Items [49]
+Creature 45000: Items [1426]
+Creature 8529: Items [3039]
+Creature 43604: Items [753]
+Creature 44983: Items [1404]
+Creature 44982: Items [1403]
+Creature 499600: Items [6402]
+Creature 499598: Items [6404]
+Creature 499597: Items [6405]
+Creature 44969: Items [1402]
+Creature 499594: Items [6401]
+Creature 103888: Items [5467]
+Creature 43514: Items [659]
+Creature 139998: Items [9044]
+Creature 499566: Items [6365]
+Creature 11261: Items [923]
+Creature 499557: Items [6364]
+Creature 36511: Items [290]
+Creature 41210: Items [9614]
+Creature 499548: Items [6372]
+Creature 499547: Items [6371]
+Creature 499546: Items [6370]
+Creature 44918: Items [1400]
+Creature 499496: Items [6351]
+Creature 44915: Items [1399]
+Creature 44914: Items [1398]
+Creature 44913: Items [1397]
+Creature 44910: Items [1396]
+Creature 44908: Items [1395]
+Creature 44907: Items [1394]
+Creature 44906: Items [1393]
+Creature 44905: Items [1392]
+Creature 36482: Items [286]
+Creature 11000138: Items [8860]
+Creature 499524: Items [6363]
+Creature 499523: Items [6362]
+Creature 499522: Items [6361]
+Creature 499520: Items [6359]
+Creature 43603: Items [752]
+Creature 11000188: Items [8902]
+Creature 10500009: Items [8800]
+Creature 98485: Items [6593]
+Creature 405944: Items [6132]
+Creature 499501: Items [6350]
+Creature 499499: Items [6353]
+Creature 499497: Items [6352]
+Creature 53289: Items [5945]
+Creature 44263: Items [1215]
+Creature 254053: Items [5690]
+Creature 53286: Items [5942]
+Creature 53285: Items [5941]
+Creature 53284: Items [5940]
+Creature 499487: Items [6341]
+Creature 499486: Items [6340]
+Creature 499485: Items [6339]
+Creature 499484: Items [6338]
+Creature 499483: Items [6337]
+Creature 499482: Items [6331]
+Creature 50024: Items [5964]
+Creature 499480: Items [6330]
+Creature 43539: Items [687]
+Creature 499477: Items [6327]
+Creature 499476: Items [6324]
+Creature 139997: Items [9043]
+Creature 43982: Items [1078]
+Creature 499460: Items [6315]
+Creature 499459: Items [6314]
+Creature 499458: Items [6313]
+Creature 499457: Items [6244]
+Creature 499456: Items [6243]
+Creature 499454: Items [6233]
+Creature 10508: Items [888]
+Creature 499495: Items [6349]
+Creature 98484: Items [6592]
+Creature 44773: Items [1389]
+Creature 499990: Items [6535]
+Creature 19514: Items [6778]
+Creature 44769: Items [1388]
+Creature 454021: Items [9639]
+Creature 44761: Items [1384]
+Creature 44759: Items [1382]
+Creature 2661: Items [5669]
+Creature 2660: Items [5668]
+Creature 19493: Items [2707]
+Creature 233997: Items [9239]
+Creature 842005: Items [8446]
+Creature 44709: Items [1352]
+Creature 44702: Items [1351]
+Creature 11021: Items [46]
+Creature 322523: Items [6111]
+Creature 322522: Items [6110]
+Creature 322521: Items [6109]
+Creature 347777: Items [5877]
+Creature 44692: Items [1348]
+Creature 347774: Items [5874]
+Creature 347773: Items [5873]
+Creature 347772: Items [5872]
+Creature 347771: Items [5871]
+Creature 19428: Items [2359]
+Creature 44677: Items [1338]
+Creature 98483: Items [6591]
+Creature 44096: Items [1145]
+Creature 480512: Items [8281]
+Creature 44666: Items [1334]
+Creature 44661: Items [1333]
+Creature 44660: Items [1332]
+Creature 44659: Items [1331]
+Creature 213038: Items [5451]
+Creature 44650: Items [1330]
+Creature 43353: Items [510]
+Creature 44646: Items [1329]
+Creature 139995: Items [9041]
+Creature 44640: Items [1328]
+Creature 44639: Items [1327]
+Creature 79092: Items [7529]
+Creature 44634: Items [1326]
+Creature 44632: Items [1325]
+Creature 53048: Items [1466]
+Creature 44627: Items [1324]
+Creature 44621: Items [1323]
+Creature 44619: Items [1322]
+Creature 44618: Items [1321]
+Creature 44617: Items [1320]
+Creature 44616: Items [1319]
+Creature 44615: Items [1318]
+Creature 44614: Items [1317]
+Creature 44612: Items [1316]
+Creature 44611: Items [1315]
+Creature 44610: Items [1314]
+Creature 44609: Items [1313]
+Creature 44606: Items [1312]
+Creature 44604: Items [1311]
+Creature 44603: Items [1310]
+Creature 44602: Items [1309]
+Creature 44601: Items [1308]
+Creature 44598: Items [1307]
+Creature 44597: Items [1306]
+Creature 44596: Items [1305]
+Creature 44595: Items [1304]
+Creature 44591: Items [1303]
+Creature 44590: Items [1302]
+Creature 44589: Items [1301]
+Creature 43600: Items [749]
+Creature 499493: Items [6347]
+Creature 376524: Items [9668]
+Creature 10500006: Items [8803]
+Creature 69830: Items [8328]
+Creature 79005: Items [1670]
+Creature 44095: Items [1144]
+Creature 480511: Items [8280]
+Creature 79093: Items [7530]
+Creature 27707: Items [198]
+Creature 44543: Items [1300]
+Creature 44542: Items [1299]
+Creature 81059: Items [8292]
+Creature 54906: Items [9058]
+Creature 10500001: Items [8807]
+Creature 499740: Items [8733]
+Creature 44673: Items [1337]
+Creature 27684: Items [197]
+Creature 218963: Items [5726]
+Creature 44508: Items [1298]
+Creature 44507: Items [1297]
+Creature 44506: Items [1296]
+Creature 2408: Items [1883]
+Creature 44496: Items [1295]
+Creature 44481: Items [1293]
+Creature 52894: Items [1462]
+Creature 98481: Items [6586]
+Creature 44471: Items [1292]
+Creature 44470: Items [1291]
+Creature 44469: Items [1290]
+Creature 44468: Items [1289]
+Creature 44467: Items [1288]
+Creature 44466: Items [1287]
+Creature 44465: Items [1286]
+Creature 44464: Items [1285]
+Creature 44463: Items [1284]
+Creature 43553: Items [701]
+Creature 44442: Items [1280]
+Creature 69696: Items [6711]
+Creature 44438: Items [1279]
+Creature 44436: Items [1278]
+Creature 44435: Items [1277]
+Creature 116307: Items [9379]
+Creature 44433: Items [1276]
+Creature 43387: Items [545]
+Creature 44011: Items [1098]
+Creature 44176: Items [1193]
+Creature 44411: Items [1275]
+Creature 44410: Items [1274]
+Creature 44409: Items [1273]
+Creature 321264: Items [9560]
+Creature 668600: Items [9675]
+Creature 52813: Items [1461]
+Creature 44386: Items [1272]
+Creature 44384: Items [1270]
+Creature 44383: Items [1269]
+Creature 44380: Items [1268]
+Creature 376522: Items [9666]
+Creature 180010: Items [9458]
+Creature 94885: Items [6566]
+Creature 44369: Items [1267]
+Creature 44368: Items [1266]
+Creature 44367: Items [1265]
+Creature 44365: Items [1264]
+Creature 44364: Items [1263]
+Creature 44363: Items [1262]
+Creature 44362: Items [1261]
+Creature 44361: Items [1260]
+Creature 44360: Items [1259]
+Creature 45661: Items [1511]
+Creature 44357: Items [1257]
+Creature 44356: Items [1256]
+Creature 44355: Items [1255]
+Creature 44354: Items [1254]
+Creature 44348: Items [1253]
+Creature 1000012: Items [7416]
+Creature 254817: Items [9437]
+Creature 44322: Items [1249]
+Creature 44316: Items [1248]
+Creature 44315: Items [1247]
+Creature 44314: Items [1246]
+Creature 44313: Items [1245]
+Creature 179016: Items [9225]
+Creature 44306: Items [1244]
+Creature 44304: Items [1243]
+Creature 44302: Items [1242]
+Creature 44301: Items [1241]
+Creature 378832: Items [9677]
+Creature 44293: Items [1240]
+Creature 338957: Items [7339]
+Creature 54491: Items [1624]
+Creature 44290: Items [1239]
+Creature 44289: Items [1238]
+Creature 2193: Items [5548]
+Creature 44287: Items [1236]
+Creature 44284: Items [1235]
+Creature 376521: Items [9665]
+Creature 44276: Items [1234]
+Creature 44269: Items [1221]
+Creature 44268: Items [1220]
+Creature 2172: Items [1861]
+Creature 44266: Items [1218]
+Creature 44265: Items [1217]
+Creature 44264: Items [1216]
+Creature 44092: Items [1143]
+Creature 44261: Items [1214]
+Creature 3900: Items [2572]
+Creature 324379: Items [8046]
+Creature 2148: Items [5827]
+Creature 2147: Items [5826]
+Creature 2146: Items [5825]
+Creature 2144: Items [5823]
+Creature 44752: Items [1378]
+Creature 79090: Items [7527]
+Creature 347310: Items [1679]
+Creature 44225: Items [1208]
+Creature 44222: Items [1206]
+Creature 347304: Items [3832]
+Creature 44219: Items [1205]
+Creature 44218: Items [1204]
+Creature 44217: Items [1203]
+Creature 44216: Items [1202]
+Creature 44215: Items [1201]
+Creature 44214: Items [1200]
+Creature 319740: Items [8754]
+Creature 254678: Items [9435]
+Creature 254677: Items [9436]
+Creature 11000131: Items [8854]
+Creature 10505: Items [885]
+Creature 10504: Items [884]
+Creature 10503: Items [883]
+Creature 10502: Items [882]
+Creature 599827: Items [8362]
+Creature 599826: Items [8361]
+Creature 44170: Items [1191]
+Creature 44169: Items [1190]
+Creature 44168: Items [1189]
+Creature 36911: Items [309]
+Creature 119931: Items [5912]
+Creature 44159: Items [1187]
+Creature 119929: Items [5910]
+Creature 10481: Items [3094]
+Creature 119926: Items [5598]
+Creature 119925: Items [5597]
+Creature 119924: Items [5909]
+Creature 44152: Items [1183]
+Creature 119922: Items [5907]
+Creature 44150: Items [1182]
+Creature 44149: Items [1181]
+Creature 44148: Items [1180]
+Creature 44147: Items [1179]
+Creature 44146: Items [1178]
+Creature 44145: Items [1177]
+Creature 599798: Items [8334]
+Creature 44143: Items [1176]
+Creature 51601: Items [1429]
+Creature 34930: Items [264]
+Creature 44751: Items [1377]
+Creature 599789: Items [8322]
+Creature 44134: Items [1164]
+Creature 44131: Items [1161]
+Creature 44120: Items [1157]
+Creature 44119: Items [1156]
+Creature 44118: Items [1155]
+Creature 44114: Items [1345]
+Creature 44113: Items [1152]
+Creature 10433: Items [875]
+Creature 216247: Items [9543]
+Creature 44101: Items [1149]
+Creature 44100: Items [1148]
+Creature 44099: Items [1147]
+Creature 44097: Items [1146]
+Creature 44091: Items [1142]
+Creature 1995: Items [1842]
+Creature 44077: Items [1131]
+Creature 44076: Items [1130]
+Creature 44074: Items [1129]
+Creature 44073: Items [1128]
+Creature 44062: Items [1125]
+Creature 44061: Items [1124]
+Creature 44060: Items [1123]
+Creature 44055: Items [1120]
+Creature 44054: Items [1119]
+Creature 44053: Items [1118]
+Creature 44052: Items [1117]
+Creature 10375: Items [2207]
+Creature 153497: Items [6558]
+Creature 10373: Items [2614]
+Creature 153495: Items [6556]
+Creature 44047: Items [1114]
+Creature 153493: Items [6554]
+Creature 153491: Items [6553]
+Creature 153490: Items [7248]
+Creature 153489: Items [7247]
+Creature 153487: Items [7249]
+Creature 60018: Items [5459]
+Creature 44038: Items [1111]
+Creature 44037: Items [1110]
+Creature 43512: Items [657]
+Creature 44024: Items [1106]
+Creature 44022: Items [535]
+Creature 44020: Items [1105]
+Creature 44019: Items [1104]
+Creature 44016: Items [1099]
+Creature 254490: Items [5703]
+Creature 44007: Items [1668]
+Creature 44006: Items [1097]
+Creature 44005: Items [1096]
+Creature 44004: Items [1095]
+Creature 44003: Items [1094]
+Creature 44002: Items [1093]
+Creature 44001: Items [1092]
+Creature 44000: Items [1091]
+Creature 380893: Items [9659]
+Creature 43998: Items [1090]
+Creature 43997: Items [1089]
+Creature 43996: Items [1088]
+Creature 43995: Items [1087]
+Creature 43994: Items [1086]
+Creature 43993: Items [1085]
+Creature 43992: Items [1084]
+Creature 27153: Items [194]
+Creature 43989: Items [1083]
+Creature 43987: Items [1082]
+Creature 43986: Items [1081]
+Creature 43983: Items [1079]
+Creature 32205: Items [236]
+Creature 11000129: Items [8852]
+Creature 43594: Items [741]
+Creature 43974: Items [1075]
+Creature 43973: Items [1074, 1571]
+Creature 43972: Items [1073]
+Creature 43971: Items [1072]
+Creature 43970: Items [1071]
+Creature 499494: Items [6348]
+Creature 499817: Items [6444]
+Creature 44089: Items [1141]
+Creature 43954: Items [1069]
+Creature 43951: Items [1067]
+Creature 43950: Items [1066]
+Creature 43949: Items [1065]
+Creature 1853: Items [523]
+Creature 43947: Items [1063]
+Creature 43943: Items [1060]
+Creature 18683: Items [3830]
+Creature 43939: Items [1058]
+Creature 43938: Items [1057]
+Creature 43935: Items [1055]
+Creature 43933: Items [1053, 1557]
+Creature 43932: Items [1052]
+Creature 405943: Items [6131]
+Creature 405942: Items [6130]
+Creature 43924: Items [1051]
+Creature 43922: Items [1050]
+Creature 43921: Items [1049]
+Creature 43920: Items [1048]
+Creature 43841: Items [975]
+Creature 43914: Items [1043]
+Creature 43913: Items [1042]
+Creature 43909: Items [1038]
+Creature 43908: Items [1037]
+Creature 43907: Items [1036]
+Creature 43906: Items [1035]
+Creature 43905: Items [1034]
+Creature 43903: Items [1032]
+Creature 43902: Items [1031]
+Creature 43901: Items [1030]
+Creature 43896: Items [1026]
+Creature 43894: Items [1025]
+Creature 43893: Items [1024]
+Creature 1795: Items [2912]
+Creature 1794: Items [2911]
+Creature 35468: Items [266]
+Creature 43885: Items [1016]
+Creature 43881: Items [1014]
+Creature 43877: Items [1010]
+Creature 43874: Items [1007]
+Creature 43872: Items [1005]
+Creature 43871: Items [1004]
+Creature 43870: Items [1003]
+Creature 43869: Items [1002]
+Creature 43868: Items [1001]
+Creature 43867: Items [1000]
+Creature 43866: Items [999]
+Creature 43865: Items [998]
+Creature 17266: Items [77]
+Creature 43863: Items [996]
+Creature 43862: Items [995]
+Creature 43859: Items [993]
+Creature 1763: Items [511]
+Creature 43857: Items [991]
+Creature 43856: Items [990]
+Creature 43855: Items [989]
+Creature 43854: Items [988]
+Creature 43852: Items [986]
+Creature 43851: Items [985]
+Creature 43850: Items [984]
+Creature 43849: Items [983]
+Creature 43848: Items [982]
+Creature 43847: Items [981]
+Creature 43846: Items [980]
+Creature 43845: Items [979]
+Creature 43844: Items [978]
+Creature 43843: Items [977]
+Creature 43842: Items [976]
+Creature 43840: Items [974]
+Creature 43839: Items [973]
+Creature 43838: Items [972]
+Creature 43837: Items [971]
+Creature 43836: Items [970]
+Creature 94058: Items [7244]
+Creature 43831: Items [969]
+Creature 43830: Items [968]
+Creature 43829: Items [967]
+Creature 43828: Items [966]
+Creature 43827: Items [965]
+Creature 43510: Items [655]
+Creature 43822: Items [963]
+Creature 43821: Items [962]
+Creature 43820: Items [961]
+Creature 43819: Items [960]
+Creature 43817: Items [959]
+Creature 43816: Items [958]
+Creature 43815: Items [957]
+Creature 43814: Items [956]
+Creature 43813: Items [955]
+Creature 43812: Items [954]
+Creature 53661: Items [1472]
+Creature 43810: Items [953]
+Creature 43806: Items [951]
+Creature 43805: Items [950]
+Creature 43804: Items [949]
+Creature 43803: Items [948]
+Creature 18545: Items [127]
+Creature 43801: Items [947]
+Creature 43798: Items [946]
+Creature 43796: Items [945]
+Creature 10119: Items [4747]
+Creature 10118: Items [4746]
+Creature 10117: Items [4745]
+Creature 119932: Items [5913]
+Creature 43790: Items [943]
+Creature 357782: Items [9202]
+Creature 43780: Items [937]
+Creature 43779: Items [936]
+Creature 43777: Items [934]
+Creature 43775: Items [932]
+Creature 43773: Items [931]
+Creature 43772: Items [930]
+Creature 43771: Items [929]
+Creature 43770: Items [928]
+Creature 43769: Items [927]
+Creature 43768: Items [926]
+Creature 43767: Items [925]
+Creature 43766: Items [924]
+Creature 43764: Items [922]
+Creature 43763: Items [921]
+Creature 43760: Items [919]
+Creature 43759: Items [918]
+Creature 43758: Items [917]
+Creature 43757: Items [916]
+Creature 43756: Items [915]
+Creature 43755: Items [914]
+Creature 43754: Items [913]
+Creature 1657: Items [2885]
+Creature 43748: Items [907]
+Creature 43747: Items [906]
+Creature 43746: Items [905]
+Creature 43744: Items [904]
+Creature 43743: Items [903]
+Creature 43742: Items [902]
+Creature 43741: Items [901]
+Creature 43740: Items [900]
+Creature 43739: Items [899]
+Creature 43738: Items [898]
+Creature 43737: Items [897]
+Creature 43736: Items [896]
+Creature 43735: Items [895]
+Creature 45985: Items [1547]
+Creature 43732: Items [892]
+Creature 43731: Items [891]
+Creature 43730: Items [890]
+Creature 43729: Items [889]
+Creature 170012: Items [5129]
+Creature 170011: Items [5128]
+Creature 43720: Items [880]
+Creature 43719: Items [879]
+Creature 43718: Items [878]
+Creature 43717: Items [877]
+Creature 170001: Items [5121]
+Creature 43712: Items [872]
+Creature 43711: Items [871]
+Creature 43709: Items [869]
+Creature 43708: Items [868]
+Creature 43707: Items [867]
+Creature 43706: Items [866]
+Creature 43705: Items [865]
+Creature 43704: Items [864]
+Creature 43703: Items [863]
+Creature 43702: Items [862]
+Creature 43700: Items [861]
+Creature 43698: Items [860]
+Creature 43697: Items [859]
+Creature 43695: Items [858]
+Creature 43693: Items [856]
+Creature 43692: Items [855]
+Creature 43690: Items [853]
+Creature 43689: Items [852]
+Creature 43687: Items [851]
+Creature 357781: Items [9201]
+Creature 43684: Items [850]
+Creature 43683: Items [849]
+Creature 43682: Items [848]
+Creature 43681: Items [847]
+Creature 43680: Items [846]
+Creature 43679: Items [845]
+Creature 43678: Items [844, 854]
+Creature 43677: Items [843]
+Creature 43676: Items [842]
+Creature 43675: Items [841]
+Creature 43674: Items [840]
+Creature 43673: Items [839]
+Creature 43672: Items [838]
+Creature 43671: Items [837]
+Creature 43669: Items [835]
+Creature 43668: Items [834]
+Creature 43667: Items [833]
+Creature 43665: Items [832]
+Creature 43664: Items [831]
+Creature 43663: Items [830]
+Creature 43662: Items [829]
+Creature 43661: Items [828]
+Creature 43660: Items [827]
+Creature 43659: Items [826]
+Creature 43658: Items [825]
+Creature 10500055: Items [8788]
+Creature 43656: Items [824]
+Creature 43655: Items [823]
+Creature 43651: Items [819]
+Creature 43647: Items [815]
+Creature 43646: Items [814]
+Creature 43645: Items [813]
+Creature 43643: Items [811]
+Creature 43642: Items [810]
+Creature 43641: Items [809]
+Creature 43640: Items [808]
+Creature 43639: Items [807]
+Creature 18381: Items [80]
+Creature 10500035: Items [8765]
+Creature 43636: Items [804]
+Creature 43635: Items [803]
+Creature 43634: Items [802]
+Creature 43633: Items [801]
+Creature 43632: Items [800]
+Creature 313039: Items [4915]
+Creature 43630: Items [798]
+Creature 43627: Items [795]
+Creature 1531: Items [2879]
+Creature 1529: Items [2877]
+Creature 43619: Items [774]
+Creature 43617: Items [772]
+Creature 43616: Items [770]
+Creature 43615: Items [769]
+Creature 43614: Items [761]
+Creature 10500011: Items [8798]
+Creature 43612: Items [760]
+Creature 43611: Items [759]
+Creature 43610: Items [758]
+Creature 1512: Items [1810]
+Creature 43606: Items [754]
+Creature 10500003: Items [8805]
+Creature 43602: Items [751]
+Creature 43601: Items [750]
+Creature 43598: Items [747]
+Creature 43597: Items [746]
+Creature 43595: Items [743]
+Creature 254068: Items [5692]
+Creature 43592: Items [739, 1054]
+Creature 43591: Items [738]
+Creature 43589: Items [736]
+Creature 43588: Items [735]
+Creature 43587: Items [734, 805]
+Creature 43586: Items [733]
+Creature 43585: Items [732]
+Creature 43582: Items [729]
+Creature 43581: Items [728]
+Creature 43580: Items [727]
+Creature 43579: Items [726]
+Creature 43578: Items [725]
+Creature 43577: Items [724]
+Creature 43575: Items [722]
+Creature 43574: Items [721]
+Creature 43573: Items [720]
+Creature 43572: Items [719]
+Creature 43571: Items [718]
+Creature 43570: Items [717]
+Creature 43569: Items [716]
+Creature 43568: Items [715]
+Creature 43567: Items [714]
+Creature 43566: Items [713]
+Creature 43565: Items [712]
+Creature 43564: Items [711]
+Creature 43562: Items [710]
+Creature 43561: Items [709]
+Creature 43560: Items [708]
+Creature 43559: Items [707]
+Creature 43558: Items [706]
+Creature 43557: Items [705]
+Creature 43556: Items [704]
+Creature 43554: Items [702]
+Creature 43549: Items [697]
+Creature 43548: Items [696]
+Creature 43547: Items [695]
+Creature 43546: Items [694]
+Creature 43545: Items [693]
+Creature 119314: Items [4848]
+Creature 119313: Items [4847]
+Creature 119312: Items [4846]
+Creature 119310: Items [4845]
+Creature 119309: Items [4844]
+Creature 43536: Items [684]
+Creature 43535: Items [683]
+Creature 43534: Items [682]
+Creature 43533: Items [681]
+Creature 43532: Items [678]
+Creature 43531: Items [677]
+Creature 43530: Items [676]
+Creature 43529: Items [675]
+Creature 43528: Items [674]
+Creature 43527: Items [673]
+Creature 43526: Items [672]
+Creature 43525: Items [671]
+Creature 43524: Items [670]
+Creature 43523: Items [669]
+Creature 43522: Items [667]
+Creature 43521: Items [666]
+Creature 43520: Items [665]
+Creature 43519: Items [664]
+Creature 43518: Items [663]
+Creature 43517: Items [662]
+Creature 43516: Items [661]
+Creature 43515: Items [660]
+Creature 43513: Items [658]
+Creature 43511: Items [656]
+Creature 43509: Items [654]
+Creature 43508: Items [653]
+Creature 43507: Items [652]
+Creature 43506: Items [651]
+Creature 43505: Items [650]
+Creature 43497: Items [648]
+Creature 43496: Items [647]
+Creature 43494: Items [645]
+Creature 43493: Items [644]
+Creature 43492: Items [643]
+Creature 43491: Items [642]
+Creature 43490: Items [641]
+Creature 43489: Items [640]
+Creature 43488: Items [639]
+Creature 43880: Items [1013]
+Creature 43486: Items [637]
+Creature 43484: Items [636]
+Creature 43483: Items [635]
+Creature 43480: Items [632]
+Creature 43479: Items [631]
+Creature 43478: Items [630]
+Creature 43476: Items [628]
+Creature 43475: Items [627]
+Creature 43473: Items [626]
+Creature 43472: Items [625]
+Creature 43471: Items [624]
+Creature 43470: Items [623]
+Creature 43469: Items [622]
+Creature 43467: Items [620]
+Creature 43466: Items [619]
+Creature 43465: Items [618]
+Creature 43464: Items [617]
+Creature 43458: Items [611]
+Creature 43457: Items [610]
+Creature 43456: Items [609]
+Creature 43455: Items [608]
+Creature 43454: Items [607]
+Creature 43453: Items [606]
+Creature 43452: Items [605]
+Creature 43451: Items [604]
+Creature 43450: Items [603]
+Creature 43447: Items [600]
+Creature 43446: Items [599]
+Creature 43445: Items [598]
+Creature 43444: Items [597]
+Creature 43442: Items [596]
+Creature 43441: Items [595]
+Creature 43440: Items [594]
+Creature 43439: Items [593]
+Creature 43438: Items [592]
+Creature 43436: Items [591]
+Creature 43435: Items [590]
+Creature 43434: Items [589]
+Creature 43433: Items [588]
+Creature 43429: Items [585]
+Creature 81057: Items [8289]
+Creature 43423: Items [579]
+Creature 43420: Items [577]
+Creature 43419: Items [576]
+Creature 43417: Items [575]
+Creature 43416: Items [574]
+Creature 43415: Items [573]
+Creature 43414: Items [572]
+Creature 43413: Items [571]
+Creature 18155: Items [2334]
+Creature 43411: Items [569]
+Creature 43410: Items [568]
+Creature 68666: Items [3372]
+Creature 43408: Items [565]
+Creature 43407: Items [564]
+Creature 43406: Items [563]
+Creature 43405: Items [562]
+Creature 43404: Items [561]
+Creature 43403: Items [560]
+Creature 43402: Items [559]
+Creature 43401: Items [558]
+Creature 43399: Items [557]
+Creature 43398: Items [556]
+Creature 43397: Items [555]
+Creature 43396: Items [554]
+Creature 43395: Items [553]
+Creature 43394: Items [552]
+Creature 43392: Items [550]
+Creature 43391: Items [549]
+Creature 43389: Items [547]
+Creature 43388: Items [546]
+Creature 43383: Items [542]
+Creature 43381: Items [540]
+Creature 43380: Items [538]
+Creature 43379: Items [537]
+Creature 43378: Items [536]
+Creature 43377: Items [534]
+Creature 43376: Items [533]
+Creature 43375: Items [532]
+Creature 43369: Items [526]
+Creature 43368: Items [525]
+Creature 43367: Items [524]
+Creature 43364: Items [521]
+Creature 43363: Items [520]
+Creature 43362: Items [519]
+Creature 43361: Items [518]
+Creature 43360: Items [517]
+Creature 43358: Items [515]
+Creature 43357: Items [514]
+Creature 43356: Items [513]
+Creature 43355: Items [512]
+Creature 43352: Items [509]
+Creature 43351: Items [508]
+Creature 43350: Items [507]
+Creature 43349: Items [506]
+Creature 43347: Items [504]
+Creature 43346: Items [503]
+Creature 43345: Items [502]
+Creature 43344: Items [501]
+Creature 43343: Items [500]
+Creature 43342: Items [499]
+Creature 43341: Items [498]
+Creature 43340: Items [497]
+Creature 43338: Items [496]
+Creature 43337: Items [495]
+Creature 43336: Items [494]
+Creature 43335: Items [493]
+Creature 43334: Items [492]
+Creature 43333: Items [491]
+Creature 43332: Items [490]
+Creature 43331: Items [489]
+Creature 43329: Items [487]
+Creature 43327: Items [486]
+Creature 43325: Items [485]
+Creature 43324: Items [484]
+Creature 110519: Items [9262]
+Creature 43316: Items [477]
+Creature 11000205: Items [8917]
+Creature 43314: Items [476]
+Creature 43313: Items [475]
+Creature 43312: Items [474]
+Creature 43310: Items [472]
+Creature 43309: Items [471]
+Creature 43308: Items [470]
+Creature 43307: Items [469]
+Creature 43306: Items [468]
+Creature 43305: Items [467]
+Creature 43304: Items [466]
+Creature 43303: Items [465]
+Creature 43302: Items [3922]
+Creature 43301: Items [3921]
+Creature 43300: Items [3920]
+Creature 43299: Items [3919]
+Creature 43298: Items [3918]
+Creature 43297: Items [3917]
+Creature 43296: Items [3916]
+Creature 43295: Items [3915]
+Creature 304277: Items [7476]
+Creature 26439: Items [191]
+Creature 27989: Items [202]
+Creature 11000122: Items [8847]
+Creature 220058: Items [5851]
+Creature 220057: Items [5850]
+Creature 43752: Items [911]
+Creature 317775: Items [8053]
+Creature 43917: Items [1045]
+Creature 69831: Items [8329]
+Creature 81034: Items [3624]
+Creature 51635: Items [1363]
+Creature 11000204: Items [8916]
+Creature 228426: Items [9237]
+Creature 1108: Items [1768]
+Creature 79074: Items [7517]
+Creature 11000140: Items [8862]
+Creature 60019: Items [5460]
+Creature 60017: Items [5458]
+Creature 1082: Items [1763]
+Creature 102107: Items [3894]
+Creature 102106: Items [3893]
+Creature 102105: Items [3892]
+Creature 102103: Items [3891]
+Creature 110521: Items [9264]
+Creature 110520: Items [9263]
+Creature 102100: Items [3890]
+Creature 110518: Items [9261]
+Creature 11000121: Items [8846]
+Creature 67272: Items [9495]
+Creature 43916: Items [1101]
+Creature 44081: Items [1135]
+Creature 50023: Items [5963]
+Creature 499736: Items [8725]
+Creature 80889: Items [3505]
+Creature 371441: Items [9491]
+Creature 371440: Items [9490]
+Creature 371439: Items [9489]
+Creature 44171: Items [1192]
+Creature 9417: Items [7729]
+Creature 44328: Items [1250]
+Creature 11000098: Items [8834]
+Creature 34655: Items [261]
+Creature 699755: Items [7056]
+Creature 110517: Items [9260]
+Creature 499478: Items [6329]
+Creature 11746: Items [8389]
+Creature 34632: Items [262]
+Creature 43750: Items [909]
+Creature 125321: Items [9544]
+Creature 317774: Items [8052]
+Creature 44080: Items [1134]
+Creature 430308: Items [6599]
+Creature 430306: Items [6598]
+Creature 499694: Items [8743]
+Creature 119930: Items [5911]
+Creature 11000202: Items [8914]
+Creature 50517: Items [5646, 5658]
+Creature 51412: Items [5450]
+Creature 51411: Items [5449]
+Creature 51410: Items [5448]
+Creature 51409: Items [5447]
+Creature 51408: Items [5446]
+Creature 79072: Items [7515]
+Creature 43919: Items [1047]
+Creature 94056: Items [7242]
+Creature 11000201: Items [8913]
+Creature 26131: Items [189]
+Creature 44142: Items [1175]
+Creature 11000119: Items [8844]
+Creature 79091: Items [7528]
+Creature 43753: Items [912]
+Creature 43584: Items [731]
+Creature 43749: Items [908]
+Creature 43670: Items [836]
+Creature 499782: Items [8713]
+Creature 44079: Items [1133]
+Creature 830: Items [1740]
+Creature 1000005: Items [7372]
+Creature 110273: Items [9283]
+Creature 822: Items [1739]
+Creature 180665: Items [5805]
+Creature 449216: Items [9139]
+Creature 827036: Items [8749]
+Creature 79071: Items [7514]
+Creature 119923: Items [5908]
+Creature 67269: Items [9493]
+Creature 43583: Items [730]
+Creature 26013: Items [5445]
+Creature 800555: Items [7233]
+Creature 9158: Items [3524]
+Creature 101227: Items [3590]
+Creature 44167: Items [1188]
+Creature 10500034: Items [8766]
+Creature 11000200: Items [8912]
+Creature 590024: Items [4559]
+Creature 685: Items [1724]
+Creature 681: Items [1720]
+Creature 590007: Items [4558]
+Creature 11000117: Items [8842]
+Creature 499475: Items [6323]
+Creature 43449: Items [602]
+Creature 499640: Items [8694]
+Creature 647: Items [483]
+Creature 646: Items [482]
+Creature 645: Items [481]
+Creature 644: Items [480]
+Creature 43912: Items [1041]
+Creature 642: Items [479]
+Creature 639: Items [478]
+Creature 480516: Items [8284]
+Creature 480515: Items [8283]
+Creature 480513: Items [8282]
+Creature 629: Items [5214]
+Creature 30542: Items [47]
+Creature 17447: Items [2315]
+Creature 34284: Items [9554]
+Creature 34283: Items [9553]
+Creature 347300: Items [6574]
+Creature 34278: Items [253]
+Creature 36979: Items [312]
+Creature 357276: Items [6957]
+Creature 499987: Items [6534]
+Creature 44324: Items [9674]
+Creature 599796: Items [8326]
+Creature 254609: Items [9124]
+Creature 43710: Items [870]
+Creature 499474: Items [6317]
+Creature 44332: Items [1252]
+Creature 421495: Items [7458]
+Creature 421493: Items [7457]
+Creature 8959: Items [2190]
+Creature 530: Items [5527]
+Creature 45644: Items [1504]
+Creature 528: Items [5525]
+Creature 526: Items [5524]
+Creature 50018: Items [5958]
+Creature 421468: Items [5556]
+Creature 421465: Items [5554]
+Creature 119928: Items [5600]
+Creature 67833: Items [4757]
+Creature 67832: Items [4714]
+Creature 642827: Items [7341]
+Creature 50989: Items [40]
+Creature 50988: Items [39]
+Creature 45891: Items [1533]
+Creature 118329: Items [5633]
+Creature 43751: Items [910]
+Creature 117992: Items [9112]
+Creature 25706: Items [188]
+Creature 50959: Items [5659, 6608]
+Creature 43910: Items [1039]
+Creature 59358: Items [2159]
+Creature 17255: Items [76]
+Creature 404525: Items [5994, 7144]
+Creature 499488: Items [6342]
+Creature 1000014: Items [7418]
+Creature 180661: Items [5802]
+Creature 499885: Items [6508]
+Creature 44157: Items [1186]
+Creature 43875: Items [1008]
+Creature 366: Items [5571]
+Creature 17199: Items [2300]
+Creature 76121: Items [3527]
+Creature 76120: Items [3526]
+Creature 44248: Items [1211]
+Creature 53288: Items [5944]
+Creature 17160: Items [8365]
+Creature 314: Items [2843]
+Creature 43460: Items [613]
+Creature 119927: Items [5599]
+Creature 17144: Items [2299]
+Creature 304: Items [3525]
+Creature 11000196: Items [8908]
+Creature 499719: Items [8318]
+Creature 104866: Items [9371]
+Creature 43991: Items [944]
+Creature 11000136: Items [8858]
+Creature 46414: Items [5751]
+Creature 499739: Items [8732]
+Creature 109695: Items [5639]
+Creature 109694: Items [5638]
+Creature 34282: Items [9552]
+Creature 111087: Items [9215]
+Creature 1002087: Items [7424]
+Creature 1000002: Items [7370]
+Creature 70082: Items [8815]
+Creature 800014: Items [7415]
+Creature 50722: Items [1381]
+Creature 800011: Items [7412]
+Creature 43330: Items [488]
+Creature 800009: Items [7369]
+Creature 101230: Items [3593]
+Creature 101229: Items [3592]
+Creature 101228: Items [3591]
+Creature 101226: Items [3589]
+Creature 101225: Items [3588]
+Creature 101224: Items [3587]
+Creature 101223: Items [3586]
+Creature 43825: Items [964]
+Creature 79065: Items [7508]
+Creature 599811: Items [8349]
+Creature 44155: Items [1185]
+Creature 44320: Items [9111]
+Creature 10813: Items [2617]
+Creature 599794: Items [8325]
+Creature 10111378: Items [3597]
+Creature 10111377: Items [3596]
+Creature 10111375: Items [3595]
+Creature 154: Items [1695]
+Creature 43412: Items [570]
+Creature 80656: Items [3511]
+Creature 111086: Items [9214]
+Creature 113: Items [1693]
+Creature 16941: Items [3831]
+Creature 1000011: Items [7397]
+Creature 499882: Items [6505]
+Creature 43915: Items [1044]
+Creature 218970: Items [5732]
+Creature 218969: Items [5731]
+Creature 218968: Items [5730]
+Creature 44154: Items [1184]
+Creature 50586: Items [1364]
+Creature 218965: Items [5728]
+Creature 218964: Items [5727]
+Creature 69: Items [1690]
+Creature 218959: Items [5725]
+Creature 218958: Items [5724]
+Creature 218957: Items [5723]
+Creature 11000052: Items [8888]
+Creature 218955: Items [5722]
+Creature 218953: Items [5721]
+Creature 218952: Items [5720]
+Creature 218950: Items [5719]
+Creature 218949: Items [5718]
+Creature 218948: Items [5717]
+Creature 218946: Items [5716]
+Creature 218945: Items [5715]
+Creature 218944: Items [5714]
+Creature 218943: Items [5713]
+Creature 48: Items [2839]
+Creature 218941: Items [5711]
+Creature 218939: Items [5710]
+Creature 218936: Items [6803]
+Creature 218935: Items [6916]
+Creature 218934: Items [6795]
+Creature 218933: Items [6794]
+Creature 218932: Items [6797]
+Creature 44288: Items [1237]
+Creature 50545: Items [1380]
+Creature 30: Items [1688]
+Creature 111085: Items [9213]
+Creature 420974: Items [6163]
+Creature 420972: Items [6162]
+Creature 420969: Items [6161]
+Creature 3: Items [2838]
+
+========================================
+MISMATCHES (2042 total)
+========================================
+Creature 2971:
+  API: [1929]
+  DB:  [1930]
+
+Creature 25228:
+  API: [3239]
+  DB:  [3240]
+
+Creature 25227:
+  API: [3238]
+  DB:  [3239]
+
+Creature 16805:
+  API: [3207]
+  DB:  [3208]
+
+Creature 8384:
+  API: [6850]
+  DB:  [6851]
+
+Creature 18536:
+  API: [2675]
+  DB:  [2676]
+
+Creature 2723:
+  API: [6894]
+  DB:  [6895]
+
+Creature 148082:
+  API: [7774]
+  DB:  [7775]
+
+Creature 18981:
+  API: [2692]
+  DB:  [2693]
+
+Creature 8336:
+  API: [2179]
+  DB:  [2180]
+
+Creature 12461:
+  API: [7771]
+  DB:  [7772]
+
+Creature 8319:
+  API: [7722]
+  DB:  [7723]
+
+Creature 8303:
+  API: [2178]
+  DB:  [2179]
+
+Creature 8301:
+  API: [2177]
+  DB:  [2178]
+
+Creature 8300:
+  API: [2176]
+  DB:  [2177]
+
+Creature 8299:
+  API: [2175]
+  DB:  [2176]
+
+Creature 148090:
+  API: [7796]
+  DB:  [7797]
+
+Creature 8280:
+  API: [2607]
+  DB:  [2608]
+
+Creature 8279:
+  API: [6904]
+  DB:  [6905]
+
+Creature 8278:
+  API: [6731]
+  DB:  [6732]
+
+Creature 8277:
+  API: [2174]
+  DB:  [2175]
+
+Creature 12378:
+  API: [3140]
+  DB:  [3141]
+
+Creature 19738:
+  API: [2713]
+  DB:  [2714]
+
+Creature 33499:
+  API: [3758]
+  DB:  [3759]
+
+Creature 20713:
+  API: [7819]
+  DB:  [7820]
+
+Creature 12460:
+  API: [7769]
+  DB:  [7770]
+
+Creature 8213:
+  API: [2173]
+  DB:  [2174]
+
+Creature 8208:
+  API: [2171]
+  DB:  [2172]
+
+Creature 8207:
+  API: [2170]
+  DB:  [2171]
+
+Creature 4015650:
+  API: [2276]
+  DB:  [2277]
+
+Creature 8205:
+  API: [2169]
+  DB:  [2170]
+
+Creature 8204:
+  API: [2168]
+  DB:  [2169]
+
+Creature 440555:
+  API: [8049]
+  DB:  [8050]
+
+Creature 8198:
+  API: [7720]
+  DB:  [7721]
+
+Creature 8197:
+  API: [7718]
+  DB:  [7719]
+
+Creature 8196:
+  API: [7717]
+  DB:  [7718]
+
+Creature 25033:
+  API: [4753]
+  DB:  [4754]
+
+Creature 61002:
+  API: [9170]
+  DB:  [9171]
+
+Creature 11983:
+  API: [7765]
+  DB:  [7766]
+
+Creature 25002:
+  API: [2832]
+  DB:  [2833]
+
+Creature 25001:
+  API: [2831]
+  DB:  [2832]
+
+Creature 24999:
+  API: [2830]
+  DB:  [2831]
+
+Creature 1813:
+  API: [6813]
+  DB:  [6814]
+
+Creature 6517:
+  API: [6842]
+  DB:  [6843]
+
+Creature 16529:
+  API: [6766]
+  DB:  [6767]
+
+Creature 16517:
+  API: [6878]
+  DB:  [6879]
+
+Creature 21061:
+  API: [6783]
+  DB:  [6784]
+
+Creature 10478:
+  API: [3091]
+  DB:  [3092]
+
+Creature 24922:
+  API: [2442]
+  DB:  [2443]
+
+Creature 24919:
+  API: [2829]
+  DB:  [2830]
+
+Creature 16488:
+  API: [6764]
+  DB:  [6765]
+
+Creature 16482:
+  API: [3206]
+  DB:  [3207]
+
+Creature 16481:
+  API: [3205]
+  DB:  [3206]
+
+Creature 8497:
+  API: [7724]
+  DB:  [7725]
+
+Creature 16471:
+  API: [3204]
+  DB:  [3205]
+
+Creature 25498:
+  API: [2450]
+  DB:  [2451]
+
+Creature 1812:
+  API: [6812]
+  DB:  [6813]
+
+Creature 24872:
+  API: [3237]
+  DB:  [3238]
+
+Creature 24871:
+  API: [3236]
+  DB:  [3237]
+
+Creature 16447:
+  API: [3203]
+  DB:  [3204]
+
+Creature 148054:
+  API: [7711]
+  DB:  [7712]
+
+Creature 27823:
+  API: [3308]
+  DB:  [3309]
+
+Creature 7997:
+  API: [7716]
+  DB:  [7717]
+
+Creature 16415:
+  API: [3202]
+  DB:  [3203]
+
+Creature 91356:
+  API: [3006]
+  DB:  [3007]
+
+Creature 148089:
+  API: [7793]
+  DB:  [7794]
+
+Creature 16403:
+  API: [3201]
+  DB:  [3202]
+
+Creature 16402:
+  API: [3200]
+  DB:  [3201]
+
+Creature 7977:
+  API: [2167]
+  DB:  [2168]
+
+Creature 27808:
+  API: [3307]
+  DB:  [3308]
+
+Creature 16383:
+  API: [3199]
+  DB:  [3200]
+
+Creature 24789:
+  API: [3235]
+  DB:  [3236]
+
+Creature 24787:
+  API: [2441]
+  DB:  [2442]
+
+Creature 16357:
+  API: [3198]
+  DB:  [3199]
+
+Creature 16355:
+  API: [2288]
+  DB:  [2289]
+
+Creature 16354:
+  API: [2287]
+  DB:  [2288]
+
+Creature 16352:
+  API: [2285]
+  DB:  [2286]
+
+Creature 16351:
+  API: [2284]
+  DB:  [2285]
+
+Creature 16350:
+  API: [2283]
+  DB:  [2284]
+
+Creature 16349:
+  API: [2282]
+  DB:  [2283]
+
+Creature 16348:
+  API: [2281]
+  DB:  [2282]
+
+Creature 16347:
+  API: [2280]
+  DB:  [2281]
+
+Creature 16342:
+  API: [3195]
+  DB:  [3196]
+
+Creature 24747:
+  API: [2440]
+  DB:  [2441]
+
+Creature 16327:
+  API: [3193]
+  DB:  [3194]
+
+Creature 24744:
+  API: [6793]
+  DB:  [6794]
+
+Creature 16324:
+  API: [3192]
+  DB:  [3193]
+
+Creature 16323:
+  API: [3191]
+  DB:  [3192]
+
+Creature 16322:
+  API: [3190]
+  DB:  [3191]
+
+Creature 16321:
+  API: [3189]
+  DB:  [3190]
+
+Creature 16320:
+  API: [3188]
+  DB:  [3189]
+
+Creature 16319:
+  API: [3187]
+  DB:  [3188]
+
+Creature 16316:
+  API: [3186]
+  DB:  [3187]
+
+Creature 16314:
+  API: [3185]
+  DB:  [3186]
+
+Creature 16313:
+  API: [3184]
+  DB:  [3185]
+
+Creature 16311:
+  API: [3183]
+  DB:  [3184]
+
+Creature 16309:
+  API: [3182]
+  DB:  [3183]
+
+Creature 16308:
+  API: [3181]
+  DB:  [3182]
+
+Creature 16307:
+  API: [3180]
+  DB:  [3181]
+
+Creature 16305:
+  API: [3179]
+  DB:  [3180]
+
+Creature 3461:
+  API: [1968]
+  DB:  [1969]
+
+Creature 16303:
+  API: [3178]
+  DB:  [3179]
+
+Creature 16302:
+  API: [3177]
+  DB:  [3178]
+
+Creature 16301:
+  API: [3176]
+  DB:  [3177]
+
+Creature 16300:
+  API: [3175]
+  DB:  [3176]
+
+Creature 30283:
+  API: [3706]
+  DB:  [3707]
+
+Creature 7864:
+  API: [3032]
+  DB:  [3033]
+
+Creature 14272:
+  API: [7800]
+  DB:  [7801]
+
+Creature 7846:
+  API: [7714]
+  DB:  [7715]
+
+Creature 83616:
+  API: [6927]
+  DB:  [6928]
+
+Creature 28467:
+  API: [7877]
+  DB:  [7878]
+
+Creature 24677:
+  API: [2439]
+  DB:  [2440]
+
+Creature 10393:
+  API: [3070]
+  DB:  [3071]
+
+Creature 24673:
+  API: [2438]
+  DB:  [2439]
+
+Creature 16250:
+  API: [3174]
+  DB:  [3175]
+
+Creature 16249:
+  API: [3173]
+  DB:  [3174]
+
+Creature 16248:
+  API: [3172]
+  DB:  [3173]
+
+Creature 16247:
+  API: [3171]
+  DB:  [3172]
+
+Creature 16246:
+  API: [3170]
+  DB:  [3171]
+
+Creature 16245:
+  API: [3169]
+  DB:  [3170]
+
+Creature 148052:
+  API: [7707]
+  DB:  [7708]
+
+Creature 27578:
+  API: [2488]
+  DB:  [2489]
+
+Creature 24633:
+  API: [2437]
+  DB:  [2438]
+
+Creature 16193:
+  API: [3167]
+  DB:  [3168]
+
+Creature 16184:
+  API: [3166]
+  DB:  [3167]
+
+Creature 16168:
+  API: [3165]
+  DB:  [3166]
+
+Creature 16167:
+  API: [3164]
+  DB:  [3165]
+
+Creature 16165:
+  API: [3163]
+  DB:  [3164]
+
+Creature 16164:
+  API: [3162]
+  DB:  [3163]
+
+Creature 1809:
+  API: [1828]
+  DB:  [1829]
+
+Creature 83496:
+  API: [6926]
+  DB:  [6927]
+
+Creature 743:
+  API: [7606]
+  DB:  [7607]
+
+Creature 24547:
+  API: [2436]
+  DB:  [2437]
+
+Creature 24546:
+  API: [3234]
+  DB:  [3235]
+
+Creature 16117:
+  API: [2279]
+  DB:  [2280]
+
+Creature 24530:
+  API: [2435]
+  DB:  [2436]
+
+Creature 13280:
+  API: [6756]
+  DB:  [6757]
+
+Creature 24517:
+  API: [2434]
+  DB:  [2435]
+
+Creature 24516:
+  API: [2433]
+  DB:  [2434]
+
+Creature 15298:
+  API: [6760]
+  DB:  [6761]
+
+Creature 4119:
+  API: [2004]
+  DB:  [2005]
+
+Creature 24485:
+  API: [3233]
+  DB:  [3234]
+
+Creature 11464:
+  API: [6920]
+  DB:  [6921]
+
+Creature 24478:
+  API: [2432]
+  DB:  [2433]
+
+Creature 16043:
+  API: [6762]
+  DB:  [6763]
+
+Creature 16042:
+  API: [7804]
+  DB:  [7805]
+
+Creature 16034:
+  API: [3161]
+  DB:  [3162]
+
+Creature 16029:
+  API: [3160]
+  DB:  [3161]
+
+Creature 24440:
+  API: [3232]
+  DB:  [3233]
+
+Creature 16018:
+  API: [3158]
+  DB:  [3159]
+
+Creature 16017:
+  API: [3157]
+  DB:  [3158]
+
+Creature 3811:
+  API: [1982]
+  DB:  [1983]
+
+Creature 19799:
+  API: [2723]
+  DB:  [2724]
+
+Creature 15979:
+  API: [3156]
+  DB:  [3157]
+
+Creature 15978:
+  API: [3155]
+  DB:  [3156]
+
+Creature 100154:
+  API: [6914]
+  DB:  [6915]
+
+Creature 15958:
+  API: [3154]
+  DB:  [3155]
+
+Creature 7524:
+  API: [3030]
+  DB:  [3031]
+
+Creature 7523:
+  API: [3029]
+  DB:  [3030]
+
+Creature 32772:
+  API: [3757]
+  DB:  [3758]
+
+Creature 32770:
+  API: [3755]
+  DB:  [3756]
+
+Creature 32769:
+  API: [3754]
+  DB:  [3755]
+
+Creature 10321:
+  API: [7740]
+  DB:  [7741]
+
+Creature 4860:
+  API: [6898]
+  DB:  [6899]
+
+Creature 7456:
+  API: [2166]
+  DB:  [2167]
+
+Creature 7455:
+  API: [2165]
+  DB:  [2166]
+
+Creature 7448:
+  API: [2163]
+  DB:  [2164]
+
+Creature 7447:
+  API: [2162]
+  DB:  [2163]
+
+Creature 7446:
+  API: [2161]
+  DB:  [2162]
+
+Creature 7445:
+  API: [2160]
+  DB:  [2161]
+
+Creature 7444:
+  API: [2158]
+  DB:  [2159]
+
+Creature 7443:
+  API: [2157]
+  DB:  [2158]
+
+Creature 18477:
+  API: [2350]
+  DB:  [2351]
+
+Creature 7437:
+  API: [7712]
+  DB:  [7713]
+
+Creature 7436:
+  API: [7710]
+  DB:  [7711]
+
+Creature 7435:
+  API: [7708]
+  DB:  [7709]
+
+Creature 7434:
+  API: [2156]
+  DB:  [2157]
+
+Creature 7433:
+  API: [2155]
+  DB:  [2156]
+
+Creature 7432:
+  API: [2154]
+  DB:  [2155]
+
+Creature 7431:
+  API: [2153]
+  DB:  [2154]
+
+Creature 7430:
+  API: [2152]
+  DB:  [2153]
+
+Creature 1971:
+  API: [2969]
+  DB:  [2970]
+
+Creature 24262:
+  API: [3231]
+  DB:  [3232]
+
+Creature 2027:
+  API: [6821]
+  DB:  [6822]
+
+Creature 5272:
+  API: [2078]
+  DB:  [2079]
+
+Creature 7405:
+  API: [2151]
+  DB:  [2152]
+
+Creature 7376:
+  API: [2150]
+  DB:  [2151]
+
+Creature 7357:
+  API: [3027]
+  DB:  [3028]
+
+Creature 7355:
+  API: [3026]
+  DB:  [3027]
+
+Creature 7353:
+  API: [3025]
+  DB:  [3026]
+
+Creature 7352:
+  API: [3024]
+  DB:  [3025]
+
+Creature 7351:
+  API: [3023]
+  DB:  [3024]
+
+Creature 7349:
+  API: [3022]
+  DB:  [3023]
+
+Creature 7348:
+  API: [3021]
+  DB:  [3022]
+
+Creature 7347:
+  API: [3020]
+  DB:  [3021]
+
+Creature 7346:
+  API: [3019]
+  DB:  [3020]
+
+Creature 7345:
+  API: [3018]
+  DB:  [3019]
+
+Creature 7344:
+  API: [3017]
+  DB:  [3018]
+
+Creature 7342:
+  API: [3016]
+  DB:  [3017]
+
+Creature 7341:
+  API: [3015]
+  DB:  [3016]
+
+Creature 2544:
+  API: [1888]
+  DB:  [1889]
+
+Creature 7334:
+  API: [3013]
+  DB:  [3014]
+
+Creature 7333:
+  API: [3012]
+  DB:  [3013]
+
+Creature 7332:
+  API: [3011]
+  DB:  [3012]
+
+Creature 7329:
+  API: [3010]
+  DB:  [3011]
+
+Creature 7328:
+  API: [3009]
+  DB:  [3010]
+
+Creature 7327:
+  API: [3008]
+  DB:  [3009]
+
+Creature 18282:
+  API: [6862]
+  DB:  [6863]
+
+Creature 7319:
+  API: [2149]
+  DB:  [2150]
+
+Creature 6509:
+  API: [6867]
+  DB:  [6868]
+
+Creature 3868:
+  API: [1994]
+  DB:  [1995]
+
+Creature 24128:
+  API: [2430]
+  DB:  [2431]
+
+Creature 7286:
+  API: [3007]
+  DB:  [3008]
+
+Creature 3125:
+  API: [1943]
+  DB:  [1944]
+
+Creature 7272:
+  API: [3005]
+  DB:  [3006]
+
+Creature 15690:
+  API: [4722]
+  DB:  [4723]
+
+Creature 7268:
+  API: [2148]
+  DB:  [2149]
+
+Creature 32517:
+  API: [2542]
+  DB:  [2543]
+
+Creature 18145:
+  API: [6774]
+  DB:  [6775]
+
+Creature 24084:
+  API: [3230]
+  DB:  [3231]
+
+Creature 32502:
+  API: [3753]
+  DB:  [3754]
+
+Creature 15658:
+  API: [3153]
+  DB:  [3154]
+
+Creature 15657:
+  API: [3152]
+  DB:  [3153]
+
+Creature 15656:
+  API: [3151]
+  DB:  [3152]
+
+Creature 15655:
+  API: [3150]
+  DB:  [3151]
+
+Creature 15654:
+  API: [3149]
+  DB:  [3150]
+
+Creature 32491:
+  API: [7892]
+  DB:  [7893]
+
+Creature 15651:
+  API: [2277]
+  DB:  [2278]
+
+Creature 15648:
+  API: [6761]
+  DB:  [6762]
+
+Creature 32485:
+  API: [2541]
+  DB:  [2542]
+
+Creature 24064:
+  API: [2428]
+  DB:  [2429]
+
+Creature 32481:
+  API: [2540]
+  DB:  [2541]
+
+Creature 32475:
+  API: [2539]
+  DB:  [2540]
+
+Creature 32471:
+  API: [3752]
+  DB:  [3753]
+
+Creature 17732:
+  API: [2326]
+  DB:  [2327]
+
+Creature 32467:
+  API: [3751]
+  DB:  [3752]
+
+Creature 24047:
+  API: [2427]
+  DB:  [2428]
+
+Creature 15625:
+  API: [2651]
+  DB:  [2652]
+
+Creature 24043:
+  API: [2426]
+  DB:  [2427]
+
+Creature 21033:
+  API: [2388]
+  DB:  [2389]
+
+Creature 24026:
+  API: [2425]
+  DB:  [2426]
+
+Creature 28378:
+  API: [7876]
+  DB:  [7877]
+
+Creature 148242:
+  API: [7905]
+  DB:  [7906]
+
+Creature 24013:
+  API: [3228]
+  DB:  [3229]
+
+Creature 4857:
+  API: [6897]
+  DB:  [6898]
+
+Creature 91358:
+  API: [2655]
+  DB:  [2656]
+
+Creature 91357:
+  API: [3287]
+  DB:  [3288]
+
+Creature 91355:
+  API: [6947]
+  DB:  [6948]
+
+Creature 3784:
+  API: [6831]
+  DB:  [6832]
+
+Creature 7146:
+  API: [6938]
+  DB:  [6939]
+
+Creature 7144:
+  API: [6937]
+  DB:  [6938]
+
+Creature 7143:
+  API: [6936]
+  DB:  [6937]
+
+Creature 19712:
+  API: [2710]
+  DB:  [2711]
+
+Creature 7138:
+  API: [6934]
+  DB:  [6935]
+
+Creature 7137:
+  API: [2605]
+  DB:  [2606]
+
+Creature 7136:
+  API: [2604]
+  DB:  [2605]
+
+Creature 7135:
+  API: [2603]
+  DB:  [2604]
+
+Creature 7132:
+  API: [6730]
+  DB:  [6731]
+
+Creature 15548:
+  API: [3148]
+  DB:  [3149]
+
+Creature 10221:
+  API: [2204]
+  DB:  [2205]
+
+Creature 23959:
+  API: [2424]
+  DB:  [2425]
+
+Creature 23958:
+  API: [2423]
+  DB:  [2424]
+
+Creature 7111:
+  API: [2602]
+  DB:  [2603]
+
+Creature 7110:
+  API: [2601]
+  DB:  [2602]
+
+Creature 16328:
+  API: [3194]
+  DB:  [3195]
+
+Creature 7108:
+  API: [2599]
+  DB:  [2600]
+
+Creature 7107:
+  API: [2598]
+  DB:  [2599]
+
+Creature 7106:
+  API: [2597]
+  DB:  [2598]
+
+Creature 7105:
+  API: [2596]
+  DB:  [2597]
+
+Creature 32361:
+  API: [2538]
+  DB:  [2539]
+
+Creature 7101:
+  API: [6848]
+  DB:  [6849]
+
+Creature 7100:
+  API: [6847]
+  DB:  [6848]
+
+Creature 1225:
+  API: [1801]
+  DB:  [1802]
+
+Creature 7098:
+  API: [2146]
+  DB:  [2147]
+
+Creature 7097:
+  API: [2145]
+  DB:  [2146]
+
+Creature 23929:
+  API: [2421]
+  DB:  [2422]
+
+Creature 3767:
+  API: [2567]
+  DB:  [2568]
+
+Creature 3123:
+  API: [1941]
+  DB:  [1942]
+
+Creature 7079:
+  API: [723, 6729]
+  DB:  [6730]
+
+Creature 7078:
+  API: [2144]
+  DB:  [2145]
+
+Creature 32323:
+  API: [3750]
+  DB:  [3751]
+
+Creature 7049:
+  API: [7706]
+  DB:  [7707]
+
+Creature 7048:
+  API: [7704]
+  DB:  [7705]
+
+Creature 7047:
+  API: [7702]
+  DB:  [7703]
+
+Creature 7046:
+  API: [7700]
+  DB:  [7701]
+
+Creature 7045:
+  API: [7698]
+  DB:  [7699]
+
+Creature 7044:
+  API: [7696]
+  DB:  [7697]
+
+Creature 7043:
+  API: [7694]
+  DB:  [7695]
+
+Creature 7042:
+  API: [7692]
+  DB:  [7693]
+
+Creature 11321:
+  API: [6742]
+  DB:  [6743]
+
+Creature 7039:
+  API: [6902]
+  DB:  [6903]
+
+Creature 23873:
+  API: [2420]
+  DB:  [2421]
+
+Creature 7032:
+  API: [6728]
+  DB:  [6729]
+
+Creature 7031:
+  API: [6727]
+  DB:  [6728]
+
+Creature 141734:
+  API: [2363]
+  DB:  [2364]
+
+Creature 32284:
+  API: [3749]
+  DB:  [3750]
+
+Creature 32267:
+  API: [3748]
+  DB:  [3749]
+
+Creature 32257:
+  API: [3747]
+  DB:  [3748]
+
+Creature 4030:
+  API: [6932]
+  DB:  [6933]
+
+Creature 20866:
+  API: [2754]
+  DB:  [2755]
+
+Creature 15409:
+  API: [6942]
+  DB:  [6943]
+
+Creature 15372:
+  API: [2274]
+  DB:  [2275]
+
+Creature 27633:
+  API: [7871]
+  DB:  [7872]
+
+Creature 15366:
+  API: [2273]
+  DB:  [2274]
+
+Creature 254316:
+  API: [5700]
+  DB:  [5701]
+
+Creature 25454:
+  API: [2443]
+  DB:  [2444]
+
+Creature 32164:
+  API: [3746]
+  DB:  [3747]
+
+Creature 32161:
+  API: [3745]
+  DB:  [3746]
+
+Creature 22323:
+  API: [6791]
+  DB:  [6792]
+
+Creature 5432:
+  API: [2099]
+  DB:  [2100]
+
+Creature 40553:
+  API: [6874]
+  DB:  [6875]
+
+Creature 40552:
+  API: [3144]
+  DB:  [3145]
+
+Creature 15294:
+  API: [6941]
+  DB:  [6942]
+
+Creature 23693:
+  API: [2419]
+  DB:  [2420]
+
+Creature 3781:
+  API: [6828]
+  DB:  [6829]
+
+Creature 15271:
+  API: [6940]
+  DB:  [6941]
+
+Creature 23689:
+  API: [7852]
+  DB:  [7853]
+
+Creature 23688:
+  API: [7851]
+  DB:  [7852]
+
+Creature 23687:
+  API: [7850]
+  DB:  [7851]
+
+Creature 23680:
+  API: [7849]
+  DB:  [7850]
+
+Creature 24083:
+  API: [7854]
+  DB:  [7855]
+
+Creature 23645:
+  API: [3226]
+  DB:  [3227]
+
+Creature 23644:
+  API: [3225]
+  DB:  [3226]
+
+Creature 23643:
+  API: [3224]
+  DB:  [3225]
+
+Creature 15211:
+  API: [6759]
+  DB:  [6760]
+
+Creature 6789:
+  API: [2141]
+  DB:  [2142]
+
+Creature 6788:
+  API: [2140]
+  DB:  [2141]
+
+Creature 5761:
+  API: [6840]
+  DB:  [6841]
+
+Creature 31015:
+  API: [3722]
+  DB:  [3723]
+
+Creature 23584:
+  API: [2418]
+  DB:  [2419]
+
+Creature 5348:
+  API: [7673]
+  DB:  [7674]
+
+Creature 40419:
+  API: [7901]
+  DB:  [7902]
+
+Creature 26723:
+  API: [7865]
+  DB:  [7866]
+
+Creature 18470:
+  API: [2348]
+  DB:  [2349]
+
+Creature 23555:
+  API: [3223]
+  DB:  [3224]
+
+Creature 16489:
+  API: [6765]
+  DB:  [6766]
+
+Creature 5430:
+  API: [2097]
+  DB:  [2098]
+
+Creature 23501:
+  API: [2417]
+  DB:  [2418]
+
+Creature 6652:
+  API: [2595]
+  DB:  [2596]
+
+Creature 31900:
+  API: [3744]
+  DB:  [3745]
+
+Creature 18469:
+  API: [2347]
+  DB:  [2348]
+
+Creature 22100:
+  API: [2406]
+  DB:  [2407]
+
+Creature 23427:
+  API: [4752]
+  DB:  [4753]
+
+Creature 22265:
+  API: [2411]
+  DB:  [2412]
+
+Creature 31843:
+  API: [3743]
+  DB:  [3744]
+
+Creature 6585:
+  API: [2139]
+  DB:  [2140]
+
+Creature 6584:
+  API: [2138]
+  DB:  [2139]
+
+Creature 6582:
+  API: [2137]
+  DB:  [2138]
+
+Creature 6581:
+  API: [2136]
+  DB:  [2137]
+
+Creature 6560:
+  API: [6900]
+  DB:  [6901]
+
+Creature 31813:
+  API: [3742]
+  DB:  [3743]
+
+Creature 31812:
+  API: [3741]
+  DB:  [3742]
+
+Creature 6553:
+  API: [2135]
+  DB:  [2136]
+
+Creature 23386:
+  API: [2828]
+  DB:  [2829]
+
+Creature 148073:
+  API: [7759]
+  DB:  [7760]
+
+Creature 31787:
+  API: [3740]
+  DB:  [3741]
+
+Creature 6527:
+  API: [6845]
+  DB:  [6846]
+
+Creature 3035:
+  API: [1930]
+  DB:  [1931]
+
+Creature 31779:
+  API: [3738]
+  DB:  [3739]
+
+Creature 6519:
+  API: [6844]
+  DB:  [6845]
+
+Creature 6518:
+  API: [6843]
+  DB:  [6844]
+
+Creature 6516:
+  API: [2134]
+  DB:  [2135]
+
+Creature 6513:
+  API: [2132]
+  DB:  [2133]
+
+Creature 6511:
+  API: [6869]
+  DB:  [6870]
+
+Creature 6510:
+  API: [6868]
+  DB:  [6869]
+
+Creature 16951:
+  API: [2659]
+  DB:  [2660]
+
+Creature 6508:
+  API: [2131]
+  DB:  [2132]
+
+Creature 6507:
+  API: [2130]
+  DB:  [2131]
+
+Creature 6506:
+  API: [2129]
+  DB:  [2130]
+
+Creature 6505:
+  API: [2128]
+  DB:  [2129]
+
+Creature 23339:
+  API: [2825]
+  DB:  [2826]
+
+Creature 6500:
+  API: [2127]
+  DB:  [2128]
+
+Creature 31754:
+  API: [3737]
+  DB:  [3738]
+
+Creature 3225:
+  API: [1946]
+  DB:  [1947]
+
+Creature 6489:
+  API: [3004]
+  DB:  [3005]
+
+Creature 30682:
+  API: [7887]
+  DB:  [7888]
+
+Creature 17477:
+  API: [2670]
+  DB:  [2671]
+
+Creature 23282:
+  API: [7848]
+  DB:  [7849]
+
+Creature 23281:
+  API: [7847]
+  DB:  [7848]
+
+Creature 18137:
+  API: [6861]
+  DB:  [6862]
+
+Creature 6427:
+  API: [3003]
+  DB:  [3004]
+
+Creature 6426:
+  API: [3002]
+  DB:  [3003]
+
+Creature 14826:
+  API: [3146]
+  DB:  [3147]
+
+Creature 14825:
+  API: [3145]
+  DB:  [3146]
+
+Creature 5262:
+  API: [2076]
+  DB:  [2077]
+
+Creature 30681:
+  API: [7886]
+  DB:  [7887]
+
+Creature 23219:
+  API: [2415]
+  DB:  [2416]
+
+Creature 6369:
+  API: [2124]
+  DB:  [2125]
+
+Creature 6352:
+  API: [2123]
+  DB:  [2124]
+
+Creature 148072:
+  API: [7757]
+  DB:  [7758]
+
+Creature 23174:
+  API: [2824]
+  DB:  [2825]
+
+Creature 18136:
+  API: [6860]
+  DB:  [6861]
+
+Creature 23163:
+  API: [2414]
+  DB:  [2415]
+
+Creature 39987:
+  API: [7900]
+  DB:  [7901]
+
+Creature 30680:
+  API: [7885]
+  DB:  [7886]
+
+Creature 1547:
+  API: [6915]
+  DB:  [6916]
+
+Creature 14682:
+  API: [3143]
+  DB:  [3144]
+
+Creature 26966:
+  API: [3291]
+  DB:  [3292]
+
+Creature 25728:
+  API: [7864]
+  DB:  [7865]
+
+Creature 148006:
+  API: [7610]
+  DB:  [7611]
+
+Creature 23061:
+  API: [7845]
+  DB:  [7846]
+
+Creature 6220:
+  API: [6725]
+  DB:  [6726]
+
+Creature 23051:
+  API: [2413]
+  DB:  [2414]
+
+Creature 21730:
+  API: [6788]
+  DB:  [6789]
+
+Creature 6202:
+  API: [2594]
+  DB:  [2595]
+
+Creature 6201:
+  API: [2593]
+  DB:  [2594]
+
+Creature 6200:
+  API: [2592]
+  DB:  [2593]
+
+Creature 5260:
+  API: [2075]
+  DB:  [2076]
+
+Creature 6167:
+  API: [2122]
+  DB:  [2123]
+
+Creature 98773:
+  API: [2278]
+  DB:  [2279]
+
+Creature 98772:
+  API: [2208]
+  DB:  [2209]
+
+Creature 98771:
+  API: [1936]
+  DB:  [1937]
+
+Creature 98770:
+  API: [1933]
+  DB:  [1934]
+
+Creature 98769:
+  API: [1799]
+  DB:  [1800]
+
+Creature 98768:
+  API: [1774]
+  DB:  [1775]
+
+Creature 98767:
+  API: [1797]
+  DB:  [1798]
+
+Creature 98766:
+  API: [1923]
+  DB:  [1924]
+
+Creature 31413:
+  API: [3736]
+  DB:  [3737]
+
+Creature 31411:
+  API: [3735]
+  DB:  [3736]
+
+Creature 18877:
+  API: [7816]
+  DB:  [7817]
+
+Creature 14564:
+  API: [3142]
+  DB:  [3143]
+
+Creature 31393:
+  API: [7888]
+  DB:  [7889]
+
+Creature 6131:
+  API: [7686]
+  DB:  [7687]
+
+Creature 79082:
+  API: [7525]
+  DB:  [7526]
+
+Creature 6129:
+  API: [7683]
+  DB:  [7684]
+
+Creature 6128:
+  API: [2591]
+  DB:  [2592]
+
+Creature 6127:
+  API: [2590]
+  DB:  [2591]
+
+Creature 6126:
+  API: [2589]
+  DB:  [2590]
+
+Creature 6125:
+  API: [2588]
+  DB:  [2589]
+
+Creature 22962:
+  API: [2823]
+  DB:  [2824]
+
+Creature 22957:
+  API: [2822]
+  DB:  [2823]
+
+Creature 6118:
+  API: [3001]
+  DB:  [3002]
+
+Creature 6117:
+  API: [3000]
+  DB:  [3001]
+
+Creature 22954:
+  API: [2821]
+  DB:  [2822]
+
+Creature 22953:
+  API: [3221]
+  DB:  [3222]
+
+Creature 24076:
+  API: [2429]
+  DB:  [2430]
+
+Creature 14530:
+  API: [2649]
+  DB:  [2650]
+
+Creature 9878:
+  API: [6737]
+  DB:  [6738]
+
+Creature 14519:
+  API: [3141]
+  DB:  [3142]
+
+Creature 98765:
+  API: [2064]
+  DB:  [2065]
+
+Creature 14506:
+  API: [2648]
+  DB:  [2649]
+
+Creature 4001998:
+  API: [1845]
+  DB:  [1846]
+
+Creature 6073:
+  API: [2587]
+  DB:  [2588]
+
+Creature 6072:
+  API: [2586]
+  DB:  [2587]
+
+Creature 19784:
+  API: [2364]
+  DB:  [2365]
+
+Creature 25396:
+  API: [3246]
+  DB:  [3247]
+
+Creature 449185:
+  API: [4754]
+  DB:  [4755]
+
+Creature 14473:
+  API: [2264]
+  DB:  [2265]
+
+Creature 14472:
+  API: [2263]
+  DB:  [2264]
+
+Creature 14467:
+  API: [2646]
+  DB:  [2647]
+
+Creature 22878:
+  API: [6792]
+  DB:  [6793]
+
+Creature 3773:
+  API: [2570]
+  DB:  [2571]
+
+Creature 19206:
+  API: [6777]
+  DB:  [6778]
+
+Creature 22869:
+  API: [2814]
+  DB:  [2815]
+
+Creature 14448:
+  API: [6857]
+  DB:  [6858]
+
+Creature 14445:
+  API: [7803]
+  DB:  [7804]
+
+Creature 39698:
+  API: [7899]
+  DB:  [7900]
+
+Creature 22855:
+  API: [2813]
+  DB:  [2814]
+
+Creature 22853:
+  API: [2812]
+  DB:  [2813]
+
+Creature 14430:
+  API: [2262]
+  DB:  [2263]
+
+Creature 14424:
+  API: [6856]
+  DB:  [6857]
+
+Creature 5992:
+  API: [2121]
+  DB:  [2122]
+
+Creature 5985:
+  API: [2119]
+  DB:  [2120]
+
+Creature 5984:
+  API: [2118]
+  DB:  [2119]
+
+Creature 5983:
+  API: [2117]
+  DB:  [2118]
+
+Creature 14398:
+  API: [7801]
+  DB:  [7802]
+
+Creature 5423:
+  API: [2090]
+  DB:  [2091]
+
+Creature 31233:
+  API: [2536]
+  DB:  [2537]
+
+Creature 27871:
+  API: [3312]
+  DB:  [3313]
+
+Creature 22807:
+  API: [2412]
+  DB:  [2413]
+
+Creature 449184:
+  API: [6960]
+  DB:  [6961]
+
+Creature 31198:
+  API: [3732]
+  DB:  [3733]
+
+Creature 5937:
+  API: [2115]
+  DB:  [2116]
+
+Creature 14344:
+  API: [2261]
+  DB:  [2262]
+
+Creature 14343:
+  API: [2260]
+  DB:  [2261]
+
+Creature 14340:
+  API: [2645]
+  DB:  [2646]
+
+Creature 14339:
+  API: [2259]
+  DB:  [2260]
+
+Creature 5912:
+  API: [685, 7681]
+  DB:  [7682]
+
+Creature 1956:
+  API: [6818]
+  DB:  [6819]
+
+Creature 31155:
+  API: [3731]
+  DB:  [3732]
+
+Creature 1100366:
+  API: [7908]
+  DB:  [7909]
+
+Creature 31152:
+  API: [3730]
+  DB:  [3731]
+
+Creature 5894:
+  API: [6724]
+  DB:  [6725]
+
+Creature 31150:
+  API: [3729]
+  DB:  [3730]
+
+Creature 31142:
+  API: [3728]
+  DB:  [3729]
+
+Creature 14303:
+  API: [6924]
+  DB:  [6925]
+
+Creature 31140:
+  API: [3726]
+  DB:  [3727]
+
+Creature 1048:
+  API: [7625]
+  DB:  [7626]
+
+Creature 5865:
+  API: [2114]
+  DB:  [2115]
+
+Creature 14279:
+  API: [2257]
+  DB:  [2258]
+
+Creature 5858:
+  API: [2113]
+  DB:  [2114]
+
+Creature 5857:
+  API: [2112]
+  DB:  [2113]
+
+Creature 5856:
+  API: [2111]
+  DB:  [2112]
+
+Creature 5855:
+  API: [6723]
+  DB:  [6724]
+
+Creature 5853:
+  API: [6899]
+  DB:  [6900]
+
+Creature 14269:
+  API: [6758]
+  DB:  [6759]
+
+Creature 14268:
+  API: [2256]
+  DB:  [2257]
+
+Creature 14266:
+  API: [2255]
+  DB:  [2256]
+
+Creature 14263:
+  API: [7799]
+  DB:  [7800]
+
+Creature 5842:
+  API: [2110]
+  DB:  [2111]
+
+Creature 5834:
+  API: [2109]
+  DB:  [2110]
+
+Creature 5829:
+  API: [2108]
+  DB:  [2109]
+
+Creature 5828:
+  API: [2107]
+  DB:  [2108]
+
+Creature 5823:
+  API: [2106]
+  DB:  [2107]
+
+Creature 18131:
+  API: [2331]
+  DB:  [2332]
+
+Creature 14237:
+  API: [2254]
+  DB:  [2255]
+
+Creature 14234:
+  API: [2253]
+  DB:  [2254]
+
+Creature 14233:
+  API: [2252]
+  DB:  [2253]
+
+Creature 14232:
+  API: [2251]
+  DB:  [2252]
+
+Creature 14231:
+  API: [6855]
+  DB:  [6856]
+
+Creature 14228:
+  API: [2250]
+  DB:  [2251]
+
+Creature 5807:
+  API: [2105]
+  DB:  [2106]
+
+Creature 14225:
+  API: [2634]
+  DB:  [2635]
+
+Creature 14223:
+  API: [2249]
+  DB:  [2250]
+
+Creature 14222:
+  API: [2248]
+  DB:  [2249]
+
+Creature 4004823:
+  API: [2062]
+  DB:  [2063]
+
+Creature 1955:
+  API: [6817]
+  DB:  [6818]
+
+Creature 31043:
+  API: [3725]
+  DB:  [3726]
+
+Creature 31040:
+  API: [3724]
+  DB:  [3725]
+
+Creature 31039:
+  API: [3723]
+  DB:  [3724]
+
+Creature 5775:
+  API: [646, 6841]
+  DB:  [6842]
+
+Creature 4348:
+  API: [2029]
+  DB:  [2030]
+
+Creature 5760:
+  API: [2585]
+  DB:  [2586]
+
+Creature 25393:
+  API: [3245]
+  DB:  [3246]
+
+Creature 5756:
+  API: [2104]
+  DB:  [2105]
+
+Creature 5755:
+  API: [2103]
+  DB:  [2104]
+
+Creature 5722:
+  API: [7680]
+  DB:  [7681]
+
+Creature 5720:
+  API: [7678]
+  DB:  [7679]
+
+Creature 5719:
+  API: [7677]
+  DB:  [7678]
+
+Creature 5718:
+  API: [7675]
+  DB:  [7676]
+
+Creature 5717:
+  API: [2998]
+  DB:  [2999]
+
+Creature 5716:
+  API: [2997]
+  DB:  [2998]
+
+Creature 5715:
+  API: [2996]
+  DB:  [2997]
+
+Creature 5714:
+  API: [2995]
+  DB:  [2996]
+
+Creature 5713:
+  API: [2994]
+  DB:  [2995]
+
+Creature 5712:
+  API: [2993]
+  DB:  [2994]
+
+Creature 5711:
+  API: [2992]
+  DB:  [2993]
+
+Creature 5709:
+  API: [7674]
+  DB:  [7675]
+
+Creature 5708:
+  API: [2102]
+  DB:  [2103]
+
+Creature 14123:
+  API: [2247]
+  DB:  [2248]
+
+Creature 30960:
+  API: [3721]
+  DB:  [3722]
+
+Creature 30958:
+  API: [3720]
+  DB:  [3721]
+
+Creature 1954:
+  API: [6816]
+  DB:  [6817]
+
+Creature 30951:
+  API: [3719]
+  DB:  [3720]
+
+Creature 30949:
+  API: [3718]
+  DB:  [3719]
+
+Creature 31747:
+  API: [2537]
+  DB:  [2538]
+
+Creature 4017:
+  API: [7644]
+  DB:  [7645]
+
+Creature 12435:
+  API: [7768]
+  DB:  [7769]
+
+Creature 30921:
+  API: [3717]
+  DB:  [3718]
+
+Creature 30920:
+  API: [3716]
+  DB:  [3717]
+
+Creature 32572:
+  API: [7894]
+  DB:  [7895]
+
+Creature 25655:
+  API: [3255]
+  DB:  [3256]
+
+Creature 9461:
+  API: [7730]
+  DB:  [7731]
+
+Creature 14020:
+  API: [7798]
+  DB:  [7799]
+
+Creature 10264:
+  API: [7739]
+  DB:  [7740]
+
+Creature 18682:
+  API: [6863]
+  DB:  [6864]
+
+Creature 15636:
+  API: [6943]
+  DB:  [6944]
+
+Creature 1045:
+  API: [7619]
+  DB:  [7620]
+
+Creature 30830:
+  API: [3715]
+  DB:  [3716]
+
+Creature 148030:
+  API: [7653]
+  DB:  [7654]
+
+Creature 4016:
+  API: [7642]
+  DB:  [7643]
+
+Creature 22357:
+  API: [4750]
+  DB:  [4751]
+
+Creature 148112:
+  API: [7828]
+  DB:  [7829]
+
+Creature 193:
+  API: [7596]
+  DB:  [7597]
+
+Creature 300158:
+  API: [3227]
+  DB:  [3228]
+
+Creature 5481:
+  API: [6837]
+  DB:  [6838]
+
+Creature 13896:
+  API: [2246]
+  DB:  [2247]
+
+Creature 22313:
+  API: [9179]
+  DB:  [9180]
+
+Creature 22311:
+  API: [9180]
+  DB:  [9181]
+
+Creature 22310:
+  API: [9178]
+  DB:  [9179]
+
+Creature 22309:
+  API: [6790]
+  DB:  [6791]
+
+Creature 22304:
+  API: [2808]
+  DB:  [2809]
+
+Creature 5462:
+  API: [6722]
+  DB:  [6723]
+
+Creature 5461:
+  API: [6721]
+  DB:  [6722]
+
+Creature 5460:
+  API: [2101]
+  DB:  [2102]
+
+Creature 5454:
+  API: [2100]
+  DB:  [2101]
+
+Creature 30696:
+  API: [3714]
+  DB:  [3715]
+
+Creature 26276:
+  API: [7866]
+  DB:  [7867]
+
+Creature 30689:
+  API: [3713]
+  DB:  [3714]
+
+Creature 5431:
+  API: [2098]
+  DB:  [2099]
+
+Creature 30687:
+  API: [3712]
+  DB:  [3713]
+
+Creature 5429:
+  API: [2096]
+  DB:  [2097]
+
+Creature 5428:
+  API: [2095]
+  DB:  [2096]
+
+Creature 5427:
+  API: [2094]
+  DB:  [2095]
+
+Creature 5426:
+  API: [2093]
+  DB:  [2094]
+
+Creature 5425:
+  API: [2092]
+  DB:  [2093]
+
+Creature 5424:
+  API: [2091]
+  DB:  [2092]
+
+Creature 5422:
+  API: [2089]
+  DB:  [2090]
+
+Creature 300084:
+  API: [7817]
+  DB:  [7818]
+
+Creature 22255:
+  API: [2410]
+  DB:  [2411]
+
+Creature 300080:
+  API: [7807]
+  DB:  [7808]
+
+Creature 300079:
+  API: [7837]
+  DB:  [7838]
+
+Creature 300078:
+  API: [3222]
+  DB:  [3223]
+
+Creature 300077:
+  API: [7810]
+  DB:  [7811]
+
+Creature 300074:
+  API: [7808]
+  DB:  [7809]
+
+Creature 23326:
+  API: [2416]
+  DB:  [2417]
+
+Creature 22204:
+  API: [2806]
+  DB:  [2807]
+
+Creature 1851:
+  API: [6814]
+  DB:  [6815]
+
+Creature 22253:
+  API: [7843]
+  DB:  [7844]
+
+Creature 22195:
+  API: [2805]
+  DB:  [2806]
+
+Creature 5356:
+  API: [2088]
+  DB:  [2089]
+
+Creature 5352:
+  API: [2087]
+  DB:  [2088]
+
+Creature 5349:
+  API: [2086]
+  DB:  [2087]
+
+Creature 3106:
+  API: [1935]
+  DB:  [1936]
+
+Creature 22181:
+  API: [2409]
+  DB:  [2410]
+
+Creature 30597:
+  API: [3711]
+  DB:  [3712]
+
+Creature 5320:
+  API: [7672]
+  DB:  [7673]
+
+Creature 5319:
+  API: [7671]
+  DB:  [7672]
+
+Creature 3931:
+  API: [6832]
+  DB:  [6833]
+
+Creature 5314:
+  API: [7668]
+  DB:  [7669]
+
+Creature 5312:
+  API: [7667]
+  DB:  [7668]
+
+Creature 5308:
+  API: [2085]
+  DB:  [2086]
+
+Creature 5307:
+  API: [2084]
+  DB:  [2085]
+
+Creature 148066:
+  API: [7744]
+  DB:  [7745]
+
+Creature 22132:
+  API: [2408]
+  DB:  [2409]
+
+Creature 5288:
+  API: [2082]
+  DB:  [2083]
+
+Creature 5287:
+  API: [2081]
+  DB:  [2082]
+
+Creature 5286:
+  API: [2080]
+  DB:  [2081]
+
+Creature 22123:
+  API: [2407]
+  DB:  [2408]
+
+Creature 30541:
+  API: [3710]
+  DB:  [3711]
+
+Creature 5283:
+  API: [7665]
+  DB:  [7666]
+
+Creature 5280:
+  API: [7663]
+  DB:  [7664]
+
+Creature 5278:
+  API: [7661]
+  DB:  [7662]
+
+Creature 5277:
+  API: [7659]
+  DB:  [7660]
+
+Creature 5276:
+  API: [7657]
+  DB:  [7658]
+
+Creature 5274:
+  API: [2079]
+  DB:  [2080]
+
+Creature 5271:
+  API: [2991]
+  DB:  [2992]
+
+Creature 5270:
+  API: [2990]
+  DB:  [2991]
+
+Creature 5268:
+  API: [2077]
+  DB:  [2078]
+
+Creature 5267:
+  API: [2989]
+  DB:  [2990]
+
+Creature 5263:
+  API: [2988]
+  DB:  [2989]
+
+Creature 22095:
+  API: [6948]
+  DB:  [6949]
+
+Creature 215721:
+  API: [7679]
+  DB:  [7680]
+
+Creature 17300:
+  API: [2663]
+  DB:  [2664]
+
+Creature 22072:
+  API: [7841]
+  DB:  [7842]
+
+Creature 5225:
+  API: [2073]
+  DB:  [2074]
+
+Creature 5224:
+  API: [2072]
+  DB:  [2073]
+
+Creature 3765:
+  API: [2566]
+  DB:  [2567]
+
+Creature 22052:
+  API: [2405]
+  DB:  [2406]
+
+Creature 12478:
+  API: [7786]
+  DB:  [7787]
+
+Creature 22045:
+  API: [3220]
+  DB:  [3221]
+
+Creature 22044:
+  API: [2404]
+  DB:  [2405]
+
+Creature 30456:
+  API: [2535]
+  DB:  [2536]
+
+Creature 30453:
+  API: [7884]
+  DB:  [7885]
+
+Creature 30452:
+  API: [7883]
+  DB:  [7884]
+
+Creature 30451:
+  API: [7882]
+  DB:  [7883]
+
+Creature 30449:
+  API: [7881]
+  DB:  [7882]
+
+Creature 30447:
+  API: [2534]
+  DB:  [2535]
+
+Creature 30445:
+  API: [2533]
+  DB:  [2534]
+
+Creature 3783:
+  API: [6830]
+  DB:  [6831]
+
+Creature 10678:
+  API: [7764]
+  DB:  [7765]
+
+Creature 13599:
+  API: [2245]
+  DB:  [2246]
+
+Creature 30430:
+  API: [2532]
+  DB:  [2533]
+
+Creature 22009:
+  API: [6789]
+  DB:  [6790]
+
+Creature 30422:
+  API: [2531]
+  DB:  [2532]
+
+Creature 18867:
+  API: [6775]
+  DB:  [6776]
+
+Creature 21963:
+  API: [2804]
+  DB:  [2805]
+
+Creature 21956:
+  API: [2403]
+  DB:  [2404]
+
+Creature 21941:
+  API: [3219]
+  DB:  [3220]
+
+Creature 21928:
+  API: [2803]
+  DB:  [2804]
+
+Creature 16944:
+  API: [2653]
+  DB:  [2654]
+
+Creature 21923:
+  API: [2802]
+  DB:  [2803]
+
+Creature 10366:
+  API: [7743]
+  DB:  [7744]
+
+Creature 148203:
+  API: [7904]
+  DB:  [7905]
+
+Creature 21904:
+  API: [2402]
+  DB:  [2403]
+
+Creature 21901:
+  API: [2401]
+  DB:  [2402]
+
+Creature 5056:
+  API: [2071]
+  DB:  [2072]
+
+Creature 5055:
+  API: [6866]
+  DB:  [6867]
+
+Creature 5053:
+  API: [2070]
+  DB:  [2071]
+
+Creature 148172:
+  API: [7751]
+  DB:  [7752]
+
+Creature 21879:
+  API: [2399]
+  DB:  [2400]
+
+Creature 30294:
+  API: [2530]
+  DB:  [2531]
+
+Creature 148158:
+  API: [7903]
+  DB:  [7904]
+
+Creature 30291:
+  API: [2529]
+  DB:  [2530]
+
+Creature 2969:
+  API: [1927]
+  DB:  [1928]
+
+Creature 30286:
+  API: [3708]
+  DB:  [3709]
+
+Creature 30285:
+  API: [3707]
+  DB:  [3708]
+
+Creature 21864:
+  API: [2398]
+  DB:  [2399]
+
+Creature 21863:
+  API: [6864]
+  DB:  [6865]
+
+Creature 148138:
+  API: [7896]
+  DB:  [7897]
+
+Creature 148137:
+  API: [7893]
+  DB:  [7894]
+
+Creature 148132:
+  API: [7869]
+  DB:  [7870]
+
+Creature 148129:
+  API: [7846]
+  DB:  [7847]
+
+Creature 148127:
+  API: [7844]
+  DB:  [7845]
+
+Creature 21839:
+  API: [2397]
+  DB:  [2398]
+
+Creature 148119:
+  API: [7842]
+  DB:  [7843]
+
+Creature 12465:
+  API: [7777]
+  DB:  [7778]
+
+Creature 148114:
+  API: [7832]
+  DB:  [7833]
+
+Creature 148113:
+  API: [7830]
+  DB:  [7831]
+
+Creature 21827:
+  API: [2800]
+  DB:  [2801]
+
+Creature 5291:
+  API: [2083]
+  DB:  [2084]
+
+Creature 148110:
+  API: [7826]
+  DB:  [7827]
+
+Creature 10200:
+  API: [2203]
+  DB:  [2204]
+
+Creature 21820:
+  API: [7840]
+  DB:  [7841]
+
+Creature 148102:
+  API: [7820]
+  DB:  [7821]
+
+Creature 4978:
+  API: [6720]
+  DB:  [6721]
+
+Creature 37022:
+  API: [3766]
+  DB:  [3767]
+
+Creature 148098:
+  API: [7815]
+  DB:  [7816]
+
+Creature 148097:
+  API: [7806]
+  DB:  [7807]
+
+Creature 148096:
+  API: [7802]
+  DB:  [7803]
+
+Creature 21808:
+  API: [2799]
+  DB:  [2800]
+
+Creature 148086:
+  API: [7781]
+  DB:  [7782]
+
+Creature 148084:
+  API: [7778]
+  DB:  [7779]
+
+Creature 148081:
+  API: [7772]
+  DB:  [7773]
+
+Creature 148080:
+  API: [7770]
+  DB:  [7771]
+
+Creature 9622:
+  API: [2194]
+  DB:  [2195]
+
+Creature 26458:
+  API: [3263]
+  DB:  [3264]
+
+Creature 26461:
+  API: [3264]
+  DB:  [3265]
+
+Creature 148074:
+  API: [7761]
+  DB:  [7762]
+
+Creature 4950:
+  API: [2068]
+  DB:  [2069]
+
+Creature 30206:
+  API: [2528]
+  DB:  [2529]
+
+Creature 148071:
+  API: [7755]
+  DB:  [7756]
+
+Creature 30202:
+  API: [3705]
+  DB:  [3706]
+
+Creature 148067:
+  API: [7746]
+  DB:  [7747]
+
+Creature 10184:
+  API: [7736]
+  DB:  [7737]
+
+Creature 148062:
+  API: [7731]
+  DB:  [7732]
+
+Creature 148060:
+  API: [7725]
+  DB:  [7726]
+
+Creature 148059:
+  API: [7723]
+  DB:  [7724]
+
+Creature 148058:
+  API: [7721]
+  DB:  [7722]
+
+Creature 148057:
+  API: [7719]
+  DB:  [7720]
+
+Creature 148056:
+  API: [7715]
+  DB:  [7716]
+
+Creature 148055:
+  API: [7713]
+  DB:  [7714]
+
+Creature 14491:
+  API: [2267]
+  DB:  [2268]
+
+Creature 148053:
+  API: [7709]
+  DB:  [7710]
+
+Creature 31327:
+  API: [3734]
+  DB:  [3735]
+
+Creature 148051:
+  API: [7705]
+  DB:  [7706]
+
+Creature 2029:
+  API: [6822]
+  DB:  [6823]
+
+Creature 148049:
+  API: [7701]
+  DB:  [7702]
+
+Creature 148048:
+  API: [7699]
+  DB:  [7700]
+
+Creature 148047:
+  API: [7697]
+  DB:  [7698]
+
+Creature 148046:
+  API: [7695]
+  DB:  [7696]
+
+Creature 148045:
+  API: [7693]
+  DB:  [7694]
+
+Creature 148044:
+  API: [7691]
+  DB:  [7692]
+
+Creature 148043:
+  API: [7689]
+  DB:  [7690]
+
+Creature 148042:
+  API: [7687]
+  DB:  [7688]
+
+Creature 148041:
+  API: [7684]
+  DB:  [7685]
+
+Creature 148040:
+  API: [7676]
+  DB:  [7677]
+
+Creature 148039:
+  API: [7669]
+  DB:  [7670]
+
+Creature 148038:
+  API: [7666]
+  DB:  [7667]
+
+Creature 148037:
+  API: [7664]
+  DB:  [7665]
+
+Creature 148036:
+  API: [7662]
+  DB:  [7663]
+
+Creature 148035:
+  API: [7660]
+  DB:  [7661]
+
+Creature 148034:
+  API: [7658]
+  DB:  [7659]
+
+Creature 148033:
+  API: [7656]
+  DB:  [7657]
+
+Creature 12477:
+  API: [7785]
+  DB:  [7786]
+
+Creature 30164:
+  API: [2527]
+  DB:  [2528]
+
+Creature 148028:
+  API: [7650]
+  DB:  [7651]
+
+Creature 148027:
+  API: [7645]
+  DB:  [7646]
+
+Creature 148026:
+  API: [7643]
+  DB:  [7644]
+
+Creature 148024:
+  API: [7640]
+  DB:  [7641]
+
+Creature 148023:
+  API: [7638]
+  DB:  [7639]
+
+Creature 148022:
+  API: [7636]
+  DB:  [7637]
+
+Creature 2761:
+  API: [6717]
+  DB:  [6718]
+
+Creature 148018:
+  API: [7631]
+  DB:  [7632]
+
+Creature 30148:
+  API: [2526]
+  DB:  [2527]
+
+Creature 148012:
+  API: [7622]
+  DB:  [7623]
+
+Creature 148011:
+  API: [7620]
+  DB:  [7621]
+
+Creature 4887:
+  API: [2067]
+  DB:  [2068]
+
+Creature 148007:
+  API: [7612]
+  DB:  [7613]
+
+Creature 148004:
+  API: [7604]
+  DB:  [7605]
+
+Creature 148003:
+  API: [7602]
+  DB:  [7603]
+
+Creature 148002:
+  API: [7600]
+  DB:  [7601]
+
+Creature 148001:
+  API: [7598]
+  DB:  [7599]
+
+Creature 13285:
+  API: [6877]
+  DB:  [6878]
+
+Creature 13282:
+  API: [6757]
+  DB:  [6758]
+
+Creature 4861:
+  API: [2066]
+  DB:  [2067]
+
+Creature 13279:
+  API: [6755]
+  DB:  [6756]
+
+Creature 20680:
+  API: [2744]
+  DB:  [2745]
+
+Creature 21696:
+  API: [6786]
+  DB:  [6787]
+
+Creature 21695:
+  API: [6785]
+  DB:  [6786]
+
+Creature 4841:
+  API: [2065]
+  DB:  [2066]
+
+Creature 4824:
+  API: [2063]
+  DB:  [2064]
+
+Creature 4822:
+  API: [2061]
+  DB:  [2062]
+
+Creature 4821:
+  API: [2060]
+  DB:  [2061]
+
+Creature 27447:
+  API: [7870]
+  DB:  [7871]
+
+Creature 4799:
+  API: [2584]
+  DB:  [2585]
+
+Creature 4798:
+  API: [2583]
+  DB:  [2584]
+
+Creature 21633:
+  API: [4749]
+  DB:  [4750]
+
+Creature 4789:
+  API: [2582]
+  DB:  [2583]
+
+Creature 4788:
+  API: [2581]
+  DB:  [2582]
+
+Creature 13197:
+  API: [6876]
+  DB:  [6877]
+
+Creature 38453:
+  API: [2545]
+  DB:  [2546]
+
+Creature 10363:
+  API: [7742]
+  DB:  [7743]
+
+Creature 10372:
+  API: [7747]
+  DB:  [7748]
+
+Creature 25383:
+  API: [3241]
+  DB:  [3242]
+
+Creature 29994:
+  API: [2525]
+  DB:  [2526]
+
+Creature 3100:
+  API: [1934]
+  DB:  [1935]
+
+Creature 13141:
+  API: [8390]
+  DB:  [8391]
+
+Creature 2522:
+  API: [1887]
+  DB:  [1888]
+
+Creature 4699:
+  API: [2059]
+  DB:  [2060]
+
+Creature 4697:
+  API: [2058]
+  DB:  [2059]
+
+Creature 4696:
+  API: [2057]
+  DB:  [2058]
+
+Creature 4695:
+  API: [2056]
+  DB:  [2057]
+
+Creature 4694:
+  API: [2055]
+  DB:  [2056]
+
+Creature 4693:
+  API: [2054]
+  DB:  [2055]
+
+Creature 4692:
+  API: [2053]
+  DB:  [2054]
+
+Creature 18285:
+  API: [2340]
+  DB:  [2341]
+
+Creature 4690:
+  API: [2052]
+  DB:  [2053]
+
+Creature 4689:
+  API: [2051]
+  DB:  [2052]
+
+Creature 4688:
+  API: [2050]
+  DB:  [2051]
+
+Creature 21520:
+  API: [2797]
+  DB:  [2798]
+
+Creature 5988:
+  API: [2120]
+  DB:  [2121]
+
+Creature 21516:
+  API: [2796]
+  DB:  [2797]
+
+Creature 21515:
+  API: [2395]
+  DB:  [2396]
+
+Creature 4676:
+  API: [2580]
+  DB:  [2581]
+
+Creature 4675:
+  API: [2579]
+  DB:  [2580]
+
+Creature 4674:
+  API: [2578]
+  DB:  [2579]
+
+Creature 4673:
+  API: [2577]
+  DB:  [2578]
+
+Creature 4672:
+  API: [2576]
+  DB:  [2577]
+
+Creature 4671:
+  API: [2575]
+  DB:  [2576]
+
+Creature 4670:
+  API: [2574]
+  DB:  [2575]
+
+Creature 21506:
+  API: [2774]
+  DB:  [2775]
+
+Creature 21501:
+  API: [2773]
+  DB:  [2774]
+
+Creature 21500:
+  API: [2772]
+  DB:  [2773]
+
+Creature 21499:
+  API: [2771]
+  DB:  [2772]
+
+Creature 21492:
+  API: [7831]
+  DB:  [7832]
+
+Creature 4619:
+  API: [2573]
+  DB:  [2574]
+
+Creature 13036:
+  API: [2244]
+  DB:  [2245]
+
+Creature 19192:
+  API: [2695]
+  DB:  [2696]
+
+Creature 2521:
+  API: [1886]
+  DB:  [1887]
+
+Creature 13020:
+  API: [7797]
+  DB:  [7798]
+
+Creature 29854:
+  API: [2524]
+  DB:  [2525]
+
+Creature 29755:
+  API: [7880]
+  DB:  [7881]
+
+Creature 10196:
+  API: [7737]
+  DB:  [7738]
+
+Creature 8958:
+  API: [2189]
+  DB:  [2190]
+
+Creature 148050:
+  API: [7703]
+  DB:  [7704]
+
+Creature 17871:
+  API: [6859]
+  DB:  [6860]
+
+Creature 21389:
+  API: [7829]
+  DB:  [7830]
+
+Creature 21387:
+  API: [7827]
+  DB:  [7828]
+
+Creature 4548:
+  API: [2048]
+  DB:  [2049]
+
+Creature 4543:
+  API: [2987]
+  DB:  [2988]
+
+Creature 4539:
+  API: [2047]
+  DB:  [2048]
+
+Creature 4538:
+  API: [2046]
+  DB:  [2047]
+
+Creature 25711:
+  API: [7857]
+  DB:  [7858]
+
+Creature 2025:
+  API: [6820]
+  DB:  [6821]
+
+Creature 4514:
+  API: [2045]
+  DB:  [2046]
+
+Creature 148063:
+  API: [7734]
+  DB:  [7735]
+
+Creature 4512:
+  API: [2044]
+  DB:  [2045]
+
+Creature 4511:
+  API: [2043]
+  DB:  [2044]
+
+Creature 21337:
+  API: [2770]
+  DB:  [2771]
+
+Creature 21324:
+  API: [2394]
+  DB:  [2395]
+
+Creature 10757:
+  API: [6741]
+  DB:  [6742]
+
+Creature 12900:
+  API: [7795]
+  DB:  [7796]
+
+Creature 12899:
+  API: [7794]
+  DB:  [7795]
+
+Creature 29735:
+  API: [2523]
+  DB:  [2524]
+
+Creature 21314:
+  API: [2769]
+  DB:  [2770]
+
+Creature 4475:
+  API: [2986]
+  DB:  [2987]
+
+Creature 4474:
+  API: [2985]
+  DB:  [2986]
+
+Creature 4472:
+  API: [2984]
+  DB:  [2985]
+
+Creature 29722:
+  API: [3704]
+  DB:  [3705]
+
+Creature 29719:
+  API: [3703]
+  DB:  [3704]
+
+Creature 12876:
+  API: [6754]
+  DB:  [6755]
+
+Creature 21287:
+  API: [4748]
+  DB:  [4749]
+
+Creature 29698:
+  API: [2522]
+  DB:  [2523]
+
+Creature 33528:
+  API: [7898]
+  DB:  [7899]
+
+Creature 29693:
+  API: [2521]
+  DB:  [2522]
+
+Creature 4425:
+  API: [2042]
+  DB:  [2043]
+
+Creature 28220:
+  API: [3682]
+  DB:  [3683]
+
+Creature 8211:
+  API: [2172]
+  DB:  [2173]
+
+Creature 10442:
+  API: [7749]
+  DB:  [7750]
+
+Creature 4415:
+  API: [2041]
+  DB:  [2042]
+
+Creature 4414:
+  API: [2040]
+  DB:  [2041]
+
+Creature 4412:
+  API: [2039]
+  DB:  [2040]
+
+Creature 29656:
+  API: [3702]
+  DB:  [3703]
+
+Creature 4397:
+  API: [2038]
+  DB:  [2039]
+
+Creature 5490:
+  API: [6839]
+  DB:  [6840]
+
+Creature 29646:
+  API: [3701]
+  DB:  [3702]
+
+Creature 4387:
+  API: [6836]
+  DB:  [6837]
+
+Creature 4386:
+  API: [6835]
+  DB:  [6836]
+
+Creature 4385:
+  API: [6834]
+  DB:  [6835]
+
+Creature 12803:
+  API: [2243]
+  DB:  [2244]
+
+Creature 12802:
+  API: [2242]
+  DB:  [2243]
+
+Creature 12801:
+  API: [2241]
+  DB:  [2242]
+
+Creature 12800:
+  API: [2240]
+  DB:  [2241]
+
+Creature 4380:
+  API: [2037]
+  DB:  [2038]
+
+Creature 4379:
+  API: [2036]
+  DB:  [2037]
+
+Creature 4378:
+  API: [2035]
+  DB:  [2036]
+
+Creature 24073:
+  API: [3229]
+  DB:  [3230]
+
+Creature 4376:
+  API: [2034]
+  DB:  [2035]
+
+Creature 4357:
+  API: [2033]
+  DB:  [2034]
+
+Creature 4356:
+  API: [2032]
+  DB:  [2033]
+
+Creature 4352:
+  API: [2031]
+  DB:  [2032]
+
+Creature 29605:
+  API: [2520]
+  DB:  [2521]
+
+Creature 4347:
+  API: [2028]
+  DB:  [2029]
+
+Creature 4346:
+  API: [2027]
+  DB:  [2028]
+
+Creature 4345:
+  API: [2026]
+  DB:  [2027]
+
+Creature 4344:
+  API: [2025]
+  DB:  [2026]
+
+Creature 4343:
+  API: [2024]
+  DB:  [2025]
+
+Creature 4341:
+  API: [2023]
+  DB:  [2024]
+
+Creature 12759:
+  API: [6753]
+  DB:  [6754]
+
+Creature 4339:
+  API: [7655]
+  DB:  [7656]
+
+Creature 4334:
+  API: [7654]
+  DB:  [7655]
+
+Creature 2931:
+  API: [1917]
+  DB:  [1918]
+
+Creature 4331:
+  API: [7652]
+  DB:  [7653]
+
+Creature 4329:
+  API: [7651]
+  DB:  [7652]
+
+Creature 21166:
+  API: [2765]
+  DB:  [2766]
+
+Creature 4324:
+  API: [7648]
+  DB:  [7649]
+
+Creature 4323:
+  API: [7647]
+  DB:  [7648]
+
+Creature 18694:
+  API: [2681]
+  DB:  [2682]
+
+Creature 4316:
+  API: [2022]
+  DB:  [2023]
+
+Creature 4308:
+  API: [2983]
+  DB:  [2984]
+
+Creature 29562:
+  API: [2519]
+  DB:  [2520]
+
+Creature 4304:
+  API: [2021]
+  DB:  [2022]
+
+Creature 19354:
+  API: [2705]
+  DB:  [2706]
+
+Creature 26369:
+  API: [2462]
+  DB:  [2463]
+
+Creature 9698:
+  API: [2201]
+  DB:  [2202]
+
+Creature 21124:
+  API: [2393]
+  DB:  [2394]
+
+Creature 21123:
+  API: [2392]
+  DB:  [2393]
+
+Creature 21108:
+  API: [2391]
+  DB:  [2392]
+
+Creature 3919:
+  API: [6930]
+  DB:  [6931]
+
+Creature 21102:
+  API: [2390]
+  DB:  [2391]
+
+Creature 31403:
+  API: [7890]
+  DB:  [7891]
+
+Creature 4250:
+  API: [2020]
+  DB:  [2021]
+
+Creature 4249:
+  API: [2019]
+  DB:  [2020]
+
+Creature 4248:
+  API: [2018]
+  DB:  [2019]
+
+Creature 254315:
+  API: [5699]
+  DB:  [5700]
+
+Creature 21004:
+  API: [7823]
+  DB:  [7824]
+
+Creature 7139:
+  API: [6935]
+  DB:  [6936]
+
+Creature 21059:
+  API: [6782]
+  DB:  [6783]
+
+Creature 2022:
+  API: [6819]
+  DB:  [6820]
+
+Creature 29469:
+  API: [2518]
+  DB:  [2519]
+
+Creature 18858:
+  API: [2686]
+  DB:  [2687]
+
+Creature 21042:
+  API: [2389]
+  DB:  [2390]
+
+Creature 21040:
+  API: [6946]
+  DB:  [6947]
+
+Creature 29452:
+  API: [2516]
+  DB:  [2517]
+
+Creature 21032:
+  API: [7824]
+  DB:  [7825]
+
+Creature 21022:
+  API: [2387]
+  DB:  [2388]
+
+Creature 21021:
+  API: [2764]
+  DB:  [2765]
+
+Creature 17372:
+  API: [2312]
+  DB:  [2313]
+
+Creature 31402:
+  API: [7889]
+  DB:  [7890]
+
+Creature 20998:
+  API: [2386]
+  DB:  [2387]
+
+Creature 4158:
+  API: [2017]
+  DB:  [2018]
+
+Creature 29412:
+  API: [2515]
+  DB:  [2516]
+
+Creature 4154:
+  API: [2016]
+  DB:  [2017]
+
+Creature 29753:
+  API: [7879]
+  DB:  [7880]
+
+Creature 20673:
+  API: [2375]
+  DB:  [2376]
+
+Creature 4144:
+  API: [2015]
+  DB:  [2016]
+
+Creature 4143:
+  API: [2014]
+  DB:  [2015]
+
+Creature 4142:
+  API: [2013]
+  DB:  [2014]
+
+Creature 4140:
+  API: [2012]
+  DB:  [2013]
+
+Creature 4139:
+  API: [2011]
+  DB:  [2012]
+
+Creature 29390:
+  API: [2513]
+  DB:  [2514]
+
+Creature 4129:
+  API: [2009]
+  DB:  [2010]
+
+Creature 4128:
+  API: [2008]
+  DB:  [2009]
+
+Creature 4126:
+  API: [2006]
+  DB:  [2007]
+
+Creature 4124:
+  API: [2005]
+  DB:  [2006]
+
+Creature 4118:
+  API: [2003]
+  DB:  [2004]
+
+Creature 4117:
+  API: [2002]
+  DB:  [2003]
+
+Creature 4662:
+  API: [2049]
+  DB:  [2050]
+
+Creature 18692:
+  API: [7814]
+  DB:  [7815]
+
+Creature 148061:
+  API: [7728]
+  DB:  [7729]
+
+Creature 29358:
+  API: [2511]
+  DB:  [2512]
+
+Creature 2351:
+  API: [1876]
+  DB:  [1877]
+
+Creature 20932:
+  API: [2385]
+  DB:  [2386]
+
+Creature 20931:
+  API: [2384]
+  DB:  [2385]
+
+Creature 20930:
+  API: [2763]
+  DB:  [2764]
+
+Creature 20929:
+  API: [2762]
+  DB:  [2763]
+
+Creature 7055:
+  API: [2143]
+  DB:  [2144]
+
+Creature 12498:
+  API: [7792]
+  DB:  [7793]
+
+Creature 12497:
+  API: [7790]
+  DB:  [7791]
+
+Creature 29334:
+  API: [2510]
+  DB:  [2511]
+
+Creature 20911:
+  API: [7822]
+  DB:  [7823]
+
+Creature 20910:
+  API: [7821]
+  DB:  [7822]
+
+Creature 29327:
+  API: [2509]
+  DB:  [2510]
+
+Creature 5982:
+  API: [2116]
+  DB:  [2117]
+
+Creature 4067:
+  API: [2001]
+  DB:  [2002]
+
+Creature 4066:
+  API: [7646]
+  DB:  [7647]
+
+Creature 20902:
+  API: [2761]
+  DB:  [2762]
+
+Creature 20901:
+  API: [2760]
+  DB:  [2761]
+
+Creature 20900:
+  API: [2759]
+  DB:  [2760]
+
+Creature 20898:
+  API: [2758]
+  DB:  [2759]
+
+Creature 29316:
+  API: [2836]
+  DB:  [2837]
+
+Creature 12476:
+  API: [7784]
+  DB:  [7785]
+
+Creature 12475:
+  API: [7783]
+  DB:  [7784]
+
+Creature 12474:
+  API: [7782]
+  DB:  [7783]
+
+Creature 20888:
+  API: [4735]
+  DB:  [4736]
+
+Creature 20887:
+  API: [2757]
+  DB:  [2758]
+
+Creature 12467:
+  API: [7779]
+  DB:  [7780]
+
+Creature 12464:
+  API: [7775]
+  DB:  [7776]
+
+Creature 12463:
+  API: [7773]
+  DB:  [7774]
+
+Creature 20880:
+  API: [4734]
+  DB:  [4735]
+
+Creature 20879:
+  API: [4733]
+  DB:  [4734]
+
+Creature 4040:
+  API: [2000]
+  DB:  [2001]
+
+Creature 1195:
+  API: [1796]
+  DB:  [1797]
+
+Creature 4034:
+  API: [6719]
+  DB:  [6720]
+
+Creature 4032:
+  API: [1999]
+  DB:  [2000]
+
+Creature 20868:
+  API: [2756]
+  DB:  [2757]
+
+Creature 8540:
+  API: [3048]
+  DB:  [3049]
+
+Creature 12433:
+  API: [2239]
+  DB:  [2240]
+
+Creature 12432:
+  API: [2238]
+  DB:  [2239]
+
+Creature 12431:
+  API: [2237]
+  DB:  [2238]
+
+Creature 4007:
+  API: [1997]
+  DB:  [1998]
+
+Creature 4006:
+  API: [1996]
+  DB:  [1997]
+
+Creature 4005:
+  API: [1995]
+  DB:  [1996]
+
+Creature 12418:
+  API: [2236]
+  DB:  [2237]
+
+Creature 12396:
+  API: [2633]
+  DB:  [2634]
+
+Creature 15637:
+  API: [6944]
+  DB:  [6945]
+
+Creature 20803:
+  API: [2753]
+  DB:  [2754]
+
+Creature 300082:
+  API: [7809]
+  DB:  [7810]
+
+Creature 20801:
+  API: [2752]
+  DB:  [2753]
+
+Creature 20800:
+  API: [2751]
+  DB:  [2752]
+
+Creature 20798:
+  API: [2750]
+  DB:  [2751]
+
+Creature 20797:
+  API: [2383]
+  DB:  [2384]
+
+Creature 12377:
+  API: [3139]
+  DB:  [3140]
+
+Creature 20792:
+  API: [6781]
+  DB:  [6782]
+
+Creature 20784:
+  API: [2747]
+  DB:  [2748]
+
+Creature 4002970:
+  API: [1928]
+  DB:  [1929]
+
+Creature 148014:
+  API: [7626]
+  DB:  [7627]
+
+Creature 20774:
+  API: [6888]
+  DB:  [6889]
+
+Creature 20773:
+  API: [2382]
+  DB:  [2383]
+
+Creature 4002956:
+  API: [1920]
+  DB:  [1921]
+
+Creature 12347:
+  API: [2235]
+  DB:  [2236]
+
+Creature 3917:
+  API: [6718]
+  DB:  [6719]
+
+Creature 20751:
+  API: [2381]
+  DB:  [2382]
+
+Creature 20749:
+  API: [2380]
+  DB:  [2381]
+
+Creature 10437:
+  API: [3087]
+  DB:  [3088]
+
+Creature 7796:
+  API: [3031]
+  DB:  [3032]
+
+Creature 20729:
+  API: [2378]
+  DB:  [2379]
+
+Creature 20728:
+  API: [2377]
+  DB:  [2378]
+
+Creature 5485:
+  API: [6838]
+  DB:  [6839]
+
+Creature 20714:
+  API: [2376]
+  DB:  [2377]
+
+Creature 37546:
+  API: [3769]
+  DB:  [3770]
+
+Creature 37545:
+  API: [3768]
+  DB:  [3769]
+
+Creature 37544:
+  API: [3767]
+  DB:  [3768]
+
+Creature 3866:
+  API: [1993]
+  DB:  [1994]
+
+Creature 29120:
+  API: [3698]
+  DB:  [3699]
+
+Creature 3862:
+  API: [1992]
+  DB:  [1993]
+
+Creature 3861:
+  API: [1991]
+  DB:  [1992]
+
+Creature 20685:
+  API: [2746]
+  DB:  [2747]
+
+Creature 20683:
+  API: [2745]
+  DB:  [2746]
+
+Creature 12263:
+  API: [3138]
+  DB:  [3139]
+
+Creature 12262:
+  API: [3137]
+  DB:  [3138]
+
+Creature 12261:
+  API: [3136]
+  DB:  [3137]
+
+Creature 3834:
+  API: [6929]
+  DB:  [6930]
+
+Creature 12258:
+  API: [6873]
+  DB:  [6874]
+
+Creature 20671:
+  API: [2374]
+  DB:  [2375]
+
+Creature 12250:
+  API: [3135]
+  DB:  [3136]
+
+Creature 3825:
+  API: [1990]
+  DB:  [1991]
+
+Creature 3823:
+  API: [1988]
+  DB:  [1989]
+
+Creature 3821:
+  API: [1987]
+  DB:  [1988]
+
+Creature 3820:
+  API: [1986]
+  DB:  [1987]
+
+Creature 3819:
+  API: [1985]
+  DB:  [1986]
+
+Creature 12237:
+  API: [6854]
+  DB:  [6855]
+
+Creature 12236:
+  API: [2632]
+  DB:  [2633]
+
+Creature 3815:
+  API: [7641]
+  DB:  [7642]
+
+Creature 3814:
+  API: [1984]
+  DB:  [1985]
+
+Creature 3812:
+  API: [1983]
+  DB:  [1984]
+
+Creature 3810:
+  API: [1981]
+  DB:  [1982]
+
+Creature 3809:
+  API: [1980]
+  DB:  [1981]
+
+Creature 12224:
+  API: [6853]
+  DB:  [6854]
+
+Creature 12223:
+  API: [6852]
+  DB:  [6853]
+
+Creature 29461:
+  API: [2517]
+  DB:  [2518]
+
+Creature 20634:
+  API: [2373]
+  DB:  [2374]
+
+Creature 29044:
+  API: [2507]
+  DB:  [2508]
+
+Creature 19349:
+  API: [2356]
+  DB:  [2357]
+
+Creature 3782:
+  API: [6829]
+  DB:  [6830]
+
+Creature 3780:
+  API: [6827]
+  DB:  [6828]
+
+Creature 20611:
+  API: [2372]
+  DB:  [2373]
+
+Creature 3771:
+  API: [2569]
+  DB:  [2570]
+
+Creature 3770:
+  API: [2568]
+  DB:  [2569]
+
+Creature 202:
+  API: [2840]
+  DB:  [2841]
+
+Creature 3763:
+  API: [2565]
+  DB:  [2566]
+
+Creature 3762:
+  API: [2564]
+  DB:  [2565]
+
+Creature 3759:
+  API: [2563]
+  DB:  [2564]
+
+Creature 3758:
+  API: [2562]
+  DB:  [2563]
+
+Creature 3757:
+  API: [2561]
+  DB:  [2562]
+
+Creature 3755:
+  API: [2560]
+  DB:  [2561]
+
+Creature 3754:
+  API: [2559]
+  DB:  [2560]
+
+Creature 3752:
+  API: [2558]
+  DB:  [2559]
+
+Creature 11921:
+  API: [2233]
+  DB:  [2234]
+
+Creature 17352:
+  API: [6945]
+  DB:  [6946]
+
+Creature 26446:
+  API: [2463]
+  DB:  [2464]
+
+Creature 1522:
+  API: [2869]
+  DB:  [2870]
+
+Creature 4328:
+  API: [7649]
+  DB:  [7650]
+
+Creature 20557:
+  API: [2743]
+  DB:  [2744]
+
+Creature 12129:
+  API: [7767]
+  DB:  [7768]
+
+Creature 3255:
+  API: [1961]
+  DB:  [1962]
+
+Creature 12101:
+  API: [6752]
+  DB:  [6753]
+
+Creature 12100:
+  API: [6751]
+  DB:  [6752]
+
+Creature 28931:
+  API: [3697]
+  DB:  [3698]
+
+Creature 20502:
+  API: [2371]
+  DB:  [2372]
+
+Creature 3662:
+  API: [2557]
+  DB:  [2558]
+
+Creature 20496:
+  API: [3218]
+  DB:  [3219]
+
+Creature 20495:
+  API: [3217]
+  DB:  [3218]
+
+Creature 3653:
+  API: [580, 1979]
+  DB:  [1980]
+
+Creature 20480:
+  API: [3216]
+  DB:  [3217]
+
+Creature 12057:
+  API: [6749]
+  DB:  [6750]
+
+Creature 3637:
+  API: [1978]
+  DB:  [1979]
+
+Creature 3636:
+  API: [1977]
+  DB:  [1978]
+
+Creature 3634:
+  API: [1976]
+  DB:  [1977]
+
+Creature 3633:
+  API: [1975]
+  DB:  [1976]
+
+Creature 3632:
+  API: [1974]
+  DB:  [1975]
+
+Creature 3631:
+  API: [1973]
+  DB:  [1974]
+
+Creature 3630:
+  API: [1972]
+  DB:  [1973]
+
+Creature 28879:
+  API: [3696]
+  DB:  [3697]
+
+Creature 12037:
+  API: [2234]
+  DB:  [2235]
+
+Creature 3254:
+  API: [1960]
+  DB:  [1961]
+
+Creature 20090:
+  API: [6780]
+  DB:  [6781]
+
+Creature 28860:
+  API: [7878]
+  DB:  [7879]
+
+Creature 12017:
+  API: [7766]
+  DB:  [7767]
+
+Creature 20427:
+  API: [2742]
+  DB:  [2743]
+
+Creature 28843:
+  API: [3695]
+  DB:  [3696]
+
+Creature 28840:
+  API: [6913]
+  DB:  [6914]
+
+Creature 5317:
+  API: [7670]
+  DB:  [7671]
+
+Creature 9691:
+  API: [2196]
+  DB:  [2197]
+
+Creature 19512:
+  API: [2709]
+  DB:  [2710]
+
+Creature 3569:
+  API: [6826]
+  DB:  [6827]
+
+Creature 20404:
+  API: [2741]
+  DB:  [2742]
+
+Creature 20394:
+  API: [2740]
+  DB:  [2741]
+
+Creature 20387:
+  API: [2370]
+  DB:  [2371]
+
+Creature 28793:
+  API: [3694]
+  DB:  [3695]
+
+Creature 3535:
+  API: [6825]
+  DB:  [6826]
+
+Creature 148010:
+  API: [7618]
+  DB:  [7619]
+
+Creature 1520:
+  API: [2868]
+  DB:  [2869]
+
+Creature 28769:
+  API: [3693]
+  DB:  [3694]
+
+Creature 28766:
+  API: [2506]
+  DB:  [2507]
+
+Creature 14477:
+  API: [2266]
+  DB:  [2267]
+
+Creature 28759:
+  API: [3692]
+  DB:  [3693]
+
+Creature 20330:
+  API: [2369]
+  DB:  [2370]
+
+Creature 28748:
+  API: [3691]
+  DB:  [3692]
+
+Creature 28747:
+  API: [3690]
+  DB:  [3691]
+
+Creature 20326:
+  API: [2739]
+  DB:  [2740]
+
+Creature 12496:
+  API: [7788]
+  DB:  [7789]
+
+Creature 3472:
+  API: [1969]
+  DB:  [1970]
+
+Creature 13743:
+  API: [6923]
+  DB:  [6924]
+
+Creature 17035:
+  API: [2295]
+  DB:  [2296]
+
+Creature 11873:
+  API: [3133]
+  DB:  [3134]
+
+Creature 20285:
+  API: [2738]
+  DB:  [2739]
+
+Creature 12248:
+  API: [3134]
+  DB:  [3135]
+
+Creature 148009:
+  API: [7616]
+  DB:  [7617]
+
+Creature 3425:
+  API: [1967]
+  DB:  [1968]
+
+Creature 3424:
+  API: [1966]
+  DB:  [1967]
+
+Creature 2757:
+  API: [7639]
+  DB:  [7640]
+
+Creature 3416:
+  API: [1965]
+  DB:  [1966]
+
+Creature 3415:
+  API: [1964]
+  DB:  [1965]
+
+Creature 14476:
+  API: [2265]
+  DB:  [2266]
+
+Creature 28641:
+  API: [3689]
+  DB:  [3690]
+
+Creature 20215:
+  API: [2737]
+  DB:  [2738]
+
+Creature 20748:
+  API: [2379]
+  DB:  [2380]
+
+Creature 11792:
+  API: [2630]
+  DB:  [2631]
+
+Creature 11791:
+  API: [2629]
+  DB:  [2630]
+
+Creature 11790:
+  API: [2628]
+  DB:  [2629]
+
+Creature 11789:
+  API: [2232]
+  DB:  [2233]
+
+Creature 11788:
+  API: [2231]
+  DB:  [2232]
+
+Creature 11787:
+  API: [2230]
+  DB:  [2231]
+
+Creature 11784:
+  API: [6748]
+  DB:  [6749]
+
+Creature 11783:
+  API: [6747]
+  DB:  [6748]
+
+Creature 20198:
+  API: [2368]
+  DB:  [2369]
+
+Creature 20197:
+  API: [2367]
+  DB:  [2368]
+
+Creature 20196:
+  API: [2366]
+  DB:  [2367]
+
+Creature 28603:
+  API: [3688]
+  DB:  [3689]
+
+Creature 37012:
+  API: [3765]
+  DB:  [3766]
+
+Creature 37011:
+  API: [3764]
+  DB:  [3765]
+
+Creature 37007:
+  API: [3763]
+  DB:  [3764]
+
+Creature 148008:
+  API: [7614]
+  DB:  [7615]
+
+Creature 11741:
+  API: [2229]
+  DB:  [2230]
+
+Creature 11740:
+  API: [2228]
+  DB:  [2229]
+
+Creature 11739:
+  API: [2227]
+  DB:  [2228]
+
+Creature 11738:
+  API: [2226]
+  DB:  [2227]
+
+Creature 11737:
+  API: [2225]
+  DB:  [2226]
+
+Creature 11736:
+  API: [2224]
+  DB:  [2225]
+
+Creature 11735:
+  API: [2223]
+  DB:  [2224]
+
+Creature 11734:
+  API: [2222]
+  DB:  [2223]
+
+Creature 11730:
+  API: [2221]
+  DB:  [2222]
+
+Creature 11728:
+  API: [2220]
+  DB:  [2221]
+
+Creature 28565:
+  API: [3687]
+  DB:  [3688]
+
+Creature 28564:
+  API: [3686]
+  DB:  [3687]
+
+Creature 11723:
+  API: [2219]
+  DB:  [2220]
+
+Creature 20141:
+  API: [2736]
+  DB:  [2737]
+
+Creature 20138:
+  API: [2735]
+  DB:  [2736]
+
+Creature 20132:
+  API: [4727]
+  DB:  [4728]
+
+Creature 2178:
+  API: [2977]
+  DB:  [2978]
+
+Creature 4003126:
+  API: [1944]
+  DB:  [1945]
+
+Creature 3281:
+  API: [1963]
+  DB:  [1964]
+
+Creature 3256:
+  API: [1962]
+  DB:  [1963]
+
+Creature 3252:
+  API: [1959]
+  DB:  [1960]
+
+Creature 3250:
+  API: [1958]
+  DB:  [1959]
+
+Creature 3249:
+  API: [1957]
+  DB:  [1958]
+
+Creature 3246:
+  API: [1955]
+  DB:  [1956]
+
+Creature 3245:
+  API: [1954]
+  DB:  [1955]
+
+Creature 3244:
+  API: [1953]
+  DB:  [1954]
+
+Creature 3241:
+  API: [1951]
+  DB:  [1952]
+
+Creature 3231:
+  API: [1950]
+  DB:  [1951]
+
+Creature 3228:
+  API: [1949]
+  DB:  [1950]
+
+Creature 19261:
+  API: [2697]
+  DB:  [2698]
+
+Creature 3226:
+  API: [1947]
+  DB:  [1948]
+
+Creature 28477:
+  API: [2505]
+  DB:  [2506]
+
+Creature 20052:
+  API: [2734]
+  DB:  [2735]
+
+Creature 8532:
+  API: [3042]
+  DB:  [3043]
+
+Creature 15547:
+  API: [3147]
+  DB:  [3148]
+
+Creature 35189:
+  API: [2544]
+  DB:  [2545]
+
+Creature 11622:
+  API: [942, 3132]
+  DB:  [3133]
+
+Creature 4027483:
+  API: [2487]
+  DB:  [2488]
+
+Creature 17280:
+  API: [2306]
+  DB:  [2307]
+
+Creature 148015:
+  API: [7628]
+  DB:  [7629]
+
+Creature 28404:
+  API: [2504]
+  DB:  [2505]
+
+Creature 10339:
+  API: [7741]
+  DB:  [7742]
+
+Creature 11561:
+  API: [3131]
+  DB:  [3132]
+
+Creature 19979:
+  API: [2732]
+  DB:  [2733]
+
+Creature 19978:
+  API: [2731]
+  DB:  [2732]
+
+Creature 17527:
+  API: [2319]
+  DB:  [2320]
+
+Creature 19973:
+  API: [2730]
+  DB:  [2731]
+
+Creature 19971:
+  API: [2729]
+  DB:  [2730]
+
+Creature 11551:
+  API: [3130]
+  DB:  [3131]
+
+Creature 36807:
+  API: [3761]
+  DB:  [3762]
+
+Creature 3127:
+  API: [1945]
+  DB:  [1946]
+
+Creature 19961:
+  API: [2727]
+  DB:  [2728]
+
+Creature 3122:
+  API: [1940]
+  DB:  [1941]
+
+Creature 3121:
+  API: [1939]
+  DB:  [1940]
+
+Creature 32630:
+  API: [7895]
+  DB:  [7896]
+
+Creature 29411:
+  API: [2514]
+  DB:  [2515]
+
+Creature 3110:
+  API: [1938]
+  DB:  [1939]
+
+Creature 3108:
+  API: [1937]
+  DB:  [1938]
+
+Creature 16949:
+  API: [2658]
+  DB:  [2659]
+
+Creature 28358:
+  API: [2503]
+  DB:  [2504]
+
+Creature 3098:
+  API: [1932]
+  DB:  [1933]
+
+Creature 3094:
+  API: [2982]
+  DB:  [2983]
+
+Creature 11497:
+  API: [2217]
+  DB:  [2218]
+
+Creature 11496:
+  API: [2627]
+  DB:  [2628]
+
+Creature 11492:
+  API: [2626]
+  DB:  [2627]
+
+Creature 11490:
+  API: [2625]
+  DB:  [2626]
+
+Creature 3068:
+  API: [1931]
+  DB:  [1932]
+
+Creature 148088:
+  API: [7791]
+  DB:  [7792]
+
+Creature 11484:
+  API: [6745]
+  DB:  [6746]
+
+Creature 11483:
+  API: [6744]
+  DB:  [6745]
+
+Creature 11480:
+  API: [6743]
+  DB:  [6744]
+
+Creature 11477:
+  API: [3129]
+  DB:  [3130]
+
+Creature 11476:
+  API: [3128]
+  DB:  [3129]
+
+Creature 11475:
+  API: [3127]
+  DB:  [3128]
+
+Creature 11473:
+  API: [3126]
+  DB:  [3127]
+
+Creature 11472:
+  API: [3125]
+  DB:  [3126]
+
+Creature 11471:
+  API: [3124]
+  DB:  [3125]
+
+Creature 36724:
+  API: [3760]
+  DB:  [3761]
+
+Creature 11465:
+  API: [6921]
+  DB:  [6922]
+
+Creature 31226:
+  API: [3733]
+  DB:  [3734]
+
+Creature 11462:
+  API: [6919]
+  DB:  [6920]
+
+Creature 11461:
+  API: [6918]
+  DB:  [6919]
+
+Creature 28297:
+  API: [2502]
+  DB:  [2503]
+
+Creature 11458:
+  API: [6917]
+  DB:  [6918]
+
+Creature 11457:
+  API: [2624]
+  DB:  [2625]
+
+Creature 11456:
+  API: [2623]
+  DB:  [2624]
+
+Creature 11455:
+  API: [2622]
+  DB:  [2623]
+
+Creature 11454:
+  API: [2621]
+  DB:  [2622]
+
+Creature 11453:
+  API: [2620]
+  DB:  [2621]
+
+Creature 11452:
+  API: [2619]
+  DB:  [2620]
+
+Creature 11451:
+  API: [2618]
+  DB:  [2619]
+
+Creature 148005:
+  API: [7607]
+  DB:  [7608]
+
+Creature 4002043:
+  API: [1854]
+  DB:  [1855]
+
+Creature 19853:
+  API: [2726]
+  DB:  [2727]
+
+Creature 28268:
+  API: [3685]
+  DB:  [3686]
+
+Creature 19847:
+  API: [4726]
+  DB:  [4727]
+
+Creature 19843:
+  API: [2725]
+  DB:  [2726]
+
+Creature 28249:
+  API: [3684]
+  DB:  [3685]
+
+Creature 28246:
+  API: [3683]
+  DB:  [3684]
+
+Creature 449187:
+  API: [4756]
+  DB:  [4757]
+
+Creature 449186:
+  API: [4755]
+  DB:  [4756]
+
+Creature 28233:
+  API: [2501]
+  DB:  [2502]
+
+Creature 4001996:
+  API: [1843]
+  DB:  [1844]
+
+Creature 2966:
+  API: [1926]
+  DB:  [1927]
+
+Creature 148087:
+  API: [7789]
+  DB:  [7790]
+
+Creature 28221:
+  API: [2500]
+  DB:  [2501]
+
+Creature 19801:
+  API: [2724]
+  DB:  [2725]
+
+Creature 2961:
+  API: [1925]
+  DB:  [1926]
+
+Creature 2960:
+  API: [1924]
+  DB:  [1925]
+
+Creature 2958:
+  API: [1922]
+  DB:  [1923]
+
+Creature 2957:
+  API: [1921]
+  DB:  [1922]
+
+Creature 2955:
+  API: [1919]
+  DB:  [1920]
+
+Creature 2954:
+  API: [1918]
+  DB:  [1919]
+
+Creature 5806:
+  API: [6933]
+  DB:  [6934]
+
+Creature 9096:
+  API: [7727]
+  DB:  [7728]
+
+Creature 28201:
+  API: [3681]
+  DB:  [3682]
+
+Creature 28199:
+  API: [3680]
+  DB:  [3681]
+
+Creature 17525:
+  API: [2318]
+  DB:  [2319]
+
+Creature 61018:
+  API: [7902]
+  DB:  [7903]
+
+Creature 2926:
+  API: [1916]
+  DB:  [1917]
+
+Creature 2925:
+  API: [1915]
+  DB:  [1916]
+
+Creature 2924:
+  API: [1914]
+  DB:  [1915]
+
+Creature 2923:
+  API: [1913]
+  DB:  [1914]
+
+Creature 19760:
+  API: [2722]
+  DB:  [2723]
+
+Creature 19759:
+  API: [2721]
+  DB:  [2722]
+
+Creature 30482:
+  API: [3709]
+  DB:  [3710]
+
+Creature 19756:
+  API: [2720]
+  DB:  [2721]
+
+Creature 19755:
+  API: [2719]
+  DB:  [2720]
+
+Creature 19754:
+  API: [2716]
+  DB:  [2717]
+
+Creature 16947:
+  API: [2656]
+  DB:  [2657]
+
+Creature 19740:
+  API: [2714]
+  DB:  [2715]
+
+Creature 11320:
+  API: [2213]
+  DB:  [2214]
+
+Creature 11665:
+  API: [6746]
+  DB:  [6747]
+
+Creature 19716:
+  API: [2712]
+  DB:  [2713]
+
+Creature 19713:
+  API: [2711]
+  DB:  [2712]
+
+Creature 11291:
+  API: [3123]
+  DB:  [3124]
+
+Creature 11290:
+  API: [3122]
+  DB:  [3123]
+
+Creature 2551:
+  API: [6893]
+  DB:  [6894]
+
+Creature 28108:
+  API: [3678]
+  DB:  [3679]
+
+Creature 2850:
+  API: [1912]
+  DB:  [1913]
+
+Creature 28101:
+  API: [3677]
+  DB:  [3678]
+
+Creature 28098:
+  API: [2499]
+  DB:  [2500]
+
+Creature 28097:
+  API: [2498]
+  DB:  [2499]
+
+Creature 28096:
+  API: [2497]
+  DB:  [2498]
+
+Creature 2831:
+  API: [1911]
+  DB:  [1912]
+
+Creature 2830:
+  API: [1910]
+  DB:  [1911]
+
+Creature 2829:
+  API: [1909]
+  DB:  [1910]
+
+Creature 28085:
+  API: [2494]
+  DB:  [2495]
+
+Creature 9601:
+  API: [6939]
+  DB:  [6940]
+
+Creature 2751:
+  API: [6896]
+  DB:  [6897]
+
+Creature 36476:
+  API: [3759]
+  DB:  [3760]
+
+Creature 61700:
+  API: [3771]
+  DB:  [3772]
+
+Creature 28011:
+  API: [2493]
+  DB:  [2494]
+
+Creature 2753:
+  API: [1908]
+  DB:  [1909]
+
+Creature 28009:
+  API: [2492]
+  DB:  [2493]
+
+Creature 28087:
+  API: [2496]
+  DB:  [2497]
+
+Creature 2749:
+  API: [6895]
+  DB:  [6896]
+
+Creature 28004:
+  API: [2491]
+  DB:  [2492]
+
+Creature 28002:
+  API: [2490]
+  DB:  [2491]
+
+Creature 28001:
+  API: [2489]
+  DB:  [2490]
+
+Creature 2734:
+  API: [1907]
+  DB:  [1908]
+
+Creature 2732:
+  API: [1906]
+  DB:  [1907]
+
+Creature 2731:
+  API: [1905]
+  DB:  [1906]
+
+Creature 17523:
+  API: [2317]
+  DB:  [2318]
+
+Creature 2728:
+  API: [1902]
+  DB:  [1903]
+
+Creature 2727:
+  API: [1901]
+  DB:  [1902]
+
+Creature 2726:
+  API: [7637]
+  DB:  [7638]
+
+Creature 2725:
+  API: [7635]
+  DB:  [7636]
+
+Creature 12076:
+  API: [6750]
+  DB:  [6751]
+
+Creature 19557:
+  API: [6886]
+  DB:  [6887]
+
+Creature 11121:
+  API: [3121]
+  DB:  [3122]
+
+Creature 16945:
+  API: [2654]
+  DB:  [2655]
+
+Creature 2686:
+  API: [1900]
+  DB:  [1901]
+
+Creature 27941:
+  API: [3313]
+  DB:  [3314]
+
+Creature 2681:
+  API: [1899]
+  DB:  [1900]
+
+Creature 2680:
+  API: [1898]
+  DB:  [1899]
+
+Creature 19511:
+  API: [2708]
+  DB:  [2709]
+
+Creature 11078:
+  API: [3120]
+  DB:  [3121]
+
+Creature 11077:
+  API: [3119]
+  DB:  [3120]
+
+Creature 11076:
+  API: [3118]
+  DB:  [3119]
+
+Creature 11075:
+  API: [3117]
+  DB:  [3118]
+
+Creature 7041:
+  API: [7690]
+  DB:  [7691]
+
+Creature 28086:
+  API: [2495]
+  DB:  [2496]
+
+Creature 7206:
+  API: [6903]
+  DB:  [6904]
+
+Creature 2635:
+  API: [1897]
+  DB:  [1898]
+
+Creature 686:
+  API: [1725]
+  DB:  [1726]
+
+Creature 17522:
+  API: [2316]
+  DB:  [2317]
+
+Creature 79089:
+  API: [7526]
+  DB:  [7527]
+
+Creature 19459:
+  API: [2362]
+  DB:  [2363]
+
+Creature 19458:
+  API: [2361]
+  DB:  [2362]
+
+Creature 17343:
+  API: [6881]
+  DB:  [6882]
+
+Creature 19434:
+  API: [2706]
+  DB:  [2707]
+
+Creature 19429:
+  API: [2360]
+  DB:  [2361]
+
+Creature 61521:
+  API: [3770]
+  DB:  [3771]
+
+Creature 19423:
+  API: [2358]
+  DB:  [2359]
+
+Creature 2580:
+  API: [1896]
+  DB:  [1897]
+
+Creature 27836:
+  API: [3311]
+  DB:  [3312]
+
+Creature 2578:
+  API: [1894]
+  DB:  [1895]
+
+Creature 20332:
+  API: [7818]
+  DB:  [7819]
+
+Creature 10992:
+  API: [2212]
+  DB:  [2213]
+
+Creature 27824:
+  API: [3309]
+  DB:  [3310]
+
+Creature 2561:
+  API: [1891]
+  DB:  [1892]
+
+Creature 2560:
+  API: [1890]
+  DB:  [1891]
+
+Creature 2559:
+  API: [1889]
+  DB:  [1890]
+
+Creature 148083:
+  API: [7776]
+  DB:  [7777]
+
+Creature 7040:
+  API: [7688]
+  DB:  [7689]
+
+Creature 27797:
+  API: [3306]
+  DB:  [3307]
+
+Creature 7370:
+  API: [3028]
+  DB:  [3029]
+
+Creature 2536:
+  API: [2980]
+  DB:  [2981]
+
+Creature 2535:
+  API: [2979]
+  DB:  [2980]
+
+Creature 6512:
+  API: [6870]
+  DB:  [6871]
+
+Creature 19350:
+  API: [2357]
+  DB:  [2358]
+
+Creature 2505:
+  API: [1885]
+  DB:  [1886]
+
+Creature 1049:
+  API: [7627]
+  DB:  [7628]
+
+Creature 19335:
+  API: [2703]
+  DB:  [2704]
+
+Creature 3243:
+  API: [1952]
+  DB:  [1953]
+
+Creature 10901:
+  API: [920, 3116]
+  DB:  [3117]
+
+Creature 27736:
+  API: [3305]
+  DB:  [3306]
+
+Creature 27734:
+  API: [3304]
+  DB:  [3305]
+
+Creature 2476:
+  API: [1884]
+  DB:  [1885]
+
+Creature 27729:
+  API: [3303]
+  DB:  [3304]
+
+Creature 19299:
+  API: [2702]
+  DB:  [2703]
+
+Creature 19298:
+  API: [2699]
+  DB:  [2700]
+
+Creature 18880:
+  API: [2353, 5864, 5865, 5866, 5867, 5868, 5869, 5870]
+  DB:  [2354]
+
+Creature 19282:
+  API: [2698]
+  DB:  [2699]
+
+Creature 27680:
+  API: [3302]
+  DB:  [3303]
+
+Creature 10836:
+  API: [3115]
+  DB:  [3116]
+
+Creature 18587:
+  API: [6885]
+  DB:  [6886]
+
+Creature 2407:
+  API: [1882]
+  DB:  [1883]
+
+Creature 10825:
+  API: [3113]
+  DB:  [3114]
+
+Creature 27656:
+  API: [7875]
+  DB:  [7876]
+
+Creature 10816:
+  API: [3112]
+  DB:  [3113]
+
+Creature 8524:
+  API: [3034]
+  DB:  [3035]
+
+Creature 19231:
+  API: [2696]
+  DB:  [2697]
+
+Creature 10809:
+  API: [3111]
+  DB:  [3112]
+
+Creature 10808:
+  API: [3110]
+  DB:  [3111]
+
+Creature 10807:
+  API: [2211]
+  DB:  [2212]
+
+Creature 10806:
+  API: [2210]
+  DB:  [2211]
+
+Creature 2385:
+  API: [1880]
+  DB:  [1881]
+
+Creature 2384:
+  API: [1879]
+  DB:  [1880]
+
+Creature 10801:
+  API: [3109]
+  DB:  [3110]
+
+Creature 27636:
+  API: [7873]
+  DB:  [7874]
+
+Creature 27635:
+  API: [7872]
+  DB:  [7873]
+
+Creature 19205:
+  API: [8394]
+  DB:  [8395]
+
+Creature 19204:
+  API: [6776]
+  DB:  [6777]
+
+Creature 19203:
+  API: [8393]
+  DB:  [8394]
+
+Creature 4026641:
+  API: [2473]
+  DB:  [2474]
+
+Creature 2356:
+  API: [1878]
+  DB:  [1879]
+
+Creature 2354:
+  API: [1877]
+  DB:  [1878]
+
+Creature 19191:
+  API: [4724]
+  DB:  [4725]
+
+Creature 19189:
+  API: [2355]
+  DB:  [2356]
+
+Creature 2350:
+  API: [1875]
+  DB:  [1876]
+
+Creature 2349:
+  API: [1874]
+  DB:  [1875]
+
+Creature 2348:
+  API: [1873]
+  DB:  [1874]
+
+Creature 4026628:
+  API: [2471]
+  DB:  [2472]
+
+Creature 10756:
+  API: [6740]
+  DB:  [6741]
+
+Creature 1100365:
+  API: [7906]
+  DB:  [7907]
+
+Creature 18172:
+  API: [7813]
+  DB:  [7814]
+
+Creature 6130:
+  API: [7685]
+  DB:  [7686]
+
+Creature 2323:
+  API: [1872]
+  DB:  [1873]
+
+Creature 2322:
+  API: [1871]
+  DB:  [1872]
+
+Creature 2321:
+  API: [1870]
+  DB:  [1871]
+
+Creature 21728:
+  API: [6787]
+  DB:  [6788]
+
+Creature 27835:
+  API: [3310]
+  DB:  [3311]
+
+Creature 19136:
+  API: [2694]
+  DB:  [2695]
+
+Creature 27552:
+  API: [3301]
+  DB:  [3302]
+
+Creature 27551:
+  API: [3300]
+  DB:  [3301]
+
+Creature 19747:
+  API: [4725]
+  DB:  [4726]
+
+Creature 2283:
+  API: [2978]
+  DB:  [2979]
+
+Creature 10664:
+  API: [7763]
+  DB:  [7764]
+
+Creature 10663:
+  API: [7762]
+  DB:  [7763]
+
+Creature 10662:
+  API: [7760]
+  DB:  [7761]
+
+Creature 10661:
+  API: [7758]
+  DB:  [7759]
+
+Creature 10660:
+  API: [7756]
+  DB:  [7757]
+
+Creature 10659:
+  API: [7754]
+  DB:  [7755]
+
+Creature 2237:
+  API: [1869]
+  DB:  [1870]
+
+Creature 2236:
+  API: [1868]
+  DB:  [1869]
+
+Creature 2235:
+  API: [1867]
+  DB:  [1868]
+
+Creature 2234:
+  API: [1866]
+  DB:  [1867]
+
+Creature 2233:
+  API: [1865]
+  DB:  [1866]
+
+Creature 2232:
+  API: [1864]
+  DB:  [1865]
+
+Creature 2231:
+  API: [1863]
+  DB:  [1864]
+
+Creature 10648:
+  API: [2616]
+  DB:  [2617]
+
+Creature 10647:
+  API: [2615]
+  DB:  [2616]
+
+Creature 10644:
+  API: [2209]
+  DB:  [2210]
+
+Creature 10642:
+  API: [6739]
+  DB:  [6740]
+
+Creature 10641:
+  API: [6851]
+  DB:  [6852]
+
+Creature 8522:
+  API: [6735]
+  DB:  [6736]
+
+Creature 19016:
+  API: [2693]
+  DB:  [2694]
+
+Creature 2177:
+  API: [2976]
+  DB:  [2977]
+
+Creature 2176:
+  API: [2975]
+  DB:  [2976]
+
+Creature 2175:
+  API: [1862]
+  DB:  [1863]
+
+Creature 2165:
+  API: [1860]
+  DB:  [1861]
+
+Creature 27421:
+  API: [2486]
+  DB:  [2487]
+
+Creature 2163:
+  API: [1859]
+  DB:  [1860]
+
+Creature 10580:
+  API: [3108]
+  DB:  [3109]
+
+Creature 2157:
+  API: [6892]
+  DB:  [6893]
+
+Creature 2156:
+  API: [6891]
+  DB:  [6892]
+
+Creature 27410:
+  API: [3299]
+  DB:  [3300]
+
+Creature 27408:
+  API: [2485]
+  DB:  [2486]
+
+Creature 29319:
+  API: [2508]
+  DB:  [2509]
+
+Creature 18976:
+  API: [2691]
+  DB:  [2692]
+
+Creature 18975:
+  API: [2690]
+  DB:  [2691]
+
+Creature 18974:
+  API: [2689]
+  DB:  [2690]
+
+Creature 18132:
+  API: [2332]
+  DB:  [2333]
+
+Creature 21891:
+  API: [2400]
+  DB:  [2401]
+
+Creature 27362:
+  API: [3298]
+  DB:  [3299]
+
+Creature 27360:
+  API: [3297]
+  DB:  [3298]
+
+Creature 2579:
+  API: [1895]
+  DB:  [1896]
+
+Creature 10516:
+  API: [3107]
+  DB:  [3108]
+
+Creature 20983:
+  API: [6889]
+  DB:  [6890]
+
+Creature 2089:
+  API: [1858]
+  DB:  [1859]
+
+Creature 10507:
+  API: [887, 3106]
+  DB:  [3107]
+
+Creature 10506:
+  API: [886, 3105]
+  DB:  [3106]
+
+Creature 10500:
+  API: [3104]
+  DB:  [3105]
+
+Creature 10499:
+  API: [3103]
+  DB:  [3104]
+
+Creature 10498:
+  API: [3102]
+  DB:  [3103]
+
+Creature 10495:
+  API: [3101]
+  DB:  [3102]
+
+Creature 2071:
+  API: [1857]
+  DB:  [1858]
+
+Creature 10489:
+  API: [3099]
+  DB:  [3100]
+
+Creature 2069:
+  API: [1855]
+  DB:  [1856]
+
+Creature 10487:
+  API: [3097]
+  DB:  [3098]
+
+Creature 10486:
+  API: [3096]
+  DB:  [3097]
+
+Creature 10485:
+  API: [3095]
+  DB:  [3096]
+
+Creature 10480:
+  API: [3093]
+  DB:  [3094]
+
+Creature 18884:
+  API: [2354]
+  DB:  [2355]
+
+Creature 10464:
+  API: [3090]
+  DB:  [3091]
+
+Creature 10463:
+  API: [3089]
+  DB:  [3090]
+
+Creature 2042:
+  API: [1853]
+  DB:  [1854]
+
+Creature 2038:
+  API: [2556]
+  DB:  [2557]
+
+Creature 27294:
+  API: [2483]
+  DB:  [2484]
+
+Creature 2034:
+  API: [1852]
+  DB:  [1853]
+
+Creature 2033:
+  API: [1851]
+  DB:  [1852]
+
+Creature 2032:
+  API: [1850]
+  DB:  [1851]
+
+Creature 2031:
+  API: [1849]
+  DB:  [1850]
+
+Creature 2030:
+  API: [6823]
+  DB:  [6824]
+
+Creature 27286:
+  API: [3295]
+  DB:  [3296]
+
+Creature 10447:
+  API: [7752]
+  DB:  [7753]
+
+Creature 27284:
+  API: [3294]
+  DB:  [3295]
+
+Creature 27283:
+  API: [3293]
+  DB:  [3294]
+
+Creature 18860:
+  API: [2688]
+  DB:  [2689]
+
+Creature 18859:
+  API: [2687]
+  DB:  [2688]
+
+Creature 10439:
+  API: [3088]
+  DB:  [3089]
+
+Creature 10436:
+  API: [3086]
+  DB:  [3087]
+
+Creature 10435:
+  API: [3085]
+  DB:  [3086]
+
+Creature 27272:
+  API: [3292]
+  DB:  [3293]
+
+Creature 10432:
+  API: [874, 3084]
+  DB:  [3085]
+
+Creature 18848:
+  API: [2685]
+  DB:  [2686]
+
+Creature 2001:
+  API: [1848]
+  DB:  [1849]
+
+Creature 2000:
+  API: [1847]
+  DB:  [1848]
+
+Creature 1999:
+  API: [1846]
+  DB:  [1847]
+
+Creature 10417:
+  API: [3083]
+  DB:  [3084]
+
+Creature 1997:
+  API: [1844]
+  DB:  [1845]
+
+Creature 1994:
+  API: [1841]
+  DB:  [1842]
+
+Creature 10412:
+  API: [3079]
+  DB:  [3080]
+
+Creature 27249:
+  API: [2482]
+  DB:  [2483]
+
+Creature 10409:
+  API: [3077]
+  DB:  [3078]
+
+Creature 10408:
+  API: [3076]
+  DB:  [3077]
+
+Creature 10407:
+  API: [3075]
+  DB:  [3076]
+
+Creature 27244:
+  API: [2481]
+  DB:  [2482]
+
+Creature 1986:
+  API: [1840]
+  DB:  [1841]
+
+Creature 10404:
+  API: [3072]
+  DB:  [3073]
+
+Creature 1984:
+  API: [1838]
+  DB:  [1839]
+
+Creature 1983:
+  API: [2973]
+  DB:  [2974]
+
+Creature 10394:
+  API: [3071]
+  DB:  [3072]
+
+Creature 1974:
+  API: [2972]
+  DB:  [2973]
+
+Creature 1973:
+  API: [2970]
+  DB:  [2971]
+
+Creature 10391:
+  API: [3069]
+  DB:  [3070]
+
+Creature 10390:
+  API: [3068]
+  DB:  [3069]
+
+Creature 10389:
+  API: [3067]
+  DB:  [3068]
+
+Creature 10388:
+  API: [3066]
+  DB:  [3067]
+
+Creature 10387:
+  API: [3065]
+  DB:  [3066]
+
+Creature 1964:
+  API: [6928]
+  DB:  [6929]
+
+Creature 10382:
+  API: [3064]
+  DB:  [3065]
+
+Creature 10381:
+  API: [3063]
+  DB:  [3064]
+
+Creature 1961:
+  API: [1837]
+  DB:  [1838]
+
+Creature 10359:
+  API: [2206]
+  DB:  [2207]
+
+Creature 10358:
+  API: [3062]
+  DB:  [3063]
+
+Creature 10357:
+  API: [2205]
+  DB:  [2206]
+
+Creature 1923:
+  API: [1836]
+  DB:  [1837]
+
+Creature 1922:
+  API: [1835]
+  DB:  [1836]
+
+Creature 1919:
+  API: [2964]
+  DB:  [2965]
+
+Creature 1918:
+  API: [2963]
+  DB:  [2964]
+
+Creature 1917:
+  API: [2962]
+  DB:  [2963]
+
+Creature 1916:
+  API: [2961]
+  DB:  [2962]
+
+Creature 1890:
+  API: [2960]
+  DB:  [2961]
+
+Creature 8519:
+  API: [6732]
+  DB:  [6733]
+
+Creature 27131:
+  API: [2480]
+  DB:  [2481]
+
+Creature 1870:
+  API: [2956]
+  DB:  [2957]
+
+Creature 1869:
+  API: [2955]
+  DB:  [2956]
+
+Creature 1868:
+  API: [2954]
+  DB:  [2955]
+
+Creature 1866:
+  API: [2924]
+  DB:  [2925]
+
+Creature 1865:
+  API: [2923]
+  DB:  [2924]
+
+Creature 13196:
+  API: [6875]
+  DB:  [6876]
+
+Creature 2166:
+  API: [6824]
+  DB:  [6825]
+
+Creature 18696:
+  API: [2683]
+  DB:  [2684]
+
+Creature 18695:
+  API: [2682]
+  DB:  [2683]
+
+Creature 18689:
+  API: [3215]
+  DB:  [3216]
+
+Creature 1850:
+  API: [2922]
+  DB:  [2923]
+
+Creature 1849:
+  API: [2921]
+  DB:  [2922]
+
+Creature 1847:
+  API: [2920]
+  DB:  [2921]
+
+Creature 18679:
+  API: [2680]
+  DB:  [2681]
+
+Creature 18670:
+  API: [2352]
+  DB:  [2353]
+
+Creature 1824:
+  API: [1834]
+  DB:  [1835]
+
+Creature 18661:
+  API: [2679]
+  DB:  [2680]
+
+Creature 18660:
+  API: [2678]
+  DB:  [2679]
+
+Creature 1821:
+  API: [1832]
+  DB:  [1833]
+
+Creature 1817:
+  API: [1831]
+  DB:  [1832]
+
+Creature 1816:
+  API: [1830, 8132]
+  DB:  [1831]
+
+Creature 1815:
+  API: [1829, 8133]
+  DB:  [1830]
+
+Creature 18647:
+  API: [2351]
+  DB:  [2352]
+
+Creature 1805:
+  API: [2919]
+  DB:  [2920]
+
+Creature 1804:
+  API: [2918]
+  DB:  [2919]
+
+Creature 18641:
+  API: [2677]
+  DB:  [2678]
+
+Creature 1802:
+  API: [2917]
+  DB:  [2918]
+
+Creature 1797:
+  API: [1827]
+  DB:  [1828]
+
+Creature 1796:
+  API: [2914]
+  DB:  [2915]
+
+Creature 1793:
+  API: [2910]
+  DB:  [2911]
+
+Creature 1791:
+  API: [2908]
+  DB:  [2909]
+
+Creature 1789:
+  API: [2907]
+  DB:  [2908]
+
+Creature 1788:
+  API: [2906]
+  DB:  [2907]
+
+Creature 1787:
+  API: [2905]
+  DB:  [2906]
+
+Creature 1785:
+  API: [2889]
+  DB:  [2890]
+
+Creature 1784:
+  API: [2888]
+  DB:  [2889]
+
+Creature 1783:
+  API: [2887]
+  DB:  [2888]
+
+Creature 1781:
+  API: [1826]
+  DB:  [1827]
+
+Creature 1780:
+  API: [1825]
+  DB:  [1826]
+
+Creature 1778:
+  API: [1824]
+  DB:  [1825]
+
+Creature 1766:
+  API: [1823]
+  DB:  [1824]
+
+Creature 1765:
+  API: [1822]
+  DB:  [1823]
+
+Creature 3566:
+  API: [1970]
+  DB:  [1971]
+
+Creature 20867:
+  API: [2755]
+  DB:  [2756]
+
+Creature 12479:
+  API: [7787]
+  DB:  [7788]
+
+Creature 18567:
+  API: [2676]
+  DB:  [2677]
+
+Creature 20079:
+  API: [6779]
+  DB:  [6780]
+
+Creature 1713:
+  API: [1821]
+  DB:  [1822]
+
+Creature 18535:
+  API: [4723]
+  DB:  [4724]
+
+Creature 1693:
+  API: [1820]
+  DB:  [1821]
+
+Creature 26948:
+  API: [3290]
+  DB:  [3291]
+
+Creature 1689:
+  API: [1819]
+  DB:  [1820]
+
+Creature 1688:
+  API: [1818]
+  DB:  [1819]
+
+Creature 18524:
+  API: [3214]
+  DB:  [3215]
+
+Creature 18521:
+  API: [3213]
+  DB:  [3214]
+
+Creature 1502:
+  API: [2867]
+  DB:  [2868]
+
+Creature 26838:
+  API: [2479]
+  DB:  [2480]
+
+Creature 1658:
+  API: [2886]
+  DB:  [2887]
+
+Creature 1656:
+  API: [2884]
+  DB:  [2885]
+
+Creature 1655:
+  API: [2883]
+  DB:  [2884]
+
+Creature 1654:
+  API: [2882]
+  DB:  [2883]
+
+Creature 18476:
+  API: [2349]
+  DB:  [2350]
+
+Creature 18468:
+  API: [2346]
+  DB:  [2347]
+
+Creature 18467:
+  API: [2345]
+  DB:  [2346]
+
+Creature 18466:
+  API: [2344]
+  DB:  [2345]
+
+Creature 18465:
+  API: [2343]
+  DB:  [2344]
+
+Creature 18464:
+  API: [2342]
+  DB:  [2343]
+
+Creature 8764:
+  API: [2186]
+  DB:  [2187]
+
+Creature 25600:
+  API: [3252]
+  DB:  [3253]
+
+Creature 511:
+  API: [2846]
+  DB:  [2847]
+
+Creature 21721:
+  API: [7836]
+  DB:  [7837]
+
+Creature 18437:
+  API: [2341]
+  DB:  [2342]
+
+Creature 28158:
+  API: [3679]
+  DB:  [3680]
+
+Creature 1559:
+  API: [1817]
+  DB:  [1818]
+
+Creature 1558:
+  API: [1816]
+  DB:  [1817]
+
+Creature 1557:
+  API: [1815]
+  DB:  [1816]
+
+Creature 1555:
+  API: [1814]
+  DB:  [1815]
+
+Creature 1554:
+  API: [1813]
+  DB:  [1814]
+
+Creature 1553:
+  API: [1812]
+  DB:  [1813]
+
+Creature 26806:
+  API: [2478]
+  DB:  [2479]
+
+Creature 1534:
+  API: [2881]
+  DB:  [2882]
+
+Creature 1533:
+  API: [2880]
+  DB:  [2881]
+
+Creature 1530:
+  API: [2878]
+  DB:  [2879]
+
+Creature 1528:
+  API: [2875]
+  DB:  [2876]
+
+Creature 1527:
+  API: [2873]
+  DB:  [2874]
+
+Creature 1526:
+  API: [2872]
+  DB:  [2873]
+
+Creature 1525:
+  API: [2871]
+  DB:  [2872]
+
+Creature 1523:
+  API: [2870]
+  DB:  [2871]
+
+Creature 2537:
+  API: [2981]
+  DB:  [2982]
+
+Creature 1513:
+  API: [1811]
+  DB:  [1812]
+
+Creature 1509:
+  API: [1809]
+  DB:  [1810]
+
+Creature 1508:
+  API: [1808]
+  DB:  [1809]
+
+Creature 1505:
+  API: [1807]
+  DB:  [1808]
+
+Creature 1504:
+  API: [1806]
+  DB:  [1807]
+
+Creature 1501:
+  API: [2866]
+  DB:  [2867]
+
+Creature 17341:
+  API: [2668]
+  DB:  [2669]
+
+Creature 1489:
+  API: [2865]
+  DB:  [2866]
+
+Creature 1488:
+  API: [2863]
+  DB:  [2864]
+
+Creature 9879:
+  API: [6738]
+  DB:  [6739]
+
+Creature 9877:
+  API: [2613]
+  DB:  [2614]
+
+Creature 10413:
+  API: [3080]
+  DB:  [3081]
+
+Creature 26706:
+  API: [2477]
+  DB:  [2478]
+
+Creature 18283:
+  API: [2339]
+  DB:  [2340]
+
+Creature 18280:
+  API: [2338]
+  DB:  [2339]
+
+Creature 18257:
+  API: [2337]
+  DB:  [2338]
+
+Creature 1417:
+  API: [1805]
+  DB:  [1806]
+
+Creature 26672:
+  API: [2476]
+  DB:  [2477]
+
+Creature 18241:
+  API: [2336]
+  DB:  [2337]
+
+Creature 1400:
+  API: [1804]
+  DB:  [1805]
+
+Creature 26644:
+  API: [2475]
+  DB:  [2476]
+
+Creature 26643:
+  API: [2474]
+  DB:  [2475]
+
+Creature 18220:
+  API: [2335]
+  DB:  [2336]
+
+Creature 26630:
+  API: [3289]
+  DB:  [3290]
+
+Creature 26625:
+  API: [2470]
+  DB:  [2471]
+
+Creature 26624:
+  API: [3288]
+  DB:  [3289]
+
+Creature 26623:
+  API: [3279]
+  DB:  [3280]
+
+Creature 26622:
+  API: [2469]
+  DB:  [2470]
+
+Creature 26621:
+  API: [3278]
+  DB:  [3279]
+
+Creature 4017217:
+  API: [2304]
+  DB:  [2305]
+
+Creature 1353:
+  API: [1803]
+  DB:  [1804]
+
+Creature 26605:
+  API: [3277]
+  DB:  [3278]
+
+Creature 4029:
+  API: [6931]
+  DB:  [6932]
+
+Creature 26592:
+  API: [2468]
+  DB:  [2469]
+
+Creature 18171:
+  API: [7812]
+  DB:  [7813]
+
+Creature 18170:
+  API: [7811]
+  DB:  [7812]
+
+Creature 26555:
+  API: [3276]
+  DB:  [3277]
+
+Creature 18133:
+  API: [2333]
+  DB:  [2334]
+
+Creature 18130:
+  API: [2330]
+  DB:  [2331]
+
+Creature 18129:
+  API: [2329]
+  DB:  [2330]
+
+Creature 18128:
+  API: [2328]
+  DB:  [2329]
+
+Creature 17839:
+  API: [7805]
+  DB:  [7806]
+
+Creature 43382:
+  API: [541, 8454]
+  DB:  [8455]
+
+Creature 26536:
+  API: [3267]
+  DB:  [3268]
+
+Creature 9697:
+  API: [2200]
+  DB:  [2201]
+
+Creature 9696:
+  API: [2199]
+  DB:  [2200]
+
+Creature 9695:
+  API: [2198]
+  DB:  [2199]
+
+Creature 9694:
+  API: [2197]
+  DB:  [2198]
+
+Creature 9690:
+  API: [2195]
+  DB:  [2196]
+
+Creature 1270:
+  API: [2862]
+  DB:  [2863]
+
+Creature 26521:
+  API: [2467]
+  DB:  [2468]
+
+Creature 1258:
+  API: [1802]
+  DB:  [1803]
+
+Creature 10411:
+  API: [3078]
+  DB:  [3079]
+
+Creature 26492:
+  API: [3265]
+  DB:  [3266]
+
+Creature 26483:
+  API: [2465]
+  DB:  [2466]
+
+Creature 26482:
+  API: [2464]
+  DB:  [2465]
+
+Creature 1216:
+  API: [1800]
+  DB:  [1801]
+
+Creature 1199:
+  API: [1798]
+  DB:  [1799]
+
+Creature 26455:
+  API: [3262]
+  DB:  [3263]
+
+Creature 27329:
+  API: [2484]
+  DB:  [2485]
+
+Creature 18033:
+  API: [2327]
+  DB:  [2328]
+
+Creature 1194:
+  API: [1795]
+  DB:  [1796]
+
+Creature 1192:
+  API: [1794]
+  DB:  [1795]
+
+Creature 1191:
+  API: [1793]
+  DB:  [1794]
+
+Creature 1190:
+  API: [1792]
+  DB:  [1793]
+
+Creature 1189:
+  API: [1791]
+  DB:  [1792]
+
+Creature 1188:
+  API: [1790]
+  DB:  [1791]
+
+Creature 1186:
+  API: [1789]
+  DB:  [1790]
+
+Creature 1185:
+  API: [1788]
+  DB:  [1789]
+
+Creature 1184:
+  API: [1787]
+  DB:  [1788]
+
+Creature 7109:
+  API: [2600]
+  DB:  [2601]
+
+Creature 23945:
+  API: [2422]
+  DB:  [2423]
+
+Creature 1152:
+  API: [1786]
+  DB:  [1787]
+
+Creature 1151:
+  API: [1785]
+  DB:  [1786]
+
+Creature 1150:
+  API: [1784]
+  DB:  [1785]
+
+Creature 9568:
+  API: [7732]
+  DB:  [7733]
+
+Creature 17980:
+  API: [6884]
+  DB:  [6885]
+
+Creature 1140:
+  API: [1783]
+  DB:  [1784]
+
+Creature 1138:
+  API: [1782]
+  DB:  [1783]
+
+Creature 1084:
+  API: [1764]
+  DB:  [1765]
+
+Creature 1133:
+  API: [1781]
+  DB:  [1782]
+
+Creature 1132:
+  API: [1780]
+  DB:  [1781]
+
+Creature 1131:
+  API: [1779]
+  DB:  [1780]
+
+Creature 1130:
+  API: [1778]
+  DB:  [1779]
+
+Creature 1129:
+  API: [1777]
+  DB:  [1778]
+
+Creature 1128:
+  API: [1776]
+  DB:  [1777]
+
+Creature 1127:
+  API: [1775]
+  DB:  [1776]
+
+Creature 1125:
+  API: [1773]
+  DB:  [1774]
+
+Creature 10414:
+  API: [3081]
+  DB:  [3082]
+
+Creature 1114:
+  API: [1772]
+  DB:  [1773]
+
+Creature 1112:
+  API: [1771]
+  DB:  [1772]
+
+Creature 1111:
+  API: [1770]
+  DB:  [1771]
+
+Creature 1110:
+  API: [2861]
+  DB:  [2862]
+
+Creature 1109:
+  API: [1769]
+  DB:  [1770]
+
+Creature 26360:
+  API: [2461]
+  DB:  [2462]
+
+Creature 26359:
+  API: [2460]
+  DB:  [2461]
+
+Creature 26358:
+  API: [2459]
+  DB:  [2460]
+
+Creature 21104:
+  API: [7825]
+  DB:  [7826]
+
+Creature 9516:
+  API: [2611]
+  DB:  [2612]
+
+Creature 26349:
+  API: [7868]
+  DB:  [7869]
+
+Creature 1088:
+  API: [1767]
+  DB:  [1768]
+
+Creature 1087:
+  API: [1766]
+  DB:  [1767]
+
+Creature 1085:
+  API: [1765]
+  DB:  [1766]
+
+Creature 9502:
+  API: [6911]
+  DB:  [6912]
+
+Creature 1081:
+  API: [6811]
+  DB:  [6812]
+
+Creature 1069:
+  API: [7632]
+  DB:  [7633]
+
+Creature 17906:
+  API: [3212]
+  DB:  [3213]
+
+Creature 26322:
+  API: [7867]
+  DB:  [7868]
+
+Creature 1063:
+  API: [7630]
+  DB:  [7631]
+
+Creature 19744:
+  API: [2715]
+  DB:  [2716]
+
+Creature 10416:
+  API: [3082]
+  DB:  [3083]
+
+Creature 17898:
+  API: [3211]
+  DB:  [3212]
+
+Creature 17897:
+  API: [3210]
+  DB:  [3211]
+
+Creature 17895:
+  API: [3209]
+  DB:  [3210]
+
+Creature 1050:
+  API: [7629]
+  DB:  [7630]
+
+Creature 16021:
+  API: [3159]
+  DB:  [3160]
+
+Creature 18827:
+  API: [2684]
+  DB:  [2685]
+
+Creature 1047:
+  API: [7623]
+  DB:  [7624]
+
+Creature 1046:
+  API: [7621]
+  DB:  [7622]
+
+Creature 1044:
+  API: [7617]
+  DB:  [7618]
+
+Creature 1043:
+  API: [7615]
+  DB:  [7616]
+
+Creature 1042:
+  API: [7613]
+  DB:  [7614]
+
+Creature 1041:
+  API: [6810]
+  DB:  [6811]
+
+Creature 17878:
+  API: [3208]
+  DB:  [3209]
+
+Creature 1039:
+  API: [6808]
+  DB:  [6809]
+
+Creature 26293:
+  API: [2458]
+  DB:  [2459]
+
+Creature 9454:
+  API: [2609]
+  DB:  [2610]
+
+Creature 17870:
+  API: [6773]
+  DB:  [6774]
+
+Creature 148068:
+  API: [7748]
+  DB:  [7749]
+
+Creature 1023:
+  API: [1762]
+  DB:  [1763]
+
+Creature 1022:
+  API: [1761]
+  DB:  [1762]
+
+Creature 1021:
+  API: [1760]
+  DB:  [1761]
+
+Creature 1020:
+  API: [1759]
+  DB:  [1760]
+
+Creature 1019:
+  API: [1758]
+  DB:  [1759]
+
+Creature 1018:
+  API: [1757]
+  DB:  [1758]
+
+Creature 1017:
+  API: [1756]
+  DB:  [1757]
+
+Creature 1016:
+  API: [1755]
+  DB:  [1756]
+
+Creature 1015:
+  API: [1754]
+  DB:  [1755]
+
+Creature 10161:
+  API: [7735]
+  DB:  [7736]
+
+Creature 8923:
+  API: [6908]
+  DB:  [6909]
+
+Creature 14535:
+  API: [2650]
+  DB:  [2651]
+
+Creature 9416:
+  API: [2193]
+  DB:  [2194]
+
+Creature 10491:
+  API: [3100]
+  DB:  [3101]
+
+Creature 17830:
+  API: [2673]
+  DB:  [2674]
+
+Creature 21817:
+  API: [7838]
+  DB:  [7839]
+
+Creature 977:
+  API: [1753]
+  DB:  [1754]
+
+Creature 976:
+  API: [1752]
+  DB:  [1753]
+
+Creature 949:
+  API: [1751]
+  DB:  [1752]
+
+Creature 948:
+  API: [2860]
+  DB:  [2861]
+
+Creature 26202:
+  API: [3261]
+  DB:  [3262]
+
+Creature 33186:
+  API: [7897]
+  DB:  [7898]
+
+Creature 930:
+  API: [1750]
+  DB:  [1751]
+
+Creature 61004:
+  API: [9183]
+  DB:  [9184]
+
+Creature 923:
+  API: [1749]
+  DB:  [1750]
+
+Creature 922:
+  API: [1748]
+  DB:  [1749]
+
+Creature 26174:
+  API: [2457]
+  DB:  [2458]
+
+Creature 28069:
+  API: [6912]
+  DB:  [6913]
+
+Creature 347302:
+  API: [5914]
+  DB:  [5915]
+
+Creature 347303:
+  API: [5915]
+  DB:  [5916]
+
+Creature 6116:
+  API: [2999]
+  DB:  [3000]
+
+Creature 17731:
+  API: [2325]
+  DB:  [2326]
+
+Creature 19608:
+  API: [6887]
+  DB:  [6888]
+
+Creature 17725:
+  API: [6858]
+  DB:  [6859]
+
+Creature 17724:
+  API: [2324]
+  DB:  [2325]
+
+Creature 10083:
+  API: [7733]
+  DB:  [7734]
+
+Creature 26126:
+  API: [3260]
+  DB:  [3261]
+
+Creature 858:
+  API: [1747]
+  DB:  [1748]
+
+Creature 10077:
+  API: [2202]
+  DB:  [2203]
+
+Creature 856:
+  API: [1746]
+  DB:  [1747]
+
+Creature 855:
+  API: [1745]
+  DB:  [1746]
+
+Creature 854:
+  API: [1744]
+  DB:  [1745]
+
+Creature 3227:
+  API: [1948]
+  DB:  [1949]
+
+Creature 846:
+  API: [2859]
+  DB:  [2860]
+
+Creature 17683:
+  API: [2323]
+  DB:  [2324]
+
+Creature 834:
+  API: [1743]
+  DB:  [1744]
+
+Creature 833:
+  API: [1742]
+  DB:  [1743]
+
+Creature 831:
+  API: [1741]
+  DB:  [1742]
+
+Creature 17661:
+  API: [2321]
+  DB:  [2322]
+
+Creature 26076:
+  API: [3259]
+  DB:  [3260]
+
+Creature 26073:
+  API: [3258]
+  DB:  [3259]
+
+Creature 1953:
+  API: [6815]
+  DB:  [6816]
+
+Creature 10371:
+  API: [7745]
+  DB:  [7746]
+
+Creature 3824:
+  API: [1989]
+  DB:  [1990]
+
+Creature 4382:
+  API: [6833]
+  DB:  [6834]
+
+Creature 19980:
+  API: [2733]
+  DB:  [2734]
+
+Creature 787:
+  API: [2858]
+  DB:  [2859]
+
+Creature 785:
+  API: [2857]
+  DB:  [2858]
+
+Creature 17669:
+  API: [2322]
+  DB:  [2323]
+
+Creature 772:
+  API: [1738]
+  DB:  [1739]
+
+Creature 771:
+  API: [2856]
+  DB:  [2857]
+
+Creature 769:
+  API: [1737]
+  DB:  [1738]
+
+Creature 768:
+  API: [1736]
+  DB:  [1737]
+
+Creature 767:
+  API: [1735]
+  DB:  [1736]
+
+Creature 766:
+  API: [6807]
+  DB:  [6808]
+
+Creature 765:
+  API: [6806]
+  DB:  [6807]
+
+Creature 764:
+  API: [6805]
+  DB:  [6806]
+
+Creature 42850:
+  API: [2837]
+  DB:  [2838]
+
+Creature 746:
+  API: [7611]
+  DB:  [7612]
+
+Creature 745:
+  API: [7609]
+  DB:  [7610]
+
+Creature 744:
+  API: [7608]
+  DB:  [7609]
+
+Creature 10406:
+  API: [3074]
+  DB:  [3075]
+
+Creature 742:
+  API: [7605]
+  DB:  [7606]
+
+Creature 741:
+  API: [7603]
+  DB:  [7604]
+
+Creature 740:
+  API: [7601]
+  DB:  [7602]
+
+Creature 736:
+  API: [1734]
+  DB:  [1735]
+
+Creature 731:
+  API: [1733]
+  DB:  [1734]
+
+Creature 730:
+  API: [1732]
+  DB:  [1733]
+
+Creature 729:
+  API: [1731]
+  DB:  [1732]
+
+Creature 728:
+  API: [1730]
+  DB:  [1731]
+
+Creature 61003:
+  API: [9182]
+  DB:  [9183]
+
+Creature 17556:
+  API: [2320]
+  DB:  [2321]
+
+Creature 6514:
+  API: [2133]
+  DB:  [2134]
+
+Creature 7022:
+  API: [2142]
+  DB:  [2143]
+
+Creature 708:
+  API: [1729]
+  DB:  [1730]
+
+Creature 705:
+  API: [1728]
+  DB:  [1729]
+
+Creature 704:
+  API: [1727]
+  DB:  [1728]
+
+Creature 691:
+  API: [6716]
+  DB:  [6717]
+
+Creature 2070:
+  API: [1856]
+  DB:  [1857]
+
+Creature 10488:
+  API: [3098]
+  DB:  [3099]
+
+Creature 687:
+  API: [1726]
+  DB:  [1727]
+
+Creature 17524:
+  API: [2672]
+  DB:  [2673]
+
+Creature 684:
+  API: [1723]
+  DB:  [1724]
+
+Creature 683:
+  API: [1722]
+  DB:  [1723]
+
+Creature 682:
+  API: [1721]
+  DB:  [1722]
+
+Creature 27654:
+  API: [7874]
+  DB:  [7875]
+
+Creature 2565:
+  API: [1893]
+  DB:  [1894]
+
+Creature 1040:
+  API: [6809]
+  DB:  [6810]
+
+Creature 148013:
+  API: [7624]
+  DB:  [7625]
+
+Creature 2730:
+  API: [1904]
+  DB:  [1905]
+
+Creature 7104:
+  API: [6849]
+  DB:  [6850]
+
+Creature 17494:
+  API: [2671]
+  DB:  [2672]
+
+Creature 1822:
+  API: [1833]
+  DB:  [1834]
+
+Creature 10405:
+  API: [3073]
+  DB:  [3074]
+
+Creature 628:
+  API: [1719]
+  DB:  [1720]
+
+Creature 31780:
+  API: [3739]
+  DB:  [3740]
+
+Creature 626:
+  API: [2855]
+  DB:  [2856]
+
+Creature 625:
+  API: [2854]
+  DB:  [2855]
+
+Creature 624:
+  API: [2853]
+  DB:  [2854]
+
+Creature 623:
+  API: [2852]
+  DB:  [2853]
+
+Creature 12468:
+  API: [7780]
+  DB:  [7781]
+
+Creature 616:
+  API: [1718]
+  DB:  [1719]
+
+Creature 9031:
+  API: [3061]
+  DB:  [3062]
+
+Creature 9025:
+  API: [6736]
+  DB:  [6737]
+
+Creature 604:
+  API: [2851]
+  DB:  [2852]
+
+Creature 10826:
+  API: [3114]
+  DB:  [3115]
+
+Creature 12220:
+  API: [6872]
+  DB:  [6873]
+
+Creature 574:
+  API: [1717]
+  DB:  [1718]
+
+Creature 572:
+  API: [2850]
+  DB:  [2851]
+
+Creature 570:
+  API: [2849]
+  DB:  [2850]
+
+Creature 569:
+  API: [1716]
+  DB:  [1717]
+
+Creature 565:
+  API: [1715]
+  DB:  [1716]
+
+Creature 2729:
+  API: [1903]
+  DB:  [1904]
+
+Creature 8982:
+  API: [6910]
+  DB:  [6911]
+
+Creature 8981:
+  API: [6909]
+  DB:  [6910]
+
+Creature 25817:
+  API: [2456]
+  DB:  [2457]
+
+Creature 8976:
+  API: [7726]
+  DB:  [7727]
+
+Creature 547:
+  API: [1714]
+  DB:  [1715]
+
+Creature 8961:
+  API: [2192]
+  DB:  [2193]
+
+Creature 8960:
+  API: [2191]
+  DB:  [2192]
+
+Creature 539:
+  API: [1713]
+  DB:  [1714]
+
+Creature 8957:
+  API: [2188]
+  DB:  [2189]
+
+Creature 8956:
+  API: [2187]
+  DB:  [2188]
+
+Creature 17374:
+  API: [2314]
+  DB:  [2315]
+
+Creature 17373:
+  API: [2313]
+  DB:  [2314]
+
+Creature 25791:
+  API: [2455]
+  DB:  [2456]
+
+Creature 531:
+  API: [2848]
+  DB:  [2849]
+
+Creature 525:
+  API: [1712]
+  DB:  [1713]
+
+Creature 524:
+  API: [1711]
+  DB:  [1712]
+
+Creature 522:
+  API: [2847]
+  DB:  [2848]
+
+Creature 521:
+  API: [1710]
+  DB:  [1711]
+
+Creature 17358:
+  API: [6772]
+  DB:  [6773]
+
+Creature 25774:
+  API: [2453]
+  DB:  [2454]
+
+Creature 17350:
+  API: [2311]
+  DB:  [2312]
+
+Creature 17349:
+  API: [2310]
+  DB:  [2311]
+
+Creature 17348:
+  API: [2309]
+  DB:  [2310]
+
+Creature 17347:
+  API: [2308]
+  DB:  [2309]
+
+Creature 17346:
+  API: [6883]
+  DB:  [6884]
+
+Creature 17345:
+  API: [2307]
+  DB:  [2308]
+
+Creature 17344:
+  API: [6882]
+  DB:  [6883]
+
+Creature 505:
+  API: [1709]
+  DB:  [1710]
+
+Creature 17342:
+  API: [2669]
+  DB:  [2670]
+
+Creature 503:
+  API: [2845]
+  DB:  [2846]
+
+Creature 17340:
+  API: [2667]
+  DB:  [2668]
+
+Creature 17339:
+  API: [2666]
+  DB:  [2667]
+
+Creature 17338:
+  API: [2665]
+  DB:  [2666]
+
+Creature 17337:
+  API: [2664]
+  DB:  [2665]
+
+Creature 25748:
+  API: [2452]
+  DB:  [2453]
+
+Creature 4016353:
+  API: [2286]
+  DB:  [2287]
+
+Creature 8908:
+  API: [6907]
+  DB:  [6908]
+
+Creature 8906:
+  API: [6906]
+  DB:  [6907]
+
+Creature 8905:
+  API: [6905]
+  DB:  [6906]
+
+Creature 12219:
+  API: [6871]
+  DB:  [6872]
+
+Creature 471:
+  API: [1708]
+  DB:  [1709]
+
+Creature 36070:
+  API: [6925]
+  DB:  [6926]
+
+Creature 2563:
+  API: [1892]
+  DB:  [1893]
+
+Creature 25722:
+  API: [7863]
+  DB:  [7864]
+
+Creature 25721:
+  API: [7862]
+  DB:  [7863]
+
+Creature 462:
+  API: [1707]
+  DB:  [1708]
+
+Creature 25717:
+  API: [7861]
+  DB:  [7862]
+
+Creature 25716:
+  API: [7860]
+  DB:  [7861]
+
+Creature 25713:
+  API: [7859]
+  DB:  [7860]
+
+Creature 25712:
+  API: [7858]
+  DB:  [7859]
+
+Creature 454:
+  API: [1706]
+  DB:  [1707]
+
+Creature 442:
+  API: [1705]
+  DB:  [1706]
+
+Creature 441:
+  API: [7599]
+  DB:  [7600]
+
+Creature 1985:
+  API: [1839]
+  DB:  [1840]
+
+Creature 428:
+  API: [1704]
+  DB:  [1705]
+
+Creature 25684:
+  API: [3257]
+  DB:  [3258]
+
+Creature 25675:
+  API: [2451]
+  DB:  [2452]
+
+Creature 1100323:
+  API: [7907]
+  DB:  [7908]
+
+Creature 412:
+  API: [2844]
+  DB:  [2845]
+
+Creature 25660:
+  API: [3256]
+  DB:  [3257]
+
+Creature 17236:
+  API: [2305]
+  DB:  [2306]
+
+Creature 25650:
+  API: [3254]
+  DB:  [3255]
+
+Creature 390:
+  API: [1703]
+  DB:  [1704]
+
+Creature 17216:
+  API: [2303]
+  DB:  [2304]
+
+Creature 17207:
+  API: [6771]
+  DB:  [6772]
+
+Creature 17203:
+  API: [2302]
+  DB:  [2303]
+
+Creature 17202:
+  API: [2301]
+  DB:  [2302]
+
+Creature 17197:
+  API: [6880]
+  DB:  [6881]
+
+Creature 17196:
+  API: [6879]
+  DB:  [6880]
+
+Creature 25611:
+  API: [3253]
+  DB:  [3254]
+
+Creature 21648:
+  API: [7835]
+  DB:  [7836]
+
+Creature 345:
+  API: [1702]
+  DB:  [1703]
+
+Creature 8763:
+  API: [2185]
+  DB:  [2186]
+
+Creature 8762:
+  API: [2184]
+  DB:  [2185]
+
+Creature 25599:
+  API: [2835]
+  DB:  [2836]
+
+Creature 20058:
+  API: [2365]
+  DB:  [2366]
+
+Creature 25595:
+  API: [2834]
+  DB:  [2835]
+
+Creature 25593:
+  API: [2833]
+  DB:  [2834]
+
+Creature 335:
+  API: [7597]
+  DB:  [7598]
+
+Creature 330:
+  API: [1701]
+  DB:  [1702]
+
+Creature 25585:
+  API: [7856]
+  DB:  [7857]
+
+Creature 449183:
+  API: [6959]
+  DB:  [6960]
+
+Creature 61001:
+  API: [9181]
+  DB:  [9182]
+
+Creature 17155:
+  API: [6770]
+  DB:  [6771]
+
+Creature 17154:
+  API: [6769]
+  DB:  [6770]
+
+Creature 17153:
+  API: [6768]
+  DB:  [6769]
+
+Creature 17151:
+  API: [2662]
+  DB:  [2663]
+
+Creature 299:
+  API: [1700]
+  DB:  [1701]
+
+Creature 8716:
+  API: [2608]
+  DB:  [2609]
+
+Creature 17129:
+  API: [2298]
+  DB:  [2299]
+
+Creature 17128:
+  API: [2297]
+  DB:  [2298]
+
+Creature 14280:
+  API: [2258]
+  DB:  [2259]
+
+Creature 8660:
+  API: [2183]
+  DB:  [2184]
+
+Creature 25489:
+  API: [2449]
+  DB:  [2450]
+
+Creature 25488:
+  API: [2448]
+  DB:  [2449]
+
+Creature 25487:
+  API: [2447]
+  DB:  [2448]
+
+Creature 25482:
+  API: [2446]
+  DB:  [2447]
+
+Creature 25481:
+  API: [2445]
+  DB:  [2446]
+
+Creature 17058:
+  API: [2661]
+  DB:  [2662]
+
+Creature 217:
+  API: [1699]
+  DB:  [1700]
+
+Creature 17053:
+  API: [2296]
+  DB:  [2297]
+
+Creature 213:
+  API: [1698]
+  DB:  [1699]
+
+Creature 210:
+  API: [2842]
+  DB:  [2843]
+
+Creature 25464:
+  API: [2444]
+  DB:  [2445]
+
+Creature 203:
+  API: [2841]
+  DB:  [2842]
+
+Creature 199:
+  API: [1697]
+  DB:  [1698]
+
+Creature 4024475:
+  API: [2431]
+  DB:  [2432]
+
+Creature 25448:
+  API: [7855]
+  DB:  [7856]
+
+Creature 6109:
+  API: [7682]
+  DB:  [7683]
+
+Creature 16304:
+  API: [6763]
+  DB:  [6764]
+
+Creature 8602:
+  API: [2182]
+  DB:  [2183]
+
+Creature 8601:
+  API: [2181]
+  DB:  [2182]
+
+Creature 8600:
+  API: [2180]
+  DB:  [2181]
+
+Creature 10202:
+  API: [7738]
+  DB:  [7739]
+
+Creature 2406:
+  API: [1881]
+  DB:  [1882]
+
+Creature 157:
+  API: [1696]
+  DB:  [1697]
+
+Creature 7099:
+  API: [2147]
+  DB:  [2148]
+
+Creature 8567:
+  API: [3060]
+  DB:  [3061]
+
+Creature 8558:
+  API: [3059]
+  DB:  [3060]
+
+Creature 8557:
+  API: [3058]
+  DB:  [3059]
+
+Creature 8556:
+  API: [3057]
+  DB:  [3058]
+
+Creature 8555:
+  API: [3056]
+  DB:  [3057]
+
+Creature 16973:
+  API: [2294]
+  DB:  [2295]
+
+Creature 16972:
+  API: [2293]
+  DB:  [2294]
+
+Creature 25387:
+  API: [3244]
+  DB:  [3245]
+
+Creature 25386:
+  API: [3243]
+  DB:  [3244]
+
+Creature 8545:
+  API: [3055]
+  DB:  [3056]
+
+Creature 8544:
+  API: [3054]
+  DB:  [3055]
+
+Creature 8543:
+  API: [3053]
+  DB:  [3054]
+
+Creature 8542:
+  API: [3050]
+  DB:  [3051]
+
+Creature 8541:
+  API: [3049]
+  DB:  [3050]
+
+Creature 16959:
+  API: [2660]
+  DB:  [2661]
+
+Creature 8539:
+  API: [3046]
+  DB:  [3047]
+
+Creature 8538:
+  API: [3045]
+  DB:  [3046]
+
+Creature 118:
+  API: [1694]
+  DB:  [1695]
+
+Creature 8535:
+  API: [3044]
+  DB:  [3045]
+
+Creature 8534:
+  API: [3043]
+  DB:  [3044]
+
+Creature 8531:
+  API: [3041]
+  DB:  [3042]
+
+Creature 8530:
+  API: [3040]
+  DB:  [3041]
+
+Creature 16948:
+  API: [2657]
+  DB:  [2658]
+
+Creature 8528:
+  API: [3038]
+  DB:  [3039]
+
+Creature 8527:
+  API: [3037]
+  DB:  [3038]
+
+Creature 8526:
+  API: [3036]
+  DB:  [3037]
+
+Creature 8525:
+  API: [3035]
+  DB:  [3036]
+
+Creature 16943:
+  API: [2652]
+  DB:  [2653]
+
+Creature 8523:
+  API: [3033]
+  DB:  [3034]
+
+Creature 8521:
+  API: [6734]
+  DB:  [6735]
+
+Creature 8520:
+  API: [6733]
+  DB:  [6734]
+
+Creature 33776:
+  API: [2543]
+  DB:  [2544]
+
+Creature 347301:
+  API: [7919]
+  DB:  [7920]
+
+Creature 16934:
+  API: [2292]
+  DB:  [2293]
+
+Creature 16933:
+  API: [2291]
+  DB:  [2292]
+
+Creature 16932:
+  API: [2290]
+  DB:  [2291]
+
+Creature 43:
+  API: [1689]
+  DB:  [1690]
+
+Creature 25294:
+  API: [3240]
+  DB:  [3241]
+
+Creature 7340:
+  API: [3014]
+  DB:  [3015]
+
+Creature 16854:
+  API: [6767]
+  DB:  [6768]
+
+Creature 29133:
+  API: [3700]
+  DB:  [3701]
+
+
+========================================
+ONLY IN DATABASE (0 total)
+========================================
+

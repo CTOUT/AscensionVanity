@@ -1,0 +1,129 @@
+ITEMS NEEDING WEB VERIFICATION
+Generated: 2025-10-28 11:27:01
+========================================
+
+Total items needing verification: 97
+
+CATEGORIZATION
+- Beastmaster's Whistle: 41
+- Empty descriptions: 49
+- Short descriptions: 7
+- Other: 0
+
+========================================
+ALL ITEMS NEEDING VERIFICATION
+========================================
+
+Format: ItemID | Name | CreatureID | Description | Web Lookup URL
+131 | Banana Charm | 23234 | Cute as H*ck | https://db.ascension.gg/?item=131
+188 | Scorched Stone | 25706 |  | https://db.ascension.gg/?item=188
+197 | Swift Zhevra | 27684 | A rare Zhevracorn | https://db.ascension.gg/?item=197
+202 | D.I.S.C.O. | 27989 | Party On! | https://db.ascension.gg/?item=202
+1438 | Nightsaber Cub | 98495 | Cute as H*ck | https://db.ascension.gg/?item=1438
+1505 | Nuts' Acorn | 54227 | Delete me | https://db.ascension.gg/?item=1505
+1521 | Swift Shorestrider | 54423 | Everyone Loves it | https://db.ascension.gg/?item=1521
+1688 | Beastmaster's Whistle: Forest Spider | 30 |  | https://db.ascension.gg/?item=1688
+1690 | Beastmaster's Whistle: Timber Wolf | 69 |  | https://db.ascension.gg/?item=1690
+1693 | Beastmaster's Whistle: Stonetusk Boar | 113 |  | https://db.ascension.gg/?item=1693
+1695 | Beastmaster's Whistle: Greater Fleshripper | 154 |  | https://db.ascension.gg/?item=1695
+1720 | Beastmaster's Whistle: Young Stranglethorn Tiger | 681 |  | https://db.ascension.gg/?item=1720
+1724 | Beastmaster's Whistle: Stranglethorn Raptor | 685 |  | https://db.ascension.gg/?item=1724
+1739 | Beastmaster's Whistle: Young Forest Bear | 822 |  | https://db.ascension.gg/?item=1739
+1740 | Beastmaster's Whistle: Sand Crawler | 830 |  | https://db.ascension.gg/?item=1740
+1763 | Beastmaster's Whistle: Sawtooth Crocolisk | 1082 |  | https://db.ascension.gg/?item=1763
+1768 | Beastmaster's Whistle: Mistvale Gorilla | 1108 |  | https://db.ascension.gg/?item=1768
+1810 | Beastmaster's Whistle: Duskbat | 1512 |  | https://db.ascension.gg/?item=1810
+1842 | Beastmaster's Whistle: Strigid Owl | 1995 |  | https://db.ascension.gg/?item=1842
+1861 | Beastmaster's Whistle: Strider Clutchmother | 2172 |  | https://db.ascension.gg/?item=1861
+1883 | Beastmaster's Whistle: Snapjaw | 2408 |  | https://db.ascension.gg/?item=1883
+1942 | Beastmaster's Whistle: Scorpid Worker | 3124 |  | https://db.ascension.gg/?item=1942
+1956 | Beastmaster's Whistle: Thunderhawk Hatchling | 3247 |  | https://db.ascension.gg/?item=1956
+1971 | Beastmaster's Whistle: Sewer Beast | 3581 |  | https://db.ascension.gg/?item=1971
+1998 | Beastmaster's Whistle: Fledgling Chimaera | 4031 |  | https://db.ascension.gg/?item=1998
+2007 | Beastmaster's Whistle: Hecklefang Hyena | 4127 |  | https://db.ascension.gg/?item=2007
+2010 | Beastmaster's Whistle: Silithid Ravager | 4132 |  | https://db.ascension.gg/?item=2010
+2030 | Beastmaster's Whistle: Bloodfen Raptor | 4351 |  | https://db.ascension.gg/?item=2030
+2069 | Beastmaster's Whistle: Deviate Adder | 5048 |  | https://db.ascension.gg/?item=2069
+2074 | Beastmaster's Whistle: Murk Worm | 5226 |  | https://db.ascension.gg/?item=2074
+2125 | Beastmaster's Whistle: Devilsaur | 6498 |  | https://db.ascension.gg/?item=2125
+2126 | Beastmaster's Whistle: Ironhide Devilsaur | 6499 |  | https://db.ascension.gg/?item=2126
+2164 | Beastmaster's Whistle: Chillwind Ravager | 7449 |  | https://db.ascension.gg/?item=2164
+2190 | Beastmaster's Whistle: Felpaw Wolf | 8959 |  | https://db.ascension.gg/?item=2190
+2207 | Beastmaster's Whistle: Spire Spiderling | 10375 |  | https://db.ascension.gg/?item=2207
+2214 | Beastmaster's Whistle: Soulflayer | 11359 |  | https://db.ascension.gg/?item=2214
+2215 | Beastmaster's Whistle: Zulian Tiger | 11361 |  | https://db.ascension.gg/?item=2215
+2216 | Beastmaster's Whistle: Zulian Panther | 11365 |  | https://db.ascension.gg/?item=2216
+2218 | Beastmaster's Whistle: Ancient Core Hound | 11673 |  | https://db.ascension.gg/?item=2218
+2275 | Beastmaster's Whistle: Feral Dragonhawk Hatchling | 15649 |  | https://db.ascension.gg/?item=2275
+2289 | Beastmaster's Whistle: Vale Moth | 16520 |  | https://db.ascension.gg/?item=2289
+2299 | Beastmaster's Whistle: Goretooth | 17144 |  | https://db.ascension.gg/?item=2299
+2300 | Beastmaster's Whistle: Ravager Specimen | 17199 |  | https://db.ascension.gg/?item=2300
+2315 | Beastmaster's Whistle: The Kurken | 17447 |  | https://db.ascension.gg/?item=2315
+2334 | Beastmaster's Whistle: Bloodfalcon | 18155 |  | https://db.ascension.gg/?item=2334
+2359 | Beastmaster's Whistle: Cobalt Serpent | 19428 |  | https://db.ascension.gg/?item=2359
+2396 | Beastmaster's Whistle: Blackwind Sabercat | 21723 |  | https://db.ascension.gg/?item=2396
+2571 | Summoner's Stone: Aligar the Tormentor | 3898 |  | https://db.ascension.gg/?item=2571
+2572 | Summoner's Stone: Caedakar the Vicious | 3900 |  | https://db.ascension.gg/?item=2572
+2606 | Summoner's Stone: Razelikh the Defiler | 7664 |  | https://db.ascension.gg/?item=2606
+2614 | Summoner's Stone: Xabraxxis | 10373 |  | https://db.ascension.gg/?item=2614
+2617 | Summoner's Stone: Balnazzar | 10813 |  | https://db.ascension.gg/?item=2617
+2631 | Summoner's Stone: Demon Spirit | 11876 |  | https://db.ascension.gg/?item=2631
+2647 | Summoner's Stone: Xorothian Dreadsteed | 14502 |  | https://db.ascension.gg/?item=2647
+2707 | Summoner's Stone: Ekkorash the Inquisitor | 19493 |  | https://db.ascension.gg/?item=2707
+2728 | Summoner's Stone: Doomcryer | 19963 |  | https://db.ascension.gg/?item=2728
+2748 | Summoner's Stone: Wrathbringer Laz-tarash | 20789 |  | https://db.ascension.gg/?item=2748
+2798 | Summoner's Stone: Illidari Satyr | 21656 |  | https://db.ascension.gg/?item=2798
+2807 | Summoner's Stone: Galvanoth | 22281 |  | https://db.ascension.gg/?item=2807
+2809 | Summoner's Stone: Matron Li-sahar | 22825 |  | https://db.ascension.gg/?item=2809
+2810 | Summoner's Stone: Gorgolon the All-seeing | 22827 |  | https://db.ascension.gg/?item=2810
+2811 | Summoner's Stone: Trelopades | 22828 |  | https://db.ascension.gg/?item=2811
+2826 | Summoner's Stone: Braxxus | 23353 |  | https://db.ascension.gg/?item=2826
+2827 | Summoner's Stone: Zarcsin | 23355 |  | https://db.ascension.gg/?item=2827
+2838 | Blood Soaked Vellum: Flesh Eater | 3 |  | https://db.ascension.gg/?item=2838
+2839 | Blood Soaked Vellum: Skeletal Warrior | 48 |  | https://db.ascension.gg/?item=2839
+2843 | Blood Soaked Vellum: Eliza | 314 |  | https://db.ascension.gg/?item=2843
+2877 | Blood Soaked Vellum: Bleeding Horror | 1529 |  | https://db.ascension.gg/?item=2877
+2879 | Blood Soaked Vellum: Lost Soul | 1531 |  | https://db.ascension.gg/?item=2879
+2885 | Blood Soaked Vellum: Devlin Agamand | 1657 |  | https://db.ascension.gg/?item=2885
+2912 | Blood Soaked Vellum: Searing Ghoul | 1795 |  | https://db.ascension.gg/?item=2912
+4873 | Llamour, the Pink Alpaca | 50492 |  | https://db.ascension.gg/?item=4873
+6135 | Beastmaster's Whistle: Captain Claws | 417217 |  | https://db.ascension.gg/?item=6135
+6425 | Kor'kron Juggernaut | 499756 | Unused Sheet | https://db.ascension.gg/?item=6425
+6598 | Sigil of Sacrolash | 430306 |  | https://db.ascension.gg/?item=6598
+6599 | Sigil of Sacro'Lythess | 430308 |  | https://db.ascension.gg/?item=6599
+6778 | Elemental Lodestone: Al'ar | 19514 |  | https://db.ascension.gg/?item=6778
+6784 | Elemental Lodestone: Hydross the Unstable | 21216 |  | https://db.ascension.gg/?item=6784
+6799 | Elemental Lodestone: Surging Water Elemental | 37703 |  | https://db.ascension.gg/?item=6799
+6846 | Elemental Lodestone: Swamp Spirit | 6932 |  | https://db.ascension.gg/?item=6846
+6865 | Elemental Lodestone: Plague Shambler | 97808 |  | https://db.ascension.gg/?item=6865
+6890 | Elemental Lodestone: Bloodpetal Thirster | 97825 |  | https://db.ascension.gg/?item=6890
+6901 | Elemental Lodestone: Stone Warden | 6561 |  | https://db.ascension.gg/?item=6901
+6951 | Elemental Lodestone: Silver Golem | 76 |  | https://db.ascension.gg/?item=6951
+7729 | Draconic Warhorn: Sleeping Dragon | 9417 |  | https://db.ascension.gg/?item=7729
+7750 | Draconic Warhorn: Chromatic Whelp | 148069 |  | https://db.ascension.gg/?item=7750
+7753 | Draconic Warhorn: Chromatic Dragonspawn | 148070 |  | https://db.ascension.gg/?item=7753
+7833 | Draconic Warhorn: Blackscale | 21497 |  | https://db.ascension.gg/?item=7833
+7834 | Draconic Warhorn: Blackscale | 148115 |  | https://db.ascension.gg/?item=7834
+7839 | Draconic Warhorn: Infinite Whelp | 21818 |  | https://db.ascension.gg/?item=7839
+7853 | Draconic Warhorn: Smolderwing | 23789 |  | https://db.ascension.gg/?item=7853
+7891 | Draconic Warhorn: Tempus Wyrm | 32180 |  | https://db.ascension.gg/?item=7891
+8684 | Incarnation: Ghost Wolf Raptor (Red) | 499630 |  | https://db.ascension.gg/?item=8684
+8720 | Incarnation: Incarnation of Nightmare (Purple) | 499733 |  | https://db.ascension.gg/?item=8720
+8721 | Incarnation: Incarnation of Nightmare (Red) | 499732 |  | https://db.ascension.gg/?item=8721
+8722 | Incarnation: Incarnation of Nightmare (Green) | 499730 |  | https://db.ascension.gg/?item=8722
+8744 | Incarnation: Kul Tiran Aquatic Form (Brown) | 499729 |  | https://db.ascension.gg/?item=8744
+
+========================================
+VERIFICATION INSTRUCTIONS
+========================================
+
+For each item:
+1. Visit the web lookup URL
+2. Check if it's a drop-based item
+3. Verify the creature ID is correct
+4. Update the description if needed
+5. If NOT a drop, remove from VanityDB
+
+Beastmaster's Whistle items are typically tame-able creatures
+and should be kept in the database.
+
