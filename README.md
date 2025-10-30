@@ -1,8 +1,8 @@
 # AscensionVanity - Combat Pet Tracker
 
-[![Coverage](https://img.shields.io/badge/Description_Coverage-99.95%25-brightgreen)](DESCRIPTION_ENRICHMENT_FINAL_REPORT.md)
+[![Coverage](https://img.shields.io/badge/Description_Coverage-99.95%25-brightgreen)](docs/development/logs/DESCRIPTION_ENRICHMENT_FINAL_REPORT.md)
 [![Items](https://img.shields.io/badge/Combat_Pets-2,174-blue)](AscensionVanity/VanityDB.lua)
-[![Version](https://img.shields.io/badge/Version-2.0--dev-orange)](AscensionVanity/AscensionVanity.toc)
+[![Version](https://img.shields.io/badge/Version-2.0-brightgreen)](AscensionVanity/AscensionVanity.toc)
 [![Automation](https://img.shields.io/badge/Workflow-95%25_Automated-success)](utilities/MasterDescriptionEnrichment.ps1)
 
 ## Overview
