@@ -92,6 +92,10 @@ AV_VanityItems = {
 $sortedItems = $processedItems | Sort-Object GameItemId
 
 foreach ($item in $sortedItems) {
+    # Skip duplicates (first occurrence wins) to prevent duplicate blocks like Swoop
+    if ($emitted -eq $null) { $emitted = @{} }
+    if ($emitted.ContainsKey($item.GameItemId)) { continue }
+    $emitted[$item.GameItemId] = $true
     $safeName = $item.Name -replace '"', '\"'
     $safeDesc = $item.Description -replace '"', '\"'
     
@@ -117,6 +121,7 @@ Write-Host "Writing to $OutputDB..." -ForegroundColor Yellow
 $dbContent | Set-Content $OutputDB -Encoding UTF8
 
 $fileSize = (Get-Item $OutputDB).Length / 1KB
+Write-Host "  Dedupe applied: $($emitted.Count) unique items emitted" -ForegroundColor Green
 
 Write-Host "`n✅ Generation complete!" -ForegroundColor Green
 Write-Host "  Output: $OutputDB" -ForegroundColor Cyan

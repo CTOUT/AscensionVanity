@@ -1,47 +1,34 @@
 -- AscensionVanity - API Scanner Module
 -- Scans all vanity items via Ascension API and exports to AscensionVanity_Dump.lua
+--
+-- HYBRID FILTERING APPROACH (v2.1+):
+-- - In-Game: Minimal filtering (quality 6 only) - exports ~9,600+ items
+-- - PowerShell: All category/group/exclusion filtering for flexibility
+-- - Benefits: Complete data preservation, audit trail, no re-scans for filter changes
 
 local AddonName = "AscensionVanity"
 
 -- Saved variable for API dump (separate from main addon config)
 AscensionVanityDump = AscensionVanityDump or {
     APIDump = {},
-    LastScanDate = nil,
-    ScanVersion = "2.0",
-    TotalItems = 0
-}
-
--- Combat Pet Vanity Categories (for filtering)
-local COMBAT_PET_PREFIXES = {
-    "Beastmaster's Whistle:",
-    "Blood Soaked Vellum:",
-    "Summoner's Stone:",
-    "Draconic Warhorn:",
-    "Elemental Lodestone:"
-}
-
--- Exclusion filters - items to EXCLUDE even if they match quality/prefix
-local EXCLUSION_KEYWORDS = {
-    "purchase",
-    "website",
-    "previously",
-    "bazaar",
-    "seasonal",
-    "reward",
-    "promotional",
-    "promo",
-    "event",
-    "limited"
+    LastScanDate = nil,           -- When the scan was performed
+    ScanVersion = "2.1",           -- Scanner version
+    TotalItems = 0,                -- Number of items in dump
+    GameVersion = nil,             -- WoW client version (e.g., "3.3.5")
+    GameBuild = nil,               -- Client build number (e.g., "12340")
+    GameBuildDate = nil,           -- WoW build date (e.g., "Jun 24 2010")
+    CustomVersion = nil,           -- Ascension custom version (if available via API)
+    AddonVersion = nil,            -- AscensionVanity addon version at scan time
+    ServerVersionNote = nil        -- Manual note: Paste /version output here if needed
 }
 
 -- Quality filter (6 = Artifact/Legendary - used for vanity items)
+-- This is the ONLY filter applied in-game - all other filtering done in PowerShell
 local VANITY_QUALITY = 6
 
 -- Scanning state
 local scanState = {
     isScanning = false,
-    currentCategory = nil,
-    currentIndex = 0,
     totalItems = 0,
     scannedItems = 0,
     startTime = nil
@@ -52,54 +39,34 @@ local function Print(msg)
     print("|cFF00FF96[AscensionVanity]|r " .. msg)
 end
 
--- Utility: Check if item is a combat pet vanity item
--- Filters by quality (6) AND name prefix AND exclusion keywords
-local function IsCombatPetVanityItem(itemData)
+-- Utility: Check if item should be exported
+-- MINIMAL in-game filtering - only quality check
+-- All category/group/exclusion filtering happens in PowerShell for flexibility
+local function ShouldExportItem(itemData)
     if not itemData then
         return false
     end
     
-    -- Check quality first (must be 6 - Artifact/Legendary)
+    -- ONLY filter by quality (6 = Artifact/Legendary vanity items)
+    -- This gets us ~9,679 items which includes ALL vanity items
+    -- PowerShell will handle category/group filtering with full audit trail
     if itemData.quality ~= VANITY_QUALITY then
         return false
-    end
-    
-    -- Check if name starts with one of our combat pet prefixes
-    local name = itemData.name or ""
-    local nameLower = name:lower()
-    
-    local hasValidPrefix = false
-    for _, prefix in ipairs(COMBAT_PET_PREFIXES) do
-        if name:find("^" .. prefix) then
-            hasValidPrefix = true
-            break
-        end
-    end
-    
-    if not hasValidPrefix then
-        return false
-    end
-    
-    -- Check exclusion keywords (after prefix to avoid filtering "Blood" prefix)
-    for _, keyword in ipairs(EXCLUSION_KEYWORDS) do
-        if nameLower:find(keyword:lower()) then
-            return false
-        end
     end
     
     return true
 end
 
 -- Utility: Process raw item data from API
--- ONLY extracts the 5 essential fields we need for the database
--- NOW with filtering to only capture combat pet vanity items
+-- Extracts only essential fields with minimal filtering (quality only)
+-- ALL category/group/exclusion filtering happens in PowerShell
 local function ProcessItemData(itemData, itemID)
     if not itemData or type(itemData) ~= "table" then
         return nil
     end
     
-    -- Filter: ONLY process combat pet vanity items
-    if not IsCombatPetVanityItem(itemData) then
+    -- Minimal filter: ONLY check quality (exports ~9,679 vanity items)
+    if not ShouldExportItem(itemData) then
         return nil
     end
     
@@ -110,13 +77,14 @@ local function ProcessItemData(itemData, itemID)
         return nil
     end
     
-    -- Return ONLY the 5 fields we need (no extra data, no confusion)
+    -- Return ONLY the 6 fields we need for PowerShell processing
     return {
         itemid = gameItemId,           -- Game item ID (what the API returns)
         name = itemData.name or "Unknown",
         description = itemData.description or "",
         icon = itemData.icon or "",
-        creaturePreview = itemData.creaturePreview or 0
+        creaturePreview = itemData.creaturePreview or 0,
+        group = itemData.group or 0    -- Group ID for category filtering in PowerShell
     }
 end
 
@@ -129,7 +97,7 @@ local function GetAllVanityItems()
     
     for idx, itemData in pairs(allItems) do
         if type(itemData) == "table" then
-            -- Process the raw item data (extracts only 5 essential fields)
+            -- Process the raw item data (extracts only 6 essential fields)
             local processedItem = ProcessItemData(itemData)
             
             if processedItem then
@@ -148,15 +116,11 @@ function AV_ScanAllItems()
         return
     end
     
-    Print("Starting combat pet vanity item scan...")
-    Print("Filtering for Quality 6 items with names starting with:")
-    Print("  • Beastmaster's Whistle:")
-    Print("  • Blood Soaked Vellum:")
-    Print("  • Summoner's Stone:")
-    Print("  • Draconic Warhorn:")
-    Print("  • Elemental Lodestone:")
+    Print("Starting vanity item scan (HYBRID MODE)...")
+    Print("In-game filter: Quality 6 items only (~9,600+ items)")
+    Print("Category/Group filtering: Handled by PowerShell utilities")
     Print("")
-    Print("Excluding items containing: purchase, website, previously, bazaar, seasonal, reward, etc.")
+    Print("This exports ALL quality-6 vanity items for complete audit trail.")
     
     scanState.isScanning = true
     scanState.startTime = time()
@@ -181,10 +145,37 @@ function AV_ScanAllItems()
     
     Print("  → Found " .. totalScanned .. " items")
     
+    -- Capture game client version info
+    local version, build, buildDate, tocVersion = GetBuildInfo()
+    
+    -- Capture Ascension custom version using GetClientVersion()
+    -- Returns: [1]=date, [2]=time, [3]=branch, [4]=boolean
+    local customVersionDate = "Unknown"
+    local customVersionTime = "Unknown"
+    local customVersionFull = "Unknown"
+    
+    if GetClientVersion then
+        local clientVer = GetClientVersion()
+        if clientVer and type(clientVer) == "table" then
+            customVersionDate = clientVer[1] or "Unknown"
+            customVersionTime = clientVer[2] or "Unknown"
+            
+            -- Build the full version string like /version command shows
+            if customVersionDate ~= "Unknown" and customVersionTime ~= "Unknown" then
+                customVersionFull = customVersionDate .. " " .. customVersionTime
+            end
+        end
+    end
+    
     -- Update metadata
     AscensionVanityDump.LastScanDate = date("%Y-%m-%d %H:%M:%S")
-    AscensionVanityDump.ScanVersion = "2.0"
+    AscensionVanityDump.ScanVersion = "2.1"
     AscensionVanityDump.TotalItems = totalScanned
+    AscensionVanityDump.GameVersion = version or "Unknown"
+    AscensionVanityDump.GameBuild = build or "Unknown"
+    AscensionVanityDump.GameBuildDate = buildDate or "Unknown"     -- Original WoW build date
+    AscensionVanityDump.CustomVersion = customVersionFull          -- Ascension custom version (e.g., "2025-11-01 16:21:03 GMT")
+    AscensionVanityDump.AddonVersion = GetAddOnMetadata(AddonName, "Version") or "2.1"
     
     scanState.isScanning = false
     scanState.scannedItems = totalScanned
@@ -192,20 +183,26 @@ function AV_ScanAllItems()
     local elapsed = time() - scanState.startTime
     
     Print("========================================")
-    Print("Scan Complete!")
-    Print("  → Combat pet vanity items found: " .. totalScanned)
+    Print("Scan Complete! (HYBRID MODE)")
+    Print("  → Quality-6 vanity items exported: " .. totalScanned)
     Print("  → Time elapsed: " .. elapsed .. " seconds")
+    Print("  → Scan Date: " .. (AscensionVanityDump.LastScanDate or "Unknown"))
+    Print("  → Game Version: " .. (AscensionVanityDump.GameVersion or "Unknown") .. " (Build: " .. (AscensionVanityDump.GameBuild or "Unknown") .. ")")
+    Print("  → Ascension Build: " .. (AscensionVanityDump.CustomVersion or "Unknown"))
+    Print("  → Addon Version: " .. (AscensionVanityDump.AddonVersion or "Unknown"))
     Print("  → Data saved to: AscensionVanity_Dump.lua")
     Print("========================================")
-    Print("Filtered for Quality 6 items with names starting with:")
-    Print("  • Beastmaster's Whistle:")
-    Print("  • Blood Soaked Vellum:")
-    Print("  • Summoner's Stone:")
-    Print("  • Draconic Warhorn:")
-    Print("  • Elemental Lodestone:")
+    Print("Next Steps:")
+    Print("  1. Exit WoW to save data")
+    Print("  2. Run: .\\utilities\\MasterVanityDBPipeline.ps1")
     Print("")
-    Print("Excluded items containing: purchase, website, previously, bazaar, seasonal, reward")
-    Print("Next: Exit WoW to save data, then run utilities to process the dump.")
+    Print("PowerShell will filter by group ID for combat pets:")
+    Print("  • 16777217 = Beastmaster's Whistle")
+    Print("  • 16777220 = Blood Soaked Vellum")
+    Print("  • 16777218 = Summoner's Stone")
+    Print("  • 16777224 = Draconic Warhorn")
+    Print("  • 16777232 = Elemental Lodestone")
+    Print("========================================")
 end
 
 -- Clear the dump data
@@ -232,10 +229,12 @@ function AV_GetScanStats()
     Print("Last Scan: " .. (AscensionVanityDump.LastScanDate or "Never"))
     Print("Items in Dump: " .. itemCount)
     Print("Scan Version: " .. (AscensionVanityDump.ScanVersion or "Unknown"))
+    Print("Game Version: " .. (AscensionVanityDump.GameVersion or "Unknown") .. " (Build: " .. (AscensionVanityDump.GameBuild or "Unknown") .. ")")
+    Print("Ascension Build: " .. (AscensionVanityDump.CustomVersion or "Unknown"))
+    Print("Addon Version: " .. (AscensionVanityDump.AddonVersion or "Unknown"))
     
     if scanState.isScanning then
         Print("Status: SCANNING...")
-        Print("Current Category: " .. (scanState.currentCategory or "N/A"))
     else
         Print("Status: Idle")
     end

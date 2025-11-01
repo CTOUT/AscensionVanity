@@ -42,25 +42,26 @@ This directory contains PowerShell utilities for database management, validation
 
 ## �🚀 **Primary Utilities**
 
-### **AnalyzeAPIDump.ps1**
-**Purpose**: Analyzes API dump from SavedVariables and generates validation reports
+### **MasterAPIDumpImport.ps1**
+**Purpose**: Master workflow for importing, normalizing, and summarizing the AscensionVanity API dump.
 
 **Features**:
-- Auto-detects SavedVariables path via registry or local.config.ps1
-- Extracts validation statistics and category breakdowns
-- Generates detailed analysis reports with -Detailed flag
-- Compares API totals vs database totals
+- Resolves `AscensionVanity.lua` automatically (local.config.ps1 → registry → manual guidance)
+- Emits timestamped fresh scan files in `data/` (with optional labels) plus a `…_LATEST.lua` convenience copy
+- Generates `API_to_GameID_Mapping.json` alongside timestamped history snapshots
+- Produces category, creature, and description coverage summaries for quick validation
+- Consolidates the legacy scripts (`ProcessAPIDump`, `AnalyzeAPIDump`, `ExtractGameIDs*`, `ProcessFreshScan`) now archived under `utilities/archive/api-import/`
 
 **Usage**:
 ```powershell
-# Simple analysis
-.\utilities\AnalyzeAPIDump.ps1
+# Standard import using auto-detection
+.\utilities\MasterAPIDumpImport.ps1
 
-# Detailed reports
-.\utilities\AnalyzeAPIDump.ps1 -Detailed
+# Explicit SavedVariables path with a label and no summary file
+.\utilities\MasterAPIDumpImport.ps1 -SavedVariablesPath "C:\Path\To\AscensionVanity.lua" -ScanLabel PREPATCH -SkipSummaryFile
 
-# Manual path (if auto-detection fails)
-.\utilities\AnalyzeAPIDump.ps1 -SavedVariablesPath "C:\Path\To\AscensionVanity.lua"
+# Parse mapping only (no fresh scan copy)
+.\utilities\MasterAPIDumpImport.ps1 -NoScanCopy
 ```
 
 ---
@@ -184,21 +185,21 @@ Stone: 12 items
 ## 📋 **Workflow Recommendations**
 
 ### **For Database Updates:**
-1. Extract latest data: Run main `ExtractDatabase.ps1`
-2. Validate API: `.\utilities\AnalyzeAPIDump.ps1 -Detailed`
-3. Compare: `.\utilities\CompareGameExportToVanityDB.ps1`
-4. Update: `.\utilities\UpdateDatabaseFromAPI.ps1`
-5. Verify: `.\utilities\CountByCategory.ps1`
+1. Import latest SavedVariables dump: `.\utilities\MasterAPIDumpImport.ps1`
+2. Regenerate VanityDB.lua: `.\utilities\MasterVanityDBPipeline.ps1`
+3. Compare current vs previous: `.\utilities\CompareGameExportToVanityDB.ps1`
+4. Validate anomalies: `.\utilities\ValidateCreatureIds.ps1`
+5. Spot-check counts: `.\utilities\CountByCategory.ps1`
 
 ### **For Troubleshooting:**
 1. Run diagnostics: `.\utilities\DiagnoseMissingItems.ps1`
 2. Check sources: `.\utilities\AnalyzeSourceCodes.ps1`
-3. Validate API dump: `.\utilities\AnalyzeAPIDump.ps1`
+3. Validate API dump: `.\utilities\MasterAPIDumpImport.ps1 -SkipMappingExport -SkipSummaryFile`
 
 ### **For Testing:**
 1. Deploy addon: `..\DeployAddon.ps1`
 2. Run in-game: `/avanity apidump` then `/reload`
-3. Analyze: `.\utilities\AnalyzeAPIDump.ps1 -Detailed`
+3. Analyze: `.\utilities\MasterAPIDumpImport.ps1 -SkipMappingExport`
 
 ---
 
@@ -220,4 +221,4 @@ All scripts require:
 
 ---
 
-*Last updated: October 27, 2025*
+*Last updated: November 1, 2025*

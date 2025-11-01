@@ -14,6 +14,146 @@ This document captures planned features for future versions of AscensionVanity. 
 
 ## Planned Features
 
+### 0a. Category Filtering 🔍
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.1  
+**Status:** ✅ IMPLEMENTED
+
+### 0b. Combat Tooltip Control ⚔️
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.1  
+**Status:** ✅ IMPLEMENTED
+
+**Description:**  
+Allow players to filter which vanity item categories are displayed in tooltips. Players can enable/disable specific item types (Pets, Demons, Elementals, Dragonkin, Totems) based on their collection interests.
+
+**Core Features:**
+- Checkbox toggles in Settings UI for each category
+- Real-time tooltip filtering based on selections
+- Reduces tooltip clutter for specialized collectors
+- Persistent settings saved to SavedVariables
+
+**Categories:**
+- ☑ **Beastmaster's Whistle** - Combat Pets (Beasts)
+- ☑ **Blood Soaked Vellum** - Demons
+- ☑ **Summoner's Stone** - Elementals/Satyrs
+- ☑ **Draconic Warhorn** - Dragonkin
+- ☑ **Elemental Lodestone** - Totems/Elementals
+
+**UI Mockup:**
+```
+┌─────────────────────────────────────┐
+│ AscensionVanity Settings            │
+├─────────────────────────────────────┤
+│ Show Tooltip Information:           │
+│ ☑ Beastmaster's Whistle (Pets)     │
+│ ☑ Blood Soaked Vellum (Demons)     │
+│ ☑ Summoner's Stone (Elementals)    │
+│ ☑ Draconic Warhorn (Dragonkin)     │
+│ ☑ Elemental Lodestone (Totems)     │
+├─────────────────────────────────────┤
+│ Display Options:                    │
+│ ☑ Show learned items                │
+│ ☑ Show unlearned items              │
+└─────────────────────────────────────┘
+```
+
+**Implementation:**
+- Category detection via pattern matching on item names
+- Filter logic in tooltip display function
+- Settings UI checkboxes for each category
+- Default: All categories enabled
+
+**Benefits:**
+- Reduces tooltip clutter for specialized collectors
+- Pet collectors can hide demon/elemental/dragonkin items
+- Warlock players can focus only on demons
+- Improves user experience with personalization
+
+**Files to Create/Modify:**
+- `Core.lua` - Add category detection and filtering logic
+- `AscensionVanityConfig.lua` - Add `categoryFilters` config
+- `SettingsUI.lua` - Add category filter checkboxes
+- No database changes required (uses existing item names)
+
+**Effort:** 1-2 days  
+**Testing:** Toggle categories and verify tooltip filtering
+
+---
+
+### 0b. Combat Tooltip Control ⚔️
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.1  
+**Status:** ✅ IMPLEMENTED
+
+**Description:**  
+Control how vanity item information is displayed in tooltips during combat. Players can choose between showing full details, minimal information (count only), or hiding completely to reduce tooltip clutter during fights.
+
+**Combat Modes:**
+- **Normal (Show All)** - Display full vanity item information during combat
+- **Minimal (Count Only)** - Show only "Vanity Items: X available"
+- **Hide Completely** - Hide all vanity information during combat (default)
+
+**UI Implementation:**
+```
+Combat Behavior:
+○ Normal (Show All)
+○ Minimal (Count Only)
+● Hide Completely (Default) ✓
+```
+
+**Example Behavior:**
+
+**Normal Mode (Combat):**
+```
+[Duskbat]
+Level 9-10 Beast
+
+Vanity Items:
+  ✗ Beastmaster's Whistle: Duskbat
+  ✗ Blood Soaked Vellum: Duskbat Demon
+```
+
+**Minimal Mode (Combat):**
+```
+[Duskbat]
+Level 9-10 Beast
+
+Vanity Items: 2 available
+```
+
+**Hide Mode (Combat):**
+```
+[Duskbat]
+Level 9-10 Beast
+```
+
+**Implementation:**
+- Combat detection via `UnitAffectingCombat("player")`
+- Radio button group in Settings UI
+- Three distinct modes with different tooltip behavior
+- Auto-save settings
+- Default: Hide completely (clean combat tooltips)
+
+**Benefits:**
+- Reduces tooltip clutter during combat
+- Allows quick item count check (minimal mode)
+- Flexible for different playstyles
+- Improves combat readability
+
+**Files Modified:**
+- `Core.lua` - Add combat detection and mode handling
+- `AscensionVanityConfig.lua` - Add `combatBehavior` setting
+- `SettingsUI.lua` - Add radio button group for modes
+
+**Effort:** 2-3 hours  
+**Testing:** Enter combat, toggle modes, verify tooltip behavior
+
+---
+
 ### 1. Auction House Integration 💰
 **Priority:** Medium  
 **Complexity:** Medium  
@@ -693,6 +833,19 @@ AV_PetAbilities = {
 ### 🟢 **TIER 1: Quick Wins** (1-2 days each)
 *Minimal dependencies, straightforward implementation, immediate value*
 
+#### **0. Category Filtering** 🔍
+**Effort:** Very Low (1 day) | **Dependencies:** None | **UI:** Settings checkboxes only
+- **Why Quickest:** Pure filtering logic, no database changes, no new events
+- **Implementation:**
+  - Pattern matching on item names (already in database)
+  - Add 5 boolean flags to config
+  - Filter in existing tooltip display loop
+  - Add checkboxes to existing settings UI
+- **Files:** Config update, tooltip filter logic, settings UI checkboxes
+- **Testing:** Toggle each category, verify tooltips update
+- **Value:** Immediate UX improvement for specialized collectors
+- **Status:** 🚧 IN PROGRESS
+
 #### **1. Phase & Instance Notifications** 🌍
 **Effort:** Low | **Dependencies:** None | **UI:** Toast notifications only
 - **Why Quick:** Uses existing WoW events, no database changes needed
@@ -848,7 +1001,9 @@ AV_PetAbilities = {
 ## Recommended Implementation Order
 
 ### **Sprint 1: Quick Wins** (Week 1)
-1. Phase & Instance Notifications ✅ (2 days)
+0a. Category Filtering ✅ (1 day) - **IMPLEMENTED**
+0b. Combat Tooltip Control ✅ (0.5 days) - **IMPLEMENTED**
+1. Phase & Instance Notifications ⏭️ (2 days) - **NEXT**
 2. Statistics & Kill Tracking (v1: counters only) ✅ (2 days)
 3. **Deploy v2.1-alpha for testing**
 

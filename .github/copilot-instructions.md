@@ -10,6 +10,20 @@
 - **Data Sources**: db.ascension.gg + Wowhead WOTLK
 - **Database**: 2,174 combat pets with 99.95% description coverage
 
+## WoW Development Chat Mode
+
+This project has a dedicated WoW addon development chatmode active for specialized assistance:
+- **Global chatmode**: `C:\Users\Chris\AppData\Roaming\Code\User\prompts\wow-addon-development.chatmode.md`
+  - General WoW API knowledge and Lua 5.1 patterns
+  - Available across all VS Code projects
+  - Prevents wasted searches on Azure/Entra/cloud topics
+- **Project instructions**: `.github/instructions/wow-addon-development.instructions.md`
+  - AscensionVanity-specific patterns and gotchas
+  - Auto-applies to `.lua`, `.toc`, `.xml`, `.ps1`, `.md` files
+  - Tracks project discoveries and lessons learned
+
+These files work together to provide context-aware assistance and prevent irrelevant documentation lookups.
+
 ## Core Philosophy
 
 ### 1. **Innovate, Don't Reinvent**
@@ -463,6 +477,31 @@ docs(readme): Update coverage statistics to 99.95%
 - Focus: Description enrichment completion
 - Next: Regional information, advanced filtering
 
+## Quick Reference for WoW Development
+
+### When to Use What
+- **VanityDB.lua**: Read-only, generated file - NEVER edit directly
+- **API_to_GameID_Mapping.json**: Source of truth for item data - Edit here
+- **MasterDescriptionEnrichment.ps1**: Automated description enrichment
+- **GenerateVanityDB.ps1**: JSON → Lua conversion
+
+### Common File Paths
+- **Addon files**: `AscensionVanity/*.lua`
+- **Data source**: `data/API_to_GameID_Mapping.json`
+- **Generated DB**: `data/VanityDB.lua` (copied to `AscensionVanity/VanityDB.lua`)
+- **Scripts**: `utilities/*.ps1`
+
+### Key Globals to Remember
+- `AV_VanityItems` - Main database table
+- `AV_IconList` - Deduplicated icon paths
+- `AV_Config` - User configuration settings
+
+### Critical Commands
+- `/reload` - Reload UI after addon changes
+- `/console scriptErrors 1` - Enable Lua error display
+- `/dump AV_VanityItems` - Inspect database in-game
+- `/framestack` - Debug frame overlaps and performance
+
 ## Questions to Ask
 
 When you're unsure about implementation:
@@ -471,6 +510,22 @@ When you're unsure about implementation:
 3. **Is this the simplest solution?** KISS principle applies.
 4. **Will this be automated?** If repeated, it should be.
 5. **Is this documented?** Code should explain itself or be commented.
+
+## 🚨 When Copilot Gets It Wrong
+
+If I suggest something that contradicts these instructions:
+1. **Point it out immediately** - "That contradicts the [section] rule"
+2. **Reference the rule** - Quote the specific instruction I violated
+3. **I will correct** - Acknowledge and provide the right approach
+4. **Document it** - Add to chatmode "Lessons Learned" section for future
+
+**Common mistakes to watch for:**
+- Suggesting manual edits to VanityDB.lua (it's generated!)
+- Creating new scripts instead of extending existing master scripts
+- Searching for Azure/cloud docs for WoW addon projects
+- Missing the load order dependencies in TOC files
+- Proposing .NET/C# solutions instead of PowerShell
+- Ignoring the consolidation philosophy
 
 ## Getting Help
 

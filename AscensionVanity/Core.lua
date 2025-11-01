@@ -29,6 +29,75 @@ local ITEM_ICONS = {
 local tooltip = GameTooltip
 
 -- ============================================================================
+-- Category Detection System (v2.1+)
+-- ============================================================================
+-- 
+-- PURPOSE: Identify vanity item category from item name for filtering
+--
+-- CATEGORIES:
+--   - pet:        Beastmaster's Whistle (Combat Pets)
+--   - demon:      Blood Soaked Vellum (Demons)
+--   - elemental:  Summoner's Stone (Elementals/Satyrs)
+--   - dragonkin:  Draconic Warhorn (Dragonkin)
+--   - totem:      Elemental Lodestone (Totems/Elementals)
+--
+local function GetItemCategory(itemName)
+    if not itemName then return "unknown" end
+    
+    -- Pattern matching on item name prefix
+    -- Using string.find for efficiency (faster than regex)
+    if string.find(itemName, "Beastmaster's Whistle", 1, true) then
+        return "pet"
+    elseif string.find(itemName, "Blood Soaked Vellum", 1, true) then
+        return "demon"
+    elseif string.find(itemName, "Summoner's Stone", 1, true) then
+        return "elemental"
+    elseif string.find(itemName, "Draconic Warhorn", 1, true) then
+        return "dragonkin"
+    elseif string.find(itemName, "Elemental Lodestone", 1, true) then
+        return "totem"
+    end
+    
+    return "unknown"
+end
+
+-- Check if an item should be displayed based on category filters
+local function ShouldShowItem(itemName)
+    local category = GetItemCategory(itemName)
+    
+    -- If category is unknown, show it (don't hide unrecognized items)
+    if category == "unknown" then
+        return true
+    end
+    
+    -- Check category filter setting (default to true if not set)
+    local filters = AscensionVanityDB.categoryFilters
+    if filters then
+        local value = filters[category]
+        if value == true then return true end
+        if value == false then return false end
+    end
+    -- Not configured: default ON (show)
+    return true
+end
+
+-- Determine if item description indicates a vendor / non-drop source we should suppress
+local VENDOR_PHRASES = {
+    "Obtained from the Argent Quartermaster",
+}
+
+local function IsVendorExempt(itemData)
+    if not itemData or not itemData.description then return false end
+    local desc = itemData.description
+    for _, phrase in ipairs(VENDOR_PHRASES) do
+        if string.find(desc, phrase, 1, true) then
+            return true
+        end
+    end
+    return false
+end
+
+-- ============================================================================
 -- Learned Status Cache System
 -- ============================================================================
 -- 
@@ -271,19 +340,15 @@ local function AddVanityInfoToTooltip(tooltip, unit)
         DebugPrint("Found", vanityItems and #vanityItems or 0, "items for creature", creatureID)
         
         if vanityItems and #vanityItems > 0 then
-            -- Add separator line
-            tooltip:AddLine(" ")
+            -- Combat behavior check (v2.1+)
+            local inCombat = UnitAffectingCombat("player")
+            local combatBehavior = AscensionVanityDB.combatBehavior or "hide"
             
-            -- Add header
-            tooltip:AddLine(COLOR_VANITY_HEADER .. "Vanity Items:" .. COLOR_RESET)
-            
-            -- Add each vanity item
+            -- First pass: Count items that pass category filter
+            local filteredItems = {}
             for _, itemID in ipairs(vanityItems) do
-                -- Get item data from new database format
                 local itemData = AV_GetItemData(itemID)
-                
                 if not itemData then
-                    -- Fallback to game API if database entry missing
                     local itemName = GetItemInfo(itemID)
                     if itemName then
                         itemData = { name = itemName, icon = nil }
@@ -293,57 +358,101 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                 end
                 
                 local itemName = itemData.name
+                if IsVendorExempt(itemData) then
+                    DebugPrint("Filtered vendor item:", itemName)
+                elseif ShouldShowItem(itemName) then
+                    table.insert(filteredItems, { id = itemID, data = itemData, name = itemName })
+                else
+                    DebugPrint("Filtered out item:", itemName, "(category disabled)")
+                end
+            end
+            
+            -- If no items pass filter, don't show vanity section at all
+            if #filteredItems == 0 then
+                DebugPrint("No items pass category filter, hiding vanity section")
+                return
+            end
+            
+            -- Combat behavior check (v2.1+) - after filtering
+            if inCombat then
+                if combatBehavior == "hide" then
+                    -- Hide completely during combat
+                    DebugPrint("Combat: Hiding vanity info (hide mode)")
+                    return
+                elseif combatBehavior == "minimal" then
+                    -- Show minimal info: header + count only (filtered count)
+                    DebugPrint("Combat: Showing minimal vanity info (" .. #filteredItems .. " filtered items)")
+                    tooltip:AddLine(" ")
+                    tooltip:AddLine(COLOR_VANITY_HEADER .. "Vanity Items: " .. #filteredItems .. " available" .. COLOR_RESET)
+                    tooltip:Show()
+                    return
+                end
+                -- "normal" mode: continue to show full details
+                DebugPrint("Combat: Showing full vanity info (normal mode)")
+            end
+            
+            -- Add separator line
+            tooltip:AddLine(" ")
+            
+            -- Add header
+            tooltip:AddLine(COLOR_VANITY_HEADER .. "Vanity Items:" .. COLOR_RESET)
+            
+            -- Add each filtered vanity item
+            for _, itemInfo in ipairs(filteredItems) do
+                local itemID = itemInfo.id
+                local itemData = itemInfo.data
+                local itemName = itemInfo.name
                 
                 -- Use actual item icon from database (if available)
                 local itemIcon = ""
-                if itemData.icon and itemData.icon ~= "" then
-                    -- Format icon properly with Interface\Icons\ path
-                    -- Using 14px icon with extra spacing to prevent text overlap
-                    itemIcon = "|TInterface\\Icons\\" .. itemData.icon .. ":14:14:0:0:64:64:4:60:4:60|t  "
-                    DebugPrint("Using database icon:", itemData.icon)
-                else
-                    -- Fallback to category-based icon detection
-                    for itemType, icon in pairs(ITEM_ICONS) do
-                        if string.find(itemName, itemType, 1, true) then
-                            itemIcon = icon .. "  "  -- Double space for better separation
-                            DebugPrint("Using category icon for:", itemType)
-                            break
+                    if itemData.icon and itemData.icon ~= "" then
+                        -- Format icon properly with Interface\Icons\ path
+                        -- Using 14px icon with extra spacing to prevent text overlap
+                        itemIcon = "|TInterface\\Icons\\" .. itemData.icon .. ":14:14:0:0:64:64:4:60:4:60|t  "
+                        DebugPrint("Using database icon:", itemData.icon)
+                    else
+                        -- Fallback to category-based icon detection
+                        for itemType, icon in pairs(ITEM_ICONS) do
+                            if string.find(itemName, itemType, 1, true) then
+                                itemIcon = icon .. "  "  -- Double space for better separation
+                                DebugPrint("Using category icon for:", itemType)
+                                break
+                            end
                         end
                     end
-                end
-                
-                -- Start with item icon + name (no learned status yet)
-                local itemText = itemIcon .. itemName
-                
-                -- Check if player has learned this item (optional feature)
-                if AscensionVanityDB.showLearnedStatus then
-                    local isLearned = IsVanityItemLearned(itemID, itemName)
                     
-                    if isLearned == true then
-                        -- Learned: Green checkmark + item
-                        local checkmark = "|TInterface\\RaidFrame\\ReadyCheck-Ready:16|t"
-                        if AscensionVanityDB.colorCode then
-                            itemText = checkmark .. " " .. COLOR_VANITY_LEARNED .. itemText .. COLOR_RESET
+                    -- Start with item icon + name (no learned status yet)
+                    local itemText = itemIcon .. itemName
+                    
+                    -- Check if player has learned this item (optional feature)
+                    if AscensionVanityDB.showLearnedStatus then
+                        local isLearned = IsVanityItemLearned(itemID, itemName)
+                        
+                        if isLearned == true then
+                            -- Learned: Green checkmark + item
+                            local checkmark = "|TInterface\\RaidFrame\\ReadyCheck-Ready:16|t"
+                            if AscensionVanityDB.colorCode then
+                                itemText = checkmark .. " " .. COLOR_VANITY_LEARNED .. itemText .. COLOR_RESET
+                            else
+                                itemText = checkmark .. " " .. itemText
+                            end
+                        elseif isLearned == false then
+                            -- Unlearned: Red cross + item
+                            local cross = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:16|t"
+                            if AscensionVanityDB.colorCode then
+                                itemText = cross .. " " .. COLOR_VANITY_UNLEARNED .. itemText .. COLOR_RESET
+                            else
+                                itemText = cross .. " " .. itemText
+                            end
                         else
-                            itemText = checkmark .. " " .. itemText
-                        end
-                    elseif isLearned == false then
-                        -- Unlearned: Red cross + item
-                        local cross = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:16|t"
-                        if AscensionVanityDB.colorCode then
-                            itemText = cross .. " " .. COLOR_VANITY_UNLEARNED .. itemText .. COLOR_RESET
-                        else
-                            itemText = cross .. " " .. itemText
+                            -- Unknown status: No indicator, just 3 spaces for alignment
+                            itemText = "   " .. itemText
                         end
                     else
-                        -- Unknown status: No indicator, just 3 spaces for alignment
+                        -- Learned status disabled: No indicator, just 3 spaces for alignment
                         itemText = "   " .. itemText
                     end
-                else
-                    -- Learned status disabled: No indicator, just 3 spaces for alignment
-                    itemText = "   " .. itemText
-                end
-                
+                    
                 tooltip:AddLine(itemText, 1, 1, 1, true) -- White text, word wrap enabled
                 
                 -- Add region information (optional feature)
