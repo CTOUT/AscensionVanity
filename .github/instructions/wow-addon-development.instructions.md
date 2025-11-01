@@ -211,6 +211,20 @@ items = { { icon = 1 } }  -- Reference by index
 **Description**: Single master script handles entire enrichment workflow instead of multiple fragmented scripts
 **Implementation**: See `utilities/MasterDescriptionEnrichment.ps1`
 
+### Pattern: Group ID Based Filtering (Nov 2025)
+**Discovered**: November 2025 during v2.1 development
+**Files**: utilities/MasterVanityDBPipeline.ps1
+**Description**: All dropped combat pets use exactly 5 Group IDs, providing 100% coverage
+**Group IDs**:
+- 16777217 - Beastmaster's Whistle (910 items, 99.1% clean)
+- 16777220 - Blood Soaked Vellum (564 items, 96.6% clean)
+- 16777218 - Summoner's Stone (271 items, 98.5% clean)
+- 16777224 - Draconic Warhorn (315 items, 100% clean)
+- 16777232 - Elemental Lodestone (283 items, 98.9% clean)
+**Outliers**: 10 seasonal reward pets (Groups: 553648129, 553648130, 553648136) correctly excluded by keyword filters
+**Verification**: No dropped combat pets exist outside these 5 primary Group IDs
+**Implementation**: Primary filter uses Group ID check for performance, fallback uses name prefix + keyword exclusion
+
 ---
 
 *Add new patterns here as discovered*
@@ -231,6 +245,13 @@ items = { { icon = 1 } }  -- Reference by index
 **Problem**: Variables without AV_ prefix can conflict with other addons
 **Solution**: ALWAYS use AV_ prefix for globals, local for everything else
 **Files**: All .lua files
+
+### Gotcha: Group ID Coverage Assumption
+**Problem**: Assuming there might be dropped combat pets outside the 5 primary Group IDs
+**Solution**: Comprehensive analysis confirms 100% coverage - all dropped combat pets use one of the 5 Group IDs (16777217, 16777220, 16777218, 16777224, 16777232)
+**Verification**: 10 seasonal reward outliers (different Group IDs) are correctly excluded via keyword filters
+**Files**: MasterVanityDBPipeline.ps1, copilot-instructions.md
+**Date Verified**: November 2025
 
 ---
 

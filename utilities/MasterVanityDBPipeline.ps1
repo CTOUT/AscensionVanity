@@ -70,13 +70,13 @@ $combatPrefixes = @(
     "Draconic Warhorn:",
     "Elemental Lodestone:"
 )
-# Primary Group IDs for legitimate drop-based combat pets (90-99% coverage validated)
+# Primary Group IDs for legitimate drop-based combat pets (98.5% accuracy - 34 vendor/reward items out of 2,343)
 $primaryGroupIds = @(
-    16777217,  # Beastmaster's Whistle (96.2% coverage)
-    16777220,  # Blood Soaked Vellum (95.4% coverage)
-    16777218,  # Summoner's Stone (90.1% coverage)
-    16777224,  # Draconic Warhorn (99.4% coverage)
-    16777232   # Elemental Lodestone (94.7% coverage)
+    16777217,  # Beastmaster's Whistle (99.1% clean - 8 vendor/purchase items)
+    16777220,  # Blood Soaked Vellum (96.6% clean - 19 vendor/purchase items)
+    16777218,  # Summoner's Stone (98.5% clean - 4 vendor/purchase items)
+    16777224,  # Draconic Warhorn (100% clean - 0 vendor/purchase items)
+    16777232   # Elemental Lodestone (98.9% clean - 3 vendor/purchase items)
 )
 
 # Fallback exclusion keywords (for outlier items with non-primary group IDs)

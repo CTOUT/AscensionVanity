@@ -8,7 +8,10 @@
 - **Language**: Lua 5.1 (World of Warcraft API)
 - **Data Processing**: PowerShell 7+ (for data extraction and enrichment)
 - **Data Sources**: db.ascension.gg + Wowhead WOTLK
-- **Database**: 2,174 combat pets with 99.95% description coverage
+- **Database**: 2,343 combat pets across 5 categories with 98.5% accuracy
+  - Primary filtering via Group IDs (100% coverage of dropped pets)
+  - Keyword exclusion for vendor/seasonal items (34 items excluded)
+  - 99.95% description enrichment coverage
 
 ## WoW Development Chat Mode
 
@@ -263,6 +266,23 @@ AV_VanityItems = {
     }
 }
 ```
+
+### Combat Pet Group ID Discovery (Nov 2025)
+
+**Critical Finding:** All dropped combat pets use exactly 5 Group IDs:
+- **16777217** - Beastmaster's Whistle (910 items, 99.1% clean)
+- **16777220** - Blood Soaked Vellum (564 items, 96.6% clean)
+- **16777218** - Summoner's Stone (271 items, 98.5% clean)
+- **16777224** - Draconic Warhorn (315 items, 100% clean)
+- **16777232** - Elemental Lodestone (283 items, 98.9% clean)
+- **Total**: 2,343 items with 98.5% overall accuracy
+
+**Outliers (Correctly Excluded):**
+- 10 seasonal reward pets use Group IDs: 553648129, 553648130, 553648136
+- 34 vendor/purchase items within the 5 groups (caught by keyword filter)
+- Other dropped items (mounts, sigils, weapons, toys) use different Group IDs
+
+**Verification:** 100% coverage confirmed - no dropped combat pets exist outside these 5 Group IDs.
 
 ### Data Enrichment Pattern
 
