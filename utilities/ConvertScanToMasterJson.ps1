@@ -44,6 +44,28 @@ $categoryMap = @{
     16777232 = "Elemental Lodestone"
 }
 
+# Vendor/purchase exclusion keywords (case-insensitive)
+$exclusionKeywords = @(
+    'purchase',
+    'webstore',
+    'website',
+    'previously',
+    'bazaar',
+    'seasonal',
+    'reward',
+    'promo',
+    'event',
+    'limited',
+    'achievement',
+    'reputation',
+    'quartermaster',
+    'obtained from',
+    'purchased from',
+    'sold by',
+    'requires exalted',
+    'can purchase'
+)
+
 Write-Step "Reading scan file: $ScanFile"
 $lines = Get-Content $ScanFile -Encoding UTF8
 
@@ -119,20 +141,34 @@ foreach ($line in $lines) {
         elseif ($line -match '^\s*\},?\s*$') {
             # Check if this item belongs to combat pet categories
             if ($combatPetGroups -contains $currentItem.group) {
-                $category = $categoryMap[$currentItem.group]
+                # Check for vendor/purchase exclusions in name or description
+                $shouldExclude = $false
+                $itemText = "$($currentItem.name) $($currentItem.description)".ToLower()
                 
-                # Create JSON object
-                $jsonItem = [PSCustomObject]@{
-                    DbItemId = $currentItem.itemid
-                    Name = $currentItem.name
-                    CreatureId = if ($currentItem.creaturePreview -gt 0) { $currentItem.creaturePreview } else { $null }
-                    Description = if ($currentItem.description) { $currentItem.description } else { $null }
-                    Category = $category
-                    Validated = if ($currentItem.description) { $true } else { $false }
-                    VendorExempt = $false
+                foreach ($keyword in $exclusionKeywords) {
+                    if ($itemText -match [regex]::Escape($keyword.ToLower())) {
+                        $shouldExclude = $true
+                        break
+                    }
                 }
                 
-                [void]$items.Add($jsonItem)
+                # Only add if not excluded
+                if (-not $shouldExclude) {
+                    $category = $categoryMap[$currentItem.group]
+                    
+                    # Create JSON object
+                    $jsonItem = [PSCustomObject]@{
+                        DbItemId = $currentItem.itemid
+                        Name = $currentItem.name
+                        CreatureId = if ($currentItem.creaturePreview -gt 0) { $currentItem.creaturePreview } else { $null }
+                        Description = if ($currentItem.description) { $currentItem.description } else { $null }
+                        Category = $category
+                        Validated = if ($currentItem.description) { $true } else { $false }
+                        VendorExempt = $false
+                    }
+                    
+                    [void]$items.Add($jsonItem)
+                }
             }
             
             # Reset for next item

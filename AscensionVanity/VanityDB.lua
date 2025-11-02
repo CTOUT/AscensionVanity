@@ -1,6 +1,6 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 11:35:57
--- Total Items: 2343
+-- Generated: 2025-11-02 11:48:08
+-- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
 -- 
@@ -16,41 +16,6 @@ AV_IconList = {
 }
 
 AV_VanityItems = {
-    [79256] = {
-        itemid = 79256,
-        name = "Beastmaster's Whistle: Felhound",
-        creaturePreview = 79010,
-        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
-    },
-    [79258] = {
-        itemid = 79258,
-        name = "Beastmaster's Whistle: White Felbat",
-        creaturePreview = 79011,
-        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
-    },
-    [79260] = {
-        itemid = 79260,
-        name = "Beastmaster's Whistle: Armored Soulhound",
-        creaturePreview = 347310,
-        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
-    },
-    [79262] = {
-        itemid = 79262,
-        name = "Beastmaster's Whistle: Felflame Talbuk",
-        creaturePreview = 79013,
-        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
-    },
-    [79263] = {
-        itemid = 79263,
-        name = "Beastmaster's Whistle: Skreeg",
-        creaturePreview = 79014,
-        description = "Felforged Heroes can purchase this item from Azzazel for Legion Crests",
-        icon = 1
-    },
     [79317] = {
         itemid = 79317,
         name = "Beastmaster's Whistle: Forest Spider",
@@ -7975,13 +7940,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Rotting Ghoul within The Writhing Haunt",
         icon = 2
     },
-    [86475] = {
-        itemid = 86475,
-        name = "Blood Soaked Vellum: Soulless Ghoul",
-        creaturePreview = 1794,
-        description = "Obtained from the Argent Quartermaster",
-        icon = 2
-    },
     [86488] = {
         itemid = 86488,
         name = "Blood Soaked Vellum: Searing Ghoul",
@@ -8584,13 +8542,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Dread Weaver within The Noxious Glade",
         icon = 2
     },
-    [87879] = {
-        itemid = 87879,
-        name = "Blood Soaked Vellum: Scourge Champion",
-        creaturePreview = 8529,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
     [87904] = {
         itemid = 87904,
         name = "Blood Soaked Vellum: Cannibal Ghoul",
@@ -8934,25 +8885,11 @@ AV_VanityItems = {
         description = "Has a chance to drop from Splintered Skeleton within Scholomance",
         icon = 2
     },
-    [88373] = {
-        itemid = 88373,
-        name = "Blood Soaked Vellum: Skulking Corpse",
-        creaturePreview = 10479,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
     [88374] = {
         itemid = 88374,
         name = "Blood Soaked Vellum: Unstable Corpse",
         creaturePreview = 10480,
         description = "Has a chance to drop from Unstable Corpse within Scholomance",
-        icon = 2
-    },
-    [88383] = {
-        itemid = 88383,
-        name = "Blood Soaked Vellum: Reanimated Corpse",
-        creaturePreview = 10481,
-        description = "Can be purchased from the Argent Quartermaster",
         icon = 2
     },
     [88415] = {
@@ -9464,13 +9401,6 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Skeletal Smith",
         creaturePreview = 16193,
         description = "Has a chance to drop from Skeletal Smith within Naxxramas",
-        icon = 2
-    },
-    [88978] = {
-        itemid = 88978,
-        name = "Blood Soaked Vellum: Infectious Ghoul",
-        creaturePreview = 16244,
-        description = "Can be purchased from the Argent Quartermaster",
         icon = 2
     },
     [88979] = {
@@ -10096,13 +10026,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Wastes Digger within The Dragon Wastes",
         icon = 2
     },
-    [89637] = {
-        itemid = 89637,
-        name = "Blood Soaked Vellum: Meathook",
-        creaturePreview = 301421,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
     [89638] = {
         itemid = 89638,
         name = "Blood Soaked Vellum: Mindless Servant",
@@ -10199,13 +10122,6 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Dreadbone Invader",
         creaturePreview = 27286,
         description = "Has a chance to drop from Dreadbone Invader within The Carrion Fields",
-        icon = 2
-    },
-    [89854] = {
-        itemid = 89854,
-        name = "Blood Soaked Vellum: Mindless Wight",
-        creaturePreview = 300150,
-        description = "Can be purchased from the Argent Quartermaster",
         icon = 2
     },
     [89855] = {
@@ -10326,20 +10242,6 @@ AV_VanityItems = {
         creaturePreview = 27941,
         description = "Has a chance to drop from Drakkari Plague Spreader within Zeb'Halak",
         icon = 2
-    },
-    [89998] = {
-        itemid = 89998,
-        name = "Blood Soaked Vellum: Carrion Eater",
-        creaturePreview = 300151,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [97743] = {
-        itemid = 97743,
-        name = "Elemental Lodestone: Afflicted Treemouth",
-        creaturePreview = 139999,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
     },
     [101049] = {
         itemid = 101049,
@@ -10493,13 +10395,6 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Anub'arak",
         creaturePreview = 29120,
         description = "Has a chance to drop from Anub'arak within Passage of Lost Fiends",
-        icon = 2
-    },
-    [101076] = {
-        itemid = 101076,
-        name = "Blood Soaked Vellum: Monstrous Wight",
-        creaturePreview = 300152,
-        description = "Can be purchased from the Argent Quartermaster",
         icon = 2
     },
     [101077] = {
@@ -10689,13 +10584,6 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Hulking Abomination",
         creaturePreview = 31140,
         description = "Has a chance to drop from Hulking Abomination within The Broken Front",
-        icon = 2
-    },
-    [101107] = {
-        itemid = 101107,
-        name = "Blood Soaked Vellum: Decaying Wight",
-        creaturePreview = 300153,
-        description = "Can be purchased from the Argent Quartermaster",
         icon = 2
     },
     [101108] = {
@@ -10894,13 +10782,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Enraged Fleshrender within The Valley of Lost Hope",
         icon = 2
     },
-    [101141] = {
-        itemid = 101141,
-        name = "Blood Soaked Vellum: Stitched Brute",
-        creaturePreview = 300154,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
     [101142] = {
         itemid = 101142,
         name = "Blood Soaked Vellum: Skeletal Footsoldier",
@@ -10934,13 +10815,6 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Deathspeaker Disciple",
         creaturePreview = 36807,
         description = "Has a chance to drop from Deathspeaker Disciple within Icecrown Citadel",
-        icon = 2
-    },
-    [101154] = {
-        itemid = 101154,
-        name = "Blood Soaked Vellum: Stonespine Gargoyle",
-        creaturePreview = 300155,
-        description = "Can be purchased from the Argent Quartermaster",
         icon = 2
     },
     [101155] = {
@@ -11005,132 +10879,6 @@ AV_VanityItems = {
         creaturePreview = 61700,
         description = "Has a chance to drop from Ngajh'dro within Outland",
         icon = 2
-    },
-    [101412] = {
-        itemid = 101412,
-        name = "Beastmaster's Whistle: Hamlet",
-        creaturePreview = 79038,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101414] = {
-        itemid = 101414,
-        name = "Beastmaster's Whistle: Peggi",
-        creaturePreview = 79040,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101415] = {
-        itemid = 101415,
-        name = "Beastmaster's Whistle: Terrorpene",
-        creaturePreview = 79041,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101416] = {
-        itemid = 101416,
-        name = "Beastmaster's Whistle: Purple Fire Spider",
-        creaturePreview = 79042,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101417] = {
-        itemid = 101417,
-        name = "Beastmaster's Whistle: Spectral Spiked Crab",
-        creaturePreview = 79043,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101418] = {
-        itemid = 101418,
-        name = "Beastmaster's Whistle: Spectral Gryphon",
-        creaturePreview = 79044,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101419] = {
-        itemid = 101419,
-        name = "Beastmaster's Whistle: Spectral Wyvern",
-        creaturePreview = 79045,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101421] = {
-        itemid = 101421,
-        name = "Beastmaster's Whistle: Green Shale Spider",
-        creaturePreview = 79047,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101422] = {
-        itemid = 101422,
-        name = "Beastmaster's Whistle: Orange Shale Spider",
-        creaturePreview = 79048,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101423] = {
-        itemid = 101423,
-        name = "Beastmaster's Whistle: Purple Shale Spider",
-        creaturePreview = 79049,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [101426] = {
-        itemid = 101426,
-        name = "Beastmaster's Whistle: Zebra Lion Seal",
-        creaturePreview = 79052,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [113671] = {
-        itemid = 113671,
-        name = "Beastmaster's Whistle: Solar Tracker",
-        creaturePreview = 292302,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [113672] = {
-        itemid = 113672,
-        name = "Beastmaster's Whistle: Lunar Tracker",
-        creaturePreview = 292303,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [121824] = {
-        itemid = 121824,
-        name = "Beastmaster's Whistle: Twilight Fox",
-        creaturePreview = 50109,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [121825] = {
-        itemid = 121825,
-        name = "Beastmaster's Whistle: Aurora Fox",
-        creaturePreview = 50110,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [121826] = {
-        itemid = 121826,
-        name = "Beastmaster's Whistle: Midnight Fox",
-        creaturePreview = 50111,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [123162] = {
-        itemid = 123162,
-        name = "Elemental Lodestone: Cascade",
-        creaturePreview = 590007,
-        description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor)",
-        icon = 5
-    },
-    [123163] = {
-        itemid = 123163,
-        name = "Elemental Lodestone: Borealis",
-        creaturePreview = 590024,
-        description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor)",
-        icon = 5
     },
     [138255] = {
         itemid = 138255,
@@ -11251,153 +10999,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
         icon = 3
     },
-    [194340] = {
-        itemid = 194340,
-        name = "Beastmaster's Whistle: Sandy Wilderling",
-        creaturePreview = 4754,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [194341] = {
-        itemid = 194341,
-        name = "Beastmaster's Whistle: Playful Wilderling",
-        creaturePreview = 4755,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [194342] = {
-        itemid = 194342,
-        name = "Beastmaster's Whistle: Loyal Wilderling",
-        creaturePreview = 4756,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [194344] = {
-        itemid = 194344,
-        name = "Beastmaster's Whistle: Sunny Wilderling",
-        creaturePreview = 4758,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [194345] = {
-        itemid = 194345,
-        name = "Beastmaster's Whistle: Earthen Wilderling",
-        creaturePreview = 4759,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [194346] = {
-        itemid = 194346,
-        name = "Beastmaster's Whistle: Elusive Wilderling",
-        creaturePreview = 4760,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [195593] = {
-        itemid = 195593,
-        name = "Beastmaster's Whistle: Fel Beast",
-        creaturePreview = 50512,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199336] = {
-        itemid = 199336,
-        name = "Beastmaster's Whistle: Kerchak",
-        creaturePreview = 11000214,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199337] = {
-        itemid = 199337,
-        name = "Beastmaster's Whistle: Buzzbee",
-        creaturePreview = 11000215,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199338] = {
-        itemid = 199338,
-        name = "Beastmaster's Whistle: Babee",
-        creaturePreview = 11000216,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199339] = {
-        itemid = 199339,
-        name = "Beastmaster's Whistle: Barnabee",
-        creaturePreview = 11000217,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199579] = {
-        itemid = 199579,
-        name = "Beastmaster's Whistle: Feral Armored Growler",
-        creaturePreview = 105764,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199580] = {
-        itemid = 199580,
-        name = "Beastmaster's Whistle: Savage Armored Growler",
-        creaturePreview = 105765,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199581] = {
-        itemid = 199581,
-        name = "Beastmaster's Whistle: Verdant Armored Growler",
-        creaturePreview = 105766,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [199582] = {
-        itemid = 199582,
-        name = "Beastmaster's Whistle: Rabid Armored Growler",
-        creaturePreview = 105767,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [231309] = {
-        itemid = 231309,
-        name = "Elemental Lodestone: Playful Azure Droplet",
-        creaturePreview = 115528,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [231311] = {
-        itemid = 231311,
-        name = "Elemental Lodestone: Playful Misty Droplet",
-        creaturePreview = 115530,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [231313] = {
-        itemid = 231313,
-        name = "Elemental Lodestone: Playful Amber Droplet",
-        creaturePreview = 115532,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [231314] = {
-        itemid = 231314,
-        name = "Elemental Lodestone: Playful Ruby Droplet",
-        creaturePreview = 115533,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [231344] = {
-        itemid = 231344,
-        name = "Elemental Lodestone: Playful Sha-Touched Droplet",
-        creaturePreview = 115535,
-        description = "Available from the Webstore",
-        icon = 5
-    },
-    [234628] = {
-        itemid = 234628,
-        name = "Beastmaster's Whistle: Arcane Bound Core Hound",
-        creaturePreview = 50517,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
     [254054] = {
         itemid = 254054,
         name = "Summoner's Stone: Sulkaia",
@@ -11411,279 +11012,6 @@ AV_VanityItems = {
         creaturePreview = 254316,
         description = "Has a chance to drop from Lady Vaalethri within Firewing Point",
         icon = 3
-    },
-    [257058] = {
-        itemid = 257058,
-        name = "Elemental Lodestone: Felflame Guardian",
-        creaturePreview = 218937,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257060] = {
-        itemid = 257060,
-        name = "Elemental Lodestone: Goldenflare Guardian",
-        creaturePreview = 218939,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257062] = {
-        itemid = 257062,
-        name = "Elemental Lodestone: Primal Earth Guardian",
-        creaturePreview = 218941,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257063] = {
-        itemid = 257063,
-        name = "Elemental Lodestone: Ancient Earth Guardian",
-        creaturePreview = 218942,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257064] = {
-        itemid = 257064,
-        name = "Elemental Lodestone: Primordial Earth Guardian",
-        creaturePreview = 218943,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257065] = {
-        itemid = 257065,
-        name = "Elemental Lodestone: Eternal Earth Guardian",
-        creaturePreview = 218944,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257066] = {
-        itemid = 257066,
-        name = "Elemental Lodestone: Sacred Earth Guardian",
-        creaturePreview = 218945,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257067] = {
-        itemid = 257067,
-        name = "Elemental Lodestone: Sovereign Earth Guardian",
-        creaturePreview = 218946,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257069] = {
-        itemid = 257069,
-        name = "Elemental Lodestone: Frostborne Guardian",
-        creaturePreview = 218948,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257070] = {
-        itemid = 257070,
-        name = "Elemental Lodestone: Frostbitten Guardian",
-        creaturePreview = 218949,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257071] = {
-        itemid = 257071,
-        name = "Elemental Lodestone: Icebound Guardian",
-        creaturePreview = 218950,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257073] = {
-        itemid = 257073,
-        name = "Elemental Lodestone: Chillclad Guardian",
-        creaturePreview = 218952,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257074] = {
-        itemid = 257074,
-        name = "Elemental Lodestone: Oceancrest Guardian",
-        creaturePreview = 218953,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257076] = {
-        itemid = 257076,
-        name = "Elemental Lodestone: Magmasurge Guardian",
-        creaturePreview = 218955,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257078] = {
-        itemid = 257078,
-        name = "Elemental Lodestone: Sulphurcrest Guardian",
-        creaturePreview = 218957,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257079] = {
-        itemid = 257079,
-        name = "Elemental Lodestone: Shadowtide Guardian",
-        creaturePreview = 218958,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257080] = {
-        itemid = 257080,
-        name = "Elemental Lodestone: Mudcrest Guardian",
-        creaturePreview = 218959,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257084] = {
-        itemid = 257084,
-        name = "Elemental Lodestone: Palewater Guardian",
-        creaturePreview = 218963,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257085] = {
-        itemid = 257085,
-        name = "Elemental Lodestone: Plumtide Guardian",
-        creaturePreview = 218964,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257086] = {
-        itemid = 257086,
-        name = "Elemental Lodestone: Scarletwave Guardian",
-        creaturePreview = 218965,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257087] = {
-        itemid = 257087,
-        name = "Elemental Lodestone: Cyancrest Guardian",
-        creaturePreview = 218966,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257089] = {
-        itemid = 257089,
-        name = "Elemental Lodestone: Ashenbreeze Guardian",
-        creaturePreview = 218968,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257090] = {
-        itemid = 257090,
-        name = "Elemental Lodestone: Amberwind Guardian",
-        creaturePreview = 218969,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [257091] = {
-        itemid = 257091,
-        name = "Elemental Lodestone: Dunesweeper Guardian",
-        creaturePreview = 218970,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [281749] = {
-        itemid = 281749,
-        name = "Summoner's Stone: Sneering Doomling",
-        creaturePreview = 41236,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281750] = {
-        itemid = 281750,
-        name = "Summoner's Stone: Drifting Doomling",
-        creaturePreview = 41237,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281751] = {
-        itemid = 281751,
-        name = "Summoner's Stone: Skittering Doomling",
-        creaturePreview = 41238,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281752] = {
-        itemid = 281752,
-        name = "Summoner's Stone: Yapping Doomling",
-        creaturePreview = 41239,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281753] = {
-        itemid = 281753,
-        name = "Summoner's Stone: Snuggling Doomling",
-        creaturePreview = 41240,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281754] = {
-        itemid = 281754,
-        name = "Summoner's Stone: Whimming Doomling",
-        creaturePreview = 41241,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281755] = {
-        itemid = 281755,
-        name = "Summoner's Stone: Gleaming Doomling",
-        creaturePreview = 41242,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [281756] = {
-        itemid = 281756,
-        name = "Summoner's Stone: Twitching Doomling",
-        creaturePreview = 41243,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [333413] = {
-        itemid = 333413,
-        name = "Beastmaster's Whistle: Fel-infused Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [333414] = {
-        itemid = 333414,
-        name = "Beastmaster's Whistle: Marshlands Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [333415] = {
-        itemid = 333415,
-        name = "Beastmaster's Whistle: Camouflaged Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [333417] = {
-        itemid = 333417,
-        name = "Beastmaster's Whistle: Arcane Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [333418] = {
-        itemid = 333418,
-        name = "Beastmaster's Whistle: Fel Corrupted Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [333419] = {
-        itemid = 333419,
-        name = "Beastmaster's Whistle: Zangar Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [333420] = {
-        itemid = 333420,
-        name = "Beastmaster's Whistle: Ivory Mana Ray",
-        creaturePreview = 18880,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
     },
     [347302] = {
         itemid = 347302,
@@ -11699,27 +11027,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Risen Alvajar within Frozen Reach",
         icon = 2
     },
-    [348634] = {
-        itemid = 348634,
-        name = "Beastmaster's Whistle: Ginger Primal Dog",
-        creaturePreview = 392240,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [348636] = {
-        itemid = 348636,
-        name = "Beastmaster's Whistle: Dandelion Primal Dog",
-        creaturePreview = 392242,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [348637] = {
-        itemid = 348637,
-        name = "Beastmaster's Whistle: Tawny Primal Dog",
-        creaturePreview = 392243,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
     [354048] = {
         itemid = 354048,
         name = "Elemental Lodestone: Stone Fury",
@@ -11727,151 +11034,11 @@ AV_VanityItems = {
         description = "Has a chance to drop from Stone Fury within Eastern Kingdoms.",
         icon = 5
     },
-    [392169] = {
-        itemid = 392169,
-        name = "Summoner's Stone: Shadow of Xavius",
-        creaturePreview = 79058,
-        description = "Available from the Webstore",
-        icon = 3
-    },
-    [400070] = {
-        itemid = 400070,
-        name = "Blood Soaked Vellum: Skeletal Sharpshooter",
-        creaturePreview = 300156,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [400071] = {
-        itemid = 400071,
-        name = "Blood Soaked Vellum: Necromantic Lich",
-        creaturePreview = 146507,
-        description = "Obtained from the Argent Quartermaster",
-        icon = 2
-    },
-    [400072] = {
-        itemid = 400072,
-        name = "Blood Soaked Vellum: Dreadshriek Banshee",
-        creaturePreview = 300157,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [400074] = {
-        itemid = 400074,
-        name = "Blood Soaked Vellum: Berserk Ghoul",
-        creaturePreview = 14712,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [400075] = {
-        itemid = 400075,
-        name = "Blood Soaked Vellum: Hulking Corpse",
-        creaturePreview = 301422,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [400076] = {
-        itemid = 400076,
-        name = "Blood Soaked Vellum: Shambling Horror",
-        creaturePreview = 476019,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [400077] = {
-        itemid = 400077,
-        name = "Blood Soaked Vellum: Plagued Zombie",
-        creaturePreview = 476020,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
-    },
-    [400078] = {
-        itemid = 400078,
-        name = "Summoner's Stone: Doom Warden",
-        creaturePreview = 476022,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 3
-    },
-    [400079] = {
-        itemid = 400079,
-        name = "Summoner's Stone: Infernal",
-        creaturePreview = 476023,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 3
-    },
-    [400080] = {
-        itemid = 400080,
-        name = "Summoner's Stone: Infernal Warden",
-        creaturePreview = 476024,
-        description = "Can be purchased from the Argent Quartermaster",
-        icon = 3
-    },
-    [442009] = {
-        itemid = 442009,
-        name = "Elemental Lodestone: Wretched Treemouth",
-        creaturePreview = 139995,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [442010] = {
-        itemid = 442010,
-        name = "Elemental Lodestone: Pallid Treemouth",
-        creaturePreview = 139996,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [442011] = {
-        itemid = 442011,
-        name = "Elemental Lodestone: Sallow Treemouth",
-        creaturePreview = 139997,
-        description = "Available from the Webstore.",
-        icon = 5
-    },
-    [442012] = {
-        itemid = 442012,
-        name = "Elemental Lodestone: Stricken Treemouth",
-        creaturePreview = 139998,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
     [480382] = {
         itemid = 480382,
         name = "Beastmaster's Whistle: Captain Claws",
         creaturePreview = 417217,
         description = "NPC doesn't exist. Possibly a reward, promo, purchase or not yet implemented.",
-        icon = 1
-    },
-    [509906] = {
-        itemid = 509906,
-        name = "Beastmaster's Whistle: Tamable Thunder Lizard",
-        creaturePreview = 347300,
-        description = "Reward from Hardcore/Nightmare Plains Stalker Trial",
-        icon = 1
-    },
-    [532578] = {
-        itemid = 532578,
-        name = "Beastmaster's Whistle: Doberman MK III",
-        creaturePreview = 98483,
-        description = "Can be purchased from Millhouse Manastorm",
-        icon = 1
-    },
-    [532579] = {
-        itemid = 532579,
-        name = "Elemental Lodestone: Bound Water Elemental",
-        creaturePreview = 98484,
-        description = "Can be purchased from Millhouse Manastorm",
-        icon = 5
-    },
-    [541299] = {
-        itemid = 541299,
-        name = "Beastmaster's Whistle: Core Hound",
-        creaturePreview = 55963,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [541300] = {
-        itemid = 541300,
-        name = "Beastmaster's Whistle: Void Borne Core Hound",
-        creaturePreview = 50959,
-        description = "Available from Tiraxis' Ethereal Bazaar",
         icon = 1
     },
     [600369] = {
@@ -11942,13 +11109,6 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Irradiated Horror",
         creaturePreview = 6220,
         description = "Has a chance to drop from Irradiated Horror within Gnomeregan",
-        icon = 5
-    },
-    [600388] = {
-        itemid = 600388,
-        name = "Elemental Lodestone: Mana Guardian",
-        creaturePreview = 218931,
-        description = "Available from the Webstore",
         icon = 5
     },
     [600390] = {
@@ -12420,67 +11580,11 @@ AV_VanityItems = {
         description = "Has a chance to drop from Vexallus within Magisters' Terrace.",
         icon = 5
     },
-    [600934] = {
-        itemid = 600934,
-        name = "Elemental Lodestone: Glacial Guardian",
-        creaturePreview = 218933,
-        description = "Available from the Webstore",
-        icon = 5
-    },
-    [600967] = {
-        itemid = 600967,
-        name = "Elemental Lodestone: Flame Guardian",
-        creaturePreview = 218934,
-        description = "Available from the Webstore",
-        icon = 5
-    },
-    [600968] = {
-        itemid = 600968,
-        name = "Elemental Lodestone: Earthen Guardian",
-        creaturePreview = 218929,
-        description = "Available from the Webstore",
-        icon = 5
-    },
-    [600969] = {
-        itemid = 600969,
-        name = "Elemental Lodestone: Tide Guardian",
-        creaturePreview = 218932,
-        description = "Available from the Webstore",
-        icon = 5
-    },
-    [600970] = {
-        itemid = 600970,
-        name = "Elemental Lodestone: Tempest Guardian",
-        creaturePreview = 218930,
-        description = "Available from the Webstore",
-        icon = 5
-    },
     [601009] = {
         itemid = 601009,
         name = "Elemental Lodestone: Surging Water Elemental",
         creaturePreview = 37703,
         description = "NPC exists. Level 10 - found in one of the starting zones (possibly Shaman related NPC).",
-        icon = 5
-    },
-    [601016] = {
-        itemid = 601016,
-        name = "Summoner's Stone: Sister Subversia",
-        creaturePreview = 80493,
-        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 3
-    },
-    [601022] = {
-        itemid = 601022,
-        name = "Elemental Lodestone: Desert Guardian",
-        creaturePreview = 218936,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
-    },
-    [601023] = {
-        itemid = 601023,
-        name = "Elemental Lodestone: Blazing Fireguard",
-        creaturePreview = 8910,
-        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Fire",
         icon = 5
     },
     [601024] = {
@@ -13260,13 +12364,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Decrepit Darkhound within Tirisfal Glades",
         icon = 3
     },
-    [601745] = {
-        itemid = 601745,
-        name = "Elemental Lodestone: Dune Guardian",
-        creaturePreview = 218935,
-        description = "Available from the Webstore",
-        icon = 5
-    },
     [601818] = {
         itemid = 601818,
         name = "Elemental Lodestone: Petrified Treant",
@@ -13512,216 +12609,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Sacro'lythess within Sunwell Plateau.",
         icon = 3
     },
-    [844513] = {
-        itemid = 844513,
-        name = "Beastmaster's Whistle: Amber Shardhide",
-        creaturePreview = 222999,
-        description = "Available from the Webstore",
-        icon = 1
-    },
-    [844514] = {
-        itemid = 844514,
-        name = "Beastmaster's Whistle: Darkmaul Shardhide",
-        creaturePreview = 217615,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [844515] = {
-        itemid = 844515,
-        name = "Beastmaster's Whistle: Beryl Shardhide",
-        creaturePreview = 222300,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [844516] = {
-        itemid = 844516,
-        name = "Beastmaster's Whistle: Cerulean Shardhide",
-        creaturePreview = 222302,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [844517] = {
-        itemid = 844517,
-        name = "Beastmaster's Whistle: Crimson Shardhide",
-        creaturePreview = 222301,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [980060] = {
-        itemid = 980060,
-        name = "Beastmaster's Whistle: Pink Elekk",
-        creaturePreview = 338957,
-        description = "Can be purchased from Millhouse Manastorm",
-        icon = 1
-    },
-    [1001686] = {
-        itemid = 1001686,
-        name = "Beastmaster's Whistle: Chubby",
-        creaturePreview = 1000003,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [1001687] = {
-        itemid = 1001687,
-        name = "Beastmaster's Whistle: Mo",
-        creaturePreview = 1000004,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
-    },
-    [1178958] = {
-        itemid = 1178958,
-        name = "Blood Soaked Vellum: Beckoned Wraith",
-        creaturePreview = 79060,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1178959] = {
-        itemid = 1178959,
-        name = "Blood Soaked Vellum: Patchwork Ghoul",
-        creaturePreview = 79061,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1178962] = {
-        itemid = 1178962,
-        name = "Blood Soaked Vellum: Maw Zombie",
-        creaturePreview = 79062,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179001] = {
-        itemid = 1179001,
-        name = "Summoner's Stone: Felborne Overfiend",
-        creaturePreview = 79063,
-        description = "Available from the Webstore",
-        icon = 3
-    },
-    [1179002] = {
-        itemid = 1179002,
-        name = "Summoner's Stone: Iceflame Overfiend",
-        creaturePreview = 79064,
-        description = "Available from Tiraxis' Ethereal Bazaar or the Webstore",
-        icon = 3
-    },
-    [1179003] = {
-        itemid = 1179003,
-        name = "Summoner's Stone: Shadowflame Terrorwalker",
-        creaturePreview = 79065,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [1179004] = {
-        itemid = 1179004,
-        name = "Summoner's Stone: Baleroc",
-        creaturePreview = 79066,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
-    },
-    [1179005] = {
-        itemid = 1179005,
-        name = "Blood Soaked Vellum: King Dazar",
-        creaturePreview = 79067,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179006] = {
-        itemid = 1179006,
-        name = "Blood Soaked Vellum: Abomination Lord",
-        creaturePreview = 79068,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179007] = {
-        itemid = 1179007,
-        name = "Blood Soaked Vellum: Monkey Skeleton Captain",
-        creaturePreview = 79069,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179008] = {
-        itemid = 1179008,
-        name = "Blood Soaked Vellum: Monkey Skeleton Captain (Blue)",
-        creaturePreview = 79070,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179009] = {
-        itemid = 1179009,
-        name = "Blood Soaked Vellum: Monkey Skeleton Captain (Red)",
-        creaturePreview = 79071,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179010] = {
-        itemid = 1179010,
-        name = "Blood Soaked Vellum: Monkey Skeleton Captain (Black)",
-        creaturePreview = 79072,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179011] = {
-        itemid = 1179011,
-        name = "Blood Soaked Vellum: Greater Banshee (Blue)",
-        creaturePreview = 79073,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179012] = {
-        itemid = 1179012,
-        name = "Blood Soaked Vellum: Greater Banshee (Purple)",
-        creaturePreview = 79074,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179013] = {
-        itemid = 1179013,
-        name = "Blood Soaked Vellum: Greater Banshee (Red)",
-        creaturePreview = 79075,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179014] = {
-        itemid = 1179014,
-        name = "Blood Soaked Vellum: Greater Banshee (Yellow)",
-        creaturePreview = 79076,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179015] = {
-        itemid = 1179015,
-        name = "Blood Soaked Vellum: Hopping Ghost (Blue)",
-        creaturePreview = 79077,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179016] = {
-        itemid = 1179016,
-        name = "Blood Soaked Vellum: Hopping Ghost (Green)",
-        creaturePreview = 79078,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179017] = {
-        itemid = 1179017,
-        name = "Blood Soaked Vellum: Hopping Ghost (Purple)",
-        creaturePreview = 79079,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179018] = {
-        itemid = 1179018,
-        name = "Blood Soaked Vellum: Hopping Ghost (White)",
-        creaturePreview = 79080,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179019] = {
-        itemid = 1179019,
-        name = "Blood Soaked Vellum: Maw Shade",
-        creaturePreview = 79081,
-        description = "Available from the Webstore",
-        icon = 2
-    },
     [1179020] = {
         itemid = 1179020,
         name = "Blood Soaked Vellum: The Mass of Souls",
@@ -13734,335 +12621,6 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Lich Lord",
         creaturePreview = 79089,
         description = "Has a chance to drop from Lich Lord within Eastern Kingdoms",
-        icon = 2
-    },
-    [1179028] = {
-        itemid = 1179028,
-        name = "Blood Soaked Vellum: Maldraxxian Necromancer (Black)",
-        creaturePreview = 79090,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179029] = {
-        itemid = 1179029,
-        name = "Blood Soaked Vellum: Maldraxxian Necromancer (Blue)",
-        creaturePreview = 79091,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179030] = {
-        itemid = 1179030,
-        name = "Blood Soaked Vellum: Maldraxxian Necromancer (Green)",
-        creaturePreview = 79092,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179031] = {
-        itemid = 1179031,
-        name = "Blood Soaked Vellum: Maldraxxian Necromancer (Purple)",
-        creaturePreview = 79093,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179036] = {
-        itemid = 1179036,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Black/Black (Armored))",
-        creaturePreview = 79098,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179037] = {
-        itemid = 1179037,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Black/Blue (Armored))",
-        creaturePreview = 79099,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179038] = {
-        itemid = 1179038,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Black/Grey (Armored))",
-        creaturePreview = 79100,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179039] = {
-        itemid = 1179039,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Brown/Black (Armored))",
-        creaturePreview = 79101,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179040] = {
-        itemid = 1179040,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Brown/Bronze (Armored))",
-        creaturePreview = 79102,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179041] = {
-        itemid = 1179041,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Brown/Grey (Armored))",
-        creaturePreview = 79103,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179042] = {
-        itemid = 1179042,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Black (Armored))",
-        creaturePreview = 79104,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179043] = {
-        itemid = 1179043,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Blue (Armored))",
-        creaturePreview = 79105,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179044] = {
-        itemid = 1179044,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Bronze (Armored))",
-        creaturePreview = 79106,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179045] = {
-        itemid = 1179045,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Copper (Armored))",
-        creaturePreview = 79107,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179046] = {
-        itemid = 1179046,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Green (Armored))",
-        creaturePreview = 79108,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179047] = {
-        itemid = 1179047,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Grey (Armored))",
-        creaturePreview = 79109,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179048] = {
-        itemid = 1179048,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Pale/Black (Armored))",
-        creaturePreview = 79110,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179049] = {
-        itemid = 1179049,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Pale/Blue (Armored))",
-        creaturePreview = 79111,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179050] = {
-        itemid = 1179050,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Pale/Bronze (Armored))",
-        creaturePreview = 79112,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179051] = {
-        itemid = 1179051,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Pale/Grey (Armored))",
-        creaturePreview = 79113,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179052] = {
-        itemid = 1179052,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Purple/Black (Armored))",
-        creaturePreview = 79114,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179053] = {
-        itemid = 1179053,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Purple/Copper (Armored))",
-        creaturePreview = 79115,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179054] = {
-        itemid = 1179054,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Purple/Green (Armored))",
-        creaturePreview = 79116,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179055] = {
-        itemid = 1179055,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Purple/Grey (Armored))",
-        creaturePreview = 79117,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179057] = {
-        itemid = 1179057,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Black (Armored))",
-        creaturePreview = 79119,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179058] = {
-        itemid = 1179058,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Blue (Armored))",
-        creaturePreview = 79120,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179059] = {
-        itemid = 1179059,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Bronze (Armored))",
-        creaturePreview = 79121,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179060] = {
-        itemid = 1179060,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Copper (Armored))",
-        creaturePreview = 79122,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179061] = {
-        itemid = 1179061,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Green (Armored))",
-        creaturePreview = 79123,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179062] = {
-        itemid = 1179062,
-        name = "Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Grey (Armored))",
-        creaturePreview = 79124,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179063] = {
-        itemid = 1179063,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Black/Black)",
-        creaturePreview = 79125,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179064] = {
-        itemid = 1179064,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Black/Bronze)",
-        creaturePreview = 79126,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179065] = {
-        itemid = 1179065,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Blue/Blue)",
-        creaturePreview = 79127,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179066] = {
-        itemid = 1179066,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Bronze/Bronze)",
-        creaturePreview = 79128,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179067] = {
-        itemid = 1179067,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Brown/Bronze)",
-        creaturePreview = 79129,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179068] = {
-        itemid = 1179068,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Brown/Brown)",
-        creaturePreview = 79130,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179069] = {
-        itemid = 1179069,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Green/Bronze)",
-        creaturePreview = 79131,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179070] = {
-        itemid = 1179070,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Green/Green)",
-        creaturePreview = 79132,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179071] = {
-        itemid = 1179071,
-        name = "Blood Soaked Vellum: Maldraxxus Gladiator (Purple/Purple)",
-        creaturePreview = 79133,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179072] = {
-        itemid = 1179072,
-        name = "Blood Soaked Vellum: Aranakk (Black)",
-        creaturePreview = 79134,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179073] = {
-        itemid = 1179073,
-        name = "Blood Soaked Vellum: Aranakk (Brown)",
-        creaturePreview = 79135,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179074] = {
-        itemid = 1179074,
-        name = "Blood Soaked Vellum: Aranakk (Green)",
-        creaturePreview = 79136,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179075] = {
-        itemid = 1179075,
-        name = "Blood Soaked Vellum: Aranakk (Red)",
-        creaturePreview = 79137,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179077] = {
-        itemid = 1179077,
-        name = "Blood Soaked Vellum: Drustvar Beastman (Blue)",
-        creaturePreview = 79139,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179078] = {
-        itemid = 1179078,
-        name = "Blood Soaked Vellum: Drustvar Beastman (Grey)",
-        creaturePreview = 79140,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1179079] = {
-        itemid = 1179079,
-        name = "Blood Soaked Vellum: Drustvar Beastman (Red)",
-        creaturePreview = 79141,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1179080] = {
-        itemid = 1179080,
-        name = "Blood Soaked Vellum: Drustvar Beastman (Yellow)",
-        creaturePreview = 79142,
-        description = "Available from Tiraxis' Ethereal Bazaar",
         icon = 2
     },
     [1180107] = {
@@ -16277,27 +14835,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from The Frozen Reach Manastorm ",
         icon = 1
     },
-    [1554439] = {
-        itemid = 1554439,
-        name = "Blood Soaked Vellum: Undying Kvaldir Raider",
-        creaturePreview = 317773,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
-    [1554440] = {
-        itemid = 1554440,
-        name = "Blood Soaked Vellum: Undying Kvaldir Spearmaiden",
-        creaturePreview = 317774,
-        description = "Available from the Webstore",
-        icon = 2
-    },
-    [1554441] = {
-        itemid = 1554441,
-        name = "Blood Soaked Vellum: Undying Kvaldir Scavenger",
-        creaturePreview = 317775,
-        description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
-    },
     [1777000] = {
         itemid = 1777000,
         name = "Elemental Lodestone: Storming Wind-Ripper",
@@ -16347,34 +14884,6 @@ AV_VanityItems = {
         description = "Has a chance to drop from Unbound Fire Spirit within Elemental Plateau",
         icon = 5
     },
-    [1777378] = {
-        itemid = 1777378,
-        name = "Elemental Lodestone: Living Cyclone",
-        creaturePreview = 17160,
-        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Lightning",
-        icon = 5
-    },
-    [1777379] = {
-        itemid = 1777379,
-        name = "Elemental Lodestone: Mana Beast",
-        creaturePreview = 21267,
-        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Arcane",
-        icon = 5
-    },
-    [1777380] = {
-        itemid = 1777380,
-        name = "Elemental Lodestone: Iceshard Elemental",
-        creaturePreview = 149399,
-        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Ice",
-        icon = 5
-    },
-    [1777420] = {
-        itemid = 1777420,
-        name = "Elemental Lodestone: Desert Rumbler",
-        creaturePreview = 11746,
-        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Earth",
-        icon = 5
-    },
     [1777421] = {
         itemid = 1777421,
         name = "Elemental Lodestone: Deeprot Stomper",
@@ -16409,12 +14918,5 @@ AV_VanityItems = {
         creaturePreview = 19205,
         description = "Has a chance to drop from Darkweaver Syth within Sethekk Halls",
         icon = 5
-    },
-    [8200118] = {
-        itemid = 8200118,
-        name = "Beastmaster's Whistle: Arctic Bear",
-        creaturePreview = 11000167,
-        description = "Available from the Webstore",
-        icon = 1
     },
 }
