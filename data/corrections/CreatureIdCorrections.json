@@ -21,6 +21,66 @@
       "verifiedBy": "https://db.ascension.gg/?item=79587 and https://db.ascension.gg/?npc=2970",
       "dateAdded": "2025-11-02",
       "addedBy": "User verification"
+    },
+    {
+      "itemId": 79498,
+      "itemName": "Beastmaster's Whistle: Strigid Screecher",
+      "wrongCreatureId": 4001996,
+      "correctCreatureId": 1996,
+      "reason": "400xxxx prefix pattern. Neighbors are 1995-1997 range.",
+      "verifiedBy": "Pattern analysis - Strigid Owl is 1995",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Automated outlier detection"
+    },
+    {
+      "itemId": 79500,
+      "itemName": "Beastmaster's Whistle: Webwood Lurker",
+      "wrongCreatureId": 4001998,
+      "correctCreatureId": 1998,
+      "reason": "400xxxx prefix pattern. Neighbors are 1997-1999 range.",
+      "verifiedBy": "Pattern analysis - Webwood area NPCs",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Automated outlier detection"
+    },
+    {
+      "itemId": 79509,
+      "itemName": "Beastmaster's Whistle: Nightsaber Stalker",
+      "wrongCreatureId": 4002043,
+      "correctCreatureId": 2043,
+      "reason": "400xxxx prefix pattern. Neighbors are 2042-2069 range.",
+      "verifiedBy": "Pattern analysis - Night elf zone NPCs",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Automated outlier detection"
+    },
+    {
+      "itemId": 79579,
+      "itemName": "Beastmaster's Whistle: Adult Plainstrider",
+      "wrongCreatureId": 4002956,
+      "correctCreatureId": 2956,
+      "reason": "400xxxx prefix pattern. Neighbors are 2955-2957 range.",
+      "verifiedBy": "Pattern analysis - Barrens NPCs",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Automated outlier detection"
+    },
+    {
+      "itemId": 79603,
+      "itemName": "Beastmaster's Whistle: Armored Scorpid",
+      "wrongCreatureId": 4003126,
+      "correctCreatureId": 3126,
+      "reason": "400xxxx prefix pattern. Neighbors are 3125-3127 range (Scorpid Worker is 3124).",
+      "verifiedBy": "Pattern analysis - Scorpid family NPCs",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Automated outlier detection"
+    },
+    {
+      "itemId": 79738,
+      "itemName": "Beastmaster's Whistle: Barbed Crustacean",
+      "wrongCreatureId": 4004823,
+      "correctCreatureId": 4823,
+      "reason": "400xxxx prefix pattern. Neighbors are 4822-4824 range.",
+      "verifiedBy": "Pattern analysis - Underwater zone NPCs",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Automated outlier detection"
     }
   ]
 }
