@@ -342,8 +342,10 @@ local function AddVanityInfoToTooltip(tooltip, unit)
             local inCombat = UnitAffectingCombat("player")
             local combatBehavior = AscensionVanityDB.combatBehavior or "hide"
             
-            -- First pass: Count items that pass category filter
+            -- First pass: Count items that pass category filter and collection status filter
             local filteredItems = {}
+            local collectionFilter = AscensionVanityDB.collectionFilter or "both"
+            
             for _, itemID in ipairs(vanityItems) do
                 local itemData = AV_GetItemData(itemID)
                 if not itemData then
@@ -358,10 +360,25 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                 local itemName = itemData.name
                 if IsVendorExempt(itemData) then
                     DebugPrint("Filtered vendor item:", itemName)
-                elseif ShouldShowItem(itemName) then
-                    table.insert(filteredItems, { id = itemID, data = itemData, name = itemName })
-                else
+                elseif not ShouldShowItem(itemName) then
                     DebugPrint("Filtered out item:", itemName, "(category disabled)")
+                else
+                    -- Check collection status filter (v2.1+)
+                    local shouldInclude = true
+                    if collectionFilter ~= "both" and AscensionVanityDB.showLearnedStatus then
+                        local isLearned = IsVanityItemLearned(itemID, itemName)
+                        if collectionFilter == "known" and isLearned ~= true then
+                            shouldInclude = false
+                            DebugPrint("Filtered out item:", itemName, "(not learned, showing known only)")
+                        elseif collectionFilter == "unknown" and isLearned ~= false then
+                            shouldInclude = false
+                            DebugPrint("Filtered out item:", itemName, "(already learned, showing unknown only)")
+                        end
+                    end
+                    
+                    if shouldInclude then
+                        table.insert(filteredItems, { id = itemID, data = itemData, name = itemName })
+                    end
                 end
             end
             

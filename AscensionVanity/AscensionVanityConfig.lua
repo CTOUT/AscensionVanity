@@ -12,6 +12,7 @@ local defaults = {
         elemental = true,        -- Elemental Lodestone (Group 16777232)
         undead = true            -- Blood Soaked Vellum (Group 16777220)
     },
+    collectionFilter = "both",   -- "both", "known", "unknown" (default: both - show all)
     colorCode = true,            -- Color-code tooltip text based on learned status
     combatBehavior = "hide",     -- "normal", "minimal", "hide" (default: hide)
     debug = false,               -- Enable debug logging

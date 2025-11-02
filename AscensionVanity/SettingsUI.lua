@@ -285,6 +285,65 @@ settingsPanel.combatRadios = combatRadios
 -- Note: Radio button OnClick handlers set later (after SaveSettings is defined)
 
 -- ============================================================================
+-- Collection Status Filter
+-- ============================================================================
+
+-- Separator before collection status
+local separatorCollection = settingsPanel:CreateTexture(nil, "ARTWORK")
+separatorCollection:SetHeight(1)
+separatorCollection:SetPoint("TOP", combatRadios.hide, "BOTTOM", 0, -16)
+separatorCollection:SetPoint("LEFT", 30, 0)
+separatorCollection:SetPoint("RIGHT", -30, 0)
+separatorCollection:SetColorTexture(0.25, 0.25, 0.25, 1)
+
+-- Collection Status Section Header
+local collectionHeader = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+collectionHeader:SetPoint("TOP", separatorCollection, "BOTTOM", 0, -12)
+collectionHeader:SetText("Collection Status Filter")
+
+local collectionDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+collectionDesc:SetPoint("TOP", collectionHeader, "BOTTOM", 0, -4)
+collectionDesc:SetWidth(700)
+collectionDesc:SetJustifyH("CENTER")
+collectionDesc:SetText(AV_COLOR_GRAY .. "Choose which items to display based on learned status" .. AV_COLOR_RESET)
+
+-- Collection Status Radio Buttons
+local collectionRadios = {}
+
+collectionRadios.both = CreateRadioButton(
+    settingsPanel,
+    "Show All Items",
+    "both",
+    "Display all vanity items regardless of learned status.\n\nIdeal for: Complete reference and discovery",
+    collectionDesc,
+    30,
+    -12
+)
+
+collectionRadios.unknown = CreateRadioButton(
+    settingsPanel,
+    "Unknown Only (Collector Mode)",
+    "unknown",
+    "Display only vanity items you haven't learned yet.\n\nIdeal for: Focused collecting and farming",
+    collectionRadios.both,
+    0,
+    -6
+)
+
+collectionRadios.known = CreateRadioButton(
+    settingsPanel,
+    "Known Only (Achievement Mode)",
+    "known",
+    "Display only vanity items you've already learned.\n\nIdeal for: Reviewing your collection",
+    collectionRadios.unknown,
+    0,
+    -6
+)
+
+-- Store reference
+settingsPanel.collectionRadios = collectionRadios
+
+-- ============================================================================
 -- Checkbox Dependencies
 -- ============================================================================
 
@@ -304,7 +363,7 @@ end)
 -- Separator before utility buttons
 local separator2 = settingsPanel:CreateTexture(nil, "ARTWORK")
 separator2:SetHeight(1)
-separator2:SetPoint("TOP", combatRadios.hide, "BOTTOM", 0, -16)
+separator2:SetPoint("TOP", collectionRadios.known, "BOTTOM", 0, -16)
 separator2:SetPoint("LEFT", 30, 0)
 separator2:SetPoint("RIGHT", -30, 0)
 separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -369,6 +428,12 @@ local function UpdateCheckboxes()
         radio:SetChecked(radio.value == combatBehavior)
     end
     
+    -- Update collection status filter radio buttons (v2.1+)
+    local collectionFilter = AscensionVanityDB.collectionFilter or "both"
+    for _, radio in pairs(settingsPanel.collectionRadios) do
+        radio:SetChecked(radio.value == collectionFilter)
+    end
+    
     -- Master dependency: All settings require addon enabled
     if AscensionVanityDB.enabled then
         -- Addon enabled - apply normal dependency rules
@@ -425,6 +490,14 @@ local function SaveSettings()
         end
     end
     
+    -- Save collection status filter setting (v2.1+)
+    for _, radio in pairs(settingsPanel.collectionRadios) do
+        if radio:GetChecked() then
+            AscensionVanityDB.collectionFilter = radio.value
+            break
+        end
+    end
+    
     -- Note: debug setting managed in Scanner UI
     -- No chat spam - changes are saved silently
 end
@@ -455,6 +528,18 @@ for _, radio in pairs(settingsPanel.combatRadios) do
     radio:SetScript("OnClick", function(self)
         -- Ensure only one radio is checked at a time
         for _, otherRadio in pairs(settingsPanel.combatRadios) do
+            otherRadio:SetChecked(false)
+        end
+        self:SetChecked(true)
+        SaveSettings()
+    end)
+end
+
+-- Add radio button group behavior for collection filter (v2.1+)
+for _, radio in pairs(settingsPanel.collectionRadios) do
+    radio:SetScript("OnClick", function(self)
+        -- Ensure only one radio is checked at a time
+        for _, otherRadio in pairs(settingsPanel.collectionRadios) do
             otherRadio:SetChecked(false)
         end
         self:SetChecked(true)
