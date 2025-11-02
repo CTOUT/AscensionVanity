@@ -52,14 +52,6 @@ desc:SetWidth(700)
 desc:SetJustifyH("LEFT")
 desc:SetText("Configure how vanity item information is displayed in creature tooltips.")
 
--- Separator
-local separator1 = settingsPanel:CreateTexture(nil, "ARTWORK")
-separator1:SetHeight(1)
-separator1:SetPoint("TOP", desc, "BOTTOM", 0, -12)
-separator1:SetPoint("LEFT", 30, 0)
-separator1:SetPoint("RIGHT", -30, 0)
-separator1:SetColorTexture(0.25, 0.25, 0.25, 1)
-
 -- ============================================================================
 -- Checkbox Helper
 -- ============================================================================
@@ -92,21 +84,35 @@ end
 -- Settings Checkboxes
 -- ============================================================================
 
+-- Master Enable checkbox (top-left corner)
 local enabledCheckbox = CreateCheckbox(
     settingsPanel,
     "Enable Tooltip Integration",
     "Master switch for the addon. When disabled, no vanity information will be shown in creature tooltips.",
-    separator1,
-    30,
+    desc,
+    0,
     -20
 )
 
+-- Options box container
+local optionsBox = settingsPanel:CreateTexture(nil, "BACKGROUND")
+optionsBox:SetPoint("TOPLEFT", enabledCheckbox, "BOTTOMLEFT", -10, -12)
+optionsBox:SetPoint("RIGHT", -30, 0)
+optionsBox:SetHeight(80)
+optionsBox:SetColorTexture(0.1, 0.1, 0.1, 0.5)
+
+-- Options header
+local optionsHeader = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+optionsHeader:SetPoint("TOPLEFT", optionsBox, "TOPLEFT", 10, -8)
+optionsHeader:SetText(AV_COLOR_GRAY .. "Display Options" .. AV_COLOR_RESET)
+
+-- Display options in horizontal layout (left to right)
 local learnedCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Learned Status",
     'Display checkmark/cross icons next to each vanity item to show learned status.\n\nRequires: Ascension C_VanityCollection API',
-    enabledCheckbox,
-    20,
+    optionsHeader,
+    0,
     -10
 )
 
@@ -114,8 +120,8 @@ local colorCheckbox = CreateCheckbox(
     settingsPanel,
     "Color Code Items by Status",
     "Color vanity items based on learned status:\n• Green = Learned\n• Yellow = Not Learned\n\nRequires: Show Learned Status enabled",
-    learnedCheckbox,
-    20,
+    optionsHeader,
+    240,
     -10
 )
 
@@ -123,15 +129,15 @@ local regionsCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Region Information (Coming Soon)",
     "Display location/region information for vanity item drops.\n\n" .. AV_COLOR_ORANGE .. "Note:" .. AV_COLOR_RESET .. " Region data is currently being collected and will be available in a future update.",
-    colorCheckbox,
-    0,
+    optionsHeader,
+    480,
     -10
 )
 
 -- Separator before category filters
 local separatorCategories = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCategories:SetHeight(1)
-separatorCategories:SetPoint("TOP", regionsCheckbox, "BOTTOM", 0, -16)
+separatorCategories:SetPoint("TOP", optionsBox, "BOTTOM", 0, -16)
 separatorCategories:SetPoint("LEFT", 30, 0)
 separatorCategories:SetPoint("RIGHT", -30, 0)
 separatorCategories:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -202,7 +208,7 @@ categoryCheckboxes.undead = CreateCheckbox(
 -- Store reference for later use
 settingsPanel.categoryCheckboxes = categoryCheckboxes
 
--- Separator before combat behavior (positioned below the tallest column)
+-- Separator before combat/collection filters (positioned below the tallest column)
 local separatorCombat = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCombat:SetHeight(1)
 -- Position below left column (dragonkin is last in left column with 3 items)
@@ -211,18 +217,22 @@ separatorCombat:SetPoint("LEFT", 30, 0)
 separatorCombat:SetPoint("RIGHT", -30, 0)
 separatorCombat:SetColorTexture(0.25, 0.25, 0.25, 1)
 
--- Combat Behavior Section Header
+-- ============================================================================
+-- Two-Column Layout: Combat Behavior (Left) | Collection Status (Right)
+-- ============================================================================
+
+-- Combat Behavior Section Header (LEFT COLUMN)
 local combatHeader = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-combatHeader:SetPoint("TOP", separatorCombat, "BOTTOM", 0, -12)
+combatHeader:SetPoint("TOPLEFT", separatorCombat, "BOTTOMLEFT", 30, -12)
 combatHeader:SetText("Combat Behavior")
 
 local combatDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-combatDesc:SetPoint("TOP", combatHeader, "BOTTOM", 0, -4)
-combatDesc:SetWidth(700)
-combatDesc:SetJustifyH("CENTER")
-combatDesc:SetText(AV_COLOR_GRAY .. "Control how vanity tooltips display during combat" .. AV_COLOR_RESET)
+combatDesc:SetPoint("TOPLEFT", combatHeader, "BOTTOMLEFT", 0, -4)
+combatDesc:SetWidth(300)
+combatDesc:SetJustifyH("LEFT")
+combatDesc:SetText(AV_COLOR_GRAY .. "Control tooltips during combat" .. AV_COLOR_RESET)
 
--- Radio button helper function
+-- Radio button helper functions
 local function CreateRadioButton(parent, label, value, tooltip, anchor, xOffset, yOffset)
     local radio = CreateFrame("CheckButton", nil, parent, "UIRadioButtonTemplate")
     radio:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", xOffset, yOffset)
@@ -246,37 +256,61 @@ local function CreateRadioButton(parent, label, value, tooltip, anchor, xOffset,
     return radio
 end
 
+-- Right-aligned radio button helper
+local function CreateRadioButtonRight(parent, label, value, tooltip, anchor, xOffset, yOffset)
+    local radio = CreateFrame("CheckButton", nil, parent, "UIRadioButtonTemplate")
+    radio:SetPoint("TOPRIGHT", anchor, "BOTTOMRIGHT", xOffset, yOffset)
+    radio.value = value
+    
+    local radioLabel = radio:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    radioLabel:SetPoint("RIGHT", radio, "LEFT", -5, 0)
+    radioLabel:SetText(label)
+    radio.label = radioLabel
+    
+    radio:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+        GameTooltip:SetText(label, 1, 1, 1)
+        GameTooltip:AddLine(tooltip, nil, nil, nil, true)
+        GameTooltip:Show()
+    end)
+    radio:SetScript("OnLeave", function(self)
+        GameTooltip:Hide()
+    end)
+    
+    return radio
+end
+
 -- Combat Behavior Radio Buttons
 local combatRadios = {}
 
 combatRadios.normal = CreateRadioButton(
     settingsPanel,
-    "Normal (Show All)",
+    "Show All",
     "normal",
     "Display full vanity item information during combat.\n\nUse this if you want to see all details while fighting.",
     combatDesc,
-    30,
+    0,
     -12
 )
 
 combatRadios.minimal = CreateRadioButton(
     settingsPanel,
-    "Minimal (Count Only)",
+    "Count Only",
     "minimal",
     "Show only the number of vanity items available.\n\nExample: 'Vanity Items: 3 available'\n\nGood balance between information and clutter.",
     combatRadios.normal,
     0,
-    -8
+    -6
 )
 
 combatRadios.hide = CreateRadioButton(
     settingsPanel,
-    "Hide Completely (Default)",
+    "Hide (Default)",
     "hide",
     "Hide all vanity information during combat.\n\nKeeps tooltips clean when fighting.\n\n" .. AV_COLOR_GREEN .. "Recommended for most players." .. AV_COLOR_RESET,
     combatRadios.minimal,
     0,
-    -8
+    -6
 )
 
 -- Store reference
@@ -284,45 +318,33 @@ settingsPanel.combatRadios = combatRadios
 
 -- Note: Radio button OnClick handlers set later (after SaveSettings is defined)
 
--- ============================================================================
--- Collection Status Filter
--- ============================================================================
-
--- Separator before collection status
-local separatorCollection = settingsPanel:CreateTexture(nil, "ARTWORK")
-separatorCollection:SetHeight(1)
-separatorCollection:SetPoint("TOP", combatRadios.hide, "BOTTOM", 0, -16)
-separatorCollection:SetPoint("LEFT", 30, 0)
-separatorCollection:SetPoint("RIGHT", -30, 0)
-separatorCollection:SetColorTexture(0.25, 0.25, 0.25, 1)
-
--- Collection Status Section Header
+-- Collection Status Section Header (RIGHT COLUMN)
 local collectionHeader = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-collectionHeader:SetPoint("TOP", separatorCollection, "BOTTOM", 0, -12)
+collectionHeader:SetPoint("TOPRIGHT", separatorCombat, "BOTTOMRIGHT", -30, -12)
 collectionHeader:SetText("Collection Status Filter")
 
 local collectionDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-collectionDesc:SetPoint("TOP", collectionHeader, "BOTTOM", 0, -4)
-collectionDesc:SetWidth(700)
-collectionDesc:SetJustifyH("CENTER")
-collectionDesc:SetText(AV_COLOR_GRAY .. "Choose which items to display based on learned status" .. AV_COLOR_RESET)
+collectionDesc:SetPoint("TOPRIGHT", collectionHeader, "BOTTOMRIGHT", 0, -4)
+collectionDesc:SetWidth(300)
+collectionDesc:SetJustifyH("RIGHT")
+collectionDesc:SetText(AV_COLOR_GRAY .. "Filter by learned status" .. AV_COLOR_RESET)
 
--- Collection Status Radio Buttons
+-- Collection Status Radio Buttons (RIGHT COLUMN)
 local collectionRadios = {}
 
-collectionRadios.both = CreateRadioButton(
+collectionRadios.both = CreateRadioButtonRight(
     settingsPanel,
-    "Show All Items",
+    "Show All",
     "both",
     "Display all vanity items regardless of learned status.\n\nIdeal for: Complete reference and discovery",
     collectionDesc,
-    30,
+    0,
     -12
 )
 
-collectionRadios.unknown = CreateRadioButton(
+collectionRadios.unknown = CreateRadioButtonRight(
     settingsPanel,
-    "Unknown Only (Collector Mode)",
+    "Unknown Only",
     "unknown",
     "Display only vanity items you haven't learned yet.\n\nIdeal for: Focused collecting and farming",
     collectionRadios.both,
@@ -330,9 +352,9 @@ collectionRadios.unknown = CreateRadioButton(
     -6
 )
 
-collectionRadios.known = CreateRadioButton(
+collectionRadios.known = CreateRadioButtonRight(
     settingsPanel,
-    "Known Only (Discovery Mode)",
+    "Known Only",
     "known",
     "Display only vanity items you've already learned.\n\nIdeal for: Reviewing your collection and discoveries",
     collectionRadios.unknown,
@@ -360,10 +382,11 @@ learnedCheckbox:SetScript("OnClick", function(self)
     end
 end)
 
--- Separator before utility buttons
+-- Separator before utility buttons (position below tallest column)
+-- Both columns have 3 items, so use either as anchor
 local separator2 = settingsPanel:CreateTexture(nil, "ARTWORK")
 separator2:SetHeight(1)
-separator2:SetPoint("TOP", collectionRadios.known, "BOTTOM", 0, -16)
+separator2:SetPoint("TOP", combatRadios.hide, "BOTTOM", 0, -16)
 separator2:SetPoint("LEFT", 30, 0)
 separator2:SetPoint("RIGHT", -30, 0)
 separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -518,7 +541,6 @@ colorCheckbox:HookScript("OnClick", SaveSettings)
 -- Add auto-save to category filter checkboxes (v2.1+)
 for category, checkbox in pairs(settingsPanel.categoryCheckboxes) do
     checkbox:HookScript("OnClick", function(self)
-        print("[AV Debug] Category checkbox clicked:", category, "New state:", self:GetChecked())
         SaveSettings()
     end)
 end

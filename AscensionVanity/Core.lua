@@ -547,6 +547,11 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         -- Also hook into other tooltip types if needed
         -- GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
         
+        -- Initialize Regional Hunting Guide (v2.1+)
+        if AscensionVanity_InitRegionalGuide then
+            AscensionVanity_InitRegionalGuide()
+        end
+        
     elseif event == "ASCENSION_STORE_COLLECTION_ITEM_LEARNED" then
         -- PRIMARY: ASCENSION_STORE_COLLECTION_ITEM_LEARNED event - instant cache invalidation!
         -- This event fires when player learns vanity items from the store collection
@@ -1695,6 +1700,14 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFFFFFF00Auto-refresh:|r Instant on learning items (APPEARANCE_COLLECTED)")
         print("|cFFFFFF00Manual refresh:|r Use /avanity clearcache if needed")
         
+    elseif msg == "zone" or msg == "regional" or msg == "guide" then
+        -- Show Regional Hunting Guide for current zone
+        if AscensionVanity_ShowCurrentZoneItems then
+            AscensionVanity_ShowCurrentZoneItems()
+        else
+            print("|cFFFF0000Error:|r Regional Guide not loaded")
+        end
+    
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print(" ")
@@ -1710,6 +1723,11 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("  |cFFFFFF00/avanity learned|r - Toggle learned status display")
         print("  |cFFFFFF00/avanity color|r - Toggle color coding")
         print("  |cFFFFFF00/avanity debug|r - Toggle debug mode")
+        print(" ")
+        print("|cFFFFFF00=== Regional Hunting Guide (v2.1+) ===|r")
+        print("  |cFFFFFF00/avanity zone|r - Show unlearned items in current zone")
+        print("    |cFF808080Aliases: /avanity regional, /avanity guide|r")
+        print("    |cFF808080Shows creatures that drop items you haven't learned yet|r")
         print(" ")
         print("|cFFFFFF00=== Cache Management ===|r")
         print("  |cFFFFFF00/avanity clearcache|r - Manually clear learned status cache")

@@ -24,5 +24,8 @@ APIScanner.lua
 SettingsUI.lua
 ScannerUI.lua
 
+# Regional Hunting Guide (v2.1+ zone-based item finder)
+RegionalGuide.lua
+
 # Core functionality
 Core.lua

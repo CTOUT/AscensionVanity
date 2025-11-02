@@ -200,10 +200,24 @@ Vanity Items:
 ### 2. Regional Hunting Guide 🗺️
 **Priority:** High  
 **Complexity:** Medium-High  
-**Version Target:** v2.1
+**Version Target:** v2.1  
+**Status:** 🚧 IN PROGRESS (Phase 1 Complete)
 
 **Description:**  
 Provide a list of creatures in the player's current zone that drop vanity items the player hasn't learned yet. Helps players efficiently farm items in their current location.
+
+**Phase 1 Complete (Nov 2, 2025):**
+- ✅ Zone index builder (parses zone/subzone from VanityDB)
+- ✅ Zone detection (GetZoneText, GetSubZoneText)
+- ✅ Unlearned item filtering (C_VanityCollection integration)
+- ✅ Slash commands: `/avanity zone`, `/avanity regional`, `/avanity guide`
+- ✅ Chat-based output with grouped creatures
+
+**Remaining Work:**
+- 🔲 Visual UI panel (dedicated frame)
+- 🔲 Minimap button for quick access
+- 🔲 Auto-notifications on zone change (optional)
+- 🔲 Distance/proximity sorting (if coordinate data available)
 
 **Core Features:**
 - Detect player's current zone/subzone
