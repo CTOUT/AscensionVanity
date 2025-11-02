@@ -242,6 +242,26 @@ if (Test-Path $ManualResearchFile) {
     Write-Success "Manual research: $updatedCount updated, $addedCount added"
 }
 
+# Apply creature ID corrections
+$correctionsFile = 'data/corrections/CreatureIdCorrections.json'
+if (Test-Path $correctionsFile) {
+    Write-Step "Applying creature ID corrections: $correctionsFile"
+    $corrections = Get-Content $correctionsFile -Raw | ConvertFrom-Json
+    
+    $correctedCount = 0
+    foreach ($correction in $corrections.corrections) {
+        $item = $items | Where-Object { $_.DbItemId -eq $correction.itemId }
+        
+        if ($item -and $item.CreatureId -eq $correction.wrongCreatureId) {
+            $item.CreatureId = $correction.correctCreatureId
+            $correctedCount++
+            Write-Info "Corrected: $($item.Name) - Creature ID: $($correction.wrongCreatureId) → $($correction.correctCreatureId)"
+        }
+    }
+    
+    Write-Success "Applied $correctedCount creature ID correction(s)"
+}
+
 # Sort by ItemId for consistency
 Write-Step "Sorting items by DbItemId"
 $items = $items | Sort-Object DbItemId

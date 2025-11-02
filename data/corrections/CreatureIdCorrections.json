@@ -11,6 +11,16 @@
       "verifiedBy": "https://db.ascension.gg/?item=79582",
       "dateAdded": "2025-11-02",
       "addedBy": "Manual research"
+    },
+    {
+      "itemId": 79587,
+      "itemName": "Beastmaster's Whistle: Swoop",
+      "wrongCreatureId": 4002970,
+      "correctCreatureId": 2970,
+      "reason": "High ID (4002970) has '400' prefix. Correct ID is 2970 (Swoop in Mulgore).",
+      "verifiedBy": "https://db.ascension.gg/?item=79587 and https://db.ascension.gg/?npc=2970",
+      "dateAdded": "2025-11-02",
+      "addedBy": "User verification"
     }
   ]
 }

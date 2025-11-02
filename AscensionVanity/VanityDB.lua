@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 14:54:22
+-- Generated: 2025-11-02 16:44:44
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -1650,7 +1650,7 @@ AV_VanityItems = {
     [79582] = {
         itemid = 79582,
         name = "Beastmaster's Whistle: Prairie Stalker",
-        creaturePreview = 98766,
+        creaturePreview = 2959,
         description = "Has a chance to drop from Prairie Stalker within The Rolling Plains",
         icon = 1
     },
@@ -1685,7 +1685,7 @@ AV_VanityItems = {
     [79587] = {
         itemid = 79587,
         name = "Beastmaster's Whistle: Swoop",
-        creaturePreview = 4002970,
+        creaturePreview = 2970,
         description = "Has a chance to drop from Swoop within The Golden Plains",
         icon = 1
     },
