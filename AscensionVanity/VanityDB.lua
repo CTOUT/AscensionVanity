@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 17:14:42
+-- Generated: 2025-11-02 17:47:29
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -607,7 +607,7 @@ AV_VanityItems = {
     [79429] = {
         itemid = 79429,
         name = "Beastmaster's Whistle: Large Crag Boar",
-        creaturePreview = 98768,
+        creaturePreview = 1126,
         description = "Has a chance to drop from Large Crag Boar within Dun Morogh",
         icon = 1
     },
@@ -768,7 +768,7 @@ AV_VanityItems = {
     [79452] = {
         itemid = 79452,
         name = "Beastmaster's Whistle: Ice Claw Bear",
-        creaturePreview = 98767,
+        creaturePreview = 1196,
         description = "Has a chance to drop from Ice Claw Bear within Dun Morogh",
         icon = 1
     },
@@ -782,7 +782,7 @@ AV_VanityItems = {
     [79454] = {
         itemid = 79454,
         name = "Beastmaster's Whistle: Snow Leopard",
-        creaturePreview = 98769,
+        creaturePreview = 1201,
         description = "Has a chance to drop from Snow Leopard within Dun Morogh",
         icon = 1
     },
@@ -1720,7 +1720,7 @@ AV_VanityItems = {
     [79592] = {
         itemid = 79592,
         name = "Beastmaster's Whistle: Dire Mottled Boar",
-        creaturePreview = 98770,
+        creaturePreview = 3099,
         description = "Has a chance to drop from Dire Mottled Boar within Durotar",
         icon = 1
     },
@@ -1741,7 +1741,7 @@ AV_VanityItems = {
     [79595] = {
         itemid = 79595,
         name = "Beastmaster's Whistle: Surf Crawler",
-        creaturePreview = 98771,
+        creaturePreview = 3107,
         description = "Has a chance to drop from Surf Crawler within Echo Isles",
         icon = 1
     },
@@ -2637,7 +2637,7 @@ AV_VanityItems = {
     [79741] = {
         itemid = 79741,
         name = "Beastmaster's Whistle: Aku'mai Snapjaw",
-        creaturePreview = 98765,
+        creaturePreview = 4825,
         description = "Has a chance to drop from Aku'mai Snapjaw within Blackfathom Deeps",
         icon = 1
     },
@@ -3638,7 +3638,7 @@ AV_VanityItems = {
     [80089] = {
         itemid = 80089,
         name = "Beastmaster's Whistle: The Beast",
-        creaturePreview = 98772,
+        creaturePreview = 10430,
         description = "Has a chance to drop from The Beast within Blackrock Spire",
         icon = 1
     },
@@ -4093,7 +4093,7 @@ AV_VanityItems = {
     [80300] = {
         itemid = 80300,
         name = "Beastmaster's Whistle: Elder Springpaw",
-        creaturePreview = 98773,
+        creaturePreview = 15652,
         description = "Has a chance to drop from Elder Springpaw within Eversong Woods",
         icon = 1
     },
