@@ -54,19 +54,46 @@ foreach ($it in $items) {
 Write-Host "Emitted items: $($processed.Count)" -ForegroundColor Green
 Write-Host "Skipped items (missing data/category): $skipped" -ForegroundColor Yellow
 
-# Gather unique icons from processed items
-Write-Host "Analyzing unique icons..." -ForegroundColor Cyan
+# Gather unique icons from raw scan data - ONLY from the 5 combat pet categories
+Write-Host "Analyzing unique icons from combat pet categories..." -ForegroundColor Cyan
+$scanFile = ".\data\AscensionVanity.lua"
 $uniqueIcons = @{}
-foreach ($it in $items) {
-    if ($it.Icon -and $it.Icon -ne "") {
-        $cleanIcon = $it.Icon -replace 'Interface\\Icons\\', ''
-        if (-not $uniqueIcons.ContainsKey($cleanIcon)) {
-            $uniqueIcons[$cleanIcon] = $true
+
+# Combat pet Group IDs we care about
+$combatPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232)
+
+if (Test-Path $scanFile) {
+    $scanContent = Get-Content $scanFile -Raw
+    
+    # Extract items with their group and icon
+    # Multiline pattern to capture group and icon from same item block
+    $itemBlocks = [regex]::Matches($scanContent, '\[(\d+)\]\s*=\s*\{([^}]+)\}', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+    
+    foreach ($itemBlock in $itemBlocks) {
+        $blockContent = $itemBlock.Groups[2].Value
+        
+        # Extract group ID from this block
+        if ($blockContent -match '\["group"\]\s*=\s*(\d+)') {
+            $groupId = [int]$Matches[1]
+            
+            # Only process items from our 5 combat pet categories
+            if ($combatPetGroups -contains $groupId) {
+                # Extract icon from this block
+                if ($blockContent -match '\["icon"\]\s*=\s*"([^"]+)"') {
+                    $iconName = $Matches[1]
+                    # Clean up icon path
+                    $cleanIcon = $iconName -replace 'Interface\\\\Icons\\\\', '' -replace 'Interface\\Icons\\', ''
+                    if ($cleanIcon -and -not $uniqueIcons.ContainsKey($cleanIcon)) {
+                        $uniqueIcons[$cleanIcon] = $true
+                    }
+                }
+            }
         }
     }
 }
+
 $iconArray = $uniqueIcons.Keys | Sort-Object
-Write-Host "  Found $($iconArray.Count) unique icons" -ForegroundColor Gray
+Write-Host "  Found $($iconArray.Count) unique icons from combat pet categories" -ForegroundColor Gray
 
 # Build DB content with metadata
 $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
