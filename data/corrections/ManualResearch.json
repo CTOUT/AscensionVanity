@@ -52,7 +52,63 @@
     "DbItemId": 1180511,
     "Name": "Draconic Warhorn: Blackscale",
     "CreatureId": 148115,
-    "Description": "Ascension custom NPC. Similar to Chromaggus (NPC 21497). Level 70 presumably found in Blade's Edge Mountains.",
+    "Description": "Ascension custom NPC. Copy of https://db.ascension.gg/?npc=21497 - Level 70 found in Blade's Edge Mountains.",
     "Category": "Draconic Warhorn"
+  },
+  {
+    "DbItemId": 84496,
+    "Name": "Summoner's Stone: Wrathbringer Laz-tarash",
+    "CreatureId": 20789,
+    "Description": "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Netherstorm",
+    "Category": "Summoner's Stone"
+  },
+  {
+    "DbItemId": 85246,
+    "Name": "Summoner's Stone: Matron Li-sahar",
+    "CreatureId": 22825,
+    "Description": "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
+    "Category": "Summoner's Stone"
+  },
+  {
+    "DbItemId": 85247,
+    "Name": "Summoner's Stone: Gorgolon the All-seeing",
+    "CreatureId": 22827,
+    "Description": "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
+    "Category": "Summoner's Stone"
+  },
+  {
+    "DbItemId": 85257,
+    "Name": "Summoner's Stone: Trelopades",
+    "CreatureId": 22828,
+    "Description": "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
+    "Category": "Summoner's Stone"
+  },
+  {
+    "DbItemId": 600867,
+    "Name": "Elemental Lodestone: Al'ar",
+    "CreatureId": 19514,
+    "Description": "Raid boss within Tempest Keep: The Eye",
+    "Category": "Elemental Lodestone"
+  },
+  {
+    "DbItemId": 600878,
+    "Name": "Elemental Lodestone: Hydross the Unstable",
+    "CreatureId": 21216,
+    "Description": "Raid boss within Serpentshrine Cavern",
+    "Category": "Elemental Lodestone"
+  },
+  {
+    "DbItemId": 601102,
+    "Name": "Blood Soaked Vellum: Plague Shambler",
+    "CreatureId": 97808,
+    "Description": "Ascension custom NPC. Found in undead zones (possibly Western Plaguelands or Eastern Plaguelands)",
+    "Category": "Blood Soaked Vellum"
+  },
+  {
+    "DbItemId": 601664,
+    "Name": "Beastmaster's Whistle: Bloodpetal Thirster",
+    "CreatureId": 97825,
+    "Description": "Ascension custom NPC. Found within Un'Goro Crater",
+    "Category": "Beastmaster's Whistle"
   }
 ]

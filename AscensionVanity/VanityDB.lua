@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 12:05:04
+-- Generated: 2025-11-02 12:17:07
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -7160,7 +7160,7 @@ AV_VanityItems = {
         itemid = 84496,
         name = "Summoner's Stone: Wrathbringer Laz-tarash",
         creaturePreview = 20789,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Netherstorm",
         icon = 3
     },
     [84585] = {
@@ -7405,21 +7405,21 @@ AV_VanityItems = {
         itemid = 85246,
         name = "Summoner's Stone: Matron Li-sahar",
         creaturePreview = 22825,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
         icon = 3
     },
     [85247] = {
         itemid = 85247,
         name = "Summoner's Stone: Gorgolon the All-seeing",
         creaturePreview = 22827,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
         icon = 3
     },
     [85257] = {
         itemid = 85257,
         name = "Summoner's Stone: Trelopades",
         creaturePreview = 22828,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
         icon = 3
     },
     [85258] = {
@@ -11472,7 +11472,7 @@ AV_VanityItems = {
         itemid = 600867,
         name = "Elemental Lodestone: Al'ar",
         creaturePreview = 19514,
-        description = "",
+        description = "Raid boss within Tempest Keep: The Eye",
         icon = 5
     },
     [600870] = {
@@ -11514,7 +11514,7 @@ AV_VanityItems = {
         itemid = 600878,
         name = "Elemental Lodestone: Hydross the Unstable",
         creaturePreview = 21216,
-        description = "",
+        description = "Raid boss within Serpentshrine Cavern",
         icon = 5
     },
     [600885] = {
@@ -12011,7 +12011,7 @@ AV_VanityItems = {
         itemid = 601102,
         name = "Elemental Lodestone: Plague Shambler",
         creaturePreview = 97808,
-        description = "",
+        description = "Ascension custom NPC. Found in undead zones (possibly Western Plaguelands or Eastern Plaguelands)",
         icon = 5
     },
     [601103] = {
@@ -12186,7 +12186,7 @@ AV_VanityItems = {
         itemid = 601664,
         name = "Elemental Lodestone: Bloodpetal Thirster",
         creaturePreview = 97825,
-        description = "",
+        description = "Ascension custom NPC. Found within Un'Goro Crater",
         icon = 5
     },
     [601667] = {
@@ -14300,7 +14300,7 @@ AV_VanityItems = {
         itemid = 1180511,
         name = "Draconic Warhorn: Blackscale",
         creaturePreview = 148115,
-        description = "Ascension custom NPC. Similar to Chromaggus (NPC 21497). Level 70 presumably found in Blade's Edge Mountains.",
+        description = "Ascension custom NPC. Copy of https://db.ascension.gg/?npc=21497 - Level 70 found in Blade's Edge Mountains.",
         icon = 4
     },
     [1180516] = {

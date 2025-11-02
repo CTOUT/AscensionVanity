@@ -1,0 +1,392 @@
+[
+  {
+    "CreatureId": 3,
+    "NPCName": "Flesh Eater",
+    "Zone": "Duskwood",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 30,
+    "NPCName": "Forest Spider",
+    "Zone": "Elwynn Forest",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 48,
+    "NPCName": "Skeletal Warrior",
+    "Zone": "Duskwood",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 69,
+    "NPCName": "Timber Wolf",
+    "Zone": "Elwynn Forest",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 113,
+    "NPCName": "Stonetusk Boar",
+    "Zone": "Elwynn Forest",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 154,
+    "NPCName": "Greater Fleshripper",
+    "Zone": "Westfall",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 314,
+    "NPCName": "Eliza",
+    "Zone": "Duskwood",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 681,
+    "NPCName": "Young Stranglethorn Tiger",
+    "Zone": "Stranglethorn Vale",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 685,
+    "NPCName": "Stranglethorn Raptor",
+    "Zone": "Stranglethorn Vale",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 822,
+    "NPCName": "Young Forest Bear",
+    "Zone": "Elwynn Forest",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 830,
+    "NPCName": "Sand Crawler",
+    "Zone": "Westfall",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1082,
+    "NPCName": "Sawtooth Crocolisk",
+    "Zone": "Swamp of Sorrows",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1108,
+    "NPCName": "Mistvale Gorilla",
+    "Zone": "Stranglethorn Vale",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1512,
+    "NPCName": "Duskbat",
+    "Zone": "Tirisfal Glades",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1529,
+    "NPCName": "Bleeding Horror",
+    "Zone": "Tirisfal Glades",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1531,
+    "NPCName": "Lost Soul",
+    "Zone": "Tirisfal Glades",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1657,
+    "NPCName": "Devlin Agamand",
+    "Zone": "Tirisfal Glades",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1795,
+    "NPCName": "Searing Ghoul",
+    "Zone": "Western Plaguelands",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 1995,
+    "NPCName": "Strigid Owl",
+    "Zone": "Teldrassil",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 2172,
+    "NPCName": "Strider Clutchmother",
+    "Zone": "Darkshore",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 2408,
+    "NPCName": "Snapjaw",
+    "Zone": "Hillsbrad Foothills",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 3124,
+    "NPCName": "Scorpid Worker",
+    "Zone": "Durotar",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 3247,
+    "NPCName": "Thunderhawk Hatchling",
+    "Zone": "The Barrens",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 3581,
+    "NPCName": "Sewer Beast",
+    "Zone": "Stormwind City",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 3898,
+    "NPCName": "Aligar the Tormentor",
+    "Zone": "Darkshore",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 3900,
+    "NPCName": "Caedakar the Vicious",
+    "Zone": "Darkshore",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 4031,
+    "NPCName": "Fledgling Chimaera",
+    "Zone": "Stonetalon Mountains",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 4127,
+    "NPCName": "Hecklefang Hyena",
+    "Zone": "The Barrens",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 4132,
+    "NPCName": "Silithid Ravager",
+    "Zone": "Thousand Needles",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 4351,
+    "NPCName": "Bloodfen Raptor",
+    "Zone": "Dustwallow Marsh",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 5048,
+    "NPCName": "Deviate Adder",
+    "Zone": "Wailing Caverns",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 5226,
+    "NPCName": "Murk Worm",
+    "Zone": "The Temple of Atal'Hakkar",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 6498,
+    "NPCName": "Devilsaur",
+    "Zone": "Un'Goro Crater",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 6499,
+    "NPCName": "Ironhide Devilsaur",
+    "Zone": "Un'Goro Crater",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 6932,
+    "NPCName": "Swamp Spirit",
+    "Zone": "Swamp of Sorrows",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 7449,
+    "NPCName": "Chillwind Ravager",
+    "Zone": "Winterspring",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 7664,
+    "NPCName": "Razelikh the Defiler",
+    "Zone": "Blasted Lands",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 8959,
+    "NPCName": "Felpaw Wolf",
+    "Zone": "Felwood",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 10373,
+    "NPCName": "Xabraxxis",
+    "Zone": "Darkshore",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 10375,
+    "NPCName": "Spire Spiderling",
+    "Zone": "Blackrock Spire",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 10813,
+    "NPCName": "Balnazzar",
+    "Zone": "Stratholme",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 11359,
+    "NPCName": "Soulflayer",
+    "Zone": "Zul'Gurub",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 11361,
+    "NPCName": "Zulian Tiger",
+    "Zone": "Zul'Gurub",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 11365,
+    "NPCName": "Zulian Panther",
+    "Zone": "Zul'Gurub",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 11673,
+    "NPCName": "Ancient Core Hound",
+    "Zone": "Molten Core",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 11876,
+    "NPCName": "Demon Spirit",
+    "Zone": "Desolace",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 14502,
+    "NPCName": "Xorothian Dreadsteed",
+    "Zone": "Dire Maul",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 15649,
+    "NPCName": "Feral Dragonhawk Hatchling",
+    "Zone": "Eversong Woods",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 16520,
+    "NPCName": "Vale Moth",
+    "Zone": "Azuremyst Isle",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 17144,
+    "NPCName": "Goretooth",
+    "Zone": "Nagrand",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 17199,
+    "NPCName": "Ravager Specimen",
+    "Zone": "Azuremyst Isle",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 17447,
+    "NPCName": "The Kurken",
+    "Zone": "Azuremyst Isle",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 18155,
+    "NPCName": "Bloodfalcon",
+    "Zone": "The Botanica",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 19428,
+    "NPCName": "Cobalt Serpent",
+    "Zone": "Sethekk Halls",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 19493,
+    "NPCName": "Ekkorash the Inquisitor",
+    "Zone": "Netherstorm",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 19963,
+    "NPCName": "Doomcryer",
+    "Zone": "Blade's Edge Mountains",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 21497,
+    "NPCName": "Blackscale",
+    "Zone": "Blade's Edge Mountains",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 21656,
+    "NPCName": "Illidari Satyr",
+    "Zone": "Shadowmoon Valley",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 21723,
+    "NPCName": "Blackwind Sabercat",
+    "Zone": "Terokkar Forest",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 21818,
+    "NPCName": "Infinite Whelp",
+    "Zone": "The Black Morass",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 22281,
+    "NPCName": "Galvanoth",
+    "Zone": "Blade's Edge Mountains",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 23353,
+    "NPCName": "Braxxus",
+    "Zone": "Blade's Edge Mountains",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 23355,
+    "NPCName": "Zarcsin",
+    "Zone": "Blade's Edge Mountains",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 23789,
+    "NPCName": "Smolderwing",
+    "Zone": "Dustwallow Marsh",
+    "Source": "Wowhead WOTLK"
+  },
+  {
+    "CreatureId": 32180,
+    "NPCName": "Tempus Wyrm",
+    "Zone": "Dragonblight",
+    "Source": "Wowhead WOTLK"
+  }
+]
