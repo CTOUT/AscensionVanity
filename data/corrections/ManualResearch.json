@@ -1,12 +1,5 @@
 [
   {
-    "DbItemId": 480382,
-    "Name": "Beastmaster's Whistle: Captain Claws",
-    "CreatureId": 417217,
-    "Description": "NPC doesn't exist. Possibly a reward, promo, purchase or not yet implemented.",
-    "Category": "Beastmaster's Whistle"
-  },
-  {
     "DbItemId": 601009,
     "Name": "Elemental Lodestone: Surging Water Elemental",
     "CreatureId": 37703,

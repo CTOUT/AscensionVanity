@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 12:17:07
+-- Generated: 2025-11-02 12:28:10
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -11038,7 +11038,7 @@ AV_VanityItems = {
         itemid = 480382,
         name = "Beastmaster's Whistle: Captain Claws",
         creaturePreview = 417217,
-        description = "NPC doesn't exist. Possibly a reward, promo, purchase or not yet implemented.",
+        description = "",
         icon = 1
     },
     [600369] = {
