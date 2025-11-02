@@ -93,7 +93,7 @@ If you start to ask questions like:
 - "What is this project about?" → **WRONG** - Read the project overview above
 - "What database are we using?" → **WRONG** - Check the Tech Stack section
 - "How should I structure scripts?" → **WRONG** - Review Coding Standards section
-- "What's our automation goal?" → **WRONG** - Check Core Philosophy #4
+- "What's our automation goal?" → **WRONG** - Check Core Philosophy 4 - Automation First
 
 **Correct Behavior:**
 
@@ -373,7 +373,7 @@ end
 
 -- Bad: Explains WHAT (code already shows this)
 -- Loop through items
-for i = 1, #items do
+for i = 1, items do
     -- implementation
 end
 ```
@@ -403,7 +403,7 @@ end
     Author: CMTout
     Last Updated: YYYY-MM-DD
     Automation: XX% automated, XX% manual fallback
-#>
+>
 ```
 
 ## Common Pitfalls
