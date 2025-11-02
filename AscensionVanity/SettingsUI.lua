@@ -399,10 +399,11 @@ end
 
 -- Auto-save settings on change (no confirmation needed)
 local function SaveSettings()
-    AscensionVanityDB.enabled = enabledCheckbox:GetChecked()
-    AscensionVanityDB.colorCode = colorCheckbox:GetChecked()
-    AscensionVanityDB.showLearnedStatus = learnedCheckbox:GetChecked()
-    AscensionVanityDB.showRegions = regionsCheckbox:GetChecked()
+    -- Convert WoW checkbox values (1/nil) to proper booleans (true/false)
+    AscensionVanityDB.enabled = enabledCheckbox:GetChecked() and true or false
+    AscensionVanityDB.colorCode = colorCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showLearnedStatus = learnedCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showRegions = regionsCheckbox:GetChecked() and true or false
     
     -- Save category filter settings (v2.1+)
     if not AscensionVanityDB.categoryFilters then
