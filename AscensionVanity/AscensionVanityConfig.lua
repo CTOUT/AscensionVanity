@@ -3,7 +3,7 @@
 
 AscensionVanityDB = AscensionVanityDB or {}
 
--- Default configuration values (alphabetically ordered for clean SavedVariables output)
+-- Default configuration values (alphabetically ordered for code readability)
 local defaults = {
     categoryFilters = {
         beast = true,            -- Beastmaster's Whistle (Group 16777217)
@@ -23,30 +23,29 @@ local defaults = {
 
 -- Initialize configuration with defaults if not already set
 function AscensionVanity_InitConfig()
-    -- Preserve existing values or use defaults
-    local existingDB = AscensionVanityDB or {}
+    for key, value in pairs(defaults) do
+        if AscensionVanityDB[key] == nil then
+            if type(value) == "table" then
+                -- Deep copy for nested tables (like categoryFilters)
+                AscensionVanityDB[key] = {}
+                for k, v in pairs(value) do
+                    AscensionVanityDB[key][k] = v
+                end
+            else
+                AscensionVanityDB[key] = value
+            end
+        end
+    end
     
-    -- Build categoryFilters in alphabetical order
-    local categoryFilters = existingDB.categoryFilters or {}
-    local orderedCategoryFilters = {
-        beast = (categoryFilters.beast ~= nil) and categoryFilters.beast or defaults.categoryFilters.beast,
-        demon = (categoryFilters.demon ~= nil) and categoryFilters.demon or defaults.categoryFilters.demon,
-        dragonkin = (categoryFilters.dragonkin ~= nil) and categoryFilters.dragonkin or defaults.categoryFilters.dragonkin,
-        elemental = (categoryFilters.elemental ~= nil) and categoryFilters.elemental or defaults.categoryFilters.elemental,
-        undead = (categoryFilters.undead ~= nil) and categoryFilters.undead or defaults.categoryFilters.undead
-    }
-    
-    -- Rebuild entire table in alphabetical order to ensure clean SavedVariables output
-    AscensionVanityDB = {
-        categoryFilters = orderedCategoryFilters,
-        colorCode = (existingDB.colorCode ~= nil) and existingDB.colorCode or defaults.colorCode,
-        combatBehavior = existingDB.combatBehavior or defaults.combatBehavior,
-        debug = (existingDB.debug ~= nil) and existingDB.debug or defaults.debug,
-        enabled = (existingDB.enabled ~= nil) and existingDB.enabled or defaults.enabled,
-        eventSpy = (existingDB.eventSpy ~= nil) and existingDB.eventSpy or defaults.eventSpy,
-        showLearnedStatus = (existingDB.showLearnedStatus ~= nil) and existingDB.showLearnedStatus or defaults.showLearnedStatus,
-        showRegions = (existingDB.showRegions ~= nil) and existingDB.showRegions or defaults.showRegions
-    }
+    -- Ensure categoryFilters exists and has all categories (for upgrades from older versions)
+    if not AscensionVanityDB.categoryFilters then
+        AscensionVanityDB.categoryFilters = {}
+    end
+    for category, enabled in pairs(defaults.categoryFilters) do
+        if AscensionVanityDB.categoryFilters[category] == nil then
+            AscensionVanityDB.categoryFilters[category] = enabled
+        end
+    end
 end
 
 -- Call initialization when file loads
