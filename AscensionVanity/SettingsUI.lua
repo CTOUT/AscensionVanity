@@ -332,9 +332,9 @@ collectionRadios.unknown = CreateRadioButton(
 
 collectionRadios.known = CreateRadioButton(
     settingsPanel,
-    "Known Only (Achievement Mode)",
+    "Known Only (Discovery Mode)",
     "known",
-    "Display only vanity items you've already learned.\n\nIdeal for: Reviewing your collection",
+    "Display only vanity items you've already learned.\n\nIdeal for: Reviewing your collection and discoveries",
     collectionRadios.unknown,
     0,
     -6

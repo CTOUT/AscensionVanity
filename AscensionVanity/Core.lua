@@ -37,23 +37,25 @@ local tooltip = GameTooltip
 --   - demon:      Blood Soaked Vellum (Demons)
 --   - elemental:  Summoner's Stone (Elementals/Satyrs)
 --   - dragonkin:  Draconic Warhorn (Dragonkin)
---   - totem:      Elemental Lodestone (Totems/Elementals)
+--   - elemental:  Elemental Lodestone (Totems/Elementals)
+--   - undead:     Blood Soaked Vellum (Undead)
 --
 local function GetItemCategory(itemName)
     if not itemName then return "unknown" end
     
     -- Pattern matching on item name prefix
     -- Using string.find for efficiency (faster than regex)
+    -- IMPORTANT: Keys must match AscensionVanityConfig.lua categoryFilters
     if string.find(itemName, "Beastmaster's Whistle", 1, true) then
-        return "pet"
+        return "beast"  -- Maps to categoryFilters.beast
     elseif string.find(itemName, "Blood Soaked Vellum", 1, true) then
-        return "demon"
+        return "undead"  -- Maps to categoryFilters.undead
     elseif string.find(itemName, "Summoner's Stone", 1, true) then
-        return "elemental"
+        return "demon"  -- Maps to categoryFilters.demon
     elseif string.find(itemName, "Draconic Warhorn", 1, true) then
-        return "dragonkin"
+        return "dragonkin"  -- Maps to categoryFilters.dragonkin
     elseif string.find(itemName, "Elemental Lodestone", 1, true) then
-        return "totem"
+        return "elemental"  -- Maps to categoryFilters.elemental
     end
     
     return "unknown"
