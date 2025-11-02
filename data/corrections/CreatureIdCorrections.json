@@ -161,6 +161,26 @@
       "verifiedBy": "https://db.ascension.gg/?item=80300 and https://db.ascension.gg/?npc=15652",
       "dateAdded": "2025-11-02",
       "addedBy": "User verification"
+    },
+    {
+      "itemId": 87736,
+      "itemName": "Blood Soaked Vellum: Zul'Farrak Dead Hero(Male)",
+      "wrongCreatureId": 91356,
+      "correctCreatureId": 7276,
+      "reason": "High ID (91356) doesn't match actual NPC. Correct ID verified from db.ascension.gg.",
+      "verifiedBy": "https://db.ascension.gg/?item=87736 and https://db.ascension.gg/?npc=7276",
+      "dateAdded": "2025-11-02",
+      "addedBy": "User verification"
+    },
+    {
+      "itemId": 89801,
+      "itemName": "Blood Soaked Vellum: Zul'Farrak Dead Hero(Female)",
+      "wrongCreatureId": 91357,
+      "correctCreatureId": 7276,
+      "reason": "High ID (91357) doesn't match actual NPC. Correct ID verified from db.ascension.gg.",
+      "verifiedBy": "https://db.ascension.gg/?item=89801 and https://db.ascension.gg/?npc=7276",
+      "dateAdded": "2025-11-02",
+      "addedBy": "User verification"
     }
   ]
 }

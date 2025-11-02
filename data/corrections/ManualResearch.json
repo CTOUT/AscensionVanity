@@ -117,5 +117,19 @@
     "CreatureId": 1100366,
     "Description": "Has a chance to drop from max-level vanilla raid encounters (exact source unconfirmed)",
     "Category": "Draconic Warhorn"
+  },
+  {
+    "DbItemId": 87736,
+    "Name": "Blood Soaked Vellum: Zul'Farrak Dead Hero(Male)",
+    "CreatureId": 7276,
+    "Description": "Has a chance to drop from Zul'Farrak Dead Hero within Zul'Farrak",
+    "Category": "Blood Soaked Vellum"
+  },
+  {
+    "DbItemId": 89801,
+    "Name": "Blood Soaked Vellum: Zul'Farrak Dead Hero(Female)",
+    "CreatureId": 7276,
+    "Description": "Has a chance to drop from Zul'Farrak Dead Hero within Zul'Farrak",
+    "Category": "Blood Soaked Vellum"
   }
 ]

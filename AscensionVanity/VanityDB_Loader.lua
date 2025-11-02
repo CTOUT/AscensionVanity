@@ -19,7 +19,8 @@ local function BuildCreatureLookup()
     creatureLookup = {}
     
     for itemId, itemData in pairs(AV_VanityItems) do
-        local creatureId = itemData.creaturePreview
+        -- v2.1: Use creatureId (drop source) instead of creaturePreview (visual model)
+        local creatureId = itemData.creatureId or itemData.creaturePreview
         if creatureId and creatureId > 0 then
             if not creatureLookup[creatureId] then
                 creatureLookup[creatureId] = {}

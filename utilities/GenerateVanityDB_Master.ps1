@@ -42,11 +42,26 @@ foreach ($it in $items) {
     $emitted[$id] = $true
     $iconIndex = $iconMap[$it.Category]
     if (-not $iconIndex) { $skipped++; continue }
+    # Parse zone/subzone from description (v2.1 enhancement)
+    $zone = $null
+    $subzone = $null
+    if ($it.Description) {
+        # Pattern: "within [location]"
+        if ($it.Description -match 'within\s+([^"]+)$') {
+            $location = $Matches[1].Trim()
+            # For now, treat all as zone (subzone mapping TODO)
+            $zone = $location
+        }
+    }
+    
     $processed += [pscustomobject]@{
         itemid = $id
         name = $it.Name
         creaturePreview = $(if ($it.CreatureId) { $it.CreatureId } else { 0 })
+        creatureId = $(if ($it.CreatureId) { $it.CreatureId } else { 0 })  # v2.1: Separate drop source
         description = $(if ($it.Description) { $it.Description } else { "" })
+        zone = $zone  # v2.1: Primary zone
+        subzone = $subzone  # v2.1: Specific location
         icon = $iconIndex
     }
 }
@@ -131,13 +146,23 @@ foreach ($icon in $iconArray) {
 $iconListContent = $iconListContent.TrimEnd(',')
 
 $header = @"
--- AscensionVanity Full Database
+-- AscensionVanity Full Database v2.1
 -- Generated: $timestamp
 -- Total Items: $($processed.Count)$scanMetadata
 -- 
 -- Database Structure:
 --   AV_IconList: Deduplicated icon paths referenced by index
 --   AV_VanityItems: Combat pet items indexed by game item ID
+-- 
+-- Schema v2.1 Fields:
+--   itemid: Game item ID
+--   name: Full item name with prefix
+--   creaturePreview: Visual model ID (immutable from API)
+--   creatureId: Drop source creature ID (corrected if needed)
+--   description: Full description text
+--   zone: Primary zone/region (optional)
+--   subzone: Specific location within zone (optional)
+--   icon: Index into AV_IconList
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
@@ -156,11 +181,21 @@ foreach ($p in ($processed | Sort-Object itemid)) {
     # We need to escape backslashes first, then quotes for Lua
     $safeName = $p.name -replace '\\', '\\' -replace '"', '\"'
     $safeDesc = $p.description -replace '\\', '\\' -replace '"', '\"'
+    $safeZone = if ($p.zone) { $p.zone -replace '\\', '\\' -replace '"', '\"' } else { $null }
+    $safeSubzone = if ($p.subzone) { $p.subzone -replace '\\', '\\' -replace '"', '\"' } else { $null }
+    
     $db += ('    [' + $p.itemid + '] = {')
     $db += ('        itemid = ' + $p.itemid + ',')
     $db += ('        name = "' + $safeName + '",')
     $db += ('        creaturePreview = ' + $p.creaturePreview + ',')
+    $db += ('        creatureId = ' + $p.creatureId + ',')
     $db += ('        description = "' + $safeDesc + '",')
+    if ($safeZone) {
+        $db += ('        zone = "' + $safeZone + '",')
+    }
+    if ($safeSubzone) {
+        $db += ('        subzone = "' + $safeSubzone + '",')
+    }
     $db += ('        icon = ' + $p.icon)
     $db += '    },'
 }
