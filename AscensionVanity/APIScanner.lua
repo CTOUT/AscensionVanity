@@ -149,25 +149,28 @@ function AV_ScanAllItems()
     local version, build, buildDate = GetBuildInfo()
     
     -- Capture Ascension custom version using GetClientVersion()
-    -- Returns: [1]=date, [2]=time, [3]=branch, [4]=boolean
-    -- Wrap in pcall to prevent errors if function doesn't exist or fails
-    local customVersionDate = "Unknown"
-    local customVersionTime = "Unknown"
+    -- Returns: [1]=date (e.g. "2025-11-01"), [2]=time (e.g. "16:21:03 GMT"), 
+    --          [3]=branch (e.g. "Not Available"), [4]=boolean
     local customVersionFull = "Unknown"
     
     if GetClientVersion then
-        local success, clientVer = pcall(GetClientVersion)
-        if success and clientVer and type(clientVer) == "table" then
-            customVersionDate = tostring(clientVer[1] or "Unknown")
-            customVersionTime = tostring(clientVer[2] or "Unknown")
+        local success, result1, result2, result3, result4 = pcall(GetClientVersion)
+        if success and result1 then
+            -- GetClientVersion returns 4 values directly, not a table!
+            local dateStr = tostring(result1 or "")
+            local timeStr = tostring(result2 or "")
+            local branch = tostring(result3 or "")
             
-            -- Build the full version string like /version command shows
-            if customVersionDate ~= "Unknown" and customVersionTime ~= "Unknown" then
-                customVersionFull = customVersionDate .. " " .. customVersionTime
+            -- Build version string like /version command: "2025-11-01 @ 16:21:03 GMT Not Available"
+            if dateStr ~= "" and timeStr ~= "" then
+                customVersionFull = dateStr .. " @ " .. timeStr
+                if branch ~= "" and branch ~= "nil" then
+                    customVersionFull = customVersionFull .. " " .. branch
+                end
             end
         elseif not success then
             -- GetClientVersion() failed - log it but continue
-            Print("  ⚠ GetClientVersion() failed: " .. tostring(clientVer))
+            Print("  ⚠ GetClientVersion() failed: " .. tostring(result1))
         end
     end
     
