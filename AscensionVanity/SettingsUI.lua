@@ -146,13 +146,14 @@ categoryDesc:SetJustifyH("CENTER")
 categoryDesc:SetText("|cFF888888Choose which vanity item types to display in tooltips|r")
 
 -- Category Filter Checkboxes (Two-column layout)
+-- IMPORTANT: Keys must match AscensionVanityConfig.lua categoryFilters
 local categoryCheckboxes = {}
 
 -- Left column
-categoryCheckboxes.pet = CreateCheckbox(
+categoryCheckboxes.beast = CreateCheckbox(
     settingsPanel,
-    "Beastmaster's Whistle - Wild Animals",
-    "Show wild animal companions (wolves, cats, bears, etc.) that can be summoned.",
+    "Beastmaster's Whistle - Beasts",
+    "Show beast companions (wolves, cats, bears, etc.) that can be summoned.",
     categoryDesc,
     30,
     -12
@@ -160,17 +161,17 @@ categoryCheckboxes.pet = CreateCheckbox(
 
 categoryCheckboxes.demon = CreateCheckbox(
     settingsPanel,
-    "Blood Soaked Vellum - Undead",
-    "Show undead creature summons (ghouls, skeletons, spirits, etc.).",
-    categoryCheckboxes.pet,
+    "Summoner's Stone - Demons",
+    "Show demon summons (imps, felguards, succubi, etc.).",
+    categoryCheckboxes.beast,
     0,
     -8
 )
 
-categoryCheckboxes.elemental = CreateCheckbox(
+categoryCheckboxes.undead = CreateCheckbox(
     settingsPanel,
-    "Summoner's Stone - Demons",
-    "Show demon summons (imps, felguards, succubi, etc.).",
+    "Blood Soaked Vellum - Undead",
+    "Show undead creature summons (ghouls, skeletons, spirits, etc.).",
     categoryCheckboxes.demon,
     0,
     -8
@@ -186,7 +187,7 @@ categoryCheckboxes.dragonkin = CreateCheckbox(
     -12
 )
 
-categoryCheckboxes.totem = CreateCheckbox(
+categoryCheckboxes.elemental = CreateCheckbox(
     settingsPanel,
     "Elemental Lodestone - Elementals",
     "Show elemental companions (fire, water, earth, air elementals, etc.).",
