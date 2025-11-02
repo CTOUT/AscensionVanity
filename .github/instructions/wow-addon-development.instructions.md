@@ -606,4 +606,67 @@ git push origin v2.1-dev
 
 ---
 
+## 🔄 Recent Discoveries & Insights (Auto-Updated)
+
+**Last Updated**: November 2, 2025
+
+This section is periodically updated by Copilot with new insights, challenges, and recognitions to prevent reinventing the wheel.
+
+### November 2, 2025 - Data Structure Consistency
+
+**Insight**: Field name inconsistencies were causing frequent nil value errors and wasted time guessing correct field names.
+
+**Solution**: Created comprehensive schema documentation in `docs/DATA_SCHEMAS.md` that defines:
+- All Lua structures (AscensionVanityDB, AscensionVanityDump, VanityDB.lua)
+- All JSON structures (API_to_GameID_Mapping.json, MasterFullValidated.json)
+- PowerShell objects used in processing
+- Category naming conventions (beast/demon/undead/dragonkin/elemental)
+- Common field name mistakes and corrections
+
+**Action**: ALWAYS reference `docs/DATA_SCHEMAS.md` before accessing fields in any data structure.
+
+### November 2, 2025 - Category Filter Naming
+
+**Challenge**: Inconsistent category names across systems caused confusion:
+- Old scan data had `totem` and `pet` in SavedVariables
+- Generation scripts used `Beast`, `Demon`, etc.
+- Config file had mixed naming
+
+**Solution**: Standardized naming convention:
+- **Lua config keys**: lowercase (`beast`, `demon`, `undead`, `dragonkin`, `elemental`)
+- **JSON fields**: PascalCase (`"Beast"`, `"Demon"`, `"Undead"`, `"Dragonkin"`, `"Elemental"`)
+- **Group ID mappings**: Documented in DATA_SCHEMAS.md
+
+**Recognition**: User caught this inconsistency - configuration should match generation naming exactly!
+
+### November 2, 2025 - APIDump Field Ordering
+
+**Observation**: Large APIDump dictionary in middle of metadata made scan files hard to read.
+
+**Solution**: Reordered AscensionVanityDump fields:
+- Metadata fields sorted alphabetically
+- APIDump comes LAST for easier human readability
+- Updated APIScanner.lua to enforce this order
+
+**Pattern**: For large nested structures, place them at the end of parent structures for better readability.
+
+### November 2, 2025 - Icon List Filtering
+
+**Challenge**: Initial icon list generation included all 3,727 icons from scan data, not just combat pets.
+
+**Solution**: Filter icons by Group ID during generation:
+- Only extract icons from items with Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
+- Read from `AscensionVanityDump["APIDump"]` section (skip SavedVariables at top)
+- Result: 14 unique icons instead of 3,727
+
+**Lesson**: Always filter data at the earliest possible stage to prevent scope creep.
+
+---
+
+**Update Protocol**: After each significant work session or discovery, add entries here with:
+- Date
+- Brief description of insight/challenge/observation
+- Solution or pattern recognized
+- Actionable takeaway
+
 **Remember**: This file evolves with the project. When you discover new patterns or gotchas, document them here. When in doubt, check the main copilot-instructions.md file first!

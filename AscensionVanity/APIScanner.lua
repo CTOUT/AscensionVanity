@@ -174,15 +174,16 @@ function AV_ScanAllItems()
         end
     end
     
-    -- Update metadata
+    -- Update metadata (alphabetically sorted, APIDump comes last)
+    AscensionVanityDump.AddonVersion = GetAddOnMetadata(AddonName, "Version") or "2.1"
+    AscensionVanityDump.CustomVersion = customVersionFull          -- Ascension custom version (e.g., "2025-11-01 16:21:03 GMT")
+    AscensionVanityDump.GameBuild = build or "Unknown"
+    AscensionVanityDump.GameBuildDate = buildDate or "Unknown"     -- Original WoW build date
+    AscensionVanityDump.GameVersion = version or "Unknown"
     AscensionVanityDump.LastScanDate = date("%Y-%m-%d %H:%M:%S")
     AscensionVanityDump.ScanVersion = "2.1"
     AscensionVanityDump.TotalItems = totalScanned
-    AscensionVanityDump.GameVersion = version or "Unknown"
-    AscensionVanityDump.GameBuild = build or "Unknown"
-    AscensionVanityDump.GameBuildDate = buildDate or "Unknown"     -- Original WoW build date
-    AscensionVanityDump.CustomVersion = customVersionFull          -- Ascension custom version (e.g., "2025-11-01 16:21:03 GMT")
-    AscensionVanityDump.AddonVersion = GetAddOnMetadata(AddonName, "Version") or "2.1"
+    -- APIDump is already populated above, comes last for easier reading
     
     scanState.isScanning = false
     scanState.scannedItems = totalScanned

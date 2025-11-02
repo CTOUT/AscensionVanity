@@ -13,10 +13,11 @@ local defaults = {
     
     -- Category Filters (v2.1+)
     -- Five combat pet categories matching Group IDs from Ascension database
+    -- IMPORTANT: These names must match exactly with generation scripts
     categoryFilters = {
         beast = true,            -- Beastmaster's Whistle (Group 16777217)
-        undead = true,           -- Blood Soaked Vellum (Group 16777220)
         demon = true,            -- Summoner's Stone (Group 16777218)
+        undead = true,           -- Blood Soaked Vellum (Group 16777220)
         dragonkin = true,        -- Draconic Warhorn (Group 16777224)
         elemental = true         -- Elemental Lodestone (Group 16777232)
     },

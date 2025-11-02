@@ -65,30 +65,36 @@ $combatPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232)
 if (Test-Path $scanFile) {
     $scanContent = Get-Content $scanFile -Raw
     
-    # Extract items with their group and icon
-    # Multiline pattern to capture group and icon from same item block
-    $itemBlocks = [regex]::Matches($scanContent, '\[(\d+)\]\s*=\s*\{([^}]+)\}', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-    
-    foreach ($itemBlock in $itemBlocks) {
-        $blockContent = $itemBlock.Groups[2].Value
+    # Find the APIDump section (skip SavedVariables at the top)
+    if ($scanContent -match 'AscensionVanityDump\s*=\s*\{.*?\["APIDump"\]\s*=\s*\{(.*)\}\s*\}') {
+        $apiDumpContent = $Matches[1]
         
-        # Extract group ID from this block
-        if ($blockContent -match '\["group"\]\s*=\s*(\d+)') {
-            $groupId = [int]$Matches[1]
+        # Extract items with their group and icon from APIDump
+        $itemBlocks = [regex]::Matches($apiDumpContent, '\[(\d+)\]\s*=\s*\{([^}]+)\}', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+        
+        foreach ($itemBlock in $itemBlocks) {
+            $blockContent = $itemBlock.Groups[2].Value
             
-            # Only process items from our 5 combat pet categories
-            if ($combatPetGroups -contains $groupId) {
-                # Extract icon from this block
-                if ($blockContent -match '\["icon"\]\s*=\s*"([^"]+)"') {
-                    $iconName = $Matches[1]
-                    # Clean up icon path
-                    $cleanIcon = $iconName -replace 'Interface\\\\Icons\\\\', '' -replace 'Interface\\Icons\\', ''
-                    if ($cleanIcon -and -not $uniqueIcons.ContainsKey($cleanIcon)) {
-                        $uniqueIcons[$cleanIcon] = $true
+            # Extract group ID from this block
+            if ($blockContent -match '\["group"\]\s*=\s*(\d+)') {
+                $groupId = [int]$Matches[1]
+                
+                # Only process items from our 5 combat pet categories
+                if ($combatPetGroups -contains $groupId) {
+                    # Extract icon from this block
+                    if ($blockContent -match '\["icon"\]\s*=\s*"([^"]+)"') {
+                        $iconName = $Matches[1]
+                        # Clean up icon path
+                        $cleanIcon = $iconName -replace 'Interface\\\\Icons\\\\', '' -replace 'Interface\\Icons\\', ''
+                        if ($cleanIcon -and -not $uniqueIcons.ContainsKey($cleanIcon)) {
+                            $uniqueIcons[$cleanIcon] = $true
+                        }
                     }
                 }
             }
         }
+    } else {
+        Write-Warning "Could not find AscensionVanityDump['APIDump'] in scan file"
     }
 }
 
