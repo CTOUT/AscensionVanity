@@ -156,14 +156,29 @@ foreach ($line in $lines) {
                 if (-not $shouldExclude) {
                     $category = $categoryMap[$currentItem.group]
                     
+                    # Extract creature name from item name (after the colon)
+                    $creatureName = if ($currentItem.name -match ':\s*(.+)$') { $matches[1] } else { $currentItem.name }
+                    
+                    # If description exists, ensure it mentions the correct creature (from item name)
+                    $finalDescription = $currentItem.description
+                    if ($finalDescription -and $finalDescription -match 'Has a chance to drop from (.+?) within (.+)$') {
+                        $descCreature = $matches[1]
+                        $zone = $matches[2]
+                        
+                        # If creature in description doesn't match item name, fix it
+                        if ($descCreature -ne $creatureName) {
+                            $finalDescription = "Has a chance to drop from $creatureName within $zone"
+                        }
+                    }
+                    
                     # Create JSON object
                     $jsonItem = [PSCustomObject]@{
                         DbItemId = $currentItem.itemid
                         Name = $currentItem.name
                         CreatureId = if ($currentItem.creaturePreview -gt 0) { $currentItem.creaturePreview } else { $null }
-                        Description = if ($currentItem.description) { $currentItem.description } else { $null }
+                        Description = if ($finalDescription) { $finalDescription } else { $null }
                         Category = $category
-                        Validated = if ($currentItem.description) { $true } else { $false }
+                        Validated = if ($finalDescription) { $true } else { $false }
                         VendorExempt = $false
                     }
                     

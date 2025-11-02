@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 14:50:01
+-- Generated: 2025-11-02 14:54:22
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -475,7 +475,7 @@ AV_VanityItems = {
         itemid = 79410,
         name = "Beastmaster's Whistle: Highland Lashtail",
         creaturePreview = 1016,
-        description = "Has a chance to drop from Highland Raptor within Direforge Hill",
+        description = "Has a chance to drop from Highland Lashtail within Direforge Hill",
         icon = 1
     },
     [79411] = {
@@ -510,7 +510,7 @@ AV_VanityItems = {
         itemid = 79415,
         name = "Beastmaster's Whistle: Mottled Screecher",
         creaturePreview = 1021,
-        description = "Has a chance to drop from Mottled Raptor within Black Channel Marsh",
+        description = "Has a chance to drop from Mottled Screecher within Black Channel Marsh",
         icon = 1
     },
     [79416] = {
@@ -524,7 +524,7 @@ AV_VanityItems = {
         itemid = 79417,
         name = "Beastmaster's Whistle: Mottled Razormaw",
         creaturePreview = 1023,
-        description = "Has a chance to drop from Mottled Scytheclaw within Whelgar's Excavation Site",
+        description = "Has a chance to drop from Mottled Razormaw within Whelgar's Excavation Site",
         icon = 1
     },
     [79418] = {
@@ -3009,7 +3009,7 @@ AV_VanityItems = {
         itemid = 79882,
         name = "Beastmaster's Whistle: Bonepicker",
         creaturePreview = 5983,
-        description = "Has a chance to drop from Black Slayer within Serpent's Coil",
+        description = "Has a chance to drop from Bonepicker within Serpent's Coil",
         icon = 1
     },
     [79883] = {
@@ -4528,7 +4528,7 @@ AV_VanityItems = {
         itemid = 80533,
         name = "Beastmaster's Whistle: \"Count\" Ungula",
         creaturePreview = 18285,
-        description = "Has a chance to drop from Count Ungula within Zangarmarsh",
+        description = "Has a chance to drop from \"Count\" Ungula within Zangarmarsh",
         icon = 1
     },
     [80534] = {
@@ -5074,7 +5074,7 @@ AV_VanityItems = {
         itemid = 80673,
         name = "Beastmaster's Whistle: Amani Bear",
         creaturePreview = 23584,
-        description = "Has a chance to drop from Amani War Bear within Zul'Aman",
+        description = "Has a chance to drop from Amani Bear within Zul'Aman",
         icon = 1
     },
     [80674] = {
@@ -6880,7 +6880,7 @@ AV_VanityItems = {
         itemid = 84104,
         name = "Summoner's Stone: Dreadcaller",
         creaturePreview = 19434,
-        description = "Has a chance to drop from Alzzin the Wildshaper within Dire Maul",
+        description = "Has a chance to drop from Dreadcaller within Dire Maul",
         icon = 3
     },
     [84106] = {
@@ -6894,7 +6894,7 @@ AV_VanityItems = {
         itemid = 84108,
         name = "Summoner's Stone: Nethervine Inciter",
         creaturePreview = 19511,
-        description = "Has a chance to drop from Scarlet Paladin within Hearthglen",
+        description = "Has a chance to drop from Nethervine Inciter within Hearthglen",
         icon = 3
     },
     [84109] = {
@@ -6936,42 +6936,42 @@ AV_VanityItems = {
         itemid = 84116,
         name = "Summoner's Stone: Wrathwalker",
         creaturePreview = 19740,
-        description = "Has a chance to drop from Sunseeker Botanist within The Botanica",
+        description = "Has a chance to drop from Wrathwalker within The Botanica",
         icon = 3
     },
     [84156] = {
         itemid = 84156,
         name = "Summoner's Stone: Dreadwarden",
         creaturePreview = 19744,
-        description = "Has a chance to drop from Redridge Mystic within Redridge Canyons",
+        description = "Has a chance to drop from Dreadwarden within Redridge Canyons",
         icon = 3
     },
     [84175] = {
         itemid = 84175,
         name = "Summoner's Stone: Deathforge Tinkerer",
         creaturePreview = 19754,
-        description = "Has a chance to drop from Rothos within Seradane",
+        description = "Has a chance to drop from Deathforge Tinkerer within Seradane",
         icon = 3
     },
     [84268] = {
         itemid = 84268,
         name = "Summoner's Stone: Mo'arg Weaponsmith",
         creaturePreview = 19755,
-        description = "Has a chance to drop from Singe within Stonewatch Keep",
+        description = "Has a chance to drop from Mo'arg Weaponsmith within Stonewatch Keep",
         icon = 3
     },
     [84269] = {
         itemid = 84269,
         name = "Summoner's Stone: Deathforge Smith",
         creaturePreview = 19756,
-        description = "Has a chance to drop from Red Wyrmkin within Dragonmaw Gates",
+        description = "Has a chance to drop from Deathforge Smith within Dragonmaw Gates",
         icon = 3
     },
     [84270] = {
         itemid = 84270,
         name = "Summoner's Stone: Newly Crafted Infernal",
         creaturePreview = 19759,
-        description = "Has a chance to drop from Scarshield Spellbinder within Blackrock Spire",
+        description = "Has a chance to drop from Newly Crafted Infernal within Blackrock Spire",
         icon = 3
     },
     [84271] = {
@@ -6992,28 +6992,28 @@ AV_VanityItems = {
         itemid = 84297,
         name = "Summoner's Stone: Illidari Agonizer",
         creaturePreview = 19801,
-        description = "Has a chance to drop from Scholomance Occultist within Scholomance",
+        description = "Has a chance to drop from Illidari Agonizer within Scholomance",
         icon = 3
     },
     [84298] = {
         itemid = 84298,
         name = "Summoner's Stone: Nethervine Trickster",
         creaturePreview = 19843,
-        description = "Has a chance to drop from Scarlet Invoker within Felstone Field",
+        description = "Has a chance to drop from Nethervine Trickster within Felstone Field",
         icon = 3
     },
     [84299] = {
         itemid = 84299,
         name = "Summoner's Stone: Felblade Doomguard",
         creaturePreview = 19853,
-        description = "Has a chance to drop from Gnarlpine Pathfinder within Gnarlpine Hold",
+        description = "Has a chance to drop from Felblade Doomguard within Gnarlpine Hold",
         icon = 3
     },
     [84300] = {
         itemid = 84300,
         name = "Summoner's Stone: Doomforge Attendant",
         creaturePreview = 19961,
-        description = "Has a chance to drop from Boahn within Wailing Caverns",
+        description = "Has a chance to drop from Doomforge Attendant within Wailing Caverns",
         icon = 3
     },
     [84301] = {
@@ -7027,21 +7027,21 @@ AV_VanityItems = {
         itemid = 84304,
         name = "Summoner's Stone: Dreadforge Servant",
         creaturePreview = 19971,
-        description = "Has a chance to drop from Cenarion Druid within The Talon Den",
+        description = "Has a chance to drop from Dreadforge Servant within The Talon Den",
         icon = 3
     },
     [84305] = {
         itemid = 84305,
         name = "Summoner's Stone: Abyssal Flamebringer",
         creaturePreview = 19973,
-        description = "Has a chance to drop from Vile Fin Shredder within The Shining Strand",
+        description = "Has a chance to drop from Abyssal Flamebringer within The Shining Strand",
         icon = 3
     },
     [84306] = {
         itemid = 84306,
         name = "Summoner's Stone: Deathforge Over-Smith",
         creaturePreview = 19978,
-        description = "Has a chance to drop from Shadowhide Brute within Galardell Valley",
+        description = "Has a chance to drop from Deathforge Over-Smith within Galardell Valley",
         icon = 3
     },
     [84307] = {
@@ -7076,7 +7076,7 @@ AV_VanityItems = {
         itemid = 84311,
         name = "Summoner's Stone: Hound of Culuthas",
         creaturePreview = 20141,
-        description = "Has a chance to drop from Cenarion Protector within Raynewood Retreat",
+        description = "Has a chance to drop from Hound of Culuthas within Raynewood Retreat",
         icon = 3
     },
     [84312] = {
@@ -7097,7 +7097,7 @@ AV_VanityItems = {
         itemid = 84314,
         name = "Summoner's Stone: Mo'arg Warp-Master",
         creaturePreview = 20326,
-        description = "Has a chance to drop from Phantom Guest within Karazhan",
+        description = "Has a chance to drop from Mo'arg Warp-Master within Karazhan",
         icon = 3
     },
     [84315] = {
@@ -7118,21 +7118,21 @@ AV_VanityItems = {
         itemid = 84317,
         name = "Summoner's Stone: Veneratus the Many",
         creaturePreview = 20427,
-        description = "Has a chance to drop from Wyrmkin Firebrand within Dragonmaw Gates",
+        description = "Has a chance to drop from Veneratus the Many within Dragonmaw Gates",
         icon = 3
     },
     [84318] = {
         itemid = 84318,
         name = "Summoner's Stone: Wrath Hound",
         creaturePreview = 20557,
-        description = "Has a chance to drop from Skeletal Terror within Dalson's Tears",
+        description = "Has a chance to drop from Wrath Hound within Dalson's Tears",
         icon = 3
     },
     [84319] = {
         itemid = 84319,
         name = "Summoner's Stone: Arzeth the Powerless",
         creaturePreview = 20680,
-        description = "Has a chance to drop from Murkblood Oracle within The Underbog",
+        description = "Has a chance to drop from Arzeth the Powerless within The Underbog",
         icon = 3
     },
     [84350] = {
@@ -7153,7 +7153,7 @@ AV_VanityItems = {
         itemid = 84398,
         name = "Summoner's Stone: Armbreaker Huffaz",
         creaturePreview = 20784,
-        description = "Has a chance to drop from Sunblade Warlock within Magisters' Terrace",
+        description = "Has a chance to drop from Armbreaker Huffaz within Magisters' Terrace",
         icon = 3
     },
     [84496] = {
@@ -7517,14 +7517,14 @@ AV_VanityItems = {
         itemid = 85704,
         name = "Summoner's Stone: Abyssal Flamewalker",
         creaturePreview = 25001,
-        description = "Has a chance to drop from Irespeaker within The Dawning Square",
+        description = "Has a chance to drop from Abyssal Flamewalker within The Dawning Square",
         icon = 3
     },
     [85705] = {
         itemid = 85705,
         name = "Summoner's Stone: Unleashed Hellion",
         creaturePreview = 25002,
-        description = "Has a chance to drop from Irespeaker within The Dawning Square",
+        description = "Has a chance to drop from Unleashed Hellion within The Dawning Square",
         icon = 3
     },
     [85710] = {
@@ -8126,7 +8126,7 @@ AV_VanityItems = {
         itemid = 87655,
         name = "Blood Soaked Vellum: Maury \"Club Foot\" Wilkins",
         creaturePreview = 2535,
-        description = "Has a chance to drop from Maury Club Foot Wilkins within Ruins of Jubuwal",
+        description = "Has a chance to drop from Maury \"Club Foot\" Wilkins within Ruins of Jubuwal",
         icon = 2
     },
     [87656] = {
@@ -8140,7 +8140,7 @@ AV_VanityItems = {
         itemid = 87657,
         name = "Blood Soaked Vellum: Chucky \"Ten Thumbs\"",
         creaturePreview = 2537,
-        description = "Has a chance to drop from Chucky Ten Thumbs within Ruins of Aboraz",
+        description = "Has a chance to drop from Chucky \"Ten Thumbs\" within Ruins of Aboraz",
         icon = 2
     },
     [87668] = {
@@ -8315,7 +8315,7 @@ AV_VanityItems = {
         itemid = 87736,
         name = "Blood Soaked Vellum: Zul'Farrak Dead Hero(Male)",
         creaturePreview = 91356,
-        description = "Has a chance to drop from Zul'Farrak Dead Hero within Zul'Gurub",
+        description = "Has a chance to drop from Zul'Farrak Dead Hero(Male) within Zul'Gurub",
         icon = 2
     },
     [87737] = {
@@ -8371,7 +8371,7 @@ AV_VanityItems = {
         itemid = 87809,
         name = "Blood Soaked Vellum: Skeletal Shadowcaster",
         creaturePreview = 7340,
-        description = "Has a chance to drop from Summoned Skeletal Shadowcaster within Razorfen Downs",
+        description = "Has a chance to drop from Skeletal Shadowcaster within Razorfen Downs",
         icon = 2
     },
     [87810] = {
@@ -9694,7 +9694,7 @@ AV_VanityItems = {
         itemid = 89198,
         name = "Blood Soaked Vellum: Gargoyle",
         creaturePreview = 17906,
-        description = "Has a chance to drop from Flameshocker within Eastern Kingdoms",
+        description = "Has a chance to drop from Gargoyle within Eastern Kingdoms",
         icon = 2
     },
     [89199] = {
@@ -9722,7 +9722,7 @@ AV_VanityItems = {
         itemid = 89203,
         name = "Blood Soaked Vellum: Kirin'Var Ghost",
         creaturePreview = 20480,
-        description = "Has a chance to drop from Kirin'Var Ghost  within Eastern Kingdoms",
+        description = "Has a chance to drop from Kirin'Var Ghost within Eastern Kingdoms",
         icon = 2
     },
     [89204] = {
@@ -10065,7 +10065,7 @@ AV_VanityItems = {
         itemid = 89801,
         name = "Blood Soaked Vellum: Zul'Farrak Dead Hero(Female)",
         creaturePreview = 91357,
-        description = "Has a chance to drop from Zul'Farrak Dead Hero within Zul'Gurub",
+        description = "Has a chance to drop from Zul'Farrak Dead Hero(Female) within Zul'Gurub",
         icon = 2
     },
     [89838] = {
@@ -10877,14 +10877,14 @@ AV_VanityItems = {
         itemid = 101165,
         name = "Blood Soaked Vellum: Reanimated Bones",
         creaturePreview = 61700,
-        description = "Has a chance to drop from Ngajh'dro within Outland",
+        description = "Has a chance to drop from Reanimated Bones within Outland",
         icon = 2
     },
     [138255] = {
         itemid = 138255,
         name = "Summoner's Stone: Prince Malchezaar",
         creaturePreview = 15690,
-        description = "Has a chance to drop from Prince Malchezaa within Karazhan",
+        description = "Has a chance to drop from Prince Malchezaar within Karazhan",
         icon = 3
     },
     [138259] = {
@@ -10940,7 +10940,7 @@ AV_VanityItems = {
         itemid = 139053,
         name = "Summoner's Stone: Solus the Eternal",
         creaturePreview = 20888,
-        description = "Has a chance to drop from Solus the Eterna within Karazhan",
+        description = "Has a chance to drop from Solus the Eternal within Karazhan",
         icon = 3
     },
     [139354] = {
@@ -10982,21 +10982,21 @@ AV_VanityItems = {
         itemid = 139581,
         name = "Summoner's Stone: Apolyon (Hand of the Deceiver)",
         creaturePreview = 449185,
-        description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
+        description = "Has a chance to drop from Apolyon (Hand of the Deceiver) within Sunwell Plateau.",
         icon = 3
     },
     [139796] = {
         itemid = 139796,
         name = "Summoner's Stone: Agamath (Hand of the Deceiver)",
         creaturePreview = 449186,
-        description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
+        description = "Has a chance to drop from Agamath (Hand of the Deceiver) within Sunwell Plateau.",
         icon = 3
     },
     [139797] = {
         itemid = 139797,
         name = "Summoner's Stone: Archonisus (Hand of the Deceiver)",
         creaturePreview = 449187,
-        description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
+        description = "Has a chance to drop from Archonisus (Hand of the Deceiver) within Sunwell Plateau.",
         icon = 3
     },
     [254054] = {
@@ -11458,14 +11458,14 @@ AV_VanityItems = {
         itemid = 600865,
         name = "Elemental Lodestone: Syth Frost Elemental",
         creaturePreview = 19204,
-        description = "Has a chance to drop from Darkweaver Syth within Sethekk Halls",
+        description = "Has a chance to drop from Syth Frost Elemental within Sethekk Halls",
         icon = 5
     },
     [600866] = {
         itemid = 600866,
         name = "Elemental Lodestone: Syth Shadow Elemental",
         creaturePreview = 19206,
-        description = "Has a chance to drop from Darkweaver Syth within Sethekk Halls",
+        description = "Has a chance to drop from Syth Shadow Elemental within Sethekk Halls",
         icon = 5
     },
     [600867] = {
@@ -12074,7 +12074,7 @@ AV_VanityItems = {
         itemid = 601201,
         name = "Elemental Lodestone: Whip Lasher(Purple)",
         creaturePreview = 40553,
-        description = "Has a chance to drop from Whip Lasher within Dire Maul",
+        description = "Has a chance to drop from Whip Lasher(Purple) within Dire Maul",
         icon = 5
     },
     [601202] = {
@@ -12326,7 +12326,7 @@ AV_VanityItems = {
         itemid = 601687,
         name = "Elemental Lodestone: Ironhand Guardian",
         creaturePreview = 8982,
-        description = "Has a chance to drop from Magmus within Blackrock Depths",
+        description = "Has a chance to drop from Ironhand Guardian within Blackrock Depths",
         icon = 5
     },
     [601688] = {
@@ -12480,7 +12480,7 @@ AV_VanityItems = {
         itemid = 601843,
         name = "Elemental Lodestone: Treant Ally",
         creaturePreview = 5806,
-        description = "Has a chance to drop from Treant within Kalimdor/Eastern Kingdom",
+        description = "Has a chance to drop from Treant Ally within Kalimdor/Eastern Kingdom",
         icon = 5
     },
     [601845] = {
@@ -12578,7 +12578,7 @@ AV_VanityItems = {
         itemid = 601864,
         name = "Elemental Lodestone: Whip Lasher (Fuchsia)",
         creaturePreview = 91355,
-        description = "Has a chance to drop from Whip Lasher within Dire Maul",
+        description = "Has a chance to drop from Whip Lasher (Fuchsia) within Dire Maul",
         icon = 5
     },
     [601866] = {
@@ -13222,7 +13222,7 @@ AV_VanityItems = {
         itemid = 1180233,
         name = "Draconic Warhorn: Deviate Faerie Dragon",
         creaturePreview = 5912,
-        description = "Has a chance to drop from Brightwing within Wailing Caverns",
+        description = "Has a chance to drop from Deviate Faerie Dragon within Wailing Caverns",
         icon = 4
     },
     [1180234] = {
@@ -13642,7 +13642,7 @@ AV_VanityItems = {
         itemid = 1180308,
         name = "Draconic Warhorn: Gyth",
         creaturePreview = 10339,
-        description = "Has a chance to drop from Warchief Rend Blackhand within Blackrock Spire",
+        description = "Has a chance to drop from Gyth within Blackrock Spire",
         icon = 4
     },
     [1180309] = {
@@ -13698,7 +13698,7 @@ AV_VanityItems = {
         itemid = 1180316,
         name = "Draconic Warhorn: Chromatic Whelp",
         creaturePreview = 10442,
-        description = "Has a chance to drop from Warchief Rend Blackhand within Blackrock Spire",
+        description = "Has a chance to drop from Chromatic Whelp within Blackrock Spire",
         icon = 4
     },
     [1180317] = {
@@ -13719,7 +13719,7 @@ AV_VanityItems = {
         itemid = 1180319,
         name = "Draconic Warhorn: Chromatic Dragonspawn",
         creaturePreview = 10447,
-        description = "Has a chance to drop from Warchief Rend Blackhand within Blackrock Spire",
+        description = "Has a chance to drop from Chromatic Dragonspawn within Blackrock Spire",
         icon = 4
     },
     [1180320] = {
@@ -14909,14 +14909,14 @@ AV_VanityItems = {
         itemid = 1777426,
         name = "Elemental Lodestone: Syth Fire Elemental",
         creaturePreview = 19203,
-        description = "Has a chance to drop from Darkweaver Syth within Sethekk Halls",
+        description = "Has a chance to drop from Syth Fire Elemental within Sethekk Halls",
         icon = 5
     },
     [1777428] = {
         itemid = 1777428,
         name = "Elemental Lodestone: Syth Arcane Elemental",
         creaturePreview = 19205,
-        description = "Has a chance to drop from Darkweaver Syth within Sethekk Halls",
+        description = "Has a chance to drop from Syth Arcane Elemental within Sethekk Halls",
         icon = 5
     },
 }
