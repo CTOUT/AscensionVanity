@@ -147,12 +147,13 @@ categoryDesc:SetText("|cFF888888Choose which vanity item types to display in too
 
 -- Category Filter Checkboxes (Two-column layout, alphabetically sorted)
 -- IMPORTANT: Keys must match AscensionVanityConfig.lua categoryFilters
+-- Category icons for visual identification (matching Core.lua ITEM_ICONS)
 local categoryCheckboxes = {}
 
 -- Left column (alphabetical: Beast, Demon, Dragonkin)
 categoryCheckboxes.beast = CreateCheckbox(
     settingsPanel,
-    "Beastmaster's Whistle - Beasts",
+    "|TInterface\\Icons\\ability_hunter_beastcall:16:16:0:0:64:64:4:60:4:60|t Beastmaster's Whistle - Beasts",
     "Show beast companions (wolves, cats, bears, etc.) that can be summoned.",
     categoryDesc,
     30,
@@ -161,7 +162,7 @@ categoryCheckboxes.beast = CreateCheckbox(
 
 categoryCheckboxes.demon = CreateCheckbox(
     settingsPanel,
-    "Summoner's Stone - Demons",
+    "|TInterface\\Icons\\inv_misc_uncutgemnormal1:16:16:0:0:64:64:4:60:4:60|t Summoner's Stone - Demons",
     "Show demon summons (imps, felguards, succubi, etc.).",
     categoryCheckboxes.beast,
     0,
@@ -170,7 +171,7 @@ categoryCheckboxes.demon = CreateCheckbox(
 
 categoryCheckboxes.dragonkin = CreateCheckbox(
     settingsPanel,
-    "Draconic Warhorn - Dragonkin",
+    "|TInterface\\Icons\\inv_misc_horn_01:16:16:0:0:64:64:4:60:4:60|t Draconic Warhorn - Dragonkin",
     "Show dragonkin companions (whelps, drakes, dragons, etc.).",
     categoryCheckboxes.demon,
     0,
@@ -180,7 +181,7 @@ categoryCheckboxes.dragonkin = CreateCheckbox(
 -- Right column (alphabetical: Elemental, Undead)
 categoryCheckboxes.elemental = CreateCheckbox(
     settingsPanel,
-    "Elemental Lodestone - Elementals",
+    "|TInterface\\Icons\\custom_t_nhance_rpg_icons_arcanestone_border:16:16:0:0:64:64:4:60:4:60|t Elemental Lodestone - Elementals",
     "Show elemental companions (fire, water, earth, air elementals, etc.).",
     categoryDesc,
     390,  -- Positioned to the right
@@ -189,7 +190,7 @@ categoryCheckboxes.elemental = CreateCheckbox(
 
 categoryCheckboxes.undead = CreateCheckbox(
     settingsPanel,
-    "Blood Soaked Vellum - Undead",
+    "|TInterface\\Icons\\inv_glyph_primedeathknight:16:16:0:0:64:64:4:60:4:60|t Blood Soaked Vellum - Undead",
     "Show undead creature summons (ghouls, skeletons, spirits, etc.).",
     categoryCheckboxes.elemental,
     0,
