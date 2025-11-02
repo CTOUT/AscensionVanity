@@ -22,6 +22,29 @@ Write-Host "Loading master JSON..." -ForegroundColor Cyan
 $items = Get-Content $MasterJson -Raw | ConvertFrom-Json
 Write-Host "Total items loaded: $($items.Count)" -ForegroundColor Yellow
 
+# Load zone mappings for subzone → parent zone lookup (v2.1)
+Write-Host "Loading zone mappings..." -ForegroundColor Cyan
+$zoneMappingsFile = 'data/ZoneMappings.json'
+$subzoneToZone = @{}
+
+if (Test-Path $zoneMappingsFile) {
+    $zoneMappings = Get-Content $zoneMappingsFile -Raw | ConvertFrom-Json
+    
+    # Build reverse lookup: subzone → parent zone
+    foreach ($zoneName in $zoneMappings.zones.PSObject.Properties.Name) {
+        $zoneData = $zoneMappings.zones.$zoneName
+        if ($zoneData.subzones) {
+            foreach ($subzone in $zoneData.subzones) {
+                $subzoneToZone[$subzone] = $zoneName
+            }
+        }
+    }
+    
+    Write-Host "  Loaded $($subzoneToZone.Count) subzone mappings" -ForegroundColor Gray
+} else {
+    Write-Warning "Zone mappings file not found: $zoneMappingsFile (subzones will be treated as zones)"
+}
+
 # Icon mapping (same as final generator)
 $iconMap = @{
     "Beastmaster's Whistle" = 1
@@ -49,8 +72,17 @@ foreach ($it in $items) {
         # Pattern: "within [location]"
         if ($it.Description -match 'within\s+([^"]+)$') {
             $location = $Matches[1].Trim()
-            # For now, treat all as zone (subzone mapping TODO)
-            $zone = $location
+            
+            # Check if location is a subzone (needs parent zone lookup)
+            $parentZone = $subzoneToZone[$location]
+            if ($parentZone) {
+                $zone = $parentZone
+                $subzone = $location
+            } else {
+                # Treat as primary zone
+                $zone = $location
+                $subzone = $null
+            }
         }
     }
     
