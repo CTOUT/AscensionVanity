@@ -146,24 +146,28 @@ function AV_ScanAllItems()
     Print("  → Found " .. totalScanned .. " items")
     
     -- Capture game client version info
-    local version, build, buildDate, tocVersion = GetBuildInfo()
+    local version, build, buildDate = GetBuildInfo()
     
     -- Capture Ascension custom version using GetClientVersion()
     -- Returns: [1]=date, [2]=time, [3]=branch, [4]=boolean
+    -- Wrap in pcall to prevent errors if function doesn't exist or fails
     local customVersionDate = "Unknown"
     local customVersionTime = "Unknown"
     local customVersionFull = "Unknown"
     
     if GetClientVersion then
-        local clientVer = GetClientVersion()
-        if clientVer and type(clientVer) == "table" then
-            customVersionDate = clientVer[1] or "Unknown"
-            customVersionTime = clientVer[2] or "Unknown"
+        local success, clientVer = pcall(GetClientVersion)
+        if success and clientVer and type(clientVer) == "table" then
+            customVersionDate = tostring(clientVer[1] or "Unknown")
+            customVersionTime = tostring(clientVer[2] or "Unknown")
             
             -- Build the full version string like /version command shows
             if customVersionDate ~= "Unknown" and customVersionTime ~= "Unknown" then
                 customVersionFull = customVersionDate .. " " .. customVersionTime
             end
+        elseif not success then
+            -- GetClientVersion() failed - log it but continue
+            Print("  ⚠ GetClientVersion() failed: " .. tostring(clientVer))
         end
     end
     
