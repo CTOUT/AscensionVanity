@@ -65,9 +65,10 @@ $combatPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232)
 if (Test-Path $scanFile) {
     $scanContent = Get-Content $scanFile -Raw
     
-    # Find the APIDump section (skip SavedVariables at the top)
-    if ($scanContent -match 'AscensionVanityDump\s*=\s*\{.*?\["APIDump"\]\s*=\s*\{(.*)\}\s*\}') {
-        $apiDumpContent = $Matches[1]
+    # Find the APIDump section start
+    $apiDumpStart = $scanContent.IndexOf('["APIDump"] = {')
+    if ($apiDumpStart -gt 0) {
+        $apiDumpContent = $scanContent.Substring($apiDumpStart)
         
         # Extract items with their group and icon from APIDump
         $itemBlocks = [regex]::Matches($apiDumpContent, '\[(\d+)\]\s*=\s*\{([^}]+)\}', [System.Text.RegularExpressions.RegexOptions]::Singleline)
@@ -94,8 +95,10 @@ if (Test-Path $scanFile) {
             }
         }
     } else {
-        Write-Warning "Could not find AscensionVanityDump['APIDump'] in scan file"
+        Write-Warning "Could not find ['APIDump'] section in scan file"
     }
+} else {
+    Write-Warning "Scan file not found: $scanFile"
 }
 
 $iconArray = $uniqueIcons.Keys | Sort-Object

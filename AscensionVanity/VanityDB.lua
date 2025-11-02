@@ -1,8 +1,8 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 09:28:56
+-- Generated: 2025-11-02 10:59:59
 -- Total Items: 2353
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
--- Scan Date: 2025-11-02 09:16:07
+-- Scan Date: 2025-11-02 10:33:49
 -- 
 -- Database Structure:
 --   AV_IconList: Deduplicated icon paths referenced by index
