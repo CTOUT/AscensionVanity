@@ -40,10 +40,10 @@ local title = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge
 title:SetPoint("TOP", 0, -20)
 title:SetText("AscensionVanity Scanner")
 
--- Version
+-- Version (use shared constant)
 local version = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
 version:SetPoint("TOP", title, "BOTTOM", 0, -4)
-version:SetText("Version 2.0.0")
+version:SetText("Version " .. AV_VERSION)
 
 -- Description
 local desc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")

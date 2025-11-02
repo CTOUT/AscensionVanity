@@ -2,7 +2,9 @@
 -- User interface for addon configuration
 
 local AddonName = "AscensionVanity"
-local VERSION = "2.0.0"
+
+-- Use shared constants from AscensionVanityConstants.lua
+local VERSION = AV_VERSION
 
 -- ============================================================================
 -- Settings Panel
@@ -120,7 +122,7 @@ local colorCheckbox = CreateCheckbox(
 local regionsCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Region Information (Coming Soon)",
-    "Display location/region information for vanity item drops.\n\n|cFFFFAA00Note:|r Region data is currently being collected and will be available in a future update.",
+    "Display location/region information for vanity item drops.\n\n" .. AV_COLOR_ORANGE .. "Note:" .. AV_COLOR_RESET .. " Region data is currently being collected and will be available in a future update.",
     colorCheckbox,
     0,
     -10
@@ -143,17 +145,17 @@ local categoryDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHig
 categoryDesc:SetPoint("TOP", categoryHeader, "BOTTOM", 0, -4)
 categoryDesc:SetWidth(700)
 categoryDesc:SetJustifyH("CENTER")
-categoryDesc:SetText("|cFF888888Choose which vanity item types to display in tooltips|r")
+categoryDesc:SetText(AV_COLOR_GRAY .. "Choose which vanity item types to display in tooltips" .. AV_COLOR_RESET)
 
 -- Category Filter Checkboxes (Two-column layout, alphabetically sorted)
 -- IMPORTANT: Keys must match AscensionVanityConfig.lua categoryFilters
--- Category icons for visual identification (matching Core.lua ITEM_ICONS)
+-- Icons sourced from shared AscensionVanityConstants.lua (DRY principle)
 local categoryCheckboxes = {}
 
 -- Left column (alphabetical: Beast, Demon, Dragonkin)
 categoryCheckboxes.beast = CreateCheckbox(
     settingsPanel,
-    "|TInterface\\Icons\\ability_hunter_beastcall:16:16:0:0:64:64:4:60:4:60|t Beastmaster's Whistle - Beasts",
+    AV_GetCategoryLabel("beast", 16),
     "Show beast companions (wolves, cats, bears, etc.) that can be summoned.",
     categoryDesc,
     30,
@@ -162,7 +164,7 @@ categoryCheckboxes.beast = CreateCheckbox(
 
 categoryCheckboxes.demon = CreateCheckbox(
     settingsPanel,
-    "|TInterface\\Icons\\inv_misc_uncutgemnormal1:16:16:0:0:64:64:4:60:4:60|t Summoner's Stone - Demons",
+    AV_GetCategoryLabel("demon", 16),
     "Show demon summons (imps, felguards, succubi, etc.).",
     categoryCheckboxes.beast,
     0,
@@ -171,7 +173,7 @@ categoryCheckboxes.demon = CreateCheckbox(
 
 categoryCheckboxes.dragonkin = CreateCheckbox(
     settingsPanel,
-    "|TInterface\\Icons\\inv_misc_horn_01:16:16:0:0:64:64:4:60:4:60|t Draconic Warhorn - Dragonkin",
+    AV_GetCategoryLabel("dragonkin", 16),
     "Show dragonkin companions (whelps, drakes, dragons, etc.).",
     categoryCheckboxes.demon,
     0,
@@ -181,7 +183,7 @@ categoryCheckboxes.dragonkin = CreateCheckbox(
 -- Right column (alphabetical: Elemental, Undead)
 categoryCheckboxes.elemental = CreateCheckbox(
     settingsPanel,
-    "|TInterface\\Icons\\custom_t_nhance_rpg_icons_arcanestone_border:16:16:0:0:64:64:4:60:4:60|t Elemental Lodestone - Elementals",
+    AV_GetCategoryLabel("elemental", 16),
     "Show elemental companions (fire, water, earth, air elementals, etc.).",
     categoryDesc,
     390,  -- Positioned to the right
@@ -190,7 +192,7 @@ categoryCheckboxes.elemental = CreateCheckbox(
 
 categoryCheckboxes.undead = CreateCheckbox(
     settingsPanel,
-    "|TInterface\\Icons\\inv_glyph_primedeathknight:16:16:0:0:64:64:4:60:4:60|t Blood Soaked Vellum - Undead",
+    AV_GetCategoryLabel("undead", 16),
     "Show undead creature summons (ghouls, skeletons, spirits, etc.).",
     categoryCheckboxes.elemental,
     0,
@@ -218,7 +220,7 @@ local combatDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighl
 combatDesc:SetPoint("TOP", combatHeader, "BOTTOM", 0, -4)
 combatDesc:SetWidth(700)
 combatDesc:SetJustifyH("CENTER")
-combatDesc:SetText("|cFF888888Control how vanity tooltips display during combat|r")
+combatDesc:SetText(AV_COLOR_GRAY .. "Control how vanity tooltips display during combat" .. AV_COLOR_RESET)
 
 -- Radio button helper function
 local function CreateRadioButton(parent, label, value, tooltip, anchor, xOffset, yOffset)
@@ -271,7 +273,7 @@ combatRadios.hide = CreateRadioButton(
     settingsPanel,
     "Hide Completely (Default)",
     "hide",
-    "Hide all vanity information during combat.\n\nKeeps tooltips clean when fighting.\n\n|cFF00FF00Recommended for most players.|r",
+    "Hide all vanity information during combat.\n\nKeeps tooltips clean when fighting.\n\n" .. AV_COLOR_GREEN .. "Recommended for most players." .. AV_COLOR_RESET,
     combatRadios.minimal,
     0,
     -8
@@ -324,7 +326,7 @@ end)
 -- Scanner button description
 local scannerDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 scannerDesc:SetPoint("TOP", scannerButton, "BOTTOM", 0, -4)
-scannerDesc:SetText("|cFF888888Developer tool for scanning vanity items|r")
+scannerDesc:SetText(AV_COLOR_GRAY .. "Developer tool for scanning vanity items" .. AV_COLOR_RESET)
 
 -- Separator before footer
 local separator3 = settingsPanel:CreateTexture(nil, "ARTWORK")
@@ -337,7 +339,7 @@ separator3:SetColorTexture(0.25, 0.25, 0.25, 1)
 -- Auto-save notice
 local autoSaveText = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 autoSaveText:SetPoint("TOP", separator3, "BOTTOM", 0, -8)
-autoSaveText:SetText("|cFF888888Settings are saved automatically|r")
+autoSaveText:SetText(AV_COLOR_GRAY .. "Settings are saved automatically" .. AV_COLOR_RESET)
 
 -- ============================================================================
 -- Settings Management

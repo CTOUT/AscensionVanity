@@ -2,27 +2,25 @@
 -- Hooks into tooltips to display vanity item information
 
 local AddonName = "AscensionVanity"
-local VERSION = "2.0.0"
 
 -- Saved variables initialized in AscensionVanityConfig.lua
 AscensionVanityDB = AscensionVanityDB or {}
 
--- Color codes for tooltip text
-local COLOR_VANITY_HEADER = "|cFF00FF96" -- Teal/cyan
-local COLOR_VANITY_LEARNED = "|cFF00FF00" -- Green
-local COLOR_VANITY_UNLEARNED = "|cFFFFFF00" -- Yellow
-local COLOR_RESET = "|r"
+-- Use shared constants from AscensionVanityConstants.lua
+local VERSION = AV_VERSION
+local COLOR_VANITY_HEADER = AV_COLOR_HEADER
+local COLOR_VANITY_LEARNED = AV_COLOR_LEARNED
+local COLOR_VANITY_UNLEARNED = AV_COLOR_UNLEARNED
+local COLOR_RESET = AV_COLOR_RESET
 
--- Item type icons (icon IDs from Ascension database)
--- Icons verified from https://db.ascension.gg/?icon=<ID>
--- Format: |TTexture:size:size:xoffset:yoffset:texwidth:texheight:left:right:top:bottom|t
--- Using 14px icons with proper texture coordinates to prevent overlap/bleeding
+-- Item type icons - now sourced from shared AscensionVanityConstants.lua (DRY principle)
+-- Legacy lookup table for backward compatibility
 local ITEM_ICONS = {
-    ["Beastmaster's Whistle"] = "|TInterface\\Icons\\ability_hunter_beastcall:14:14:0:0:64:64:4:60:4:60|t",  -- Icon 455
-    ["Blood Soaked Vellum"] = "|TInterface\\Icons\\inv_glyph_primedeathknight:14:14:0:0:64:64:4:60:4:60|t",  -- Icon 13479
-    ["Summoner's Stone"] = "|TInterface\\Icons\\inv_misc_uncutgemnormal1:14:14:0:0:64:64:4:60:4:60|t",  -- Icon 19474
-    ["Draconic Warhorn"] = "|TInterface\\Icons\\inv_misc_horn_01:14:14:0:0:64:64:4:60:4:60|t",  -- Icon 1550
-    ["Elemental Lodestone"] = "|TInterface\\Icons\\custom_t_nhance_rpg_icons_arcanestone_border:14:14:0:0:64:64:4:60:4:60|t",  -- Icon 62794
+    ["Beastmaster's Whistle"] = AV_FormatIcon(AV_CATEGORY_ICONS.beast, 14),
+    ["Blood Soaked Vellum"] = AV_FormatIcon(AV_CATEGORY_ICONS.undead, 14),
+    ["Summoner's Stone"] = AV_FormatIcon(AV_CATEGORY_ICONS.demon, 14),
+    ["Draconic Warhorn"] = AV_FormatIcon(AV_CATEGORY_ICONS.dragonkin, 14),
+    ["Elemental Lodestone"] = AV_FormatIcon(AV_CATEGORY_ICONS.elemental, 14)
 }
 
 -- Local reference to GameTooltip

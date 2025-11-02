@@ -5,7 +5,10 @@
 ## Version: 2.1-dev
 ## SavedVariables: AscensionVanityDB, AscensionVanityDump
 
-# Configuration (loads first, sets defaults)
+# Shared constants (loads first - used by all other files)
+AscensionVanityConstants.lua
+
+# Configuration (loads second, sets defaults)
 AscensionVanityConfig.lua
 
 # Database files (V2 format - consolidated icon index in VanityDB.lua)
