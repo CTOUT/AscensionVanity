@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 12:28:10
+-- Generated: 2025-11-02 14:50:01
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -14804,7 +14804,7 @@ AV_VanityItems = {
         itemid = 1181572,
         name = "Draconic Warhorn: Green Whelp",
         creaturePreview = 1100365,
-        description = "Has a chance to drop from Profession Master within ",
+        description = "Has a chance to drop from max-level vanilla raid encounters (exact source unconfirmed)",
         icon = 4
     },
     [1181573] = {
@@ -14818,7 +14818,7 @@ AV_VanityItems = {
         itemid = 1181574,
         name = "Draconic Warhorn: Bronze Whelp",
         creaturePreview = 1100366,
-        description = "Has a chance to drop from Profession Master within ",
+        description = "Has a chance to drop from max-level vanilla raid encounters (exact source unconfirmed)",
         icon = 4
     },
     [1234940] = {

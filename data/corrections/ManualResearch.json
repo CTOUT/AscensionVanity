@@ -103,5 +103,19 @@
     "CreatureId": 97825,
     "Description": "Ascension custom NPC. Found within Un'Goro Crater",
     "Category": "Beastmaster's Whistle"
+  },
+  {
+    "DbItemId": 1181572,
+    "Name": "Draconic Warhorn: Green Whelp",
+    "CreatureId": 1100365,
+    "Description": "Has a chance to drop from max-level vanilla raid encounters (exact source unconfirmed)",
+    "Category": "Draconic Warhorn"
+  },
+  {
+    "DbItemId": 1181574,
+    "Name": "Draconic Warhorn: Bronze Whelp",
+    "CreatureId": 1100366,
+    "Description": "Has a chance to drop from max-level vanilla raid encounters (exact source unconfirmed)",
+    "Category": "Draconic Warhorn"
   }
 ]
