@@ -161,6 +161,30 @@ Version: 1.0.0
 
 ## 📖 Discovered Patterns (Self-Learning Section)
 
+### Pattern: Data Integrity Infrastructure (Nov 2025)
+**Discovered**: November 2, 2025
+**Context**: Discovered during creature ID mismatch investigation - manual edits were corrupting item names
+**Implementation**:
+```
+data/
+├── sources/      # IMMUTABLE - checksums verify integrity
+├── corrections/  # VERSION CONTROLLED - documented fixes
+└── processed/    # GENERATED - reproducible outputs
+```
+**Use Case**: When source data needs corrections but must remain pristine for regeneration
+**Key Scripts**: ExtractMappingFast.ps1, ApplyCorrectionsToMapping.ps1, MasterPipeline.ps1
+
+### Pattern: Group ID Based Filtering (Nov 2025)
+**Discovered**: November 2025
+**Context**: Analyzing combat pet distribution across Ascension's database
+**Implementation**:
+```powershell
+# All dropped combat pets use exactly 5 Group IDs
+$droppedPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232)
+$items = $allItems | Where-Object { $_.GroupId -in $droppedPetGroups }
+```
+**Use Case**: Fast filtering of combat pets without complex name parsing - 100% coverage confirmed
+
 ### Pattern: [Pattern Name]
 **Discovered**: [Date]
 **Context**: [Where/when discovered]
@@ -175,6 +199,28 @@ Version: 1.0.0
 *Add new patterns above this line as they are discovered*
 
 ## ⚠️ Lessons Learned (Error Correction Log)
+
+### Lesson: Manual Source Edits Cause Data Corruption
+**Date**: November 2, 2025
+**Mistake**: Directly editing `API_to_GameID_Mapping.json` to fix creature IDs led to accidental corruption of item names
+**Correction**: Implement immutable source files with separate corrections file that documents all changes
+**Why**: 
+- Source data from game should remain pristine for regeneration
+- Manual edits are error-prone and leave no audit trail
+- Corrections should be documented with reason and verification
+- Checksums detect when source files are tampered with
+**Solution**: Created data integrity infrastructure with sources/, corrections/, and processed/ folders
+
+### Lesson: High Creature IDs Are Valid Custom NPCs
+**Date**: November 1-2, 2025
+**Mistake**: Assumed all creature IDs > 90000 were errors that needed correction
+**Correction**: Project Ascension uses high IDs (90000+) for custom NPCs, many are legitimate
+**Why**:
+- Ascension is a custom server with unique content
+- High IDs don't necessarily indicate bad data
+- The 400xxx prefix pattern was a red herring (legitimate creature naming)
+- Must verify each high ID individually via db.ascension.gg before assuming it's wrong
+**Solution**: Validate against database before assuming high IDs are errors
 
 ### Lesson: [Topic]
 **Date**: [Date]
@@ -387,6 +433,29 @@ If I suggest something that contradicts these instructions:
 - Established core patterns and standards
 - Created self-learning framework
 - Defined scope boundaries (what NOT to search for)
+
+## 🧹 Periodic Maintenance Protocol
+
+**Trigger**: After major feature completion, significant discoveries, or extended work sessions
+
+### Self-Improvement Checklist
+
+- [ ] **Update Discovered Patterns** - Document new patterns found during work
+- [ ] **Log Lessons Learned** - Record mistakes and corrections for future reference
+- [ ] **Update Performance Gotchas** - Add new WoW-specific performance issues discovered
+- [ ] **Verify Examples Still Work** - Test code examples against latest WoW API
+- [ ] **Remove Obsolete Info** - Archive superseded patterns or outdated advice
+- [ ] **Cross-Reference Projects** - Ensure chatmode and project instructions stay in sync
+
+### Version Tracking
+- **Created**: October 31, 2025
+- **Last Major Update**: November 2, 2025
+- **Current Version**: 1.2.0
+
+### Change Log
+- **v1.2.0** (Nov 2, 2025): Added data integrity patterns, high ID validation lessons, maintenance protocol
+- **v1.1.0** (Oct 31, 2025): Added cross-references, debugging checklist, "When Copilot Gets It Wrong" protocol
+- **v1.0.0** (Oct 31, 2025): Initial creation with core patterns and standards
 
 ---
 

@@ -225,6 +225,24 @@ items = { { icon = 1 } }  -- Reference by index
 **Verification**: No dropped combat pets exist outside these 5 primary Group IDs
 **Implementation**: Primary filter uses Group ID check for performance, fallback uses name prefix + keyword exclusion
 
+### Pattern: Immutable Source + Layered Corrections (Nov 2025)
+**Discovered**: November 2, 2025
+**Files**: data/sources/, data/corrections/, utilities/MasterPipeline.ps1
+**Description**: Data integrity infrastructure that prevents corruption through immutable sources and documented corrections
+**Structure**:
+```
+data/
+├── sources/      # IMMUTABLE - never edit (checksums verify)
+├── corrections/  # VERSION CONTROLLED - manual fixes
+└── processed/    # GENERATED - intermediate files
+```
+**Benefits**:
+- Source files stay pristine (can regenerate anytime)
+- All corrections documented with reason and verification
+- Reproducible pipeline from source to final database
+- Checksums detect file tampering
+**Implementation**: See `docs/DATA_INTEGRITY_IMPLEMENTATION.md` and `data/README.md`
+
 ---
 
 *Add new patterns here as discovered*
@@ -252,6 +270,14 @@ items = { { icon = 1 } }  -- Reference by index
 **Verification**: 10 seasonal reward outliers (different Group IDs) are correctly excluded via keyword filters
 **Files**: MasterVanityDBPipeline.ps1, copilot-instructions.md
 **Date Verified**: November 2025
+
+### Gotcha: Manual Edits to Source Files Cause Corruption
+**Problem**: Manually editing `API_to_GameID_Mapping.json` to fix creature IDs led to accidental name corruption
+**Solution**: Never edit source files directly. Use `data/corrections/CreatureIdCorrections.json` instead
+**Evidence**: Item 79582 (Prairie Stalker) had creature ID 98766 in game data, manual edit corrupted the name
+**Fix**: Implemented immutable source + corrections infrastructure (Nov 2, 2025)
+**Files**: data/sources/ (immutable), data/corrections/ (for fixes), utilities/MasterPipeline.ps1
+**Prevention**: Checksums detect tampering, corrections are documented and version controlled
 
 ---
 
@@ -306,6 +332,28 @@ items = { { icon = 1 } }  -- Reference by index
 3. Check for Lua errors (`/console scriptErrors 1`)
 
 ### Task: Add New Configuration Option
+1. Add to `AscensionVanityConfig.lua`
+2. Add UI in `SettingsUI.lua` (if needed)
+3. Reference in `Core.lua` where used
+4. Test with saved variables (`WTF/Account/.../SavedVariables/`)
+
+### Task: Fix Creature ID Issues
+1. **Never edit** `data/sources/API_to_GameID_Mapping.json` directly
+2. Add correction to `data/corrections/CreatureIdCorrections.json`:
+   ```json
+   {
+     "itemId": 79582,
+     "itemName": "Beastmaster's Whistle: Prairie Stalker",
+     "wrongCreatureId": 98766,
+     "correctCreatureId": 2959,
+     "reason": "High ID doesn't exist, verified via db.ascension.gg",
+     "verifiedBy": "https://db.ascension.gg/?item=79582",
+     "dateAdded": "2025-11-02"
+   }
+   ```
+3. Run `.\utilities\MasterPipeline.ps1 -SkipExtract`
+4. Test in-game with `/reload`
+
 ### Pattern: Master Restoration Workflow
 **Discovered**: 2025-11-01
 **Purpose**: Safely rebuild full `VanityDB.lua` after partial generation or data loss.
@@ -433,6 +481,14 @@ If I suggest something that contradicts these instructions:
 
 ## 📜 Version History
 
+### v1.2.0 - November 2, 2025
+- Added data integrity infrastructure pattern (immutable sources + corrections)
+- Added creature ID correction workflow task
+- Added manual source edit corruption gotcha
+- Added periodic maintenance protocol
+- Expanded discovered patterns with layered corrections approach
+- Added maintenance checklist for repository housekeeping
+
 ### v1.1.0 - October 31, 2025
 - Added cross-reference links to global chatmode and main instructions
 - Added comprehensive debugging checklist
@@ -445,6 +501,108 @@ If I suggest something that contradicts these instructions:
 - Established file structure and load order documentation
 - Created project-specific gotchas tracking
 - Defined decision guides and quick references
+
+## 🧹 Periodic Maintenance Tasks
+
+**Frequency**: After every major feature completion or significant work session
+
+### 1. Repository Housekeeping
+```powershell
+# Check for uncommitted changes
+git status
+
+# Review unstaged files
+git diff
+
+# Check branch status
+git branch -vv
+```
+
+**Actions:**
+- Review all unstaged/uncommitted files
+- Decide: commit, archive, or delete
+- Clean up temporary/test files
+- Update .gitignore if needed
+
+### 2. File Consolidation
+
+**Documentation Files:**
+- Review docs/ folder for outdated/duplicate files
+- Consolidate overlapping documentation
+- Archive superseded documents to docs/archived/
+- Update cross-references and links
+
+**Script Files:**
+- Check utilities/ for one-off scripts that should be consolidated
+- Move obsolete scripts to utilities/archive/
+- Update master workflows to incorporate useful one-offs
+- Document any new master scripts in copilot-instructions.md
+
+**Data Files:**
+- Clean up data/processed/ (regenerated files)
+- Backup important analysis to data/backups/
+- Clear data/triage/ of old reports
+- Verify data/corrections/ is committed
+
+### 3. GitHub Commits
+
+**Commit Strategy:**
+- Group related changes into logical commits
+- Use conventional commit format:
+  - `feat:` New features
+  - `fix:` Bug fixes
+  - `refactor:` Code restructuring
+  - `docs:` Documentation only
+  - `chore:` Maintenance tasks
+  - `perf:` Performance improvements
+
+**Example Workflow:**
+```powershell
+# Stage related files
+git add utilities/NewScript.ps1
+git add docs/NEW_FEATURE.md
+
+# Commit with descriptive message
+git commit -m "feat: add automated anomaly detection for creature IDs
+
+- New script validates creature ID ranges
+- Generates triage reports for manual review
+- Integrates with MasterPipeline.ps1
+
+Resolves issue with high ID outliers"
+
+# Push to remote
+git push origin v2.1-dev
+```
+
+### 4. Update Instruction Files
+
+**After discovering new patterns:**
+1. Add to "Discovered Project Patterns" section
+2. Include date, files affected, description
+3. Provide code example if applicable
+
+**After encountering gotchas:**
+1. Add to "Project-Specific Gotchas" section
+2. Document problem, solution, and prevention
+3. Reference related files
+
+**After creating new workflows:**
+1. Add to "Common Tasks" section
+2. Provide step-by-step instructions
+3. Include example commands
+
+### 5. Maintenance Checklist
+
+- [ ] All working files committed to git
+- [ ] Obsolete scripts moved to archive/
+- [ ] Documentation updated and consolidated
+- [ ] Instruction files reflect new discoveries
+- [ ] Data integrity verified (checksums)
+- [ ] Branch pushed to GitHub
+- [ ] Clean working directory (`git status` clean)
+
+**Pro Tip**: Run this checklist before ending each work session to keep the repository clean and maintainable.
 
 ---
 
