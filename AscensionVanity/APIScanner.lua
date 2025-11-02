@@ -17,7 +17,7 @@ AscensionVanityDump = AscensionVanityDump or {
     GameVersion = nil,             -- WoW client version (e.g., "3.3.5")
     GameBuild = nil,               -- Client build number (e.g., "12340")
     GameBuildDate = nil,           -- WoW build date (e.g., "Jun 24 2010")
-    CustomVersion = nil,           -- Ascension custom version (if available via API)
+    AscensionVersion = nil,        -- Ascension custom version (if available via API)
     AddonVersion = nil,            -- AscensionVanity addon version at scan time
     ServerVersionNote = nil        -- Manual note: Paste /version output here if needed
 }
@@ -126,8 +126,41 @@ function AV_ScanAllItems()
     scanState.startTime = time()
     scanState.scannedItems = 0
     
-    -- Clear previous dump data
-    AscensionVanityDump.APIDump = {}
+    -- Capture game version info BEFORE scanning
+    local version, build, buildDate = GetBuildInfo()
+    
+    -- Capture Ascension custom version using GetClientVersion()
+    local ascensionVersion = "Unknown"
+    if GetClientVersion then
+        local success, result1, result2, result3, result4 = pcall(GetClientVersion)
+        if success and result1 then
+            local dateStr = tostring(result1 or "")
+            local timeStr = tostring(result2 or "")
+            local branch = tostring(result3 or "")
+            
+            if dateStr ~= "" and timeStr ~= "" then
+                ascensionVersion = dateStr .. " @ " .. timeStr
+                if branch ~= "" and branch ~= "nil" then
+                    ascensionVersion = ascensionVersion .. " " .. branch
+                end
+            end
+        elseif not success then
+            Print("  ⚠ GetClientVersion() failed: " .. tostring(result1))
+        end
+    end
+    
+    -- Initialize metadata FIRST (alphabetically sorted, APIDump will be added LAST)
+    AscensionVanityDump = {
+        AddonVersion = GetAddOnMetadata(AddonName, "Version") or "2.1",
+        AscensionVersion = ascensionVersion,
+        GameBuild = build or "Unknown",
+        GameBuildDate = buildDate or "Unknown",
+        GameVersion = version or "Unknown",
+        LastScanDate = date("%Y-%m-%d %H:%M:%S"),
+        ScanVersion = "2.1",
+        TotalItems = 0,  -- Will be updated after scan
+        APIDump = {}     -- Populated last
+    }
     
     -- Scan all items (filtering happens in ProcessItemData)
     Print("Scanning vanity collection...")
@@ -143,47 +176,10 @@ function AV_ScanAllItems()
         totalScanned = totalScanned + 1
     end
     
-    Print("  → Found " .. totalScanned .. " items")
-    
-    -- Capture game client version info
-    local version, build, buildDate = GetBuildInfo()
-    
-    -- Capture Ascension custom version using GetClientVersion()
-    -- Returns: [1]=date (e.g. "2025-11-01"), [2]=time (e.g. "16:21:03 GMT"), 
-    --          [3]=branch (e.g. "Not Available"), [4]=boolean
-    local customVersionFull = "Unknown"
-    
-    if GetClientVersion then
-        local success, result1, result2, result3, result4 = pcall(GetClientVersion)
-        if success and result1 then
-            -- GetClientVersion returns 4 values directly, not a table!
-            local dateStr = tostring(result1 or "")
-            local timeStr = tostring(result2 or "")
-            local branch = tostring(result3 or "")
-            
-            -- Build version string like /version command: "2025-11-01 @ 16:21:03 GMT Not Available"
-            if dateStr ~= "" and timeStr ~= "" then
-                customVersionFull = dateStr .. " @ " .. timeStr
-                if branch ~= "" and branch ~= "nil" then
-                    customVersionFull = customVersionFull .. " " .. branch
-                end
-            end
-        elseif not success then
-            -- GetClientVersion() failed - log it but continue
-            Print("  ⚠ GetClientVersion() failed: " .. tostring(result1))
-        end
-    end
-    
-    -- Update metadata (alphabetically sorted, APIDump comes last)
-    AscensionVanityDump.AddonVersion = GetAddOnMetadata(AddonName, "Version") or "2.1"
-    AscensionVanityDump.CustomVersion = customVersionFull          -- Ascension custom version (e.g., "2025-11-01 16:21:03 GMT")
-    AscensionVanityDump.GameBuild = build or "Unknown"
-    AscensionVanityDump.GameBuildDate = buildDate or "Unknown"     -- Original WoW build date
-    AscensionVanityDump.GameVersion = version or "Unknown"
-    AscensionVanityDump.LastScanDate = date("%Y-%m-%d %H:%M:%S")
-    AscensionVanityDump.ScanVersion = "2.1"
+    -- Update total items count
     AscensionVanityDump.TotalItems = totalScanned
-    -- APIDump is already populated above, comes last for easier reading
+    
+    Print("  → Found " .. totalScanned .. " items")
     
     scanState.isScanning = false
     scanState.scannedItems = totalScanned
@@ -196,7 +192,7 @@ function AV_ScanAllItems()
     Print("  → Time elapsed: " .. elapsed .. " seconds")
     Print("  → Scan Date: " .. (AscensionVanityDump.LastScanDate or "Unknown"))
     Print("  → Game Version: " .. (AscensionVanityDump.GameVersion or "Unknown") .. " (Build: " .. (AscensionVanityDump.GameBuild or "Unknown") .. ")")
-    Print("  → Ascension Build: " .. (AscensionVanityDump.CustomVersion or "Unknown"))
+    Print("  → Ascension Build: " .. (AscensionVanityDump.AscensionVersion or "Unknown"))
     Print("  → Addon Version: " .. (AscensionVanityDump.AddonVersion or "Unknown"))
     Print("  → Data saved to: AscensionVanity_Dump.lua")
     Print("========================================")
@@ -238,7 +234,7 @@ function AV_GetScanStats()
     Print("Items in Dump: " .. itemCount)
     Print("Scan Version: " .. (AscensionVanityDump.ScanVersion or "Unknown"))
     Print("Game Version: " .. (AscensionVanityDump.GameVersion or "Unknown") .. " (Build: " .. (AscensionVanityDump.GameBuild or "Unknown") .. ")")
-    Print("Ascension Build: " .. (AscensionVanityDump.CustomVersion or "Unknown"))
+    Print("Ascension Build: " .. (AscensionVanityDump.AscensionVersion or "Unknown"))
     Print("Addon Version: " .. (AscensionVanityDump.AddonVersion or "Unknown"))
     
     if scanState.isScanning then

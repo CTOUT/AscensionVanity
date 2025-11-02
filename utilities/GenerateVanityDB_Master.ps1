@@ -109,7 +109,7 @@ $scanMetadata = ""
 $scanFile = ".\data\AscensionVanity.lua"
 if (Test-Path $scanFile) {
     $scanContent = Get-Content $scanFile -Raw
-    if ($scanContent -match '\["CustomVersion"\]\s*=\s*"([^"]+)"') {
+    if ($scanContent -match '\["AscensionVersion"\]\s*=\s*"([^"]+)"') {
         $customVer = $matches[1]
         $scanMetadata = "`n-- Source Scan: Ascension $customVer"
     }
