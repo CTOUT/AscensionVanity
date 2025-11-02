@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 11:48:08
+-- Generated: 2025-11-02 12:05:04
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -20,7 +20,7 @@ AV_VanityItems = {
         itemid = 79317,
         name = "Beastmaster's Whistle: Forest Spider",
         creaturePreview = 30,
-        description = "",
+        description = "Has a chance to drop from Forest Spider within Elwynn Forest",
         icon = 1
     },
     [79336] = {
@@ -34,14 +34,14 @@ AV_VanityItems = {
         itemid = 79337,
         name = "Beastmaster's Whistle: Timber Wolf",
         creaturePreview = 69,
-        description = "",
+        description = "Has a chance to drop from Timber Wolf within Elwynn Forest",
         icon = 1
     },
     [79345] = {
         itemid = 79345,
         name = "Beastmaster's Whistle: Stonetusk Boar",
         creaturePreview = 113,
-        description = "",
+        description = "Has a chance to drop from Stonetusk Boar within Elwynn Forest",
         icon = 1
     },
     [79346] = {
@@ -55,7 +55,7 @@ AV_VanityItems = {
         itemid = 79348,
         name = "Beastmaster's Whistle: Greater Fleshripper",
         creaturePreview = 154,
-        description = "",
+        description = "Has a chance to drop from Greater Fleshripper within Westfall",
         icon = 1
     },
     [79349] = {
@@ -230,7 +230,7 @@ AV_VanityItems = {
         itemid = 79373,
         name = "Beastmaster's Whistle: Young Stranglethorn Tiger",
         creaturePreview = 681,
-        description = "",
+        description = "Has a chance to drop from Young Stranglethorn Tiger within Stranglethorn Vale",
         icon = 1
     },
     [79374] = {
@@ -258,7 +258,7 @@ AV_VanityItems = {
         itemid = 79377,
         name = "Beastmaster's Whistle: Stranglethorn Raptor",
         creaturePreview = 685,
-        description = "",
+        description = "Has a chance to drop from Stranglethorn Raptor within Stranglethorn Vale",
         icon = 1
     },
     [79378] = {
@@ -363,14 +363,14 @@ AV_VanityItems = {
         itemid = 79392,
         name = "Beastmaster's Whistle: Young Forest Bear",
         creaturePreview = 822,
-        description = "",
+        description = "Has a chance to drop from Young Forest Bear within Elwynn Forest",
         icon = 1
     },
     [79393] = {
         itemid = 79393,
         name = "Beastmaster's Whistle: Sand Crawler",
         creaturePreview = 830,
-        description = "",
+        description = "Has a chance to drop from Sand Crawler within Westfall",
         icon = 1
     },
     [79394] = {
@@ -531,7 +531,7 @@ AV_VanityItems = {
         itemid = 79418,
         name = "Beastmaster's Whistle: Sawtooth Crocolisk",
         creaturePreview = 1082,
-        description = "",
+        description = "Has a chance to drop from Sawtooth Crocolisk within Swamp of Sorrows",
         icon = 1
     },
     [79419] = {
@@ -566,7 +566,7 @@ AV_VanityItems = {
         itemid = 79423,
         name = "Beastmaster's Whistle: Mistvale Gorilla",
         creaturePreview = 1108,
-        description = "",
+        description = "Has a chance to drop from Mistvale Gorilla within Stranglethorn Vale",
         icon = 1
     },
     [79424] = {
@@ -860,7 +860,7 @@ AV_VanityItems = {
         itemid = 79465,
         name = "Beastmaster's Whistle: Duskbat",
         creaturePreview = 1512,
-        description = "",
+        description = "Has a chance to drop from Duskbat within Tirisfal Glades",
         icon = 1
     },
     [79466] = {
@@ -1084,7 +1084,7 @@ AV_VanityItems = {
         itemid = 79497,
         name = "Beastmaster's Whistle: Strigid Owl",
         creaturePreview = 1995,
-        description = "",
+        description = "Has a chance to drop from Strigid Owl within Teldrassil",
         icon = 1
     },
     [79498] = {
@@ -1217,7 +1217,7 @@ AV_VanityItems = {
         itemid = 79519,
         name = "Beastmaster's Whistle: Strider Clutchmother",
         creaturePreview = 2172,
-        description = "",
+        description = "Has a chance to drop from Strider Clutchmother within Darkshore",
         icon = 1
     },
     [79520] = {
@@ -1371,7 +1371,7 @@ AV_VanityItems = {
         itemid = 79542,
         name = "Beastmaster's Whistle: Snapjaw",
         creaturePreview = 2408,
-        description = "",
+        description = "Has a chance to drop from Snapjaw within Hillsbrad Foothills",
         icon = 1
     },
     [79543] = {
@@ -1784,7 +1784,7 @@ AV_VanityItems = {
         itemid = 79601,
         name = "Beastmaster's Whistle: Scorpid Worker",
         creaturePreview = 3124,
-        description = "",
+        description = "Has a chance to drop from Scorpid Worker within Durotar",
         icon = 1
     },
     [79602] = {
@@ -1882,7 +1882,7 @@ AV_VanityItems = {
         itemid = 79615,
         name = "Beastmaster's Whistle: Thunderhawk Hatchling",
         creaturePreview = 3247,
-        description = "",
+        description = "Has a chance to drop from Thunderhawk Hatchling within The Barrens",
         icon = 1
     },
     [79616] = {
@@ -1987,7 +1987,7 @@ AV_VanityItems = {
         itemid = 79630,
         name = "Beastmaster's Whistle: Sewer Beast",
         creaturePreview = 3581,
-        description = "",
+        description = "Has a chance to drop from Sewer Beast within Stormwind City",
         icon = 1
     },
     [79631] = {
@@ -2176,7 +2176,7 @@ AV_VanityItems = {
         itemid = 79657,
         name = "Beastmaster's Whistle: Fledgling Chimaera",
         creaturePreview = 4031,
-        description = "",
+        description = "Has a chance to drop from Fledgling Chimaera within Stonetalon Mountains",
         icon = 1
     },
     [79658] = {
@@ -2239,7 +2239,7 @@ AV_VanityItems = {
         itemid = 79666,
         name = "Beastmaster's Whistle: Hecklefang Hyena",
         creaturePreview = 4127,
-        description = "",
+        description = "Has a chance to drop from Hecklefang Hyena within The Barrens",
         icon = 1
     },
     [79667] = {
@@ -2260,7 +2260,7 @@ AV_VanityItems = {
         itemid = 79669,
         name = "Beastmaster's Whistle: Silithid Ravager",
         creaturePreview = 4132,
-        description = "",
+        description = "Has a chance to drop from Silithid Ravager within Thousand Needles",
         icon = 1
     },
     [79670] = {
@@ -2400,7 +2400,7 @@ AV_VanityItems = {
         itemid = 79689,
         name = "Beastmaster's Whistle: Bloodfen Raptor",
         creaturePreview = 4351,
-        description = "",
+        description = "Has a chance to drop from Bloodfen Raptor within Dustwallow Marsh",
         icon = 1
     },
     [79690] = {
@@ -2673,7 +2673,7 @@ AV_VanityItems = {
         itemid = 79751,
         name = "Beastmaster's Whistle: Deviate Adder",
         creaturePreview = 5048,
-        description = "",
+        description = "Has a chance to drop from Deviate Adder within Wailing Caverns",
         icon = 1
     },
     [79752] = {
@@ -2708,7 +2708,7 @@ AV_VanityItems = {
         itemid = 79757,
         name = "Beastmaster's Whistle: Murk Worm",
         creaturePreview = 5226,
-        description = "",
+        description = "Has a chance to drop from Murk Worm within The Temple of Atal'Hakkar",
         icon = 1
     },
     [79758] = {
@@ -3065,14 +3065,14 @@ AV_VanityItems = {
         itemid = 79892,
         name = "Beastmaster's Whistle: Devilsaur",
         creaturePreview = 6498,
-        description = "",
+        description = "Has a chance to drop from Devilsaur within Un'Goro Crater",
         icon = 1
     },
     [79893] = {
         itemid = 79893,
         name = "Beastmaster's Whistle: Ironhide Devilsaur",
         creaturePreview = 6499,
-        description = "",
+        description = "Has a chance to drop from Ironhide Devilsaur within Un'Goro Crater",
         icon = 1
     },
     [79918] = {
@@ -3331,7 +3331,7 @@ AV_VanityItems = {
         itemid = 80034,
         name = "Beastmaster's Whistle: Chillwind Ravager",
         creaturePreview = 7449,
-        description = "",
+        description = "Has a chance to drop from Chillwind Ravager within Winterspring",
         icon = 1
     },
     [80035] = {
@@ -3513,7 +3513,7 @@ AV_VanityItems = {
         itemid = 80063,
         name = "Beastmaster's Whistle: Felpaw Wolf",
         creaturePreview = 8959,
-        description = "",
+        description = "Has a chance to drop from Felpaw Wolf within Felwood",
         icon = 1
     },
     [80064] = {
@@ -3632,7 +3632,7 @@ AV_VanityItems = {
         itemid = 80088,
         name = "Beastmaster's Whistle: Spire Spiderling",
         creaturePreview = 10375,
-        description = "",
+        description = "Has a chance to drop from Spire Spiderling within Blackrock Spire",
         icon = 1
     },
     [80089] = {
@@ -3681,21 +3681,21 @@ AV_VanityItems = {
         itemid = 80096,
         name = "Beastmaster's Whistle: Soulflayer",
         creaturePreview = 11359,
-        description = "",
+        description = "Has a chance to drop from Soulflayer within Zul'Gurub",
         icon = 1
     },
     [80098] = {
         itemid = 80098,
         name = "Beastmaster's Whistle: Zulian Tiger",
         creaturePreview = 11361,
-        description = "",
+        description = "Has a chance to drop from Zulian Tiger within Zul'Gurub",
         icon = 1
     },
     [80099] = {
         itemid = 80099,
         name = "Beastmaster's Whistle: Zulian Panther",
         creaturePreview = 11365,
-        description = "",
+        description = "Has a chance to drop from Zulian Panther within Zul'Gurub",
         icon = 1
     },
     [80105] = {
@@ -3709,7 +3709,7 @@ AV_VanityItems = {
         itemid = 80106,
         name = "Beastmaster's Whistle: Ancient Core Hound",
         creaturePreview = 11673,
-        description = "",
+        description = "Has a chance to drop from Ancient Core Hound within Molten Core",
         icon = 1
     },
     [80107] = {
@@ -4073,7 +4073,7 @@ AV_VanityItems = {
         itemid = 80297,
         name = "Beastmaster's Whistle: Feral Dragonhawk Hatchling",
         creaturePreview = 15649,
-        description = "",
+        description = "Has a chance to drop from Feral Dragonhawk Hatchling within Eversong Woods",
         icon = 1
     },
     [80298] = {
@@ -4171,7 +4171,7 @@ AV_VanityItems = {
         itemid = 80343,
         name = "Beastmaster's Whistle: Vale Moth",
         creaturePreview = 16520,
-        description = "",
+        description = "Has a chance to drop from Vale Moth within Azuremyst Isle",
         icon = 1
     },
     [80344] = {
@@ -4241,14 +4241,14 @@ AV_VanityItems = {
         itemid = 80353,
         name = "Beastmaster's Whistle: Goretooth",
         creaturePreview = 17144,
-        description = "",
+        description = "Has a chance to drop from Goretooth within Nagrand",
         icon = 1
     },
     [80354] = {
         itemid = 80354,
         name = "Beastmaster's Whistle: Ravager Specimen",
         creaturePreview = 17199,
-        description = "",
+        description = "Has a chance to drop from Ravager Specimen within Azuremyst Isle",
         icon = 1
     },
     [80355] = {
@@ -4353,7 +4353,7 @@ AV_VanityItems = {
         itemid = 80474,
         name = "Beastmaster's Whistle: The Kurken",
         creaturePreview = 17447,
-        description = "",
+        description = "Has a chance to drop from The Kurken within Azuremyst Isle",
         icon = 1
     },
     [80475] = {
@@ -4486,7 +4486,7 @@ AV_VanityItems = {
         itemid = 80525,
         name = "Beastmaster's Whistle: Bloodfalcon",
         creaturePreview = 18155,
-        description = "",
+        description = "Has a chance to drop from Bloodfalcon within The Botanica",
         icon = 1
     },
     [80526] = {
@@ -4661,7 +4661,7 @@ AV_VanityItems = {
         itemid = 80607,
         name = "Beastmaster's Whistle: Cobalt Serpent",
         creaturePreview = 19428,
-        description = "",
+        description = "Has a chance to drop from Cobalt Serpent within Sethekk Halls",
         icon = 1
     },
     [80608] = {
@@ -4920,7 +4920,7 @@ AV_VanityItems = {
         itemid = 80649,
         name = "Beastmaster's Whistle: Blackwind Sabercat",
         creaturePreview = 21723,
-        description = "",
+        description = "Has a chance to drop from Blackwind Sabercat within Terokkar Forest",
         icon = 1
     },
     [80650] = {
@@ -6047,14 +6047,14 @@ AV_VanityItems = {
         itemid = 82368,
         name = "Summoner's Stone: Aligar the Tormentor",
         creaturePreview = 3898,
-        description = "",
+        description = "Has a chance to drop from Aligar the Tormentor within Darkshore",
         icon = 3
     },
     [82370] = {
         itemid = 82370,
         name = "Summoner's Stone: Caedakar the Vicious",
         creaturePreview = 3900,
-        description = "",
+        description = "Has a chance to drop from Caedakar the Vicious within Darkshore",
         icon = 3
     },
     [82371] = {
@@ -6292,7 +6292,7 @@ AV_VanityItems = {
         itemid = 82734,
         name = "Summoner's Stone: Razelikh the Defiler",
         creaturePreview = 7664,
-        description = "",
+        description = "Has a chance to drop from Razelikh the Defiler within Blasted Lands",
         icon = 3
     },
     [82744] = {
@@ -6334,7 +6334,7 @@ AV_VanityItems = {
         itemid = 82777,
         name = "Summoner's Stone: Xabraxxis",
         creaturePreview = 10373,
-        description = "",
+        description = "Has a chance to drop from Xabraxxis within Darkshore",
         icon = 3
     },
     [82778] = {
@@ -6355,7 +6355,7 @@ AV_VanityItems = {
         itemid = 82780,
         name = "Summoner's Stone: Balnazzar",
         creaturePreview = 10813,
-        description = "",
+        description = "Has a chance to drop from Balnazzar within Stratholme",
         icon = 3
     },
     [82781] = {
@@ -6453,7 +6453,7 @@ AV_VanityItems = {
         itemid = 82875,
         name = "Summoner's Stone: Demon Spirit",
         creaturePreview = 11876,
-        description = "",
+        description = "Has a chance to drop from Demon Spirit within Desolace",
         icon = 3
     },
     [82876] = {
@@ -6495,7 +6495,7 @@ AV_VanityItems = {
         itemid = 82983,
         name = "Summoner's Stone: Xorothian Dreadsteed",
         creaturePreview = 14502,
-        description = "",
+        description = "Has a chance to drop from Xorothian Dreadsteed within Dire Maul",
         icon = 3
     },
     [82985] = {
@@ -6887,7 +6887,7 @@ AV_VanityItems = {
         itemid = 84106,
         name = "Summoner's Stone: Ekkorash the Inquisitor",
         creaturePreview = 19493,
-        description = "",
+        description = "Has a chance to drop from Ekkorash the Inquisitor within Netherstorm",
         icon = 3
     },
     [84108] = {
@@ -7020,7 +7020,7 @@ AV_VanityItems = {
         itemid = 84301,
         name = "Summoner's Stone: Doomcryer",
         creaturePreview = 19963,
-        description = "",
+        description = "Has a chance to drop from Doomcryer within Blade's Edge Mountains",
         icon = 3
     },
     [84304] = {
@@ -7335,7 +7335,7 @@ AV_VanityItems = {
         itemid = 85155,
         name = "Summoner's Stone: Illidari Satyr",
         creaturePreview = 21656,
-        description = "",
+        description = "Has a chance to drop from Illidari Satyr within Shadowmoon Valley",
         icon = 3
     },
     [85156] = {
@@ -7391,7 +7391,7 @@ AV_VanityItems = {
         itemid = 85209,
         name = "Summoner's Stone: Galvanoth",
         creaturePreview = 22281,
-        description = "",
+        description = "Has a chance to drop from Galvanoth within Blade's Edge Mountains",
         icon = 3
     },
     [85243] = {
@@ -7482,14 +7482,14 @@ AV_VanityItems = {
         itemid = 85586,
         name = "Summoner's Stone: Braxxus",
         creaturePreview = 23353,
-        description = "",
+        description = "Has a chance to drop from Braxxus within Blade's Edge Mountains",
         icon = 3
     },
     [85637] = {
         itemid = 85637,
         name = "Summoner's Stone: Zarcsin",
         creaturePreview = 23355,
-        description = "",
+        description = "Has a chance to drop from Zarcsin within Blade's Edge Mountains",
         icon = 3
     },
     [85690] = {
@@ -7566,14 +7566,14 @@ AV_VanityItems = {
         itemid = 85718,
         name = "Blood Soaked Vellum: Flesh Eater",
         creaturePreview = 3,
-        description = "",
+        description = "Has a chance to drop from Flesh Eater within Duskwood",
         icon = 2
     },
     [85719] = {
         itemid = 85719,
         name = "Blood Soaked Vellum: Skeletal Warrior",
         creaturePreview = 48,
-        description = "",
+        description = "Has a chance to drop from Skeletal Warrior within Duskwood",
         icon = 2
     },
     [85720] = {
@@ -7601,7 +7601,7 @@ AV_VanityItems = {
         itemid = 85723,
         name = "Blood Soaked Vellum: Eliza",
         creaturePreview = 314,
-        description = "",
+        description = "Has a chance to drop from Eliza within Duskwood",
         icon = 2
     },
     [85745] = {
@@ -7818,7 +7818,7 @@ AV_VanityItems = {
         itemid = 86072,
         name = "Blood Soaked Vellum: Bleeding Horror",
         creaturePreview = 1529,
-        description = "",
+        description = "Has a chance to drop from Bleeding Horror within Tirisfal Glades",
         icon = 2
     },
     [86077] = {
@@ -7832,7 +7832,7 @@ AV_VanityItems = {
         itemid = 86078,
         name = "Blood Soaked Vellum: Lost Soul",
         creaturePreview = 1531,
-        description = "",
+        description = "Has a chance to drop from Lost Soul within Tirisfal Glades",
         icon = 2
     },
     [86085] = {
@@ -7874,7 +7874,7 @@ AV_VanityItems = {
         itemid = 86105,
         name = "Blood Soaked Vellum: Devlin Agamand",
         creaturePreview = 1657,
-        description = "",
+        description = "Has a chance to drop from Devlin Agamand within Tirisfal Glades",
         icon = 2
     },
     [86106] = {
@@ -7944,7 +7944,7 @@ AV_VanityItems = {
         itemid = 86488,
         name = "Blood Soaked Vellum: Searing Ghoul",
         creaturePreview = 1795,
-        description = "",
+        description = "Has a chance to drop from Searing Ghoul within Western Plaguelands",
         icon = 2
     },
     [86506] = {
@@ -11878,7 +11878,7 @@ AV_VanityItems = {
         itemid = 601067,
         name = "Elemental Lodestone: Swamp Spirit",
         creaturePreview = 6932,
-        description = "",
+        description = "Has a chance to drop from Swamp Spirit within Swamp of Sorrows",
         icon = 5
     },
     [601068] = {
@@ -14293,7 +14293,7 @@ AV_VanityItems = {
         itemid = 1180510,
         name = "Draconic Warhorn: Blackscale",
         creaturePreview = 21497,
-        description = "",
+        description = "Has a chance to drop from Blackscale within Blade's Edge Mountains",
         icon = 4
     },
     [1180511] = {
@@ -14335,7 +14335,7 @@ AV_VanityItems = {
         itemid = 1180526,
         name = "Draconic Warhorn: Infinite Whelp",
         creaturePreview = 21818,
-        description = "",
+        description = "Has a chance to drop from Infinite Whelp within The Black Morass",
         icon = 4
     },
     [1180527] = {
@@ -14433,7 +14433,7 @@ AV_VanityItems = {
         itemid = 1180599,
         name = "Draconic Warhorn: Smolderwing",
         creaturePreview = 23789,
-        description = "",
+        description = "Has a chance to drop from Smolderwing within Dustwallow Marsh",
         icon = 4
     },
     [1180603] = {
@@ -14699,7 +14699,7 @@ AV_VanityItems = {
         itemid = 1180833,
         name = "Draconic Warhorn: Tempus Wyrm",
         creaturePreview = 32180,
-        description = "",
+        description = "Has a chance to drop from Tempus Wyrm within Dragonblight",
         icon = 4
     },
     [1180852] = {
