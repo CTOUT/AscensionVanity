@@ -1,13 +1,18 @@
 -- AscensionVanity Full Database
--- Generated: 2025-11-02 08:43:58
--- Total items: 2353
+-- Generated: 2025-11-02 09:24:34
+-- Total Items: 2353
+-- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
+-- Scan Date: 2025-11-02 09:16:07
+-- 
+-- Database Structure:
+--   AV_IconList: Deduplicated icon paths referenced by index
+--   AV_VanityItems: Combat pet items indexed by game item ID
+-- 
+-- Categories: Beast, Demon, Elemental, Dragonkin, Undead
+-- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
 
 AV_IconList = {
-    [1] = "Ability_Hunter_BeastCall",
-    [2] = "Ability_DK_RuneWeapon",
-    [3] = "Spell_Shadow_SummonFelGuard",
-    [4] = "Spell_Nature_WispSplode",
-    [5] = "Spell_Fire_SelfDestruct"
+
 }
 
 AV_VanityItems = {

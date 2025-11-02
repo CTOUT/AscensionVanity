@@ -12,12 +12,13 @@ local defaults = {
     debug = false,               -- Enable debug logging
     
     -- Category Filters (v2.1+)
+    -- Five combat pet categories matching Group IDs from Ascension database
     categoryFilters = {
-        pet = true,              -- Beastmaster's Whistle (Combat Pets)
-        demon = true,            -- Blood Soaked Vellum (Demons)
-        elemental = true,        -- Summoner's Stone (Elementals/Satyrs)
-        dragonkin = true,        -- Draconic Warhorn (Dragonkin)
-        totem = true             -- Elemental Lodestone (Totems/Elementals)
+        beast = true,            -- Beastmaster's Whistle (Group 16777217)
+        undead = true,           -- Blood Soaked Vellum (Group 16777220)
+        demon = true,            -- Summoner's Stone (Group 16777218)
+        dragonkin = true,        -- Draconic Warhorn (Group 16777224)
+        elemental = true         -- Elemental Lodestone (Group 16777232)
     },
     
     -- Combat Behavior (v2.1+)

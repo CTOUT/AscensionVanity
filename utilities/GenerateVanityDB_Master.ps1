@@ -54,19 +54,60 @@ foreach ($it in $items) {
 Write-Host "Emitted items: $($processed.Count)" -ForegroundColor Green
 Write-Host "Skipped items (missing data/category): $skipped" -ForegroundColor Yellow
 
-# Build DB content
+# Gather unique icons from processed items
+Write-Host "Analyzing unique icons..." -ForegroundColor Cyan
+$uniqueIcons = @{}
+foreach ($it in $items) {
+    if ($it.Icon -and $it.Icon -ne "") {
+        $cleanIcon = $it.Icon -replace 'Interface\\Icons\\', ''
+        if (-not $uniqueIcons.ContainsKey($cleanIcon)) {
+            $uniqueIcons[$cleanIcon] = $true
+        }
+    }
+}
+$iconArray = $uniqueIcons.Keys | Sort-Object
+Write-Host "  Found $($iconArray.Count) unique icons" -ForegroundColor Gray
+
+# Build DB content with metadata
 $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+
+# Try to get source scan metadata
+$scanMetadata = ""
+$scanFile = ".\data\AscensionVanity.lua"
+if (Test-Path $scanFile) {
+    $scanContent = Get-Content $scanFile -Raw
+    if ($scanContent -match '\["CustomVersion"\]\s*=\s*"([^"]+)"') {
+        $customVer = $matches[1]
+        $scanMetadata = "`n-- Source Scan: Ascension $customVer"
+    }
+    if ($scanContent -match '\["LastScanDate"\]\s*=\s*"([^"]+)"') {
+        $scanDate = $matches[1]
+        $scanMetadata += "`n-- Scan Date: $scanDate"
+    }
+}
+
+$iconListContent = ""
+$iconIndex = 1
+foreach ($icon in $iconArray) {
+    $iconListContent += "    [$iconIndex] = `"$icon`","
+    $iconIndex++
+}
+$iconListContent = $iconListContent.TrimEnd(',')
+
 $header = @"
 -- AscensionVanity Full Database
 -- Generated: $timestamp
--- Total items: $($processed.Count)
+-- Total Items: $($processed.Count)$scanMetadata
+-- 
+-- Database Structure:
+--   AV_IconList: Deduplicated icon paths referenced by index
+--   AV_VanityItems: Combat pet items indexed by game item ID
+-- 
+-- Categories: Beast, Demon, Elemental, Dragonkin, Undead
+-- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
 
 AV_IconList = {
-    [1] = "Ability_Hunter_BeastCall",
-    [2] = "Ability_DK_RuneWeapon",
-    [3] = "Spell_Shadow_SummonFelGuard",
-    [4] = "Spell_Nature_WispSplode",
-    [5] = "Spell_Fire_SelfDestruct"
+$iconListContent
 }
 
 AV_VanityItems = {
