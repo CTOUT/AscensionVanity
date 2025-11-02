@@ -399,30 +399,40 @@ end
 
 -- Auto-save settings on change (no confirmation needed)
 local function SaveSettings()
-    -- Convert WoW checkbox values (1/nil) to proper booleans (true/false)
-    AscensionVanityDB.enabled = enabledCheckbox:GetChecked() and true or false
-    AscensionVanityDB.colorCode = colorCheckbox:GetChecked() and true or false
-    AscensionVanityDB.showLearnedStatus = learnedCheckbox:GetChecked() and true or false
-    AscensionVanityDB.showRegions = regionsCheckbox:GetChecked() and true or false
+    -- Rebuild SavedVariables in alphabetical order to ensure clean output
+    -- Note: WoW serializes tables in insertion order, so we rebuild the entire table
     
-    -- Save category filter settings (v2.1+)
-    if not AscensionVanityDB.categoryFilters then
-        AscensionVanityDB.categoryFilters = {}
-    end
-    for category, checkbox in pairs(settingsPanel.categoryCheckboxes) do
-        -- WoW checkboxes return 1 (truthy) or nil; store strict boolean
-        AscensionVanityDB.categoryFilters[category] = checkbox:GetChecked() and true or false
-    end
-    
-    -- Save combat behavior setting (v2.1+)
+    -- Capture combat behavior first
+    local combatBehavior = "hide"
     for _, radio in pairs(settingsPanel.combatRadios) do
         if radio:GetChecked() then
-            AscensionVanityDB.combatBehavior = radio.value
+            combatBehavior = radio.value
             break
         end
     end
     
-    -- Note: debug setting now in Scanner UI
+    -- Rebuild categoryFilters in alphabetical order
+    local categoryFilters = {
+        beast = settingsPanel.categoryCheckboxes.beast:GetChecked() and true or false,
+        demon = settingsPanel.categoryCheckboxes.demon:GetChecked() and true or false,
+        dragonkin = settingsPanel.categoryCheckboxes.dragonkin:GetChecked() and true or false,
+        elemental = settingsPanel.categoryCheckboxes.elemental:GetChecked() and true or false,
+        undead = settingsPanel.categoryCheckboxes.undead:GetChecked() and true or false
+    }
+    
+    -- Rebuild entire SavedVariables table in alphabetical order
+    AscensionVanityDB = {
+        categoryFilters = categoryFilters,
+        colorCode = colorCheckbox:GetChecked() and true or false,
+        combatBehavior = combatBehavior,
+        debug = AscensionVanityDB.debug or false,  -- Preserve debug setting (set in Scanner UI)
+        enabled = enabledCheckbox:GetChecked() and true or false,
+        eventSpy = AscensionVanityDB.eventSpy or false,  -- Preserve eventSpy (if used elsewhere)
+        showLearnedStatus = learnedCheckbox:GetChecked() and true or false,
+        showRegions = regionsCheckbox:GetChecked() and true or false
+    }
+    
+    -- Note: debug and eventSpy settings are preserved from current values
     -- No chat spam - changes are saved silently
 end
 
