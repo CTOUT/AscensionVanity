@@ -15,8 +15,35 @@ test_*.txt
 MissingItems_Report.txt
 SkippedItems_Detailed.txt
 
-# Imported data from game (may contain user-specific info)
-data/
+# Data folder - selective tracking
+# Track: corrections/, README.md (version controlled)
+# Ignore: sources/, processed/, backups/, raw scan files (generated/large)
+
+# Ignore source files (large, generated from game)
+data/sources/
+data/processed/
+data/backups/
+data/triage/
+
+# Ignore symlinks to SavedVariables
+data/AscensionVanity.lua
+data/AscensionVanity.lua.bak
+
+# Ignore raw scan files and analysis reports
+data/*.lua
+data/*_OLD.lua
+data/*_Transformed.lua
+data/API_to_GameID_Mapping*.json
+data/*.csv
+data/*_Analysis.json
+data/*_Validated.json
+data/MasterFullValidated.json
+data/VanityDB.lua
+
+# But KEEP corrections and documentation (version controlled)
+!data/corrections/
+!data/README.md
+
 *.SavedVariables.lua
 
 # Editor/IDE files

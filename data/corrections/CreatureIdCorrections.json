@@ -1,0 +1,16 @@
+{
+  "description": "Manual creature ID corrections for known bad mappings from game data",
+  "lastUpdated": "2025-11-02",
+  "corrections": [
+    {
+      "itemId": 79582,
+      "itemName": "Beastmaster's Whistle: Prairie Stalker",
+      "wrongCreatureId": 98766,
+      "correctCreatureId": 2959,
+      "reason": "High ID (98766) doesn't exist in database. Correct ID found via item lookup.",
+      "verifiedBy": "https://db.ascension.gg/?item=79582",
+      "dateAdded": "2025-11-02",
+      "addedBy": "Manual research"
+    }
+  ]
+}
