@@ -145,11 +145,11 @@ categoryDesc:SetWidth(700)
 categoryDesc:SetJustifyH("CENTER")
 categoryDesc:SetText("|cFF888888Choose which vanity item types to display in tooltips|r")
 
--- Category Filter Checkboxes (Two-column layout)
+-- Category Filter Checkboxes (Two-column layout, alphabetically sorted)
 -- IMPORTANT: Keys must match AscensionVanityConfig.lua categoryFilters
 local categoryCheckboxes = {}
 
--- Left column
+-- Left column (alphabetical: Beast, Demon, Dragonkin)
 categoryCheckboxes.beast = CreateCheckbox(
     settingsPanel,
     "Beastmaster's Whistle - Beasts",
@@ -168,30 +168,30 @@ categoryCheckboxes.demon = CreateCheckbox(
     -8
 )
 
-categoryCheckboxes.undead = CreateCheckbox(
+categoryCheckboxes.dragonkin = CreateCheckbox(
     settingsPanel,
-    "Blood Soaked Vellum - Undead",
-    "Show undead creature summons (ghouls, skeletons, spirits, etc.).",
+    "Draconic Warhorn - Dragonkin",
+    "Show dragonkin companions (whelps, drakes, dragons, etc.).",
     categoryCheckboxes.demon,
     0,
     -8
 )
 
--- Right column
-categoryCheckboxes.dragonkin = CreateCheckbox(
+-- Right column (alphabetical: Elemental, Undead)
+categoryCheckboxes.elemental = CreateCheckbox(
     settingsPanel,
-    "Draconic Warhorn - Dragonkin",
-    "Show dragonkin companions (whelps, drakes, dragons, etc.).",
+    "Elemental Lodestone - Elementals",
+    "Show elemental companions (fire, water, earth, air elementals, etc.).",
     categoryDesc,
     390,  -- Positioned to the right
     -12
 )
 
-categoryCheckboxes.elemental = CreateCheckbox(
+categoryCheckboxes.undead = CreateCheckbox(
     settingsPanel,
-    "Elemental Lodestone - Elementals",
-    "Show elemental companions (fire, water, earth, air elementals, etc.).",
-    categoryCheckboxes.dragonkin,
+    "Blood Soaked Vellum - Undead",
+    "Show undead creature summons (ghouls, skeletons, spirits, etc.).",
+    categoryCheckboxes.elemental,
     0,
     -8
 )
@@ -202,8 +202,8 @@ settingsPanel.categoryCheckboxes = categoryCheckboxes
 -- Separator before combat behavior (positioned below the tallest column)
 local separatorCombat = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCombat:SetHeight(1)
--- Position below left column (elemental is last in left column, totem is in right column)
-separatorCombat:SetPoint("TOP", categoryCheckboxes.elemental, "BOTTOM", 0, -16)
+-- Position below left column (dragonkin is last in left column with 3 items)
+separatorCombat:SetPoint("TOP", categoryCheckboxes.dragonkin, "BOTTOM", 0, -16)
 separatorCombat:SetPoint("LEFT", 30, 0)
 separatorCombat:SetPoint("RIGHT", -30, 0)
 separatorCombat:SetColorTexture(0.25, 0.25, 0.25, 1)
