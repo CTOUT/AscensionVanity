@@ -151,8 +151,11 @@ AV_VanityItems = {
 $db = @($header)
 
 foreach ($p in ($processed | Sort-Object itemid)) {
-    $safeName = $p.name -replace '"','\"'
-    $safeDesc = $p.description -replace '"','\"'
+    # Escape for Lua strings
+    # ConvertFrom-Json unescapes JSON, giving us the actual string
+    # We need to escape backslashes first, then quotes for Lua
+    $safeName = $p.name -replace '\\', '\\' -replace '"', '\"'
+    $safeDesc = $p.description -replace '\\', '\\' -replace '"', '\"'
     $db += ('    [' + $p.itemid + '] = {')
     $db += ('        itemid = ' + $p.itemid + ',')
     $db += ('        name = "' + $safeName + '",')

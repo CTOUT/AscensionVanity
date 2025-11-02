@@ -14,7 +14,7 @@
 #>
 [CmdletBinding()]
 param(
-    [string]$ScanFile = 'data/AscensionVanity_Fresh_Scan_2025-10-28_FINAL.lua',
+    [string]$ScanFile = 'data/AscensionVanity.lua',
     [string]$MappingFile = 'data/API_to_GameID_Mapping.json',
     [string]$ValidatedSubset = 'data/EmptyDescriptions_Validated.json',
     [string]$MasterJsonOut = 'data/MasterFullValidated.json',

@@ -1,0 +1,58 @@
+[
+  {
+    "DbItemId": 480382,
+    "Name": "Beastmaster's Whistle: Captain Claws",
+    "CreatureId": 417217,
+    "Description": "NPC doesn't exist. Possibly a reward, promo, purchase or not yet implemented.",
+    "Category": "Beastmaster's Whistle"
+  },
+  {
+    "DbItemId": 601009,
+    "Name": "Elemental Lodestone: Surging Water Elemental",
+    "CreatureId": 37703,
+    "Description": "NPC exists. Level 10 - found in one of the starting zones (possibly Shaman related NPC).",
+    "Category": "Elemental Lodestone"
+  },
+  {
+    "DbItemId": 601677,
+    "Name": "Elemental Lodestone: Stone Warden",
+    "CreatureId": 6561,
+    "Description": "NPC exists. Level 60-61 found in Classic final zones, dungeons, or raids (possibly Blackrock Depths).",
+    "Category": "Elemental Lodestone"
+  },
+  {
+    "DbItemId": 603976,
+    "Name": "Elemental Lodestone: Silver Golem",
+    "CreatureId": 76,
+    "Description": "Ascension custom NPC named 'Spellwave Elemental'. Loot suggests Drakkari Ice Trolls (possibly Drak'Tharon Keep).",
+    "Category": "Elemental Lodestone"
+  },
+  {
+    "DbItemId": 1180288,
+    "Name": "Draconic Warhorn: Sleeping Dragon",
+    "CreatureId": 9417,
+    "Description": "NPC exists. Level 60 found in Classic final zones, dungeons, or raids associated with Dragons (possibly Blackrock Mountain).",
+    "Category": "Draconic Warhorn"
+  },
+  {
+    "DbItemId": 1180317,
+    "Name": "Draconic Warhorn: Chromatic Whelp",
+    "CreatureId": 148069,
+    "Description": "Ascension custom NPC. Level 57-58 found in Classic final zones, dungeons, or raids with Chromatic dragons (likely Blackrock Mountain).",
+    "Category": "Draconic Warhorn"
+  },
+  {
+    "DbItemId": 1180320,
+    "Name": "Draconic Warhorn: Chromatic Dragonspawn",
+    "CreatureId": 148070,
+    "Description": "Ascension custom NPC. Level 57-58 found in Classic final zones, dungeons, or raids with Chromatic dragons (likely Blackrock Mountain).",
+    "Category": "Draconic Warhorn"
+  },
+  {
+    "DbItemId": 1180511,
+    "Name": "Draconic Warhorn: Blackscale",
+    "CreatureId": 148115,
+    "Description": "Ascension custom NPC. Similar to Chromaggus (NPC 21497). Level 70 presumably found in Blade's Edge Mountains.",
+    "Category": "Draconic Warhorn"
+  }
+]
