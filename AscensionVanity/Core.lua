@@ -540,6 +540,32 @@ frame:SetScript("OnEvent", function(self, event, arg1)
             print("|cFFFFAA00AscensionVanity:|r C_VanityCollection API not available (learned status disabled)")
         end
         
+        -- Check database version vs current Ascension build (v2.1+)
+        if AV_DatabaseInfo then
+            local dbVersion = AV_DatabaseInfo.ascensionVersion or "Unknown"
+            local dbDate = AV_DatabaseInfo.scanDate or "Unknown"
+            
+            -- Get current Ascension build info
+            local currentVersion = "Unknown"
+            local ascensionBuild = GetBuildInfo()  -- Returns build number
+            
+            -- Try to get Ascension-specific version (if API exists)
+            if IsAddOnLoaded("Blizzard_GameMenu") then
+                -- Ascension has custom build info in UI
+                currentVersion = ascensionBuild or "Unknown"
+            end
+            
+            -- Show database info
+            print("|cFF00FF96AscensionVanity:|r Database from: " .. dbDate)
+            print("  → Ascension build: " .. dbVersion)
+            
+            -- Check if database might be outdated (simple date comparison)
+            -- Note: This is a rough check since we don't have real-time version API
+            if dbVersion ~= "Unknown" and not string.find(dbVersion, "2025-11") then
+                print("|cFFFFAA00⚠ Database may be outdated!|r Consider rescanning with |cFFFFFF00/avanity scan|r")
+            end
+        end
+        
     elseif event == "PLAYER_LOGIN" then
         -- Hook into GameTooltip after player login
         GameTooltip:HookScript("OnTooltipSetUnit", OnTooltipSetUnit)

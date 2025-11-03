@@ -177,6 +177,19 @@ foreach ($icon in $iconArray) {
 }
 $iconListContent = $iconListContent.TrimEnd(',')
 
+# Extract version metadata for runtime checks
+$ascensionVersion = "Unknown"
+$scanDate = "Unknown"
+if (Test-Path $scanFile) {
+    $scanContent = Get-Content $scanFile -Raw
+    if ($scanContent -match '\["AscensionVersion"\]\s*=\s*"([^"]+)"') {
+        $ascensionVersion = $matches[1]
+    }
+    if ($scanContent -match '\["LastScanDate"\]\s*=\s*"([^"]+)"') {
+        $scanDate = $matches[1]
+    }
+}
+
 $header = @"
 -- AscensionVanity Full Database v2.1
 -- Generated: $timestamp
@@ -198,6 +211,15 @@ $header = @"
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
+
+-- Database metadata for version checking
+AV_DatabaseInfo = {
+    generatedDate = "$timestamp",
+    ascensionVersion = "$ascensionVersion",
+    scanDate = "$scanDate",
+    totalItems = $($processed.Count),
+    schemaVersion = "2.1"
+}
 
 AV_IconList = {
 $iconListContent

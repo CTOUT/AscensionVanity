@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.1
--- Generated: 2025-11-02 19:23:25
+-- Generated: 2025-11-03 07:04:33
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -20,6 +20,15 @@
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
+
+-- Database metadata for version checking
+AV_DatabaseInfo = {
+    generatedDate = "2025-11-03 07:04:33",
+    ascensionVersion = "2025-11-01 @ 16:21:03 GMT Not Available",
+    scanDate = "2025-11-02 10:33:49",
+    totalItems = 2129,
+    schemaVersion = "2.1"
+}
 
 AV_IconList = {
     [1] = "Ability_Hunter_BeastCall",    [2] = "custom_T_Nhance_RPG_Icons_ArcaneStone_Border",    [3] = "custom_T_Nhance_RPG_Icons_FireStone_Border",    [4] = "custom_T_Nhance_RPG_Icons_GhostStone_Border",    [5] = "custom_T_Nhance_RPG_Icons_IceStone_Border",    [6] = "custom_T_Nhance_RPG_Icons_NatureStone_Border",    [7] = "inv_argusfelstalkermountgrey",    [8] = "inv_argustalbukmount_felpurple",    [9] = "inv_felbatmountforsaken",    [10] = "inv_felstalkermount",    [11] = "inv_glyph_primedeathknight",    [12] = "inv_misc_horn_01",    [13] = "inv_misc_uncutgemnormal1",    [14] = "inv_soulhoundmount_white"
