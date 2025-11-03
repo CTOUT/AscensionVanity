@@ -1,0 +1,97 @@
+{
+  "OverallStats": {
+    "TotalItems": 3038.0,
+    "UniqueIcons": 68
+  },
+  "IconUsage": {
+    "Spell_Shadow_SoulGem": 1,
+    "inv_chest_cloth_holiday_christmas_a_03_green": 1,
+    "inv_misc_uncutgemnormal1": 237,
+    "Spell_Shadow_SummonImp": 1,
+    "warlock_summon_beholder": 1,
+    "Ability_Mount_Dreadsteed": 1,
+    "custom_T_Nhance_RPG_Icons_IceStone_Border": 43,
+    "INV_Misc_Head_Dragon_Blue": 1,
+    "inv_hordepvpmount_black": 1,
+    "inv_knife_1h_common_b_01red": 1,
+    "INV_Jewelry_TrinketPVP_02": 1,
+    "custom_T_Nhance_RPG_Icons_FireStone_Border": 3,
+    "inv_dhmount_blue": 1,
+    "inv_boot_leather_classsetdemonhunter_d_01": 1,
+    "uico_unholy_spell_02_nobg_Border": 1,
+    "inv_dhmount_green": 1,
+    "inv_misc_horn_01": 305,
+    "inv_misc_pet_pandaren_yeti_grey": 1,
+    "INV_Belt_12": 1,
+    "inv_roguemount_blue": 1,
+    "inv_pant_cloth_holiday_christmas_a_03": 2,
+    "inv_knife_1h_common_b_01gold": 1,
+    "Inv_inscription_weaponscroll03": 1,
+    "Ability_Mount_JungleTiger": 1,
+    "Ability_Hunter_BeastCall": 809,
+    "inv_knife_1h_common_b_01blue": 1,
+    "achievement_boss_oregorger": 1,
+    "INV_Jewelry_TrinketPVP_01": 1,
+    "INV_Ore_Tin_01": 1,
+    "inv_knife_1h_common_b_01green": 1,
+    "inv_chest_cloth_holiday_christmas_a_03": 1,
+    "INV_Misc_MonsterHead_04": 1,
+    "misc_drogbartotem02": 1,
+    "inv_dhmount_purple": 1,
+    "inv_boot_cloth_holiday_christmas_a_03": 1,
+    "inv_magemount": 1,
+    "ability_mount_felreavermount": 1,
+    "ability_mount_felreavermount_blue": 1,
+    "inv_knife_1h_common_b_01": 1,
+    "Ability_Mount_MountainRam": 1,
+    "custom_T_Nhance_RPG_Icons_ArcaneStone_Border": 174,
+    "inv_helm_cloth_holiday_christmas_a_03_green": 1,
+    "inv_glyph_primedeathknight": 470,
+    "Ability_Mount_NightmareHorse": 1,
+    "custom_T_Nhance_RPG_Icons_NatureStone_Border": 4,
+    "INV_Potion_83": 1,
+    "inv_helm_cloth_holiday_christmas_a_03": 1,
+    "ability_mount_felreavermount_red": 1,
+    "inv_valentinepinkrocket": 1,
+    "inv_nightbane2mount": 1,
+    "inv_catslimemount": 1,
+    "inv_belt_cloth_holiday_christmas_a_03": 1,
+    "spell_brokenheart": 1,
+    "inv_bearmountblizzard": 2,
+    "achievement_boss_onyxia": 1,
+    "custom_T_Nhance_RPG_Icons_GhostStone_Border": 2,
+    "inv_misc_herb_wldsteelbloom_petal": 1,
+    "ability_mount_felreavermount_orange": 1,
+    "Ability_Mount_Raptor": 1,
+    "Inv_Misc_SummerFest_BrazierOrange": 1,
+    "spell_fire_felflamering": 1,
+    "inv_dhmount_brown": 1,
+    "inv_misc_eye_04": 1,
+    "inv_alliancepvpmount": 1,
+    "Ability_Mount_KotoBrewfest": 1,
+    "INV_Misc_Orb_03": 931,
+    "Ability_Mount_Undeadhorse": 1,
+    "inv_belt_cloth_holiday_christmas_a_03_green": 1
+  },
+  "CategoryBreakdown": {
+    "Blood Soaked Vellum": {
+      "inv_glyph_primedeathknight": 470
+    },
+    "Elemental Lodestone": {
+      "custom_T_Nhance_RPG_Icons_FireStone_Border": 3,
+      "custom_T_Nhance_RPG_Icons_IceStone_Border": 43,
+      "custom_T_Nhance_RPG_Icons_ArcaneStone_Border": 174,
+      "custom_T_Nhance_RPG_Icons_GhostStone_Border": 2,
+      "custom_T_Nhance_RPG_Icons_NatureStone_Border": 4
+    },
+    "Draconic Warhorn": {
+      "inv_misc_horn_01": 305
+    },
+    "Summoner's Stone": {
+      "inv_misc_uncutgemnormal1": 237
+    },
+    "Beastmaster's Whistle": {
+      "Ability_Hunter_BeastCall": 809
+    }
+  }
+}

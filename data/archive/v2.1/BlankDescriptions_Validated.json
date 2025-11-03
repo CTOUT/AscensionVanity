@@ -1,0 +1,731 @@
+[
+  {
+    "ItemId": "79317",
+    "CreatureId": "30",
+    "Name": "Beastmaster's Whistle: Forest Spider",
+    "Validated": true,
+    "DropsFrom": "Forest Spider",
+    "Region": "Elwynn Forest",
+    "GeneratedDescription": "Has a chance to drop from Forest Spider within Elwynn Forest"
+  },
+  {
+    "ItemId": "79337",
+    "CreatureId": "69",
+    "Name": "Beastmaster's Whistle: Timber Wolf",
+    "Validated": true,
+    "DropsFrom": "Timber Wolf",
+    "Region": "Elwynn Forest",
+    "GeneratedDescription": "Has a chance to drop from Timber Wolf within Elwynn Forest"
+  },
+  {
+    "ItemId": "79345",
+    "CreatureId": "113",
+    "Name": "Beastmaster's Whistle: Stonetusk Boar",
+    "Validated": true,
+    "DropsFrom": "Stonetusk Boar",
+    "Region": "Dun Morogh",
+    "GeneratedDescription": "Has a chance to drop from Stonetusk Boar within Dun Morogh"
+  },
+  {
+    "ItemId": "79348",
+    "CreatureId": "154",
+    "Name": "Beastmaster's Whistle: Greater Fleshripper",
+    "Validated": true,
+    "DropsFrom": "Greater Fleshripper",
+    "Region": "Westfall",
+    "GeneratedDescription": "Has a chance to drop from Greater Fleshripper within Westfall"
+  },
+  {
+    "ItemId": "79373",
+    "CreatureId": "681",
+    "Name": "Beastmaster's Whistle: Young Stranglethorn Tiger",
+    "Validated": true,
+    "DropsFrom": "Young Stranglethorn Tiger",
+    "Region": "Stranglethorn Vale",
+    "GeneratedDescription": "Has a chance to drop from Young Stranglethorn Tiger within Stranglethorn Vale"
+  },
+  {
+    "ItemId": "79377",
+    "CreatureId": "685",
+    "Name": "Beastmaster's Whistle: Stranglethorn Raptor",
+    "Validated": true,
+    "DropsFrom": "Stranglethorn Raptor",
+    "Region": "Stranglethorn Vale",
+    "GeneratedDescription": "Has a chance to drop from Stranglethorn Raptor within Stranglethorn Vale"
+  },
+  {
+    "ItemId": "79392",
+    "CreatureId": "822",
+    "Name": "Beastmaster's Whistle: Young Forest Bear",
+    "Validated": true,
+    "DropsFrom": "Young Forest Bear",
+    "Region": "Elwynn Forest",
+    "GeneratedDescription": "Has a chance to drop from Young Forest Bear within Elwynn Forest"
+  },
+  {
+    "ItemId": "79393",
+    "CreatureId": "830",
+    "Name": "Beastmaster's Whistle: Sand Crawler",
+    "Validated": true,
+    "DropsFrom": "Sand Crawler",
+    "Region": "Westfall",
+    "GeneratedDescription": "Has a chance to drop from Sand Crawler within Westfall"
+  },
+  {
+    "ItemId": "79418",
+    "CreatureId": "1082",
+    "Name": "Beastmaster's Whistle: Sawtooth Crocolisk",
+    "Validated": true,
+    "DropsFrom": "Sawtooth Crocolisk",
+    "Region": "Swamp of Sorrows",
+    "GeneratedDescription": "Has a chance to drop from Sawtooth Crocolisk within Swamp of Sorrows"
+  },
+  {
+    "ItemId": "79423",
+    "CreatureId": "1108",
+    "Name": "Beastmaster's Whistle: Mistvale Gorilla",
+    "Validated": true,
+    "DropsFrom": "Mistvale Gorilla",
+    "Region": "Stranglethorn Vale",
+    "GeneratedDescription": "Has a chance to drop from Mistvale Gorilla within Stranglethorn Vale"
+  },
+  {
+    "ItemId": "79465",
+    "CreatureId": "1512",
+    "Name": "Beastmaster's Whistle: Duskbat",
+    "Validated": true,
+    "DropsFrom": "Duskbat",
+    "Region": "Tirisfal Glades",
+    "GeneratedDescription": "Has a chance to drop from Duskbat within Tirisfal Glades"
+  },
+  {
+    "ItemId": "79497",
+    "CreatureId": "1995",
+    "Name": "Beastmaster's Whistle: Strigid Owl",
+    "Validated": true,
+    "DropsFrom": "Strigid Owl",
+    "Region": "Teldrassil",
+    "GeneratedDescription": "Has a chance to drop from Strigid Owl within Teldrassil"
+  },
+  {
+    "ItemId": "79519",
+    "CreatureId": "2172",
+    "Name": "Beastmaster's Whistle: Strider Clutchmother",
+    "Validated": true,
+    "DropsFrom": "Strider Clutchmother",
+    "Region": "Darkshore",
+    "GeneratedDescription": "Has a chance to drop from Strider Clutchmother within Darkshore"
+  },
+  {
+    "ItemId": "79542",
+    "CreatureId": "2408",
+    "Name": "Beastmaster's Whistle: Snapjaw",
+    "Validated": true,
+    "DropsFrom": "Snapjaw",
+    "Region": "Alterac Mountains",
+    "GeneratedDescription": "Has a chance to drop from Snapjaw within Alterac Mountains"
+  },
+  {
+    "ItemId": "79601",
+    "CreatureId": "3124",
+    "Name": "Beastmaster's Whistle: Scorpid Worker",
+    "Validated": true,
+    "DropsFrom": "Scorpid Worker",
+    "Region": "Durotar",
+    "GeneratedDescription": "Has a chance to drop from Scorpid Worker within Durotar"
+  },
+  {
+    "ItemId": "79615",
+    "CreatureId": "3247",
+    "Name": "Beastmaster's Whistle: Thunderhawk Hatchling",
+    "Validated": true,
+    "DropsFrom": "Thunderhawk Hatchling",
+    "Region": "The Barrens",
+    "GeneratedDescription": "Has a chance to drop from Thunderhawk Hatchling within The Barrens"
+  },
+  {
+    "ItemId": "79630",
+    "CreatureId": "3581",
+    "Name": "Beastmaster's Whistle: Sewer Beast",
+    "Validated": true,
+    "DropsFrom": "Sewer Beast",
+    "Region": "Stormwind City",
+    "GeneratedDescription": "Has a chance to drop from Sewer Beast within Stormwind City"
+  },
+  {
+    "ItemId": "79657",
+    "CreatureId": "4031",
+    "Name": "Beastmaster's Whistle: Fledgling Chimaera",
+    "Validated": true,
+    "DropsFrom": "Fledgling Chimaera",
+    "Region": "Stonetalon Mountains",
+    "GeneratedDescription": "Has a chance to drop from Fledgling Chimaera within Stonetalon Mountains"
+  },
+  {
+    "ItemId": "79666",
+    "CreatureId": "4127",
+    "Name": "Beastmaster's Whistle: Hecklefang Hyena",
+    "Validated": true,
+    "DropsFrom": "Hecklefang Hyena",
+    "Region": "The Barrens",
+    "GeneratedDescription": "Has a chance to drop from Hecklefang Hyena within The Barrens"
+  },
+  {
+    "ItemId": "79669",
+    "CreatureId": "4132",
+    "Name": "Beastmaster's Whistle: Silithid Ravager",
+    "Validated": true,
+    "DropsFrom": "Silithid Ravager",
+    "Region": "Thousand Needles",
+    "GeneratedDescription": "Has a chance to drop from Silithid Ravager within Thousand Needles"
+  },
+  {
+    "ItemId": "79689",
+    "CreatureId": "4351",
+    "Name": "Beastmaster's Whistle: Bloodfen Raptor",
+    "Validated": true,
+    "DropsFrom": "Bloodfen Raptor",
+    "Region": "Dustwallow Marsh",
+    "GeneratedDescription": "Has a chance to drop from Bloodfen Raptor within Dustwallow Marsh"
+  },
+  {
+    "ItemId": "79751",
+    "CreatureId": "5048",
+    "Name": "Beastmaster's Whistle: Deviate Adder",
+    "Validated": true,
+    "DropsFrom": "Deviate Adder",
+    "Region": "Wailing Caverns",
+    "GeneratedDescription": "Has a chance to drop from Deviate Adder within Wailing Caverns"
+  },
+  {
+    "ItemId": "79757",
+    "CreatureId": "5226",
+    "Name": "Beastmaster's Whistle: Murk Worm",
+    "Validated": true,
+    "DropsFrom": "Murk Worm",
+    "Region": "Sunken Temple",
+    "GeneratedDescription": "Has a chance to drop from Murk Worm within Sunken Temple"
+  },
+  {
+    "ItemId": "79892",
+    "CreatureId": "6498",
+    "Name": "Beastmaster's Whistle: Devilsaur",
+    "Validated": true,
+    "DropsFrom": "Devilsaur",
+    "Region": "Un'Goro Crater",
+    "GeneratedDescription": "Has a chance to drop from Devilsaur within Un'Goro Crater"
+  },
+  {
+    "ItemId": "79893",
+    "CreatureId": "6499",
+    "Name": "Beastmaster's Whistle: Ironhide Devilsaur",
+    "Validated": true,
+    "DropsFrom": "Ironhide Devilsaur",
+    "Region": "Un'Goro Crater",
+    "GeneratedDescription": "Has a chance to drop from Ironhide Devilsaur within Un'Goro Crater"
+  },
+  {
+    "ItemId": "80034",
+    "CreatureId": "7449",
+    "Name": "Beastmaster's Whistle: Chillwind Ravager",
+    "Validated": true,
+    "DropsFrom": "Chillwind Ravager",
+    "Region": "Winterspring",
+    "GeneratedDescription": "Has a chance to drop from Chillwind Ravager within Winterspring"
+  },
+  {
+    "ItemId": "80063",
+    "CreatureId": "8959",
+    "Name": "Beastmaster's Whistle: Felpaw Wolf",
+    "Validated": true,
+    "DropsFrom": "Felpaw Wolf",
+    "Region": "Felwood",
+    "GeneratedDescription": "Has a chance to drop from Felpaw Wolf within Felwood"
+  },
+  {
+    "ItemId": "80088",
+    "CreatureId": "10375",
+    "Name": "Beastmaster's Whistle: Spire Spiderling",
+    "Validated": true,
+    "DropsFrom": "Spire Spiderling",
+    "Region": "Blackrock Spire",
+    "GeneratedDescription": "Has a chance to drop from Spire Spiderling within Blackrock Spire"
+  },
+  {
+    "ItemId": "80096",
+    "CreatureId": "11359",
+    "Name": "Beastmaster's Whistle: Soulflayer",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "80098",
+    "CreatureId": "11361",
+    "Name": "Beastmaster's Whistle: Zulian Tiger",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "80099",
+    "CreatureId": "11365",
+    "Name": "Beastmaster's Whistle: Zulian Panther",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "80106",
+    "CreatureId": "11673",
+    "Name": "Beastmaster's Whistle: Ancient Core Hound",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "80297",
+    "CreatureId": "15649",
+    "Name": "Beastmaster's Whistle: Feral Dragonhawk Hatchling",
+    "Validated": true,
+    "DropsFrom": "Feral Dragonhawk Hatchling",
+    "Region": "Eversong Woods",
+    "GeneratedDescription": "Has a chance to drop from Feral Dragonhawk Hatchling within Eversong Woods"
+  },
+  {
+    "ItemId": "80343",
+    "CreatureId": "16520",
+    "Name": "Beastmaster's Whistle: Vale Moth",
+    "Validated": true,
+    "DropsFrom": "Vale Moth",
+    "Region": "Azuremyst Isle",
+    "GeneratedDescription": "Has a chance to drop from Vale Moth within Azuremyst Isle"
+  },
+  {
+    "ItemId": "80353",
+    "CreatureId": "17144",
+    "Name": "Beastmaster's Whistle: Goretooth",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "80354",
+    "CreatureId": "17199",
+    "Name": "Beastmaster's Whistle: Ravager Specimen",
+    "Validated": true,
+    "DropsFrom": "Ravager Specimen",
+    "Region": "Azuremyst Isle",
+    "GeneratedDescription": "Has a chance to drop from Ravager Specimen within Azuremyst Isle"
+  },
+  {
+    "ItemId": "80474",
+    "CreatureId": "17447",
+    "Name": "Beastmaster's Whistle: The Kurken",
+    "Validated": true,
+    "DropsFrom": "The Kurken",
+    "Region": "Azuremyst Isle",
+    "GeneratedDescription": "Has a chance to drop from The Kurken within Azuremyst Isle"
+  },
+  {
+    "ItemId": "80525",
+    "CreatureId": "18155",
+    "Name": "Beastmaster's Whistle: Bloodfalcon",
+    "Validated": true,
+    "DropsFrom": "Bloodfalcon",
+    "Region": "Tempest Keep: The Botanica",
+    "GeneratedDescription": "Has a chance to drop from Bloodfalcon within Tempest Keep: The Botanica"
+  },
+  {
+    "ItemId": "80607",
+    "CreatureId": "19428",
+    "Name": "Beastmaster's Whistle: Cobalt Serpent",
+    "Validated": true,
+    "DropsFrom": "Cobalt Serpent",
+    "Region": "Auchindoun: Sethekk Halls",
+    "GeneratedDescription": "Has a chance to drop from Cobalt Serpent within Auchindoun: Sethekk Halls"
+  },
+  {
+    "ItemId": "80649",
+    "CreatureId": "21723",
+    "Name": "Beastmaster's Whistle: Blackwind Sabercat",
+    "Validated": true,
+    "DropsFrom": "Blackwind Sabercat",
+    "Region": "Terokkar Forest",
+    "GeneratedDescription": "Has a chance to drop from Blackwind Sabercat within Terokkar Forest"
+  },
+  {
+    "ItemId": "82368",
+    "CreatureId": "3898",
+    "Name": "Summoner's Stone: Aligar the Tormentor",
+    "Validated": true,
+    "DropsFrom": "Aligar the Tormentor",
+    "Region": "Darkshore",
+    "GeneratedDescription": "Has a chance to drop from Aligar the Tormentor within Darkshore"
+  },
+  {
+    "ItemId": "82370",
+    "CreatureId": "3900",
+    "Name": "Summoner's Stone: Caedakar the Vicious",
+    "Validated": true,
+    "DropsFrom": "Caedakar the Vicious",
+    "Region": "Darkshore",
+    "GeneratedDescription": "Has a chance to drop from Caedakar the Vicious within Darkshore"
+  },
+  {
+    "ItemId": "82734",
+    "CreatureId": "7664",
+    "Name": "Summoner's Stone: Razelikh the Defiler",
+    "Validated": true,
+    "DropsFrom": "Razelikh the Defiler",
+    "Region": "Blasted Lands",
+    "GeneratedDescription": "Has a chance to drop from Razelikh the Defiler within Blasted Lands"
+  },
+  {
+    "ItemId": "82777",
+    "CreatureId": "10373",
+    "Name": "Summoner's Stone: Xabraxxis",
+    "Validated": true,
+    "DropsFrom": "Xabraxxis",
+    "Region": "Darkshore",
+    "GeneratedDescription": "Has a chance to drop from Xabraxxis within Darkshore"
+  },
+  {
+    "ItemId": "82780",
+    "CreatureId": "10813",
+    "Name": "Summoner's Stone: Balnazzar",
+    "Validated": true,
+    "DropsFrom": "Balnazzar",
+    "Region": "Stratholme",
+    "GeneratedDescription": "Has a chance to drop from Balnazzar within Stratholme"
+  },
+  {
+    "ItemId": "82875",
+    "CreatureId": "11876",
+    "Name": "Summoner's Stone: Demon Spirit",
+    "Validated": true,
+    "DropsFrom": "Demon Spirit",
+    "Region": "Desolace",
+    "GeneratedDescription": "Has a chance to drop from Demon Spirit within Desolace"
+  },
+  {
+    "ItemId": "82983",
+    "CreatureId": "14502",
+    "Name": "Summoner's Stone: Xorothian Dreadsteed",
+    "Validated": true,
+    "DropsFrom": "Xorothian Dreadsteed",
+    "Region": "Dire Maul",
+    "GeneratedDescription": "Has a chance to drop from Xorothian Dreadsteed within Dire Maul"
+  },
+  {
+    "ItemId": "84106",
+    "CreatureId": "19493",
+    "Name": "Summoner's Stone: Ekkorash the Inquisitor",
+    "Validated": true,
+    "DropsFrom": "Ekkorash the Inquisitor",
+    "Region": "Netherstorm",
+    "GeneratedDescription": "Has a chance to drop from Ekkorash the Inquisitor within Netherstorm"
+  },
+  {
+    "ItemId": "84301",
+    "CreatureId": "19963",
+    "Name": "Summoner's Stone: Doomcryer",
+    "Validated": true,
+    "DropsFrom": "Doomcryer",
+    "Region": "Blade's Edge Mountains",
+    "GeneratedDescription": "Has a chance to drop from Doomcryer within Blade's Edge Mountains"
+  },
+  {
+    "ItemId": "84496",
+    "CreatureId": "20789",
+    "Name": "Summoner's Stone: Wrathbringer Laz-tarash",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": null
+  },
+  {
+    "ItemId": "85155",
+    "CreatureId": "21656",
+    "Name": "Summoner's Stone: Illidari Satyr",
+    "Validated": true,
+    "DropsFrom": "Illidari Satyr",
+    "Region": "Shadowmoon Valley",
+    "GeneratedDescription": "Has a chance to drop from Illidari Satyr within Shadowmoon Valley"
+  },
+  {
+    "ItemId": "85209",
+    "CreatureId": "22281",
+    "Name": "Summoner's Stone: Galvanoth",
+    "Validated": true,
+    "DropsFrom": "Galvanoth",
+    "Region": "Blade's Edge Mountains",
+    "GeneratedDescription": "Has a chance to drop from Galvanoth within Blade's Edge Mountains"
+  },
+  {
+    "ItemId": "85246",
+    "CreatureId": "22825",
+    "Name": "Summoner's Stone: Matron Li-sahar",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": null
+  },
+  {
+    "ItemId": "85247",
+    "CreatureId": "22827",
+    "Name": "Summoner's Stone: Gorgolon the All-seeing",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": null
+  },
+  {
+    "ItemId": "85257",
+    "CreatureId": "22828",
+    "Name": "Summoner's Stone: Trelopades",
+    "Validated": true,
+    "DropsFrom": "Trelopades",
+    "Region": null,
+    "GeneratedDescription": "Has a chance to drop from Trelopades"
+  },
+  {
+    "ItemId": "85586",
+    "CreatureId": "23353",
+    "Name": "Summoner's Stone: Braxxus",
+    "Validated": true,
+    "DropsFrom": "Braxxus",
+    "Region": "Blade's Edge Mountains",
+    "GeneratedDescription": "Has a chance to drop from Braxxus within Blade's Edge Mountains"
+  },
+  {
+    "ItemId": "85637",
+    "CreatureId": "23355",
+    "Name": "Summoner's Stone: Zarcsin",
+    "Validated": true,
+    "DropsFrom": "Zarcsin",
+    "Region": "Blade's Edge Mountains",
+    "GeneratedDescription": "Has a chance to drop from Zarcsin within Blade's Edge Mountains"
+  },
+  {
+    "ItemId": "85718",
+    "CreatureId": "3",
+    "Name": "Blood Soaked Vellum: Flesh Eater",
+    "Validated": true,
+    "DropsFrom": "Flesh Eater",
+    "Region": "Duskwood",
+    "GeneratedDescription": "Has a chance to drop from Flesh Eater within Duskwood"
+  },
+  {
+    "ItemId": "85719",
+    "CreatureId": "48",
+    "Name": "Blood Soaked Vellum: Skeletal Warrior",
+    "Validated": true,
+    "DropsFrom": "Skeletal Warrior",
+    "Region": "Duskwood",
+    "GeneratedDescription": "Has a chance to drop from Skeletal Warrior within Duskwood"
+  },
+  {
+    "ItemId": "85723",
+    "CreatureId": "314",
+    "Name": "Blood Soaked Vellum: Eliza",
+    "Validated": true,
+    "DropsFrom": "Eliza",
+    "Region": "Duskwood",
+    "GeneratedDescription": "Has a chance to drop from Eliza within Duskwood"
+  },
+  {
+    "ItemId": "86072",
+    "CreatureId": "1529",
+    "Name": "Blood Soaked Vellum: Bleeding Horror",
+    "Validated": true,
+    "DropsFrom": "Bleeding Horror",
+    "Region": "Tirisfal Glades",
+    "GeneratedDescription": "Has a chance to drop from Bleeding Horror within Tirisfal Glades"
+  },
+  {
+    "ItemId": "86078",
+    "CreatureId": "1531",
+    "Name": "Blood Soaked Vellum: Lost Soul",
+    "Validated": true,
+    "DropsFrom": "Lost Soul",
+    "Region": "Tirisfal Glades",
+    "GeneratedDescription": "Has a chance to drop from Lost Soul within Tirisfal Glades"
+  },
+  {
+    "ItemId": "86105",
+    "CreatureId": "1657",
+    "Name": "Blood Soaked Vellum: Devlin Agamand",
+    "Validated": true,
+    "DropsFrom": "Devlin Agamand",
+    "Region": "Tirisfal Glades",
+    "GeneratedDescription": "Has a chance to drop from Devlin Agamand within Tirisfal Glades"
+  },
+  {
+    "ItemId": "86488",
+    "CreatureId": "1795",
+    "Name": "Blood Soaked Vellum: Searing Ghoul",
+    "Validated": true,
+    "DropsFrom": "Searing Ghoul",
+    "Region": "Western Plaguelands",
+    "GeneratedDescription": "Has a chance to drop from Searing Ghoul within Western Plaguelands"
+  },
+  {
+    "ItemId": "480382",
+    "CreatureId": "417217",
+    "Name": "Beastmaster's Whistle: Captain Claws",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "600867",
+    "CreatureId": "19514",
+    "Name": "Elemental Lodestone: Al'ar",
+    "Validated": true,
+    "DropsFrom": "Al'ar",
+    "Region": null,
+    "GeneratedDescription": "Has a chance to drop from Al'ar"
+  },
+  {
+    "ItemId": "600878",
+    "CreatureId": "21216",
+    "Name": "Elemental Lodestone: Hydross the Unstable",
+    "Validated": true,
+    "DropsFrom": "Hydross the Unstable",
+    "Region": "Coilfang: Serpentshrine Cavern",
+    "GeneratedDescription": "Has a chance to drop from Hydross the Unstable within Coilfang: Serpentshrine Cavern"
+  },
+  {
+    "ItemId": "601009",
+    "CreatureId": "37703",
+    "Name": "Elemental Lodestone: Surging Water Elemental",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "601067",
+    "CreatureId": "6932",
+    "Name": "Elemental Lodestone: Swamp Spirit",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "601102",
+    "CreatureId": "97808",
+    "Name": "Elemental Lodestone: Plague Shambler",
+    "Validated": true,
+    "DropsFrom": "Plague Shambler",
+    "Region": null,
+    "GeneratedDescription": "Has a chance to drop from Plague Shambler"
+  },
+  {
+    "ItemId": "601664",
+    "CreatureId": "97825",
+    "Name": "Elemental Lodestone: Bloodpetal Thirster",
+    "Validated": true,
+    "DropsFrom": "Bloodpetal Thirster",
+    "Region": null,
+    "GeneratedDescription": "Has a chance to drop from Bloodpetal Thirster"
+  },
+  {
+    "ItemId": "601677",
+    "CreatureId": "6561",
+    "Name": "Elemental Lodestone: Stone Warden",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "603976",
+    "CreatureId": "76",
+    "Name": "Elemental Lodestone: Silver Golem",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180288",
+    "CreatureId": "9417",
+    "Name": "Draconic Warhorn: Sleeping Dragon",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180317",
+    "CreatureId": "148069",
+    "Name": "Draconic Warhorn: Chromatic Whelp",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180320",
+    "CreatureId": "148070",
+    "Name": "Draconic Warhorn: Chromatic Dragonspawn",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180510",
+    "CreatureId": "21497",
+    "Name": "Draconic Warhorn: Blackscale",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180511",
+    "CreatureId": "148115",
+    "Name": "Draconic Warhorn: Blackscale",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180526",
+    "CreatureId": "21818",
+    "Name": "Draconic Warhorn: Infinite Whelp",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180599",
+    "CreatureId": "23789",
+    "Name": "Draconic Warhorn: Smolderwing",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  },
+  {
+    "ItemId": "1180833",
+    "CreatureId": "32180",
+    "Name": "Draconic Warhorn: Tempus Wyrm",
+    "Validated": false,
+    "DropsFrom": null,
+    "Region": null,
+    "GeneratedDescription": "Not a drop-based item"
+  }
+]

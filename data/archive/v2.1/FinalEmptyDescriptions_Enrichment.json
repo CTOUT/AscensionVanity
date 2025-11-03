@@ -1,0 +1,72 @@
+[
+  {
+    "ItemId": 80096,
+    "CreatureId": 11359,
+    "DropsFrom": "Soulflayer",
+    "Region": "Zul'Gurub",
+    "GeneratedDescription": "Has a chance to drop from Soulflayer within Zul'Gurub"
+  },
+  {
+    "ItemId": 80098,
+    "CreatureId": 11361,
+    "DropsFrom": "Zulian Tiger",
+    "Region": "Zul'Gurub",
+    "GeneratedDescription": "Has a chance to drop from Zulian Tiger within Zul'Gurub"
+  },
+  {
+    "ItemId": 80099,
+    "CreatureId": 11365,
+    "DropsFrom": "Zulian Panther",
+    "Region": "Zul'Gurub",
+    "GeneratedDescription": "Has a chance to drop from Zulian Panther within Zul'Gurub"
+  },
+  {
+    "ItemId": 80106,
+    "CreatureId": 11673,
+    "DropsFrom": "Ancient Core Hound",
+    "Region": "Molten Core",
+    "GeneratedDescription": "Has a chance to drop from Ancient Core Hound within Molten Core"
+  },
+  {
+    "ItemId": 80353,
+    "CreatureId": 17144,
+    "DropsFrom": "Goretooth",
+    "Region": "Nagrand",
+    "GeneratedDescription": "Has a chance to drop from Goretooth within Nagrand"
+  },
+  {
+    "ItemId": 601067,
+    "CreatureId": 6932,
+    "DropsFrom": "Swamp Spirit",
+    "Region": "Swamp of Sorrows",
+    "GeneratedDescription": "Has a chance to drop from Swamp Spirit within Swamp of Sorrows"
+  },
+  {
+    "ItemId": 1180510,
+    "CreatureId": 21497,
+    "DropsFrom": "Blackscale",
+    "Region": "Blade's Edge Mountains",
+    "GeneratedDescription": "Has a chance to drop from Blackscale within Blade's Edge Mountains"
+  },
+  {
+    "ItemId": 1180526,
+    "CreatureId": 21818,
+    "DropsFrom": "Infinite Whelp",
+    "Region": "The Black Morass",
+    "GeneratedDescription": "Has a chance to drop from Infinite Whelp within The Black Morass"
+  },
+  {
+    "ItemId": 1180599,
+    "CreatureId": 23789,
+    "DropsFrom": "Smolderwing",
+    "Region": "Dustwallow Marsh",
+    "GeneratedDescription": "Has a chance to drop from Smolderwing within Dustwallow Marsh"
+  },
+  {
+    "ItemId": 1180833,
+    "CreatureId": 32180,
+    "DropsFrom": "Tempus Wyrm",
+    "Region": "Dragonblight",
+    "GeneratedDescription": "Has a chance to drop from Tempus Wyrm within Dragonblight"
+  }
+]

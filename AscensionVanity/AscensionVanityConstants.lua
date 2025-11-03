@@ -6,7 +6,7 @@
 -- ============================================================================
 
 AV_VERSION = "2.1"
-AV_RELEASE_TYPE = "dev"  -- "prd", "tst", "dev"
+AV_RELEASE_TYPE = "beta"  -- "prd", "tst", "dev"
 
 -- Get current Ascension build version string
 -- Returns: version string like "2025-11-02 @ 22:44:06 GMT Not Available"
@@ -44,6 +44,7 @@ AV_COLOR_UNLEARNED = "|cFFFFFF00"  -- Yellow (unlearned items)
 -- UI text colors
 AV_COLOR_GRAY = "|cFF888888"       -- Gray (descriptive text)
 AV_COLOR_ORANGE = "|cFFFFAA00"     -- Orange (warnings/notes)
+AV_COLOR_YELLOW = "|cFFFFFF00"     -- Yellow (highlights/alerts)
 AV_COLOR_GREEN = "|cFF00FF00"      -- Green (success/recommendations)
 AV_COLOR_BLUE = "|cFF0099FF"       -- Blue (informational text)
 AV_COLOR_WHITE = "|cFFFFFFFF"      -- White (standard text)

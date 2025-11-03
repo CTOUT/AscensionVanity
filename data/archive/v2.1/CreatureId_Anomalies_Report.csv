@@ -1,0 +1,177 @@
+"GameItemId","Name","CreatureId","Reasons","EvidenceCount","EvidenceFiles","Suggestion","Description"
+"79248","Beastmaster's Whistle: Felhound","79009","midRange","0","","review",
+"79258","Beastmaster's Whistle: Armored Soulhound","79011","midRange","0","","review",
+"79262","Beastmaster's Whistle: Skreeg","79013","midRange","0","","review",
+"79429","Beastmaster's Whistle: Elder Crag Boar","98768","highRange,987prefix","0","","likely_non_drop_set_0","Has a chance to drop from Large Crag Boar within Dun Morogh"
+"79509","Beastmaster's Whistle: Moonstalker","4002043","extreme,400prefix","0","","exempt_vendor_candidate","Has a chance to drop from Nightsaber Stalker within Teldrassil"
+"79738","Beastmaster's Whistle: Aku'mai Fisher","4004823","extreme,400prefix","0","","exempt_vendor_candidate","Has a chance to drop from Barbed Crustacean within Blackfathom Deeps"
+"79741","Beastmaster's Whistle: Deadmire","98765","highRange,987prefix","0","","likely_non_drop_set_0","Has a chance to drop from Aku'mai Snapjaw within Blackfathom Deeps"
+"80089","Beastmaster's Whistle: Mist Howler","98772","highRange,987prefix","0","","likely_non_drop_set_0","Has a chance to drop from The Beast within Blackrock Spire"
+"80300","Beastmaster's Whistle: Plagued Swine","98773","highRange,987prefix","0","","likely_non_drop_set_0","Has a chance to drop from Elder Springpaw within Eversong Woods"
+"80382","Beastmaster's Whistle: Tcha'kaz","4017217","extreme","0","","exempt_vendor_candidate","Has a chance to drop from Barbed Crawler within The Veiled Sea"
+"82775","Summoner's Stone: Prince Xavalis","61883","midRange","0","","review",
+"87736","Blood Soaked Vellum: Zul'Farrak Zombie","91356","highRange","0","","review","Has a chance to drop from Zul'Farrak Dead Hero within Zul'Gurub"
+"181261","Blood Soaked Vellum: Stitched Horror","129283","highRange","0","","review",
+"88860","Blood Soaked Vellum: Withered Mistress","40552","midRange","0","","review","Has a chance to drop from Lady Falther'ess within Razorfen Downs"
+"89211","Blood Soaked Vellum: Risen Husk","300078","highRange","0","","review","Has a chance to drop from Risen Spirit within Witch Hill"
+"89362","Blood Soaked Vellum: En'kilah Crypt Fiend","66150","midRange","0","","review",
+"89637","Blood Soaked Vellum: Mindless Servant","301421","highRange","0","","review",
+"89854","Blood Soaked Vellum: Smoldering Skeleton","300150","highRange","0","","review",
+"101141","Blood Soaked Vellum: Skeletal Footsoldier","300154","highRange","0","","review",
+"101154","Blood Soaked Vellum: Deathbound Ward","300155","highRange","0","","review",
+"101163","Blood Soaked Vellum: Reanimated Bones","61521","midRange","0","","review","Has a chance to drop from Raging Skeleton within Testing"
+"101412","Beastmaster's Whistle: Peggi","79038","midRange","0","","review",
+"101415","Beastmaster's Whistle: Purple Fire Spider","79041","midRange","0","","review",
+"101417","Beastmaster's Whistle: Spectral Gryphon","79043","midRange","0","","review",
+"101419","Beastmaster's Whistle: Green Shale Spider","79045","midRange","0","","review",
+"101422","Beastmaster's Whistle: Purple Shale Spider","79048","midRange","0","","review",
+"113671","Beastmaster's Whistle: Lunar Tracker","292302","highRange","0","","likely_non_drop_set_0",
+"121824","Beastmaster's Whistle: Aurora Fox","50109","midRange","0","","review",
+"123162","Elemental Lodestone: Borealis","590024","extreme","0","","review",
+"139581","Summoner's Stone: Agamath (Hand of the Deceiver)","449185","highRange","0","","review","Has a chance to drop from Kil'jaeden within Sunwell Plateau."
+"191541","Beastmaster's Whistle: Clarabelle","915323","extreme","0","","exempt_vendor_candidate",
+"231309","Elemental Lodestone: Playful Misty Droplet","115528","highRange","0","","review",
+"231313","Elemental Lodestone: Playful Ruby Droplet","115532","highRange","0","","review",
+"254080","Elemental Lodestone: Felflame Guardian","254488","highRange","0","","review",
+"257060","Elemental Lodestone: Primal Earth Guardian","218939","highRange","0","","review",
+"257063","Elemental Lodestone: Primordial Earth Guardian","218942","highRange","0","","review",
+"257065","Elemental Lodestone: Sacred Earth Guardian","218944","highRange","0","","review",
+"257067","Elemental Lodestone: Frostborne Guardian","218946","highRange","0","","review",
+"257070","Elemental Lodestone: Icebound Guardian","218949","highRange","0","","review",
+"257073","Elemental Lodestone: Oceancrest Guardian","218952","highRange","0","","review",
+"257076","Elemental Lodestone: Sulphurcrest Guardian","218955","highRange","0","","review",
+"257079","Elemental Lodestone: Mudcrest Guardian","218958","highRange","0","","review",
+"257084","Elemental Lodestone: Plumtide Guardian","218963","highRange","0","","review",
+"257086","Elemental Lodestone: Cyancrest Guardian","218965","highRange","0","","review",
+"257089","Elemental Lodestone: Amberwind Guardian","218968","highRange","0","","review",
+"347302","Blood Soaked Vellum: Risen Alvajar","347302","highRange","0","","review","Has a chance to drop from Alvajar War Wolf within Frozen Reach"
+"348634","Beastmaster's Whistle: Snow Primal Dog","392240","highRange","0","","likely_non_drop_set_0",
+"348636","Beastmaster's Whistle: Tawny Primal Dog","392242","highRange","0","","likely_non_drop_set_0",
+"400070","Blood Soaked Vellum: Necromantic Lich","300156","highRange","0","","review",
+"400072","Blood Soaked Vellum: Berserk Ghoul","300157","highRange","0","","review",
+"400075","Blood Soaked Vellum: Shambling Horror","301422","highRange","0","","review",
+"400077","Summoner's Stone: Doom Warden","476020","highRange","0","","review",
+"400079","Summoner's Stone: Infernal Warden","476023","highRange","0","","review",
+"600388","Elemental Lodestone: Obsidian Elemental","218931","highRange","0","","review",
+"600934","Elemental Lodestone: Flame Guardian","218933","highRange","0","","review",
+"600968","Elemental Lodestone: Tide Guardian","218929","highRange","0","","review",
+"600970","Elemental Lodestone: Surging Water Elemental","218930","highRange","0","","review",
+"601018","Elemental Lodestone: Desert Guardian","80495","midRange","0","","review",
+"601201","Elemental Lodestone: Phase Lasher","40553","midRange","0","","review","Has a chance to drop from Whip Lasher within Dire Maul"
+"601664","Elemental Lodestone: Cracked Golem","97825","highRange","0","","review",""
+"601714","Summoner's Stone: Decrepit Darkhound","100154","highRange","0","","review","Has a chance to drop from Tempered War Golem within Searing Gorge"
+"601745","Elemental Lodestone: Petrified Treant","218935","highRange","0","","review",
+"601834","Elemental Lodestone: Wandering Forest Walker","83496","midRange","0","","review","Has a chance to drop from Cursed Sycamore within High Wilderness"
+"603200","Elemental Lodestone: Silver Golem","130104","highRange","0","","review",
+"612833","Summoner's Stone: Brutallus","357791","highRange","0","","review",
+"842105","Beastmaster's Whistle: Amber Shardhide","42009","midRange","0","","review",
+"844514","Beastmaster's Whistle: Beryl Shardhide","217615","highRange","0","","likely_non_drop_set_0",
+"844516","Beastmaster's Whistle: Crimson Shardhide","222302","highRange","0","","likely_non_drop_set_0",
+"980033","Beastmaster's Whistle: Pink Elekk","289612","highRange","0","","likely_non_drop_set_0",
+"1178959","Blood Soaked Vellum: Maw Zombie","79061","midRange","0","","review",
+"1179001","Summoner's Stone: Iceflame Overfiend","79063","midRange","0","","review",
+"1179003","Summoner's Stone: Baleroc","79065","midRange","0","","review",
+"1179005","Blood Soaked Vellum: Abomination Lord","79067","midRange","0","","review",
+"1179007","Blood Soaked Vellum: Monkey Skeleton Captain (Blue)","79069","midRange","0","","review",
+"1179009","Blood Soaked Vellum: Monkey Skeleton Captain (Black)","79071","midRange","0","","review",
+"1179011","Blood Soaked Vellum: Greater Banshee (Purple)","79073","midRange","0","","review",
+"1179013","Blood Soaked Vellum: Greater Banshee (Yellow)","79075","midRange","0","","review",
+"1179015","Blood Soaked Vellum: Hopping Ghost (Green)","79077","midRange","0","","review",
+"1179017","Blood Soaked Vellum: Hopping Ghost (White)","79079","midRange","0","","review",
+"1179019","Blood Soaked Vellum: The Mass of Souls","79081","midRange","0","","review",
+"1179027","Blood Soaked Vellum: Maldraxxian Necromancer (Black)","79089","midRange","0","","review","Has a chance to drop from Lich Lord within Eastern Kingdoms"
+"1179029","Blood Soaked Vellum: Maldraxxian Necromancer (Green)","79091","midRange","0","","review",
+"1179031","Blood Soaked Vellum: Maldraxxus Skeleton (Black/Black (Armored))","79093","midRange","0","","review",
+"1179037","Blood Soaked Vellum: Maldraxxus Skeleton (Black/Grey (Armored))","79099","midRange","0","","review",
+"1179039","Blood Soaked Vellum: Maldraxxus Skeleton (Brown/Bronze (Armored))","79101","midRange","0","","review",
+"1179041","Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Black (Armored))","79103","midRange","0","","review",
+"1179043","Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Bronze (Armored))","79105","midRange","0","","review",
+"1179045","Blood Soaked Vellum: Maldraxxus Skeleton (Grey/Green (Armored))","79107","midRange","0","","review",
+"1179047","Blood Soaked Vellum: Maldraxxus Skeleton (Pale/Black (Armored))","79109","midRange","0","","review",
+"1179049","Blood Soaked Vellum: Maldraxxus Skeleton (Pale/Bronze (Armored))","79111","midRange","0","","review",
+"1179051","Blood Soaked Vellum: Maldraxxus Skeleton (Purple/Black (Armored))","79113","midRange","0","","review",
+"1179053","Blood Soaked Vellum: Maldraxxus Skeleton (Purple/Green (Armored))","79115","midRange","0","","review",
+"1179055","Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Black (Armored))","79117","midRange","0","","review",
+"1179058","Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Bronze (Armored))","79120","midRange","0","","review",
+"1179060","Blood Soaked Vellum: Maldraxxus Skeleton (Yellow/Green (Armored))","79122","midRange","0","","review",
+"1179062","Blood Soaked Vellum: Maldraxxus Gladiator (Black/Black)","79124","midRange","0","","review",
+"1179064","Blood Soaked Vellum: Maldraxxus Gladiator (Blue/Blue)","79126","midRange","0","","review",
+"1179066","Blood Soaked Vellum: Maldraxxus Gladiator (Brown/Bronze)","79128","midRange","0","","review",
+"1179068","Blood Soaked Vellum: Maldraxxus Gladiator (Green/Bronze)","79130","midRange","0","","review",
+"1179070","Blood Soaked Vellum: Maldraxxus Gladiator (Purple/Purple)","79132","midRange","0","","review",
+"1179072","Blood Soaked Vellum: Aranakk (Brown)","79134","midRange","0","","review",
+"1179074","Blood Soaked Vellum: Aranakk (Red)","79136","midRange","0","","review",
+"1179077","Blood Soaked Vellum: Drustvar Beastman (Grey)","79139","midRange","0","","review",
+"1179079","Blood Soaked Vellum: Drustvar Beastman (Yellow)","79141","midRange","0","","review",
+"1180110","Draconic Warhorn: Black Dragon Whelp","148001","highRange","0","","review","Has a chance to drop from Singe within Stonewatch Keep"
+"1180112","Draconic Warhorn: Adolescent Whelp","148002","highRange","0","","review","Has a chance to drop from Black Dragon Whelp within Redridge Mountains"
+"1180114","Draconic Warhorn: Dreaming Whelp","148003","highRange","0","","review","Has a chance to drop from Adolescent Whelp within Itharius's Cave"
+"1180116","Draconic Warhorn: Green Wyrmkin","148004","highRange","0","","review","Has a chance to drop from Dreaming Whelp within Itharius's Cave"
+"1180123","Draconic Warhorn: Elder Dragonkin","148006","highRange","0","","review","Has a chance to drop from Scalebane Captain within Swamp of Sorrows"
+"1180125","Draconic Warhorn: Red Whelp","148007","highRange","0","","review","Has a chance to drop from Elder Dragonkin within Sorrowmurk"
+"1180129","Draconic Warhorn: Lost Whelp","148008","highRange","0","","review","Has a chance to drop from Red Whelp within Wetlands"
+"1180131","Draconic Warhorn: Flamesnorting Whelp","148009","highRange","0","","review","Has a chance to drop from Lost Whelp within Wetlands"
+"1180133","Draconic Warhorn: Red Dragonspawn","148010","highRange","0","","review","Has a chance to drop from Flamesnorting Whelp within Wetlands"
+"1180136","Draconic Warhorn: Red Wyrmkin","148011","highRange","0","","review","Has a chance to drop from Red Dragonspawn within Dragonmaw Gates"
+"1180139","Draconic Warhorn: Red Scalebane","148012","highRange","0","","review","Has a chance to drop from Red Wyrmkin within Dragonmaw Gates"
+"1180141","Draconic Warhorn: Scalebane Lieutenant","148013","highRange","0","","review","Has a chance to drop from Red Scalebane within Dragonmaw Gates"
+"1180143","Draconic Warhorn: Wyrmkin Firebrand","148014","highRange","0","","review","Has a chance to drop from Scalebane Lieutenant within Dragonmaw Gates"
+"1180145","Draconic Warhorn: Scalebane Royal Guard","148015","highRange","0","","review","Has a chance to drop from Wyrmkin Firebrand within Dragonmaw Gates"
+"1180173","Draconic Warhorn: Scorched Guardian","148022","highRange","0","","review","Has a chance to drop from Scalding Whelp within Lethlor Ravine"
+"1180175","Draconic Warhorn: Blacklash","148023","highRange","0","","review","Has a chance to drop from Scorched Guardian within Lethlor Ravine"
+"1180177","Draconic Warhorn: Blink Dragon","148024","highRange","0","","review","Has a chance to drop from Blacklash within Eastern Kingdoms"
+"1180197","Draconic Warhorn: Firemane Scout","148028","highRange","0","","review","Has a chance to drop from Firemane Scalebane within Wyrmbog"
+"1180207","Draconic Warhorn: Sprite Dragon","148033","highRange","0","","review","Has a chance to drop from Brimgore within The Dragonmurk"
+"1180209","Draconic Warhorn: Nightmare Scalebane","148034","highRange","0","","review","Has a chance to drop from Sprite Dragon within The Twin Colossals"
+"1180211","Draconic Warhorn: Sprite Darter","148035","highRange","0","","review","Has a chance to drop from Nightmare Scalebane within The Temple of Atal'Hakkar"
+"1180213","Draconic Warhorn: Nightmare Wyrmkin","148036","highRange","0","","review","Has a chance to drop from Sprite Darter within Feralas"
+"1180215","Draconic Warhorn: Nightmare Wanderer","148037","highRange","0","","review","Has a chance to drop from Nightmare Wyrmkin within The Temple of Atal'Hakkar"
+"1180217","Draconic Warhorn: Lethlas","148038","highRange","0","","review","Has a chance to drop from Nightmare Wanderer within The Temple of Atal'Hakkar"
+"1180228","Draconic Warhorn: Morphaz","148040","highRange","0","","review","Has a chance to drop from Rothos within Seradane"
+"1180236","Draconic Warhorn: Blue Scalebane","148041","highRange","0","","review","Has a chance to drop from Draconic Magelord within Lake Mennar"
+"1180287","Draconic Warhorn: Sleeping Dragon","148061","highRange","0","","review","Has a chance to drop from Rage Talon Dragonspawn within Blackrock Spire"
+"1180295","Draconic Warhorn: Rookery Whelp","148063","highRange","0","","review","Has a chance to drop from Rage Talon Flamescale within Blackrock Spire"
+"1180311","Draconic Warhorn: Rage Talon Captain","148066","highRange","0","","review","Has a chance to drop from Rage Talon Dragon Guard within Blackrock Spire"
+"1180313","Draconic Warhorn: Rage Talon Fire Tongue","148067","highRange","0","","review","Has a chance to drop from Rage Talon Captain within Blackrock Spire"
+"1180315","Draconic Warhorn: Chromatic Whelp","148068","highRange","0","","review","Has a chance to drop from Rage Talon Fire Tongue within Blackrock Spire"
+"1180317","Draconic Warhorn: Chromatic Whelp","148069","highRange","0","","review",""
+"1180354","Draconic Warhorn: Death Talon Overseer","148080","highRange","0","","review","Has a chance to drop from Death Talon Wyrmguard within Blackwing Lair"
+"1180356","Draconic Warhorn: Death Talon Flamescale","148081","highRange","0","","review","Has a chance to drop from Death Talon Overseer within Blackwing Lair"
+"1180358","Draconic Warhorn: Death Talon Seether","148082","highRange","0","","review","Has a chance to drop from Death Talon Flamescale within Blackwing Lair"
+"1180360","Draconic Warhorn: Death Talon Wyrmkin","148083","highRange","0","","review","Has a chance to drop from Death Talon Seether within Blackwing Lair"
+"1180362","Draconic Warhorn: Death Talon Captain","148084","highRange","0","","review","Has a chance to drop from Death Talon Wyrmkin within Blackwing Lair"
+"1180388","Draconic Warhorn: Vaelastrasz the Corrupt","148090","highRange","0","","review","Has a chance to drop from Somnus within Pool of Tears"
+"1180416","Draconic Warhorn: Lord Captain Wyrmak","148096","highRange","0","","review","Has a chance to drop from Eldreth Darter within Dire Maul"
+"1180442","Draconic Warhorn: Chrono Lord Deja","148097","highRange","0","","review","Has a chance to drop from Rift Lord within The Black Morass"
+"1180444","Draconic Warhorn: Aeonus","300074","highRange","0","","review","Has a chance to drop from Temporus within The Black Morass"
+"1180449","Draconic Warhorn: Infinite Slayer","300077","highRange","0","","review","Has a chance to drop from Epoch Hunter within Caverns of Time"
+"1180474","Draconic Warhorn: Twilight Drakonaar","148102","highRange","0","","review","Has a chance to drop from Fey Drake within The Living Grove"
+"1180484","Draconic Warhorn: Wyrmcult Blackwhelp","148110","highRange","0","","review","Has a chance to drop from Rift Keeper within The Black Morass"
+"1180503","Draconic Warhorn: Maxnar the Ashmaw","148112","highRange","0","","review","Has a chance to drop from Wyrmcult Blackwhelp within Blackwing Coven"
+"1180505","Draconic Warhorn: Wyrmcult Blessed","148113","highRange","0","","review","Has a chance to drop from Maxnar the Ashmaw within Blackwing Coven"
+"1180509","Draconic Warhorn: Blackscale","148114","highRange","0","","review","Has a chance to drop from Wyrmcult Blessed within Blackwing Coven"
+"1180511","Draconic Warhorn: Mature Netherwing Drake","148115","highRange","0","","review",""
+"1180541","Draconic Warhorn: Dragonmaw Ascendant","148119","highRange","0","","review","Has a chance to drop from Shadowsworn Drakonid within Ata'mal Terrace"
+"1180550","Draconic Warhorn: Rivendark","148127","highRange","0","","review","Has a chance to drop from Dragonmaw Ascendant within Netherwing Ledge"
+"1180561","Draconic Warhorn: Insidion","148129","highRange","0","","review","Has a chance to drop from Rivendark within Outland"
+"1180857","Draconic Warhorn: Razorscale","148138","highRange","0","","review","Has a chance to drop from Vyragosa within Terrace of the Makers"
+"1180914","Draconic Warhorn: Shadowsworn Drakonid Champion","61018","midRange","0","","review","Has a chance to drop from Shadowsworn Drakonid Champion within Ata'mal Terrace"
+"1181505","Draconic Warhorn: Death Talon Flamescale","148203","highRange","0","","review","Has a chance to drop from Chromatic Whelp within Black Rock Spire"
+"1181572","Draconic Warhorn: Bronze Whelp","1100365","extreme","0","","review","Has a chance to drop from Profession Master within "
+"1233809","Beastmaster's Whistle: Thokian Devilsaur","124379","highRange","0","","likely_non_drop_set_0",
+"1500589","Beastmaster's Whistle: Arktos","500589","extreme","0","","exempt_vendor_candidate",
+"1533809","Blood Soaked Vellum: Undying Kvaldir Raider","424379","highRange","0","","review",
+"1554440","Blood Soaked Vellum: Undying Kvaldir Scavenger","317774","highRange","0","","review",
+"8200183","Beastmaster's Whistle: Cutlass","11000196","extreme","0","","exempt_vendor_candidate",
+"8200185","Beastmaster's Whistle: Jungle King","11000197","extreme","0","","exempt_vendor_candidate",
+"8388604","Elemental Lodestone: Wretched Treemouth","54741","midRange","0","","review",
+"442010","Elemental Lodestone: Sallow Treemouth","139996","highRange","0","","review",
+"442012","Elemental Lodestone: Afflicted Treemouth","139998","highRange","0","","review",
+"281750","Summoner's Stone: Skittering Doomling","41237","midRange","0","","review",
+"281752","Summoner's Stone: Snuggling Doomling","41239","midRange","0","","review",
+"281754","Summoner's Stone: Gleaming Doomling","41241","midRange","0","","review",
+"199579","Beastmaster's Whistle: Savage Armored Growler","105764","highRange","0","","likely_non_drop_set_0",
+"199581","Beastmaster's Whistle: Rabid Armored Growler","105766","highRange","0","","likely_non_drop_set_0",
+"1777005","Elemental Lodestone: Unbound Water Spirit","61003","midRange","0","","review","Has a chance to drop from Unbound Earth Spirit within Elemental Plateau"
+"198413","Beastmaster's Whistle: Kerchak","50030","midRange","0","","review",
+"199337","Beastmaster's Whistle: Babee","11000215","extreme","0","","exempt_vendor_candidate",
