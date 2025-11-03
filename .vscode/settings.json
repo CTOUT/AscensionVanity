@@ -1,0 +1,89 @@
+{
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.runtime.builtin": {
+        "basic": "disable",
+        "debug": "disable",
+        "io": "disable",
+        "math": "disable",
+        "os": "disable",
+        "package": "disable",
+        "string": "disable",
+        "table": "disable",
+        "utf8": "disable"
+    },
+    "Lua.workspace.library": [
+        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core"
+    ],
+    "Lua.diagnostics.globals": [
+        "UISpecialFrames",
+        "StaticPopupDialogs",
+        "StaticPopup_Show",
+        "SlashCmdList",
+        "CollectionsJournal",
+        
+        // AscensionVanity SavedVariables
+        "AscensionVanityDB",
+        "AscensionVanityDump",
+        
+        // AscensionVanity Constants (AscensionVanityConstants.lua)
+        "AV_VERSION",
+        "AV_RELEASE_TYPE",
+        "AV_COLOR_ADDON",
+        "AV_COLOR_HEADER",
+        "AV_COLOR_LEARNED",
+        "AV_COLOR_UNLEARNED",
+        "AV_COLOR_GRAY",
+        "AV_COLOR_ORANGE",
+        "AV_COLOR_YELLOW",
+        "AV_COLOR_GREEN",
+        "AV_COLOR_BLUE",
+        "AV_COLOR_WHITE",
+        "AV_COLOR_RESET",
+        "AV_CATEGORY_ICONS",
+        "AV_CATEGORY_NAMES",
+        "AV_FormatIcon",
+        "AV_GetCategoryIcon",
+        "AV_GetCategoryLabel",
+        "AV_GetCurrentAscensionVersion",
+        
+        // Database Globals (VanityDB.lua + VanityDB_Loader.lua)
+        "AV_VanityItems",
+        "AV_IconList",
+        "AV_DatabaseInfo",
+        "AV_GenericDropsByType",
+        "AV_GetVanityItemsForCreature",
+        "AV_GetItemData",
+        "AV_GetItemRegion",
+        
+        // UI Functions (SettingsUI.lua + ScannerUI.lua)
+        "AscensionVanity_ShowSettings",
+        "AscensionVanity_HideSettings",
+        "AscensionVanity_ToggleSettings",
+        "AscensionVanity_SyncSettingsUI",
+        "AscensionVanity_ShowScanner",
+        "AscensionVanity_HideScanner",
+        "AscensionVanity_ToggleScanner",
+        "AscensionVanity_SyncScannerUI",
+        
+        // Regional Guide (RegionalGuide.lua)
+        "AscensionVanity_InitRegionalGuide",
+        "AscensionVanity_ShowCurrentZone",
+        
+        // Project Ascension Custom APIs
+        "C_VanityCollection",
+        "GetClientVersion",
+        
+        // Slash Command Globals
+        "SLASH_ASCENSIONVANITY1",
+        "SLASH_ASCENSIONVANITY2",
+        "SLASH_ASCENSIONVANITY3"
+    ],
+    
+    // Disable warnings for WoW patterns
+    "Lua.diagnostics.disable": [
+        "lowercase-global"  // WoW uses lowercase globals like "print"
+    ],
+    
+    // Don't prompt about third-party libraries
+    "Lua.workspace.checkThirdParty": false
+}
