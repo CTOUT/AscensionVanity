@@ -159,7 +159,7 @@ if ($currentItem.Name) {
 ```powershell
 .\utilities\FilterDropsFromAPI.ps1 -InputFile "data\AscensionVanity.lua"
 .\utilities\GenerateVanityDB_V2.ps1
-.\DeployAddon.ps1 -WoWPath "D:\OneDrive\Warcraft"
+.\DeployAddon.ps1 -WoWPath "<Your-WoW-Install-Path>"
 ```
 
 ### Step 3: Verify Results

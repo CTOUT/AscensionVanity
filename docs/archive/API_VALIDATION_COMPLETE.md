@@ -173,7 +173,7 @@ Open the **[TESTING_CHECKLIST.md](docs/TESTING_CHECKLIST.md)** file and follow t
 
 2. **PowerShell**:
    ```powershell
-   cd D:\Repos\AscensionVanity
+   cd <Repo-Path>
    .\utilities\AnalyzeAPIDump.ps1
    ```
 

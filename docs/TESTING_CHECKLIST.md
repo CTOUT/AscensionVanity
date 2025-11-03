@@ -100,7 +100,7 @@ Test the new API validation system in-game to:
 
 6. **Open PowerShell in the repository folder**:
    ```powershell
-   cd D:\Repos\AscensionVanity
+   cd <Repo-Path>
    ```
 
 7. **Run basic analysis**:

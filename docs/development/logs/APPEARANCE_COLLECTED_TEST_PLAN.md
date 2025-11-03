@@ -22,7 +22,7 @@ Verify that learning a vanity item triggers:
 
 1. **Deploy Updated Addon** ✅
    ```
-   Already completed - addon deployed to D:\OneDrive\Warcraft\AscensionVanity
+   Already completed - addon deployed to <WoW-Install-Path>\Interface\AddOns\AscensionVanity
    ```
 
 2. **Launch Game**

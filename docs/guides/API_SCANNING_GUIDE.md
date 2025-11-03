@@ -56,12 +56,12 @@ The AscensionVanity addon now includes **in-game API scanning** to capture fresh
 
 **File Location:**
 ```
-D:\OneDrive\Warcraft\WTF\Account\<your-account>\SavedVariables\AscensionVanity_Dump.lua
+<WoW-Install-Path>\WTF\Account\<your-account>\SavedVariables\AscensionVanity_Dump.lua
 ```
 
-**Example Path:**
+**Example:**
 ```
-D:\OneDrive\Warcraft\WTF\Account\CHRIS-TOUT@OUTLOOK.COM\SavedVariables\AscensionVanity_Dump.lua
+C:\Program Files\Ascension Launcher\resources\client\WTF\Account\YourAccount@example.com\SavedVariables\AscensionVanity_Dump.lua
 ```
 
 **File Size:**
@@ -73,8 +73,8 @@ D:\OneDrive\Warcraft\WTF\Account\CHRIS-TOUT@OUTLOOK.COM\SavedVariables\Ascension
 **Copy the file:**
 ```powershell
 # Replace <your-account> with your actual account name
-Copy-Item "D:\OneDrive\Warcraft\WTF\Account\<your-account>\SavedVariables\AscensionVanity_Dump.lua" `
-          -Destination "D:\Repos\AscensionVanity\data\AscensionVanity_Dump.lua"
+Copy-Item "<WoW-Install-Path>\WTF\Account\<your-account>\SavedVariables\AscensionVanity_Dump.lua" `
+          -Destination "<Repo-Path>\data\AscensionVanity_Dump.lua"
 ```
 
 **Verify the copy:**
@@ -157,7 +157,7 @@ Writing to: data\AscensionVanity.lua
 
 **Deploy to WoW:**
 ```powershell
-.\DeployAddon.ps1 -WoWPath 'D:\OneDrive\Warcraft'
+.\DeployAddon.ps1 -WoWPath '<Your-WoW-Install-Path>'
 ```
 
 **Test in-game:**

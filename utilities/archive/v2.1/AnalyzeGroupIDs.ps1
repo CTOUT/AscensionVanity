@@ -1,5 +1,5 @@
 # Quick analysis script for group ID patterns - validates hypothesis about primary group IDs
-$path = 'd:\Repos\AscensionVanity\data\AscensionVanity.lua'
+$path = '.\data\AscensionVanity.lua'
 
 Write-Host "Reading file..." -ForegroundColor Cyan
 $content = Get-Content $path -Raw

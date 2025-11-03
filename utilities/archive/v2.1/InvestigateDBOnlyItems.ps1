@@ -4,7 +4,7 @@
 param(
     [string]$OldDBPath = ".\AscensionVanity\VanityDB_Backup_2025-10-28_112402.lua",
     [string]$NewDBPath = ".\AscensionVanity\VanityDB_New.lua",
-    [string]$SavedVariablesPath = "d:\Program Files\Ascension Launcher\resources\client\WTF\Account\chris-tout@outlook.com\SavedVariables\AscensionVanity.lua"
+    [string]$SavedVariablesPath = "<WoW-Install-Path>\WTF\Account\<your-account>\SavedVariables\AscensionVanity.lua"
 )
 
 Write-Host "========================================" -ForegroundColor Cyan

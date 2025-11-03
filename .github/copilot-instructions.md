@@ -15,10 +15,10 @@
 
 ## WoW Development Chat Mode
 
-This project has a dedicated WoW addon development chatmode active for specialized assistance:
-- **Global chatmode**: `C:\Users\Chris\AppData\Roaming\Code\User\prompts\wow-addon-development.chatmode.md`
+This project has dedicated WoW addon development assistance active:
+- **Workspace chatmode**: `.github/chatmodes/wow-addon-development.chatmode.md`
   - General WoW API knowledge and Lua 5.1 patterns
-  - Available across all VS Code projects
+  - WoW-specific performance optimization
   - Prevents wasted searches on Azure/Entra/cloud topics
 - **Project instructions**: `.github/instructions/wow-addon-development.instructions.md`
   - AscensionVanity-specific patterns and gotchas

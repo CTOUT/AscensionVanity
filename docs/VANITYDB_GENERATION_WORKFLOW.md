@@ -64,7 +64,7 @@ Exit WoW (saves to AscensionVanity.lua)
 
 ### 3. Deploy
 ```powershell
-.\DeployAddon.ps1 -WoWPath "D:\OneDrive\Warcraft"
+.\DeployAddon.ps1 -WoWPath "<Your-WoW-Install-Path>"
 ```
 
 ### 4. Test In-Game

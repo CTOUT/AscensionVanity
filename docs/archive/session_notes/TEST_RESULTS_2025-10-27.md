@@ -84,7 +84,7 @@ After database update:
 
 ### Imported Data (Workspace)
 ```
-D:\Repos\AscensionVanity\data\AscensionVanity_SavedVariables.lua
+<Repo-Path>\data\AscensionVanity_SavedVariables.lua
 ```
 **Size**: ~299,000 lines (!)  
 **Contains**: Full API dump + validation results

@@ -16,7 +16,7 @@ This is **AscensionVanity** - a World of Warcraft addon for Project Ascension th
 - Respect the consolidation philosophy (don't create redundant scripts)
 
 **Related Documentation:**
-- **Global chatmode**: `C:\Users\Chris\AppData\Roaming\Code\User\prompts\wow-addon-development.chatmode.md`
+- **Workspace chatmode**: `.github/wow-addon-development.chatmode.md`
   - General WoW API knowledge, Lua 5.1 patterns, performance optimization
 - **Main instructions**: `.github/copilot-instructions.md`
   - Core philosophy, coding standards, common tasks, version control

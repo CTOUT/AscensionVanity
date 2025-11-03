@@ -2,7 +2,7 @@
 # Creates a new VanityDB.lua with smart drop-based filtering
 
 param(
-    [string]$SavedVariablesPath = "d:\Program Files\Ascension Launcher\resources\client\WTF\Account\chris-tout@outlook.com\SavedVariables\AscensionVanity.lua",
+    [string]$SavedVariablesPath = "<WoW-Install-Path>\WTF\Account\<your-account>\SavedVariables\AscensionVanity.lua",
     [string]$OutputPath = ".\AscensionVanity\VanityDB_New.lua",
     [switch]$Backup
 )

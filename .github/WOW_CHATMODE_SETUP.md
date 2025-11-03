@@ -3,7 +3,8 @@
 ## ✅ Files Created
 
 ### 1. Global Chatmode File
-**Location**: `C:\Users\Chris\AppData\Roaming\Code\User\prompts\wow-addon-development.chatmode.md`
+**Location**: `<VS-Code-User-Folder>\prompts\wow-addon-development.chatmode.md`  
+*Note: User folder is typically: `C:\Users\<YourUsername>\AppData\Roaming\Code\User`*
 
 **Purpose**: 
 - Available across ALL VS Code projects
@@ -20,7 +21,7 @@
 - ✅ Performance optimization guidelines
 
 ### 2. Project-Specific Instructions File
-**Location**: `d:\Repos\AscensionVanity\.github\instructions\wow-addon-development.instructions.md`
+**Location**: `<Repo-Path>\.github\instructions\wow-addon-development.instructions.md`
 
 **Purpose**:
 - AscensionVanity project-specific patterns

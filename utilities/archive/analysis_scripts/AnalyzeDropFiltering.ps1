@@ -2,7 +2,7 @@
 # Shows how many items in the API scan are drop-based vs vendor/webstore
 
 param(
-    [string]$SavedVariablesPath = "d:\Program Files\Ascension Launcher\resources\client\WTF\Account\chris-tout@outlook.com\SavedVariables\AscensionVanity.lua"
+    [string]$SavedVariablesPath = "<WoW-Install-Path>\WTF\Account\<your-account>\SavedVariables\AscensionVanity.lua"
 )
 
 Write-Host "========================================" -ForegroundColor Cyan

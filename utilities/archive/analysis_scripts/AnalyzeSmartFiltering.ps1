@@ -2,7 +2,7 @@
 # Filters for drop-based items while preserving items with creatures but no description
 
 param(
-    [string]$SavedVariablesPath = "d:\Program Files\Ascension Launcher\resources\client\WTF\Account\chris-tout@outlook.com\SavedVariables\AscensionVanity.lua",
+    [string]$SavedVariablesPath = "<WoW-Install-Path>\WTF\Account\<your-account>\SavedVariables\AscensionVanity.lua",
     [string]$VanityDBPath = ".\AscensionVanity\VanityDB.lua",
     [switch]$Detailed
 )

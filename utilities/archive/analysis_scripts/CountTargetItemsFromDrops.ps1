@@ -3,7 +3,7 @@
 # Summoner's Stones, Draconic Warhorns, Elemental Lodestones) are from Drops
 
 param(
-    [string]$DataFile = "d:\Repos\AscensionVanity\data\AscensionVanity.lua"
+    [string]$DataFile = ".\data\AscensionVanity.lua"
 )
 
 Write-Host "`n=== Target Items from Drops Analysis ===" -ForegroundColor Cyan
