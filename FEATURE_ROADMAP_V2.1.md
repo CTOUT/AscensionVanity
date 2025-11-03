@@ -1,8 +1,10 @@
 # AscensionVanity v2.1+ Feature Roadmap
 
 **Date:** October 30, 2025  
-**Current Version:** v2.0.0  
-**Status:** Planning Phase
+**Last Updated:** November 3, 2025 (v2.2 Planning)  
+**Current Version:** v2.1 (Complete)  
+**Next Version:** v2.2 (Development Branch: v2.2-dev)  
+**Status:** v2.2 Planning Phase
 
 ---
 
@@ -12,7 +14,167 @@ This document captures planned features for future versions of AscensionVanity. 
 
 ---
 
-## Planned Features
+## v2.2 Planned Features (NEW)
+
+### 0. Quest-Locked NPC Warnings ⚠️🔴
+**Priority:** CRITICAL  
+**Complexity:** Medium  
+**Version Target:** v2.2  
+**Status:** 🔨 Planning
+
+**Description:**  
+Warn players about vanity items that drop from quest-spawned NPCs which become unavailable after quest completion. This prevents players from losing permanent access to collectibles by completing quests too early.
+
+**Core Features:**
+- 🔴 High-visibility tooltip warnings for quest-locked NPCs
+- ⚠️ Visual indicators (color + icon) for maximum awareness
+- 📜 Quest name and ID display for easy reference
+- ✅ Quest completion status check (warn if already completed)
+- 🟢 Active quest detection (remind to farm before turning in)
+- ⚙️ Configurable settings (toggle warnings, customize colors)
+
+**Tooltip Example:**
+```
+[Creature Name]
+  Combat Pet: Beastmaster's Whistle: Pet Name
+  
+  ⚠️ QUEST-LOCKED NPC!
+  Quest: "Quest Name" (ID: 12345)
+  Warning: This NPC disappears after quest completion!
+  Don't turn in the quest until you get the drop!
+```
+
+**Data Structure:**
+```lua
+questLock = {
+    questId = 12345,
+    questName = "The Quest Name",
+    lockType = "completion",  -- "completion", "phase", "daily", "weekly"
+    warning = "Don't complete quest until you get this item!",
+    notes = "Additional context for collectors"
+}
+```
+
+**Implementation Plan:**
+1. **Phase 1:** Create `data/QuestLockedNPCs.json` tracking file
+2. **Phase 2:** Extend VanityDB schema with `questLock` field
+3. **Phase 3:** Update generation scripts to merge quest lock data
+4. **Phase 4:** Implement tooltip warnings with quest status API
+5. **Phase 5:** Add settings UI for warning customization
+6. **Phase 6:** Community contribution system (GitHub)
+
+**Files to Create/Modify:**
+- `data/QuestLockedNPCs.json` - Quest-locked NPC database (NEW)
+- `VanityDB.lua` - Add questLock field to items
+- `Core.lua` - Implement tooltip warning logic
+- `GenerateVanityDB_Master.ps1` - Merge quest lock data
+- `AscensionVanityConfig.lua` - Add quest warning settings
+- `SettingsUI.lua` - Add warning configuration UI
+
+**Benefits:**
+- ✅ Prevents permanent collection loss
+- ✅ Unique feature no other addon provides
+- ✅ High value for completionist players
+- ✅ Community-driven data collection
+- ✅ Enhances addon reputation and utility
+
+**Effort:** 3-5 days  
+**Testing:** Verify warnings display, quest status checks work correctly
+
+**Data Collection:**
+- See `data/QuestLockedNPCs.json` for tracking
+- Community contributions welcome via GitHub
+- Manual research + db.ascension.gg queries
+
+---
+
+## v2.1 Completed Features
+
+### 0a. Category Filtering 🔍
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.1  
+**Status:** ✅ IMPLEMENTED
+
+### 0b. Combat Tooltip Control ⚔️
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.1  
+**Status:** ✅ IMPLEMENTED
+
+**Description:**  
+Allow players to filter which vanity item categories are displayed in tooltips. Players can enable/disable specific item types (Pets, Demons, Elementals, Dragonkin, Totems) based on their collection interests.
+
+**Core Features:**
+- Checkbox toggles in Settings UI for each category
+- Real-time tooltip filtering based on selections
+- Reduces tooltip clutter for specialized collectors
+- Persistent settings saved to SavedVariables
+
+**Categories:**
+- ☑ **Beastmaster's Whistle** - Combat Pets (Beasts)
+- ☑ **Blood Soaked Vellum** - Demons
+- ☑ **Summoner's Stone** - Elementals/Satyrs
+- ☑ **Draconic Warhorn** - Dragonkin
+- ☑ **Elemental Lodestone** - Totems/Elementals
+
+**UI Mockup:**
+```
+┌─────────────────────────────────────┐
+│ AscensionVanity Settings            │
+├─────────────────────────────────────┤
+│ Show Tooltip Information:           │
+│ ☑ Beastmaster's Whistle (Pets)     │
+│ ☑ Blood Soaked Vellum (Demons)     │
+│ ☑ Summoner's Stone (Elementals)    │
+│ ☑ Draconic Warhorn (Dragonkin)     │
+│ ☑ Elemental Lodestone (Totems)     │
+├─────────────────────────────────────┤
+│ Display Options:                    │
+│ ☑ Show learned items                │
+│ ☑ Show unlearned items              │
+└─────────────────────────────────────┘
+```
+
+**Implementation:**
+- Category detection via pattern matching on item names
+- Filter logic in tooltip display function
+- Settings UI checkboxes for each category
+- Default: All categories enabled
+
+**Benefits:**
+- Reduces tooltip clutter for specialized collectors
+- Pet collectors can hide demon/elemental/dragonkin items
+- Warlock players can focus only on demons
+- Improves user experience with personalization
+
+**Files to Create/Modify:**
+- `Core.lua` - Add category detection and filtering logic
+- `AscensionVanityConfig.lua` - Add `categoryFilters` config
+- `SettingsUI.lua` - Add category filter checkboxes
+- No database changes required (uses existing item names)
+
+**Effort:** 1-2 days  
+**Testing:** Toggle categories and verify tooltip filtering
+
+---
+
+### 0b. Combat Tooltip Control ⚔️
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.1  
+**Status:** ✅ IMPLEMENTED
+
+**Description:**  
+Control how vanity item information is displayed in tooltips during combat. Players can choose between showing full details, minimal information (count only), or hiding completely to reduce tooltip clutter during fights.
+
+**Combat Modes:**
+- **Normal (Show All)** - Display full vanity item information during combat
+- **Minimal (Count Only)** - Show only "Vanity Items: X available"
+- **Hide Completely** - Hide all vanity information during combat (default)
+
+**UI Implementation:**
+````
 
 ### 0a. Category Filtering 🔍
 **Priority:** High  

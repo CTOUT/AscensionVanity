@@ -1,5 +1,5 @@
--- AscensionVanity Full Database v2.1
--- Generated: 2025-11-03 07:04:33
+-- AscensionVanity Full Database v2.2
+-- Generated: 2025-11-03 17:27:48
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -8,7 +8,7 @@
 --   AV_IconList: Deduplicated icon paths referenced by index
 --   AV_VanityItems: Combat pet items indexed by game item ID
 -- 
--- Schema v2.1 Fields:
+-- Schema v2.2 Fields:
 --   itemid: Game item ID
 --   name: Full item name with prefix
 --   creaturePreview: Visual model ID (immutable from API)
@@ -17,17 +17,25 @@
 --   zone: Primary zone/region (optional)
 --   subzone: Specific location within zone (optional)
 --   icon: Index into AV_IconList
+--   questLock: Quest-locked NPC information (optional v2.2)
+--     - questId: Quest ID number
+--     - questName: Quest name string
+--     - lockType: "completion", "phase", "daily", "weekly"
+--     - faction: "Horde", "Alliance", "Both"
+--     - warning: Custom warning message
+--     - notes: Additional context (summon method, etc.)
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-03 07:04:33",
+    generatedDate = "2025-11-03 17:27:48",
     ascensionVersion = "2025-11-01 @ 16:21:03 GMT Not Available",
     scanDate = "2025-11-02 10:33:49",
     totalItems = 2129,
-    schemaVersion = "2.1"
+    schemaVersion = "2.2",
+    questLockedCount = 2
 }
 
 AV_IconList = {
@@ -4947,7 +4955,15 @@ AV_VanityItems = {
         creatureId = 10992,
         description = "Has a chance to drop from Enraged Panther within Thousand Needles",
         zone = "Thousand Needles",
-        icon = 1
+        icon = 1,
+        questLock = {
+            questId = 5151,
+            questName = "Hypercapacitor Gizmo",
+            lockType = "completion",
+            faction = "Horde",
+            warning = "This elite panther can only be freed and fought during the quest! Don't complete until you get the drop!",
+            notes = "Free the panther by right-clicking cage with Panther Cage Key. Elite mob. Long respawn timer - farm carefully!"
+        }
     },
     [80094] = {
         itemid = 80094,
@@ -8581,7 +8597,15 @@ AV_VanityItems = {
         creaturePreview = 11876,
         creatureId = 11876,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 5381,
+            questName = "Hand of Iruxos",
+            lockType = "completion",
+            faction = "Horde",
+            warning = "This demon only spawns during the quest! Don't complete until you get the drop!",
+            notes = "Summoned using Demon Pick on Demon Box. One-time quest - NPC permanently unavailable after completion."
+        }
     },
     [82876] = {
         itemid = 82876,

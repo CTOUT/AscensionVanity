@@ -1,18 +1,7 @@
 {
-    "Lua.runtime.version": "Lua 5.1",
-    "Lua.runtime.builtin": {
-        "basic": "disable",
-        "debug": "disable",
-        "io": "disable",
-        "math": "disable",
-        "os": "disable",
-        "package": "disable",
-        "string": "disable",
-        "table": "disable",
-        "utf8": "disable"
-    },
-    "Lua.workspace.library": [
-        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core"
+    // Disable warnings for WoW patterns
+    "Lua.diagnostics.disable": [
+        "lowercase-global" // WoW uses lowercase globals like "print"
     ],
     "Lua.diagnostics.globals": [
         "UISpecialFrames",
@@ -20,12 +9,11 @@
         "StaticPopup_Show",
         "SlashCmdList",
         "CollectionsJournal",
-        
-        // AscensionVanity SavedVariables
+        "InterfaceOptions_AddCategory",
+        "C_AppearanceCollection",
+        "AscensionVanityScannerFrame",
         "AscensionVanityDB",
         "AscensionVanityDump",
-        
-        // AscensionVanity Constants (AscensionVanityConstants.lua)
         "AV_VERSION",
         "AV_RELEASE_TYPE",
         "AV_COLOR_ADDON",
@@ -45,17 +33,20 @@
         "AV_GetCategoryIcon",
         "AV_GetCategoryLabel",
         "AV_GetCurrentAscensionVersion",
-        
-        // Database Globals (VanityDB.lua + VanityDB_Loader.lua)
         "AV_VanityItems",
         "AV_IconList",
+        "AV_Regions",
         "AV_DatabaseInfo",
         "AV_GenericDropsByType",
         "AV_GetVanityItemsForCreature",
         "AV_GetItemData",
+        "AV_GetItemName",
+        "AV_GetItemCreature",
         "AV_GetItemRegion",
-        
-        // UI Functions (SettingsUI.lua + ScannerUI.lua)
+        "AV_GetTotalItems",
+        "AV_GetDatabaseStats",
+        "AV_ScanAllItems",
+        "AV_ClearDumpData",
         "AscensionVanity_ShowSettings",
         "AscensionVanity_HideSettings",
         "AscensionVanity_ToggleSettings",
@@ -64,26 +55,36 @@
         "AscensionVanity_HideScanner",
         "AscensionVanity_ToggleScanner",
         "AscensionVanity_SyncScannerUI",
-        
-        // Regional Guide (RegionalGuide.lua)
+        "AscensionVanity_SyncDebugCheckbox",
         "AscensionVanity_InitRegionalGuide",
+        "AscensionVanity_GetCurrentZoneItems",
+        "AscensionVanity_ShowCurrentZoneItems",
         "AscensionVanity_ShowCurrentZone",
-        
-        // Project Ascension Custom APIs
         "C_VanityCollection",
         "GetClientVersion",
-        
-        // Slash Command Globals
         "SLASH_ASCENSIONVANITY1",
         "SLASH_ASCENSIONVANITY2",
-        "SLASH_ASCENSIONVANITY3"
+        "SLASH_ASCENSIONVANITY3",
+        "GameTooltip",
+        "UIParent"
     ],
-    
-    // Disable warnings for WoW patterns
-    "Lua.diagnostics.disable": [
-        "lowercase-global"  // WoW uses lowercase globals like "print"
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.runtime.builtin": {
+        "basic": "default",
+        "string": "default",
+        "table": "default",
+        "math": "default",
+        "debug": "disable",
+        "io": "disable",
+        "os": "disable",
+        "package": "disable",
+        "utf8": "disable"
+    },
+    "Lua.workspace.library": [
+        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/Core",
+        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/FrameXML"
     ],
-    
-    // Don't prompt about third-party libraries
-    "Lua.workspace.checkThirdParty": false
+    // CRITICAL: Extension keeps resetting this - DO NOT let ketho.wow-api override
+    "Lua.workspace.userThirdParty": []
 }

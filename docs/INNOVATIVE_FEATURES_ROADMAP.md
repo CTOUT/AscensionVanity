@@ -1,8 +1,84 @@
 # AscensionVanity - Innovative Display Features Inspired by Modern Addons
 
 **Date:** November 3, 2025  
+**Last Updated:** November 3, 2025  
 **Research:** Rarity & PetTracker analysis  
-**Purpose:** Feature ideas for minimap/world map integration
+**Purpose:** Feature ideas for minimap/world map integration + Quest-Locked NPCs
+
+---
+
+## 🆕 NEW FEATURE: Quest-Locked NPC Warnings ⭐⭐⭐
+
+**Priority:** CRITICAL - Prevents permanent collection loss  
+**Complexity:** Medium  
+**Version Target:** v2.2  
+**Status:** 🔨 Planning
+
+### Problem Statement
+Many vanity items drop from quest-spawned NPCs that become unavailable after quest completion. Players often complete quests **before** farming the item, losing access forever (or until reset). This is devastating for completionists.
+
+### Solution: Quest Lock Warning System
+
+**Tooltip Enhancement:**
+```
+[Creature Name]
+  Combat Pet: Beastmaster's Whistle: Pet Name
+  
+  ⚠️ QUEST-LOCKED NPC!
+  Quest: "Quest Name" (ID: 12345)
+  Warning: This NPC disappears after quest completion!
+  Don't turn in the quest until you get the drop!
+```
+
+**Features:**
+- 🔴 High-visibility warning in tooltips
+- ⚠️ Clear visual indicators (color + icon)
+- 📜 Quest name and ID for easy reference
+- ✅ Quest completion check (warn if already completed)
+- 🟢 Active quest highlight (remind to farm before turning in)
+
+**Data Structure:**
+```lua
+-- New field in VanityDB
+questLock = {
+    questId = 12345,
+    questName = "The Quest Name",
+    lockType = "completion",  -- "completion", "phase", "daily", "weekly"
+    warning = "Don't complete quest until you get this item!"
+}
+```
+
+**Configuration Options:**
+- Toggle quest warnings (default: ON)
+- Color customization for warning text
+- Hide warnings for completed quests (optional)
+
+**Implementation Strategy:**
+1. **Phase 1:** Create `data/QuestLockedNPCs.json` with known cases ✅
+2. **Phase 2:** Extend database schema and generation scripts
+3. **Phase 3:** Implement tooltip warnings with quest status checks
+4. **Phase 4:** Community contribution system (GitHub issues/PRs)
+
+**Known Quest-Locked NPCs:**
+
+1. **Demon Spirit** (Creature ID: 11876)
+   - **Drops:** Summoner's Stone: Demon Spirit (Item ID: 82875)
+   - **Quest:** Hand of Iruxos (Quest ID: 5381) - **Horde Only**
+   - **Lock Type:** Completion (one-time quest)
+   - **Warning:** ⚠️ NPC only spawns during quest! Don't complete until you get the drop!
+   - **Summon Method:** Use Demon Pick (quest item) on Demon Box (drops from NPCs during quest)
+   - **Verified:** 2025-11-03 by CTOUT
+   - **References:** [Quest](https://db.ascension.gg/?quest=5381) | [NPC](https://db.ascension.gg/?npc=11876) | [Item](https://db.ascension.gg/?item=82875)
+
+2. **Enraged Panther** (Creature ID: 10992)
+   - **Drops:** Beastmaster's Whistle: Enraged Panther (Item ID: 80093)
+   - **Quest:** Hypercapacitor Gizmo (Quest ID: 5151) - **Horde Only**
+   - **Lock Type:** Completion (one-time quest)
+   - **Warning:** ⚠️ Elite panther can only be freed during quest! Don't complete until you get the drop!
+   - **Release Method:** Right-click cage with Panther Cage Key (quest item) to free Elite NPC
+   - **Additional Notes:** Elite mob with long respawn timer - farm carefully before completing quest!
+   - **Verified:** 2025-11-03 by CTOUT
+   - **References:** [Quest](https://db.ascension.gg/?quest=5151) | [NPC](https://db.ascension.gg/?npc=10992) | [Item](https://db.ascension.gg/?item=80093)
 
 ---
 

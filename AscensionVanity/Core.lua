@@ -480,6 +480,90 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         tooltip:AddLine(regionText, 1, 1, 1, true)
                     end
                 end
+                
+                -- Add quest lock warning (v2.2)
+                if itemData.questLock then
+                    local questLock = itemData.questLock
+                    
+                    -- Check if user wants quest warnings (default: enabled)
+                    local showQuestWarnings = AscensionVanityDB.showQuestWarnings
+                    if showQuestWarnings == nil then
+                        showQuestWarnings = true  -- Default to enabled
+                    end
+                    
+                    if showQuestWarnings then
+                        -- Check quest status (Phase 4: Quest completion detection)
+                        local questCompleted = false
+                        local questActive = false
+                        
+                        -- Try multiple WoW API methods for quest status
+                        -- Method 1: IsQuestFlaggedCompleted (most reliable for WOTLK)
+                        if C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted then
+                            questCompleted = C_QuestLog.IsQuestFlaggedCompleted(questLock.questId)
+                        -- Method 2: IsQuestComplete (Classic/WOTLK fallback)
+                        elseif IsQuestComplete then
+                            questCompleted = IsQuestComplete(questLock.questId)
+                        end
+                        
+                        -- Check if quest is active in quest log
+                        if not questCompleted then
+                            local numEntries = GetNumQuestLogEntries()
+                            for i = 1, numEntries do
+                                local questTitle, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
+                                if questID == questLock.questId then
+                                    questActive = true
+                                    break
+                                end
+                            end
+                        end
+                        
+                        -- High-visibility warning header (color-coded by quest status)
+                        local warningHeader
+                        if questCompleted then
+                            -- Already completed - RED (too late!)
+                            warningHeader = "      " .. AV_COLOR_RED .. "⚠️ QUEST ALREADY COMPLETED - NPC UNAVAILABLE!" .. AV_COLOR_RESET
+                        elseif questActive then
+                            -- Quest is active - GREEN (farm now!)
+                            warningHeader = "      " .. AV_COLOR_GREEN .. "⚠️ QUEST-LOCKED NPC - FARM NOW!" .. AV_COLOR_RESET
+                        else
+                            -- Haven't started quest yet - ORANGE (warning)
+                            warningHeader = "      " .. AV_COLOR_BRIGHT_ORANGE .. "⚠️ QUEST-LOCKED NPC!" .. AV_COLOR_RESET
+                        end
+                        tooltip:AddLine(warningHeader, 1, 1, 1, true)
+                        
+                        -- Quest information
+                        local questInfo = string.format("      " .. AV_COLOR_GOLD .. "Quest: \"%s\" (ID: %d)" .. AV_COLOR_RESET, 
+                            questLock.questName, questLock.questId)
+                        tooltip:AddLine(questInfo, 1, 1, 1, true)
+                        
+                        -- Quest status indicator
+                        if questCompleted then
+                            tooltip:AddLine("      " .. AV_COLOR_RED .. "✗ Quest Completed - Too Late!" .. AV_COLOR_RESET, 1, 1, 1, true)
+                        elseif questActive then
+                            tooltip:AddLine("      " .. AV_COLOR_GREEN .. "✓ Quest Active - Farm Before Completing!" .. AV_COLOR_RESET, 1, 1, 1, true)
+                        else
+                            tooltip:AddLine("      " .. AV_COLOR_ORANGE .. "• Quest Not Started" .. AV_COLOR_RESET, 1, 1, 1, true)
+                        end
+                        
+                        -- Faction indicator (if not Both)
+                        if questLock.faction and questLock.faction ~= "Both" then
+                            local factionText = "      " .. AV_COLOR_LIGHT_RED .. questLock.faction .. " Only" .. AV_COLOR_RESET
+                            tooltip:AddLine(factionText, 1, 1, 1, true)
+                        end
+                        
+                        -- Custom warning message
+                        if questLock.warning and questLock.warning ~= "" then
+                            local warningText = "      " .. AV_COLOR_PINK .. questLock.warning .. AV_COLOR_RESET
+                            tooltip:AddLine(warningText, 1, 1, 1, true)
+                        end
+                        
+                        -- Additional notes (summon method, respawn info, etc.)
+                        if questLock.notes and questLock.notes ~= "" then
+                            local notesText = "      " .. AV_COLOR_LIGHT_GRAY .. questLock.notes .. AV_COLOR_RESET
+                            tooltip:AddLine(notesText, 1, 1, 1, true)
+                        end
+                    end
+                end
             end
             
             -- Show tooltip updates
@@ -671,6 +755,14 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
     elseif msg == "scanner" then
         -- Open scanner UI
         AscensionVanity_ShowScanner()
+        
+    elseif msg == "progress" then
+        -- Toggle collection progress frame (v2.2)
+        if AV_ToggleCollectionProgress then
+            AV_ToggleCollectionProgress()
+        else
+            print("|cFFFF0000Error:|r Collection progress frame not loaded")
+        end
         
     elseif msg == "toggle" then
         AscensionVanityDB.enabled = not AscensionVanityDB.enabled

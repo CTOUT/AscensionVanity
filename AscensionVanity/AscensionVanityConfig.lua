@@ -19,6 +19,7 @@ local defaults = {
     enabled = true,              -- Enable/disable the addon
     eventSpy = false,            -- Event spy (developer tool)
     showLearnedStatus = true,    -- Show "Learned" or "Not Learned" in tooltips
+    showQuestWarnings = true,    -- Show quest-locked NPC warnings (v2.2)
     showRegions = false          -- Show region/location information (not yet implemented)
 }
 

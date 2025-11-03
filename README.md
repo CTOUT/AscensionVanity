@@ -22,8 +22,16 @@ AscensionVanity is a World of Warcraft addon for **Project Ascension** that help
 - **Creature Tooltip Enhancement**: Shows vanity items when mousing over creatures
 - **Smart Detection**: Identifies creatures by NPC ID with location descriptions
 - **Comprehensive Database**: 2,174 combat pets with 99.95% description coverage
+- **Quest-Locked NPC Warnings** ⚠️ (NEW in v2.2): Intelligent warnings for quest-spawned creatures
+  - Real-time quest status detection (active/completed/not started)
+  - Color-coded warnings with quest information
+  - Prevents missing limited-availability NPCs
+- **Collection Progress Frame** 📊 (NEW in v2.2): Standalone moveable progress display
+  - Per-category completion tracking
+  - Color-coded progress bars
+  - Auto-updating every 5 seconds
 - **Visual Indicators**: Clean, informative tooltip display
-- **Toggleable Options**: Enable/disable via slash commands
+- **Toggleable Options**: Enable/disable via slash commands and settings
 - **Lightweight**: Minimal performance impact
 
 ### � Database Quality
@@ -106,6 +114,7 @@ Vanity Items:
 
 - `/avanity` - Open Settings UI
 - `/avanity scanner` - Open API Scanner UI
+- `/avanity progress` - Toggle Collection Progress Frame (NEW in v2.2)
 - `/avanity help` - Display help information
 
 #### Toggle Commands

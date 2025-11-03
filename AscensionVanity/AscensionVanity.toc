@@ -24,6 +24,9 @@ APIScanner.lua
 SettingsUI.lua
 ScannerUI.lua
 
+# Collection Progress Frame (v2.2+ standalone progress display)
+CollectionProgressFrame.lua
+
 # Regional Hunting Guide (v2.1+ zone-based item finder)
 RegionalGuide.lua
 

@@ -49,6 +49,14 @@ AV_COLOR_GREEN = "|cFF00FF00"      -- Green (success/recommendations)
 AV_COLOR_BLUE = "|cFF0099FF"       -- Blue (informational text)
 AV_COLOR_WHITE = "|cFFFFFFFF"      -- White (standard text)
 
+-- Quest lock warning colors (v2.2)
+AV_COLOR_RED = "|cFFFF0000"        -- Red (critical errors/too late)
+AV_COLOR_BRIGHT_ORANGE = "|cFFFF6600"  -- Bright orange (quest warnings)
+AV_COLOR_GOLD = "|cFFFFCC00"       -- Gold (quest information)
+AV_COLOR_LIGHT_RED = "|cFFFF4444"  -- Light red (faction warnings)
+AV_COLOR_PINK = "|cFFFF8888"       -- Pink (warning messages)
+AV_COLOR_LIGHT_GRAY = "|cFFAAAAAA" -- Light gray (supplemental notes)
+
 -- Color reset
 AV_COLOR_RESET = "|r"
 
@@ -74,6 +82,25 @@ AV_CATEGORY_NAMES = {
     dragonkin = "Draconic Warhorn - Dragonkin",
     elemental = "Elemental Lodestone - Elementals",
     undead = "Blood Soaked Vellum - Undead"
+}
+
+-- Category item name prefixes (for categorizing items) - v2.2
+-- Used to identify which category an item belongs to based on its name
+AV_CATEGORY_PREFIXES = {
+    beast = "Beastmaster's Whistle:",
+    demon = "Summoner's Stone:",
+    undead = "Blood Soaked Vellum:",
+    dragonkin = "Draconic Warhorn:",
+    elemental = "Elemental Lodestone:"
+}
+
+-- Short category display names (for progress bars) - v2.2
+AV_CATEGORY_SHORT_NAMES = {
+    beast = "Beasts",
+    demon = "Demons",
+    undead = "Undead",
+    dragonkin = "Dragonkin",
+    elemental = "Elementals"
 }
 
 -- Helper function to format icon texture with specified size

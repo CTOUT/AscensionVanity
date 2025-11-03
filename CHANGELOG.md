@@ -2,6 +2,50 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
+## [2.2-dev] - 2025-11-03
+
+### Added - Quest-Locked NPC Warnings (v2.2)
+- **Quest Detection System**: Intelligent warnings for quest-spawned NPCs
+  - Real-time quest status detection (not started/active/completed)
+  - Color-coded warnings: 🔴 Red (too late), 🟢 Green (farm now!), 🟠 Orange (not started)
+  - Quest information display (name, ID, faction requirement)
+  - Summon methods and unlock instructions
+  - Toggle in settings: "Show Quest-Locked NPC Warnings"
+  
+- **Collection Progress Frame**: Standalone moveable progress display
+  - Draggable, resizable frame showing collection completion
+  - Per-category progress bars (Beast, Demon, Undead, Dragonkin, Elemental)
+  - Overall collection progress
+  - Color-coded bars (Red → Orange → Yellow → Green based on completion)
+  - Auto-updates every 5 seconds
+  - Saves position and visibility state
+  - Toggle: `/avanity progress` or checkbox in settings
+  
+- **Enhanced Constants System**: 
+  - New quest warning color constants (AV_COLOR_RED, AV_COLOR_GOLD, etc.)
+  - Category prefix constants (AV_CATEGORY_PREFIXES)
+  - Short category names for UI (AV_CATEGORY_SHORT_NAMES)
+
+### Added - Data & Configuration
+- **Quest-Locked NPC Database**: `data/QuestLockedNPCs.json`
+  - Demon Spirit (Horde, Hand of Iruxos quest)
+  - Enraged Panther (Horde, Hypercapacitor Gizmo quest)
+  - Structured format with quest details, warnings, and notes
+  
+- **New Files**:
+  - `CollectionProgressFrame.lua` - Standalone progress UI
+  - `data/QuestLockedNPCs.json` - Quest-locked NPC database
+
+### Changed
+- **Database Schema**: Updated to v2.2 with `questLock` field support
+- **Generation Pipeline**: Enhanced to merge quest lock data during build
+- **Settings UI**: Added checkboxes for quest warnings and progress frame
+- **Code Quality**: Replaced hardcoded color codes with constants throughout
+
+### Documentation
+- Updated `docs/DATA_SCHEMAS.md` with questLock field structure
+- Updated `docs/INNOVATIVE_FEATURES_ROADMAP.md` with completed features
+
 ## [2.1-beta] - 2025-10-29
 
 ### ⚠️ Breaking Changes - Clean Installation Required

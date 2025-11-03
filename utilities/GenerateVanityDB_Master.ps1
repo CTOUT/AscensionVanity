@@ -22,6 +22,21 @@ Write-Host "Loading master JSON..." -ForegroundColor Cyan
 $items = Get-Content $MasterJson -Raw | ConvertFrom-Json
 Write-Host "Total items loaded: $($items.Count)" -ForegroundColor Yellow
 
+# Load quest-locked NPC data (v2.2)
+Write-Host "Loading quest-locked NPC data..." -ForegroundColor Cyan
+$questLockedFile = 'data/QuestLockedNPCs.json'
+$questLockedData = @{}
+
+if (Test-Path $questLockedFile) {
+    $questLockedJson = Get-Content $questLockedFile -Raw | ConvertFrom-Json
+    foreach ($entry in $questLockedJson.questLockedNPCs) {
+        $questLockedData[$entry.itemId] = $entry
+    }
+    Write-Host "  Loaded $($questLockedData.Count) quest-locked NPCs" -ForegroundColor Gray
+} else {
+    Write-Warning "Quest-locked NPCs file not found: $questLockedFile (no quest warnings will be included)"
+}
+
 # Load zone mappings for subzone → parent zone lookup (v2.1)
 Write-Host "Loading zone mappings..." -ForegroundColor Cyan
 $zoneMappingsFile = 'data/ZoneMappings.json'
@@ -86,6 +101,9 @@ foreach ($it in $items) {
         }
     }
     
+    # Check for quest lock data (v2.2)
+    $questLock = $questLockedData[$id]
+    
     $processed += [pscustomobject]@{
         itemid = $id
         name = $it.Name
@@ -95,6 +113,7 @@ foreach ($it in $items) {
         zone = $zone  # v2.1: Primary zone
         subzone = $subzone  # v2.1: Specific location
         icon = $iconIndex
+        questLock = $questLock  # v2.2: Quest lock information (null if not quest-locked)
     }
 }
 
@@ -191,7 +210,7 @@ if (Test-Path $scanFile) {
 }
 
 $header = @"
--- AscensionVanity Full Database v2.1
+-- AscensionVanity Full Database v2.2
 -- Generated: $timestamp
 -- Total Items: $($processed.Count)$scanMetadata
 -- 
@@ -199,7 +218,7 @@ $header = @"
 --   AV_IconList: Deduplicated icon paths referenced by index
 --   AV_VanityItems: Combat pet items indexed by game item ID
 -- 
--- Schema v2.1 Fields:
+-- Schema v2.2 Fields:
 --   itemid: Game item ID
 --   name: Full item name with prefix
 --   creaturePreview: Visual model ID (immutable from API)
@@ -208,6 +227,13 @@ $header = @"
 --   zone: Primary zone/region (optional)
 --   subzone: Specific location within zone (optional)
 --   icon: Index into AV_IconList
+--   questLock: Quest-locked NPC information (optional v2.2)
+--     - questId: Quest ID number
+--     - questName: Quest name string
+--     - lockType: "completion", "phase", "daily", "weekly"
+--     - faction: "Horde", "Alliance", "Both"
+--     - warning: Custom warning message
+--     - notes: Additional context (summon method, etc.)
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
@@ -218,7 +244,8 @@ AV_DatabaseInfo = {
     ascensionVersion = "$ascensionVersion",
     scanDate = "$scanDate",
     totalItems = $($processed.Count),
-    schemaVersion = "2.1"
+    schemaVersion = "2.2",
+    questLockedCount = $(($processed | Where-Object { $_.questLock }).Count)
 }
 
 AV_IconList = {
@@ -250,7 +277,28 @@ foreach ($p in ($processed | Sort-Object itemid)) {
     if ($safeSubzone) {
         $db += ('        subzone = "' + $safeSubzone + '",')
     }
-    $db += ('        icon = ' + $p.icon)
+    $db += ('        icon = ' + $p.icon + ',')
+    
+    # Add quest lock data if present (v2.2)
+    if ($p.questLock) {
+        $safeQuestName = $p.questLock.questName -replace '\\', '\\' -replace '"', '\"'
+        $safeWarning = $p.questLock.warning -replace '\\', '\\' -replace '"', '\"'
+        $safeNotes = $p.questLock.notes -replace '\\', '\\' -replace '"', '\"'
+        
+        $db += '        questLock = {'
+        $db += ('            questId = ' + $p.questLock.questId + ',')
+        $db += ('            questName = "' + $safeQuestName + '",')
+        $db += ('            lockType = "' + $p.questLock.lockType + '",')
+        $db += ('            faction = "' + $p.questLock.faction + '",')
+        $db += ('            warning = "' + $safeWarning + '",')
+        $db += ('            notes = "' + $safeNotes + '"')
+        $db += '        }'
+    }
+    else {
+        # Remove trailing comma from icon line if no questLock
+        $db[-1] = $db[-1] -replace ',$', ''
+    }
+    
     $db += '    },'
 }
 $db += "}" 

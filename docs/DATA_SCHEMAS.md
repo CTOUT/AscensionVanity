@@ -106,7 +106,17 @@ AV_VanityItems = {
         name = string,              -- Item name
         creaturePreview = number,   -- Creature ID (0 = vendor/unavailable)
         description = string,       -- Drop location ("" if unknown)
-        icon = number               -- Index into AV_IconList
+        icon = number,              -- Index into AV_IconList
+        
+        -- NEW v2.2: Quest-Locked NPC Information (optional)
+        questLock = {               -- Only present for quest-locked NPCs
+            questId = number,           -- Quest ID (e.g., 5381)
+            questName = string,         -- Quest name (e.g., "Hand of Iruxos")
+            lockType = string,          -- "completion", "phase", "daily", "weekly"
+            faction = string,           -- "Horde", "Alliance", "Both"
+            warning = string,           -- Custom warning message
+            notes = string              -- Additional context (summon method, etc.)
+        }
     }
 }
 ```

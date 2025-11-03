@@ -170,7 +170,14 @@ function AscensionVanity_ShowCurrentZoneItems()
         end
         
         print(AV_COLOR_BLUE .. "──────────────────────────────" .. AV_COLOR_RESET)
-        print(AV_COLOR_YELLOW .. "(" .. #items .. " unlearned item(s) from " .. table.getn(creatureItems) .. " creature(s))" .. AV_COLOR_RESET)
+        
+        -- Count creatures (can't use # on hash tables, need to iterate)
+        local creatureCount = 0
+        for _ in pairs(creatureItems) do
+            creatureCount = creatureCount + 1
+        end
+        
+        print(AV_COLOR_YELLOW .. "(" .. #items .. " unlearned item(s) from " .. creatureCount .. " creature(s))" .. AV_COLOR_RESET)
     end
     
     print(AV_COLOR_BLUE .. "══════════════════════════════" .. AV_COLOR_RESET)

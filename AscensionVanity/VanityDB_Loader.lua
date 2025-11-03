@@ -120,3 +120,50 @@ function AV_GetDatabaseStats()
         creatures = creatureCount
     }
 end
+
+-- Get collection progress statistics (v2.2)
+-- Returns: table with overall and per-category progress
+function AV_GetCollectionProgress()
+    local progress = {
+        overall = { learned = 0, total = 0 },
+        beast = { learned = 0, total = 0 },
+        demon = { learned = 0, total = 0 },
+        undead = { learned = 0, total = 0 },
+        dragonkin = { learned = 0, total = 0 },
+        elemental = { learned = 0, total = 0 }
+    }
+    
+    -- Iterate through all items
+    for itemId, itemData in pairs(AV_VanityItems) do
+        -- Determine category from item name
+        local category = nil
+        local itemName = itemData.name
+        
+        if itemName then
+            -- Use constants from AscensionVanityConstants.lua
+            for cat, prefix in pairs(AV_CATEGORY_PREFIXES) do
+                if string.find(itemName, prefix, 1, true) then
+                    category = cat
+                    break
+                end
+            end
+        end
+        
+        -- Count total items
+        if category then
+            progress[category].total = progress[category].total + 1
+            progress.overall.total = progress.overall.total + 1
+            
+            -- Check if learned (requires C_VanityCollection API)
+            if C_VanityCollection and C_VanityCollection.IsCollectionItemOwned then
+                local isLearned = C_VanityCollection.IsCollectionItemOwned(itemId)
+                if isLearned then
+                    progress[category].learned = progress[category].learned + 1
+                    progress.overall.learned = progress.overall.learned + 1
+                end
+            end
+        end
+    end
+    
+    return progress
+end
