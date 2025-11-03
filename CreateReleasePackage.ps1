@@ -1,5 +1,10 @@
-# AscensionVanity v2.1-beta Release Package Creator
+# AscensionVanity Release Package Creator
 # Creates a clean ZIP file ready for distribution
+# 
+# IMPORTANT: Tag Naming Convention
+# - Branches: v2.1-beta, v2.2-dev, etc.
+# - Tags:     release/v2.1-beta, release/v2.2.0, etc.
+# This prevents ambiguity between branches and tags
 
 param(
     [string]$Version = "2.1-beta",
