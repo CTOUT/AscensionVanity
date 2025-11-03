@@ -5,8 +5,8 @@
 -- Version Information
 -- ============================================================================
 
-AV_VERSION = "2.1"
-AV_RELEASE_TYPE = "beta"  -- "prd", "tst", "dev"
+AV_VERSION = "2.2"
+AV_RELEASE_TYPE = "dev"  -- "prd", "tst", "dev"
 
 -- Get current Ascension build version string
 -- Returns: version string like "2025-11-02 @ 22:44:06 GMT Not Available"
