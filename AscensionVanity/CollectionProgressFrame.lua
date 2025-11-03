@@ -39,6 +39,50 @@ local title = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarg
 title:SetPoint("TOPLEFT", headerBg, "TOPLEFT", 8, -4)
 title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
 
+-- View mode toggle button (Global/Zone)
+local viewMode = "zone"  -- Default to zone view
+local viewButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
+viewButton:SetSize(60, 18)
+viewButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -25, -3)
+viewButton:SetText("Zone")
+viewButton:SetNormalFontObject("GameFontNormalSmall")
+viewButton:SetScript("OnClick", function(self)
+    if viewMode == "zone" then
+        viewMode = "global"
+        self:SetText("Global")
+        -- TODO: Switch to global stats
+        print(AV_COLOR_YELLOW .. "Switched to Global view" .. AV_COLOR_RESET)
+    else
+        viewMode = "zone"
+        self:SetText("Zone")
+        -- TODO: Switch to zone-specific stats
+        print(AV_COLOR_YELLOW .. "Switched to Zone view" .. AV_COLOR_RESET)
+    end
+    -- Update progress bars with new view
+    if progressFrame:IsVisible() then
+        local updateFunc = _G.AV_UpdateProgressBars or function() end
+        updateFunc()
+    end
+end)
+viewButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    if viewMode == "zone" then
+        GameTooltip:SetText("Zone View", 1, 1, 1)
+        GameTooltip:AddLine("Showing progress for items in your current zone", nil, nil, nil, true)
+        GameTooltip:AddLine("Click to switch to Global view", 0.7, 0.7, 0.7, true)
+    else
+        GameTooltip:SetText("Global View", 1, 1, 1)
+        GameTooltip:AddLine("Showing overall collection progress", nil, nil, nil, true)
+        GameTooltip:AddLine("Click to switch to Zone view", 0.7, 0.7, 0.7, true)
+    end
+    GameTooltip:Show()
+end)
+viewButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+end)
+progressFrame.viewButton = viewButton
+progressFrame.getViewMode = function() return viewMode end
+
 -- Close button
 local closeButton = CreateFrame("Button", nil, progressFrame, "UIPanelCloseButton")
 closeButton:SetSize(20, 20)
@@ -125,13 +169,66 @@ end
 -- Create progress bars
 local yPos = -8
 progressFrame.progressBars.overall = CreateProgressBar(progressFrame, "Overall", headerBg, yPos)
-yPos = -6
 
-progressFrame.progressBars.beast = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES.beast, progressFrame.progressBars.overall.bg, yPos)
-progressFrame.progressBars.demon = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES.demon, progressFrame.progressBars.beast.bg, yPos)
-progressFrame.progressBars.undead = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES.undead, progressFrame.progressBars.demon.bg, yPos)
-progressFrame.progressBars.dragonkin = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES.dragonkin, progressFrame.progressBars.undead.bg, yPos)
-progressFrame.progressBars.elemental = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES.elemental, progressFrame.progressBars.dragonkin.bg, yPos)
+-- Flat anchoring for categories (all anchored to overall bar, spaced vertically)
+local categoryOrder = {"beast", "demon", "undead", "dragonkin", "elemental"}
+local categoryOffsets = {
+    beast = -28,
+    demon = -52,
+    undead = -76,
+    dragonkin = -100,
+    elemental = -124
+}
+for _, cat in ipairs(categoryOrder) do
+    progressFrame.progressBars[cat] = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES[cat], progressFrame.progressBars.overall.bg, categoryOffsets[cat])
+end
+
+-- Expand/collapse state
+local overallExpanded = true
+local expandedCategories = { beast=true, demon=true, undead=true, dragonkin=true, elemental=true }
+
+-- Add expand/collapse button for OVERALL bar (master collapse)
+local overallBtn = CreateFrame("Button", nil, progressFrame)
+overallBtn:SetSize(14, 14)
+overallBtn:SetPoint("RIGHT", progressFrame.progressBars.overall.bg, "LEFT", -4, 0)
+overallBtn:SetNormalFontObject("GameFontNormal")
+overallBtn:SetText("-")
+overallBtn:SetScript("OnClick", function()
+    overallExpanded = not overallExpanded
+    overallBtn:SetText(overallExpanded and "-" or "+")
+    -- Show/hide all category bars
+    for _, cat in ipairs(categoryOrder) do
+        local bar = progressFrame.progressBars[cat]
+        if overallExpanded then
+            bar.bg:Show()
+            bar.fill:Show()
+            bar.text:Show()
+            if bar.expandBtn then bar.expandBtn:Show() end
+        else
+            bar.bg:Hide()
+            bar.fill:Hide()
+            bar.text:Hide()
+            if bar.expandBtn then bar.expandBtn:Hide() end
+        end
+    end
+end)
+progressFrame.progressBars.overall.expandBtn = overallBtn
+
+-- Add expand/collapse button to each category bar (stub for now)
+for _, cat in ipairs(categoryOrder) do
+    local bar = progressFrame.progressBars[cat]
+    local btn = CreateFrame("Button", nil, progressFrame)
+    btn:SetSize(14, 14)
+    btn:SetPoint("RIGHT", bar.bg, "LEFT", -4, 0)
+    btn:SetNormalFontObject("GameFontNormal")
+    btn:SetText("-")
+    btn:SetScript("OnClick", function()
+        expandedCategories[cat] = not expandedCategories[cat]
+        btn:SetText(expandedCategories[cat] and "-" or "+")
+        -- In future: show/hide species bars here
+    end)
+    bar.expandBtn = btn
+end
 
 -- ============================================================================
 -- Update Logic
@@ -143,7 +240,31 @@ local function UpdateProgressBars()
         return  -- Function not available yet
     end
     
-    local progress = AV_GetCollectionProgress()
+    local progress
+    local viewMode = progressFrame.getViewMode()
+    
+    if viewMode == "zone" then
+        -- Get zone-specific progress (if available)
+        if AV_GetZoneCollectionProgress then
+            progress = AV_GetZoneCollectionProgress()
+            
+            -- Update title to show current zone
+            local zoneName = GetZoneText()
+            if zoneName and zoneName ~= "" then
+                title:SetText(AV_COLOR_HEADER .. zoneName .. AV_COLOR_RESET)
+            else
+                title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
+            end
+        else
+            -- Fallback to global if zone function not available yet
+            progress = AV_GetCollectionProgress()
+            title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
+        end
+    else
+        -- Global view
+        progress = AV_GetCollectionProgress()
+        title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
+    end
     
     -- Update each progress bar
     for category, bar in pairs(progressFrame.progressBars) do
@@ -151,7 +272,46 @@ local function UpdateProgressBars()
             bar:SetProgress(progress[category].learned, progress[category].total)
         end
     end
+    
+    -- Show/hide category bars based on view mode and expansion state
+    if overallExpanded then
+        for _, cat in ipairs(categoryOrder) do
+            local bar = progressFrame.progressBars[cat]
+            if viewMode == "zone" then
+                -- In zone view: hide categories with 0 items
+                if progress[cat] and progress[cat].total == 0 then
+                    bar.bg:Hide()
+                    bar.fill:Hide()
+                    bar.text:Hide()
+                    if bar.expandBtn then bar.expandBtn:Hide() end
+                else
+                    bar.bg:Show()
+                    bar.fill:Show()
+                    bar.text:Show()
+                    if bar.expandBtn then bar.expandBtn:Show() end
+                end
+            else
+                -- In global view: show all categories
+                bar.bg:Show()
+                bar.fill:Show()
+                bar.text:Show()
+                if bar.expandBtn then bar.expandBtn:Show() end
+            end
+        end
+    else
+        -- Overall is collapsed, hide all categories
+        for _, cat in ipairs(categoryOrder) do
+            local bar = progressFrame.progressBars[cat]
+            bar.bg:Hide()
+            bar.fill:Hide()
+            bar.text:Hide()
+            if bar.expandBtn then bar.expandBtn:Hide() end
+        end
+    end
 end
+
+-- Expose globally for external updates
+_G.AV_UpdateProgressBars = UpdateProgressBars
 
 -- Auto-update on show
 progressFrame:SetScript("OnShow", function()
@@ -176,22 +336,21 @@ end)
 
 -- Show the collection progress frame
 function AV_ShowCollectionProgress()
-    -- Restore saved position if available
     if AscensionVanityDB.progressFramePosition then
         local pos = AscensionVanityDB.progressFramePosition
         progressFrame:ClearAllPoints()
         progressFrame:SetPoint(pos.point, UIParent, pos.relativePoint, pos.x, pos.y)
     end
-    
     UpdateProgressBars()
     progressFrame:Show()
     AscensionVanityDB.showProgressFrame = true
+    if _G.AscensionVanity_SyncSettingsUI then _G.AscensionVanity_SyncSettingsUI() end
 end
 
--- Hide the collection progress frame
 function AV_HideCollectionProgress()
     progressFrame:Hide()
     AscensionVanityDB.showProgressFrame = false
+    if _G.AscensionVanity_SyncSettingsUI then _G.AscensionVanity_SyncSettingsUI() end
 end
 
 -- Toggle the collection progress frame

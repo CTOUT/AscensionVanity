@@ -14,7 +14,48 @@ This document captures planned features for future versions of AscensionVanity. 
 
 ---
 
-## v2.2 Planned Features (NEW)
+## v2.2 Features (IN PROGRESS)
+
+### 1. Collection Progress Tracker 📊
+**Priority:** High  
+**Complexity:** Medium  
+**Version Target:** v2.2  
+**Status:** 🚧 IN PROGRESS (90% Complete)
+
+**Description:**  
+Standalone moveable frame that displays real-time collection progress with per-category breakdown and zone-based filtering.
+
+**Implemented Features:**
+- ✅ Moveable, draggable frame with persistent position
+- ✅ Overall progress bar with color-coded completion
+- ✅ Per-category progress bars (Beast, Demon, Undead, Dragonkin, Elemental)
+- ✅ Master expand/collapse button for Overall bar
+- ✅ Per-category expand/collapse buttons (ready for species expansion)
+- ✅ Global/Zone view toggle button
+- ✅ Settings UI integration (show/hide checkbox)
+- ✅ Slash command support (`/avanity progress`)
+- ✅ Auto-updates every 5 seconds when visible
+- ✅ Zone change detection with auto-refresh
+
+**Current Issues (To Fix):**
+- 🔧 Zone view not showing data (zone index issue)
+- 🔧 Zone names may not match between GetZoneText() and database
+- 🔧 Categories briefly show 0/0 then hide in zone view
+
+**Next Steps:**
+1. Debug zone index building and name matching
+2. Add zone name mapping for inconsistent names
+3. Test expanded category view with creature listings
+4. Implement species-level expansion (future enhancement)
+
+**Files Created:**
+- `AscensionVanity/CollectionProgressFrame.lua` - Main tracker frame
+- Added integration to `Core.lua` and `SettingsUI.lua`
+
+**Effort:** 2-3 days (90% complete)  
+**Testing:** Frame display, progress tracking, zone filtering
+
+---
 
 ### 0. Quest-Locked NPC Warnings ⚠️🔴
 **Priority:** CRITICAL  

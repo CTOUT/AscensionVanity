@@ -71,19 +71,18 @@
     "Lua.workspace.checkThirdParty": false,
     "Lua.runtime.version": "Lua 5.1",
     "Lua.runtime.builtin": {
-        "basic": "default",
-        "string": "default",
-        "table": "default",
-        "math": "default",
+        "basic": "disable",
         "debug": "disable",
         "io": "disable",
+        "math": "disable",
         "os": "disable",
         "package": "disable",
+        "string": "disable",
+        "table": "disable",
         "utf8": "disable"
     },
     "Lua.workspace.library": [
-        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/Core",
-        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/FrameXML"
+        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core"
     ],
     // CRITICAL: Extension keeps resetting this - DO NOT let ketho.wow-api override
     "Lua.workspace.userThirdParty": []

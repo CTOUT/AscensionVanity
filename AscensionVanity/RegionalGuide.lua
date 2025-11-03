@@ -184,6 +184,127 @@ function AscensionVanity_ShowCurrentZoneItems()
 end
 
 -- ============================================================================
+-- Zone-Based Collection Progress (for Progress Frame)
+-- ============================================================================
+
+-- Get collection progress for the current zone, grouped by category
+function AV_GetZoneCollectionProgress()
+    local location = GetCurrentLocation()
+    local zoneName = location.zone
+    
+    -- Debug: Print what zone we're looking for
+    print(AV_COLOR_YELLOW .. "[DEBUG] Looking for zone: '" .. tostring(zoneName) .. "'" .. AV_COLOR_RESET)
+    
+    -- If no zone data, return global progress
+    if not zoneName or zoneName == "" then
+        print(AV_COLOR_RED .. "[DEBUG] No zone name detected, using global" .. AV_COLOR_RESET)
+        if AV_GetCollectionProgress then
+            return AV_GetCollectionProgress()
+        end
+        return {}
+    end
+    
+    -- Get ALL items from zone index (not just unlearned)
+    local zoneItems = zoneIndex[zoneName]
+    
+    -- Debug: Print zone index info
+    if not zoneItems then
+        print(AV_COLOR_RED .. "[DEBUG] Zone not found in index!" .. AV_COLOR_RESET)
+        -- Print first 10 zones we DO have
+        local count = 0
+        print(AV_COLOR_GRAY .. "[DEBUG] Available zones:" .. AV_COLOR_RESET)
+        for zone, items in pairs(zoneIndex) do
+            count = count + 1
+            if count <= 10 then
+                print(AV_COLOR_GRAY .. "  - '" .. zone .. "' (" .. #items .. " items)" .. AV_COLOR_RESET)
+            end
+        end
+    else
+        print(AV_COLOR_GREEN .. "[DEBUG] Found " .. #zoneItems .. " items in zone" .. AV_COLOR_RESET)
+    end
+    
+    if not zoneItems or #zoneItems == 0 then
+        -- No items in this zone, return empty progress
+        return {
+            overall = { learned = 0, total = 0 },
+            beast = { learned = 0, total = 0 },
+            demon = { learned = 0, total = 0 },
+            undead = { learned = 0, total = 0 },
+            dragonkin = { learned = 0, total = 0 },
+            elemental = { learned = 0, total = 0 }
+        }
+    end
+    
+    -- Initialize progress counters
+    local progress = {
+        overall = { learned = 0, total = 0 },
+        beast = { learned = 0, total = 0 },
+        demon = { learned = 0, total = 0 },
+        undead = { learned = 0, total = 0 },
+        dragonkin = { learned = 0, total = 0 },
+        elemental = { learned = 0, total = 0 }
+    }
+    
+    -- Count ALL items in this zone by category
+    for _, itemId in ipairs(zoneItems) do
+        local data = AV_VanityItems[itemId]
+        if data and data.category then
+            local cat = data.category:lower()
+            if progress[cat] then
+                progress[cat].total = progress[cat].total + 1
+                progress.overall.total = progress.overall.total + 1
+                
+                -- Check if learned
+                if IsItemLearned(itemId) then
+                    progress[cat].learned = progress[cat].learned + 1
+                    progress.overall.learned = progress.overall.learned + 1
+                end
+            end
+        end
+    end
+    
+    return progress
+end
+
+-- Get detailed zone items grouped by creature and category (for expanded view)
+function AV_GetZoneItemsByCategory()
+    local location = GetCurrentLocation()
+    local items = GetUnlearnedItemsInZone(location.zone)
+    
+    -- Group by category, then by creature
+    local categoryGroups = {
+        beast = {},
+        demon = {},
+        undead = {},
+        dragonkin = {},
+        elemental = {}
+    }
+    
+    for _, item in ipairs(items) do
+        local data = AV_VanityItems[item.itemId]
+        if data and data.category then
+            local cat = data.category:lower()
+            if categoryGroups[cat] then
+                local creatureId = item.creatureId
+                if not categoryGroups[cat][creatureId] then
+                    categoryGroups[cat][creatureId] = {
+                        creatureId = creatureId,
+                        items = {}
+                    }
+                end
+                table.insert(categoryGroups[cat][creatureId].items, {
+                    itemId = item.itemId,
+                    name = item.name,
+                    subzone = item.subzone
+                })
+            end
+        end
+    end
+    
+    return categoryGroups, location.zone
+end
+
+-- ============================================================================
 -- Zone Change Detection
 -- ============================================================================
 
@@ -202,6 +323,11 @@ zoneFrame:SetScript("OnEvent", function(self, event)
     -- Only notify if zone actually changed
     if currentZone ~= lastZone then
         lastZone = currentZone
+        
+        -- Update progress frame if it's open and in zone view
+        if _G.AV_UpdateProgressBars then
+            _G.AV_UpdateProgressBars()
+        end
         
         -- Optional: Auto-show items in new zone
         -- (Disabled by default to avoid spam)

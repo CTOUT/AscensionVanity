@@ -1,3 +1,9 @@
+-- Global function to sync settings UI with frame visibility
+function AscensionVanity_SyncSettingsUI()
+    if progressFrameCheckbox and AscensionVanityDB and AscensionVanityDB.showProgressFrame ~= nil then
+        progressFrameCheckbox:SetChecked(AscensionVanityDB.showProgressFrame)
+    end
+end
 -- AscensionVanity - Settings UI
 -- User interface for addon configuration
 
