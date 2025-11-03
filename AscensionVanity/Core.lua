@@ -529,7 +529,11 @@ end
 
 frame:SetScript("OnEvent", function(self, event, arg1)
     if event == "ADDON_LOADED" and arg1 == AddonName then
-        -- Addon loaded
+        -- Addon loaded (keep messages minimal here as they get buried by other addons)
+        -- Main status messages moved to PLAYER_LOGIN for better visibility
+        
+    elseif event == "PLAYER_LOGIN" then
+        -- Show addon status after all addons loaded (better visibility)
         print("|cFF00FF96AscensionVanity|r v" .. VERSION .. " loaded!")
         print("Type |cFFFFFF00/avanity|r for settings or |cFFFFFF00/avanity help|r for commands")
         
@@ -561,7 +565,6 @@ frame:SetScript("OnEvent", function(self, event, arg1)
             end
         end
         
-    elseif event == "PLAYER_LOGIN" then
         -- Hook into GameTooltip after player login
         GameTooltip:HookScript("OnTooltipSetUnit", OnTooltipSetUnit)
         
