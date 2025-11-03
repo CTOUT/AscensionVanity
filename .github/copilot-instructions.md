@@ -27,6 +27,34 @@ This project has a dedicated WoW addon development chatmode active for specializ
 
 These files work together to provide context-aware assistance and prevent irrelevant documentation lookups.
 
+## VS Code Extensions Setup
+
+The project is configured with optimal WoW addon development extensions:
+
+**Installed Extensions:**
+- `sumneko.lua` - Lua Language Server (IntelliSense, type checking)
+- `ketho.wow-api` - WoW WOTLK 3.3.5 API annotations
+- `septh.wow-bundle` - WoW addon toolset (FrameXML, snippets)
+- `stanzilla.vscode-wow-toc` - TOC file syntax support
+
+**Configuration:** `.vscode/settings.json`
+- Lua 5.1 runtime (WOTLK era)
+- All AscensionVanity globals declared
+- WoW API annotations enabled
+- No false warnings on standard WoW functions
+
+**Documentation:** `docs/VSCODE_EXTENSIONS.md`
+- Quick setup guide for team members
+- Extension features and benefits
+- Troubleshooting tips
+
+**Benefits:**
+- ✅ Full IntelliSense for WoW API
+- ✅ Autocomplete for addon globals
+- ✅ Real-time error detection
+- ✅ Parameter hints on hover
+- ✅ No need for AddOn Studio
+
 ## Core Philosophy
 
 ### 1. **Innovate, Don't Reinvent**

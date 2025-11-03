@@ -20,6 +20,9 @@ This is **AscensionVanity** - a World of Warcraft addon for Project Ascension th
   - General WoW API knowledge, Lua 5.1 patterns, performance optimization
 - **Main instructions**: `.github/copilot-instructions.md`
   - Core philosophy, coding standards, common tasks, version control
+- **VS Code setup**: `docs/VSCODE_EXTENSIONS.md`
+  - Required extensions for WoW addon development
+  - Configuration guide and troubleshooting
 
 ## 🚫 Do NOT Search For These Topics
 
@@ -388,12 +391,72 @@ data/
 **Solution**: Use master workflow; never replace full dataset with subset file. Preserve full scan artifacts.
 **Indicator**: Item count drastically lower than expected baseline (~2100+).
 
+---
+
+## 🛠️ Development Environment
+
+### VS Code Extensions (Required)
+
+**Install these 4 extensions for optimal development:**
+
+1. **sumneko.lua** - Lua Language Server
+   - IntelliSense and type checking
+   - Real-time error detection
+   - Function signatures
+   - 1.9M installs, 4.7★
+
+2. **ketho.wow-api** - WoW API Annotations
+   - WOTLK 3.3.5 API documentation
+   - Parameter hints for WoW functions
+   - 26K installs, 5★
+
+3. **septh.wow-bundle** - WoW Toolset
+   - FrameXML syntax support
+   - Lua snippets for WoW
+   - TOC file support
+   - 45K installs, 5★
+
+4. **stanzilla.vscode-wow-toc** - TOC Support
+   - Syntax highlighting for .toc files
+   - Metadata snippets
+   - 17K installs, 5★
+
+**Quick Install:**
+```powershell
+code --install-extension sumneko.lua
+code --install-extension ketho.wow-api
+code --install-extension septh.wow-bundle
+code --install-extension stanzilla.vscode-wow-toc
+```
+
+**See `docs/VSCODE_EXTENSIONS.md` for detailed setup guide.**
+
+### Workspace Configuration
+
+**File:** `.vscode/settings.json`
+- Lua 5.1 runtime configured
+- All AscensionVanity globals declared
+- WoW API annotations enabled
+- No false warnings on WoW functions
+
+**Result:**
+- ✅ Clean code with no false warnings
+- ✅ IntelliSense for WoW API
+- ✅ Autocomplete for addon globals
+- ✅ No need for AddOn Studio
+
+---
+
+## 🎯 Common Tasks
+
+### Task: Add New Configuration Option
+
 1. Add to `AscensionVanityConfig.lua`
 2. Add UI in `SettingsUI.lua` (if needed)
 3. Reference in `Core.lua` where used
 4. Test with saved variables (`WTF/Account/.../SavedVariables/`)
 
-## � Debugging Checklist
+## 🐛 Debugging Checklist
 
 When something doesn't work in-game:
 
@@ -480,6 +543,21 @@ If I suggest something that contradicts these instructions:
 ---
 
 ## 📜 Version History
+
+### v1.2.0 - November 2, 2025
+- Added data integrity infrastructure pattern (immutable sources + corrections)
+- Added creature ID correction workflow task
+- Added manual source edit corruption gotcha
+- Added periodic maintenance protocol
+- Expanded discovered patterns with layered corrections approach
+- Added maintenance checklist for repository housekeeping
+
+### v1.3.0 - November 3, 2025
+- Added VS Code extensions section
+- Documented required extensions for WoW development
+- Added workspace configuration details
+- Created VSCODE_EXTENSIONS.md reference
+- Added development environment discovery to Recent Insights
 
 ### v1.2.0 - November 2, 2025
 - Added data integrity infrastructure pattern (immutable sources + corrections)
@@ -660,6 +738,34 @@ This section is periodically updated by Copilot with new insights, challenges, a
 - Result: 14 unique icons instead of 3,727
 
 **Lesson**: Always filter data at the earliest possible stage to prevent scope creep.
+
+### November 3, 2025 - VS Code Development Environment
+
+**Insight**: Professional WoW addon development doesn't require AddOn Studio - VS Code with proper extensions is superior.
+
+**Solution**: Installed and configured 4 essential extensions:
+- sumneko.lua - Best Lua Language Server available
+- ketho.wow-api - WOTLK 3.3.5 API annotations
+- septh.wow-bundle - WoW-specific toolset
+- stanzilla.vscode-wow-toc - TOC file support
+
+**Configuration**: Created `.vscode/settings.json` with:
+- Lua 5.1 runtime (WOTLK era)
+- All AscensionVanity globals declared (no false warnings)
+- WoW API annotations enabled
+- Built-in Lua libraries disabled (WoW has its own)
+
+**Benefits**:
+- ✅ Full IntelliSense for WoW API functions
+- ✅ Autocomplete for addon-specific globals
+- ✅ Real-time error detection (no false positives)
+- ✅ Parameter hints on hover
+- ✅ TOC file syntax highlighting
+- ✅ Lighter weight than AddOn Studio
+
+**Documentation**: Created `docs/VSCODE_EXTENSIONS.md` with setup guide for team members.
+
+**Action**: ALWAYS reference this setup for new team members. Skip AddOn Studio entirely!
 
 ---
 
