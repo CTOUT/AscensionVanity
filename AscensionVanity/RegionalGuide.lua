@@ -133,9 +133,9 @@ function AscensionVanity_ShowCurrentZoneItems()
     local location = GetCurrentLocation()
     local items = GetUnlearnedItemsInZone(location.zone)
     
-    print(AV_COLOR_BLUE .. "════════════════════════════════════════" .. AV_COLOR_RESET)
+    print(AV_COLOR_BLUE .. "══════════════════════════════" .. AV_COLOR_RESET)
     print(AV_COLOR_GREEN .. "[" .. (location.zone or "Unknown Zone") .. " - Unlearned Vanity Items]" .. AV_COLOR_RESET)
-    print(AV_COLOR_BLUE .. "════════════════════════════════════════" .. AV_COLOR_RESET)
+    print(AV_COLOR_BLUE .. "══════════════════════════════" .. AV_COLOR_RESET)
     
     if #items == 0 then
         print(AV_COLOR_YELLOW .. "No unlearned vanity items found in this zone." .. AV_COLOR_RESET)
@@ -169,11 +169,11 @@ function AscensionVanity_ShowCurrentZoneItems()
             print("")  -- Blank line between creatures
         end
         
-        print(AV_COLOR_BLUE .. "────────────────────────────────────────" .. AV_COLOR_RESET)
+        print(AV_COLOR_BLUE .. "──────────────────────────────" .. AV_COLOR_RESET)
         print(AV_COLOR_YELLOW .. "(" .. #items .. " unlearned item(s) from " .. table.getn(creatureItems) .. " creature(s))" .. AV_COLOR_RESET)
     end
     
-    print(AV_COLOR_BLUE .. "════════════════════════════════════════" .. AV_COLOR_RESET)
+    print(AV_COLOR_BLUE .. "══════════════════════════════" .. AV_COLOR_RESET)
 end
 
 -- ============================================================================
