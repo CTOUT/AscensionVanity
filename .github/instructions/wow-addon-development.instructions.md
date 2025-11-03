@@ -34,7 +34,7 @@ This is **AscensionVanity** - a World of Warcraft addon for Project Ascension th
 - ❌ Entra ID, OAuth, or identity systems
 - ❌ Modern JavaScript frameworks
 - ❌ Docker, Kubernetes, or containerization
-- ❌ .NET Core, ASP.NET (we use PowerShell, not C#)
+- ❌ .NET Core, ASP.NET (we use PowerShell, not C# )
 - ❌ React, Vue, Angular
 - ❌ SQL databases (we use Lua tables and JSON files)
 
