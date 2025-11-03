@@ -68,6 +68,21 @@ local statusHeader = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontNorm
 statusHeader:SetPoint("TOPLEFT", separator1, "BOTTOMLEFT", 30, -16)
 statusHeader:SetText("Current Status:")
 
+-- Version info (right side of status header)
+local versionInfo = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+versionInfo:SetPoint("TOPRIGHT", separator1, "BOTTOMRIGHT", -30, -16)
+versionInfo:SetJustifyH("RIGHT")
+local dbVersion = AV_DatabaseInfo and AV_DatabaseInfo.ascensionVersion or "Unknown"
+local currentVersion = AV_GetCurrentAscensionVersion()
+local versionColor = (dbVersion == currentVersion) and "|cFF00FF00" or "|cFFFFAA00"
+versionInfo:SetText(
+    string.format("|cFF888888Database:|r %s\n|cFF888888Current:|r %s%s|r",
+        dbVersion,
+        versionColor,
+        currentVersion
+    )
+)
+
 local statusText = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 statusText:SetPoint("TOPLEFT", statusHeader, "BOTTOMLEFT", 0, -8)
 statusText:SetWidth(580)
