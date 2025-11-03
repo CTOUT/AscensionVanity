@@ -8,6 +8,27 @@
 AV_VERSION = "2.1"
 AV_RELEASE_TYPE = "dev"  -- "prd", "tst", "dev"
 
+-- Get current Ascension build version string
+-- Returns: version string like "2025-11-02 @ 22:44:06 GMT Not Available"
+-- Used by: APIScanner (for scan metadata), Core (for version check)
+function AV_GetCurrentAscensionVersion()
+    if not GetClientVersion then
+        return "Unknown"
+    end
+    
+    local success, dateStr, timeStr, branch = pcall(GetClientVersion)
+    if not success or not dateStr then
+        return "Unknown"
+    end
+    
+    local version = tostring(dateStr) .. " @ " .. tostring(timeStr)
+    if branch and branch ~= "" and branch ~= "nil" then
+        version = version .. " " .. tostring(branch)
+    end
+    
+    return version
+end
+
 -- ============================================================================
 -- Color Codes
 -- ============================================================================
@@ -24,6 +45,8 @@ AV_COLOR_UNLEARNED = "|cFFFFFF00"  -- Yellow (unlearned items)
 AV_COLOR_GRAY = "|cFF888888"       -- Gray (descriptive text)
 AV_COLOR_ORANGE = "|cFFFFAA00"     -- Orange (warnings/notes)
 AV_COLOR_GREEN = "|cFF00FF00"      -- Green (success/recommendations)
+AV_COLOR_BLUE = "|cFF0099FF"       -- Blue (informational text)
+AV_COLOR_WHITE = "|cFFFFFFFF"      -- White (standard text)
 
 -- Color reset
 AV_COLOR_RESET = "|r"

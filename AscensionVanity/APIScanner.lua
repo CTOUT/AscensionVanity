@@ -129,25 +129,8 @@ function AV_ScanAllItems()
     -- Capture game version info BEFORE scanning
     local version, build, buildDate = GetBuildInfo()
     
-    -- Capture Ascension custom version using GetClientVersion()
-    local ascensionVersion = "Unknown"
-    if GetClientVersion then
-        local success, result1, result2, result3, result4 = pcall(GetClientVersion)
-        if success and result1 then
-            local dateStr = tostring(result1 or "")
-            local timeStr = tostring(result2 or "")
-            local branch = tostring(result3 or "")
-            
-            if dateStr ~= "" and timeStr ~= "" then
-                ascensionVersion = dateStr .. " @ " .. timeStr
-                if branch ~= "" and branch ~= "nil" then
-                    ascensionVersion = ascensionVersion .. " " .. branch
-                end
-            end
-        elseif not success then
-            Print("  ⚠ GetClientVersion() failed: " .. tostring(result1))
-        end
-    end
+    -- Get Ascension custom version (shared function from constants)
+    local ascensionVersion = AV_GetCurrentAscensionVersion()
     
     -- Initialize metadata FIRST (alphabetically sorted, APIDump will be added LAST)
     AscensionVanityDump = {

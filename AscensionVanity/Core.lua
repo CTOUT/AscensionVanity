@@ -545,17 +545,8 @@ frame:SetScript("OnEvent", function(self, event, arg1)
             local dbVersion = AV_DatabaseInfo.ascensionVersion or "Unknown"
             local dbDate = AV_DatabaseInfo.scanDate or "Unknown"
             
-            -- Get current Ascension build info using GetClientVersion()
-            local currentVersion = "Unknown"
-            if GetClientVersion then
-                local success, dateStr, timeStr, branch = pcall(GetClientVersion)
-                if success and dateStr then
-                    currentVersion = tostring(dateStr) .. " @ " .. tostring(timeStr)
-                    if branch and branch ~= "" and branch ~= "nil" then
-                        currentVersion = currentVersion .. " " .. tostring(branch)
-                    end
-                end
-            end
+            -- Get current Ascension build info (shared function)
+            local currentVersion = AV_GetCurrentAscensionVersion()
             
             -- Show database info
             print("|cFF00FF96AscensionVanity:|r Database from: " .. dbDate)
