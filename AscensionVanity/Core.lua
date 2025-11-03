@@ -545,24 +545,28 @@ frame:SetScript("OnEvent", function(self, event, arg1)
             local dbVersion = AV_DatabaseInfo.ascensionVersion or "Unknown"
             local dbDate = AV_DatabaseInfo.scanDate or "Unknown"
             
-            -- Get current Ascension build info
+            -- Get current Ascension build info using GetClientVersion()
             local currentVersion = "Unknown"
-            local ascensionBuild = GetBuildInfo()  -- Returns build number
-            
-            -- Try to get Ascension-specific version (if API exists)
-            if IsAddOnLoaded("Blizzard_GameMenu") then
-                -- Ascension has custom build info in UI
-                currentVersion = ascensionBuild or "Unknown"
+            if GetClientVersion then
+                local success, dateStr, timeStr, branch = pcall(GetClientVersion)
+                if success and dateStr then
+                    currentVersion = tostring(dateStr) .. " @ " .. tostring(timeStr)
+                    if branch and branch ~= "" and branch ~= "nil" then
+                        currentVersion = currentVersion .. " " .. tostring(branch)
+                    end
+                end
             end
             
             -- Show database info
             print("|cFF00FF96AscensionVanity:|r Database from: " .. dbDate)
-            print("  → Ascension build: " .. dbVersion)
+            print("  → Database build: " .. dbVersion)
+            print("  → Current build:  " .. currentVersion)
             
-            -- Check if database might be outdated (simple date comparison)
-            -- Note: This is a rough check since we don't have real-time version API
-            if dbVersion ~= "Unknown" and not string.find(dbVersion, "2025-11") then
-                print("|cFFFFAA00⚠ Database may be outdated!|r Consider rescanning with |cFFFFFF00/avanity scan|r")
+            -- Compare versions
+            if currentVersion ~= "Unknown" and dbVersion ~= "Unknown" then
+                if currentVersion ~= dbVersion then
+                    print("|cFFFFAA00⚠ Database is from a different build!|r Consider rescanning with |cFFFFFF00/avanity scan|r")
+                end
             end
         end
         
