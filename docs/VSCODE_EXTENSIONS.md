@@ -119,6 +119,49 @@ Hover over any function call to see:
 
 ## 🐛 Troubleshooting
 
+### ⚠️ CRITICAL: Settings Keep Getting Reset
+
+**Problem:** The `ketho.wow-api` extension automatically resets Lua workspace settings on reload.
+
+**Solution:** Use Dev Mode + FrameXML settings (already configured in `.vscode/settings.json`)
+```jsonc
+{
+    // Prevents ketho.wow-api from resetting Lua settings
+    "wowAPI.luals.devMode": true,
+    
+    // Enables automatic FrameXML annotations (when NOT in devMode)
+    "wowAPI.luals.defineKnownGlobals": true,
+    "wowAPI.luals.frameXML": true,
+    
+    // Manual library paths (required when using devMode)
+    "Lua.workspace.library": [
+        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/Core",
+        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/FrameXML"
+    ]
+}
+```
+
+**References:**
+- [GitHub Issue #181](https://github.com/Ketho/vscode-wow-api/issues/181) - Auto-reset problem
+- [GitHub Issue #194](https://github.com/Ketho/vscode-wow-api/issues/194) - FrameXML solution
+- [WoW API Wiki - Dev Mode](https://github.com/Ketho/vscode-wow-api/wiki/Settings#dev-mode)
+
+**What Dev Mode Does:**
+- ✅ Prevents automatic workspace library changes
+- ✅ Allows manual control of Lua settings
+- ✅ Stops settings from being overwritten on reload
+- ⚠️ Requires manual library path configuration
+- ⚠️ Must include both Core and FrameXML paths manually
+
+**Alternative (Without Dev Mode):**
+If you prefer automatic management:
+- Set `"wowAPI.luals.devMode": false`
+- Set `"wowAPI.luals.frameXML": true`
+- Remove manual `Lua.workspace.library` paths
+- Extension will auto-manage both Core and FrameXML paths
+
+---
+
 ### "Undefined global" warnings still appear
 
 **Solution:** Reload VS Code window

@@ -1,19 +1,60 @@
 {
-    // Disable warnings for WoW patterns
+    // ============================================================================
+    // WoW API Extension Settings (MUST BE FIRST!)
+    // ============================================================================
+    // CRITICAL FIX: Prevent ketho.wow-api from resetting Lua workspace settings
+    // See: https://github.com/Ketho/vscode-wow-api/issues/181
+    //      https://github.com/Ketho/vscode-wow-api/issues/194
+    "wowAPI.luals.devMode": true,
+    "wowAPI.luals.defineKnownGlobals": true,
+    "wowAPI.luals.frameXML": true,
+    
+    // ============================================================================
+    // Lua Language Server Settings
+    // ============================================================================
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.runtime.builtin": {
+        "basic": "default",    // WoW uses: print, type, pairs, ipairs, etc.
+        "string": "default",   // WoW uses: string.format, string.find, etc.
+        "table": "default",    // WoW uses: table.insert, table.sort, etc.
+        "math": "default",     // WoW uses: math.floor, math.max, etc.
+        "debug": "disable",    // Not available in WoW
+        "io": "disable",       // Not available in WoW
+        "os": "disable",       // Not available in WoW
+        "package": "disable",  // Not available in WoW
+        "utf8": "disable"      // Not available in WoW (Lua 5.3+)
+    },
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.workspace.library": [
+        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core",
+        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\FrameXML"
+    ],
+    "Lua.workspace.userThirdParty": [],
     "Lua.diagnostics.disable": [
         "lowercase-global" // WoW uses lowercase globals like "print"
     ],
     "Lua.diagnostics.globals": [
+        // WoW Standard Globals
         "UISpecialFrames",
         "StaticPopupDialogs",
         "StaticPopup_Show",
         "SlashCmdList",
         "CollectionsJournal",
         "InterfaceOptions_AddCategory",
+        "GameTooltip",
+        "UIParent",
+        
+        // Project Ascension APIs
+        "C_VanityCollection",
         "C_AppearanceCollection",
-        "AscensionVanityScannerFrame",
+        "GetClientVersion",
+        
+        // AscensionVanity SavedVariables
         "AscensionVanityDB",
         "AscensionVanityDump",
+        "AscensionVanityScannerFrame",
+        
+        // AscensionVanity Constants (v2.2)
         "AV_VERSION",
         "AV_RELEASE_TYPE",
         "AV_COLOR_ADDON",
@@ -26,13 +67,23 @@
         "AV_COLOR_GREEN",
         "AV_COLOR_BLUE",
         "AV_COLOR_WHITE",
+        "AV_COLOR_RED",
+        "AV_COLOR_BRIGHT_ORANGE",
+        "AV_COLOR_GOLD",
+        "AV_COLOR_LIGHT_RED",
+        "AV_COLOR_PINK",
+        "AV_COLOR_LIGHT_GRAY",
         "AV_COLOR_RESET",
         "AV_CATEGORY_ICONS",
         "AV_CATEGORY_NAMES",
+        "AV_CATEGORY_PREFIXES",
+        "AV_CATEGORY_SHORT_NAMES",
         "AV_FormatIcon",
         "AV_GetCategoryIcon",
         "AV_GetCategoryLabel",
         "AV_GetCurrentAscensionVersion",
+        
+        // AscensionVanity Database (v2.2)
         "AV_VanityItems",
         "AV_IconList",
         "AV_Regions",
@@ -45,8 +96,11 @@
         "AV_GetItemRegion",
         "AV_GetTotalItems",
         "AV_GetDatabaseStats",
+        "AV_GetCollectionProgress",
         "AV_ScanAllItems",
         "AV_ClearDumpData",
+        
+        // AscensionVanity UI Functions
         "AscensionVanity_ShowSettings",
         "AscensionVanity_HideSettings",
         "AscensionVanity_ToggleSettings",
@@ -56,34 +110,21 @@
         "AscensionVanity_ToggleScanner",
         "AscensionVanity_SyncScannerUI",
         "AscensionVanity_SyncDebugCheckbox",
+        
+        // AscensionVanity Regional Guide
         "AscensionVanity_InitRegionalGuide",
         "AscensionVanity_GetCurrentZoneItems",
         "AscensionVanity_ShowCurrentZoneItems",
         "AscensionVanity_ShowCurrentZone",
-        "C_VanityCollection",
-        "GetClientVersion",
+        
+        // AscensionVanity Collection Progress (v2.2)
+        "AV_ShowCollectionProgress",
+        "AV_HideCollectionProgress",
+        "AV_ToggleCollectionProgress",
+        
+        // Slash Commands
         "SLASH_ASCENSIONVANITY1",
         "SLASH_ASCENSIONVANITY2",
-        "SLASH_ASCENSIONVANITY3",
-        "GameTooltip",
-        "UIParent"
-    ],
-    "Lua.workspace.checkThirdParty": false,
-    "Lua.runtime.version": "Lua 5.1",
-    "Lua.runtime.builtin": {
-        "basic": "disable",
-        "debug": "disable",
-        "io": "disable",
-        "math": "disable",
-        "os": "disable",
-        "package": "disable",
-        "string": "disable",
-        "table": "disable",
-        "utf8": "disable"
-    },
-    "Lua.workspace.library": [
-        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core"
-    ],
-    // CRITICAL: Extension keeps resetting this - DO NOT let ketho.wow-api override
-    "Lua.workspace.userThirdParty": []
+        "SLASH_ASCENSIONVANITY3"
+    ]
 }
