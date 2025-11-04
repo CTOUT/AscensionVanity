@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.2
--- Generated: 2025-11-04 11:36:55
+-- Generated: 2025-11-04 12:05:06
 -- Total Items: 2129
 -- Source Scan: Ascension 2025-11-01 @ 16:21:03 GMT Not Available
 -- Scan Date: 2025-11-02 10:33:49
@@ -30,7 +30,7 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-04 11:36:55",
+    generatedDate = "2025-11-04 12:05:06",
     ascensionVersion = "2025-11-01 @ 16:21:03 GMT Not Available",
     scanDate = "2025-11-02 10:33:49",
     totalItems = 2129,
@@ -49,7 +49,7 @@ AV_VanityItems = {
         creaturePreview = 30,
         creatureId = 30,
         description = "Has a chance to drop from Forest Spider within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79336] = {
@@ -58,7 +58,8 @@ AV_VanityItems = {
         creaturePreview = 43,
         creatureId = 43,
         description = "Has a chance to drop from Mine Spider within Jasperlode Mine.",
-        zone = "Jasperlode Mine.",
+        zone = "Elwynn Forest",
+        subzone = "Jasperlode Mine",
         icon = 1
     },
     [79337] = {
@@ -67,7 +68,7 @@ AV_VanityItems = {
         creaturePreview = 69,
         creatureId = 69,
         description = "Has a chance to drop from Timber Wolf within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79345] = {
@@ -76,7 +77,7 @@ AV_VanityItems = {
         creaturePreview = 113,
         creatureId = 113,
         description = "Has a chance to drop from Stonetusk Boar within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79346] = {
@@ -85,7 +86,7 @@ AV_VanityItems = {
         creaturePreview = 118,
         creatureId = 118,
         description = "Has a chance to drop from Prowler within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79348] = {
@@ -94,7 +95,7 @@ AV_VanityItems = {
         creaturePreview = 154,
         creatureId = 154,
         description = "Has a chance to drop from Greater Fleshripper within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 1
     },
     [79349] = {
@@ -103,7 +104,8 @@ AV_VanityItems = {
         creaturePreview = 157,
         creatureId = 157,
         description = "Has a chance to drop from Goretusk within Alexston Farmstead.",
-        zone = "Alexston Farmstead.",
+        zone = "Westfall",
+        subzone = "Alexston Farmstead",
         icon = 1
     },
     [79350] = {
@@ -112,7 +114,8 @@ AV_VanityItems = {
         creaturePreview = 199,
         creatureId = 199,
         description = "Has a chance to drop from Young Fleshripper within Furlbrow's Pumpkin Farm.",
-        zone = "Furlbrow's Pumpkin Farm.",
+        zone = "Westfall",
+        subzone = "Furlbrow's Pumpkin Farm",
         icon = 1
     },
     [79351] = {
@@ -121,7 +124,8 @@ AV_VanityItems = {
         creaturePreview = 213,
         creatureId = 213,
         description = "Has a chance to drop from Starving Dire Wolf within Addle's Stead.",
-        zone = "Addle's Stead.",
+        zone = "Duskwood",
+        subzone = "Addle's Stead",
         icon = 1
     },
     [79352] = {
@@ -130,7 +134,8 @@ AV_VanityItems = {
         creaturePreview = 217,
         creatureId = 217,
         description = "Has a chance to drop from Venom Web Spider within The Darkened Bank.",
-        zone = "The Darkened Bank.",
+        zone = "Duskwood",
+        subzone = "The Darkened Bank",
         icon = 1
     },
     [79353] = {
@@ -139,7 +144,8 @@ AV_VanityItems = {
         creaturePreview = 299,
         creatureId = 299,
         description = "Has a chance to drop from Young Wolf within Goldshire.",
-        zone = "Goldshire.",
+        zone = "Elwynn Forest",
+        subzone = "Goldshire",
         icon = 1
     },
     [79354] = {
@@ -148,7 +154,8 @@ AV_VanityItems = {
         creaturePreview = 330,
         creatureId = 330,
         description = "Has a chance to drop from Princess within Brackwell Pumpkin Patch.",
-        zone = "Brackwell Pumpkin Patch.",
+        zone = "Elwynn Forest",
+        subzone = "Brackwell Pumpkin Patch",
         icon = 1
     },
     [79355] = {
@@ -157,7 +164,7 @@ AV_VanityItems = {
         creaturePreview = 345,
         creatureId = 345,
         description = "Has a chance to drop from Bellygrub within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 1
     },
     [79356] = {
@@ -166,7 +173,8 @@ AV_VanityItems = {
         creaturePreview = 390,
         creatureId = 390,
         description = "Has a chance to drop from Porcine Entourage within Brackwell Pumpkin Patch.",
-        zone = "Brackwell Pumpkin Patch.",
+        zone = "Elwynn Forest",
+        subzone = "Brackwell Pumpkin Patch",
         icon = 1
     },
     [79357] = {
@@ -175,7 +183,7 @@ AV_VanityItems = {
         creaturePreview = 428,
         creatureId = 428,
         description = "Has a chance to drop from Dire Condor within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 1
     },
     [79358] = {
@@ -184,7 +192,8 @@ AV_VanityItems = {
         creaturePreview = 442,
         creatureId = 442,
         description = "Has a chance to drop from Tarantula within Three Corners.",
-        zone = "Three Corners.",
+        zone = "Redridge Mountains",
+        subzone = "Three Corners",
         icon = 1
     },
     [79359] = {
@@ -193,7 +202,7 @@ AV_VanityItems = {
         creaturePreview = 454,
         creatureId = 454,
         description = "Has a chance to drop from Young Goretusk within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 1
     },
     [79360] = {
@@ -202,7 +211,7 @@ AV_VanityItems = {
         creaturePreview = 462,
         creatureId = 462,
         description = "Has a chance to drop from Vultros within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 1
     },
     [79361] = {
@@ -211,7 +220,8 @@ AV_VanityItems = {
         creaturePreview = 471,
         creatureId = 471,
         description = "Has a chance to drop from Mother Fang within Jasperlode Mine.",
-        zone = "Jasperlode Mine.",
+        zone = "Elwynn Forest",
+        subzone = "Jasperlode Mine",
         icon = 1
     },
     [79362] = {
@@ -220,7 +230,7 @@ AV_VanityItems = {
         creaturePreview = 505,
         creatureId = 505,
         description = "Has a chance to drop from Greater Tarantula within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 1
     },
     [79363] = {
@@ -229,7 +239,8 @@ AV_VanityItems = {
         creaturePreview = 521,
         creatureId = 521,
         description = "Has a chance to drop from Lupos within The Darkened Bank.",
-        zone = "The Darkened Bank.",
+        zone = "Duskwood",
+        subzone = "The Darkened Bank",
         icon = 1
     },
     [79364] = {
@@ -238,7 +249,7 @@ AV_VanityItems = {
         creaturePreview = 524,
         creatureId = 524,
         description = "Has a chance to drop from Rockhide Boar within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79365] = {
@@ -247,7 +258,8 @@ AV_VanityItems = {
         creaturePreview = 525,
         creatureId = 525,
         description = "Has a chance to drop from Mangy Wolf within Forest's Edge.",
-        zone = "Forest's Edge.",
+        zone = "Elwynn Forest",
+        subzone = "Forest's Edge",
         icon = 1
     },
     [79366] = {
@@ -256,7 +268,8 @@ AV_VanityItems = {
         creaturePreview = 539,
         creatureId = 539,
         description = "Has a chance to drop from Pygmy Venom Web Spider within The Darkened Bank.",
-        zone = "The Darkened Bank.",
+        zone = "Duskwood",
+        subzone = "The Darkened Bank",
         icon = 1
     },
     [79367] = {
@@ -265,7 +278,7 @@ AV_VanityItems = {
         creaturePreview = 547,
         creatureId = 547,
         description = "Has a chance to drop from Great Goretusk within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 1
     },
     [79368] = {
@@ -274,7 +287,8 @@ AV_VanityItems = {
         creaturePreview = 565,
         creatureId = 565,
         description = "Has a chance to drop from Rabid Dire Wolf within Addle's Stead.",
-        zone = "Addle's Stead.",
+        zone = "Duskwood",
+        subzone = "Addle's Stead",
         icon = 1
     },
     [79369] = {
@@ -283,7 +297,8 @@ AV_VanityItems = {
         creaturePreview = 569,
         creatureId = 569,
         description = "Has a chance to drop from Green Recluse within Addle's Stead.",
-        zone = "Addle's Stead.",
+        zone = "Duskwood",
+        subzone = "Addle's Stead",
         icon = 1
     },
     [79370] = {
@@ -292,7 +307,7 @@ AV_VanityItems = {
         creaturePreview = 574,
         creatureId = 574,
         description = "Has a chance to drop from Naraxis within Duskwood.",
-        zone = "Duskwood.",
+        zone = "Duskwood",
         icon = 1
     },
     [79371] = {
@@ -301,7 +316,8 @@ AV_VanityItems = {
         creaturePreview = 616,
         creatureId = 616,
         description = "Has a chance to drop from Chatter within Alther's Mill.",
-        zone = "Alther's Mill.",
+        zone = "Redridge Mountains",
+        subzone = "Alther's Mill",
         icon = 1
     },
     [79372] = {
@@ -310,7 +326,8 @@ AV_VanityItems = {
         creaturePreview = 628,
         creatureId = 628,
         description = "Has a chance to drop from Black Ravager within Brightwood Grove.",
-        zone = "Brightwood Grove.",
+        zone = "Duskwood",
+        subzone = "Brightwood Grove",
         icon = 1
     },
     [79373] = {
@@ -319,7 +336,7 @@ AV_VanityItems = {
         creaturePreview = 681,
         creatureId = 681,
         description = "Has a chance to drop from Young Stranglethorn Tiger within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79374] = {
@@ -328,7 +345,7 @@ AV_VanityItems = {
         creaturePreview = 682,
         creatureId = 682,
         description = "Has a chance to drop from Stranglethorn Tiger within Kurzen's Compound.",
-        zone = "Kurzen's Compound.",
+        zone = "Kurzen's Compound",
         icon = 1
     },
     [79375] = {
@@ -337,7 +354,7 @@ AV_VanityItems = {
         creaturePreview = 683,
         creatureId = 683,
         description = "Has a chance to drop from Young Panther within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79376] = {
@@ -346,7 +363,7 @@ AV_VanityItems = {
         creaturePreview = 684,
         creatureId = 684,
         description = "Has a chance to drop from Shadowmaw Panther within The Cape of Stranglethorn.",
-        zone = "The Cape of Stranglethorn.",
+        zone = "The Cape of Stranglethorn",
         icon = 1
     },
     [79377] = {
@@ -355,7 +372,7 @@ AV_VanityItems = {
         creaturePreview = 685,
         creatureId = 685,
         description = "Has a chance to drop from Stranglethorn Raptor within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79378] = {
@@ -364,7 +381,7 @@ AV_VanityItems = {
         creaturePreview = 686,
         creatureId = 686,
         description = "Has a chance to drop from Lashtail Raptor within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79379] = {
@@ -373,7 +390,7 @@ AV_VanityItems = {
         creaturePreview = 687,
         creatureId = 687,
         description = "Has a chance to drop from Jungle Stalker within Bloodsail Compound.",
-        zone = "Bloodsail Compound.",
+        zone = "Bloodsail Compound",
         icon = 1
     },
     [79380] = {
@@ -382,7 +399,8 @@ AV_VanityItems = {
         creaturePreview = 704,
         creatureId = 704,
         description = "Has a chance to drop from Ragged Timber Wolf within Coldridge Valley.",
-        zone = "Coldridge Valley.",
+        zone = "Dun Morogh",
+        subzone = "Coldridge Valley",
         icon = 1
     },
     [79381] = {
@@ -391,7 +409,8 @@ AV_VanityItems = {
         creaturePreview = 705,
         creatureId = 705,
         description = "Has a chance to drop from Ragged Young Wolf within Coldridge Valley.",
-        zone = "Coldridge Valley.",
+        zone = "Dun Morogh",
+        subzone = "Coldridge Valley",
         icon = 1
     },
     [79382] = {
@@ -400,7 +419,8 @@ AV_VanityItems = {
         creaturePreview = 708,
         creatureId = 708,
         description = "Has a chance to drop from Small Crag Boar within Coldridge Valley.",
-        zone = "Coldridge Valley.",
+        zone = "Dun Morogh",
+        subzone = "Coldridge Valley",
         icon = 1
     },
     [79383] = {
@@ -409,7 +429,7 @@ AV_VanityItems = {
         creaturePreview = 728,
         creatureId = 728,
         description = "Has a chance to drop from Bhag'thera within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79384] = {
@@ -418,7 +438,7 @@ AV_VanityItems = {
         creaturePreview = 729,
         creatureId = 729,
         description = "Has a chance to drop from Sin'Dall within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79385] = {
@@ -427,7 +447,8 @@ AV_VanityItems = {
         creaturePreview = 730,
         creatureId = 730,
         description = "Has a chance to drop from Tethis within Gurubashi Arena.",
-        zone = "Gurubashi Arena.",
+        zone = "Stranglethorn Vale",
+        subzone = "Gurubashi Arena",
         icon = 1
     },
     [79386] = {
@@ -436,7 +457,7 @@ AV_VanityItems = {
         creaturePreview = 731,
         creatureId = 731,
         description = "Has a chance to drop from King Bangalash within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79387] = {
@@ -445,7 +466,7 @@ AV_VanityItems = {
         creaturePreview = 736,
         creatureId = 736,
         description = "Has a chance to drop from Panther within Kurzen's Compound.",
-        zone = "Kurzen's Compound.",
+        zone = "Kurzen's Compound",
         icon = 1
     },
     [79388] = {
@@ -454,7 +475,8 @@ AV_VanityItems = {
         creaturePreview = 767,
         creatureId = 767,
         description = "Has a chance to drop from Swamp Jaguar within The Shifting Mire.",
-        zone = "The Shifting Mire.",
+        zone = "Swamp of Sorrows",
+        subzone = "The Shifting Mire",
         icon = 1
     },
     [79389] = {
@@ -463,7 +485,7 @@ AV_VanityItems = {
         creaturePreview = 768,
         creatureId = 768,
         description = "Has a chance to drop from Shadow Panther within Sorrowmurk.",
-        zone = "Sorrowmurk.",
+        zone = "Sorrowmurk",
         icon = 1
     },
     [79390] = {
@@ -472,7 +494,7 @@ AV_VanityItems = {
         creaturePreview = 769,
         creatureId = 769,
         description = "Has a chance to drop from Deathstrike Tarantula within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 1
     },
     [79391] = {
@@ -481,7 +503,7 @@ AV_VanityItems = {
         creaturePreview = 772,
         creatureId = 772,
         description = "Has a chance to drop from Stranglethorn Tigress within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79392] = {
@@ -490,7 +512,7 @@ AV_VanityItems = {
         creaturePreview = 822,
         creatureId = 822,
         description = "Has a chance to drop from Young Forest Bear within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79393] = {
@@ -499,7 +521,7 @@ AV_VanityItems = {
         creaturePreview = 830,
         creatureId = 830,
         description = "Has a chance to drop from Sand Crawler within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 1
     },
     [79394] = {
@@ -508,7 +530,7 @@ AV_VanityItems = {
         creaturePreview = 831,
         creatureId = 831,
         description = "Has a chance to drop from Sea Crawler within Longshore.",
-        zone = "Longshore.",
+        zone = "Longshore",
         icon = 1
     },
     [79395] = {
@@ -517,7 +539,7 @@ AV_VanityItems = {
         creaturePreview = 833,
         creatureId = 833,
         description = "Has a chance to drop from Coyote Packleader within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 1
     },
     [79396] = {
@@ -526,7 +548,8 @@ AV_VanityItems = {
         creaturePreview = 834,
         creatureId = 834,
         description = "Has a chance to drop from Coyote within The Molsen Farm.",
-        zone = "The Molsen Farm.",
+        zone = "Westfall",
+        subzone = "The Molsen Farm",
         icon = 1
     },
     [79397] = {
@@ -535,7 +558,8 @@ AV_VanityItems = {
         creaturePreview = 854,
         creatureId = 854,
         description = "Has a chance to drop from Young Jungle Stalker within Gurubashi Arena.",
-        zone = "Gurubashi Arena.",
+        zone = "Stranglethorn Vale",
+        subzone = "Gurubashi Arena",
         icon = 1
     },
     [79398] = {
@@ -544,7 +568,7 @@ AV_VanityItems = {
         creaturePreview = 855,
         creatureId = 855,
         description = "Has a chance to drop from Young Stranglethorn Raptor within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79399] = {
@@ -553,7 +577,7 @@ AV_VanityItems = {
         creaturePreview = 856,
         creatureId = 856,
         description = "Has a chance to drop from Young Lashtail Raptor within The Savage Coast.",
-        zone = "The Savage Coast.",
+        zone = "The Savage Coast",
         icon = 1
     },
     [79400] = {
@@ -562,7 +586,7 @@ AV_VanityItems = {
         creaturePreview = 858,
         creatureId = 858,
         description = "Has a chance to drop from Sorrow Spinner within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 1
     },
     [79401] = {
@@ -571,7 +595,8 @@ AV_VanityItems = {
         creaturePreview = 922,
         creatureId = 922,
         description = "Has a chance to drop from Silt Crawler within Misty Reed Strand.",
-        zone = "Misty Reed Strand.",
+        zone = "Swamp of Sorrows",
+        subzone = "Misty Reed Strand",
         icon = 1
     },
     [79402] = {
@@ -580,7 +605,8 @@ AV_VanityItems = {
         creaturePreview = 923,
         creatureId = 923,
         description = "Has a chance to drop from Young Black Ravager within Addle's Stead.",
-        zone = "Addle's Stead.",
+        zone = "Duskwood",
+        subzone = "Addle's Stead",
         icon = 1
     },
     [79403] = {
@@ -589,7 +615,8 @@ AV_VanityItems = {
         creaturePreview = 930,
         creatureId = 930,
         description = "Has a chance to drop from Black Widow Hatchling within Raven Hill Cemetery.",
-        zone = "Raven Hill Cemetery.",
+        zone = "Duskwood",
+        subzone = "Raven Hill Cemetery",
         icon = 1
     },
     [79404] = {
@@ -598,7 +625,8 @@ AV_VanityItems = {
         creaturePreview = 949,
         creatureId = 949,
         description = "Has a chance to drop from Carrion Recluse within Raven Hill Cemetery.",
-        zone = "Raven Hill Cemetery.",
+        zone = "Duskwood",
+        subzone = "Raven Hill Cemetery",
         icon = 1
     },
     [79407] = {
@@ -607,7 +635,7 @@ AV_VanityItems = {
         creaturePreview = 976,
         creatureId = 976,
         description = "Has a chance to drop from Kurzen War Tiger within Kurzen's Compound.",
-        zone = "Kurzen's Compound.",
+        zone = "Kurzen's Compound",
         icon = 1
     },
     [79408] = {
@@ -616,7 +644,7 @@ AV_VanityItems = {
         creaturePreview = 977,
         creatureId = 977,
         description = "Has a chance to drop from Kurzen War Panther within Kurzen's Compound.",
-        zone = "Kurzen's Compound.",
+        zone = "Kurzen's Compound",
         icon = 1
     },
     [79409] = {
@@ -625,7 +653,8 @@ AV_VanityItems = {
         creaturePreview = 1015,
         creatureId = 1015,
         description = "Has a chance to drop from Highland Raptor within Direforge Hill.",
-        zone = "Direforge Hill.",
+        zone = "Wetlands",
+        subzone = "Direforge Hill",
         icon = 1
     },
     [79410] = {
@@ -634,7 +663,8 @@ AV_VanityItems = {
         creaturePreview = 1016,
         creatureId = 1016,
         description = "Has a chance to drop from Highland Lashtail within Direforge Hill.",
-        zone = "Direforge Hill.",
+        zone = "Wetlands",
+        subzone = "Direforge Hill",
         icon = 1
     },
     [79411] = {
@@ -643,7 +673,8 @@ AV_VanityItems = {
         creaturePreview = 1017,
         creatureId = 1017,
         description = "Has a chance to drop from Highland Scytheclaw within Direforge Hill.",
-        zone = "Direforge Hill.",
+        zone = "Wetlands",
+        subzone = "Direforge Hill",
         icon = 1
     },
     [79412] = {
@@ -652,7 +683,8 @@ AV_VanityItems = {
         creaturePreview = 1018,
         creatureId = 1018,
         description = "Has a chance to drop from Highland Razormaw within Raptor Ridge.",
-        zone = "Raptor Ridge.",
+        zone = "Wetlands",
+        subzone = "Raptor Ridge",
         icon = 1
     },
     [79413] = {
@@ -661,7 +693,8 @@ AV_VanityItems = {
         creaturePreview = 1019,
         creatureId = 1019,
         description = "Has a chance to drop from Elder Razormaw within Raptor Ridge.",
-        zone = "Raptor Ridge.",
+        zone = "Wetlands",
+        subzone = "Raptor Ridge",
         icon = 1
     },
     [79414] = {
@@ -670,7 +703,7 @@ AV_VanityItems = {
         creaturePreview = 1020,
         creatureId = 1020,
         description = "Has a chance to drop from Mottled Raptor within Black Channel Marsh.",
-        zone = "Black Channel Marsh.",
+        zone = "Black Channel Marsh",
         icon = 1
     },
     [79415] = {
@@ -679,7 +712,7 @@ AV_VanityItems = {
         creaturePreview = 1021,
         creatureId = 1021,
         description = "Has a chance to drop from Mottled Screecher within Black Channel Marsh.",
-        zone = "Black Channel Marsh.",
+        zone = "Black Channel Marsh",
         icon = 1
     },
     [79416] = {
@@ -688,7 +721,8 @@ AV_VanityItems = {
         creaturePreview = 1022,
         creatureId = 1022,
         description = "Has a chance to drop from Mottled Scytheclaw within Whelgar's Excavation Site.",
-        zone = "Whelgar's Excavation Site.",
+        zone = "Wetlands",
+        subzone = "Whelgar's Excavation Site",
         icon = 1
     },
     [79417] = {
@@ -697,7 +731,8 @@ AV_VanityItems = {
         creaturePreview = 1023,
         creatureId = 1023,
         description = "Has a chance to drop from Mottled Razormaw within Whelgar's Excavation Site.",
-        zone = "Whelgar's Excavation Site.",
+        zone = "Wetlands",
+        subzone = "Whelgar's Excavation Site",
         icon = 1
     },
     [79418] = {
@@ -706,7 +741,7 @@ AV_VanityItems = {
         creaturePreview = 1082,
         creatureId = 1082,
         description = "Has a chance to drop from Sawtooth Crocolisk within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 1
     },
     [79419] = {
@@ -715,7 +750,7 @@ AV_VanityItems = {
         creaturePreview = 1084,
         creatureId = 1084,
         description = "Has a chance to drop from Young Sawtooth Crocolisk within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 1
     },
     [79420] = {
@@ -724,7 +759,7 @@ AV_VanityItems = {
         creaturePreview = 1085,
         creatureId = 1085,
         description = "Has a chance to drop from Elder Stranglethorn Tiger within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79421] = {
@@ -733,7 +768,8 @@ AV_VanityItems = {
         creaturePreview = 1087,
         creatureId = 1087,
         description = "Has a chance to drop from Sawtooth Snapper within Misty Reed Strand.",
-        zone = "Misty Reed Strand.",
+        zone = "Swamp of Sorrows",
+        subzone = "Misty Reed Strand",
         icon = 1
     },
     [79422] = {
@@ -742,7 +778,7 @@ AV_VanityItems = {
         creaturePreview = 1088,
         creatureId = 1088,
         description = "Has a chance to drop from Monstrous Crawler within The Forbidding Sea.",
-        zone = "The Forbidding Sea.",
+        zone = "The Forbidding Sea",
         icon = 1
     },
     [79423] = {
@@ -751,7 +787,7 @@ AV_VanityItems = {
         creaturePreview = 1108,
         creatureId = 1108,
         description = "Has a chance to drop from Mistvale Gorilla within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79424] = {
@@ -760,7 +796,8 @@ AV_VanityItems = {
         creaturePreview = 1109,
         creatureId = 1109,
         description = "Has a chance to drop from Fleshripper within Furlbrow's Pumpkin Farm.",
-        zone = "Furlbrow's Pumpkin Farm.",
+        zone = "Westfall",
+        subzone = "Furlbrow's Pumpkin Farm",
         icon = 1
     },
     [79425] = {
@@ -769,7 +806,8 @@ AV_VanityItems = {
         creaturePreview = 1111,
         creatureId = 1111,
         description = "Has a chance to drop from Leech Stalker within Thelgen Rock.",
-        zone = "Thelgen Rock.",
+        zone = "Wetlands",
+        subzone = "Thelgen Rock",
         icon = 1
     },
     [79426] = {
@@ -778,7 +816,8 @@ AV_VanityItems = {
         creaturePreview = 1112,
         creatureId = 1112,
         description = "Has a chance to drop from Leech Widow within Thelgen Rock.",
-        zone = "Thelgen Rock.",
+        zone = "Wetlands",
+        subzone = "Thelgen Rock",
         icon = 1
     },
     [79427] = {
@@ -787,7 +826,7 @@ AV_VanityItems = {
         creaturePreview = 1114,
         creatureId = 1114,
         description = "Has a chance to drop from Jungle Thunderer within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79428] = {
@@ -796,7 +835,7 @@ AV_VanityItems = {
         creaturePreview = 1125,
         creatureId = 1125,
         description = "Has a chance to drop from Crag Boar within Steelgrill's Depot.",
-        zone = "Steelgrill's Depot.",
+        zone = "Steelgrill's Depot",
         icon = 1
     },
     [79429] = {
@@ -805,7 +844,7 @@ AV_VanityItems = {
         creaturePreview = 1126,
         creatureId = 1126,
         description = "Has a chance to drop from Large Crag Boar within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79430] = {
@@ -814,7 +853,7 @@ AV_VanityItems = {
         creaturePreview = 1127,
         creatureId = 1127,
         description = "Has a chance to drop from Elder Crag Boar within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79431] = {
@@ -823,7 +862,8 @@ AV_VanityItems = {
         creaturePreview = 1128,
         creatureId = 1128,
         description = "Has a chance to drop from Young Black Bear within Kharanos.",
-        zone = "Kharanos.",
+        zone = "Dun Morogh",
+        subzone = "Kharanos",
         icon = 1
     },
     [79432] = {
@@ -832,7 +872,7 @@ AV_VanityItems = {
         creaturePreview = 1129,
         creatureId = 1129,
         description = "Has a chance to drop from Black Bear within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79433] = {
@@ -841,7 +881,8 @@ AV_VanityItems = {
         creaturePreview = 1130,
         creatureId = 1130,
         description = "Has a chance to drop from Bjarn within The Tundrid Hills.",
-        zone = "The Tundrid Hills.",
+        zone = "Dun Morogh",
+        subzone = "The Tundrid Hills",
         icon = 1
     },
     [79434] = {
@@ -850,7 +891,7 @@ AV_VanityItems = {
         creaturePreview = 1131,
         creatureId = 1131,
         description = "Has a chance to drop from Winter Wolf within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79435] = {
@@ -859,7 +900,8 @@ AV_VanityItems = {
         creaturePreview = 1132,
         creatureId = 1132,
         description = "Has a chance to drop from Timber within Iceflow Lake.",
-        zone = "Iceflow Lake.",
+        zone = "Dun Morogh",
+        subzone = "Iceflow Lake",
         icon = 1
     },
     [79436] = {
@@ -868,7 +910,8 @@ AV_VanityItems = {
         creaturePreview = 1133,
         creatureId = 1133,
         description = "Has a chance to drop from Starving Winter Wolf within Iceflow Lake.",
-        zone = "Iceflow Lake.",
+        zone = "Dun Morogh",
+        subzone = "Iceflow Lake",
         icon = 1
     },
     [79437] = {
@@ -877,7 +920,7 @@ AV_VanityItems = {
         creaturePreview = 1138,
         creatureId = 1138,
         description = "Has a chance to drop from Snow Tracker Wolf within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79438] = {
@@ -886,7 +929,8 @@ AV_VanityItems = {
         creaturePreview = 1140,
         creatureId = 1140,
         description = "Has a chance to drop from Razormaw Matriarch within Raptor Ridge.",
-        zone = "Raptor Ridge.",
+        zone = "Wetlands",
+        subzone = "Raptor Ridge",
         icon = 1
     },
     [79439] = {
@@ -895,7 +939,7 @@ AV_VanityItems = {
         creaturePreview = 1150,
         creatureId = 1150,
         description = "Has a chance to drop from River Crocolisk within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 1
     },
     [79440] = {
@@ -904,7 +948,7 @@ AV_VanityItems = {
         creaturePreview = 1151,
         creatureId = 1151,
         description = "Has a chance to drop from Saltwater Crocolisk within The Savage Coast.",
-        zone = "The Savage Coast.",
+        zone = "The Savage Coast",
         icon = 1
     },
     [79441] = {
@@ -913,7 +957,8 @@ AV_VanityItems = {
         creaturePreview = 1152,
         creatureId = 1152,
         description = "Has a chance to drop from Snapjaw Crocolisk within Lake Nazferiti.",
-        zone = "Lake Nazferiti.",
+        zone = "Stranglethorn Vale",
+        subzone = "Lake Nazferiti",
         icon = 1
     },
     [79442] = {
@@ -922,7 +967,7 @@ AV_VanityItems = {
         creaturePreview = 1184,
         creatureId = 1184,
         description = "Has a chance to drop from Cliff Lurker within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79443] = {
@@ -931,7 +976,7 @@ AV_VanityItems = {
         creaturePreview = 1185,
         creatureId = 1185,
         description = "Has a chance to drop from Wood Lurker within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79444] = {
@@ -940,7 +985,8 @@ AV_VanityItems = {
         creaturePreview = 1186,
         creatureId = 1186,
         description = "Has a chance to drop from Elder Black Bear within Silver Stream Mine.",
-        zone = "Silver Stream Mine.",
+        zone = "Loch Modan",
+        subzone = "Silver Stream Mine",
         icon = 1
     },
     [79445] = {
@@ -949,7 +995,7 @@ AV_VanityItems = {
         creaturePreview = 1188,
         creatureId = 1188,
         description = "Has a chance to drop from Grizzled Black Bear within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79446] = {
@@ -958,7 +1004,7 @@ AV_VanityItems = {
         creaturePreview = 1189,
         creatureId = 1189,
         description = "Has a chance to drop from Black Bear Patriarch within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79447] = {
@@ -967,7 +1013,8 @@ AV_VanityItems = {
         creaturePreview = 1190,
         creatureId = 1190,
         description = "Has a chance to drop from Mountain Boar within Silver Stream Mine.",
-        zone = "Silver Stream Mine.",
+        zone = "Loch Modan",
+        subzone = "Silver Stream Mine",
         icon = 1
     },
     [79448] = {
@@ -976,7 +1023,7 @@ AV_VanityItems = {
         creaturePreview = 1191,
         creatureId = 1191,
         description = "Has a chance to drop from Mangy Mountain Boar within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79449] = {
@@ -985,7 +1032,7 @@ AV_VanityItems = {
         creaturePreview = 1192,
         creatureId = 1192,
         description = "Has a chance to drop from Elder Mountain Boar within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79450] = {
@@ -994,7 +1041,8 @@ AV_VanityItems = {
         creaturePreview = 1194,
         creatureId = 1194,
         description = "Has a chance to drop from Mountain Buzzard within Ironband's Excavation Site.",
-        zone = "Ironband's Excavation Site.",
+        zone = "Loch Modan",
+        subzone = "Ironband's Excavation Site",
         icon = 1
     },
     [79451] = {
@@ -1003,7 +1051,8 @@ AV_VanityItems = {
         creaturePreview = 1195,
         creatureId = 1195,
         description = "Has a chance to drop from Forest Lurker within Silver Stream Mine.",
-        zone = "Silver Stream Mine.",
+        zone = "Loch Modan",
+        subzone = "Silver Stream Mine",
         icon = 1
     },
     [79452] = {
@@ -1012,7 +1061,7 @@ AV_VanityItems = {
         creaturePreview = 1196,
         creatureId = 1196,
         description = "Has a chance to drop from Ice Claw Bear within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79453] = {
@@ -1021,7 +1070,8 @@ AV_VanityItems = {
         creaturePreview = 1199,
         creatureId = 1199,
         description = "Has a chance to drop from Juvenile Snow Leopard within The Grizzled Den.",
-        zone = "The Grizzled Den.",
+        zone = "Dun Morogh",
+        subzone = "The Grizzled Den",
         icon = 1
     },
     [79454] = {
@@ -1030,7 +1080,7 @@ AV_VanityItems = {
         creaturePreview = 1201,
         creatureId = 1201,
         description = "Has a chance to drop from Snow Leopard within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79455] = {
@@ -1039,7 +1089,7 @@ AV_VanityItems = {
         creaturePreview = 1216,
         creatureId = 1216,
         description = "Has a chance to drop from Shore Crawler within Longshore.",
-        zone = "Longshore.",
+        zone = "Longshore",
         icon = 1
     },
     [79456] = {
@@ -1048,7 +1098,8 @@ AV_VanityItems = {
         creaturePreview = 1225,
         creatureId = 1225,
         description = "Has a chance to drop from Ol' Sooty within Grizzlepaw Ridge.",
-        zone = "Grizzlepaw Ridge.",
+        zone = "Loch Modan",
+        subzone = "Grizzlepaw Ridge",
         icon = 1
     },
     [79457] = {
@@ -1057,7 +1108,8 @@ AV_VanityItems = {
         creaturePreview = 1258,
         creatureId = 1258,
         description = "Has a chance to drop from Black Ravager Mastiff within Brightwood Grove.",
-        zone = "Brightwood Grove.",
+        zone = "Duskwood",
+        subzone = "Brightwood Grove",
         icon = 1
     },
     [79458] = {
@@ -1066,7 +1118,8 @@ AV_VanityItems = {
         creaturePreview = 1353,
         creatureId = 1353,
         description = "Has a chance to drop from Sarltooth within Whelgar's Excavation Site.",
-        zone = "Whelgar's Excavation Site.",
+        zone = "Wetlands",
+        subzone = "Whelgar's Excavation Site",
         icon = 1
     },
     [79459] = {
@@ -1075,7 +1128,7 @@ AV_VanityItems = {
         creaturePreview = 1400,
         creatureId = 1400,
         description = "Has a chance to drop from Wetlands Crocolisk within Menethil Bay.",
-        zone = "Menethil Bay.",
+        zone = "Menethil Bay",
         icon = 1
     },
     [79460] = {
@@ -1084,7 +1137,7 @@ AV_VanityItems = {
         creaturePreview = 1417,
         creatureId = 1417,
         description = "Has a chance to drop from Young Wetlands Crocolisk within Wetlands.",
-        zone = "Wetlands.",
+        zone = "Wetlands",
         icon = 1
     },
     [79461] = {
@@ -1093,7 +1146,8 @@ AV_VanityItems = {
         creaturePreview = 1504,
         creatureId = 1504,
         description = "Has a chance to drop from Young Night Web Spider within Night Web's Hollow.",
-        zone = "Night Web's Hollow.",
+        zone = "Tirisfal Glades",
+        subzone = "Night Web's Hollow",
         icon = 1
     },
     [79462] = {
@@ -1102,7 +1156,8 @@ AV_VanityItems = {
         creaturePreview = 1505,
         creatureId = 1505,
         description = "Has a chance to drop from Night Web Spider within Night Web's Hollow.",
-        zone = "Night Web's Hollow.",
+        zone = "Tirisfal Glades",
+        subzone = "Night Web's Hollow",
         icon = 1
     },
     [79463] = {
@@ -1111,7 +1166,8 @@ AV_VanityItems = {
         creaturePreview = 1508,
         creatureId = 1508,
         description = "Has a chance to drop from Young Scavenger within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 1
     },
     [79464] = {
@@ -1120,7 +1176,8 @@ AV_VanityItems = {
         creaturePreview = 1509,
         creatureId = 1509,
         description = "Has a chance to drop from Ragged Scavenger within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 1
     },
     [79465] = {
@@ -1129,7 +1186,7 @@ AV_VanityItems = {
         creaturePreview = 1512,
         creatureId = 1512,
         description = "Has a chance to drop from Duskbat within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 1
     },
     [79466] = {
@@ -1138,7 +1195,8 @@ AV_VanityItems = {
         creaturePreview = 1513,
         creatureId = 1513,
         description = "Has a chance to drop from Mangy Duskbat within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 1
     },
     [79467] = {
@@ -1147,7 +1205,7 @@ AV_VanityItems = {
         creaturePreview = 1553,
         creatureId = 1553,
         description = "Has a chance to drop from Greater Duskbat within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 1
     },
     [79468] = {
@@ -1156,7 +1214,7 @@ AV_VanityItems = {
         creaturePreview = 1554,
         creatureId = 1554,
         description = "Has a chance to drop from Vampiric Duskbat within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 1
     },
     [79469] = {
@@ -1165,7 +1223,8 @@ AV_VanityItems = {
         creaturePreview = 1555,
         creatureId = 1555,
         description = "Has a chance to drop from Vicious Night Web Spider within Venomweb Vale.",
-        zone = "Venomweb Vale.",
+        zone = "Tirisfal Glades",
+        subzone = "Venomweb Vale",
         icon = 1
     },
     [79470] = {
@@ -1174,7 +1233,7 @@ AV_VanityItems = {
         creaturePreview = 1557,
         creatureId = 1557,
         description = "Has a chance to drop from Elder Mistvale Gorilla within Spirit Den.",
-        zone = "Spirit Den.",
+        subzone = "Spirit Den",
         icon = 1
     },
     [79471] = {
@@ -1183,7 +1242,7 @@ AV_VanityItems = {
         creaturePreview = 1558,
         creatureId = 1558,
         description = "Has a chance to drop from Silverback Patriarch within The Crystal Shore.",
-        zone = "The Crystal Shore.",
+        zone = "The Crystal Shore",
         icon = 1
     },
     [79472] = {
@@ -1192,7 +1251,8 @@ AV_VanityItems = {
         creaturePreview = 1559,
         creatureId = 1559,
         description = "Has a chance to drop from King Mukla within Jaguero Isle.",
-        zone = "Jaguero Isle.",
+        zone = "Stranglethorn Vale",
+        subzone = "Jaguero Isle",
         icon = 1
     },
     [79473] = {
@@ -1201,7 +1261,8 @@ AV_VanityItems = {
         creaturePreview = 1688,
         creatureId = 1688,
         description = "Has a chance to drop from Night Web Matriarch within Night Web's Hollow.",
-        zone = "Night Web's Hollow.",
+        zone = "Tirisfal Glades",
+        subzone = "Night Web's Hollow",
         icon = 1
     },
     [79474] = {
@@ -1210,7 +1271,7 @@ AV_VanityItems = {
         creaturePreview = 1689,
         creatureId = 1689,
         description = "Has a chance to drop from Scarred Crag Boar within Dun Morogh.",
-        zone = "Dun Morogh.",
+        zone = "Dun Morogh",
         icon = 1
     },
     [79475] = {
@@ -1219,7 +1280,7 @@ AV_VanityItems = {
         creaturePreview = 1693,
         creatureId = 1693,
         description = "Has a chance to drop from Loch Crocolisk within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [79476] = {
@@ -1228,7 +1289,7 @@ AV_VanityItems = {
         creaturePreview = 1713,
         creatureId = 1713,
         description = "Has a chance to drop from Elder Shadowmaw Panther within The Cape of Stranglethorn.",
-        zone = "The Cape of Stranglethorn.",
+        zone = "The Cape of Stranglethorn",
         icon = 1
     },
     [79477] = {
@@ -1237,7 +1298,7 @@ AV_VanityItems = {
         creaturePreview = 1765,
         creatureId = 1765,
         description = "Has a chance to drop from Worg within Silverpine Forest.",
-        zone = "Silverpine Forest.",
+        zone = "Silverpine Forest",
         icon = 1
     },
     [79478] = {
@@ -1246,7 +1307,8 @@ AV_VanityItems = {
         creaturePreview = 1766,
         creatureId = 1766,
         description = "Has a chance to drop from Mottled Worg within The Shining Strand.",
-        zone = "The Shining Strand.",
+        zone = "Silverpine Forest",
+        subzone = "The Shining Strand",
         icon = 1
     },
     [79479] = {
@@ -1255,7 +1317,7 @@ AV_VanityItems = {
         creaturePreview = 1778,
         creatureId = 1778,
         description = "Has a chance to drop from Ferocious Grizzled Bear within Silverpine Forest.",
-        zone = "Silverpine Forest.",
+        zone = "Silverpine Forest",
         icon = 1
     },
     [79480] = {
@@ -1264,7 +1326,8 @@ AV_VanityItems = {
         creaturePreview = 1780,
         creatureId = 1780,
         description = "Has a chance to drop from Moss Stalker within The Skittering Dark.",
-        zone = "The Skittering Dark.",
+        zone = "Silverpine Forest",
+        subzone = "The Skittering Dark",
         icon = 1
     },
     [79481] = {
@@ -1273,7 +1336,7 @@ AV_VanityItems = {
         creaturePreview = 1781,
         creatureId = 1781,
         description = "Has a chance to drop from Mist Creeper within Silverpine Forest.",
-        zone = "Silverpine Forest.",
+        zone = "Silverpine Forest",
         icon = 1
     },
     [79482] = {
@@ -1282,7 +1345,7 @@ AV_VanityItems = {
         creaturePreview = 1797,
         creatureId = 1797,
         description = "Has a chance to drop from Giant Grizzled Bear within North Tide's Run.",
-        zone = "North Tide's Run.",
+        zone = "North Tide's Run",
         icon = 1
     },
     [79483] = {
@@ -1291,7 +1354,8 @@ AV_VanityItems = {
         creaturePreview = 1809,
         creatureId = 1809,
         description = "Has a chance to drop from Carrion Vulture within The Bulwark.",
-        zone = "The Bulwark.",
+        zone = "Western Plaguelands",
+        subzone = "The Bulwark",
         icon = 1
     },
     [79484] = {
@@ -1300,7 +1364,7 @@ AV_VanityItems = {
         creaturePreview = 1815,
         creatureId = 1815,
         description = "Has a chance to drop from Diseased Black Bear within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 1
     },
     [79485] = {
@@ -1309,7 +1373,8 @@ AV_VanityItems = {
         creaturePreview = 1816,
         creatureId = 1816,
         description = "Has a chance to drop from Diseased Grizzly within The Weeping Cave.",
-        zone = "The Weeping Cave.",
+        zone = "Western Plaguelands",
+        subzone = "The Weeping Cave",
         icon = 1
     },
     [79486] = {
@@ -1318,7 +1383,8 @@ AV_VanityItems = {
         creaturePreview = 1817,
         creatureId = 1817,
         description = "Has a chance to drop from Diseased Wolf within The Writhing Haunt.",
-        zone = "The Writhing Haunt.",
+        zone = "Western Plaguelands",
+        subzone = "The Writhing Haunt",
         icon = 1
     },
     [79487] = {
@@ -1327,7 +1393,7 @@ AV_VanityItems = {
         creaturePreview = 1821,
         creatureId = 1821,
         description = "Has a chance to drop from Carrion Lurker within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 1
     },
     [79488] = {
@@ -1336,7 +1402,8 @@ AV_VanityItems = {
         creaturePreview = 1822,
         creatureId = 1822,
         description = "Has a chance to drop from Venom Mist Lurker within The Bulwark.",
-        zone = "The Bulwark.",
+        zone = "Western Plaguelands",
+        subzone = "The Bulwark",
         icon = 1
     },
     [79489] = {
@@ -1345,7 +1412,8 @@ AV_VanityItems = {
         creaturePreview = 1824,
         creatureId = 1824,
         description = "Has a chance to drop from Plague Lurker within The Weeping Cave.",
-        zone = "The Weeping Cave.",
+        zone = "Western Plaguelands",
+        subzone = "The Weeping Cave",
         icon = 1
     },
     [79490] = {
@@ -1354,7 +1422,7 @@ AV_VanityItems = {
         creaturePreview = 1922,
         creatureId = 1922,
         description = "Has a chance to drop from Gray Forest Wolf within Elwynn Forest.",
-        zone = "Elwynn Forest.",
+        zone = "Elwynn Forest",
         icon = 1
     },
     [79491] = {
@@ -1363,7 +1431,7 @@ AV_VanityItems = {
         creaturePreview = 1923,
         creatureId = 1923,
         description = "Has a chance to drop from Bloodsnout Worg within Silverpine Forest.",
-        zone = "Silverpine Forest.",
+        zone = "Silverpine Forest",
         icon = 1
     },
     [79492] = {
@@ -1372,7 +1440,8 @@ AV_VanityItems = {
         creaturePreview = 1961,
         creatureId = 1961,
         description = "Has a chance to drop from Mangeclaw within North Gate Outpost.",
-        zone = "North Gate Outpost.",
+        zone = "North Gate Outpost",
+        subzone = "North Gate Outpost",
         icon = 1
     },
     [79493] = {
@@ -1381,7 +1450,8 @@ AV_VanityItems = {
         creaturePreview = 1984,
         creatureId = 1984,
         description = "Has a chance to drop from Young Thistle Boar within Shadowglen.",
-        zone = "Shadowglen.",
+        zone = "Teldrassil",
+        subzone = "Shadowglen",
         icon = 1
     },
     [79494] = {
@@ -1390,7 +1460,8 @@ AV_VanityItems = {
         creaturePreview = 1985,
         creatureId = 1985,
         description = "Has a chance to drop from Thistle Boar within Shadowglen.",
-        zone = "Shadowglen.",
+        zone = "Teldrassil",
+        subzone = "Shadowglen",
         icon = 1
     },
     [79495] = {
@@ -1399,7 +1470,8 @@ AV_VanityItems = {
         creaturePreview = 1986,
         creatureId = 1986,
         description = "Has a chance to drop from Webwood Spider within Shadowthread Cave.",
-        zone = "Shadowthread Cave.",
+        zone = "Teldrassil",
+        subzone = "Shadowthread Cave",
         icon = 1
     },
     [79496] = {
@@ -1408,7 +1480,8 @@ AV_VanityItems = {
         creaturePreview = 1994,
         creatureId = 1994,
         description = "Has a chance to drop from Githyiss the Vile within Shadowthread Cave.",
-        zone = "Shadowthread Cave.",
+        zone = "Teldrassil",
+        subzone = "Shadowthread Cave",
         icon = 1
     },
     [79497] = {
@@ -1417,7 +1490,7 @@ AV_VanityItems = {
         creaturePreview = 1995,
         creatureId = 1995,
         description = "Has a chance to drop from Strigid Owl within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79498] = {
@@ -1426,7 +1499,7 @@ AV_VanityItems = {
         creaturePreview = 1996,
         creatureId = 1996,
         description = "Has a chance to drop from Strigid Screecher within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79499] = {
@@ -1435,7 +1508,7 @@ AV_VanityItems = {
         creaturePreview = 1997,
         creatureId = 1997,
         description = "Has a chance to drop from Strigid Hunter within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79500] = {
@@ -1444,7 +1517,7 @@ AV_VanityItems = {
         creaturePreview = 1998,
         creatureId = 1998,
         description = "Has a chance to drop from Webwood Lurker within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79501] = {
@@ -1453,7 +1526,7 @@ AV_VanityItems = {
         creaturePreview = 1999,
         creatureId = 1999,
         description = "Has a chance to drop from Webwood Venomfang within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79502] = {
@@ -1462,7 +1535,7 @@ AV_VanityItems = {
         creaturePreview = 2000,
         creatureId = 2000,
         description = "Has a chance to drop from Webwood Silkspinner within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79503] = {
@@ -1471,7 +1544,7 @@ AV_VanityItems = {
         creaturePreview = 2001,
         creatureId = 2001,
         description = "Has a chance to drop from Giant Webwood Spider within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79504] = {
@@ -1480,7 +1553,8 @@ AV_VanityItems = {
         creaturePreview = 2031,
         creatureId = 2031,
         description = "Has a chance to drop from Young Nightsaber within Shadowglen.",
-        zone = "Shadowglen.",
+        zone = "Teldrassil",
+        subzone = "Shadowglen",
         icon = 1
     },
     [79505] = {
@@ -1489,7 +1563,8 @@ AV_VanityItems = {
         creaturePreview = 2032,
         creatureId = 2032,
         description = "Has a chance to drop from Mangy Nightsaber within Shadowglen.",
-        zone = "Shadowglen.",
+        zone = "Teldrassil",
+        subzone = "Shadowglen",
         icon = 1
     },
     [79506] = {
@@ -1498,7 +1573,8 @@ AV_VanityItems = {
         creaturePreview = 2033,
         creatureId = 2033,
         description = "Has a chance to drop from Elder Nightsaber within Wellspring Lake.",
-        zone = "Wellspring Lake.",
+        zone = "Teldrassil",
+        subzone = "Wellspring Lake",
         icon = 1
     },
     [79507] = {
@@ -1507,7 +1583,8 @@ AV_VanityItems = {
         creaturePreview = 2034,
         creatureId = 2034,
         description = "Has a chance to drop from Feral Nightsaber within The Oracle Glade.",
-        zone = "The Oracle Glade.",
+        zone = "Teldrassil",
+        subzone = "The Oracle Glade",
         icon = 1
     },
     [79508] = {
@@ -1516,7 +1593,7 @@ AV_VanityItems = {
         creaturePreview = 2042,
         creatureId = 2042,
         description = "Has a chance to drop from Nightsaber within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79509] = {
@@ -1525,7 +1602,7 @@ AV_VanityItems = {
         creaturePreview = 2043,
         creatureId = 2043,
         description = "Has a chance to drop from Nightsaber Stalker within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79510] = {
@@ -1534,7 +1611,7 @@ AV_VanityItems = {
         creaturePreview = 2069,
         creatureId = 2069,
         description = "Has a chance to drop from Moonstalker within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79511] = {
@@ -1543,7 +1620,8 @@ AV_VanityItems = {
         creaturePreview = 2070,
         creatureId = 2070,
         description = "Has a chance to drop from Moonstalker Runt within Bashal'Aran.",
-        zone = "Bashal'Aran.",
+        zone = "Darkshore",
+        subzone = "Bashal'Aran",
         icon = 1
     },
     [79512] = {
@@ -1552,7 +1630,7 @@ AV_VanityItems = {
         creaturePreview = 2071,
         creatureId = 2071,
         description = "Has a chance to drop from Moonstalker Matriarch within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79516] = {
@@ -1561,7 +1639,8 @@ AV_VanityItems = {
         creaturePreview = 2089,
         creatureId = 2089,
         description = "Has a chance to drop from Giant Wetlands Crocolisk within Sundown Marsh.",
-        zone = "Sundown Marsh.",
+        zone = "Wetlands",
+        subzone = "Sundown Marsh",
         icon = 1
     },
     [79517] = {
@@ -1570,7 +1649,7 @@ AV_VanityItems = {
         creaturePreview = 2163,
         creatureId = 2163,
         description = "Has a chance to drop from Thistle Bear within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79518] = {
@@ -1579,7 +1658,8 @@ AV_VanityItems = {
         creaturePreview = 2165,
         creatureId = 2165,
         description = "Has a chance to drop from Grizzled Thistle Bear within Twilight Vale.",
-        zone = "Twilight Vale.",
+        zone = "Darkshore",
+        subzone = "Twilight Vale",
         icon = 1
     },
     [79519] = {
@@ -1588,7 +1668,7 @@ AV_VanityItems = {
         creaturePreview = 2172,
         creatureId = 2172,
         description = "Has a chance to drop from Strider Clutchmother within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79520] = {
@@ -1597,7 +1677,7 @@ AV_VanityItems = {
         creaturePreview = 2175,
         creatureId = 2175,
         description = "Has a chance to drop from Shadowclaw within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79521] = {
@@ -1606,7 +1686,8 @@ AV_VanityItems = {
         creaturePreview = 2231,
         creatureId = 2231,
         description = "Has a chance to drop from Pygmy Tide Crawler within Auberdine.",
-        zone = "Auberdine.",
+        zone = "Darkshore",
+        subzone = "Auberdine",
         icon = 1
     },
     [79522] = {
@@ -1615,7 +1696,7 @@ AV_VanityItems = {
         creaturePreview = 2232,
         creatureId = 2232,
         description = "Has a chance to drop from Tide Crawler within Twilight Shore.",
-        zone = "Twilight Shore.",
+        zone = "Twilight Shore",
         icon = 1
     },
     [79523] = {
@@ -1624,7 +1705,7 @@ AV_VanityItems = {
         creaturePreview = 2233,
         creatureId = 2233,
         description = "Has a chance to drop from Encrusted Tide Crawler within Twilight Shore.",
-        zone = "Twilight Shore.",
+        zone = "Twilight Shore",
         icon = 1
     },
     [79524] = {
@@ -1633,7 +1714,7 @@ AV_VanityItems = {
         creaturePreview = 2234,
         creatureId = 2234,
         description = "Has a chance to drop from Young Reef Crawler within Mist's Edge.",
-        zone = "Mist's Edge.",
+        zone = "Mist's Edge",
         icon = 1
     },
     [79525] = {
@@ -1642,7 +1723,7 @@ AV_VanityItems = {
         creaturePreview = 2235,
         creatureId = 2235,
         description = "Has a chance to drop from Reef Crawler within Twilight Shore.",
-        zone = "Twilight Shore.",
+        zone = "Twilight Shore",
         icon = 1
     },
     [79526] = {
@@ -1651,7 +1732,7 @@ AV_VanityItems = {
         creaturePreview = 2236,
         creatureId = 2236,
         description = "Has a chance to drop from Raging Reef Crawler within Twilight Shore.",
-        zone = "Twilight Shore.",
+        zone = "Twilight Shore",
         icon = 1
     },
     [79527] = {
@@ -1660,7 +1741,8 @@ AV_VanityItems = {
         creaturePreview = 2237,
         creatureId = 2237,
         description = "Has a chance to drop from Moonstalker Sire within Twilight Vale.",
-        zone = "Twilight Vale.",
+        zone = "Darkshore",
+        subzone = "Twilight Vale",
         icon = 1
     },
     [79528] = {
@@ -1669,7 +1751,7 @@ AV_VanityItems = {
         creaturePreview = 2321,
         creatureId = 2321,
         description = "Has a chance to drop from Foreststrider Fledgling within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79529] = {
@@ -1678,7 +1760,7 @@ AV_VanityItems = {
         creaturePreview = 2322,
         creatureId = 2322,
         description = "Has a chance to drop from Foreststrider within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79530] = {
@@ -1687,7 +1769,8 @@ AV_VanityItems = {
         creaturePreview = 2323,
         creatureId = 2323,
         description = "Has a chance to drop from Giant Foreststrider within Twilight Vale.",
-        zone = "Twilight Vale.",
+        zone = "Darkshore",
+        subzone = "Twilight Vale",
         icon = 1
     },
     [79531] = {
@@ -1696,7 +1779,8 @@ AV_VanityItems = {
         creaturePreview = 2348,
         creatureId = 2348,
         description = "Has a chance to drop from Elder Moss Creeper within Dun Garok.",
-        zone = "Dun Garok.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Dun Garok",
         icon = 1
     },
     [79532] = {
@@ -1705,7 +1789,8 @@ AV_VanityItems = {
         creaturePreview = 2349,
         creatureId = 2349,
         description = "Has a chance to drop from Giant Moss Creeper within Durnholde Keep.",
-        zone = "Durnholde Keep.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Durnholde Keep",
         icon = 1
     },
     [79533] = {
@@ -1714,7 +1799,8 @@ AV_VanityItems = {
         creaturePreview = 2350,
         creatureId = 2350,
         description = "Has a chance to drop from Forest Moss Creeper within Southpoint Tower.",
-        zone = "Southpoint Tower.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Southpoint Tower",
         icon = 1
     },
     [79534] = {
@@ -1723,7 +1809,7 @@ AV_VanityItems = {
         creaturePreview = 2351,
         creatureId = 2351,
         description = "Has a chance to drop from Gray Bear within Hillsbrad Foothills.",
-        zone = "Hillsbrad Foothills.",
+        zone = "Hillsbrad Foothills",
         icon = 1
     },
     [79535] = {
@@ -1732,7 +1818,7 @@ AV_VanityItems = {
         creaturePreview = 2354,
         creatureId = 2354,
         description = "Has a chance to drop from Vicious Gray Bear within Hillsbrad Foothills.",
-        zone = "Hillsbrad Foothills.",
+        zone = "Hillsbrad Foothills",
         icon = 1
     },
     [79536] = {
@@ -1741,7 +1827,8 @@ AV_VanityItems = {
         creaturePreview = 2356,
         creatureId = 2356,
         description = "Has a chance to drop from Elder Gray Bear within Thoradin's Wall.",
-        zone = "Thoradin's Wall.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Thoradin's Wall",
         icon = 1
     },
     [79537] = {
@@ -1750,7 +1837,7 @@ AV_VanityItems = {
         creaturePreview = 2384,
         creatureId = 2384,
         description = "Has a chance to drop from Starving Mountain Lion within Hillsbrad Foothills.",
-        zone = "Hillsbrad Foothills.",
+        zone = "Hillsbrad Foothills",
         icon = 1
     },
     [79539] = {
@@ -1759,7 +1846,8 @@ AV_VanityItems = {
         creaturePreview = 2385,
         creatureId = 2385,
         description = "Has a chance to drop from Feral Mountain Lion within Dun Garok.",
-        zone = "Dun Garok.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Dun Garok",
         icon = 1
     },
     [79540] = {
@@ -1768,7 +1856,7 @@ AV_VanityItems = {
         creaturePreview = 2406,
         creatureId = 2406,
         description = "Has a chance to drop from Mountain Lion within Alterac Mountains.",
-        zone = "Alterac Mountains.",
+        zone = "Alterac Mountains",
         icon = 1
     },
     [79541] = {
@@ -1777,7 +1865,8 @@ AV_VanityItems = {
         creaturePreview = 2407,
         creatureId = 2407,
         description = "Has a chance to drop from Hulking Mountain Lion within The Uplands.",
-        zone = "The Uplands.",
+        zone = "Hillsbrad Foothills",
+        subzone = "The Uplands",
         icon = 1
     },
     [79542] = {
@@ -1786,7 +1875,7 @@ AV_VanityItems = {
         creaturePreview = 2408,
         creatureId = 2408,
         description = "Has a chance to drop from Snapjaw within Hillsbrad Foothills.",
-        zone = "Hillsbrad Foothills.",
+        zone = "Hillsbrad Foothills",
         icon = 1
     },
     [79543] = {
@@ -1795,7 +1884,8 @@ AV_VanityItems = {
         creaturePreview = 2476,
         creatureId = 2476,
         description = "Has a chance to drop from Large Loch Crocolisk within The Loch.",
-        zone = "The Loch.",
+        zone = "Loch Modan",
+        subzone = "The Loch",
         icon = 1
     },
     [79544] = {
@@ -1804,7 +1894,8 @@ AV_VanityItems = {
         creaturePreview = 2505,
         creatureId = 2505,
         description = "Has a chance to drop from Saltwater Snapjaw within The Overlook Cliffs.",
-        zone = "The Overlook Cliffs.",
+        zone = "The Hinterlands",
+        subzone = "The Overlook Cliffs",
         icon = 1
     },
     [79545] = {
@@ -1813,7 +1904,8 @@ AV_VanityItems = {
         creaturePreview = 2521,
         creatureId = 2521,
         description = "Has a chance to drop from Skymane Gorilla within Jaguero Isle.",
-        zone = "Jaguero Isle.",
+        zone = "Stranglethorn Vale",
+        subzone = "Jaguero Isle",
         icon = 1
     },
     [79546] = {
@@ -1822,7 +1914,8 @@ AV_VanityItems = {
         creaturePreview = 2522,
         creatureId = 2522,
         description = "Has a chance to drop from Jaguero Stalker within Jaguero Isle.",
-        zone = "Jaguero Isle.",
+        zone = "Stranglethorn Vale",
+        subzone = "Jaguero Isle",
         icon = 1
     },
     [79547] = {
@@ -1831,7 +1924,7 @@ AV_VanityItems = {
         creaturePreview = 2544,
         creatureId = 2544,
         description = "Has a chance to drop from Southern Sand Crawler within Wild Shore.",
-        zone = "Wild Shore.",
+        zone = "Wild Shore",
         icon = 1
     },
     [79548] = {
@@ -1840,7 +1933,8 @@ AV_VanityItems = {
         creaturePreview = 2559,
         creatureId = 2559,
         description = "Has a chance to drop from Highland Strider within Thoradin's Wall.",
-        zone = "Thoradin's Wall.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Thoradin's Wall",
         icon = 1
     },
     [79549] = {
@@ -1849,7 +1943,7 @@ AV_VanityItems = {
         creaturePreview = 2560,
         creatureId = 2560,
         description = "Has a chance to drop from Highland Thrasher within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79550] = {
@@ -1858,7 +1952,7 @@ AV_VanityItems = {
         creaturePreview = 2561,
         creatureId = 2561,
         description = "Has a chance to drop from Highland Fleshstalker within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79551] = {
@@ -1867,7 +1961,7 @@ AV_VanityItems = {
         creaturePreview = 2563,
         creatureId = 2563,
         description = "Has a chance to drop from Plains Creeper within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79552] = {
@@ -1876,7 +1970,7 @@ AV_VanityItems = {
         creaturePreview = 2565,
         creatureId = 2565,
         description = "Has a chance to drop from Giant Plains Creeper within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79553] = {
@@ -1885,7 +1979,7 @@ AV_VanityItems = {
         creaturePreview = 2578,
         creatureId = 2578,
         description = "Has a chance to drop from Young Mesa Buzzard within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79554] = {
@@ -1894,7 +1988,7 @@ AV_VanityItems = {
         creaturePreview = 2579,
         creatureId = 2579,
         description = "Has a chance to drop from Mesa Buzzard within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79555] = {
@@ -1903,7 +1997,7 @@ AV_VanityItems = {
         creaturePreview = 2580,
         creatureId = 2580,
         description = "Has a chance to drop from Elder Mesa Buzzard within Arathi Highlands.",
-        zone = "Arathi Highlands.",
+        zone = "Arathi Highlands",
         icon = 1
     },
     [79556] = {
@@ -1912,7 +2006,7 @@ AV_VanityItems = {
         creaturePreview = 2635,
         creatureId = 2635,
         description = "Has a chance to drop from Elder Saltwater Crocolisk within The Savage Coast.",
-        zone = "The Savage Coast.",
+        zone = "The Savage Coast",
         icon = 1
     },
     [79557] = {
@@ -1921,7 +2015,8 @@ AV_VanityItems = {
         creaturePreview = 2680,
         creatureId = 2680,
         description = "Has a chance to drop from Vilebranch Wolf Pup within The Altar of Zul.",
-        zone = "The Altar of Zul.",
+        zone = "The Hinterlands",
+        subzone = "The Altar of Zul",
         icon = 1
     },
     [79558] = {
@@ -1930,7 +2025,8 @@ AV_VanityItems = {
         creaturePreview = 2681,
         creatureId = 2681,
         description = "Has a chance to drop from Vilebranch Raiding Wolf within Jintha'Alor.",
-        zone = "Jintha'Alor.",
+        zone = "The Hinterlands",
+        subzone = "Jintha'Alor",
         icon = 1
     },
     [79559] = {
@@ -1939,7 +2035,8 @@ AV_VanityItems = {
         creaturePreview = 2686,
         creatureId = 2686,
         description = "Has a chance to drop from Witherbark Broodguard within Shadra'Alor.",
-        zone = "Shadra'Alor.",
+        zone = "The Hinterlands",
+        subzone = "Shadra'Alor",
         icon = 1
     },
     [79560] = {
@@ -1948,7 +2045,7 @@ AV_VanityItems = {
         creaturePreview = 2727,
         creatureId = 2727,
         description = "Has a chance to drop from Crag Coyote within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 1
     },
     [79561] = {
@@ -1957,7 +2054,7 @@ AV_VanityItems = {
         creaturePreview = 2728,
         creatureId = 2728,
         description = "Has a chance to drop from Feral Crag Coyote within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 1
     },
     [79562] = {
@@ -1966,7 +2063,7 @@ AV_VanityItems = {
         creaturePreview = 2729,
         creatureId = 2729,
         description = "Has a chance to drop from Elder Crag Coyote within Mirage Flats.",
-        zone = "Mirage Flats.",
+        zone = "Mirage Flats",
         icon = 1
     },
     [79563] = {
@@ -1975,7 +2072,7 @@ AV_VanityItems = {
         creaturePreview = 2730,
         creatureId = 2730,
         description = "Has a chance to drop from Rabid Crag Coyote within Dustwind Gulch.",
-        zone = "Dustwind Gulch.",
+        zone = "Dustwind Gulch",
         icon = 1
     },
     [79564] = {
@@ -1984,7 +2081,7 @@ AV_VanityItems = {
         creaturePreview = 2731,
         creatureId = 2731,
         description = "Has a chance to drop from Ridge Stalker within Dustwind Gulch.",
-        zone = "Dustwind Gulch.",
+        zone = "Dustwind Gulch",
         icon = 1
     },
     [79565] = {
@@ -1993,7 +2090,7 @@ AV_VanityItems = {
         creaturePreview = 2732,
         creatureId = 2732,
         description = "Has a chance to drop from Ridge Huntress within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 1
     },
     [79566] = {
@@ -2002,7 +2099,8 @@ AV_VanityItems = {
         creaturePreview = 2734,
         creatureId = 2734,
         description = "Has a chance to drop from Ridge Stalker Patriarch within The Dustbowl.",
-        zone = "The Dustbowl.",
+        zone = "Badlands",
+        subzone = "The Dustbowl",
         icon = 1
     },
     [79567] = {
@@ -2011,7 +2109,8 @@ AV_VanityItems = {
         creaturePreview = 2753,
         creatureId = 2753,
         description = "Has a chance to drop from Barnabus within Agmond's End.",
-        zone = "Agmond's End.",
+        zone = "Badlands",
+        subzone = "Agmond's End",
         icon = 1
     },
     [79568] = {
@@ -2020,7 +2119,7 @@ AV_VanityItems = {
         creaturePreview = 2829,
         creatureId = 2829,
         description = "Has a chance to drop from Starving Buzzard within Dustwind Gulch.",
-        zone = "Dustwind Gulch.",
+        zone = "Dustwind Gulch",
         icon = 1
     },
     [79569] = {
@@ -2029,7 +2128,7 @@ AV_VanityItems = {
         creaturePreview = 2830,
         creatureId = 2830,
         description = "Has a chance to drop from Buzzard within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 1
     },
     [79570] = {
@@ -2038,7 +2137,7 @@ AV_VanityItems = {
         creaturePreview = 2831,
         creatureId = 2831,
         description = "Has a chance to drop from Giant Buzzard within Mirage Flats.",
-        zone = "Mirage Flats.",
+        zone = "Mirage Flats",
         icon = 1
     },
     [79571] = {
@@ -2047,7 +2146,7 @@ AV_VanityItems = {
         creaturePreview = 2850,
         creatureId = 2850,
         description = "Has a chance to drop from Broken Tooth within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 1
     },
     [79572] = {
@@ -2056,7 +2155,7 @@ AV_VanityItems = {
         creaturePreview = 2923,
         creatureId = 2923,
         description = "Has a chance to drop from Mangy Silvermane within The Hinterlands.",
-        zone = "The Hinterlands.",
+        zone = "The Hinterlands",
         icon = 1
     },
     [79573] = {
@@ -2065,7 +2164,8 @@ AV_VanityItems = {
         creaturePreview = 2924,
         creatureId = 2924,
         description = "Has a chance to drop from Silvermane Wolf within Quel'Danil Lodge.",
-        zone = "Quel'Danil Lodge.",
+        zone = "The Hinterlands",
+        subzone = "Quel'Danil Lodge",
         icon = 1
     },
     [79574] = {
@@ -2074,7 +2174,8 @@ AV_VanityItems = {
         creaturePreview = 2925,
         creatureId = 2925,
         description = "Has a chance to drop from Silvermane Howler within Shadra'Alor.",
-        zone = "Shadra'Alor.",
+        zone = "The Hinterlands",
+        subzone = "Shadra'Alor",
         icon = 1
     },
     [79575] = {
@@ -2083,7 +2184,7 @@ AV_VanityItems = {
         creaturePreview = 2926,
         creatureId = 2926,
         description = "Has a chance to drop from Silvermane Stalker within The Hinterlands.",
-        zone = "The Hinterlands.",
+        zone = "The Hinterlands",
         icon = 1
     },
     [79576] = {
@@ -2092,7 +2193,7 @@ AV_VanityItems = {
         creaturePreview = 2931,
         creatureId = 2931,
         description = "Has a chance to drop from Zaricotl within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 1
     },
     [79577] = {
@@ -2101,7 +2202,8 @@ AV_VanityItems = {
         creaturePreview = 2954,
         creatureId = 2954,
         description = "Has a chance to drop from Bristleback Battleboar within Brambleblade Ravine.",
-        zone = "Brambleblade Ravine.",
+        zone = "Mulgore",
+        subzone = "Brambleblade Ravine",
         icon = 1
     },
     [79578] = {
@@ -2110,7 +2212,8 @@ AV_VanityItems = {
         creaturePreview = 2955,
         creatureId = 2955,
         description = "Has a chance to drop from Plainstrider within Red Cloud Mesa.",
-        zone = "Red Cloud Mesa.",
+        zone = "Mulgore",
+        subzone = "Red Cloud Mesa",
         icon = 1
     },
     [79579] = {
@@ -2119,7 +2222,8 @@ AV_VanityItems = {
         creaturePreview = 2956,
         creatureId = 2956,
         description = "Has a chance to drop from Adult Plainstrider within The Golden Plains.",
-        zone = "The Golden Plains.",
+        zone = "The Barrens",
+        subzone = "The Golden Plains",
         icon = 1
     },
     [79580] = {
@@ -2128,7 +2232,7 @@ AV_VanityItems = {
         creaturePreview = 2957,
         creatureId = 2957,
         description = "Has a chance to drop from Elder Plainstrider within Mulgore.",
-        zone = "Mulgore.",
+        zone = "Mulgore",
         icon = 1
     },
     [79581] = {
@@ -2137,7 +2241,7 @@ AV_VanityItems = {
         creaturePreview = 2958,
         creatureId = 2958,
         description = "Has a chance to drop from Prairie Wolf within Mulgore.",
-        zone = "Mulgore.",
+        zone = "Mulgore",
         icon = 1
     },
     [79582] = {
@@ -2146,7 +2250,8 @@ AV_VanityItems = {
         creaturePreview = 2959,
         creatureId = 2959,
         description = "Has a chance to drop from Prairie Stalker within The Rolling Plains.",
-        zone = "The Rolling Plains.",
+        zone = "Mulgore",
+        subzone = "The Rolling Plains",
         icon = 1
     },
     [79583] = {
@@ -2155,7 +2260,8 @@ AV_VanityItems = {
         creaturePreview = 2960,
         creatureId = 2960,
         description = "Has a chance to drop from Prairie Wolf Alpha within Red Rocks.",
-        zone = "Red Rocks.",
+        zone = "Mulgore",
+        subzone = "Red Rocks",
         icon = 1
     },
     [79584] = {
@@ -2164,7 +2270,8 @@ AV_VanityItems = {
         creaturePreview = 2961,
         creatureId = 2961,
         description = "Has a chance to drop from Mountain Cougar within Red Cloud Mesa.",
-        zone = "Red Cloud Mesa.",
+        zone = "Mulgore",
+        subzone = "Red Cloud Mesa",
         icon = 1
     },
     [79585] = {
@@ -2173,7 +2280,8 @@ AV_VanityItems = {
         creaturePreview = 2966,
         creatureId = 2966,
         description = "Has a chance to drop from Battleboar within Red Cloud Mesa.",
-        zone = "Red Cloud Mesa.",
+        zone = "Mulgore",
+        subzone = "Red Cloud Mesa",
         icon = 1
     },
     [79586] = {
@@ -2182,7 +2290,7 @@ AV_VanityItems = {
         creaturePreview = 2969,
         creatureId = 2969,
         description = "Has a chance to drop from Wiry Swoop within Mulgore.",
-        zone = "Mulgore.",
+        zone = "Mulgore",
         icon = 1
     },
     [79587] = {
@@ -2191,7 +2299,8 @@ AV_VanityItems = {
         creaturePreview = 2970,
         creatureId = 2970,
         description = "Has a chance to drop from Swoop within The Golden Plains.",
-        zone = "The Golden Plains.",
+        zone = "The Barrens",
+        subzone = "The Golden Plains",
         icon = 1
     },
     [79588] = {
@@ -2200,7 +2309,7 @@ AV_VanityItems = {
         creaturePreview = 2971,
         creatureId = 2971,
         description = "Has a chance to drop from Taloned Swoop within Windfury Ridge.",
-        zone = "Windfury Ridge.",
+        zone = "Windfury Ridge",
         icon = 1
     },
     [79589] = {
@@ -2209,7 +2318,8 @@ AV_VanityItems = {
         creaturePreview = 3035,
         creatureId = 3035,
         description = "Has a chance to drop from Flatland Cougar within The Golden Plains.",
-        zone = "The Golden Plains.",
+        zone = "The Barrens",
+        subzone = "The Golden Plains",
         icon = 1
     },
     [79590] = {
@@ -2218,7 +2328,8 @@ AV_VanityItems = {
         creaturePreview = 3068,
         creatureId = 3068,
         description = "Has a chance to drop from Mazzranache within The Golden Plains.",
-        zone = "The Golden Plains.",
+        zone = "The Barrens",
+        subzone = "The Golden Plains",
         icon = 1
     },
     [79591] = {
@@ -2227,7 +2338,8 @@ AV_VanityItems = {
         creaturePreview = 3098,
         creatureId = 3098,
         description = "Has a chance to drop from Mottled Boar within Valley of Trials.",
-        zone = "Valley of Trials.",
+        zone = "Durotar",
+        subzone = "Valley of Trials",
         icon = 1
     },
     [79592] = {
@@ -2236,7 +2348,7 @@ AV_VanityItems = {
         creaturePreview = 3099,
         creatureId = 3099,
         description = "Has a chance to drop from Dire Mottled Boar within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79593] = {
@@ -2245,7 +2357,7 @@ AV_VanityItems = {
         creaturePreview = 3100,
         creatureId = 3100,
         description = "Has a chance to drop from Elder Mottled Boar within Jaggedswine Farm.",
-        zone = "Jaggedswine Farm.",
+        subzone = "Jaggedswine Farm",
         icon = 1
     },
     [79594] = {
@@ -2254,7 +2366,8 @@ AV_VanityItems = {
         creaturePreview = 3106,
         creatureId = 3106,
         description = "Has a chance to drop from Pygmy Surf Crawler within Scuttle Coast.",
-        zone = "Scuttle Coast.",
+        zone = "Durotar",
+        subzone = "Scuttle Coast",
         icon = 1
     },
     [79595] = {
@@ -2263,7 +2376,8 @@ AV_VanityItems = {
         creaturePreview = 3107,
         creatureId = 3107,
         description = "Has a chance to drop from Surf Crawler within Echo Isles.",
-        zone = "Echo Isles.",
+        zone = "Durotar",
+        subzone = "Echo Isles",
         icon = 1
     },
     [79596] = {
@@ -2272,7 +2386,8 @@ AV_VanityItems = {
         creaturePreview = 3108,
         creatureId = 3108,
         description = "Has a chance to drop from Encrusted Surf Crawler within Bladefist Bay.",
-        zone = "Bladefist Bay.",
+        zone = "Durotar",
+        subzone = "Bladefist Bay",
         icon = 1
     },
     [79597] = {
@@ -2281,7 +2396,8 @@ AV_VanityItems = {
         creaturePreview = 3110,
         creatureId = 3110,
         description = "Has a chance to drop from Dreadmaw Crocolisk within Southfury River.",
-        zone = "Southfury River.",
+        zone = "Durotar",
+        subzone = "Southfury River",
         icon = 1
     },
     [79598] = {
@@ -2290,7 +2406,8 @@ AV_VanityItems = {
         creaturePreview = 3121,
         creatureId = 3121,
         description = "Has a chance to drop from Durotar Tiger within Echo Isles.",
-        zone = "Echo Isles.",
+        zone = "Durotar",
+        subzone = "Echo Isles",
         icon = 1
     },
     [79599] = {
@@ -2299,7 +2416,7 @@ AV_VanityItems = {
         creaturePreview = 3122,
         creatureId = 3122,
         description = "Has a chance to drop from Bloodtalon Taillasher within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79600] = {
@@ -2308,7 +2425,7 @@ AV_VanityItems = {
         creaturePreview = 3123,
         creatureId = 3123,
         description = "Has a chance to drop from Bloodtalon Scythemaw within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79601] = {
@@ -2317,7 +2434,7 @@ AV_VanityItems = {
         creaturePreview = 3124,
         creatureId = 3124,
         description = "Has a chance to drop from Scorpid Worker within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79602] = {
@@ -2326,7 +2443,7 @@ AV_VanityItems = {
         creaturePreview = 3125,
         creatureId = 3125,
         description = "Has a chance to drop from Clattering Scorpid within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79603] = {
@@ -2335,7 +2452,7 @@ AV_VanityItems = {
         creaturePreview = 3126,
         creatureId = 3126,
         description = "Has a chance to drop from Armored Scorpid within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79604] = {
@@ -2344,7 +2461,8 @@ AV_VanityItems = {
         creaturePreview = 3127,
         creatureId = 3127,
         description = "Has a chance to drop from Venomtail Scorpid within Bladefist Bay.",
-        zone = "Bladefist Bay.",
+        zone = "Durotar",
+        subzone = "Bladefist Bay",
         icon = 1
     },
     [79605] = {
@@ -2353,7 +2471,7 @@ AV_VanityItems = {
         creaturePreview = 3225,
         creatureId = 3225,
         description = "Has a chance to drop from Corrupted Mottled Boar within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79606] = {
@@ -2362,7 +2480,7 @@ AV_VanityItems = {
         creaturePreview = 3226,
         creatureId = 3226,
         description = "Has a chance to drop from Corrupted Scorpid within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79607] = {
@@ -2371,7 +2489,7 @@ AV_VanityItems = {
         creaturePreview = 3227,
         creatureId = 3227,
         description = "Has a chance to drop from Corrupted Bloodtalon Scythemaw within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79608] = {
@@ -2380,7 +2498,8 @@ AV_VanityItems = {
         creaturePreview = 3228,
         creatureId = 3228,
         description = "Has a chance to drop from Corrupted Surf Crawler within Bladefist Bay.",
-        zone = "Bladefist Bay.",
+        zone = "Durotar",
+        subzone = "Bladefist Bay",
         icon = 1
     },
     [79609] = {
@@ -2389,7 +2508,8 @@ AV_VanityItems = {
         creaturePreview = 3231,
         creatureId = 3231,
         description = "Has a chance to drop from Corrupted Dreadmaw Crocolisk within Southfury River.",
-        zone = "Southfury River.",
+        zone = "Durotar",
+        subzone = "Southfury River",
         icon = 1
     },
     [79610] = {
@@ -2398,7 +2518,7 @@ AV_VanityItems = {
         creaturePreview = 3241,
         creatureId = 3241,
         description = "Has a chance to drop from Savannah Patriarch within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79611] = {
@@ -2407,7 +2527,7 @@ AV_VanityItems = {
         creaturePreview = 3243,
         creatureId = 3243,
         description = "Has a chance to drop from Savannah Highmane within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79612] = {
@@ -2416,7 +2536,7 @@ AV_VanityItems = {
         creaturePreview = 3244,
         creatureId = 3244,
         description = "Has a chance to drop from Greater Plainstrider within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79613] = {
@@ -2425,7 +2545,8 @@ AV_VanityItems = {
         creaturePreview = 3245,
         creatureId = 3245,
         description = "Has a chance to drop from Ornery Plainstrider within The Dry Hills.",
-        zone = "The Dry Hills.",
+        zone = "The Barrens",
+        subzone = "The Dry Hills",
         icon = 1
     },
     [79614] = {
@@ -2434,7 +2555,7 @@ AV_VanityItems = {
         creaturePreview = 3246,
         creatureId = 3246,
         description = "Has a chance to drop from Fleeting Plainstrider within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79615] = {
@@ -2443,7 +2564,7 @@ AV_VanityItems = {
         creaturePreview = 3247,
         creatureId = 3247,
         description = "Has a chance to drop from Thunderhawk Hatchling within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79616] = {
@@ -2452,7 +2573,7 @@ AV_VanityItems = {
         creaturePreview = 3249,
         creatureId = 3249,
         description = "Has a chance to drop from Greater Thunderhawk within Southern Barrens.",
-        zone = "Southern Barrens.",
+        zone = "Southern Barrens",
         icon = 1
     },
     [79617] = {
@@ -2461,7 +2582,8 @@ AV_VanityItems = {
         creaturePreview = 3250,
         creatureId = 3250,
         description = "Has a chance to drop from Silithid Creeper within Field of Giants.",
-        zone = "Field of Giants.",
+        zone = "The Barrens",
+        subzone = "Field of Giants",
         icon = 1
     },
     [79618] = {
@@ -2470,7 +2592,8 @@ AV_VanityItems = {
         creaturePreview = 3252,
         creatureId = 3252,
         description = "Has a chance to drop from Silithid Swarmer within Field of Giants.",
-        zone = "Field of Giants.",
+        zone = "The Barrens",
+        subzone = "Field of Giants",
         icon = 1
     },
     [79619] = {
@@ -2479,7 +2602,7 @@ AV_VanityItems = {
         creaturePreview = 3254,
         creatureId = 3254,
         description = "Has a chance to drop from Sunscale Lashtail within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79620] = {
@@ -2488,7 +2611,7 @@ AV_VanityItems = {
         creaturePreview = 3255,
         creatureId = 3255,
         description = "Has a chance to drop from Sunscale Screecher within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79621] = {
@@ -2497,7 +2620,8 @@ AV_VanityItems = {
         creaturePreview = 3256,
         creatureId = 3256,
         description = "Has a chance to drop from Sunscale Scytheclaw within Raptor Grounds.",
-        zone = "Raptor Grounds.",
+        zone = "The Barrens",
+        subzone = "Raptor Grounds",
         icon = 1
     },
     [79622] = {
@@ -2506,7 +2630,8 @@ AV_VanityItems = {
         creaturePreview = 3281,
         creatureId = 3281,
         description = "Has a chance to drop from Sarkoth within Valley of Trials.",
-        zone = "Valley of Trials.",
+        zone = "Durotar",
+        subzone = "Valley of Trials",
         icon = 1
     },
     [79623] = {
@@ -2515,7 +2640,7 @@ AV_VanityItems = {
         creaturePreview = 3415,
         creatureId = 3415,
         description = "Has a chance to drop from Savannah Huntress within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79624] = {
@@ -2524,7 +2649,7 @@ AV_VanityItems = {
         creaturePreview = 3416,
         creatureId = 3416,
         description = "Has a chance to drop from Savannah Matriarch within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79625] = {
@@ -2533,7 +2658,7 @@ AV_VanityItems = {
         creaturePreview = 3424,
         creatureId = 3424,
         description = "Has a chance to drop from Thunderhawk Cloudscraper within Southern Barrens.",
-        zone = "Southern Barrens.",
+        zone = "Southern Barrens",
         icon = 1
     },
     [79626] = {
@@ -2542,7 +2667,7 @@ AV_VanityItems = {
         creaturePreview = 3425,
         creatureId = 3425,
         description = "Has a chance to drop from Savannah Prowler within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79627] = {
@@ -2551,7 +2676,8 @@ AV_VanityItems = {
         creaturePreview = 3461,
         creatureId = 3461,
         description = "Has a chance to drop from Oasis Snapjaw within Lushwater Oasis.",
-        zone = "Lushwater Oasis.",
+        zone = "The Barrens",
+        subzone = "Lushwater Oasis",
         icon = 1
     },
     [79628] = {
@@ -2560,7 +2686,8 @@ AV_VanityItems = {
         creaturePreview = 3472,
         creatureId = 3472,
         description = "Has a chance to drop from Washte Pawne within Blackthorn Ridge.",
-        zone = "Blackthorn Ridge.",
+        zone = "The Barrens",
+        subzone = "Blackthorn Ridge",
         icon = 1
     },
     [79629] = {
@@ -2569,7 +2696,7 @@ AV_VanityItems = {
         creaturePreview = 3566,
         creatureId = 3566,
         description = "Has a chance to drop from Flatland Prowler within Windfury Ridge.",
-        zone = "Windfury Ridge.",
+        zone = "Windfury Ridge",
         icon = 1
     },
     [79630] = {
@@ -2578,7 +2705,8 @@ AV_VanityItems = {
         creaturePreview = 3581,
         creatureId = 3581,
         description = "Has a chance to drop from Sewer Beast within Stormwind City.",
-        zone = "Stormwind City.",
+        zone = "Elwynn Forest",
+        subzone = "Stormwind City",
         icon = 1
     },
     [79631] = {
@@ -2587,7 +2715,7 @@ AV_VanityItems = {
         creaturePreview = 3630,
         creatureId = 3630,
         description = "Has a chance to drop from Deviate Coiler within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79632] = {
@@ -2596,7 +2724,7 @@ AV_VanityItems = {
         creaturePreview = 3631,
         creatureId = 3631,
         description = "Has a chance to drop from Deviate Stinglash within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79633] = {
@@ -2605,7 +2733,7 @@ AV_VanityItems = {
         creaturePreview = 3632,
         creatureId = 3632,
         description = "Has a chance to drop from Deviate Creeper within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79634] = {
@@ -2614,7 +2742,7 @@ AV_VanityItems = {
         creaturePreview = 3633,
         creatureId = 3633,
         description = "Has a chance to drop from Deviate Slayer within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79635] = {
@@ -2623,7 +2751,7 @@ AV_VanityItems = {
         creaturePreview = 3634,
         creatureId = 3634,
         description = "Has a chance to drop from Deviate Stalker within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79636] = {
@@ -2632,7 +2760,7 @@ AV_VanityItems = {
         creaturePreview = 3636,
         creatureId = 3636,
         description = "Has a chance to drop from Deviate Ravager within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79637] = {
@@ -2641,7 +2769,7 @@ AV_VanityItems = {
         creaturePreview = 3637,
         creatureId = 3637,
         description = "Has a chance to drop from Deviate Guardian within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79638] = {
@@ -2650,7 +2778,7 @@ AV_VanityItems = {
         creaturePreview = 3653,
         creatureId = 3653,
         description = "Has a chance to drop from Kresh within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79639] = {
@@ -2659,7 +2787,7 @@ AV_VanityItems = {
         creaturePreview = 3809,
         creatureId = 3809,
         description = "Has a chance to drop from Ashenvale Bear within Fallen Sky Lake.",
-        zone = "Fallen Sky Lake.",
+        zone = "Fallen Sky Lake",
         icon = 1
     },
     [79640] = {
@@ -2668,7 +2796,7 @@ AV_VanityItems = {
         creaturePreview = 3810,
         creatureId = 3810,
         description = "Has a chance to drop from Elder Ashenvale Bear within The Shady Nook.",
-        zone = "The Shady Nook.",
+        zone = "The Shady Nook",
         icon = 1
     },
     [79641] = {
@@ -2677,7 +2805,7 @@ AV_VanityItems = {
         creaturePreview = 3811,
         creatureId = 3811,
         description = "Has a chance to drop from Giant Ashenvale Bear within Forest Song.",
-        zone = "Forest Song.",
+        zone = "Forest Song",
         icon = 1
     },
     [79642] = {
@@ -2686,7 +2814,7 @@ AV_VanityItems = {
         creaturePreview = 3812,
         creatureId = 3812,
         description = "Has a chance to drop from Clattering Crawler within The Zoram Strand.",
-        zone = "The Zoram Strand.",
+        zone = "The Zoram Strand",
         icon = 1
     },
     [79643] = {
@@ -2695,7 +2823,7 @@ AV_VanityItems = {
         creaturePreview = 3814,
         creatureId = 3814,
         description = "Has a chance to drop from Spined Crawler within The Zoram Strand.",
-        zone = "The Zoram Strand.",
+        zone = "The Zoram Strand",
         icon = 1
     },
     [79644] = {
@@ -2704,7 +2832,7 @@ AV_VanityItems = {
         creaturePreview = 3819,
         creatureId = 3819,
         description = "Has a chance to drop from Wildthorn Stalker within Nightsong Woods.",
-        zone = "Nightsong Woods.",
+        zone = "Nightsong Woods",
         icon = 1
     },
     [79645] = {
@@ -2713,7 +2841,7 @@ AV_VanityItems = {
         creaturePreview = 3820,
         creatureId = 3820,
         description = "Has a chance to drop from Wildthorn Venomspitter within Nightsong Woods.",
-        zone = "Nightsong Woods.",
+        zone = "Nightsong Woods",
         icon = 1
     },
     [79646] = {
@@ -2722,7 +2850,8 @@ AV_VanityItems = {
         creaturePreview = 3821,
         creatureId = 3821,
         description = "Has a chance to drop from Wildthorn Lurker within Warsong Lumber Camp.",
-        zone = "Warsong Lumber Camp.",
+        zone = "Warsong Lumber Camp",
+        subzone = "Warsong Lumber Camp",
         icon = 1
     },
     [79647] = {
@@ -2731,7 +2860,7 @@ AV_VanityItems = {
         creaturePreview = 3823,
         creatureId = 3823,
         description = "Has a chance to drop from Ghostpaw Runner within Lake Falathim.",
-        zone = "Lake Falathim.",
+        zone = "Lake Falathim",
         icon = 1
     },
     [79648] = {
@@ -2740,7 +2869,7 @@ AV_VanityItems = {
         creaturePreview = 3824,
         creatureId = 3824,
         description = "Has a chance to drop from Ghostpaw Howler within Mystral Lake.",
-        zone = "Mystral Lake.",
+        zone = "Mystral Lake",
         icon = 1
     },
     [79649] = {
@@ -2749,7 +2878,7 @@ AV_VanityItems = {
         creaturePreview = 3825,
         creatureId = 3825,
         description = "Has a chance to drop from Ghostpaw Alpha within Nightsong Woods.",
-        zone = "Nightsong Woods.",
+        zone = "Nightsong Woods",
         icon = 1
     },
     [79650] = {
@@ -2758,7 +2887,8 @@ AV_VanityItems = {
         creaturePreview = 3861,
         creatureId = 3861,
         description = "Has a chance to drop from Bleak Worg within Shadowfang Keep.",
-        zone = "Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
         icon = 1
     },
     [79651] = {
@@ -2767,7 +2897,8 @@ AV_VanityItems = {
         creaturePreview = 3862,
         creatureId = 3862,
         description = "Has a chance to drop from Slavering Worg within Shadowfang Keep.",
-        zone = "Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
         icon = 1
     },
     [79652] = {
@@ -2776,7 +2907,8 @@ AV_VanityItems = {
         creaturePreview = 3866,
         creatureId = 3866,
         description = "Has a chance to drop from Vile Bat within Shadowfang Keep.",
-        zone = "Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
         icon = 1
     },
     [79653] = {
@@ -2785,7 +2917,8 @@ AV_VanityItems = {
         creaturePreview = 3868,
         creatureId = 3868,
         description = "Has a chance to drop from Blood Seeker within Shadowfang Keep.",
-        zone = "Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
         icon = 1
     },
     [79654] = {
@@ -2794,7 +2927,8 @@ AV_VanityItems = {
         creaturePreview = 4005,
         creatureId = 4005,
         description = "Has a chance to drop from Deepmoss Creeper within Webwinder Path.",
-        zone = "Webwinder Path.",
+        zone = "Stonetalon Mountains",
+        subzone = "Webwinder Path",
         icon = 1
     },
     [79655] = {
@@ -2803,7 +2937,8 @@ AV_VanityItems = {
         creaturePreview = 4006,
         creatureId = 4006,
         description = "Has a chance to drop from Deepmoss Webspinner within Windshear Crag.",
-        zone = "Windshear Crag.",
+        zone = "Stonetalon Mountains",
+        subzone = "Windshear Crag",
         icon = 1
     },
     [79656] = {
@@ -2812,7 +2947,8 @@ AV_VanityItems = {
         creaturePreview = 4007,
         creatureId = 4007,
         description = "Has a chance to drop from Deepmoss Venomspitter within Mirkfallon Lake.",
-        zone = "Mirkfallon Lake.",
+        zone = "Stonetalon Mountains",
+        subzone = "Mirkfallon Lake",
         icon = 1
     },
     [79657] = {
@@ -2821,7 +2957,7 @@ AV_VanityItems = {
         creaturePreview = 4031,
         creatureId = 4031,
         description = "Has a chance to drop from Fledgling Chimaera within Stonetalon Mountains.",
-        zone = "Stonetalon Mountains.",
+        zone = "Stonetalon Mountains",
         icon = 1
     },
     [79658] = {
@@ -2830,7 +2966,8 @@ AV_VanityItems = {
         creaturePreview = 4032,
         creatureId = 4032,
         description = "Has a chance to drop from Young Chimaera within The Charred Vale.",
-        zone = "The Charred Vale.",
+        zone = "Stonetalon Mountains",
+        subzone = "The Charred Vale",
         icon = 1
     },
     [79659] = {
@@ -2839,7 +2976,8 @@ AV_VanityItems = {
         creaturePreview = 4040,
         creatureId = 4040,
         description = "Has a chance to drop from Cave Stalker within Thelgen Rock.",
-        zone = "Thelgen Rock.",
+        zone = "Wetlands",
+        subzone = "Thelgen Rock",
         icon = 1
     },
     [79660] = {
@@ -2848,7 +2986,8 @@ AV_VanityItems = {
         creaturePreview = 4067,
         creatureId = 4067,
         description = "Has a chance to drop from Twilight Runner within Stonetalon Peak.",
-        zone = "Stonetalon Peak.",
+        zone = "Stonetalon Mountains",
+        subzone = "Stonetalon Peak",
         icon = 1
     },
     [79661] = {
@@ -2857,7 +2996,7 @@ AV_VanityItems = {
         creaturePreview = 4117,
         creatureId = 4117,
         description = "Has a chance to drop from Cloud Serpent within Thousand Needles.",
-        zone = "Thousand Needles.",
+        zone = "Thousand Needles",
         icon = 1
     },
     [79662] = {
@@ -2866,7 +3005,7 @@ AV_VanityItems = {
         creaturePreview = 4118,
         creatureId = 4118,
         description = "Has a chance to drop from Venomous Cloud Serpent within Thousand Needles.",
-        zone = "Thousand Needles.",
+        zone = "Thousand Needles",
         icon = 1
     },
     [79663] = {
@@ -2875,7 +3014,8 @@ AV_VanityItems = {
         creaturePreview = 4119,
         creatureId = 4119,
         description = "Has a chance to drop from Elder Cloud Serpent within Windbreak Canyon.",
-        zone = "Windbreak Canyon.",
+        zone = "Thousand Needles",
+        subzone = "Windbreak Canyon",
         icon = 1
     },
     [79664] = {
@@ -2884,7 +3024,8 @@ AV_VanityItems = {
         creaturePreview = 4124,
         creatureId = 4124,
         description = "Has a chance to drop from Needles Cougar within Windbreak Canyon.",
-        zone = "Windbreak Canyon.",
+        zone = "Thousand Needles",
+        subzone = "Windbreak Canyon",
         icon = 1
     },
     [79665] = {
@@ -2893,7 +3034,8 @@ AV_VanityItems = {
         creaturePreview = 4126,
         creatureId = 4126,
         description = "Has a chance to drop from Crag Stalker within Darkcloud Pinnacle.",
-        zone = "Darkcloud Pinnacle.",
+        zone = "Thousand Needles",
+        subzone = "Darkcloud Pinnacle",
         icon = 1
     },
     [79666] = {
@@ -2902,7 +3044,7 @@ AV_VanityItems = {
         creaturePreview = 4127,
         creatureId = 4127,
         description = "Has a chance to drop from Hecklefang Hyena within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79667] = {
@@ -2911,7 +3053,7 @@ AV_VanityItems = {
         creaturePreview = 4128,
         creatureId = 4128,
         description = "Has a chance to drop from Hecklefang Stalker within Southern Barrens.",
-        zone = "Southern Barrens.",
+        zone = "Southern Barrens",
         icon = 1
     },
     [79668] = {
@@ -2920,7 +3062,8 @@ AV_VanityItems = {
         creaturePreview = 4129,
         creatureId = 4129,
         description = "Has a chance to drop from Hecklefang Snarler within Agama'gor.",
-        zone = "Agama'gor.",
+        zone = "The Barrens",
+        subzone = "Agama'gor",
         icon = 1
     },
     [79669] = {
@@ -2929,7 +3072,7 @@ AV_VanityItems = {
         creaturePreview = 4132,
         creatureId = 4132,
         description = "Has a chance to drop from Silithid Ravager within Thousand Needles.",
-        zone = "Thousand Needles.",
+        zone = "Thousand Needles",
         icon = 1
     },
     [79670] = {
@@ -2938,7 +3081,8 @@ AV_VanityItems = {
         creaturePreview = 4139,
         creatureId = 4139,
         description = "Has a chance to drop from Scorpid Terror within Mirage Raceway.",
-        zone = "Mirage Raceway.",
+        zone = "Thousand Needles",
+        subzone = "Mirage Raceway",
         icon = 1
     },
     [79671] = {
@@ -2947,7 +3091,8 @@ AV_VanityItems = {
         creaturePreview = 4140,
         creatureId = 4140,
         description = "Has a chance to drop from Scorpid Reaver within Mirage Raceway.",
-        zone = "Mirage Raceway.",
+        zone = "Thousand Needles",
+        subzone = "Mirage Raceway",
         icon = 1
     },
     [79672] = {
@@ -2956,7 +3101,8 @@ AV_VanityItems = {
         creaturePreview = 4142,
         creatureId = 4142,
         description = "Has a chance to drop from Sparkleshell Tortoise within The Shimmering Flats.",
-        zone = "The Shimmering Flats.",
+        zone = "Thousand Needles",
+        subzone = "The Shimmering Flats",
         icon = 1
     },
     [79673] = {
@@ -2965,7 +3111,8 @@ AV_VanityItems = {
         creaturePreview = 4143,
         creatureId = 4143,
         description = "Has a chance to drop from Sparkleshell Snapper within Mirage Raceway.",
-        zone = "Mirage Raceway.",
+        zone = "Thousand Needles",
+        subzone = "Mirage Raceway",
         icon = 1
     },
     [79674] = {
@@ -2974,7 +3121,8 @@ AV_VanityItems = {
         creaturePreview = 4144,
         creatureId = 4144,
         description = "Has a chance to drop from Sparkleshell Borer within Mirage Raceway.",
-        zone = "Mirage Raceway.",
+        zone = "Thousand Needles",
+        subzone = "Mirage Raceway",
         icon = 1
     },
     [79675] = {
@@ -2983,7 +3131,8 @@ AV_VanityItems = {
         creaturePreview = 4154,
         creatureId = 4154,
         description = "Has a chance to drop from Salt Flats Scavenger within Mirage Raceway.",
-        zone = "Mirage Raceway.",
+        zone = "Thousand Needles",
+        subzone = "Mirage Raceway",
         icon = 1
     },
     [79676] = {
@@ -2992,7 +3141,7 @@ AV_VanityItems = {
         creaturePreview = 4158,
         creatureId = 4158,
         description = "Has a chance to drop from Salt Flats Vulture within Tahonda Ruins.",
-        zone = "Tahonda Ruins.",
+        subzone = "Tahonda Ruins",
         icon = 1
     },
     [79677] = {
@@ -3001,7 +3150,7 @@ AV_VanityItems = {
         creaturePreview = 4248,
         creatureId = 4248,
         description = "Has a chance to drop from Pesterhide Hyena within The Screeching Canyon.",
-        zone = "The Screeching Canyon.",
+        zone = "The Screeching Canyon",
         icon = 1
     },
     [79678] = {
@@ -3010,7 +3159,7 @@ AV_VanityItems = {
         creaturePreview = 4249,
         creatureId = 4249,
         description = "Has a chance to drop from Pesterhide Snarler within Thousand Needles.",
-        zone = "Thousand Needles.",
+        zone = "Thousand Needles",
         icon = 1
     },
     [79679] = {
@@ -3019,7 +3168,7 @@ AV_VanityItems = {
         creaturePreview = 4250,
         creatureId = 4250,
         description = "Has a chance to drop from Galak Packhound within Thousand Needles.",
-        zone = "Thousand Needles.",
+        zone = "Thousand Needles",
         icon = 1
     },
     [79680] = {
@@ -3028,7 +3177,8 @@ AV_VanityItems = {
         creaturePreview = 4304,
         creatureId = 4304,
         description = "Has a chance to drop from Scarlet Tracking Hound within Scarlet Monastery.",
-        zone = "Scarlet Monastery.",
+        zone = "Tirisfal Glades",
+        subzone = "Scarlet Monastery",
         icon = 1
     },
     [79681] = {
@@ -3037,7 +3187,7 @@ AV_VanityItems = {
         creaturePreview = 4316,
         creatureId = 4316,
         description = "Has a chance to drop from Kolkar Packhound within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79682] = {
@@ -3046,7 +3196,7 @@ AV_VanityItems = {
         creaturePreview = 4341,
         creatureId = 4341,
         description = "Has a chance to drop from Drywallow Crocolisk within Dustwallow Marsh.",
-        zone = "Dustwallow Marsh.",
+        zone = "Dustwallow Marsh",
         icon = 1
     },
     [79683] = {
@@ -3055,7 +3205,8 @@ AV_VanityItems = {
         creaturePreview = 4343,
         creatureId = 4343,
         description = "Has a chance to drop from Drywallow Snapper within The Quagmire.",
-        zone = "The Quagmire.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Quagmire",
         icon = 1
     },
     [79684] = {
@@ -3064,7 +3215,8 @@ AV_VanityItems = {
         creaturePreview = 4344,
         creatureId = 4344,
         description = "Has a chance to drop from Mottled Drywallow Crocolisk within The Dragonmurk.",
-        zone = "The Dragonmurk.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Dragonmurk",
         icon = 1
     },
     [79685] = {
@@ -3073,7 +3225,7 @@ AV_VanityItems = {
         creaturePreview = 4345,
         creatureId = 4345,
         description = "Has a chance to drop from Drywallow Daggermaw within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 1
     },
     [79686] = {
@@ -3082,7 +3234,8 @@ AV_VanityItems = {
         creaturePreview = 4346,
         creatureId = 4346,
         description = "Has a chance to drop from Noxious Flayer within Dreadmurk Shore.",
-        zone = "Dreadmurk Shore.",
+        zone = "Dustwallow Marsh",
+        subzone = "Dreadmurk Shore",
         icon = 1
     },
     [79687] = {
@@ -3091,7 +3244,8 @@ AV_VanityItems = {
         creaturePreview = 4347,
         creatureId = 4347,
         description = "Has a chance to drop from Noxious Reaver within The Quagmire.",
-        zone = "The Quagmire.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Quagmire",
         icon = 1
     },
     [79688] = {
@@ -3100,7 +3254,8 @@ AV_VanityItems = {
         creaturePreview = 4348,
         creatureId = 4348,
         description = "Has a chance to drop from Noxious Shredder within The Quagmire.",
-        zone = "The Quagmire.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Quagmire",
         icon = 1
     },
     [79689] = {
@@ -3109,7 +3264,7 @@ AV_VanityItems = {
         creaturePreview = 4351,
         creatureId = 4351,
         description = "Has a chance to drop from Bloodfen Raptor within Dustwallow Marsh.",
-        zone = "Dustwallow Marsh.",
+        zone = "Dustwallow Marsh",
         icon = 1
     },
     [79690] = {
@@ -3118,7 +3273,7 @@ AV_VanityItems = {
         creaturePreview = 4352,
         creatureId = 4352,
         description = "Has a chance to drop from Bloodfen Screecher within Dustwallow Marsh.",
-        zone = "Dustwallow Marsh.",
+        zone = "Dustwallow Marsh",
         icon = 1
     },
     [79691] = {
@@ -3127,7 +3282,8 @@ AV_VanityItems = {
         creaturePreview = 4356,
         creatureId = 4356,
         description = "Has a chance to drop from Bloodfen Razormaw within Bloodfen Burrow.",
-        zone = "Bloodfen Burrow.",
+        zone = "Dustwallow Marsh",
+        subzone = "Bloodfen Burrow",
         icon = 1
     },
     [79692] = {
@@ -3136,7 +3292,8 @@ AV_VanityItems = {
         creaturePreview = 4357,
         creatureId = 4357,
         description = "Has a chance to drop from Bloodfen Lashtail within The Dragonmurk.",
-        zone = "The Dragonmurk.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Dragonmurk",
         icon = 1
     },
     [79693] = {
@@ -3145,7 +3302,8 @@ AV_VanityItems = {
         creaturePreview = 4376,
         creatureId = 4376,
         description = "Has a chance to drop from Darkmist Spider within Darkmist Cavern.",
-        zone = "Darkmist Cavern.",
+        zone = "Dustwallow Marsh",
+        subzone = "Darkmist Cavern",
         icon = 1
     },
     [79694] = {
@@ -3154,7 +3312,8 @@ AV_VanityItems = {
         creaturePreview = 4378,
         creatureId = 4378,
         description = "Has a chance to drop from Darkmist Recluse within Darkmist Cavern.",
-        zone = "Darkmist Cavern.",
+        zone = "Dustwallow Marsh",
+        subzone = "Darkmist Cavern",
         icon = 1
     },
     [79695] = {
@@ -3163,7 +3322,8 @@ AV_VanityItems = {
         creaturePreview = 4379,
         creatureId = 4379,
         description = "Has a chance to drop from Darkmist Silkspinner within Darkmist Cavern.",
-        zone = "Darkmist Cavern.",
+        zone = "Dustwallow Marsh",
+        subzone = "Darkmist Cavern",
         icon = 1
     },
     [79696] = {
@@ -3172,7 +3332,8 @@ AV_VanityItems = {
         creaturePreview = 4380,
         creatureId = 4380,
         description = "Has a chance to drop from Darkmist Widow within Darkmist Cavern.",
-        zone = "Darkmist Cavern.",
+        zone = "Dustwallow Marsh",
+        subzone = "Darkmist Cavern",
         icon = 1
     },
     [79697] = {
@@ -3181,7 +3342,8 @@ AV_VanityItems = {
         creaturePreview = 4397,
         creatureId = 4397,
         description = "Has a chance to drop from Mudrock Spikeshell within Dreadmurk Shore.",
-        zone = "Dreadmurk Shore.",
+        zone = "Dustwallow Marsh",
+        subzone = "Dreadmurk Shore",
         icon = 1
     },
     [79698] = {
@@ -3190,7 +3352,7 @@ AV_VanityItems = {
         creaturePreview = 4412,
         creatureId = 4412,
         description = "Has a chance to drop from Darkfang Creeper within Dustwallow Marsh.",
-        zone = "Dustwallow Marsh.",
+        zone = "Dustwallow Marsh",
         icon = 1
     },
     [79699] = {
@@ -3199,7 +3361,8 @@ AV_VanityItems = {
         creaturePreview = 4414,
         creatureId = 4414,
         description = "Has a chance to drop from Darkfang Venomspitter within Dreadmurk Shore.",
-        zone = "Dreadmurk Shore.",
+        zone = "Dustwallow Marsh",
+        subzone = "Dreadmurk Shore",
         icon = 1
     },
     [79700] = {
@@ -3208,7 +3371,7 @@ AV_VanityItems = {
         creaturePreview = 4415,
         creatureId = 4415,
         description = "Has a chance to drop from Giant Darkfang Spider within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 1
     },
     [79701] = {
@@ -3217,7 +3380,8 @@ AV_VanityItems = {
         creaturePreview = 4425,
         creatureId = 4425,
         description = "Has a chance to drop from Blind Hunter within Razorfen Kraul.",
-        zone = "Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
         icon = 1
     },
     [79702] = {
@@ -3226,7 +3390,8 @@ AV_VanityItems = {
         creaturePreview = 4511,
         creatureId = 4511,
         description = "Has a chance to drop from Agam'ar within Razorfen Kraul.",
-        zone = "Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
         icon = 1
     },
     [79703] = {
@@ -3235,7 +3400,8 @@ AV_VanityItems = {
         creaturePreview = 4512,
         creatureId = 4512,
         description = "Has a chance to drop from Rotting Agam'ar within Razorfen Kraul.",
-        zone = "Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
         icon = 1
     },
     [79704] = {
@@ -3244,7 +3410,8 @@ AV_VanityItems = {
         creaturePreview = 4514,
         creatureId = 4514,
         description = "Has a chance to drop from Raging Agam'ar within Razorfen Kraul.",
-        zone = "Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
         icon = 1
     },
     [79705] = {
@@ -3253,7 +3420,8 @@ AV_VanityItems = {
         creaturePreview = 4538,
         creatureId = 4538,
         description = "Has a chance to drop from Kraul Bat within Razorfen Kraul.",
-        zone = "Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
         icon = 1
     },
     [79706] = {
@@ -3262,7 +3430,8 @@ AV_VanityItems = {
         creaturePreview = 4539,
         creatureId = 4539,
         description = "Has a chance to drop from Greater Kraul Bat within Razorfen Kraul.",
-        zone = "Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
         icon = 1
     },
     [79707] = {
@@ -3271,7 +3440,8 @@ AV_VanityItems = {
         creaturePreview = 4548,
         creatureId = 4548,
         description = "Has a chance to drop from Steelsnap within Camp E'thok.",
-        zone = "Camp E'thok.",
+        zone = "Camp E'thok",
+        subzone = "Camp E'thok",
         icon = 1
     },
     [79708] = {
@@ -3280,7 +3450,8 @@ AV_VanityItems = {
         creaturePreview = 4662,
         creatureId = 4662,
         description = "Has a chance to drop from Magram Bonepaw within Magram Village.",
-        zone = "Magram Village.",
+        zone = "Desolace",
+        subzone = "Magram Village",
         icon = 1
     },
     [79709] = {
@@ -3289,7 +3460,7 @@ AV_VanityItems = {
         creaturePreview = 4688,
         creatureId = 4688,
         description = "Has a chance to drop from Bonepaw Hyena within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79714] = {
@@ -3298,7 +3469,7 @@ AV_VanityItems = {
         creaturePreview = 4689,
         creatureId = 4689,
         description = "Has a chance to drop from Starving Bonepaw within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79725] = {
@@ -3307,7 +3478,7 @@ AV_VanityItems = {
         creaturePreview = 4690,
         creatureId = 4690,
         description = "Has a chance to drop from Rabid Bonepaw within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79726] = {
@@ -3316,7 +3487,7 @@ AV_VanityItems = {
         creaturePreview = 4692,
         creatureId = 4692,
         description = "Has a chance to drop from Dread Swoop within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79727] = {
@@ -3325,7 +3496,7 @@ AV_VanityItems = {
         creaturePreview = 4693,
         creatureId = 4693,
         description = "Has a chance to drop from Dread Flyer within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79728] = {
@@ -3334,7 +3505,7 @@ AV_VanityItems = {
         creaturePreview = 4694,
         creatureId = 4694,
         description = "Has a chance to drop from Dread Ripper within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79729] = {
@@ -3343,7 +3514,8 @@ AV_VanityItems = {
         creaturePreview = 4695,
         creatureId = 4695,
         description = "Has a chance to drop from Carrion Horror within Kodo Graveyard.",
-        zone = "Kodo Graveyard.",
+        zone = "Desolace",
+        subzone = "Kodo Graveyard",
         icon = 1
     },
     [79730] = {
@@ -3352,7 +3524,7 @@ AV_VanityItems = {
         creaturePreview = 4696,
         creatureId = 4696,
         description = "Has a chance to drop from Scorpashi Snapper within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79732] = {
@@ -3361,7 +3533,8 @@ AV_VanityItems = {
         creaturePreview = 4697,
         creatureId = 4697,
         description = "Has a chance to drop from Scorpashi Lasher within Scrabblescrew's Camp.",
-        zone = "Scrabblescrew's Camp.",
+        zone = "Scrabblescrew's Camp",
+        subzone = "Scrabblescrew's Camp",
         icon = 1
     },
     [79733] = {
@@ -3370,7 +3543,7 @@ AV_VanityItems = {
         creaturePreview = 4699,
         creatureId = 4699,
         description = "Has a chance to drop from Scorpashi Venomlash within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [79736] = {
@@ -3379,7 +3552,7 @@ AV_VanityItems = {
         creaturePreview = 4821,
         creatureId = 4821,
         description = "Has a chance to drop from Skittering Crustacean within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 1
     },
     [79737] = {
@@ -3388,7 +3561,7 @@ AV_VanityItems = {
         creaturePreview = 4822,
         creatureId = 4822,
         description = "Has a chance to drop from Snapping Crustacean within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 1
     },
     [79738] = {
@@ -3397,7 +3570,7 @@ AV_VanityItems = {
         creaturePreview = 4823,
         creatureId = 4823,
         description = "Has a chance to drop from Barbed Crustacean within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 1
     },
     [79739] = {
@@ -3406,7 +3579,7 @@ AV_VanityItems = {
         creaturePreview = 4824,
         creatureId = 4824,
         description = "Has a chance to drop from Aku'mai Fisher within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 1
     },
     [79741] = {
@@ -3415,7 +3588,7 @@ AV_VanityItems = {
         creaturePreview = 4825,
         creatureId = 4825,
         description = "Has a chance to drop from Aku'mai Snapjaw within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 1
     },
     [79742] = {
@@ -3424,7 +3597,8 @@ AV_VanityItems = {
         creaturePreview = 4841,
         creatureId = 4841,
         description = "Has a chance to drop from Deadmire within The Quagmire.",
-        zone = "The Quagmire.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Quagmire",
         icon = 1
     },
     [79743] = {
@@ -3433,7 +3607,7 @@ AV_VanityItems = {
         creaturePreview = 4861,
         creatureId = 4861,
         description = "Has a chance to drop from Shrike Bat within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 1
     },
     [79747] = {
@@ -3442,7 +3616,7 @@ AV_VanityItems = {
         creaturePreview = 4887,
         creatureId = 4887,
         description = "Has a chance to drop from Ghamoo-ra within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 1
     },
     [79748] = {
@@ -3451,7 +3625,8 @@ AV_VanityItems = {
         creaturePreview = 4950,
         creatureId = 4950,
         description = "Has a chance to drop from Spot within Theramore Isle.",
-        zone = "Theramore Isle.",
+        zone = "Dustwallow Marsh",
+        subzone = "Theramore Isle",
         icon = 1
     },
     [79751] = {
@@ -3460,7 +3635,7 @@ AV_VanityItems = {
         creaturePreview = 5048,
         creatureId = 5048,
         description = "Has a chance to drop from Deviate Adder within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79752] = {
@@ -3469,7 +3644,7 @@ AV_VanityItems = {
         creaturePreview = 5053,
         creatureId = 5053,
         description = "Has a chance to drop from Deviate Crocolisk within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79754] = {
@@ -3478,7 +3653,7 @@ AV_VanityItems = {
         creaturePreview = 5056,
         creatureId = 5056,
         description = "Has a chance to drop from Deviate Dreadfang within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79755] = {
@@ -3487,7 +3662,7 @@ AV_VanityItems = {
         creaturePreview = 5224,
         creatureId = 5224,
         description = "Has a chance to drop from Murk Slitherer within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 1
     },
     [79756] = {
@@ -3496,7 +3671,7 @@ AV_VanityItems = {
         creaturePreview = 5225,
         creatureId = 5225,
         description = "Has a chance to drop from Murk Spitter within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 1
     },
     [79757] = {
@@ -3505,7 +3680,7 @@ AV_VanityItems = {
         creaturePreview = 5226,
         creatureId = 5226,
         description = "Has a chance to drop from Murk Worm within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 1
     },
     [79758] = {
@@ -3514,7 +3689,8 @@ AV_VanityItems = {
         creaturePreview = 5260,
         creatureId = 5260,
         description = "Has a chance to drop from Groddoc Ape within Ruins of Isildien.",
-        zone = "Ruins of Isildien.",
+        zone = "Feralas",
+        subzone = "Ruins of Isildien",
         icon = 1
     },
     [79759] = {
@@ -3523,7 +3699,8 @@ AV_VanityItems = {
         creaturePreview = 5262,
         creatureId = 5262,
         description = "Has a chance to drop from Groddoc Thunderer within The Twin Colossals.",
-        zone = "The Twin Colossals.",
+        zone = "Feralas",
+        subzone = "The Twin Colossals",
         icon = 1
     },
     [79760] = {
@@ -3532,7 +3709,8 @@ AV_VanityItems = {
         creaturePreview = 5268,
         creatureId = 5268,
         description = "Has a chance to drop from Ironfur Bear within Lower Wilds.",
-        zone = "Lower Wilds.",
+        zone = "Feralas",
+        subzone = "Lower Wilds",
         icon = 1
     },
     [79761] = {
@@ -3541,7 +3719,8 @@ AV_VanityItems = {
         creaturePreview = 5272,
         creatureId = 5272,
         description = "Has a chance to drop from Grizzled Ironfur Bear within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 1
     },
     [79762] = {
@@ -3550,7 +3729,8 @@ AV_VanityItems = {
         creaturePreview = 5274,
         creatureId = 5274,
         description = "Has a chance to drop from Ironfur Patriarch within The Twin Colossals.",
-        zone = "The Twin Colossals.",
+        zone = "Feralas",
+        subzone = "The Twin Colossals",
         icon = 1
     },
     [79763] = {
@@ -3559,7 +3739,8 @@ AV_VanityItems = {
         creaturePreview = 5286,
         creatureId = 5286,
         description = "Has a chance to drop from Longtooth Runner within Lower Wilds.",
-        zone = "Lower Wilds.",
+        zone = "Feralas",
+        subzone = "Lower Wilds",
         icon = 1
     },
     [79764] = {
@@ -3568,7 +3749,7 @@ AV_VanityItems = {
         creaturePreview = 5287,
         creatureId = 5287,
         description = "Has a chance to drop from Longtooth Howler within Woodpaw Hills.",
-        zone = "Woodpaw Hills.",
+        zone = "Woodpaw Hills",
         icon = 1
     },
     [79765] = {
@@ -3577,7 +3758,8 @@ AV_VanityItems = {
         creaturePreview = 5288,
         creatureId = 5288,
         description = "Has a chance to drop from Rabid Longtooth within Ruins of Ravenwind.",
-        zone = "Ruins of Ravenwind.",
+        zone = "Feralas",
+        subzone = "Ruins of Ravenwind",
         icon = 1
     },
     [79766] = {
@@ -3586,7 +3768,7 @@ AV_VanityItems = {
         creaturePreview = 5291,
         creatureId = 5291,
         description = "Has a chance to drop from Hakkari Frostwing within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 1
     },
     [79767] = {
@@ -3595,7 +3777,8 @@ AV_VanityItems = {
         creaturePreview = 5307,
         creatureId = 5307,
         description = "Has a chance to drop from Vale Screecher within High Wilderness.",
-        zone = "High Wilderness.",
+        zone = "Feralas",
+        subzone = "High Wilderness",
         icon = 1
     },
     [79768] = {
@@ -3604,7 +3787,8 @@ AV_VanityItems = {
         creaturePreview = 5308,
         creatureId = 5308,
         description = "Has a chance to drop from Rogue Vale Screecher within The Forgotten Coast.",
-        zone = "The Forgotten Coast.",
+        zone = "Feralas",
+        subzone = "The Forgotten Coast",
         icon = 1
     },
     [79770] = {
@@ -3613,7 +3797,8 @@ AV_VanityItems = {
         creaturePreview = 5349,
         creatureId = 5349,
         description = "Has a chance to drop from Arash-ethis within The Twin Colossals.",
-        zone = "The Twin Colossals.",
+        zone = "Feralas",
+        subzone = "The Twin Colossals",
         icon = 1
     },
     [79772] = {
@@ -3622,7 +3807,8 @@ AV_VanityItems = {
         creaturePreview = 5352,
         creatureId = 5352,
         description = "Has a chance to drop from Old Grizzlegut within Ruins of Isildien.",
-        zone = "Ruins of Isildien.",
+        zone = "Feralas",
+        subzone = "Ruins of Isildien",
         icon = 1
     },
     [79773] = {
@@ -3631,7 +3817,8 @@ AV_VanityItems = {
         creaturePreview = 5356,
         creatureId = 5356,
         description = "Has a chance to drop from Snarler within Lower Wilds.",
-        zone = "Lower Wilds.",
+        zone = "Feralas",
+        subzone = "Lower Wilds",
         icon = 1
     },
     [79774] = {
@@ -3640,7 +3827,7 @@ AV_VanityItems = {
         creaturePreview = 5422,
         creatureId = 5422,
         description = "Has a chance to drop from Scorpid Hunter within Tanaris.",
-        zone = "Tanaris.",
+        zone = "Tanaris",
         icon = 1
     },
     [79776] = {
@@ -3649,7 +3836,8 @@ AV_VanityItems = {
         creaturePreview = 5423,
         creatureId = 5423,
         description = "Has a chance to drop from Scorpid Tail Lasher within Waterspring Field.",
-        zone = "Waterspring Field.",
+        zone = "Tanaris",
+        subzone = "Waterspring Field",
         icon = 1
     },
     [79777] = {
@@ -3658,7 +3846,7 @@ AV_VanityItems = {
         creaturePreview = 5424,
         creatureId = 5424,
         description = "Has a chance to drop from Scorpid Dunestalker within Tanaris.",
-        zone = "Tanaris.",
+        zone = "Tanaris",
         icon = 1
     },
     [79778] = {
@@ -3667,7 +3855,8 @@ AV_VanityItems = {
         creaturePreview = 5425,
         creatureId = 5425,
         description = "Has a chance to drop from Starving Blisterpaw within Gadgetzan.",
-        zone = "Gadgetzan.",
+        zone = "Tanaris",
+        subzone = "Gadgetzan",
         icon = 1
     },
     [79779] = {
@@ -3676,7 +3865,7 @@ AV_VanityItems = {
         creaturePreview = 5426,
         creatureId = 5426,
         description = "Has a chance to drop from Blisterpaw Hyena within Tanaris.",
-        zone = "Tanaris.",
+        zone = "Tanaris",
         icon = 1
     },
     [79781] = {
@@ -3685,7 +3874,7 @@ AV_VanityItems = {
         creaturePreview = 5427,
         creatureId = 5427,
         description = "Has a chance to drop from Rabid Blisterpaw within Tanaris.",
-        zone = "Tanaris.",
+        zone = "Tanaris",
         icon = 1
     },
     [79782] = {
@@ -3694,7 +3883,8 @@ AV_VanityItems = {
         creaturePreview = 5428,
         creatureId = 5428,
         description = "Has a chance to drop from Roc within Sandsorrow Watch.",
-        zone = "Sandsorrow Watch.",
+        zone = "Tanaris",
+        subzone = "Sandsorrow Watch",
         icon = 1
     },
     [79783] = {
@@ -3703,7 +3893,8 @@ AV_VanityItems = {
         creaturePreview = 5429,
         creatureId = 5429,
         description = "Has a chance to drop from Fire Roc within Broken Pillar.",
-        zone = "Broken Pillar.",
+        zone = "Tanaris",
+        subzone = "Broken Pillar",
         icon = 1
     },
     [79794] = {
@@ -3712,7 +3903,7 @@ AV_VanityItems = {
         creaturePreview = 5430,
         creatureId = 5430,
         description = "Has a chance to drop from Searing Roc within Tanaris.",
-        zone = "Tanaris.",
+        zone = "Tanaris",
         icon = 1
     },
     [79814] = {
@@ -3721,7 +3912,8 @@ AV_VanityItems = {
         creaturePreview = 5431,
         creatureId = 5431,
         description = "Has a chance to drop from Surf Glider within Southbreak Shore.",
-        zone = "Southbreak Shore.",
+        zone = "Tanaris",
+        subzone = "Southbreak Shore",
         icon = 1
     },
     [79815] = {
@@ -3730,7 +3922,8 @@ AV_VanityItems = {
         creaturePreview = 5432,
         creatureId = 5432,
         description = "Has a chance to drop from Giant Surf Glider within Land's End Beach.",
-        zone = "Land's End Beach.",
+        zone = "Tanaris",
+        subzone = "Land's End Beach",
         icon = 1
     },
     [79816] = {
@@ -3739,7 +3932,8 @@ AV_VanityItems = {
         creaturePreview = 5454,
         creatureId = 5454,
         description = "Has a chance to drop from Hazzali Sandreaver within The Gaping Chasm.",
-        zone = "The Gaping Chasm.",
+        zone = "Tanaris",
+        subzone = "The Gaping Chasm",
         icon = 1
     },
     [79817] = {
@@ -3748,7 +3942,8 @@ AV_VanityItems = {
         creaturePreview = 5460,
         creatureId = 5460,
         description = "Has a chance to drop from Centipaar Sandreaver within The Noxious Lair.",
-        zone = "The Noxious Lair.",
+        zone = "Tanaris",
+        subzone = "The Noxious Lair",
         icon = 1
     },
     [79818] = {
@@ -3757,7 +3952,7 @@ AV_VanityItems = {
         creaturePreview = 5708,
         creatureId = 5708,
         description = "Has a chance to drop from Spawn of Hakkar within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 1
     },
     [79821] = {
@@ -3766,7 +3961,7 @@ AV_VanityItems = {
         creaturePreview = 5755,
         creatureId = 5755,
         description = "Has a chance to drop from Deviate Viper within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79822] = {
@@ -3775,7 +3970,7 @@ AV_VanityItems = {
         creaturePreview = 5756,
         creatureId = 5756,
         description = "Has a chance to drop from Deviate Venomwing within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [79861] = {
@@ -3784,7 +3979,8 @@ AV_VanityItems = {
         creaturePreview = 5807,
         creatureId = 5807,
         description = "Has a chance to drop from The Rake within The Golden Plains.",
-        zone = "The Golden Plains.",
+        zone = "The Barrens",
+        subzone = "The Golden Plains",
         icon = 1
     },
     [79862] = {
@@ -3793,7 +3989,7 @@ AV_VanityItems = {
         creaturePreview = 5823,
         creatureId = 5823,
         description = "Has a chance to drop from Death Flayer within Durotar.",
-        zone = "Durotar.",
+        zone = "Durotar",
         icon = 1
     },
     [79863] = {
@@ -3802,7 +3998,7 @@ AV_VanityItems = {
         creaturePreview = 5828,
         creatureId = 5828,
         description = "Has a chance to drop from Humar the Pridelord within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79865] = {
@@ -3811,7 +4007,7 @@ AV_VanityItems = {
         creaturePreview = 5829,
         creatureId = 5829,
         description = "Has a chance to drop from Snort the Heckler within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79872] = {
@@ -3820,7 +4016,7 @@ AV_VanityItems = {
         creaturePreview = 5834,
         creatureId = 5834,
         description = "Has a chance to drop from Azzere the Skyblade within Southern Barrens.",
-        zone = "Southern Barrens.",
+        zone = "Southern Barrens",
         icon = 1
     },
     [79873] = {
@@ -3829,7 +4025,7 @@ AV_VanityItems = {
         creaturePreview = 5842,
         creatureId = 5842,
         description = "Has a chance to drop from Takk the Leaper within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79874] = {
@@ -3838,7 +4034,8 @@ AV_VanityItems = {
         creaturePreview = 5856,
         creatureId = 5856,
         description = "Has a chance to drop from Glassweb Spider within Grimesilt Dig Site.",
-        zone = "Grimesilt Dig Site.",
+        zone = "Searing Gorge",
+        subzone = "Grimesilt Dig Site",
         icon = 1
     },
     [79876] = {
@@ -3847,7 +4044,8 @@ AV_VanityItems = {
         creaturePreview = 5857,
         creatureId = 5857,
         description = "Has a chance to drop from Searing Lava Spider within The Sea of Cinders.",
-        zone = "The Sea of Cinders.",
+        zone = "Searing Gorge",
+        subzone = "The Sea of Cinders",
         icon = 1
     },
     [79877] = {
@@ -3856,7 +4054,7 @@ AV_VanityItems = {
         creaturePreview = 5858,
         creatureId = 5858,
         description = "Has a chance to drop from Greater Lava Spider within Searing Gorge.",
-        zone = "Searing Gorge.",
+        zone = "Searing Gorge",
         icon = 1
     },
     [79878] = {
@@ -3865,7 +4063,7 @@ AV_VanityItems = {
         creaturePreview = 5865,
         creatureId = 5865,
         description = "Has a chance to drop from Dishu within The Barrens.",
-        zone = "The Barrens.",
+        zone = "The Barrens",
         icon = 1
     },
     [79879] = {
@@ -3874,7 +4072,8 @@ AV_VanityItems = {
         creaturePreview = 5937,
         creatureId = 5937,
         description = "Has a chance to drop from Vile Sting within The Shimmering Flats.",
-        zone = "The Shimmering Flats.",
+        zone = "Thousand Needles",
+        subzone = "The Shimmering Flats",
         icon = 1
     },
     [79881] = {
@@ -3883,7 +4082,8 @@ AV_VanityItems = {
         creaturePreview = 5982,
         creatureId = 5982,
         description = "Has a chance to drop from Black Slayer within Serpent's Coil.",
-        zone = "Serpent's Coil.",
+        zone = "Blasted Lands",
+        subzone = "Serpent's Coil",
         icon = 1
     },
     [79882] = {
@@ -3892,7 +4092,8 @@ AV_VanityItems = {
         creaturePreview = 5983,
         creatureId = 5983,
         description = "Has a chance to drop from Bonepicker within Serpent's Coil.",
-        zone = "Serpent's Coil.",
+        zone = "Blasted Lands",
+        subzone = "Serpent's Coil",
         icon = 1
     },
     [79883] = {
@@ -3901,7 +4102,8 @@ AV_VanityItems = {
         creaturePreview = 5984,
         creatureId = 5984,
         description = "Has a chance to drop from Starving Snickerfang within Nethergarde Keep.",
-        zone = "Nethergarde Keep.",
+        zone = "Blasted Lands",
+        subzone = "Nethergarde Keep",
         icon = 1
     },
     [79886] = {
@@ -3910,7 +4112,8 @@ AV_VanityItems = {
         creaturePreview = 5985,
         creatureId = 5985,
         description = "Has a chance to drop from Snickerfang Hyena within The Dark Portal.",
-        zone = "The Dark Portal.",
+        zone = "Blasted Lands",
+        subzone = "The Dark Portal",
         icon = 1
     },
     [79887] = {
@@ -3919,7 +4122,8 @@ AV_VanityItems = {
         creaturePreview = 5988,
         creatureId = 5988,
         description = "Has a chance to drop from Scorpok Stinger within Nethergarde Keep.",
-        zone = "Nethergarde Keep.",
+        zone = "Blasted Lands",
+        subzone = "Nethergarde Keep",
         icon = 1
     },
     [79888] = {
@@ -3928,7 +4132,7 @@ AV_VanityItems = {
         creaturePreview = 5992,
         creatureId = 5992,
         description = "Has a chance to drop from Ashmane Boar within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 1
     },
     [79889] = {
@@ -3937,7 +4141,8 @@ AV_VanityItems = {
         creaturePreview = 6167,
         creatureId = 6167,
         description = "Has a chance to drop from Chimaera Matriarch within The Charred Vale.",
-        zone = "The Charred Vale.",
+        zone = "Stonetalon Mountains",
+        subzone = "The Charred Vale",
         icon = 1
     },
     [79890] = {
@@ -3946,7 +4151,8 @@ AV_VanityItems = {
         creaturePreview = 6352,
         creatureId = 6352,
         description = "Has a chance to drop from Coralshell Lurker within Tower of Eldara.",
-        zone = "Tower of Eldara.",
+        zone = "Azshara",
+        subzone = "Tower of Eldara",
         icon = 1
     },
     [79891] = {
@@ -3955,7 +4161,8 @@ AV_VanityItems = {
         creaturePreview = 6369,
         creatureId = 6369,
         description = "Has a chance to drop from Coralshell Tortoise within Jagged Reef.",
-        zone = "Jagged Reef.",
+        zone = "Azshara",
+        subzone = "Jagged Reef",
         icon = 1
     },
     [79892] = {
@@ -3964,7 +4171,7 @@ AV_VanityItems = {
         creaturePreview = 6498,
         creatureId = 6498,
         description = "Has a chance to drop from Devilsaur within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 1
     },
     [79893] = {
@@ -3973,7 +4180,7 @@ AV_VanityItems = {
         creaturePreview = 6499,
         creatureId = 6499,
         description = "Has a chance to drop from Ironhide Devilsaur within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 1
     },
     [79918] = {
@@ -3982,7 +4189,8 @@ AV_VanityItems = {
         creaturePreview = 6500,
         creatureId = 6500,
         description = "Has a chance to drop from Tyrant Devilsaur within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 1
     },
     [79919] = {
@@ -3991,7 +4199,8 @@ AV_VanityItems = {
         creaturePreview = 6505,
         creatureId = 6505,
         description = "Has a chance to drop from Ravasaur within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 1
     },
     [79920] = {
@@ -4000,7 +4209,7 @@ AV_VanityItems = {
         creaturePreview = 6506,
         creatureId = 6506,
         description = "Has a chance to drop from Ravasaur Runner within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 1
     },
     [79921] = {
@@ -4009,7 +4218,8 @@ AV_VanityItems = {
         creaturePreview = 6507,
         creatureId = 6507,
         description = "Has a chance to drop from Ravasaur Hunter within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 1
     },
     [79922] = {
@@ -4018,7 +4228,8 @@ AV_VanityItems = {
         creaturePreview = 6508,
         creatureId = 6508,
         description = "Has a chance to drop from Venomhide Ravasaur within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 1
     },
     [79923] = {
@@ -4027,7 +4238,8 @@ AV_VanityItems = {
         creaturePreview = 6513,
         creatureId = 6513,
         description = "Has a chance to drop from Un'Goro Stomper within Fungal Rock.",
-        zone = "Fungal Rock.",
+        zone = "Un'Goro Crater",
+        subzone = "Fungal Rock",
         icon = 1
     },
     [79924] = {
@@ -4036,7 +4248,8 @@ AV_VanityItems = {
         creaturePreview = 6514,
         creatureId = 6514,
         description = "Has a chance to drop from Un'Goro Gorilla within Fungal Rock.",
-        zone = "Fungal Rock.",
+        zone = "Un'Goro Crater",
+        subzone = "Fungal Rock",
         icon = 1
     },
     [79925] = {
@@ -4045,7 +4258,8 @@ AV_VanityItems = {
         creaturePreview = 6516,
         creatureId = 6516,
         description = "Has a chance to drop from Un'Goro Thunderer within Fungal Rock.",
-        zone = "Fungal Rock.",
+        zone = "Un'Goro Crater",
+        subzone = "Fungal Rock",
         icon = 1
     },
     [79926] = {
@@ -4054,7 +4268,7 @@ AV_VanityItems = {
         creaturePreview = 6553,
         creatureId = 6553,
         description = "Has a chance to drop from Gorishi Reaver within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 1
     },
     [79927] = {
@@ -4063,7 +4277,8 @@ AV_VanityItems = {
         creaturePreview = 6581,
         creatureId = 6581,
         description = "Has a chance to drop from Ravasaur Matriarch within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 1
     },
     [79928] = {
@@ -4072,7 +4287,8 @@ AV_VanityItems = {
         creaturePreview = 6582,
         creatureId = 6582,
         description = "Has a chance to drop from Clutchmother Zavas within The Slithering Scar.",
-        zone = "The Slithering Scar.",
+        zone = "Un'Goro Crater",
+        subzone = "The Slithering Scar",
         icon = 1
     },
     [79930] = {
@@ -4081,7 +4297,7 @@ AV_VanityItems = {
         creaturePreview = 6584,
         creatureId = 6584,
         description = "Has a chance to drop from King Mosh within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 1
     },
     [79931] = {
@@ -4090,7 +4306,8 @@ AV_VanityItems = {
         creaturePreview = 6585,
         creatureId = 6585,
         description = "Has a chance to drop from Uhk'loc within Fungal Rock.",
-        zone = "Fungal Rock.",
+        zone = "Un'Goro Crater",
+        subzone = "Fungal Rock",
         icon = 1
     },
     [79943] = {
@@ -4099,7 +4316,7 @@ AV_VanityItems = {
         creaturePreview = 6788,
         creatureId = 6788,
         description = "Has a chance to drop from Den Mother within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79944] = {
@@ -4108,7 +4325,7 @@ AV_VanityItems = {
         creaturePreview = 6789,
         creatureId = 6789,
         description = "Has a chance to drop from Thistle Cub within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 1
     },
     [79945] = {
@@ -4117,7 +4334,7 @@ AV_VanityItems = {
         creaturePreview = 7022,
         creatureId = 7022,
         description = "Has a chance to drop from Venomlash Scorpid within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 1
     },
     [79946] = {
@@ -4126,7 +4343,7 @@ AV_VanityItems = {
         creaturePreview = 7055,
         creatureId = 7055,
         description = "Has a chance to drop from Blackrock Worg within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 1
     },
     [79947] = {
@@ -4135,7 +4352,7 @@ AV_VanityItems = {
         creaturePreview = 7078,
         creatureId = 7078,
         description = "Has a chance to drop from Cleft Scorpid within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 1
     },
     [79948] = {
@@ -4144,7 +4361,7 @@ AV_VanityItems = {
         creaturePreview = 7097,
         creatureId = 7097,
         description = "Has a chance to drop from Ironbeak Owl within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 1
     },
     [79949] = {
@@ -4153,7 +4370,8 @@ AV_VanityItems = {
         creaturePreview = 7098,
         creatureId = 7098,
         description = "Has a chance to drop from Ironbeak Screecher within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [79950] = {
@@ -4162,7 +4380,8 @@ AV_VanityItems = {
         creaturePreview = 7099,
         creatureId = 7099,
         description = "Has a chance to drop from Ironbeak Hunter within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [79951] = {
@@ -4171,7 +4390,8 @@ AV_VanityItems = {
         creaturePreview = 7268,
         creatureId = 7268,
         description = "Has a chance to drop from Sandfury Guardian within Zul'Farrak.",
-        zone = "Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
         icon = 1
     },
     [79981] = {
@@ -4180,7 +4400,7 @@ AV_VanityItems = {
         creaturePreview = 7319,
         creatureId = 7319,
         description = "Has a chance to drop from Lady Sathrah within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [79982] = {
@@ -4189,7 +4409,7 @@ AV_VanityItems = {
         creaturePreview = 7376,
         creatureId = 7376,
         description = "Has a chance to drop from Sky Shadow within Deadwind Ravine.",
-        zone = "Deadwind Ravine.",
+        zone = "Deadwind Ravine",
         icon = 1
     },
     [79991] = {
@@ -4198,7 +4418,7 @@ AV_VanityItems = {
         creaturePreview = 7405,
         creatureId = 7405,
         description = "Has a chance to drop from Deadly Cleft Scorpid within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 1
     },
     [79992] = {
@@ -4207,7 +4427,8 @@ AV_VanityItems = {
         creaturePreview = 7430,
         creatureId = 7430,
         description = "Has a chance to drop from Frostsaber Cub within Frostsaber Rock.",
-        zone = "Frostsaber Rock.",
+        zone = "Winterspring",
+        subzone = "Frostsaber Rock",
         icon = 1
     },
     [79993] = {
@@ -4216,7 +4437,8 @@ AV_VanityItems = {
         creaturePreview = 7431,
         creatureId = 7431,
         description = "Has a chance to drop from Frostsaber within Frostsaber Rock.",
-        zone = "Frostsaber Rock.",
+        zone = "Winterspring",
+        subzone = "Frostsaber Rock",
         icon = 1
     },
     [79994] = {
@@ -4225,7 +4447,7 @@ AV_VanityItems = {
         creaturePreview = 7432,
         creatureId = 7432,
         description = "Has a chance to drop from Frostsaber Stalker within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 1
     },
     [79995] = {
@@ -4234,7 +4456,8 @@ AV_VanityItems = {
         creaturePreview = 7433,
         creatureId = 7433,
         description = "Has a chance to drop from Frostsaber Huntress within Frostsaber Rock.",
-        zone = "Frostsaber Rock.",
+        zone = "Winterspring",
+        subzone = "Frostsaber Rock",
         icon = 1
     },
     [79996] = {
@@ -4243,7 +4466,8 @@ AV_VanityItems = {
         creaturePreview = 7434,
         creatureId = 7434,
         description = "Has a chance to drop from Frostsaber Pride Watcher within Frostsaber Rock.",
-        zone = "Frostsaber Rock.",
+        zone = "Winterspring",
+        subzone = "Frostsaber Rock",
         icon = 1
     },
     [79997] = {
@@ -4252,7 +4476,8 @@ AV_VanityItems = {
         creaturePreview = 7443,
         creatureId = 7443,
         description = "Has a chance to drop from Shardtooth Mauler within Ice Thistle Hills.",
-        zone = "Ice Thistle Hills.",
+        zone = "Winterspring",
+        subzone = "Ice Thistle Hills",
         icon = 1
     },
     [79998] = {
@@ -4261,7 +4486,8 @@ AV_VanityItems = {
         creaturePreview = 7444,
         creatureId = 7444,
         description = "Has a chance to drop from Shardtooth Bear within Frostfire Hot Springs.",
-        zone = "Frostfire Hot Springs.",
+        zone = "Winterspring",
+        subzone = "Frostfire Hot Springs",
         icon = 1
     },
     [80030] = {
@@ -4270,7 +4496,7 @@ AV_VanityItems = {
         creaturePreview = 7445,
         creatureId = 7445,
         description = "Has a chance to drop from Elder Shardtooth within Dun Mandarr.",
-        zone = "Dun Mandarr.",
+        zone = "Dun Mandarr",
         icon = 1
     },
     [80031] = {
@@ -4279,7 +4505,8 @@ AV_VanityItems = {
         creaturePreview = 7446,
         creatureId = 7446,
         description = "Has a chance to drop from Rabid Shardtooth within Frostwhisper Gorge.",
-        zone = "Frostwhisper Gorge.",
+        zone = "Winterspring",
+        subzone = "Frostwhisper Gorge",
         icon = 1
     },
     [80032] = {
@@ -4288,7 +4515,7 @@ AV_VanityItems = {
         creaturePreview = 7447,
         creatureId = 7447,
         description = "Has a chance to drop from Fledgling Chillwind within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 1
     },
     [80033] = {
@@ -4297,7 +4524,8 @@ AV_VanityItems = {
         creaturePreview = 7448,
         creatureId = 7448,
         description = "Has a chance to drop from Chillwind Chimaera within Ice Thistle Hills.",
-        zone = "Ice Thistle Hills.",
+        zone = "Winterspring",
+        subzone = "Ice Thistle Hills",
         icon = 1
     },
     [80034] = {
@@ -4306,7 +4534,7 @@ AV_VanityItems = {
         creaturePreview = 7449,
         creatureId = 7449,
         description = "Has a chance to drop from Chillwind Ravager within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 1
     },
     [80035] = {
@@ -4315,7 +4543,8 @@ AV_VanityItems = {
         creaturePreview = 7455,
         creatureId = 7455,
         description = "Has a chance to drop from Winterspring Owl within Winterfall Village.",
-        zone = "Winterfall Village.",
+        zone = "Winterspring",
+        subzone = "Winterfall Village",
         icon = 1
     },
     [80036] = {
@@ -4324,7 +4553,8 @@ AV_VanityItems = {
         creaturePreview = 7456,
         creatureId = 7456,
         description = "Has a chance to drop from Winterspring Screecher within Frostwhisper Gorge.",
-        zone = "Frostwhisper Gorge.",
+        zone = "Winterspring",
+        subzone = "Frostwhisper Gorge",
         icon = 1
     },
     [80037] = {
@@ -4333,7 +4563,8 @@ AV_VanityItems = {
         creaturePreview = 7977,
         creatureId = 7977,
         description = "Has a chance to drop from Gammerita within The Overlook Cliffs.",
-        zone = "The Overlook Cliffs.",
+        zone = "The Hinterlands",
+        subzone = "The Overlook Cliffs",
         icon = 1
     },
     [80038] = {
@@ -4342,7 +4573,8 @@ AV_VanityItems = {
         creaturePreview = 8204,
         creatureId = 8204,
         description = "Has a chance to drop from Soriid the Devourer within The Noxious Lair.",
-        zone = "The Noxious Lair.",
+        zone = "Tanaris",
+        subzone = "The Noxious Lair",
         icon = 1
     },
     [80039] = {
@@ -4351,7 +4583,8 @@ AV_VanityItems = {
         creaturePreview = 8205,
         creatureId = 8205,
         description = "Has a chance to drop from Haarka the Ravenous within The Gaping Chasm.",
-        zone = "The Gaping Chasm.",
+        zone = "Tanaris",
+        subzone = "The Gaping Chasm",
         icon = 1
     },
     [80041] = {
@@ -4360,7 +4593,8 @@ AV_VanityItems = {
         creaturePreview = 8207,
         creatureId = 8207,
         description = "Has a chance to drop from Greater Firebird within Abyssal Sands.",
-        zone = "Abyssal Sands.",
+        zone = "Tanaris",
+        subzone = "Abyssal Sands",
         icon = 1
     },
     [80042] = {
@@ -4369,7 +4603,7 @@ AV_VanityItems = {
         creaturePreview = 8208,
         creatureId = 8208,
         description = "Has a chance to drop from Murderous Blisterpaw within Tanaris.",
-        zone = "Tanaris.",
+        zone = "Tanaris",
         icon = 1
     },
     [80043] = {
@@ -4378,7 +4612,7 @@ AV_VanityItems = {
         creaturePreview = 8211,
         creatureId = 8211,
         description = "Has a chance to drop from Old Cliff Jumper within Featherbeard's Hovel.",
-        zone = "Featherbeard's Hovel.",
+        zone = "Featherbeard's Hovel",
         icon = 1
     },
     [80044] = {
@@ -4387,7 +4621,8 @@ AV_VanityItems = {
         creaturePreview = 8213,
         creatureId = 8213,
         description = "Has a chance to drop from Ironback within The Overlook Cliffs.",
-        zone = "The Overlook Cliffs.",
+        zone = "The Hinterlands",
+        subzone = "The Overlook Cliffs",
         icon = 1
     },
     [80045] = {
@@ -4396,7 +4631,8 @@ AV_VanityItems = {
         creaturePreview = 8277,
         creatureId = 8277,
         description = "Has a chance to drop from Rekk'tilac within Tanner Camp.",
-        zone = "Tanner Camp.",
+        zone = "Tanner Camp",
+        subzone = "Tanner Camp",
         icon = 1
     },
     [80046] = {
@@ -4405,7 +4641,7 @@ AV_VanityItems = {
         creaturePreview = 8299,
         creatureId = 8299,
         description = "Has a chance to drop from Spiteflayer within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 1
     },
     [80047] = {
@@ -4414,7 +4650,7 @@ AV_VanityItems = {
         creaturePreview = 8300,
         creatureId = 8300,
         description = "Has a chance to drop from Ravage within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 1
     },
     [80048] = {
@@ -4423,7 +4659,8 @@ AV_VanityItems = {
         creaturePreview = 8301,
         creatureId = 8301,
         description = "Has a chance to drop from Clack the Reaver within Dreadmaul Post.",
-        zone = "Dreadmaul Post.",
+        zone = "Blasted Lands",
+        subzone = "Dreadmaul Post",
         icon = 1
     },
     [80049] = {
@@ -4432,7 +4669,7 @@ AV_VanityItems = {
         creaturePreview = 8303,
         creatureId = 8303,
         description = "Has a chance to drop from Grunter within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 1
     },
     [80050] = {
@@ -4441,7 +4678,7 @@ AV_VanityItems = {
         creaturePreview = 8336,
         creatureId = 8336,
         description = "Has a chance to drop from Hakkari Sapper within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 1
     },
     [80051] = {
@@ -4450,7 +4687,7 @@ AV_VanityItems = {
         creaturePreview = 8600,
         creatureId = 8600,
         description = "Has a chance to drop from Plaguebat within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 1
     },
     [80052] = {
@@ -4459,7 +4696,7 @@ AV_VanityItems = {
         creaturePreview = 8601,
         creatureId = 8601,
         description = "Has a chance to drop from Noxious Plaguebat within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 1
     },
     [80053] = {
@@ -4468,7 +4705,8 @@ AV_VanityItems = {
         creaturePreview = 8602,
         creatureId = 8602,
         description = "Has a chance to drop from Monstrous Plaguebat within Northdale.",
-        zone = "Northdale.",
+        zone = "Eastern Plaguelands",
+        subzone = "Northdale",
         icon = 1
     },
     [80054] = {
@@ -4477,7 +4715,7 @@ AV_VanityItems = {
         creaturePreview = 8660,
         creatureId = 8660,
         description = "Has a chance to drop from The Evalcharr within Azshara.",
-        zone = "Azshara.",
+        zone = "Azshara",
         icon = 1
     },
     [80055] = {
@@ -4486,7 +4724,8 @@ AV_VanityItems = {
         creaturePreview = 8762,
         creatureId = 8762,
         description = "Has a chance to drop from Timberweb Recluse within Ruins of Eldarath.",
-        zone = "Ruins of Eldarath.",
+        zone = "Azshara",
+        subzone = "Ruins of Eldarath",
         icon = 1
     },
     [80056] = {
@@ -4495,7 +4734,7 @@ AV_VanityItems = {
         creaturePreview = 8763,
         creatureId = 8763,
         description = "Has a chance to drop from Mistwing Rogue within Azshara.",
-        zone = "Azshara.",
+        zone = "Azshara",
         icon = 1
     },
     [80058] = {
@@ -4504,7 +4743,8 @@ AV_VanityItems = {
         creaturePreview = 8764,
         creatureId = 8764,
         description = "Has a chance to drop from Mistwing Ravager within Bitter Reaches.",
-        zone = "Bitter Reaches.",
+        zone = "Azshara",
+        subzone = "Bitter Reaches",
         icon = 1
     },
     [80059] = {
@@ -4513,7 +4753,7 @@ AV_VanityItems = {
         creaturePreview = 8956,
         creatureId = 8956,
         description = "Has a chance to drop from Angerclaw Bear within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 1
     },
     [80060] = {
@@ -4522,7 +4762,8 @@ AV_VanityItems = {
         creaturePreview = 8957,
         creatureId = 8957,
         description = "Has a chance to drop from Angerclaw Grizzly within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [80062] = {
@@ -4531,7 +4772,8 @@ AV_VanityItems = {
         creaturePreview = 8958,
         creatureId = 8958,
         description = "Has a chance to drop from Angerclaw Mauler within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [80063] = {
@@ -4540,7 +4782,7 @@ AV_VanityItems = {
         creaturePreview = 8959,
         creatureId = 8959,
         description = "Has a chance to drop from Felpaw Wolf within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 1
     },
     [80064] = {
@@ -4549,7 +4791,8 @@ AV_VanityItems = {
         creaturePreview = 8960,
         creatureId = 8960,
         description = "Has a chance to drop from Felpaw Scavenger within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [80065] = {
@@ -4558,7 +4801,8 @@ AV_VanityItems = {
         creaturePreview = 8961,
         creatureId = 8961,
         description = "Has a chance to drop from Felpaw Ravager within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [80066] = {
@@ -4567,7 +4811,7 @@ AV_VanityItems = {
         creaturePreview = 9416,
         creatureId = 9416,
         description = "Has a chance to drop from Scarshield Worg within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 1
     },
     [80075] = {
@@ -4576,7 +4820,8 @@ AV_VanityItems = {
         creaturePreview = 9622,
         creatureId = 9622,
         description = "Has a chance to drop from U'cha within Fungal Rock.",
-        zone = "Fungal Rock.",
+        zone = "Un'Goro Crater",
+        subzone = "Fungal Rock",
         icon = 1
     },
     [80076] = {
@@ -4585,7 +4830,8 @@ AV_VanityItems = {
         creaturePreview = 9690,
         creatureId = 9690,
         description = "Has a chance to drop from Ember Worg within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 1
     },
     [80077] = {
@@ -4594,7 +4840,8 @@ AV_VanityItems = {
         creaturePreview = 9691,
         creatureId = 9691,
         description = "Has a chance to drop from Venomtip Scorpid within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 1
     },
     [80078] = {
@@ -4603,7 +4850,7 @@ AV_VanityItems = {
         creaturePreview = 9694,
         creatureId = 9694,
         description = "Has a chance to drop from Slavering Ember Worg within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 1
     },
     [80079] = {
@@ -4612,7 +4859,7 @@ AV_VanityItems = {
         creaturePreview = 9695,
         creatureId = 9695,
         description = "Has a chance to drop from Deathlash Scorpid within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 1
     },
     [80080] = {
@@ -4621,7 +4868,7 @@ AV_VanityItems = {
         creaturePreview = 9696,
         creatureId = 9696,
         description = "Has a chance to drop from Bloodaxe Worg within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 1
     },
     [80081] = {
@@ -4630,7 +4877,7 @@ AV_VanityItems = {
         creaturePreview = 9697,
         creatureId = 9697,
         description = "Has a chance to drop from Giant Ember Worg within Draco'dar.",
-        zone = "Draco'dar.",
+        zone = "Draco'dar",
         icon = 1
     },
     [80082] = {
@@ -4639,7 +4886,7 @@ AV_VanityItems = {
         creaturePreview = 9698,
         creatureId = 9698,
         description = "Has a chance to drop from Firetail Scorpid within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 1
     },
     [80083] = {
@@ -4648,7 +4895,8 @@ AV_VanityItems = {
         creaturePreview = 10077,
         creatureId = 10077,
         description = "Has a chance to drop from Deathmaw within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 1
     },
     [80084] = {
@@ -4657,7 +4905,8 @@ AV_VanityItems = {
         creaturePreview = 10200,
         creatureId = 10200,
         description = "Has a chance to drop from Rak'shiri within Frostsaber Rock.",
-        zone = "Frostsaber Rock.",
+        zone = "Winterspring",
+        subzone = "Frostsaber Rock",
         icon = 1
     },
     [80085] = {
@@ -4666,7 +4915,7 @@ AV_VanityItems = {
         creaturePreview = 10221,
         creatureId = 10221,
         description = "Has a chance to drop from Bloodaxe Worg Pup within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 1
     },
     [80086] = {
@@ -4675,7 +4924,8 @@ AV_VanityItems = {
         creaturePreview = 10357,
         creatureId = 10357,
         description = "Has a chance to drop from Ressan the Needler within Nightmare Vale.",
-        zone = "Nightmare Vale.",
+        zone = "Tirisfal Glades",
+        subzone = "Nightmare Vale",
         icon = 1
     },
     [80087] = {
@@ -4684,7 +4934,8 @@ AV_VanityItems = {
         creaturePreview = 10359,
         creatureId = 10359,
         description = "Has a chance to drop from Sri'skulk within Venomweb Vale.",
-        zone = "Venomweb Vale.",
+        zone = "Tirisfal Glades",
+        subzone = "Venomweb Vale",
         icon = 1
     },
     [80088] = {
@@ -4693,7 +4944,7 @@ AV_VanityItems = {
         creaturePreview = 10375,
         creatureId = 10375,
         description = "Has a chance to drop from Spire Spiderling within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 1
     },
     [80089] = {
@@ -4702,7 +4953,7 @@ AV_VanityItems = {
         creaturePreview = 10430,
         creatureId = 10430,
         description = "Has a chance to drop from The Beast within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 1
     },
     [80090] = {
@@ -4711,7 +4962,7 @@ AV_VanityItems = {
         creaturePreview = 10644,
         creatureId = 10644,
         description = "Has a chance to drop from Mist Howler within Ashenvale.",
-        zone = "Ashenvale.",
+        zone = "Ashenvale",
         icon = 1
     },
     [80091] = {
@@ -4720,7 +4971,7 @@ AV_VanityItems = {
         creaturePreview = 10806,
         creatureId = 10806,
         description = "Has a chance to drop from Ursius within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 1
     },
     [80092] = {
@@ -4729,7 +4980,7 @@ AV_VanityItems = {
         creaturePreview = 10807,
         creatureId = 10807,
         description = "Has a chance to drop from Brumeran within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 1
     },
     [80093] = {
@@ -4738,7 +4989,7 @@ AV_VanityItems = {
         creaturePreview = 10992,
         creatureId = 10992,
         description = "Has a chance to drop from Enraged Panther within Thousand Needles.",
-        zone = "Thousand Needles.",
+        zone = "Thousand Needles",
         icon = 1,
         questLock = {
             questId = 5151,
@@ -4755,7 +5006,7 @@ AV_VanityItems = {
         creaturePreview = 11320,
         creatureId = 11320,
         description = "Has a chance to drop from Earthborer within Ragefire Chasm.",
-        zone = "Ragefire Chasm.",
+        zone = "Ragefire Chasm",
         icon = 1
     },
     [80096] = {
@@ -4764,7 +5015,8 @@ AV_VanityItems = {
         creaturePreview = 11359,
         creatureId = 11359,
         description = "Has a chance to drop from Soulflayer within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 1
     },
     [80098] = {
@@ -4773,7 +5025,8 @@ AV_VanityItems = {
         creaturePreview = 11361,
         creatureId = 11361,
         description = "Has a chance to drop from Zulian Tiger within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 1
     },
     [80099] = {
@@ -4782,7 +5035,8 @@ AV_VanityItems = {
         creaturePreview = 11365,
         creatureId = 11365,
         description = "Has a chance to drop from Zulian Panther within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 1
     },
     [80105] = {
@@ -4791,7 +5045,7 @@ AV_VanityItems = {
         creaturePreview = 11497,
         creatureId = 11497,
         description = "Has a chance to drop from The Razza within The Maul.",
-        zone = "The Maul.",
+        zone = "The Maul",
         icon = 1
     },
     [80106] = {
@@ -4800,7 +5054,7 @@ AV_VanityItems = {
         creaturePreview = 11673,
         creatureId = 11673,
         description = "Has a chance to drop from Ancient Core Hound within Molten Core.",
-        zone = "Molten Core.",
+        zone = "Molten Core",
         icon = 1
     },
     [80107] = {
@@ -4809,7 +5063,8 @@ AV_VanityItems = {
         creaturePreview = 11723,
         creatureId = 11723,
         description = "Has a chance to drop from Hive'Ashi Sandstalker within Hive'Ashi.",
-        zone = "Hive'Ashi.",
+        zone = "Silithus",
+        subzone = "Hive'Ashi",
         icon = 1
     },
     [80108] = {
@@ -4818,7 +5073,7 @@ AV_VanityItems = {
         creaturePreview = 11728,
         creatureId = 11728,
         description = "Has a chance to drop from Hive'Zora Reaver within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80109] = {
@@ -4827,7 +5082,8 @@ AV_VanityItems = {
         creaturePreview = 11730,
         creatureId = 11730,
         description = "Has a chance to drop from Hive'Regal Ambusher within Hive'Regal.",
-        zone = "Hive'Regal.",
+        zone = "Silithus",
+        subzone = "Hive'Regal",
         icon = 1
     },
     [80110] = {
@@ -4836,7 +5092,8 @@ AV_VanityItems = {
         creaturePreview = 11734,
         creatureId = 11734,
         description = "Has a chance to drop from Hive'Regal Hive Lord within Hive'Regal.",
-        zone = "Hive'Regal.",
+        zone = "Silithus",
+        subzone = "Hive'Regal",
         icon = 1
     },
     [80111] = {
@@ -4845,7 +5102,7 @@ AV_VanityItems = {
         creaturePreview = 11735,
         creatureId = 11735,
         description = "Has a chance to drop from Stonelash Scorpid within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80112] = {
@@ -4854,7 +5111,7 @@ AV_VanityItems = {
         creaturePreview = 11736,
         creatureId = 11736,
         description = "Has a chance to drop from Stonelash Pincer within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80113] = {
@@ -4863,7 +5120,7 @@ AV_VanityItems = {
         creaturePreview = 11737,
         creatureId = 11737,
         description = "Has a chance to drop from Stonelash Flayer within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80114] = {
@@ -4872,7 +5129,7 @@ AV_VanityItems = {
         creaturePreview = 11738,
         creatureId = 11738,
         description = "Has a chance to drop from Sand Skitterer within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80115] = {
@@ -4881,7 +5138,7 @@ AV_VanityItems = {
         creaturePreview = 11739,
         creatureId = 11739,
         description = "Has a chance to drop from Rock Stalker within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80117] = {
@@ -4890,7 +5147,8 @@ AV_VanityItems = {
         creaturePreview = 11740,
         creatureId = 11740,
         description = "Has a chance to drop from Dredge Striker within Hive'Ashi.",
-        zone = "Hive'Ashi.",
+        zone = "Silithus",
+        subzone = "Hive'Ashi",
         icon = 1
     },
     [80118] = {
@@ -4899,7 +5157,8 @@ AV_VanityItems = {
         creaturePreview = 11741,
         creatureId = 11741,
         description = "Has a chance to drop from Dredge Crusher within Hive'Zora.",
-        zone = "Hive'Zora.",
+        zone = "Silithus",
+        subzone = "Hive'Zora",
         icon = 1
     },
     [80119] = {
@@ -4908,7 +5167,7 @@ AV_VanityItems = {
         creaturePreview = 11787,
         creatureId = 11787,
         description = "Has a chance to drop from Rock Borer within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [80121] = {
@@ -4917,7 +5176,8 @@ AV_VanityItems = {
         creaturePreview = 11788,
         creatureId = 11788,
         description = "Has a chance to drop from Rock Worm within Valley of Spears.",
-        zone = "Valley of Spears.",
+        zone = "Desolace",
+        subzone = "Valley of Spears",
         icon = 1
     },
     [80128] = {
@@ -4926,7 +5186,7 @@ AV_VanityItems = {
         creaturePreview = 11789,
         creatureId = 11789,
         description = "Has a chance to drop from Deep Borer within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 1
     },
     [80135] = {
@@ -4935,7 +5195,8 @@ AV_VanityItems = {
         creaturePreview = 11921,
         creatureId = 11921,
         description = "Has a chance to drop from Besseleth within Sishir Canyon.",
-        zone = "Sishir Canyon.",
+        zone = "Stonetalon Mountains",
+        subzone = "Sishir Canyon",
         icon = 1
     },
     [80160] = {
@@ -4944,7 +5205,7 @@ AV_VanityItems = {
         creaturePreview = 12037,
         creatureId = 12037,
         description = "Has a chance to drop from Ursol'lok within Forest Song.",
-        zone = "Forest Song.",
+        zone = "Forest Song",
         icon = 1
     },
     [80161] = {
@@ -4953,7 +5214,7 @@ AV_VanityItems = {
         creaturePreview = 12347,
         creatureId = 12347,
         description = "Has a chance to drop from Enraged Reef Crawler within Sar'theris Strand.",
-        zone = "Sar'theris Strand.",
+        zone = "Sar'theris Strand",
         icon = 1
     },
     [80162] = {
@@ -4962,7 +5223,8 @@ AV_VanityItems = {
         creaturePreview = 12418,
         creatureId = 12418,
         description = "Has a chance to drop from Gordok Hyena within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 1
     },
     [80163] = {
@@ -4971,7 +5233,8 @@ AV_VanityItems = {
         creaturePreview = 12431,
         creatureId = 12431,
         description = "Has a chance to drop from Gorefang within Malden's Orchard.",
-        zone = "Malden's Orchard.",
+        zone = "Silverpine Forest",
+        subzone = "Malden's Orchard",
         icon = 1
     },
     [80164] = {
@@ -4980,7 +5243,7 @@ AV_VanityItems = {
         creaturePreview = 12432,
         creatureId = 12432,
         description = "Has a chance to drop from Old Vicejaw within Silverpine Forest.",
-        zone = "Silverpine Forest.",
+        zone = "Silverpine Forest",
         icon = 1
     },
     [80165] = {
@@ -4989,7 +5252,8 @@ AV_VanityItems = {
         creaturePreview = 12433,
         creatureId = 12433,
         description = "Has a chance to drop from Krethis Shadowspinner within The Skittering Dark.",
-        zone = "The Skittering Dark.",
+        zone = "Silverpine Forest",
+        subzone = "The Skittering Dark",
         icon = 1
     },
     [80166] = {
@@ -4998,7 +5262,8 @@ AV_VanityItems = {
         creaturePreview = 12800,
         creatureId = 12800,
         description = "Has a chance to drop from Chimaerok within Isle of Dread.",
-        zone = "Isle of Dread.",
+        zone = "Feralas",
+        subzone = "Isle of Dread",
         icon = 1
     },
     [80168] = {
@@ -5007,7 +5272,8 @@ AV_VanityItems = {
         creaturePreview = 12801,
         creatureId = 12801,
         description = "Has a chance to drop from Arcane Chimaerok within Isle of Dread.",
-        zone = "Isle of Dread.",
+        zone = "Feralas",
+        subzone = "Isle of Dread",
         icon = 1
     },
     [80169] = {
@@ -5016,7 +5282,8 @@ AV_VanityItems = {
         creaturePreview = 12802,
         creatureId = 12802,
         description = "Has a chance to drop from Chimaerok Devourer within Isle of Dread.",
-        zone = "Isle of Dread.",
+        zone = "Feralas",
+        subzone = "Isle of Dread",
         icon = 1
     },
     [80170] = {
@@ -5025,7 +5292,8 @@ AV_VanityItems = {
         creaturePreview = 12803,
         creatureId = 12803,
         description = "Has a chance to drop from Lord Lakmaeran within Isle of Dread.",
-        zone = "Isle of Dread.",
+        zone = "Feralas",
+        subzone = "Isle of Dread",
         icon = 1
     },
     [80171] = {
@@ -5034,7 +5302,8 @@ AV_VanityItems = {
         creaturePreview = 13036,
         creatureId = 13036,
         description = "Has a chance to drop from Gordok Mastiff within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 1
     },
     [80172] = {
@@ -5043,7 +5312,7 @@ AV_VanityItems = {
         creaturePreview = 13599,
         creatureId = 13599,
         description = "Has a chance to drop from Stolid Snapjaw within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 1
     },
     [80173] = {
@@ -5052,7 +5321,8 @@ AV_VanityItems = {
         creaturePreview = 13896,
         creatureId = 13896,
         description = "Has a chance to drop from Scalebeard within The Shattered Strand.",
-        zone = "The Shattered Strand.",
+        zone = "Azshara",
+        subzone = "The Shattered Strand",
         icon = 1
     },
     [80174] = {
@@ -5061,7 +5331,8 @@ AV_VanityItems = {
         creaturePreview = 14123,
         creatureId = 14123,
         description = "Has a chance to drop from Steeljaw Snapper within Steamwheedle Port.",
-        zone = "Steamwheedle Port.",
+        zone = "Tanaris",
+        subzone = "Steamwheedle Port",
         icon = 1
     },
     [80175] = {
@@ -5070,7 +5341,8 @@ AV_VanityItems = {
         creaturePreview = 14222,
         creatureId = 14222,
         description = "Has a chance to drop from Araga within Dalaran Crater.",
-        zone = "Dalaran Crater.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Dalaran Crater",
         icon = 1
     },
     [80178] = {
@@ -5079,7 +5351,8 @@ AV_VanityItems = {
         creaturePreview = 14223,
         creatureId = 14223,
         description = "Has a chance to drop from Cranky Benj within Dandred's Fold.",
-        zone = "Dandred's Fold.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Dandred's Fold",
         icon = 1
     },
     [80201] = {
@@ -5088,7 +5361,7 @@ AV_VanityItems = {
         creaturePreview = 14228,
         creatureId = 14228,
         description = "Has a chance to drop from Giggler within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 1
     },
     [80210] = {
@@ -5097,7 +5370,7 @@ AV_VanityItems = {
         creaturePreview = 14232,
         creatureId = 14232,
         description = "Has a chance to drop from Dart within Dustwallow Marsh.",
-        zone = "Dustwallow Marsh.",
+        zone = "Dustwallow Marsh",
         icon = 1
     },
     [80224] = {
@@ -5106,7 +5379,7 @@ AV_VanityItems = {
         creaturePreview = 14233,
         creatureId = 14233,
         description = "Has a chance to drop from Ripscale within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 1
     },
     [80225] = {
@@ -5115,7 +5388,7 @@ AV_VanityItems = {
         creaturePreview = 14234,
         creatureId = 14234,
         description = "Has a chance to drop from Hayoc within Tidefury Cove.",
-        zone = "Tidefury Cove.",
+        zone = "Tidefury Cove",
         icon = 1
     },
     [80226] = {
@@ -5124,7 +5397,8 @@ AV_VanityItems = {
         creaturePreview = 14237,
         creatureId = 14237,
         description = "Has a chance to drop from Oozeworm within The Dragonmurk.",
-        zone = "The Dragonmurk.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Dragonmurk",
         icon = 1
     },
     [80238] = {
@@ -5133,7 +5407,7 @@ AV_VanityItems = {
         creaturePreview = 14266,
         creatureId = 14266,
         description = "Has a chance to drop from Shanda the Spinner within Loch Modan.",
-        zone = "Loch Modan.",
+        zone = "Loch Modan",
         icon = 1
     },
     [80242] = {
@@ -5142,7 +5416,8 @@ AV_VanityItems = {
         creaturePreview = 14268,
         creatureId = 14268,
         description = "Has a chance to drop from Lord Condar within The Farstrider Lodge.",
-        zone = "The Farstrider Lodge.",
+        zone = "Loch Modan",
+        subzone = "The Farstrider Lodge",
         icon = 1
     },
     [80243] = {
@@ -5151,7 +5426,8 @@ AV_VanityItems = {
         creaturePreview = 14279,
         creatureId = 14279,
         description = "Has a chance to drop from Creepthess within Azurelode Mine.",
-        zone = "Azurelode Mine.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Azurelode Mine",
         icon = 1
     },
     [80244] = {
@@ -5160,7 +5436,8 @@ AV_VanityItems = {
         creaturePreview = 14280,
         creatureId = 14280,
         description = "Has a chance to drop from Big Samras within Durnholde Keep.",
-        zone = "Durnholde Keep.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Durnholde Keep",
         icon = 1
     },
     [80247] = {
@@ -5169,7 +5446,7 @@ AV_VanityItems = {
         creaturePreview = 14339,
         creatureId = 14339,
         description = "Has a chance to drop from Death Howl within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 1
     },
     [80248] = {
@@ -5178,7 +5455,8 @@ AV_VanityItems = {
         creaturePreview = 14343,
         creatureId = 14343,
         description = "Has a chance to drop from Olm the Wise within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 1
     },
     [80249] = {
@@ -5187,7 +5465,7 @@ AV_VanityItems = {
         creaturePreview = 14344,
         creatureId = 14344,
         description = "Has a chance to drop from Mongress within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 1
     },
     [80250] = {
@@ -5196,7 +5474,7 @@ AV_VanityItems = {
         creaturePreview = 14430,
         creatureId = 14430,
         description = "Has a chance to drop from Duskstalker within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 1
     },
     [80251] = {
@@ -5205,7 +5483,7 @@ AV_VanityItems = {
         creaturePreview = 14472,
         creatureId = 14472,
         description = "Has a chance to drop from Gretheer within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80252] = {
@@ -5214,7 +5492,8 @@ AV_VanityItems = {
         creaturePreview = 14473,
         creatureId = 14473,
         description = "Has a chance to drop from Lapress within Hive'Regal.",
-        zone = "Hive'Regal.",
+        zone = "Silithus",
+        subzone = "Hive'Regal",
         icon = 1
     },
     [80253] = {
@@ -5223,7 +5502,7 @@ AV_VanityItems = {
         creaturePreview = 14476,
         creatureId = 14476,
         description = "Has a chance to drop from Krellack within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80254] = {
@@ -5232,7 +5511,7 @@ AV_VanityItems = {
         creaturePreview = 14477,
         creatureId = 14477,
         description = "Has a chance to drop from Grubthor within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 1
     },
     [80255] = {
@@ -5241,7 +5520,7 @@ AV_VanityItems = {
         creaturePreview = 14491,
         creatureId = 14491,
         description = "Has a chance to drop from Kurmokk within The Crystal Shore.",
-        zone = "The Crystal Shore.",
+        zone = "The Crystal Shore",
         icon = 1
     },
     [80293] = {
@@ -5250,7 +5529,8 @@ AV_VanityItems = {
         creaturePreview = 15366,
         creatureId = 15366,
         description = "Has a chance to drop from Springpaw Cub within Sunstrider Isle.",
-        zone = "Sunstrider Isle.",
+        zone = "Eversong Woods",
+        subzone = "Sunstrider Isle",
         icon = 1
     },
     [80296] = {
@@ -5259,7 +5539,8 @@ AV_VanityItems = {
         creaturePreview = 15372,
         creatureId = 15372,
         description = "Has a chance to drop from Springpaw Lynx within Sunstrider Isle.",
-        zone = "Sunstrider Isle.",
+        zone = "Eversong Woods",
+        subzone = "Sunstrider Isle",
         icon = 1
     },
     [80297] = {
@@ -5268,7 +5549,7 @@ AV_VanityItems = {
         creaturePreview = 15649,
         creatureId = 15649,
         description = "Has a chance to drop from Feral Dragonhawk Hatchling within Eversong Woods.",
-        zone = "Eversong Woods.",
+        zone = "Eversong Woods",
         icon = 1
     },
     [80298] = {
@@ -5277,7 +5558,7 @@ AV_VanityItems = {
         creaturePreview = 4015650,
         creatureId = 4015650,
         description = "Has a chance to drop from Crazed Dragonhawk within Eversong Woods.",
-        zone = "Eversong Woods.",
+        zone = "Eversong Woods",
         icon = 1
     },
     [80299] = {
@@ -5286,7 +5567,7 @@ AV_VanityItems = {
         creaturePreview = 15651,
         creatureId = 15651,
         description = "Has a chance to drop from Springpaw Stalker within Eversong Woods.",
-        zone = "Eversong Woods.",
+        zone = "Eversong Woods",
         icon = 1
     },
     [80300] = {
@@ -5295,7 +5576,7 @@ AV_VanityItems = {
         creaturePreview = 15652,
         creatureId = 15652,
         description = "Has a chance to drop from Elder Springpaw within Eversong Woods.",
-        zone = "Eversong Woods.",
+        zone = "Eversong Woods",
         icon = 1
     },
     [80320] = {
@@ -5304,7 +5585,7 @@ AV_VanityItems = {
         creaturePreview = 16117,
         creatureId = 16117,
         description = "Has a chance to drop from Plagued Swine within Terrordale.",
-        zone = "Terrordale.",
+        zone = "Terrordale",
         icon = 1
     },
     [80325] = {
@@ -5313,7 +5594,8 @@ AV_VanityItems = {
         creaturePreview = 16347,
         creatureId = 16347,
         description = "Has a chance to drop from Starving Ghostclaw within Sungraze Peak.",
-        zone = "Sungraze Peak.",
+        zone = "Ghostlands",
+        subzone = "Sungraze Peak",
         icon = 1
     },
     [80326] = {
@@ -5322,7 +5604,7 @@ AV_VanityItems = {
         creaturePreview = 16348,
         creatureId = 16348,
         description = "Has a chance to drop from Ghostclaw Lynx within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80327] = {
@@ -5331,7 +5613,7 @@ AV_VanityItems = {
         creaturePreview = 16349,
         creatureId = 16349,
         description = "Has a chance to drop from Ghostclaw Ravager within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80336] = {
@@ -5340,7 +5622,7 @@ AV_VanityItems = {
         creaturePreview = 16350,
         creatureId = 16350,
         description = "Has a chance to drop from Spindleweb Spider within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80338] = {
@@ -5349,7 +5631,7 @@ AV_VanityItems = {
         creaturePreview = 16351,
         creatureId = 16351,
         description = "Has a chance to drop from Spindleweb Lurker within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80339] = {
@@ -5358,7 +5640,7 @@ AV_VanityItems = {
         creaturePreview = 16352,
         creatureId = 16352,
         description = "Has a chance to drop from Greater Spindleweb within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80340] = {
@@ -5367,7 +5649,7 @@ AV_VanityItems = {
         creaturePreview = 4016353,
         creatureId = 4016353,
         description = "Has a chance to drop from Mistbat within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80341] = {
@@ -5376,7 +5658,7 @@ AV_VanityItems = {
         creaturePreview = 16354,
         creatureId = 16354,
         description = "Has a chance to drop from Vampiric Mistbat within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80342] = {
@@ -5385,7 +5667,7 @@ AV_VanityItems = {
         creaturePreview = 16355,
         creatureId = 16355,
         description = "Has a chance to drop from Lesser Scourgebat within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 1
     },
     [80343] = {
@@ -5394,7 +5676,7 @@ AV_VanityItems = {
         creaturePreview = 16520,
         creatureId = 16520,
         description = "Has a chance to drop from Vale Moth within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80344] = {
@@ -5403,7 +5685,7 @@ AV_VanityItems = {
         creaturePreview = 16932,
         creatureId = 16932,
         description = "Has a chance to drop from Razorfang Hatchling within Razorthorn Trail.",
-        zone = "Razorthorn Trail.",
+        zone = "Razorthorn Trail",
         icon = 1
     },
     [80345] = {
@@ -5412,7 +5694,7 @@ AV_VanityItems = {
         creaturePreview = 16933,
         creatureId = 16933,
         description = "Has a chance to drop from Razorfang Ravager within Razorthorn Trail.",
-        zone = "Razorthorn Trail.",
+        zone = "Razorthorn Trail",
         icon = 1
     },
     [80346] = {
@@ -5421,7 +5703,7 @@ AV_VanityItems = {
         creaturePreview = 16934,
         creatureId = 16934,
         description = "Has a chance to drop from Quillfang Ravager within Dustquill Ravine.",
-        zone = "Dustquill Ravine.",
+        zone = "Dustquill Ravine",
         icon = 1
     },
     [80347] = {
@@ -5430,7 +5712,7 @@ AV_VanityItems = {
         creaturePreview = 16972,
         creatureId = 16972,
         description = "Has a chance to drop from Bonestripper Buzzard within Valley of Bones.",
-        zone = "Valley of Bones.",
+        zone = "Valley of Bones",
         icon = 1
     },
     [80348] = {
@@ -5439,7 +5721,7 @@ AV_VanityItems = {
         creaturePreview = 16973,
         creatureId = 16973,
         description = "Has a chance to drop from Bonestripper Vulture within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 1
     },
     [80349] = {
@@ -5448,7 +5730,7 @@ AV_VanityItems = {
         creaturePreview = 17035,
         creatureId = 17035,
         description = "Has a chance to drop from Kaliri Matriarch within Haal'eshi Gorge.",
-        zone = "Haal'eshi Gorge.",
+        zone = "Haal'eshi Gorge",
         icon = 1
     },
     [80350] = {
@@ -5457,7 +5739,7 @@ AV_VanityItems = {
         creaturePreview = 17053,
         creatureId = 17053,
         description = "Has a chance to drop from Kaliri Swooper within Haal'eshi Gorge.",
-        zone = "Haal'eshi Gorge.",
+        zone = "Haal'eshi Gorge",
         icon = 1
     },
     [80351] = {
@@ -5466,7 +5748,7 @@ AV_VanityItems = {
         creaturePreview = 17128,
         creatureId = 17128,
         description = "Has a chance to drop from Windroc within Windyreed Pass.",
-        zone = "Windyreed Pass.",
+        zone = "Windyreed Pass",
         icon = 1
     },
     [80352] = {
@@ -5475,7 +5757,7 @@ AV_VanityItems = {
         creaturePreview = 17129,
         creatureId = 17129,
         description = "Has a chance to drop from Greater Windroc within Nagrand.",
-        zone = "Nagrand.",
+        zone = "Nagrand",
         icon = 1
     },
     [80353] = {
@@ -5484,7 +5766,7 @@ AV_VanityItems = {
         creaturePreview = 17144,
         creatureId = 17144,
         description = "Has a chance to drop from Goretooth within Nagrand.",
-        zone = "Nagrand.",
+        zone = "Nagrand",
         icon = 1
     },
     [80354] = {
@@ -5493,7 +5775,7 @@ AV_VanityItems = {
         creaturePreview = 17199,
         creatureId = 17199,
         description = "Has a chance to drop from Ravager Specimen within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80355] = {
@@ -5502,7 +5784,7 @@ AV_VanityItems = {
         creaturePreview = 17202,
         creatureId = 17202,
         description = "Has a chance to drop from Infected Nightstalker Runt within Moongraze Woods.",
-        zone = "Moongraze Woods.",
+        zone = "Moongraze Woods",
         icon = 1
     },
     [80356] = {
@@ -5511,7 +5793,7 @@ AV_VanityItems = {
         creaturePreview = 17203,
         creatureId = 17203,
         description = "Has a chance to drop from Nightstalker within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80381] = {
@@ -5520,7 +5802,8 @@ AV_VanityItems = {
         creaturePreview = 17216,
         creatureId = 17216,
         description = "Has a chance to drop from Skittering Crawler within Valaar's Berth.",
-        zone = "Valaar's Berth.",
+        zone = "Azuremyst Isle",
+        subzone = "Valaar's Berth",
         icon = 1
     },
     [80382] = {
@@ -5529,7 +5812,8 @@ AV_VanityItems = {
         creaturePreview = 4017217,
         creatureId = 4017217,
         description = "Has a chance to drop from Barbed Crawler within The Veiled Sea.",
-        zone = "The Veiled Sea.",
+        zone = "Darkshore",
+        subzone = "The Veiled Sea",
         icon = 1
     },
     [80383] = {
@@ -5538,7 +5822,7 @@ AV_VanityItems = {
         creaturePreview = 17236,
         creatureId = 17236,
         description = "Has a chance to drop from Tcha'kaz within Bogen's Ledge.",
-        zone = "Bogen's Ledge.",
+        zone = "Bogen's Ledge",
         icon = 1
     },
     [80392] = {
@@ -5547,7 +5831,7 @@ AV_VanityItems = {
         creaturePreview = 17280,
         creatureId = 17280,
         description = "Has a chance to drop from Shattered Hand Warhound within Hellfire Ramparts.",
-        zone = "Hellfire Ramparts.",
+        zone = "Hellfire Ramparts",
         icon = 1
     },
     [80393] = {
@@ -5556,7 +5840,7 @@ AV_VanityItems = {
         creaturePreview = 17345,
         creatureId = 17345,
         description = "Has a chance to drop from Brown Bear within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 1
     },
     [80402] = {
@@ -5565,7 +5849,8 @@ AV_VanityItems = {
         creaturePreview = 17347,
         creatureId = 17347,
         description = "Has a chance to drop from Grizzled Brown Bear within Middenvale.",
-        zone = "Middenvale.",
+        zone = "Bloodmyst Isle",
+        subzone = "Middenvale",
         icon = 1
     },
     [80435] = {
@@ -5574,7 +5859,7 @@ AV_VanityItems = {
         creaturePreview = 17348,
         creatureId = 17348,
         description = "Has a chance to drop from Elder Brown Bear within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 1
     },
     [80436] = {
@@ -5583,7 +5868,7 @@ AV_VanityItems = {
         creaturePreview = 17349,
         creatureId = 17349,
         description = "Has a chance to drop from Blue Flutterer within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 1
     },
     [80438] = {
@@ -5592,7 +5877,7 @@ AV_VanityItems = {
         creaturePreview = 17350,
         creatureId = 17350,
         description = "Has a chance to drop from Royal Blue Flutterer within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 1
     },
     [80439] = {
@@ -5601,7 +5886,7 @@ AV_VanityItems = {
         creaturePreview = 17372,
         creatureId = 17372,
         description = "Has a chance to drop from Timberstrider Fledgling within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80440] = {
@@ -5610,7 +5895,7 @@ AV_VanityItems = {
         creaturePreview = 17373,
         creatureId = 17373,
         description = "Has a chance to drop from Timberstrider within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80473] = {
@@ -5619,7 +5904,7 @@ AV_VanityItems = {
         creaturePreview = 17374,
         creatureId = 17374,
         description = "Has a chance to drop from Greater Timberstrider within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80474] = {
@@ -5628,7 +5913,7 @@ AV_VanityItems = {
         creaturePreview = 17447,
         creatureId = 17447,
         description = "Has a chance to drop from The Kurken within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80475] = {
@@ -5637,7 +5922,8 @@ AV_VanityItems = {
         creaturePreview = 17522,
         creatureId = 17522,
         description = "Has a chance to drop from Myst Spinner within Amberweb Pass.",
-        zone = "Amberweb Pass.",
+        zone = "Bloodmyst Isle",
+        subzone = "Amberweb Pass",
         icon = 1
     },
     [80501] = {
@@ -5646,7 +5932,8 @@ AV_VanityItems = {
         creaturePreview = 17523,
         creatureId = 17523,
         description = "Has a chance to drop from Myst Leecher within Amberweb Pass.",
-        zone = "Amberweb Pass.",
+        zone = "Bloodmyst Isle",
+        subzone = "Amberweb Pass",
         icon = 1
     },
     [80502] = {
@@ -5655,7 +5942,7 @@ AV_VanityItems = {
         creaturePreview = 17525,
         creatureId = 17525,
         description = "Has a chance to drop from Bloodmyst Hatchling within Beryl Coast.",
-        zone = "Beryl Coast.",
+        zone = "Beryl Coast",
         icon = 1
     },
     [80507] = {
@@ -5664,7 +5951,7 @@ AV_VanityItems = {
         creaturePreview = 17527,
         creatureId = 17527,
         description = "Has a chance to drop from Enraged Ravager within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 1
     },
     [80508] = {
@@ -5673,7 +5960,7 @@ AV_VanityItems = {
         creaturePreview = 17556,
         creatureId = 17556,
         description = "Has a chance to drop from Death Ravager within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 1
     },
     [80509] = {
@@ -5682,7 +5969,7 @@ AV_VanityItems = {
         creaturePreview = 17661,
         creatureId = 17661,
         description = "Has a chance to drop from Deathclaw within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 1
     },
     [80510] = {
@@ -5691,7 +5978,7 @@ AV_VanityItems = {
         creaturePreview = 17669,
         creatureId = 17669,
         description = "Has a chance to drop from Rabid Warhound within The Shattered Halls.",
-        zone = "The Shattered Halls.",
+        zone = "The Shattered Halls",
         icon = 1
     },
     [80512] = {
@@ -5700,7 +5987,8 @@ AV_VanityItems = {
         creaturePreview = 17683,
         creatureId = 17683,
         description = "Has a chance to drop from Zarakh within Amberweb Pass.",
-        zone = "Amberweb Pass.",
+        zone = "Bloodmyst Isle",
+        subzone = "Amberweb Pass",
         icon = 1
     },
     [80514] = {
@@ -5709,7 +5997,7 @@ AV_VanityItems = {
         creaturePreview = 17724,
         creatureId = 17724,
         description = "Has a chance to drop from Underbat within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 1
     },
     [80515] = {
@@ -5718,7 +6006,7 @@ AV_VanityItems = {
         creaturePreview = 17731,
         creatureId = 17731,
         description = "Has a chance to drop from Fen Ray within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 1
     },
     [80516] = {
@@ -5727,7 +6015,7 @@ AV_VanityItems = {
         creaturePreview = 17732,
         creatureId = 17732,
         description = "Has a chance to drop from Lykul Wasp within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 1
     },
     [80517] = {
@@ -5736,7 +6024,7 @@ AV_VanityItems = {
         creaturePreview = 18033,
         creatureId = 18033,
         description = "Has a chance to drop from Dark Worg within Kil'sorrow Fortress.",
-        zone = "Kil'sorrow Fortress.",
+        zone = "Kil'sorrow Fortress",
         icon = 1
     },
     [80518] = {
@@ -5745,7 +6033,7 @@ AV_VanityItems = {
         creaturePreview = 18128,
         creatureId = 18128,
         description = "Has a chance to drop from Sporebat within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80519] = {
@@ -5754,7 +6042,7 @@ AV_VanityItems = {
         creaturePreview = 18129,
         creatureId = 18129,
         description = "Has a chance to drop from Greater Sporebat within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80520] = {
@@ -5763,7 +6051,7 @@ AV_VanityItems = {
         creaturePreview = 18130,
         creatureId = 18130,
         description = "Has a chance to drop from Marshfang Ripper within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80521] = {
@@ -5772,7 +6060,7 @@ AV_VanityItems = {
         creaturePreview = 18131,
         creatureId = 18131,
         description = "Has a chance to drop from Marshfang Slicer within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80523] = {
@@ -5781,7 +6069,7 @@ AV_VanityItems = {
         creaturePreview = 18132,
         creatureId = 18132,
         description = "Has a chance to drop from Umbraglow Stinger within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80524] = {
@@ -5790,7 +6078,7 @@ AV_VanityItems = {
         creaturePreview = 18133,
         creatureId = 18133,
         description = "Has a chance to drop from Marshlight Bleeder within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80525] = {
@@ -5799,7 +6087,7 @@ AV_VanityItems = {
         creaturePreview = 18155,
         creatureId = 18155,
         description = "Has a chance to drop from Bloodfalcon within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 1
     },
     [80526] = {
@@ -5808,7 +6096,7 @@ AV_VanityItems = {
         creaturePreview = 18220,
         creatureId = 18220,
         description = "Has a chance to drop from Ravenous Windroc within Nagrand.",
-        zone = "Nagrand.",
+        zone = "Nagrand",
         icon = 1
     },
     [80527] = {
@@ -5817,7 +6105,7 @@ AV_VanityItems = {
         creaturePreview = 18241,
         creatureId = 18241,
         description = "Has a chance to drop from Crusty within Sar'theris Strand.",
-        zone = "Sar'theris Strand.",
+        zone = "Sar'theris Strand",
         icon = 1
     },
     [80530] = {
@@ -5826,7 +6114,7 @@ AV_VanityItems = {
         creaturePreview = 18257,
         creatureId = 18257,
         description = "Has a chance to drop from Gutripper within Nagrand.",
-        zone = "Nagrand.",
+        zone = "Nagrand",
         icon = 1
     },
     [80531] = {
@@ -5835,7 +6123,8 @@ AV_VanityItems = {
         creaturePreview = 18280,
         creatureId = 18280,
         description = "Has a chance to drop from Sporewing within The Dead Mire.",
-        zone = "The Dead Mire.",
+        zone = "Zangarmarsh",
+        subzone = "The Dead Mire",
         icon = 1
     },
     [80532] = {
@@ -5844,7 +6133,8 @@ AV_VanityItems = {
         creaturePreview = 18283,
         creatureId = 18283,
         description = "Has a chance to drop from Blacksting within Feralfen Village.",
-        zone = "Feralfen Village.",
+        zone = "Zangarmarsh",
+        subzone = "Feralfen Village",
         icon = 1
     },
     [80533] = {
@@ -5853,7 +6143,7 @@ AV_VanityItems = {
         creaturePreview = 18285,
         creatureId = 18285,
         description = "Has a chance to drop from \"Count\" Ungula within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80534] = {
@@ -5862,7 +6152,8 @@ AV_VanityItems = {
         creaturePreview = 18437,
         creatureId = 18437,
         description = "Has a chance to drop from Vicious Teromoth within Cenarion Thicket.",
-        zone = "Cenarion Thicket.",
+        zone = "Terokkar Forest",
+        subzone = "Cenarion Thicket",
         icon = 1
     },
     [80536] = {
@@ -5871,7 +6162,7 @@ AV_VanityItems = {
         creaturePreview = 18464,
         creatureId = 18464,
         description = "Has a chance to drop from Warp Stalker within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80547] = {
@@ -5880,7 +6171,7 @@ AV_VanityItems = {
         creaturePreview = 18465,
         creatureId = 18465,
         description = "Has a chance to drop from Warp Hunter within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 1
     },
     [80564] = {
@@ -5889,7 +6180,7 @@ AV_VanityItems = {
         creaturePreview = 18466,
         creatureId = 18466,
         description = "Has a chance to drop from Dreadfang Lurker within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80573] = {
@@ -5898,7 +6189,7 @@ AV_VanityItems = {
         creaturePreview = 18467,
         creatureId = 18467,
         description = "Has a chance to drop from Dreadfang Widow within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 1
     },
     [80574] = {
@@ -5907,7 +6198,7 @@ AV_VanityItems = {
         creaturePreview = 18468,
         creatureId = 18468,
         description = "Has a chance to drop from Teromoth within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80575] = {
@@ -5916,7 +6207,7 @@ AV_VanityItems = {
         creaturePreview = 18469,
         creatureId = 18469,
         description = "Has a chance to drop from Royal Teromoth within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80576] = {
@@ -5925,7 +6216,8 @@ AV_VanityItems = {
         creaturePreview = 18470,
         creatureId = 18470,
         description = "Has a chance to drop from Bonelasher within Carrion Hill.",
-        zone = "Carrion Hill.",
+        zone = "Terokkar Forest",
+        subzone = "Carrion Hill",
         icon = 1
     },
     [80577] = {
@@ -5934,7 +6226,7 @@ AV_VanityItems = {
         creaturePreview = 18476,
         creatureId = 18476,
         description = "Has a chance to drop from Timber Worg within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80579] = {
@@ -5943,7 +6235,7 @@ AV_VanityItems = {
         creaturePreview = 18477,
         creatureId = 18477,
         description = "Has a chance to drop from Timber Worg Alpha within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80582] = {
@@ -5952,7 +6244,7 @@ AV_VanityItems = {
         creaturePreview = 18647,
         creatureId = 18647,
         description = "Has a chance to drop from Deathskitter within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 1
     },
     [80583] = {
@@ -5961,7 +6253,7 @@ AV_VanityItems = {
         creaturePreview = 18670,
         creatureId = 18670,
         description = "Has a chance to drop from Ironjaw within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80601] = {
@@ -5970,7 +6262,7 @@ AV_VanityItems = {
         creaturePreview = 18880,
         creatureId = 18880,
         description = "Has a chance to drop from Nether Ray within Netherstorm.",
-        zone = "Netherstorm.",
+        zone = "Netherstorm",
         icon = 1
     },
     [80602] = {
@@ -5979,7 +6271,7 @@ AV_VanityItems = {
         creaturePreview = 18884,
         creatureId = 18884,
         description = "Has a chance to drop from Warp Chaser within The Vortex Fields.",
-        zone = "The Vortex Fields.",
+        zone = "The Vortex Fields",
         icon = 1
     },
     [80603] = {
@@ -5988,7 +6280,7 @@ AV_VanityItems = {
         creaturePreview = 19189,
         creatureId = 19189,
         description = "Has a chance to drop from Quillfang Skitterer within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 1
     },
     [80604] = {
@@ -5997,7 +6289,7 @@ AV_VanityItems = {
         creaturePreview = 19349,
         creatureId = 19349,
         description = "Has a chance to drop from Thornfang Ravager within Sha'naari Wastes.",
-        zone = "Sha'naari Wastes.",
+        zone = "Sha'naari Wastes",
         icon = 1
     },
     [80605] = {
@@ -6006,7 +6298,7 @@ AV_VanityItems = {
         creaturePreview = 19350,
         creatureId = 19350,
         description = "Has a chance to drop from Thornfang Venomspitter within Sha'naari Wastes.",
-        zone = "Sha'naari Wastes.",
+        zone = "Sha'naari Wastes",
         icon = 1
     },
     [80606] = {
@@ -6015,7 +6307,7 @@ AV_VanityItems = {
         creaturePreview = 19423,
         creatureId = 19423,
         description = "Has a chance to drop from Bleeding Hollow Worg within Zeth'Gor.",
-        zone = "Zeth'Gor.",
+        zone = "Zeth'Gor",
         icon = 1
     },
     [80607] = {
@@ -6024,7 +6316,7 @@ AV_VanityItems = {
         creaturePreview = 19428,
         creatureId = 19428,
         description = "Has a chance to drop from Cobalt Serpent within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 1
     },
     [80608] = {
@@ -6033,7 +6325,7 @@ AV_VanityItems = {
         creaturePreview = 19429,
         creatureId = 19429,
         description = "Has a chance to drop from Avian Darkhawk within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 1
     },
     [80609] = {
@@ -6042,7 +6334,7 @@ AV_VanityItems = {
         creaturePreview = 19458,
         creatureId = 19458,
         description = "Has a chance to drop from Ripp within Zeth'Gor.",
-        zone = "Zeth'Gor.",
+        zone = "Zeth'Gor",
         icon = 1
     },
     [80611] = {
@@ -6051,7 +6343,7 @@ AV_VanityItems = {
         creaturePreview = 19459,
         creatureId = 19459,
         description = "Has a chance to drop from Feng within Zeth'Gor.",
-        zone = "Zeth'Gor.",
+        zone = "Zeth'Gor",
         icon = 1
     },
     [80612] = {
@@ -6060,7 +6352,7 @@ AV_VanityItems = {
         creaturePreview = 141734,
         creatureId = 141734,
         description = "Has a chance to drop from Lykul Stinger within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 1
     },
     [80613] = {
@@ -6069,7 +6361,8 @@ AV_VanityItems = {
         creaturePreview = 19784,
         creatureId = 19784,
         description = "Has a chance to drop from Coilskar Cobra within Coilskar Point.",
-        zone = "Coilskar Point.",
+        zone = "Coilskar Point",
+        subzone = "Coilskar Point",
         icon = 1
     },
     [80616] = {
@@ -6078,7 +6371,7 @@ AV_VanityItems = {
         creaturePreview = 20058,
         creatureId = 20058,
         description = "Has a chance to drop from Bloodmaul Dire Wolf within Bloodmaul Ravine.",
-        zone = "Bloodmaul Ravine.",
+        zone = "Bloodmaul Ravine",
         icon = 1
     },
     [80617] = {
@@ -6087,7 +6380,7 @@ AV_VanityItems = {
         creaturePreview = 20196,
         creatureId = 20196,
         description = "Has a chance to drop from Bloodthirsty Marshfang within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80619] = {
@@ -6096,7 +6389,7 @@ AV_VanityItems = {
         creaturePreview = 20197,
         creatureId = 20197,
         description = "Has a chance to drop from Bogflare Needler within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80620] = {
@@ -6105,7 +6398,7 @@ AV_VanityItems = {
         creaturePreview = 20198,
         creatureId = 20198,
         description = "Has a chance to drop from Fenglow Stinger within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80621] = {
@@ -6114,7 +6407,7 @@ AV_VanityItems = {
         creaturePreview = 20330,
         creatureId = 20330,
         description = "Has a chance to drop from Bloodmaul Battle Worg within Daggermaw Canyon.",
-        zone = "Daggermaw Canyon.",
+        zone = "Daggermaw Canyon",
         icon = 1
     },
     [80622] = {
@@ -6123,7 +6416,7 @@ AV_VanityItems = {
         creaturePreview = 20387,
         creatureId = 20387,
         description = "Has a chance to drop from Young Sporebat within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 1
     },
     [80623] = {
@@ -6132,7 +6425,7 @@ AV_VanityItems = {
         creaturePreview = 20502,
         creatureId = 20502,
         description = "Has a chance to drop from Eclipsion Dragonhawk within The Path of Conquest.",
-        zone = "The Path of Conquest.",
+        zone = "The Path of Conquest",
         icon = 1
     },
     [80624] = {
@@ -6141,7 +6434,7 @@ AV_VanityItems = {
         creaturePreview = 20611,
         creatureId = 20611,
         description = "Has a chance to drop from Shimmerwing Moth within Eco-Dome Midrealm.",
-        zone = "Eco-Dome Midrealm.",
+        zone = "Eco-Dome Midrealm",
         icon = 1
     },
     [80625] = {
@@ -6150,7 +6443,7 @@ AV_VanityItems = {
         creaturePreview = 20634,
         creatureId = 20634,
         description = "Has a chance to drop from Scythetooth Raptor within Eco-Dome Farfield.",
-        zone = "Eco-Dome Farfield.",
+        zone = "Eco-Dome Farfield",
         icon = 1
     },
     [80626] = {
@@ -6159,7 +6452,7 @@ AV_VanityItems = {
         creaturePreview = 20671,
         creatureId = 20671,
         description = "Has a chance to drop from Ripfang Lynx within Eco-Dome Midrealm.",
-        zone = "Eco-Dome Midrealm.",
+        zone = "Eco-Dome Midrealm",
         icon = 1
     },
     [80627] = {
@@ -6168,7 +6461,7 @@ AV_VanityItems = {
         creaturePreview = 20673,
         creatureId = 20673,
         description = "Has a chance to drop from Swiftwing Shredder within The Vortex Fields.",
-        zone = "The Vortex Fields.",
+        zone = "The Vortex Fields",
         icon = 1
     },
     [80628] = {
@@ -6177,7 +6470,7 @@ AV_VanityItems = {
         creaturePreview = 20714,
         creatureId = 20714,
         description = "Has a chance to drop from Ridgespine Stalker within Scalewing Shelf.",
-        zone = "Scalewing Shelf.",
+        zone = "Scalewing Shelf",
         icon = 1
     },
     [80629] = {
@@ -6186,7 +6479,7 @@ AV_VanityItems = {
         creaturePreview = 20728,
         creatureId = 20728,
         description = "Has a chance to drop from Bladespire Raptor within Bladespire Hold.",
-        zone = "Bladespire Hold.",
+        subzone = "Bladespire Hold",
         icon = 1
     },
     [80630] = {
@@ -6195,7 +6488,7 @@ AV_VanityItems = {
         creaturePreview = 20729,
         creatureId = 20729,
         description = "Has a chance to drop from Bladespire Ravager within Daggermaw Canyon.",
-        zone = "Daggermaw Canyon.",
+        zone = "Daggermaw Canyon",
         icon = 1
     },
     [80631] = {
@@ -6204,7 +6497,7 @@ AV_VanityItems = {
         creaturePreview = 20748,
         creatureId = 20748,
         description = "Has a chance to drop from Thunderlord Dire Wolf within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 1
     },
     [80632] = {
@@ -6213,7 +6506,7 @@ AV_VanityItems = {
         creaturePreview = 20749,
         creatureId = 20749,
         description = "Has a chance to drop from Scalewing Serpent within Razor Ridge.",
-        zone = "Razor Ridge.",
+        zone = "Razor Ridge",
         icon = 1
     },
     [80633] = {
@@ -6222,7 +6515,7 @@ AV_VanityItems = {
         creaturePreview = 20751,
         creatureId = 20751,
         description = "Has a chance to drop from Daggermaw Lashtail within Razor Ridge.",
-        zone = "Razor Ridge.",
+        zone = "Razor Ridge",
         icon = 1
     },
     [80634] = {
@@ -6231,7 +6524,7 @@ AV_VanityItems = {
         creaturePreview = 20773,
         creatureId = 20773,
         description = "Has a chance to drop from Barbscale Crocolisk within Eco-Dome Midrealm.",
-        zone = "Eco-Dome Midrealm.",
+        zone = "Eco-Dome Midrealm",
         icon = 1
     },
     [80635] = {
@@ -6240,7 +6533,7 @@ AV_VanityItems = {
         creaturePreview = 20797,
         creatureId = 20797,
         description = "Has a chance to drop from Deviate Coiler Hatchling within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 1
     },
     [80636] = {
@@ -6249,7 +6542,7 @@ AV_VanityItems = {
         creaturePreview = 20931,
         creatureId = 20931,
         description = "Has a chance to drop from Tyrantus within Eco-Dome Farfield.",
-        zone = "Eco-Dome Farfield.",
+        zone = "Eco-Dome Farfield",
         icon = 1
     },
     [80637] = {
@@ -6258,7 +6551,7 @@ AV_VanityItems = {
         creaturePreview = 20932,
         creatureId = 20932,
         description = "Has a chance to drop from Nuramoc within The Vortex Fields.",
-        zone = "The Vortex Fields.",
+        zone = "The Vortex Fields",
         icon = 1
     },
     [80638] = {
@@ -6267,7 +6560,7 @@ AV_VanityItems = {
         creaturePreview = 20998,
         creatureId = 20998,
         description = "Has a chance to drop from Ridgespine Horror within Bladed Gulch.",
-        zone = "Bladed Gulch.",
+        zone = "Bladed Gulch",
         icon = 1
     },
     [80639] = {
@@ -6276,7 +6569,7 @@ AV_VanityItems = {
         creaturePreview = 21022,
         creatureId = 21022,
         description = "Has a chance to drop from Grovestalker Lynx within The Living Grove.",
-        zone = "The Living Grove.",
+        zone = "The Living Grove",
         icon = 1
     },
     [80640] = {
@@ -6285,7 +6578,7 @@ AV_VanityItems = {
         creaturePreview = 21033,
         creatureId = 21033,
         description = "Has a chance to drop from Bladewing Bloodletter within Jagged Ridge.",
-        zone = "Jagged Ridge.",
+        zone = "Jagged Ridge",
         icon = 1
     },
     [80641] = {
@@ -6294,7 +6587,7 @@ AV_VanityItems = {
         creaturePreview = 21042,
         creatureId = 21042,
         description = "Has a chance to drop from Dire Raven within Grishnath.",
-        zone = "Grishnath.",
+        zone = "Grishnath",
         icon = 1
     },
     [80642] = {
@@ -6303,7 +6596,7 @@ AV_VanityItems = {
         creaturePreview = 21102,
         creatureId = 21102,
         description = "Has a chance to drop from Uvuros within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 1
     },
     [80643] = {
@@ -6312,7 +6605,7 @@ AV_VanityItems = {
         creaturePreview = 21108,
         creatureId = 21108,
         description = "Has a chance to drop from Spawn of Uvuros within The Fel Pits.",
-        zone = "The Fel Pits.",
+        zone = "The Fel Pits",
         icon = 1
     },
     [80644] = {
@@ -6321,7 +6614,7 @@ AV_VanityItems = {
         creaturePreview = 21123,
         creatureId = 21123,
         description = "Has a chance to drop from Felsworn Scalewing within Bladed Gulch.",
-        zone = "Bladed Gulch.",
+        zone = "Bladed Gulch",
         icon = 1
     },
     [80645] = {
@@ -6330,7 +6623,7 @@ AV_VanityItems = {
         creaturePreview = 21124,
         creatureId = 21124,
         description = "Has a chance to drop from Felsworn Daggermaw within Bladed Gulch.",
-        zone = "Bladed Gulch.",
+        zone = "Bladed Gulch",
         icon = 1
     },
     [80647] = {
@@ -6339,7 +6632,7 @@ AV_VanityItems = {
         creaturePreview = 21324,
         creatureId = 21324,
         description = "Has a chance to drop from Spirit Raven within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 1
     },
     [80648] = {
@@ -6348,7 +6641,8 @@ AV_VanityItems = {
         creaturePreview = 21515,
         creatureId = 21515,
         description = "Has a chance to drop from Trachela within Carrion Hill.",
-        zone = "Carrion Hill.",
+        zone = "Terokkar Forest",
+        subzone = "Carrion Hill",
         icon = 1
     },
     [80649] = {
@@ -6357,7 +6651,7 @@ AV_VanityItems = {
         creaturePreview = 21723,
         creatureId = 21723,
         description = "Has a chance to drop from Blackwind Sabercat within Terokkar Forest.",
-        zone = "Terokkar Forest.",
+        zone = "Terokkar Forest",
         icon = 1
     },
     [80650] = {
@@ -6366,7 +6660,7 @@ AV_VanityItems = {
         creaturePreview = 21839,
         creatureId = 21839,
         description = "Has a chance to drop from Mature Silkwing within Mok'Nathal Village.",
-        zone = "Mok'Nathal Village.",
+        zone = "Mok'Nathal Village",
         icon = 1
     },
     [80651] = {
@@ -6375,7 +6669,7 @@ AV_VanityItems = {
         creaturePreview = 21864,
         creatureId = 21864,
         description = "Has a chance to drop from Scorchshell Pincer within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 1
     },
     [80652] = {
@@ -6384,7 +6678,7 @@ AV_VanityItems = {
         creaturePreview = 21879,
         creatureId = 21879,
         description = "Has a chance to drop from Vilewing Chimaera within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 1
     },
     [80653] = {
@@ -6393,7 +6687,7 @@ AV_VanityItems = {
         creaturePreview = 21891,
         creatureId = 21891,
         description = "Has a chance to drop from Avian Ripper within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 1
     },
     [80654] = {
@@ -6402,7 +6696,7 @@ AV_VanityItems = {
         creaturePreview = 21901,
         creatureId = 21901,
         description = "Has a chance to drop from Netherskate within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 1
     },
     [80655] = {
@@ -6411,7 +6705,7 @@ AV_VanityItems = {
         creaturePreview = 21904,
         creatureId = 21904,
         description = "Has a chance to drop from Avian Warhawk within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 1
     },
     [80656] = {
@@ -6420,7 +6714,7 @@ AV_VanityItems = {
         creaturePreview = 21956,
         creatureId = 21956,
         description = "Has a chance to drop from Rema within Jagged Ridge.",
-        zone = "Jagged Ridge.",
+        zone = "Jagged Ridge",
         icon = 1
     },
     [80657] = {
@@ -6429,7 +6723,7 @@ AV_VanityItems = {
         creaturePreview = 22044,
         creatureId = 22044,
         description = "Has a chance to drop from Cavern Crawler within Blades' Run.",
-        zone = "Blades' Run.",
+        zone = "Blades' Run",
         icon = 1
     },
     [80658] = {
@@ -6438,7 +6732,7 @@ AV_VanityItems = {
         creaturePreview = 22052,
         creatureId = 22052,
         description = "Has a chance to drop from Daggermaw Blackhide within Bloodmaul Ravine.",
-        zone = "Bloodmaul Ravine.",
+        zone = "Bloodmaul Ravine",
         icon = 1
     },
     [80659] = {
@@ -6447,7 +6741,7 @@ AV_VanityItems = {
         creaturePreview = 22100,
         creatureId = 22100,
         description = "Has a chance to drop from Scorpid Bonecrawler within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 1
     },
     [80660] = {
@@ -6456,7 +6750,7 @@ AV_VanityItems = {
         creaturePreview = 22123,
         creatureId = 22123,
         description = "Has a chance to drop from Rip-Blade Ravager within Razor Ridge.",
-        zone = "Razor Ridge.",
+        zone = "Razor Ridge",
         icon = 1
     },
     [80661] = {
@@ -6465,7 +6759,7 @@ AV_VanityItems = {
         creaturePreview = 22132,
         creatureId = 22132,
         description = "Has a chance to drop from Mature Cavern Crawler within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 1
     },
     [80662] = {
@@ -6474,7 +6768,7 @@ AV_VanityItems = {
         creaturePreview = 22181,
         creatureId = 22181,
         description = "Has a chance to drop from Aether Ray within Bash'ir Landing.",
-        zone = "Bash'ir Landing.",
+        zone = "Bash'ir Landing",
         icon = 1
     },
     [80663] = {
@@ -6483,7 +6777,7 @@ AV_VanityItems = {
         creaturePreview = 22255,
         creatureId = 22255,
         description = "Has a chance to drop from Daggertail Lizard within Crystal Spine.",
-        zone = "Crystal Spine.",
+        zone = "Crystal Spine",
         icon = 1
     },
     [80664] = {
@@ -6492,7 +6786,7 @@ AV_VanityItems = {
         creaturePreview = 22265,
         creatureId = 22265,
         description = "Has a chance to drop from Shadowwing Owl within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 1
     },
     [80665] = {
@@ -6501,7 +6795,8 @@ AV_VanityItems = {
         creaturePreview = 22807,
         creatureId = 22807,
         description = "Has a chance to drop from Lost Torranche within Sorrow Wing Point.",
-        zone = "Sorrow Wing Point.",
+        zone = "Sorrow Wing Point",
+        subzone = "Sorrow Wing Point",
         icon = 1
     },
     [80667] = {
@@ -6510,7 +6805,7 @@ AV_VanityItems = {
         creaturePreview = 23051,
         creatureId = 23051,
         description = "Has a chance to drop from Monstrous Kaliri within Blackwind Lake.",
-        zone = "Blackwind Lake.",
+        zone = "Blackwind Lake",
         icon = 1
     },
     [80668] = {
@@ -6519,7 +6814,7 @@ AV_VanityItems = {
         creaturePreview = 23163,
         creatureId = 23163,
         description = "Has a chance to drop from Gezzarak the Huntress within Testing.",
-        zone = "Testing.",
+        zone = "Testing",
         icon = 1
     },
     [80669] = {
@@ -6528,7 +6823,8 @@ AV_VanityItems = {
         creaturePreview = 23219,
         creatureId = 23219,
         description = "Has a chance to drop from Blackwind Warp Chaser within Skettis.",
-        zone = "Skettis.",
+        zone = "Terokkar Forest",
+        subzone = "Skettis",
         icon = 1
     },
     [80671] = {
@@ -6537,7 +6833,7 @@ AV_VanityItems = {
         creaturePreview = 23326,
         creatureId = 23326,
         description = "Has a chance to drop from Nethermine Ravager within Netherwing Mines.",
-        zone = "Netherwing Mines.",
+        subzone = "Netherwing Mines",
         icon = 1
     },
     [80672] = {
@@ -6546,7 +6842,8 @@ AV_VanityItems = {
         creaturePreview = 23501,
         creatureId = 23501,
         description = "Has a chance to drop from Netherwing Ray within Netherwing Ledge.",
-        zone = "Netherwing Ledge.",
+        zone = "Shadowmoon Valley",
+        subzone = "Netherwing Ledge",
         icon = 1
     },
     [80673] = {
@@ -6555,7 +6852,7 @@ AV_VanityItems = {
         creaturePreview = 23584,
         creatureId = 23584,
         description = "Has a chance to drop from Amani Bear within Zul'Aman.",
-        zone = "Zul'Aman.",
+        zone = "Zul'Aman",
         icon = 1
     },
     [80674] = {
@@ -6564,7 +6861,7 @@ AV_VanityItems = {
         creaturePreview = 23693,
         creatureId = 23693,
         description = "Has a chance to drop from Duskwing Eagle within Howling Fjord.",
-        zone = "Howling Fjord.",
+        zone = "Howling Fjord",
         icon = 1
     },
     [80675] = {
@@ -6573,7 +6870,8 @@ AV_VanityItems = {
         creaturePreview = 23873,
         creatureId = 23873,
         description = "Has a chance to drop from Goreclaw the Ravenous within Bloodfen Burrow.",
-        zone = "Bloodfen Burrow.",
+        zone = "Dustwallow Marsh",
+        subzone = "Bloodfen Burrow",
         icon = 1
     },
     [80676] = {
@@ -6582,7 +6880,7 @@ AV_VanityItems = {
         creaturePreview = 23929,
         creatureId = 23929,
         description = "Has a chance to drop from Giant Tidecrawler within Vengeance Landing.",
-        zone = "Vengeance Landing.",
+        zone = "Vengeance Landing",
         icon = 1
     },
     [80680] = {
@@ -6591,7 +6889,7 @@ AV_VanityItems = {
         creaturePreview = 23945,
         creatureId = 23945,
         description = "Has a chance to drop from Fjord Crow within Bleeding Vale.",
-        zone = "Bleeding Vale.",
+        zone = "Bleeding Vale",
         icon = 1
     },
     [80681] = {
@@ -6600,7 +6898,7 @@ AV_VanityItems = {
         creaturePreview = 23958,
         creatureId = 23958,
         description = "Has a chance to drop from Riven Widow within Rivenwood.",
-        zone = "Rivenwood.",
+        zone = "Rivenwood",
         icon = 1
     },
     [80682] = {
@@ -6609,7 +6907,7 @@ AV_VanityItems = {
         creaturePreview = 23959,
         creatureId = 23959,
         description = "Has a chance to drop from Darkclaw Bat within Rivenwood.",
-        zone = "Rivenwood.",
+        zone = "Rivenwood",
         icon = 1
     },
     [80683] = {
@@ -6618,7 +6916,7 @@ AV_VanityItems = {
         creaturePreview = 24026,
         creatureId = 24026,
         description = "Has a chance to drop from Fanggore Worg within Whisper Gulch.",
-        zone = "Whisper Gulch.",
+        zone = "Whisper Gulch",
         icon = 1
     },
     [80684] = {
@@ -6627,7 +6925,7 @@ AV_VanityItems = {
         creaturePreview = 24043,
         creatureId = 24043,
         description = "Has a chance to drop from Amani Lynx within Zul'Aman.",
-        zone = "Zul'Aman.",
+        zone = "Zul'Aman",
         icon = 1
     },
     [80805] = {
@@ -6636,7 +6934,7 @@ AV_VanityItems = {
         creaturePreview = 24047,
         creatureId = 24047,
         description = "Has a chance to drop from Amani Crocolisk within Zul'Aman.",
-        zone = "Zul'Aman.",
+        zone = "Zul'Aman",
         icon = 1
     },
     [80813] = {
@@ -6645,7 +6943,7 @@ AV_VanityItems = {
         creaturePreview = 24064,
         creatureId = 24064,
         description = "Has a chance to drop from Amani Lynx Cub within Zul'Aman.",
-        zone = "Zul'Aman.",
+        zone = "Zul'Aman",
         icon = 1
     },
     [80814] = {
@@ -6654,7 +6952,7 @@ AV_VanityItems = {
         creaturePreview = 24076,
         creatureId = 24076,
         description = "Has a chance to drop from Winterskorn Worg within Howling Fjord.",
-        zone = "Howling Fjord.",
+        zone = "Howling Fjord",
         icon = 1
     },
     [80815] = {
@@ -6663,7 +6961,7 @@ AV_VanityItems = {
         creaturePreview = 24128,
         creatureId = 24128,
         description = "Has a chance to drop from Wild Worg within Bleeding Vale.",
-        zone = "Bleeding Vale.",
+        zone = "Bleeding Vale",
         icon = 1
     },
     [80819] = {
@@ -6672,7 +6970,7 @@ AV_VanityItems = {
         creaturePreview = 4024475,
         creatureId = 4024475,
         description = "Has a chance to drop from Bloodthirsty Worg within Wyrmskull Village.",
-        zone = "Wyrmskull Village.",
+        zone = "Wyrmskull Village",
         icon = 1
     },
     [80820] = {
@@ -6681,7 +6979,7 @@ AV_VanityItems = {
         creaturePreview = 24478,
         creatureId = 24478,
         description = "Has a chance to drop from Fjord Crawler within Chillmere Coast.",
-        zone = "Chillmere Coast.",
+        zone = "Chillmere Coast",
         icon = 1
     },
     [80821] = {
@@ -6690,7 +6988,7 @@ AV_VanityItems = {
         creaturePreview = 24516,
         creatureId = 24516,
         description = "Has a chance to drop from Bjomolf within Howling Fjord.",
-        zone = "Howling Fjord.",
+        zone = "Howling Fjord",
         icon = 1
     },
     [80823] = {
@@ -6699,7 +6997,7 @@ AV_VanityItems = {
         creaturePreview = 24517,
         creatureId = 24517,
         description = "Has a chance to drop from Varg within Howling Fjord.",
-        zone = "Howling Fjord.",
+        zone = "Howling Fjord",
         icon = 1
     },
     [80825] = {
@@ -6708,7 +7006,7 @@ AV_VanityItems = {
         creaturePreview = 24530,
         creatureId = 24530,
         description = "Has a chance to drop from Amani Elder Lynx within Zul'Aman.",
-        zone = "Zul'Aman.",
+        zone = "Zul'Aman",
         icon = 1
     },
     [80826] = {
@@ -6717,7 +7015,7 @@ AV_VanityItems = {
         creaturePreview = 24547,
         creatureId = 24547,
         description = "Has a chance to drop from Hozzer within Garvan's Reef.",
-        zone = "Garvan's Reef.",
+        zone = "Garvan's Reef",
         icon = 1
     },
     [80833] = {
@@ -6726,7 +7024,8 @@ AV_VanityItems = {
         creaturePreview = 24633,
         creatureId = 24633,
         description = "Has a chance to drop from Rabid Brown Bear within Scalawag Point.",
-        zone = "Scalawag Point.",
+        zone = "Scalawag Point",
+        subzone = "Scalawag Point",
         icon = 1
     },
     [80834] = {
@@ -6735,7 +7034,7 @@ AV_VanityItems = {
         creaturePreview = 24673,
         creatureId = 24673,
         description = "Has a chance to drop from Frostwing Chimaera within The Isle of Spears.",
-        zone = "The Isle of Spears.",
+        zone = "The Isle of Spears",
         icon = 1
     },
     [80835] = {
@@ -6744,7 +7043,7 @@ AV_VanityItems = {
         creaturePreview = 24677,
         creatureId = 24677,
         description = "Has a chance to drop from Spearfang Worg within The Isle of Spears.",
-        zone = "The Isle of Spears.",
+        zone = "The Isle of Spears",
         icon = 1
     },
     [80836] = {
@@ -6753,7 +7052,7 @@ AV_VanityItems = {
         creaturePreview = 24747,
         creatureId = 24747,
         description = "Has a chance to drop from Fjord Hawk within Howling Fjord.",
-        zone = "Howling Fjord.",
+        zone = "Howling Fjord",
         icon = 1
     },
     [80837] = {
@@ -6762,7 +7061,7 @@ AV_VanityItems = {
         creaturePreview = 24787,
         creatureId = 24787,
         description = "Has a chance to drop from Fjord Hawk Matriarch within Howling Fjord.",
-        zone = "Howling Fjord.",
+        zone = "Howling Fjord",
         icon = 1
     },
     [80838] = {
@@ -6771,7 +7070,7 @@ AV_VanityItems = {
         creaturePreview = 24922,
         creatureId = 24922,
         description = "Has a chance to drop from Razorthorn Ravager within Razorthorn Rise.",
-        zone = "Razorthorn Rise.",
+        zone = "Razorthorn Rise",
         icon = 1
     },
     [80843] = {
@@ -6780,7 +7079,7 @@ AV_VanityItems = {
         creaturePreview = 25454,
         creatureId = 25454,
         description = "Has a chance to drop from Tundra Crawler within Transborea.",
-        zone = "Transborea.",
+        zone = "Transborea",
         icon = 1
     },
     [80844] = {
@@ -6789,7 +7088,7 @@ AV_VanityItems = {
         creaturePreview = 25464,
         creatureId = 25464,
         description = "Has a chance to drop from Bloodspore Moth within Bloodspore Plains.",
-        zone = "Bloodspore Plains.",
+        zone = "Bloodspore Plains",
         icon = 1
     },
     [80845] = {
@@ -6798,7 +7097,7 @@ AV_VanityItems = {
         creaturePreview = 25481,
         creatureId = 25481,
         description = "Has a chance to drop from Landing Crawler within Coast of Echoes.",
-        zone = "Coast of Echoes.",
+        zone = "Coast of Echoes",
         icon = 1
     },
     [80846] = {
@@ -6807,7 +7106,7 @@ AV_VanityItems = {
         creaturePreview = 25482,
         creatureId = 25482,
         description = "Has a chance to drop from Sand Turtle within Coast of Echoes.",
-        zone = "Coast of Echoes.",
+        zone = "Coast of Echoes",
         icon = 1
     },
     [80847] = {
@@ -6816,7 +7115,7 @@ AV_VanityItems = {
         creaturePreview = 25487,
         creatureId = 25487,
         description = "Has a chance to drop from Wooly Rhino Matriarch within Borean Tundra.",
-        zone = "Borean Tundra.",
+        zone = "Borean Tundra",
         icon = 1
     },
     [80848] = {
@@ -6825,7 +7124,7 @@ AV_VanityItems = {
         creaturePreview = 25488,
         creatureId = 25488,
         description = "Has a chance to drop from Wooly Rhino Calf within Bloodspore Plains.",
-        zone = "Bloodspore Plains.",
+        zone = "Bloodspore Plains",
         icon = 1
     },
     [80849] = {
@@ -6834,7 +7133,7 @@ AV_VanityItems = {
         creaturePreview = 25489,
         creatureId = 25489,
         description = "Has a chance to drop from Wooly Rhino Bull within Borean Tundra.",
-        zone = "Borean Tundra.",
+        zone = "Borean Tundra",
         icon = 1
     },
     [80850] = {
@@ -6843,7 +7142,7 @@ AV_VanityItems = {
         creaturePreview = 25498,
         creatureId = 25498,
         description = "Has a chance to drop from Aspatha the Broodmother within Gammoth.",
-        zone = "Gammoth.",
+        zone = "Gammoth",
         icon = 1
     },
     [80851] = {
@@ -6852,7 +7151,7 @@ AV_VanityItems = {
         creaturePreview = 25675,
         creatureId = 25675,
         description = "Has a chance to drop from Tundra Wolf within Echo Cove.",
-        zone = "Echo Cove.",
+        zone = "Echo Cove",
         icon = 1
     },
     [80904] = {
@@ -6861,7 +7160,7 @@ AV_VanityItems = {
         creaturePreview = 25748,
         creatureId = 25748,
         description = "Has a chance to drop from Oil-covered Hawk within Scalding Pools.",
-        zone = "Scalding Pools.",
+        zone = "Scalding Pools",
         icon = 1
     },
     [80905] = {
@@ -6870,7 +7169,7 @@ AV_VanityItems = {
         creaturePreview = 25774,
         creatureId = 25774,
         description = "Has a chance to drop from Rockfang within Bloodspore Plains.",
-        zone = "Bloodspore Plains.",
+        zone = "Bloodspore Plains",
         icon = 1
     },
     [80940] = {
@@ -6879,7 +7178,7 @@ AV_VanityItems = {
         creaturePreview = 25791,
         creatureId = 25791,
         description = "Has a chance to drop from Oil-stained Wolf within Scalding Pools.",
-        zone = "Scalding Pools.",
+        zone = "Scalding Pools",
         icon = 1
     },
     [80941] = {
@@ -6888,7 +7187,7 @@ AV_VanityItems = {
         creaturePreview = 25817,
         creatureId = 25817,
         description = "Has a chance to drop from Oiled Fledgeling within Scalding Pools.",
-        zone = "Scalding Pools.",
+        zone = "Scalding Pools",
         icon = 1
     },
     [80942] = {
@@ -6897,7 +7196,7 @@ AV_VanityItems = {
         creaturePreview = 26174,
         creatureId = 26174,
         description = "Has a chance to drop from Carrion Condor within Transborea.",
-        zone = "Transborea.",
+        zone = "Transborea",
         icon = 1
     },
     [80943] = {
@@ -6906,7 +7205,7 @@ AV_VanityItems = {
         creaturePreview = 26293,
         creatureId = 26293,
         description = "Has a chance to drop from Hulking Jormungar within The Crystal Vice.",
-        zone = "The Crystal Vice.",
+        zone = "The Crystal Vice",
         icon = 1
     },
     [81056] = {
@@ -6915,7 +7214,7 @@ AV_VanityItems = {
         creaturePreview = 26358,
         creatureId = 26358,
         description = "Has a chance to drop from Ice Heart Jormungar Feeder within The Crystal Vice.",
-        zone = "The Crystal Vice.",
+        zone = "The Crystal Vice",
         icon = 1
     },
     [81057] = {
@@ -6924,7 +7223,7 @@ AV_VanityItems = {
         creaturePreview = 26359,
         creatureId = 26359,
         description = "Has a chance to drop from Ice Heart Jormungar Spawn within Ice Heart Cavern.",
-        zone = "Ice Heart Cavern.",
+        subzone = "Ice Heart Cavern",
         icon = 1
     },
     [81117] = {
@@ -6933,7 +7232,7 @@ AV_VanityItems = {
         creaturePreview = 26360,
         creatureId = 26360,
         description = "Has a chance to drop from Rattlebore within Ice Heart Cavern.",
-        zone = "Ice Heart Cavern.",
+        subzone = "Ice Heart Cavern",
         icon = 1
     },
     [81118] = {
@@ -6942,7 +7241,7 @@ AV_VanityItems = {
         creaturePreview = 26369,
         creatureId = 26369,
         description = "Has a chance to drop from Imperial Eagle within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81119] = {
@@ -6951,7 +7250,7 @@ AV_VanityItems = {
         creaturePreview = 26446,
         creatureId = 26446,
         description = "Has a chance to drop from Ice Serpent within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81120] = {
@@ -6960,7 +7259,7 @@ AV_VanityItems = {
         creaturePreview = 26482,
         creatureId = 26482,
         description = "Has a chance to drop from Arctic Grizzly within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 1
     },
     [81121] = {
@@ -6969,7 +7268,7 @@ AV_VanityItems = {
         creaturePreview = 26483,
         creatureId = 26483,
         description = "Has a chance to drop from Dragonbone Condor within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 1
     },
     [81144] = {
@@ -6978,7 +7277,7 @@ AV_VanityItems = {
         creaturePreview = 26521,
         creatureId = 26521,
         description = "Has a chance to drop from Kili'ua within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 1
     },
     [81173] = {
@@ -6987,7 +7286,7 @@ AV_VanityItems = {
         creaturePreview = 26592,
         creatureId = 26592,
         description = "Has a chance to drop from Graymist Hunter within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81226] = {
@@ -6996,7 +7295,7 @@ AV_VanityItems = {
         creaturePreview = 26622,
         creatureId = 26622,
         description = "Has a chance to drop from Drakkari Bat within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 1
     },
     [81227] = {
@@ -7005,7 +7304,7 @@ AV_VanityItems = {
         creaturePreview = 26625,
         creatureId = 26625,
         description = "Has a chance to drop from Darkweb Recluse within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 1
     },
     [81228] = {
@@ -7014,7 +7313,7 @@ AV_VanityItems = {
         creaturePreview = 4026628,
         creatureId = 4026628,
         description = "Has a chance to drop from Drakkari Scytheclaw within Raptor Pens.",
-        zone = "Raptor Pens.",
+        zone = "Raptor Pens",
         icon = 1
     },
     [81278] = {
@@ -7023,7 +7322,7 @@ AV_VanityItems = {
         creaturePreview = 4026641,
         creatureId = 4026641,
         description = "Has a chance to drop from Drakkari Gutripper within Raptor Pens.",
-        zone = "Raptor Pens.",
+        zone = "Raptor Pens",
         icon = 1
     },
     [81322] = {
@@ -7032,7 +7331,7 @@ AV_VanityItems = {
         creaturePreview = 26643,
         creatureId = 26643,
         description = "Has a chance to drop from Rabid Grizzly within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 1
     },
     [81323] = {
@@ -7041,7 +7340,7 @@ AV_VanityItems = {
         creaturePreview = 26644,
         creatureId = 26644,
         description = "Has a chance to drop from Ursus Mauler within Ursoc's Den.",
-        zone = "Ursoc's Den.",
+        subzone = "Ursoc's Den",
         icon = 1
     },
     [81363] = {
@@ -7050,7 +7349,7 @@ AV_VanityItems = {
         creaturePreview = 26672,
         creatureId = 26672,
         description = "Has a chance to drop from Bloodthirsty Tundra Wolf within Utgarde Pinnacle.",
-        zone = "Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
         icon = 1
     },
     [81374] = {
@@ -7059,7 +7358,7 @@ AV_VanityItems = {
         creaturePreview = 26706,
         creatureId = 26706,
         description = "Has a chance to drop from Infected Grizzly Bear within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81377] = {
@@ -7068,7 +7367,7 @@ AV_VanityItems = {
         creaturePreview = 26806,
         creatureId = 26806,
         description = "Has a chance to drop from Guardian Serpent within Drakil'jin Ruins.",
-        zone = "Drakil'jin Ruins.",
+        subzone = "Drakil'jin Ruins",
         icon = 1
     },
     [81378] = {
@@ -7077,7 +7376,7 @@ AV_VanityItems = {
         creaturePreview = 26838,
         creatureId = 26838,
         description = "Has a chance to drop from Dreadtalon within The Dragon Wastes.",
-        zone = "The Dragon Wastes.",
+        zone = "The Dragon Wastes",
         icon = 1
     },
     [81379] = {
@@ -7086,7 +7385,7 @@ AV_VanityItems = {
         creaturePreview = 27131,
         creatureId = 27131,
         description = "Has a chance to drop from Grizzly Bear within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81380] = {
@@ -7095,7 +7394,7 @@ AV_VanityItems = {
         creaturePreview = 27244,
         creatureId = 27244,
         description = "Has a chance to drop from Emerald Skytalon within Emerald Dragonshrine.",
-        zone = "Emerald Dragonshrine.",
+        zone = "Emerald Dragonshrine",
         icon = 1
     },
     [81381] = {
@@ -7104,7 +7403,7 @@ AV_VanityItems = {
         creaturePreview = 27249,
         creatureId = 27249,
         description = "Has a chance to drop from Alystros the Verdant Keeper within The Frozen Sea.",
-        zone = "The Frozen Sea.",
+        zone = "The Frozen Sea",
         icon = 1
     },
     [81382] = {
@@ -7113,7 +7412,7 @@ AV_VanityItems = {
         creaturePreview = 27294,
         creatureId = 27294,
         description = "Has a chance to drop from Tundra Scavenger within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 1
     },
     [81383] = {
@@ -7122,7 +7421,8 @@ AV_VanityItems = {
         creaturePreview = 27329,
         creatureId = 27329,
         description = "Has a chance to drop from Onslaught Bloodhound within Onslaught Base Camp.",
-        zone = "Onslaught Base Camp.",
+        zone = "Onslaught Base Camp",
+        subzone = "Onslaught Base Camp",
         icon = 1
     },
     [81386] = {
@@ -7131,7 +7431,7 @@ AV_VanityItems = {
         creaturePreview = 27408,
         creatureId = 27408,
         description = "Has a chance to drop from Duskhowl Prowler within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81387] = {
@@ -7140,7 +7440,7 @@ AV_VanityItems = {
         creaturePreview = 27421,
         creatureId = 27421,
         description = "Has a chance to drop from Fern Feeder Moth within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [81392] = {
@@ -7149,7 +7449,7 @@ AV_VanityItems = {
         creaturePreview = 4027483,
         creatureId = 4027483,
         description = "Has a chance to drop from King Dred within Raptor Pens.",
-        zone = "Raptor Pens.",
+        zone = "Raptor Pens",
         icon = 1
     },
     [81395] = {
@@ -7158,7 +7458,7 @@ AV_VanityItems = {
         creaturePreview = 27578,
         creatureId = 27578,
         description = "Has a chance to drop from Goremaw within Shadowfang Tower.",
-        zone = "Shadowfang Tower.",
+        subzone = "Shadowfang Tower",
         icon = 1
     },
     [81398] = {
@@ -7167,7 +7467,7 @@ AV_VanityItems = {
         creaturePreview = 28001,
         creatureId = 28001,
         description = "Has a chance to drop from Dreadsaber within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81399] = {
@@ -7176,7 +7476,7 @@ AV_VanityItems = {
         creaturePreview = 28002,
         creatureId = 28002,
         description = "Has a chance to drop from Mangal Crocolisk within Wildgrowth Mangal.",
-        zone = "Wildgrowth Mangal.",
+        zone = "Wildgrowth Mangal",
         icon = 1
     },
     [81416] = {
@@ -7185,7 +7485,7 @@ AV_VanityItems = {
         creaturePreview = 28004,
         creatureId = 28004,
         description = "Has a chance to drop from Goretalon Roc within The Bonefields.",
-        zone = "The Bonefields.",
+        zone = "The Bonefields",
         icon = 1
     },
     [81419] = {
@@ -7194,7 +7494,7 @@ AV_VanityItems = {
         creaturePreview = 28009,
         creatureId = 28009,
         description = "Has a chance to drop from Shardhorn Rhino within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81420] = {
@@ -7203,7 +7503,7 @@ AV_VanityItems = {
         creaturePreview = 28011,
         creatureId = 28011,
         description = "Has a chance to drop from Emperor Cobra within Wildgrowth Mangal.",
-        zone = "Wildgrowth Mangal.",
+        zone = "Wildgrowth Mangal",
         icon = 1
     },
     [81421] = {
@@ -7212,7 +7512,7 @@ AV_VanityItems = {
         creaturePreview = 28085,
         creatureId = 28085,
         description = "Has a chance to drop from Sapphire Hive Drone within Sapphire Hive.",
-        zone = "Sapphire Hive.",
+        zone = "Sapphire Hive",
         icon = 1
     },
     [81422] = {
@@ -7221,7 +7521,7 @@ AV_VanityItems = {
         creaturePreview = 28086,
         creatureId = 28086,
         description = "Has a chance to drop from Sapphire Hive Wasp within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81423] = {
@@ -7230,7 +7530,7 @@ AV_VanityItems = {
         creaturePreview = 28087,
         creatureId = 28087,
         description = "Has a chance to drop from Sapphire Hive Queen within Sapphire Hive.",
-        zone = "Sapphire Hive.",
+        zone = "Sapphire Hive",
         icon = 1
     },
     [81424] = {
@@ -7239,7 +7539,7 @@ AV_VanityItems = {
         creaturePreview = 28096,
         creatureId = 28096,
         description = "Has a chance to drop from Hardknuckle Charger within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81425] = {
@@ -7248,7 +7548,7 @@ AV_VanityItems = {
         creaturePreview = 28097,
         creatureId = 28097,
         description = "Has a chance to drop from Pitch within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81426] = {
@@ -7257,7 +7557,7 @@ AV_VanityItems = {
         creaturePreview = 28098,
         creatureId = 28098,
         description = "Has a chance to drop from Hardknuckle Forager within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81428] = {
@@ -7266,7 +7566,7 @@ AV_VanityItems = {
         creaturePreview = 28221,
         creatureId = 28221,
         description = "Has a chance to drop from Trapdoor Crawler within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 1
     },
     [81429] = {
@@ -7275,7 +7575,7 @@ AV_VanityItems = {
         creaturePreview = 28233,
         creatureId = 28233,
         description = "Has a chance to drop from Zul'Drak Bat within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 1
     },
     [81431] = {
@@ -7284,7 +7584,7 @@ AV_VanityItems = {
         creaturePreview = 28297,
         creatureId = 28297,
         description = "Has a chance to drop from Shango within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81432] = {
@@ -7293,7 +7593,7 @@ AV_VanityItems = {
         creaturePreview = 28358,
         creatureId = 28358,
         description = "Has a chance to drop from Venomtip within Rainspeaker Rapids.",
-        zone = "Rainspeaker Rapids.",
+        zone = "Rainspeaker Rapids",
         icon = 1
     },
     [81433] = {
@@ -7302,7 +7602,7 @@ AV_VanityItems = {
         creaturePreview = 28404,
         creatureId = 28404,
         description = "Has a chance to drop from Cursed Offspring of Har'koa within Altar of Har'koa.",
-        zone = "Altar of Har'koa.",
+        zone = "Altar of Har'koa",
         icon = 1
     },
     [81434] = {
@@ -7311,7 +7611,7 @@ AV_VanityItems = {
         creaturePreview = 28477,
         creatureId = 28477,
         description = "Has a chance to drop from Scion of Quetz'lun within Altar of Quetz'lun.",
-        zone = "Altar of Quetz'lun.",
+        zone = "Altar of Quetz'lun",
         icon = 1
     },
     [81435] = {
@@ -7320,7 +7620,7 @@ AV_VanityItems = {
         creaturePreview = 28766,
         creatureId = 28766,
         description = "Has a chance to drop from Scarlet Farm Hound within Havenshire Farms.",
-        zone = "Havenshire Farms.",
+        subzone = "Havenshire Farms",
         icon = 1
     },
     [81436] = {
@@ -7329,7 +7629,7 @@ AV_VanityItems = {
         creaturePreview = 29044,
         creatureId = 29044,
         description = "Has a chance to drop from Goretalon Matriarch within The Bonefields.",
-        zone = "The Bonefields.",
+        zone = "The Bonefields",
         icon = 1
     },
     [81437] = {
@@ -7338,7 +7638,7 @@ AV_VanityItems = {
         creaturePreview = 29319,
         creatureId = 29319,
         description = "Has a chance to drop from Icepaw Bear within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 1
     },
     [81438] = {
@@ -7347,7 +7647,7 @@ AV_VanityItems = {
         creaturePreview = 29327,
         creatureId = 29327,
         description = "Has a chance to drop from Frost Leopard within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 1
     },
     [81439] = {
@@ -7356,7 +7656,7 @@ AV_VanityItems = {
         creaturePreview = 29334,
         creatureId = 29334,
         description = "Has a chance to drop from Gundrak Raptor within Zol'Heb.",
-        zone = "Zol'Heb.",
+        zone = "Zol'Heb",
         icon = 1
     },
     [81558] = {
@@ -7365,7 +7665,7 @@ AV_VanityItems = {
         creaturePreview = 29358,
         creatureId = 29358,
         description = "Has a chance to drop from Frostworg within Dun Niffelem.",
-        zone = "Dun Niffelem.",
+        zone = "Dun Niffelem",
         icon = 1
     },
     [81893] = {
@@ -7374,7 +7674,7 @@ AV_VanityItems = {
         creaturePreview = 29390,
         creatureId = 29390,
         description = "Has a chance to drop from Snowdrift Jormungar within Snowdrift Plains.",
-        zone = "Snowdrift Plains.",
+        zone = "Snowdrift Plains",
         icon = 1
     },
     [81894] = {
@@ -7383,7 +7683,7 @@ AV_VanityItems = {
         creaturePreview = 29411,
         creatureId = 29411,
         description = "Has a chance to drop from Crystalweb Weaver within Crystalweb Cavern.",
-        zone = "Crystalweb Cavern.",
+        subzone = "Crystalweb Cavern",
         icon = 1
     },
     [81895] = {
@@ -7392,7 +7692,7 @@ AV_VanityItems = {
         creaturePreview = 29412,
         creatureId = 29412,
         description = "Has a chance to drop from Crystalweb Spitter within Crystalweb Cavern.",
-        zone = "Crystalweb Cavern.",
+        subzone = "Crystalweb Cavern",
         icon = 1
     },
     [81896] = {
@@ -7401,7 +7701,7 @@ AV_VanityItems = {
         creaturePreview = 29452,
         creatureId = 29452,
         description = "Has a chance to drop from Vargul Blighthound within Thrym's End.",
-        zone = "Thrym's End.",
+        zone = "Thrym's End",
         icon = 1
     },
     [81897] = {
@@ -7410,7 +7710,7 @@ AV_VanityItems = {
         creaturePreview = 29461,
         creatureId = 29461,
         description = "Has a chance to drop from Icetip Crawler within Crystalweb Cavern.",
-        zone = "Crystalweb Cavern.",
+        subzone = "Crystalweb Cavern",
         icon = 1
     },
     [81898] = {
@@ -7419,7 +7719,7 @@ AV_VanityItems = {
         creaturePreview = 29469,
         creatureId = 29469,
         description = "Has a chance to drop from Ice Steppe Rhino within The Foot Steppes.",
-        zone = "The Foot Steppes.",
+        zone = "The Foot Steppes",
         icon = 1
     },
     [81899] = {
@@ -7428,7 +7728,7 @@ AV_VanityItems = {
         creaturePreview = 29562,
         creatureId = 29562,
         description = "Has a chance to drop from Icemaw Bear within Hibernal Cavern.",
-        zone = "Hibernal Cavern.",
+        subzone = "Hibernal Cavern",
         icon = 1
     },
     [81900] = {
@@ -7437,7 +7737,7 @@ AV_VanityItems = {
         creaturePreview = 29605,
         creatureId = 29605,
         description = "Has a chance to drop from Ravenous Jormungar within Valley of Ancient Winters.",
-        zone = "Valley of Ancient Winters.",
+        zone = "Valley of Ancient Winters",
         icon = 1
     },
     [81902] = {
@@ -7446,7 +7746,7 @@ AV_VanityItems = {
         creaturePreview = 29693,
         creatureId = 29693,
         description = "Has a chance to drop from Serpent Defender within Drak'atal Passage.",
-        zone = "Drak'atal Passage.",
+        zone = "Drak'atal Passage",
         icon = 1
     },
     [81903] = {
@@ -7455,7 +7755,7 @@ AV_VanityItems = {
         creaturePreview = 29698,
         creatureId = 29698,
         description = "Has a chance to drop from Drakuru Raptor within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 1
     },
     [81904] = {
@@ -7464,7 +7764,7 @@ AV_VanityItems = {
         creaturePreview = 29735,
         creatureId = 29735,
         description = "Has a chance to drop from Savage Worg within Utgarde Keep.",
-        zone = "Utgarde Keep.",
+        subzone = "Utgarde Keep",
         icon = 1
     },
     [81905] = {
@@ -7473,7 +7773,7 @@ AV_VanityItems = {
         creaturePreview = 29854,
         creatureId = 29854,
         description = "Has a chance to drop from Stormcrest Eagle within Stormcrest.",
-        zone = "Stormcrest.",
+        zone = "Stormcrest",
         icon = 1
     },
     [81907] = {
@@ -7482,7 +7782,8 @@ AV_VanityItems = {
         creaturePreview = 29994,
         creatureId = 29994,
         description = "Has a chance to drop from Shardtooth within Camp Tunka'lo.",
-        zone = "Camp Tunka'lo.",
+        zone = "Camp Tunka'lo",
+        subzone = "Camp Tunka'lo",
         icon = 1
     },
     [81908] = {
@@ -7491,7 +7792,7 @@ AV_VanityItems = {
         creaturePreview = 30148,
         creatureId = 30148,
         description = "Has a chance to drop from Infesting Jormungar within Gimorak's Den.",
-        zone = "Gimorak's Den.",
+        subzone = "Gimorak's Den",
         icon = 1
     },
     [81909] = {
@@ -7500,7 +7801,7 @@ AV_VanityItems = {
         creaturePreview = 30164,
         creatureId = 30164,
         description = "Has a chance to drop from Cavedweller Worg within Gimorak's Den.",
-        zone = "Gimorak's Den.",
+        subzone = "Gimorak's Den",
         icon = 1
     },
     [81910] = {
@@ -7509,7 +7810,7 @@ AV_VanityItems = {
         creaturePreview = 30206,
         creatureId = 30206,
         description = "Has a chance to drop from Carrion Fleshstripper within Valley of Echoes.",
-        zone = "Valley of Echoes.",
+        zone = "Valley of Echoes",
         icon = 1
     },
     [81911] = {
@@ -7518,7 +7819,7 @@ AV_VanityItems = {
         creaturePreview = 30291,
         creatureId = 30291,
         description = "Has a chance to drop from Ravenous Jormungar within Hibernal Cavern.",
-        zone = "Hibernal Cavern.",
+        subzone = "Hibernal Cavern",
         icon = 1
     },
     [81912] = {
@@ -7527,7 +7828,7 @@ AV_VanityItems = {
         creaturePreview = 30294,
         creatureId = 30294,
         description = "Has a chance to drop from Frostworg Denmother within Dun Niffelem.",
-        zone = "Dun Niffelem.",
+        zone = "Dun Niffelem",
         icon = 1
     },
     [81913] = {
@@ -7536,7 +7837,7 @@ AV_VanityItems = {
         creaturePreview = 30422,
         creatureId = 30422,
         description = "Has a chance to drop from Roaming Jormungar within Valley of Ancient Winters.",
-        zone = "Valley of Ancient Winters.",
+        zone = "Valley of Ancient Winters",
         icon = 1
     },
     [81914] = {
@@ -7545,7 +7846,7 @@ AV_VanityItems = {
         creaturePreview = 30430,
         creatureId = 30430,
         description = "Has a chance to drop from Sentry Worg within Jotunheim.",
-        zone = "Jotunheim.",
+        zone = "Jotunheim",
         icon = 1
     },
     [81915] = {
@@ -7554,7 +7855,7 @@ AV_VanityItems = {
         creaturePreview = 30445,
         creatureId = 30445,
         description = "Has a chance to drop from Ice Steppe Bull within The Foot Steppes.",
-        zone = "The Foot Steppes.",
+        zone = "The Foot Steppes",
         icon = 1
     },
     [81929] = {
@@ -7563,7 +7864,7 @@ AV_VanityItems = {
         creaturePreview = 30447,
         creatureId = 30447,
         description = "Has a chance to drop from Romping Rhino within Plain of Echoes.",
-        zone = "Plain of Echoes.",
+        zone = "Plain of Echoes",
         icon = 1
     },
     [81930] = {
@@ -7572,7 +7873,7 @@ AV_VanityItems = {
         creaturePreview = 30456,
         creatureId = 30456,
         description = "Has a chance to drop from Oloh within Dun Niffelem.",
-        zone = "Dun Niffelem.",
+        zone = "Dun Niffelem",
         icon = 1
     },
     [81931] = {
@@ -7581,7 +7882,7 @@ AV_VanityItems = {
         creaturePreview = 31233,
         creatureId = 31233,
         description = "Has a chance to drop from Sinewy Wolf within Crystalsong Forest.",
-        zone = "Crystalsong Forest.",
+        zone = "Crystalsong Forest",
         icon = 1
     },
     [81932] = {
@@ -7590,7 +7891,7 @@ AV_VanityItems = {
         creaturePreview = 31747,
         creatureId = 31747,
         description = "Has a chance to drop from Necrotic Webspinner within Corp'rethar: The Horror Gate.",
-        zone = "Corp'rethar: The Horror Gate.",
+        subzone = "Corp'rethar: The Horror Gate",
         icon = 1
     },
     [81933] = {
@@ -7599,7 +7900,7 @@ AV_VanityItems = {
         creaturePreview = 32361,
         creatureId = 32361,
         description = "Has a chance to drop from Icehorn within Transborea.",
-        zone = "Transborea.",
+        zone = "Transborea",
         icon = 1
     },
     [81934] = {
@@ -7608,7 +7909,7 @@ AV_VanityItems = {
         creaturePreview = 32475,
         creatureId = 32475,
         description = "Has a chance to drop from Terror Spinner within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 1
     },
     [81935] = {
@@ -7617,7 +7918,7 @@ AV_VanityItems = {
         creaturePreview = 32481,
         creatureId = 32481,
         description = "Has a chance to drop from Aotona within Wildgrowth Mangal.",
-        zone = "Wildgrowth Mangal.",
+        zone = "Wildgrowth Mangal",
         icon = 1
     },
     [81936] = {
@@ -7626,7 +7927,7 @@ AV_VanityItems = {
         creaturePreview = 32485,
         creatureId = 32485,
         description = "Has a chance to drop from King Krush within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [81937] = {
@@ -7635,7 +7936,7 @@ AV_VanityItems = {
         creaturePreview = 32517,
         creatureId = 32517,
         description = "Has a chance to drop from Loque'nahak within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 1
     },
     [82296] = {
@@ -7644,7 +7945,7 @@ AV_VanityItems = {
         creaturePreview = 33776,
         creatureId = 33776,
         description = "Has a chance to drop from Gondria within Mam'toth Crater.",
-        zone = "Mam'toth Crater.",
+        subzone = "Mam'toth Crater",
         icon = 1
     },
     [82297] = {
@@ -7653,7 +7954,7 @@ AV_VanityItems = {
         creaturePreview = 35189,
         creatureId = 35189,
         description = "Has a chance to drop from Skoll within The Foot Steppes.",
-        zone = "The Foot Steppes.",
+        zone = "The Foot Steppes",
         icon = 1
     },
     [82303] = {
@@ -7662,7 +7963,7 @@ AV_VanityItems = {
         creaturePreview = 38453,
         creatureId = 38453,
         description = "Has a chance to drop from Arcturis within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 1
     },
     [82350] = {
@@ -7671,7 +7972,8 @@ AV_VanityItems = {
         creaturePreview = 2038,
         creatureId = 2038,
         description = "Has a chance to drop from Lord Melenas within Fel Rock.",
-        zone = "Fel Rock.",
+        zone = "Teldrassil",
+        subzone = "Fel Rock",
         icon = 3
     },
     [82354] = {
@@ -7680,7 +7982,8 @@ AV_VanityItems = {
         creaturePreview = 3662,
         creatureId = 3662,
         description = "Has a chance to drop from Delmanis the Hated within Tower of Althalaxx.",
-        zone = "Tower of Althalaxx.",
+        zone = "Darkshore",
+        subzone = "Tower of Althalaxx",
         icon = 3
     },
     [82355] = {
@@ -7689,7 +7992,7 @@ AV_VanityItems = {
         creaturePreview = 3752,
         creatureId = 3752,
         description = "Has a chance to drop from Xavian Rogue within Xavian.",
-        zone = "Xavian.",
+        zone = "Xavian",
         icon = 3
     },
     [82356] = {
@@ -7698,7 +8001,7 @@ AV_VanityItems = {
         creaturePreview = 3754,
         creatureId = 3754,
         description = "Has a chance to drop from Xavian Betrayer within Xavian.",
-        zone = "Xavian.",
+        zone = "Xavian",
         icon = 3
     },
     [82357] = {
@@ -7707,7 +8010,7 @@ AV_VanityItems = {
         creaturePreview = 3755,
         creatureId = 3755,
         description = "Has a chance to drop from Xavian Felsworn within Xavian.",
-        zone = "Xavian.",
+        zone = "Xavian",
         icon = 3
     },
     [82358] = {
@@ -7716,7 +8019,7 @@ AV_VanityItems = {
         creaturePreview = 3757,
         creatureId = 3757,
         description = "Has a chance to drop from Xavian Hellcaller within Xavian.",
-        zone = "Xavian.",
+        zone = "Xavian",
         icon = 3
     },
     [82359] = {
@@ -7725,7 +8028,7 @@ AV_VanityItems = {
         creaturePreview = 3758,
         creatureId = 3758,
         description = "Has a chance to drop from Felmusk Satyr within Night Run.",
-        zone = "Night Run.",
+        zone = "Night Run",
         icon = 3
     },
     [82360] = {
@@ -7734,7 +8037,7 @@ AV_VanityItems = {
         creaturePreview = 3759,
         creatureId = 3759,
         description = "Has a chance to drop from Felmusk Rogue within Night Run.",
-        zone = "Night Run.",
+        zone = "Night Run",
         icon = 3
     },
     [82361] = {
@@ -7743,7 +8046,7 @@ AV_VanityItems = {
         creaturePreview = 3762,
         creatureId = 3762,
         description = "Has a chance to drop from Felmusk Felsworn within Night Run.",
-        zone = "Night Run.",
+        zone = "Night Run",
         icon = 3
     },
     [82362] = {
@@ -7752,7 +8055,7 @@ AV_VanityItems = {
         creaturePreview = 3763,
         creatureId = 3763,
         description = "Has a chance to drop from Felmusk Shadowstalker within Night Run.",
-        zone = "Night Run.",
+        zone = "Night Run",
         icon = 3
     },
     [82363] = {
@@ -7761,7 +8064,7 @@ AV_VanityItems = {
         creaturePreview = 3765,
         creatureId = 3765,
         description = "Has a chance to drop from Bleakheart Satyr within Satyrnaar.",
-        zone = "Satyrnaar.",
+        zone = "Satyrnaar",
         icon = 3
     },
     [82364] = {
@@ -7770,7 +8073,7 @@ AV_VanityItems = {
         creaturePreview = 3767,
         creatureId = 3767,
         description = "Has a chance to drop from Bleakheart Trickster within Satyrnaar.",
-        zone = "Satyrnaar.",
+        zone = "Satyrnaar",
         icon = 3
     },
     [82365] = {
@@ -7779,7 +8082,7 @@ AV_VanityItems = {
         creaturePreview = 3770,
         creatureId = 3770,
         description = "Has a chance to drop from Bleakheart Shadowstalker within Satyrnaar.",
-        zone = "Satyrnaar.",
+        zone = "Satyrnaar",
         icon = 3
     },
     [82366] = {
@@ -7788,7 +8091,7 @@ AV_VanityItems = {
         creaturePreview = 3771,
         creatureId = 3771,
         description = "Has a chance to drop from Bleakheart Hellcaller within Nightsong Woods.",
-        zone = "Nightsong Woods.",
+        zone = "Nightsong Woods",
         icon = 3
     },
     [82367] = {
@@ -7797,7 +8100,7 @@ AV_VanityItems = {
         creaturePreview = 3773,
         creatureId = 3773,
         description = "Has a chance to drop from Akkrilus within Fire Scar Shrine.",
-        zone = "Fire Scar Shrine.",
+        zone = "Fire Scar Shrine",
         icon = 3
     },
     [82368] = {
@@ -7806,7 +8109,7 @@ AV_VanityItems = {
         creaturePreview = 3898,
         creatureId = 3898,
         description = "Has a chance to drop from Aligar the Tormentor within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 3
     },
     [82370] = {
@@ -7815,7 +8118,7 @@ AV_VanityItems = {
         creaturePreview = 3900,
         creatureId = 3900,
         description = "Has a chance to drop from Caedakar the Vicious within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 3
     },
     [82371] = {
@@ -7824,7 +8127,7 @@ AV_VanityItems = {
         creaturePreview = 4619,
         creatureId = 4619,
         description = "Has a chance to drop from Geltharis within Xavian.",
-        zone = "Xavian.",
+        zone = "Xavian",
         icon = 3
     },
     [82372] = {
@@ -7833,7 +8136,8 @@ AV_VanityItems = {
         creaturePreview = 4670,
         creatureId = 4670,
         description = "Has a chance to drop from Hatefury Rogue within Thunder Axe Fortress.",
-        zone = "Thunder Axe Fortress.",
+        zone = "Desolace",
+        subzone = "Thunder Axe Fortress",
         icon = 3
     },
     [82373] = {
@@ -7842,7 +8146,8 @@ AV_VanityItems = {
         creaturePreview = 4671,
         creatureId = 4671,
         description = "Has a chance to drop from Hatefury Trickster within Sargeron.",
-        zone = "Sargeron.",
+        zone = "Desolace",
+        subzone = "Sargeron",
         icon = 3
     },
     [82374] = {
@@ -7851,7 +8156,8 @@ AV_VanityItems = {
         creaturePreview = 4672,
         creatureId = 4672,
         description = "Has a chance to drop from Hatefury Felsworn within Sargeron.",
-        zone = "Sargeron.",
+        zone = "Desolace",
+        subzone = "Sargeron",
         icon = 3
     },
     [82375] = {
@@ -7860,7 +8166,8 @@ AV_VanityItems = {
         creaturePreview = 4673,
         creatureId = 4673,
         description = "Has a chance to drop from Hatefury Betrayer within Sargeron.",
-        zone = "Sargeron.",
+        zone = "Desolace",
+        subzone = "Sargeron",
         icon = 3
     },
     [82376] = {
@@ -7869,7 +8176,8 @@ AV_VanityItems = {
         creaturePreview = 4674,
         creatureId = 4674,
         description = "Has a chance to drop from Hatefury Shadowstalker within Sargeron.",
-        zone = "Sargeron.",
+        zone = "Desolace",
+        subzone = "Sargeron",
         icon = 3
     },
     [82377] = {
@@ -7878,7 +8186,8 @@ AV_VanityItems = {
         creaturePreview = 4675,
         creatureId = 4675,
         description = "Has a chance to drop from Hatefury Hellcaller within Sargeron.",
-        zone = "Sargeron.",
+        zone = "Desolace",
+        subzone = "Sargeron",
         icon = 3
     },
     [82378] = {
@@ -7887,7 +8196,8 @@ AV_VanityItems = {
         creaturePreview = 4676,
         creatureId = 4676,
         description = "Has a chance to drop from Lesser Infernal within Mannoroc Coven.",
-        zone = "Mannoroc Coven.",
+        zone = "Desolace",
+        subzone = "Mannoroc Coven",
         icon = 3
     },
     [82379] = {
@@ -7896,7 +8206,7 @@ AV_VanityItems = {
         creaturePreview = 4788,
         creatureId = 4788,
         description = "Has a chance to drop from Fallenroot Satyr within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 3
     },
     [82380] = {
@@ -7905,7 +8215,7 @@ AV_VanityItems = {
         creaturePreview = 4789,
         creatureId = 4789,
         description = "Has a chance to drop from Fallenroot Rogue within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 3
     },
     [82385] = {
@@ -7914,7 +8224,7 @@ AV_VanityItems = {
         creaturePreview = 4798,
         creatureId = 4798,
         description = "Has a chance to drop from Fallenroot Shadowstalker within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 3
     },
     [82386] = {
@@ -7923,7 +8233,7 @@ AV_VanityItems = {
         creaturePreview = 4799,
         creatureId = 4799,
         description = "Has a chance to drop from Fallenroot Hellcaller within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 3
     },
     [82390] = {
@@ -7932,7 +8242,8 @@ AV_VanityItems = {
         creaturePreview = 5760,
         creatureId = 5760,
         description = "Has a chance to drop from Lord Azrethoc within Mannoroc Coven.",
-        zone = "Mannoroc Coven.",
+        zone = "Desolace",
+        subzone = "Mannoroc Coven",
         icon = 3
     },
     [82391] = {
@@ -7941,7 +8252,7 @@ AV_VanityItems = {
         creaturePreview = 6072,
         creatureId = 6072,
         description = "Has a chance to drop from Diathorus the Seeker within Demon Fall Ridge.",
-        zone = "Demon Fall Ridge.",
+        zone = "Demon Fall Ridge",
         icon = 3
     },
     [82452] = {
@@ -7950,7 +8261,7 @@ AV_VanityItems = {
         creaturePreview = 6073,
         creatureId = 6073,
         description = "Has a chance to drop from Searing Infernal within Demon Fall Ridge.",
-        zone = "Demon Fall Ridge.",
+        zone = "Demon Fall Ridge",
         icon = 3
     },
     [82454] = {
@@ -7959,7 +8270,8 @@ AV_VanityItems = {
         creaturePreview = 6125,
         creatureId = 6125,
         description = "Has a chance to drop from Haldarr Satyr within Haldarr Encampment.",
-        zone = "Haldarr Encampment.",
+        zone = "Haldarr Encampment",
+        subzone = "Haldarr Encampment",
         icon = 3
     },
     [82455] = {
@@ -7968,7 +8280,8 @@ AV_VanityItems = {
         creaturePreview = 6126,
         creatureId = 6126,
         description = "Has a chance to drop from Haldarr Trickster within Haldarr Encampment.",
-        zone = "Haldarr Encampment.",
+        zone = "Haldarr Encampment",
+        subzone = "Haldarr Encampment",
         icon = 3
     },
     [82456] = {
@@ -7977,7 +8290,8 @@ AV_VanityItems = {
         creaturePreview = 6127,
         creatureId = 6127,
         description = "Has a chance to drop from Haldarr Felsworn within Haldarr Encampment.",
-        zone = "Haldarr Encampment.",
+        zone = "Haldarr Encampment",
+        subzone = "Haldarr Encampment",
         icon = 3
     },
     [82457] = {
@@ -7986,7 +8300,7 @@ AV_VanityItems = {
         creaturePreview = 6128,
         creatureId = 6128,
         description = "Has a chance to drop from Vorlus Vilehoof within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 3
     },
     [82458] = {
@@ -7995,7 +8309,8 @@ AV_VanityItems = {
         creaturePreview = 6200,
         creatureId = 6200,
         description = "Has a chance to drop from Legashi Satyr within Legash Encampment.",
-        zone = "Legash Encampment.",
+        zone = "Legash Encampment",
+        subzone = "Legash Encampment",
         icon = 3
     },
     [82459] = {
@@ -8004,7 +8319,8 @@ AV_VanityItems = {
         creaturePreview = 6201,
         creatureId = 6201,
         description = "Has a chance to drop from Legashi Rogue within Legash Encampment.",
-        zone = "Legash Encampment.",
+        zone = "Legash Encampment",
+        subzone = "Legash Encampment",
         icon = 3
     },
     [82461] = {
@@ -8013,7 +8329,8 @@ AV_VanityItems = {
         creaturePreview = 6202,
         creatureId = 6202,
         description = "Has a chance to drop from Legashi Hellcaller within Legash Encampment.",
-        zone = "Legash Encampment.",
+        zone = "Legash Encampment",
+        subzone = "Legash Encampment",
         icon = 3
     },
     [82466] = {
@@ -8022,7 +8339,8 @@ AV_VanityItems = {
         creaturePreview = 6652,
         creatureId = 6652,
         description = "Has a chance to drop from Master Feardred within Legash Encampment.",
-        zone = "Legash Encampment.",
+        zone = "Legash Encampment",
+        subzone = "Legash Encampment",
         icon = 3
     },
     [82724] = {
@@ -8031,7 +8349,7 @@ AV_VanityItems = {
         creaturePreview = 7105,
         creatureId = 7105,
         description = "Has a chance to drop from Jadefire Satyr within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 3
     },
     [82725] = {
@@ -8040,7 +8358,8 @@ AV_VanityItems = {
         creaturePreview = 7106,
         creatureId = 7106,
         description = "Has a chance to drop from Jadefire Rogue within Ruins of Constellas.",
-        zone = "Ruins of Constellas.",
+        zone = "Felwood",
+        subzone = "Ruins of Constellas",
         icon = 3
     },
     [82726] = {
@@ -8049,7 +8368,7 @@ AV_VanityItems = {
         creaturePreview = 7107,
         creatureId = 7107,
         description = "Has a chance to drop from Jadefire Trickster within Jadefire Run.",
-        zone = "Jadefire Run.",
+        zone = "Jadefire Run",
         icon = 3
     },
     [82727] = {
@@ -8058,7 +8377,7 @@ AV_VanityItems = {
         creaturePreview = 7108,
         creatureId = 7108,
         description = "Has a chance to drop from Jadefire Betrayer within Jadefire Run.",
-        zone = "Jadefire Run.",
+        zone = "Jadefire Run",
         icon = 3
     },
     [82728] = {
@@ -8067,7 +8386,7 @@ AV_VanityItems = {
         creaturePreview = 7109,
         creatureId = 7109,
         description = "Has a chance to drop from Jadefire Felsworn within Jadefire Glen.",
-        zone = "Jadefire Glen.",
+        zone = "Jadefire Glen",
         icon = 3
     },
     [82729] = {
@@ -8076,7 +8395,8 @@ AV_VanityItems = {
         creaturePreview = 7110,
         creatureId = 7110,
         description = "Has a chance to drop from Jadefire Shadowstalker within Ruins of Constellas.",
-        zone = "Ruins of Constellas.",
+        zone = "Felwood",
+        subzone = "Ruins of Constellas",
         icon = 3
     },
     [82730] = {
@@ -8085,7 +8405,7 @@ AV_VanityItems = {
         creaturePreview = 7111,
         creatureId = 7111,
         description = "Has a chance to drop from Jadefire Hellcaller within Jadefire Run.",
-        zone = "Jadefire Run.",
+        zone = "Jadefire Run",
         icon = 3
     },
     [82731] = {
@@ -8094,7 +8414,8 @@ AV_VanityItems = {
         creaturePreview = 7135,
         creatureId = 7135,
         description = "Has a chance to drop from Infernal Bodyguard within Shatter Scar Vale.",
-        zone = "Shatter Scar Vale.",
+        zone = "Felwood",
+        subzone = "Shatter Scar Vale",
         icon = 3
     },
     [82732] = {
@@ -8103,7 +8424,8 @@ AV_VanityItems = {
         creaturePreview = 7136,
         creatureId = 7136,
         description = "Has a chance to drop from Infernal Sentry within Shatter Scar Vale.",
-        zone = "Shatter Scar Vale.",
+        zone = "Felwood",
+        subzone = "Shatter Scar Vale",
         icon = 3
     },
     [82733] = {
@@ -8112,7 +8434,8 @@ AV_VanityItems = {
         creaturePreview = 7137,
         creatureId = 7137,
         description = "Has a chance to drop from Immolatus within Shatter Scar Vale.",
-        zone = "Shatter Scar Vale.",
+        zone = "Felwood",
+        subzone = "Shatter Scar Vale",
         icon = 3
     },
     [82734] = {
@@ -8121,7 +8444,7 @@ AV_VanityItems = {
         creaturePreview = 7664,
         creatureId = 7664,
         description = "Has a chance to drop from Razelikh the Defiler within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 3
     },
     [82744] = {
@@ -8130,7 +8453,7 @@ AV_VanityItems = {
         creaturePreview = 8280,
         creatureId = 8280,
         description = "Has a chance to drop from Shleipnarr within Searing Gorge.",
-        zone = "Searing Gorge.",
+        zone = "Searing Gorge",
         icon = 3
     },
     [82763] = {
@@ -8139,7 +8462,8 @@ AV_VanityItems = {
         creaturePreview = 8716,
         creatureId = 8716,
         description = "Has a chance to drop from Dreadlord within The Tainted Scar.",
-        zone = "The Tainted Scar.",
+        zone = "Blasted Lands",
+        subzone = "The Tainted Scar",
         icon = 3
     },
     [82766] = {
@@ -8148,7 +8472,8 @@ AV_VanityItems = {
         creaturePreview = 9454,
         creatureId = 9454,
         description = "Has a chance to drop from Xavathras within Ruins of Constellas.",
-        zone = "Ruins of Constellas.",
+        zone = "Felwood",
+        subzone = "Ruins of Constellas",
         icon = 3
     },
     [82768] = {
@@ -8157,7 +8482,8 @@ AV_VanityItems = {
         creaturePreview = 9516,
         creatureId = 9516,
         description = "Has a chance to drop from Lord Banehollow within Shadow Hold.",
-        zone = "Shadow Hold.",
+        zone = "Felwood",
+        subzone = "Shadow Hold",
         icon = 3
     },
     [82776] = {
@@ -8166,7 +8492,8 @@ AV_VanityItems = {
         creaturePreview = 9877,
         creatureId = 9877,
         description = "Has a chance to drop from Prince Xavalis within Shadow Hold.",
-        zone = "Shadow Hold.",
+        zone = "Felwood",
+        subzone = "Shadow Hold",
         icon = 3
     },
     [82777] = {
@@ -8175,7 +8502,7 @@ AV_VanityItems = {
         creaturePreview = 10373,
         creatureId = 10373,
         description = "Has a chance to drop from Xabraxxis within Darkshore.",
-        zone = "Darkshore.",
+        zone = "Darkshore",
         icon = 3
     },
     [82778] = {
@@ -8184,7 +8511,7 @@ AV_VanityItems = {
         creaturePreview = 10647,
         creatureId = 10647,
         description = "Has a chance to drop from Prince Raze within Satyrnaar.",
-        zone = "Satyrnaar.",
+        zone = "Satyrnaar",
         icon = 3
     },
     [82779] = {
@@ -8193,7 +8520,7 @@ AV_VanityItems = {
         creaturePreview = 10648,
         creatureId = 10648,
         description = "Has a chance to drop from Xavaric within Jadefire Run.",
-        zone = "Jadefire Run.",
+        zone = "Jadefire Run",
         icon = 3
     },
     [82780] = {
@@ -8202,7 +8529,8 @@ AV_VanityItems = {
         creaturePreview = 10813,
         creatureId = 10813,
         description = "Has a chance to drop from Balnazzar within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 3
     },
     [82781] = {
@@ -8211,7 +8539,8 @@ AV_VanityItems = {
         creaturePreview = 11451,
         creatureId = 11451,
         description = "Has a chance to drop from Wildspawn Satyr within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82782] = {
@@ -8220,7 +8549,8 @@ AV_VanityItems = {
         creaturePreview = 11452,
         creatureId = 11452,
         description = "Has a chance to drop from Wildspawn Rogue within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82786] = {
@@ -8229,7 +8559,8 @@ AV_VanityItems = {
         creaturePreview = 11453,
         creatureId = 11453,
         description = "Has a chance to drop from Wildspawn Trickster within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82801] = {
@@ -8238,7 +8569,8 @@ AV_VanityItems = {
         creaturePreview = 11454,
         creatureId = 11454,
         description = "Has a chance to drop from Wildspawn Betrayer within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82804] = {
@@ -8247,7 +8579,8 @@ AV_VanityItems = {
         creaturePreview = 11455,
         creatureId = 11455,
         description = "Has a chance to drop from Wildspawn Felsworn within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82805] = {
@@ -8256,7 +8589,8 @@ AV_VanityItems = {
         creaturePreview = 11456,
         creatureId = 11456,
         description = "Has a chance to drop from Wildspawn Shadowstalker within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82806] = {
@@ -8265,7 +8599,8 @@ AV_VanityItems = {
         creaturePreview = 11457,
         creatureId = 11457,
         description = "Has a chance to drop from Wildspawn Hellcaller within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82863] = {
@@ -8274,7 +8609,8 @@ AV_VanityItems = {
         creaturePreview = 11490,
         creatureId = 11490,
         description = "Has a chance to drop from Zevrim Thornhoof within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82865] = {
@@ -8283,7 +8619,8 @@ AV_VanityItems = {
         creaturePreview = 11492,
         creatureId = 11492,
         description = "Has a chance to drop from Alzzin the Wildshaper within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82871] = {
@@ -8292,7 +8629,8 @@ AV_VanityItems = {
         creaturePreview = 11496,
         creatureId = 11496,
         description = "Has a chance to drop from Immol'thar within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82872] = {
@@ -8301,7 +8639,7 @@ AV_VanityItems = {
         creaturePreview = 11790,
         creatureId = 11790,
         description = "Has a chance to drop from Putridus Satyr within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 3
     },
     [82873] = {
@@ -8310,7 +8648,7 @@ AV_VanityItems = {
         creaturePreview = 11791,
         creatureId = 11791,
         description = "Has a chance to drop from Putridus Trickster within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 3
     },
     [82874] = {
@@ -8319,7 +8657,7 @@ AV_VanityItems = {
         creaturePreview = 11792,
         creatureId = 11792,
         description = "Has a chance to drop from Putridus Shadowstalker within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 3
     },
     [82875] = {
@@ -8328,7 +8666,7 @@ AV_VanityItems = {
         creaturePreview = 11876,
         creatureId = 11876,
         description = "Has a chance to drop from Demon Spirit within Desolace.",
-        zone = "Desolace.",
+        zone = "Desolace",
         icon = 3,
         questLock = {
             questId = 5381,
@@ -8345,7 +8683,7 @@ AV_VanityItems = {
         creaturePreview = 12236,
         creatureId = 12236,
         description = "Has a chance to drop from Lord Vyletongue within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 3
     },
     [82887] = {
@@ -8354,7 +8692,8 @@ AV_VanityItems = {
         creaturePreview = 12396,
         creatureId = 12396,
         description = "Has a chance to drop from Doomguard Commander within The Tainted Scar.",
-        zone = "The Tainted Scar.",
+        zone = "Blasted Lands",
+        subzone = "The Tainted Scar",
         icon = 3
     },
     [82890] = {
@@ -8363,7 +8702,8 @@ AV_VanityItems = {
         creaturePreview = 14225,
         creatureId = 14225,
         description = "Has a chance to drop from Prince Kellen within Sargeron.",
-        zone = "Sargeron.",
+        zone = "Desolace",
+        subzone = "Sargeron",
         icon = 3
     },
     [82981] = {
@@ -8372,7 +8712,7 @@ AV_VanityItems = {
         creaturePreview = 14340,
         creatureId = 14340,
         description = "Has a chance to drop from Alshirr Banebreath within Jadefire Glen.",
-        zone = "Jadefire Glen.",
+        zone = "Jadefire Glen",
         icon = 3
     },
     [82982] = {
@@ -8381,7 +8721,8 @@ AV_VanityItems = {
         creaturePreview = 14467,
         creatureId = 14467,
         description = "Has a chance to drop from Kroshius within Shatter Scar Vale.",
-        zone = "Shatter Scar Vale.",
+        zone = "Felwood",
+        subzone = "Shatter Scar Vale",
         icon = 3
     },
     [82983] = {
@@ -8390,7 +8731,8 @@ AV_VanityItems = {
         creaturePreview = 14502,
         creatureId = 14502,
         description = "Has a chance to drop from Xorothian Dreadsteed within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82985] = {
@@ -8399,7 +8741,8 @@ AV_VanityItems = {
         creaturePreview = 14506,
         creatureId = 14506,
         description = "Has a chance to drop from Lord Hel'nurath within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [82996] = {
@@ -8408,7 +8751,7 @@ AV_VanityItems = {
         creaturePreview = 14530,
         creatureId = 14530,
         description = "Has a chance to drop from Solenor the Slayer within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 3
     },
     [83017] = {
@@ -8417,7 +8760,7 @@ AV_VanityItems = {
         creaturePreview = 14535,
         creatureId = 14535,
         description = "Has a chance to drop from Artorius the Doombringer within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 3
     },
     [83033] = {
@@ -8426,7 +8769,7 @@ AV_VanityItems = {
         creaturePreview = 15625,
         creatureId = 15625,
         description = "Has a chance to drop from Twilight Corrupter within Twilight Grove.",
-        zone = "Twilight Grove.",
+        zone = "Twilight Grove",
         icon = 3
     },
     [83035] = {
@@ -8435,7 +8778,7 @@ AV_VanityItems = {
         creaturePreview = 16943,
         creatureId = 16943,
         description = "Has a chance to drop from Cyber-Rage Forgelord within Forge Base: Gehenna.",
-        zone = "Forge Base: Gehenna.",
+        subzone = "Forge Base: Gehenna",
         icon = 3
     },
     [83036] = {
@@ -8444,7 +8787,7 @@ AV_VanityItems = {
         creaturePreview = 16944,
         creatureId = 16944,
         description = "Has a chance to drop from Mo'arg Doomsmith within The Scrap Field.",
-        zone = "The Scrap Field.",
+        zone = "The Scrap Field",
         icon = 3
     },
     [83053] = {
@@ -8453,7 +8796,7 @@ AV_VanityItems = {
         creaturePreview = 16945,
         creatureId = 16945,
         description = "Has a chance to drop from Mo'arg Engineer within Forge Camp: Hate.",
-        zone = "Forge Camp: Hate.",
+        subzone = "Forge Camp: Hate",
         icon = 3
     },
     [83067] = {
@@ -8462,7 +8805,7 @@ AV_VanityItems = {
         creaturePreview = 91358,
         creatureId = 91358,
         description = "Has a chance to drop from Mo'arg Forgefiend within Forge Camp: Mageddon.",
-        zone = "Forge Camp: Mageddon.",
+        subzone = "Forge Camp: Mageddon",
         icon = 3
     },
     [83068] = {
@@ -8471,7 +8814,7 @@ AV_VanityItems = {
         creaturePreview = 16947,
         creatureId = 16947,
         description = "Has a chance to drop from Gan'arg Servant within Forge Camp: Mageddon.",
-        zone = "Forge Camp: Mageddon.",
+        subzone = "Forge Camp: Mageddon",
         icon = 3
     },
     [83069] = {
@@ -8480,7 +8823,7 @@ AV_VanityItems = {
         creaturePreview = 16948,
         creatureId = 16948,
         description = "Has a chance to drop from Gan'arg Engineer within The Scrap Field.",
-        zone = "The Scrap Field.",
+        zone = "The Scrap Field",
         icon = 3
     },
     [83070] = {
@@ -8489,7 +8832,7 @@ AV_VanityItems = {
         creaturePreview = 16949,
         creatureId = 16949,
         description = "Has a chance to drop from Gan'arg Mekgineer within Forge Base: Oblivion.",
-        zone = "Forge Base: Oblivion.",
+        subzone = "Forge Base: Oblivion",
         icon = 3
     },
     [83077] = {
@@ -8498,7 +8841,7 @@ AV_VanityItems = {
         creaturePreview = 16951,
         creatureId = 16951,
         description = "Has a chance to drop from Terrorfiend within Pools of Aggonar.",
-        zone = "Pools of Aggonar.",
+        zone = "Pools of Aggonar",
         icon = 3
     },
     [83091] = {
@@ -8507,7 +8850,7 @@ AV_VanityItems = {
         creaturePreview = 16959,
         creatureId = 16959,
         description = "Has a chance to drop from Dread Tactician within The Legion Front.",
-        zone = "The Legion Front.",
+        zone = "The Legion Front",
         icon = 3
     },
     [83093] = {
@@ -8516,7 +8859,7 @@ AV_VanityItems = {
         creaturePreview = 17058,
         creatureId = 17058,
         description = "Has a chance to drop from Illidari Taskmaster within Ruins of Sha'naar.",
-        zone = "Ruins of Sha'naar.",
+        subzone = "Ruins of Sha'naar",
         icon = 3
     },
     [83098] = {
@@ -8525,7 +8868,7 @@ AV_VanityItems = {
         creaturePreview = 17151,
         creatureId = 17151,
         description = "Has a chance to drop from Gan'arg Tinkerer within Forge Camp: Hate.",
-        zone = "Forge Camp: Hate.",
+        subzone = "Forge Camp: Hate",
         icon = 3
     },
     [83100] = {
@@ -8534,7 +8877,7 @@ AV_VanityItems = {
         creaturePreview = 17300,
         creatureId = 17300,
         description = "Has a chance to drop from Gorgannon within Demon Fall Canyon.",
-        zone = "Demon Fall Canyon.",
+        zone = "Demon Fall Canyon",
         icon = 3
     },
     [83102] = {
@@ -8543,7 +8886,8 @@ AV_VanityItems = {
         creaturePreview = 17337,
         creatureId = 17337,
         description = "Has a chance to drop from Nazzivus Satyr within Nazzivian.",
-        zone = "Nazzivian.",
+        zone = "Bloodmyst Isle",
+        subzone = "Nazzivian",
         icon = 3
     },
     [83103] = {
@@ -8552,7 +8896,8 @@ AV_VanityItems = {
         creaturePreview = 17338,
         creatureId = 17338,
         description = "Has a chance to drop from Nazzivus Rogue within Nazzivian.",
-        zone = "Nazzivian.",
+        zone = "Bloodmyst Isle",
+        subzone = "Nazzivian",
         icon = 3
     },
     [83104] = {
@@ -8561,7 +8906,8 @@ AV_VanityItems = {
         creaturePreview = 17339,
         creatureId = 17339,
         description = "Has a chance to drop from Nazzivus Felsworn within Nazzivian.",
-        zone = "Nazzivian.",
+        zone = "Bloodmyst Isle",
+        subzone = "Nazzivian",
         icon = 3
     },
     [83105] = {
@@ -8570,7 +8916,7 @@ AV_VanityItems = {
         creaturePreview = 17340,
         creatureId = 17340,
         description = "Has a chance to drop from Axxarien Shadowstalker within Axxarien.",
-        zone = "Axxarien.",
+        zone = "Axxarien",
         icon = 3
     },
     [83106] = {
@@ -8579,7 +8925,7 @@ AV_VanityItems = {
         creaturePreview = 17341,
         creatureId = 17341,
         description = "Has a chance to drop from Axxarien Trickster within Axxarien.",
-        zone = "Axxarien.",
+        zone = "Axxarien",
         icon = 3
     },
     [83108] = {
@@ -8588,7 +8934,7 @@ AV_VanityItems = {
         creaturePreview = 17342,
         creatureId = 17342,
         description = "Has a chance to drop from Axxarien Hellcaller within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 3
     },
     [83111] = {
@@ -8597,7 +8943,7 @@ AV_VanityItems = {
         creaturePreview = 17477,
         creatureId = 17477,
         description = "Has a chance to drop from Hellfire Imp within The Blood Furnace.",
-        zone = "The Blood Furnace.",
+        zone = "The Blood Furnace",
         icon = 3
     },
     [83112] = {
@@ -8606,7 +8952,7 @@ AV_VanityItems = {
         creaturePreview = 17494,
         creatureId = 17494,
         description = "Has a chance to drop from Zevrax within Axxarien.",
-        zone = "Axxarien.",
+        zone = "Axxarien",
         icon = 3
     },
     [83113] = {
@@ -8615,7 +8961,8 @@ AV_VanityItems = {
         creaturePreview = 17524,
         creatureId = 17524,
         description = "Has a chance to drop from Nazzivus Summoner within Nazzivian.",
-        zone = "Nazzivian.",
+        zone = "Bloodmyst Isle",
+        subzone = "Nazzivian",
         icon = 3
     },
     [83115] = {
@@ -8624,7 +8971,7 @@ AV_VanityItems = {
         creaturePreview = 17830,
         creatureId = 17830,
         description = "Has a chance to drop from Zelemar the Wrathful within Ragefire Chasm.",
-        zone = "Ragefire Chasm.",
+        zone = "Ragefire Chasm",
         icon = 3
     },
     [83132] = {
@@ -8633,7 +8980,7 @@ AV_VanityItems = {
         creaturePreview = 18536,
         creatureId = 18536,
         description = "Has a chance to drop from Xirkos, Overseer of Fear within Forge Camp: Fear.",
-        zone = "Forge Camp: Fear.",
+        subzone = "Forge Camp: Fear",
         icon = 3
     },
     [83133] = {
@@ -8642,7 +8989,7 @@ AV_VanityItems = {
         creaturePreview = 18567,
         creatureId = 18567,
         description = "Has a chance to drop from Mo'arg Master Planner within Forge Camp: Hate.",
-        zone = "Forge Camp: Hate.",
+        subzone = "Forge Camp: Hate",
         icon = 3
     },
     [83139] = {
@@ -8651,7 +8998,7 @@ AV_VanityItems = {
         creaturePreview = 18641,
         creatureId = 18641,
         description = "Has a chance to drop from Cabal Familiar within Shadow Labyrinth.",
-        zone = "Shadow Labyrinth.",
+        zone = "Shadow Labyrinth",
         icon = 3
     },
     [83140] = {
@@ -8660,7 +9007,7 @@ AV_VanityItems = {
         creaturePreview = 18660,
         creatureId = 18660,
         description = "Has a chance to drop from Subjugator Vaz'shir within Spirit Fields.",
-        zone = "Spirit Fields.",
+        zone = "Spirit Fields",
         icon = 3
     },
     [83154] = {
@@ -8669,7 +9016,7 @@ AV_VanityItems = {
         creaturePreview = 18661,
         creatureId = 18661,
         description = "Has a chance to drop from Terrorguard within Oshu'gun.",
-        zone = "Oshu'gun.",
+        zone = "Oshu'gun",
         icon = 3
     },
     [83155] = {
@@ -8678,7 +9025,7 @@ AV_VanityItems = {
         creaturePreview = 18679,
         creatureId = 18679,
         description = "Has a chance to drop from Vorakem Doomspeaker within The Legion Front.",
-        zone = "The Legion Front.",
+        zone = "The Legion Front",
         icon = 3
     },
     [83240] = {
@@ -8687,7 +9034,7 @@ AV_VanityItems = {
         creaturePreview = 18694,
         creatureId = 18694,
         description = "Has a chance to drop from Collidus the Warp-Watcher within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 3
     },
     [83241] = {
@@ -8696,7 +9043,8 @@ AV_VanityItems = {
         creaturePreview = 18695,
         creatureId = 18695,
         description = "Has a chance to drop from Ambassador Jerrikar within Illidari Point.",
-        zone = "Illidari Point.",
+        zone = "Illidari Point",
+        subzone = "Illidari Point",
         icon = 3
     },
     [83242] = {
@@ -8705,7 +9053,7 @@ AV_VanityItems = {
         creaturePreview = 18696,
         creatureId = 18696,
         description = "Has a chance to drop from Kraator within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 3
     },
     [83244] = {
@@ -8714,7 +9062,7 @@ AV_VanityItems = {
         creaturePreview = 18827,
         creatureId = 18827,
         description = "Has a chance to drop from Gan'arg Sapper within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 3
     },
     [83250] = {
@@ -8723,7 +9071,7 @@ AV_VanityItems = {
         creaturePreview = 18848,
         creatureId = 18848,
         description = "Has a chance to drop from Malicious Instructor within Shadow Labyrinth.",
-        zone = "Shadow Labyrinth.",
+        zone = "Shadow Labyrinth",
         icon = 3
     },
     [83251] = {
@@ -8732,7 +9080,7 @@ AV_VanityItems = {
         creaturePreview = 18858,
         creatureId = 18858,
         description = "Has a chance to drop from Wrathbringer within Invasion Point: Overlord.",
-        zone = "Invasion Point: Overlord.",
+        subzone = "Invasion Point: Overlord",
         icon = 3
     },
     [83252] = {
@@ -8741,7 +9089,7 @@ AV_VanityItems = {
         creaturePreview = 18859,
         creatureId = 18859,
         description = "Has a chance to drop from Wrath Priestess within Forge Base: Gehenna.",
-        zone = "Forge Base: Gehenna.",
+        subzone = "Forge Base: Gehenna",
         icon = 3
     },
     [83253] = {
@@ -8750,7 +9098,7 @@ AV_VanityItems = {
         creaturePreview = 18860,
         creatureId = 18860,
         description = "Has a chance to drop from Daughter of Destiny within Manaforge Ara.",
-        zone = "Manaforge Ara.",
+        zone = "Manaforge Ara",
         icon = 3
     },
     [83254] = {
@@ -8759,7 +9107,7 @@ AV_VanityItems = {
         creaturePreview = 18974,
         creatureId = 18974,
         description = "Has a chance to drop from Z'kral within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 3
     },
     [83620] = {
@@ -8768,7 +9116,7 @@ AV_VanityItems = {
         creaturePreview = 18975,
         creatureId = 18975,
         description = "Has a chance to drop from Wrathguard within The Legion Front.",
-        zone = "The Legion Front.",
+        zone = "The Legion Front",
         icon = 3
     },
     [83631] = {
@@ -8777,7 +9125,7 @@ AV_VanityItems = {
         creaturePreview = 18976,
         creatureId = 18976,
         description = "Has a chance to drop from Urga'zz within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 3
     },
     [83632] = {
@@ -8786,7 +9134,7 @@ AV_VanityItems = {
         creaturePreview = 18981,
         creatureId = 18981,
         description = "Has a chance to drop from Doomwhisperer within The Legion Front.",
-        zone = "The Legion Front.",
+        zone = "The Legion Front",
         icon = 3
     },
     [83635] = {
@@ -8795,7 +9143,7 @@ AV_VanityItems = {
         creaturePreview = 19016,
         creatureId = 19016,
         description = "Has a chance to drop from Hellfire Familiar within The Blood Furnace.",
-        zone = "The Blood Furnace.",
+        zone = "The Blood Furnace",
         icon = 3
     },
     [83636] = {
@@ -8804,7 +9152,7 @@ AV_VanityItems = {
         creaturePreview = 19136,
         creatureId = 19136,
         description = "Has a chance to drop from Flamewaker Imp within The Path of Anguish.",
-        zone = "The Path of Anguish.",
+        zone = "The Path of Anguish",
         icon = 3
     },
     [83637] = {
@@ -8813,7 +9161,7 @@ AV_VanityItems = {
         creaturePreview = 19192,
         creatureId = 19192,
         description = "Has a chance to drop from Mistress of Doom within Pools of Aggonar.",
-        zone = "Pools of Aggonar.",
+        zone = "Pools of Aggonar",
         icon = 3
     },
     [83640] = {
@@ -8822,7 +9170,7 @@ AV_VanityItems = {
         creaturePreview = 19231,
         creatureId = 19231,
         description = "Has a chance to drop from Mechanar Crusher within The Mechanar.",
-        zone = "The Mechanar.",
+        zone = "The Mechanar",
         icon = 3
     },
     [83641] = {
@@ -8831,7 +9179,7 @@ AV_VanityItems = {
         creaturePreview = 19261,
         creatureId = 19261,
         description = "Has a chance to drop from Infernal Warbringer within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 3
     },
     [83642] = {
@@ -8840,7 +9188,7 @@ AV_VanityItems = {
         creaturePreview = 19282,
         creatureId = 19282,
         description = "Has a chance to drop from Subjugator Shi'aziv within The Legion Front.",
-        zone = "The Legion Front.",
+        zone = "The Legion Front",
         icon = 3
     },
     [83643] = {
@@ -8849,7 +9197,7 @@ AV_VanityItems = {
         creaturePreview = 19298,
         creatureId = 19298,
         description = "Has a chance to drop from Warbringer Arix'Amal within Invasion Point: Annihilator.",
-        zone = "Invasion Point: Annihilator.",
+        subzone = "Invasion Point: Annihilator",
         icon = 3
     },
     [83762] = {
@@ -8858,7 +9206,7 @@ AV_VanityItems = {
         creaturePreview = 19299,
         creatureId = 19299,
         description = "Has a chance to drop from Deathwhisperer within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 3
     },
     [83797] = {
@@ -8867,7 +9215,7 @@ AV_VanityItems = {
         creaturePreview = 19335,
         creatureId = 19335,
         description = "Has a chance to drop from Subjugator Yalqiz within The Legion Front.",
-        zone = "The Legion Front.",
+        zone = "The Legion Front",
         icon = 3
     },
     [84103] = {
@@ -8876,7 +9224,7 @@ AV_VanityItems = {
         creaturePreview = 19354,
         creatureId = 19354,
         description = "Has a chance to drop from Arzeth the Merciless within Ruins of Sha'naar.",
-        zone = "Ruins of Sha'naar.",
+        subzone = "Ruins of Sha'naar",
         icon = 3
     },
     [84104] = {
@@ -8885,7 +9233,8 @@ AV_VanityItems = {
         creaturePreview = 19434,
         creatureId = 19434,
         description = "Has a chance to drop from Dreadcaller within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 3
     },
     [84106] = {
@@ -8894,7 +9243,7 @@ AV_VanityItems = {
         creaturePreview = 19493,
         creatureId = 19493,
         description = "Has a chance to drop from Ekkorash the Inquisitor within Netherstorm.",
-        zone = "Netherstorm.",
+        zone = "Netherstorm",
         icon = 3
     },
     [84108] = {
@@ -8903,7 +9252,8 @@ AV_VanityItems = {
         creaturePreview = 19511,
         creatureId = 19511,
         description = "Has a chance to drop from Nethervine Inciter within Hearthglen.",
-        zone = "Hearthglen.",
+        zone = "Western Plaguelands",
+        subzone = "Hearthglen",
         icon = 3
     },
     [84109] = {
@@ -8912,7 +9262,7 @@ AV_VanityItems = {
         creaturePreview = 19512,
         creatureId = 19512,
         description = "Has a chance to drop from Nethervine Reaper within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 3
     },
     [84110] = {
@@ -8921,7 +9271,7 @@ AV_VanityItems = {
         creaturePreview = 19712,
         creatureId = 19712,
         description = "Has a chance to drop from Mechanar Driller within The Mechanar.",
-        zone = "The Mechanar.",
+        zone = "The Mechanar",
         icon = 3
     },
     [84113] = {
@@ -8930,7 +9280,7 @@ AV_VanityItems = {
         creaturePreview = 19713,
         creatureId = 19713,
         description = "Has a chance to drop from Mechanar Wrecker within The Mechanar.",
-        zone = "The Mechanar.",
+        zone = "The Mechanar",
         icon = 3
     },
     [84114] = {
@@ -8939,7 +9289,7 @@ AV_VanityItems = {
         creaturePreview = 19716,
         creatureId = 19716,
         description = "Has a chance to drop from Mechanar Tinkerer within The Mechanar.",
-        zone = "The Mechanar.",
+        zone = "The Mechanar",
         icon = 3
     },
     [84115] = {
@@ -8948,7 +9298,7 @@ AV_VanityItems = {
         creaturePreview = 19738,
         creatureId = 19738,
         description = "Has a chance to drop from Doomclaw within The Scrap Field.",
-        zone = "The Scrap Field.",
+        zone = "The Scrap Field",
         icon = 3
     },
     [84116] = {
@@ -8957,7 +9307,7 @@ AV_VanityItems = {
         creaturePreview = 19740,
         creatureId = 19740,
         description = "Has a chance to drop from Wrathwalker within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 3
     },
     [84156] = {
@@ -8966,7 +9316,8 @@ AV_VanityItems = {
         creaturePreview = 19744,
         creatureId = 19744,
         description = "Has a chance to drop from Dreadwarden within Redridge Canyons.",
-        zone = "Redridge Canyons.",
+        zone = "Redridge Mountains",
+        subzone = "Redridge Canyons",
         icon = 3
     },
     [84175] = {
@@ -8975,7 +9326,8 @@ AV_VanityItems = {
         creaturePreview = 19754,
         creatureId = 19754,
         description = "Has a chance to drop from Deathforge Tinkerer within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 3
     },
     [84268] = {
@@ -8984,7 +9336,8 @@ AV_VanityItems = {
         creaturePreview = 19755,
         creatureId = 19755,
         description = "Has a chance to drop from Mo'arg Weaponsmith within Stonewatch Keep.",
-        zone = "Stonewatch Keep.",
+        zone = "Redridge Mountains",
+        subzone = "Stonewatch Keep",
         icon = 3
     },
     [84269] = {
@@ -8993,7 +9346,8 @@ AV_VanityItems = {
         creaturePreview = 19756,
         creatureId = 19756,
         description = "Has a chance to drop from Deathforge Smith within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 3
     },
     [84270] = {
@@ -9002,7 +9356,7 @@ AV_VanityItems = {
         creaturePreview = 19759,
         creatureId = 19759,
         description = "Has a chance to drop from Newly Crafted Infernal within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 3
     },
     [84271] = {
@@ -9011,7 +9365,8 @@ AV_VanityItems = {
         creaturePreview = 19760,
         creatureId = 19760,
         description = "Has a chance to drop from Cooling Infernal within The Deathforge.",
-        zone = "The Deathforge.",
+        zone = "Shadowmoon Valley",
+        subzone = "The Deathforge",
         icon = 3
     },
     [84296] = {
@@ -9020,7 +9375,8 @@ AV_VanityItems = {
         creaturePreview = 19799,
         creatureId = 19799,
         description = "Has a chance to drop from Illidari Dreadbringer within Illidari Point.",
-        zone = "Illidari Point.",
+        zone = "Illidari Point",
+        subzone = "Illidari Point",
         icon = 3
     },
     [84297] = {
@@ -9029,7 +9385,7 @@ AV_VanityItems = {
         creaturePreview = 19801,
         creatureId = 19801,
         description = "Has a chance to drop from Illidari Agonizer within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 3
     },
     [84298] = {
@@ -9038,7 +9394,8 @@ AV_VanityItems = {
         creaturePreview = 19843,
         creatureId = 19843,
         description = "Has a chance to drop from Nethervine Trickster within Felstone Field.",
-        zone = "Felstone Field.",
+        zone = "Western Plaguelands",
+        subzone = "Felstone Field",
         icon = 3
     },
     [84299] = {
@@ -9047,7 +9404,8 @@ AV_VanityItems = {
         creaturePreview = 19853,
         creatureId = 19853,
         description = "Has a chance to drop from Felblade Doomguard within Gnarlpine Hold.",
-        zone = "Gnarlpine Hold.",
+        zone = "Teldrassil",
+        subzone = "Gnarlpine Hold",
         icon = 3
     },
     [84300] = {
@@ -9056,7 +9414,7 @@ AV_VanityItems = {
         creaturePreview = 19961,
         creatureId = 19961,
         description = "Has a chance to drop from Doomforge Attendant within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 3
     },
     [84301] = {
@@ -9065,7 +9423,7 @@ AV_VanityItems = {
         creaturePreview = 19963,
         creatureId = 19963,
         description = "Has a chance to drop from Doomcryer within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [84304] = {
@@ -9074,7 +9432,7 @@ AV_VanityItems = {
         creaturePreview = 19971,
         creatureId = 19971,
         description = "Has a chance to drop from Dreadforge Servant within The Talon Den.",
-        zone = "The Talon Den.",
+        subzone = "The Talon Den",
         icon = 3
     },
     [84305] = {
@@ -9083,7 +9441,8 @@ AV_VanityItems = {
         creaturePreview = 19973,
         creatureId = 19973,
         description = "Has a chance to drop from Abyssal Flamebringer within The Shining Strand.",
-        zone = "The Shining Strand.",
+        zone = "Silverpine Forest",
+        subzone = "The Shining Strand",
         icon = 3
     },
     [84306] = {
@@ -9092,7 +9451,8 @@ AV_VanityItems = {
         creaturePreview = 19978,
         creatureId = 19978,
         description = "Has a chance to drop from Deathforge Over-Smith within Galardell Valley.",
-        zone = "Galardell Valley.",
+        zone = "Redridge Mountains",
+        subzone = "Galardell Valley",
         icon = 3
     },
     [84307] = {
@@ -9101,7 +9461,7 @@ AV_VanityItems = {
         creaturePreview = 19979,
         creatureId = 19979,
         description = "Has a chance to drop from Deathforge Technician within Death's Door.",
-        zone = "Death's Door.",
+        zone = "Death's Door",
         icon = 3
     },
     [84308] = {
@@ -9110,7 +9470,7 @@ AV_VanityItems = {
         creaturePreview = 19980,
         creatureId = 19980,
         description = "Has a chance to drop from Void Terror within Death's Door.",
-        zone = "Death's Door.",
+        zone = "Death's Door",
         icon = 3
     },
     [84309] = {
@@ -9119,7 +9479,7 @@ AV_VanityItems = {
         creaturePreview = 20052,
         creatureId = 20052,
         description = "Has a chance to drop from Crystalcore Mechanic within Tempest Keep.",
-        zone = "Tempest Keep.",
+        subzone = "Tempest Keep",
         icon = 3
     },
     [84310] = {
@@ -9128,7 +9488,7 @@ AV_VanityItems = {
         creaturePreview = 20138,
         creatureId = 20138,
         description = "Has a chance to drop from Culuthas within Ruins of Farahlon.",
-        zone = "Ruins of Farahlon.",
+        subzone = "Ruins of Farahlon",
         icon = 3
     },
     [84311] = {
@@ -9137,7 +9497,7 @@ AV_VanityItems = {
         creaturePreview = 20141,
         creatureId = 20141,
         description = "Has a chance to drop from Hound of Culuthas within Raynewood Retreat.",
-        zone = "Raynewood Retreat.",
+        zone = "Raynewood Retreat",
         icon = 3
     },
     [84312] = {
@@ -9146,7 +9506,7 @@ AV_VanityItems = {
         creaturePreview = 20215,
         creatureId = 20215,
         description = "Has a chance to drop from Pentatharon within Arklon Ruins.",
-        zone = "Arklon Ruins.",
+        subzone = "Arklon Ruins",
         icon = 3
     },
     [84313] = {
@@ -9155,7 +9515,7 @@ AV_VanityItems = {
         creaturePreview = 20285,
         creatureId = 20285,
         description = "Has a chance to drop from Gan'arg Warp-Tinker within Manaforge Ara.",
-        zone = "Manaforge Ara.",
+        zone = "Manaforge Ara",
         icon = 3
     },
     [84314] = {
@@ -9164,7 +9524,7 @@ AV_VanityItems = {
         creaturePreview = 20326,
         creatureId = 20326,
         description = "Has a chance to drop from Mo'arg Warp-Master within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 3
     },
     [84315] = {
@@ -9173,7 +9533,7 @@ AV_VanityItems = {
         creaturePreview = 20394,
         creatureId = 20394,
         description = "Has a chance to drop from Eye of Culuthas within Ruins of Farahlon.",
-        zone = "Ruins of Farahlon.",
+        subzone = "Ruins of Farahlon",
         icon = 3
     },
     [84316] = {
@@ -9182,7 +9542,7 @@ AV_VanityItems = {
         creaturePreview = 20404,
         creatureId = 20404,
         description = "Has a chance to drop from Warp-Gate Engineer within Invasion Point: Destroyer.",
-        zone = "Invasion Point: Destroyer.",
+        subzone = "Invasion Point: Destroyer",
         icon = 3
     },
     [84317] = {
@@ -9191,7 +9551,8 @@ AV_VanityItems = {
         creaturePreview = 20427,
         creatureId = 20427,
         description = "Has a chance to drop from Veneratus the Many within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 3
     },
     [84318] = {
@@ -9200,7 +9561,7 @@ AV_VanityItems = {
         creaturePreview = 20557,
         creatureId = 20557,
         description = "Has a chance to drop from Wrath Hound within Dalson's Tears.",
-        zone = "Dalson's Tears.",
+        zone = "Dalson's Tears",
         icon = 3
     },
     [84319] = {
@@ -9209,7 +9570,7 @@ AV_VanityItems = {
         creaturePreview = 20680,
         creatureId = 20680,
         description = "Has a chance to drop from Arzeth the Powerless within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 3
     },
     [84350] = {
@@ -9218,7 +9579,8 @@ AV_VanityItems = {
         creaturePreview = 20683,
         creatureId = 20683,
         description = "Has a chance to drop from Prophetess Cavrylin within Legion Hold.",
-        zone = "Legion Hold.",
+        zone = "Shadowmoon Valley",
+        subzone = "Legion Hold",
         icon = 3
     },
     [84368] = {
@@ -9227,7 +9589,7 @@ AV_VanityItems = {
         creaturePreview = 20685,
         creatureId = 20685,
         description = "Has a chance to drop from Overseer Azarad within Manaforge Ara.",
-        zone = "Manaforge Ara.",
+        zone = "Manaforge Ara",
         icon = 3
     },
     [84398] = {
@@ -9236,7 +9598,7 @@ AV_VanityItems = {
         creaturePreview = 20784,
         creatureId = 20784,
         description = "Has a chance to drop from Armbreaker Huffaz within Magisters' Terrace.",
-        zone = "Magisters' Terrace.",
+        subzone = "Magisters' Terrace",
         icon = 3
     },
     [84496] = {
@@ -9245,7 +9607,7 @@ AV_VanityItems = {
         creaturePreview = 20789,
         creatureId = 20789,
         description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Netherstorm.",
-        zone = "Netherstorm.",
+        zone = "Netherstorm",
         icon = 3
     },
     [84585] = {
@@ -9254,7 +9616,7 @@ AV_VanityItems = {
         creaturePreview = 20798,
         creatureId = 20798,
         description = "Has a chance to drop from Razorsaw within Forge Camp: Mageddon.",
-        zone = "Forge Camp: Mageddon.",
+        subzone = "Forge Camp: Mageddon",
         icon = 3
     },
     [84615] = {
@@ -9263,7 +9625,7 @@ AV_VanityItems = {
         creaturePreview = 20800,
         creatureId = 20800,
         description = "Has a chance to drop from Forgemaster Morug within Forge Base: Oblivion.",
-        zone = "Forge Base: Oblivion.",
+        subzone = "Forge Base: Oblivion",
         icon = 3
     },
     [84616] = {
@@ -9272,7 +9634,7 @@ AV_VanityItems = {
         creaturePreview = 20801,
         creatureId = 20801,
         description = "Has a chance to drop from Silroth within Forge Base: Gehenna.",
-        zone = "Forge Base: Gehenna.",
+        subzone = "Forge Base: Gehenna",
         icon = 3
     },
     [84645] = {
@@ -9281,7 +9643,7 @@ AV_VanityItems = {
         creaturePreview = 20803,
         creatureId = 20803,
         description = "Has a chance to drop from Overmaster Grindgarr within Trelleum Mine.",
-        zone = "Trelleum Mine.",
+        subzone = "Trelleum Mine",
         icon = 3
     },
     [84647] = {
@@ -9290,7 +9652,7 @@ AV_VanityItems = {
         creaturePreview = 20866,
         creatureId = 20866,
         description = "Has a chance to drop from Soul Devourer within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84648] = {
@@ -9299,7 +9661,7 @@ AV_VanityItems = {
         creaturePreview = 20867,
         creatureId = 20867,
         description = "Has a chance to drop from Death Watcher within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84649] = {
@@ -9308,7 +9670,7 @@ AV_VanityItems = {
         creaturePreview = 20868,
         creatureId = 20868,
         description = "Has a chance to drop from Entropic Eye within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84653] = {
@@ -9317,7 +9679,8 @@ AV_VanityItems = {
         creaturePreview = 20887,
         creatureId = 20887,
         description = "Has a chance to drop from Deathforge Imp within The Deathforge.",
-        zone = "The Deathforge.",
+        zone = "Shadowmoon Valley",
+        subzone = "The Deathforge",
         icon = 3
     },
     [84654] = {
@@ -9326,7 +9689,7 @@ AV_VanityItems = {
         creaturePreview = 20898,
         creatureId = 20898,
         description = "Has a chance to drop from Gargantuan Abyssal within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84657] = {
@@ -9335,7 +9698,7 @@ AV_VanityItems = {
         creaturePreview = 20900,
         creatureId = 20900,
         description = "Has a chance to drop from Unchained Doombringer within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84658] = {
@@ -9344,7 +9707,7 @@ AV_VanityItems = {
         creaturePreview = 20901,
         creatureId = 20901,
         description = "Has a chance to drop from Sargeron Archer within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84659] = {
@@ -9353,7 +9716,7 @@ AV_VanityItems = {
         creaturePreview = 20902,
         creatureId = 20902,
         description = "Has a chance to drop from Sargeron Hellcaller within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [84664] = {
@@ -9362,7 +9725,7 @@ AV_VanityItems = {
         creaturePreview = 20929,
         creatureId = 20929,
         description = "Has a chance to drop from Wrath Lord within Socrethar's Seat.",
-        zone = "Socrethar's Seat.",
+        zone = "Socrethar's Seat",
         icon = 3
     },
     [84665] = {
@@ -9371,7 +9734,7 @@ AV_VanityItems = {
         creaturePreview = 20930,
         creatureId = 20930,
         description = "Has a chance to drop from Hatecryer within Socrethar's Seat.",
-        zone = "Socrethar's Seat.",
+        zone = "Socrethar's Seat",
         icon = 3
     },
     [84666] = {
@@ -9380,7 +9743,7 @@ AV_VanityItems = {
         creaturePreview = 21021,
         creatureId = 21021,
         description = "Has a chance to drop from Scorch Imp within Skald.",
-        zone = "Skald.",
+        zone = "Skald",
         icon = 3
     },
     [84667] = {
@@ -9389,7 +9752,7 @@ AV_VanityItems = {
         creaturePreview = 21166,
         creatureId = 21166,
         description = "Has a chance to drop from Illidari Dreadlord within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 3
     },
     [84754] = {
@@ -9398,7 +9761,8 @@ AV_VanityItems = {
         creaturePreview = 21314,
         creatureId = 21314,
         description = "Has a chance to drop from Terrormaster within Legion Hold.",
-        zone = "Legion Hold.",
+        zone = "Shadowmoon Valley",
+        subzone = "Legion Hold",
         icon = 3
     },
     [84755] = {
@@ -9407,7 +9771,8 @@ AV_VanityItems = {
         creaturePreview = 21337,
         creatureId = 21337,
         description = "Has a chance to drop from Illidari Shadowstalker within Illidari Point.",
-        zone = "Illidari Point.",
+        zone = "Illidari Point",
+        subzone = "Illidari Point",
         icon = 3
     },
     [84756] = {
@@ -9416,7 +9781,8 @@ AV_VanityItems = {
         creaturePreview = 21499,
         creatureId = 21499,
         description = "Has a chance to drop from Overseer Ripsaw within Legion Hold.",
-        zone = "Legion Hold.",
+        zone = "Shadowmoon Valley",
+        subzone = "Legion Hold",
         icon = 3
     },
     [84760] = {
@@ -9425,7 +9791,8 @@ AV_VanityItems = {
         creaturePreview = 21500,
         creatureId = 21500,
         description = "Has a chance to drop from Morgroron within Legion Hold.",
-        zone = "Legion Hold.",
+        zone = "Shadowmoon Valley",
+        subzone = "Legion Hold",
         icon = 3
     },
     [84761] = {
@@ -9434,7 +9801,8 @@ AV_VanityItems = {
         creaturePreview = 21501,
         creatureId = 21501,
         description = "Has a chance to drop from Makazradon within Legion Hold.",
-        zone = "Legion Hold.",
+        zone = "Shadowmoon Valley",
+        subzone = "Legion Hold",
         icon = 3
     },
     [84768] = {
@@ -9443,7 +9811,8 @@ AV_VanityItems = {
         creaturePreview = 21506,
         creatureId = 21506,
         description = "Has a chance to drop from Azaloth within Ruins of Karabor.",
-        zone = "Ruins of Karabor.",
+        zone = "Shadowmoon Valley",
+        subzone = "Ruins of Karabor",
         icon = 3
     },
     [85152] = {
@@ -9452,7 +9821,7 @@ AV_VanityItems = {
         creaturePreview = 21516,
         creatureId = 21516,
         description = "Has a chance to drop from Death's Watch within Death's Door.",
-        zone = "Death's Door.",
+        zone = "Death's Door",
         icon = 3
     },
     [85154] = {
@@ -9461,7 +9830,8 @@ AV_VanityItems = {
         creaturePreview = 21520,
         creatureId = 21520,
         description = "Has a chance to drop from Illidari Jailor within Warden's Cage.",
-        zone = "Warden's Cage.",
+        zone = "Shadowmoon Valley",
+        subzone = "Warden's Cage",
         icon = 3
     },
     [85155] = {
@@ -9470,7 +9840,7 @@ AV_VanityItems = {
         creaturePreview = 21656,
         creatureId = 21656,
         description = "Has a chance to drop from Illidari Satyr within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 3
     },
     [85156] = {
@@ -9479,7 +9849,8 @@ AV_VanityItems = {
         creaturePreview = 21808,
         creatureId = 21808,
         description = "Has a chance to drop from Illidari Overseer within Ruins of Baa'ri.",
-        zone = "Ruins of Baa'ri.",
+        zone = "Shadowmoon Valley",
+        subzone = "Ruins of Baa'ri",
         icon = 3
     },
     [85157] = {
@@ -9488,7 +9859,8 @@ AV_VanityItems = {
         creaturePreview = 21827,
         creatureId = 21827,
         description = "Has a chance to drop from Zandras within Warden's Cage.",
-        zone = "Warden's Cage.",
+        zone = "Shadowmoon Valley",
+        subzone = "Warden's Cage",
         icon = 3
     },
     [85195] = {
@@ -9497,7 +9869,7 @@ AV_VanityItems = {
         creaturePreview = 21923,
         creatureId = 21923,
         description = "Has a chance to drop from Terrorguard Protector within Forge Base: Oblivion.",
-        zone = "Forge Base: Oblivion.",
+        subzone = "Forge Base: Oblivion",
         icon = 3
     },
     [85197] = {
@@ -9506,7 +9878,8 @@ AV_VanityItems = {
         creaturePreview = 21928,
         creatureId = 21928,
         description = "Has a chance to drop from Lothros within Illidari Point.",
-        zone = "Illidari Point.",
+        zone = "Illidari Point",
+        subzone = "Illidari Point",
         icon = 3
     },
     [85201] = {
@@ -9515,7 +9888,8 @@ AV_VanityItems = {
         creaturePreview = 21963,
         creatureId = 21963,
         description = "Has a chance to drop from Enslaved Doomguard within Auchindoun.",
-        zone = "Auchindoun.",
+        zone = "Terokkar Forest",
+        subzone = "Auchindoun",
         icon = 3
     },
     [85202] = {
@@ -9524,7 +9898,7 @@ AV_VanityItems = {
         creaturePreview = 22195,
         creatureId = 22195,
         description = "Has a chance to drop from Wrath Speaker within Forge Camp: Wrath.",
-        zone = "Forge Camp: Wrath.",
+        subzone = "Forge Camp: Wrath",
         icon = 3
     },
     [85207] = {
@@ -9533,7 +9907,7 @@ AV_VanityItems = {
         creaturePreview = 22204,
         creatureId = 22204,
         description = "Has a chance to drop from Fear Fiend within Forge Camp: Terror.",
-        zone = "Forge Camp: Terror.",
+        subzone = "Forge Camp: Terror",
         icon = 3
     },
     [85209] = {
@@ -9542,7 +9916,7 @@ AV_VanityItems = {
         creaturePreview = 22281,
         creatureId = 22281,
         description = "Has a chance to drop from Galvanoth within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [85243] = {
@@ -9551,7 +9925,7 @@ AV_VanityItems = {
         creaturePreview = 22304,
         creatureId = 22304,
         description = "Has a chance to drop from Mo'arg Extractor within Forge Camp: Terror.",
-        zone = "Forge Camp: Terror.",
+        subzone = "Forge Camp: Terror",
         icon = 3
     },
     [85246] = {
@@ -9560,7 +9934,7 @@ AV_VanityItems = {
         creaturePreview = 22825,
         creatureId = 22825,
         description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [85247] = {
@@ -9569,7 +9943,7 @@ AV_VanityItems = {
         creaturePreview = 22827,
         creatureId = 22827,
         description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [85257] = {
@@ -9578,7 +9952,7 @@ AV_VanityItems = {
         creaturePreview = 22828,
         creatureId = 22828,
         description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [85258] = {
@@ -9587,7 +9961,8 @@ AV_VanityItems = {
         creaturePreview = 22853,
         creatureId = 22853,
         description = "Has a chance to drop from Illidari Defiler within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 3
     },
     [85259] = {
@@ -9596,7 +9971,8 @@ AV_VanityItems = {
         creaturePreview = 22855,
         creatureId = 22855,
         description = "Has a chance to drop from Illidari Nightlord within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 3
     },
     [85260] = {
@@ -9605,7 +9981,8 @@ AV_VanityItems = {
         creaturePreview = 22869,
         creatureId = 22869,
         description = "Has a chance to drop from Illidari Boneslicer within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 3
     },
     [85503] = {
@@ -9614,7 +9991,7 @@ AV_VanityItems = {
         creaturePreview = 22954,
         creatureId = 22954,
         description = "Has a chance to drop from Illidari Fearbringer within Illidari Training Grounds.",
-        zone = "Illidari Training Grounds.",
+        zone = "Illidari Training Grounds",
         icon = 3
     },
     [85511] = {
@@ -9623,7 +10000,8 @@ AV_VanityItems = {
         creaturePreview = 22957,
         creatureId = 22957,
         description = "Has a chance to drop from Priestess of Dementia within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 3
     },
     [85564] = {
@@ -9632,7 +10010,8 @@ AV_VanityItems = {
         creaturePreview = 22962,
         creatureId = 22962,
         description = "Has a chance to drop from Priestess of Delight within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 3
     },
     [85565] = {
@@ -9641,7 +10020,7 @@ AV_VanityItems = {
         creaturePreview = 23174,
         creatureId = 23174,
         description = "Has a chance to drop from Crystalfused Miner within Forge Camp: Terror.",
-        zone = "Forge Camp: Terror.",
+        subzone = "Forge Camp: Terror",
         icon = 3
     },
     [85579] = {
@@ -9650,7 +10029,8 @@ AV_VanityItems = {
         creaturePreview = 23339,
         creatureId = 23339,
         description = "Has a chance to drop from Illidari Heartseeker within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 3
     },
     [85586] = {
@@ -9659,7 +10039,7 @@ AV_VanityItems = {
         creaturePreview = 23353,
         creatureId = 23353,
         description = "Has a chance to drop from Braxxus within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [85637] = {
@@ -9668,7 +10048,7 @@ AV_VanityItems = {
         creaturePreview = 23355,
         creatureId = 23355,
         description = "Has a chance to drop from Zarcsin within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 3
     },
     [85690] = {
@@ -9677,7 +10057,7 @@ AV_VanityItems = {
         creaturePreview = 23386,
         creatureId = 23386,
         description = "Has a chance to drop from Gan'arg Analyzer within Vortex Pinnacle.",
-        zone = "Vortex Pinnacle.",
+        zone = "Vortex Pinnacle",
         icon = 3
     },
     [85702] = {
@@ -9686,7 +10066,7 @@ AV_VanityItems = {
         creaturePreview = 24919,
         creatureId = 24919,
         description = "Has a chance to drop from Wrath Herald within Throne of Kil'jaeden.",
-        zone = "Throne of Kil'jaeden.",
+        subzone = "Throne of Kil'jaeden",
         icon = 3
     },
     [85703] = {
@@ -9695,7 +10075,7 @@ AV_VanityItems = {
         creaturePreview = 24999,
         creatureId = 24999,
         description = "Has a chance to drop from Irespeaker within The Dawning Square.",
-        zone = "The Dawning Square.",
+        zone = "The Dawning Square",
         icon = 3
     },
     [85704] = {
@@ -9704,7 +10084,7 @@ AV_VanityItems = {
         creaturePreview = 25001,
         creatureId = 25001,
         description = "Has a chance to drop from Abyssal Flamewalker within The Dawning Square.",
-        zone = "The Dawning Square.",
+        zone = "The Dawning Square",
         icon = 3
     },
     [85705] = {
@@ -9713,7 +10093,7 @@ AV_VanityItems = {
         creaturePreview = 25002,
         creatureId = 25002,
         description = "Has a chance to drop from Unleashed Hellion within The Dawning Square.",
-        zone = "The Dawning Square.",
+        zone = "The Dawning Square",
         icon = 3
     },
     [85710] = {
@@ -9722,7 +10102,7 @@ AV_VanityItems = {
         creaturePreview = 25593,
         creatureId = 25593,
         description = "Has a chance to drop from Apocalypse Guard within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [85713] = {
@@ -9731,7 +10111,7 @@ AV_VanityItems = {
         creaturePreview = 25595,
         creatureId = 25595,
         description = "Has a chance to drop from Chaos Gazer within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [85714] = {
@@ -9740,7 +10120,7 @@ AV_VanityItems = {
         creaturePreview = 25599,
         creatureId = 25599,
         description = "Has a chance to drop from Cataclysm Hound within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [85715] = {
@@ -9749,7 +10129,7 @@ AV_VanityItems = {
         creaturePreview = 29316,
         creatureId = 29316,
         description = "Has a chance to drop from Moragg within The Violet Hold.",
-        zone = "The Violet Hold.",
+        subzone = "The Violet Hold",
         icon = 3
     },
     [85717] = {
@@ -9758,7 +10138,7 @@ AV_VanityItems = {
         creaturePreview = 42850,
         creatureId = 42850,
         description = "Has a chance to drop from Irespeaker within The Dawning Square.",
-        zone = "The Dawning Square.",
+        zone = "The Dawning Square",
         icon = 3
     },
     [85718] = {
@@ -9767,7 +10147,7 @@ AV_VanityItems = {
         creaturePreview = 3,
         creatureId = 3,
         description = "Has a chance to drop from Flesh Eater within Duskwood.",
-        zone = "Duskwood.",
+        zone = "Duskwood",
         icon = 2
     },
     [85719] = {
@@ -9776,7 +10156,7 @@ AV_VanityItems = {
         creaturePreview = 48,
         creatureId = 48,
         description = "Has a chance to drop from Skeletal Warrior within Duskwood.",
-        zone = "Duskwood.",
+        zone = "Duskwood",
         icon = 2
     },
     [85720] = {
@@ -9785,7 +10165,7 @@ AV_VanityItems = {
         creaturePreview = 202,
         creatureId = 202,
         description = "Has a chance to drop from Skeletal Horror within Duskwood.",
-        zone = "Duskwood.",
+        zone = "Duskwood",
         icon = 2
     },
     [85721] = {
@@ -9794,7 +10174,8 @@ AV_VanityItems = {
         creaturePreview = 203,
         creatureId = 203,
         description = "Has a chance to drop from Skeletal Mage within Tranquil Gardens Cemetery.",
-        zone = "Tranquil Gardens Cemetery.",
+        zone = "Duskwood",
+        subzone = "Tranquil Gardens Cemetery",
         icon = 2
     },
     [85722] = {
@@ -9803,7 +10184,7 @@ AV_VanityItems = {
         creaturePreview = 210,
         creatureId = 210,
         description = "Has a chance to drop from Bone Chewer within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85723] = {
@@ -9812,7 +10193,7 @@ AV_VanityItems = {
         creaturePreview = 314,
         creatureId = 314,
         description = "Has a chance to drop from Eliza within Duskwood.",
-        zone = "Duskwood.",
+        zone = "Duskwood",
         icon = 2
     },
     [85745] = {
@@ -9821,7 +10202,7 @@ AV_VanityItems = {
         creaturePreview = 412,
         creatureId = 412,
         description = "Has a chance to drop from Stitches within Duskwood.",
-        zone = "Duskwood.",
+        zone = "Duskwood",
         icon = 2
     },
     [85746] = {
@@ -9830,7 +10211,7 @@ AV_VanityItems = {
         creaturePreview = 503,
         creatureId = 503,
         description = "Has a chance to drop from Lord Malathrom within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85747] = {
@@ -9839,7 +10220,8 @@ AV_VanityItems = {
         creaturePreview = 511,
         creatureId = 511,
         description = "Has a chance to drop from Insane Ghoul within Tranquil Gardens Cemetery.",
-        zone = "Tranquil Gardens Cemetery.",
+        zone = "Duskwood",
+        subzone = "Tranquil Gardens Cemetery",
         icon = 2
     },
     [85753] = {
@@ -9848,7 +10230,7 @@ AV_VanityItems = {
         creaturePreview = 522,
         creatureId = 522,
         description = "Has a chance to drop from Mor'Ladim within Forlorn Rowe.",
-        zone = "Forlorn Rowe.",
+        zone = "Forlorn Rowe",
         icon = 2
     },
     [85775] = {
@@ -9857,7 +10239,8 @@ AV_VanityItems = {
         creaturePreview = 531,
         creatureId = 531,
         description = "Has a chance to drop from Skeletal Fiend within Raven Hill Cemetery.",
-        zone = "Raven Hill Cemetery.",
+        zone = "Duskwood",
+        subzone = "Raven Hill Cemetery",
         icon = 2
     },
     [85779] = {
@@ -9866,7 +10249,7 @@ AV_VanityItems = {
         creaturePreview = 570,
         creatureId = 570,
         description = "Has a chance to drop from Brain Eater within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85855] = {
@@ -9875,7 +10258,7 @@ AV_VanityItems = {
         creaturePreview = 572,
         creatureId = 572,
         description = "Has a chance to drop from Leprithus within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 2
     },
     [85856] = {
@@ -9884,7 +10267,7 @@ AV_VanityItems = {
         creaturePreview = 604,
         creatureId = 604,
         description = "Has a chance to drop from Plague Spreader within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85858] = {
@@ -9893,7 +10276,8 @@ AV_VanityItems = {
         creaturePreview = 623,
         creatureId = 623,
         description = "Has a chance to drop from Skeletal Miner within The Deadmines.",
-        zone = "The Deadmines.",
+        zone = "Westfall",
+        subzone = "The Deadmines",
         icon = 2
     },
     [85859] = {
@@ -9902,7 +10286,8 @@ AV_VanityItems = {
         creaturePreview = 624,
         creatureId = 624,
         description = "Has a chance to drop from Undead Excavator within The Deadmines.",
-        zone = "The Deadmines.",
+        zone = "Westfall",
+        subzone = "The Deadmines",
         icon = 2
     },
     [85860] = {
@@ -9911,7 +10296,8 @@ AV_VanityItems = {
         creaturePreview = 625,
         creatureId = 625,
         description = "Has a chance to drop from Undead Dynamiter within The Deadmines.",
-        zone = "The Deadmines.",
+        zone = "Westfall",
+        subzone = "The Deadmines",
         icon = 2
     },
     [85872] = {
@@ -9920,7 +10306,8 @@ AV_VanityItems = {
         creaturePreview = 626,
         creatureId = 626,
         description = "Has a chance to drop from Foreman Thistlenettle within The Deadmines.",
-        zone = "The Deadmines.",
+        zone = "Westfall",
+        subzone = "The Deadmines",
         icon = 2
     },
     [85873] = {
@@ -9929,7 +10316,7 @@ AV_VanityItems = {
         creaturePreview = 771,
         creatureId = 771,
         description = "Has a chance to drop from Commander Felstrom within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85874] = {
@@ -9938,7 +10325,7 @@ AV_VanityItems = {
         creaturePreview = 785,
         creatureId = 785,
         description = "Has a chance to drop from Skeletal Warder within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85876] = {
@@ -9947,7 +10334,7 @@ AV_VanityItems = {
         creaturePreview = 787,
         creatureId = 787,
         description = "Has a chance to drop from Skeletal Healer within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85877] = {
@@ -9956,7 +10343,7 @@ AV_VanityItems = {
         creaturePreview = 846,
         creatureId = 846,
         description = "Has a chance to drop from Ghoul within Westfall.",
-        zone = "Westfall.",
+        zone = "Westfall",
         icon = 2
     },
     [85878] = {
@@ -9965,7 +10352,8 @@ AV_VanityItems = {
         creaturePreview = 948,
         creatureId = 948,
         description = "Has a chance to drop from Rotted One within Raven Hill Cemetery.",
-        zone = "Raven Hill Cemetery.",
+        zone = "Duskwood",
+        subzone = "Raven Hill Cemetery",
         icon = 2
     },
     [85879] = {
@@ -9974,7 +10362,7 @@ AV_VanityItems = {
         creaturePreview = 1110,
         creatureId = 1110,
         description = "Has a chance to drop from Skeletal Raider within Dawning Wood Catacombs.",
-        zone = "Dawning Wood Catacombs.",
+        zone = "Dawning Wood Catacombs",
         icon = 2
     },
     [85880] = {
@@ -9983,7 +10371,8 @@ AV_VanityItems = {
         creaturePreview = 1270,
         creatureId = 1270,
         description = "Has a chance to drop from Fetid Corpse within Manor Mistmantle.",
-        zone = "Manor Mistmantle.",
+        zone = "Duskwood",
+        subzone = "Manor Mistmantle",
         icon = 2
     },
     [85881] = {
@@ -9992,7 +10381,7 @@ AV_VanityItems = {
         creaturePreview = 1488,
         creatureId = 1488,
         description = "Has a chance to drop from Zanzil Zombie within The Crystal Shore.",
-        zone = "The Crystal Shore.",
+        zone = "The Crystal Shore",
         icon = 2
     },
     [85934] = {
@@ -10001,7 +10390,8 @@ AV_VanityItems = {
         creaturePreview = 1489,
         creatureId = 1489,
         description = "Has a chance to drop from Zanzil Hunter within Ruins of Aboraz.",
-        zone = "Ruins of Aboraz.",
+        zone = "Stranglethorn Vale",
+        subzone = "Ruins of Aboraz",
         icon = 2
     },
     [85964] = {
@@ -10010,7 +10400,8 @@ AV_VanityItems = {
         creaturePreview = 1501,
         creatureId = 1501,
         description = "Has a chance to drop from Mindless Zombie within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [85965] = {
@@ -10019,7 +10410,8 @@ AV_VanityItems = {
         creaturePreview = 1502,
         creatureId = 1502,
         description = "Has a chance to drop from Wretched Ghoul within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [85966] = {
@@ -10028,7 +10420,8 @@ AV_VanityItems = {
         creaturePreview = 1520,
         creatureId = 1520,
         description = "Has a chance to drop from Rattlecage Soldier within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [85967] = {
@@ -10037,7 +10430,8 @@ AV_VanityItems = {
         creaturePreview = 1522,
         creatureId = 1522,
         description = "Has a chance to drop from Darkeye Bonecaster within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [85968] = {
@@ -10046,7 +10440,8 @@ AV_VanityItems = {
         creaturePreview = 1523,
         creatureId = 1523,
         description = "Has a chance to drop from Cracked Skull Soldier within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [85969] = {
@@ -10055,7 +10450,7 @@ AV_VanityItems = {
         creaturePreview = 1525,
         creatureId = 1525,
         description = "Has a chance to drop from Rotting Dead within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 2
     },
     [85970] = {
@@ -10064,7 +10459,8 @@ AV_VanityItems = {
         creaturePreview = 1526,
         creatureId = 1526,
         description = "Has a chance to drop from Ravaged Corpse within Cold Hearth Manor.",
-        zone = "Cold Hearth Manor.",
+        zone = "Tirisfal Glades",
+        subzone = "Cold Hearth Manor",
         icon = 2
     },
     [85971] = {
@@ -10073,7 +10469,7 @@ AV_VanityItems = {
         creaturePreview = 1527,
         creatureId = 1527,
         description = "Has a chance to drop from Hungering Dead within Gunther's Retreat.",
-        zone = "Gunther's Retreat.",
+        zone = "Gunther's Retreat",
         icon = 2
     },
     [86008] = {
@@ -10082,7 +10478,8 @@ AV_VanityItems = {
         creaturePreview = 1528,
         creatureId = 1528,
         description = "Has a chance to drop from Shambling Horror within Brightwater Lake.",
-        zone = "Brightwater Lake.",
+        zone = "Tirisfal Glades",
+        subzone = "Brightwater Lake",
         icon = 2
     },
     [86072] = {
@@ -10091,7 +10488,7 @@ AV_VanityItems = {
         creaturePreview = 1529,
         creatureId = 1529,
         description = "Has a chance to drop from Bleeding Horror within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 2
     },
     [86077] = {
@@ -10100,7 +10497,8 @@ AV_VanityItems = {
         creaturePreview = 1530,
         creatureId = 1530,
         description = "Has a chance to drop from Rotting Ancestor within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [86078] = {
@@ -10109,7 +10507,7 @@ AV_VanityItems = {
         creaturePreview = 1531,
         creatureId = 1531,
         description = "Has a chance to drop from Lost Soul within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 2
     },
     [86085] = {
@@ -10118,7 +10516,8 @@ AV_VanityItems = {
         creaturePreview = 1533,
         creatureId = 1533,
         description = "Has a chance to drop from Tormented Spirit within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [86101] = {
@@ -10127,7 +10526,8 @@ AV_VanityItems = {
         creaturePreview = 1534,
         creatureId = 1534,
         description = "Has a chance to drop from Wailing Ancestor within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [86102] = {
@@ -10136,7 +10536,8 @@ AV_VanityItems = {
         creaturePreview = 1654,
         creatureId = 1654,
         description = "Has a chance to drop from Gregor Agamand within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [86103] = {
@@ -10145,7 +10546,8 @@ AV_VanityItems = {
         creaturePreview = 1655,
         creatureId = 1655,
         description = "Has a chance to drop from Nissa Agamand within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [86104] = {
@@ -10154,7 +10556,8 @@ AV_VanityItems = {
         creaturePreview = 1656,
         creatureId = 1656,
         description = "Has a chance to drop from Thurman Agamand within Agamand Mills.",
-        zone = "Agamand Mills.",
+        zone = "Tirisfal Glades",
+        subzone = "Agamand Mills",
         icon = 2
     },
     [86105] = {
@@ -10163,7 +10566,7 @@ AV_VanityItems = {
         creaturePreview = 1657,
         creatureId = 1657,
         description = "Has a chance to drop from Devlin Agamand within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 2
     },
     [86106] = {
@@ -10172,7 +10575,7 @@ AV_VanityItems = {
         creaturePreview = 1658,
         creatureId = 1658,
         description = "Has a chance to drop from Captain Dargol within Agamand Family Crypt.",
-        zone = "Agamand Family Crypt.",
+        zone = "Agamand Family Crypt",
         icon = 2
     },
     [86107] = {
@@ -10181,7 +10584,8 @@ AV_VanityItems = {
         creaturePreview = 1783,
         creatureId = 1783,
         description = "Has a chance to drop from Skeletal Flayer within Felstone Field.",
-        zone = "Felstone Field.",
+        zone = "Western Plaguelands",
+        subzone = "Felstone Field",
         icon = 2
     },
     [86108] = {
@@ -10190,7 +10594,8 @@ AV_VanityItems = {
         creaturePreview = 1784,
         creatureId = 1784,
         description = "Has a chance to drop from Skeletal Sorcerer within Felstone Field.",
-        zone = "Felstone Field.",
+        zone = "Western Plaguelands",
+        subzone = "Felstone Field",
         icon = 2
     },
     [86109] = {
@@ -10199,7 +10604,7 @@ AV_VanityItems = {
         creaturePreview = 1785,
         creatureId = 1785,
         description = "Has a chance to drop from Skeletal Terror within Dalson's Tears.",
-        zone = "Dalson's Tears.",
+        zone = "Dalson's Tears",
         icon = 2
     },
     [86423] = {
@@ -10208,7 +10613,7 @@ AV_VanityItems = {
         creaturePreview = 1787,
         creatureId = 1787,
         description = "Has a chance to drop from Skeletal Executioner within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 2
     },
     [86424] = {
@@ -10217,7 +10622,7 @@ AV_VanityItems = {
         creaturePreview = 1788,
         creatureId = 1788,
         description = "Has a chance to drop from Skeletal Warlord within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 2
     },
     [86426] = {
@@ -10226,7 +10631,7 @@ AV_VanityItems = {
         creaturePreview = 1789,
         creatureId = 1789,
         description = "Has a chance to drop from Skeletal Acolyte within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 2
     },
     [86466] = {
@@ -10235,7 +10640,8 @@ AV_VanityItems = {
         creaturePreview = 1791,
         creatureId = 1791,
         description = "Has a chance to drop from Slavering Ghoul within Felstone Field.",
-        zone = "Felstone Field.",
+        zone = "Western Plaguelands",
+        subzone = "Felstone Field",
         icon = 2
     },
     [86474] = {
@@ -10244,7 +10650,8 @@ AV_VanityItems = {
         creaturePreview = 1793,
         creatureId = 1793,
         description = "Has a chance to drop from Rotting Ghoul within The Writhing Haunt.",
-        zone = "The Writhing Haunt.",
+        zone = "Western Plaguelands",
+        subzone = "The Writhing Haunt",
         icon = 2
     },
     [86488] = {
@@ -10253,7 +10660,7 @@ AV_VanityItems = {
         creaturePreview = 1795,
         creatureId = 1795,
         description = "Has a chance to drop from Searing Ghoul within Western Plaguelands.",
-        zone = "Western Plaguelands.",
+        zone = "Western Plaguelands",
         icon = 2
     },
     [86506] = {
@@ -10262,7 +10669,8 @@ AV_VanityItems = {
         creaturePreview = 1796,
         creatureId = 1796,
         description = "Has a chance to drop from Freezing Ghoul within The Writhing Haunt.",
-        zone = "The Writhing Haunt.",
+        zone = "Western Plaguelands",
+        subzone = "The Writhing Haunt",
         icon = 2
     },
     [86528] = {
@@ -10271,7 +10679,7 @@ AV_VanityItems = {
         creaturePreview = 1802,
         creatureId = 1802,
         description = "Has a chance to drop from Hungering Wraith within Gahrron's Withering.",
-        zone = "Gahrron's Withering.",
+        zone = "Gahrron's Withering",
         icon = 2
     },
     [86530] = {
@@ -10280,7 +10688,7 @@ AV_VanityItems = {
         creaturePreview = 1804,
         creatureId = 1804,
         description = "Has a chance to drop from Wailing Death within Gahrron's Withering.",
-        zone = "Gahrron's Withering.",
+        zone = "Gahrron's Withering",
         icon = 2
     },
     [86531] = {
@@ -10289,7 +10697,7 @@ AV_VanityItems = {
         creaturePreview = 1805,
         creatureId = 1805,
         description = "Has a chance to drop from Flesh Golem within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 2
     },
     [86535] = {
@@ -10298,7 +10706,7 @@ AV_VanityItems = {
         creaturePreview = 1847,
         creatureId = 1847,
         description = "Has a chance to drop from Foulmane within Dalson's Tears.",
-        zone = "Dalson's Tears.",
+        zone = "Dalson's Tears",
         icon = 2
     },
     [86543] = {
@@ -10307,7 +10715,7 @@ AV_VanityItems = {
         creaturePreview = 1849,
         creatureId = 1849,
         description = "Has a chance to drop from Dreadwhisper within Gahrron's Withering.",
-        zone = "Gahrron's Withering.",
+        zone = "Gahrron's Withering",
         icon = 2
     },
     [86555] = {
@@ -10316,7 +10724,7 @@ AV_VanityItems = {
         creaturePreview = 1850,
         creatureId = 1850,
         description = "Has a chance to drop from Putridius within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 2
     },
     [86556] = {
@@ -10325,7 +10733,8 @@ AV_VanityItems = {
         creaturePreview = 1865,
         creatureId = 1865,
         description = "Has a chance to drop from Ravenclaw Raider within Olsen's Farthing.",
-        zone = "Olsen's Farthing.",
+        zone = "Silverpine Forest",
+        subzone = "Olsen's Farthing",
         icon = 2
     },
     [86557] = {
@@ -10334,7 +10743,8 @@ AV_VanityItems = {
         creaturePreview = 1866,
         creatureId = 1866,
         description = "Has a chance to drop from Ravenclaw Slave within Olsen's Farthing.",
-        zone = "Olsen's Farthing.",
+        zone = "Silverpine Forest",
+        subzone = "Olsen's Farthing",
         icon = 2
     },
     [87207] = {
@@ -10343,7 +10753,7 @@ AV_VanityItems = {
         creaturePreview = 1868,
         creatureId = 1868,
         description = "Has a chance to drop from Ravenclaw Servant within The Decrepit Ferry.",
-        zone = "The Decrepit Ferry.",
+        zone = "The Decrepit Ferry",
         icon = 2
     },
     [87211] = {
@@ -10352,7 +10762,7 @@ AV_VanityItems = {
         creaturePreview = 1869,
         creatureId = 1869,
         description = "Has a chance to drop from Ravenclaw Champion within The Decrepit Ferry.",
-        zone = "The Decrepit Ferry.",
+        zone = "The Decrepit Ferry",
         icon = 2
     },
     [87255] = {
@@ -10361,7 +10771,7 @@ AV_VanityItems = {
         creaturePreview = 1870,
         creatureId = 1870,
         description = "Has a chance to drop from Hand of Ravenclaw within The Decrepit Ferry.",
-        zone = "The Decrepit Ferry.",
+        zone = "The Decrepit Ferry",
         icon = 2
     },
     [87479] = {
@@ -10370,7 +10780,8 @@ AV_VanityItems = {
         creaturePreview = 1890,
         creatureId = 1890,
         description = "Has a chance to drop from Rattlecage Skeleton within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [87480] = {
@@ -10379,7 +10790,8 @@ AV_VanityItems = {
         creaturePreview = 1916,
         creatureId = 1916,
         description = "Has a chance to drop from Stephen Bhartec within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [87481] = {
@@ -10388,7 +10800,8 @@ AV_VanityItems = {
         creaturePreview = 1917,
         creatureId = 1917,
         description = "Has a chance to drop from Daniel Ulfman within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [87482] = {
@@ -10397,7 +10810,8 @@ AV_VanityItems = {
         creaturePreview = 1918,
         creatureId = 1918,
         description = "Has a chance to drop from Karrel Grayves within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [87483] = {
@@ -10406,7 +10820,8 @@ AV_VanityItems = {
         creaturePreview = 1919,
         creatureId = 1919,
         description = "Has a chance to drop from Samuel Fipps within Deathknell.",
-        zone = "Deathknell.",
+        zone = "Tirisfal Glades",
+        subzone = "Deathknell",
         icon = 2
     },
     [87563] = {
@@ -10415,7 +10830,8 @@ AV_VanityItems = {
         creaturePreview = 1971,
         creatureId = 1971,
         description = "Has a chance to drop from Ivar the Foul within The Ivar Patch.",
-        zone = "The Ivar Patch.",
+        zone = "Silverpine Forest",
+        subzone = "The Ivar Patch",
         icon = 2
     },
     [87564] = {
@@ -10424,7 +10840,8 @@ AV_VanityItems = {
         creaturePreview = 1973,
         creatureId = 1973,
         description = "Has a chance to drop from Ravenclaw Guardian within Beren's Peril.",
-        zone = "Beren's Peril.",
+        zone = "Silverpine Forest",
+        subzone = "Beren's Peril",
         icon = 2
     },
     [87567] = {
@@ -10433,7 +10850,8 @@ AV_VanityItems = {
         creaturePreview = 1974,
         creatureId = 1974,
         description = "Has a chance to drop from Ravenclaw Drudger within Beren's Peril.",
-        zone = "Beren's Peril.",
+        zone = "Silverpine Forest",
+        subzone = "Beren's Peril",
         icon = 2
     },
     [87568] = {
@@ -10442,7 +10860,8 @@ AV_VanityItems = {
         creaturePreview = 1983,
         creatureId = 1983,
         description = "Has a chance to drop from Nightlash within The Dead Field.",
-        zone = "The Dead Field.",
+        zone = "Silverpine Forest",
+        subzone = "The Dead Field",
         icon = 2
     },
     [87644] = {
@@ -10451,7 +10870,8 @@ AV_VanityItems = {
         creaturePreview = 2176,
         creatureId = 2176,
         description = "Has a chance to drop from Cursed Highborne within Ameth'Aran.",
-        zone = "Ameth'Aran.",
+        zone = "Darkshore",
+        subzone = "Ameth'Aran",
         icon = 2
     },
     [87645] = {
@@ -10460,7 +10880,8 @@ AV_VanityItems = {
         creaturePreview = 2177,
         creatureId = 2177,
         description = "Has a chance to drop from Writhing Highborne within Ameth'Aran.",
-        zone = "Ameth'Aran.",
+        zone = "Darkshore",
+        subzone = "Ameth'Aran",
         icon = 2
     },
     [87653] = {
@@ -10469,7 +10890,8 @@ AV_VanityItems = {
         creaturePreview = 2178,
         creatureId = 2178,
         description = "Has a chance to drop from Wailing Highborne within Ameth'Aran.",
-        zone = "Ameth'Aran.",
+        zone = "Darkshore",
+        subzone = "Ameth'Aran",
         icon = 2
     },
     [87654] = {
@@ -10478,7 +10900,8 @@ AV_VanityItems = {
         creaturePreview = 2283,
         creatureId = 2283,
         description = "Has a chance to drop from Ravenclaw Regent within Beren's Peril.",
-        zone = "Beren's Peril.",
+        zone = "Silverpine Forest",
+        subzone = "Beren's Peril",
         icon = 2
     },
     [87655] = {
@@ -10487,7 +10910,8 @@ AV_VanityItems = {
         creaturePreview = 2535,
         creatureId = 2535,
         description = "Has a chance to drop from Maury \"Club Foot\" Wilkins within Ruins of Jubuwal.",
-        zone = "Ruins of Jubuwal.",
+        zone = "Stranglethorn Vale",
+        subzone = "Ruins of Jubuwal",
         icon = 2
     },
     [87656] = {
@@ -10496,7 +10920,8 @@ AV_VanityItems = {
         creaturePreview = 2536,
         creatureId = 2536,
         description = "Has a chance to drop from Jon-Jon the Crow within Ruins of Jubuwal.",
-        zone = "Ruins of Jubuwal.",
+        zone = "Stranglethorn Vale",
+        subzone = "Ruins of Jubuwal",
         icon = 2
     },
     [87657] = {
@@ -10505,7 +10930,8 @@ AV_VanityItems = {
         creaturePreview = 2537,
         creatureId = 2537,
         description = "Has a chance to drop from Chucky \"Ten Thumbs\" within Ruins of Aboraz.",
-        zone = "Ruins of Aboraz.",
+        zone = "Stranglethorn Vale",
+        subzone = "Ruins of Aboraz",
         icon = 2
     },
     [87668] = {
@@ -10514,7 +10940,8 @@ AV_VanityItems = {
         creaturePreview = 3094,
         creatureId = 3094,
         description = "Has a chance to drop from Unseen within Raven Hill.",
-        zone = "Raven Hill.",
+        zone = "Duskwood",
+        subzone = "Raven Hill",
         icon = 2
     },
     [87674] = {
@@ -10523,7 +10950,8 @@ AV_VanityItems = {
         creaturePreview = 4308,
         creatureId = 4308,
         description = "Has a chance to drop from Unfettered Spirit within Scarlet Monastery.",
-        zone = "Scarlet Monastery.",
+        zone = "Tirisfal Glades",
+        subzone = "Scarlet Monastery",
         icon = 2
     },
     [87675] = {
@@ -10532,7 +10960,7 @@ AV_VanityItems = {
         creaturePreview = 4472,
         creatureId = 4472,
         description = "Has a chance to drop from Haunting Vision within Gahrron's Withering.",
-        zone = "Gahrron's Withering.",
+        zone = "Gahrron's Withering",
         icon = 2
     },
     [87676] = {
@@ -10541,7 +10969,7 @@ AV_VanityItems = {
         creaturePreview = 4474,
         creatureId = 4474,
         description = "Has a chance to drop from Rotting Cadaver within Dalson's Tears.",
-        zone = "Dalson's Tears.",
+        zone = "Dalson's Tears",
         icon = 2
     },
     [87677] = {
@@ -10550,7 +10978,7 @@ AV_VanityItems = {
         creaturePreview = 4475,
         creatureId = 4475,
         description = "Has a chance to drop from Blighted Zombie within Dalson's Tears.",
-        zone = "Dalson's Tears.",
+        zone = "Dalson's Tears",
         icon = 2
     },
     [87690] = {
@@ -10559,7 +10987,8 @@ AV_VanityItems = {
         creaturePreview = 4543,
         creatureId = 4543,
         description = "Has a chance to drop from Bloodmage Thalnos within Scarlet Monastery.",
-        zone = "Scarlet Monastery.",
+        zone = "Tirisfal Glades",
+        subzone = "Scarlet Monastery",
         icon = 2
     },
     [87691] = {
@@ -10568,7 +10997,7 @@ AV_VanityItems = {
         creaturePreview = 5263,
         creatureId = 5263,
         description = "Has a chance to drop from Mummified Atal'ai within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87692] = {
@@ -10577,7 +11006,7 @@ AV_VanityItems = {
         creaturePreview = 5267,
         creatureId = 5267,
         description = "Has a chance to drop from Unliving Atal'ai within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87693] = {
@@ -10586,7 +11015,7 @@ AV_VanityItems = {
         creaturePreview = 5270,
         creatureId = 5270,
         description = "Has a chance to drop from Atal'ai Corpse Eater within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87694] = {
@@ -10595,7 +11024,7 @@ AV_VanityItems = {
         creaturePreview = 5271,
         creatureId = 5271,
         description = "Has a chance to drop from Atal'ai Deathwalker within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87697] = {
@@ -10604,7 +11033,7 @@ AV_VanityItems = {
         creaturePreview = 5711,
         creatureId = 5711,
         description = "Has a chance to drop from Ogom the Wretched within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87698] = {
@@ -10613,7 +11042,7 @@ AV_VanityItems = {
         creaturePreview = 5712,
         creatureId = 5712,
         description = "Has a chance to drop from Zolo within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87699] = {
@@ -10622,7 +11051,7 @@ AV_VanityItems = {
         creaturePreview = 5713,
         creatureId = 5713,
         description = "Has a chance to drop from Gasher within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87700] = {
@@ -10631,7 +11060,7 @@ AV_VanityItems = {
         creaturePreview = 5714,
         creatureId = 5714,
         description = "Has a chance to drop from Loro within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87711] = {
@@ -10640,7 +11069,7 @@ AV_VanityItems = {
         creaturePreview = 5715,
         creatureId = 5715,
         description = "Has a chance to drop from Hukku within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87717] = {
@@ -10649,7 +11078,7 @@ AV_VanityItems = {
         creaturePreview = 5716,
         creatureId = 5716,
         description = "Has a chance to drop from Zul'Lor within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87718] = {
@@ -10658,7 +11087,7 @@ AV_VanityItems = {
         creaturePreview = 5717,
         creatureId = 5717,
         description = "Has a chance to drop from Mijan within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 2
     },
     [87719] = {
@@ -10667,7 +11096,7 @@ AV_VanityItems = {
         creaturePreview = 6116,
         creatureId = 6116,
         description = "Has a chance to drop from Highborne Apparition within Azshara.",
-        zone = "Azshara.",
+        zone = "Azshara",
         icon = 2
     },
     [87720] = {
@@ -10676,7 +11105,8 @@ AV_VanityItems = {
         creaturePreview = 6117,
         creatureId = 6117,
         description = "Has a chance to drop from Highborne Lichling within Southfury River.",
-        zone = "Southfury River.",
+        zone = "Durotar",
+        subzone = "Southfury River",
         icon = 2
     },
     [87731] = {
@@ -10685,7 +11115,8 @@ AV_VanityItems = {
         creaturePreview = 6118,
         creatureId = 6118,
         description = "Has a chance to drop from Varo'then's Ghost within Shadowsong Shrine.",
-        zone = "Shadowsong Shrine.",
+        zone = "Azshara",
+        subzone = "Shadowsong Shrine",
         icon = 2
     },
     [87732] = {
@@ -10694,7 +11125,8 @@ AV_VanityItems = {
         creaturePreview = 6426,
         creatureId = 6426,
         description = "Has a chance to drop from Anguished Dead within Scarlet Monastery.",
-        zone = "Scarlet Monastery.",
+        zone = "Tirisfal Glades",
+        subzone = "Scarlet Monastery",
         icon = 2
     },
     [87733] = {
@@ -10703,7 +11135,8 @@ AV_VanityItems = {
         creaturePreview = 6427,
         creatureId = 6427,
         description = "Has a chance to drop from Haunting Phantasm within Scarlet Monastery.",
-        zone = "Scarlet Monastery.",
+        zone = "Tirisfal Glades",
+        subzone = "Scarlet Monastery",
         icon = 2
     },
     [87734] = {
@@ -10712,7 +11145,8 @@ AV_VanityItems = {
         creaturePreview = 6489,
         creatureId = 6489,
         description = "Has a chance to drop from Ironspine within Scarlet Monastery.",
-        zone = "Scarlet Monastery.",
+        zone = "Tirisfal Glades",
+        subzone = "Scarlet Monastery",
         icon = 2
     },
     [87735] = {
@@ -10721,7 +11155,8 @@ AV_VanityItems = {
         creaturePreview = 7272,
         creatureId = 7272,
         description = "Has a chance to drop from Theka the Martyr within Zul'Farrak.",
-        zone = "Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
         icon = 2
     },
     [87736] = {
@@ -10730,7 +11165,8 @@ AV_VanityItems = {
         creaturePreview = 91356,
         creatureId = 91356,
         description = "Has a chance to drop from Zul'Farrak Dead Hero(Male) within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 2
     },
     [87737] = {
@@ -10739,7 +11175,8 @@ AV_VanityItems = {
         creaturePreview = 7286,
         creatureId = 7286,
         description = "Has a chance to drop from Zul'Farrak Zombie within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 2
     },
     [87749] = {
@@ -10748,7 +11185,8 @@ AV_VanityItems = {
         creaturePreview = 7327,
         creatureId = 7327,
         description = "Has a chance to drop from Withered Warrior within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87765] = {
@@ -10757,7 +11195,8 @@ AV_VanityItems = {
         creaturePreview = 7328,
         creatureId = 7328,
         description = "Has a chance to drop from Withered Reaver within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87766] = {
@@ -10766,7 +11205,8 @@ AV_VanityItems = {
         creaturePreview = 7329,
         creatureId = 7329,
         description = "Has a chance to drop from Withered Quilguard within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87767] = {
@@ -10775,7 +11215,8 @@ AV_VanityItems = {
         creaturePreview = 7332,
         creatureId = 7332,
         description = "Has a chance to drop from Withered Spearhide within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87778] = {
@@ -10784,7 +11225,8 @@ AV_VanityItems = {
         creaturePreview = 7333,
         creatureId = 7333,
         description = "Has a chance to drop from Withered Battle Boar within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87808] = {
@@ -10793,7 +11235,8 @@ AV_VanityItems = {
         creaturePreview = 7334,
         creatureId = 7334,
         description = "Has a chance to drop from Battle Boar Horror within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87809] = {
@@ -10802,7 +11245,8 @@ AV_VanityItems = {
         creaturePreview = 7340,
         creatureId = 7340,
         description = "Has a chance to drop from Skeletal Shadowcaster within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87810] = {
@@ -10811,7 +11255,8 @@ AV_VanityItems = {
         creaturePreview = 7341,
         creatureId = 7341,
         description = "Has a chance to drop from Skeletal Frostweaver within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87818] = {
@@ -10820,7 +11265,8 @@ AV_VanityItems = {
         creaturePreview = 7342,
         creatureId = 7342,
         description = "Has a chance to drop from Skeletal Summoner within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87819] = {
@@ -10829,7 +11275,8 @@ AV_VanityItems = {
         creaturePreview = 7344,
         creatureId = 7344,
         description = "Has a chance to drop from Splinterbone Warrior within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87820] = {
@@ -10838,7 +11285,8 @@ AV_VanityItems = {
         creaturePreview = 7345,
         creatureId = 7345,
         description = "Has a chance to drop from Splinterbone Captain within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87840] = {
@@ -10847,7 +11295,8 @@ AV_VanityItems = {
         creaturePreview = 7346,
         creatureId = 7346,
         description = "Has a chance to drop from Splinterbone Centurion within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87842] = {
@@ -10856,7 +11305,8 @@ AV_VanityItems = {
         creaturePreview = 7347,
         creatureId = 7347,
         description = "Has a chance to drop from Boneflayer Ghoul within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87845] = {
@@ -10865,7 +11315,8 @@ AV_VanityItems = {
         creaturePreview = 7348,
         creatureId = 7348,
         description = "Has a chance to drop from Thorn Eater Ghoul within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87847] = {
@@ -10874,7 +11325,8 @@ AV_VanityItems = {
         creaturePreview = 7349,
         creatureId = 7349,
         description = "Has a chance to drop from Tomb Fiend within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87851] = {
@@ -10883,7 +11335,8 @@ AV_VanityItems = {
         creaturePreview = 7351,
         creatureId = 7351,
         description = "Has a chance to drop from Tomb Reaver within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87852] = {
@@ -10892,7 +11345,8 @@ AV_VanityItems = {
         creaturePreview = 7352,
         creatureId = 7352,
         description = "Has a chance to drop from Frozen Soul within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87857] = {
@@ -10901,7 +11355,8 @@ AV_VanityItems = {
         creaturePreview = 7353,
         creatureId = 7353,
         description = "Has a chance to drop from Freezing Spirit within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87858] = {
@@ -10910,7 +11365,8 @@ AV_VanityItems = {
         creaturePreview = 7355,
         creatureId = 7355,
         description = "Has a chance to drop from Tuten'kash within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87859] = {
@@ -10919,7 +11375,8 @@ AV_VanityItems = {
         creaturePreview = 7357,
         creatureId = 7357,
         description = "Has a chance to drop from Mordresh Fire Eye within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [87860] = {
@@ -10928,7 +11385,7 @@ AV_VanityItems = {
         creaturePreview = 7370,
         creatureId = 7370,
         description = "Has a chance to drop from Restless Shade within The Master's Cellar.",
-        zone = "The Master's Cellar.",
+        zone = "The Master's Cellar",
         icon = 2
     },
     [87861] = {
@@ -10937,7 +11394,7 @@ AV_VanityItems = {
         creaturePreview = 7523,
         creatureId = 7523,
         description = "Has a chance to drop from Suffering Highborne within The Ruins of Kel'Theril.",
-        zone = "The Ruins of Kel'Theril.",
+        subzone = "The Ruins of Kel'Theril",
         icon = 2
     },
     [87863] = {
@@ -10946,7 +11403,7 @@ AV_VanityItems = {
         creaturePreview = 7524,
         creatureId = 7524,
         description = "Has a chance to drop from Anguished Highborne within The Ruins of Kel'Theril.",
-        zone = "The Ruins of Kel'Theril.",
+        subzone = "The Ruins of Kel'Theril",
         icon = 2
     },
     [87865] = {
@@ -10955,7 +11412,8 @@ AV_VanityItems = {
         creaturePreview = 7796,
         creatureId = 7796,
         description = "Has a chance to drop from Nekrum Gutchewer within Zul'Farrak.",
-        zone = "Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
         icon = 2
     },
     [87867] = {
@@ -10964,7 +11422,8 @@ AV_VanityItems = {
         creaturePreview = 7864,
         creatureId = 7864,
         description = "Has a chance to drop from Lingering Highborne within Ruins of Eldarath.",
-        zone = "Ruins of Eldarath.",
+        zone = "Azshara",
+        subzone = "Ruins of Eldarath",
         icon = 2
     },
     [87868] = {
@@ -10973,7 +11432,8 @@ AV_VanityItems = {
         creaturePreview = 8523,
         creatureId = 8523,
         description = "Has a chance to drop from Scourge Soldier within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [87869] = {
@@ -10982,7 +11442,8 @@ AV_VanityItems = {
         creaturePreview = 8524,
         creatureId = 8524,
         description = "Has a chance to drop from Cursed Mage within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [87870] = {
@@ -10991,7 +11452,8 @@ AV_VanityItems = {
         creaturePreview = 8525,
         creatureId = 8525,
         description = "Has a chance to drop from Scourge Warder within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [87873] = {
@@ -11000,7 +11462,8 @@ AV_VanityItems = {
         creaturePreview = 8526,
         creatureId = 8526,
         description = "Has a chance to drop from Dark Caster within Corin's Crossing.",
-        zone = "Corin's Crossing.",
+        zone = "Eastern Plaguelands",
+        subzone = "Corin's Crossing",
         icon = 2
     },
     [87876] = {
@@ -11009,7 +11472,7 @@ AV_VanityItems = {
         creaturePreview = 8527,
         creatureId = 8527,
         description = "Has a chance to drop from Scourge Guard within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 2
     },
     [87877] = {
@@ -11018,7 +11481,8 @@ AV_VanityItems = {
         creaturePreview = 8528,
         creatureId = 8528,
         description = "Has a chance to drop from Dread Weaver within The Noxious Glade.",
-        zone = "The Noxious Glade.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Noxious Glade",
         icon = 2
     },
     [87904] = {
@@ -11027,7 +11491,8 @@ AV_VanityItems = {
         creaturePreview = 8530,
         creatureId = 8530,
         description = "Has a chance to drop from Cannibal Ghoul within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [87905] = {
@@ -11036,7 +11501,8 @@ AV_VanityItems = {
         creaturePreview = 8531,
         creatureId = 8531,
         description = "Has a chance to drop from Gibbering Ghoul within Corin's Crossing.",
-        zone = "Corin's Crossing.",
+        zone = "Eastern Plaguelands",
+        subzone = "Corin's Crossing",
         icon = 2
     },
     [87906] = {
@@ -11045,7 +11511,8 @@ AV_VanityItems = {
         creaturePreview = 8532,
         creatureId = 8532,
         description = "Has a chance to drop from Diseased Flayer within The Fungal Vale.",
-        zone = "The Fungal Vale.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Fungal Vale",
         icon = 2
     },
     [87907] = {
@@ -11054,7 +11521,7 @@ AV_VanityItems = {
         creaturePreview = 8534,
         creatureId = 8534,
         description = "Has a chance to drop from Putrid Gargoyle within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [87908] = {
@@ -11063,7 +11530,7 @@ AV_VanityItems = {
         creaturePreview = 8535,
         creatureId = 8535,
         description = "Has a chance to drop from Putrid Shrieker within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 2
     },
     [87909] = {
@@ -11072,7 +11539,8 @@ AV_VanityItems = {
         creaturePreview = 8538,
         creatureId = 8538,
         description = "Has a chance to drop from Unseen Servant within Corin's Crossing.",
-        zone = "Corin's Crossing.",
+        zone = "Eastern Plaguelands",
+        subzone = "Corin's Crossing",
         icon = 2
     },
     [87910] = {
@@ -11081,7 +11549,8 @@ AV_VanityItems = {
         creaturePreview = 8539,
         creatureId = 8539,
         description = "Has a chance to drop from Eyeless Watcher within Northdale.",
-        zone = "Northdale.",
+        zone = "Eastern Plaguelands",
+        subzone = "Northdale",
         icon = 2
     },
     [87997] = {
@@ -11090,7 +11559,8 @@ AV_VanityItems = {
         creaturePreview = 8540,
         creatureId = 8540,
         description = "Has a chance to drop from Torn Screamer within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [88002] = {
@@ -11099,7 +11569,8 @@ AV_VanityItems = {
         creaturePreview = 8541,
         creatureId = 8541,
         description = "Has a chance to drop from Hate Shrieker within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [88003] = {
@@ -11108,7 +11579,8 @@ AV_VanityItems = {
         creaturePreview = 8542,
         creatureId = 8542,
         description = "Has a chance to drop from Death Singer within Northdale.",
-        zone = "Northdale.",
+        zone = "Eastern Plaguelands",
+        subzone = "Northdale",
         icon = 2
     },
     [88261] = {
@@ -11117,7 +11589,8 @@ AV_VanityItems = {
         creaturePreview = 8543,
         creatureId = 8543,
         description = "Has a chance to drop from Stitched Horror within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [88262] = {
@@ -11126,7 +11599,8 @@ AV_VanityItems = {
         creaturePreview = 8544,
         creatureId = 8544,
         description = "Has a chance to drop from Gangled Golem within The Noxious Glade.",
-        zone = "The Noxious Glade.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Noxious Glade",
         icon = 2
     },
     [88304] = {
@@ -11135,7 +11609,8 @@ AV_VanityItems = {
         creaturePreview = 8545,
         creatureId = 8545,
         description = "Has a chance to drop from Abomination within The Fungal Vale.",
-        zone = "The Fungal Vale.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Fungal Vale",
         icon = 2
     },
     [88305] = {
@@ -11144,7 +11619,7 @@ AV_VanityItems = {
         creaturePreview = 8555,
         creatureId = 8555,
         description = "Has a chance to drop from Crypt Fiend within Terrorweb Tunnel.",
-        zone = "Terrorweb Tunnel.",
+        zone = "Terrorweb Tunnel",
         icon = 2
     },
     [88306] = {
@@ -11153,7 +11628,7 @@ AV_VanityItems = {
         creaturePreview = 8556,
         creatureId = 8556,
         description = "Has a chance to drop from Crypt Walker within Terrorweb Tunnel.",
-        zone = "Terrorweb Tunnel.",
+        zone = "Terrorweb Tunnel",
         icon = 2
     },
     [88307] = {
@@ -11162,7 +11637,7 @@ AV_VanityItems = {
         creaturePreview = 8557,
         creatureId = 8557,
         description = "Has a chance to drop from Crypt Horror within Terrorweb Tunnel.",
-        zone = "Terrorweb Tunnel.",
+        zone = "Terrorweb Tunnel",
         icon = 2
     },
     [88308] = {
@@ -11171,7 +11646,7 @@ AV_VanityItems = {
         creaturePreview = 8558,
         creatureId = 8558,
         description = "Has a chance to drop from Crypt Slayer within Terrorweb Tunnel.",
-        zone = "Terrorweb Tunnel.",
+        zone = "Terrorweb Tunnel",
         icon = 2
     },
     [88309] = {
@@ -11180,7 +11655,8 @@ AV_VanityItems = {
         creaturePreview = 8567,
         creatureId = 8567,
         description = "Has a chance to drop from Glutton within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [88310] = {
@@ -11189,7 +11665,7 @@ AV_VanityItems = {
         creaturePreview = 9031,
         creatureId = 9031,
         description = "Has a chance to drop from Anub'shiah within the Blackrock Depths.",
-        zone = "the Blackrock Depths.",
+        subzone = "the Blackrock Depths",
         icon = 2
     },
     [88311] = {
@@ -11198,7 +11674,8 @@ AV_VanityItems = {
         creaturePreview = 10358,
         creatureId = 10358,
         description = "Has a chance to drop from Fellicent's Shade within Balnir Farmstead.",
-        zone = "Balnir Farmstead.",
+        zone = "Tirisfal Glades",
+        subzone = "Balnir Farmstead",
         icon = 2
     },
     [88312] = {
@@ -11207,7 +11684,8 @@ AV_VanityItems = {
         creaturePreview = 10381,
         creatureId = 10381,
         description = "Has a chance to drop from Ravaged Cadaver within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88313] = {
@@ -11216,7 +11694,8 @@ AV_VanityItems = {
         creaturePreview = 10382,
         creatureId = 10382,
         description = "Has a chance to drop from Mangled Cadaver within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88314] = {
@@ -11225,7 +11704,8 @@ AV_VanityItems = {
         creaturePreview = 10387,
         creatureId = 10387,
         description = "Has a chance to drop from Vengeful Phantom within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88315] = {
@@ -11234,7 +11714,7 @@ AV_VanityItems = {
         creaturePreview = 10388,
         creatureId = 10388,
         description = "Has a chance to drop from Spiteful Phantom within Spiteful Phantom.",
-        zone = "Spiteful Phantom.",
+        zone = "Spiteful Phantom",
         icon = 2
     },
     [88316] = {
@@ -11243,7 +11723,8 @@ AV_VanityItems = {
         creaturePreview = 10389,
         creatureId = 10389,
         description = "Has a chance to drop from Wrath Phantom within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88317] = {
@@ -11252,7 +11733,8 @@ AV_VanityItems = {
         creaturePreview = 10390,
         creatureId = 10390,
         description = "Has a chance to drop from Skeletal Guardian within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88318] = {
@@ -11261,7 +11743,8 @@ AV_VanityItems = {
         creaturePreview = 10391,
         creatureId = 10391,
         description = "Has a chance to drop from Skeletal Berserker within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88319] = {
@@ -11270,7 +11753,8 @@ AV_VanityItems = {
         creaturePreview = 10393,
         creatureId = 10393,
         description = "Has a chance to drop from Skul within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88320] = {
@@ -11279,7 +11763,7 @@ AV_VanityItems = {
         creaturePreview = 10394,
         creatureId = 10394,
         description = "Has a chance to drop from Black Guard Sentry within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88321] = {
@@ -11288,7 +11772,7 @@ AV_VanityItems = {
         creaturePreview = 10404,
         creatureId = 10404,
         description = "Has a chance to drop from Pustulating Horror within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [88322] = {
@@ -11297,7 +11781,8 @@ AV_VanityItems = {
         creaturePreview = 10405,
         creatureId = 10405,
         description = "Has a chance to drop from Plague Ghoul within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88323] = {
@@ -11306,7 +11791,8 @@ AV_VanityItems = {
         creaturePreview = 10406,
         creatureId = 10406,
         description = "Has a chance to drop from Ghoul Ravener within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88324] = {
@@ -11315,7 +11801,8 @@ AV_VanityItems = {
         creaturePreview = 10407,
         creatureId = 10407,
         description = "Has a chance to drop from Fleshflayer Ghoul within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88325] = {
@@ -11324,7 +11811,7 @@ AV_VanityItems = {
         creaturePreview = 10408,
         creatureId = 10408,
         description = "Has a chance to drop from Rockwing Gargoyle within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88326] = {
@@ -11333,7 +11820,8 @@ AV_VanityItems = {
         creaturePreview = 10409,
         creatureId = 10409,
         description = "Has a chance to drop from Rockwing Screecher within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88327] = {
@@ -11342,7 +11830,8 @@ AV_VanityItems = {
         creaturePreview = 10411,
         creatureId = 10411,
         description = "Has a chance to drop from Eye of Naxxramas within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88328] = {
@@ -11351,7 +11840,8 @@ AV_VanityItems = {
         creaturePreview = 10412,
         creatureId = 10412,
         description = "Has a chance to drop from Crypt Crawler within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88329] = {
@@ -11360,7 +11850,8 @@ AV_VanityItems = {
         creaturePreview = 10413,
         creatureId = 10413,
         description = "Has a chance to drop from Crypt Beast within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88330] = {
@@ -11369,7 +11860,8 @@ AV_VanityItems = {
         creaturePreview = 10414,
         creatureId = 10414,
         description = "Has a chance to drop from Patchwork Horror within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88331] = {
@@ -11378,7 +11870,8 @@ AV_VanityItems = {
         creaturePreview = 10416,
         creatureId = 10416,
         description = "Has a chance to drop from Bile Spewer within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88332] = {
@@ -11387,7 +11880,8 @@ AV_VanityItems = {
         creaturePreview = 10417,
         creatureId = 10417,
         description = "Has a chance to drop from Venom Belcher within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88333] = {
@@ -11396,7 +11890,7 @@ AV_VanityItems = {
         creaturePreview = 10432,
         creatureId = 10432,
         description = "Has a chance to drop from Vectus within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88334] = {
@@ -11405,7 +11899,8 @@ AV_VanityItems = {
         creaturePreview = 10435,
         creatureId = 10435,
         description = "Has a chance to drop from Magistrate Barthilas within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88363] = {
@@ -11414,7 +11909,8 @@ AV_VanityItems = {
         creaturePreview = 10436,
         creatureId = 10436,
         description = "Has a chance to drop from Baroness Anastari within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88364] = {
@@ -11423,7 +11919,8 @@ AV_VanityItems = {
         creaturePreview = 10437,
         creatureId = 10437,
         description = "Has a chance to drop from Nerub'enkan within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88365] = {
@@ -11432,7 +11929,7 @@ AV_VanityItems = {
         creaturePreview = 10439,
         creatureId = 10439,
         description = "Has a chance to drop from Ramstein the Gorger within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88366] = {
@@ -11441,7 +11938,8 @@ AV_VanityItems = {
         creaturePreview = 10463,
         creatureId = 10463,
         description = "Has a chance to drop from Shrieking Banshee within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88367] = {
@@ -11450,7 +11948,8 @@ AV_VanityItems = {
         creaturePreview = 10464,
         creatureId = 10464,
         description = "Has a chance to drop from Wailing Banshee within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88372] = {
@@ -11459,7 +11958,7 @@ AV_VanityItems = {
         creaturePreview = 10478,
         creatureId = 10478,
         description = "Has a chance to drop from Splintered Skeleton within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88374] = {
@@ -11468,7 +11967,7 @@ AV_VanityItems = {
         creaturePreview = 10480,
         creatureId = 10480,
         description = "Has a chance to drop from Unstable Corpse within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88415] = {
@@ -11477,7 +11976,7 @@ AV_VanityItems = {
         creaturePreview = 10485,
         creatureId = 10485,
         description = "Has a chance to drop from Risen Aberration within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88434] = {
@@ -11486,7 +11985,7 @@ AV_VanityItems = {
         creaturePreview = 10486,
         creatureId = 10486,
         description = "Has a chance to drop from Risen Warrior within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88436] = {
@@ -11495,7 +11994,7 @@ AV_VanityItems = {
         creaturePreview = 10487,
         creatureId = 10487,
         description = "Has a chance to drop from Risen Protector within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88467] = {
@@ -11504,7 +12003,7 @@ AV_VanityItems = {
         creaturePreview = 10488,
         creatureId = 10488,
         description = "Has a chance to drop from Risen Construct within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88534] = {
@@ -11513,7 +12012,7 @@ AV_VanityItems = {
         creaturePreview = 10489,
         creatureId = 10489,
         description = "Has a chance to drop from Risen Guard within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88539] = {
@@ -11522,7 +12021,7 @@ AV_VanityItems = {
         creaturePreview = 10491,
         creatureId = 10491,
         description = "Has a chance to drop from Risen Bonewarder within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88540] = {
@@ -11531,7 +12030,7 @@ AV_VanityItems = {
         creaturePreview = 10495,
         creatureId = 10495,
         description = "Has a chance to drop from Diseased Ghoul within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88546] = {
@@ -11540,7 +12039,7 @@ AV_VanityItems = {
         creaturePreview = 10498,
         creatureId = 10498,
         description = "Has a chance to drop from Spectral Tutor within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88547] = {
@@ -11549,7 +12048,7 @@ AV_VanityItems = {
         creaturePreview = 10499,
         creatureId = 10499,
         description = "Has a chance to drop from Spectral Researcher within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88552] = {
@@ -11558,7 +12057,7 @@ AV_VanityItems = {
         creaturePreview = 10500,
         creatureId = 10500,
         description = "Has a chance to drop from Spectral Teacher within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88560] = {
@@ -11567,7 +12066,7 @@ AV_VanityItems = {
         creaturePreview = 10506,
         creatureId = 10506,
         description = "Has a chance to drop from Kirtonos the Herald within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88561] = {
@@ -11576,7 +12075,7 @@ AV_VanityItems = {
         creaturePreview = 10507,
         creatureId = 10507,
         description = "Has a chance to drop from The Ravenian within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88562] = {
@@ -11585,7 +12084,8 @@ AV_VanityItems = {
         creaturePreview = 10516,
         creatureId = 10516,
         description = "Has a chance to drop from The Unforgiven within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88565] = {
@@ -11594,7 +12094,8 @@ AV_VanityItems = {
         creaturePreview = 10580,
         creatureId = 10580,
         description = "Has a chance to drop from Fetid Zombie within The Writhing Haunt.",
-        zone = "The Writhing Haunt.",
+        zone = "Western Plaguelands",
+        subzone = "The Writhing Haunt",
         icon = 2
     },
     [88670] = {
@@ -11603,7 +12104,8 @@ AV_VanityItems = {
         creaturePreview = 10801,
         creatureId = 10801,
         description = "Has a chance to drop from Jabbering Ghoul within Felstone Field.",
-        zone = "Felstone Field.",
+        zone = "Western Plaguelands",
+        subzone = "Felstone Field",
         icon = 2
     },
     [88671] = {
@@ -11612,7 +12114,8 @@ AV_VanityItems = {
         creaturePreview = 10808,
         creatureId = 10808,
         description = "Has a chance to drop from Timmy the Cruel within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88672] = {
@@ -11621,7 +12124,8 @@ AV_VanityItems = {
         creaturePreview = 10809,
         creatureId = 10809,
         description = "Has a chance to drop from Stonespine within Stratholme.",
-        zone = "Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
         icon = 2
     },
     [88673] = {
@@ -11630,7 +12134,7 @@ AV_VanityItems = {
         creaturePreview = 10816,
         creatureId = 10816,
         description = "Has a chance to drop from Wandering Skeleton within Dalson's Tears.",
-        zone = "Dalson's Tears.",
+        zone = "Dalson's Tears",
         icon = 2
     },
     [88674] = {
@@ -11639,7 +12143,7 @@ AV_VanityItems = {
         creaturePreview = 10825,
         creatureId = 10825,
         description = "Has a chance to drop from Gish the Unmoving within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 2
     },
     [88675] = {
@@ -11648,7 +12152,8 @@ AV_VanityItems = {
         creaturePreview = 10826,
         creatureId = 10826,
         description = "Has a chance to drop from Lord Darkscythe within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [88676] = {
@@ -11657,7 +12162,7 @@ AV_VanityItems = {
         creaturePreview = 10836,
         creatureId = 10836,
         description = "Has a chance to drop from Farmer Dalson within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88677] = {
@@ -11666,7 +12171,7 @@ AV_VanityItems = {
         creaturePreview = 10901,
         creatureId = 10901,
         description = "Has a chance to drop from Lorekeeper Polkelt within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88679] = {
@@ -11675,7 +12180,7 @@ AV_VanityItems = {
         creaturePreview = 11075,
         creatureId = 11075,
         description = "Has a chance to drop from Cauldron Lord Bilemaw within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88680] = {
@@ -11684,7 +12189,7 @@ AV_VanityItems = {
         creaturePreview = 11076,
         creatureId = 11076,
         description = "Has a chance to drop from Cauldron Lord Razarch within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88681] = {
@@ -11693,7 +12198,7 @@ AV_VanityItems = {
         creaturePreview = 11077,
         creatureId = 11077,
         description = "Has a chance to drop from Cauldron Lord Malvinious within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88689] = {
@@ -11702,7 +12207,7 @@ AV_VanityItems = {
         creaturePreview = 11078,
         creatureId = 11078,
         description = "Has a chance to drop from Cauldron Lord Soulwrath within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88713] = {
@@ -11711,7 +12216,7 @@ AV_VanityItems = {
         creaturePreview = 11121,
         creatureId = 11121,
         description = "Has a chance to drop from Black Guard Swordsmith within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88716] = {
@@ -11720,7 +12225,8 @@ AV_VanityItems = {
         creaturePreview = 11290,
         creatureId = 11290,
         description = "Has a chance to drop from Mossflayer Zombie within The Undercroft.",
-        zone = "The Undercroft.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Undercroft",
         icon = 2
     },
     [88717] = {
@@ -11729,7 +12235,8 @@ AV_VanityItems = {
         creaturePreview = 11291,
         creatureId = 11291,
         description = "Has a chance to drop from Unliving Mossflayer within The Undercroft.",
-        zone = "The Undercroft.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Undercroft",
         icon = 2
     },
     [88718] = {
@@ -11738,7 +12245,8 @@ AV_VanityItems = {
         creaturePreview = 11471,
         creatureId = 11471,
         description = "Has a chance to drop from Eldreth Apparition within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 2
     },
     [88719] = {
@@ -11747,7 +12255,8 @@ AV_VanityItems = {
         creaturePreview = 11472,
         creatureId = 11472,
         description = "Has a chance to drop from Eldreth Spirit within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 2
     },
     [88720] = {
@@ -11756,7 +12265,8 @@ AV_VanityItems = {
         creaturePreview = 11473,
         creatureId = 11473,
         description = "Has a chance to drop from Eldreth Spectre within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 2
     },
     [88721] = {
@@ -11765,7 +12275,8 @@ AV_VanityItems = {
         creaturePreview = 11475,
         creatureId = 11475,
         description = "Has a chance to drop from Eldreth Phantasm within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 2
     },
     [88722] = {
@@ -11774,7 +12285,8 @@ AV_VanityItems = {
         creaturePreview = 11476,
         creatureId = 11476,
         description = "Has a chance to drop from Skeletal Highborne within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 2
     },
     [88753] = {
@@ -11783,7 +12295,8 @@ AV_VanityItems = {
         creaturePreview = 11477,
         creatureId = 11477,
         description = "Has a chance to drop from Rotting Highborne within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 2
     },
     [88754] = {
@@ -11792,7 +12305,7 @@ AV_VanityItems = {
         creaturePreview = 11551,
         creatureId = 11551,
         description = "Has a chance to drop from Necrofiend within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88755] = {
@@ -11801,7 +12314,7 @@ AV_VanityItems = {
         creaturePreview = 11561,
         creatureId = 11561,
         description = "Has a chance to drop from Undead Ravager within Valley of Bones.",
-        zone = "Valley of Bones.",
+        zone = "Valley of Bones",
         icon = 2
     },
     [88757] = {
@@ -11810,7 +12323,7 @@ AV_VanityItems = {
         creaturePreview = 11622,
         creatureId = 11622,
         description = "Has a chance to drop from Rattlegore within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 2
     },
     [88758] = {
@@ -11819,7 +12332,7 @@ AV_VanityItems = {
         creaturePreview = 11873,
         creatureId = 11873,
         description = "Has a chance to drop from Spectral Attendant within Ruins of Andorhal.",
-        zone = "Ruins of Andorhal.",
+        subzone = "Ruins of Andorhal",
         icon = 2
     },
     [88759] = {
@@ -11828,7 +12341,8 @@ AV_VanityItems = {
         creaturePreview = 12248,
         creatureId = 12248,
         description = "Has a chance to drop from Infiltrator Hameya within Zul'Mashar.",
-        zone = "Zul'Mashar.",
+        zone = "Eastern Plaguelands",
+        subzone = "Zul'Mashar",
         icon = 2
     },
     [88760] = {
@@ -11837,7 +12351,8 @@ AV_VanityItems = {
         creaturePreview = 12250,
         creatureId = 12250,
         description = "Has a chance to drop from Zaeldarr the Outcast within The Undercroft.",
-        zone = "The Undercroft.",
+        zone = "Eastern Plaguelands",
+        subzone = "The Undercroft",
         icon = 2
     },
     [88761] = {
@@ -11846,7 +12361,7 @@ AV_VanityItems = {
         creaturePreview = 12261,
         creatureId = 12261,
         description = "Has a chance to drop from Infected Mossflayer within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88762] = {
@@ -11855,7 +12370,8 @@ AV_VanityItems = {
         creaturePreview = 12262,
         creatureId = 12262,
         description = "Has a chance to drop from Ziggurat Protector within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [88795] = {
@@ -11864,7 +12380,8 @@ AV_VanityItems = {
         creaturePreview = 12263,
         creatureId = 12263,
         description = "Has a chance to drop from Slaughterhouse Protector within Plaguewood.",
-        zone = "Plaguewood.",
+        zone = "Eastern Plaguelands",
+        subzone = "Plaguewood",
         icon = 2
     },
     [88796] = {
@@ -11873,7 +12390,7 @@ AV_VanityItems = {
         creaturePreview = 12377,
         creatureId = 12377,
         description = "Has a chance to drop from Wailing Spectre within The Master's Cellar.",
-        zone = "The Master's Cellar.",
+        zone = "The Master's Cellar",
         icon = 2
     },
     [88803] = {
@@ -11882,7 +12399,7 @@ AV_VanityItems = {
         creaturePreview = 12378,
         creatureId = 12378,
         description = "Has a chance to drop from Damned Soul within The Master's Cellar.",
-        zone = "The Master's Cellar.",
+        zone = "The Master's Cellar",
         icon = 2
     },
     [88852] = {
@@ -11891,7 +12408,7 @@ AV_VanityItems = {
         creaturePreview = 14519,
         creatureId = 14519,
         description = "Has a chance to drop from Aspect of Corruption within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88858] = {
@@ -11900,7 +12417,7 @@ AV_VanityItems = {
         creaturePreview = 14564,
         creatureId = 14564,
         description = "Has a chance to drop from Terrordale Spirit within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88859] = {
@@ -11909,7 +12426,8 @@ AV_VanityItems = {
         creaturePreview = 14682,
         creatureId = 14682,
         description = "Has a chance to drop from Sever within Shadowfang Keep.",
-        zone = "Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
         icon = 2
     },
     [88860] = {
@@ -11918,7 +12436,8 @@ AV_VanityItems = {
         creaturePreview = 40552,
         creatureId = 40552,
         description = "Has a chance to drop from Lady Falther'ess within Razorfen Downs.",
-        zone = "Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
         icon = 2
     },
     [88870] = {
@@ -11927,7 +12446,7 @@ AV_VanityItems = {
         creaturePreview = 14825,
         creatureId = 14825,
         description = "Has a chance to drop from Withered Mistress within The Bloodfire Pit.",
-        zone = "The Bloodfire Pit.",
+        zone = "The Bloodfire Pit",
         icon = 2
     },
     [88871] = {
@@ -11936,7 +12455,8 @@ AV_VanityItems = {
         creaturePreview = 14826,
         creatureId = 14826,
         description = "Has a chance to drop from Sacrificed Troll within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 2
     },
     [88891] = {
@@ -11945,7 +12465,7 @@ AV_VanityItems = {
         creaturePreview = 15547,
         creatureId = 15547,
         description = "Has a chance to drop from Spectral Charger within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 2
     },
     [88899] = {
@@ -11954,7 +12474,7 @@ AV_VanityItems = {
         creaturePreview = 15548,
         creatureId = 15548,
         description = "Has a chance to drop from Spectral Stallion within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 2
     },
     [88900] = {
@@ -11963,7 +12483,8 @@ AV_VanityItems = {
         creaturePreview = 15654,
         creatureId = 15654,
         description = "Has a chance to drop from Plaguebone Pillager within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88901] = {
@@ -11972,7 +12493,8 @@ AV_VanityItems = {
         creaturePreview = 15655,
         creatureId = 15655,
         description = "Has a chance to drop from Rotlimb Cannibal within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88902] = {
@@ -11981,7 +12503,8 @@ AV_VanityItems = {
         creaturePreview = 15656,
         creatureId = 15656,
         description = "Has a chance to drop from Angershade within East Sanctum.",
-        zone = "East Sanctum.",
+        zone = "Eversong Woods",
+        subzone = "East Sanctum",
         icon = 2
     },
     [88903] = {
@@ -11990,7 +12513,8 @@ AV_VanityItems = {
         creaturePreview = 15657,
         creatureId = 15657,
         description = "Has a chance to drop from Darkwraith within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88904] = {
@@ -11999,7 +12523,8 @@ AV_VanityItems = {
         creaturePreview = 15658,
         creatureId = 15658,
         description = "Has a chance to drop from Rotlimb Marauder within East Sanctum.",
-        zone = "East Sanctum.",
+        zone = "Eversong Woods",
+        subzone = "East Sanctum",
         icon = 2
     },
     [88906] = {
@@ -12008,7 +12533,7 @@ AV_VanityItems = {
         creaturePreview = 15958,
         creatureId = 15958,
         description = "Has a chance to drop from Gharsul the Remorseless within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [88908] = {
@@ -12017,7 +12542,7 @@ AV_VanityItems = {
         creaturePreview = 15978,
         creatureId = 15978,
         description = "Has a chance to drop from Crypt Reaver within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88909] = {
@@ -12026,7 +12551,7 @@ AV_VanityItems = {
         creaturePreview = 15979,
         creatureId = 15979,
         description = "Has a chance to drop from Tomb Horror within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88957] = {
@@ -12035,7 +12560,7 @@ AV_VanityItems = {
         creaturePreview = 16017,
         creatureId = 16017,
         description = "Has a chance to drop from Patchwork Golem within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88964] = {
@@ -12044,7 +12569,7 @@ AV_VanityItems = {
         creaturePreview = 16018,
         creatureId = 16018,
         description = "Has a chance to drop from Bile Retcher within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88965] = {
@@ -12053,7 +12578,7 @@ AV_VanityItems = {
         creaturePreview = 16021,
         creatureId = 16021,
         description = "Has a chance to drop from Living Monstrosity within Naxxaramas.",
-        zone = "Naxxaramas.",
+        zone = "Naxxaramas",
         icon = 2
     },
     [88968] = {
@@ -12062,7 +12587,7 @@ AV_VanityItems = {
         creaturePreview = 16029,
         creatureId = 16029,
         description = "Has a chance to drop from Sludge Belcher within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88969] = {
@@ -12071,7 +12596,7 @@ AV_VanityItems = {
         creaturePreview = 16034,
         creatureId = 16034,
         description = "Has a chance to drop from Plague Beast within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88972] = {
@@ -12080,7 +12605,7 @@ AV_VanityItems = {
         creaturePreview = 16164,
         creatureId = 16164,
         description = "Has a chance to drop from Shade of Naxxramas within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88973] = {
@@ -12089,7 +12614,7 @@ AV_VanityItems = {
         creaturePreview = 16165,
         creatureId = 16165,
         description = "Has a chance to drop from Necro Knight within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88974] = {
@@ -12098,7 +12623,7 @@ AV_VanityItems = {
         creaturePreview = 16167,
         creatureId = 16167,
         description = "Has a chance to drop from Bony Construct within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88975] = {
@@ -12107,7 +12632,7 @@ AV_VanityItems = {
         creaturePreview = 16168,
         creatureId = 16168,
         description = "Has a chance to drop from Stoneskin Gargoyle within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88976] = {
@@ -12116,7 +12641,7 @@ AV_VanityItems = {
         creaturePreview = 16184,
         creatureId = 16184,
         description = "Has a chance to drop from Nerubian Overseer within Terrorweb Tunnel.",
-        zone = "Terrorweb Tunnel.",
+        zone = "Terrorweb Tunnel",
         icon = 2
     },
     [88977] = {
@@ -12125,7 +12650,7 @@ AV_VanityItems = {
         creaturePreview = 16193,
         creatureId = 16193,
         description = "Has a chance to drop from Skeletal Smith within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [88979] = {
@@ -12134,7 +12659,8 @@ AV_VanityItems = {
         creaturePreview = 16245,
         creatureId = 16245,
         description = "Has a chance to drop from Luzran within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [88980] = {
@@ -12143,7 +12669,8 @@ AV_VanityItems = {
         creaturePreview = 16246,
         creatureId = 16246,
         description = "Has a chance to drop from Knucklerot within Howling Ziggurat.",
-        zone = "Howling Ziggurat.",
+        zone = "Ghostlands",
+        subzone = "Howling Ziggurat",
         icon = 2
     },
     [88981] = {
@@ -12152,7 +12679,8 @@ AV_VanityItems = {
         creaturePreview = 16247,
         creatureId = 16247,
         description = "Has a chance to drop from Borgoth the Bloodletter within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [88982] = {
@@ -12161,7 +12689,8 @@ AV_VanityItems = {
         creaturePreview = 16248,
         creatureId = 16248,
         description = "Has a chance to drop from Jurion the Deceiver within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [88983] = {
@@ -12170,7 +12699,8 @@ AV_VanityItems = {
         creaturePreview = 16249,
         creatureId = 16249,
         description = "Has a chance to drop from Masophet the Black within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [88984] = {
@@ -12179,7 +12709,8 @@ AV_VanityItems = {
         creaturePreview = 16250,
         creatureId = 16250,
         description = "Has a chance to drop from Mirdoran the Fallen within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [88988] = {
@@ -12188,7 +12719,8 @@ AV_VanityItems = {
         creaturePreview = 16300,
         creatureId = 16300,
         description = "Has a chance to drop from Risen Creeper within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88989] = {
@@ -12197,7 +12729,8 @@ AV_VanityItems = {
         creaturePreview = 16301,
         creatureId = 16301,
         description = "Has a chance to drop from Risen Hungerer within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88990] = {
@@ -12206,7 +12739,8 @@ AV_VanityItems = {
         creaturePreview = 16302,
         creatureId = 16302,
         description = "Has a chance to drop from Risen Stalker within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88991] = {
@@ -12215,7 +12749,8 @@ AV_VanityItems = {
         creaturePreview = 16303,
         creatureId = 16303,
         description = "Has a chance to drop from Dreadbone Skeleton within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88992] = {
@@ -12224,7 +12759,8 @@ AV_VanityItems = {
         creaturePreview = 16305,
         creatureId = 16305,
         description = "Has a chance to drop from Dreadbone Sentinel within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88993] = {
@@ -12233,7 +12769,8 @@ AV_VanityItems = {
         creaturePreview = 16307,
         creatureId = 16307,
         description = "Has a chance to drop from Deathcage Scryer within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88994] = {
@@ -12242,7 +12779,8 @@ AV_VanityItems = {
         creaturePreview = 16308,
         creatureId = 16308,
         description = "Has a chance to drop from Deathcage Sorcerer within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88996] = {
@@ -12251,7 +12789,7 @@ AV_VanityItems = {
         creaturePreview = 16309,
         creatureId = 16309,
         description = "Has a chance to drop from Gangled Cannibal within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 2
     },
     [88997] = {
@@ -12260,7 +12798,8 @@ AV_VanityItems = {
         creaturePreview = 16311,
         creatureId = 16311,
         description = "Has a chance to drop from Phantasmal Watcher within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 2
     },
     [88998] = {
@@ -12269,7 +12808,8 @@ AV_VanityItems = {
         creaturePreview = 16313,
         creatureId = 16313,
         description = "Has a chance to drop from Nerubis Guard within Suncrown Village.",
-        zone = "Suncrown Village.",
+        zone = "Ghostlands",
+        subzone = "Suncrown Village",
         icon = 2
     },
     [89008] = {
@@ -12278,7 +12818,7 @@ AV_VanityItems = {
         creaturePreview = 16314,
         creatureId = 16314,
         description = "Has a chance to drop from Fallen Ranger within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 2
     },
     [89084] = {
@@ -12287,7 +12827,7 @@ AV_VanityItems = {
         creaturePreview = 16316,
         creatureId = 16316,
         description = "Has a chance to drop from Stonewing Tracker within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 2
     },
     [89085] = {
@@ -12296,7 +12836,8 @@ AV_VanityItems = {
         creaturePreview = 16319,
         creatureId = 16319,
         description = "Has a chance to drop from Nerubis Centurion within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [89086] = {
@@ -12305,7 +12846,8 @@ AV_VanityItems = {
         creaturePreview = 16320,
         creatureId = 16320,
         description = "Has a chance to drop from Eye of Dar'Khan within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [89097] = {
@@ -12314,7 +12856,8 @@ AV_VanityItems = {
         creaturePreview = 16321,
         creatureId = 16321,
         description = "Has a chance to drop from Wailer within Deatholme.",
-        zone = "Deatholme.",
+        zone = "Ghostlands",
+        subzone = "Deatholme",
         icon = 2
     },
     [89098] = {
@@ -12323,7 +12866,7 @@ AV_VanityItems = {
         creaturePreview = 16322,
         creatureId = 16322,
         description = "Has a chance to drop from Gangled Flesheater within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 2
     },
     [89099] = {
@@ -12332,7 +12875,8 @@ AV_VanityItems = {
         creaturePreview = 16323,
         creatureId = 16323,
         description = "Has a chance to drop from Phantasmal Seeker within Windrunner Village.",
-        zone = "Windrunner Village.",
+        zone = "Ghostlands",
+        subzone = "Windrunner Village",
         icon = 2
     },
     [89100] = {
@@ -12341,7 +12885,8 @@ AV_VanityItems = {
         creaturePreview = 16324,
         creatureId = 16324,
         description = "Has a chance to drop from Stonewing Slayer within Windrunner Village.",
-        zone = "Windrunner Village.",
+        zone = "Ghostlands",
+        subzone = "Windrunner Village",
         icon = 2
     },
     [89101] = {
@@ -12350,7 +12895,8 @@ AV_VanityItems = {
         creaturePreview = 16327,
         creatureId = 16327,
         description = "Has a chance to drop from Ravening Apparition within Lake Elrendar.",
-        zone = "Lake Elrendar.",
+        zone = "Ghostlands",
+        subzone = "Lake Elrendar",
         icon = 2
     },
     [89106] = {
@@ -12359,7 +12905,8 @@ AV_VanityItems = {
         creaturePreview = 16328,
         creatureId = 16328,
         description = "Has a chance to drop from Vengeful Apparition within Lake Elrendar.",
-        zone = "Lake Elrendar.",
+        zone = "Ghostlands",
+        subzone = "Lake Elrendar",
         icon = 2
     },
     [89107] = {
@@ -12368,7 +12915,7 @@ AV_VanityItems = {
         creaturePreview = 16342,
         creatureId = 16342,
         description = "Has a chance to drop from Mummified Headhunter within Amani Catacombs.",
-        zone = "Amani Catacombs.",
+        zone = "Amani Catacombs",
         icon = 2
     },
     [89110] = {
@@ -12377,7 +12924,8 @@ AV_VanityItems = {
         creaturePreview = 16357,
         creatureId = 16357,
         description = "Has a chance to drop from Anok'suten within Suncrown Village.",
-        zone = "Suncrown Village.",
+        zone = "Ghostlands",
+        subzone = "Suncrown Village",
         icon = 2
     },
     [89134] = {
@@ -12386,7 +12934,7 @@ AV_VanityItems = {
         creaturePreview = 16383,
         creatureId = 16383,
         description = "Has a chance to drop from Flameshocker within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [89140] = {
@@ -12395,7 +12943,7 @@ AV_VanityItems = {
         creaturePreview = 16402,
         creatureId = 16402,
         description = "Has a chance to drop from Zombified Grimscale within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 2
     },
     [89141] = {
@@ -12404,7 +12952,7 @@ AV_VanityItems = {
         creaturePreview = 16403,
         creatureId = 16403,
         description = "Has a chance to drop from Withered Grimscale within Ghostlands.",
-        zone = "Ghostlands.",
+        zone = "Ghostlands",
         icon = 2
     },
     [89142] = {
@@ -12413,7 +12961,7 @@ AV_VanityItems = {
         creaturePreview = 16415,
         creatureId = 16415,
         description = "Has a chance to drop from Skeletal Waiter within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 2
     },
     [89164] = {
@@ -12422,7 +12970,7 @@ AV_VanityItems = {
         creaturePreview = 16447,
         creatureId = 16447,
         description = "Has a chance to drop from Plagued Ghoul within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [89165] = {
@@ -12431,7 +12979,7 @@ AV_VanityItems = {
         creaturePreview = 16471,
         creatureId = 16471,
         description = "Has a chance to drop from Skeletal Usher within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 2
     },
     [89166] = {
@@ -12440,7 +12988,7 @@ AV_VanityItems = {
         creaturePreview = 16481,
         creatureId = 16481,
         description = "Has a chance to drop from Ghastly Haunt within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 2
     },
     [89167] = {
@@ -12449,7 +12997,7 @@ AV_VanityItems = {
         creaturePreview = 16482,
         creatureId = 16482,
         description = "Has a chance to drop from Trapped Soul within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 2
     },
     [89168] = {
@@ -12458,7 +13006,7 @@ AV_VanityItems = {
         creaturePreview = 16805,
         creatureId = 16805,
         description = "Has a chance to drop from Broken Skeleton within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 2
     },
     [89177] = {
@@ -12467,7 +13015,7 @@ AV_VanityItems = {
         creaturePreview = 17878,
         creatureId = 17878,
         description = "Has a chance to drop from Scourge Siege Engineer within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 2
     },
     [89186] = {
@@ -12476,7 +13024,7 @@ AV_VanityItems = {
         creaturePreview = 17895,
         creatureId = 17895,
         description = "Has a chance to drop from Ghoul within Hyjal Summit.",
-        zone = "Hyjal Summit.",
+        zone = "Hyjal Summit",
         icon = 2
     },
     [89187] = {
@@ -12485,7 +13033,7 @@ AV_VanityItems = {
         creaturePreview = 17897,
         creatureId = 17897,
         description = "Has a chance to drop from Crypt Fiend within Hyjal Summit.",
-        zone = "Hyjal Summit.",
+        zone = "Hyjal Summit",
         icon = 2
     },
     [89188] = {
@@ -12494,7 +13042,7 @@ AV_VanityItems = {
         creaturePreview = 17898,
         creatureId = 17898,
         description = "Has a chance to drop from Abomination within Hyjal Summit.",
-        zone = "Hyjal Summit.",
+        zone = "Hyjal Summit",
         icon = 2
     },
     [89198] = {
@@ -12503,7 +13051,7 @@ AV_VanityItems = {
         creaturePreview = 17906,
         creatureId = 17906,
         description = "Has a chance to drop from Gargoyle within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [89199] = {
@@ -12512,7 +13060,7 @@ AV_VanityItems = {
         creaturePreview = 18521,
         creatureId = 18521,
         description = "Has a chance to drop from Raging Skeleton within Auchenai Crypts.",
-        zone = "Auchenai Crypts.",
+        zone = "Auchenai Crypts",
         icon = 2
     },
     [89200] = {
@@ -12521,7 +13069,7 @@ AV_VanityItems = {
         creaturePreview = 18524,
         creatureId = 18524,
         description = "Has a chance to drop from Angered Skeleton within Auchenai Crypts.",
-        zone = "Auchenai Crypts.",
+        zone = "Auchenai Crypts",
         icon = 2
     },
     [89201] = {
@@ -12530,7 +13078,7 @@ AV_VanityItems = {
         creaturePreview = 18689,
         creatureId = 18689,
         description = "Has a chance to drop from Crippler within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 2
     },
     [89203] = {
@@ -12539,7 +13087,7 @@ AV_VanityItems = {
         creaturePreview = 20480,
         creatureId = 20480,
         description = "Has a chance to drop from Kirin'Var Ghost within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [89204] = {
@@ -12548,7 +13096,7 @@ AV_VanityItems = {
         creaturePreview = 20495,
         creatureId = 20495,
         description = "Has a chance to drop from Skeletal Stallion within Chapel Yard.",
-        zone = "Chapel Yard.",
+        zone = "Chapel Yard",
         icon = 2
     },
     [89206] = {
@@ -12557,7 +13105,7 @@ AV_VanityItems = {
         creaturePreview = 20496,
         creatureId = 20496,
         description = "Has a chance to drop from Kirin'Var Spectre within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [89207] = {
@@ -12566,7 +13114,7 @@ AV_VanityItems = {
         creaturePreview = 21941,
         creatureId = 21941,
         description = "Has a chance to drop from Accursed Apparition within Derelict Caravan.",
-        zone = "Derelict Caravan.",
+        zone = "Derelict Caravan",
         icon = 2
     },
     [89208] = {
@@ -12575,7 +13123,7 @@ AV_VanityItems = {
         creaturePreview = 22045,
         creatureId = 22045,
         description = "Has a chance to drop from Vengeful Husk within Derelict Caravan.",
-        zone = "Derelict Caravan.",
+        zone = "Derelict Caravan",
         icon = 2
     },
     [89210] = {
@@ -12584,7 +13132,8 @@ AV_VanityItems = {
         creaturePreview = 22953,
         creatureId = 22953,
         description = "Has a chance to drop from Wrathbone Flayer within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 2
     },
     [89211] = {
@@ -12593,7 +13142,8 @@ AV_VanityItems = {
         creaturePreview = 300078,
         creatureId = 300078,
         description = "Has a chance to drop from Risen Spirit within Witch Hill.",
-        zone = "Witch Hill.",
+        zone = "Dustwallow Marsh",
+        subzone = "Witch Hill",
         icon = 2
     },
     [89212] = {
@@ -12602,7 +13152,8 @@ AV_VanityItems = {
         creaturePreview = 23555,
         creatureId = 23555,
         description = "Has a chance to drop from Risen Husk within Witch Hill.",
-        zone = "Witch Hill.",
+        zone = "Dustwallow Marsh",
+        subzone = "Witch Hill",
         icon = 2
     },
     [89213] = {
@@ -12611,7 +13162,7 @@ AV_VanityItems = {
         creaturePreview = 23643,
         creatureId = 23643,
         description = "Has a chance to drop from Unstable Mur'ghoul within Chillmere Coast.",
-        zone = "Chillmere Coast.",
+        zone = "Chillmere Coast",
         icon = 2
     },
     [89214] = {
@@ -12620,7 +13171,7 @@ AV_VanityItems = {
         creaturePreview = 23644,
         creatureId = 23644,
         description = "Has a chance to drop from Mur'ghoul Flesheater within Chillmere Coast.",
-        zone = "Chillmere Coast.",
+        zone = "Chillmere Coast",
         icon = 2
     },
     [89215] = {
@@ -12629,7 +13180,7 @@ AV_VanityItems = {
         creaturePreview = 23645,
         creatureId = 23645,
         description = "Has a chance to drop from Mur'ghoul Corrupter within Chillmere Coast.",
-        zone = "Chillmere Coast.",
+        zone = "Chillmere Coast",
         icon = 2
     },
     [89217] = {
@@ -12638,7 +13189,7 @@ AV_VanityItems = {
         creaturePreview = 300158,
         creatureId = 300158,
         description = "Has a chance to drop from Putrid Wight within Gjalerbron.",
-        zone = "Gjalerbron.",
+        zone = "Gjalerbron",
         icon = 2
     },
     [89218] = {
@@ -12647,7 +13198,7 @@ AV_VanityItems = {
         creaturePreview = 24013,
         creatureId = 24013,
         description = "Has a chance to drop from Deathless Watcher within Gjalerbron.",
-        zone = "Gjalerbron.",
+        zone = "Gjalerbron",
         icon = 2
     },
     [89219] = {
@@ -12656,7 +13207,7 @@ AV_VanityItems = {
         creaturePreview = 24073,
         creatureId = 24073,
         description = "Has a chance to drop from Fearsome Horror within Gjalerbron.",
-        zone = "Gjalerbron.",
+        zone = "Gjalerbron",
         icon = 2
     },
     [89220] = {
@@ -12665,7 +13216,7 @@ AV_VanityItems = {
         creaturePreview = 24084,
         creatureId = 24084,
         description = "Has a chance to drop from Tunneling Ghoul within Utgarde Keep.",
-        zone = "Utgarde Keep.",
+        subzone = "Utgarde Keep",
         icon = 2
     },
     [89231] = {
@@ -12674,7 +13225,7 @@ AV_VanityItems = {
         creaturePreview = 24262,
         creatureId = 24262,
         description = "Has a chance to drop from Vrykul Soul within Gjalerbron.",
-        zone = "Gjalerbron.",
+        zone = "Gjalerbron",
         icon = 2
     },
     [89281] = {
@@ -12683,7 +13234,8 @@ AV_VanityItems = {
         creaturePreview = 24440,
         creatureId = 24440,
         description = "Has a chance to drop from Gjalerbron Gargoyle within Steel Gate.",
-        zone = "Steel Gate.",
+        zone = "Steel Gate",
+        subzone = "Steel Gate",
         icon = 2
     },
     [89283] = {
@@ -12692,7 +13244,7 @@ AV_VanityItems = {
         creaturePreview = 24485,
         creatureId = 24485,
         description = "Has a chance to drop from Servitor Shade within Chillmere Coast.",
-        zone = "Chillmere Coast.",
+        zone = "Chillmere Coast",
         icon = 2
     },
     [89284] = {
@@ -12701,7 +13253,7 @@ AV_VanityItems = {
         creaturePreview = 24546,
         creatureId = 24546,
         description = "Has a chance to drop from Rotgill within Chillmere Coast.",
-        zone = "Chillmere Coast.",
+        zone = "Chillmere Coast",
         icon = 2
     },
     [89354] = {
@@ -12710,7 +13262,7 @@ AV_VanityItems = {
         creaturePreview = 24789,
         creatureId = 24789,
         description = "Has a chance to drop from Forlorn Soul within The Isle of Spears.",
-        zone = "The Isle of Spears.",
+        zone = "The Isle of Spears",
         icon = 2
     },
     [89355] = {
@@ -12719,7 +13271,7 @@ AV_VanityItems = {
         creaturePreview = 24871,
         creatureId = 24871,
         description = "Has a chance to drop from Risen Vrykul Ancestor within Shield Hill.",
-        zone = "Shield Hill.",
+        zone = "Shield Hill",
         icon = 2
     },
     [89356] = {
@@ -12728,7 +13280,7 @@ AV_VanityItems = {
         creaturePreview = 24872,
         creatureId = 24872,
         description = "Has a chance to drop from Blood Shade within Shield Hill.",
-        zone = "Shield Hill.",
+        zone = "Shield Hill",
         icon = 2
     },
     [89357] = {
@@ -12737,7 +13289,7 @@ AV_VanityItems = {
         creaturePreview = 25227,
         creatureId = 25227,
         description = "Has a chance to drop from Crypt Crawler within Borean Tundra.",
-        zone = "Borean Tundra.",
+        zone = "Borean Tundra",
         icon = 2
     },
     [89358] = {
@@ -12746,7 +13298,7 @@ AV_VanityItems = {
         creaturePreview = 25228,
         creatureId = 25228,
         description = "Has a chance to drop from Risen Crypt Lord within Northrend.",
-        zone = "Northrend.",
+        zone = "Northrend",
         icon = 2
     },
     [89359] = {
@@ -12755,7 +13307,7 @@ AV_VanityItems = {
         creaturePreview = 25294,
         creatureId = 25294,
         description = "Has a chance to drop from Nerub'ar Web Lord within Borean Tundra.",
-        zone = "Borean Tundra.",
+        zone = "Borean Tundra",
         icon = 2
     },
     [89361] = {
@@ -12764,7 +13316,7 @@ AV_VanityItems = {
         creaturePreview = 25383,
         creatureId = 25383,
         description = "Has a chance to drop from En'kilah Abomination within Temple City of En'kilah.",
-        zone = "Temple City of En'kilah.",
+        zone = "Temple City of En'kilah",
         icon = 2
     },
     [89369] = {
@@ -12773,7 +13325,7 @@ AV_VanityItems = {
         creaturePreview = 25386,
         creatureId = 25386,
         description = "Has a chance to drop from En'kilah Crypt Fiend within Temple City of En'kilah.",
-        zone = "Temple City of En'kilah.",
+        zone = "Temple City of En'kilah",
         icon = 2
     },
     [89370] = {
@@ -12782,7 +13334,7 @@ AV_VanityItems = {
         creaturePreview = 25387,
         creatureId = 25387,
         description = "Has a chance to drop from En'kilah Gargoyle within Naxxanar.",
-        zone = "Naxxanar.",
+        zone = "Naxxanar",
         icon = 2
     },
     [89371] = {
@@ -12791,7 +13343,7 @@ AV_VanityItems = {
         creaturePreview = 25393,
         creatureId = 25393,
         description = "Has a chance to drop from En'kilah Ghoul within Transborea.",
-        zone = "Transborea.",
+        zone = "Transborea",
         icon = 2
     },
     [89372] = {
@@ -12800,7 +13352,7 @@ AV_VanityItems = {
         creaturePreview = 25396,
         creatureId = 25396,
         description = "Has a chance to drop from Naxxanar Skeletal Mage within Naxxanar.",
-        zone = "Naxxanar.",
+        zone = "Naxxanar",
         icon = 2
     },
     [89436] = {
@@ -12809,7 +13361,7 @@ AV_VanityItems = {
         creaturePreview = 25600,
         creatureId = 25600,
         description = "Has a chance to drop from Unliving Swine within Borean Tundra.",
-        zone = "Borean Tundra.",
+        zone = "Borean Tundra",
         icon = 2
     },
     [89547] = {
@@ -12818,7 +13370,7 @@ AV_VanityItems = {
         creaturePreview = 25611,
         creatureId = 25611,
         description = "Has a chance to drop from Warsong Aberration within Warsong Granary.",
-        zone = "Warsong Granary.",
+        zone = "Warsong Granary",
         icon = 2
     },
     [89604] = {
@@ -12827,7 +13379,7 @@ AV_VanityItems = {
         creaturePreview = 25650,
         creatureId = 25650,
         description = "Has a chance to drop from Plagued Scavenger within Farshire.",
-        zone = "Farshire.",
+        zone = "Farshire",
         icon = 2
     },
     [89615] = {
@@ -12836,7 +13388,7 @@ AV_VanityItems = {
         creaturePreview = 25655,
         creatureId = 25655,
         description = "Has a chance to drop from Bane within Warsong Slaughterhouse.",
-        zone = "Warsong Slaughterhouse.",
+        zone = "Warsong Slaughterhouse",
         icon = 2
     },
     [89616] = {
@@ -12845,7 +13397,7 @@ AV_VanityItems = {
         creaturePreview = 25660,
         creatureId = 25660,
         description = "Has a chance to drop from Festering Ghoul within Talramas.",
-        zone = "Talramas.",
+        zone = "Talramas",
         icon = 2
     },
     [89617] = {
@@ -12854,7 +13406,7 @@ AV_VanityItems = {
         creaturePreview = 25684,
         creatureId = 25684,
         description = "Has a chance to drop from Talramas Abomination within Talramas.",
-        zone = "Talramas.",
+        zone = "Talramas",
         icon = 2
     },
     [89618] = {
@@ -12863,7 +13415,7 @@ AV_VanityItems = {
         creaturePreview = 26073,
         creatureId = 26073,
         description = "Has a chance to drop from High Priest Talet-Kha within Spire of Pain.",
-        zone = "Spire of Pain.",
+        zone = "Spire of Pain",
         icon = 2
     },
     [89619] = {
@@ -12872,7 +13424,7 @@ AV_VanityItems = {
         creaturePreview = 26076,
         creatureId = 26076,
         description = "Has a chance to drop from High Priest Naferset within Spire of Decay.",
-        zone = "Spire of Decay.",
+        zone = "Spire of Decay",
         icon = 2
     },
     [89620] = {
@@ -12881,7 +13433,7 @@ AV_VanityItems = {
         creaturePreview = 26126,
         creatureId = 26126,
         description = "Has a chance to drop from Bone Warrior within Festering Pools.",
-        zone = "Festering Pools.",
+        zone = "Festering Pools",
         icon = 2
     },
     [89621] = {
@@ -12890,7 +13442,7 @@ AV_VanityItems = {
         creaturePreview = 26202,
         creatureId = 26202,
         description = "Has a chance to drop from Ziggurat Defender within The Wailing Ziggurat.",
-        zone = "The Wailing Ziggurat.",
+        zone = "The Wailing Ziggurat",
         icon = 2
     },
     [89625] = {
@@ -12899,7 +13451,7 @@ AV_VanityItems = {
         creaturePreview = 26455,
         creatureId = 26455,
         description = "Has a chance to drop from Moonrest Highborne within Moonrest Gardens.",
-        zone = "Moonrest Gardens.",
+        subzone = "Moonrest Gardens",
         icon = 2
     },
     [89626] = {
@@ -12908,7 +13460,7 @@ AV_VanityItems = {
         creaturePreview = 26458,
         creatureId = 26458,
         description = "Has a chance to drop from Drakkari Plaguebringer within Grizzly Hills.",
-        zone = "Grizzly Hills.",
+        zone = "Grizzly Hills",
         icon = 2
     },
     [89627] = {
@@ -12917,7 +13469,7 @@ AV_VanityItems = {
         creaturePreview = 26461,
         creatureId = 26461,
         description = "Has a chance to drop from Scourge Corpserender within Drak'atal Passage.",
-        zone = "Drak'atal Passage.",
+        zone = "Drak'atal Passage",
         icon = 2
     },
     [89629] = {
@@ -12926,7 +13478,7 @@ AV_VanityItems = {
         creaturePreview = 26492,
         creatureId = 26492,
         description = "Has a chance to drop from Wastes Digger within The Dragon Wastes.",
-        zone = "The Dragon Wastes.",
+        zone = "The Dragon Wastes",
         icon = 2
     },
     [89638] = {
@@ -12935,7 +13487,7 @@ AV_VanityItems = {
         creaturePreview = 26536,
         creatureId = 26536,
         description = "Has a chance to drop from Mindless Servant within Utgarde Pinnacle.",
-        zone = "Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
         icon = 2
     },
     [89771] = {
@@ -12944,7 +13496,7 @@ AV_VanityItems = {
         creaturePreview = 26555,
         creatureId = 26555,
         description = "Has a chance to drop from Scourge Hulk within Utgarde Pinnacle.",
-        zone = "Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
         icon = 2
     },
     [89772] = {
@@ -12953,7 +13505,7 @@ AV_VanityItems = {
         creaturePreview = 26605,
         creatureId = 26605,
         description = "Has a chance to drop from Anub'ar Underlord within The Pit of Narjun.",
-        zone = "The Pit of Narjun.",
+        zone = "The Pit of Narjun",
         icon = 2
     },
     [89773] = {
@@ -12962,7 +13514,7 @@ AV_VanityItems = {
         creaturePreview = 26621,
         creatureId = 26621,
         description = "Has a chance to drop from Ghoul Tormentor within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 2
     },
     [89782] = {
@@ -12971,7 +13523,7 @@ AV_VanityItems = {
         creaturePreview = 26623,
         creatureId = 26623,
         description = "Has a chance to drop from Scourge Brute within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 2
     },
     [89801] = {
@@ -12980,7 +13532,8 @@ AV_VanityItems = {
         creaturePreview = 91357,
         creatureId = 91357,
         description = "Has a chance to drop from Zul'Farrak Dead Hero(Female) within Zul'Gurub.",
-        zone = "Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
         icon = 2
     },
     [89838] = {
@@ -12989,7 +13542,7 @@ AV_VanityItems = {
         creaturePreview = 26624,
         creatureId = 26624,
         description = "Has a chance to drop from Wretched Belcher within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 2
     },
     [89840] = {
@@ -12998,7 +13551,7 @@ AV_VanityItems = {
         creaturePreview = 26630,
         creatureId = 26630,
         description = "Has a chance to drop from Trollgore within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 2
     },
     [89845] = {
@@ -13007,7 +13560,7 @@ AV_VanityItems = {
         creaturePreview = 26948,
         creatureId = 26948,
         description = "Has a chance to drop from Hulking Atrocity within Jintha'kalar.",
-        zone = "Jintha'kalar.",
+        zone = "Jintha'kalar",
         icon = 2
     },
     [89846] = {
@@ -13016,7 +13569,7 @@ AV_VanityItems = {
         creaturePreview = 26966,
         creatureId = 26966,
         description = "Has a chance to drop from Shadowy Tormentor within Agmar's Hammer.",
-        zone = "Agmar's Hammer.",
+        zone = "Agmar's Hammer",
         icon = 2
     },
     [89850] = {
@@ -13025,7 +13578,7 @@ AV_VanityItems = {
         creaturePreview = 27272,
         creatureId = 27272,
         description = "Has a chance to drop from Risen Villager within Wintergarde Keep.",
-        zone = "Wintergarde Keep.",
+        subzone = "Wintergarde Keep",
         icon = 2
     },
     [89851] = {
@@ -13034,7 +13587,7 @@ AV_VanityItems = {
         creaturePreview = 27283,
         creatureId = 27283,
         description = "Has a chance to drop from Risen Wintergarde Mage within The Carrion Fields.",
-        zone = "The Carrion Fields.",
+        zone = "The Carrion Fields",
         icon = 2
     },
     [89852] = {
@@ -13043,7 +13596,7 @@ AV_VanityItems = {
         creaturePreview = 27284,
         creatureId = 27284,
         description = "Has a chance to drop from Risen Wintergarde Defender within Wintergarde Mine.",
-        zone = "Wintergarde Mine.",
+        subzone = "Wintergarde Mine",
         icon = 2
     },
     [89853] = {
@@ -13052,7 +13605,7 @@ AV_VanityItems = {
         creaturePreview = 27286,
         creatureId = 27286,
         description = "Has a chance to drop from Dreadbone Invader within The Carrion Fields.",
-        zone = "The Carrion Fields.",
+        zone = "The Carrion Fields",
         icon = 2
     },
     [89855] = {
@@ -13061,7 +13614,7 @@ AV_VanityItems = {
         creaturePreview = 27360,
         creatureId = 27360,
         description = "Has a chance to drop from Smoldering Skeleton within Obsidian Dragonshrine.",
-        zone = "Obsidian Dragonshrine.",
+        zone = "Obsidian Dragonshrine",
         icon = 2
     },
     [89859] = {
@@ -13070,7 +13623,7 @@ AV_VanityItems = {
         creaturePreview = 27362,
         creatureId = 27362,
         description = "Has a chance to drop from Smoldering Construct within Maw of Neltharion.",
-        zone = "Maw of Neltharion.",
+        zone = "Maw of Neltharion",
         icon = 2
     },
     [89860] = {
@@ -13079,7 +13632,7 @@ AV_VanityItems = {
         creaturePreview = 27410,
         creatureId = 27410,
         description = "Has a chance to drop from Scourge Siegesmith within The Carrion Fields.",
-        zone = "The Carrion Fields.",
+        zone = "The Carrion Fields",
         icon = 2
     },
     [89866] = {
@@ -13088,7 +13641,7 @@ AV_VanityItems = {
         creaturePreview = 27551,
         creatureId = 27551,
         description = "Has a chance to drop from Enraged Apparition within Wintergarde Crypt.",
-        zone = "Wintergarde Crypt.",
+        zone = "Wintergarde Crypt",
         icon = 2
     },
     [89867] = {
@@ -13097,7 +13650,7 @@ AV_VanityItems = {
         creaturePreview = 27552,
         creatureId = 27552,
         description = "Has a chance to drop from Reanimated Noble within Wintergarde Crypt.",
-        zone = "Wintergarde Crypt.",
+        zone = "Wintergarde Crypt",
         icon = 2
     },
     [89878] = {
@@ -13106,7 +13659,7 @@ AV_VanityItems = {
         creaturePreview = 27680,
         creatureId = 27680,
         description = "Has a chance to drop from Dahlia Suntouch within Ruby Dragonshrine.",
-        zone = "Ruby Dragonshrine.",
+        zone = "Ruby Dragonshrine",
         icon = 2
     },
     [89879] = {
@@ -13115,7 +13668,7 @@ AV_VanityItems = {
         creaturePreview = 27729,
         creatureId = 27729,
         description = "Has a chance to drop from Enraging Ghoul within The Culling of Stratholme.",
-        zone = "The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
         icon = 2
     },
     [89889] = {
@@ -13124,7 +13677,7 @@ AV_VanityItems = {
         creaturePreview = 27734,
         creatureId = 27734,
         description = "Has a chance to drop from Crypt Fiend within The Culling of Stratholme.",
-        zone = "The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
         icon = 2
     },
     [89890] = {
@@ -13133,7 +13686,7 @@ AV_VanityItems = {
         creaturePreview = 27736,
         creatureId = 27736,
         description = "Has a chance to drop from Patchwork Construct within The Culling of Stratholme.",
-        zone = "The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
         icon = 2
     },
     [89891] = {
@@ -13142,7 +13695,7 @@ AV_VanityItems = {
         creaturePreview = 27797,
         creatureId = 27797,
         description = "Has a chance to drop from Tattered Abomination within Wintergarde Mausoleum.",
-        zone = "Wintergarde Mausoleum.",
+        zone = "Wintergarde Mausoleum",
         icon = 2
     },
     [89892] = {
@@ -13151,7 +13704,7 @@ AV_VanityItems = {
         creaturePreview = 27808,
         creatureId = 27808,
         description = "Has a chance to drop from Turgid the Vile within The Carrion Fields.",
-        zone = "The Carrion Fields.",
+        zone = "The Carrion Fields",
         icon = 2
     },
     [89904] = {
@@ -13160,7 +13713,7 @@ AV_VanityItems = {
         creaturePreview = 27823,
         creatureId = 27823,
         description = "Has a chance to drop from Naxxramas Dreadguard within Wintergarde Mausoleum.",
-        zone = "Wintergarde Mausoleum.",
+        zone = "Wintergarde Mausoleum",
         icon = 2
     },
     [89905] = {
@@ -13169,7 +13722,7 @@ AV_VanityItems = {
         creaturePreview = 27824,
         creatureId = 27824,
         description = "Has a chance to drop from Naxxramas Shade within Wintergarde Mausoleum.",
-        zone = "Wintergarde Mausoleum.",
+        zone = "Wintergarde Mausoleum",
         icon = 2
     },
     [89913] = {
@@ -13178,7 +13731,7 @@ AV_VanityItems = {
         creaturePreview = 27835,
         creatureId = 27835,
         description = "Has a chance to drop from Dreadbone Construct within Wintergarde Keep.",
-        zone = "Wintergarde Keep.",
+        subzone = "Wintergarde Keep",
         icon = 2
     },
     [89914] = {
@@ -13187,7 +13740,7 @@ AV_VanityItems = {
         creaturePreview = 27836,
         creatureId = 27836,
         description = "Has a chance to drop from Wailing Soul within Wintergarde Mausoleum.",
-        zone = "Wintergarde Mausoleum.",
+        zone = "Wintergarde Mausoleum",
         icon = 2
     },
     [89915] = {
@@ -13196,7 +13749,7 @@ AV_VanityItems = {
         creaturePreview = 27871,
         creatureId = 27871,
         description = "Has a chance to drop from Flesheating Ghoul within Drak'Tharon Keep.",
-        zone = "Drak'Tharon Keep.",
+        subzone = "Drak'Tharon Keep",
         icon = 2
     },
     [89995] = {
@@ -13205,7 +13758,7 @@ AV_VanityItems = {
         creaturePreview = 27941,
         creatureId = 27941,
         description = "Has a chance to drop from Drakkari Plague Spreader within Zeb'Halak.",
-        zone = "Zeb'Halak.",
+        zone = "Zeb'Halak",
         icon = 2
     },
     [101049] = {
@@ -13214,7 +13767,7 @@ AV_VanityItems = {
         creaturePreview = 28101,
         creatureId = 28101,
         description = "Has a chance to drop from Blighted Corpse within The Lost Lands.",
-        zone = "The Lost Lands.",
+        zone = "The Lost Lands",
         icon = 2
     },
     [101050] = {
@@ -13223,7 +13776,7 @@ AV_VanityItems = {
         creaturePreview = 28108,
         creatureId = 28108,
         description = "Has a chance to drop from Bonescythe Ravager within The Sundered Shard.",
-        zone = "The Sundered Shard.",
+        zone = "The Sundered Shard",
         icon = 2
     },
     [101051] = {
@@ -13232,7 +13785,7 @@ AV_VanityItems = {
         creaturePreview = 28158,
         creatureId = 28158,
         description = "Has a chance to drop from Withered Argent Footman within Drak'Sotra.",
-        zone = "Drak'Sotra.",
+        zone = "Drak'Sotra",
         icon = 2
     },
     [101053] = {
@@ -13241,7 +13794,7 @@ AV_VanityItems = {
         creaturePreview = 28199,
         creatureId = 28199,
         description = "Has a chance to drop from Tomb Stalker within The Culling of Stratholme.",
-        zone = "The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
         icon = 2
     },
     [101054] = {
@@ -13250,7 +13803,7 @@ AV_VanityItems = {
         creaturePreview = 28201,
         creatureId = 28201,
         description = "Has a chance to drop from Bile Golem within The Culling of Stratholme.",
-        zone = "The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
         icon = 2
     },
     [101055] = {
@@ -13259,7 +13812,7 @@ AV_VanityItems = {
         creaturePreview = 28220,
         creatureId = 28220,
         description = "Has a chance to drop from Frostbitten Corpse within The Avalanche.",
-        zone = "The Avalanche.",
+        zone = "The Avalanche",
         icon = 2
     },
     [101056] = {
@@ -13268,7 +13821,7 @@ AV_VanityItems = {
         creaturePreview = 28246,
         creatureId = 28246,
         description = "Has a chance to drop from Sky Terror within The Argent Stand.",
-        zone = "The Argent Stand.",
+        zone = "The Argent Stand",
         icon = 2
     },
     [101057] = {
@@ -13277,7 +13830,7 @@ AV_VanityItems = {
         creaturePreview = 28249,
         creatureId = 28249,
         description = "Has a chance to drop from Devouring Ghoul within The Culling of Stratholme.",
-        zone = "The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
         icon = 2
     },
     [101058] = {
@@ -13286,7 +13839,7 @@ AV_VanityItems = {
         creaturePreview = 28268,
         creatureId = 28268,
         description = "Has a chance to drop from Scourged Argent Footman within Kolramas.",
-        zone = "Kolramas.",
+        zone = "Kolramas",
         icon = 2
     },
     [101059] = {
@@ -13295,7 +13848,7 @@ AV_VanityItems = {
         creaturePreview = 28564,
         creatureId = 28564,
         description = "Has a chance to drop from Putrid Abomination within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 2
     },
     [101060] = {
@@ -13304,7 +13857,7 @@ AV_VanityItems = {
         creaturePreview = 28565,
         creatureId = 28565,
         description = "Has a chance to drop from Decaying Ghoul within Zul'Drak.",
-        zone = "Zul'Drak.",
+        zone = "Zul'Drak",
         icon = 2
     },
     [101061] = {
@@ -13313,7 +13866,7 @@ AV_VanityItems = {
         creaturePreview = 28603,
         creatureId = 28603,
         description = "Has a chance to drop from Blightguard within Reliquary of Pain.",
-        zone = "Reliquary of Pain.",
+        zone = "Reliquary of Pain",
         icon = 2
     },
     [101062] = {
@@ -13322,7 +13875,7 @@ AV_VanityItems = {
         creaturePreview = 28641,
         creatureId = 28641,
         description = "Has a chance to drop from Blighted Corpse within Mosswalker Village.",
-        zone = "Mosswalker Village.",
+        zone = "Mosswalker Village",
         icon = 2
     },
     [101064] = {
@@ -13331,7 +13884,7 @@ AV_VanityItems = {
         creaturePreview = 28747,
         creatureId = 28747,
         description = "Has a chance to drop from Quetz'lun Worshipper within Altar of Quetz'lun.",
-        zone = "Altar of Quetz'lun.",
+        zone = "Altar of Quetz'lun",
         icon = 2
     },
     [101065] = {
@@ -13340,7 +13893,7 @@ AV_VanityItems = {
         creaturePreview = 28748,
         creatureId = 28748,
         description = "Has a chance to drop from Serpent-Touched Berserker within Altar of Quetz'lun.",
-        zone = "Altar of Quetz'lun.",
+        zone = "Altar of Quetz'lun",
         icon = 2
     },
     [101066] = {
@@ -13349,7 +13902,7 @@ AV_VanityItems = {
         creaturePreview = 28759,
         creatureId = 28759,
         description = "Has a chance to drop from Flying Fiend within Reliquary of Pain.",
-        zone = "Reliquary of Pain.",
+        zone = "Reliquary of Pain",
         icon = 2
     },
     [101067] = {
@@ -13358,7 +13911,7 @@ AV_VanityItems = {
         creaturePreview = 28769,
         creatureId = 28769,
         description = "Has a chance to drop from Shadowy Tormentor within Havenshire.",
-        zone = "Havenshire.",
+        zone = "Havenshire",
         icon = 2
     },
     [101068] = {
@@ -13367,7 +13920,7 @@ AV_VanityItems = {
         creaturePreview = 28793,
         creatureId = 28793,
         description = "Has a chance to drop from Darmuk within Reliquary of Pain.",
-        zone = "Reliquary of Pain.",
+        zone = "Reliquary of Pain",
         icon = 2
     },
     [101069] = {
@@ -13376,7 +13929,7 @@ AV_VanityItems = {
         creaturePreview = 28843,
         creatureId = 28843,
         description = "Has a chance to drop from Bloated Abomination within Reliquary of Pain.",
-        zone = "Reliquary of Pain.",
+        zone = "Reliquary of Pain",
         icon = 2
     },
     [101071] = {
@@ -13385,7 +13938,7 @@ AV_VanityItems = {
         creaturePreview = 28879,
         creatureId = 28879,
         description = "Has a chance to drop from Shalewing within Voltarus.",
-        zone = "Voltarus.",
+        zone = "Voltarus",
         icon = 2
     },
     [101073] = {
@@ -13394,7 +13947,7 @@ AV_VanityItems = {
         creaturePreview = 28931,
         creatureId = 28931,
         description = "Has a chance to drop from Blightblood Troll within Voltarus.",
-        zone = "Voltarus.",
+        zone = "Voltarus",
         icon = 2
     },
     [101075] = {
@@ -13403,7 +13956,7 @@ AV_VanityItems = {
         creaturePreview = 29120,
         creatureId = 29120,
         description = "Has a chance to drop from Anub'arak within Passage of Lost Fiends.",
-        zone = "Passage of Lost Fiends.",
+        zone = "Passage of Lost Fiends",
         icon = 2
     },
     [101077] = {
@@ -13412,7 +13965,7 @@ AV_VanityItems = {
         creaturePreview = 29133,
         creatureId = 29133,
         description = "Has a chance to drop from Disturbed Soul within Pools of Zha'Jin.",
-        zone = "Pools of Zha'Jin.",
+        zone = "Pools of Zha'Jin",
         icon = 2
     },
     [101078] = {
@@ -13421,7 +13974,7 @@ AV_VanityItems = {
         creaturePreview = 29646,
         creatureId = 29646,
         description = "Has a chance to drop from Banshee Soulclaimer within The Dead Fields.",
-        zone = "The Dead Fields.",
+        zone = "The Dead Fields",
         icon = 2
     },
     [101079] = {
@@ -13430,7 +13983,7 @@ AV_VanityItems = {
         creaturePreview = 29656,
         creatureId = 29656,
         description = "Has a chance to drop from Drakuru Berserker within Rageclaw Den.",
-        zone = "Rageclaw Den.",
+        subzone = "Rageclaw Den",
         icon = 2
     },
     [101080] = {
@@ -13439,7 +13992,7 @@ AV_VanityItems = {
         creaturePreview = 29719,
         creatureId = 29719,
         description = "Has a chance to drop from Morbid Carcass within The Shadow Vault.",
-        zone = "The Shadow Vault.",
+        zone = "The Shadow Vault",
         icon = 2
     },
     [101081] = {
@@ -13448,7 +14001,7 @@ AV_VanityItems = {
         creaturePreview = 29722,
         creatureId = 29722,
         description = "Has a chance to drop from Rabid Cannibal within The Shadow Vault.",
-        zone = "The Shadow Vault.",
+        zone = "The Shadow Vault",
         icon = 2
     },
     [101083] = {
@@ -13457,7 +14010,7 @@ AV_VanityItems = {
         creaturePreview = 30202,
         creatureId = 30202,
         description = "Has a chance to drop from Reanimated Crusader within Scourgeholme.",
-        zone = "Scourgeholme.",
+        zone = "Scourgeholme",
         icon = 2
     },
     [101084] = {
@@ -13466,7 +14019,7 @@ AV_VanityItems = {
         creaturePreview = 30283,
         creatureId = 30283,
         description = "Has a chance to drop from Plague Walker within Hall of the Conquered Kings.",
-        zone = "Hall of the Conquered Kings.",
+        zone = "Hall of the Conquered Kings",
         icon = 2
     },
     [101085] = {
@@ -13475,7 +14028,7 @@ AV_VanityItems = {
         creaturePreview = 30285,
         creatureId = 30285,
         description = "Has a chance to drop from Eye of Taldaram within Befouled Terrace.",
-        zone = "Befouled Terrace.",
+        subzone = "Befouled Terrace",
         icon = 2
     },
     [101086] = {
@@ -13484,7 +14037,7 @@ AV_VanityItems = {
         creaturePreview = 30286,
         creatureId = 30286,
         description = "Has a chance to drop from Frostbringer within Befouled Terrace.",
-        zone = "Befouled Terrace.",
+        subzone = "Befouled Terrace",
         icon = 2
     },
     [101087] = {
@@ -13493,7 +14046,7 @@ AV_VanityItems = {
         creaturePreview = 30482,
         creatureId = 30482,
         description = "Has a chance to drop from Wrathstrike Gargoyle within Scourgeholme.",
-        zone = "Scourgeholme.",
+        zone = "Scourgeholme",
         icon = 2
     },
     [101088] = {
@@ -13502,7 +14055,7 @@ AV_VanityItems = {
         creaturePreview = 30541,
         creatureId = 30541,
         description = "Has a chance to drop from Forgotten Depths Underking within Scourgeholme.",
-        zone = "Scourgeholme.",
+        zone = "Scourgeholme",
         icon = 2
     },
     [101089] = {
@@ -13511,7 +14064,7 @@ AV_VanityItems = {
         creaturePreview = 30597,
         creatureId = 30597,
         description = "Has a chance to drop from Spiked Ghoul within The Fleshwerks.",
-        zone = "The Fleshwerks.",
+        zone = "The Fleshwerks",
         icon = 2
     },
     [101090] = {
@@ -13520,7 +14073,7 @@ AV_VanityItems = {
         creaturePreview = 30687,
         creatureId = 30687,
         description = "Has a chance to drop from Skeletal Constructor within The Fleshwerks.",
-        zone = "The Fleshwerks.",
+        zone = "The Fleshwerks",
         icon = 2
     },
     [101091] = {
@@ -13529,7 +14082,7 @@ AV_VanityItems = {
         creaturePreview = 30689,
         creatureId = 30689,
         description = "Has a chance to drop from Chained Abomination within The Fleshwerks.",
-        zone = "The Fleshwerks.",
+        zone = "The Fleshwerks",
         icon = 2
     },
     [101092] = {
@@ -13538,7 +14091,7 @@ AV_VanityItems = {
         creaturePreview = 30696,
         creatureId = 30696,
         description = "Has a chance to drop from Corpulent Horror within Sanctum of Reanimation.",
-        zone = "Sanctum of Reanimation.",
+        zone = "Sanctum of Reanimation",
         icon = 2
     },
     [101093] = {
@@ -13547,7 +14100,7 @@ AV_VanityItems = {
         creaturePreview = 30830,
         creatureId = 30830,
         description = "Has a chance to drop from Underking Talonox within The Pit of Fiends.",
-        zone = "The Pit of Fiends.",
+        zone = "The Pit of Fiends",
         icon = 2
     },
     [101095] = {
@@ -13556,7 +14109,7 @@ AV_VanityItems = {
         creaturePreview = 30920,
         creatureId = 30920,
         description = "Has a chance to drop from Lumbering Atrocity within Malykriss: The Vile Hold.",
-        zone = "Malykriss: The Vile Hold.",
+        subzone = "Malykriss: The Vile Hold",
         icon = 2
     },
     [101096] = {
@@ -13565,7 +14118,7 @@ AV_VanityItems = {
         creaturePreview = 30921,
         creatureId = 30921,
         description = "Has a chance to drop from Skeletal Runesmith within Malykriss: The Vile Hold.",
-        zone = "Malykriss: The Vile Hold.",
+        subzone = "Malykriss: The Vile Hold",
         icon = 2
     },
     [101097] = {
@@ -13574,7 +14127,7 @@ AV_VanityItems = {
         creaturePreview = 30949,
         creatureId = 30949,
         description = "Has a chance to drop from Risen Laborer within Weeping Quarry.",
-        zone = "Weeping Quarry.",
+        zone = "Weeping Quarry",
         icon = 2
     },
     [101098] = {
@@ -13583,7 +14136,7 @@ AV_VanityItems = {
         creaturePreview = 30951,
         creatureId = 30951,
         description = "Has a chance to drop from Restless Lookout within Weeping Quarry.",
-        zone = "Weeping Quarry.",
+        zone = "Weeping Quarry",
         icon = 2
     },
     [101099] = {
@@ -13592,7 +14145,7 @@ AV_VanityItems = {
         creaturePreview = 30958,
         creatureId = 30958,
         description = "Has a chance to drop from Death Knight Initiate within Malykriss: The Vile Hold.",
-        zone = "Malykriss: The Vile Hold.",
+        subzone = "Malykriss: The Vile Hold",
         icon = 2
     },
     [101100] = {
@@ -13601,7 +14154,7 @@ AV_VanityItems = {
         creaturePreview = 30960,
         creatureId = 30960,
         description = "Has a chance to drop from Risen Soldier within The Fleshwerks.",
-        zone = "The Fleshwerks.",
+        zone = "The Fleshwerks",
         icon = 2
     },
     [101102] = {
@@ -13610,7 +14163,7 @@ AV_VanityItems = {
         creaturePreview = 31015,
         creatureId = 31015,
         description = "Has a chance to drop from Intrepid Ghoul within Sanctum of Reanimation.",
-        zone = "Sanctum of Reanimation.",
+        zone = "Sanctum of Reanimation",
         icon = 2
     },
     [101103] = {
@@ -13619,7 +14172,7 @@ AV_VanityItems = {
         creaturePreview = 31039,
         creatureId = 31039,
         description = "Has a chance to drop from Forgotten Depths Underking within Scourgeholme.",
-        zone = "Scourgeholme.",
+        zone = "Scourgeholme",
         icon = 2
     },
     [101104] = {
@@ -13628,7 +14181,7 @@ AV_VanityItems = {
         creaturePreview = 31040,
         creatureId = 31040,
         description = "Has a chance to drop from Wrathstrike Gargoyle within The Breach.",
-        zone = "The Breach.",
+        zone = "The Breach",
         icon = 2
     },
     [101105] = {
@@ -13637,7 +14190,7 @@ AV_VanityItems = {
         creaturePreview = 31043,
         creatureId = 31043,
         description = "Has a chance to drop from Reanimated Crusader within Scourgeholme.",
-        zone = "Scourgeholme.",
+        zone = "Scourgeholme",
         icon = 2
     },
     [101106] = {
@@ -13646,7 +14199,7 @@ AV_VanityItems = {
         creaturePreview = 31140,
         creatureId = 31140,
         description = "Has a chance to drop from Hulking Abomination within The Broken Front.",
-        zone = "The Broken Front.",
+        zone = "The Broken Front",
         icon = 2
     },
     [101108] = {
@@ -13655,7 +14208,7 @@ AV_VanityItems = {
         creaturePreview = 31142,
         creatureId = 31142,
         description = "Has a chance to drop from Icy Ghoul within Mord'rethar: The Death Gate.",
-        zone = "Mord'rethar: The Death Gate.",
+        subzone = "Mord'rethar: The Death Gate",
         icon = 2
     },
     [101109] = {
@@ -13664,7 +14217,7 @@ AV_VanityItems = {
         creaturePreview = 31150,
         creatureId = 31150,
         description = "Has a chance to drop from Plagued Fiend within Ymirheim.",
-        zone = "Ymirheim.",
+        zone = "Ymirheim",
         icon = 2
     },
     [101110] = {
@@ -13673,7 +14226,7 @@ AV_VanityItems = {
         creaturePreview = 31152,
         creatureId = 31152,
         description = "Has a chance to drop from Undying Minion within The Broken Front.",
-        zone = "The Broken Front.",
+        zone = "The Broken Front",
         icon = 2
     },
     [101111] = {
@@ -13682,7 +14235,7 @@ AV_VanityItems = {
         creaturePreview = 31155,
         creatureId = 31155,
         description = "Has a chance to drop from Malefic Necromancer within The Broken Front.",
-        zone = "The Broken Front.",
+        zone = "The Broken Front",
         icon = 2
     },
     [101112] = {
@@ -13691,7 +14244,7 @@ AV_VanityItems = {
         creaturePreview = 31198,
         creatureId = 31198,
         description = "Has a chance to drop from Coprous the Defiled within Icecrown.",
-        zone = "Icecrown.",
+        zone = "Icecrown",
         icon = 2
     },
     [101114] = {
@@ -13700,7 +14253,7 @@ AV_VanityItems = {
         creaturePreview = 31226,
         creatureId = 31226,
         description = "Has a chance to drop from Lumbering Atrocity within Malykriss: The Vile Hold.",
-        zone = "Malykriss: The Vile Hold.",
+        subzone = "Malykriss: The Vile Hold",
         icon = 2
     },
     [101116] = {
@@ -13709,7 +14262,7 @@ AV_VanityItems = {
         creaturePreview = 31327,
         creatureId = 31327,
         description = "Has a chance to drop from Death Knight Initiate within Malykriss: The Vile Hold.",
-        zone = "Malykriss: The Vile Hold.",
+        subzone = "Malykriss: The Vile Hold",
         icon = 2
     },
     [101117] = {
@@ -13718,7 +14271,7 @@ AV_VanityItems = {
         creaturePreview = 31411,
         creatureId = 31411,
         description = "Has a chance to drop from Hulking Horror within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101118] = {
@@ -13727,7 +14280,7 @@ AV_VanityItems = {
         creaturePreview = 31413,
         creatureId = 31413,
         description = "Has a chance to drop from Hulking Horror within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101122] = {
@@ -13736,7 +14289,7 @@ AV_VanityItems = {
         creaturePreview = 31754,
         creatureId = 31754,
         description = "Has a chance to drop from Glacial Bonelord within Cathedral of Darkness.",
-        zone = "Cathedral of Darkness.",
+        zone = "Cathedral of Darkness",
         icon = 2
     },
     [101123] = {
@@ -13745,7 +14298,7 @@ AV_VanityItems = {
         creaturePreview = 31779,
         creatureId = 31779,
         description = "Has a chance to drop from Skeletal Archmage within The Court of Bones.",
-        zone = "The Court of Bones.",
+        zone = "The Court of Bones",
         icon = 2
     },
     [101124] = {
@@ -13754,7 +14307,7 @@ AV_VanityItems = {
         creaturePreview = 31780,
         creatureId = 31780,
         description = "Has a chance to drop from Fallen Spiderlord within The Court of Bones.",
-        zone = "The Court of Bones.",
+        zone = "The Court of Bones",
         icon = 2
     },
     [101125] = {
@@ -13763,7 +14316,7 @@ AV_VanityItems = {
         creaturePreview = 31787,
         creatureId = 31787,
         description = "Has a chance to drop from Citadel Watcher within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101126] = {
@@ -13772,7 +14325,7 @@ AV_VanityItems = {
         creaturePreview = 31812,
         creatureId = 31812,
         description = "Has a chance to drop from Decomposed Ghoul within The Valley of Lost Hope.",
-        zone = "The Valley of Lost Hope.",
+        zone = "The Valley of Lost Hope",
         icon = 2
     },
     [101127] = {
@@ -13781,7 +14334,7 @@ AV_VanityItems = {
         creaturePreview = 31813,
         creatureId = 31813,
         description = "Has a chance to drop from Frostskull Magus within The Valley of Lost Hope.",
-        zone = "The Valley of Lost Hope.",
+        zone = "The Valley of Lost Hope",
         icon = 2
     },
     [101128] = {
@@ -13790,7 +14343,7 @@ AV_VanityItems = {
         creaturePreview = 31843,
         creatureId = 31843,
         description = "Has a chance to drop from Reanimated Miner within The Court of Bones.",
-        zone = "The Court of Bones.",
+        zone = "The Court of Bones",
         icon = 2
     },
     [101129] = {
@@ -13799,7 +14352,7 @@ AV_VanityItems = {
         creaturePreview = 31900,
         creatureId = 31900,
         description = "Has a chance to drop from Scourge Banner-Bearer within Icecrown Glacier.",
-        zone = "Icecrown Glacier.",
+        zone = "Icecrown Glacier",
         icon = 2
     },
     [101130] = {
@@ -13808,7 +14361,7 @@ AV_VanityItems = {
         creaturePreview = 32161,
         creatureId = 32161,
         description = "Has a chance to drop from Scourge War Engineer within Mord'rethar: The Death Gate.",
-        zone = "Mord'rethar: The Death Gate.",
+        subzone = "Mord'rethar: The Death Gate",
         icon = 2
     },
     [101131] = {
@@ -13817,7 +14370,7 @@ AV_VanityItems = {
         creaturePreview = 32164,
         creatureId = 32164,
         description = "Has a chance to drop from Skeletal Craftsman within Icecrown.",
-        zone = "Icecrown.",
+        zone = "Icecrown",
         icon = 2
     },
     [101132] = {
@@ -13826,7 +14379,7 @@ AV_VanityItems = {
         creaturePreview = 32257,
         creatureId = 32257,
         description = "Has a chance to drop from Scourge Converter within The Valley of Fallen Heroes.",
-        zone = "The Valley of Fallen Heroes.",
+        zone = "The Valley of Fallen Heroes",
         icon = 2
     },
     [101133] = {
@@ -13835,7 +14388,7 @@ AV_VanityItems = {
         creaturePreview = 32267,
         creatureId = 32267,
         description = "Has a chance to drop from Animated Laborer within Aldur'thar: The Desolation Gate.",
-        zone = "Aldur'thar: The Desolation Gate.",
+        subzone = "Aldur'thar: The Desolation Gate",
         icon = 2
     },
     [101134] = {
@@ -13844,7 +14397,7 @@ AV_VanityItems = {
         creaturePreview = 32284,
         creatureId = 32284,
         description = "Has a chance to drop from Scourge Soulbinder within Corp'rethar: The Horror Gate.",
-        zone = "Corp'rethar: The Horror Gate.",
+        subzone = "Corp'rethar: The Horror Gate",
         icon = 2
     },
     [101135] = {
@@ -13853,7 +14406,7 @@ AV_VanityItems = {
         creaturePreview = 32323,
         creatureId = 32323,
         description = "Has a chance to drop from Aldur'thar Sentry within Aldur'thar: The Desolation Gate.",
-        zone = "Aldur'thar: The Desolation Gate.",
+        subzone = "Aldur'thar: The Desolation Gate",
         icon = 2
     },
     [101136] = {
@@ -13862,7 +14415,7 @@ AV_VanityItems = {
         creaturePreview = 32467,
         creatureId = 32467,
         description = "Has a chance to drop from Skeletal Reaver within The Conflagration.",
-        zone = "The Conflagration.",
+        zone = "The Conflagration",
         icon = 2
     },
     [101137] = {
@@ -13871,7 +14424,7 @@ AV_VanityItems = {
         creaturePreview = 32471,
         creatureId = 32471,
         description = "Has a chance to drop from Griegen within Reliquary of Agony.",
-        zone = "Reliquary of Agony.",
+        zone = "Reliquary of Agony",
         icon = 2
     },
     [101138] = {
@@ -13880,7 +14433,7 @@ AV_VanityItems = {
         creaturePreview = 32502,
         creatureId = 32502,
         description = "Has a chance to drop from Ravaged Ghoul within The Conflagration.",
-        zone = "The Conflagration.",
+        zone = "The Conflagration",
         icon = 2
     },
     [101139] = {
@@ -13889,7 +14442,7 @@ AV_VanityItems = {
         creaturePreview = 32769,
         creatureId = 32769,
         description = "Has a chance to drop from Gargoyle Ambusher within The Bombardment.",
-        zone = "The Bombardment.",
+        zone = "The Bombardment",
         icon = 2
     },
     [101140] = {
@@ -13898,7 +14451,7 @@ AV_VanityItems = {
         creaturePreview = 32770,
         creatureId = 32770,
         description = "Has a chance to drop from Enraged Fleshrender within The Valley of Lost Hope.",
-        zone = "The Valley of Lost Hope.",
+        zone = "The Valley of Lost Hope",
         icon = 2
     },
     [101142] = {
@@ -13907,7 +14460,7 @@ AV_VanityItems = {
         creaturePreview = 32772,
         creatureId = 32772,
         description = "Has a chance to drop from Skeletal Footsoldier within The Valley of Lost Hope.",
-        zone = "The Valley of Lost Hope.",
+        zone = "The Valley of Lost Hope",
         icon = 2
     },
     [101143] = {
@@ -13916,7 +14469,7 @@ AV_VanityItems = {
         creaturePreview = 33499,
         creatureId = 33499,
         description = "Has a chance to drop from Skeletal Woodcutter within Crystalsong Forest.",
-        zone = "Crystalsong Forest.",
+        zone = "Crystalsong Forest",
         icon = 2
     },
     [101144] = {
@@ -13925,7 +14478,7 @@ AV_VanityItems = {
         creaturePreview = 36476,
         creatureId = 36476,
         description = "Has a chance to drop from Ick within Pit of Saron.",
-        zone = "Pit of Saron.",
+        zone = "Pit of Saron",
         icon = 2
     },
     [101149] = {
@@ -13934,7 +14487,7 @@ AV_VanityItems = {
         creaturePreview = 36724,
         creatureId = 36724,
         description = "Has a chance to drop from Servant of the Throne within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101150] = {
@@ -13943,7 +14496,7 @@ AV_VanityItems = {
         creaturePreview = 36807,
         creatureId = 36807,
         description = "Has a chance to drop from Deathspeaker Disciple within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101155] = {
@@ -13952,7 +14505,7 @@ AV_VanityItems = {
         creaturePreview = 37007,
         creatureId = 37007,
         description = "Has a chance to drop from Deathbound Ward within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101156] = {
@@ -13961,7 +14514,7 @@ AV_VanityItems = {
         creaturePreview = 37011,
         creatureId = 37011,
         description = "Has a chance to drop from The Damned within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101157] = {
@@ -13970,7 +14523,7 @@ AV_VanityItems = {
         creaturePreview = 37012,
         creatureId = 37012,
         description = "Has a chance to drop from Ancient Skeletal Soldier within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101158] = {
@@ -13979,7 +14532,7 @@ AV_VanityItems = {
         creaturePreview = 37022,
         creatureId = 37022,
         description = "Has a chance to drop from Blighted Abomination within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101159] = {
@@ -13988,7 +14541,7 @@ AV_VanityItems = {
         creaturePreview = 37544,
         creatureId = 37544,
         description = "Has a chance to drop from Spire Gargoyle within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101160] = {
@@ -13997,7 +14550,7 @@ AV_VanityItems = {
         creaturePreview = 37545,
         creatureId = 37545,
         description = "Has a chance to drop from Spire Minion within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101161] = {
@@ -14006,7 +14559,7 @@ AV_VanityItems = {
         creaturePreview = 37546,
         creatureId = 37546,
         description = "Has a chance to drop from Frenzied Abomination within Icecrown Citadel.",
-        zone = "Icecrown Citadel.",
+        zone = "Icecrown Citadel",
         icon = 2
     },
     [101163] = {
@@ -14015,7 +14568,7 @@ AV_VanityItems = {
         creaturePreview = 61521,
         creatureId = 61521,
         description = "Has a chance to drop from Raging Skeleton within Testing.",
-        zone = "Testing.",
+        zone = "Testing",
         icon = 2
     },
     [101165] = {
@@ -14024,7 +14577,7 @@ AV_VanityItems = {
         creaturePreview = 61700,
         creatureId = 61700,
         description = "Has a chance to drop from Reanimated Bones within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 2
     },
     [138255] = {
@@ -14033,7 +14586,7 @@ AV_VanityItems = {
         creaturePreview = 15690,
         creatureId = 15690,
         description = "Has a chance to drop from Prince Malchezaar within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 3
     },
     [138259] = {
@@ -14042,7 +14595,7 @@ AV_VanityItems = {
         creaturePreview = 18535,
         creatureId = 18535,
         description = "Has a chance to drop from Demos, Overseer of Hate within Forge Camp: Hate.",
-        zone = "Forge Camp: Hate.",
+        subzone = "Forge Camp: Hate",
         icon = 3
     },
     [138288] = {
@@ -14051,7 +14604,7 @@ AV_VanityItems = {
         creaturePreview = 19191,
         creatureId = 19191,
         description = "Has a chance to drop from Arazzius the Cruel within Pools of Aggonar.",
-        zone = "Pools of Aggonar.",
+        zone = "Pools of Aggonar",
         icon = 3
     },
     [138304] = {
@@ -14060,7 +14613,7 @@ AV_VanityItems = {
         creaturePreview = 19747,
         creatureId = 19747,
         description = "Has a chance to drop from Baelmon the Hound-Master within Death's Door.",
-        zone = "Death's Door.",
+        zone = "Death's Door",
         icon = 3
     },
     [138443] = {
@@ -14069,7 +14622,8 @@ AV_VanityItems = {
         creaturePreview = 19847,
         creatureId = 19847,
         description = "Has a chance to drop from Levixus within Auchindoun.",
-        zone = "Auchindoun.",
+        zone = "Terokkar Forest",
+        subzone = "Auchindoun",
         icon = 3
     },
     [138465] = {
@@ -14078,7 +14632,7 @@ AV_VanityItems = {
         creaturePreview = 20132,
         creatureId = 20132,
         description = "Has a chance to drop from Socrethar within Socrethar's Seat.",
-        zone = "Socrethar's Seat.",
+        zone = "Socrethar's Seat",
         icon = 3
     },
     [138890] = {
@@ -14087,7 +14641,7 @@ AV_VanityItems = {
         creaturePreview = 20879,
         creatureId = 20879,
         description = "Has a chance to drop from Eredar Soul-Eater within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [138984] = {
@@ -14096,7 +14650,7 @@ AV_VanityItems = {
         creaturePreview = 20880,
         creatureId = 20880,
         description = "Has a chance to drop from Eredar Deathbringer within The Arcatraz.",
-        zone = "The Arcatraz.",
+        zone = "The Arcatraz",
         icon = 3
     },
     [139053] = {
@@ -14105,7 +14659,7 @@ AV_VanityItems = {
         creaturePreview = 20888,
         creatureId = 20888,
         description = "Has a chance to drop from Solus the Eternal within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 3
     },
     [139354] = {
@@ -14114,7 +14668,8 @@ AV_VanityItems = {
         creaturePreview = 21287,
         creatureId = 21287,
         description = "Has a chance to drop from Warbringer Razuun within The Deathforge.",
-        zone = "The Deathforge.",
+        zone = "Shadowmoon Valley",
+        subzone = "The Deathforge",
         icon = 3
     },
     [139359] = {
@@ -14123,7 +14678,7 @@ AV_VanityItems = {
         creaturePreview = 21633,
         creatureId = 21633,
         description = "Has a chance to drop from Deathbringer Jovaan within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 3
     },
     [139429] = {
@@ -14132,7 +14687,7 @@ AV_VanityItems = {
         creaturePreview = 22357,
         creatureId = 22357,
         description = "Has a chance to drop from Reth'hedron the Subduer within The Twilight Ridge.",
-        zone = "The Twilight Ridge.",
+        zone = "The Twilight Ridge",
         icon = 3
     },
     [139454] = {
@@ -14141,7 +14696,8 @@ AV_VanityItems = {
         creaturePreview = 23427,
         creatureId = 23427,
         description = "Has a chance to drop from Illidari Lord Balthas within Dragonmaw Base Camp.",
-        zone = "Dragonmaw Base Camp.",
+        zone = "Dragonmaw Base Camp",
+        subzone = "Dragonmaw Base Camp",
         icon = 3
     },
     [139517] = {
@@ -14150,7 +14706,8 @@ AV_VanityItems = {
         creaturePreview = 25033,
         creatureId = 25033,
         description = "Has a chance to drop from Eredar Sorcerer within The Dead Scar.",
-        zone = "The Dead Scar.",
+        zone = "Eversong Woods",
+        subzone = "The Dead Scar",
         icon = 3
     },
     [139581] = {
@@ -14159,7 +14716,7 @@ AV_VanityItems = {
         creaturePreview = 449185,
         creatureId = 449185,
         description = "Has a chance to drop from Apolyon (Hand of the Deceiver) within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [139796] = {
@@ -14168,7 +14725,7 @@ AV_VanityItems = {
         creaturePreview = 449186,
         creatureId = 449186,
         description = "Has a chance to drop from Agamath (Hand of the Deceiver) within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [139797] = {
@@ -14177,7 +14734,7 @@ AV_VanityItems = {
         creaturePreview = 449187,
         creatureId = 449187,
         description = "Has a chance to drop from Archonisus (Hand of the Deceiver) within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [254054] = {
@@ -14186,7 +14743,7 @@ AV_VanityItems = {
         creaturePreview = 254315,
         creatureId = 254315,
         description = "Has a chance to drop from Sulkaia within Kil'sorrow Fortress.",
-        zone = "Kil'sorrow Fortress.",
+        zone = "Kil'sorrow Fortress",
         icon = 3
     },
     [254055] = {
@@ -14195,7 +14752,8 @@ AV_VanityItems = {
         creaturePreview = 254316,
         creatureId = 254316,
         description = "Has a chance to drop from Lady Vaalethri within Firewing Point.",
-        zone = "Firewing Point.",
+        zone = "Firewing Point",
+        subzone = "Firewing Point",
         icon = 3
     },
     [347302] = {
@@ -14204,7 +14762,7 @@ AV_VanityItems = {
         creaturePreview = 347302,
         creatureId = 347302,
         description = "Has a chance to drop from Alvajar War Wolf within Frozen Reach.",
-        zone = "Frozen Reach.",
+        zone = "Frozen Reach",
         icon = 1
     },
     [347303] = {
@@ -14213,7 +14771,7 @@ AV_VanityItems = {
         creaturePreview = 347303,
         creatureId = 347303,
         description = "Has a chance to drop from Risen Alvajar within Frozen Reach.",
-        zone = "Frozen Reach.",
+        zone = "Frozen Reach",
         icon = 2
     },
     [354048] = {
@@ -14222,7 +14780,7 @@ AV_VanityItems = {
         creaturePreview = 43382,
         creatureId = 43382,
         description = "Has a chance to drop from Stone Fury within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 5
     },
     [480382] = {
@@ -14239,7 +14797,7 @@ AV_VanityItems = {
         creaturePreview = 691,
         creatureId = 691,
         description = "Has a chance to drop from Lesser Water Elemental within The Savage Coast.",
-        zone = "The Savage Coast.",
+        zone = "The Savage Coast",
         icon = 5
     },
     [600370] = {
@@ -14248,7 +14806,8 @@ AV_VanityItems = {
         creaturePreview = 2761,
         creatureId = 2761,
         description = "Has a chance to drop from Cresting Exile within Circle of East Binding.",
-        zone = "Circle of East Binding.",
+        zone = "Arathi Highlands",
+        subzone = "Circle of East Binding",
         icon = 5
     },
     [600373] = {
@@ -14257,7 +14816,7 @@ AV_VanityItems = {
         creaturePreview = 3917,
         creatureId = 3917,
         description = "Has a chance to drop from Befouled Water Elemental within Mystral Lake.",
-        zone = "Mystral Lake.",
+        zone = "Mystral Lake",
         icon = 5
     },
     [600376] = {
@@ -14266,7 +14825,7 @@ AV_VanityItems = {
         creaturePreview = 4034,
         creatureId = 4034,
         description = "Has a chance to drop from Enraged Stone Spirit within Stonetalon Mountains.",
-        zone = "Stonetalon Mountains.",
+        zone = "Stonetalon Mountains",
         icon = 5
     },
     [600378] = {
@@ -14275,7 +14834,7 @@ AV_VanityItems = {
         creaturePreview = 4978,
         creatureId = 4978,
         description = "Has a chance to drop from Aku'mai Servant within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 5
     },
     [600379] = {
@@ -14284,7 +14843,8 @@ AV_VanityItems = {
         creaturePreview = 5461,
         creatureId = 5461,
         description = "Has a chance to drop from Sea Elemental within The Forgotten Coast.",
-        zone = "The Forgotten Coast.",
+        zone = "Feralas",
+        subzone = "The Forgotten Coast",
         icon = 5
     },
     [600380] = {
@@ -14293,7 +14853,8 @@ AV_VanityItems = {
         creaturePreview = 5462,
         creatureId = 5462,
         description = "Has a chance to drop from Sea Spray within The Forgotten Coast.",
-        zone = "The Forgotten Coast.",
+        zone = "Feralas",
+        subzone = "The Forgotten Coast",
         icon = 5
     },
     [600381] = {
@@ -14302,7 +14863,8 @@ AV_VanityItems = {
         creaturePreview = 5855,
         creatureId = 5855,
         description = "Has a chance to drop from Magma Elemental within The Sea of Cinders.",
-        zone = "The Sea of Cinders.",
+        zone = "Searing Gorge",
+        subzone = "The Sea of Cinders",
         icon = 5
     },
     [600383] = {
@@ -14311,7 +14873,7 @@ AV_VanityItems = {
         creaturePreview = 5894,
         creatureId = 5894,
         description = "Has a chance to drop from Corrupt Minor Manifestation of Water within North Tide's Run.",
-        zone = "North Tide's Run.",
+        zone = "North Tide's Run",
         icon = 5
     },
     [600387] = {
@@ -14320,7 +14882,8 @@ AV_VanityItems = {
         creaturePreview = 6220,
         creatureId = 6220,
         description = "Has a chance to drop from Irradiated Horror within Gnomeregan.",
-        zone = "Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
         icon = 5
     },
     [600390] = {
@@ -14329,7 +14892,7 @@ AV_VanityItems = {
         creaturePreview = 7031,
         creatureId = 7031,
         description = "Has a chance to drop from Obsidian Elemental within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 5
     },
     [600391] = {
@@ -14338,7 +14901,7 @@ AV_VanityItems = {
         creaturePreview = 7032,
         creatureId = 7032,
         description = "Has a chance to drop from Greater Obsidian Elemental within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 5
     },
     [600392] = {
@@ -14347,7 +14910,8 @@ AV_VanityItems = {
         creaturePreview = 7079,
         creatureId = 7079,
         description = "Has a chance to drop from Viscous Fallout within Gnomeregan.",
-        zone = "Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
         icon = 5
     },
     [600393] = {
@@ -14356,7 +14920,8 @@ AV_VanityItems = {
         creaturePreview = 7132,
         creatureId = 7132,
         description = "Has a chance to drop from Toxic Horror within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 5
     },
     [600396] = {
@@ -14365,7 +14930,7 @@ AV_VanityItems = {
         creaturePreview = 8278,
         creatureId = 8278,
         description = "Has a chance to drop from Smoldar within Searing Gorge.",
-        zone = "Searing Gorge.",
+        zone = "Searing Gorge",
         icon = 5
     },
     [600397] = {
@@ -14374,7 +14939,8 @@ AV_VanityItems = {
         creaturePreview = 8519,
         creatureId = 8519,
         description = "Has a chance to drop from Blighted Surge within Lake Mereldar.",
-        zone = "Lake Mereldar.",
+        zone = "Eastern Plaguelands",
+        subzone = "Lake Mereldar",
         icon = 5
     },
     [600398] = {
@@ -14383,7 +14949,8 @@ AV_VanityItems = {
         creaturePreview = 8520,
         creatureId = 8520,
         description = "Has a chance to drop from Plague Ravager within Lake Mereldar.",
-        zone = "Lake Mereldar.",
+        zone = "Eastern Plaguelands",
+        subzone = "Lake Mereldar",
         icon = 5
     },
     [600399] = {
@@ -14392,7 +14959,8 @@ AV_VanityItems = {
         creaturePreview = 8521,
         creatureId = 8521,
         description = "Has a chance to drop from Blighted Horror within Northdale.",
-        zone = "Northdale.",
+        zone = "Eastern Plaguelands",
+        subzone = "Northdale",
         icon = 5
     },
     [600400] = {
@@ -14401,7 +14969,8 @@ AV_VanityItems = {
         creaturePreview = 8522,
         creatureId = 8522,
         description = "Has a chance to drop from Plague Monstrosity within Northdale.",
-        zone = "Northdale.",
+        zone = "Eastern Plaguelands",
+        subzone = "Northdale",
         icon = 5
     },
     [600408] = {
@@ -14410,7 +14979,7 @@ AV_VanityItems = {
         creaturePreview = 9025,
         creatureId = 9025,
         description = "Has a chance to drop from Lord Roccor within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [600410] = {
@@ -14419,7 +14988,8 @@ AV_VanityItems = {
         creaturePreview = 9878,
         creatureId = 9878,
         description = "Has a chance to drop from Entropic Beast within Shatter Scar Vale.",
-        zone = "Shatter Scar Vale.",
+        zone = "Felwood",
+        subzone = "Shatter Scar Vale",
         icon = 5
     },
     [600411] = {
@@ -14428,7 +14998,7 @@ AV_VanityItems = {
         creaturePreview = 9879,
         creatureId = 9879,
         description = "Has a chance to drop from Entropic Horror within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 5
     },
     [600412] = {
@@ -14437,7 +15007,7 @@ AV_VanityItems = {
         creaturePreview = 10642,
         creatureId = 10642,
         description = "Has a chance to drop from Eck'alom within Ashenvale.",
-        zone = "Ashenvale.",
+        zone = "Ashenvale",
         icon = 5
     },
     [600413] = {
@@ -14446,7 +15016,8 @@ AV_VanityItems = {
         creaturePreview = 10756,
         creatureId = 10756,
         description = "Has a chance to drop from Scalding Elemental within Darkcloud Pinnacle.",
-        zone = "Darkcloud Pinnacle.",
+        zone = "Thousand Needles",
+        subzone = "Darkcloud Pinnacle",
         icon = 5
     },
     [600414] = {
@@ -14455,7 +15026,8 @@ AV_VanityItems = {
         creaturePreview = 10757,
         creatureId = 10757,
         description = "Has a chance to drop from Boiling Elemental within Darkcloud Pinnacle.",
-        zone = "Darkcloud Pinnacle.",
+        zone = "Thousand Needles",
+        subzone = "Darkcloud Pinnacle",
         icon = 5
     },
     [600417] = {
@@ -14464,7 +15036,7 @@ AV_VanityItems = {
         creaturePreview = 11321,
         creatureId = 11321,
         description = "Has a chance to drop from Molten Elemental within Ragefire Chasm.",
-        zone = "Ragefire Chasm.",
+        zone = "Ragefire Chasm",
         icon = 5
     },
     [600418] = {
@@ -14473,7 +15045,8 @@ AV_VanityItems = {
         creaturePreview = 11480,
         creatureId = 11480,
         description = "Has a chance to drop from Arcane Aberration within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [600419] = {
@@ -14482,7 +15055,8 @@ AV_VanityItems = {
         creaturePreview = 11483,
         creatureId = 11483,
         description = "Has a chance to drop from Mana Remnant within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [600420] = {
@@ -14491,7 +15065,8 @@ AV_VanityItems = {
         creaturePreview = 11484,
         creatureId = 11484,
         description = "Has a chance to drop from Residual Monstrosity within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [600421] = {
@@ -14500,7 +15075,7 @@ AV_VanityItems = {
         creaturePreview = 11665,
         creatureId = 11665,
         description = "Has a chance to drop from Lava Annihilator within Molten Core.",
-        zone = "Molten Core.",
+        zone = "Molten Core",
         icon = 5
     },
     [600422] = {
@@ -14509,7 +15084,7 @@ AV_VanityItems = {
         creaturePreview = 11783,
         creatureId = 11783,
         description = "Has a chance to drop from Theradrim Shardling within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [600423] = {
@@ -14518,7 +15093,7 @@ AV_VanityItems = {
         creaturePreview = 11784,
         creatureId = 11784,
         description = "Has a chance to drop from Theradrim Guardian within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [600425] = {
@@ -14527,7 +15102,7 @@ AV_VanityItems = {
         creaturePreview = 12057,
         creatureId = 12057,
         description = "Has a chance to drop from Garr within Molten Core.",
-        zone = "Molten Core.",
+        zone = "Molten Core",
         icon = 5
     },
     [600426] = {
@@ -14536,7 +15111,7 @@ AV_VanityItems = {
         creaturePreview = 12076,
         creatureId = 12076,
         description = "Has a chance to drop from Lava Elemental within Molten Core.",
-        zone = "Molten Core.",
+        zone = "Molten Core",
         icon = 5
     },
     [600428] = {
@@ -14545,7 +15120,7 @@ AV_VanityItems = {
         creaturePreview = 12100,
         creatureId = 12100,
         description = "Has a chance to drop from Lava Reaver within Molten Core.",
-        zone = "Molten Core.",
+        zone = "Molten Core",
         icon = 5
     },
     [600429] = {
@@ -14554,7 +15129,7 @@ AV_VanityItems = {
         creaturePreview = 12101,
         creatureId = 12101,
         description = "Has a chance to drop from Lava Surger within Molten Core.",
-        zone = "Molten Core.",
+        zone = "Molten Core",
         icon = 5
     },
     [600430] = {
@@ -14563,7 +15138,7 @@ AV_VanityItems = {
         creaturePreview = 12759,
         creatureId = 12759,
         description = "Has a chance to drop from Tideress within Mystral Lake.",
-        zone = "Mystral Lake.",
+        zone = "Mystral Lake",
         icon = 5
     },
     [600432] = {
@@ -14572,7 +15147,7 @@ AV_VanityItems = {
         creaturePreview = 12876,
         creatureId = 12876,
         description = "Has a chance to drop from Baron Aquanis within Blackfathom Deeps.",
-        zone = "Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
         icon = 5
     },
     [600435] = {
@@ -14581,7 +15156,7 @@ AV_VanityItems = {
         creaturePreview = 13279,
         creatureId = 13279,
         description = "Has a chance to drop from Discordant Surge within Eastern Plaguelands.",
-        zone = "Eastern Plaguelands.",
+        zone = "Eastern Plaguelands",
         icon = 5
     },
     [600436] = {
@@ -14590,7 +15165,8 @@ AV_VanityItems = {
         creaturePreview = 13280,
         creatureId = 13280,
         description = "Has a chance to drop from Hydrospawn within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [600437] = {
@@ -14599,7 +15175,7 @@ AV_VanityItems = {
         creaturePreview = 13282,
         creatureId = 13282,
         description = "Has a chance to drop from Noxxion within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [600761] = {
@@ -14608,7 +15184,8 @@ AV_VanityItems = {
         creaturePreview = 14269,
         creatureId = 14269,
         description = "Has a chance to drop from Seeker Aqualon within Lake Everstill.",
-        zone = "Lake Everstill.",
+        zone = "Redridge Mountains",
+        subzone = "Lake Everstill",
         icon = 5
     },
     [600766] = {
@@ -14617,7 +15194,7 @@ AV_VanityItems = {
         creaturePreview = 15211,
         creatureId = 15211,
         description = "Has a chance to drop from Azure Templar within Silithus.",
-        zone = "Silithus.",
+        zone = "Silithus",
         icon = 5
     },
     [600767] = {
@@ -14626,7 +15203,7 @@ AV_VanityItems = {
         creaturePreview = 15298,
         creatureId = 15298,
         description = "Has a chance to drop from Tainted Arcane Wraith within Falthrien Academy.",
-        zone = "Falthrien Academy.",
+        zone = "Falthrien Academy",
         icon = 5
     },
     [600769] = {
@@ -14635,7 +15212,8 @@ AV_VanityItems = {
         creaturePreview = 15648,
         creatureId = 15648,
         description = "Has a chance to drop from Manawraith within West Sanctum.",
-        zone = "West Sanctum.",
+        zone = "Eversong Woods",
+        subzone = "West Sanctum",
         icon = 5
     },
     [600770] = {
@@ -14644,7 +15222,7 @@ AV_VanityItems = {
         creaturePreview = 16043,
         creatureId = 16043,
         description = "Has a chance to drop from Magma Lord Bokk within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 5
     },
     [600772] = {
@@ -14653,7 +15231,8 @@ AV_VanityItems = {
         creaturePreview = 16304,
         creatureId = 16304,
         description = "Has a chance to drop from Arcane Devourer within Sanctum of the Moon.",
-        zone = "Sanctum of the Moon.",
+        zone = "Ghostlands",
+        subzone = "Sanctum of the Moon",
         icon = 5
     },
     [600773] = {
@@ -14662,7 +15241,7 @@ AV_VanityItems = {
         creaturePreview = 16488,
         creatureId = 16488,
         description = "Has a chance to drop from Arcane Anomaly within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 5
     },
     [600774] = {
@@ -14671,7 +15250,7 @@ AV_VanityItems = {
         creaturePreview = 16489,
         creatureId = 16489,
         description = "Has a chance to drop from Chaotic Sentience within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 5
     },
     [600775] = {
@@ -14680,7 +15259,7 @@ AV_VanityItems = {
         creaturePreview = 16529,
         creatureId = 16529,
         description = "Has a chance to drop from Magical Horror within Karazhan.",
-        zone = "Karazhan.",
+        zone = "Karazhan",
         icon = 5
     },
     [600777] = {
@@ -14689,7 +15268,8 @@ AV_VanityItems = {
         creaturePreview = 16854,
         creatureId = 16854,
         description = "Has a chance to drop from Eldinarcus within Duskwither Grounds.",
-        zone = "Duskwither Grounds.",
+        zone = "Eversong Woods",
+        subzone = "Duskwither Grounds",
         icon = 5
     },
     [600781] = {
@@ -14698,7 +15278,7 @@ AV_VanityItems = {
         creaturePreview = 17153,
         creatureId = 17153,
         description = "Has a chance to drop from Lake Spirit within Skysong Lake.",
-        zone = "Skysong Lake.",
+        zone = "Skysong Lake",
         icon = 5
     },
     [600782] = {
@@ -14707,7 +15287,7 @@ AV_VanityItems = {
         creaturePreview = 17154,
         creatureId = 17154,
         description = "Has a chance to drop from Muck Spawn within Halaani Basin.",
-        zone = "Halaani Basin.",
+        zone = "Halaani Basin",
         icon = 5
     },
     [600783] = {
@@ -14716,7 +15296,7 @@ AV_VanityItems = {
         creaturePreview = 17155,
         creatureId = 17155,
         description = "Has a chance to drop from Lake Surger within Lake Sunspring.",
-        zone = "Lake Sunspring.",
+        zone = "Lake Sunspring",
         icon = 5
     },
     [600786] = {
@@ -14725,7 +15305,7 @@ AV_VanityItems = {
         creaturePreview = 17207,
         creatureId = 17207,
         description = "Has a chance to drop from Naias within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 5
     },
     [600789] = {
@@ -14734,7 +15314,8 @@ AV_VanityItems = {
         creaturePreview = 17358,
         creatureId = 17358,
         description = "Has a chance to drop from Fouled Water Spirit within The Foul Pool.",
-        zone = "The Foul Pool.",
+        zone = "Bloodmyst Isle",
+        subzone = "The Foul Pool",
         icon = 5
     },
     [600790] = {
@@ -14743,7 +15324,7 @@ AV_VanityItems = {
         creaturePreview = 17870,
         creatureId = 17870,
         description = "Has a chance to drop from Angered Nether-wraith within Netherstorm.",
-        zone = "Netherstorm.",
+        zone = "Netherstorm",
         icon = 5
     },
     [600861] = {
@@ -14752,7 +15333,7 @@ AV_VanityItems = {
         creaturePreview = 18145,
         creatureId = 18145,
         description = "Has a chance to drop from Watoosun's Polluted Essence within Lake Sunspring.",
-        zone = "Lake Sunspring.",
+        zone = "Lake Sunspring",
         icon = 5
     },
     [600864] = {
@@ -14761,7 +15342,7 @@ AV_VanityItems = {
         creaturePreview = 18867,
         creatureId = 18867,
         description = "Has a chance to drop from Mana Seeker within Wizard Row.",
-        zone = "Wizard Row.",
+        zone = "Wizard Row",
         icon = 5
     },
     [600865] = {
@@ -14770,7 +15351,7 @@ AV_VanityItems = {
         creaturePreview = 19204,
         creatureId = 19204,
         description = "Has a chance to drop from Syth Frost Elemental within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 5
     },
     [600866] = {
@@ -14779,7 +15360,7 @@ AV_VanityItems = {
         creaturePreview = 19206,
         creatureId = 19206,
         description = "Has a chance to drop from Syth Shadow Elemental within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 5
     },
     [600867] = {
@@ -14788,7 +15369,7 @@ AV_VanityItems = {
         creaturePreview = 19514,
         creatureId = 19514,
         description = "Raid boss within Tempest Keep: The Eye.",
-        zone = "Tempest Keep: The Eye.",
+        subzone = "Tempest Keep: The Eye",
         icon = 5
     },
     [600870] = {
@@ -14797,7 +15378,7 @@ AV_VanityItems = {
         creaturePreview = 20079,
         creatureId = 20079,
         description = "Has a chance to drop from Darkcrest Sentry within Darkcrest Shore.",
-        zone = "Darkcrest Shore.",
+        zone = "Darkcrest Shore",
         icon = 5
     },
     [600871] = {
@@ -14806,7 +15387,7 @@ AV_VanityItems = {
         creaturePreview = 20090,
         creatureId = 20090,
         description = "Has a chance to drop from Bloodscale Sentry within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 5
     },
     [600873] = {
@@ -14815,7 +15396,7 @@ AV_VanityItems = {
         creaturePreview = 20792,
         creatureId = 20792,
         description = "Has a chance to drop from Bloodscale Elemental within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 5
     },
     [600875] = {
@@ -14824,7 +15405,7 @@ AV_VanityItems = {
         creaturePreview = 21059,
         creatureId = 21059,
         description = "Has a chance to drop from Enraged Water Spirit within Shadowmoon Valley.",
-        zone = "Shadowmoon Valley.",
+        zone = "Shadowmoon Valley",
         icon = 5
     },
     [600876] = {
@@ -14833,7 +15414,7 @@ AV_VanityItems = {
         creaturePreview = 21061,
         creatureId = 21061,
         description = "Has a chance to drop from Enraged Fire Spirit within The Fel Pits.",
-        zone = "The Fel Pits.",
+        zone = "The Fel Pits",
         icon = 5
     },
     [600878] = {
@@ -14842,7 +15423,7 @@ AV_VanityItems = {
         creaturePreview = 21216,
         creatureId = 21216,
         description = "Raid boss within Serpentshrine Cavern.",
-        zone = "Serpentshrine Cavern.",
+        subzone = "Serpentshrine Cavern",
         icon = 5
     },
     [600885] = {
@@ -14851,7 +15432,7 @@ AV_VanityItems = {
         creaturePreview = 21695,
         creatureId = 21695,
         description = "Has a chance to drop from Tidal Surger within The Steamvault.",
-        zone = "The Steamvault.",
+        zone = "The Steamvault",
         icon = 5
     },
     [600886] = {
@@ -14860,7 +15441,7 @@ AV_VanityItems = {
         creaturePreview = 21696,
         creatureId = 21696,
         description = "Has a chance to drop from Steam Surger within The Steamvault.",
-        zone = "The Steamvault.",
+        zone = "The Steamvault",
         icon = 5
     },
     [600888] = {
@@ -14869,7 +15450,7 @@ AV_VanityItems = {
         creaturePreview = 21728,
         creatureId = 21728,
         description = "Has a chance to drop from Skettis Surger within Skethyl Mountains.",
-        zone = "Skethyl Mountains.",
+        zone = "Skethyl Mountains",
         icon = 5
     },
     [600889] = {
@@ -14878,7 +15459,7 @@ AV_VanityItems = {
         creaturePreview = 21730,
         creatureId = 21730,
         description = "Has a chance to drop from Alluvion within Blackwind Lake.",
-        zone = "Blackwind Lake.",
+        zone = "Blackwind Lake",
         icon = 5
     },
     [600894] = {
@@ -14887,7 +15468,7 @@ AV_VanityItems = {
         creaturePreview = 22009,
         creatureId = 22009,
         description = "Has a chance to drop from Tainted Elemental within Serpentshrine Cavern.",
-        zone = "Serpentshrine Cavern.",
+        subzone = "Serpentshrine Cavern",
         icon = 5
     },
     [600899] = {
@@ -14896,7 +15477,7 @@ AV_VanityItems = {
         creaturePreview = 22309,
         creatureId = 22309,
         description = "Has a chance to drop from Crashing Wave-Spirit within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [600900] = {
@@ -14905,7 +15486,7 @@ AV_VanityItems = {
         creaturePreview = 22323,
         creatureId = 22323,
         description = "Has a chance to drop from Incandescent Fel Spark within Hellfire Peninsula.",
-        zone = "Hellfire Peninsula.",
+        zone = "Hellfire Peninsula",
         icon = 5
     },
     [600908] = {
@@ -14914,7 +15495,8 @@ AV_VanityItems = {
         creaturePreview = 22878,
         creatureId = 22878,
         description = "Has a chance to drop from Aqueous Lord within Black Temple.",
-        zone = "Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
         icon = 5
     },
     [600921] = {
@@ -14923,7 +15505,7 @@ AV_VanityItems = {
         creaturePreview = 24744,
         creatureId = 24744,
         description = "Has a chance to drop from Vexallus within Magisters' Terrace.",
-        zone = "Magisters' Terrace.",
+        subzone = "Magisters' Terrace",
         icon = 5
     },
     [601009] = {
@@ -14940,7 +15522,8 @@ AV_VanityItems = {
         creaturePreview = 764,
         creatureId = 764,
         description = "Has a chance to drop from Swampwalker within The Shifting Mire.",
-        zone = "The Shifting Mire.",
+        zone = "Swamp of Sorrows",
+        subzone = "The Shifting Mire",
         icon = 5
     },
     [601025] = {
@@ -14949,7 +15532,7 @@ AV_VanityItems = {
         creaturePreview = 765,
         creatureId = 765,
         description = "Has a chance to drop from Swampwalker Elder within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 5
     },
     [601026] = {
@@ -14958,7 +15541,7 @@ AV_VanityItems = {
         creaturePreview = 766,
         creatureId = 766,
         description = "Has a chance to drop from Tangled Horror within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 5
     },
     [601027] = {
@@ -14967,7 +15550,8 @@ AV_VanityItems = {
         creaturePreview = 1039,
         creatureId = 1039,
         description = "Has a chance to drop from Fen Dweller within Mosshide Fen.",
-        zone = "Mosshide Fen.",
+        zone = "Wetlands",
+        subzone = "Mosshide Fen",
         icon = 5
     },
     [601028] = {
@@ -14976,7 +15560,8 @@ AV_VanityItems = {
         creaturePreview = 1040,
         creatureId = 1040,
         description = "Has a chance to drop from Fen Creeper within Sundown Marsh.",
-        zone = "Sundown Marsh.",
+        zone = "Wetlands",
+        subzone = "Sundown Marsh",
         icon = 5
     },
     [601029] = {
@@ -14985,7 +15570,8 @@ AV_VanityItems = {
         creaturePreview = 1041,
         creatureId = 1041,
         description = "Has a chance to drop from Fen Lord within Sundown Marsh.",
-        zone = "Sundown Marsh.",
+        zone = "Wetlands",
+        subzone = "Sundown Marsh",
         icon = 5
     },
     [601030] = {
@@ -14994,7 +15580,8 @@ AV_VanityItems = {
         creaturePreview = 1081,
         creatureId = 1081,
         description = "Has a chance to drop from Mire Lord within Misty Valley.",
-        zone = "Misty Valley.",
+        zone = "Swamp of Sorrows",
+        subzone = "Misty Valley",
         icon = 5
     },
     [601032] = {
@@ -15003,7 +15590,8 @@ AV_VanityItems = {
         creaturePreview = 1812,
         creatureId = 1812,
         description = "Has a chance to drop from Rotting Behemoth within The Weeping Cave.",
-        zone = "The Weeping Cave.",
+        zone = "Western Plaguelands",
+        subzone = "The Weeping Cave",
         icon = 5
     },
     [601033] = {
@@ -15012,7 +15600,8 @@ AV_VanityItems = {
         creaturePreview = 1813,
         creatureId = 1813,
         description = "Has a chance to drop from Decaying Horror within The Weeping Cave.",
-        zone = "The Weeping Cave.",
+        zone = "Western Plaguelands",
+        subzone = "The Weeping Cave",
         icon = 5
     },
     [601034] = {
@@ -15021,7 +15610,8 @@ AV_VanityItems = {
         creaturePreview = 1851,
         creatureId = 1851,
         description = "Has a chance to drop from The Husk within The Weeping Cave.",
-        zone = "The Weeping Cave.",
+        zone = "Western Plaguelands",
+        subzone = "The Weeping Cave",
         icon = 5
     },
     [601035] = {
@@ -15030,7 +15620,8 @@ AV_VanityItems = {
         creaturePreview = 1953,
         creatureId = 1953,
         description = "Has a chance to drop from Lake Skulker within Fenris Isle.",
-        zone = "Fenris Isle.",
+        zone = "Silverpine Forest",
+        subzone = "Fenris Isle",
         icon = 5
     },
     [601036] = {
@@ -15039,7 +15630,8 @@ AV_VanityItems = {
         creaturePreview = 1954,
         creatureId = 1954,
         description = "Has a chance to drop from Elder Lake Skulker within Fenris Isle.",
-        zone = "Fenris Isle.",
+        zone = "Silverpine Forest",
+        subzone = "Fenris Isle",
         icon = 5
     },
     [601037] = {
@@ -15048,7 +15640,8 @@ AV_VanityItems = {
         creaturePreview = 1955,
         creatureId = 1955,
         description = "Has a chance to drop from Lake Creeper within The Dawning Isles.",
-        zone = "The Dawning Isles.",
+        zone = "Silverpine Forest",
+        subzone = "The Dawning Isles",
         icon = 5
     },
     [601038] = {
@@ -15057,7 +15650,8 @@ AV_VanityItems = {
         creaturePreview = 1956,
         creatureId = 1956,
         description = "Has a chance to drop from Elder Lake Creeper within The Dawning Isles.",
-        zone = "The Dawning Isles.",
+        zone = "Silverpine Forest",
+        subzone = "The Dawning Isles",
         icon = 5
     },
     [601039] = {
@@ -15066,7 +15660,8 @@ AV_VanityItems = {
         creaturePreview = 2022,
         creatureId = 2022,
         description = "Has a chance to drop from Timberling within Lake Al'Ameth.",
-        zone = "Lake Al'Ameth.",
+        zone = "Teldrassil",
+        subzone = "Lake Al'Ameth",
         icon = 5
     },
     [601040] = {
@@ -15075,7 +15670,8 @@ AV_VanityItems = {
         creaturePreview = 2025,
         creatureId = 2025,
         description = "Has a chance to drop from Timberling Bark Ripper within Lake Al'Ameth.",
-        zone = "Lake Al'Ameth.",
+        zone = "Teldrassil",
+        subzone = "Lake Al'Ameth",
         icon = 5
     },
     [601041] = {
@@ -15084,7 +15680,8 @@ AV_VanityItems = {
         creaturePreview = 2027,
         creatureId = 2027,
         description = "Has a chance to drop from Timberling Trampler within Wellspring River.",
-        zone = "Wellspring River.",
+        zone = "Teldrassil",
+        subzone = "Wellspring River",
         icon = 5
     },
     [601042] = {
@@ -15093,7 +15690,8 @@ AV_VanityItems = {
         creaturePreview = 2029,
         creatureId = 2029,
         description = "Has a chance to drop from Timberling Mire Beast within Wellspring River.",
-        zone = "Wellspring River.",
+        zone = "Teldrassil",
+        subzone = "Wellspring River",
         icon = 5
     },
     [601043] = {
@@ -15102,7 +15700,8 @@ AV_VanityItems = {
         creaturePreview = 2030,
         creatureId = 2030,
         description = "Has a chance to drop from Elder Timberling within Wellspring River.",
-        zone = "Wellspring River.",
+        zone = "Teldrassil",
+        subzone = "Wellspring River",
         icon = 5
     },
     [601044] = {
@@ -15111,7 +15710,8 @@ AV_VanityItems = {
         creaturePreview = 2166,
         creatureId = 2166,
         description = "Has a chance to drop from Oakenscowl within Lake Al'Ameth.",
-        zone = "Lake Al'Ameth.",
+        zone = "Teldrassil",
+        subzone = "Lake Al'Ameth",
         icon = 5
     },
     [601045] = {
@@ -15120,7 +15720,8 @@ AV_VanityItems = {
         creaturePreview = 3535,
         creatureId = 3535,
         description = "Has a chance to drop from Blackmoss the Fetid within Wellspring River.",
-        zone = "Wellspring River.",
+        zone = "Teldrassil",
+        subzone = "Wellspring River",
         icon = 5
     },
     [601046] = {
@@ -15129,7 +15730,7 @@ AV_VanityItems = {
         creaturePreview = 3569,
         creatureId = 3569,
         description = "Has a chance to drop from Bogling within Teldrassil.",
-        zone = "Teldrassil.",
+        zone = "Teldrassil",
         icon = 5
     },
     [601048] = {
@@ -15138,7 +15739,7 @@ AV_VanityItems = {
         creaturePreview = 3780,
         creatureId = 3780,
         description = "Has a chance to drop from Shadethicket Moss Eater within Iris Lake.",
-        zone = "Iris Lake.",
+        zone = "Iris Lake",
         icon = 5
     },
     [601049] = {
@@ -15147,7 +15748,7 @@ AV_VanityItems = {
         creaturePreview = 3781,
         creatureId = 3781,
         description = "Has a chance to drop from Shadethicket Wood Shaper within The Ruins of Stardust.",
-        zone = "The Ruins of Stardust.",
+        subzone = "The Ruins of Stardust",
         icon = 5
     },
     [601050] = {
@@ -15156,7 +15757,7 @@ AV_VanityItems = {
         creaturePreview = 3782,
         creatureId = 3782,
         description = "Has a chance to drop from Shadethicket Stone Mover within Fallen Sky Lake.",
-        zone = "Fallen Sky Lake.",
+        zone = "Fallen Sky Lake",
         icon = 5
     },
     [601051] = {
@@ -15165,7 +15766,7 @@ AV_VanityItems = {
         creaturePreview = 3783,
         creatureId = 3783,
         description = "Has a chance to drop from Shadethicket Raincaller within The Ruins of Stardust.",
-        zone = "The Ruins of Stardust.",
+        subzone = "The Ruins of Stardust",
         icon = 5
     },
     [601052] = {
@@ -15174,7 +15775,7 @@ AV_VanityItems = {
         creaturePreview = 3784,
         creatureId = 3784,
         description = "Has a chance to drop from Shadethicket Bark Ripper within Fallen Sky Lake.",
-        zone = "Fallen Sky Lake.",
+        zone = "Fallen Sky Lake",
         icon = 5
     },
     [601053] = {
@@ -15183,7 +15784,7 @@ AV_VanityItems = {
         creaturePreview = 3931,
         creatureId = 3931,
         description = "Has a chance to drop from Shadethicket Oracle within Fallen Sky Lake.",
-        zone = "Fallen Sky Lake.",
+        zone = "Fallen Sky Lake",
         icon = 5
     },
     [601054] = {
@@ -15192,7 +15793,7 @@ AV_VanityItems = {
         creaturePreview = 4382,
         creatureId = 4382,
         description = "Has a chance to drop from Withervine Creeper within Bluefen.",
-        zone = "Bluefen.",
+        zone = "Bluefen",
         icon = 5
     },
     [601055] = {
@@ -15201,7 +15802,7 @@ AV_VanityItems = {
         creaturePreview = 4385,
         creatureId = 4385,
         description = "Has a chance to drop from Withervine Rager within Bluefen.",
-        zone = "Bluefen.",
+        zone = "Bluefen",
         icon = 5
     },
     [601056] = {
@@ -15210,7 +15811,7 @@ AV_VanityItems = {
         creaturePreview = 4386,
         creatureId = 4386,
         description = "Has a chance to drop from Withervine Bark Ripper within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 5
     },
     [601057] = {
@@ -15219,7 +15820,7 @@ AV_VanityItems = {
         creaturePreview = 4387,
         creatureId = 4387,
         description = "Has a chance to drop from Withervine Mire Beast within Bluefen.",
-        zone = "Bluefen.",
+        zone = "Bluefen",
         icon = 5
     },
     [601058] = {
@@ -15228,7 +15829,8 @@ AV_VanityItems = {
         creaturePreview = 5481,
         creatureId = 5481,
         description = "Has a chance to drop from Thistleshrub Dew Collector within Thistleshrub Valley.",
-        zone = "Thistleshrub Valley.",
+        zone = "Tanaris",
+        subzone = "Thistleshrub Valley",
         icon = 5
     },
     [601059] = {
@@ -15237,7 +15839,8 @@ AV_VanityItems = {
         creaturePreview = 5485,
         creatureId = 5485,
         description = "Has a chance to drop from Thistleshrub Rootshaper within Thistleshrub Valley.",
-        zone = "Thistleshrub Valley.",
+        zone = "Tanaris",
+        subzone = "Thistleshrub Valley",
         icon = 5
     },
     [601060] = {
@@ -15246,7 +15849,8 @@ AV_VanityItems = {
         creaturePreview = 5490,
         creatureId = 5490,
         description = "Has a chance to drop from Gnarled Thistleshrub within Thistleshrub Valley.",
-        zone = "Thistleshrub Valley.",
+        zone = "Tanaris",
+        subzone = "Thistleshrub Valley",
         icon = 5
     },
     [601061] = {
@@ -15255,7 +15859,7 @@ AV_VanityItems = {
         creaturePreview = 5761,
         creatureId = 5761,
         description = "Has a chance to drop from Deviate Shambler within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 5
     },
     [601062] = {
@@ -15264,7 +15868,7 @@ AV_VanityItems = {
         creaturePreview = 5775,
         creatureId = 5775,
         description = "Has a chance to drop from Verdan the Everliving within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 5
     },
     [601063] = {
@@ -15273,7 +15877,8 @@ AV_VanityItems = {
         creaturePreview = 6517,
         creatureId = 6517,
         description = "Has a chance to drop from Tar Beast within Lakkari Tar Pits.",
-        zone = "Lakkari Tar Pits.",
+        zone = "Un'Goro Crater",
+        subzone = "Lakkari Tar Pits",
         icon = 5
     },
     [601064] = {
@@ -15282,7 +15887,8 @@ AV_VanityItems = {
         creaturePreview = 6518,
         creatureId = 6518,
         description = "Has a chance to drop from Tar Lurker within Lakkari Tar Pits.",
-        zone = "Lakkari Tar Pits.",
+        zone = "Un'Goro Crater",
+        subzone = "Lakkari Tar Pits",
         icon = 5
     },
     [601065] = {
@@ -15291,7 +15897,8 @@ AV_VanityItems = {
         creaturePreview = 6519,
         creatureId = 6519,
         description = "Has a chance to drop from Tar Lord within Lakkari Tar Pits.",
-        zone = "Lakkari Tar Pits.",
+        zone = "Un'Goro Crater",
+        subzone = "Lakkari Tar Pits",
         icon = 5
     },
     [601066] = {
@@ -15300,7 +15907,8 @@ AV_VanityItems = {
         creaturePreview = 6527,
         creatureId = 6527,
         description = "Has a chance to drop from Tar Creeper within Lakkari Tar Pits.",
-        zone = "Lakkari Tar Pits.",
+        zone = "Un'Goro Crater",
+        subzone = "Lakkari Tar Pits",
         icon = 5
     },
     [601067] = {
@@ -15309,7 +15917,7 @@ AV_VanityItems = {
         creaturePreview = 6932,
         creatureId = 6932,
         description = "Has a chance to drop from Swamp Spirit within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 5
     },
     [601068] = {
@@ -15318,7 +15926,8 @@ AV_VanityItems = {
         creaturePreview = 7100,
         creatureId = 7100,
         description = "Has a chance to drop from Warpwood Moss Flayer within Irontree Cavern.",
-        zone = "Irontree Cavern.",
+        zone = "Felwood",
+        subzone = "Irontree Cavern",
         icon = 5
     },
     [601069] = {
@@ -15327,7 +15936,8 @@ AV_VanityItems = {
         creaturePreview = 7101,
         creatureId = 7101,
         description = "Has a chance to drop from Warpwood Shredder within Irontree Cavern.",
-        zone = "Irontree Cavern.",
+        zone = "Felwood",
+        subzone = "Irontree Cavern",
         icon = 5
     },
     [601070] = {
@@ -15336,7 +15946,8 @@ AV_VanityItems = {
         creaturePreview = 7104,
         creatureId = 7104,
         description = "Has a chance to drop from Dessecus within Irontree Cavern.",
-        zone = "Irontree Cavern.",
+        zone = "Felwood",
+        subzone = "Irontree Cavern",
         icon = 5
     },
     [601071] = {
@@ -15345,7 +15956,7 @@ AV_VanityItems = {
         creaturePreview = 8384,
         creatureId = 8384,
         description = "Has a chance to drop from Deep Lurker within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 5
     },
     [601072] = {
@@ -15354,7 +15965,7 @@ AV_VanityItems = {
         creaturePreview = 10641,
         creatureId = 10641,
         description = "Has a chance to drop from Branch Snapper within Iris Lake.",
-        zone = "Iris Lake.",
+        zone = "Iris Lake",
         icon = 5
     },
     [601074] = {
@@ -15363,7 +15974,7 @@ AV_VanityItems = {
         creaturePreview = 12223,
         creatureId = 12223,
         description = "Has a chance to drop from Cavern Lurker within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601075] = {
@@ -15372,7 +15983,7 @@ AV_VanityItems = {
         creaturePreview = 12224,
         creatureId = 12224,
         description = "Has a chance to drop from Cavern Shambler within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601076] = {
@@ -15381,7 +15992,7 @@ AV_VanityItems = {
         creaturePreview = 12237,
         creatureId = 12237,
         description = "Has a chance to drop from Meshlok the Harvester within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601077] = {
@@ -15390,7 +16001,7 @@ AV_VanityItems = {
         creaturePreview = 14231,
         creatureId = 14231,
         description = "Has a chance to drop from Drogoth the Roamer within Bluefen.",
-        zone = "Bluefen.",
+        zone = "Bluefen",
         icon = 5
     },
     [601078] = {
@@ -15399,7 +16010,8 @@ AV_VanityItems = {
         creaturePreview = 14424,
         creatureId = 14424,
         description = "Has a chance to drop from Mirelow within Sundown Marsh.",
-        zone = "Sundown Marsh.",
+        zone = "Wetlands",
+        subzone = "Sundown Marsh",
         icon = 5
     },
     [601079] = {
@@ -15408,7 +16020,8 @@ AV_VanityItems = {
         creaturePreview = 14448,
         creatureId = 14448,
         description = "Has a chance to drop from Molt Thorn within The Shifting Mire.",
-        zone = "The Shifting Mire.",
+        zone = "Swamp of Sorrows",
+        subzone = "The Shifting Mire",
         icon = 5
     },
     [601083] = {
@@ -15417,7 +16030,7 @@ AV_VanityItems = {
         creaturePreview = 17725,
         creatureId = 17725,
         description = "Has a chance to drop from Underbog Lurker within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 5
     },
     [601084] = {
@@ -15426,7 +16039,7 @@ AV_VanityItems = {
         creaturePreview = 17871,
         creatureId = 17871,
         description = "Has a chance to drop from Underbog Shambler within The Underbog.",
-        zone = "The Underbog.",
+        zone = "The Underbog",
         icon = 5
     },
     [601085] = {
@@ -15435,7 +16048,8 @@ AV_VanityItems = {
         creaturePreview = 18136,
         creatureId = 18136,
         description = "Has a chance to drop from Marsh Lurker within Funggor Cavern.",
-        zone = "Funggor Cavern.",
+        zone = "Zangarmarsh",
+        subzone = "Funggor Cavern",
         icon = 5
     },
     [601086] = {
@@ -15444,7 +16058,8 @@ AV_VanityItems = {
         creaturePreview = 18137,
         creatureId = 18137,
         description = "Has a chance to drop from Marsh Dredger within Funggor Cavern.",
-        zone = "Funggor Cavern.",
+        zone = "Zangarmarsh",
+        subzone = "Funggor Cavern",
         icon = 5
     },
     [601087] = {
@@ -15453,7 +16068,8 @@ AV_VanityItems = {
         creaturePreview = 18282,
         creatureId = 18282,
         description = "Has a chance to drop from Lord Klaq within Funggor Cavern.",
-        zone = "Funggor Cavern.",
+        zone = "Zangarmarsh",
+        subzone = "Funggor Cavern",
         icon = 5
     },
     [601088] = {
@@ -15462,7 +16078,7 @@ AV_VanityItems = {
         creaturePreview = 18682,
         creatureId = 18682,
         description = "Has a chance to drop from Bog Lurker within Zangarmarsh.",
-        zone = "Zangarmarsh.",
+        zone = "Zangarmarsh",
         icon = 5
     },
     [601091] = {
@@ -15471,7 +16087,7 @@ AV_VanityItems = {
         creaturePreview = 21863,
         creatureId = 21863,
         description = "Has a chance to drop from Serpentshrine Lurker within Serpentshrine Cavern.",
-        zone = "Serpentshrine Cavern.",
+        subzone = "Serpentshrine Cavern",
         icon = 5
     },
     [601102] = {
@@ -15488,7 +16104,7 @@ AV_VanityItems = {
         creaturePreview = 5055,
         creatureId = 5055,
         description = "Has a chance to drop from Deviate Lasher within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 5
     },
     [601104] = {
@@ -15497,7 +16113,8 @@ AV_VanityItems = {
         creaturePreview = 6509,
         creatureId = 6509,
         description = "Has a chance to drop from Bloodpetal Lasher within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 5
     },
     [601195] = {
@@ -15506,7 +16123,8 @@ AV_VanityItems = {
         creaturePreview = 6510,
         creatureId = 6510,
         description = "Has a chance to drop from Bloodpetal Flayer within The Marshlands.",
-        zone = "The Marshlands.",
+        zone = "Un'Goro Crater",
+        subzone = "The Marshlands",
         icon = 5
     },
     [601196] = {
@@ -15515,7 +16133,7 @@ AV_VanityItems = {
         creaturePreview = 6511,
         creatureId = 6511,
         description = "Has a chance to drop from Bloodpetal Thresher within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 5
     },
     [601197] = {
@@ -15524,7 +16142,8 @@ AV_VanityItems = {
         creaturePreview = 6512,
         creatureId = 6512,
         description = "Has a chance to drop from Bloodpetal Trapper within Golakka Hot Springs.",
-        zone = "Golakka Hot Springs.",
+        zone = "Un'Goro Crater",
+        subzone = "Golakka Hot Springs",
         icon = 5
     },
     [601198] = {
@@ -15533,7 +16152,7 @@ AV_VanityItems = {
         creaturePreview = 12219,
         creatureId = 12219,
         description = "Has a chance to drop from Barbed Lasher within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601199] = {
@@ -15542,7 +16161,7 @@ AV_VanityItems = {
         creaturePreview = 12220,
         creatureId = 12220,
         description = "Has a chance to drop from Constrictor Vine within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601200] = {
@@ -15551,7 +16170,7 @@ AV_VanityItems = {
         creaturePreview = 12258,
         creatureId = 12258,
         description = "Has a chance to drop from Razorlash within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601201] = {
@@ -15560,7 +16179,8 @@ AV_VanityItems = {
         creaturePreview = 40553,
         creatureId = 40553,
         description = "Has a chance to drop from Whip Lasher(Purple) within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601202] = {
@@ -15569,7 +16189,8 @@ AV_VanityItems = {
         creaturePreview = 13196,
         creatureId = 13196,
         description = "Has a chance to drop from Phase Lasher within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601203] = {
@@ -15578,7 +16199,8 @@ AV_VanityItems = {
         creaturePreview = 13197,
         creatureId = 13197,
         description = "Has a chance to drop from Fel Lash within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601204] = {
@@ -15587,7 +16209,8 @@ AV_VanityItems = {
         creaturePreview = 13285,
         creatureId = 13285,
         description = "Has a chance to drop from Death Lash within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601206] = {
@@ -15596,7 +16219,8 @@ AV_VanityItems = {
         creaturePreview = 16517,
         creatureId = 16517,
         description = "Has a chance to drop from Mutated Root Lasher within Ammen Fields.",
-        zone = "Ammen Fields.",
+        zone = "Azuremyst Isle",
+        subzone = "Ammen Fields",
         icon = 5
     },
     [601208] = {
@@ -15605,7 +16229,7 @@ AV_VanityItems = {
         creaturePreview = 17196,
         creatureId = 17196,
         description = "Has a chance to drop from Root Trapper within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 5
     },
     [601209] = {
@@ -15614,7 +16238,7 @@ AV_VanityItems = {
         creaturePreview = 17197,
         creatureId = 17197,
         description = "Has a chance to drop from Root Thresher within Azuremyst Isle.",
-        zone = "Azuremyst Isle.",
+        zone = "Azuremyst Isle",
         icon = 5
     },
     [601210] = {
@@ -15623,7 +16247,7 @@ AV_VanityItems = {
         creaturePreview = 17343,
         creatureId = 17343,
         description = "Has a chance to drop from Thistle Lasher within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 5
     },
     [601211] = {
@@ -15632,7 +16256,7 @@ AV_VanityItems = {
         creaturePreview = 17344,
         creatureId = 17344,
         description = "Has a chance to drop from Mutated Constrictor within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 5
     },
     [601212] = {
@@ -15641,7 +16265,7 @@ AV_VanityItems = {
         creaturePreview = 17346,
         creatureId = 17346,
         description = "Has a chance to drop from Mutated Tangler within Bloodmyst Isle.",
-        zone = "Bloodmyst Isle.",
+        zone = "Bloodmyst Isle",
         icon = 5
     },
     [601213] = {
@@ -15650,7 +16274,7 @@ AV_VanityItems = {
         creaturePreview = 17980,
         creatureId = 17980,
         description = "Has a chance to drop from Laj within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 5
     },
     [601214] = {
@@ -15659,7 +16283,7 @@ AV_VanityItems = {
         creaturePreview = 18587,
         creatureId = 18587,
         description = "Has a chance to drop from Frayer within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 5
     },
     [601225] = {
@@ -15668,7 +16292,7 @@ AV_VanityItems = {
         creaturePreview = 19557,
         creatureId = 19557,
         description = "Has a chance to drop from Greater Frayer within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 5
     },
     [601226] = {
@@ -15677,7 +16301,7 @@ AV_VanityItems = {
         creaturePreview = 19608,
         creatureId = 19608,
         description = "Has a chance to drop from Frayer Wildling within The Botanica.",
-        zone = "The Botanica.",
+        zone = "The Botanica",
         icon = 5
     },
     [601235] = {
@@ -15686,7 +16310,7 @@ AV_VanityItems = {
         creaturePreview = 20774,
         creatureId = 20774,
         description = "Has a chance to drop from Farahlon Lasher within The Stormspire.",
-        zone = "The Stormspire.",
+        zone = "The Stormspire",
         icon = 5
     },
     [601236] = {
@@ -15695,7 +16319,7 @@ AV_VanityItems = {
         creaturePreview = 20983,
         creatureId = 20983,
         description = "Has a chance to drop from Mutated Farahlon Lasher within Nagrand.",
-        zone = "Nagrand.",
+        zone = "Nagrand",
         icon = 5
     },
     [601664] = {
@@ -15704,7 +16328,7 @@ AV_VanityItems = {
         creaturePreview = 97825,
         creatureId = 97825,
         description = "Ascension custom NPC. Found within Un'Goro Crater.",
-        zone = "Un'Goro Crater.",
+        subzone = "Un'Goro Crater",
         icon = 5
     },
     [601667] = {
@@ -15713,7 +16337,8 @@ AV_VanityItems = {
         creaturePreview = 2156,
         creatureId = 2156,
         description = "Has a chance to drop from Cracked Golem within Remtravel's Excavation.",
-        zone = "Remtravel's Excavation.",
+        zone = "Darkshore",
+        subzone = "Remtravel's Excavation",
         icon = 5
     },
     [601668] = {
@@ -15722,7 +16347,8 @@ AV_VanityItems = {
         creaturePreview = 2157,
         creatureId = 2157,
         description = "Has a chance to drop from Stone Behemoth within Remtravel's Excavation.",
-        zone = "Remtravel's Excavation.",
+        zone = "Darkshore",
+        subzone = "Remtravel's Excavation",
         icon = 5
     },
     [601669] = {
@@ -15731,7 +16357,7 @@ AV_VanityItems = {
         creaturePreview = 2551,
         creatureId = 2551,
         description = "Has a chance to drop from Brutus within Stranglethorn Vale.",
-        zone = "Stranglethorn Vale.",
+        zone = "Stranglethorn Vale",
         icon = 5
     },
     [601670] = {
@@ -15740,7 +16366,8 @@ AV_VanityItems = {
         creaturePreview = 2723,
         creatureId = 2723,
         description = "Has a chance to drop from Stone Golem within Angor Fortress.",
-        zone = "Angor Fortress.",
+        zone = "Badlands",
+        subzone = "Angor Fortress",
         icon = 5
     },
     [601671] = {
@@ -15749,7 +16376,7 @@ AV_VanityItems = {
         creaturePreview = 2749,
         creatureId = 2749,
         description = "Has a chance to drop from Siege Golem within Siege Golem.",
-        zone = "Siege Golem.",
+        zone = "Siege Golem",
         icon = 5
     },
     [601672] = {
@@ -15758,7 +16385,7 @@ AV_VanityItems = {
         creaturePreview = 2751,
         creatureId = 2751,
         description = "Has a chance to drop from War Golem within Badlands.",
-        zone = "Badlands.",
+        zone = "Badlands",
         icon = 5
     },
     [601673] = {
@@ -15767,7 +16394,7 @@ AV_VanityItems = {
         creaturePreview = 4857,
         creatureId = 4857,
         description = "Has a chance to drop from Stone Keeper within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 5
     },
     [601674] = {
@@ -15776,7 +16403,7 @@ AV_VanityItems = {
         creaturePreview = 4860,
         creatureId = 4860,
         description = "Has a chance to drop from Stone Steward within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 5
     },
     [601675] = {
@@ -15785,7 +16412,8 @@ AV_VanityItems = {
         creaturePreview = 5853,
         creatureId = 5853,
         description = "Has a chance to drop from Tempered War Golem within Dustfire Valley.",
-        zone = "Dustfire Valley.",
+        zone = "Searing Gorge",
+        subzone = "Dustfire Valley",
         icon = 5
     },
     [601676] = {
@@ -15794,7 +16422,8 @@ AV_VanityItems = {
         creaturePreview = 6560,
         creatureId = 6560,
         description = "Has a chance to drop from Stone Guardian within Lakkari Tar Pits.",
-        zone = "Lakkari Tar Pits.",
+        zone = "Un'Goro Crater",
+        subzone = "Lakkari Tar Pits",
         icon = 5
     },
     [601677] = {
@@ -15811,7 +16440,8 @@ AV_VanityItems = {
         creaturePreview = 7039,
         creatureId = 7039,
         description = "Has a chance to drop from War Reaver within Ruins of Thaurissan.",
-        zone = "Ruins of Thaurissan.",
+        zone = "Burning Steppes",
+        subzone = "Ruins of Thaurissan",
         icon = 5
     },
     [601679] = {
@@ -15820,7 +16450,7 @@ AV_VanityItems = {
         creaturePreview = 7206,
         creatureId = 7206,
         description = "Has a chance to drop from Ancient Stone Keeper within Uldaman.",
-        zone = "Uldaman.",
+        zone = "Uldaman",
         icon = 5
     },
     [601680] = {
@@ -15829,7 +16459,7 @@ AV_VanityItems = {
         creaturePreview = 8279,
         creatureId = 8279,
         description = "Has a chance to drop from Faulty War Golem within Searing Gorge.",
-        zone = "Searing Gorge.",
+        zone = "Searing Gorge",
         icon = 5
     },
     [601682] = {
@@ -15838,7 +16468,7 @@ AV_VanityItems = {
         creaturePreview = 8905,
         creatureId = 8905,
         description = "Has a chance to drop from Warbringer Construct within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [601683] = {
@@ -15847,7 +16477,7 @@ AV_VanityItems = {
         creaturePreview = 8906,
         creatureId = 8906,
         description = "Has a chance to drop from Ragereaver Golem within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [601684] = {
@@ -15856,7 +16486,7 @@ AV_VanityItems = {
         creaturePreview = 8908,
         creatureId = 8908,
         description = "Has a chance to drop from Molten War Golem within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [601685] = {
@@ -15865,7 +16495,7 @@ AV_VanityItems = {
         creaturePreview = 8923,
         creatureId = 8923,
         description = "Has a chance to drop from Panzor the Invincible within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [601686] = {
@@ -15874,7 +16504,8 @@ AV_VanityItems = {
         creaturePreview = 8981,
         creatureId = 8981,
         description = "Has a chance to drop from Malfunctioning Reaver within Dreadmaul Rock.",
-        zone = "Dreadmaul Rock.",
+        zone = "Burning Steppes",
+        subzone = "Dreadmaul Rock",
         icon = 5
     },
     [601687] = {
@@ -15883,7 +16514,7 @@ AV_VanityItems = {
         creaturePreview = 8982,
         creatureId = 8982,
         description = "Has a chance to drop from Ironhand Guardian within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [601688] = {
@@ -15892,7 +16523,7 @@ AV_VanityItems = {
         creaturePreview = 9502,
         creatureId = 9502,
         description = "Has a chance to drop from Phalanx within Blackrock Depths.",
-        zone = "Blackrock Depths.",
+        subzone = "Blackrock Depths",
         icon = 5
     },
     [601700] = {
@@ -15901,7 +16532,7 @@ AV_VanityItems = {
         creaturePreview = 28069,
         creatureId = 28069,
         description = "Has a chance to drop from Sholazar Guardian within The Makers' Overlook.",
-        zone = "The Makers' Overlook.",
+        zone = "The Makers' Overlook",
         icon = 5
     },
     [601705] = {
@@ -15910,7 +16541,7 @@ AV_VanityItems = {
         creaturePreview = 28840,
         creatureId = 28840,
         description = "Has a chance to drop from Overlook Sentry within The Makers' Overlook.",
-        zone = "The Makers' Overlook.",
+        zone = "The Makers' Overlook",
         icon = 5
     },
     [601714] = {
@@ -15919,7 +16550,7 @@ AV_VanityItems = {
         creaturePreview = 100154,
         creatureId = 100154,
         description = "Has a chance to drop from Tempered War Golem within Searing Gorge.",
-        zone = "Searing Gorge.",
+        zone = "Searing Gorge",
         icon = 5
     },
     [601716] = {
@@ -15928,7 +16559,7 @@ AV_VanityItems = {
         creaturePreview = 1547,
         creatureId = 1547,
         description = "Has a chance to drop from Decrepit Darkhound within Tirisfal Glades.",
-        zone = "Tirisfal Glades.",
+        zone = "Tirisfal Glades",
         icon = 3
     },
     [601818] = {
@@ -15937,7 +16568,8 @@ AV_VanityItems = {
         creaturePreview = 11458,
         creatureId = 11458,
         description = "Has a chance to drop from Petrified Treant within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601819] = {
@@ -15946,7 +16578,8 @@ AV_VanityItems = {
         creaturePreview = 11461,
         creatureId = 11461,
         description = "Has a chance to drop from Warpwood Guardian within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601820] = {
@@ -15955,7 +16588,8 @@ AV_VanityItems = {
         creaturePreview = 11462,
         creatureId = 11462,
         description = "Has a chance to drop from Warpwood Treant within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601821] = {
@@ -15964,7 +16598,8 @@ AV_VanityItems = {
         creaturePreview = 11464,
         creatureId = 11464,
         description = "Has a chance to drop from Warpwood Tangler within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601822] = {
@@ -15973,7 +16608,8 @@ AV_VanityItems = {
         creaturePreview = 11465,
         creatureId = 11465,
         description = "Has a chance to drop from Warpwood Stomper within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601823] = {
@@ -15982,7 +16618,7 @@ AV_VanityItems = {
         creaturePreview = 13142,
         creatureId = 13142,
         description = "Has a chance to drop from Deeprot Tangler within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601824] = {
@@ -15991,7 +16627,7 @@ AV_VanityItems = {
         creaturePreview = 13743,
         creatureId = 13743,
         description = "Has a chance to drop from Corrupt Force of Nature within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [601825] = {
@@ -16000,7 +16636,8 @@ AV_VanityItems = {
         creaturePreview = 14303,
         creatureId = 14303,
         description = "Has a chance to drop from Petrified Guardian within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601832] = {
@@ -16009,7 +16646,6 @@ AV_VanityItems = {
         creaturePreview = 36070,
         creatureId = 36070,
         description = "Has a chance to drop from Treant within Kalimdor/Eastern Kingdom.",
-        zone = "Kalimdor/Eastern Kingdom.",
         icon = 5
     },
     [601834] = {
@@ -16018,7 +16654,8 @@ AV_VanityItems = {
         creaturePreview = 83496,
         creatureId = 83496,
         description = "Has a chance to drop from Cursed Sycamore within High Wilderness.",
-        zone = "High Wilderness.",
+        zone = "Feralas",
+        subzone = "High Wilderness",
         icon = 5
     },
     [601835] = {
@@ -16027,7 +16664,7 @@ AV_VanityItems = {
         creaturePreview = 83616,
         creatureId = 83616,
         description = "Has a chance to drop from Wandering Forest Walker within Feralas.",
-        zone = "Feralas.",
+        zone = "Feralas",
         icon = 5
     },
     [601836] = {
@@ -16036,7 +16673,6 @@ AV_VanityItems = {
         creaturePreview = 1964,
         creatureId = 1964,
         description = "Has a chance to drop from Treant within Kalimdor/Eastern Kingdom.",
-        zone = "Kalimdor/Eastern Kingdom.",
         icon = 5
     },
     [601837] = {
@@ -16045,7 +16681,7 @@ AV_VanityItems = {
         creaturePreview = 3834,
         creatureId = 3834,
         description = "Has a chance to drop from Crazed Ancient within Nightsong Woods.",
-        zone = "Nightsong Woods.",
+        zone = "Nightsong Woods",
         icon = 5
     },
     [601838] = {
@@ -16054,7 +16690,7 @@ AV_VanityItems = {
         creaturePreview = 3919,
         creatureId = 3919,
         description = "Has a chance to drop from Withered Ancient within Nightsong Woods.",
-        zone = "Nightsong Woods.",
+        zone = "Nightsong Woods",
         icon = 5
     },
     [601839] = {
@@ -16063,7 +16699,8 @@ AV_VanityItems = {
         creaturePreview = 4029,
         creatureId = 4029,
         description = "Has a chance to drop from Blackened Ancient within The Charred Vale.",
-        zone = "The Charred Vale.",
+        zone = "Stonetalon Mountains",
+        subzone = "The Charred Vale",
         icon = 5
     },
     [601840] = {
@@ -16072,7 +16709,8 @@ AV_VanityItems = {
         creaturePreview = 4030,
         creatureId = 4030,
         description = "Has a chance to drop from Vengeful Ancient within The Charred Vale.",
-        zone = "The Charred Vale.",
+        zone = "Stonetalon Mountains",
+        subzone = "The Charred Vale",
         icon = 5
     },
     [601843] = {
@@ -16081,7 +16719,6 @@ AV_VanityItems = {
         creaturePreview = 5806,
         creatureId = 5806,
         description = "Has a chance to drop from Treant Ally within Kalimdor/Eastern Kingdom.",
-        zone = "Kalimdor/Eastern Kingdom.",
         icon = 5
     },
     [601845] = {
@@ -16090,7 +16727,8 @@ AV_VanityItems = {
         creaturePreview = 7138,
         creatureId = 7138,
         description = "Has a chance to drop from Irontree Wanderer within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 5
     },
     [601846] = {
@@ -16099,7 +16737,8 @@ AV_VanityItems = {
         creaturePreview = 7139,
         creatureId = 7139,
         description = "Has a chance to drop from Irontree Stomper within Irontree Woods.",
-        zone = "Irontree Woods.",
+        zone = "Felwood",
+        subzone = "Irontree Woods",
         icon = 5
     },
     [601847] = {
@@ -16108,7 +16747,7 @@ AV_VanityItems = {
         creaturePreview = 7143,
         creatureId = 7143,
         description = "Has a chance to drop from Decaying Treant within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 5
     },
     [601848] = {
@@ -16117,7 +16756,7 @@ AV_VanityItems = {
         creaturePreview = 7144,
         creatureId = 7144,
         description = "Has a chance to drop from Withered Treant within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 5
     },
     [601849] = {
@@ -16126,7 +16765,6 @@ AV_VanityItems = {
         creaturePreview = 7146,
         creatureId = 7146,
         description = "Has a chance to drop from Treant Protector within Kalimdor/Eastern Kingdom.",
-        zone = "Kalimdor/Eastern Kingdom.",
         icon = 5
     },
     [601851] = {
@@ -16135,7 +16773,7 @@ AV_VanityItems = {
         creaturePreview = 9601,
         creatureId = 9601,
         description = "Has a chance to drop from Treant Spirit within Felwood.",
-        zone = "Felwood.",
+        zone = "Felwood",
         icon = 5
     },
     [601853] = {
@@ -16144,7 +16782,8 @@ AV_VanityItems = {
         creaturePreview = 15271,
         creatureId = 15271,
         description = "Has a chance to drop from Tender within Sunstrider Isle.",
-        zone = "Sunstrider Isle.",
+        zone = "Eversong Woods",
+        subzone = "Sunstrider Isle",
         icon = 5
     },
     [601854] = {
@@ -16153,7 +16792,8 @@ AV_VanityItems = {
         creaturePreview = 15294,
         creatureId = 15294,
         description = "Has a chance to drop from Feral Tender within Sunstrider Isle.",
-        zone = "Sunstrider Isle.",
+        zone = "Eversong Woods",
+        subzone = "Sunstrider Isle",
         icon = 5
     },
     [601855] = {
@@ -16162,7 +16802,8 @@ AV_VanityItems = {
         creaturePreview = 15409,
         creatureId = 15409,
         description = "Has a chance to drop from Old Whitebark within The Scorched Grove.",
-        zone = "The Scorched Grove.",
+        zone = "Eversong Woods",
+        subzone = "The Scorched Grove",
         icon = 5
     },
     [601857] = {
@@ -16171,7 +16812,7 @@ AV_VanityItems = {
         creaturePreview = 15636,
         creatureId = 15636,
         description = "Has a chance to drop from Eversong Green Keeper within Eversong Woods.",
-        zone = "Eversong Woods.",
+        zone = "Eversong Woods",
         icon = 5
     },
     [601858] = {
@@ -16180,7 +16821,8 @@ AV_VanityItems = {
         creaturePreview = 15637,
         creatureId = 15637,
         description = "Has a chance to drop from Withered Green Keeper within The Scorched Grove.",
-        zone = "The Scorched Grove.",
+        zone = "Eversong Woods",
+        subzone = "The Scorched Grove",
         icon = 5
     },
     [601859] = {
@@ -16189,7 +16831,8 @@ AV_VanityItems = {
         creaturePreview = 17352,
         creatureId = 17352,
         description = "Has a chance to drop from Corrupted Treant within Middenvale.",
-        zone = "Middenvale.",
+        zone = "Bloodmyst Isle",
+        subzone = "Middenvale",
         icon = 5
     },
     [601862] = {
@@ -16198,7 +16841,7 @@ AV_VanityItems = {
         creaturePreview = 21040,
         creatureId = 21040,
         description = "Has a chance to drop from Outraged Raven's Wood Sapling within Ruuan Weald.",
-        zone = "Ruuan Weald.",
+        zone = "Ruuan Weald",
         icon = 5
     },
     [601864] = {
@@ -16207,7 +16850,8 @@ AV_VanityItems = {
         creaturePreview = 91355,
         creatureId = 91355,
         description = "Has a chance to drop from Whip Lasher (Fuchsia) within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 5
     },
     [601866] = {
@@ -16216,7 +16860,7 @@ AV_VanityItems = {
         creaturePreview = 22095,
         creatureId = 22095,
         description = "Has a chance to drop from Infested Root-Walker within The Bone Wastes.",
-        zone = "The Bone Wastes.",
+        zone = "The Bone Wastes",
         icon = 5
     },
     [603976] = {
@@ -16233,7 +16877,7 @@ AV_VanityItems = {
         creaturePreview = 449183,
         creatureId = 449183,
         description = "Has a chance to drop from Brutallus within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [612860] = {
@@ -16242,7 +16886,7 @@ AV_VanityItems = {
         creaturePreview = 449184,
         creatureId = 449184,
         description = "Has a chance to drop from Sacro'lythess within Sunwell Plateau.",
-        zone = "Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
         icon = 3
     },
     [1179020] = {
@@ -16251,7 +16895,7 @@ AV_VanityItems = {
         creaturePreview = 79082,
         creatureId = 79082,
         description = "Has a chance to drop from The Mass of Souls within Naxxramas.",
-        zone = "Naxxramas.",
+        zone = "Naxxramas",
         icon = 2
     },
     [1179027] = {
@@ -16260,7 +16904,7 @@ AV_VanityItems = {
         creaturePreview = 79089,
         creatureId = 79089,
         description = "Has a chance to drop from Lich Lord within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 2
     },
     [1180107] = {
@@ -16269,7 +16913,7 @@ AV_VanityItems = {
         creaturePreview = 193,
         creatureId = 193,
         description = "Has a chance to drop from Blue Dragonspawn within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180109] = {
@@ -16278,7 +16922,8 @@ AV_VanityItems = {
         creaturePreview = 335,
         creatureId = 335,
         description = "Has a chance to drop from Singe within Stonewatch Keep.",
-        zone = "Stonewatch Keep.",
+        zone = "Redridge Mountains",
+        subzone = "Stonewatch Keep",
         icon = 4
     },
     [1180110] = {
@@ -16287,7 +16932,8 @@ AV_VanityItems = {
         creaturePreview = 148001,
         creatureId = 148001,
         description = "Has a chance to drop from Singe within Stonewatch Keep.",
-        zone = "Stonewatch Keep.",
+        zone = "Redridge Mountains",
+        subzone = "Stonewatch Keep",
         icon = 4
     },
     [1180111] = {
@@ -16296,7 +16942,7 @@ AV_VanityItems = {
         creaturePreview = 441,
         creatureId = 441,
         description = "Has a chance to drop from Black Dragon Whelp within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 4
     },
     [1180112] = {
@@ -16305,7 +16951,7 @@ AV_VanityItems = {
         creaturePreview = 148002,
         creatureId = 148002,
         description = "Has a chance to drop from Black Dragon Whelp within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 4
     },
     [1180113] = {
@@ -16314,7 +16960,7 @@ AV_VanityItems = {
         creaturePreview = 740,
         creatureId = 740,
         description = "Has a chance to drop from Adolescent Whelp within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180114] = {
@@ -16323,7 +16969,7 @@ AV_VanityItems = {
         creaturePreview = 148003,
         creatureId = 148003,
         description = "Has a chance to drop from Adolescent Whelp within Itharius's Cave.",
-        zone = "Itharius's Cave.",
+        subzone = "Itharius's Cave",
         icon = 4
     },
     [1180115] = {
@@ -16332,7 +16978,7 @@ AV_VanityItems = {
         creaturePreview = 741,
         creatureId = 741,
         description = "Has a chance to drop from Dreaming Whelp within Itharius's Cave.",
-        zone = "Itharius's Cave.",
+        subzone = "Itharius's Cave",
         icon = 4
     },
     [1180116] = {
@@ -16341,7 +16987,7 @@ AV_VanityItems = {
         creaturePreview = 148004,
         creatureId = 148004,
         description = "Has a chance to drop from Dreaming Whelp within Itharius's Cave.",
-        zone = "Itharius's Cave.",
+        subzone = "Itharius's Cave",
         icon = 4
     },
     [1180117] = {
@@ -16350,7 +16996,7 @@ AV_VanityItems = {
         creaturePreview = 742,
         creatureId = 742,
         description = "Has a chance to drop from Green Wyrmkin within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180119] = {
@@ -16359,7 +17005,8 @@ AV_VanityItems = {
         creaturePreview = 743,
         creatureId = 743,
         description = "Has a chance to drop from Wyrmkin Dreamwalker within Pool of Tears.",
-        zone = "Pool of Tears.",
+        zone = "Swamp of Sorrows",
+        subzone = "Pool of Tears",
         icon = 4
     },
     [1180120] = {
@@ -16368,7 +17015,8 @@ AV_VanityItems = {
         creaturePreview = 148005,
         creatureId = 148005,
         description = "Has a chance to drop from Wyrmkin Dreamwalker within Pool of Tears.",
-        zone = "Pool of Tears.",
+        zone = "Swamp of Sorrows",
+        subzone = "Pool of Tears",
         icon = 4
     },
     [1180121] = {
@@ -16377,7 +17025,7 @@ AV_VanityItems = {
         creaturePreview = 744,
         creatureId = 744,
         description = "Has a chance to drop from Green Scalebane within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180122] = {
@@ -16386,7 +17034,7 @@ AV_VanityItems = {
         creaturePreview = 745,
         creatureId = 745,
         description = "Has a chance to drop from Scalebane Captain within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 4
     },
     [1180123] = {
@@ -16395,7 +17043,7 @@ AV_VanityItems = {
         creaturePreview = 148006,
         creatureId = 148006,
         description = "Has a chance to drop from Scalebane Captain within Swamp of Sorrows.",
-        zone = "Swamp of Sorrows.",
+        zone = "Swamp of Sorrows",
         icon = 4
     },
     [1180124] = {
@@ -16404,7 +17052,7 @@ AV_VanityItems = {
         creaturePreview = 746,
         creatureId = 746,
         description = "Has a chance to drop from Elder Dragonkin within Sorrowmurk.",
-        zone = "Sorrowmurk.",
+        zone = "Sorrowmurk",
         icon = 4
     },
     [1180125] = {
@@ -16413,7 +17061,7 @@ AV_VanityItems = {
         creaturePreview = 148007,
         creatureId = 148007,
         description = "Has a chance to drop from Elder Dragonkin within Sorrowmurk.",
-        zone = "Sorrowmurk.",
+        zone = "Sorrowmurk",
         icon = 4
     },
     [1180126] = {
@@ -16422,7 +17070,7 @@ AV_VanityItems = {
         creaturePreview = 1042,
         creatureId = 1042,
         description = "Has a chance to drop from Red Whelp within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180129] = {
@@ -16431,7 +17079,7 @@ AV_VanityItems = {
         creaturePreview = 148008,
         creatureId = 148008,
         description = "Has a chance to drop from Red Whelp within Wetlands.",
-        zone = "Wetlands.",
+        zone = "Wetlands",
         icon = 4
     },
     [1180130] = {
@@ -16440,7 +17088,7 @@ AV_VanityItems = {
         creaturePreview = 1043,
         creatureId = 1043,
         description = "Has a chance to drop from Lost Whelp within Wetlands.",
-        zone = "Wetlands.",
+        zone = "Wetlands",
         icon = 4
     },
     [1180131] = {
@@ -16449,7 +17097,7 @@ AV_VanityItems = {
         creaturePreview = 148009,
         creatureId = 148009,
         description = "Has a chance to drop from Lost Whelp within Wetlands.",
-        zone = "Wetlands.",
+        zone = "Wetlands",
         icon = 4
     },
     [1180132] = {
@@ -16458,7 +17106,7 @@ AV_VanityItems = {
         creaturePreview = 1044,
         creatureId = 1044,
         description = "Has a chance to drop from Flamesnorting Whelp within Wetlands.",
-        zone = "Wetlands.",
+        zone = "Wetlands",
         icon = 4
     },
     [1180133] = {
@@ -16467,7 +17115,7 @@ AV_VanityItems = {
         creaturePreview = 148010,
         creatureId = 148010,
         description = "Has a chance to drop from Flamesnorting Whelp within Wetlands.",
-        zone = "Wetlands.",
+        zone = "Wetlands",
         icon = 4
     },
     [1180134] = {
@@ -16476,7 +17124,7 @@ AV_VanityItems = {
         creaturePreview = 1045,
         creatureId = 1045,
         description = "Has a chance to drop from Red Dragonspawn within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180136] = {
@@ -16485,7 +17133,8 @@ AV_VanityItems = {
         creaturePreview = 148011,
         creatureId = 148011,
         description = "Has a chance to drop from Red Dragonspawn within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180137] = {
@@ -16494,7 +17143,7 @@ AV_VanityItems = {
         creaturePreview = 1046,
         creatureId = 1046,
         description = "Has a chance to drop from Red Wyrmkin within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180139] = {
@@ -16503,7 +17152,8 @@ AV_VanityItems = {
         creaturePreview = 148012,
         creatureId = 148012,
         description = "Has a chance to drop from Red Wyrmkin within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180140] = {
@@ -16512,7 +17162,8 @@ AV_VanityItems = {
         creaturePreview = 1047,
         creatureId = 1047,
         description = "Has a chance to drop from Red Scalebane within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180141] = {
@@ -16521,7 +17172,8 @@ AV_VanityItems = {
         creaturePreview = 148013,
         creatureId = 148013,
         description = "Has a chance to drop from Red Scalebane within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180142] = {
@@ -16530,7 +17182,8 @@ AV_VanityItems = {
         creaturePreview = 1048,
         creatureId = 1048,
         description = "Has a chance to drop from Scalebane Lieutenant within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180143] = {
@@ -16539,7 +17192,8 @@ AV_VanityItems = {
         creaturePreview = 148014,
         creatureId = 148014,
         description = "Has a chance to drop from Scalebane Lieutenant within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180144] = {
@@ -16548,7 +17202,8 @@ AV_VanityItems = {
         creaturePreview = 1049,
         creatureId = 1049,
         description = "Has a chance to drop from Wyrmkin Firebrand within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180145] = {
@@ -16557,7 +17212,8 @@ AV_VanityItems = {
         creaturePreview = 148015,
         creatureId = 148015,
         description = "Has a chance to drop from Wyrmkin Firebrand within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180146] = {
@@ -16566,7 +17222,8 @@ AV_VanityItems = {
         creaturePreview = 1050,
         creatureId = 1050,
         description = "Has a chance to drop from Scalebane Royal Guard within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180151] = {
@@ -16575,7 +17232,7 @@ AV_VanityItems = {
         creaturePreview = 1063,
         creatureId = 1063,
         description = "Has a chance to drop from Jade within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180152] = {
@@ -16584,7 +17241,7 @@ AV_VanityItems = {
         creaturePreview = 148018,
         creatureId = 148018,
         description = "Has a chance to drop from Jade within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180153] = {
@@ -16593,7 +17250,8 @@ AV_VanityItems = {
         creaturePreview = 1069,
         creatureId = 1069,
         description = "Has a chance to drop from Crimson Whelp within Direforge Hill.",
-        zone = "Direforge Hill.",
+        zone = "Wetlands",
+        subzone = "Direforge Hill",
         icon = 4
     },
     [1180168] = {
@@ -16602,7 +17260,7 @@ AV_VanityItems = {
         creaturePreview = 2538,
         creatureId = 2538,
         description = "Has a chance to drop from Narillasanz within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180169] = {
@@ -16611,7 +17269,8 @@ AV_VanityItems = {
         creaturePreview = 2538,
         creatureId = 2538,
         description = "Has a chance to drop from Narillasanz within Chillwind Point.",
-        zone = "Chillwind Point.",
+        zone = "Chillwind Point",
+        subzone = "Chillwind Point",
         icon = 4
     },
     [1180172] = {
@@ -16620,7 +17279,8 @@ AV_VanityItems = {
         creaturePreview = 2725,
         creatureId = 2725,
         description = "Has a chance to drop from Scalding Whelp within Lethlor Ravine.",
-        zone = "Lethlor Ravine.",
+        zone = "Badlands",
+        subzone = "Lethlor Ravine",
         icon = 4
     },
     [1180173] = {
@@ -16629,7 +17289,8 @@ AV_VanityItems = {
         creaturePreview = 148022,
         creatureId = 148022,
         description = "Has a chance to drop from Scalding Whelp within Lethlor Ravine.",
-        zone = "Lethlor Ravine.",
+        zone = "Badlands",
+        subzone = "Lethlor Ravine",
         icon = 4
     },
     [1180174] = {
@@ -16638,7 +17299,7 @@ AV_VanityItems = {
         creaturePreview = 2726,
         creatureId = 2726,
         description = "Has a chance to drop from Scorched Guardian within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180175] = {
@@ -16647,7 +17308,8 @@ AV_VanityItems = {
         creaturePreview = 148023,
         creatureId = 148023,
         description = "Has a chance to drop from Scorched Guardian within Lethlor Ravine.",
-        zone = "Lethlor Ravine.",
+        zone = "Badlands",
+        subzone = "Lethlor Ravine",
         icon = 4
     },
     [1180176] = {
@@ -16656,7 +17318,7 @@ AV_VanityItems = {
         creaturePreview = 2757,
         creatureId = 2757,
         description = "Has a chance to drop from Blacklash within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180177] = {
@@ -16665,7 +17327,7 @@ AV_VanityItems = {
         creaturePreview = 148024,
         creatureId = 148024,
         description = "Has a chance to drop from Blacklash within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180188] = {
@@ -16674,7 +17336,7 @@ AV_VanityItems = {
         creaturePreview = 3815,
         creatureId = 3815,
         description = "Has a chance to drop from Blink Dragon within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180189] = {
@@ -16683,7 +17345,8 @@ AV_VanityItems = {
         creaturePreview = 4016,
         creatureId = 4016,
         description = "Has a chance to drop from Fey Dragon within Stonetalon Peak.",
-        zone = "Stonetalon Peak.",
+        zone = "Stonetalon Mountains",
+        subzone = "Stonetalon Peak",
         icon = 4
     },
     [1180190] = {
@@ -16692,7 +17355,8 @@ AV_VanityItems = {
         creaturePreview = 148026,
         creatureId = 148026,
         description = "Has a chance to drop from Fey Dragon within Stonetalon Peak.",
-        zone = "Stonetalon Peak.",
+        zone = "Stonetalon Mountains",
+        subzone = "Stonetalon Peak",
         icon = 4
     },
     [1180191] = {
@@ -16701,7 +17365,8 @@ AV_VanityItems = {
         creaturePreview = 4017,
         creatureId = 4017,
         description = "Has a chance to drop from Wily Fey Dragon within Stonetalon Peak.",
-        zone = "Stonetalon Peak.",
+        zone = "Stonetalon Mountains",
+        subzone = "Stonetalon Peak",
         icon = 4
     },
     [1180192] = {
@@ -16710,7 +17375,8 @@ AV_VanityItems = {
         creaturePreview = 148027,
         creatureId = 148027,
         description = "Has a chance to drop from Wily Fey Dragon within Stonetalon Peak.",
-        zone = "Stonetalon Peak.",
+        zone = "Stonetalon Mountains",
+        subzone = "Stonetalon Peak",
         icon = 4
     },
     [1180193] = {
@@ -16719,7 +17385,7 @@ AV_VanityItems = {
         creaturePreview = 4066,
         creatureId = 4066,
         description = "Has a chance to drop from Nal'taszar within The Talon Den.",
-        zone = "The Talon Den.",
+        subzone = "The Talon Den",
         icon = 4
     },
     [1180194] = {
@@ -16728,7 +17394,7 @@ AV_VanityItems = {
         creaturePreview = 4323,
         creatureId = 4323,
         description = "Has a chance to drop from Searing Hatchling within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 4
     },
     [1180195] = {
@@ -16737,7 +17403,7 @@ AV_VanityItems = {
         creaturePreview = 4324,
         creatureId = 4324,
         description = "Has a chance to drop from Searing Whelp within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 4
     },
     [1180196] = {
@@ -16746,7 +17412,7 @@ AV_VanityItems = {
         creaturePreview = 4328,
         creatureId = 4328,
         description = "Has a chance to drop from Firemane Scalebane within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 4
     },
     [1180197] = {
@@ -16755,7 +17421,7 @@ AV_VanityItems = {
         creaturePreview = 148028,
         creatureId = 148028,
         description = "Has a chance to drop from Firemane Scalebane within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 4
     },
     [1180198] = {
@@ -16764,7 +17430,8 @@ AV_VanityItems = {
         creaturePreview = 4329,
         creatureId = 4329,
         description = "Has a chance to drop from Firemane Scout within The Den of Flame.",
-        zone = "The Den of Flame.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Den of Flame",
         icon = 4
     },
     [1180200] = {
@@ -16773,7 +17440,7 @@ AV_VanityItems = {
         creaturePreview = 4331,
         creatureId = 4331,
         description = "Has a chance to drop from Firemane Ash Tail within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180201] = {
@@ -16782,7 +17449,7 @@ AV_VanityItems = {
         creaturePreview = 148030,
         creatureId = 148030,
         description = "Has a chance to drop from Firemane Ash Tail within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 4
     },
     [1180204] = {
@@ -16791,7 +17458,7 @@ AV_VanityItems = {
         creaturePreview = 4334,
         creatureId = 4334,
         description = "Has a chance to drop from Firemane Flamecaller within Wyrmbog.",
-        zone = "Wyrmbog.",
+        zone = "Wyrmbog",
         icon = 4
     },
     [1180206] = {
@@ -16800,7 +17467,8 @@ AV_VanityItems = {
         creaturePreview = 4339,
         creatureId = 4339,
         description = "Has a chance to drop from Brimgore within The Dragonmurk.",
-        zone = "The Dragonmurk.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Dragonmurk",
         icon = 4
     },
     [1180207] = {
@@ -16809,7 +17477,8 @@ AV_VanityItems = {
         creaturePreview = 148033,
         creatureId = 148033,
         description = "Has a chance to drop from Brimgore within The Dragonmurk.",
-        zone = "The Dragonmurk.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Dragonmurk",
         icon = 4
     },
     [1180208] = {
@@ -16818,7 +17487,8 @@ AV_VanityItems = {
         creaturePreview = 5276,
         creatureId = 5276,
         description = "Has a chance to drop from Sprite Dragon within The Twin Colossals.",
-        zone = "The Twin Colossals.",
+        zone = "Feralas",
+        subzone = "The Twin Colossals",
         icon = 4
     },
     [1180209] = {
@@ -16827,7 +17497,8 @@ AV_VanityItems = {
         creaturePreview = 148034,
         creatureId = 148034,
         description = "Has a chance to drop from Sprite Dragon within The Twin Colossals.",
-        zone = "The Twin Colossals.",
+        zone = "Feralas",
+        subzone = "The Twin Colossals",
         icon = 4
     },
     [1180210] = {
@@ -16836,7 +17507,7 @@ AV_VanityItems = {
         creaturePreview = 5277,
         creatureId = 5277,
         description = "Has a chance to drop from Nightmare Scalebane within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180211] = {
@@ -16845,7 +17516,7 @@ AV_VanityItems = {
         creaturePreview = 148035,
         creatureId = 148035,
         description = "Has a chance to drop from Nightmare Scalebane within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180212] = {
@@ -16854,7 +17525,7 @@ AV_VanityItems = {
         creaturePreview = 5278,
         creatureId = 5278,
         description = "Has a chance to drop from Sprite Darter within Feralas.",
-        zone = "Feralas.",
+        zone = "Feralas",
         icon = 4
     },
     [1180213] = {
@@ -16863,7 +17534,7 @@ AV_VanityItems = {
         creaturePreview = 148036,
         creatureId = 148036,
         description = "Has a chance to drop from Sprite Darter within Feralas.",
-        zone = "Feralas.",
+        zone = "Feralas",
         icon = 4
     },
     [1180214] = {
@@ -16872,7 +17543,7 @@ AV_VanityItems = {
         creaturePreview = 5280,
         creatureId = 5280,
         description = "Has a chance to drop from Nightmare Wyrmkin within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180215] = {
@@ -16881,7 +17552,7 @@ AV_VanityItems = {
         creaturePreview = 148037,
         creatureId = 148037,
         description = "Has a chance to drop from Nightmare Wyrmkin within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180216] = {
@@ -16890,7 +17561,7 @@ AV_VanityItems = {
         creaturePreview = 5283,
         creatureId = 5283,
         description = "Has a chance to drop from Nightmare Wanderer within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180217] = {
@@ -16899,7 +17570,7 @@ AV_VanityItems = {
         creaturePreview = 148038,
         creatureId = 148038,
         description = "Has a chance to drop from Nightmare Wanderer within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180218] = {
@@ -16908,7 +17579,8 @@ AV_VanityItems = {
         creaturePreview = 5312,
         creatureId = 5312,
         description = "Has a chance to drop from Lethlas within Dream Bough.",
-        zone = "Dream Bough.",
+        zone = "Feralas",
+        subzone = "Dream Bough",
         icon = 4
     },
     [1180219] = {
@@ -16917,7 +17589,7 @@ AV_VanityItems = {
         creaturePreview = 5314,
         creatureId = 5314,
         description = "Has a chance to drop from Phantim within Bough Shadow.",
-        zone = "Bough Shadow.",
+        zone = "Bough Shadow",
         icon = 4
     },
     [1180220] = {
@@ -16926,7 +17598,7 @@ AV_VanityItems = {
         creaturePreview = 148039,
         creatureId = 148039,
         description = "Has a chance to drop from Phantim within Bough Shadow.",
-        zone = "Bough Shadow.",
+        zone = "Bough Shadow",
         icon = 4
     },
     [1180222] = {
@@ -16935,7 +17607,7 @@ AV_VanityItems = {
         creaturePreview = 5317,
         creatureId = 5317,
         description = "Has a chance to drop from Jademir Oracle within Jademir Lake.",
-        zone = "Jademir Lake.",
+        zone = "Jademir Lake",
         icon = 4
     },
     [1180223] = {
@@ -16944,7 +17616,7 @@ AV_VanityItems = {
         creaturePreview = 5319,
         creatureId = 5319,
         description = "Has a chance to drop from Jademir Tree Warder within Jademir Lake.",
-        zone = "Jademir Lake.",
+        zone = "Jademir Lake",
         icon = 4
     },
     [1180224] = {
@@ -16953,7 +17625,7 @@ AV_VanityItems = {
         creaturePreview = 5320,
         creatureId = 5320,
         description = "Has a chance to drop from Jademir Boughguard within Jademir Lake.",
-        zone = "Jademir Lake.",
+        zone = "Jademir Lake",
         icon = 4
     },
     [1180225] = {
@@ -16962,7 +17634,7 @@ AV_VanityItems = {
         creaturePreview = 5348,
         creatureId = 5348,
         description = "Has a chance to drop from Dreamwatcher Forktongue within Itharius's Cave.",
-        zone = "Itharius's Cave.",
+        subzone = "Itharius's Cave",
         icon = 4
     },
     [1180226] = {
@@ -16971,7 +17643,7 @@ AV_VanityItems = {
         creaturePreview = 5709,
         creatureId = 5709,
         description = "Has a chance to drop from Shade of Eranikus within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180227] = {
@@ -16980,7 +17652,8 @@ AV_VanityItems = {
         creaturePreview = 5718,
         creatureId = 5718,
         description = "Has a chance to drop from Rothos within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180228] = {
@@ -16989,7 +17662,8 @@ AV_VanityItems = {
         creaturePreview = 148040,
         creatureId = 148040,
         description = "Has a chance to drop from Rothos within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180229] = {
@@ -16998,7 +17672,7 @@ AV_VanityItems = {
         creaturePreview = 5719,
         creatureId = 5719,
         description = "Has a chance to drop from Morphaz within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180230] = {
@@ -17007,7 +17681,7 @@ AV_VanityItems = {
         creaturePreview = 5720,
         creatureId = 5720,
         description = "Has a chance to drop from Weaver within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180231] = {
@@ -17016,7 +17690,7 @@ AV_VanityItems = {
         creaturePreview = 215721,
         creatureId = 215721,
         description = "Has a chance to drop from Dreamscythe within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180232] = {
@@ -17025,7 +17699,7 @@ AV_VanityItems = {
         creaturePreview = 5722,
         creatureId = 5722,
         description = "Has a chance to drop from Hazzas within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180233] = {
@@ -17034,7 +17708,7 @@ AV_VanityItems = {
         creaturePreview = 5912,
         creatureId = 5912,
         description = "Has a chance to drop from Deviate Faerie Dragon within Wailing Caverns.",
-        zone = "Wailing Caverns.",
+        subzone = "Wailing Caverns",
         icon = 4
     },
     [1180234] = {
@@ -17043,7 +17717,7 @@ AV_VanityItems = {
         creaturePreview = 6109,
         creatureId = 6109,
         description = "Has a chance to drop from Azuregos within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180235] = {
@@ -17052,7 +17726,8 @@ AV_VanityItems = {
         creaturePreview = 6129,
         creatureId = 6129,
         description = "Has a chance to drop from Draconic Magelord within Lake Mennar.",
-        zone = "Lake Mennar.",
+        zone = "Azshara",
+        subzone = "Lake Mennar",
         icon = 4
     },
     [1180236] = {
@@ -17061,7 +17736,8 @@ AV_VanityItems = {
         creaturePreview = 148041,
         creatureId = 148041,
         description = "Has a chance to drop from Draconic Magelord within Lake Mennar.",
-        zone = "Lake Mennar.",
+        zone = "Azshara",
+        subzone = "Lake Mennar",
         icon = 4
     },
     [1180237] = {
@@ -17070,7 +17746,8 @@ AV_VanityItems = {
         creaturePreview = 6130,
         creatureId = 6130,
         description = "Has a chance to drop from Blue Scalebane within Lake Mennar.",
-        zone = "Lake Mennar.",
+        zone = "Azshara",
+        subzone = "Lake Mennar",
         icon = 4
     },
     [1180238] = {
@@ -17079,7 +17756,7 @@ AV_VanityItems = {
         creaturePreview = 6131,
         creatureId = 6131,
         description = "Has a chance to drop from Draconic Mageweaver within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180239] = {
@@ -17088,7 +17765,8 @@ AV_VanityItems = {
         creaturePreview = 148042,
         creatureId = 148042,
         description = "Has a chance to drop from Draconic Mageweaver within Lake Mennar.",
-        zone = "Lake Mennar.",
+        zone = "Azshara",
+        subzone = "Lake Mennar",
         icon = 4
     },
     [1180240] = {
@@ -17097,7 +17775,8 @@ AV_VanityItems = {
         creaturePreview = 7040,
         creatureId = 7040,
         description = "Has a chance to drop from Black Dragonspawn within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180242] = {
@@ -17106,7 +17785,8 @@ AV_VanityItems = {
         creaturePreview = 148043,
         creatureId = 148043,
         description = "Has a chance to drop from Black Dragonspawn within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180243] = {
@@ -17115,7 +17795,8 @@ AV_VanityItems = {
         creaturePreview = 7041,
         creatureId = 7041,
         description = "Has a chance to drop from Black Wyrmkin within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180245] = {
@@ -17124,7 +17805,8 @@ AV_VanityItems = {
         creaturePreview = 148044,
         creatureId = 148044,
         description = "Has a chance to drop from Black Wyrmkin within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180246] = {
@@ -17133,7 +17815,7 @@ AV_VanityItems = {
         creaturePreview = 7042,
         creatureId = 7042,
         description = "Has a chance to drop from Flamescale Dragonspawn within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 4
     },
     [1180247] = {
@@ -17142,7 +17824,7 @@ AV_VanityItems = {
         creaturePreview = 148045,
         creatureId = 148045,
         description = "Has a chance to drop from Flamescale Dragonspawn within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 4
     },
     [1180248] = {
@@ -17151,7 +17833,7 @@ AV_VanityItems = {
         creaturePreview = 7043,
         creatureId = 7043,
         description = "Has a chance to drop from Flamescale Wyrmkin within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 4
     },
     [1180249] = {
@@ -17160,7 +17842,7 @@ AV_VanityItems = {
         creaturePreview = 148046,
         creatureId = 148046,
         description = "Has a chance to drop from Flamescale Wyrmkin within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 4
     },
     [1180250] = {
@@ -17169,7 +17851,8 @@ AV_VanityItems = {
         creaturePreview = 7044,
         creatureId = 7044,
         description = "Has a chance to drop from Black Drake within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180252] = {
@@ -17178,7 +17861,8 @@ AV_VanityItems = {
         creaturePreview = 148047,
         creatureId = 148047,
         description = "Has a chance to drop from Black Drake within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180253] = {
@@ -17187,7 +17871,7 @@ AV_VanityItems = {
         creaturePreview = 7045,
         creatureId = 7045,
         description = "Has a chance to drop from Scalding Drake within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 4
     },
     [1180254] = {
@@ -17196,7 +17880,7 @@ AV_VanityItems = {
         creaturePreview = 148048,
         creatureId = 148048,
         description = "Has a chance to drop from Scalding Drake within Burning Steppes.",
-        zone = "Burning Steppes.",
+        zone = "Burning Steppes",
         icon = 4
     },
     [1180255] = {
@@ -17205,7 +17889,7 @@ AV_VanityItems = {
         creaturePreview = 7046,
         creatureId = 7046,
         description = "Has a chance to drop from Searscale Drake within Draco'dar.",
-        zone = "Draco'dar.",
+        zone = "Draco'dar",
         icon = 4
     },
     [1180256] = {
@@ -17214,7 +17898,7 @@ AV_VanityItems = {
         creaturePreview = 148049,
         creatureId = 148049,
         description = "Has a chance to drop from Searscale Drake within Draco'dar.",
-        zone = "Draco'dar.",
+        zone = "Draco'dar",
         icon = 4
     },
     [1180257] = {
@@ -17223,7 +17907,8 @@ AV_VanityItems = {
         creaturePreview = 7047,
         creatureId = 7047,
         description = "Has a chance to drop from Black Broodling within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180258] = {
@@ -17232,7 +17917,8 @@ AV_VanityItems = {
         creaturePreview = 148050,
         creatureId = 148050,
         description = "Has a chance to drop from Black Broodling within Terror Wing Path.",
-        zone = "Terror Wing Path.",
+        zone = "Burning Steppes",
+        subzone = "Terror Wing Path",
         icon = 4
     },
     [1180259] = {
@@ -17241,7 +17927,8 @@ AV_VanityItems = {
         creaturePreview = 7048,
         creatureId = 7048,
         description = "Has a chance to drop from Scalding Broodling within Ruins of Thaurissan.",
-        zone = "Ruins of Thaurissan.",
+        zone = "Burning Steppes",
+        subzone = "Ruins of Thaurissan",
         icon = 4
     },
     [1180260] = {
@@ -17250,7 +17937,8 @@ AV_VanityItems = {
         creaturePreview = 148051,
         creatureId = 148051,
         description = "Has a chance to drop from Scalding Broodling within Ruins of Thaurissan.",
-        zone = "Ruins of Thaurissan.",
+        zone = "Burning Steppes",
+        subzone = "Ruins of Thaurissan",
         icon = 4
     },
     [1180261] = {
@@ -17259,7 +17947,8 @@ AV_VanityItems = {
         creaturePreview = 7049,
         creatureId = 7049,
         description = "Has a chance to drop from Flamescale Broodling within Blackrock Mountain.",
-        zone = "Blackrock Mountain.",
+        zone = "Searing Gorge",
+        subzone = "Blackrock Mountain",
         icon = 4
     },
     [1180262] = {
@@ -17268,7 +17957,8 @@ AV_VanityItems = {
         creaturePreview = 148052,
         creatureId = 148052,
         description = "Has a chance to drop from Flamescale Broodling within Blackrock Mountain.",
-        zone = "Blackrock Mountain.",
+        zone = "Searing Gorge",
+        subzone = "Blackrock Mountain",
         icon = 4
     },
     [1180264] = {
@@ -17277,7 +17967,8 @@ AV_VanityItems = {
         creaturePreview = 7435,
         creatureId = 7435,
         description = "Has a chance to drop from Cobalt Wyrmkin within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180265] = {
@@ -17286,7 +17977,8 @@ AV_VanityItems = {
         creaturePreview = 148053,
         creatureId = 148053,
         description = "Has a chance to drop from Cobalt Wyrmkin within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180266] = {
@@ -17295,7 +17987,8 @@ AV_VanityItems = {
         creaturePreview = 7436,
         creatureId = 7436,
         description = "Has a chance to drop from Cobalt Scalebane within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180267] = {
@@ -17304,7 +17997,8 @@ AV_VanityItems = {
         creaturePreview = 148054,
         creatureId = 148054,
         description = "Has a chance to drop from Cobalt Scalebane within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180268] = {
@@ -17313,7 +18007,8 @@ AV_VanityItems = {
         creaturePreview = 7437,
         creatureId = 7437,
         description = "Has a chance to drop from Cobalt Mageweaver within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180269] = {
@@ -17322,7 +18017,8 @@ AV_VanityItems = {
         creaturePreview = 148055,
         creatureId = 148055,
         description = "Has a chance to drop from Cobalt Mageweaver within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180270] = {
@@ -17331,7 +18027,7 @@ AV_VanityItems = {
         creaturePreview = 7846,
         creatureId = 7846,
         description = "Has a chance to drop from Teremus the Devourer within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 4
     },
     [1180271] = {
@@ -17340,7 +18036,7 @@ AV_VanityItems = {
         creaturePreview = 148056,
         creatureId = 148056,
         description = "Has a chance to drop from Teremus the Devourer within Blasted Lands.",
-        zone = "Blasted Lands.",
+        zone = "Blasted Lands",
         icon = 4
     },
     [1180272] = {
@@ -17349,7 +18045,7 @@ AV_VanityItems = {
         creaturePreview = 7997,
         creatureId = 7997,
         description = "Has a chance to drop from Captured Sprite Darter within Feralas.",
-        zone = "Feralas.",
+        zone = "Feralas",
         icon = 4
     },
     [1180273] = {
@@ -17358,7 +18054,7 @@ AV_VanityItems = {
         creaturePreview = 8196,
         creatureId = 8196,
         description = "Has a chance to drop from Occulus within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180274] = {
@@ -17367,7 +18063,8 @@ AV_VanityItems = {
         creaturePreview = 8197,
         creatureId = 8197,
         description = "Has a chance to drop from Chronalis within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180275] = {
@@ -17376,7 +18073,8 @@ AV_VanityItems = {
         creaturePreview = 148057,
         creatureId = 148057,
         description = "Has a chance to drop from Chronalis within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180276] = {
@@ -17385,7 +18083,8 @@ AV_VanityItems = {
         creaturePreview = 8198,
         creatureId = 8198,
         description = "Has a chance to drop from Tick within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180277] = {
@@ -17394,7 +18093,8 @@ AV_VanityItems = {
         creaturePreview = 148058,
         creatureId = 148058,
         description = "Has a chance to drop from Tick within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180278] = {
@@ -17403,7 +18103,7 @@ AV_VanityItems = {
         creaturePreview = 8319,
         creatureId = 8319,
         description = "Has a chance to drop from Nightmare Whelp within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180279] = {
@@ -17412,7 +18112,7 @@ AV_VanityItems = {
         creaturePreview = 148059,
         creatureId = 148059,
         description = "Has a chance to drop from Nightmare Whelp within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180281] = {
@@ -17421,7 +18121,7 @@ AV_VanityItems = {
         creaturePreview = 8497,
         creatureId = 8497,
         description = "Has a chance to drop from Nightmare Suppressor within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180282] = {
@@ -17430,7 +18130,7 @@ AV_VanityItems = {
         creaturePreview = 148060,
         creatureId = 148060,
         description = "Has a chance to drop from Nightmare Suppressor within The Temple of Atal'Hakkar.",
-        zone = "The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
         icon = 4
     },
     [1180285] = {
@@ -17439,7 +18139,7 @@ AV_VanityItems = {
         creaturePreview = 8976,
         creatureId = 8976,
         description = "Has a chance to drop from Hematos within Draco'dar.",
-        zone = "Draco'dar.",
+        zone = "Draco'dar",
         icon = 4
     },
     [1180286] = {
@@ -17448,7 +18148,7 @@ AV_VanityItems = {
         creaturePreview = 9096,
         creatureId = 9096,
         description = "Has a chance to drop from Rage Talon Dragonspawn within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180287] = {
@@ -17457,7 +18157,7 @@ AV_VanityItems = {
         creaturePreview = 148061,
         creatureId = 148061,
         description = "Has a chance to drop from Rage Talon Dragonspawn within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180288] = {
@@ -17466,7 +18166,6 @@ AV_VanityItems = {
         creaturePreview = 9417,
         creatureId = 9417,
         description = "NPC exists. Level 60 found in Classic final zones, dungeons, or raids associated within Dragons (possibly Blackrock Mountain).",
-        zone = "Dragons (possibly Blackrock Mountain).",
         icon = 4
     },
     [1180290] = {
@@ -17475,7 +18174,7 @@ AV_VanityItems = {
         creaturePreview = 9461,
         creatureId = 9461,
         description = "Has a chance to drop from Frenzied Black Drake within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180291] = {
@@ -17484,7 +18183,7 @@ AV_VanityItems = {
         creaturePreview = 148062,
         creatureId = 148062,
         description = "Has a chance to drop from Frenzied Black Drake within Eastern Kingdoms.",
-        zone = "Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
         icon = 4
     },
     [1180292] = {
@@ -17493,7 +18192,7 @@ AV_VanityItems = {
         creaturePreview = 9568,
         creatureId = 9568,
         description = "Has a chance to drop from Overlord Wyrmthalak within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180294] = {
@@ -17502,7 +18201,7 @@ AV_VanityItems = {
         creaturePreview = 10083,
         creatureId = 10083,
         description = "Has a chance to drop from Rage Talon Flamescale within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180295] = {
@@ -17511,7 +18210,7 @@ AV_VanityItems = {
         creaturePreview = 148063,
         creatureId = 148063,
         description = "Has a chance to drop from Rage Talon Flamescale within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180298] = {
@@ -17520,7 +18219,7 @@ AV_VanityItems = {
         creaturePreview = 10161,
         creatureId = 10161,
         description = "Has a chance to drop from Rookery Whelp within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180299] = {
@@ -17529,7 +18228,7 @@ AV_VanityItems = {
         creaturePreview = 10184,
         creatureId = 10184,
         description = "Has a chance to drop from Onyxia within Onyxia's Lair.",
-        zone = "Onyxia's Lair.",
+        zone = "Onyxia's Lair",
         icon = 4
     },
     [1180300] = {
@@ -17538,7 +18237,8 @@ AV_VanityItems = {
         creaturePreview = 10196,
         creatureId = 10196,
         description = "Has a chance to drop from General Colbatann within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180301] = {
@@ -17547,7 +18247,7 @@ AV_VanityItems = {
         creaturePreview = 10202,
         creatureId = 10202,
         description = "Has a chance to drop from Azurous within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180305] = {
@@ -17556,7 +18256,7 @@ AV_VanityItems = {
         creaturePreview = 10264,
         creatureId = 10264,
         description = "Has a chance to drop from Solakar Flamewreath within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180307] = {
@@ -17565,7 +18265,7 @@ AV_VanityItems = {
         creaturePreview = 10321,
         creatureId = 10321,
         description = "Has a chance to drop from Emberstrife within Emberstrife's Den.",
-        zone = "Emberstrife's Den.",
+        subzone = "Emberstrife's Den",
         icon = 4
     },
     [1180308] = {
@@ -17574,7 +18274,7 @@ AV_VanityItems = {
         creaturePreview = 10339,
         creatureId = 10339,
         description = "Has a chance to drop from Gyth within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180309] = {
@@ -17583,7 +18283,7 @@ AV_VanityItems = {
         creaturePreview = 10363,
         creatureId = 10363,
         description = "Has a chance to drop from General Drakkisath within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180310] = {
@@ -17592,7 +18292,7 @@ AV_VanityItems = {
         creaturePreview = 10366,
         creatureId = 10366,
         description = "Has a chance to drop from Rage Talon Dragon Guard within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180311] = {
@@ -17601,7 +18301,7 @@ AV_VanityItems = {
         creaturePreview = 148066,
         creatureId = 148066,
         description = "Has a chance to drop from Rage Talon Dragon Guard within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180312] = {
@@ -17610,7 +18310,7 @@ AV_VanityItems = {
         creaturePreview = 10371,
         creatureId = 10371,
         description = "Has a chance to drop from Rage Talon Captain within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180313] = {
@@ -17619,7 +18319,7 @@ AV_VanityItems = {
         creaturePreview = 148067,
         creatureId = 148067,
         description = "Has a chance to drop from Rage Talon Captain within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180314] = {
@@ -17628,7 +18328,7 @@ AV_VanityItems = {
         creaturePreview = 10372,
         creatureId = 10372,
         description = "Has a chance to drop from Rage Talon Fire Tongue within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180315] = {
@@ -17637,7 +18337,7 @@ AV_VanityItems = {
         creaturePreview = 148068,
         creatureId = 148068,
         description = "Has a chance to drop from Rage Talon Fire Tongue within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180316] = {
@@ -17646,7 +18346,7 @@ AV_VanityItems = {
         creaturePreview = 10442,
         creatureId = 10442,
         description = "Has a chance to drop from Chromatic Whelp within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180317] = {
@@ -17655,7 +18355,6 @@ AV_VanityItems = {
         creaturePreview = 148069,
         creatureId = 148069,
         description = "Ascension custom NPC. Level 57-58 found in Classic final zones, dungeons, or raids within Chromatic dragons (likely Blackrock Mountain).",
-        zone = "Chromatic dragons (likely Blackrock Mountain).",
         icon = 4
     },
     [1180318] = {
@@ -17664,7 +18363,7 @@ AV_VanityItems = {
         creaturePreview = 148172,
         creatureId = 148172,
         description = "Has a chance to drop from Chromatic Whelp within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180319] = {
@@ -17673,7 +18372,7 @@ AV_VanityItems = {
         creaturePreview = 10447,
         creatureId = 10447,
         description = "Has a chance to drop from Chromatic Dragonspawn within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180320] = {
@@ -17682,7 +18381,6 @@ AV_VanityItems = {
         creaturePreview = 148070,
         creatureId = 148070,
         description = "Ascension custom NPC. Level 57-58 found in Classic final zones, dungeons, or raids within Chromatic dragons (likely Blackrock Mountain).",
-        zone = "Chromatic dragons (likely Blackrock Mountain).",
         icon = 4
     },
     [1180322] = {
@@ -17691,7 +18389,7 @@ AV_VanityItems = {
         creaturePreview = 10659,
         creatureId = 10659,
         description = "Has a chance to drop from Cobalt Whelp within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180323] = {
@@ -17700,7 +18398,8 @@ AV_VanityItems = {
         creaturePreview = 148071,
         creatureId = 148071,
         description = "Has a chance to drop from Cobalt Whelp within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180324] = {
@@ -17709,7 +18408,8 @@ AV_VanityItems = {
         creaturePreview = 10660,
         creatureId = 10660,
         description = "Has a chance to drop from Cobalt Broodling within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180325] = {
@@ -17718,7 +18418,8 @@ AV_VanityItems = {
         creaturePreview = 148072,
         creatureId = 148072,
         description = "Has a chance to drop from Cobalt Broodling within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180326] = {
@@ -17727,7 +18428,8 @@ AV_VanityItems = {
         creaturePreview = 10661,
         creatureId = 10661,
         description = "Has a chance to drop from Spell Eater within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180327] = {
@@ -17736,7 +18438,8 @@ AV_VanityItems = {
         creaturePreview = 148073,
         creatureId = 148073,
         description = "Has a chance to drop from Spell Eater within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180328] = {
@@ -17745,7 +18448,8 @@ AV_VanityItems = {
         creaturePreview = 10662,
         creatureId = 10662,
         description = "Has a chance to drop from Spellmaw within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180329] = {
@@ -17754,7 +18458,8 @@ AV_VanityItems = {
         creaturePreview = 148074,
         creatureId = 148074,
         description = "Has a chance to drop from Spellmaw within Mazthoril.",
-        zone = "Mazthoril.",
+        zone = "Winterspring",
+        subzone = "Mazthoril",
         icon = 4
     },
     [1180330] = {
@@ -17763,7 +18468,7 @@ AV_VanityItems = {
         creaturePreview = 10663,
         creatureId = 10663,
         description = "Has a chance to drop from Manaclaw within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 4
     },
     [1180332] = {
@@ -17772,7 +18477,7 @@ AV_VanityItems = {
         creaturePreview = 10664,
         creatureId = 10664,
         description = "Has a chance to drop from Scryer within Winterspring.",
-        zone = "Winterspring.",
+        zone = "Winterspring",
         icon = 4
     },
     [1180333] = {
@@ -17781,7 +18486,7 @@ AV_VanityItems = {
         creaturePreview = 10678,
         creatureId = 10678,
         description = "Has a chance to drop from Plagued Hatchling within Scholomance.",
-        zone = "Scholomance.",
+        zone = "Scholomance",
         icon = 4
     },
     [1180338] = {
@@ -17790,7 +18495,7 @@ AV_VanityItems = {
         creaturePreview = 148077,
         creatureId = 148077,
         description = "Has a chance to drop From Chromatic Elite Guard within Upper Blackrock Spire.",
-        zone = "Upper Blackrock Spire.",
+        zone = "Upper Blackrock Spire",
         icon = 4
     },
     [1180344] = {
@@ -17799,7 +18504,7 @@ AV_VanityItems = {
         creaturePreview = 11983,
         creatureId = 11983,
         description = "Has a chance to drop from Firemaw within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180345] = {
@@ -17808,7 +18513,7 @@ AV_VanityItems = {
         creaturePreview = 12017,
         creatureId = 12017,
         description = "Has a chance to drop from Broodlord Lashlayer within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180346] = {
@@ -17817,7 +18522,7 @@ AV_VanityItems = {
         creaturePreview = 12129,
         creatureId = 12129,
         description = "Has a chance to drop from Onyxian Warder within Onyxia's Lair.",
-        zone = "Onyxia's Lair.",
+        zone = "Onyxia's Lair",
         icon = 4
     },
     [1180352] = {
@@ -17826,7 +18531,7 @@ AV_VanityItems = {
         creaturePreview = 12435,
         creatureId = 12435,
         description = "Has a chance to drop from Razorgore the Untamed within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180353] = {
@@ -17835,7 +18540,7 @@ AV_VanityItems = {
         creaturePreview = 12460,
         creatureId = 12460,
         description = "Has a chance to drop from Death Talon Wyrmguard within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180354] = {
@@ -17844,7 +18549,7 @@ AV_VanityItems = {
         creaturePreview = 148080,
         creatureId = 148080,
         description = "Has a chance to drop from Death Talon Wyrmguard within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180355] = {
@@ -17853,7 +18558,7 @@ AV_VanityItems = {
         creaturePreview = 12461,
         creatureId = 12461,
         description = "Has a chance to drop from Death Talon Overseer within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180356] = {
@@ -17862,7 +18567,7 @@ AV_VanityItems = {
         creaturePreview = 148081,
         creatureId = 148081,
         description = "Has a chance to drop from Death Talon Overseer within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180357] = {
@@ -17871,7 +18576,7 @@ AV_VanityItems = {
         creaturePreview = 12463,
         creatureId = 12463,
         description = "Has a chance to drop from Death Talon Flamescale within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180358] = {
@@ -17880,7 +18585,7 @@ AV_VanityItems = {
         creaturePreview = 148082,
         creatureId = 148082,
         description = "Has a chance to drop from Death Talon Flamescale within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180359] = {
@@ -17889,7 +18594,7 @@ AV_VanityItems = {
         creaturePreview = 12464,
         creatureId = 12464,
         description = "Has a chance to drop from Death Talon Seether within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180360] = {
@@ -17898,7 +18603,7 @@ AV_VanityItems = {
         creaturePreview = 148083,
         creatureId = 148083,
         description = "Has a chance to drop from Death Talon Seether within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180361] = {
@@ -17907,7 +18612,7 @@ AV_VanityItems = {
         creaturePreview = 12465,
         creatureId = 12465,
         description = "Has a chance to drop from Death Talon Wyrmkin within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180362] = {
@@ -17916,7 +18621,7 @@ AV_VanityItems = {
         creaturePreview = 148084,
         creatureId = 148084,
         description = "Has a chance to drop from Death Talon Wyrmkin within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180364] = {
@@ -17925,7 +18630,7 @@ AV_VanityItems = {
         creaturePreview = 12467,
         creatureId = 12467,
         description = "Has a chance to drop from Death Talon Captain within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180366] = {
@@ -17934,7 +18639,7 @@ AV_VanityItems = {
         creaturePreview = 12468,
         creatureId = 12468,
         description = "Has a chance to drop from Death Talon Hatcher within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180367] = {
@@ -17943,7 +18648,7 @@ AV_VanityItems = {
         creaturePreview = 148086,
         creatureId = 148086,
         description = "Has a chance to drop from Death Talon Hatcher within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180369] = {
@@ -17952,7 +18657,7 @@ AV_VanityItems = {
         creaturePreview = 12474,
         creatureId = 12474,
         description = "Has a chance to drop from Emeraldon Boughguard within Bough Shadow.",
-        zone = "Bough Shadow.",
+        zone = "Bough Shadow",
         icon = 4
     },
     [1180370] = {
@@ -17961,7 +18666,7 @@ AV_VanityItems = {
         creaturePreview = 12475,
         creatureId = 12475,
         description = "Has a chance to drop from Emeraldon Tree Warder within Forest Song.",
-        zone = "Forest Song.",
+        zone = "Forest Song",
         icon = 4
     },
     [1180371] = {
@@ -17970,7 +18675,7 @@ AV_VanityItems = {
         creaturePreview = 12476,
         creatureId = 12476,
         description = "Has a chance to drop from Emeraldon Oracle within Bough Shadow.",
-        zone = "Bough Shadow.",
+        zone = "Bough Shadow",
         icon = 4
     },
     [1180372] = {
@@ -17979,7 +18684,8 @@ AV_VanityItems = {
         creaturePreview = 12477,
         creatureId = 12477,
         description = "Has a chance to drop from Verdantine Boughguard within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180373] = {
@@ -17988,7 +18694,8 @@ AV_VanityItems = {
         creaturePreview = 12478,
         creatureId = 12478,
         description = "Has a chance to drop from Verdantine Oracle within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180374] = {
@@ -17997,7 +18704,8 @@ AV_VanityItems = {
         creaturePreview = 12479,
         creatureId = 12479,
         description = "Has a chance to drop from Verdantine Tree Warder within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180375] = {
@@ -18006,7 +18714,8 @@ AV_VanityItems = {
         creaturePreview = 12496,
         creatureId = 12496,
         description = "Has a chance to drop from Dreamtracker within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180376] = {
@@ -18015,7 +18724,8 @@ AV_VanityItems = {
         creaturePreview = 148087,
         creatureId = 148087,
         description = "Has a chance to drop from Dreamtracker within Seradane.",
-        zone = "Seradane.",
+        zone = "The Hinterlands",
+        subzone = "Seradane",
         icon = 4
     },
     [1180377] = {
@@ -18024,7 +18734,8 @@ AV_VanityItems = {
         creaturePreview = 12497,
         creatureId = 12497,
         description = "Has a chance to drop from Dreamroarer within Dream Bough.",
-        zone = "Dream Bough.",
+        zone = "Feralas",
+        subzone = "Dream Bough",
         icon = 4
     },
     [1180378] = {
@@ -18033,7 +18744,8 @@ AV_VanityItems = {
         creaturePreview = 148088,
         creatureId = 148088,
         description = "Has a chance to drop from Dreamroarer within Dream Bough.",
-        zone = "Dream Bough.",
+        zone = "Feralas",
+        subzone = "Dream Bough",
         icon = 4
     },
     [1180379] = {
@@ -18042,7 +18754,7 @@ AV_VanityItems = {
         creaturePreview = 12498,
         creatureId = 12498,
         description = "Has a chance to drop from Dreamstalker within Bough Shadow.",
-        zone = "Bough Shadow.",
+        zone = "Bough Shadow",
         icon = 4
     },
     [1180380] = {
@@ -18051,7 +18763,7 @@ AV_VanityItems = {
         creaturePreview = 148089,
         creatureId = 148089,
         description = "Has a chance to drop from Dreamstalker within Bough Shadow.",
-        zone = "Bough Shadow.",
+        zone = "Bough Shadow",
         icon = 4
     },
     [1180386] = {
@@ -18060,7 +18772,8 @@ AV_VanityItems = {
         creaturePreview = 12899,
         creatureId = 12899,
         description = "Has a chance to drop from Axtroz within Dragonmaw Gates.",
-        zone = "Dragonmaw Gates.",
+        zone = "Dragonmaw Gates",
+        subzone = "Dragonmaw Gates",
         icon = 4
     },
     [1180387] = {
@@ -18069,7 +18782,8 @@ AV_VanityItems = {
         creaturePreview = 12900,
         creatureId = 12900,
         description = "Has a chance to drop from Somnus within Pool of Tears.",
-        zone = "Pool of Tears.",
+        zone = "Swamp of Sorrows",
+        subzone = "Pool of Tears",
         icon = 4
     },
     [1180388] = {
@@ -18078,7 +18792,8 @@ AV_VanityItems = {
         creaturePreview = 148090,
         creatureId = 148090,
         description = "Has a chance to drop from Somnus within Pool of Tears.",
-        zone = "Pool of Tears.",
+        zone = "Swamp of Sorrows",
+        subzone = "Pool of Tears",
         icon = 4
     },
     [1180389] = {
@@ -18087,7 +18802,7 @@ AV_VanityItems = {
         creaturePreview = 13020,
         creatureId = 13020,
         description = "Has a chance to drop from Vaelastrasz the Corrupt within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180392] = {
@@ -18096,7 +18811,7 @@ AV_VanityItems = {
         creaturePreview = 14020,
         creatureId = 14020,
         description = "Has a chance to drop from Chromaggus within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180402] = {
@@ -18105,7 +18820,7 @@ AV_VanityItems = {
         creaturePreview = 14263,
         creatureId = 14263,
         description = "Has a chance to drop from Bronze Drakonid within Kalimdor.",
-        zone = "Kalimdor.",
+        zone = "Kalimdor",
         icon = 4
     },
     [1180410] = {
@@ -18114,7 +18829,7 @@ AV_VanityItems = {
         creaturePreview = 14272,
         creatureId = 14272,
         description = "Has a chance to drop from Snarlflare within Redridge Mountains.",
-        zone = "Redridge Mountains.",
+        zone = "Redridge Mountains",
         icon = 4
     },
     [1180415] = {
@@ -18123,7 +18838,8 @@ AV_VanityItems = {
         creaturePreview = 14398,
         creatureId = 14398,
         description = "Has a chance to drop from Eldreth Darter within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 4
     },
     [1180416] = {
@@ -18132,7 +18848,8 @@ AV_VanityItems = {
         creaturePreview = 148096,
         creatureId = 148096,
         description = "Has a chance to drop from Eldreth Darter within Dire Maul.",
-        zone = "Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
         icon = 4
     },
     [1180417] = {
@@ -18141,7 +18858,8 @@ AV_VanityItems = {
         creaturePreview = 14445,
         creatureId = 14445,
         description = "Has a chance to drop from Lord Captain Wyrmak within Pool of Tears.",
-        zone = "Pool of Tears.",
+        zone = "Swamp of Sorrows",
+        subzone = "Pool of Tears",
         icon = 4
     },
     [1180434] = {
@@ -18150,7 +18868,7 @@ AV_VanityItems = {
         creaturePreview = 16042,
         creatureId = 16042,
         description = "Has a chance to drop from Lord Valthalak within Blackrock Spire.",
-        zone = "Blackrock Spire.",
+        zone = "Blackrock Spire",
         icon = 4
     },
     [1180440] = {
@@ -18159,7 +18877,7 @@ AV_VanityItems = {
         creaturePreview = 17839,
         creatureId = 17839,
         description = "Has a chance to drop from Rift Lord within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180442] = {
@@ -18168,7 +18886,7 @@ AV_VanityItems = {
         creaturePreview = 148097,
         creatureId = 148097,
         description = "Has a chance to drop from Rift Lord within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180443] = {
@@ -18177,7 +18895,7 @@ AV_VanityItems = {
         creaturePreview = 300080,
         creatureId = 300080,
         description = "Has a chance to drop from Chrono Lord Deja within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180444] = {
@@ -18186,7 +18904,7 @@ AV_VanityItems = {
         creaturePreview = 300074,
         creatureId = 300074,
         description = "Has a chance to drop from Temporus within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180445] = {
@@ -18195,7 +18913,7 @@ AV_VanityItems = {
         creaturePreview = 300082,
         creatureId = 300082,
         description = "Has a chance to drop from Aeonus within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180449] = {
@@ -18204,7 +18922,8 @@ AV_VanityItems = {
         creaturePreview = 300077,
         creatureId = 300077,
         description = "Has a chance to drop from Epoch Hunter within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180450] = {
@@ -18213,7 +18932,8 @@ AV_VanityItems = {
         creaturePreview = 18170,
         creatureId = 18170,
         description = "Has a chance to drop from Infinite Slayer within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180451] = {
@@ -18222,7 +18942,8 @@ AV_VanityItems = {
         creaturePreview = 18171,
         creatureId = 18171,
         description = "Has a chance to drop from Infinite Defiler within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180452] = {
@@ -18231,7 +18952,8 @@ AV_VanityItems = {
         creaturePreview = 18172,
         creatureId = 18172,
         description = "Has a chance to drop from Infinite Saboteur within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1180456] = {
@@ -18240,7 +18962,7 @@ AV_VanityItems = {
         creaturePreview = 18692,
         creatureId = 18692,
         description = "Has a chance to drop from Hemathion within Vortex Pinnacle.",
-        zone = "Vortex Pinnacle.",
+        zone = "Vortex Pinnacle",
         icon = 4
     },
     [1180457] = {
@@ -18249,7 +18971,7 @@ AV_VanityItems = {
         creaturePreview = 148098,
         creatureId = 148098,
         description = "Has a chance to drop from Hemathion within Vortex Pinnacle.",
-        zone = "Vortex Pinnacle.",
+        zone = "Vortex Pinnacle",
         icon = 4
     },
     [1180460] = {
@@ -18258,7 +18980,7 @@ AV_VanityItems = {
         creaturePreview = 18877,
         creatureId = 18877,
         description = "Has a chance to drop from Nether Drake within Celestial Ridge.",
-        zone = "Celestial Ridge.",
+        zone = "Celestial Ridge",
         icon = 4
     },
     [1180470] = {
@@ -18267,7 +18989,7 @@ AV_VanityItems = {
         creaturePreview = 300084,
         creatureId = 300084,
         description = "Has a chance to drop from Nether Whelp within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180472] = {
@@ -18276,7 +18998,7 @@ AV_VanityItems = {
         creaturePreview = 20332,
         creatureId = 20332,
         description = "Has a chance to drop from Nether Dragon within Celestial Ridge.",
-        zone = "Celestial Ridge.",
+        zone = "Celestial Ridge",
         icon = 4
     },
     [1180473] = {
@@ -18285,7 +19007,7 @@ AV_VanityItems = {
         creaturePreview = 20713,
         creatureId = 20713,
         description = "Has a chance to drop from Fey Drake within The Living Grove.",
-        zone = "The Living Grove.",
+        zone = "The Living Grove",
         icon = 4
     },
     [1180474] = {
@@ -18294,7 +19016,7 @@ AV_VanityItems = {
         creaturePreview = 148102,
         creatureId = 148102,
         description = "Has a chance to drop from Fey Drake within The Living Grove.",
-        zone = "The Living Grove.",
+        zone = "The Living Grove",
         icon = 4
     },
     [1180476] = {
@@ -18303,7 +19025,7 @@ AV_VanityItems = {
         creaturePreview = 20910,
         creatureId = 20910,
         description = "Has a chance to drop from Twilight Drakonaar within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180477] = {
@@ -18312,7 +19034,7 @@ AV_VanityItems = {
         creaturePreview = 20911,
         creatureId = 20911,
         description = "Has a chance to drop from Blackwing Drakonaar within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1180479] = {
@@ -18321,7 +19043,7 @@ AV_VanityItems = {
         creaturePreview = 21004,
         creatureId = 21004,
         description = "Has a chance to drop from Lesser Nether Drake within Singing Ridge.",
-        zone = "Singing Ridge.",
+        zone = "Singing Ridge",
         icon = 4
     },
     [1180480] = {
@@ -18330,7 +19052,7 @@ AV_VanityItems = {
         creaturePreview = 21032,
         creatureId = 21032,
         description = "Has a chance to drop from Dreadwing within Singing Ridge.",
-        zone = "Singing Ridge.",
+        zone = "Singing Ridge",
         icon = 4
     },
     [1180482] = {
@@ -18339,7 +19061,7 @@ AV_VanityItems = {
         creaturePreview = 21104,
         creatureId = 21104,
         description = "Has a chance to drop from Rift Keeper within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180484] = {
@@ -18348,7 +19070,7 @@ AV_VanityItems = {
         creaturePreview = 148110,
         creatureId = 148110,
         description = "Has a chance to drop from Rift Keeper within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180502] = {
@@ -18357,7 +19079,7 @@ AV_VanityItems = {
         creaturePreview = 21387,
         creatureId = 21387,
         description = "Has a chance to drop from Wyrmcult Blackwhelp within Blackwing Coven.",
-        zone = "Blackwing Coven.",
+        zone = "Blackwing Coven",
         icon = 4
     },
     [1180503] = {
@@ -18366,7 +19088,7 @@ AV_VanityItems = {
         creaturePreview = 148112,
         creatureId = 148112,
         description = "Has a chance to drop from Wyrmcult Blackwhelp within Blackwing Coven.",
-        zone = "Blackwing Coven.",
+        zone = "Blackwing Coven",
         icon = 4
     },
     [1180504] = {
@@ -18375,7 +19097,7 @@ AV_VanityItems = {
         creaturePreview = 21389,
         creatureId = 21389,
         description = "Has a chance to drop from Maxnar the Ashmaw within Blackwing Coven.",
-        zone = "Blackwing Coven.",
+        zone = "Blackwing Coven",
         icon = 4
     },
     [1180505] = {
@@ -18384,7 +19106,7 @@ AV_VanityItems = {
         creaturePreview = 148113,
         creatureId = 148113,
         description = "Has a chance to drop from Maxnar the Ashmaw within Blackwing Coven.",
-        zone = "Blackwing Coven.",
+        zone = "Blackwing Coven",
         icon = 4
     },
     [1180508] = {
@@ -18393,7 +19115,7 @@ AV_VanityItems = {
         creaturePreview = 21492,
         creatureId = 21492,
         description = "Has a chance to drop from Wyrmcult Blessed within Blackwing Coven.",
-        zone = "Blackwing Coven.",
+        zone = "Blackwing Coven",
         icon = 4
     },
     [1180509] = {
@@ -18402,7 +19124,7 @@ AV_VanityItems = {
         creaturePreview = 148114,
         creatureId = 148114,
         description = "Has a chance to drop from Wyrmcult Blessed within Blackwing Coven.",
-        zone = "Blackwing Coven.",
+        zone = "Blackwing Coven",
         icon = 4
     },
     [1180510] = {
@@ -18411,7 +19133,7 @@ AV_VanityItems = {
         creaturePreview = 21497,
         creatureId = 21497,
         description = "Has a chance to drop from Blackscale within Blade's Edge Mountains.",
-        zone = "Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 4
     },
     [1180511] = {
@@ -18420,6 +19142,7 @@ AV_VanityItems = {
         creaturePreview = 148115,
         creatureId = 148115,
         description = "Ascension custom NPC. Copy of https://db.ascension.gg/?npc=21497 - Level 70 found in Blade's Edge Mountains.",
+        zone = "Blade's Edge Mountains",
         icon = 4
     },
     [1180516] = {
@@ -18428,7 +19151,8 @@ AV_VanityItems = {
         creaturePreview = 21648,
         creatureId = 21648,
         description = "Has a chance to drop from Mature Netherwing Drake within Netherwing Fields.",
-        zone = "Netherwing Fields.",
+        zone = "Shadowmoon Valley",
+        subzone = "Netherwing Fields",
         icon = 4
     },
     [1180520] = {
@@ -18437,7 +19161,7 @@ AV_VanityItems = {
         creaturePreview = 21721,
         creatureId = 21721,
         description = "Has a chance to drop from Enslaved Netherwing Whelp within Dragonmaw Fortress.",
-        zone = "Dragonmaw Fortress.",
+        zone = "Dragonmaw Fortress",
         icon = 4
     },
     [1180521] = {
@@ -18446,7 +19170,7 @@ AV_VanityItems = {
         creaturePreview = 300079,
         creatureId = 300079,
         description = "Has a chance to drop from Enslaved Netherwing Drake within Dragonmaw Fortress.",
-        zone = "Dragonmaw Fortress.",
+        zone = "Dragonmaw Fortress",
         icon = 4
     },
     [1180525] = {
@@ -18455,7 +19179,7 @@ AV_VanityItems = {
         creaturePreview = 21817,
         creatureId = 21817,
         description = "Has a chance to drop from Adolescent Nether Drake within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180526] = {
@@ -18464,7 +19188,7 @@ AV_VanityItems = {
         creaturePreview = 21818,
         creatureId = 21818,
         description = "Has a chance to drop from Infinite Whelp within The Black Morass.",
-        zone = "The Black Morass.",
+        zone = "The Black Morass",
         icon = 4
     },
     [1180527] = {
@@ -18473,7 +19197,7 @@ AV_VanityItems = {
         creaturePreview = 21820,
         creatureId = 21820,
         description = "Has a chance to drop from Mature Nether Drake within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180540] = {
@@ -18482,7 +19206,8 @@ AV_VanityItems = {
         creaturePreview = 22072,
         creatureId = 22072,
         description = "Has a chance to drop from Shadowsworn Drakonid within Ata'mal Terrace.",
-        zone = "Ata'mal Terrace.",
+        zone = "Shadowmoon Valley",
+        subzone = "Ata'mal Terrace",
         icon = 4
     },
     [1180541] = {
@@ -18491,7 +19216,8 @@ AV_VanityItems = {
         creaturePreview = 148119,
         creatureId = 148119,
         description = "Has a chance to drop from Shadowsworn Drakonid within Ata'mal Terrace.",
-        zone = "Ata'mal Terrace.",
+        zone = "Shadowmoon Valley",
+        subzone = "Ata'mal Terrace",
         icon = 4
     },
     [1180549] = {
@@ -18500,7 +19226,8 @@ AV_VanityItems = {
         creaturePreview = 22253,
         creatureId = 22253,
         description = "Has a chance to drop from Dragonmaw Ascendant within Netherwing Ledge.",
-        zone = "Netherwing Ledge.",
+        zone = "Shadowmoon Valley",
+        subzone = "Netherwing Ledge",
         icon = 4
     },
     [1180550] = {
@@ -18509,7 +19236,8 @@ AV_VanityItems = {
         creaturePreview = 148127,
         creatureId = 148127,
         description = "Has a chance to drop from Dragonmaw Ascendant within Netherwing Ledge.",
-        zone = "Netherwing Ledge.",
+        zone = "Shadowmoon Valley",
+        subzone = "Netherwing Ledge",
         icon = 4
     },
     [1180560] = {
@@ -18518,7 +19246,7 @@ AV_VanityItems = {
         creaturePreview = 23061,
         creatureId = 23061,
         description = "Has a chance to drop from Rivendark within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180561] = {
@@ -18527,7 +19255,7 @@ AV_VanityItems = {
         creaturePreview = 148129,
         creatureId = 148129,
         description = "Has a chance to drop from Rivendark within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180569] = {
@@ -18536,7 +19264,7 @@ AV_VanityItems = {
         creaturePreview = 23281,
         creatureId = 23281,
         description = "Has a chance to drop from Insidion within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180570] = {
@@ -18545,7 +19273,7 @@ AV_VanityItems = {
         creaturePreview = 23282,
         creatureId = 23282,
         description = "Has a chance to drop from Obsidia within Outland.",
-        zone = "Outland.",
+        zone = "Outland",
         icon = 4
     },
     [1180595] = {
@@ -18554,7 +19282,7 @@ AV_VanityItems = {
         creaturePreview = 23680,
         creatureId = 23680,
         description = "Has a chance to drop from Plagued Proto-Dragon within Halgrind.",
-        zone = "Halgrind.",
+        zone = "Halgrind",
         icon = 4
     },
     [1180596] = {
@@ -18563,7 +19291,8 @@ AV_VanityItems = {
         creaturePreview = 23687,
         creatureId = 23687,
         description = "Has a chance to drop from Scorchscale Drake within The Dragonmurk.",
-        zone = "The Dragonmurk.",
+        zone = "Dustwallow Marsh",
+        subzone = "The Dragonmurk",
         icon = 4
     },
     [1180597] = {
@@ -18572,7 +19301,8 @@ AV_VanityItems = {
         creaturePreview = 23688,
         creatureId = 23688,
         description = "Has a chance to drop from Proto-Whelp within Ember Clutch.",
-        zone = "Ember Clutch.",
+        zone = "Dustwallow Marsh",
+        subzone = "Ember Clutch",
         icon = 4
     },
     [1180598] = {
@@ -18581,7 +19311,8 @@ AV_VanityItems = {
         creaturePreview = 23689,
         creatureId = 23689,
         description = "Has a chance to drop from Proto-Drake within Ember Clutch.",
-        zone = "Ember Clutch.",
+        zone = "Dustwallow Marsh",
+        subzone = "Ember Clutch",
         icon = 4
     },
     [1180599] = {
@@ -18590,7 +19321,7 @@ AV_VanityItems = {
         creaturePreview = 23789,
         creatureId = 23789,
         description = "Has a chance to drop from Smolderwing within Dustwallow Marsh.",
-        zone = "Dustwallow Marsh.",
+        zone = "Dustwallow Marsh",
         icon = 4
     },
     [1180603] = {
@@ -18599,7 +19330,7 @@ AV_VanityItems = {
         creaturePreview = 24083,
         creatureId = 24083,
         description = "Has a chance to drop from Enslaved Proto-Drake within Utgarde Keep.",
-        zone = "Utgarde Keep.",
+        subzone = "Utgarde Keep",
         icon = 4
     },
     [1180641] = {
@@ -18608,7 +19339,7 @@ AV_VanityItems = {
         creaturePreview = 25448,
         creatureId = 25448,
         description = "Has a chance to drop from Curator Insivius within Borean Tundra.",
-        zone = "Borean Tundra.",
+        zone = "Borean Tundra",
         icon = 4
     },
     [1180642] = {
@@ -18617,7 +19348,8 @@ AV_VanityItems = {
         creaturePreview = 25585,
         creatureId = 25585,
         description = "Has a chance to drop from Beryl Mage Hunter within Beryl Point.",
-        zone = "Beryl Point.",
+        zone = "Beryl Point",
+        subzone = "Beryl Point",
         icon = 4
     },
     [1180645] = {
@@ -18626,7 +19358,7 @@ AV_VanityItems = {
         creaturePreview = 25711,
         creatureId = 25711,
         description = "Has a chance to drop from Spirit of the North within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180646] = {
@@ -18635,7 +19367,7 @@ AV_VanityItems = {
         creaturePreview = 25712,
         creatureId = 25712,
         description = "Has a chance to drop from Warbringer Goredrak within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180647] = {
@@ -18644,7 +19376,7 @@ AV_VanityItems = {
         creaturePreview = 25713,
         creatureId = 25713,
         description = "Has a chance to drop from Blue Drakonid Supplicant within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180648] = {
@@ -18653,7 +19385,7 @@ AV_VanityItems = {
         creaturePreview = 25716,
         creatureId = 25716,
         description = "Has a chance to drop from General Cerulean within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180649] = {
@@ -18662,7 +19394,7 @@ AV_VanityItems = {
         creaturePreview = 25717,
         creatureId = 25717,
         description = "Has a chance to drop from Coldarra Scalesworn within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180650] = {
@@ -18671,7 +19403,7 @@ AV_VanityItems = {
         creaturePreview = 25721,
         creatureId = 25721,
         description = "Has a chance to drop from Arcane Serpent within The Nexus.",
-        zone = "The Nexus.",
+        zone = "The Nexus",
         icon = 4
     },
     [1180651] = {
@@ -18680,7 +19412,7 @@ AV_VanityItems = {
         creaturePreview = 25722,
         creatureId = 25722,
         description = "Has a chance to drop from Coldarra Spellweaver within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180653] = {
@@ -18689,7 +19421,7 @@ AV_VanityItems = {
         creaturePreview = 25728,
         creatureId = 25728,
         description = "Has a chance to drop from Coldarra Wyrmkin within Coldarra.",
-        zone = "Coldarra.",
+        zone = "Coldarra",
         icon = 4
     },
     [1180659] = {
@@ -18698,7 +19430,7 @@ AV_VanityItems = {
         creaturePreview = 26723,
         creatureId = 26723,
         description = "Has a chance to drop from Keristrasza within The Nexus.",
-        zone = "The Nexus.",
+        zone = "The Nexus",
         icon = 4
     },
     [1180663] = {
@@ -18707,7 +19439,7 @@ AV_VanityItems = {
         creaturePreview = 26276,
         creatureId = 26276,
         description = "Has a chance to drop from Nexus Guardian within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 4
     },
     [1180669] = {
@@ -18716,7 +19448,7 @@ AV_VanityItems = {
         creaturePreview = 26322,
         creatureId = 26322,
         description = "Has a chance to drop from Arcane Wyrm within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 4
     },
     [1180670] = {
@@ -18725,7 +19457,7 @@ AV_VanityItems = {
         creaturePreview = 26349,
         creatureId = 26349,
         description = "Has a chance to drop from Goramosh within Moonrest Gardens.",
-        zone = "Moonrest Gardens.",
+        subzone = "Moonrest Gardens",
         icon = 4
     },
     [1180678] = {
@@ -18734,7 +19466,7 @@ AV_VanityItems = {
         creaturePreview = 148132,
         creatureId = 148132,
         description = "Has a chance to drop from Azure Enforcer within The Nexus.",
-        zone = "The Nexus.",
+        zone = "The Nexus",
         icon = 4
     },
     [1180690] = {
@@ -18743,7 +19475,7 @@ AV_VanityItems = {
         creaturePreview = 27447,
         creatureId = 27447,
         description = "Has a chance to drop from Varos Cloudstrider within The Oculus.",
-        zone = "The Oculus.",
+        zone = "The Oculus",
         icon = 4
     },
     [1180695] = {
@@ -18752,7 +19484,7 @@ AV_VanityItems = {
         creaturePreview = 27633,
         creatureId = 27633,
         description = "Has a chance to drop from Azure Inquisitor within The Oculus.",
-        zone = "The Oculus.",
+        zone = "The Oculus",
         icon = 4
     },
     [1180696] = {
@@ -18761,7 +19493,7 @@ AV_VanityItems = {
         creaturePreview = 27635,
         creatureId = 27635,
         description = "Has a chance to drop from Azure Spellbinder within The Oculus.",
-        zone = "The Oculus.",
+        zone = "The Oculus",
         icon = 4
     },
     [1180697] = {
@@ -18770,7 +19502,7 @@ AV_VanityItems = {
         creaturePreview = 27636,
         creatureId = 27636,
         description = "Has a chance to drop from Azure Ley-Whelp within The Oculus.",
-        zone = "The Oculus.",
+        zone = "The Oculus",
         icon = 4
     },
     [1180700] = {
@@ -18779,7 +19511,7 @@ AV_VanityItems = {
         creaturePreview = 27654,
         creatureId = 27654,
         description = "Has a chance to drop from Drakos the Interrogator within The Oculus.",
-        zone = "The Oculus.",
+        zone = "The Oculus",
         icon = 4
     },
     [1180701] = {
@@ -18788,7 +19520,7 @@ AV_VanityItems = {
         creaturePreview = 27656,
         creatureId = 27656,
         description = "Has a chance to drop from Ley-Guardian Eregos within The Oculus.",
-        zone = "The Oculus.",
+        zone = "The Oculus",
         icon = 4
     },
     [1180727] = {
@@ -18797,7 +19529,7 @@ AV_VanityItems = {
         creaturePreview = 28378,
         creatureId = 28378,
         description = "Has a chance to drop from Primordial Drake within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 4
     },
     [1180729] = {
@@ -18806,7 +19538,7 @@ AV_VanityItems = {
         creaturePreview = 28467,
         creatureId = 28467,
         description = "Has a chance to drop from Broodmother Slivina within Sholazar Basin.",
-        zone = "Sholazar Basin.",
+        zone = "Sholazar Basin",
         icon = 4
     },
     [1180732] = {
@@ -18815,7 +19547,7 @@ AV_VanityItems = {
         creaturePreview = 28860,
         creatureId = 28860,
         description = "Has a chance to drop from Sartharion within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180741] = {
@@ -18824,7 +19556,7 @@ AV_VanityItems = {
         creaturePreview = 29753,
         creatureId = 29753,
         description = "Has a chance to drop from Stormpeak Wyrm within The Storm Peaks.",
-        zone = "The Storm Peaks.",
+        zone = "The Storm Peaks",
         icon = 4
     },
     [1180743] = {
@@ -18833,7 +19565,7 @@ AV_VanityItems = {
         creaturePreview = 29755,
         creatureId = 29755,
         description = "Has a chance to drop from Stormpeak Hatchling within Dragonspine Peaks.",
-        zone = "Dragonspine Peaks.",
+        zone = "Dragonspine Peaks",
         icon = 4
     },
     [1180767] = {
@@ -18842,7 +19574,7 @@ AV_VanityItems = {
         creaturePreview = 30449,
         creatureId = 30449,
         description = "Has a chance to drop from Vesperon within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180768] = {
@@ -18851,7 +19583,7 @@ AV_VanityItems = {
         creaturePreview = 30451,
         creatureId = 30451,
         description = "Has a chance to drop from Shadron within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180769] = {
@@ -18860,7 +19592,7 @@ AV_VanityItems = {
         creaturePreview = 30452,
         creatureId = 30452,
         description = "Has a chance to drop from Tenebron within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180770] = {
@@ -18869,7 +19601,7 @@ AV_VanityItems = {
         creaturePreview = 30453,
         creatureId = 30453,
         description = "Has a chance to drop from Onyx Sanctum Guardian within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180789] = {
@@ -18878,7 +19610,7 @@ AV_VanityItems = {
         creaturePreview = 30680,
         creatureId = 30680,
         description = "Has a chance to drop from Onyx Brood General within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180790] = {
@@ -18887,7 +19619,7 @@ AV_VanityItems = {
         creaturePreview = 30681,
         creatureId = 30681,
         description = "Has a chance to drop from Onyx Blaze Mistress within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180791] = {
@@ -18896,7 +19628,7 @@ AV_VanityItems = {
         creaturePreview = 30682,
         creatureId = 30682,
         description = "Has a chance to drop from Onyx Flight Captain within The Obsidian Sanctum.",
-        zone = "The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
         icon = 4
     },
     [1180829] = {
@@ -18905,7 +19637,7 @@ AV_VanityItems = {
         creaturePreview = 31393,
         creatureId = 31393,
         description = "Has a chance to drop from Crystal Wyrm within The Azure Front.",
-        zone = "The Azure Front.",
+        zone = "The Azure Front",
         icon = 4
     },
     [1180830] = {
@@ -18914,7 +19646,7 @@ AV_VanityItems = {
         creaturePreview = 31402,
         creatureId = 31402,
         description = "Has a chance to drop from Azure Scalebane within The Azure Front.",
-        zone = "The Azure Front.",
+        zone = "The Azure Front",
         icon = 4
     },
     [1180831] = {
@@ -18923,7 +19655,7 @@ AV_VanityItems = {
         creaturePreview = 31403,
         creatureId = 31403,
         description = "Has a chance to drop from Azure Spellweaver within Crystalsong Forest.",
-        zone = "Crystalsong Forest.",
+        zone = "Crystalsong Forest",
         icon = 4
     },
     [1180833] = {
@@ -18932,7 +19664,7 @@ AV_VanityItems = {
         creaturePreview = 32180,
         creatureId = 32180,
         description = "Has a chance to drop from Tempus Wyrm within Dragonblight.",
-        zone = "Dragonblight.",
+        zone = "Dragonblight",
         icon = 4
     },
     [1180852] = {
@@ -18941,7 +19673,7 @@ AV_VanityItems = {
         creaturePreview = 32491,
         creatureId = 32491,
         description = "Has a chance to drop from Time-Lost Proto Drake within Terrace of the Makers.",
-        zone = "Terrace of the Makers.",
+        subzone = "Terrace of the Makers",
         icon = 4
     },
     [1180853] = {
@@ -18950,7 +19682,7 @@ AV_VanityItems = {
         creaturePreview = 148137,
         creatureId = 148137,
         description = "Has a chance to drop from Time-Lost Proto Drake within Terrace of the Makers.",
-        zone = "Terrace of the Makers.",
+        subzone = "Terrace of the Makers",
         icon = 4
     },
     [1180855] = {
@@ -18959,7 +19691,7 @@ AV_VanityItems = {
         creaturePreview = 32572,
         creatureId = 32572,
         description = "Has a chance to drop from Dragonblight Mage Hunter within Azure Dragonshrine.",
-        zone = "Azure Dragonshrine.",
+        zone = "Azure Dragonshrine",
         icon = 4
     },
     [1180856] = {
@@ -18968,7 +19700,7 @@ AV_VanityItems = {
         creaturePreview = 32630,
         creatureId = 32630,
         description = "Has a chance to drop from Vyragosa within Terrace of the Makers.",
-        zone = "Terrace of the Makers.",
+        subzone = "Terrace of the Makers",
         icon = 4
     },
     [1180857] = {
@@ -18977,7 +19709,7 @@ AV_VanityItems = {
         creaturePreview = 148138,
         creatureId = 148138,
         description = "Has a chance to drop from Vyragosa within Terrace of the Makers.",
-        zone = "Terrace of the Makers.",
+        subzone = "Terrace of the Makers",
         icon = 4
     },
     [1180858] = {
@@ -18986,7 +19718,7 @@ AV_VanityItems = {
         creaturePreview = 33186,
         creatureId = 33186,
         description = "Has a chance to drop from Razorscale within Razorscale's Aerie.",
-        zone = "Razorscale's Aerie.",
+        zone = "Razorscale's Aerie",
         icon = 4
     },
     [1180859] = {
@@ -18995,7 +19727,7 @@ AV_VanityItems = {
         creaturePreview = 33528,
         creatureId = 33528,
         description = "Has a chance to drop from Guardian of Life within The Conservatory of Life.",
-        zone = "The Conservatory of Life.",
+        zone = "The Conservatory of Life",
         icon = 4
     },
     [1180884] = {
@@ -19004,7 +19736,7 @@ AV_VanityItems = {
         creaturePreview = 39698,
         creatureId = 39698,
         description = "Has a chance to drop from Karsh Steelbender within Blackrock Caverns.",
-        zone = "Blackrock Caverns.",
+        subzone = "Blackrock Caverns",
         icon = 4
     },
     [1180894] = {
@@ -19013,7 +19745,7 @@ AV_VanityItems = {
         creaturePreview = 39987,
         creatureId = 39987,
         description = "Has a chance to drop from Evolved Twilight Zealot within Blackrock Caverns.",
-        zone = "Blackrock Caverns.",
+        subzone = "Blackrock Caverns",
         icon = 4
     },
     [1180898] = {
@@ -19022,7 +19754,7 @@ AV_VanityItems = {
         creaturePreview = 40419,
         creatureId = 40419,
         description = "Has a chance to drop from Charscale Assaulter within The Ruby Sanctum.",
-        zone = "The Ruby Sanctum.",
+        zone = "The Ruby Sanctum",
         icon = 4
     },
     [1180914] = {
@@ -19031,7 +19763,8 @@ AV_VanityItems = {
         creaturePreview = 61018,
         creatureId = 61018,
         description = "Has a chance to drop from Shadowsworn Drakonid Champion within Ata'mal Terrace.",
-        zone = "Ata'mal Terrace.",
+        zone = "Shadowmoon Valley",
+        subzone = "Ata'mal Terrace",
         icon = 4
     },
     [1180915] = {
@@ -19040,7 +19773,8 @@ AV_VanityItems = {
         creaturePreview = 148158,
         creatureId = 148158,
         description = "Has a chance to drop from Shadowsworn Drakonid Champion within Ata'mal Terrace.",
-        zone = "Ata'mal Terrace.",
+        zone = "Shadowmoon Valley",
+        subzone = "Ata'mal Terrace",
         icon = 4
     },
     [1181505] = {
@@ -19049,7 +19783,7 @@ AV_VanityItems = {
         creaturePreview = 148203,
         creatureId = 148203,
         description = "Has a chance to drop from Chromatic Whelp within Black Rock Spire.",
-        zone = "Black Rock Spire.",
+        zone = "Black Rock Spire",
         icon = 4
     },
     [1181520] = {
@@ -19058,7 +19792,7 @@ AV_VanityItems = {
         creaturePreview = 148242,
         creatureId = 148242,
         description = "Has a chance to drop from Death Talon Flamescale within Blackwing Lair.",
-        zone = "Blackwing Lair.",
+        zone = "Blackwing Lair",
         icon = 4
     },
     [1181572] = {
@@ -19075,7 +19809,8 @@ AV_VanityItems = {
         creaturePreview = 1100323,
         creatureId = 1100323,
         description = "Has a chance to drop from Bronze Whelp within Caverns of Time.",
-        zone = "Caverns of Time.",
+        zone = "Tanaris",
+        subzone = "Caverns of Time",
         icon = 4
     },
     [1181574] = {
@@ -19092,7 +19827,8 @@ AV_VanityItems = {
         creaturePreview = 347301,
         creatureId = 347301,
         description = "Has a chance to drop from Thokian Devilsaur within The Dead Mire.",
-        zone = "The Dead Mire.",
+        zone = "Zangarmarsh",
+        subzone = "The Dead Mire",
         icon = 1
     },
     [1519393] = {
@@ -19109,7 +19845,7 @@ AV_VanityItems = {
         creaturePreview = 22310,
         creatureId = 22310,
         description = "Has a chance to drop from Storming Wind-Ripper within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777001] = {
@@ -19118,7 +19854,7 @@ AV_VanityItems = {
         creaturePreview = 22313,
         creatureId = 22313,
         description = "Has a chance to drop from Rumbling Earth-Heart within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777002] = {
@@ -19127,7 +19863,7 @@ AV_VanityItems = {
         creaturePreview = 22311,
         creatureId = 22311,
         description = "Has a chance to drop from Raging Fire-Soul within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777003] = {
@@ -19136,7 +19872,7 @@ AV_VanityItems = {
         creaturePreview = 61004,
         creatureId = 61004,
         description = "Has a chance to drop from Unbound Water Spirit within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777004] = {
@@ -19145,7 +19881,7 @@ AV_VanityItems = {
         creaturePreview = 61002,
         creatureId = 61002,
         description = "Has a chance to drop from Unbound Wind Spirit within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777005] = {
@@ -19154,7 +19890,7 @@ AV_VanityItems = {
         creaturePreview = 61003,
         creatureId = 61003,
         description = "Has a chance to drop from Unbound Earth Spirit within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777006] = {
@@ -19163,7 +19899,7 @@ AV_VanityItems = {
         creaturePreview = 61001,
         creatureId = 61001,
         description = "Has a chance to drop from Unbound Fire Spirit within Elemental Plateau.",
-        zone = "Elemental Plateau.",
+        subzone = "Elemental Plateau",
         icon = 5
     },
     [1777421] = {
@@ -19172,7 +19908,7 @@ AV_VanityItems = {
         creaturePreview = 13141,
         creatureId = 13141,
         description = "Has a chance to drop from Deeprot Stomper within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [1777422] = {
@@ -19181,7 +19917,7 @@ AV_VanityItems = {
         creaturePreview = 13142,
         creatureId = 13142,
         description = "Has a chance to drop from Deeprot Tangler within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [1777423] = {
@@ -19190,7 +19926,7 @@ AV_VanityItems = {
         creaturePreview = 13142,
         creatureId = 13142,
         description = "Has a chance to drop from Deeprot Tangler within Maraudon.",
-        zone = "Maraudon.",
+        zone = "Maraudon",
         icon = 5
     },
     [1777426] = {
@@ -19199,7 +19935,7 @@ AV_VanityItems = {
         creaturePreview = 19203,
         creatureId = 19203,
         description = "Has a chance to drop from Syth Fire Elemental within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 5
     },
     [1777428] = {
@@ -19208,7 +19944,7 @@ AV_VanityItems = {
         creaturePreview = 19205,
         creatureId = 19205,
         description = "Has a chance to drop from Syth Arcane Elemental within Sethekk Halls.",
-        zone = "Sethekk Halls.",
+        zone = "Sethekk Halls",
         icon = 5
     },
 }

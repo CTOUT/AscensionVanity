@@ -80,24 +80,27 @@ foreach ($it in $items) {
     $emitted[$id] = $true
     $iconIndex = $iconMap[$it.Category]
     if (-not $iconIndex) { $skipped++; continue }
-    # Parse zone/subzone from description (v2.1 enhancement)
-    $zone = $null
-    $subzone = $null
-    if ($it.Description) {
-        # Pattern: "within [location]"
-        if ($it.Description -match 'within\s+([^"]+)$') {
-            $location = $Matches[1].Trim()
-            
-            # Check if location is a subzone (needs parent zone lookup)
-            $parentZone = $subzoneToZone[$location]
-            if ($parentZone) {
-                $zone = $parentZone
-                $subzone = $location
-            } else {
-                # Treat as primary zone
-                $zone = $location
-                $subzone = $null
-            }
+    # Use zone/subzone fields from JSON (v2.2 enhancement)
+    # Zone enrichment now happens in EnrichZoneData.ps1 before generation
+    $zone = $it.zone
+    $subzone = $it.subzone
+    
+    # Check if the "zone" field is actually a subzone in our mappings
+    # If so, swap them: promote parent to zone, demote current zone to subzone
+    if ($zone -and -not $subzone) {
+        $parentZone = $subzoneToZone[$zone]
+        if ($parentZone) {
+            # Zone field is actually a subzone - fix it!
+            $subzone = $zone
+            $zone = $parentZone
+        }
+    }
+    
+    # If subzone exists but no zone, try to find parent zone from mappings
+    if ($subzone -and -not $zone) {
+        $parentZone = $subzoneToZone[$subzone]
+        if ($parentZone) {
+            $zone = $parentZone
         }
     }
     

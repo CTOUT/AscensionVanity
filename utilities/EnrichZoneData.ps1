@@ -97,13 +97,15 @@ foreach ($item in $items) {
     #   "Spawns with Blackrock Depths"
     #   "within Sunwell Plateau." (with period)
     
-    # Pattern 1: "within Zone" (handles periods, apostrophes, etc.)
-    if ($desc -match "within\s+([A-Za-z\s'`-]+?)[\.,!?]?\s*`$") {
+    # Pattern 1: "within Zone" (handles periods, apostrophes, colons, etc.)
+    if ($desc -match "within\s+([A-Za-z\s':` -]+?)[\.,!?]?\s*`$") {
         $location = $Matches[1].Trim()
+        # Remove trailing punctuation that might have been captured
+        $location = $location.TrimEnd('.', ',', '!', '?')
         
         # Check if it's a zone or subzone
-        # Subzone indicators: Mine, Cave, Farm, Ruins, Den, Keep, Tower, Hold, Crater, Depths, Terrace, Plateau
-        if ($location -match '(Mine|Cave|Farm|Ruins|Den|Keep|Tower|Hold|Crater|Depths|Terrace|Plateau)') {
+        # Subzone indicators: Mine, Cave, Farm, Ruins, Den, Keep, Tower, Hold, Crater, Depths, Terrace, Plateau, Camp, Point, Base, Gate
+        if ($location -match '(Mine|Cave|Farm|Ruins|Den|Keep|Tower|Hold|Crater|Depths|Terrace|Plateau|Camp|Point|Base|Gate)') {
             $item | Add-Member -NotePropertyName "subzone" -NotePropertyValue $location -Force
         } else {
             $item | Add-Member -NotePropertyName "zone" -NotePropertyValue $location -Force
@@ -112,10 +114,12 @@ foreach ($item in $items) {
         $enrichedCount++
     }
     # Pattern 2: "with Zone" (for "with Blackrock Depths" style)
-    elseif ($desc -match "\swith\s+([A-Za-z\s'`-]+?)[\.,!?]?\s*`$") {
+    elseif ($desc -match "\swith\s+([A-Za-z\s':` -]+?)[\.,!?]?\s*`$") {
         $location = $Matches[1].Trim()
+        # Remove trailing punctuation that might have been captured
+        $location = $location.TrimEnd('.', ',', '!', '?')
         
-        if ($location -match '(Mine|Cave|Farm|Ruins|Den|Keep|Tower|Hold|Crater|Depths|Terrace|Plateau)') {
+        if ($location -match '(Mine|Cave|Farm|Ruins|Den|Keep|Tower|Hold|Crater|Depths|Terrace|Plateau|Camp|Point|Base|Gate)') {
             $item | Add-Member -NotePropertyName "subzone" -NotePropertyValue $location -Force
         } else {
             $item | Add-Member -NotePropertyName "zone" -NotePropertyValue $location -Force
@@ -124,10 +128,12 @@ foreach ($item in $items) {
         $enrichedCount++
     }
     # Pattern 3: "in Zone" (original pattern)
-    elseif ($desc -match "\sin\s+([A-Za-z\s'`-]+?)[\.,!?]?\s*`$") {
+    elseif ($desc -match "\sin\s+([A-Za-z\s':` -]+?)[\.,!?]?\s*`$") {
         $location = $Matches[1].Trim()
+        # Remove trailing punctuation that might have been captured
+        $location = $location.TrimEnd('.', ',', '!', '?')
         
-        if ($location -match '(Mine|Cave|Farm|Ruins|Den|Keep|Tower|Hold|Crater|Depths|Terrace|Plateau)') {
+        if ($location -match '(Mine|Cave|Farm|Ruins|Den|Keep|Tower|Hold|Crater|Depths|Terrace|Plateau|Camp|Point|Base|Gate)') {
             $item | Add-Member -NotePropertyName "subzone" -NotePropertyValue $location -Force
         } else {
             $item | Add-Member -NotePropertyName "zone" -NotePropertyValue $location -Force
