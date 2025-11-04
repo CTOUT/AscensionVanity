@@ -3,9 +3,9 @@
     // WoW API Extension Settings (MUST BE FIRST!)
     // ============================================================================
     // CRITICAL FIX: Prevent ketho.wow-api from resetting Lua workspace settings
-    // See: https://github.com/Ketho/vscode-wow-api/issues/181
-    //      https://github.com/Ketho/vscode-wow-api/issues/194
-    "wowAPI.luals.devMode": true,
+    // Wiki: https://github.com/Ketho/vscode-wow-api/wiki/Settings#dev-mode
+    // Issues: #181, #194
+    "wowAPI.devMode": true,
     "wowAPI.luals.defineKnownGlobals": true,
     "wowAPI.luals.frameXML": true,
     
@@ -26,15 +26,14 @@
     },
     "Lua.workspace.checkThirdParty": false,
     "Lua.workspace.library": [
-        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\Core",
-        "~\\.vscode\\extensions\\ketho.wow-api-0.21.0\\Annotations\\FrameXML"
+        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/Core",
+        "${userHome}/.vscode/extensions/ketho.wow-api-0.21.0/Annotations/FrameXML"
     ],
     "Lua.workspace.userThirdParty": [],
     "Lua.diagnostics.disable": [
         "lowercase-global" // WoW uses lowercase globals like "print"
     ],
     "Lua.diagnostics.globals": [
-        // WoW Standard Globals
         "UISpecialFrames",
         "StaticPopupDialogs",
         "StaticPopup_Show",
@@ -43,18 +42,12 @@
         "InterfaceOptions_AddCategory",
         "GameTooltip",
         "UIParent",
-        
-        // Project Ascension APIs
         "C_VanityCollection",
         "C_AppearanceCollection",
         "GetClientVersion",
-        
-        // AscensionVanity SavedVariables
         "AscensionVanityDB",
         "AscensionVanityDump",
         "AscensionVanityScannerFrame",
-        
-        // AscensionVanity Constants (v2.2)
         "AV_VERSION",
         "AV_RELEASE_TYPE",
         "AV_COLOR_ADDON",
@@ -82,8 +75,6 @@
         "AV_GetCategoryIcon",
         "AV_GetCategoryLabel",
         "AV_GetCurrentAscensionVersion",
-        
-        // AscensionVanity Database (v2.2)
         "AV_VanityItems",
         "AV_IconList",
         "AV_Regions",
@@ -99,8 +90,6 @@
         "AV_GetCollectionProgress",
         "AV_ScanAllItems",
         "AV_ClearDumpData",
-        
-        // AscensionVanity UI Functions
         "AscensionVanity_ShowSettings",
         "AscensionVanity_HideSettings",
         "AscensionVanity_ToggleSettings",
@@ -110,19 +99,13 @@
         "AscensionVanity_ToggleScanner",
         "AscensionVanity_SyncScannerUI",
         "AscensionVanity_SyncDebugCheckbox",
-        
-        // AscensionVanity Regional Guide
         "AscensionVanity_InitRegionalGuide",
         "AscensionVanity_GetCurrentZoneItems",
         "AscensionVanity_ShowCurrentZoneItems",
         "AscensionVanity_ShowCurrentZone",
-        
-        // AscensionVanity Collection Progress (v2.2)
         "AV_ShowCollectionProgress",
         "AV_HideCollectionProgress",
         "AV_ToggleCollectionProgress",
-        
-        // Slash Commands
         "SLASH_ASCENSIONVANITY1",
         "SLASH_ASCENSIONVANITY2",
         "SLASH_ASCENSIONVANITY3"
