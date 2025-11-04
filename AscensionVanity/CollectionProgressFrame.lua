@@ -318,12 +318,20 @@ progressFrame:SetScript("OnShow", function()
     UpdateProgressBars()
 end)
 
--- Update periodically (every 5 seconds when visible)
-local updateTimer = 0
-progressFrame:SetScript("OnUpdate", function(self, elapsed)
-    updateTimer = updateTimer + elapsed
-    if updateTimer >= 5 then
-        updateTimer = 0
+-- Event-driven updates (no polling!)
+-- Progress frame registers for relevant events and updates only when needed
+progressFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")  -- Zone changes
+progressFrame:RegisterEvent("ASCENSION_STORE_COLLECTION_ITEM_LEARNED")  -- Item learned
+progressFrame:RegisterEvent("APPEARANCE_COLLECTED")  -- Fallback item learned event
+
+progressFrame:SetScript("OnEvent", function(self, event, ...)
+    if event == "ZONE_CHANGED_NEW_AREA" then
+        -- Zone changed - update if in zone view mode
+        if self:IsVisible() and viewMode == "zone" then
+            UpdateProgressBars()
+        end
+    elseif event == "ASCENSION_STORE_COLLECTION_ITEM_LEARNED" or event == "APPEARANCE_COLLECTED" then
+        -- Item learned - always update if visible
         if self:IsVisible() then
             UpdateProgressBars()
         end

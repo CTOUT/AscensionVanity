@@ -192,12 +192,16 @@ function AV_GetZoneCollectionProgress()
     local location = GetCurrentLocation()
     local zoneName = location.zone
     
-    -- Debug: Print what zone we're looking for
-    print(AV_COLOR_YELLOW .. "[DEBUG] Looking for zone: '" .. tostring(zoneName) .. "'" .. AV_COLOR_RESET)
+    -- Debug: Print what zone we're looking for (only if debug enabled)
+    if AscensionVanityDB and AscensionVanityDB.debug then
+        print(AV_COLOR_YELLOW .. "[DEBUG] Looking for zone: '" .. tostring(zoneName) .. "'" .. AV_COLOR_RESET)
+    end
     
     -- If no zone data, return global progress
     if not zoneName or zoneName == "" then
-        print(AV_COLOR_RED .. "[DEBUG] No zone name detected, using global" .. AV_COLOR_RESET)
+        if AscensionVanityDB and AscensionVanityDB.debug then
+            print(AV_COLOR_RED .. "[DEBUG] No zone name detected, using global" .. AV_COLOR_RESET)
+        end
         if AV_GetCollectionProgress then
             return AV_GetCollectionProgress()
         end
@@ -207,20 +211,22 @@ function AV_GetZoneCollectionProgress()
     -- Get ALL items from zone index (not just unlearned)
     local zoneItems = zoneIndex[zoneName]
     
-    -- Debug: Print zone index info
-    if not zoneItems then
-        print(AV_COLOR_RED .. "[DEBUG] Zone not found in index!" .. AV_COLOR_RESET)
-        -- Print first 10 zones we DO have
-        local count = 0
-        print(AV_COLOR_GRAY .. "[DEBUG] Available zones:" .. AV_COLOR_RESET)
-        for zone, items in pairs(zoneIndex) do
-            count = count + 1
-            if count <= 10 then
-                print(AV_COLOR_GRAY .. "  - '" .. zone .. "' (" .. #items .. " items)" .. AV_COLOR_RESET)
+    -- Debug: Print zone index info (only if debug enabled)
+    if AscensionVanityDB and AscensionVanityDB.debug then
+        if not zoneItems then
+            print(AV_COLOR_RED .. "[DEBUG] Zone not found in index!" .. AV_COLOR_RESET)
+            -- Print first 10 zones we DO have
+            local count = 0
+            print(AV_COLOR_GRAY .. "[DEBUG] Available zones:" .. AV_COLOR_RESET)
+            for zone, items in pairs(zoneIndex) do
+                count = count + 1
+                if count <= 10 then
+                    print(AV_COLOR_GRAY .. "  - '" .. zone .. "' (" .. #items .. " items)" .. AV_COLOR_RESET)
+                end
             end
+        else
+            print(AV_COLOR_GREEN .. "[DEBUG] Found " .. #zoneItems .. " items in zone" .. AV_COLOR_RESET)
         end
-    else
-        print(AV_COLOR_GREEN .. "[DEBUG] Found " .. #zoneItems .. " items in zone" .. AV_COLOR_RESET)
     end
     
     if not zoneItems or #zoneItems == 0 then
@@ -248,9 +254,22 @@ function AV_GetZoneCollectionProgress()
     -- Count ALL items in this zone by category
     for _, itemId in ipairs(zoneItems) do
         local data = AV_VanityItems[itemId]
-        if data and data.category then
-            local cat = data.category:lower()
-            if progress[cat] then
+        if data and data.name then
+            -- Detect category from item name prefix (using AV_CATEGORY_PREFIXES from constants)
+            local cat = nil
+            for category, prefix in pairs(AV_CATEGORY_PREFIXES) do
+                if string.find(data.name, prefix, 1, true) then
+                    cat = category
+                    break
+                end
+            end
+            
+            -- Debug: Show what we found
+            if AscensionVanityDB and AscensionVanityDB.debug then
+                print(AV_COLOR_GRAY .. "[DEBUG] Item " .. itemId .. ": " .. (data.name or "NO NAME") .. " -> Category: " .. (cat or "NONE") .. AV_COLOR_RESET)
+            end
+            
+            if cat and progress[cat] then
                 progress[cat].total = progress[cat].total + 1
                 progress.overall.total = progress.overall.total + 1
                 
