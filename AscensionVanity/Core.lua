@@ -441,11 +441,6 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     -- Start with item icon + name (no learned status yet)
                     local itemText = itemIcon .. itemName
                     
-                    -- Add Item ID if enabled (v2.2)
-                    if AscensionVanityDB.showIDs then
-                        itemText = AV_COLOR_BRIGHT_ORANGE .. "[Item: " .. itemID .. "]" .. AV_COLOR_RESET .. " " .. itemText
-                    end
-                    
                     -- Check if player has learned this item (optional feature)
                     if AscensionVanityDB.showLearnedStatus then
                         local isLearned = IsVanityItemLearned(itemID, itemName)
@@ -476,6 +471,12 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     end
                     
                 tooltip:AddLine(itemText, 1, 1, 1, true) -- White text, word wrap enabled
+                
+                -- Add Item ID on separate line if enabled (v2.2)
+                if AscensionVanityDB.showIDs then
+                    local itemIDText = "      " .. AV_COLOR_GRAY .. "Item ID: " .. AV_COLOR_WHITE .. itemID .. AV_COLOR_RESET
+                    tooltip:AddLine(itemIDText, 1, 1, 1, true)
+                end
                 
                 -- Add region information (optional feature)
                 if AscensionVanityDB.showRegions then
