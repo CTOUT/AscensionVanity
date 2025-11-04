@@ -39,11 +39,34 @@ local title = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarg
 title:SetPoint("TOPLEFT", headerBg, "TOPLEFT", 8, -4)
 title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
 
+-- Refresh button (manual update trigger)
+local refreshButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
+refreshButton:SetSize(20, 18)
+refreshButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -5, -3)
+refreshButton:SetText("⟳")
+refreshButton:SetNormalFontObject("GameFontNormalLarge")
+refreshButton:SetScript("OnClick", function(self)
+    local updateFunc = _G.AV_UpdateProgressBars
+    if updateFunc then
+        updateFunc()
+    end
+end)
+refreshButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    GameTooltip:SetText("Refresh Progress", 1, 1, 1)
+    GameTooltip:AddLine("Manually update collection progress", nil, nil, nil, true)
+    GameTooltip:AddLine("Use this if progress doesn't auto-update", 0.7, 0.7, 0.7, true)
+    GameTooltip:Show()
+end)
+refreshButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+end)
+
 -- View mode toggle button (Global/Zone)
 local viewMode = "zone"  -- Default to zone view
 local viewButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
 viewButton:SetSize(60, 18)
-viewButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -25, -3)
+viewButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -30, -3)
 viewButton:SetText("Zone")
 viewButton:SetNormalFontObject("GameFontNormalSmall")
 viewButton:SetScript("OnClick", function(self)
@@ -318,7 +341,11 @@ progressFrame:SetScript("OnShow", function()
     UpdateProgressBars()
 end)
 
--- Event-driven updates (no polling!)
+progressFrame:SetScript("OnHide", function()
+    -- Placeholder for future cleanup if needed
+end)
+
+-- Event-driven updates (primary method)
 -- Progress frame registers for relevant events and updates only when needed
 progressFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")  -- Zone changes
 progressFrame:RegisterEvent("ASCENSION_STORE_COLLECTION_ITEM_LEARNED")  -- Item learned
@@ -331,10 +358,12 @@ progressFrame:SetScript("OnEvent", function(self, event, ...)
             UpdateProgressBars()
         end
     elseif event == "ASCENSION_STORE_COLLECTION_ITEM_LEARNED" or event == "APPEARANCE_COLLECTED" then
-        -- Item learned - always update if visible
-        if self:IsVisible() then
-            UpdateProgressBars()
-        end
+        -- Item learned - update with small delay to allow API to update
+        C_Timer.After(0.5, function()
+            if self:IsVisible() then
+                UpdateProgressBars()
+            end
+        end)
     end
 end)
 

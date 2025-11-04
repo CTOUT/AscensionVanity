@@ -72,11 +72,12 @@ local function IsItemLearned(itemId)
         return false  -- API not available, assume not learned
     end
     
-    if not C_VanityCollection.IsVanityItemCollected then
+    -- Use the CORRECT API function (same as global view)
+    if not C_VanityCollection.IsCollectionItemOwned then
         return false  -- Function not available
     end
     
-    return C_VanityCollection.IsVanityItemCollected(itemId) or false
+    return C_VanityCollection.IsCollectionItemOwned(itemId) or false
 end
 
 -- Get unlearned items in the current zone
