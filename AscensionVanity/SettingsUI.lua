@@ -125,7 +125,7 @@ local learnedCheckbox = CreateCheckbox(
 local colorCheckbox = CreateCheckbox(
     settingsPanel,
     "Color Code Items by Status",
-    "Color vanity items based on learned status:\n• Green = Learned\n• Yellow = Not Learned\n\nRequires: Show Learned Status enabled",
+    "Color vanity items based on learned status:\n- Green = Learned\n- Yellow = Not Learned\n\nRequires: Show Learned Status enabled",
     optionsHeader,
     240,
     -10
@@ -143,7 +143,7 @@ local regionsCheckbox = CreateCheckbox(
 local questWarningsCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Quest-Locked NPC Warnings",
-    "Display warnings for vanity items that drop from quest-spawned NPCs.\n\n" .. AV_COLOR_ORANGE .. "⚠️ Important:" .. AV_COLOR_RESET .. " These NPCs become unavailable after completing the quest!\n\nWarnings show:\n• Quest name and ID\n• Faction requirement\n• Quest completion status\n• Summon/unlock methods",
+    "Display warnings for vanity items that drop from quest-spawned NPCs.\n\n" .. AV_COLOR_ORANGE .. "[!] Important:" .. AV_COLOR_RESET .. " These NPCs become unavailable after completing the quest!\n\nWarnings show:\n- Quest name and ID\n- Faction requirement\n- Quest completion status\n- Summon/unlock methods",
     learnedCheckbox,
     0,
     -10
@@ -152,7 +152,7 @@ local questWarningsCheckbox = CreateCheckbox(
 local showIDsCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Item/Creature IDs",
-    "Display internal game IDs in tooltips.\n\n" .. AV_COLOR_YELLOW .. "🔧 Developer Tool:" .. AV_COLOR_RESET .. "\n• Shows Item ID for vanity items\n• Shows Creature ID for NPCs\n• Useful for debugging and research\n\n" .. AV_COLOR_GRAY .. "Example:" .. AV_COLOR_RESET .. " " .. AV_COLOR_BRIGHT_ORANGE .. "[Item: 82875]" .. AV_COLOR_RESET .. " Beastmaster's Whistle: Pet Name\n" .. AV_COLOR_GRAY .. "          Creature ID:" .. AV_COLOR_RESET .. " " .. AV_COLOR_WHITE .. "12345" .. AV_COLOR_RESET,
+    "Display internal game IDs in tooltips.\n\n" .. AV_COLOR_YELLOW .. "[Dev Tool]" .. AV_COLOR_RESET .. "\n- Shows Item ID for vanity items\n- Shows Creature ID for NPCs\n- Useful for debugging and research\n\n" .. AV_COLOR_GRAY .. "Example:" .. AV_COLOR_RESET .. " " .. AV_COLOR_BRIGHT_ORANGE .. "[Item: 82875]" .. AV_COLOR_RESET .. " Beastmaster's Whistle: Pet Name\n" .. AV_COLOR_GRAY .. "          Creature ID:" .. AV_COLOR_RESET .. " " .. AV_COLOR_WHITE .. "12345" .. AV_COLOR_RESET,
     questWarningsCheckbox,
     0,
     -10
@@ -161,7 +161,7 @@ local showIDsCheckbox = CreateCheckbox(
 local progressFrameCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Collection Progress Frame",
-    "Display a moveable frame showing your collection progress.\n\n" .. AV_COLOR_GREEN .. "✓ Features:" .. AV_COLOR_RESET .. "\n• Real-time progress tracking\n• Per-category breakdown\n• Color-coded completion\n• Draggable and resizable\n\n" .. AV_COLOR_YELLOW .. "Tip:" .. AV_COLOR_RESET .. " Use " .. AV_COLOR_WHITE .. "/avanity progress" .. AV_COLOR_RESET .. " to toggle",
+    "Display a moveable frame showing your collection progress.\n\n" .. AV_COLOR_GREEN .. "Features:" .. AV_COLOR_RESET .. "\n- Real-time progress tracking\n- Per-category breakdown\n- Color-coded completion\n- Draggable and resizable\n\n" .. AV_COLOR_YELLOW .. "Tip:" .. AV_COLOR_RESET .. " Use " .. AV_COLOR_WHITE .. "/avanity progress" .. AV_COLOR_RESET .. " to toggle",
     showIDsCheckbox,
     0,
     -10
@@ -457,103 +457,6 @@ autoSaveText:SetPoint("TOP", separator3, "BOTTOM", 0, -8)
 autoSaveText:SetText(AV_COLOR_GRAY .. "Settings are saved automatically" .. AV_COLOR_RESET)
 
 -- ============================================================================
--- Collection Progress Bars (v2.2)
--- ============================================================================
-
--- Separator before progress section
-local separatorProgress = settingsPanel:CreateTexture(nil, "ARTWORK")
-separatorProgress:SetHeight(1)
-separatorProgress:SetPoint("TOP", autoSaveText, "BOTTOM", 0, -16)
-separatorProgress:SetPoint("LEFT", 30, 0)
-separatorProgress:SetPoint("RIGHT", -30, 0)
-separatorProgress:SetColorTexture(0.25, 0.25, 0.25, 1)
-
--- Progress section header
-local progressHeader = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-progressHeader:SetPoint("TOP", separatorProgress, "BOTTOM", 0, -12)
-progressHeader:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
-
--- Progress bars container (will be populated dynamically)
-settingsPanel.progressBars = {}
-
--- Helper function to create a progress bar
-local function CreateProgressBar(parent, label, anchor, yOffset)
-    -- Bar background
-    local bg = parent:CreateTexture(nil, "BACKGROUND")
-    bg:SetHeight(20)
-    bg:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, yOffset)
-    bg:SetPoint("TOPRIGHT", anchor, "BOTTOMRIGHT", 0, yOffset)
-    bg:SetColorTexture(0.1, 0.1, 0.1, 0.8)
-    
-    -- Bar fill (progress indicator)
-    local fill = parent:CreateTexture(nil, "ARTWORK")
-    fill:SetHeight(18)
-    fill:SetPoint("TOPLEFT", bg, "TOPLEFT", 1, -1)
-    fill:SetWidth(1)  -- Will be updated dynamically
-    fill:SetColorTexture(0.2, 0.6, 0.2, 1)  -- Green by default
-    
-    -- Bar text (category name + progress)
-    local text = parent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    text:SetPoint("CENTER", bg, "CENTER", 0, 0)
-    text:SetText(label)
-    
-    return {
-        bg = bg,
-        fill = fill,
-        text = text,
-        SetProgress = function(self, learned, total)
-            local percent = total > 0 and (learned / total) or 0
-            local width = bg:GetWidth() - 2
-            self.fill:SetWidth(math.max(1, width * percent))
-            
-            -- Color code based on completion
-            if percent >= 1.0 then
-                self.fill:SetColorTexture(0.2, 0.8, 0.2, 1)  -- Bright green (100%)
-            elseif percent >= 0.75 then
-                self.fill:SetColorTexture(0.4, 0.7, 0.3, 1)  -- Yellow-green (75%+)
-            elseif percent >= 0.5 then
-                self.fill:SetColorTexture(0.8, 0.8, 0.2, 1)  -- Yellow (50%+)
-            elseif percent >= 0.25 then
-                self.fill:SetColorTexture(0.9, 0.6, 0.2, 1)  -- Orange (25%+)
-            else
-                self.fill:SetColorTexture(0.8, 0.2, 0.2, 1)  -- Red (< 25%)
-            end
-            
-            -- Update text
-            self.text:SetText(string.format("%s: %d/%d (%.1f%%)", label, learned, total, percent * 100))
-        end
-    }
-end
-
--- Create progress bars for each category
-local yPos = -10
-settingsPanel.progressBars.overall = CreateProgressBar(settingsPanel, "Overall Collection", progressHeader, yPos)
-yPos = yPos - 28
-
--- Create category progress bars using constants
-settingsPanel.progressBars.beast = CreateProgressBar(settingsPanel, AV_CATEGORY_SHORT_NAMES.beast, settingsPanel.progressBars.overall.bg, -8)
-settingsPanel.progressBars.demon = CreateProgressBar(settingsPanel, AV_CATEGORY_SHORT_NAMES.demon, settingsPanel.progressBars.beast.bg, -8)
-settingsPanel.progressBars.undead = CreateProgressBar(settingsPanel, AV_CATEGORY_SHORT_NAMES.undead, settingsPanel.progressBars.demon.bg, -8)
-settingsPanel.progressBars.dragonkin = CreateProgressBar(settingsPanel, AV_CATEGORY_SHORT_NAMES.dragonkin, settingsPanel.progressBars.undead.bg, -8)
-settingsPanel.progressBars.elemental = CreateProgressBar(settingsPanel, AV_CATEGORY_SHORT_NAMES.elemental, settingsPanel.progressBars.dragonkin.bg, -8)
-
--- Function to update all progress bars
-local function UpdateProgressBars()
-    if not AV_GetCollectionProgress then
-        return  -- Function not available yet
-    end
-    
-    local progress = AV_GetCollectionProgress()
-    
-    -- Update each progress bar
-    for category, bar in pairs(settingsPanel.progressBars) do
-        if progress[category] then
-            bar:SetProgress(progress[category].learned, progress[category].total)
-        end
-    end
-end
-
--- ============================================================================
 -- Settings Management
 -- ============================================================================
 
@@ -689,6 +592,10 @@ end)
 
 -- Add auto-save to other checkboxes
 colorCheckbox:HookScript("OnClick", SaveSettings)
+regionsCheckbox:HookScript("OnClick", SaveSettings)
+questWarningsCheckbox:HookScript("OnClick", SaveSettings)
+showIDsCheckbox:HookScript("OnClick", SaveSettings)
+progressFrameCheckbox:HookScript("OnClick", SaveSettings)
 
 -- Add auto-save to category filter checkboxes (v2.1+)
 for category, checkbox in pairs(settingsPanel.categoryCheckboxes) do
@@ -807,6 +714,5 @@ InterfaceOptions_AddCategory(optionsPanel)
 
 -- Global function to show settings panel
 function AscensionVanity_ShowSettings()
-    UpdateProgressBars()  -- Update progress bars before showing (v2.2)
     settingsPanel:Show()
 end

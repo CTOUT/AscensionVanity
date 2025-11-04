@@ -526,13 +526,13 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         local warningHeader
                         if questCompleted then
                             -- Already completed - RED (too late!)
-                            warningHeader = "      " .. AV_COLOR_RED .. "⚠️ QUEST ALREADY COMPLETED - NPC UNAVAILABLE!" .. AV_COLOR_RESET
+                            warningHeader = "      " .. AV_COLOR_RED .. "[!] QUEST ALREADY COMPLETED - NPC UNAVAILABLE!" .. AV_COLOR_RESET
                         elseif questActive then
                             -- Quest is active - GREEN (farm now!)
-                            warningHeader = "      " .. AV_COLOR_GREEN .. "⚠️ QUEST-LOCKED NPC - FARM NOW!" .. AV_COLOR_RESET
+                            warningHeader = "      " .. AV_COLOR_GREEN .. "[!] QUEST-LOCKED NPC - FARM NOW!" .. AV_COLOR_RESET
                         else
                             -- Haven't started quest yet - ORANGE (warning)
-                            warningHeader = "      " .. AV_COLOR_BRIGHT_ORANGE .. "⚠️ QUEST-LOCKED NPC!" .. AV_COLOR_RESET
+                            warningHeader = "      " .. AV_COLOR_BRIGHT_ORANGE .. "[!] QUEST-LOCKED NPC!" .. AV_COLOR_RESET
                         end
                         tooltip:AddLine(warningHeader, 1, 1, 1, true)
                         
@@ -543,11 +543,11 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         
                         -- Quest status indicator
                         if questCompleted then
-                            tooltip:AddLine("      " .. AV_COLOR_RED .. "✗ Quest Completed - Too Late!" .. AV_COLOR_RESET, 1, 1, 1, true)
+                            tooltip:AddLine("      " .. AV_COLOR_RED .. "[X] Quest Completed - Too Late!" .. AV_COLOR_RESET, 1, 1, 1, true)
                         elseif questActive then
-                            tooltip:AddLine("      " .. AV_COLOR_GREEN .. "✓ Quest Active - Farm Before Completing!" .. AV_COLOR_RESET, 1, 1, 1, true)
+                            tooltip:AddLine("      " .. AV_COLOR_GREEN .. "[Active] Quest Active - Farm Before Completing!" .. AV_COLOR_RESET, 1, 1, 1, true)
                         else
-                            tooltip:AddLine("      " .. AV_COLOR_ORANGE .. "• Quest Not Started" .. AV_COLOR_RESET, 1, 1, 1, true)
+                            tooltip:AddLine("      " .. AV_COLOR_ORANGE .. "[-] Quest Not Started" .. AV_COLOR_RESET, 1, 1, 1, true)
                         end
                         
                         -- Faction indicator (if not Both)
@@ -589,6 +589,36 @@ local function OnTooltipSetUnit(tooltip)
     local _, unit = tooltip:GetUnit()
     if unit then
         AddVanityInfoToTooltip(tooltip, unit)
+    end
+end
+
+-- Hook into item tooltip display (for showing Item IDs)
+local function OnTooltipSetItem(tooltip)
+    if not AscensionVanityDB.enabled or not AscensionVanityDB.showIDs then
+        return
+    end
+    
+    -- Get item link from tooltip
+    local _, itemLink = tooltip:GetItem()
+    if not itemLink then
+        return
+    end
+    
+    -- Extract item ID from item link
+    -- Format: |cffffffff|Hitem:12345:0:0:0:0:0:0:0|h[Item Name]|h|r
+    local itemID = tonumber(itemLink:match("item:(%d+)"))
+    if not itemID then
+        return
+    end
+    
+    -- Check if this is a vanity item (in our database)
+    local itemData = AV_GetItemData(itemID)
+    if itemData then
+        -- Add Item ID line
+        tooltip:AddLine(" ")
+        local itemIDText = AV_COLOR_BRIGHT_ORANGE .. "Item ID: " .. AV_COLOR_WHITE .. itemID .. AV_COLOR_RESET
+        tooltip:AddLine(itemIDText, 1, 1, 1, false)
+        tooltip:Show()
     end
 end
 
@@ -635,7 +665,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
         -- Check if Ascension's vanity collection API is available
         if C_VanityCollection and C_VanityCollection.IsCollectionItemOwned then
-            print("|cFF00FF96AscensionVanity:|r C_VanityCollection API detected ✓")
+            print("|cFF00FF96AscensionVanity:|r C_VanityCollection API detected [OK]")
         else
             print("|cFFFFAA00AscensionVanity:|r C_VanityCollection API not available (learned status disabled)")
         end
@@ -663,9 +693,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
         -- Hook into GameTooltip after player login
         GameTooltip:HookScript("OnTooltipSetUnit", OnTooltipSetUnit)
-        
-        -- Also hook into other tooltip types if needed
-        -- GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
+        GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
         
         -- Initialize Regional Hunting Guide (v2.1+)
         if AscensionVanity_InitRegionalGuide then

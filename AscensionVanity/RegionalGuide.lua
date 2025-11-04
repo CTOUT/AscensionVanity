@@ -158,7 +158,7 @@ function AscensionVanity_ShowCurrentZoneItems()
             -- Extract creature name from item name (remove prefix)
             local creatureName = firstItem.name:match(":%s*(.+)$") or firstItem.name
             
-            print(AV_COLOR_ORANGE .. "• " .. creatureName .. AV_COLOR_GRAY .. " (ID: " .. creatureId .. ")" .. AV_COLOR_RESET)
+            print(AV_COLOR_ORANGE .. "- " .. creatureName .. AV_COLOR_GRAY .. " (ID: " .. creatureId .. ")" .. AV_COLOR_RESET)
             
             for _, item in ipairs(creatureItemList) do
                 print("  " .. AV_COLOR_WHITE .. "→ " .. item.name .. AV_COLOR_RESET)
