@@ -177,7 +177,7 @@ end
 --   - Cache refresh on item learn: Full cache clear (~0ms), rebuilds on-demand
 --
 -- USAGE:
---   IsVanityItemLearned(itemID, itemName) - Returns cached or fresh status
+--   AV_IsVanityItemLearned(itemID, itemName) - Returns cached or fresh status (GLOBAL)
 --   ClearLearnedCache() - Invalidate entire cache
 --   ClearCacheForItem(itemID) - Invalidate specific item (for future use)
 -- ============================================================================
@@ -223,9 +223,10 @@ end
 
 -- Utility: Check if player has learned a vanity item (with caching)
 -- Uses Ascension's C_VanityCollection.IsCollectionItemOwned API
-local function IsVanityItemLearned(itemID, itemName)
+-- Exposed globally for use by other addon components (DatabaseBrowser, etc.)
+function AV_IsVanityItemLearned(itemID, itemName)
     if not itemID then
-        DebugPrint("IsVanityItemLearned: No itemID provided")
+        DebugPrint("AV_IsVanityItemLearned: No itemID provided")
         return nil
     end
     
@@ -368,7 +369,7 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     -- Check collection status filter (v2.1+)
                     local shouldInclude = true
                     if collectionFilter ~= "both" and AscensionVanityDB.showLearnedStatus then
-                        local isLearned = IsVanityItemLearned(itemID, itemName)
+                        local isLearned = AV_IsVanityItemLearned(itemID, itemName)
                         if collectionFilter == "known" and isLearned ~= true then
                             shouldInclude = false
                             DebugPrint("Filtered out item:", itemName, "(not learned, showing known only)")
@@ -443,7 +444,7 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     
                     -- Check if player has learned this item (optional feature)
                     if AscensionVanityDB.showLearnedStatus then
-                        local isLearned = IsVanityItemLearned(itemID, itemName)
+                        local isLearned = AV_IsVanityItemLearned(itemID, itemName)
                         
                         if isLearned == true then
                             -- Learned: Green checkmark + item
@@ -1858,11 +1859,27 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFFFFFF00Manual refresh:|r Use /avanity clearcache if needed")
         
     elseif msg == "zone" or msg == "regional" or msg == "guide" then
-        -- Show Regional Hunting Guide for current zone
+        -- Show Regional Hunting Guide for current zone (chat-based legacy)
         if AscensionVanity_ShowCurrentZoneItems then
             AscensionVanity_ShowCurrentZoneItems()
         else
             print("|cFFFF0000Error:|r Regional Guide not loaded")
+        end
+    
+    elseif msg == "browser" or msg == "db" or msg == "database" then
+        -- Open Database Browser
+        if AV_DatabaseBrowser_Toggle then
+            AV_DatabaseBrowser_Toggle()
+        else
+            print("|cFFFF0000Error:|r Database Browser not loaded")
+        end
+    
+    elseif msg == "progress" then
+        -- Toggle Collection Progress Tracker
+        if AV_CollectionProgressFrame_Toggle then
+            AV_CollectionProgressFrame_Toggle()
+        else
+            print("|cFFFF0000Error:|r Progress Tracker not loaded")
         end
     
     elseif msg == "help" then
@@ -1881,10 +1898,15 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("  |cFFFFFF00/avanity color|r - Toggle color coding")
         print("  |cFFFFFF00/avanity debug|r - Toggle debug mode")
         print(" ")
-        print("|cFFFFFF00=== Regional Hunting Guide (v2.1+) ===|r")
-        print("  |cFFFFFF00/avanity zone|r - Show unlearned items in current zone")
+        print("|cFFFFFF00=== Collection Progress & Regional Guide (v2.2+) ===|r")
+        print("  |cFFFFFF00/avanity progress|r - Toggle Collection Progress Tracker")
+        print("    |cFF808080Shows overall and per-category progress with zone filtering|r")
+        print("  |cFFFFFF00/avanity browser|r - Open Database Browser / Regional Guide")
+        print("    |cFF808080Aliases: /avanity db, /avanity database|r")
+        print("    |cFF808080Explore full database with zone and category filters|r")
+        print("  |cFFFFFF00/avanity zone|r - Show unlearned items in current zone (chat)")
         print("    |cFF808080Aliases: /avanity regional, /avanity guide|r")
-        print("    |cFF808080Shows creatures that drop items you haven't learned yet|r")
+        print("    |cFF808080Chat-based list of creatures in current zone|r")
         print(" ")
         print("|cFFFFFF00=== Cache Management ===|r")
         print("  |cFFFFFF00/avanity clearcache|r - Manually clear learned status cache")

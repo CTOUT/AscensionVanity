@@ -30,5 +30,8 @@ CollectionProgressFrame.lua
 # Regional Hunting Guide (v2.1+ zone-based item finder)
 RegionalGuide.lua
 
+# Database Browser (v2.2+ comprehensive database explorer and regional guide)
+DatabaseBrowser.lua
+
 # Core functionality
 Core.lua

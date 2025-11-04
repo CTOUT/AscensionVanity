@@ -428,9 +428,41 @@ separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
 -- Utility Buttons
 -- ============================================================================
 
+-- Collection Progress button
+local progressButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
+progressButton:SetPoint("TOP", separator2, "BOTTOM", 0, -16)
+progressButton:SetSize(200, 30)
+progressButton:SetText("Collection Progress")
+progressButton:SetScript("OnClick", function()
+    if AV_ShowCollectionProgress then
+        AV_ShowCollectionProgress()
+    end
+end)
+
+-- Progress button description
+local progressDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+progressDesc:SetPoint("TOP", progressButton, "BOTTOM", 0, -4)
+progressDesc:SetText(AV_COLOR_GRAY .. "Track your collection progress" .. AV_COLOR_RESET)
+
+-- Database Browser button
+local browserButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
+browserButton:SetPoint("TOP", progressDesc, "BOTTOM", 0, -12)
+browserButton:SetSize(200, 30)
+browserButton:SetText("Database Browser")
+browserButton:SetScript("OnClick", function()
+    if AV_DatabaseBrowser_Toggle then
+        AV_DatabaseBrowser_Toggle()
+    end
+end)
+
+-- Browser button description
+local browserDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+browserDesc:SetPoint("TOP", browserButton, "BOTTOM", 0, -4)
+browserDesc:SetText(AV_COLOR_GRAY .. "Explore database & regional hunting guide" .. AV_COLOR_RESET)
+
 -- Open Scanner button
 local scannerButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
-scannerButton:SetPoint("TOP", separator2, "BOTTOM", 0, -16)
+scannerButton:SetPoint("TOP", browserDesc, "BOTTOM", 0, -12)
 scannerButton:SetSize(200, 30)
 scannerButton:SetText("Open API Scanner")
 scannerButton:SetScript("OnClick", function()

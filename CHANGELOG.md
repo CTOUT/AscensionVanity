@@ -2,7 +2,37 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
-## [2.2-dev] - 2025-11-03
+## [2.2-dev] - 2025-11-04
+
+### Added - Database Browser with Pagination (v2.2)
+- **Database Browser / Regional Guide**: Comprehensive UI for exploring vanity database
+  - **Pagination System**: 50 creatures per page for optimal performance
+    - Previous/Next navigation buttons at bottom of frame
+    - Page counter showing current page and total pages
+    - Auto-reset to page 1 when filters change
+    - Instant page navigation with smooth scrolling
+  - **Multi-Filter System**:
+    - Zone filter: Current Zone / All Zones
+    - Category filter: All / Beast / Demon / Undead / Dragonkin / Elemental
+    - Collection status: All Items / Unlearned Only / Learned Only
+  - **Creature Listing**:
+    - Alphabetically sorted creatures
+    - Shows zone/subzone location
+    - Lists all vanity items per creature
+    - Visual checkmarks for learned items
+    - Item icons from database
+  - **Performance Optimizations**:
+    - Renders only 50 creatures at a time (~40x faster than showing all 2,126)
+    - Smooth interaction even with large databases
+    - Efficient filtering and sorting
+  - **Commands**: 
+    - `/avanity browser` - Open full database browser
+    - `/avanity guide` - Open regional guide (current zone)
+  - **UI Features**:
+    - Draggable frame with saved position
+    - ESC key to close
+    - Clean layout with no overlapping elements
+    - Results counter showing total and current page range
 
 ### Added - Quest-Locked NPC Warnings (v2.2)
 - **Quest Detection System**: Intelligent warnings for quest-spawned NPCs

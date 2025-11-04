@@ -39,10 +39,39 @@ local title = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarg
 title:SetPoint("TOPLEFT", headerBg, "TOPLEFT", 8, -4)
 title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
 
+-- Details button (opens Database Browser)
+local detailsButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
+detailsButton:SetSize(60, 18)
+detailsButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -5, -3)
+detailsButton:SetText("Details")
+detailsButton:SetNormalFontObject("GameFontNormalSmall")
+detailsButton:SetScript("OnClick", function(self)
+    if AV_DatabaseBrowser_Show then
+        -- Get current zone if in zone view
+        local viewMode = progressFrame.getViewMode and progressFrame.getViewMode() or "zone"
+        if viewMode == "zone" then
+            local currentZone = GetZoneText()
+            AV_DatabaseBrowser_Show(currentZone)
+        else
+            AV_DatabaseBrowser_Show("all")
+        end
+    end
+end)
+detailsButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    GameTooltip:SetText("View Details", 1, 1, 1)
+    GameTooltip:AddLine("Open Database Browser for detailed exploration", nil, nil, nil, true)
+    GameTooltip:AddLine("Shows creatures, items, and locations", 0.7, 0.7, 0.7, true)
+    GameTooltip:Show()
+end)
+detailsButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+end)
+
 -- Refresh button (manual update trigger)
 local refreshButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
 refreshButton:SetSize(20, 18)
-refreshButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -5, -3)
+refreshButton:SetPoint("RIGHT", detailsButton, "LEFT", -3, 0)
 refreshButton:SetText("⟳")
 refreshButton:SetNormalFontObject("GameFontNormalLarge")
 refreshButton:SetScript("OnClick", function(self)
@@ -66,7 +95,7 @@ end)
 local viewMode = "zone"  -- Default to zone view
 local viewButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
 viewButton:SetSize(60, 18)
-viewButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -30, -3)
+viewButton:SetPoint("RIGHT", refreshButton, "LEFT", -3, 0)
 viewButton:SetText("Zone")
 viewButton:SetNormalFontObject("GameFontNormalSmall")
 viewButton:SetScript("OnClick", function(self)

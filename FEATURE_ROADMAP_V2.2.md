@@ -5,7 +5,7 @@
 **Current Version:** v2.1 (Released)  
 **Next Version:** v2.2 (Active Development)  
 **Development Branch:** v2.2-dev  
-**Status:** 🚧 In Progress (95% Complete)
+**Status:** ✅ 100% Complete - Ready for Testing!
 
 ---
 
@@ -63,38 +63,45 @@ Standalone moveable frame that displays real-time collection progress with per-c
 
 ---
 
-### 2. Regional Hunting Guide 🗺️
+### 2. Database Browser / Regional Hunting Guide 🗺️
 **Priority:** High  
 **Complexity:** Medium  
-**Status:** 🚧 75% Complete (Chat-Based Phase 1 Done)
+**Status:** ✅ 100% Complete
 
 **Description:**  
-Help players discover what vanity items are available in their current zone, with zone-based filtering and creature listings.
+Comprehensive interface for exploring the vanity database with advanced filtering. Serves as both a full database browser and a regional hunting guide.
 
-**Phase 1: Chat-Based Guide (Complete)**
-- ✅ Zone index building (indexes all items by zone/subzone)
-- ✅ Current zone detection with auto-updates
-- ✅ Unlearned item filtering for current zone
-- ✅ Creature grouping with item listings
-- ✅ Slash commands (`/avanity zone`, `/avanity regional`)
-- ✅ Zone change detection
+**Implemented Features:**
+- ✅ Moveable, draggable frame with persistent position
+- ✅ Zone filtering (Current Zone / All Zones buttons)
+- ✅ Category filtering (All, Beast, Demon, Undead, Dragonkin, Elemental)
+- ✅ Learned status filtering (All Items, Unlearned Only, Learned Only)
+- ✅ Scrollable creature list with detailed information
+- ✅ Auto-updates on zone changes (when filtered to current zone)
+- ✅ Integration with Progress Tracker ("Details" button)
+- ✅ Integration with Settings UI (dedicated button)
+- ✅ Slash command support (`/avanity browser`, `/avanity db`, `/avanity database`)
 
-**Phase 2: Visual UI Panel (Next)**
-- 🔲 Scrollable creature list with icons
-- 🔲 Dynamic zone header
-- 🔲 Category filtering (show specific pet types)
-- 🔲 Integration buttons in Settings UI
-- 🔲 "Show on Map" button (preparation for future map integration)
+**Display Features:**
+- Creature names with location info (zone/subzone)
+- Multiple items per creature with learned status indicators
+- Color-coded learned items (green = learned, white = unlearned)
+- Dynamic results count
+
+**Legacy Chat-Based Guide (Retained):**
+- ✅ `/avanity zone`, `/avanity regional`, `/avanity guide` - Chat-based zone listing
 
 **Files:**
-- `AscensionVanity/RegionalGuide.lua` - Zone detection and filtering
-- `docs/SESSION_2025-11-02_REGIONAL_GUIDE.md` - Session notes
-- `docs/REGIONAL_GUIDE_PHASE2_TODO.md` - Implementation plan
+- `AscensionVanity/DatabaseBrowser.lua` - Main browser UI (NEW)
+- `AscensionVanity/RegionalGuide.lua` - Zone indexing backend
+- Integration in `CollectionProgressFrame.lua` (Details button)
+- Integration in `SettingsUI.lua` (Database Browser button)
+- Integration in `Core.lua` (slash commands)
 
 **User Commands:**
-- `/avanity zone` - Show items in current zone
-- `/avanity regional` - Alias for zone command
-- `/avanity guide` - Show regional guide info
+- `/avanity browser` - Open Database Browser (Aliases: `/avanity db`, `/avanity database`)
+- `/avanity progress` - Open Collection Progress Tracker with "Details" button
+- `/avanity zone` - Legacy chat-based zone listing
 
 ---
 
@@ -237,13 +244,38 @@ Minimap icon with LDB feed showing nearby vanity item sources.
 
 **Result**: Collection Progress Tracker 100% functional, ready for release!
 
+### November 4, 2025 (Session 3 - Today) ✅ COMPLETE
+**Completed:**
+1. ✅ **Database Browser UI**: Created comprehensive interface
+   - Zone filtering (Current Zone / All Zones)
+   - Category filtering (6 categories)
+   - Learned status filtering (All / Unlearned / Learned)
+   - Scrollable creature list with items
+   - Auto-updates on zone changes
+   
+2. ✅ **Integration**: Wired into addon
+   - Added to TOC file load order
+   - Slash commands (`/avanity browser`, `/avanity db`, `/avanity database`)
+   - "Details" button in Progress Tracker (context-aware)
+   - "Database Browser" button in Settings UI
+   - Help command updated
+
+3. ✅ **Strategic Decision**: Consolidated UI approach
+   - Combined "Regional Guide" with "Database Browser"
+   - Single comprehensive interface instead of two competing UIs
+   - Progress Tracker stays focused and lightweight
+   - Database Browser serves as the "deep dive" tool
+
+**Result**: v2.2 feature set 100% complete, ready for in-game testing!
+
 ### November 5-10, 2025 (This Week)
 **Goals:**
 - ✅ ~~Complete Collection Progress Tracker (100%)~~ **DONE!**
-- 🔲 Complete Regional Guide Phase 2 (Visual UI)
-- 🔲 Begin Quest-Locked NPC Warnings implementation
-- 🔲 In-game testing of zone view across multiple zones
-- 🔲 Release v2.2 beta for community testing
+- ✅ ~~Complete Database Browser / Regional Guide~~ **DONE!**
+- 🔲 In-game testing of all v2.2 features
+- 🔲 Bug fixes and polish based on testing
+- 🔲 Begin Quest-Locked NPC Warnings implementation (v2.3)
+- 🔲 Release v2.2 for community testing
 
 ---
 
@@ -277,9 +309,9 @@ progress = {
 ### File Organization
 ```
 AscensionVanity/
-├── CollectionProgressFrame.lua   # Progress tracker UI
-├── RegionalGuide.lua             # Zone detection and filtering
-├── RegionalGuideUI.lua           # (Next: Visual guide panel)
+├── CollectionProgressFrame.lua   # Progress tracker UI (lightweight)
+├── RegionalGuide.lua             # Zone indexing backend (shared)
+├── DatabaseBrowser.lua           # Database explorer & regional guide UI (NEW)
 ├── Core.lua                      # Slash commands and initialization
 ├── SettingsUI.lua                # Settings integration
 └── AscensionVanity.toc           # Load order
