@@ -149,11 +149,20 @@ local questWarningsCheckbox = CreateCheckbox(
     -10
 )
 
+local showIDsCheckbox = CreateCheckbox(
+    settingsPanel,
+    "Show Item/Creature IDs",
+    "Display internal game IDs in tooltips.\n\n" .. AV_COLOR_YELLOW .. "🔧 Developer Tool:" .. AV_COLOR_RESET .. "\n• Shows Item ID for vanity items\n• Shows Creature ID for NPCs\n• Useful for debugging and research\n\n" .. AV_COLOR_GRAY .. "Example:" .. AV_COLOR_RESET .. " " .. AV_COLOR_BRIGHT_ORANGE .. "[Item: 82875]" .. AV_COLOR_RESET .. " Beastmaster's Whistle: Pet Name\n" .. AV_COLOR_GRAY .. "          Creature ID:" .. AV_COLOR_RESET .. " " .. AV_COLOR_WHITE .. "12345" .. AV_COLOR_RESET,
+    questWarningsCheckbox,
+    0,
+    -10
+)
+
 local progressFrameCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Collection Progress Frame",
     "Display a moveable frame showing your collection progress.\n\n" .. AV_COLOR_GREEN .. "✓ Features:" .. AV_COLOR_RESET .. "\n• Real-time progress tracking\n• Per-category breakdown\n• Color-coded completion\n• Draggable and resizable\n\n" .. AV_COLOR_YELLOW .. "Tip:" .. AV_COLOR_RESET .. " Use " .. AV_COLOR_WHITE .. "/avanity progress" .. AV_COLOR_RESET .. " to toggle",
-    questWarningsCheckbox,
+    showIDsCheckbox,
     0,
     -10
 )
@@ -555,6 +564,7 @@ local function UpdateCheckboxes()
     colorCheckbox:SetChecked(AscensionVanityDB.colorCode)
     regionsCheckbox:SetChecked(AscensionVanityDB.showRegions)
     questWarningsCheckbox:SetChecked(AscensionVanityDB.showQuestWarnings == nil and true or AscensionVanityDB.showQuestWarnings)
+    showIDsCheckbox:SetChecked(AscensionVanityDB.showIDs == nil and false or AscensionVanityDB.showIDs)
     progressFrameCheckbox:SetChecked(AscensionVanityDB.showProgressFrame == nil and false or AscensionVanityDB.showProgressFrame)
     
     -- Update category filter checkboxes (v2.1+)
@@ -619,6 +629,7 @@ local function SaveSettings()
     AscensionVanityDB.showLearnedStatus = learnedCheckbox:GetChecked() and true or false
     AscensionVanityDB.showRegions = regionsCheckbox:GetChecked() and true or false
     AscensionVanityDB.showQuestWarnings = questWarningsCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showIDs = showIDsCheckbox:GetChecked() and true or false
     
     -- Save progress frame visibility (v2.2)
     local wasVisible = AscensionVanityDB.showProgressFrame

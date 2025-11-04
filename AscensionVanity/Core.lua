@@ -441,6 +441,11 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     -- Start with item icon + name (no learned status yet)
                     local itemText = itemIcon .. itemName
                     
+                    -- Add Item ID if enabled (v2.2)
+                    if AscensionVanityDB.showIDs then
+                        itemText = AV_COLOR_BRIGHT_ORANGE .. "[Item: " .. itemID .. "]" .. AV_COLOR_RESET .. " " .. itemText
+                    end
+                    
                     -- Check if player has learned this item (optional feature)
                     if AscensionVanityDB.showLearnedStatus then
                         local isLearned = IsVanityItemLearned(itemID, itemName)
@@ -564,6 +569,13 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         end
                     end
                 end
+            end
+            
+            -- Add Creature ID if showIDs is enabled (v2.2)
+            if AscensionVanityDB.showIDs and creatureID then
+                tooltip:AddLine(" ")  -- Blank line for spacing
+                local creatureIDText = AV_COLOR_GRAY .. "Creature ID: " .. AV_COLOR_WHITE .. creatureID .. AV_COLOR_RESET
+                tooltip:AddLine(creatureIDText, 1, 1, 1, false)
             end
             
             -- Show tooltip updates

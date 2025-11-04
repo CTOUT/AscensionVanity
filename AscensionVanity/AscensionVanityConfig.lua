@@ -18,6 +18,7 @@ local defaults = {
     debug = false,               -- Enable debug logging
     enabled = true,              -- Enable/disable the addon
     eventSpy = false,            -- Event spy (developer tool)
+    showIDs = false,             -- Show item/creature IDs in tooltips (v2.2 - useful for debugging)
     showLearnedStatus = true,    -- Show "Learned" or "Not Learned" in tooltips
     showQuestWarnings = true,    -- Show quest-locked NPC warnings (v2.2)
     showRegions = false          -- Show region/location information (not yet implemented)
