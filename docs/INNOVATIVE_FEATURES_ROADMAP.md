@@ -349,6 +349,159 @@ end
 
 ---
 
+## 🆕 Advanced Farming Features (v2.4+)
+
+### Instance/Phase Tracking ⭐⭐
+**Priority:** Medium  
+**Complexity:** Medium  
+**Version Target:** v2.4
+
+**Problem:** Realm hopping for rare spawns (e.g., Humar the Pridelord, Bayne) requires tracking which instances you've checked.
+
+**Features:**
+- Track current instance ID (realm/phase)
+- History of instances checked in current session
+- Timer since last instance hop
+- Notification when entering new instance
+- **Use Case:** Check rare spawn in Instance 1 → hop → check Instance 2 → track which you've already checked
+
+**API Available:**
+```lua
+-- Get current instance ID
+local name, type, difficultyIndex, difficultyName, maxPlayers, 
+      dynamicDifficulty, isDynamic, instanceID = GetInstanceInfo()
+
+-- Instance ID changes when you realm hop/phase change
+-- Track: {instanceID: lastChecked, rareSpawned: bool}
+```
+
+**UI:**
+```
+[Instance Tracker]
+Current: Instance #5 (3 min ago)
+Checked this session:
+  ✓ Instance #1 (Humar not found)
+  ✓ Instance #3 (Humar not found)  
+  ✓ Instance #5 (Currently here)
+```
+
+---
+
+### Kill/Drop Tracking ⭐⭐⭐
+**Priority:** High  
+**Complexity:** Low  
+**Version Target:** v2.3
+
+**Problem:** Players want to know drop rates and how unlucky they are!
+
+**Features:**
+- Track kills per creature (lifetime + session)
+- Track drops received (lifetime + session)
+- Calculate drop percentage
+- Compare to expected drop rate (if known)
+- **Use Case:** "I've killed 47 Magram Bonepaws with 0 drops (0%)"
+
+**Data Tracked:**
+```lua
+creatureStats = {
+    [creatureId] = {
+        totalKills = 47,
+        sessionKills = 12,
+        totalDrops = 0,
+        sessionDrops = 0,
+        dropRate = 0.00,  -- Calculated
+        expectedRate = 0.05,  -- 5% (if known from db)
+        unluckyStreak = 47,  -- Kills since last drop
+        lastDropDate = nil
+    }
+}
+```
+
+**Tooltip Enhancement:**
+```
+[Creature Name]
+  Drops: Beastmaster's Whistle: Pet Name
+  
+  📊 Your Stats:
+  Kills: 47 (12 this session)
+  Drops: 0 (0.0%)
+  Expected: ~5%
+  You're 9.4x over expected kills! 😢
+```
+
+**API Available:**
+```lua
+-- Track COMBAT_LOG_EVENT_UNFILTERED
+-- Filter for PARTY_KILL events
+-- Match creature ID from GUID
+-- Increment counter in SavedVariables
+```
+
+---
+
+### Auction House Price Integration ⭐
+**Priority:** Low  
+**Complexity:** High  
+**Version Target:** v2.5+ (future)
+
+**Problem:** Players want to know vendor/AH value of dropped items.
+
+**Challenge:** Ascension doesn't have standard AH addons working (custom AH system). Would need custom implementation.
+
+**If Implemented:**
+```
+[Item Tooltip]
+  Beastmaster's Whistle: Pet Name
+  
+  💰 Auction House:
+  Current: 50g (3 listings)
+  Average: 75g (30 days)
+  Lowest: 40g
+  
+  ⚠️ Note: Combat pets are usually soulbound!
+```
+
+**Status:** **Blocked** - Need to research Ascension's AH API first. May not be feasible.
+
+---
+
+### Creature Stats in Tooltip ⭐⭐
+**Priority:** Medium  
+**Complexity:** Low  
+**Version Target:** v2.3
+
+**Problem:** Players want to know creature attack speed for farming efficiency.
+
+**Features:**
+- Show attack speed in tooltip
+- Show armor/level
+- Show elite status
+- Helpful for knowing if creature is fast-hitting (annoying to farm)
+
+**Tooltip Enhancement:**
+```
+[Creature Name] (Level 40 Elite)
+  Drops: Beastmaster's Whistle: Pet Name
+  
+  ⚔️ Combat Stats:
+  Attack Speed: 2.0 sec
+  Type: Humanoid
+  Location: Desolace - Magram Village
+```
+
+**API Available:**
+```lua
+-- On mouseover unit
+UnitAttackSpeed("mouseover")  -- Returns mainSpeed, offSpeed
+UnitLevel("mouseover")        -- Creature level
+UnitClassification("mouseover") -- "elite", "rare", "rareelite", etc.
+UnitCreatureType("mouseover") -- "Humanoid", "Beast", etc.
+```
+
+**Implementation:** Hook `GameTooltip:SetUnit()` and append stats when mousing over creatures with vanity drops.
+
+---
+
 ## Implementation Priority Roadmap
 
 ### Phase 1 (v2.2) - Core Integrations
@@ -361,10 +514,20 @@ end
 2. ⏳ **Zone Tracker Frame** - Dockable progress tracker
 3. ⏳ **Smart Notifications** - Context-aware alerts
 
-### Phase 3 (v2.4) - Advanced Analytics
-1. ⏳ **Session Statistics** - Farming analytics
+### Phase 3 (v2.3) - Enhanced Farming
+1. ⏳ **Kill/Drop Tracking** - Per-creature statistics
+2. ⏳ **Creature Stats Tooltips** - Attack speed, elite status
+3. ⏳ **Session Statistics** - Farming analytics
+
+### Phase 4 (v2.4) - Advanced Tracking
+1. ⏳ **Instance/Phase Tracking** - Realm hop helper
 2. ⏳ **History System** - Track attempts over time
 3. ⏳ **Achievement Integration** - Collection milestones
+
+### Phase 5 (v2.5+) - Future Enhancements
+1. 🔮 **Auction House Integration** - Price tracking (pending research)
+2. 🔮 **Drop Rate Calculator** - Crowdsourced data
+3. 🔮 **Farming Routes** - Optimized pathing
 
 ---
 
