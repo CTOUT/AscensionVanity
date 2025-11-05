@@ -123,13 +123,21 @@ foreach ($it in $items) {
 Write-Host "Emitted items: $($processed.Count)" -ForegroundColor Green
 Write-Host "Skipped items (missing data/category): $skipped" -ForegroundColor Yellow
 
-# Gather unique icons from raw scan data - ONLY from the 5 combat pet categories
+# Gather unique icons from raw scan data - ONLY from combat pet categories
 Write-Host "Analyzing unique icons from combat pet categories..." -ForegroundColor Cyan
 $scanFile = ".\data\AscensionVanity.lua"
 $uniqueIcons = @{}
 
-# Combat pet Group IDs we care about
-$combatPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232)
+# Combat pet Group IDs we care about (8 total)
+# Dropped pets (5 Group IDs):
+#   16777217 = Beastmaster's Whistle (Beasts)
+#   16777220 = Blood Soaked Vellum (Undead)
+#   16777218 = Summoner's Stone (Demons)
+#   16777224 = Draconic Warhorn (Dragonkin)
+#   16777232 = Elemental Lodestone (Elementals)
+# Seasonal/Event rewards (3 Group IDs):
+#   553648129, 553648130, 553648136 = Seasonal reward pets
+$combatPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232, 553648129, 553648130, 553648136)
 
 if (Test-Path $scanFile) {
     $scanContent = Get-Content $scanFile -Raw
@@ -239,7 +247,9 @@ $header = @"
 --     - notes: Additional context (summon method, etc.)
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
--- Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
+-- Group IDs (8 total):
+--   Dropped: 16777217, 16777220, 16777218, 16777224, 16777232
+--   Seasonal: 553648129, 553648130, 553648136
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
