@@ -334,7 +334,16 @@ local function AddVanityInfoToTooltip(tooltip, unit)
     end
     
     -- Check if this is an NPC (not a player, pet, etc.)
+    -- IMPORTANT: Exclude companion pets/battle pets/minions to prevent false positives
     if not UnitIsPlayer(unit) and UnitExists(unit) then
+        -- Filter out companion pets and player-owned units
+        -- Check if unit is player-controlled (pets, minions, guardians)
+        -- This catches hunter pets, warlock demons, companion pets, etc.
+        if UnitPlayerControlled(unit) and not UnitIsPlayer(unit) then
+            DebugPrint("Skipping player pet/minion:", UnitName(unit), "CreatureID:", creatureID)
+            return
+        end
+        
         -- Look up vanity items for this creature by ID
         local vanityItems = AV_GetVanityItemsForCreature(creatureID)
         
