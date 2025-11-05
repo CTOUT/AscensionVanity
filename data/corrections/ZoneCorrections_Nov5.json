@@ -1,0 +1,20 @@
+{
+  "91356": {
+    "description": "Has a chance to drop from Zul'Farrak Dead Hero within Zul'Farrak",
+    "zone": "Zul'Farrak",
+    "subzone": null,
+    "note": "Zone correction - was incorrectly showing Zul'Gurub"
+  },
+  "91357": {
+    "description": "Has a chance to drop from Zul'Farrak Dead Hero within Zul'Farrak",
+    "zone": "Zul'Farrak",
+    "subzone": null,
+    "note": "Zone correction - was incorrectly showing Zul'Gurub"
+  },
+  "10358": {
+    "description": "Has a chance to drop from Fellicent's Shade within Tirisfal Glades",
+    "zone": "Tirisfal Glades",
+    "subzone": null,
+    "note": "Zone was missing - added Tirisfal Glades"
+  }
+}
