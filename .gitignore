@@ -21,6 +21,7 @@ SkippedItems_Detailed.txt
 
 # Ignore source files (large, generated from game)
 data/sources/
+data/extracts/
 data/processed/
 data/backups/
 data/triage/

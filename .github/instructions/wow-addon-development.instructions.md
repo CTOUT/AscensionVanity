@@ -5,24 +5,33 @@ applyTo: '**/*.{lua,toc,xml,ps1,md}'
 
 # AscensionVanity Project Instructions
 
+**Version**: 2.0.0  
+**Last Updated**: November 5, 2025
+
+## 📋 When to Use This File
+
+**Use this file for:**
+- ✅ AscensionVanity-specific patterns and workflows
+- ✅ Project file structure and load order
+- ✅ Project-specific gotchas and solutions
+- ✅ Data processing pipelines for this project
+- ✅ AscensionVanity discoveries and insights
+
+**Use OTHER files for:**
+- 📘 **Main Instructions** (`copilot-instructions.md`): Project philosophy, architecture, high-level workflows
+- 📙 **Chatmode** (`wow-addon-development.chatmode.md`): General WoW API knowledge, Lua 5.1 patterns, performance optimization
+
+---
+
 ## 🎯 Project Context
 
 This is **AscensionVanity** - a World of Warcraft addon for Project Ascension that displays vanity item (combat pets) drop information in creature tooltips.
 
-**When working on this project, you MUST:**
-- Review the main `.github/copilot-instructions.md` for comprehensive project patterns
-- Follow the established file structure and naming conventions
-- Understand the data flow: Game → Lua → JSON → PowerShell enrichment → Lua
-- Respect the consolidation philosophy (don't create redundant scripts)
-
-**Related Documentation:**
-- **Workspace chatmode**: `.github/wow-addon-development.chatmode.md`
-  - General WoW API knowledge, Lua 5.1 patterns, performance optimization
-- **Main instructions**: `.github/copilot-instructions.md`
-  - Core philosophy, coding standards, common tasks, version control
-- **VS Code setup**: `docs/VSCODE_EXTENSIONS.md`
-  - Required extensions for WoW addon development
-  - Configuration guide and troubleshooting
+**Project Fundamentals:**
+- Data flow: Game → Lua → JSON → PowerShell enrichment → Lua  
+- Consolidation philosophy: Extend, don't duplicate
+- File structure: Strict load order enforced by TOC
+- Database: 2,343 combat pets, 99.95% coverage
 
 ## 🚫 Do NOT Search For These Topics
 
@@ -393,52 +402,6 @@ data/
 
 ---
 
-## 🛠️ Development Environment
-
-### VS Code Extensions (Required)
-
-**Install these 4 extensions for optimal development:**
-
-1. **sumneko.lua** - Lua Language Server
-   - IntelliSense and type checking
-   - Real-time error detection
-   - Function signatures
-   - 1.9M installs, 4.7★
-
-2. **ketho.wow-api** - WoW API Annotations
-   - WOTLK 3.3.5 API documentation
-   - Parameter hints for WoW functions
-   - 26K installs, 5★
-
-3. **septh.wow-bundle** - WoW Toolset
-   - FrameXML syntax support
-   - Lua snippets for WoW
-   - TOC file support
-   - 45K installs, 5★
-
-4. **stanzilla.vscode-wow-toc** - TOC Support
-   - Syntax highlighting for .toc files
-   - Metadata snippets
-   - 17K installs, 5★
-
-**Quick Install:**
-```powershell
-code --install-extension sumneko.lua
-code --install-extension ketho.wow-api
-code --install-extension septh.wow-bundle
-code --install-extension stanzilla.vscode-wow-toc
-```
-
-**See `docs/VSCODE_EXTENSIONS.md` for detailed setup guide.**
-
-### Workspace Configuration
-
-**File:** `.vscode/settings.json`
-- Lua 5.1 runtime configured
-- All AscensionVanity globals declared
-- WoW API annotations enabled
-- No false warnings on WoW functions
-
 **Result:**
 - ✅ Clean code with no false warnings
 - ✅ IntelliSense for WoW API
@@ -769,10 +732,34 @@ This section is periodically updated by Copilot with new insights, challenges, a
 
 ---
 
-**Update Protocol**: After each significant work session or discovery, add entries here with:
-- Date
-- Brief description of insight/challenge/observation
-- Solution or pattern recognized
-- Actionable takeaway
+**Update Protocol**: After each significant work session or discovery, add entries here with date, challenge, solution, and actionable takeaway.
 
-**Remember**: This file evolves with the project. When you discover new patterns or gotchas, document them here. When in doubt, check the main copilot-instructions.md file first!
+---
+
+## 📜 Version History
+
+### v2.0.0 - November 5, 2025
+**Major Reorganization**: Eliminated duplication, clarified file boundaries
+- Removed general WoW API knowledge (belongs in chatmode file)
+- Consolidated all project-specific patterns and discoveries here
+- Added clear file navigation guide
+- Removed VS Code extension details (consolidated to docs/VSCODE_EXTENSIONS.md reference)
+- Focused exclusively on AscensionVanity-specific patterns and workflows
+
+### v1.3.0 - November 3, 2025
+- Added VS Code development environment section
+- Documented required extensions and configuration
+
+### v1.2.0 - November 2, 2025
+- Added data integrity patterns
+- Added category naming consistency discoveries
+- Added icon list filtering patterns
+
+### v1.0.0 - October 31, 2025
+- Initial creation
+- Project context and file structure
+- Common tasks and gotchas
+
+---
+
+**Remember**: This file evolves with the project. When you discover new AscensionVanity-specific patterns or gotchas, document them here. For general WoW API questions, check the chatmode file. For project philosophy, check the main copilot-instructions.md file.

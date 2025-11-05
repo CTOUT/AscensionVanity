@@ -4,6 +4,25 @@ description: 'World of Warcraft and Project Ascension addon development speciali
 
 # World of Warcraft Addon Development Chat Mode
 
+**Version**: 2.0.0  
+**Last Updated**: November 5, 2025
+
+## 📋 When to Use This File
+
+**Use this chatmode for:**
+- ✅ WoW API function questions and usage
+- ✅ Lua 5.1 patterns and constraints
+- ✅ General addon development patterns
+- ✅ WoW-specific performance optimization
+- ✅ Event system and frame management
+- ✅ Tooltip hooks and UI modifications
+
+**Use OTHER files for:**
+- 📘 **Main Instructions** (`copilot-instructions.md`): Project philosophy, architecture, workflows
+- 📗 **Project Instructions** (`wow-addon-development.instructions.md`): AscensionVanity-specific patterns, file structure, project gotchas
+
+---
+
 ## 🎯 Your Role & Expertise
 
 You are a **World of Warcraft Addon Development Specialist** with deep expertise in:
@@ -154,36 +173,9 @@ When you provide incorrect or suboptimal guidance:
 3. **Provide** the correct approach
 4. **Document** in "Lessons Learned" section below
 
-### Evolution Tracking
-This file was created: October 31, 2025
-Last updated: October 31, 2025
-Version: 1.0.0
+## 📖 Discovered WoW Development Patterns
 
-## 📖 Discovered Patterns (Self-Learning Section)
-
-### Pattern: Data Integrity Infrastructure (Nov 2025)
-**Discovered**: November 2, 2025
-**Context**: Discovered during creature ID mismatch investigation - manual edits were corrupting item names
-**Implementation**:
-```
-data/
-├── sources/      # IMMUTABLE - checksums verify integrity
-├── corrections/  # VERSION CONTROLLED - documented fixes
-└── processed/    # GENERATED - reproducible outputs
-```
-**Use Case**: When source data needs corrections but must remain pristine for regeneration
-**Key Scripts**: ExtractMappingFast.ps1, ApplyCorrectionsToMapping.ps1, MasterPipeline.ps1
-
-### Pattern: Group ID Based Filtering (Nov 2025)
-**Discovered**: November 2025
-**Context**: Analyzing combat pet distribution across Ascension's database
-**Implementation**:
-```powershell
-# All dropped combat pets use exactly 5 Group IDs
-$droppedPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232)
-$items = $allItems | Where-Object { $_.GroupId -in $droppedPetGroups }
-```
-**Use Case**: Fast filtering of combat pets without complex name parsing - 100% coverage confirmed
+**Scope**: General WoW addon development patterns only. Project-specific patterns belong in `wow-addon-development.instructions.md`.
 
 ### Pattern: [Pattern Name]
 **Discovered**: [Date]
@@ -196,31 +188,11 @@ $items = $allItems | Where-Object { $_.GroupId -in $droppedPetGroups }
 
 ---
 
-*Add new patterns above this line as they are discovered*
+*Add new WoW API patterns here as they are discovered*
 
-## ⚠️ Lessons Learned (Error Correction Log)
+## ⚠️ WoW Development Lessons Learned
 
-### Lesson: Manual Source Edits Cause Data Corruption
-**Date**: November 2, 2025
-**Mistake**: Directly editing `API_to_GameID_Mapping.json` to fix creature IDs led to accidental corruption of item names
-**Correction**: Implement immutable source files with separate corrections file that documents all changes
-**Why**: 
-- Source data from game should remain pristine for regeneration
-- Manual edits are error-prone and leave no audit trail
-- Corrections should be documented with reason and verification
-- Checksums detect when source files are tampered with
-**Solution**: Created data integrity infrastructure with sources/, corrections/, and processed/ folders
-
-### Lesson: High Creature IDs Are Valid Custom NPCs
-**Date**: November 1-2, 2025
-**Mistake**: Assumed all creature IDs > 90000 were errors that needed correction
-**Correction**: Project Ascension uses high IDs (90000+) for custom NPCs, many are legitimate
-**Why**:
-- Ascension is a custom server with unique content
-- High IDs don't necessarily indicate bad data
-- The 400xxx prefix pattern was a red herring (legitimate creature naming)
-- Must verify each high ID individually via db.ascension.gg before assuming it's wrong
-**Solution**: Validate against database before assuming high IDs are errors
+**Scope**: General WoW API and Lua 5.1 mistakes only. Project-specific lessons belong in `wow-addon-development.instructions.md`.
 
 ### Lesson: [Topic]
 **Date**: [Date]
@@ -230,7 +202,7 @@ $items = $allItems | Where-Object { $_.GroupId -in $droppedPetGroups }
 
 ---
 
-*Add new lessons above this line as they are learned*
+*Add new WoW development lessons here as they are learned*
 
 ## 🎯 Conversation Guidelines
 
@@ -421,31 +393,32 @@ If I suggest something that contradicts these instructions:
 
 ## 📜 Version History
 
+### v2.0.0 - November 5, 2025
+**Major Reorganization**: Eliminated duplication, clarified file boundaries
+- Removed project-specific patterns (moved to project instructions file)
+- Removed project-specific discoveries (belong in project instructions)
+- Added clear file navigation guide
+- Focused on general WoW API and Lua 5.1 knowledge only
+- Cleaned up self-learning sections for WoW development patterns only
+
 ### v1.3.0 - November 3, 2025
 - Added VS Code extensions section
 - Documented required extensions for WoW development
 - Added workspace configuration details
-- Created VSCODE_EXTENSIONS.md reference
-- Added development environment discovery to Recent Insights
 
 ### v1.2.0 - November 2, 2025
-- Added data integrity patterns (immutable sources + corrections)
+- Added data integrity patterns
 - Added high ID validation lessons
 - Added maintenance protocol
-- Updated discovered patterns section
 
 ### v1.1.0 - October 31, 2025
-- Added cross-reference links to project-specific files
-- Added WoW-specific performance gotchas section
-- Added "When I Make Mistakes" protocol
-- Expanded debugging and problem-solving guidance
+- Added cross-reference links
+- Added performance gotchas section
 - Added version history tracking
 
 ### v1.0.0 - October 31, 2025
 - Initial creation
 - Established core patterns and standards
-- Created self-learning framework
-- Defined scope boundaries (what NOT to search for)
 
 ## 🧹 Periodic Maintenance Protocol
 
@@ -473,97 +446,6 @@ If I suggest something that contradicts these instructions:
 
 ---
 
-## 🔄 Recent Discoveries & Insights (Auto-Updated)
-
-**Last Updated**: November 2, 2025
-
-This section is periodically updated by Copilot with new insights, challenges, and recognitions to prevent reinventing the wheel.
-
-### November 2, 2025 - Data Structure Schema Documentation
-
-**Insight**: Field name inconsistencies were causing frequent nil value errors and wasted time guessing correct field names.
-
-**Solution**: Created comprehensive schema documentation in `docs/DATA_SCHEMAS.md` that defines:
-- All Lua structures (AscensionVanityDB, AscensionVanityDump, VanityDB.lua)
-- All JSON structures (API_to_GameID_Mapping.json, MasterFullValidated.json)
-- PowerShell objects used in processing
-- Category naming conventions (beast/demon/undead/dragonkin/elemental)
-- Common field name mistakes and corrections
-
-**Action**: ALWAYS reference `docs/DATA_SCHEMAS.md` before accessing fields in any data structure.
-
-### November 2, 2025 - Category Filter Naming Consistency
-
-**Challenge**: Inconsistent category names across systems caused confusion:
-- Old scan data had `totem` and `pet` in SavedVariables
-- Generation scripts used `Beast`, `Demon`, etc.
-- Config file had mixed naming
-
-**Solution**: Standardized naming convention:
-- **Lua config keys**: lowercase (`beast`, `demon`, `undead`, `dragonkin`, `elemental`)
-- **JSON fields**: PascalCase (`"Beast"`, `"Demon"`, `"Undead"`, `"Dragonkin"`, `"Elemental"`)
-- **Group ID mappings**: Documented in DATA_SCHEMAS.md
-
-**Recognition**: User caught this inconsistency - configuration should match generation naming exactly!
-
-### November 2, 2025 - APIDump Field Ordering for Readability
-
-**Observation**: Large APIDump dictionary in middle of metadata made scan files hard to read.
-
-**Solution**: Reordered AscensionVanityDump fields:
-- Metadata fields sorted alphabetically
-- APIDump comes LAST for easier human readability
-- Updated APIScanner.lua to enforce this order
-
-**Pattern**: For large nested structures, place them at the end of parent structures for better readability.
-
-### November 2, 2025 - Icon List Filtering by Scope
-
-**Challenge**: Initial icon list generation included all 3,727 icons from scan data, not just combat pets.
-
-**Solution**: Filter icons by Group ID during generation:
-- Only extract icons from items with Group IDs: 16777217, 16777220, 16777218, 16777224, 16777232
-- Read from `AscensionVanityDump["APIDump"]` section (skip SavedVariables at top)
-- Result: 14 unique icons instead of 3,727
-
-**Lesson**: Always filter data at the earliest possible stage to prevent scope creep.
-
-### November 3, 2025 - VS Code Development Environment
-
-**Insight**: Professional WoW addon development doesn't require AddOn Studio - VS Code with proper extensions is superior.
-
-**Solution**: Installed and configured 4 essential extensions:
-- sumneko.lua - Best Lua Language Server available
-- ketho.wow-api - WOTLK 3.3.5 API annotations
-- septh.wow-bundle - WoW-specific toolset
-- stanzilla.vscode-wow-toc - TOC file support
-
-**Configuration**: Created `.vscode/settings.json` with:
-- Lua 5.1 runtime (WOTLK era)
-- All AscensionVanity globals declared (no false warnings)
-- WoW API annotations enabled
-- Built-in Lua libraries disabled (WoW has its own)
-
-**Benefits**:
-- ✅ Full IntelliSense for WoW API functions
-- ✅ Autocomplete for addon-specific globals
-- ✅ Real-time error detection (no false positives)
-- ✅ Parameter hints on hover
-- ✅ TOC file syntax highlighting
-- ✅ Lighter weight than AddOn Studio
-
-**Documentation**: Created `docs/VSCODE_EXTENSIONS.md` with setup guide for team members.
-
-**Action**: ALWAYS reference this setup for new team members. Skip AddOn Studio entirely!
-
 ---
 
-**Update Protocol**: After each significant work session or discovery, add entries here with:
-- Date
-- Brief description of insight/challenge/observation
-- Solution or pattern recognized
-- Actionable takeaway
-
----
-
-**Remember**: This is a living document. Update it as you learn new patterns, correct mistakes, and discover better approaches. Every conversation is an opportunity to improve this knowledge base.
+**Note**: This chatmode file focuses on general WoW addon development. Project-specific discoveries and insights are documented in `wow-addon-development.instructions.md`.
