@@ -42,6 +42,79 @@ function Fail {
     Write-Host $Message -ForegroundColor Red
 }
 
+function Test-UnknownGroupIDs {
+    param(
+        [string]$ScanContent,
+        [array]$KnownGroupIDs
+    )
+    
+    Write-Host "`n[VALIDATION] Checking for unknown Group IDs..." -ForegroundColor Cyan
+    
+    # Extract all items with combat pet category names
+    $combatPetNames = @(
+        "Beastmaster's Whistle:",
+        "Blood Soaked Vellum:",
+        "Summoner's Stone:",
+        "Draconic Warhorn:",
+        "Elemental Lodestone:"
+    )
+    
+    $unknownGroupItems = @()
+    
+    # Parse scan file for items with combat pet names
+    $itemMatches = [regex]::Matches($ScanContent, '\[(\d+)\]\s*=\s*\{[^}]*"name"\]\s*=\s*"([^"]+)"[^}]*"group"\]\s*=\s*(\d+)', 
+                                    [System.Text.RegularExpressions.RegexOptions]::Singleline)
+    
+    foreach ($match in $itemMatches) {
+        $itemId = $match.Groups[1].Value
+        $itemName = $match.Groups[2].Value
+        $groupId = [int]$match.Groups[3].Value
+        
+        # Check if item has combat pet category name
+        $isCombatPet = $false
+        foreach ($prefix in $combatPetNames) {
+            if ($itemName -like "$prefix*") {
+                $isCombatPet = $true
+                break
+            }
+        }
+        
+        # If combat pet name but unknown Group ID, flag it
+        if ($isCombatPet -and $groupId -notin $KnownGroupIDs) {
+            $unknownGroupItems += [PSCustomObject]@{
+                ItemId = $itemId
+                ItemName = $itemName
+                GroupId = $groupId
+            }
+        }
+    }
+    
+    if ($unknownGroupItems.Count -gt 0) {
+        Write-Host "  ⚠ Found $($unknownGroupItems.Count) combat pet items with UNKNOWN Group IDs:" -ForegroundColor Yellow
+        
+        $unknownGroups = $unknownGroupItems | Select-Object -ExpandProperty GroupId -Unique | Sort-Object
+        Write-Host "  Unknown Group IDs: $($unknownGroups -join ', ')" -ForegroundColor Yellow
+        
+        Write-Host "`n  Items affected:" -ForegroundColor Gray
+        foreach ($item in $unknownGroupItems | Select-Object -First 10) {
+            Write-Host "    [$($item.ItemId)] $($item.ItemName) (Group: $($item.GroupId))" -ForegroundColor DarkGray
+        }
+        
+        if ($unknownGroupItems.Count -gt 10) {
+            Write-Host "    ... and $($unknownGroupItems.Count - 10) more" -ForegroundColor DarkGray
+        }
+        
+        Write-Host "`n  ACTION REQUIRED:" -ForegroundColor Red
+        Write-Host "  Add these Group IDs to `$primaryGroupIds in MasterVanityDBPipeline.ps1" -ForegroundColor Yellow
+        Write-Host "  and GenerateVanityDB_Master.ps1 to include these items.`n" -ForegroundColor Yellow
+        
+        return $false
+    } else {
+        Write-Host "  ✓ All combat pet items use known Group IDs" -ForegroundColor Green
+        return $true
+    }
+}
+
 if (-not (Test-Path $ScanFile)) { Fail "Scan file not found: $ScanFile"; exit 1 }
 if (-not (Test-Path $MappingFile)) { Fail "Mapping file not found: $MappingFile"; exit 1 }
 
@@ -70,13 +143,19 @@ $combatPrefixes = @(
     "Draconic Warhorn:",
     "Elemental Lodestone:"
 )
-# Primary Group IDs for legitimate drop-based combat pets (98.5% accuracy - 34 vendor/reward items out of 2,343)
+# All Group IDs for combat pets (8 total - includes dropped + seasonal rewards)
 $primaryGroupIds = @(
+    # Dropped combat pets (5 Group IDs):
     16777217,  # Beastmaster's Whistle (99.1% clean - 8 vendor/purchase items)
     16777220,  # Blood Soaked Vellum (96.6% clean - 19 vendor/purchase items)
     16777218,  # Summoner's Stone (98.5% clean - 4 vendor/purchase items)
     16777224,  # Draconic Warhorn (100% clean - 0 vendor/purchase items)
-    16777232   # Elemental Lodestone (98.9% clean - 3 vendor/purchase items)
+    16777232,  # Elemental Lodestone (98.9% clean - 3 vendor/purchase items)
+    
+    # Seasonal/Event reward pets (3 Group IDs):
+    553648129, # Seasonal rewards (Winter Veil, etc.)
+    553648130, # Seasonal rewards
+    553648136  # Seasonal rewards
 )
 
 # Fallback exclusion keywords (for outlier items with non-primary group IDs)
@@ -108,6 +187,9 @@ if ($apidumpStart -lt 0) { Fail 'APIDump section not found'; exit 1 }
 $apidumpEnd = $scanContent.IndexOf('["LastScanDate"]', $apidumpStart)
 if ($apidumpEnd -lt 0) { Fail 'LastScanDate marker not found'; exit 1 }
 $apidumpSection = $scanContent.Substring($apidumpStart, $apidumpEnd - $apidumpStart)
+
+Step 'Validate Group IDs'
+Test-UnknownGroupIDs -ScanContent $scanContent -KnownGroupIDs $primaryGroupIds | Out-Null
 
 Step 'Parse item blocks'
 $patternIndexed = '\[(\d+)\]\s*=\s*\{([\s\S]*?)\}\s*,?\s*-- \[(\d+)\]'
@@ -146,13 +228,22 @@ foreach ($match in $matches) {
 
     if ($hasValidGroup) {
         # Group ID matched - item is valid, skip other checks for performance
-        # Determine category from group ID
+        # Determine category from group ID or item name (for seasonal rewards)
         $category = switch ($groupId) {
             16777217 { "Beastmaster's Whistle" }
             16777220 { "Blood Soaked Vellum" }
             16777218 { "Summoner's Stone" }
             16777224 { "Draconic Warhorn" }
             16777232 { "Elemental Lodestone" }
+            # Seasonal rewards - derive category from item name prefix
+            { $_ -in @(553648129, 553648130, 553648136) } {
+                if ($name -like "Beastmaster's Whistle:*") { "Beastmaster's Whistle" }
+                elseif ($name -like "Blood Soaked Vellum:*") { "Blood Soaked Vellum" }
+                elseif ($name -like "Summoner's Stone:*") { "Summoner's Stone" }
+                elseif ($name -like "Draconic Warhorn:*") { "Draconic Warhorn" }
+                elseif ($name -like "Elemental Lodestone:*") { "Elemental Lodestone" }
+                else { $null }
+            }
             default { $null }
         }
     } else {
