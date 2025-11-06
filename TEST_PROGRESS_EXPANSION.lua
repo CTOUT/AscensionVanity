@@ -2,7 +2,7 @@
 -- Copy and paste into WoW chat to test functionality
 
 -- 1. Test basic functionality
-/av progress
+/avanity progress
 -- Click + button on Beast category, verify pet names appear
 -- Click - button to collapse, verify pets disappear
 

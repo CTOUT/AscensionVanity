@@ -178,5 +178,5 @@ Write-Host ""
 Write-Host "To test in-game:" -ForegroundColor $colorInfo
 Write-Host "  1. Launch World of Warcraft" -ForegroundColor Gray
 Write-Host "  2. Type /reload to reload UI" -ForegroundColor Gray
-Write-Host "  3. Type /av help to verify addon loaded" -ForegroundColor Gray
+Write-Host "  3. Type /avanity help to verify addon loaded" -ForegroundColor Gray
 Write-Host ""

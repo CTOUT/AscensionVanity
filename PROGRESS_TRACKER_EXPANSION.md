@@ -115,7 +115,7 @@ local categoryPrefixes = {
 ## Testing Checklist
 
 ### Basic Functionality
-- [ ] Open Progress Tracker (`/av progress`)
+- [ ] Open Progress Tracker (`/avanity progress`)
 - [ ] Click category expand button (+)
   - [ ] Button changes to (-)
   - [ ] Pet names appear below category bar
@@ -185,7 +185,7 @@ local categoryPrefixes = {
 
 ## Next Steps
 
-1. **Test in-game** with `/reload` and `/av progress`
+1. **Test in-game** with `/reload` and `/avanity progress`
 2. **Verify** expand/collapse functionality works correctly
 3. **Check** frame resizing in different scenarios
 4. **Validate** zone view behavior (empty category hiding)
@@ -198,4 +198,4 @@ local categoryPrefixes = {
 
 ---
 
-**Status**: Ready for testing. Deploy with `.\DeployAddon.ps1` and test in-game with `/av progress`.
+**Status**: Ready for testing. Deploy with `.\DeployAddon.ps1` and test in-game with `/avanity progress`.
