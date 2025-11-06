@@ -425,23 +425,28 @@ local function AddVanityInfoToTooltip(tooltip, unit)
             tooltip:AddLine(COLOR_VANITY_HEADER .. "Vanity Items:" .. COLOR_RESET)
             
             -- Add each filtered vanity item
-            for _, itemInfo in ipairs(filteredItems) do
+            for i, itemInfo in ipairs(filteredItems) do
                 local itemID = itemInfo.id
                 local itemData = itemInfo.data
                 local itemName = itemInfo.name
+                
+                -- Add subtle separator between items (except before first item)
+                if i > 1 then
+                    tooltip:AddLine(" ")  -- Blank line between items for readability
+                end
                 
                 -- Use actual item icon from database (if available)
                 local itemIcon = ""
                     if itemData.icon and itemData.icon ~= "" then
                         -- Format icon properly with Interface\Icons\ path
-                        -- Using 14px icon with extra spacing to prevent text overlap
-                        itemIcon = "|TInterface\\Icons\\" .. itemData.icon .. ":14:14:0:0:64:64:4:60:4:60|t  "
+                        -- Using 14px icon with single space for cleaner appearance
+                        itemIcon = "|TInterface\\Icons\\" .. itemData.icon .. ":14:14:0:0:64:64:4:60:4:60|t "
                         DebugPrint("Using database icon:", itemData.icon)
                     else
                         -- Fallback to category-based icon detection
                         for itemType, icon in pairs(ITEM_ICONS) do
                             if string.find(itemName, itemType, 1, true) then
-                                itemIcon = icon .. "  "  -- Double space for better separation
+                                itemIcon = icon .. " "  -- Single space for cleaner appearance
                                 DebugPrint("Using category icon for:", itemType)
                                 break
                             end
@@ -456,35 +461,36 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         local isLearned = AV_IsVanityItemLearned(itemID, itemName)
                         
                         if isLearned == true then
-                            -- Learned: Green checkmark + item
-                            local checkmark = "|TInterface\\RaidFrame\\ReadyCheck-Ready:16|t"
+                            -- Learned: Green checkmark + item (14px icon for consistency)
+                            local checkmark = "|TInterface\\RaidFrame\\ReadyCheck-Ready:14:14|t"
                             if AscensionVanityDB.colorCode then
                                 itemText = checkmark .. " " .. COLOR_VANITY_LEARNED .. itemText .. COLOR_RESET
                             else
                                 itemText = checkmark .. " " .. itemText
                             end
                         elseif isLearned == false then
-                            -- Unlearned: Red cross + item
-                            local cross = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:16|t"
+                            -- Unlearned: Red cross + item (14px icon for consistency)
+                            local cross = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:14:14|t"
                             if AscensionVanityDB.colorCode then
                                 itemText = cross .. " " .. COLOR_VANITY_UNLEARNED .. itemText .. COLOR_RESET
                             else
                                 itemText = cross .. " " .. itemText
                             end
                         else
-                            -- Unknown status: No indicator, just 3 spaces for alignment
-                            itemText = "   " .. itemText
+                            -- Unknown status: No indicator, 2 spaces for alignment
+                            itemText = "  " .. itemText
                         end
                     else
-                        -- Learned status disabled: No indicator, just 3 spaces for alignment
-                        itemText = "   " .. itemText
+                        -- Learned status disabled: No indicator, 2 spaces for alignment
+                        itemText = "  " .. itemText
                     end
                     
                 tooltip:AddLine(itemText, 1, 1, 1, true) -- White text, word wrap enabled
                 
                 -- Add Item ID on separate line if enabled (v2.2)
+                -- Consistent 4-space indent for all sub-info
                 if AscensionVanityDB.showIDs then
-                    local itemIDText = "      " .. AV_COLOR_GRAY .. "Item ID: " .. AV_COLOR_WHITE .. itemID .. AV_COLOR_RESET
+                    local itemIDText = "    " .. AV_COLOR_GRAY .. "ID: " .. AV_COLOR_WHITE .. itemID .. AV_COLOR_RESET
                     tooltip:AddLine(itemIDText, 1, 1, 1, true)
                 end
                 
@@ -492,7 +498,7 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                 if AscensionVanityDB.showRegions then
                     local region = AV_GetItemRegion(itemID)
                     if region and region ~= "" then
-                        local regionText = "      |cFF888888Location: " .. region .. COLOR_RESET
+                        local regionText = "    " .. AV_COLOR_GRAY .. "Location: " .. AV_COLOR_WHITE .. region .. COLOR_RESET
                         tooltip:AddLine(regionText, 1, 1, 1, true)
                     end
                 end
@@ -533,50 +539,45 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                             end
                         end
                         
-                        -- High-visibility warning header (color-coded by quest status)
-                        local warningHeader
+                        -- Condensed quest warning (single line with icon + status)
+                        local statusIcon, statusColor, statusText
                         if questCompleted then
                             -- Already completed - RED (too late!)
-                            warningHeader = "      " .. AV_COLOR_RED .. "[!] QUEST ALREADY COMPLETED - NPC UNAVAILABLE!" .. AV_COLOR_RESET
+                            statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:12:12|t"
+                            statusColor = AV_COLOR_RED
+                            statusText = "Completed"
                         elseif questActive then
                             -- Quest is active - GREEN (farm now!)
-                            warningHeader = "      " .. AV_COLOR_GREEN .. "[!] QUEST-LOCKED NPC - FARM NOW!" .. AV_COLOR_RESET
+                            statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-Ready:12:12|t"
+                            statusColor = AV_COLOR_GREEN
+                            statusText = "Active - Farm Now!"
                         else
                             -- Haven't started quest yet - ORANGE (warning)
-                            warningHeader = "      " .. AV_COLOR_BRIGHT_ORANGE .. "[!] QUEST-LOCKED NPC!" .. AV_COLOR_RESET
-                        end
-                        tooltip:AddLine(warningHeader, 1, 1, 1, true)
-                        
-                        -- Quest information
-                        local questInfo = string.format("      " .. AV_COLOR_GOLD .. "Quest: \"%s\" (ID: %d)" .. AV_COLOR_RESET, 
-                            questLock.questName, questLock.questId)
-                        tooltip:AddLine(questInfo, 1, 1, 1, true)
-                        
-                        -- Quest status indicator
-                        if questCompleted then
-                            tooltip:AddLine("      " .. AV_COLOR_RED .. "[X] Quest Completed - Too Late!" .. AV_COLOR_RESET, 1, 1, 1, true)
-                        elseif questActive then
-                            tooltip:AddLine("      " .. AV_COLOR_GREEN .. "[Active] Quest Active - Farm Before Completing!" .. AV_COLOR_RESET, 1, 1, 1, true)
-                        else
-                            tooltip:AddLine("      " .. AV_COLOR_ORANGE .. "[-] Quest Not Started" .. AV_COLOR_RESET, 1, 1, 1, true)
+                            statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-Waiting:12:12|t"
+                            statusColor = AV_COLOR_BRIGHT_ORANGE
+                            statusText = "Not Started"
                         end
                         
-                        -- Faction indicator (if not Both)
-                        if questLock.faction and questLock.faction ~= "Both" then
-                            local factionText = "      " .. AV_COLOR_LIGHT_RED .. questLock.faction .. " Only" .. AV_COLOR_RESET
-                            tooltip:AddLine(factionText, 1, 1, 1, true)
-                        end
+                        -- Single condensed line: Icon + Quest Name + Status
+                        local questLine = string.format("    %s %sQuest: %s%s (%s)%s", 
+                            statusIcon,
+                            AV_COLOR_GOLD,
+                            questLock.questName,
+                            statusColor,
+                            statusText,
+                            AV_COLOR_RESET
+                        )
+                        tooltip:AddLine(questLine, 1, 1, 1, true)
                         
-                        -- Custom warning message
-                        if questLock.warning and questLock.warning ~= "" then
-                            local warningText = "      " .. AV_COLOR_PINK .. questLock.warning .. AV_COLOR_RESET
+                        -- Optional second line for faction restrictions or critical warnings
+                        if questCompleted and questLock.warning then
+                            -- Show warning for completed quests (NPC despawned)
+                            local warningText = "    " .. AV_COLOR_RED .. "⚠ " .. questLock.warning .. AV_COLOR_RESET
                             tooltip:AddLine(warningText, 1, 1, 1, true)
-                        end
-                        
-                        -- Additional notes (summon method, respawn info, etc.)
-                        if questLock.notes and questLock.notes ~= "" then
-                            local notesText = "      " .. AV_COLOR_LIGHT_GRAY .. questLock.notes .. AV_COLOR_RESET
-                            tooltip:AddLine(notesText, 1, 1, 1, true)
+                        elseif questLock.faction and questLock.faction ~= "Both" then
+                            -- Show faction restriction
+                            local factionText = "    " .. AV_COLOR_LIGHT_RED .. questLock.faction .. " Only" .. AV_COLOR_RESET
+                            tooltip:AddLine(factionText, 1, 1, 1, true)
                         end
                     end
                 end

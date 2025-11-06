@@ -56,8 +56,8 @@ closeButton:SetPoint("TOPRIGHT", browserFrame, "TOPRIGHT", -5, -5)
 -- ============================================================================
 
 local filterSection = CreateFrame("Frame", nil, browserFrame)
-filterSection:SetPoint("TOPLEFT", browserFrame, "TOPLEFT", 15, -40)
-filterSection:SetPoint("TOPRIGHT", browserFrame, "TOPRIGHT", -15, -40)
+filterSection:SetPoint("TOPLEFT", browserFrame, "TOPLEFT", 15, -30)
+filterSection:SetPoint("TOPRIGHT", browserFrame, "TOPRIGHT", -15, -30)
 filterSection:SetHeight(120)
 
 -- Zone Filter Label
@@ -65,27 +65,14 @@ local zoneLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal
 zoneLabel:SetPoint("TOPLEFT", filterSection, "TOPLEFT", 0, 0)
 zoneLabel:SetText("|cFFFFFFFFZone Filter:|r")
 
--- Current Zone Button
-local currentZoneButton = CreateFrame("Button", nil, filterSection, "UIPanelButtonTemplate")
-currentZoneButton:SetSize(150, 25)
-currentZoneButton:SetPoint("TOPLEFT", zoneLabel, "BOTTOMLEFT", 0, -5)
-currentZoneButton:SetText("Current Zone")
-currentZoneButton:SetScript("OnClick", function()
-    AV_DatabaseBrowser_FilterToCurrentZone()
-end)
-
--- All Zones Button
-local allZonesButton = CreateFrame("Button", nil, filterSection, "UIPanelButtonTemplate")
-allZonesButton:SetSize(150, 25)
-allZonesButton:SetPoint("LEFT", currentZoneButton, "RIGHT", 5, 0)
-allZonesButton:SetText("All Zones")
-allZonesButton:SetScript("OnClick", function()
-    AV_DatabaseBrowser_ShowAllZones()
-end)
+-- Comprehensive Zone/Subzone Dropdown with search
+local zoneDropdown = CreateFrame("Frame", "AV_ZoneDropdown", filterSection, "UIDropDownMenuTemplate")
+zoneDropdown:SetPoint("TOPLEFT", zoneLabel, "BOTTOMLEFT", -15, -5)
+UIDropDownMenu_SetWidth(zoneDropdown, 200)
 
 -- Category Filter Label
 local categoryLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-categoryLabel:SetPoint("TOPLEFT", currentZoneButton, "BOTTOMLEFT", 0, -10)
+categoryLabel:SetPoint("TOPLEFT", zoneLabel, "BOTTOMLEFT", 0, -40)
 categoryLabel:SetText("|cFFFFFFFFCategory Filter:|r")
 
 -- Category buttons
@@ -105,32 +92,26 @@ local buttonSpacing = 5
 for i, cat in ipairs(categories) do
     local btn = CreateFrame("Button", nil, filterSection, "UIPanelButtonTemplate")
     btn:SetSize(buttonWidth, 22)
-    
-    -- Position in rows of 3
-    local row = math.floor((i - 1) / 3)
-    local col = (i - 1) % 3
-    btn:SetPoint("TOPLEFT", categoryLabel, "BOTTOMLEFT", col * (buttonWidth + buttonSpacing), -5 - (row * 27))
-    
+    btn:SetPoint("TOPLEFT", categoryLabel, "BOTTOMLEFT", (i - 1) * (buttonWidth + buttonSpacing), -5)
     btn:SetText(cat.color .. cat.name .. "|r")
     btn.category = cat.key
     btn:SetScript("OnClick", function()
         AV_DatabaseBrowser_FilterByCategory(cat.key)
     end)
-    
     categoryButtons[cat.key] = btn
 end
 
 -- Learned Status Filter Label
 local learnedLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-learnedLabel:SetPoint("TOPLEFT", categoryButtons["undead"], "BOTTOMLEFT", 0, -10)
+learnedLabel:SetPoint("TOPLEFT", categoryLabel, "BOTTOMLEFT", 0, -32)
 learnedLabel:SetText("|cFFFFFFFFShow:|r")
 
 -- Learned status buttons
 local learnedButtons = {}
 local learnedOptions = {
-    {key = "all", name = "All Items"},
-    {key = "unlearned", name = "Unlearned Only"},
-    {key = "learned", name = "Learned Only"}
+    {key = "all", name = "All"},
+    {key = "unlearned", name = "Unlearned"},
+    {key = "learned", name = "Learned"}
 }
 
 for i, opt in ipairs(learnedOptions) do
@@ -142,55 +123,62 @@ for i, opt in ipairs(learnedOptions) do
     btn:SetScript("OnClick", function()
         AV_DatabaseBrowser_FilterByLearnedStatus(opt.key)
     end)
-    
     learnedButtons[opt.key] = btn
 end
 
 -- ============================================================================
--- Browser State (must be defined before UI elements that reference it)
+-- Browser State
 -- ============================================================================
 
 local browserState = {
     currentZone = nil,
-    zoneFilter = "all", -- "all" or specific zone name
+    zoneFilter = "all",
     categoryFilter = "all",
     learnedFilter = "all",
+    multipleItemsFilter = false,
+    subzoneFilter = nil,
     filteredData = {},
     displayedEntries = {},
-    -- Pagination
     currentPage = 1,
-    itemsPerPage = 50,
+    itemsPerPage = 18,
     totalPages = 1
 }
+
+-- Multiple Items Filter - CHECKBOX
+local multipleItemsCheckbox = CreateFrame("CheckButton", nil, filterSection, "UICheckButtonTemplate")
+multipleItemsCheckbox:SetSize(22, 22)
+multipleItemsCheckbox:SetPoint("TOPLEFT", learnedLabel, "BOTTOMLEFT", 3 * (buttonWidth + buttonSpacing), -5)
+multipleItemsCheckbox:SetScript("OnClick", function(self)
+    browserState.multipleItemsFilter = self:GetChecked()
+    browserState.currentPage = 1
+    AV_DatabaseBrowser_RefreshDisplay()
+end)
+
+local multipleItemsLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+multipleItemsLabel:SetPoint("LEFT", multipleItemsCheckbox, "RIGHT", 2, 0)
+multipleItemsLabel:SetText("|cFFFFFFFFMulti-Drop|r")
 
 -- ============================================================================
 -- Results Section
 -- ============================================================================
 
 local resultsLabel = browserFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-resultsLabel:SetPoint("TOPLEFT", filterSection, "BOTTOMLEFT", 0, -10)
+resultsLabel:SetPoint("TOPLEFT", filterSection, "BOTTOMLEFT", 0, -20)
 resultsLabel:SetText("|cFFFFFFFFResults:|r Loading...")
 
--- ScrollFrame for creature list (positioned between results and pagination)
-local scrollFrame = CreateFrame("ScrollFrame", "AV_DatabaseBrowser_ScrollFrame", browserFrame, "UIPanelScrollFrameTemplate")
-scrollFrame:SetPoint("TOPLEFT", resultsLabel, "BOTTOMLEFT", 0, -5)
-scrollFrame:SetPoint("BOTTOMRIGHT", browserFrame, "BOTTOMRIGHT", -30, 40)  -- Leave room for pagination at bottom
-
-local scrollChild = CreateFrame("Frame", nil, scrollFrame)
-scrollChild:SetSize(scrollFrame:GetWidth() - 20, 1)
-scrollFrame:SetScrollChild(scrollChild)
+local displayContainer = CreateFrame("Frame", nil, browserFrame)
+displayContainer:SetPoint("TOPLEFT", resultsLabel, "BOTTOMLEFT", 0, -5)
+displayContainer:SetPoint("BOTTOMRIGHT", browserFrame, "BOTTOMRIGHT", -10, 40)
 
 -- ============================================================================
--- Pagination Controls (Bottom of Frame)
+-- Pagination Controls
 -- ============================================================================
 
--- Pagination Frame - anchored to bottom of browser frame
 local paginationFrame = CreateFrame("Frame", nil, browserFrame)
 paginationFrame:SetSize(550, 30)
 paginationFrame:SetPoint("BOTTOMLEFT", browserFrame, "BOTTOMLEFT", 10, 10)
 paginationFrame:SetPoint("BOTTOMRIGHT", browserFrame, "BOTTOMRIGHT", -10, 10)
 
--- Previous Page Button
 local prevButton = CreateFrame("Button", nil, paginationFrame, "UIPanelButtonTemplate")
 prevButton:SetSize(80, 22)
 prevButton:SetPoint("LEFT", paginationFrame, "LEFT", 0, 0)
@@ -198,16 +186,55 @@ prevButton:SetText("< Previous")
 prevButton:SetScript("OnClick", function()
     if browserState.currentPage > 1 then
         browserState.currentPage = browserState.currentPage - 1
-        AV_DatabaseBrowser_RefreshDisplay()
+    else
+        browserState.currentPage = browserState.totalPages
     end
+    AV_DatabaseBrowser_RefreshDisplay()
 end)
 
--- Page Info Label
-local pageLabel = paginationFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-pageLabel:SetPoint("CENTER", paginationFrame, "CENTER", 0, 0)
+local pageButton = CreateFrame("Button", nil, paginationFrame)
+pageButton:SetSize(100, 22)
+pageButton:SetPoint("CENTER", paginationFrame, "CENTER", 0, 0)
+
+local pageLabel = pageButton:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+pageLabel:SetPoint("CENTER", pageButton, "CENTER", 0, 0)
 pageLabel:SetText("Page 1 of 1")
 
--- Next Page Button
+pageButton:SetScript("OnEnter", function(self)
+    pageLabel:SetTextColor(1, 1, 0)
+end)
+pageButton:SetScript("OnLeave", function(self)
+    pageLabel:SetTextColor(1, 1, 1)
+end)
+pageButton:SetScript("OnClick", function()
+    StaticPopupDialogs["AV_JUMP_TO_PAGE"] = {
+        text = "Enter page number (1-" .. browserState.totalPages .. "):",
+        button1 = "Go",
+        button2 = "Cancel",
+        hasEditBox = true,
+        maxLetters = 4,
+        OnShow = function(self)
+            self.editBox:SetText(tostring(browserState.currentPage))
+            self.editBox:SetFocus()
+            self.editBox:HighlightText()
+        end,
+        OnAccept = function(self)
+            local page = tonumber(self.editBox:GetText())
+            if page and page >= 1 and page <= browserState.totalPages then
+                browserState.currentPage = page
+                AV_DatabaseBrowser_RefreshDisplay()
+            else
+                print("|cFF00FF96AscensionVanity:|r Invalid page number. Must be between 1 and " .. browserState.totalPages)
+            end
+        end,
+        timeout = 0,
+        whileDead = true,
+        hideOnEscape = true,
+        preferredIndex = 3,
+    }
+    StaticPopup_Show("AV_JUMP_TO_PAGE")
+end)
+
 local nextButton = CreateFrame("Button", nil, paginationFrame, "UIPanelButtonTemplate")
 nextButton:SetSize(80, 22)
 nextButton:SetPoint("RIGHT", paginationFrame, "RIGHT", 0, 0)
@@ -215,11 +242,12 @@ nextButton:SetText("Next >")
 nextButton:SetScript("OnClick", function()
     if browserState.currentPage < browserState.totalPages then
         browserState.currentPage = browserState.currentPage + 1
-        AV_DatabaseBrowser_RefreshDisplay()
+    else
+        browserState.currentPage = 1
     end
+    AV_DatabaseBrowser_RefreshDisplay()
 end)
 
--- Store references to pagination controls for updates
 browserState.paginationControls = {
     pageLabel = pageLabel,
     prevButton = prevButton,
@@ -230,16 +258,153 @@ browserState.paginationControls = {
 -- Data Loading and Filtering
 -- ============================================================================
 
--- Get current zone
 local function GetCurrentZone()
     return GetZoneText() or "Unknown"
 end
 
--- Build creature data from VanityDB
+-- Build hierarchical zone/subzone list from database
+local function BuildZoneHierarchy()
+    local zones = {}
+    local zoneSet = {}
+    
+    -- Collect all zones and their subzones from the database
+    for _, data in pairs(AV_VanityItems) do
+        local zone = data.zone or "Unknown"
+        local subzone = data.subzone or ""
+        
+        if not zoneSet[zone] then
+            zoneSet[zone] = {subzones = {}}
+            table.insert(zones, zone)
+        end
+        
+        if subzone ~= "" and not zoneSet[zone].subzones[subzone] then
+            zoneSet[zone].subzones[subzone] = true
+        end
+    end
+    
+    -- Sort zones alphabetically
+    table.sort(zones)
+    
+    -- Convert subzones to sorted arrays
+    for _, zone in ipairs(zones) do
+        local subzoneList = {}
+        for subzone in pairs(zoneSet[zone].subzones) do
+            table.insert(subzoneList, subzone)
+        end
+        table.sort(subzoneList)
+        zoneSet[zone].subzones = subzoneList
+    end
+    
+    return zones, zoneSet
+end
+
+-- Initialize zone dropdown
+local function InitializeZoneDropdown()
+    local zones, zoneData = BuildZoneHierarchy()
+    
+    UIDropDownMenu_SetText(zoneDropdown, browserState.subzoneFilter or browserState.zoneFilter == "all" and "All Zones" or browserState.zoneFilter)
+    
+    UIDropDownMenu_Initialize(zoneDropdown, function(self, level, menuList)
+        if level == 1 then
+            -- "All Zones" option
+            local info = UIDropDownMenu_CreateInfo()
+            info.text = "All Zones"
+            info.value = "all"
+            info.checked = (browserState.zoneFilter == "all")
+            info.func = function()
+                browserState.zoneFilter = "all"
+                browserState.subzoneFilter = nil
+                browserState.currentPage = 1
+                UIDropDownMenu_SetText(zoneDropdown, "All Zones")
+                titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
+                RefreshDisplay()
+            end
+            UIDropDownMenu_AddButton(info, level)
+            
+            -- "Current Zone" option
+            local currentZone = GetCurrentZone()
+            local info2 = UIDropDownMenu_CreateInfo()
+            info2.text = "|cFF00FF96Current Zone:|r " .. currentZone
+            info2.value = currentZone
+            info2.checked = (browserState.zoneFilter == currentZone and not browserState.subzoneFilter)
+            info2.func = function()
+                browserState.zoneFilter = currentZone
+                browserState.subzoneFilter = nil
+                browserState.currentPage = 1
+                UIDropDownMenu_SetText(zoneDropdown, currentZone)
+                titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. currentZone)
+                RefreshDisplay()
+            end
+            UIDropDownMenu_AddButton(info2, level)
+            
+            -- Separator
+            UIDropDownMenu_AddSeparator(level)
+            
+            -- All zones with subzones
+            for _, zone in ipairs(zones) do
+                local info = UIDropDownMenu_CreateInfo()
+                info.text = zone
+                info.value = zone
+                info.checked = (browserState.zoneFilter == zone and not browserState.subzoneFilter)
+                info.hasArrow = (#zoneData[zone].subzones > 0)  -- Show arrow if has subzones
+                info.menuList = zone  -- For submenu
+                info.func = function()
+                    if not info.hasArrow then
+                        -- Zone has no subzones, select it directly
+                        browserState.zoneFilter = zone
+                        browserState.subzoneFilter = nil
+                        browserState.currentPage = 1
+                        UIDropDownMenu_SetText(zoneDropdown, zone)
+                        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. zone)
+                        RefreshDisplay()
+                    end
+                end
+                UIDropDownMenu_AddButton(info, level)
+            end
+            
+        elseif level == 2 then
+            -- Subzone submenu
+            local zoneName = menuList
+            local info = UIDropDownMenu_CreateInfo()
+            info.text = zoneName .. " (All)"
+            info.value = zoneName
+            info.checked = (browserState.zoneFilter == zoneName and not browserState.subzoneFilter)
+            info.func = function()
+                browserState.zoneFilter = zoneName
+                browserState.subzoneFilter = nil
+                browserState.currentPage = 1
+                UIDropDownMenu_SetText(zoneDropdown, zoneName)
+                titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. zoneName)
+                RefreshDisplay()
+            end
+            UIDropDownMenu_AddButton(info, level)
+            
+            -- Add separator
+            UIDropDownMenu_AddSeparator(level)
+            
+            -- Subzones
+            for _, subzone in ipairs(zoneData[zoneName].subzones) do
+                local info = UIDropDownMenu_CreateInfo()
+                info.text = "  " .. subzone
+                info.value = zoneName .. ":" .. subzone
+                info.checked = (browserState.zoneFilter == zoneName and browserState.subzoneFilter == subzone)
+                info.func = function()
+                    browserState.zoneFilter = zoneName
+                    browserState.subzoneFilter = subzone
+                    browserState.currentPage = 1
+                    UIDropDownMenu_SetText(zoneDropdown, subzone)
+                    titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. zoneName .. " (" .. subzone .. ")")
+                    RefreshDisplay()
+                end
+                UIDropDownMenu_AddButton(info, level)
+            end
+        end
+    end)
+end
+
 local function BuildCreatureList()
     local creatures = {}
     
-    -- Helper: Extract category from item name prefix
     local function GetCategoryFromName(itemName)
         if itemName:find("Beastmaster's Whistle", 1, true) then
             return "beast"
@@ -255,24 +420,19 @@ local function BuildCreatureList()
         return "unknown"
     end
     
-    -- Helper: Extract pet name from full item name
     local function GetPetName(fullName)
-        -- Extract text after ": " (e.g., "Beastmaster's Whistle: Young Wolf" -> "Young Wolf")
         local petName = fullName:match(": (.+)$")
         return petName or fullName
     end
     
-    -- Build creature index from VanityDB
-    -- Group items by creature ID to get all drops per creature
     for itemId, data in pairs(AV_VanityItems) do
         local creatureId = data.creatureId or 0
         local creatureKey = "creature_" .. creatureId
         
         if not creatures[creatureKey] then
-            -- Initialize creature entry
             creatures[creatureKey] = {
                 creatureId = creatureId,
-                name = GetPetName(data.name),  -- Use first pet as creature name
+                name = GetPetName(data.name),
                 category = GetCategoryFromName(data.name),
                 zone = data.zone or "Unknown",
                 subzone = data.subzone or "",
@@ -280,7 +440,6 @@ local function BuildCreatureList()
             }
         end
         
-        -- Add item to this creature's drops
         table.insert(creatures[creatureKey].items, {
             id = itemId,
             name = GetPetName(data.name),
@@ -291,7 +450,6 @@ local function BuildCreatureList()
     return creatures
 end
 
--- Filter creatures based on current browser state
 local function ApplyFilters()
     local allCreatures = BuildCreatureList()
     local filtered = {}
@@ -299,21 +457,24 @@ local function ApplyFilters()
     for creatureName, creatureData in pairs(allCreatures) do
         local includeCreature = true
         
-        -- Zone filter
         if browserState.zoneFilter ~= "all" then
             if creatureData.zone ~= browserState.zoneFilter then
                 includeCreature = false
             end
         end
         
-        -- Category filter
+        if includeCreature and browserState.subzoneFilter and browserState.subzoneFilter ~= "" then
+            if (creatureData.subzone or "") ~= browserState.subzoneFilter then
+                includeCreature = false
+            end
+        end
+        
         if includeCreature and browserState.categoryFilter ~= "all" then
             if creatureData.category ~= browserState.categoryFilter then
                 includeCreature = false
             end
         end
         
-        -- Learned status filter
         if includeCreature and browserState.learnedFilter ~= "all" then
             local hasUnlearned = false
             local hasLearned = false
@@ -334,6 +495,12 @@ local function ApplyFilters()
             end
         end
         
+        if includeCreature and browserState.multipleItemsFilter then
+            if #creatureData.items < 2 then
+                includeCreature = false
+            end
+        end
+        
         if includeCreature then
             filtered[creatureName] = creatureData
         end
@@ -343,11 +510,12 @@ local function ApplyFilters()
     return filtered
 end
 
+
+
 -- ============================================================================
 -- Display Functions
 -- ============================================================================
 
--- Clear displayed entries
 local function ClearDisplayedEntries()
     for _, entry in ipairs(browserState.displayedEntries) do
         entry:Hide()
@@ -356,70 +524,61 @@ local function ClearDisplayedEntries()
     wipe(browserState.displayedEntries)
 end
 
--- Create a creature entry display
-local function CreateCreatureEntry(parent, yOffset, creatureData)
+local function CreateCreatureEntry(parent, xOffset, yOffset, width, height, creatureData)
     local entry = CreateFrame("Frame", nil, parent)
-    entry:SetSize(parent:GetWidth() - 10, 60)
-    entry:SetPoint("TOPLEFT", parent, "TOPLEFT", 5, yOffset)
+    entry:SetSize(width - 10, height)  -- Add padding
+    entry:SetPoint("TOPLEFT", parent, "TOPLEFT", xOffset + 5, yOffset)
     
-    -- Background
     entry.bg = entry:CreateTexture(nil, "BACKGROUND")
     entry.bg:SetAllPoints()
     entry.bg:SetColorTexture(0.1, 0.1, 0.1, 0.5)
     
-    -- Creature name
-    entry.nameText = entry:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    entry.nameText:SetPoint("TOPLEFT", entry, "TOPLEFT", 5, -5)
+    entry.nameText = entry:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    entry.nameText:SetPoint("TOPLEFT", entry, "TOPLEFT", 3, -3)
+    entry.nameText:SetWidth(width - 6)
+    entry.nameText:SetJustifyH("LEFT")
     entry.nameText:SetText("|cFFFFFFFF" .. (creatureData.name or "Unknown") .. "|r")
     
-    -- Location
-    local location = creatureData.zone or "Unknown Zone"
-    if creatureData.subzone then
-        location = location .. " (" .. creatureData.subzone .. ")"
-    end
-    entry.locationText = entry:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    entry.locationText:SetPoint("TOPLEFT", entry.nameText, "BOTTOMLEFT", 0, -2)
+    local location = creatureData.zone or "Unknown"
+    entry.locationText = entry:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    entry.locationText:SetPoint("TOPLEFT", entry.nameText, "BOTTOMLEFT", 0, -1)
+    entry.locationText:SetWidth(width - 6)
+    entry.locationText:SetJustifyH("LEFT")
     entry.locationText:SetText("|cFF808080" .. location .. "|r")
     
-    -- Items
-    local itemY = -30
-    for i, item in ipairs(creatureData.items) do
-        local itemText = entry:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-        itemText:SetPoint("TOPLEFT", entry, "TOPLEFT", 15, itemY)
-        
-        local isLearned = AV_IsVanityItemLearned(item.id)
-        local color = isLearned and "|cFF00FF00" or "|cFFFFFFFF"
-        local status = isLearned and " ✓" or ""
-        
-        itemText:SetText(color .. item.name .. status .. "|r")
-        itemY = itemY - 14
+    local learnedCount = 0
+    for _, item in ipairs(creatureData.items) do
+        if AV_IsVanityItemLearned(item.id) then
+            learnedCount = learnedCount + 1
+        end
     end
     
-    -- Adjust entry height based on number of items
-    local calculatedHeight = 35 + (#creatureData.items * 14)
-    entry:SetHeight(calculatedHeight)
+    local itemCountText = entry:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    itemCountText:SetPoint("TOPLEFT", entry.locationText, "BOTTOMLEFT", 0, -2)
     
-    return entry, calculatedHeight
+    local countColor = learnedCount > 0 and "|cFF00FF00" or "|cFFFFFFFF"
+    local checkIcon = learnedCount > 0 and "|TInterface\\RaidFrame\\ReadyCheck-Ready:10:10|t " or ""
+    itemCountText:SetText(checkIcon .. countColor .. learnedCount .. "/" .. #creatureData.items .. " items|r")
+    
+    return entry
 end
 
--- Refresh the display
 local function RefreshDisplay()
     ClearDisplayedEntries()
     
     local filtered = ApplyFilters()
     
-    -- Sort creatures alphabetically
     local sortedCreatures = {}
     for name, data in pairs(filtered) do
-        table.insert(sortedCreatures, {name = name, data = data})
+        table.insert(sortedCreatures, {name = (data.name or name), data = data})
     end
-    table.sort(sortedCreatures, function(a, b) return a.name < b.name end)
+    table.sort(sortedCreatures, function(a, b)
+        return string.lower(a.name) < string.lower(b.name)
+    end)
     
-    -- Calculate pagination
     local totalCount = #sortedCreatures
     browserState.totalPages = math.max(1, math.ceil(totalCount / browserState.itemsPerPage))
     
-    -- Clamp current page to valid range
     if browserState.currentPage > browserState.totalPages then
         browserState.currentPage = browserState.totalPages
     end
@@ -427,62 +586,78 @@ local function RefreshDisplay()
         browserState.currentPage = 1
     end
     
-    -- Calculate page slice
     local startIdx = ((browserState.currentPage - 1) * browserState.itemsPerPage) + 1
     local endIdx = math.min(startIdx + browserState.itemsPerPage - 1, totalCount)
     
-    -- Update results label with pagination info
     local filterDesc = "All Zones"
     if browserState.zoneFilter ~= "all" then
         filterDesc = browserState.zoneFilter
     end
     
     resultsLabel:SetText(string.format(
-        "|cFFFFFFFFResults:|r %d creatures in %s (showing %d-%d)", 
+        "|cFFFFFFFFResults:|r %d creatures in %s (showing %d-%d)",
         totalCount, filterDesc, startIdx, endIdx
     ))
     
-    -- Update pagination controls (use stored references)
     if browserState.paginationControls then
         local controls = browserState.paginationControls
         controls.pageLabel:SetText(string.format("Page %d of %d", browserState.currentPage, browserState.totalPages))
-        controls.prevButton:SetEnabled(browserState.currentPage > 1)
-        controls.nextButton:SetEnabled(browserState.currentPage < browserState.totalPages)
-    end
-    
-    -- Create entries for current page only
-    local yOffset = 0
-    for i = startIdx, endIdx do
-        local creature = sortedCreatures[i]
-        if creature then
-            local entry, height = CreateCreatureEntry(scrollChild, yOffset, creature.data)
-            table.insert(browserState.displayedEntries, entry)
-            yOffset = yOffset - height - 5
+        if browserState.totalPages > 1 then
+            controls.prevButton:SetEnabled(true)
+            controls.nextButton:SetEnabled(true)
+        else
+            controls.prevButton:SetEnabled(false)
+            controls.nextButton:SetEnabled(false)
         end
     end
     
-    -- Update scroll child height
-    scrollChild:SetHeight(math.abs(yOffset) + 10)
+    -- Grid layout: 3 columns x 6 rows = 18 items per page
+    local entriesPerRow = 3
+    local containerWidth = displayContainer:GetWidth()
+    local entryWidth = math.floor((containerWidth - 40) / entriesPerRow)  -- Leave room for spacing
+    local entryHeight = 45
+    local spacingX = 10
+    local spacingY = 8
     
-    -- Reset scroll position to top
-    scrollFrame:SetVerticalScroll(0)
+    local row = 0
+    local col = 0
+    
+    for i = startIdx, endIdx do
+        local creature = sortedCreatures[i]
+        if creature then
+            local xOffset = col * (entryWidth + spacingX)
+            local yOffset = -row * (entryHeight + spacingY)
+            
+            local entry = CreateCreatureEntry(displayContainer, xOffset, yOffset, entryWidth, entryHeight, creature.data)
+            table.insert(browserState.displayedEntries, entry)
+            
+            col = col + 1
+            if col >= entriesPerRow then
+                col = 0
+                row = row + 1
+            end
+        end
+    end
 end
 
 -- ============================================================================
 -- Public API Functions
 -- ============================================================================
 
--- Show browser with optional zone filter
 function AV_DatabaseBrowser_Show(zoneFilter)
     browserState.zoneFilter = zoneFilter or "all"
     browserState.currentZone = GetCurrentZone()
-    browserState.currentPage = 1  -- Reset to first page when opening
+    browserState.currentPage = 1
+    browserState.subzoneFilter = nil
     
-    -- Update title if showing specific zone
-    if browserState.zoneFilter ~= "all" then
-        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.zoneFilter)
-    else
+    -- Initialize dropdown
+    InitializeZoneDropdown()
+    
+    -- Set title
+    if browserState.zoneFilter == "all" then
         titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
+    else
+        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.zoneFilter)
     end
     
     RefreshDisplay()
@@ -501,31 +676,20 @@ function AV_DatabaseBrowser_Toggle()
     end
 end
 
-function AV_DatabaseBrowser_FilterToCurrentZone()
-    browserState.zoneFilter = GetCurrentZone()
-    titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.zoneFilter)
-    RefreshDisplay()
-end
 
-function AV_DatabaseBrowser_ShowAllZones()
-    browserState.zoneFilter = "all"
-    titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
-    RefreshDisplay()
-end
 
 function AV_DatabaseBrowser_FilterByCategory(category)
     browserState.categoryFilter = category
-    browserState.currentPage = 1  -- Reset to first page on filter change
+    browserState.currentPage = 1
     RefreshDisplay()
 end
 
 function AV_DatabaseBrowser_FilterByLearnedStatus(status)
     browserState.learnedFilter = status
-    browserState.currentPage = 1  -- Reset to first page on filter change
+    browserState.currentPage = 1
     RefreshDisplay()
 end
 
--- Global wrapper for pagination buttons
 function AV_DatabaseBrowser_RefreshDisplay()
     RefreshDisplay()
 end
@@ -534,7 +698,6 @@ end
 -- Initialization
 -- ============================================================================
 
--- Restore position on load
 local function RestorePosition()
     if AscensionVanityDB and AscensionVanityDB.browserPosition then
         local pos = AscensionVanityDB.browserPosition
@@ -543,14 +706,12 @@ local function RestorePosition()
     end
 end
 
--- Zone change detection
 local zoneFrame = CreateFrame("Frame")
 zoneFrame:RegisterEvent("ZONE_CHANGED")
 zoneFrame:RegisterEvent("ZONE_CHANGED_INDOORS")
 zoneFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 zoneFrame:SetScript("OnEvent", function()
     if browserFrame:IsShown() and browserState.zoneFilter ~= "all" then
-        -- Auto-update if showing current zone
         local newZone = GetCurrentZone()
         if browserState.zoneFilter == browserState.currentZone then
             browserState.zoneFilter = newZone
@@ -561,7 +722,6 @@ zoneFrame:SetScript("OnEvent", function()
     end
 end)
 
--- Initialize on PLAYER_LOGIN
 local initFrame = CreateFrame("Frame")
 initFrame:RegisterEvent("PLAYER_LOGIN")
 initFrame:SetScript("OnEvent", function()

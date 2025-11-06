@@ -4556,7 +4556,7 @@ AV_VanityItems = {
     },
     [80533] = {
         itemid = 80533,
-        name = "Beastmaster's Whistle: \",
+        name = "Beastmaster's Whistle: \"Count Ungula\"",
         creaturePreview = 18285,
         description = "Has a chance to drop from Count Ungula within Zangarmarsh",
         icon = 1
@@ -8161,7 +8161,7 @@ AV_VanityItems = {
     },
     [87655] = {
         itemid = 87655,
-        name = "Blood Soaked Vellum: Maury \",
+        name = "Blood Soaked Vellum: Maury \"Club Foot Wilkins\"",
         creaturePreview = 2535,
         description = "Has a chance to drop from Maury Club Foot Wilkins within Ruins of Jubuwal",
         icon = 2
@@ -8175,7 +8175,7 @@ AV_VanityItems = {
     },
     [87657] = {
         itemid = 87657,
-        name = "Blood Soaked Vellum: Chucky \",
+        name = "Blood Soaked Vellum: Chucky \"Ten Thumbs\"",
         creaturePreview = 2537,
         description = "Has a chance to drop from Chucky Ten Thumbs within Ruins of Aboraz",
         icon = 2

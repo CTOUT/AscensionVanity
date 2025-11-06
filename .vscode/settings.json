@@ -1320,6 +1320,7 @@
         "AUCTION_ITEM_TIME_UNTIL_DELIVERY",
         "OUTBID",
         "NO_BIDS",
-        "NONE_CAPS"
+        "NONE_CAPS",
+        "UIDropDownMenu_AddSeparator"
     ]
 }
