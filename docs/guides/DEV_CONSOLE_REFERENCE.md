@@ -52,7 +52,7 @@ print("API available:", C_VanityCollection ~= nil)
 
 ## 🔍 Debugging API Validation
 
-### When `/av apidump` seems incomplete:
+### When `/avanity apidump` seems incomplete:
 
 1. **Check API structure**:
    ```lua
@@ -180,7 +180,7 @@ end
 
 ### Workflow 2: Debug Missing Items
 ```lua
-1. /av validate
+1. /avanity validate
 2. Note missing count
 3. /tinspect AscensionVanityDB.ValidationResults.apiOnly
 4. Browse missing items
@@ -192,7 +192,7 @@ end
 1. Backup current DB
 2. Load new VanityDB_Updated.lua
 3. /reload
-4. /av validate
+4. /avanity validate
 5. Compare validation results
 6. /tinspect AscensionVanityDB for verification
 ```
@@ -253,7 +253,7 @@ print(string.format("API call took %.2f ms", elapsed))
 if AscensionVanityDB and AscensionVanityDB.APIDump then
     print("Dump exists:", AscensionVanityDB.APIDump.totalItems)
 else
-    print("Need to run /av apidump first")
+    print("Need to run /avanity apidump first")
 end
 ```
 
@@ -265,22 +265,22 @@ end
 
 Add these to your testing workflow:
 
-**Before `/av apidump`**:
+**Before `/avanity apidump`**:
 ```lua
 /tinspect C_VanityCollection  -- Verify API exists
 ```
 
-**After `/av apidump`**:
+**After `/avanity apidump`**:
 ```lua
 /tinspect AscensionVanityDB.APIDump  -- Browse results
 ```
 
-**Before `/av validate`**:
+**Before `/avanity validate`**:
 ```lua
 /tdump AV_VanityDB  -- Verify DB loaded
 ```
 
-**After `/av validate`**:
+**After `/avanity validate`**:
 ```lua
 /tinspect AscensionVanityDB.ValidationResults  -- Explore results
 ```

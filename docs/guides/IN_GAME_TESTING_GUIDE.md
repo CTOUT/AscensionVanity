@@ -29,7 +29,7 @@ When you log in, you should see these messages in chat:
 
 ```
 AscensionVanity v2.0.0 loaded!
-Type /av help for commands
+Type /avanity help for commands
 AscensionVanity: C_VanityCollection API detected ✓
 ```
 
@@ -45,7 +45,7 @@ AscensionVanity: C_VanityCollection API detected ✓
 
 Type in chat:
 ```
-/av debug
+/avanity debug
 ```
 
 You should see:
@@ -166,7 +166,7 @@ Report:
 ```
 1. Screenshot of tooltip
 2. Creature name you targeted
-3. Your /av config output
+3. Your /avanity config output
 ```
 
 **Next Steps**: We'll check if the tooltip hook is working correctly
@@ -189,10 +189,10 @@ These are common low-level areas for quick testing:
 ## Additional Debug Commands
 
 ```
-/av help          - Show all commands
-/av debug         - Toggle debug mode on/off
-/av config        - Show current configuration
-/av version       - Show addon version
+/avanity help          - Show all commands
+/avanity debug         - Toggle debug mode on/off
+/avanity config        - Show current configuration
+/avanity version       - Show addon version
 ```
 
 ---
@@ -265,7 +265,7 @@ The key diagnostic information:
 - **Debug mode only affects chat output**, not tooltip display
 - Debug messages help us see what the API is returning
 - The addon should work even without debug mode; debug just helps troubleshooting
-- You can disable debug mode with `/av debug` again when done testing
+- You can disable debug mode with `/avanity debug` again when done testing
 
 ---
 
@@ -273,7 +273,7 @@ The key diagnostic information:
 
 1. Launch the game
 2. Log in and check for startup messages
-3. Enable debug with `/av debug`
+3. Enable debug with `/avanity debug`
 4. Target a creature with a vanity drop
 5. Report back what you see!
 

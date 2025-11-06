@@ -86,7 +86,7 @@ The script only copies files that have changed:
 
 3. Verify addon loaded:
    ```
-   /av help
+   /avanity help
    ```
 
 ### Development Cycle
@@ -167,7 +167,7 @@ The script deploys these files from `AscensionVanity/`:
 Then in WoW:
 ```
 /reload
-/av help
+/avanity help
 ```
 
 ---
@@ -236,7 +236,7 @@ git commit -m "Working version before X change"
 
 **In-Game:**
 - `/reload` - Reload UI after deployment
-- `/av help` - Verify addon loaded
+- `/avanity help` - Verify addon loaded
 - `/console scriptErrors 1` - Enable error display
 
 ---

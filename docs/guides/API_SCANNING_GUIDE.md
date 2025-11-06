@@ -220,7 +220,7 @@ Writing to: data\AscensionVanity.lua
 
 **Solutions:**
 1. Check for Lua errors: `/console scriptErrors 1`
-2. Verify addon is loaded: `/av help`
+2. Verify addon is loaded: `/avanity help`
 3. Try command instead: `/avscan scan`
 4. Reload UI: `/reload`
 

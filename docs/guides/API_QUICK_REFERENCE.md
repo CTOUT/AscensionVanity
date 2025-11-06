@@ -2,34 +2,34 @@
 
 ## In-Game Commands
 
-### `/av apidump`
+### `/avanity apidump`
 **Purpose**: Extract complete API data to SavedVariables  
 **When to use**: First step in validation process  
 **Follow-up**: `/reload` to save data to disk
 
-### `/av validate`
+### `/avanity validate`
 **Purpose**: Compare API data vs static database  
-**When to use**: After running `/av apidump` and `/reload`  
+**When to use**: After running `/avanity apidump` and `/reload`  
 **Shows**:
 - Total items in API vs Database
 - Exact matches count
 - Missing items (in API but not in DB)
 - Mismatches (different item IDs)
 
-### `/av api`
+### `/avanity api`
 **Purpose**: Scan for available Ascension vanity APIs  
 **When to use**: Debug/verify API availability  
 **Shows**: All C_VanityCollection functions available
 
-### `/av dump`
+### `/avanity dump`
 **Purpose**: Dump vanity collection data structure  
 **When to use**: Debug/investigate API structure  
 **Shows**: First 2 items in full detail with nested structure
 
-### `/av dumpitem <itemID>`
+### `/avanity dumpitem <itemID>`
 **Purpose**: Search for specific item in API data  
 **When to use**: Verify a specific item's data  
-**Example**: `/av dumpitem 79626`
+**Example**: `/avanity dumpitem 79626`
 
 ---
 
@@ -56,18 +56,18 @@
 ## Workflow Summary
 
 ### Quick Validation (5 minutes)
-1. `/av apidump` → Wait for completion
+1. `/avanity apidump` → Wait for completion
 2. `/reload` → Save data
-3. `/av validate` → Review results
+3. `/avanity validate` → Review results
 
 ### Full Analysis (15 minutes)
-1. **In-Game**: `/av apidump` → `/reload` → `/av validate`
+1. **In-Game**: `/avanity apidump` → `/reload` → `/avanity validate`
 2. **PowerShell**: `.\utilities\AnalyzeAPIDump.ps1 -Detailed`
 3. **Review**: Check `API_Analysis/` folder for reports
 4. **Manual**: Open SavedVariables file to see complete data
 
 ### Database Update (30 minutes)
-1. **In-Game**: `/av apidump` → `/reload`
+1. **In-Game**: `/avanity apidump` → `/reload`
 2. **PowerShell**: `.\utilities\UpdateDatabaseFromAPI.ps1 -Backup`
 3. **Review**: Compare `VanityDB_Updated.lua` vs `VanityDB.lua`
 4. **Replace**: Rename updated file to `VanityDB.lua`
@@ -122,13 +122,13 @@ AscensionVanity\
 ## Common Issues
 
 ### No API dump found
-**Fix**: Run `/av apidump` and `/reload` first
+**Fix**: Run `/avanity apidump` and `/reload` first
 
 ### SavedVariables file not found (PowerShell)
 **Fix**: Update path in script or use `-SavedVariablesPath` parameter
 
 ### Validation shows 0 matches
-**Fix**: Make sure VanityDB.lua is loaded (check with `/av debug`)
+**Fix**: Make sure VanityDB.lua is loaded (check with `/avanity debug`)
 
 ### Can't find missing items in SavedVariables
 **Fix**: Search for `apiOnly = {` in the file
@@ -137,7 +137,7 @@ AscensionVanity\
 
 ## Tips
 
-- Always `/reload` after `/av apidump` to save data
+- Always `/reload` after `/avanity apidump` to save data
 - Run validation multiple times to verify consistency
 - Keep backups before replacing VanityDB.lua
 - Test updated database in-game before committing

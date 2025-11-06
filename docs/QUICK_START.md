@@ -15,9 +15,9 @@
 ### In-Game Commands
 
 ```
-/av              - Show available vanity items in your bags
-/av show         - Display main UI window
-/av help         - Show command help
+/avanity              - Show available vanity items in your bags
+/avanity show         - Display main UI window
+/avanity help         - Show command help
 ```
 
 ### Main Features
@@ -29,9 +29,9 @@
 ## First Time Setup
 
 1. **Login** to your character
-2. **Type** `/av` to scan your bags
+2. **Type** `/avanity` to scan your bags
 3. **Click** items in the list to see drop information
-4. **Use** `/av show` to browse all available vanity items
+4. **Use** `/avanity show` to browse all available vanity items
 
 ## Troubleshooting
 

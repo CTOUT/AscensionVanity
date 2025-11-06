@@ -65,7 +65,7 @@ This ensures your personal file paths and account information remain private.
 You need to create `local.config.ps1` from the example file.
 
 ### "SavedVariables file not found"
-- Make sure you've run `/av apidump` and `/reload` in-game
+- Make sure you've run `/avanity apidump` and `/reload` in-game
 - Check that your `AscensionPath` and `AccountName` are correct
 - Verify the path exists: Test-Path on the SavedVariablesPath
 

@@ -29,8 +29,8 @@
 - ✅ Backward compatible with single-item entries
 
 ### 2. **API Export & Comparison System** ✅ NEW
-- ✅ `/av export` command - Exports API data in VanityDB.lua format
-- ✅ `/av showexport` command - Displays exported data in chat
+- ✅ `/avanity export` command - Exports API data in VanityDB.lua format
+- ✅ `/avanity showexport` command - Displays exported data in chat
 - ✅ PowerShell comparison tool (`CompareAPIExport.ps1`)
 - ✅ Automated discrepancy detection (matches, mismatches, unique items)
 - ✅ CSV export for detailed analysis
@@ -53,11 +53,11 @@
 ### 5. **Addon Functionality** ✅
 - ✅ Tooltip integration - shows vanity drops on NPC tooltips
 - ✅ Multiple items display when applicable
-- ✅ Slash command `/av` or `/ascensionvanity`
+- ✅ Slash command `/avanity` or `/ascensionvanity`
 - ✅ Toggle features: enable/disable, learned status, color coding
 - ✅ NPC-to-item mapping with intelligent validation
 - ✅ Category-based organization (Whistles, Vellums, Stones, etc.)
-- ✅ API validation commands (`/av apidump`, `/av validate`, `/av export`)
+- ✅ API validation commands (`/avanity apidump`, `/avanity validate`, `/avanity export`)
 
 ### 6. **Documentation & Organization** ✅
 - ✅ Restructured folder hierarchy
@@ -114,7 +114,7 @@ AscensionVanity/
 ### User Features
 
 1. **Tooltip Integration**: Vanity drops displayed on NPC tooltips automatically
-2. **Slash Commands**: `/av` or `/ascensionvanity` for addon controls
+2. **Slash Commands**: `/avanity` or `/ascensionvanity` for addon controls
 3. **Toggle Options**: Enable/disable addon, learned status display, color coding
 4. **Visual Indicators**: Color-coded learned (✓ green) vs unlearned (✗ yellow) items
 5. **Category Support**: Organized by item type (Whistles, Vellums, Stones, etc.)
@@ -161,10 +161,10 @@ World of Warcraft\Interface\AddOns\
 # 2. In-game, hover over NPCs to see vanity drops in their tooltips
 
 # 3. Use slash commands for configuration:
-/av              # Toggle addon on/off
-/av learned      # Toggle learned status display
-/av color        # Toggle color coding
-/av help         # Show all commands
+/avanity              # Toggle addon on/off
+/avanity learned      # Toggle learned status display
+/avanity color        # Toggle color coding
+/avanity help         # Show all commands
 ```
 
 ### For Developers
