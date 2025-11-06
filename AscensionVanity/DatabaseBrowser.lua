@@ -65,10 +65,23 @@ local zoneLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal
 zoneLabel:SetPoint("TOPLEFT", filterSection, "TOPLEFT", 0, 0)
 zoneLabel:SetText("|cFFFFFFFFZone Filter:|r")
 
--- Comprehensive Zone/Subzone Dropdown with search
-local zoneDropdown = CreateFrame("Frame", "AV_ZoneDropdown", filterSection, "UIDropDownMenuTemplate")
-zoneDropdown:SetPoint("TOPLEFT", zoneLabel, "BOTTOMLEFT", -15, -5)
-UIDropDownMenu_SetWidth(zoneDropdown, 200)
+-- Radio buttons for All Zones / Current Zone
+local allZonesRadio = CreateFrame("CheckButton", nil, filterSection, "UIRadioButtonTemplate")
+allZonesRadio:SetPoint("TOPLEFT", zoneLabel, "BOTTOMLEFT", 5, -5)
+allZonesRadio:SetSize(20, 20)
+
+local allZonesLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+allZonesLabel:SetPoint("LEFT", allZonesRadio, "RIGHT", 2, 0)
+allZonesLabel:SetText("All Zones")
+
+local currentZoneRadio = CreateFrame("CheckButton", nil, filterSection, "UIRadioButtonTemplate")
+currentZoneRadio:SetPoint("LEFT", allZonesLabel, "RIGHT", 10, 0)
+currentZoneRadio:SetSize(20, 20)
+currentZoneRadio:SetChecked(true)  -- Default to Current Zone
+
+local currentZoneLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+currentZoneLabel:SetPoint("LEFT", currentZoneRadio, "RIGHT", 2, 0)
+currentZoneLabel:SetText("Current Zone")
 
 -- Category Filter Label
 local categoryLabel = filterSection:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -132,11 +145,10 @@ end
 
 local browserState = {
     currentZone = nil,
-    zoneFilter = "all",
+    filterMode = "all",  -- "all" or "current"
     categoryFilter = "all",
     learnedFilter = "all",
     multipleItemsFilter = false,
-    subzoneFilter = nil,
     filteredData = {},
     displayedEntries = {},
     currentPage = 1,
@@ -262,145 +274,32 @@ local function GetCurrentZone()
     return GetZoneText() or "Unknown"
 end
 
--- Build hierarchical zone/subzone list from database
-local function BuildZoneHierarchy()
-    local zones = {}
-    local zoneSet = {}
-    
-    -- Collect all zones and their subzones from the database
-    for _, data in pairs(AV_VanityItems) do
-        local zone = data.zone or "Unknown"
-        local subzone = data.subzone or ""
-        
-        if not zoneSet[zone] then
-            zoneSet[zone] = {subzones = {}}
-            table.insert(zones, zone)
-        end
-        
-        if subzone ~= "" and not zoneSet[zone].subzones[subzone] then
-            zoneSet[zone].subzones[subzone] = true
-        end
-    end
-    
-    -- Sort zones alphabetically
-    table.sort(zones)
-    
-    -- Convert subzones to sorted arrays
-    for _, zone in ipairs(zones) do
-        local subzoneList = {}
-        for subzone in pairs(zoneSet[zone].subzones) do
-            table.insert(subzoneList, subzone)
-        end
-        table.sort(subzoneList)
-        zoneSet[zone].subzones = subzoneList
-    end
-    
-    return zones, zoneSet
+-- Build hierarchical continent/zone/subzone list from database
+local function BuildGeographicHierarchy()
+    -- Since the database doesn't have zone/subzone data yet,
+    -- we'll just return empty structures
+    return {}, {}
 end
 
--- Initialize zone dropdown
-local function InitializeZoneDropdown()
-    local zones, zoneData = BuildZoneHierarchy()
-    
-    UIDropDownMenu_SetText(zoneDropdown, browserState.subzoneFilter or browserState.zoneFilter == "all" and "All Zones" or browserState.zoneFilter)
-    
-    UIDropDownMenu_Initialize(zoneDropdown, function(self, level, menuList)
-        if level == 1 then
-            -- "All Zones" option
-            local info = UIDropDownMenu_CreateInfo()
-            info.text = "All Zones"
-            info.value = "all"
-            info.checked = (browserState.zoneFilter == "all")
-            info.func = function()
-                browserState.zoneFilter = "all"
-                browserState.subzoneFilter = nil
-                browserState.currentPage = 1
-                UIDropDownMenu_SetText(zoneDropdown, "All Zones")
-                titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
-                RefreshDisplay()
-            end
-            UIDropDownMenu_AddButton(info, level)
-            
-            -- "Current Zone" option
-            local currentZone = GetCurrentZone()
-            local info2 = UIDropDownMenu_CreateInfo()
-            info2.text = "|cFF00FF96Current Zone:|r " .. currentZone
-            info2.value = currentZone
-            info2.checked = (browserState.zoneFilter == currentZone and not browserState.subzoneFilter)
-            info2.func = function()
-                browserState.zoneFilter = currentZone
-                browserState.subzoneFilter = nil
-                browserState.currentPage = 1
-                UIDropDownMenu_SetText(zoneDropdown, currentZone)
-                titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. currentZone)
-                RefreshDisplay()
-            end
-            UIDropDownMenu_AddButton(info2, level)
-            
-            -- Separator
-            UIDropDownMenu_AddSeparator(level)
-            
-            -- All zones with subzones
-            for _, zone in ipairs(zones) do
-                local info = UIDropDownMenu_CreateInfo()
-                info.text = zone
-                info.value = zone
-                info.checked = (browserState.zoneFilter == zone and not browserState.subzoneFilter)
-                info.hasArrow = (#zoneData[zone].subzones > 0)  -- Show arrow if has subzones
-                info.menuList = zone  -- For submenu
-                info.func = function()
-                    if not info.hasArrow then
-                        -- Zone has no subzones, select it directly
-                        browserState.zoneFilter = zone
-                        browserState.subzoneFilter = nil
-                        browserState.currentPage = 1
-                        UIDropDownMenu_SetText(zoneDropdown, zone)
-                        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. zone)
-                        RefreshDisplay()
-                    end
-                end
-                UIDropDownMenu_AddButton(info, level)
-            end
-            
-        elseif level == 2 then
-            -- Subzone submenu
-            local zoneName = menuList
-            local info = UIDropDownMenu_CreateInfo()
-            info.text = zoneName .. " (All)"
-            info.value = zoneName
-            info.checked = (browserState.zoneFilter == zoneName and not browserState.subzoneFilter)
-            info.func = function()
-                browserState.zoneFilter = zoneName
-                browserState.subzoneFilter = nil
-                browserState.currentPage = 1
-                UIDropDownMenu_SetText(zoneDropdown, zoneName)
-                titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. zoneName)
-                RefreshDisplay()
-            end
-            UIDropDownMenu_AddButton(info, level)
-            
-            -- Add separator
-            UIDropDownMenu_AddSeparator(level)
-            
-            -- Subzones
-            for _, subzone in ipairs(zoneData[zoneName].subzones) do
-                local info = UIDropDownMenu_CreateInfo()
-                info.text = "  " .. subzone
-                info.value = zoneName .. ":" .. subzone
-                info.checked = (browserState.zoneFilter == zoneName and browserState.subzoneFilter == subzone)
-                info.func = function()
-                    browserState.zoneFilter = zoneName
-                    browserState.subzoneFilter = subzone
-                    browserState.currentPage = 1
-                    UIDropDownMenu_SetText(zoneDropdown, subzone)
-                    titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. zoneName .. " (" .. subzone .. ")")
-                    RefreshDisplay()
-                end
-                UIDropDownMenu_AddButton(info, level)
-            end
-        end
-    end)
-end
+-- Radio button handlers
+allZonesRadio:SetScript("OnClick", function(self)
+    allZonesRadio:SetChecked(true)
+    currentZoneRadio:SetChecked(false)
+    browserState.filterMode = "all"
+    browserState.currentPage = 1
+    titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
+    RefreshDisplay()
+end)
+
+currentZoneRadio:SetScript("OnClick", function(self)
+    allZonesRadio:SetChecked(false)
+    currentZoneRadio:SetChecked(true)
+    browserState.filterMode = "current"
+    browserState.currentZone = GetCurrentZone()
+    browserState.currentPage = 1
+    titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.currentZone)
+    RefreshDisplay()
+end)
 
 local function BuildCreatureList()
     local creatures = {}
@@ -457,24 +356,18 @@ local function ApplyFilters()
     for creatureName, creatureData in pairs(allCreatures) do
         local includeCreature = true
         
-        if browserState.zoneFilter ~= "all" then
-            if creatureData.zone ~= browserState.zoneFilter then
-                includeCreature = false
-            end
-        end
+        -- Filter mode: "all" shows everything, "current" filters to current zone
+        -- Note: Since database doesn't have zone data yet, "current" mode won't filter anything
+        -- This will be functional once zone enrichment is applied to VanityDB.lua
         
-        if includeCreature and browserState.subzoneFilter and browserState.subzoneFilter ~= "" then
-            if (creatureData.subzone or "") ~= browserState.subzoneFilter then
-                includeCreature = false
-            end
-        end
-        
+        -- Category filter
         if includeCreature and browserState.categoryFilter ~= "all" then
             if creatureData.category ~= browserState.categoryFilter then
                 includeCreature = false
             end
         end
         
+        -- Learned status filter
         if includeCreature and browserState.learnedFilter ~= "all" then
             local hasUnlearned = false
             local hasLearned = false
@@ -495,6 +388,7 @@ local function ApplyFilters()
             end
         end
         
+        -- Multi-drop filter
         if includeCreature and browserState.multipleItemsFilter then
             if #creatureData.items < 2 then
                 includeCreature = false
@@ -589,10 +483,8 @@ local function RefreshDisplay()
     local startIdx = ((browserState.currentPage - 1) * browserState.itemsPerPage) + 1
     local endIdx = math.min(startIdx + browserState.itemsPerPage - 1, totalCount)
     
-    local filterDesc = "All Zones"
-    if browserState.zoneFilter ~= "all" then
-        filterDesc = browserState.zoneFilter
-    end
+    -- Build filter description
+    local filterDesc = browserState.filterMode == "all" and "All Zones" or browserState.currentZone or "Current Zone"
     
     resultsLabel:SetText(string.format(
         "|cFFFFFFFFResults:|r %d creatures in %s (showing %d-%d)",
@@ -611,7 +503,7 @@ local function RefreshDisplay()
         end
     end
     
-    -- Grid layout: 3 columns x 6 rows = 18 items per page
+    -- Grid layout: 3 columns x 5 rows = 15 items per page (adjusts to 18 if more room)
     local entriesPerRow = 3
     local containerWidth = displayContainer:GetWidth()
     local entryWidth = math.floor((containerWidth - 40) / entriesPerRow)  -- Leave room for spacing
@@ -645,19 +537,20 @@ end
 -- ============================================================================
 
 function AV_DatabaseBrowser_Show(zoneFilter)
-    browserState.zoneFilter = zoneFilter or "all"
     browserState.currentZone = GetCurrentZone()
     browserState.currentPage = 1
-    browserState.subzoneFilter = nil
     
-    -- Initialize dropdown
-    InitializeZoneDropdown()
-    
-    -- Set title
-    if browserState.zoneFilter == "all" then
-        titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
+    -- Set filter mode based on parameter
+    if zoneFilter and zoneFilter ~= "all" then
+        browserState.filterMode = "current"
+        currentZoneRadio:SetChecked(true)
+        allZonesRadio:SetChecked(false)
+        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.currentZone)
     else
-        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.zoneFilter)
+        browserState.filterMode = "all"
+        allZonesRadio:SetChecked(true)
+        currentZoneRadio:SetChecked(false)
+        titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
     end
     
     RefreshDisplay()
@@ -711,14 +604,11 @@ zoneFrame:RegisterEvent("ZONE_CHANGED")
 zoneFrame:RegisterEvent("ZONE_CHANGED_INDOORS")
 zoneFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 zoneFrame:SetScript("OnEvent", function()
-    if browserFrame:IsShown() and browserState.zoneFilter ~= "all" then
+    if browserFrame:IsShown() and browserState.filterMode == "current" then
         local newZone = GetCurrentZone()
-        if browserState.zoneFilter == browserState.currentZone then
-            browserState.zoneFilter = newZone
-            browserState.currentZone = newZone
-            titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. newZone)
-            RefreshDisplay()
-        end
+        browserState.currentZone = newZone
+        titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. newZone)
+        RefreshDisplay()
     end
 end)
 
