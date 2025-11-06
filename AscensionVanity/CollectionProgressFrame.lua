@@ -8,13 +8,16 @@
 
 -- Create main frame
 local progressFrame = CreateFrame("Frame", "AV_CollectionProgressFrame", UIParent)
-progressFrame:SetSize(250, 200)
+progressFrame:SetSize(250, 200)  -- Initial size, will be resized dynamically
 progressFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -50, -200)
 progressFrame:SetMovable(true)
 progressFrame:EnableMouse(true)
 progressFrame:SetClampedToScreen(true)
 progressFrame:SetFrameStrata("MEDIUM")
 progressFrame:SetFrameLevel(10)
+
+-- Storage for expanded item lists
+progressFrame.expandedItems = {}  -- Stores FontStrings for expanded items
 
 -- Background
 local bg = progressFrame:CreateTexture(nil, "BACKGROUND")
@@ -248,36 +251,33 @@ overallBtn:SetText("-")
 overallBtn:SetScript("OnClick", function()
     overallExpanded = not overallExpanded
     overallBtn:SetText(overallExpanded and "-" or "+")
-    -- Show/hide all category bars
-    for _, cat in ipairs(categoryOrder) do
-        local bar = progressFrame.progressBars[cat]
-        if overallExpanded then
-            bar.bg:Show()
-            bar.fill:Show()
-            bar.text:Show()
-            if bar.expandBtn then bar.expandBtn:Show() end
-        else
-            bar.bg:Hide()
-            bar.fill:Hide()
-            bar.text:Hide()
-            if bar.expandBtn then bar.expandBtn:Hide() end
-        end
-    end
+    UpdateProgressBars()  -- Handle all show/hide logic
 end)
 progressFrame.progressBars.overall.expandBtn = overallBtn
 
--- Add expand/collapse button to each category bar (stub for now)
+-- Add expand/collapse button to each category bar
 for _, cat in ipairs(categoryOrder) do
     local bar = progressFrame.progressBars[cat]
     local btn = CreateFrame("Button", nil, progressFrame)
     btn:SetSize(14, 14)
     btn:SetPoint("RIGHT", bar.bg, "LEFT", -4, 0)
     btn:SetNormalFontObject("GameFontNormal")
-    btn:SetText("-")
+    btn:SetText("+")  -- Start collapsed
+    
     btn:SetScript("OnClick", function()
         expandedCategories[cat] = not expandedCategories[cat]
         btn:SetText(expandedCategories[cat] and "-" or "+")
-        -- In future: show/hide species bars here
+        
+        if expandedCategories[cat] then
+            -- Show pet names for this category
+            ShowExpandedItems(cat, bar.bg, -25)  -- -25 is bar height
+        else
+            -- Hide pet names for this category
+            ClearExpandedItems(cat)
+        end
+        
+        -- Update all bars (handles repositioning and resize)
+        UpdateProgressBars()
     end)
     bar.expandBtn = btn
 end
@@ -285,6 +285,113 @@ end
 -- ============================================================================
 -- Update Logic
 -- ============================================================================
+
+-- Helper function to get items for a category (handles missing zone data)
+local function GetCategoryItems(category)
+    local items = {}
+    
+    -- Since we don't have zone data yet, get all items from VanityDB
+    -- Filter by category based on item name prefix
+    local categoryPrefixes = {
+        beast = "Beastmaster's Whistle:",
+        undead = "Blood Soaked Vellum:",
+        demon = "Summoner's Stone:",
+        dragonkin = "Draconic Warhorn:",
+        elemental = "Elemental Lodestone:"
+    }
+    
+    local prefix = categoryPrefixes[category]
+    if not prefix then return items end
+    
+    for itemId, itemData in pairs(AV_VanityItems or {}) do
+        if itemData.name and itemData.name:find(prefix, 1, true) then
+            -- Extract pet name (everything after ": ")
+            local petName = itemData.name:match(": (.+)$") or itemData.name
+            table.insert(items, {
+                id = itemId,
+                name = petName,
+                learned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+            })
+        end
+    end
+    
+    -- Sort alphabetically
+    table.sort(items, function(a, b)
+        return a.name < b.name
+    end)
+    
+    return items
+end
+
+-- Helper function to clear expanded item displays
+local function ClearExpandedItems(category)
+    if not progressFrame.expandedItems[category] then return end
+    
+    for _, fontString in ipairs(progressFrame.expandedItems[category]) do
+        fontString:Hide()
+        fontString:SetParent(nil)
+    end
+    progressFrame.expandedItems[category] = {}
+end
+
+-- Helper function to create expanded item list for a category
+local function ShowExpandedItems(category, anchorBar, yOffset)
+    ClearExpandedItems(category)
+    
+    local items = GetCategoryItems(category)
+    if #items == 0 then return 0 end  -- Return 0 height if no items
+    
+    progressFrame.expandedItems[category] = {}
+    local itemHeight = 16
+    local currentY = yOffset - 4  -- Start below the bar
+    
+    for i, item in ipairs(items) do
+        local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        itemText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)  -- Indent items
+        itemText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
+        itemText:SetJustifyH("LEFT")
+        
+        -- Color code: green if learned, white if not
+        local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
+        local checkmark = item.learned and "✓ " or "  "
+        itemText:SetText(checkmark .. color .. item.name .. AV_COLOR_RESET)
+        
+        table.insert(progressFrame.expandedItems[category], itemText)
+        currentY = currentY - itemHeight
+    end
+    
+    -- Return total height used by expanded items
+    return #items * itemHeight + 4  -- +4 for spacing
+end
+
+-- Helper function to resize frame based on visible content
+local function ResizeFrame()
+    local headerHeight = 45  -- Title + buttons + padding
+    local barHeight = 25
+    local padding = 10
+    local totalHeight = headerHeight
+    
+    -- Add overall bar
+    totalHeight = totalHeight + barHeight
+    
+    -- Add visible category bars and their expanded items
+    if overallExpanded then
+        for _, cat in ipairs(categoryOrder) do
+            local bar = progressFrame.progressBars[cat]
+            if bar.bg:IsShown() then
+                totalHeight = totalHeight + barHeight
+                
+                -- Add height of expanded items if this category is expanded
+                if expandedCategories[cat] and progressFrame.expandedItems[cat] then
+                    totalHeight = totalHeight + (#progressFrame.expandedItems[cat] * 16) + 4
+                end
+            end
+        end
+    end
+    
+    totalHeight = totalHeight + padding
+    progressFrame:SetHeight(totalHeight)
+end
 
 -- Function to update all progress bars
 local function UpdateProgressBars()
@@ -326,28 +433,44 @@ local function UpdateProgressBars()
     end
     
     -- Show/hide category bars based on view mode and expansion state
+    local currentY = -70  -- Start position below overall bar
+    
     if overallExpanded then
         for _, cat in ipairs(categoryOrder) do
             local bar = progressFrame.progressBars[cat]
+            local shouldShow = true
+            
             if viewMode == "zone" then
                 -- In zone view: hide categories with 0 items
                 if progress[cat] and progress[cat].total == 0 then
-                    bar.bg:Hide()
-                    bar.fill:Hide()
-                    bar.text:Hide()
-                    if bar.expandBtn then bar.expandBtn:Hide() end
-                else
-                    bar.bg:Show()
-                    bar.fill:Show()
-                    bar.text:Show()
-                    if bar.expandBtn then bar.expandBtn:Show() end
+                    shouldShow = false
                 end
-            else
-                -- In global view: show all categories
+            end
+            
+            if shouldShow then
+                -- Reposition bar to current Y (handles moving up when categories hidden)
+                bar.bg:SetPoint("TOPLEFT", progressFrame, "TOPLEFT", 8, currentY)
                 bar.bg:Show()
                 bar.fill:Show()
                 bar.text:Show()
                 if bar.expandBtn then bar.expandBtn:Show() end
+                
+                -- Move down for next bar
+                currentY = currentY - 25  -- Bar height
+                
+                -- If this category is expanded, account for expanded items
+                if expandedCategories[cat] and progressFrame.expandedItems[cat] then
+                    currentY = currentY - (#progressFrame.expandedItems[cat] * 16) - 4
+                end
+            else
+                bar.bg:Hide()
+                bar.fill:Hide()
+                bar.text:Hide()
+                if bar.expandBtn then bar.expandBtn:Hide() end
+                -- Also hide any expanded items for this category
+                ClearExpandedItems(cat)
+                expandedCategories[cat] = false
+                if bar.expandBtn then bar.expandBtn:SetText("+") end
             end
         end
     else
@@ -358,8 +481,12 @@ local function UpdateProgressBars()
             bar.fill:Hide()
             bar.text:Hide()
             if bar.expandBtn then bar.expandBtn:Hide() end
+            ClearExpandedItems(cat)
         end
     end
+    
+    -- Resize frame to fit visible content
+    ResizeFrame()
 end
 
 -- Expose globally for external updates
