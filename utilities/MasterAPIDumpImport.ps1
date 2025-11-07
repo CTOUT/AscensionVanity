@@ -217,8 +217,18 @@ function Extract-ApidumpEntries {
 
         if ($block -match '(?i)\["itemid"\]\s*=\s*(\d+)') { $gameItemId = [int]$Matches[1] }
         if ($block -match '(?i)\["creaturePreview"\]\s*=\s*(\d+)') { $creatureId = [int]$Matches[1] }
-        if ($block -match '\["name"\]\s*=\s*"([^"]+)"') { $name = $Matches[1] }
-        if ($block -match '\["description"\]\s*=\s*"([\s\S]*?)"') { $description = $Matches[1] }
+        # Match strings that may contain escaped quotes (\")
+        if ($block -match '\["name"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
+            $name = $Matches[1]
+            # Unescape Lua escape sequences: \" becomes "
+            $name = $name -replace '\\"', '"'
+            # Note: We keep other escapes like \n as-is since they're rare in names
+        }
+        if ($block -match '\["description"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
+            $description = $Matches[1]
+            # Unescape Lua escape sequences
+            $description = $description -replace '\\"', '"'
+        }
         if ($block -match '\["icon"\]\s*=\s*"([^"]+)"') { $icon = $Matches[1] }
 
         $results += [pscustomobject]@{

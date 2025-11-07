@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.2
--- Generated: 2025-11-07 11:24:00
+-- Generated: 2025-11-07 16:26:42
 -- Total Items: 2355
 -- Source Scan: Ascension 2025-11-07 @ 06:00:59 GMT Not Available
 -- Scan Date: 2025-11-07 07:40:59
@@ -32,7 +32,7 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-07 11:24:00",
+    generatedDate = "2025-11-07 16:26:42",
     ascensionVersion = "2025-11-07 @ 06:00:59 GMT Not Available",
     scanDate = "2025-11-07 07:40:59",
     totalItems = 2355,
@@ -6151,7 +6151,7 @@ AV_VanityItems = {
     },
     [80533] = {
         itemid = 80533,
-        name = "Beastmaster's Whistle: \\",
+        name = "Beastmaster's Whistle: \"Count\" Ungula",
         creaturePreview = 18285,
         creatureId = 18285,
         description = "Has a chance to drop from Count Ungula within Zangarmarsh.",
@@ -10822,8 +10822,8 @@ AV_VanityItems = {
     [86475] = {
         itemid = 86475,
         name = "Blood Soaked Vellum: Soulless Ghoul",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 1794,
+        creatureId = 1794,
         description = "Obtained from the Argent Quartermaster.",
         icon = 2
     },
@@ -11081,7 +11081,7 @@ AV_VanityItems = {
     },
     [87655] = {
         itemid = 87655,
-        name = "Blood Soaked Vellum: Maury \\",
+        name = "Blood Soaked Vellum: Maury \"Club Foot\" Wilkins",
         creaturePreview = 2535,
         creatureId = 2535,
         description = "Has a chance to drop from Maury Club Foot Wilkins within Ruins of Jubuwal.",
@@ -11101,7 +11101,7 @@ AV_VanityItems = {
     },
     [87657] = {
         itemid = 87657,
-        name = "Blood Soaked Vellum: Chucky \\",
+        name = "Blood Soaked Vellum: Chucky \"Ten Thumbs\"",
         creaturePreview = 2537,
         creatureId = 2537,
         description = "Has a chance to drop from Chucky Ten Thumbs within Ruins of Aboraz.",
@@ -11659,8 +11659,8 @@ AV_VanityItems = {
     [87879] = {
         itemid = 87879,
         name = "Blood Soaked Vellum: Scourge Champion",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 8529,
+        creatureId = 8529,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -12144,8 +12144,8 @@ AV_VanityItems = {
     [88373] = {
         itemid = 88373,
         name = "Blood Soaked Vellum: Skulking Corpse",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 10479,
+        creatureId = 10479,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -12161,8 +12161,8 @@ AV_VanityItems = {
     [88383] = {
         itemid = 88383,
         name = "Blood Soaked Vellum: Reanimated Corpse",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 10481,
+        creatureId = 10481,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -12863,8 +12863,8 @@ AV_VanityItems = {
     [88978] = {
         itemid = 88978,
         name = "Blood Soaked Vellum: Infectious Ghoul",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 16244,
+        creatureId = 16244,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -13699,8 +13699,8 @@ AV_VanityItems = {
     [89637] = {
         itemid = 89637,
         name = "Blood Soaked Vellum: Meathook",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 301421,
+        creatureId = 301421,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -13843,8 +13843,8 @@ AV_VanityItems = {
     [89854] = {
         itemid = 89854,
         name = "Blood Soaked Vellum: Mindless Wight",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300150,
+        creatureId = 300150,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -14010,8 +14010,8 @@ AV_VanityItems = {
     [89998] = {
         itemid = 89998,
         name = "Blood Soaked Vellum: Carrion Eater",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300151,
+        creatureId = 300151,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -14232,8 +14232,8 @@ AV_VanityItems = {
     [101076] = {
         itemid = 101076,
         name = "Blood Soaked Vellum: Monstrous Wight",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300152,
+        creatureId = 300152,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -14496,8 +14496,8 @@ AV_VanityItems = {
     [101107] = {
         itemid = 101107,
         name = "Blood Soaked Vellum: Decaying Wight",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300153,
+        creatureId = 300153,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -14770,8 +14770,8 @@ AV_VanityItems = {
     [101141] = {
         itemid = 101141,
         name = "Blood Soaked Vellum: Stitched Brute",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300154,
+        creatureId = 300154,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -14825,8 +14825,8 @@ AV_VanityItems = {
     [101154] = {
         itemid = 101154,
         name = "Blood Soaked Vellum: Stonespine Gargoyle",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300155,
+        creatureId = 300155,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
@@ -15049,16 +15049,16 @@ AV_VanityItems = {
     [123162] = {
         itemid = 123162,
         name = "Elemental Lodestone: Cascade",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 590007,
+        creatureId = 590007,
         description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor).",
         icon = 5
     },
     [123163] = {
         itemid = 123163,
         name = "Elemental Lodestone: Borealis",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 590024,
+        creatureId = 590024,
         description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor).",
         icon = 5
     },
@@ -15844,80 +15844,80 @@ AV_VanityItems = {
     [400070] = {
         itemid = 400070,
         name = "Blood Soaked Vellum: Skeletal Sharpshooter",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300156,
+        creatureId = 300156,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
     [400071] = {
         itemid = 400071,
         name = "Blood Soaked Vellum: Necromantic Lich",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 146507,
+        creatureId = 146507,
         description = "Obtained from the Argent Quartermaster.",
         icon = 2
     },
     [400072] = {
         itemid = 400072,
         name = "Blood Soaked Vellum: Dreadshriek Banshee",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 300157,
+        creatureId = 300157,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
     [400074] = {
         itemid = 400074,
         name = "Blood Soaked Vellum: Berserk Ghoul",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 14712,
+        creatureId = 14712,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
     [400075] = {
         itemid = 400075,
         name = "Blood Soaked Vellum: Hulking Corpse",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 301422,
+        creatureId = 301422,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
     [400076] = {
         itemid = 400076,
         name = "Blood Soaked Vellum: Shambling Horror",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 476019,
+        creatureId = 476019,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
     [400077] = {
         itemid = 400077,
         name = "Blood Soaked Vellum: Plagued Zombie",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 476020,
+        creatureId = 476020,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
     [400078] = {
         itemid = 400078,
         name = "Summoner's Stone: Doom Warden",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 476022,
+        creatureId = 476022,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 3
     },
     [400079] = {
         itemid = 400079,
         name = "Summoner's Stone: Infernal",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 476023,
+        creatureId = 476023,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 3
     },
     [400080] = {
         itemid = 400080,
         name = "Summoner's Stone: Infernal Warden",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 476024,
+        creatureId = 476024,
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 3
     },
@@ -15972,16 +15972,16 @@ AV_VanityItems = {
     [532578] = {
         itemid = 532578,
         name = "Beastmaster's Whistle: Doberman MK III",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 98483,
+        creatureId = 98483,
         description = "Can be purchased from Millhouse Manastorm.",
         icon = 1
     },
     [532579] = {
         itemid = 532579,
         name = "Elemental Lodestone: Bound Water Elemental",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 98484,
+        creatureId = 98484,
         description = "Can be purchased from Millhouse Manastorm.",
         icon = 5
     },
@@ -18168,7 +18168,7 @@ AV_VanityItems = {
         creaturePreview = 76,
         creatureId = 76,
         description = "",
-        icon = 4
+        icon = 5
     },
     [612859] = {
         itemid = 612859,
@@ -18231,8 +18231,8 @@ AV_VanityItems = {
     [980060] = {
         itemid = 980060,
         name = "Beastmaster's Whistle: Pink Elekk",
-        creaturePreview = 0,
-        creatureId = 0,
+        creaturePreview = 338957,
+        creatureId = 338957,
         description = "Can be purchased from Millhouse Manastorm.",
         icon = 1
     },

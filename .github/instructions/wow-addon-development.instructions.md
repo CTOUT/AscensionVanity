@@ -255,6 +255,32 @@ data/
 - Checksums detect file tampering
 **Implementation**: See `docs/DATA_INTEGRITY_IMPLEMENTATION.md` and `data/README.md`
 
+### Pattern: Lua String Escaping Round-Trip (Nov 2025)
+**Discovered**: November 7, 2025
+**Files**: utilities/MasterAPIDumpImport.ps1, utilities/GenerateVanityDB_Master.ps1
+**Description**: Proper handling of special characters (quotes, backslashes) through the data pipeline
+**Flow**:
+```
+Game Lua → Import (unescape) → JSON → Generate (escape) → Lua
+"Maury \"Club Foot\" Wilkins"  →  Maury "Club Foot" Wilkins  →  "Maury \"Club Foot\" Wilkins"
+```
+**Implementation**:
+```powershell
+# IMPORT (MasterAPIDumpImport.ps1)
+# 1. Capture with regex that handles escapes
+if ($block -match '\["name"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
+    $name = $Matches[1]
+    # 2. Unescape Lua strings
+    $name = $name -replace '\\"', '"'
+}
+
+# GENERATE (GenerateVanityDB_Master.ps1)
+# 1. Escape backslashes first (order matters!)
+$safeName = $name -replace '\\', '\\\\' -replace '"', '\"'
+```
+**Critical**: Must maintain BOTH import unescape AND generation escape. Missing either breaks items with quotes.
+**Test Items**: Count Ungula (79631), Maury "Club Foot" Wilkins (87655), Chucky "Ten Thumbs" (87657)
+
 ---
 
 *Add new patterns here as discovered*
@@ -290,6 +316,24 @@ data/
 **Fix**: Implemented immutable source + corrections infrastructure (Nov 2, 2025)
 **Files**: data/sources/ (immutable), data/corrections/ (for fixes), utilities/MasterPipeline.ps1
 **Prevention**: Checksums detect tampering, corrections are documented and version controlled
+
+### Gotcha: Quote Escaping Must Be Maintained in Pipeline (CRITICAL - Fixed Multiple Times!)
+**Date**: November 7, 2025 (Fixed previously at least 3 times!)
+**Problem**: Names/descriptions with quotes (e.g., Maury "Club Foot" Wilkins, Chucky "Ten Thumbs", "Count" Ungula) cause Lua syntax errors in-game due to improper escaping
+**Root Cause**: Two-step process requires both proper UNESCAPING on import and proper ESCAPING on generation
+**Solution**: 
+1. **MasterAPIDumpImport.ps1** (lines 221-230):
+   - Use regex `((?:[^"\\]|\\.)*)` to capture escaped quotes in Lua strings
+   - Unescape with `-replace '\\"', '"'` to convert Lua `\"` back to plain `"`
+   - Apply to BOTH names and descriptions
+2. **GenerateVanityDB_Master.ps1** (line 277):
+   - Escape backslashes first: `-replace '\\', '\\\\'` (double each backslash)
+   - Then escape quotes: `-replace '"', '\"'` (escape each quote)
+   - Apply to names, descriptions, zones, subzones, and quest lock fields
+**Test**: Round-trip test: `Maury "Club Foot" Wilkins` → Lua `\"` → JSON → back to plain `"` → Lua `\"`
+**Files**: utilities/MasterAPIDumpImport.ps1, utilities/GenerateVanityDB_Master.ps1
+**Affected Items**: Count Ungula (79631), Maury "Club Foot" Wilkins (87655), Chucky "Ten Thumbs" (87657)
+**⚠️ CRITICAL**: This fix has been lost multiple times. DO NOT remove or "simplify" the escaping logic without testing these specific items!
 
 ---
 
