@@ -200,6 +200,27 @@ When you provide incorrect or suboptimal guidance:
 **Correction**: [What is right]
 **Why**: [Explanation of the proper approach]
 
+### Lesson: Lua String Escaping in Generated Code
+**Date**: November 7, 2025
+**Mistake**: Using single backslash for escaping quotes in generated Lua files: `-replace '"', '\"'` without proper backslash handling
+**Correction**: Must escape backslashes FIRST, then quotes: `-replace '\\', '\\\\' -replace '"', '\"'`
+**Why**: PowerShell regex replacement requires doubling backslashes. Order matters - if you escape quotes first and then backslashes, you'll double-escape the backslashes you just added for the quotes.
+**Example**: Input `Test "Name"` should become `Test \"Name\"` not `Test \\\"Name\\\"`
+
+### Lesson: Regex for Lua String Parsing
+**Date**: November 7, 2025
+**Mistake**: Using `([^"]+)` regex to capture Lua strings, which stops at the first quote
+**Correction**: Use `((?:[^"\\]|\\.)*)` to properly capture strings with escaped quotes
+**Why**: The pattern `(?:[^"\\]|\\.)` means "either a character that's not a quote or backslash, OR a backslash followed by any character". This correctly captures `Maury \"Club Foot\"` as a complete string.
+**WoW Relevance**: NPC names in WoW often contain quotes/apostrophes (Count "Ungula", Maury "Club Foot" Wilkins)
+
+### Lesson: Two-Step String Processing Pipeline
+**Date**: November 7, 2025
+**Mistake**: Only escaping on output OR only unescaping on input
+**Correction**: Must handle BOTH directions: unescape when importing from Lua, escape when generating Lua
+**Why**: Data flows through multiple formats (Lua → JSON → Lua). Each format has different escaping rules. Must convert properly at each boundary.
+**Pattern**: Import (Lua → Plain Text) → Process (Plain Text) → Export (Plain Text → Lua)
+
 ---
 
 *Add new WoW development lessons here as they are learned*
@@ -392,6 +413,13 @@ If I suggest something that contradicts these instructions:
 ---
 
 ## 📜 Version History
+
+### v2.1.0 - November 7, 2025
+**WoW Development Lessons**: Added critical lessons from quote escaping fix
+- Added lesson on Lua string escaping in generated code (backslash order matters)
+- Added lesson on regex for Lua string parsing (handling escaped quotes)
+- Added lesson on two-step string processing pipeline (unescape + escape)
+- Updated version to reflect new WoW-specific knowledge
 
 ### v2.0.0 - November 5, 2025
 **Major Reorganization**: Eliminated duplication, clarified file boundaries
