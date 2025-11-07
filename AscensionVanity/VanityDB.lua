@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.2
--- Generated: 2025-11-07 10:08:42
+-- Generated: 2025-11-07 11:24:00
 -- Total Items: 2355
 -- Source Scan: Ascension 2025-11-07 @ 06:00:59 GMT Not Available
 -- Scan Date: 2025-11-07 07:40:59
@@ -32,12 +32,12 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-07 10:08:42",
+    generatedDate = "2025-11-07 11:24:00",
     ascensionVersion = "2025-11-07 @ 06:00:59 GMT Not Available",
     scanDate = "2025-11-07 07:40:59",
     totalItems = 2355,
     schemaVersion = "2.2",
-    questLockedCount = 2
+    questLockedCount = 13
 }
 
 AV_IconList = {
@@ -5019,7 +5019,7 @@ AV_VanityItems = {
             lockType = "completion",
             faction = "Horde",
             warning = "This elite panther can only be freed and fought during the quest! Don't complete until you get the drop!",
-            notes = "Free the panther by right-clicking cage with Panther Cage Key. Elite mob. Long respawn timer - farm carefully!"
+            notes = "Free the panther by right-clicking cage with Panther Cage Key. Elite mob. Long respawn timer - farm carefully! Horde only."
         }
     },
     [80094] = {
@@ -8175,7 +8175,15 @@ AV_VanityItems = {
         creaturePreview = 3898,
         creatureId = 3898,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 976,
+            questName = "Supplies to Auberdine",
+            lockType = "completion",
+            faction = "Alliance",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Darkshore. Not repeatable. Alliance only."
+        }
     },
     [82370] = {
         itemid = 82370,
@@ -8183,7 +8191,15 @@ AV_VanityItems = {
         creaturePreview = 3900,
         creatureId = 3900,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 976,
+            questName = "Supplies to Auberdine",
+            lockType = "completion",
+            faction = "Alliance",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Darkshore. Not repeatable. Alliance only."
+        }
     },
     [82371] = {
         itemid = 82371,
@@ -8508,7 +8524,15 @@ AV_VanityItems = {
         creaturePreview = 7664,
         creatureId = 7664,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 3628,
+            questName = "You Are Rakh'likh, Demon",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Blasted Lands. Not repeatable."
+        }
     },
     [82744] = {
         itemid = 82744,
@@ -8563,7 +8587,15 @@ AV_VanityItems = {
         creaturePreview = 10373,
         creatureId = 10373,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 4763,
+            questName = "The Blackwood Corrupted",
+            lockType = "completion",
+            faction = "Alliance",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Darkshore. Not repeatable. Alliance only."
+        }
     },
     [82778] = {
         itemid = 82778,
@@ -8732,7 +8764,7 @@ AV_VanityItems = {
             lockType = "completion",
             faction = "Horde",
             warning = "This demon only spawns during the quest! Don't complete until you get the drop!",
-            notes = "Summoned using Demon Pick on Demon Box. One-time quest - NPC permanently unavailable after completion."
+            notes = "Summoned using Demon Pick on Demon Box. One-time quest - NPC permanently unavailable after completion. Horde only."
         }
     },
     [82876] = {
@@ -8789,7 +8821,15 @@ AV_VanityItems = {
         creaturePreview = 14502,
         creatureId = 14502,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 7631,
+            questName = "Dreadsteed of Xoroth",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Quest summon only! Warlock class quest - don't complete until you get the drop!",
+            notes = "Summoned during Warlock epic mount quest in Dire Maul. Not repeatable. Warlock only."
+        }
     },
     [82985] = {
         itemid = 82985,
@@ -9326,7 +9366,15 @@ AV_VanityItems = {
         creaturePreview = 19493,
         creatureId = 19493,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 10173,
+            questName = "The Archmage's Staff",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Netherstorm. Not repeatable."
+        }
     },
     [84108] = {
         itemid = 84108,
@@ -9503,7 +9551,15 @@ AV_VanityItems = {
         creaturePreview = 19963,
         creatureId = 19963,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 10821,
+            questName = "You're Fired!",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Blade's Edge Mountains. Not repeatable."
+        }
     },
     [84304] = {
         itemid = 84304,
@@ -10008,7 +10064,15 @@ AV_VanityItems = {
         creaturePreview = 22281,
         creatureId = 22281,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 11079,
+            questName = "A Fel Whip For Gahk",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Random quest summon! Don't complete until you get the drop!",
+            notes = "Random summon during quest in Blade's Edge Mountains. Not repeatable."
+        }
     },
     [85243] = {
         itemid = 85243,
@@ -10129,7 +10193,15 @@ AV_VanityItems = {
         creaturePreview = 23353,
         creatureId = 23353,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 11079,
+            questName = "A Fel Whip For Gahk",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Random quest summon! Don't complete until you get the drop!",
+            notes = "Random summon during quest in Blade's Edge Mountains. Not repeatable."
+        }
     },
     [85637] = {
         itemid = 85637,
@@ -10137,7 +10209,15 @@ AV_VanityItems = {
         creaturePreview = 23355,
         creatureId = 23355,
         description = "",
-        icon = 3
+        icon = 3,
+        questLock = {
+            questId = 11079,
+            questName = "A Fel Whip For Gahk",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Random quest summon! Don't complete until you get the drop!",
+            notes = "Random summon during quest in Blade's Edge Mountains. Not repeatable."
+        }
     },
     [85690] = {
         itemid = 85690,
@@ -21184,7 +21264,15 @@ AV_VanityItems = {
         creaturePreview = 23789,
         creatureId = 23789,
         description = "",
-        icon = 4
+        icon = 4,
+        questLock = {
+            questId = 11162,
+            questName = "Challenge to the Black Flight",
+            lockType = "completion",
+            faction = "Both",
+            warning = "Quest summon only! Don't complete until you get the drop!",
+            notes = "Summoned during quest in Dustwallow Marsh. Not repeatable."
+        }
     },
     [1180603] = {
         itemid = 1180603,
