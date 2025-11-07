@@ -162,14 +162,47 @@ function Get-LuaTableBlock {
 function Extract-ApidumpEntries {
     param([string]$DumpText)
 
-    $match = [regex]::Match($DumpText, '\["APIDump"\]\s*=\s*\{([\s\S]*?)\n\s*\}\s*,?')
-    if (-not $match.Success) {
-        throw "APIDumpSectionNotFound"
+    # More robust regex - find APIDump section
+    # Match the opening of APIDump table
+    if ($DumpText -notmatch '\["APIDump"\]\s*=\s*\{') {
+        throw "APIDumpSectionNotFound: Could not find ['APIDump'] = {"
     }
-
-    $entriesBlock = $match.Groups[1].Value
+    
+    $apiDumpStart = $DumpText.IndexOf('["APIDump"]')
+    $braceStart = $DumpText.IndexOf('{', $apiDumpStart)
+    
+    # Find matching closing brace
+    $depth = 0
+    $i = $braceStart
+    $length = $DumpText.Length
+    while ($i -lt $length) {
+        $char = $DumpText[$i]
+        if ($char -eq '{') {
+            $depth++
+        } elseif ($char -eq '}') {
+            $depth--
+            if ($depth -eq 0) {
+                break
+            }
+        }
+        $i++
+    }
+    
+    if ($depth -ne 0) {
+        throw "APIDumpSectionMalformed: Could not find matching closing brace"
+    }
+    
+    # Extract just the APIDump content (between outer braces)
+    $entriesBlock = $DumpText.Substring($braceStart + 1, $i - $braceStart - 1)
+    
+    # Now parse individual entries
     $entryPattern = '\[(\d+)\]\s*=\s*\{([\s\S]*?)\}\s*,?'
     $entryMatches = [regex]::Matches($entriesBlock, $entryPattern)
+    
+    if ($entryMatches.Count -eq 0) {
+        throw "NoEntriesParsed: Regex found 0 entries in APIDump block"
+    }
+    
     $results = @()
 
     foreach ($entryMatch in $entryMatches) {
