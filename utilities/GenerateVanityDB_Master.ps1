@@ -273,10 +273,11 @@ foreach ($p in ($processed | Sort-Object itemid)) {
     # Escape for Lua strings
     # ConvertFrom-Json unescapes JSON, giving us the actual string
     # We need to escape backslashes first, then quotes for Lua
-    $safeName = $p.name -replace '\\', '\\' -replace '"', '\"'
-    $safeDesc = $p.description -replace '\\', '\\' -replace '"', '\"'
-    $safeZone = if ($p.zone) { $p.zone -replace '\\', '\\' -replace '"', '\"' } else { $null }
-    $safeSubzone = if ($p.subzone) { $p.subzone -replace '\\', '\\' -replace '"', '\"' } else { $null }
+    # Using [regex]::Escape to properly handle backslashes, then manually escape quotes
+    $safeName = $p.name -replace '\\', '\\\\' -replace '"', '\"'
+    $safeDesc = $p.description -replace '\\', '\\\\' -replace '"', '\"'
+    $safeZone = if ($p.zone) { $p.zone -replace '\\', '\\\\' -replace '"', '\"' } else { $null }
+    $safeSubzone = if ($p.subzone) { $p.subzone -replace '\\', '\\\\' -replace '"', '\"' } else { $null }
     
     $db += ('    [' + $p.itemid + '] = {')
     $db += ('        itemid = ' + $p.itemid + ',')
@@ -294,9 +295,9 @@ foreach ($p in ($processed | Sort-Object itemid)) {
     
     # Add quest lock data if present (v2.2)
     if ($p.questLock) {
-        $safeQuestName = $p.questLock.questName -replace '\\', '\\' -replace '"', '\"'
-        $safeWarning = $p.questLock.warning -replace '\\', '\\' -replace '"', '\"'
-        $safeNotes = $p.questLock.notes -replace '\\', '\\' -replace '"', '\"'
+        $safeQuestName = $p.questLock.questName -replace '\\', '\\\\' -replace '"', '\"'
+        $safeWarning = $p.questLock.warning -replace '\\', '\\\\' -replace '"', '\"'
+        $safeNotes = $p.questLock.notes -replace '\\', '\\\\' -replace '"', '\"'
         
         $db += '        questLock = {'
         $db += ('            questId = ' + $p.questLock.questId + ',')

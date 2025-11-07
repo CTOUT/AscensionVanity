@@ -255,6 +255,61 @@ data/
 - Checksums detect file tampering
 **Implementation**: See `docs/DATA_INTEGRITY_IMPLEMENTATION.md` and `data/README.md`
 
+### Pattern: Lua String Escaping Round-Trip (Nov 2025)
+**Discovered**: November 7, 2025
+**Files**: utilities/MasterAPIDumpImport.ps1, utilities/GenerateVanityDB_Master.ps1
+**Description**: Proper handling of special characters (quotes, backslashes) through the data pipeline
+**Flow**:
+```
+Game Lua → Import (unescape) → JSON → Generate (escape) → Lua
+"Maury \"Club Foot\" Wilkins"  →  Maury "Club Foot" Wilkins  →  "Maury \"Club Foot\" Wilkins"
+```
+**Implementation**:
+```powershell
+# IMPORT (MasterAPIDumpImport.ps1)
+# 1. Capture with regex that handles escapes
+if ($block -match '\["name"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
+    $name = $Matches[1]
+    # 2. Unescape Lua strings
+    $name = $name -replace '\\"', '"'
+}
+
+# GENERATE (GenerateVanityDB_Master.ps1)
+# 1. Escape backslashes first (order matters!)
+$safeName = $name -replace '\\', '\\\\' -replace '"', '\"'
+```
+**Critical**: Must maintain BOTH import unescape AND generation escape. Missing either breaks items with quotes.
+**Test Items**: Count Ungula (79631), Maury "Club Foot" Wilkins (87655), Chucky "Ten Thumbs" (87657)
+**Verification**: Run `.\utilities\TestQuoteEscaping.ps1` to verify fix is still in place (10 automated checks)
+
+### Pattern: Automated Regression Testing (Nov 2025)
+**Discovered**: November 7, 2025
+**Files**: utilities/TestQuoteEscaping.ps1
+**Description**: Automated tests prevent critical fixes from being lost during refactoring
+**Why Needed**: Quote escaping fix was lost at least 3 times before automated testing was added
+**Implementation**: Script tests both source files for correct logic AND output file for correct results
+**Usage**:
+```powershell
+.\utilities\TestQuoteEscaping.ps1  # Should pass all 10 tests
+```
+**When to Run**:
+- Before any deployment to production
+- After modifying import or generation scripts
+- After "simplifying" or refactoring escaping logic
+- When quote-related issues are reported
+
+### Pattern: Triple-Layer Documentation (Nov 2025)
+**Discovered**: November 7, 2025
+**Files**: Multiple locations
+**Description**: Critical fixes that keep getting lost need multiple layers of documentation
+**Layers**:
+1. **Code Comments**: Explain WHY the complexity exists
+2. **Pattern Documentation**: How it works (this file)
+3. **Gotcha Warning**: What happens if removed (this file)
+4. **Standalone Reference**: Complete explanation with examples (e.g., QUOTE_ESCAPING_FIX.md)
+5. **Automated Test**: Catches removal/modification
+**When to Apply**: When a fix has been lost/re-implemented 2+ times
+
 ---
 
 *Add new patterns here as discovered*
@@ -290,6 +345,24 @@ data/
 **Fix**: Implemented immutable source + corrections infrastructure (Nov 2, 2025)
 **Files**: data/sources/ (immutable), data/corrections/ (for fixes), utilities/MasterPipeline.ps1
 **Prevention**: Checksums detect tampering, corrections are documented and version controlled
+
+### Gotcha: Quote Escaping Must Be Maintained in Pipeline (CRITICAL - Fixed Multiple Times!)
+**Date**: November 7, 2025 (Fixed previously at least 3 times!)
+**Problem**: Names/descriptions with quotes (e.g., Maury "Club Foot" Wilkins, Chucky "Ten Thumbs", "Count" Ungula) cause Lua syntax errors in-game due to improper escaping
+**Root Cause**: Two-step process requires both proper UNESCAPING on import and proper ESCAPING on generation
+**Solution**: 
+1. **MasterAPIDumpImport.ps1** (lines 221-230):
+   - Use regex `((?:[^"\\]|\\.)*)` to capture escaped quotes in Lua strings
+   - Unescape with `-replace '\\"', '"'` to convert Lua `\"` back to plain `"`
+   - Apply to BOTH names and descriptions
+2. **GenerateVanityDB_Master.ps1** (line 277):
+   - Escape backslashes first: `-replace '\\', '\\\\'` (double each backslash)
+   - Then escape quotes: `-replace '"', '\"'` (escape each quote)
+   - Apply to names, descriptions, zones, subzones, and quest lock fields
+**Test**: Round-trip test: `Maury "Club Foot" Wilkins` → Lua `\"` → JSON → back to plain `"` → Lua `\"`
+**Files**: utilities/MasterAPIDumpImport.ps1, utilities/GenerateVanityDB_Master.ps1
+**Affected Items**: Count Ungula (79631), Maury "Club Foot" Wilkins (87655), Chucky "Ten Thumbs" (87657)
+**⚠️ CRITICAL**: This fix has been lost multiple times. DO NOT remove or "simplify" the escaping logic without testing these specific items!
 
 ---
 
@@ -649,9 +722,27 @@ git push origin v2.1-dev
 
 ## 🔄 Recent Discoveries & Insights (Auto-Updated)
 
-**Last Updated**: November 2, 2025
+**Last Updated**: November 7, 2025
 
 This section is periodically updated by Copilot with new insights, challenges, and recognitions to prevent reinventing the wheel.
+
+### November 7, 2025 - Quote Escaping Fix Made Permanent
+
+**Challenge**: Items with quotes in names (Count Ungula, Maury "Club Foot" Wilkins, Chucky "Ten Thumbs") were causing Lua syntax errors. This issue had been fixed at least 3 times before and kept getting lost during refactoring.
+
+**Solution**: Implemented comprehensive protection system:
+1. **Code Fix**: Proper unescape on import (MasterAPIDumpImport.ps1) + proper escape on generation (GenerateVanityDB_Master.ps1)
+2. **Automated Test**: TestQuoteEscaping.ps1 with 10 validation checks
+3. **Triple Documentation**: Pattern + Gotcha warning + Standalone reference (QUOTE_ESCAPING_FIX.md)
+4. **Explicit Warning**: Documentation states "Fixed Multiple Times" to alert future developers
+
+**Insight**: Critical fixes that keep getting lost need MULTIPLE layers of protection:
+- Automated tests (catches removal)
+- Clear documentation (explains why complexity is needed)
+- Warning messages (prevents "simplification")
+- Standalone reference (provides complete context)
+
+**Result**: Fix committed (0f79246) with comprehensive safeguards. Will not be lost again.
 
 ### November 2, 2025 - Data Structure Consistency
 
@@ -737,6 +828,18 @@ This section is periodically updated by Copilot with new insights, challenges, a
 ---
 
 ## 📜 Version History
+
+### v2.1.0 - November 7, 2025
+**Critical Fix + Documentation**: Quote escaping fix with permanent protection
+- Added Lua String Escaping Round-Trip pattern
+- Added Quote Escaping Must Be Maintained gotcha (marked as fixed multiple times)
+- Added Automated Regression Testing pattern
+- Added Triple-Layer Documentation pattern
+- Created TestQuoteEscaping.ps1 with 10 automated validation checks
+- Created QUOTE_ESCAPING_FIX.md standalone reference
+- Added WoW-specific lessons to chatmode file (Lua string escaping, regex parsing, two-step pipeline)
+- Updated Recent Discoveries with November 7, 2025 insights
+- Commit: 0f79246
 
 ### v2.0.0 - November 5, 2025
 **Major Reorganization**: Eliminated duplication, clarified file boundaries

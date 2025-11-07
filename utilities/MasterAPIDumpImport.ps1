@@ -162,14 +162,47 @@ function Get-LuaTableBlock {
 function Extract-ApidumpEntries {
     param([string]$DumpText)
 
-    $match = [regex]::Match($DumpText, '\["APIDump"\]\s*=\s*\{([\s\S]*?)\n\s*\}\s*,?')
-    if (-not $match.Success) {
-        throw "APIDumpSectionNotFound"
+    # More robust regex - find APIDump section
+    # Match the opening of APIDump table
+    if ($DumpText -notmatch '\["APIDump"\]\s*=\s*\{') {
+        throw "APIDumpSectionNotFound: Could not find ['APIDump'] = {"
     }
-
-    $entriesBlock = $match.Groups[1].Value
+    
+    $apiDumpStart = $DumpText.IndexOf('["APIDump"]')
+    $braceStart = $DumpText.IndexOf('{', $apiDumpStart)
+    
+    # Find matching closing brace
+    $depth = 0
+    $i = $braceStart
+    $length = $DumpText.Length
+    while ($i -lt $length) {
+        $char = $DumpText[$i]
+        if ($char -eq '{') {
+            $depth++
+        } elseif ($char -eq '}') {
+            $depth--
+            if ($depth -eq 0) {
+                break
+            }
+        }
+        $i++
+    }
+    
+    if ($depth -ne 0) {
+        throw "APIDumpSectionMalformed: Could not find matching closing brace"
+    }
+    
+    # Extract just the APIDump content (between outer braces)
+    $entriesBlock = $DumpText.Substring($braceStart + 1, $i - $braceStart - 1)
+    
+    # Now parse individual entries
     $entryPattern = '\[(\d+)\]\s*=\s*\{([\s\S]*?)\}\s*,?'
     $entryMatches = [regex]::Matches($entriesBlock, $entryPattern)
+    
+    if ($entryMatches.Count -eq 0) {
+        throw "NoEntriesParsed: Regex found 0 entries in APIDump block"
+    }
+    
     $results = @()
 
     foreach ($entryMatch in $entryMatches) {
@@ -184,8 +217,18 @@ function Extract-ApidumpEntries {
 
         if ($block -match '(?i)\["itemid"\]\s*=\s*(\d+)') { $gameItemId = [int]$Matches[1] }
         if ($block -match '(?i)\["creaturePreview"\]\s*=\s*(\d+)') { $creatureId = [int]$Matches[1] }
-        if ($block -match '\["name"\]\s*=\s*"([^"]+)"') { $name = $Matches[1] }
-        if ($block -match '\["description"\]\s*=\s*"([\s\S]*?)"') { $description = $Matches[1] }
+        # Match strings that may contain escaped quotes (\")
+        if ($block -match '\["name"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
+            $name = $Matches[1]
+            # Unescape Lua escape sequences: \" becomes "
+            $name = $name -replace '\\"', '"'
+            # Note: We keep other escapes like \n as-is since they're rare in names
+        }
+        if ($block -match '\["description"\]\s*=\s*"((?:[^"\\]|\\.)*)"') {
+            $description = $Matches[1]
+            # Unescape Lua escape sequences
+            $description = $description -replace '\\"', '"'
+        }
         if ($block -match '\["icon"\]\s*=\s*"([^"]+)"') { $icon = $Matches[1] }
 
         $results += [pscustomobject]@{
