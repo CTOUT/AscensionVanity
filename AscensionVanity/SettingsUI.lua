@@ -133,8 +133,8 @@ local colorCheckbox = CreateCheckbox(
 
 local regionsCheckbox = CreateCheckbox(
     settingsPanel,
-    "Show Region Information (Coming Soon)",
-    "Display location/region information for vanity item drops.\n\n" .. AV_COLOR_ORANGE .. "Note:" .. AV_COLOR_RESET .. " Region data is currently being collected and will be available in a future update.",
+    "Show Region Information",
+    "Display zone/region location information for vanity item drops in tooltips.",
     optionsHeader,
     480,
     -10

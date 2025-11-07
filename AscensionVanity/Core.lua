@@ -528,13 +528,25 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         end
                         
                         -- Check if quest is active in quest log
+                        -- Try multiple methods for compatibility across WoW versions
                         if not questCompleted then
-                            local numEntries = GetNumQuestLogEntries()
-                            for i = 1, numEntries do
-                                local questTitle, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
-                                if questID == questLock.questId then
-                                    questActive = true
-                                    break
+                            -- Method 1: C_QuestLog.GetLogIndexForQuestID (WOTLK/Retail API)
+                            if C_QuestLog and C_QuestLog.GetLogIndexForQuestID then
+                                local questIndex = C_QuestLog.GetLogIndexForQuestID(questLock.questId)
+                                questActive = (questIndex ~= nil and questIndex > 0)
+                            -- Method 2: GetQuestLogIndexByID (Classic/WOTLK fallback)
+                            elseif GetQuestLogIndexByID then
+                                local questIndex = GetQuestLogIndexByID(questLock.questId)
+                                questActive = (questIndex ~= nil and questIndex > 0)
+                            -- Method 3: Manual iteration (last resort)
+                            else
+                                local numEntries = GetNumQuestLogEntries()
+                                for i = 1, numEntries do
+                                    local questTitle, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
+                                    if questID == questLock.questId then
+                                        questActive = true
+                                        break
+                                    end
                                 end
                             end
                         end

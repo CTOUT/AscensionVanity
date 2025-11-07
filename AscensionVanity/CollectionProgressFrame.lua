@@ -105,12 +105,10 @@ viewButton:SetScript("OnClick", function(self)
     if viewMode == "zone" then
         viewMode = "global"
         self:SetText("Global")
-        -- TODO: Switch to global stats
         print(AV_COLOR_YELLOW .. "Switched to Global view" .. AV_COLOR_RESET)
     else
         viewMode = "zone"
         self:SetText("Zone")
-        -- TODO: Switch to zone-specific stats
         print(AV_COLOR_YELLOW .. "Switched to Zone view" .. AV_COLOR_RESET)
     end
     -- Update progress bars with new view
@@ -166,6 +164,11 @@ end)
 -- ============================================================================
 -- Progress Bar Creation
 -- ============================================================================
+
+-- Forward declarations (functions used before they're defined)
+local ShowExpandedItems
+local ClearExpandedItems
+local UpdateProgressBars
 
 -- Progress bars container
 progressFrame.progressBars = {}
@@ -286,11 +289,14 @@ end
 -- Update Logic
 -- ============================================================================
 
--- Helper function to get items for a category (handles missing zone data)
+-- Helper function to get items for a category (filtered by zone in zone view)
 local function GetCategoryItems(category)
     local items = {}
     
-    -- Since we don't have zone data yet, get all items from VanityDB
+    -- Get current view mode (zone or global)
+    local viewMode = progressFrame.getViewMode()
+    local currentZone = viewMode == "zone" and GetZoneText() or nil
+    
     -- Filter by category based on item name prefix
     local categoryPrefixes = {
         beast = "Beastmaster's Whistle:",
@@ -305,13 +311,21 @@ local function GetCategoryItems(category)
     
     for itemId, itemData in pairs(AV_VanityItems or {}) do
         if itemData.name and itemData.name:find(prefix, 1, true) then
-            -- Extract pet name (everything after ": ")
-            local petName = itemData.name:match(": (.+)$") or itemData.name
-            table.insert(items, {
-                id = itemId,
-                name = petName,
-                learned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
-            })
+            -- If zone view, filter by current zone
+            local includeItem = true
+            if currentZone and itemData.zone then
+                includeItem = (itemData.zone == currentZone)
+            end
+            
+            if includeItem then
+                -- Extract pet name (everything after ": ")
+                local petName = itemData.name:match(": (.+)$") or itemData.name
+                table.insert(items, {
+                    id = itemId,
+                    name = petName,
+                    learned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+                })
+            end
         end
     end
     
@@ -324,18 +338,21 @@ local function GetCategoryItems(category)
 end
 
 -- Helper function to clear expanded item displays
-local function ClearExpandedItems(category)
-    if not progressFrame.expandedItems[category] then return end
+ClearExpandedItems = function(category)
+    if not progressFrame.expandedItems[category] then 
+        progressFrame.expandedItems[category] = {}
+        return 
+    end
     
     for _, fontString in ipairs(progressFrame.expandedItems[category]) do
         fontString:Hide()
-        fontString:SetParent(nil)
+        -- Don't use SetParent(nil) for FontStrings - just hide and remove reference
     end
     progressFrame.expandedItems[category] = {}
 end
 
 -- Helper function to create expanded item list for a category
-local function ShowExpandedItems(category, anchorBar, yOffset)
+ShowExpandedItems = function(category, anchorBar, yOffset)
     ClearExpandedItems(category)
     
     local items = GetCategoryItems(category)
@@ -394,7 +411,7 @@ local function ResizeFrame()
 end
 
 -- Function to update all progress bars
-local function UpdateProgressBars()
+UpdateProgressBars = function()
     if not AV_GetCollectionProgress then
         return  -- Function not available yet
     end

@@ -276,8 +276,8 @@ end
 
 -- Build hierarchical continent/zone/subzone list from database
 local function BuildGeographicHierarchy()
-    -- Since the database doesn't have zone/subzone data yet,
-    -- we'll just return empty structures
+    -- TODO: Build hierarchical zone structure for advanced filtering
+    -- Currently using flat zone filter (All Zones / Current Zone)
     return {}, {}
 end
 
@@ -288,7 +288,7 @@ allZonesRadio:SetScript("OnClick", function(self)
     browserState.filterMode = "all"
     browserState.currentPage = 1
     titleBar:SetText("|cFF00FF96AscensionVanity|r Database Browser")
-    RefreshDisplay()
+    AV_DatabaseBrowser_RefreshDisplay()
 end)
 
 currentZoneRadio:SetScript("OnClick", function(self)
@@ -298,10 +298,47 @@ currentZoneRadio:SetScript("OnClick", function(self)
     browserState.currentZone = GetCurrentZone()
     browserState.currentPage = 1
     titleBar:SetText("|cFF00FF96AscensionVanity|r Regional Guide - " .. browserState.currentZone)
-    RefreshDisplay()
+    AV_DatabaseBrowser_RefreshDisplay()
 end)
 
-local function BuildCreatureList()
+local function ApplyFilters()
+    -- CRITICAL: Filter items FIRST, then group by creature
+    -- This prevents creature_0 (unknown) from including items from all zones
+    local currentZone = browserState.currentZone
+    local filteredItems = {}
+    
+    -- Debug output
+    local totalItems = 0
+    for _ in pairs(AV_VanityItems) do
+        totalItems = totalItems + 1
+    end
+    
+    -- Step 1: Filter items by zone (if in current zone mode)
+    for itemId, data in pairs(AV_VanityItems) do
+        local includeItem = true
+        
+        -- Zone filter
+        if browserState.filterMode == "current" and currentZone and currentZone ~= "" then
+            if (data.zone or "Unknown") ~= currentZone then
+                includeItem = false
+            end
+        end
+        
+        if includeItem then
+            filteredItems[itemId] = data
+        end
+    end
+    
+    -- Debug: Count filtered items
+    local filteredItemCount = 0
+    for _ in pairs(filteredItems) do
+        filteredItemCount = filteredItemCount + 1
+    end
+    
+    print(string.format("DEBUG: Zone='%s', Mode=%s, Total Items=%d, Filtered Items=%d", 
+        tostring(currentZone), browserState.filterMode, totalItems, filteredItemCount))
+    
+    -- Step 2: Build creature list from FILTERED items only
     local creatures = {}
     
     local function GetCategoryFromName(itemName)
@@ -324,7 +361,7 @@ local function BuildCreatureList()
         return petName or fullName
     end
     
-    for itemId, data in pairs(AV_VanityItems) do
+    for itemId, data in pairs(filteredItems) do
         local creatureId = data.creatureId or 0
         local creatureKey = "creature_" .. creatureId
         
@@ -342,23 +379,16 @@ local function BuildCreatureList()
         table.insert(creatures[creatureKey].items, {
             id = itemId,
             name = GetPetName(data.name),
-            icon = data.icon
+            icon = data.icon,
+            zone = data.zone or "Unknown"
         })
     end
     
-    return creatures
-end
-
-local function ApplyFilters()
-    local allCreatures = BuildCreatureList()
+    -- Step 3: Apply remaining filters to creatures
     local filtered = {}
     
-    for creatureName, creatureData in pairs(allCreatures) do
+    for creatureName, creatureData in pairs(creatures) do
         local includeCreature = true
-        
-        -- Filter mode: "all" shows everything, "current" filters to current zone
-        -- Note: Since database doesn't have zone data yet, "current" mode won't filter anything
-        -- This will be functional once zone enrichment is applied to VanityDB.lua
         
         -- Category filter
         if includeCreature and browserState.categoryFilter ~= "all" then
