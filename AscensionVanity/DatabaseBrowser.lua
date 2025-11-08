@@ -8,7 +8,7 @@ local AddonName = "AscensionVanity"
 -- ============================================================================
 
 local browserFrame = CreateFrame("Frame", "AV_DatabaseBrowser", UIParent)
-browserFrame:SetSize(600, 500)
+browserFrame:SetSize(565, 540)
 browserFrame:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 browserFrame:SetBackdrop({
     bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -328,15 +328,6 @@ local function ApplyFilters()
             filteredItems[itemId] = data
         end
     end
-    
-    -- Debug: Count filtered items
-    local filteredItemCount = 0
-    for _ in pairs(filteredItems) do
-        filteredItemCount = filteredItemCount + 1
-    end
-    
-    print(string.format("DEBUG: Zone='%s', Mode=%s, Total Items=%d, Filtered Items=%d", 
-        tostring(currentZone), browserState.filterMode, totalItems, filteredItemCount))
     
     -- Step 2: Build creature list from FILTERED items only
     local creatures = {}

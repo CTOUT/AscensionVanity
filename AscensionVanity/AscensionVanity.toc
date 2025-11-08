@@ -33,5 +33,8 @@ RegionalGuide.lua
 # Database Browser (v2.2+ comprehensive database explorer and regional guide)
 DatabaseBrowser.lua
 
+# Debug Tools (development only - uncomment when needed)
+# DEBUG_Measurements.lua
+
 # Core functionality
 Core.lua

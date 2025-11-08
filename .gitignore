@@ -54,6 +54,9 @@ data/VanityDB.lua
 *.swo
 *~
 
+# Debug files (development only)
+AscensionVanity/DEBUG_*.lua
+
 # Windows specific
 Thumbs.db
 Desktop.ini
@@ -66,6 +69,7 @@ Desktop.ini
 *.bak
 *.backup
 *.old
+*.backup-*
 
 # Local configuration (contains user-specific paths)
 local.config.ps1

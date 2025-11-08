@@ -8,7 +8,7 @@
 
 -- Create main frame
 local progressFrame = CreateFrame("Frame", "AV_CollectionProgressFrame", UIParent)
-progressFrame:SetSize(250, 200)  -- Initial size, will be resized dynamically
+progressFrame:SetSize(260, 260)  -- Initial size, will be resized dynamically
 progressFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -50, -200)
 progressFrame:SetMovable(true)
 progressFrame:EnableMouse(true)
@@ -42,17 +42,213 @@ local title = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarg
 title:SetPoint("TOPLEFT", headerBg, "TOPLEFT", 8, -4)
 title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
 
+-- View mode state and filter state
+local viewMode = "zone"  -- Can be "zone" or "global"
+local groupMode = "creatures"  -- Can be "creatures" or "subzones"
+local learnedFilter = "all"  -- Can be "all", "learned", or "unlearned"
+
+-- Store a function that will collapse categories (defined later after expandedCategories exists)
+local collapseAllCategories
+
+-- Button bar below header (for controls that don't overlap title)
+local buttonBar = CreateFrame("Frame", nil, progressFrame)
+buttonBar:SetSize(240, 20)
+buttonBar:SetPoint("TOPLEFT", headerBg, "BOTTOMLEFT", 5, -5)
+
+-- View mode toggle button (Zone ↔ Global)
+local viewButton = CreateFrame("Button", nil, buttonBar, "UIPanelButtonTemplate")
+viewButton:SetSize(55, 18)
+viewButton:SetPoint("LEFT", buttonBar, "LEFT", 0, 0)
+viewButton:SetText("Zone")
+viewButton:SetNormalFontObject("GameFontNormalSmall")
+viewButton:SetScript("OnClick", function(self)
+    -- Toggle between zone and global
+    if viewMode == "zone" then
+        viewMode = "global"
+        self:SetText("Global")
+        -- Disable subzones button in global view
+        local gButton = progressFrame.groupButton
+        if gButton then
+            -- Force to creatures mode (subzones don't exist in global)
+            groupMode = "creatures"
+            gButton:SetText("Creatures")
+            gButton:Disable()
+            gButton:SetAlpha(0.5)
+            
+            -- Clear all subzone expanded states and items (if initialized)
+            if expandedSubzones then
+                for subzone, _ in pairs(expandedSubzones) do
+                    expandedSubzones[subzone] = false
+                    if ClearExpandedItems then
+                        ClearExpandedItems(subzone)
+                    end
+                end
+            end
+            
+            -- Clear the subzone bars table to force recreation (if exists)
+            if progressFrame.subzoneBars then
+                for name, bar in pairs(progressFrame.subzoneBars) do
+                    if bar.bg then bar.bg:Hide() end
+                    if bar.fill then bar.fill:Hide() end
+                    if bar.text then bar.text:Hide() end
+                    if bar.expandBtn then bar.expandBtn:Hide() end
+                end
+            end
+        end
+    else
+        viewMode = "zone"
+        self:SetText("Zone")
+        -- Re-enable subzones button in zone view
+        local gButton = progressFrame.groupButton
+        if gButton then
+            -- Update button text to reflect current mode
+            gButton:SetText(groupMode == "subzones" and "Subzones" or "Creatures")
+            gButton:Enable()
+            gButton:SetAlpha(1.0)
+        end
+    end
+    
+    -- Don't collapse - let user's expansion state persist
+    
+    -- Update progress bars with new view
+    if progressFrame:IsVisible() then
+        local updateFunc = _G.AV_UpdateProgressBars or function() end
+        updateFunc()
+    end
+end)
+viewButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    
+    local zone = GetZoneText()
+    
+    if viewMode == "zone" then
+        GameTooltip:SetText("Zone View", 1, 1, 1)
+        GameTooltip:AddLine("Showing items in: " .. (zone or "Unknown"), nil, nil, nil, true)
+        GameTooltip:AddLine("Click to switch to Global view", 0.7, 0.7, 0.7, true)
+    else
+        GameTooltip:SetText("Global View", 1, 1, 1)
+        GameTooltip:AddLine("Showing all items across all zones", nil, nil, nil, true)
+        GameTooltip:AddLine("Click to switch to Zone view", 0.7, 0.7, 0.7, true)
+    end
+    GameTooltip:Show()
+end)
+viewButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+end)
+progressFrame.viewButton = viewButton
+progressFrame.getViewMode = function() return viewMode end
+
+-- Group mode toggle button (Creatures ↔ Subzones, only enabled in Zone view)
+local groupButton = CreateFrame("Button", nil, buttonBar, "UIPanelButtonTemplate")
+groupButton:SetSize(70, 18)
+groupButton:SetPoint("LEFT", viewButton, "RIGHT", 3, 0)
+groupButton:SetText("Creatures")
+groupButton:SetNormalFontObject("GameFontNormalSmall")
+groupButton:SetScript("OnClick", function(self)
+    -- Only allow toggle in zone view
+    if viewMode ~= "zone" then return end
+    
+    -- Toggle between creatures and subzones grouping
+    if groupMode == "creatures" then
+        groupMode = "subzones"
+        self:SetText("Subzones")
+    else
+        groupMode = "creatures"
+        self:SetText("Creatures")
+    end
+    
+    -- Collapse all when switching group modes
+    if collapseAllCategories then
+        collapseAllCategories()
+    end
+    
+    -- Update display
+    if progressFrame:IsVisible() then
+        local updateFunc = _G.AV_UpdateProgressBars or function() end
+        updateFunc()
+    end
+end)
+groupButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    if groupMode == "creatures" then
+        GameTooltip:SetText("Grouped by Creatures", 1, 1, 1)
+        GameTooltip:AddLine("Showing categories: Beasts, Demons, etc.", nil, nil, nil, true)
+        GameTooltip:AddLine("Click to group by Subzones", 0.7, 0.7, 0.7, true)
+    else
+        GameTooltip:SetText("Grouped by Subzones", 1, 1, 1)
+        GameTooltip:AddLine("Showing subzones in current zone", nil, nil, nil, true)
+        GameTooltip:AddLine("Click to group by Creatures", 0.7, 0.7, 0.7, true)
+    end
+    GameTooltip:Show()
+end)
+groupButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+end)
+progressFrame.groupButton = groupButton
+progressFrame.getGroupMode = function() return groupMode end
+
+-- Learned filter toggle button (cycles through All → Learned → Unlearned)
+local learnedButton = CreateFrame("Button", nil, buttonBar, "UIPanelButtonTemplate")
+learnedButton:SetSize(65, 18)
+learnedButton:SetPoint("LEFT", groupButton, "RIGHT", 3, 0)
+learnedButton:SetText("All")
+learnedButton:SetNormalFontObject("GameFontNormalSmall")
+learnedButton:SetScript("OnClick", function(self)
+    -- Cycle through three states
+    if learnedFilter == "all" then
+        learnedFilter = "learned"
+        self:SetText("Learned")
+    elseif learnedFilter == "learned" then
+        learnedFilter = "unlearned"
+        self:SetText("Unlearned")
+    else
+        learnedFilter = "all"
+        self:SetText("All")
+    end
+    
+    -- Update progress bars (will recalculate, reposition, AND refresh expanded items)
+    if progressFrame:IsVisible() then
+        local updateFunc = _G.AV_UpdateProgressBars or function() end
+        updateFunc()  -- This will now handle refreshing expanded items internally
+    end
+end)
+learnedButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+    if learnedFilter == "all" then
+        GameTooltip:SetText("Showing All Items", 1, 1, 1)
+        GameTooltip:AddLine("Click to show learned items only", 0.7, 0.7, 0.7, true)
+    elseif learnedFilter == "learned" then
+        GameTooltip:SetText("Showing Learned Only", 1, 1, 1)
+        GameTooltip:AddLine("Click to show unlearned items only", 0.7, 0.7, 0.7, true)
+    else
+        GameTooltip:SetText("Showing Unlearned Only", 1, 1, 1)
+        GameTooltip:AddLine("Click to show all items", 0.7, 0.7, 0.7, true)
+    end
+    GameTooltip:Show()
+end)
+learnedButton:SetScript("OnLeave", function()
+    GameTooltip:Hide()
+end)
+progressFrame.learnedButton = learnedButton
+progressFrame.getLearnedFilter = function() return learnedFilter end
+
 -- Details button (opens Database Browser)
-local detailsButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
-detailsButton:SetSize(60, 18)
-detailsButton:SetPoint("TOPRIGHT", headerBg, "TOPRIGHT", -5, -3)
+local detailsButton = CreateFrame("Button", nil, buttonBar, "UIPanelButtonTemplate")
+detailsButton:SetSize(50, 18)
+detailsButton:SetPoint("LEFT", learnedButton, "RIGHT", 3, 0)
 detailsButton:SetText("Details")
 detailsButton:SetNormalFontObject("GameFontNormalSmall")
 detailsButton:SetScript("OnClick", function(self)
-    if AV_DatabaseBrowser_Show then
+    -- Toggle browser (close if already open)
+    local browserFrame = _G["AV_DatabaseBrowser"]
+    if browserFrame and browserFrame:IsVisible() then
+        if AV_DatabaseBrowser_Hide then
+            AV_DatabaseBrowser_Hide()
+        end
+    elseif AV_DatabaseBrowser_Show then
         -- Get current zone if in zone view
-        local viewMode = progressFrame.getViewMode and progressFrame.getViewMode() or "zone"
-        if viewMode == "zone" then
+        local mode = progressFrame.getViewMode and progressFrame.getViewMode() or "zone"
+        if mode == "zone" then
             local currentZone = GetZoneText()
             AV_DatabaseBrowser_Show(currentZone)
         else
@@ -70,71 +266,6 @@ end)
 detailsButton:SetScript("OnLeave", function()
     GameTooltip:Hide()
 end)
-
--- Refresh button (manual update trigger)
-local refreshButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
-refreshButton:SetSize(20, 18)
-refreshButton:SetPoint("RIGHT", detailsButton, "LEFT", -3, 0)
-refreshButton:SetText("⟳")
-refreshButton:SetNormalFontObject("GameFontNormalLarge")
-refreshButton:SetScript("OnClick", function(self)
-    local updateFunc = _G.AV_UpdateProgressBars
-    if updateFunc then
-        updateFunc()
-    end
-end)
-refreshButton:SetScript("OnEnter", function(self)
-    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
-    GameTooltip:SetText("Refresh Progress", 1, 1, 1)
-    GameTooltip:AddLine("Manually update collection progress", nil, nil, nil, true)
-    GameTooltip:AddLine("Use this if progress doesn't auto-update", 0.7, 0.7, 0.7, true)
-    GameTooltip:Show()
-end)
-refreshButton:SetScript("OnLeave", function()
-    GameTooltip:Hide()
-end)
-
--- View mode toggle button (Global/Zone)
-local viewMode = "zone"  -- Default to zone view
-local viewButton = CreateFrame("Button", nil, progressFrame, "UIPanelButtonTemplate")
-viewButton:SetSize(60, 18)
-viewButton:SetPoint("RIGHT", refreshButton, "LEFT", -3, 0)
-viewButton:SetText("Zone")
-viewButton:SetNormalFontObject("GameFontNormalSmall")
-viewButton:SetScript("OnClick", function(self)
-    if viewMode == "zone" then
-        viewMode = "global"
-        self:SetText("Global")
-        print(AV_COLOR_YELLOW .. "Switched to Global view" .. AV_COLOR_RESET)
-    else
-        viewMode = "zone"
-        self:SetText("Zone")
-        print(AV_COLOR_YELLOW .. "Switched to Zone view" .. AV_COLOR_RESET)
-    end
-    -- Update progress bars with new view
-    if progressFrame:IsVisible() then
-        local updateFunc = _G.AV_UpdateProgressBars or function() end
-        updateFunc()
-    end
-end)
-viewButton:SetScript("OnEnter", function(self)
-    GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
-    if viewMode == "zone" then
-        GameTooltip:SetText("Zone View", 1, 1, 1)
-        GameTooltip:AddLine("Showing progress for items in your current zone", nil, nil, nil, true)
-        GameTooltip:AddLine("Click to switch to Global view", 0.7, 0.7, 0.7, true)
-    else
-        GameTooltip:SetText("Global View", 1, 1, 1)
-        GameTooltip:AddLine("Showing overall collection progress", nil, nil, nil, true)
-        GameTooltip:AddLine("Click to switch to Zone view", 0.7, 0.7, 0.7, true)
-    end
-    GameTooltip:Show()
-end)
-viewButton:SetScript("OnLeave", function()
-    GameTooltip:Hide()
-end)
-progressFrame.viewButton = viewButton
-progressFrame.getViewMode = function() return viewMode end
 
 -- Close button
 local closeButton = CreateFrame("Button", nil, progressFrame, "UIPanelCloseButton")
@@ -169,9 +300,12 @@ end)
 local ShowExpandedItems
 local ClearExpandedItems
 local UpdateProgressBars
+local GetCreaturesInSubzone
+local RefreshExpandedItems
 
 -- Progress bars container
 progressFrame.progressBars = {}
+progressFrame.subzoneBars = {}  -- Dynamic bars for subzone mode
 
 -- Helper function to create a progress bar
 local function CreateProgressBar(parent, label, anchor, yOffset)
@@ -191,7 +325,7 @@ local function CreateProgressBar(parent, label, anchor, yOffset)
     
     -- Bar text (category name + progress)
     local text = parent:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    text:SetPoint("LEFT", bg, "LEFT", 4, 0)
+    text:SetPoint("LEFT", bg, "LEFT", 22, 0)  -- Offset to make room for expand button
     text:SetJustifyH("LEFT")
     text:SetText(label)
     
@@ -225,17 +359,18 @@ local function CreateProgressBar(parent, label, anchor, yOffset)
 end
 
 -- Create progress bars
-local yPos = -8
+local yPos = -30  -- Moved down to make room for button bar
 progressFrame.progressBars.overall = CreateProgressBar(progressFrame, "Overall", headerBg, yPos)
 
 -- Flat anchoring for categories (all anchored to overall bar, spaced vertically)
-local categoryOrder = {"beast", "demon", "undead", "dragonkin", "elemental"}
+-- Categories sorted alphabetically: Beast, Demon, Dragonkin, Elemental, Undead
+local categoryOrder = {"beast", "demon", "dragonkin", "elemental", "undead"}
 local categoryOffsets = {
     beast = -28,
     demon = -52,
-    undead = -76,
-    dragonkin = -100,
-    elemental = -124
+    dragonkin = -76,
+    elemental = -100,
+    undead = -124
 }
 for _, cat in ipairs(categoryOrder) do
     progressFrame.progressBars[cat] = CreateProgressBar(progressFrame, AV_CATEGORY_SHORT_NAMES[cat], progressFrame.progressBars.overall.bg, categoryOffsets[cat])
@@ -243,12 +378,65 @@ end
 
 -- Expand/collapse state
 local overallExpanded = true
-local expandedCategories = { beast=true, demon=true, undead=true, dragonkin=true, elemental=true }
+local expandedCategories = { beast=false, demon=false, dragonkin=false, elemental=false, undead=false }
+local expandedSubzones = {}  -- Dynamic, changes per zone
+
+-- Define collapse function for view/group mode toggles (declared earlier)
+collapseAllCategories = function()
+    -- Collapse category bars
+    for _, cat in ipairs({"beast", "demon", "dragonkin", "elemental", "undead"}) do
+        if expandedCategories[cat] then
+            expandedCategories[cat] = false
+            local bar = progressFrame.progressBars[cat]
+            if bar and bar.expandBtn then
+                bar.expandBtn:SetText("+")
+            end
+            if ClearExpandedItems then
+                ClearExpandedItems(cat)
+            end
+        end
+    end
+    
+    -- Collapse subzone bars
+    for subzone, _ in pairs(expandedSubzones) do
+        expandedSubzones[subzone] = false
+        if ClearExpandedItems then
+            ClearExpandedItems(subzone)
+        end
+    end
+end
+
+-- Helper function to refresh expanded items without collapsing
+RefreshExpandedItems = function()
+    local groupMode = progressFrame.getGroupMode()
+    
+    -- Refresh creature categories
+    for _, cat in ipairs({"beast", "demon", "dragonkin", "elemental", "undead"}) do
+        if expandedCategories[cat] then
+            local bar = progressFrame.progressBars[cat]
+            if bar and bar.bg then
+                ShowExpandedItems(cat, bar.bg, -6)
+            end
+        end
+    end
+    
+    -- Refresh subzones
+    if groupMode == "subzones" then
+        for subzone, expanded in pairs(expandedSubzones) do
+            if expanded then
+                local bar = progressFrame.subzoneBars[subzone]
+                if bar and bar.bg then
+                    ShowExpandedItems(subzone, bar.bg, -6)
+                end
+            end
+        end
+    end
+end
 
 -- Add expand/collapse button for OVERALL bar (master collapse)
 local overallBtn = CreateFrame("Button", nil, progressFrame)
 overallBtn:SetSize(14, 14)
-overallBtn:SetPoint("RIGHT", progressFrame.progressBars.overall.bg, "LEFT", -4, 0)
+overallBtn:SetPoint("LEFT", progressFrame.progressBars.overall.bg, "LEFT", 4, 0)  -- Inside frame on left
 overallBtn:SetNormalFontObject("GameFontNormal")
 overallBtn:SetText("-")
 overallBtn:SetScript("OnClick", function()
@@ -263,7 +451,7 @@ for _, cat in ipairs(categoryOrder) do
     local bar = progressFrame.progressBars[cat]
     local btn = CreateFrame("Button", nil, progressFrame)
     btn:SetSize(14, 14)
-    btn:SetPoint("RIGHT", bar.bg, "LEFT", -4, 0)
+    btn:SetPoint("LEFT", bar.bg, "LEFT", 4, 0)  -- Inside frame on left
     btn:SetNormalFontObject("GameFontNormal")
     btn:SetText("+")  -- Start collapsed
     
@@ -273,7 +461,7 @@ for _, cat in ipairs(categoryOrder) do
         
         if expandedCategories[cat] then
             -- Show pet names for this category
-            ShowExpandedItems(cat, bar.bg, -25)  -- -25 is bar height
+            ShowExpandedItems(cat, bar.bg, -6)  -- Tight gap between category and items
         else
             -- Hide pet names for this category
             ClearExpandedItems(cat)
@@ -289,12 +477,13 @@ end
 -- Update Logic
 -- ============================================================================
 
--- Helper function to get items for a category (filtered by zone in zone view)
+-- Helper function to get items for a category (filtered by zone/subzone/learned)
 local function GetCategoryItems(category)
     local items = {}
     
-    -- Get current view mode (zone or global)
+    -- Get current view mode and filters
     local viewMode = progressFrame.getViewMode()
+    local learnedFilter = progressFrame.getLearnedFilter()
     local currentZone = viewMode == "zone" and GetZoneText() or nil
     
     -- Filter by category based on item name prefix
@@ -311,10 +500,23 @@ local function GetCategoryItems(category)
     
     for itemId, itemData in pairs(AV_VanityItems or {}) do
         if itemData.name and itemData.name:find(prefix, 1, true) then
-            -- If zone view, filter by current zone
             local includeItem = true
-            if currentZone and itemData.zone then
-                includeItem = (itemData.zone == currentZone)
+            
+            -- Zone filtering (simple now - no subzone)
+            if viewMode == "zone" and currentZone then
+                if not itemData.zone or itemData.zone ~= currentZone then
+                    includeItem = false
+                end
+            end
+            
+            -- Learned filter (three states)
+            if includeItem and learnedFilter ~= "all" then
+                local isLearned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+                if learnedFilter == "learned" and not isLearned then
+                    includeItem = false
+                elseif learnedFilter == "unlearned" and isLearned then
+                    includeItem = false
+                end
             end
             
             if includeItem then
@@ -355,44 +557,220 @@ end
 ShowExpandedItems = function(category, anchorBar, yOffset)
     ClearExpandedItems(category)
     
-    local items = GetCategoryItems(category)
-    if #items == 0 then return 0 end  -- Return 0 height if no items
+    local groupMode = progressFrame.getGroupMode()
+    local items = {}
+    
+    -- Determine what to show based on group mode
+    if groupMode == "subzones" then
+        -- In subzone mode, category is actually a subzone name - show creatures
+        items = GetCreaturesInSubzone(category)
+        if #items == 0 then return 0 end
+    else
+        -- In creatures mode, show items for this category
+        items = GetCategoryItems(category)
+        if #items == 0 then return 0 end
+    end
     
     progressFrame.expandedItems[category] = {}
     local itemHeight = 16
-    local currentY = yOffset - 4  -- Start below the bar
+    local currentY = yOffset - 2  -- Small gap below the bar
+    local maxItemsToShow = 10  -- Limit to prevent screen overflow
+    local itemsToDisplay = math.min(#items, maxItemsToShow)
     
-    for i, item in ipairs(items) do
+    for i = 1, itemsToDisplay do
+        local item = items[i]
         local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         itemText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)  -- Indent items
         itemText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
         itemText:SetJustifyH("LEFT")
         
-        -- Color code: green if learned, white if not
-        local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
-        local checkmark = item.learned and "✓ " or "  "
-        itemText:SetText(checkmark .. color .. item.name .. AV_COLOR_RESET)
+        if groupMode == "subzones" then
+            -- Show creature name with progress (X/Y items)
+            local color = (item.learned == item.total) and AV_COLOR_GREEN or "|cFFCCCCCC"
+            local icon = (item.learned == item.total) and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
+            itemText:SetText(icon .. color .. item.name .. string.format(" (%d/%d)", item.learned, item.total) .. AV_COLOR_RESET)
+        else
+            -- Show item name
+            local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
+            local icon = item.learned and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
+            itemText:SetText(icon .. color .. item.name .. AV_COLOR_RESET)
+        end
         
         table.insert(progressFrame.expandedItems[category], itemText)
         currentY = currentY - itemHeight
     end
     
-    -- Return total height used by expanded items
-    return #items * itemHeight + 4  -- +4 for spacing
+    -- Add truncation indicator if there are more items
+    if #items > maxItemsToShow then
+        local truncText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        truncText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
+        truncText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
+        truncText:SetJustifyH("LEFT")
+        local itemType = groupMode == "subzones" and "creatures" or "items"
+        truncText:SetText("|cFF888888... and " .. (#items - maxItemsToShow) .. " more " .. itemType .. "|r")
+        
+        table.insert(progressFrame.expandedItems[category], truncText)
+        currentY = currentY - itemHeight
+    end
+    
+    -- Return total height used by expanded items (including truncation line if present)
+    local displayedLines = itemsToDisplay + (#items > maxItemsToShow and 1 or 0)
+    return displayedLines * itemHeight + 12  -- +12 for spacing after list
+end
+
+-- Helper function to get subzones in current zone with their items
+local function GetSubzonesInZone()
+    if viewMode ~= "zone" then return {} end
+    
+    local currentZone = GetZoneText()
+    if not currentZone or currentZone == "" then return {} end
+    
+    local subzones = {}
+    local learnedFilter = progressFrame.getLearnedFilter()
+    
+    -- First pass: Find ALL subzones in zone (unfiltered) to establish structure
+    -- This ensures we show all subzones even with 0/X when filtering
+    for itemId, itemData in pairs(AV_VanityItems or {}) do
+        if itemData.zone == currentZone and itemData.subzone and itemData.subzone ~= "" then
+            local subzone = itemData.subzone
+            if not subzones[subzone] then
+                subzones[subzone] = { total = 0, learned = 0, totalUnfiltered = 0, creatures = {} }
+            end
+            -- Count total items in subzone (unfiltered)
+            subzones[subzone].totalUnfiltered = subzones[subzone].totalUnfiltered + 1
+        end
+    end
+    
+    -- Second pass: Count learned items (always show learned/total regardless of filter)
+    for itemId, itemData in pairs(AV_VanityItems or {}) do
+        if itemData.zone == currentZone and itemData.subzone and itemData.subzone ~= "" then
+            local subzone = itemData.subzone
+            
+            -- Always count total (unfiltered)
+            subzones[subzone].total = subzones[subzone].total + 1
+            
+            -- Always count learned
+            local isLearned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+            if isLearned then
+                subzones[subzone].learned = subzones[subzone].learned + 1
+            end
+            
+            -- Track creatures for expansion - apply filter here for what's shown in expanded list
+            local includeCreature = true
+            if learnedFilter ~= "all" then
+                if learnedFilter == "learned" and not isLearned then
+                    includeCreature = false
+                elseif learnedFilter == "unlearned" and isLearned then
+                    includeCreature = false
+                end
+            end
+            
+            if includeCreature then
+                -- Track creatures (extract from item name or use creatureId)
+                local creatureName = itemData.creatureName or "Unknown"
+                if not subzones[subzone].creatures[creatureName] then
+                    subzones[subzone].creatures[creatureName] = { total = 0, learned = 0 }
+                end
+                subzones[subzone].creatures[creatureName].total = subzones[subzone].creatures[creatureName].total + 1
+                if isLearned then
+                    subzones[subzone].creatures[creatureName].learned = subzones[subzone].creatures[creatureName].learned + 1
+                end
+            end
+        end
+    end
+    
+    -- Remove subzones with 0 total unfiltered items (shouldn't happen, but safety check)
+    for subzone, data in pairs(subzones) do
+        if data.totalUnfiltered == 0 then
+            subzones[subzone] = nil
+        end
+    end
+    
+    return subzones
+end
+
+-- Helper function to get creatures in a subzone (for expansion)
+GetCreaturesInSubzone = function(subzone)
+    local currentZone = GetZoneText()
+    if not currentZone or currentZone == "" then return {} end
+    
+    local creatures = {}
+    local learnedFilter = progressFrame.getLearnedFilter()
+    
+    for itemId, itemData in pairs(AV_VanityItems or {}) do
+        if itemData.zone == currentZone and itemData.subzone == subzone then
+            -- Check learned filter (three states)
+            local includeItem = true
+            if learnedFilter ~= "all" then
+                local isLearned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+                if learnedFilter == "learned" and not isLearned then
+                    includeItem = false
+                elseif learnedFilter == "unlearned" and isLearned then
+                    includeItem = false
+                end
+            end
+            
+            if includeItem then
+                -- Extract creature name from description (format: "Has a chance to drop from CreatureName within Zone")
+                local creatureName = "Unknown"
+                if itemData.description and itemData.description ~= "" then
+                    local match = itemData.description:match("drop from ([^%s][^%.]+) within")
+                    if match then
+                        creatureName = match
+                    end
+                end
+                
+                if not creatures[creatureName] then
+                    creatures[creatureName] = { total = 0, learned = 0, items = {} }
+                end
+                
+                creatures[creatureName].total = creatures[creatureName].total + 1
+                local isLearned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+                if isLearned then
+                    creatures[creatureName].learned = creatures[creatureName].learned + 1
+                end
+                
+                table.insert(creatures[creatureName].items, {
+                    id = itemId,
+                    name = itemData.name,
+                    learned = isLearned
+                })
+            end
+        end
+    end
+    
+    -- Convert to sorted array
+    local creatureList = {}
+    for name, data in pairs(creatures) do
+        table.insert(creatureList, {
+            name = name,
+            total = data.total,
+            learned = data.learned,
+            items = data.items
+        })
+    end
+    
+    table.sort(creatureList, function(a, b)
+        return a.name < b.name
+    end)
+    
+    return creatureList
 end
 
 -- Helper function to resize frame based on visible content
 local function ResizeFrame()
-    local headerHeight = 45  -- Title + buttons + padding
+    local headerHeight = 45  -- Title bar height
+    local buttonBarHeight = 22  -- Button bar below title
     local barHeight = 25
-    local padding = 10
-    local totalHeight = headerHeight
+    local padding = -5  -- Reduced from 10 for tighter UI
+    local totalHeight = headerHeight + buttonBarHeight
     
     -- Add overall bar
     totalHeight = totalHeight + barHeight
     
-    -- Add visible category bars and their expanded items
+    -- Add visible bars and their expanded items
     if overallExpanded then
+        -- Count category bars (creature mode)
         for _, cat in ipairs(categoryOrder) do
             local bar = progressFrame.progressBars[cat]
             if bar.bg:IsShown() then
@@ -404,106 +782,318 @@ local function ResizeFrame()
                 end
             end
         end
+        
+        -- Count subzone bars (subzone mode)
+        for _, bar in pairs(progressFrame.subzoneBars) do
+            if bar.bg:IsShown() then
+                totalHeight = totalHeight + barHeight
+                
+                -- Add height of expanded items if this subzone is expanded
+                local subzoneName = bar.label
+                if expandedSubzones[subzoneName] and progressFrame.expandedItems[subzoneName] then
+                    totalHeight = totalHeight + (#progressFrame.expandedItems[subzoneName] * 16) + 4
+                end
+            end
+        end
     end
     
     totalHeight = totalHeight + padding
     progressFrame:SetHeight(totalHeight)
 end
 
+-- Helper function to calculate progress for current view mode
+local function CalculateProgress()
+    local viewMode = progressFrame.getViewMode()
+    local groupMode = progressFrame.getGroupMode()
+    
+    -- For subzone grouping, calculate progress by subzone
+    if viewMode == "zone" and groupMode == "subzones" then
+        local subzones = GetSubzonesInZone()
+        local progress = {
+            overall = { learned = 0, total = 0 }
+        }
+        
+        -- Add each subzone to progress
+        for subzone, data in pairs(subzones) do
+            progress[subzone] = {
+                learned = data.learned,
+                total = data.total
+            }
+            progress.overall.learned = progress.overall.learned + data.learned
+            progress.overall.total = progress.overall.total + data.total
+        end
+        
+        return progress
+    end
+    
+    -- For creature grouping (default)
+    if viewMode == "zone" and AV_GetZoneCollectionProgress then
+        return AV_GetZoneCollectionProgress()
+    elseif AV_GetCollectionProgress then
+        return AV_GetCollectionProgress()
+    end
+    
+    return {}
+end
+
 -- Function to update all progress bars
-UpdateProgressBars = function()
+local isRefreshing = false  -- Prevent infinite recursion
+UpdateProgressBars = function(skipRefresh)
     if not AV_GetCollectionProgress then
         return  -- Function not available yet
     end
     
-    local progress
+    if isRefreshing then
+        return  -- Already in refresh cycle
+    end
+    
     local viewMode = progressFrame.getViewMode()
     
+    -- Update title based on view mode
     if viewMode == "zone" then
-        -- Get zone-specific progress (if available)
-        if AV_GetZoneCollectionProgress then
-            progress = AV_GetZoneCollectionProgress()
-            
-            -- Update title to show current zone
-            local zoneName = GetZoneText()
-            if zoneName and zoneName ~= "" then
-                title:SetText(AV_COLOR_HEADER .. zoneName .. AV_COLOR_RESET)
-            else
-                title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
-            end
+        local zoneName = GetZoneText()
+        if zoneName and zoneName ~= "" then
+            title:SetText(AV_COLOR_HEADER .. zoneName .. AV_COLOR_RESET)
         else
-            -- Fallback to global if zone function not available yet
-            progress = AV_GetCollectionProgress()
             title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
         end
     else
         -- Global view
-        progress = AV_GetCollectionProgress()
         title:SetText(AV_COLOR_HEADER .. "Collection Progress" .. AV_COLOR_RESET)
     end
     
-    -- Update each progress bar
-    for category, bar in pairs(progressFrame.progressBars) do
-        if progress[category] then
-            bar:SetProgress(progress[category].learned, progress[category].total)
-        end
+    -- Get progress using our helper function
+    local progress = CalculateProgress()
+    local groupMode = progressFrame.getGroupMode()
+    
+    -- Update overall bar
+    if progress.overall then
+        progressFrame.progressBars.overall:SetProgress(progress.overall.learned, progress.overall.total)
     end
     
-    -- Show/hide category bars based on view mode and expansion state
-    local currentY = -70  -- Start position below overall bar
+    -- Branch based on group mode
+    local currentY = -80  -- Start position below overall bar (adjusted for button bar)
     
-    if overallExpanded then
-        for _, cat in ipairs(categoryOrder) do
-            local bar = progressFrame.progressBars[cat]
-            local shouldShow = true
-            
-            if viewMode == "zone" then
-                -- In zone view: hide categories with 0 items
-                if progress[cat] and progress[cat].total == 0 then
-                    shouldShow = false
-                end
-            end
-            
-            if shouldShow then
-                -- Reposition bar to current Y (handles moving up when categories hidden)
-                bar.bg:SetPoint("TOPLEFT", progressFrame, "TOPLEFT", 8, currentY)
-                bar.bg:Show()
-                bar.fill:Show()
-                bar.text:Show()
-                if bar.expandBtn then bar.expandBtn:Show() end
-                
-                -- Move down for next bar
-                currentY = currentY - 25  -- Bar height
-                
-                -- If this category is expanded, account for expanded items
-                if expandedCategories[cat] and progressFrame.expandedItems[cat] then
-                    currentY = currentY - (#progressFrame.expandedItems[cat] * 16) - 4
-                end
-            else
-                bar.bg:Hide()
-                bar.fill:Hide()
-                bar.text:Hide()
-                if bar.expandBtn then bar.expandBtn:Hide() end
-                -- Also hide any expanded items for this category
-                ClearExpandedItems(cat)
-                expandedCategories[cat] = false
-                if bar.expandBtn then bar.expandBtn:SetText("+") end
-            end
-        end
-    else
-        -- Overall is collapsed, hide all categories
+    if viewMode == "zone" and groupMode == "subzones" and overallExpanded then
+        -- ============== SUBZONE MODE ==============
+        -- Hide all category bars
         for _, cat in ipairs(categoryOrder) do
             local bar = progressFrame.progressBars[cat]
             bar.bg:Hide()
             bar.fill:Hide()
             bar.text:Hide()
             if bar.expandBtn then bar.expandBtn:Hide() end
-            ClearExpandedItems(cat)
+        end
+        
+        -- Create/show subzone bars dynamically
+        local subzones = GetSubzonesInZone()
+        local subzoneNames = {}
+        for name in pairs(subzones) do
+            table.insert(subzoneNames, name)
+        end
+        table.sort(subzoneNames)
+        
+        for _, subzoneName in ipairs(subzoneNames) do
+            local data = subzones[subzoneName]
+            
+            -- Always show subzones that have data (even if filtered total is 0)
+            -- This shows "0/X" when filtering, consistent with creature categories
+            -- Get or create bar for this subzone
+            local bar = progressFrame.subzoneBars[subzoneName]
+            if not bar then
+                -- Create new bar dynamically
+                local bg = progressFrame:CreateTexture(nil, "BACKGROUND")
+                bg:SetHeight(18)
+                bg:SetColorTexture(0.15, 0.15, 0.15, 0.9)
+                
+                local fill = progressFrame:CreateTexture(nil, "ARTWORK")
+                fill:SetHeight(16)
+                fill:SetPoint("TOPLEFT", bg, "TOPLEFT", 1, -1)
+                fill:SetWidth(1)
+                fill:SetColorTexture(0.2, 0.6, 0.2, 1)
+                
+                local text = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+                text:SetPoint("LEFT", bg, "LEFT", 22, 0)
+                text:SetJustifyH("LEFT")
+                
+                -- Create expand button
+                local btn = CreateFrame("Button", nil, progressFrame)
+                btn:SetSize(14, 14)
+                btn:SetPoint("LEFT", bg, "LEFT", 4, 0)
+                btn:SetNormalFontObject("GameFontNormal")
+                btn:SetText("+")
+                btn:SetScript("OnClick", function()
+                    expandedSubzones[subzoneName] = not expandedSubzones[subzoneName]
+                    btn:SetText(expandedSubzones[subzoneName] and "-" or "+")
+                    
+                    if expandedSubzones[subzoneName] then
+                        ShowExpandedItems(subzoneName, bg, -6)
+                    else
+                        ClearExpandedItems(subzoneName)
+                    end
+                    
+                    UpdateProgressBars()
+                end)
+                
+                bar = {
+                    bg = bg,
+                    fill = fill,
+                    text = text,
+                    expandBtn = btn,
+                    label = subzoneName,
+                    SetProgress = function(self, learned, total)
+                        local percent = total > 0 and (learned / total) or 0
+                        local width = bg:GetWidth() - 2
+                        self.fill:SetWidth(math.max(1, width * percent))
+                        
+                        if percent >= 1.0 then
+                            self.fill:SetColorTexture(0.2, 0.8, 0.2, 1)
+                        elseif percent >= 0.75 then
+                            self.fill:SetColorTexture(0.4, 0.7, 0.3, 1)
+                        elseif percent >= 0.5 then
+                            self.fill:SetColorTexture(0.8, 0.8, 0.2, 1)
+                        elseif percent >= 0.25 then
+                            self.fill:SetColorTexture(0.9, 0.6, 0.2, 1)
+                        else
+                            self.fill:SetColorTexture(0.8, 0.2, 0.2, 1)
+                        end
+                        
+                        self.text:SetText(string.format("%s: %d/%d (%.1f%%)", self.label, learned, total, percent * 100))
+                    end
+                }
+                
+                progressFrame.subzoneBars[subzoneName] = bar
+            end
+            
+            -- Position and show bar
+            bar.bg:SetPoint("TOPLEFT", progressFrame, "TOPLEFT", 8, currentY)
+            bar.bg:SetPoint("TOPRIGHT", progressFrame, "TOPRIGHT", -8, currentY)
+            bar.bg:Show()
+            bar.fill:Show()
+            bar.text:Show()
+            bar.expandBtn:Show()
+            
+            -- Update progress
+            bar:SetProgress(data.learned, data.total)
+            
+            -- Move down for next bar
+            currentY = currentY - 25
+            
+            -- Account for expanded items
+            if expandedSubzones[subzoneName] and progressFrame.expandedItems[subzoneName] then
+                currentY = currentY - (#progressFrame.expandedItems[subzoneName] * 16) - 4
+            end
+        end  -- Close the for loop
+        
+        -- Hide unused subzone bars
+        for name, bar in pairs(progressFrame.subzoneBars) do
+            if not subzones[name] then
+                bar.bg:Hide()
+                bar.fill:Hide()
+                bar.text:Hide()
+                bar.expandBtn:Hide()
+            end
+        end
+        
+    else
+        -- ============== CREATURE MODE (default) ==============
+        -- Hide all subzone bars
+        for _, bar in pairs(progressFrame.subzoneBars) do
+            bar.bg:Hide()
+            bar.fill:Hide()
+            bar.text:Hide()
+            bar.expandBtn:Hide()
+        end
+        
+        -- Update category bars
+        for category, bar in pairs(progressFrame.progressBars) do
+            if category ~= "overall" and progress[category] then
+                bar:SetProgress(progress[category].learned, progress[category].total)
+            end
+        end
+        
+        -- Show/hide category bars
+        if overallExpanded then
+            for _, cat in ipairs(categoryOrder) do
+                local bar = progressFrame.progressBars[cat]
+                local shouldShow = false  -- Default to hidden
+                
+                -- Only show if category has items (total > 0)
+                -- This hides categories with literally no items in zone (0/0)
+                -- But shows categories with items even if filtered to 0 (0/X where X > 0)
+                if progress[cat] and progress[cat].total > 0 then
+                    shouldShow = true
+                end
+                
+                if shouldShow then
+                    bar.bg:SetPoint("TOPLEFT", progressFrame, "TOPLEFT", 8, currentY)
+                    bar.bg:Show()
+                    bar.fill:Show()
+                    bar.text:Show()
+                    if bar.expandBtn then bar.expandBtn:Show() end
+                    
+                    currentY = currentY - 25
+                    
+                    if expandedCategories[cat] and progressFrame.expandedItems[cat] then
+                        currentY = currentY - (#progressFrame.expandedItems[cat] * 16) - 4
+                    end
+                else
+                    bar.bg:Hide()
+                    bar.fill:Hide()
+                    bar.text:Hide()
+                    if bar.expandBtn then bar.expandBtn:Hide() end
+                    ClearExpandedItems(cat)
+                    expandedCategories[cat] = false
+                    if bar.expandBtn then bar.expandBtn:SetText("+") end
+                end
+            end
+        else
+            -- Overall is collapsed, hide all categories
+            for _, cat in ipairs(categoryOrder) do
+                local bar = progressFrame.progressBars[cat]
+                bar.bg:Hide()
+                bar.fill:Hide()
+                bar.text:Hide()
+                if bar.expandBtn then bar.expandBtn:Hide() end
+                ClearExpandedItems(cat)
+            end
         end
     end
     
     -- Resize frame to fit visible content
     ResizeFrame()
+    
+    -- If we haven't refreshed items yet, check if we need to refresh expanded items
+    if not skipRefresh and RefreshExpandedItems then
+        -- Check if any categories or subzones are expanded
+        local hasExpanded = false
+        
+        -- Check category expansions
+        for _, expanded in pairs(expandedCategories) do
+            if expanded then
+                hasExpanded = true
+                break
+            end
+        end
+        
+        -- Check subzone expansions
+        if not hasExpanded then
+            for _, expanded in pairs(expandedSubzones) do
+                if expanded then
+                    hasExpanded = true
+                    break
+                end
+            end
+        end
+        
+        if hasExpanded then
+            isRefreshing = true
+            RefreshExpandedItems()
+            isRefreshing = false
+            -- Call UpdateProgressBars again to reposition with new item counts
+            UpdateProgressBars(true)  -- Skip refresh on recursive call
+        end
+    end
 end
 
 -- Expose globally for external updates
@@ -588,7 +1178,10 @@ local initFrame = CreateFrame("Frame")
 initFrame:RegisterEvent("PLAYER_LOGIN")
 initFrame:SetScript("OnEvent", function(self, event)
     if event == "PLAYER_LOGIN" then
-        Initialize()
+        -- Delay initialization slightly to ensure zone data is loaded
+        C_Timer.After(0.5, function()
+            Initialize()
+        end)
         self:UnregisterEvent("PLAYER_LOGIN")
     end
 end)
