@@ -97,3 +97,4 @@ data/*.json
 releases/archive/
 releases/*.zip
 !releases/AscensionVanity-v2.0.zip
+*.zip
