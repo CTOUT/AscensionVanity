@@ -2,6 +2,40 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
+## [2.2-beta] - 2025-11-08
+
+### Fixed
+- **Database Browser Zone Filtering**: Resolved bug where zone filter showed hundreds of creatures instead of ~11
+  - Root cause: Was grouping by creature BEFORE filtering by zone (creature_0 contamination)
+  - Solution: Implemented filter-then-group approach for accurate zone-specific results
+  - User confirmed: "No, that issue appears to be resolved"
+- **Settings UI Layout**: Fixed button overlap and text clipping issues
+  - Changed bottom buttons from vertical to horizontal layout (3 buttons, 220px each with 10px spacing)
+  - Moved "Color Code Items by Status" from 240px to 320px right to prevent text overlap
+  - Extended Display Options background from 190px to 155px (then optimized based on content)
+
+### Improved
+- **Creature ID Display**: Now shows Creature IDs for ALL NPCs, not just those with database entries
+  - Helps with research and identifying potentially missing items
+  - User confirmed: "That's working!"
+- **Collection Progress Button**: Changed from one-way open to toggle (open/close)
+  - Clicking button now toggles progress frame on/off
+  - Also accessible via `/avanity progress` slash command
+- **UI Overlap Prevention**: Database Browser and Scanner buttons now close Settings panel when opened
+  - Prevents overlapping modal windows for better user experience
+
+### Removed
+- **Obsolete Features Cleanup**:
+  - Removed "Show Region Information" checkbox (feature never implemented, superseded by integrated zone/subzone data)
+  - Removed redundant "Show Collection Progress Frame" checkbox (button provides better control)
+  - Cleaned up dead code and unused functions
+
+### Changed
+- **Settings UI Polish**:
+  - Display Options background now properly sized for 4 checkboxes (155px height)
+  - Removed redundant "Settings are saved automatically" footer text
+  - Optimized frame height to 720px for better content fit
+
 ## [2.2-dev] - 2025-11-04
 
 ### Added - Database Browser with Pagination (v2.2)

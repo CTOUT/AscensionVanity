@@ -148,12 +148,13 @@ end
 
 ---
 
-## 🔴 ACTIVE BUG - Zone Filtering Not Working
+## ✅ RESOLVED - Zone Filtering Now Working
 
 ### Problem Statement
 **Expected**: Database Browser with "Current Zone: Alterac Mountains" + "Beast" filter should show ~11 creatures (matching Collection Progress Frame count of "Beasts: 0/11").
 
-**Actual**: Showing hundreds of creatures despite filter.
+**Actual (Nov 7)**: Was showing hundreds of creatures despite filter.
+**Status (Nov 8)**: ✅ **FIXED** - Now correctly filters to zone-specific creatures.
 
 ### Investigation Timeline
 
@@ -212,11 +213,13 @@ local function ApplyFilters()
 end
 ```
 
-**Result**: ❌ Still showing hundreds (deployed but not working)
+**Result**: ✅ **WORKING** (confirmed Nov 8, 2025)
+
+**Resolution**: The filter-then-group approach was correct. Items are now filtered by zone FIRST, then creatures are built only from those filtered items. This prevents `creature_0` (unknown IDs) from contaminating results with global data.
 
 ---
 
-#### Attempt 3: Add Debug Logging
+#### Attempt 3: Add Debug Logging (No Longer Needed)
 **Current State**: Added comprehensive debug output to identify WHERE the problem is.
 
 **Debug Code** (lines 316-332):
@@ -334,14 +337,15 @@ Database Browser Beast count should match (11)
 
 ## 🔧 Known Issues After This Session
 
-### Critical
-- ❌ **Database Browser zone filtering**: Still showing all creatures despite filters
+### ✅ Resolved (Nov 8, 2025)
+- ✅ **Database Browser zone filtering**: FIXED - Now correctly shows zone-filtered creatures
+- ✅ **Browser sorting**: FIXED - Stable 3-tier sorting implemented (commit 5fe8750)
 
 ### Minor
 - ⚠️ Quest detection awaiting user testing in quest area
 
 ### Nice to Have
-- 💡 Remove debug logging after zone filter is fixed
+- 💡 Remove debug logging (no longer needed since fix confirmed)
 - 💡 Consider caching zone filter results for performance
 
 ---

@@ -307,12 +307,6 @@ local function ApplyFilters()
     local currentZone = browserState.currentZone
     local filteredItems = {}
     
-    -- Debug output
-    local totalItems = 0
-    for _ in pairs(AV_VanityItems) do
-        totalItems = totalItems + 1
-    end
-    
     -- Step 1: Filter items by zone (if in current zone mode)
     for itemId, data in pairs(AV_VanityItems) do
         local includeItem = true

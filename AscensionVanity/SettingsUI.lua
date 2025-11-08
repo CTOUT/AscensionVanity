@@ -1,9 +1,3 @@
--- Global function to sync settings UI with frame visibility
-function AscensionVanity_SyncSettingsUI()
-    if progressFrameCheckbox and AscensionVanityDB and AscensionVanityDB.showProgressFrame ~= nil then
-        progressFrameCheckbox:SetChecked(AscensionVanityDB.showProgressFrame)
-    end
-end
 -- AscensionVanity - Settings UI
 -- User interface for addon configuration
 
@@ -18,7 +12,7 @@ local VERSION = AV_VERSION
 
 -- Create the main settings panel
 local settingsPanel = CreateFrame("Frame", "AscensionVanitySettingsPanel", UIParent)
-settingsPanel:SetSize(750, 700)  -- Landscape format with two-column layout, extended for API scanner button
+settingsPanel:SetSize(750, 720)  -- Extended height for horizontal button layout at bottom
 settingsPanel:SetPoint("CENTER")
 settingsPanel:SetFrameStrata("DIALOG")  -- Higher strata to prevent overlap
 settingsPanel:SetBackdrop({
@@ -103,8 +97,8 @@ local enabledCheckbox = CreateCheckbox(
 -- Options box container
 local optionsBox = settingsPanel:CreateTexture(nil, "BACKGROUND")
 optionsBox:SetPoint("TOPLEFT", enabledCheckbox, "BOTTOMLEFT", -10, -12)
-optionsBox:SetPoint("RIGHT", -30, 0)
-optionsBox:SetHeight(80)
+optionsBox:SetPoint("RIGHT", -5, 0)
+optionsBox:SetHeight(155)  -- Covers 4 display options (removed progress frame checkbox)
 optionsBox:SetColorTexture(0.1, 0.1, 0.1, 0.5)
 
 -- Options header
@@ -127,16 +121,7 @@ local colorCheckbox = CreateCheckbox(
     "Color Code Items by Status",
     "Color vanity items based on learned status:\n- Green = Learned\n- Yellow = Not Learned\n\nRequires: Show Learned Status enabled",
     optionsHeader,
-    240,
-    -10
-)
-
-local regionsCheckbox = CreateCheckbox(
-    settingsPanel,
-    "Show Region Information",
-    "Display zone/region location information for vanity item drops in tooltips.",
-    optionsHeader,
-    480,
+    320,  -- Moved right to prevent overlap with left column
     -10
 )
 
@@ -158,19 +143,10 @@ local showIDsCheckbox = CreateCheckbox(
     -10
 )
 
-local progressFrameCheckbox = CreateCheckbox(
-    settingsPanel,
-    "Show Collection Progress Frame",
-    "Display a moveable frame showing your collection progress.\n\n" .. AV_COLOR_GREEN .. "Features:" .. AV_COLOR_RESET .. "\n- Real-time progress tracking\n- Per-category breakdown\n- Color-coded completion\n- Draggable and resizable\n\n" .. AV_COLOR_YELLOW .. "Tip:" .. AV_COLOR_RESET .. " Use " .. AV_COLOR_WHITE .. "/avanity progress" .. AV_COLOR_RESET .. " to toggle",
-    showIDsCheckbox,
-    0,
-    -10
-)
-
 -- Separator before category filters
 local separatorCategories = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCategories:SetHeight(1)
-separatorCategories:SetPoint("TOP", progressFrameCheckbox, "BOTTOM", 0, -16)
+separatorCategories:SetPoint("TOP", showIDsCheckbox, "BOTTOM", 0, -16)
 separatorCategories:SetPoint("LEFT", 30, 0)
 separatorCategories:SetPoint("RIGHT", -30, 0)
 separatorCategories:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -428,65 +404,58 @@ separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
 -- Utility Buttons
 -- ============================================================================
 
--- Collection Progress button
+-- Bottom buttons (horizontal layout)
+-- Collection Progress button (left) - toggles the frame on/off
 local progressButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
-progressButton:SetPoint("TOP", separator2, "BOTTOM", 0, -16)
-progressButton:SetSize(200, 30)
+progressButton:SetPoint("TOP", separator2, "BOTTOM", -240, -16)
+progressButton:SetSize(220, 30)
 progressButton:SetText("Collection Progress")
 progressButton:SetScript("OnClick", function()
-    if AV_ShowCollectionProgress then
-        AV_ShowCollectionProgress()
+    if AV_ToggleCollectionProgress then
+        AV_ToggleCollectionProgress()
     end
 end)
 
--- Progress button description
-local progressDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-progressDesc:SetPoint("TOP", progressButton, "BOTTOM", 0, -4)
-progressDesc:SetText(AV_COLOR_GRAY .. "Track your collection progress" .. AV_COLOR_RESET)
-
--- Database Browser button
+-- Database Browser button (center)
 local browserButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
-browserButton:SetPoint("TOP", progressDesc, "BOTTOM", 0, -12)
-browserButton:SetSize(200, 30)
+browserButton:SetPoint("LEFT", progressButton, "RIGHT", 10, 0)
+browserButton:SetSize(220, 30)
 browserButton:SetText("Database Browser")
 browserButton:SetScript("OnClick", function()
+    settingsPanel:Hide()  -- Close settings when opening browser
     if AV_DatabaseBrowser_Toggle then
         AV_DatabaseBrowser_Toggle()
     end
 end)
 
--- Browser button description
-local browserDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-browserDesc:SetPoint("TOP", browserButton, "BOTTOM", 0, -4)
-browserDesc:SetText(AV_COLOR_GRAY .. "Explore database & regional hunting guide" .. AV_COLOR_RESET)
-
--- Open Scanner button
+-- Open Scanner button (right)
 local scannerButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
-scannerButton:SetPoint("TOP", browserDesc, "BOTTOM", 0, -12)
-scannerButton:SetSize(200, 30)
+scannerButton:SetPoint("LEFT", browserButton, "RIGHT", 10, 0)
+scannerButton:SetSize(220, 30)
 scannerButton:SetText("Open API Scanner")
 scannerButton:SetScript("OnClick", function()
     settingsPanel:Hide()  -- Close settings when opening scanner
     AscensionVanity_ShowScanner()
 end)
 
--- Scanner button description
+-- Button descriptions (below buttons, horizontal)
+local progressDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+progressDesc:SetPoint("TOP", progressButton, "BOTTOM", 0, -4)
+progressDesc:SetWidth(220)
+progressDesc:SetText(AV_COLOR_GRAY .. "Track your collection progress" .. AV_COLOR_RESET)
+
+local browserDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+browserDesc:SetPoint("TOP", browserButton, "BOTTOM", 0, -4)
+browserDesc:SetWidth(220)
+browserDesc:SetText(AV_COLOR_GRAY .. "Database & hunting guide" .. AV_COLOR_RESET)
+
 local scannerDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 scannerDesc:SetPoint("TOP", scannerButton, "BOTTOM", 0, -4)
-scannerDesc:SetText(AV_COLOR_GRAY .. "Developer tool for scanning vanity items" .. AV_COLOR_RESET)
+scannerDesc:SetWidth(220)
+scannerDesc:SetText(AV_COLOR_GRAY .. "Developer tool" .. AV_COLOR_RESET)
 
--- Separator before footer
-local separator3 = settingsPanel:CreateTexture(nil, "ARTWORK")
-separator3:SetHeight(1)
-separator3:SetPoint("TOP", scannerDesc, "BOTTOM", 0, -12)
-separator3:SetPoint("LEFT", 30, 0)
-separator3:SetPoint("RIGHT", -30, 0)
-separator3:SetColorTexture(0.25, 0.25, 0.25, 1)
-
--- Auto-save notice
-local autoSaveText = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-autoSaveText:SetPoint("TOP", separator3, "BOTTOM", 0, -8)
-autoSaveText:SetText(AV_COLOR_GRAY .. "Settings are saved automatically" .. AV_COLOR_RESET)
+-- Footer separator removed - no longer needed since we removed the auto-save notice
+-- (Auto-saving is standard behavior, no need to announce it)
 
 -- ============================================================================
 -- Settings Management
@@ -497,10 +466,8 @@ local function UpdateCheckboxes()
     enabledCheckbox:SetChecked(AscensionVanityDB.enabled)
     learnedCheckbox:SetChecked(AscensionVanityDB.showLearnedStatus)
     colorCheckbox:SetChecked(AscensionVanityDB.colorCode)
-    regionsCheckbox:SetChecked(AscensionVanityDB.showRegions)
     questWarningsCheckbox:SetChecked(AscensionVanityDB.showQuestWarnings == nil and true or AscensionVanityDB.showQuestWarnings)
     showIDsCheckbox:SetChecked(AscensionVanityDB.showIDs == nil and false or AscensionVanityDB.showIDs)
-    progressFrameCheckbox:SetChecked(AscensionVanityDB.showProgressFrame == nil and false or AscensionVanityDB.showProgressFrame)
     
     -- Update category filter checkboxes (v2.1+)
     if AscensionVanityDB.categoryFilters then
@@ -548,12 +515,6 @@ local function UpdateCheckboxes()
         colorCheckbox:Disable()
         colorCheckbox.label:SetFontObject("GameFontDisable")
     end
-    
-    -- Disable regions checkbox (feature not yet implemented)
-    regionsCheckbox:Disable()
-    regionsCheckbox:SetChecked(false)
-    regionsCheckbox.label:SetFontObject("GameFontDisable")
-    AscensionVanityDB.showRegions = false
 end
 
 -- Auto-save settings on change (no confirmation needed)
@@ -562,26 +523,10 @@ local function SaveSettings()
     AscensionVanityDB.enabled = enabledCheckbox:GetChecked() and true or false
     AscensionVanityDB.colorCode = colorCheckbox:GetChecked() and true or false
     AscensionVanityDB.showLearnedStatus = learnedCheckbox:GetChecked() and true or false
-    AscensionVanityDB.showRegions = regionsCheckbox:GetChecked() and true or false
     AscensionVanityDB.showQuestWarnings = questWarningsCheckbox:GetChecked() and true or false
     AscensionVanityDB.showIDs = showIDsCheckbox:GetChecked() and true or false
     
-    -- Save progress frame visibility (v2.2)
-    local wasVisible = AscensionVanityDB.showProgressFrame
-    AscensionVanityDB.showProgressFrame = progressFrameCheckbox:GetChecked() and true or false
-    
-    -- Toggle frame visibility if changed
-    if wasVisible ~= AscensionVanityDB.showProgressFrame then
-        if AscensionVanityDB.showProgressFrame then
-            if AV_ShowCollectionProgress then
-                AV_ShowCollectionProgress()
-            end
-        else
-            if AV_HideCollectionProgress then
-                AV_HideCollectionProgress()
-            end
-        end
-    end
+    -- Note: Progress frame visibility managed by toggle button, not checkbox
     
     -- Save category filter settings (v2.1+)
     if not AscensionVanityDB.categoryFilters then
@@ -624,10 +569,8 @@ end)
 
 -- Add auto-save to other checkboxes
 colorCheckbox:HookScript("OnClick", SaveSettings)
-regionsCheckbox:HookScript("OnClick", SaveSettings)
 questWarningsCheckbox:HookScript("OnClick", SaveSettings)
 showIDsCheckbox:HookScript("OnClick", SaveSettings)
-progressFrameCheckbox:HookScript("OnClick", SaveSettings)
 
 -- Add auto-save to category filter checkboxes (v2.1+)
 for category, checkbox in pairs(settingsPanel.categoryCheckboxes) do

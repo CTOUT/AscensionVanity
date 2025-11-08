@@ -344,6 +344,15 @@ local function AddVanityInfoToTooltip(tooltip, unit)
             return
         end
         
+        -- Show Creature ID for ALL NPCs if enabled (v2.2+)
+        -- This helps identify creatures that don't have vanity items yet
+        if AscensionVanityDB.showIDs and creatureID then
+            tooltip:AddLine(" ")  -- Blank line for spacing
+            local creatureIDText = AV_COLOR_GRAY .. "Creature ID: " .. AV_COLOR_WHITE .. creatureID .. AV_COLOR_RESET
+            tooltip:AddLine(creatureIDText, 1, 1, 1, false)
+            tooltip:Show()
+        end
+        
         -- Look up vanity items for this creature by ID
         local vanityItems = AV_GetVanityItemsForCreature(creatureID)
         
@@ -593,13 +602,6 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         end
                     end
                 end
-            end
-            
-            -- Add Creature ID if showIDs is enabled (v2.2)
-            if AscensionVanityDB.showIDs and creatureID then
-                tooltip:AddLine(" ")  -- Blank line for spacing
-                local creatureIDText = AV_COLOR_GRAY .. "Creature ID: " .. AV_COLOR_WHITE .. creatureID .. AV_COLOR_RESET
-                tooltip:AddLine(creatureIDText, 1, 1, 1, false)
             end
             
             -- Show tooltip updates
