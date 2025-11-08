@@ -485,10 +485,22 @@ local function RefreshDisplay()
     
     local sortedCreatures = {}
     for name, data in pairs(filtered) do
-        table.insert(sortedCreatures, {name = (data.name or name), data = data})
+        table.insert(sortedCreatures, {name = (data.name or name), data = data, key = name})
     end
     table.sort(sortedCreatures, function(a, b)
-        return string.lower(a.name) < string.lower(b.name)
+        local nameA = string.lower(a.name)
+        local nameB = string.lower(b.name)
+        if nameA == nameB then
+            -- Secondary sort by zone to ensure stable ordering
+            local zoneA = string.lower(a.data.zone or "")
+            local zoneB = string.lower(b.data.zone or "")
+            if zoneA == zoneB then
+                -- Tertiary sort by original key as final tie-breaker
+                return string.lower(a.key) < string.lower(b.key)
+            end
+            return zoneA < zoneB
+        end
+        return nameA < nameB
     end)
     
     local totalCount = #sortedCreatures
