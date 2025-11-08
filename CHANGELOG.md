@@ -2,6 +2,11 @@
 
 All notable changes to the AscensionVanity project will be documented in this file.
 
+## [Unreleased] - v2.3-dev
+
+### Planned
+- Future features and improvements will be documented here
+
 ## [2.2-beta] - 2025-11-08
 
 ### Fixed
