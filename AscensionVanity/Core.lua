@@ -607,7 +607,89 @@ local function AddVanityInfoToTooltip(tooltip, unit)
             -- Show tooltip updates
             tooltip:Show()
         end
+        
+        -- Add kill/drop statistics (v2.3+)
+        if AscensionVanityDB.enableKillTracking and AscensionVanityDB.showKillStats then
+            AddKillStatsToTooltip(tooltip, creatureID)
+        end
     end
+end
+
+-- ============================================================================
+-- Kill/Drop Statistics Display (v2.3+)
+-- ============================================================================
+
+local function AddKillStatsToTooltip(tooltip, creatureID)
+    if not creatureID then return end
+    
+    local stats = AV_GetCreatureStats(creatureID)
+    
+    -- Only show if we have data
+    if not stats or stats.totalKills == 0 then
+        return
+    end
+    
+    tooltip:AddLine(" ")  -- Spacer
+    tooltip:AddLine(AV_COLOR_GOLD .. "📊 Your Stats:" .. AV_COLOR_RESET)
+    
+    -- Calculate drop chance
+    local dropChance = (stats.totalDrops / stats.totalKills) * 100
+    
+    -- Lifetime stats: X kills, Y drops (Z% drop chance)
+    local lifetimeText = string.format("Lifetime: %d kills, %d drops (%.1f%% drop chance)",
+        stats.totalKills, stats.totalDrops, dropChance)
+    tooltip:AddLine(lifetimeText, 1, 1, 1, true)
+    
+    -- Session stats (if any kills this session)
+    if AV_SessionStats and AV_SessionStats.creatures and AV_SessionStats.creatures[creatureID] then
+        local sessionStats = AV_SessionStats.creatures[creatureID]
+        if sessionStats.sessionKills > 0 then
+            -- Session: X kills, Y drops
+            local sessionText = string.format("Session: %d kills, %d drops",
+                sessionStats.sessionKills, sessionStats.sessionDrops)
+            tooltip:AddLine(sessionText, 0.8, 0.8, 1, true)
+            
+            -- Efficiency (kills per hour)
+            local elapsed = time() - sessionStats.firstKillTime
+            if elapsed > 60 then  -- At least 1 minute of data
+                local killsPerHour = (sessionStats.sessionKills / elapsed) * 3600
+                local hours = math.floor(elapsed / 3600)
+                local minutes = math.floor((elapsed % 3600) / 60)
+                
+                local timeText = hours > 0 
+                    and string.format("%dh %dm", hours, minutes)
+                    or string.format("%dm", minutes)
+                
+                local efficiencyText = string.format("⏱️ Session: %s (%.1f kills/hour)",
+                    timeText, killsPerHour)
+                tooltip:AddLine(efficiencyText, 0.6, 0.8, 1, true)
+            end
+        end
+    end
+    
+    -- Unlucky streak warning (kills since last drop)
+    if AscensionVanityDB.showUnluckyStreak then
+        local threshold = AscensionVanityDB.unluckyStreakThreshold or 20
+        if stats.totalKills >= threshold and stats.totalDrops == 0 then
+            -- Never had a drop and high kill count
+            local streakText = string.format("💀 No drops yet after %d kills", stats.totalKills)
+            tooltip:AddLine(AV_COLOR_RED .. streakText .. AV_COLOR_RESET, 1, 1, 1, true)
+        elseif stats.totalDrops > 0 and stats.lastDropDate and stats.lastDropDate > 0 then
+            -- Has had drops before - check kill count since last drop
+            -- (This is simplified - actual streak tracking would need kill counter at drop time)
+            -- For now, just warn if total kills is much higher than expected based on drop rate
+            local expectedKillsForDrop = stats.totalDrops > 0 and (stats.totalKills / stats.totalDrops) or 0
+            local currentStreak = stats.totalKills - (stats.totalDrops * expectedKillsForDrop)
+            
+            if currentStreak >= threshold then
+                local streakColor = currentStreak >= 50 and AV_COLOR_RED or AV_COLOR_GOLD
+                local streakText = string.format("💀 Possible dry streak (%.0f kills above average)", currentStreak)
+                tooltip:AddLine(streakColor .. streakText .. AV_COLOR_RESET, 1, 1, 1, true)
+            end
+        end
+    end
+    
+    tooltip:Show()
 end
 
 -- Hook into tooltip display
