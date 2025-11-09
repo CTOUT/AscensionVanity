@@ -1,0 +1,65 @@
+name: Database Issue
+description: Report incorrect, missing, or outdated vanity item data
+title: "[Data]: "
+labels: ["database", "data-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve the vanity item database! Report data issues below.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Data Issue Type
+      description: What kind of data issue is this?
+      options:
+        - Missing item(s)
+        - Incorrect item information
+        - Wrong NPC/source
+        - Wrong zone/location
+        - Duplicate entries
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: item-details
+    attributes:
+      label: Item Details
+      description: What item(s) are affected? Include Item ID if known
+      placeholder: |
+        Item Name: Spooky Hat
+        Item ID: 12345
+        Category: Cosmetic Head
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-data
+    attributes:
+      label: Current (Incorrect) Data
+      description: What does the addon currently show?
+      placeholder: Shows NPC "Wrong Name" in "Wrong Zone"
+
+  - type: textarea
+    id: correct-data
+    attributes:
+      label: Correct Data
+      description: What should it show instead?
+      placeholder: Should show NPC "Correct Name" in "Correct Zone"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence/Source
+      description: How did you verify this information? (screenshot, wowhead link, in-game testing, etc.)
+      placeholder: I personally looted this from...
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other relevant information or context

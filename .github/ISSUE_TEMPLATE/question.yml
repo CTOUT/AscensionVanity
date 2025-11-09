@@ -1,0 +1,49 @@
+name: Question or Support
+description: Ask a question or get help using AscensionVanity
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? Need help? We're here to assist!
+        
+        **Note:** For bugs, please use the Bug Report template instead.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: How do I...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Installation/Setup
+        - Usage/How-to
+        - Database/Item Data
+        - Scanner/API
+        - Settings/Configuration
+        - Compatibility
+        - General
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What Have You Tried?
+      description: Have you tried anything already? Checked the README or docs?
+      placeholder: I've looked at the README and tried...
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other information that might be helpful

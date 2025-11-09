@@ -1,0 +1,99 @@
+name: Bug Report
+description: Report a bug or issue with AscensionVanity
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below to help us fix it.
+
+  - type: dropdown
+    id: server-type
+    attributes:
+      label: Server Type
+      description: Which Project Ascension server are you playing on?
+      options:
+        - Wildcard
+        - Classless
+        - Classic+
+        - Laughing Skull
+        - Other/Unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bug-category
+    attributes:
+      label: Bug Category
+      description: What part of the addon is affected?
+      options:
+        - Database/Item Data
+        - UI/Collection Browser
+        - Scanner/API Detection
+        - Settings/Configuration
+        - Statistics/Tracking
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear description of what the bug is
+      placeholder: The collection browser shows incorrect items...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: The collection browser should display...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Open collection browser
+        2. Navigate to category X
+        3. Notice incorrect data
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-log
+    attributes:
+      label: Error Messages
+      description: Any Lua errors or console output (use /console scriptErrors 1 to enable)
+      placeholder: Paste error messages here...
+      render: text
+
+  - type: input
+    id: addon-version
+    attributes:
+      label: Addon Version
+      description: What version of AscensionVanity are you using? (check TOC file or GitHub release)
+      placeholder: v2.3.0 or commit hash
+    validations:
+      required: true
+
+  - type: textarea
+    id: other-addons
+    attributes:
+      label: Other Addons
+      description: List any other addons you have installed
+      placeholder: ElvUI, WeakAuras, etc.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other context, screenshots, or information about the problem
