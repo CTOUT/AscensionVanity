@@ -1,0 +1,1201 @@
+{
+  "description": "Zone and Subzone mappings for WoW Classic (pre-Cataclysm)",
+  "source": "https://wowpedia.fandom.com/wiki/Zones_by_level_(original)",
+  "lastUpdated": "2025-11-02",
+  "notes": "Used to map specific locations to their parent zones for regional hunting guide",
+  
+  "zones": {
+    "Alterac Mountains": {
+      "faction": "Contested",
+      "level": "30-40",
+      "subzones": [
+        "Chillwind Point",
+        "Corrahn's Dagger",
+        "Crushridge Hold",
+        "Dandred's Fold",
+        "Gavin's Naze",
+        "Growless Cave",
+        "Misty Shore",
+        "Sofera's Naze",
+        "Strahnbrad",
+        "The Headland",
+        "The Uplands"
+      ]
+    },
+    "Arathi Highlands": {
+      "faction": "Contested",
+      "level": "30-40",
+      "subzones": [
+        "Boulder'gor",
+        "Boulderfist Hall",
+        "Circle of East Binding",
+        "Circle of Inner Binding",
+        "Circle of Outer Binding",
+        "Circle of West Binding",
+        "Dabyrie's Farmstead",
+        "Drywhisker Gorge",
+        "Faldir's Cove",
+        "Frostmane Hold",
+        "Hammerfall",
+        "Northfold Manor",
+        "Refuge Pointe",
+        "Stromgarde Keep",
+        "Thandol Span",
+        "Witherbark Village"
+      ]
+    },
+    "Azshara": {
+      "faction": "Contested",
+      "level": "45-55",
+      "subzones": [
+        "Bay of Storms",
+        "Bitterreach Coast",
+        "Bitter Reaches",
+        "Blackmaw Hold",
+        "Forlorn Ridge",
+        "Haldarr Encampment",
+        "Hetaera's Clutch",
+        "Jagged Reef",
+        "Lake Mennar",
+        "Legash Encampment",
+        "Ravencrest Monument",
+        "Ruins of Eldarath",
+        "Shadowsong Shrine",
+        "Southfury River",
+        "Temple of Arkkoran",
+        "Temple of Zin-Malor",
+        "The Ruined Reaches",
+        "The Secret Lab",
+        "The Shattered Strand",
+        "Tower of Eldara",
+        "Ursolan"
+      ]
+    },
+    "Azuremyst Isle": {
+      "faction": "Alliance",
+      "level": "1-10",
+      "subzones": [
+        "Ammen Fields",
+        "Ammen Ford",
+        "Ammen Vale",
+        "Azure Watch",
+        "Bristlelimb Village",
+        "Emberglade",
+        "Fairbridge Strand",
+        "Geezle's Camp",
+        "Menagerie Wreckage",
+        "Moonwing Den",
+        "Odesyus' Landing",
+        "Pod Cluster",
+        "Pod Wreckage",
+        "Pods",
+        "Silting Shore",
+        "Silvermyst Isle",
+        "Stillpine Hold",
+        "The Exodar",
+        "Tides' Hollow",
+        "Valaar's Berth",
+        "Valor's Rest",
+        "Wrathscale Point"
+      ]
+    },
+    "Badlands": {
+      "faction": "Contested",
+      "level": "35-45",
+      "subzones": [
+        "Agmond's End",
+        "Angor Fortress",
+        "Apocryphan's Rest",
+        "Camp Boff",
+        "Camp Cagg",
+        "Camp Kosh",
+        "Dustbelch Grotto",
+        "Hammertoe's Digsite",
+        "Kargath",
+        "Lethlor Ravine",
+        "The Dustbowl",
+        "Valley of Fangs"
+      ]
+    },
+    "Blasted Lands": {
+      "faction": "Contested",
+      "level": "45-55",
+      "subzones": [
+        "Altar of Storms",
+        "Dreadmaul Hold",
+        "Dreadmaul Post",
+        "Garrison Armory",
+        "Nethergarde Keep",
+        "Rise of the Defiler",
+        "Serpent's Coil",
+        "The Dark Portal",
+        "The Red Reaches",
+        "The Tainted Forest",
+        "The Tainted Scar"
+      ]
+    },
+    "Bloodmyst Isle": {
+      "faction": "Alliance",
+      "level": "10-20",
+      "subzones": [
+        "Amberweb Pass",
+        "Bladewood",
+        "Blacksilt Shore",
+        "Blood Watch",
+        "Bristlescar Pit",
+        "Cove of Nashal",
+        "Kessel's Crossing",
+        "Middenvale",
+        "Mystwood",
+        "Nazzivian",
+        "Ragefeather Ridge",
+        "Ruins of Loreth'Aran",
+        "Talon Stand",
+        "Tel'athion's Camp",
+        "The Bloodcurse Legacy",
+        "The Crimson Reach",
+        "The Cryo-Core",
+        "The Foul Pool",
+        "The Hidden Reef",
+        "The Lost Fold",
+        "The Sundered Span",
+        "The Veiled Sea",
+        "The Warp Piston",
+        "Vindicator's Rest",
+        "Wrathscale Lair",
+        "Wyrmscar Island"
+      ]
+    },
+    "Burning Steppes": {
+      "faction": "Contested",
+      "level": "50-58",
+      "subzones": [
+        "Altar of Storms",
+        "Black Tooth Hovel",
+        "Blackrock Mountain",
+        "Blackrock Pass",
+        "Blackrock Stronghold",
+        "Dreadmaul Rock",
+        "Flame Crest",
+        "Morgan's Vigil",
+        "Pillar of Ash",
+        "Ruins of Thaurissan",
+        "Terror Wing Path",
+        "The Pillar of Ash",
+        "The Whelping Downs"
+      ]
+    },
+    "Darkshore": {
+      "faction": "Alliance",
+      "level": "10-20",
+      "subzones": [
+        "Ameth'Aran",
+        "Auberdine",
+        "Bashal'Aran",
+        "Blackwood Den",
+        "Cliffspring Falls",
+        "Cliffspring River",
+        "Grove of the Ancients",
+        "Mathystra Ruins",
+        "Remtravel's Excavation",
+        "Ruins of Mathystra",
+        "The Master's Glaive",
+        "The Veiled Sea",
+        "Tower of Althalaxx",
+        "Twilight Vale",
+        "Wildbend River"
+      ]
+    },
+    "Darnassus": {
+      "faction": "Alliance",
+      "level": "1-10",
+      "subzones": [
+        "Cenarion Enclave",
+        "Craftsmen's Terrace",
+        "Howling Oak",
+        "Temple Gardens",
+        "Temple of the Moon",
+        "The Bank of Darnassus",
+        "Tradesman's Terrace",
+        "Warrior's Terrace"
+      ]
+    },
+    "Desolace": {
+      "faction": "Contested",
+      "level": "30-40",
+      "subzones": [
+        "Magram Village",
+        "Sargeron",
+        "Kodo Graveyard",
+        "Valley of Spears",
+        "Shadowprey Village",
+        "Nijel's Point",
+        "Thunder Axe Fortress",
+        "Mannoroc Coven",
+        "Kolkar Village"
+      ]
+    },
+    "Duskwood": {
+      "faction": "Alliance",
+      "level": "18-30",
+      "subzones": [
+        "Addle's Stead",
+        "Beggar's Haunt",
+        "Brightwood Grove",
+        "Darkshire",
+        "Manor Mistmantle",
+        "Raven Hill",
+        "Raven Hill Cemetery",
+        "The Darkened Bank",
+        "The Hushed Bank",
+        "The Rotting Orchard",
+        "The Twilight Grove",
+        "The Yorgen Farmstead",
+        "Tranquil Gardens Cemetery",
+        "Vul'Gol Ogre Mound"
+      ]
+    },
+    "Durotar": {
+      "faction": "Horde",
+      "level": "1-10",
+      "subzones": [
+        "Bladefist Bay",
+        "Burning Blade Coven",
+        "Deadeye Shore",
+        "Drygulch Ravine",
+        "Echo Isles",
+        "Kolkar Crag",
+        "Northwatch Hold",
+        "Orgrimmar",
+        "Razor Hill",
+        "Razormane Grounds",
+        "Rocktusk Farm",
+        "Scuttle Coast",
+        "Sen'jin Village",
+        "Skull Rock",
+        "Southfury River",
+        "Steamwheedle Port",
+        "Sunveil Excursion",
+        "The Dranosh'ar Blockade",
+        "Thunder Ridge",
+        "Tiragarde Keep",
+        "Valley of Trials"
+      ]
+    },
+    "Dun Morogh": {
+      "faction": "Alliance",
+      "level": "1-10",
+      "subzones": [
+        "Algaz Station",
+        "Amberstill Ranch",
+        "Anvilmar",
+        "Brewnall Village",
+        "Coldridge Pass",
+        "Coldridge Valley",
+        "Frostmane Hold",
+        "Frostmane Hovel",
+        "Gnarled Woodland",
+        "Gnomeregan",
+        "Gol'Bolar Quarry",
+        "Helm's Bed Lake",
+        "Ironforge",
+        "Iceflow Lake",
+        "Kharanos",
+        "Misty Pine Refuge",
+        "North Gate Outpost",
+        "Shimmer Ridge",
+        "South Gate Outpost",
+        "The Grizzled Den",
+        "The Tundrid Hills"
+      ]
+    },
+    "Dustwallow Marsh": {
+      "faction": "Contested",
+      "level": "35-45",
+      "subzones": [
+        "Alcaz Island",
+        "Blackhoof Village",
+        "Bloodfen Burrow",
+        "Brackenwall Village",
+        "Darkmist Cavern",
+        "Dreadmurk Shore",
+        "Ember Clutch",
+        "Stonemaul Ruins",
+        "Swamplight Manor",
+        "Tabetha's Farm",
+        "The Den of Flame",
+        "The Dragonmurk",
+        "The Quagmire",
+        "The Wyrmbog",
+        "Theramore Isle",
+        "Witch Hill"
+      ]
+    },
+    "Eastern Plaguelands": {
+      "faction": "Contested",
+      "level": "53-60",
+      "subzones": [
+        "Blackwood Lake",
+        "Corin's Crossing",
+        "Crown Guard Tower",
+        "Darrowshire",
+        "Eastwall Tower",
+        "Lake Mereldar",
+        "Light's Hope Chapel",
+        "Northdale",
+        "Northpass Tower",
+        "Pestilent Scar",
+        "Plaguewood",
+        "Quel'Lithien Lodge",
+        "Ruins of the Scarlet Enclave",
+        "Stratholme",
+        "Tyr's Hand",
+        "The Fungal Vale",
+        "The Infectis Scar",
+        "The Marris Stead",
+        "The Noxious Glade",
+        "The Undercroft",
+        "Thondroril River",
+        "Zul'Mashar"
+      ]
+    },
+    "Elwynn Forest": {
+      "faction": "Alliance",
+      "level": "1-10",
+      "subzones": [
+        "Brackwell Pumpkin Patch",
+        "Crystal Lake",
+        "Eastvale Logging Camp",
+        "Echo Ridge Mine",
+        "Fargodeep Mine",
+        "Forest's Edge",
+        "Goldshire",
+        "Jasperlode Mine",
+        "Jerod's Landing",
+        "Mirror Lake Orchard",
+        "Northshire Abbey",
+        "Northshire Valley",
+        "Northshire Vineyards",
+        "Ridgepoint Tower",
+        "Stonecairn Lake",
+        "Stone Cairn Lake",
+        "Stormwind City",
+        "The Maclure Vineyards",
+        "The Stonefield Farm",
+        "Tower of Azora",
+        "Westbrook Garrison"
+      ]
+    },
+    "Eversong Woods": {
+      "faction": "Horde",
+      "level": "1-10",
+      "subzones": [
+        "Azurebreeze Coast",
+        "Duskwither Grounds",
+        "East Sanctum",
+        "Elrendar Falls",
+        "Fairbreeze Village",
+        "Falconwing Square",
+        "Farstrider Retreat",
+        "Golden Strand",
+        "Lake Elrendar",
+        "North Sanctum",
+        "Runestone Falithas",
+        "Runestone Shan'dor",
+        "Saltheril's Haven",
+        "Silvermoon City",
+        "Stillwhisper Pond",
+        "Sunsail Anchorage",
+        "Sunstrider Isle",
+        "The Dead Scar",
+        "The Golden Strand",
+        "The Living Wood",
+        "The Scorched Grove",
+        "Thuron's Livery",
+        "Tor'Watha",
+        "Tranquil Shore",
+        "West Sanctum",
+        "Zeb'Nowa"
+      ]
+    },
+    "Felwood": {
+      "faction": "Contested",
+      "level": "48-55",
+      "subzones": [
+        "Bloodvenom Falls",
+        "Bloodvenom Post",
+        "Bloodvenom River",
+        "Deadwood Village",
+        "Emerald Sanctuary",
+        "Felpaw Village",
+        "Irontree Cavern",
+        "Irontree Woods",
+        "Jaedenar",
+        "Morlos'Aran",
+        "Ruins of Constellas",
+        "Shadow Hold",
+        "Shatter Scar Vale",
+        "Talonbranch Glade"
+      ]
+    },
+    "Feralas": {
+      "faction": "Contested",
+      "level": "42-50",
+      "subzones": [
+        "Camp Mojache",
+        "Dire Maul",
+        "Dream Bough",
+        "Dreamer's Rest",
+        "Feathermoon Stronghold",
+        "Feral Scar Vale",
+        "Frayfeather Highlands",
+        "Gordunni Outpost",
+        "Grimtotem Compound",
+        "High Wilderness",
+        "Idol of Remulos",
+        "Isle of Dread",
+        "Lariss Pavilion",
+        "Lower Wilds",
+        "Mok'Gordun",
+        "Rage Scar Hold",
+        "Ruins of Isildien",
+        "Ruins of Ravenwind",
+        "Sardor Isle",
+        "The Forgotten Coast",
+        "The Twin Colossals",
+        "The Writhing Deep",
+        "Wildwind Lake"
+      ]
+    },
+    "Ghostlands": {
+      "faction": "Horde",
+      "level": "10-20",
+      "subzones": [
+        "Amani Pass",
+        "Bleeding Ziggurat",
+        "Dawnstar Spire",
+        "Deatholme",
+        "Elrendar Crossing",
+        "Farstrider Enclave",
+        "Goldenmist Village",
+        "Howling Ziggurat",
+        "Inferna Tower",
+        "Isle of Tribulations",
+        "Lake Elrendar",
+        "Sanctum of the Moon",
+        "Sanctum of the Sun",
+        "Suncrown Village",
+        "Sungraze Peak",
+        "Tranquillien",
+        "Windrunner Spire",
+        "Windrunner Village",
+        "Zeb'Nowa"
+      ]
+    },
+    "Hillsbrad Foothills": {
+      "faction": "Contested",
+      "level": "20-30",
+      "subzones": [
+        "Azurelode Mine",
+        "Corrahn's Dagger",
+        "Dagger Hills",
+        "Dalaran Crater",
+        "Dandred's Fold",
+        "Darrow Hill",
+        "Dun Garok",
+        "Durnholde Keep",
+        "Eastpoint Tower",
+        "Gallows' Corner",
+        "Growless Cave",
+        "Misty Shore",
+        "Nethander Stead",
+        "Purgation Isle",
+        "Ruins of Alterac",
+        "Slaughter Hollow",
+        "Sofera's Naze",
+        "Southpoint Tower",
+        "Strahnbrad",
+        "Tarren Mill",
+        "The Headland",
+        "The Uplands",
+        "Thoradin's Wall"
+      ]
+    },
+    "Ironforge": {
+      "faction": "Alliance",
+      "level": "1-60",
+      "subzones": [
+        "The Commons",
+        "The Forlorn Cavern",
+        "The Great Forge",
+        "The Hall of Arms",
+        "The Hall of Explorers",
+        "The High Seat",
+        "The Military Ward",
+        "The Mystic Ward",
+        "Tinker Town"
+      ]
+    },
+    "Loch Modan": {
+      "faction": "Alliance",
+      "level": "10-20",
+      "subzones": [
+        "Algaz Gate",
+        "Grizzlepaw Ridge",
+        "Ironband's Excavation Site",
+        "Mo'grosh Stronghold",
+        "North Gate Outpost",
+        "Silver Stream Mine",
+        "Stonewrought Dam",
+        "Stonesplinter Valley",
+        "The Farstrider Lodge",
+        "The Loch",
+        "Thelsamar",
+        "Valley of Kings"
+      ]
+    },
+    "Moonglade": {
+      "faction": "Neutral",
+      "level": "1-60",
+      "subzones": [
+        "Lake Elune'ara",
+        "Nighthaven",
+        "Shrine of Remulos",
+        "Stormrage Barrow Dens"
+      ]
+    },
+    "Mulgore": {
+      "faction": "Horde",
+      "level": "1-10",
+      "subzones": [
+        "Bael'dun Digsite",
+        "Bloodhoof Village",
+        "Brambleblade Ravine",
+        "Camp Narache",
+        "Palemane Rock",
+        "Ravaged Caravan",
+        "Red Cloud Mesa",
+        "Red Rocks",
+        "Stonebull Lake",
+        "Ravaged Caravan Site",
+        "The Golden Plains",
+        "The Rolling Plains",
+        "The Venture Co. Mine",
+        "Thunder Bluff",
+        "Thunderhorn Water Well",
+        "Wildmane Water Well",
+        "Winterhoof Water Well"
+      ]
+    },
+    "Redridge Mountains": {
+      "faction": "Alliance",
+      "level": "15-25",
+      "subzones": [
+        "Alther's Mill",
+        "Camp Everstill",
+        "Galardell Valley",
+        "Lake Everstill",
+        "Lakeshire",
+        "Lakeridge Highway",
+        "Ranger's Lodge",
+        "Redridge Canyons",
+        "Render's Camp",
+        "Render's Rock",
+        "Render's Valley",
+        "Rethban Caverns",
+        "Shalewind Canyon",
+        "Stonewatch",
+        "Stonewatch Falls",
+        "Stonewatch Keep",
+        "The Green Belt",
+        "Three Corners",
+        "Tower of Ilgalar"
+      ]
+    },
+    "Searing Gorge": {
+      "faction": "Contested",
+      "level": "43-50",
+      "subzones": [
+        "Blackchar Cave",
+        "Blackrock Mountain",
+        "Dustfire Valley",
+        "Firewatch Ridge",
+        "Grimesilt Dig Site",
+        "The Cauldron",
+        "The Sea of Cinders",
+        "Thorium Point"
+      ]
+    },
+    "Shadowmoon Valley": {
+      "faction": "Contested",
+      "level": "67-70",
+      "subzones": [
+        "Altar of Sha'tar",
+        "Ata'mal Terrace",
+        "Black Temple",
+        "Coilskar Cistern",
+        "Coilskar Point",
+        "Eclipse Point",
+        "Illidari Point",
+        "Legion Hold",
+        "Netherwing Fields",
+        "Netherwing Ledge",
+        "Ruins of Baa'ri",
+        "Ruins of Karabor",
+        "Sanctum of the Stars",
+        "Shadowmoon Village",
+        "Sketh'lon Base Camp",
+        "The Altar of Damnation",
+        "The Barrier Hills",
+        "The Deathforge",
+        "The Hand of Gul'dan",
+        "The Warren of Suffering",
+        "Warden's Cage",
+        "Wildhammer Stronghold"
+      ]
+    },
+    "Silithus": {
+      "faction": "Contested",
+      "level": "55-60",
+      "subzones": [
+        "Cenarion Hold",
+        "Hive'Ashi",
+        "Hive'Regal",
+        "Hive'Zora",
+        "Ortell's Hideout",
+        "Southwind Village",
+        "Staghelm Point",
+        "The Crystal Vale",
+        "The Scarab Dais",
+        "The Scarab Wall",
+        "Twilight Base Camp",
+        "Valor's Rest"
+      ]
+    },
+    "Silverpine Forest": {
+      "faction": "Horde",
+      "level": "10-20",
+      "subzones": [
+        "Ambermill",
+        "Beren's Peril",
+        "Deep Elem Mine",
+        "Fenris Isle",
+        "Fenris Keep",
+        "Forsaken Front",
+        "Forsaken High Command",
+        "Forsaken Rear Guard",
+        "Malden's Orchard",
+        "North Tide's Beachhead",
+        "North Tide's Hollow",
+        "Olsen's Farthing",
+        "Pyrewood Village",
+        "Shadowfang Keep",
+        "Sepulcher",
+        "The Battlefront",
+        "The Dawning Isles",
+        "The Dead Field",
+        "The Decrepit Fields",
+        "The Forsaken Front",
+        "The Greymane Wall",
+        "The Ivar Patch",
+        "The Shining Strand",
+        "The Skittering Dark",
+        "Valgan's Field"
+      ]
+    },
+    "Stonetalon Mountains": {
+      "faction": "Contested",
+      "level": "15-27",
+      "subzones": [
+        "Greatwood Vale",
+        "Mirkfallon Lake",
+        "Sishir Canyon",
+        "Stonetalon Peak",
+        "Sun Rock Retreat",
+        "The Charred Vale",
+        "Webwinder Path",
+        "Windshear Crag",
+        "Windshear Mine"
+      ]
+    },
+    "Stormwind City": {
+      "faction": "Alliance",
+      "level": "1-60",
+      "subzones": [
+        "Cathedral Square",
+        "Champions' Hall",
+        "Dwarven District",
+        "Mage Quarter",
+        "Old Town",
+        "Stormwind Harbor",
+        "Stormwind Keep",
+        "The Canals",
+        "The Park",
+        "Trade District",
+        "Valley of Heroes"
+      ]
+    },
+    "Stranglethorn Vale": {
+      "faction": "Contested",
+      "level": "30-45",
+      "subzones": [
+        "Bal'lal Ruins",
+        "Balia'mah Ruins",
+        "Booty Bay",
+        "Fort Livingston",
+        "Grom'gol Base Camp",
+        "Gurubashi Arena",
+        "Jaguero Isle",
+        "Kal'ai Ruins",
+        "Lake Nazferiti",
+        "Mosh'Ogg Ogre Mound",
+        "Mizjah Ruins",
+        "Nesingwary's Expedition",
+        "Rebel Camp",
+        "Ruins of Aboraz",
+        "Ruins of Jubuwal",
+        "Ruins of Zul'Kunda",
+        "Ruins of Zul'Mamwe",
+        "The Vile Reef",
+        "Tkashi Ruins",
+        "Venture Co. Base Camp",
+        "Zul'Gurub",
+        "Zuuldaia Ruins"
+      ]
+    },
+    "Swamp of Sorrows": {
+      "faction": "Contested",
+      "level": "35-45",
+      "subzones": [
+        "Bogpaddle",
+        "Fallow Sanctuary",
+        "Misty Reed Strand",
+        "Misty Valley",
+        "Pool of Tears",
+        "Stagalbog",
+        "Stonard",
+        "Splinter Tree Post",
+        "The Harborage",
+        "The Shifting Mire"
+      ]
+    },
+    "Tanaris": {
+      "faction": "Contested",
+      "level": "40-50",
+      "subzones": [
+        "Abyssal Sands",
+        "Broken Pillar",
+        "Caverns of Time",
+        "Dunemaul Compound",
+        "Eastmoon Ruins",
+        "Gadgetzan",
+        "Gaping Chasm",
+        "Land's End Beach",
+        "Lost Rigger Cove",
+        "Noonshade Ruins",
+        "Sandsorrow Watch",
+        "Southbreak Shore",
+        "Southmoon Ruins",
+        "Steamwheedle Port",
+        "Thistleshrub Valley",
+        "The Gaping Chasm",
+        "The Noxious Lair",
+        "Valor's Rest",
+        "Valley of the Watchers",
+        "Waterspring Field",
+        "Wavestrider Beach",
+        "Zalashji's Den",
+        "Zul'Farrak"
+      ]
+    },
+    "Teldrassil": {
+      "faction": "Alliance",
+      "level": "1-10",
+      "subzones": [
+        "Aldrassil",
+        "Ban'ethil Barrow Den",
+        "Ban'ethil Hollow",
+        "Darnassus",
+        "Dolanaar",
+        "Fel Rock",
+        "Gnarlpine Hold",
+        "Lake Al'Ameth",
+        "Pools of Arlithrien",
+        "Rut'theran Village",
+        "Shadowglen",
+        "Shadowthread Cave",
+        "Starbreeze Village",
+        "The Cleft",
+        "The Oracle Glade",
+        "Wellspring River",
+        "Wellspring Lake"
+      ]
+    },
+    "Terokkar Forest": {
+      "faction": "Contested",
+      "level": "62-65",
+      "subzones": [
+        "Allerian Stronghold",
+        "Auchindoun",
+        "Bleeding Hollow Ruins",
+        "Bonechewer Ruins",
+        "Carrion Hill",
+        "Cenarion Thicket",
+        "Firewing Point",
+        "Grangol'var Village",
+        "Lake Ere'Noru",
+        "Lake Jorune",
+        "Razorthorn Shelf",
+        "Refugee Caravan",
+        "Ring of Observance",
+        "Shadow Tomb",
+        "Sha'tari Base Camp",
+        "Shattrath City",
+        "Skettis",
+        "Stonebreaker Hold",
+        "Tuurem",
+        "Veil Lithic",
+        "Veil Rhaze",
+        "Veil Shalas",
+        "Veil Skith",
+        "Writhing Mound"
+      ]
+    },
+    "The Barrens": {
+      "faction": "Horde",
+      "level": "10-25",
+      "subzones": [
+        "Agama'gor",
+        "Bael Modan",
+        "Blackthorn Ridge",
+        "Boulder Lode Mine",
+        "Camp Taurajo",
+        "Dreadmist Peak",
+        "Far Watch Post",
+        "Field of Giants",
+        "The Golden Plains",
+        "Grol'dom Farm",
+        "Lushwater Oasis",
+        "Northwatch Hold",
+        "Raptor Grounds",
+        "Ratchet",
+        "Razorfen Downs",
+        "Razorfen Kraul",
+        "The Crossroads",
+        "The Dry Hills",
+        "The Forgotten Pools",
+        "The Merchant Coast",
+        "The Mor'shan Rampart",
+        "The Sludge Fen",
+        "The Stagnant Oasis",
+        "Thorn Hill"
+      ]
+    },
+    "The Hinterlands": {
+      "faction": "Contested",
+      "level": "40-50",
+      "subzones": [
+        "Aerie Peak",
+        "Agol'watha",
+        "Jintha'Alor",
+        "Quel'Danil Lodge",
+        "Revantusk Village",
+        "Seradane",
+        "Shadra'Alor",
+        "Skulk Rock",
+        "The Altar of Zul",
+        "The Creeping Ruin",
+        "The Overlook Cliffs",
+        "Valorwind Lake",
+        "Zun'watha"
+      ]
+    },
+    "Thousand Needles": {
+      "faction": "Contested",
+      "level": "25-35",
+      "subzones": [
+        "Darkcloud Pinnacle",
+        "Freewind Post",
+        "Highperch",
+        "Mirage Raceway",
+        "Roguefeather Den",
+        "Splithoof Crag",
+        "The Great Lift",
+        "The Shimmering Flats",
+        "The Weathered Nook",
+        "Whitereach Post",
+        "Windbreak Canyon"
+      ]
+    },
+    "Thunder Bluff": {
+      "faction": "Horde",
+      "level": "1-60",
+      "subzones": [
+        "Central Rise",
+        "Elder Rise",
+        "Hunter Rise",
+        "Spirit Rise",
+        "The Pools of Vision"
+      ]
+    },
+    "Tirisfal Glades": {
+      "faction": "Horde",
+      "level": "1-10",
+      "subzones": [
+        "Agamand Mills",
+        "Balnir Farmstead",
+        "Brightwater Lake",
+        "Brill",
+        "Calston Estate",
+        "Cold Hearth Manor",
+        "Crusader Outpost",
+        "Deathknell",
+        "Garren's Haunt",
+        "Nightmare Vale",
+        "Night Web's Hollow",
+        "Ruins of Lordaeron",
+        "Scarlet Monastery",
+        "Scarlet Watch Post",
+        "Solliden Farmstead",
+        "The Bulwark",
+        "Undercity",
+        "Venomweb Vale"
+      ]
+    },
+    "Un'Goro Crater": {
+      "faction": "Contested",
+      "level": "48-55",
+      "subzones": [
+        "Fire Plume Ridge",
+        "Fungal Rock",
+        "Golakka Hot Springs",
+        "Ironstone Plateau",
+        "Lakkari Tar Pits",
+        "Marshal's Refuge",
+        "Terror Run",
+        "The Marshlands",
+        "The Slithering Scar"
+      ]
+    },
+    "Undercity": {
+      "faction": "Horde",
+      "level": "1-60",
+      "subzones": [
+        "Apothecarium",
+        "Magic Quarter",
+        "Rogues' Quarter",
+        "The Canals",
+        "The Pools of Vision",
+        "Trade Quarter",
+        "War Quarter"
+      ]
+    },
+    "Western Plaguelands": {
+      "faction": "Contested",
+      "level": "51-58",
+      "subzones": [
+        "Andorhal",
+        "Caer Darrow",
+        "Darrowmere Lake",
+        "Felstone Field",
+        "Hearthglen",
+        "Northridge Lumber Camp",
+        "Sorrow Hill",
+        "The Bulwark",
+        "The Weeping Cave",
+        "The Writhing Haunt",
+        "Thondroril River"
+      ]
+    },
+    "Westfall": {
+      "faction": "Alliance",
+      "level": "10-20",
+      "subzones": [
+        "Alexston Farmstead",
+        "Demont's Place",
+        "Furlbrow's Pumpkin Farm",
+        "Gold Coast Quarry",
+        "Jangolode Mine",
+        "Moonbrook",
+        "Saldean's Farm",
+        "Sentinel Hill",
+        "The Dead Acre",
+        "The Dagger Hills",
+        "The Deadmines",
+        "The Dust Plains",
+        "The Jansen Stead",
+        "The Molsen Farm"
+      ]
+    },
+    "Wetlands": {
+      "faction": "Alliance",
+      "level": "20-30",
+      "subzones": [
+        "Angerfang Encampment",
+        "Bluegill Marsh",
+        "Direforge Hill",
+        "Dun Algaz",
+        "Dun Modr",
+        "Greenwarden's Grove",
+        "Ironbeard's Tomb",
+        "Menethil Harbor",
+        "Mosshide Fen",
+        "Raptor Ridge",
+        "Saltspray Glen",
+        "Sundown Marsh",
+        "Thelgen Rock",
+        "Whelgar's Excavation Site"
+      ]
+    },
+    "Winterspring": {
+      "faction": "Contested",
+      "level": "55-60",
+      "subzones": [
+        "Darkwhisper Gorge",
+        "Everlook",
+        "Frostfire Hot Springs",
+        "Frostsaber Rock",
+        "Frostwhisper Gorge",
+        "Ice Thistle Hills",
+        "Lake Kel'Theril",
+        "Mazthoril",
+        "Owl Wing Thicket",
+        "Starfall Village",
+        "The Hidden Grove",
+        "Timbermaw Hold",
+        "Winterfall Village"
+      ]
+    },
+    "Zangarmarsh": {
+      "faction": "Contested",
+      "level": "60-64",
+      "subzones": [
+        "Ango'rosh Grounds",
+        "Ango'rosh Stronghold",
+        "Bloodscale Grounds",
+        "Boha'mu Ruins",
+        "Cenarion Refuge",
+        "Coilfang Reservoir",
+        "Feralfen Village",
+        "Funggor Cavern",
+        "Hewn Bog",
+        "Marshlight Lake",
+        "Serpent Lake",
+        "Sporeggar",
+        "Telredor",
+        "The Dead Mire",
+        "The Lagoon",
+        "The Spawning Glen",
+        "Umbrafen Lake",
+        "Zabra'jin"
+      ]
+    },
+    
+    "Dungeons and Raids": {
+      "Blackfathom Deeps": {
+        "zone": "Ashenvale",
+        "level": "20-27"
+      },
+      "Blackrock Depths": {
+        "zone": "Blackrock Mountain",
+        "level": "52-60"
+      },
+      "Blackrock Spire": {
+        "zone": "Blackrock Mountain",
+        "level": "55-60"
+      },
+      "Blackwing Lair": {
+        "zone": "Blackrock Mountain",
+        "level": "60"
+      },
+      "Dire Maul": {
+        "zone": "Feralas",
+        "level": "55-60"
+      },
+      "Gnomeregan": {
+        "zone": "Dun Morogh",
+        "level": "24-34"
+      },
+      "Maraudon": {
+        "zone": "Desolace",
+        "level": "46-55"
+      },
+      "Molten Core": {
+        "zone": "Blackrock Mountain",
+        "level": "60"
+      },
+      "Naxxramas": {
+        "zone": "Eastern Plaguelands",
+        "level": "60"
+      },
+      "Onyxia's Lair": {
+        "zone": "Dustwallow Marsh",
+        "level": "60"
+      },
+      "Ragefire Chasm": {
+        "zone": "Orgrimmar",
+        "level": "13-18"
+      },
+      "Razorfen Downs": {
+        "zone": "The Barrens",
+        "level": "37-46"
+      },
+      "Razorfen Kraul": {
+        "zone": "The Barrens",
+        "level": "30-40"
+      },
+      "Ruins of Ahn'Qiraj": {
+        "zone": "Silithus",
+        "level": "60"
+      },
+      "Scarlet Monastery": {
+        "zone": "Tirisfal Glades",
+        "level": "30-45"
+      },
+      "Scholomance": {
+        "zone": "Western Plaguelands",
+        "level": "58-60"
+      },
+      "Shadowfang Keep": {
+        "zone": "Silverpine Forest",
+        "level": "22-30"
+      },
+      "Stratholme": {
+        "zone": "Eastern Plaguelands",
+        "level": "58-60"
+      },
+      "Temple of Ahn'Qiraj": {
+        "zone": "Silithus",
+        "level": "60"
+      },
+      "The Deadmines": {
+        "zone": "Westfall",
+        "level": "18-23"
+      },
+      "The Stockade": {
+        "zone": "Stormwind City",
+        "level": "24-32"
+      },
+      "The Temple of Atal'Hakkar": {
+        "zone": "Swamp of Sorrows",
+        "level": "50-60"
+      },
+      "Uldaman": {
+        "zone": "Badlands",
+        "level": "42-52"
+      },
+      "Wailing Caverns": {
+        "zone": "The Barrens",
+        "level": "17-24"
+      },
+      "Zul'Farrak": {
+        "zone": "Tanaris",
+        "level": "44-54"
+      },
+      "Zul'Gurub": {
+        "zone": "Stranglethorn Vale",
+        "level": "60"
+      }
+    }
+  }
+}

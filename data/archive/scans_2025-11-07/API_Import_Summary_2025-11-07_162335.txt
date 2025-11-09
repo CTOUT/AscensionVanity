@@ -1,0 +1,13 @@
+Ascension Vanity API Import Summary
+Generated: 2025-11-07 16:23:35
+Source: D:\Repos\AscensionVanity\data\AscensionVanity.lua
+Scan Version: 2.1
+Last Scan Date: 2025-11-07 07:40:59
+Reported Total Items: 9541
+Parsed Entries: 9541
+
+Category Breakdown:
+  1                              
+
+Entries without creature preview: 4920
+Descriptions not matching drop pattern: 6503
