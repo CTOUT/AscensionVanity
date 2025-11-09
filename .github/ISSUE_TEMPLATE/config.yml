@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://github.com/CTOUT/AscensionVanity/blob/main/README.md
+    about: Check the README for usage instructions and features
+  - name: 🧪 Testing Guide
+    url: https://github.com/CTOUT/AscensionVanity/blob/main/TESTING_QUICK_GUIDE.md
+    about: Quick guide for testing and troubleshooting
+  - name: 📋 Feature Roadmap
+    url: https://github.com/CTOUT/AscensionVanity/blob/main/FEATURE_ROADMAP_V2.3.md
+    about: See what features are planned for future releases
