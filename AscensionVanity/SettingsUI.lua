@@ -134,19 +134,38 @@ local questWarningsCheckbox = CreateCheckbox(
     -10
 )
 
+local enableKillTrackingCheckbox = CreateCheckbox(
+    settingsPanel,
+    "Enable Kill Tracking",
+    "Track your kills and loot drops for farming efficiency.\n\n" .. AV_COLOR_BLUE .. "[Master Switch]" .. AV_COLOR_RESET .. "\n- Records every creature kill\n- Tracks loot outcomes\n- Stores farming history\n\n" .. AV_COLOR_ORANGE .. "[!] Performance:" .. AV_COLOR_RESET .. " Minimal impact - uses efficient combat log events.\n\n" .. AV_COLOR_GRAY .. "Note:" .. AV_COLOR_RESET .. " Disable this if you don't want kill data recorded.",
+    colorCheckbox,  -- Anchor to right column (colorCheckbox)
+    0,  -- Same x-offset as colorCheckbox (right column)
+    -10
+)
+
+local showKillStatsCheckbox = CreateCheckbox(
+    settingsPanel,
+    "Show Kill Statistics",
+    "Display kill tracking statistics in creature tooltips.\n\n" .. AV_COLOR_BLUE .. "[Farming Tool]" .. AV_COLOR_RESET .. "\n- Shows kills since last drop\n- Tracks drop rates\n- Monitors farming efficiency\n\n" .. AV_COLOR_GRAY .. "Example:" .. AV_COLOR_RESET .. " " .. AV_COLOR_ORANGE .. "Kills: 47 (2 since last drop)" .. AV_COLOR_RESET .. "\n" .. AV_COLOR_GRAY .. "            " .. "Drop Rate: 4.3%" .. AV_COLOR_RESET .. "\n\n" .. AV_COLOR_GOLD .. "[!] Requires:" .. AV_COLOR_RESET .. " Enable Kill Tracking must be checked.",
+    enableKillTrackingCheckbox,  -- Anchor to enableKillTrackingCheckbox
+    0,  -- Same x-offset as colorCheckbox (right column)
+    -10
+)
+
 local showIDsCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Item/Creature IDs",
     "Display internal game IDs in tooltips.\n\n" .. AV_COLOR_YELLOW .. "[Dev Tool]" .. AV_COLOR_RESET .. "\n- Shows Item ID for vanity items\n- Shows Creature ID for NPCs\n- Useful for debugging and research\n\n" .. AV_COLOR_GRAY .. "Example:" .. AV_COLOR_RESET .. " " .. AV_COLOR_BRIGHT_ORANGE .. "[Item: 82875]" .. AV_COLOR_RESET .. " Beastmaster's Whistle: Pet Name\n" .. AV_COLOR_GRAY .. "          Creature ID:" .. AV_COLOR_RESET .. " " .. AV_COLOR_WHITE .. "12345" .. AV_COLOR_RESET,
-    questWarningsCheckbox,
-    0,
+    questWarningsCheckbox,  -- Anchor to left column (questWarningsCheckbox)
+    0,  -- Left column
     -10
 )
 
 -- Separator before category filters
+-- Anchor to the lowest checkbox (left column has 3 items: learned, questWarnings, showIDs)
 local separatorCategories = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCategories:SetHeight(1)
-separatorCategories:SetPoint("TOP", showIDsCheckbox, "BOTTOM", 0, -16)
+separatorCategories:SetPoint("TOP", showIDsCheckbox, "BOTTOM", 0, -16)  -- showIDsCheckbox is lowest
 separatorCategories:SetPoint("LEFT", 30, 0)
 separatorCategories:SetPoint("RIGHT", -30, 0)
 separatorCategories:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -467,6 +486,8 @@ local function UpdateCheckboxes()
     learnedCheckbox:SetChecked(AscensionVanityDB.showLearnedStatus)
     colorCheckbox:SetChecked(AscensionVanityDB.colorCode)
     questWarningsCheckbox:SetChecked(AscensionVanityDB.showQuestWarnings == nil and true or AscensionVanityDB.showQuestWarnings)
+    enableKillTrackingCheckbox:SetChecked(AscensionVanityDB.enableKillTracking == nil and true or AscensionVanityDB.enableKillTracking)  -- Default to true (matches config)
+    showKillStatsCheckbox:SetChecked(AscensionVanityDB.showKillStats == nil and true or AscensionVanityDB.showKillStats)  -- Default to true (matches config)
     showIDsCheckbox:SetChecked(AscensionVanityDB.showIDs == nil and false or AscensionVanityDB.showIDs)
     
     -- Update category filter checkboxes (v2.1+)
@@ -524,6 +545,8 @@ local function SaveSettings()
     AscensionVanityDB.colorCode = colorCheckbox:GetChecked() and true or false
     AscensionVanityDB.showLearnedStatus = learnedCheckbox:GetChecked() and true or false
     AscensionVanityDB.showQuestWarnings = questWarningsCheckbox:GetChecked() and true or false
+    AscensionVanityDB.enableKillTracking = enableKillTrackingCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showKillStats = showKillStatsCheckbox:GetChecked() and true or false
     AscensionVanityDB.showIDs = showIDsCheckbox:GetChecked() and true or false
     
     -- Note: Progress frame visibility managed by toggle button, not checkbox
@@ -570,6 +593,8 @@ end)
 -- Add auto-save to other checkboxes
 colorCheckbox:HookScript("OnClick", SaveSettings)
 questWarningsCheckbox:HookScript("OnClick", SaveSettings)
+enableKillTrackingCheckbox:HookScript("OnClick", SaveSettings)
+showKillStatsCheckbox:HookScript("OnClick", SaveSettings)
 showIDsCheckbox:HookScript("OnClick", SaveSettings)
 
 -- Add auto-save to category filter checkboxes (v2.1+)

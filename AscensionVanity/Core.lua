@@ -2016,6 +2016,77 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             print("|cFFFF0000Error:|r Progress Tracker not loaded")
         end
     
+    elseif msg == "stats" or msg == "killstats" then
+        -- Show kill statistics summary
+        print("|cFF00FF96========================================|r")
+        print("|cFF00FF96Kill Statistics Summary|r")
+        print("|cFF00FF96========================================|r")
+        
+        -- Check if tracking is enabled
+        print("|cFFFFFF00Settings:|r")
+        print("  enableKillTracking:", AscensionVanityDB.enableKillTracking and "|cFF00FF00true|r" or "|cFFFF0000false|r")
+        print("  showKillStats:", AscensionVanityDB.showKillStats and "|cFF00FF00true|r" or "|cFFFF0000false|r")
+        print(" ")
+        
+        -- Check if AV_CreatureStats exists
+        if not AV_CreatureStats then
+            print("|cFFFF0000No statistics data found!|r")
+            print("AV_CreatureStats is nil - kill tracking may not be initialized")
+            return
+        end
+        
+        -- Count creatures with stats
+        local totalCreatures = 0
+        local totalKills = 0
+        local totalLooted = 0
+        local totalDrops = 0
+        
+        for creatureId, stats in pairs(AV_CreatureStats) do
+            if creatureId ~= "_metadata" then
+                totalCreatures = totalCreatures + 1
+                totalKills = totalKills + (stats.totalKilled or stats.totalKills or 0)
+                totalLooted = totalLooted + (stats.totalLooted or stats.totalKills or 0)
+                totalDrops = totalDrops + (stats.totalDrops or 0)
+            end
+        end
+        
+        print("|cFFFFFF00Statistics Summary:|r")
+        print("  Creatures tracked:", totalCreatures)
+        print("  Total kills:", totalKills)
+        print("  Total looted:", totalLooted)
+        print("  Total drops:", totalDrops)
+        print(" ")
+        
+        if totalCreatures == 0 then
+            print("|cFFFF9900No creatures tracked yet.|r")
+            print("Kill some creatures that drop vanity items to start tracking.")
+        else
+            print("|cFFFFFF00Top 5 Farmed Creatures:|r")
+            local creatureList = {}
+            for creatureId, stats in pairs(AV_CreatureStats) do
+                if creatureId ~= "_metadata" then
+                    table.insert(creatureList, {
+                        id = creatureId,
+                        name = stats.creatureName or ("Creature " .. creatureId),
+                        kills = stats.totalKilled or stats.totalKills or 0,
+                        looted = stats.totalLooted or stats.totalKills or 0,
+                        drops = stats.totalDrops or 0
+                    })
+                end
+            end
+            
+            table.sort(creatureList, function(a, b) return a.looted > b.looted end)
+            
+            for i = 1, math.min(5, #creatureList) do
+                local c = creatureList[i]
+                local dropRate = c.looted > 0 and (c.drops / c.looted * 100) or 0
+                print(string.format("  %d. %s: %d killed | %d looted | %d drops (%.1f%%)",
+                    i, c.name, c.kills, c.looted, c.drops, dropRate))
+            end
+        end
+        
+        print("|cFF00FF96========================================|r")
+    
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
         print(" ")
