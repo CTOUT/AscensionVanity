@@ -16,42 +16,120 @@ A comprehensive statistics tracking system that integrates across multiple UI co
 
 ## Core Data Structure
 
-### SavedVariablesPerCharacter
+### Data Persistence Strategy
+
+**CRITICAL:** All statistics MUST persist across sessions to provide accurate long-term data.
+
+- **AV_CreatureStats**: Saved to disk (SavedVariablesPerCharacter) - **PERSISTS BETWEEN SESSIONS**
+- **AV_SessionStats**: Runtime only - **RESETS ON /RELOAD** (by default)
+
+This allows users to:
+1. Track lifetime statistics (total kills/drops over weeks/months)
+2. See accurate drop percentages based on their own data
+3. Compare current session to historical performance
+
+### TOC File Configuration
+
+**REQUIRED: Add to AscensionVanity.toc**
+
+```toc
+## SavedVariablesPerCharacter: AV_CreatureStats
+```
+
+This tells WoW to save `AV_CreatureStats` to:
+```
+WTF/Account/[ACCOUNT]/[SERVER]/[CHARACTER]/SavedVariables/AscensionVanity.lua
+```
+
+**Note:** `AV_SessionStats` is NOT in SavedVariables - it's runtime only and resets each session.
+
+### Why Per-Character? Research Benefits!
+
+**Key Research Question:** Do drop rates vary by class/spec?
+- Do Beastmaster's Whistles drop more for Hunters?
+- Do Elemental Lodestones drop more for Shamans?
+- Do Draconic Warhorns drop more for Paladins/Warriors?
+
+**Per-character statistics enable this research:**
+1. **Farm same creature on multiple characters** (Hunter, Shaman, Mage, etc.)
+2. **Compare drop rates across characters**
+3. **Detect class-specific biases** in drop chances
+4. **Share findings with community**
+
+**Example Research Process:**
+```
+Hunter:     100 kills, 5 drops = 5.0% (Beastmaster's Whistle)
+Shaman:     100 kills, 2 drops = 2.0% (Beastmaster's Whistle)
+Mage:       100 kills, 1 drop  = 1.0% (Beastmaster's Whistle)
+
+Conclusion: Hunters may have 2-5x higher drop rate for Beast items!
+```
+
+**Why This Matters:**
+- **Optimize farming routes** (farm with most efficient class)
+- **Community knowledge** (share which class farms best)
+- **Game mechanics insight** (does Ascension have class affinity?)
+
+**Future Enhancement (v2.4):**
+- Export statistics to CSV for analysis
+- Compare stats across multiple characters on same account
+- Community data aggregation (requires backend)
+
+### SavedVariablesPerCharacter (PERSISTS TO DISK)
 
 ```lua
+-- File: WTF/Account/[ACCOUNT]/[SERVER]/[CHARACTER]/SavedVariables/AscensionVanity.lua
 AV_CreatureStats = {
-    -- Global statistics (lifetime, all-time)
-    [creatureId] = {
-        -- Lifetime stats
-        totalKills = 147,
-        totalDrops = 3,
-        firstKillDate = 1699564800,  -- Unix timestamp
-        lastKillDate = 1699651200,
-        lastDropDate = 1699650000,
-        
-        -- Calculated fields (not saved, computed on load)
-        dropRate = 0.0204,  -- 2.04% (3/147)
-        unluckyStreak = 45,  -- Kills since last drop
+    -- Character metadata (for research/export)
+    _metadata = {
+        characterName = "Huntard",
+        className = "HUNTER",
+        classDisplayName = "Hunter",
+        realm = "Project Ascension",
+        dataVersion = "2.3.0",  -- Track data structure version
     },
-    -- ... more creatures
+    
+    -- PERSISTENT: Lifetime statistics (saved between sessions)
+    [creatureId] = {
+        -- Core data (saved to disk)
+        totalKills = 147,           -- All-time kill count
+        totalDrops = 3,             -- All-time vanity drops received
+        firstKillDate = 1699564800, -- Unix timestamp of first kill
+        lastKillDate = 1699651200,  -- Unix timestamp of most recent kill
+        lastDropDate = 1699650000,  -- Unix timestamp of most recent drop
+        
+        -- Drop breakdown (for class affinity research)
+        dropsByCategory = {
+            ["Beastmaster's Whistle"] = 2,  -- Beast items
+            ["Elemental Lodestone"] = 1,    -- Elemental items
+            -- etc.
+        },
+        
+        -- Calculated fields (computed on-the-fly, NOT saved)
+        -- These are calculated from totalKills/totalDrops when needed
+        dropRate = 0.0204,          -- 2.04% (calculated: totalDrops / totalKills)
+        unluckyStreak = 45,         -- Kills since last drop (calculated)
+    },
+    -- ... more creatures (grows over time as you farm different mobs)
 }
 
+-- Runtime-only session tracking (NOT saved to disk by default)
 AV_SessionStats = {
-    -- Session-specific tracking (reset on /reload or manual reset)
-    sessionStart = 1699650000,  -- Unix timestamp
-    lastKillTime = 1699651200,
+    -- RUNTIME: Current session only (resets on /reload or manual reset)
+    sessionStart = 1699650000,  -- Unix timestamp when session started
+    lastKillTime = 1699651200,  -- Most recent kill this session
     
     creatures = {
         [creatureId] = {
-            sessionKills = 12,
-            sessionDrops = 0,
+            sessionKills = 12,      -- Kills THIS SESSION only
+            sessionDrops = 0,       -- Drops THIS SESSION only
             firstKillTime = 1699650100,
             lastKillTime = 1699651200,
             
-            -- Calculated
-            sessionDropRate = 0.00,  -- 0% (0/12)
-            killsPerHour = 5.2,  -- Calculated from timestamps
-            timeSinceLastKill = 120,  -- Seconds
+            -- Calculated (runtime only)
+            sessionDropRate = 0.00,      -- 0% (0/12 this session)
+            killsPerHour = 5.2,          -- Based on session timestamps
+            timeSinceLastKill = 120,     -- Seconds since last kill
         }
     },
     
@@ -59,12 +137,174 @@ AV_SessionStats = {
     summary = {
         totalKills = 15,
         totalDrops = 0,
-        uniqueCreatures = 2,  -- Number of different creatures killed
-        longestStreak = 12,  -- Most kills on single creature
-        topCreature = 2959,  -- Creature ID with most kills
+        uniqueCreatures = 2,
+        longestStreak = 12,
+        topCreature = 2959,
     }
 }
 ```
+
+---
+
+## Drop Chance Calculation
+
+### User-Generated Data Only
+
+**Philosophy:** We only show drop chances based on the **user's own data**, not theoretical or crowd-sourced rates.
+
+**Why this matters:**
+- Accurate: Based on actual player experience
+- Transparent: Player knows this is THEIR data, not game data
+- Motivating: Seeing "0.0%" after 50 kills motivates continued farming
+- Honest: We don't claim to know official drop rates
+
+### Display Logic
+
+```lua
+function AV_CalculateDropChance(creatureId)
+    local stats = AV_CreatureStats[creatureId]
+    if not stats or stats.totalKills == 0 then
+        return nil  -- No data available
+    end
+    
+    local dropRate = (stats.totalDrops / stats.totalKills) * 100
+    return dropRate  -- e.g., 2.04 for 2.04%
+end
+
+function AV_FormatDropChance(creatureId)
+    local dropRate = AV_CalculateDropChance(creatureId)
+    if not dropRate then
+        return "No data"
+    end
+    
+    local stats = AV_CreatureStats[creatureId]
+    return string.format("%d kills, %d drops (%.1f%% drop chance)",
+        stats.totalKills, stats.totalDrops, dropRate)
+end
+```
+
+### Display Examples
+
+**Example 1: Never killed**
+```
+📊 Your Stats: No data yet
+```
+
+**Example 2: Killed but no drops**
+```
+📊 Your Stats:
+Lifetime: 47 kills, 0 drops (0.0% drop chance)
+```
+
+**Example 3: Some drops**
+```
+📊 Your Stats:
+Lifetime: 147 kills, 3 drops (2.0% drop chance)
+```
+
+**Example 4: Many drops (lucky!)**
+```
+📊 Your Stats:
+Lifetime: 20 kills, 5 drops (25.0% drop chance)
+🍀 You're lucky! Above average drop rate
+```
+
+### Accuracy Disclaimer
+
+**Add to tooltip (optional, configurable):**
+```
+💡 Tip: Drop chances shown are based on YOUR data only
+```
+
+Or in Settings UI:
+```
+ℹ️ Statistics are based on your personal farming data.
+   These are not official drop rates.
+```
+
+---
+
+## Class Affinity Research Feature
+
+### Hypothesis Testing: Do Drop Rates Vary by Class?
+
+**Research Question:** Does your character class affect vanity item drop rates?
+
+**Hypotheses to Test:**
+1. **Beast Affinity:** Hunters get more Beastmaster's Whistle drops
+2. **Elemental Affinity:** Shamans get more Elemental Lodestone drops
+3. **Dragon Affinity:** Paladins/Warriors get more Draconic Warhorn drops
+4. **Demon Affinity:** Warlocks get more Blood Soaked Vellum drops
+5. **Undead Affinity:** Death Knights/Priests get more Summoner's Stone drops
+
+### Data Collection Strategy
+
+**Controlled Farming:**
+1. **Pick a test creature** (e.g., Magram Bonepaw in Desolace)
+2. **Farm with multiple characters** (100+ kills per character minimum)
+3. **Record category-specific drops** (Beast, Elemental, Dragon, etc.)
+4. **Compare drop rates** across characters
+
+**Example Research Data:**
+
+| Character | Class | Total Kills | Beast Drops | Elemental Drops | Dragon Drops | Overall Rate |
+|-----------|-------|-------------|-------------|-----------------|--------------|--------------|
+| Huntard | Hunter | 100 | **8** | 1 | 0 | 9.0% |
+| Shamanator | Shaman | 100 | 2 | **6** | 1 | 9.0% |
+| Tankadin | Paladin | 100 | 1 | 2 | **5** | 8.0% |
+| Mageface | Mage | 100 | 2 | 2 | 2 | 6.0% |
+
+**Analysis:** Hunters get 4x more Beast drops, Shamans get 3x more Elemental drops!
+
+### Implementation: Drop Category Tracking
+
+**When recording a drop:**
+```lua
+function statsFrame:RecordDrop(creatureId, itemId)
+    local stats = AV_CreatureStats[creatureId]
+    stats.totalDrops = stats.totalDrops + 1
+    stats.lastDropDate = time()
+    
+    -- Track by category for class affinity research
+    local itemCategory = AV_GetItemCategory(itemId)  -- "Beast", "Elemental", etc.
+    if itemCategory then
+        stats.dropsByCategory = stats.dropsByCategory or {}
+        stats.dropsByCategory[itemCategory] = (stats.dropsByCategory[itemCategory] or 0) + 1
+    end
+end
+```
+
+### Export for Analysis (Future: v2.4)
+
+**CSV Export Command:** `/avanity export stats`
+
+**Output Format:**
+```csv
+Character,Class,CreatureID,CreatureName,TotalKills,TotalDrops,BeastDrops,ElementalDrops,DragonDrops,DemonDrops,UndeadDrops,DropRate
+Huntard,HUNTER,2959,Magram Bonepaw,100,9,8,1,0,0,0,9.0%
+Shamanator,SHAMAN,2959,Magram Bonepaw,100,9,2,6,1,0,0,9.0%
+```
+
+**Analysis Tools:**
+- Import CSV into Excel/Google Sheets
+- Calculate category-specific drop rates per class
+- Statistical significance testing (Chi-square test)
+- Visualize with charts
+
+### Community Contribution
+
+**Share Your Findings:**
+1. Export your stats to CSV
+2. Post to Discord/Reddit with sample size
+3. Others validate with their own data
+4. Build community drop rate database
+
+**Expected Timeline:**
+- **Week 1**: Basic tracking implemented (Phase 1)
+- **Week 2**: CSV export added (Phase 2)
+- **Month 1**: Community starts collecting data
+- **Month 2**: Enough data for statistical significance
+- **Month 3**: Publish findings!
 
 ---
 
@@ -81,12 +321,17 @@ AV_SessionStats = {
   Combat Pet: Beastmaster's Whistle: Magram Bonepaw
   
   📊 Your Stats:
-  Lifetime: 47 kills, 0 drops (0.0%)
-  Session: 12 kills, 0 drops (0.0%)
-  Unlucky Streak: 47 kills
+  Lifetime: 47 kills, 0 drops (0.0% drop chance)
+  Session: 12 kills, 0 drops
+  Unlucky Streak: 47 kills since last drop
   
   ⏱️ Session: 2h 53m (5.2 kills/hour)
 ```
+
+**Drop Chance Display Rules:**
+- **0 drops**: Show "0.0% drop chance" (accurate, based on your data)
+- **1+ drops**: Show "X.X% drop chance" (e.g., "3 drops / 147 kills = 2.0%")
+- **Note to user**: "Based on your personal data - not official drop rates"
 
 **Configuration:**
 - Toggle stats display on/off
@@ -98,41 +343,79 @@ AV_SessionStats = {
 ```lua
 -- In Core.lua tooltip hook
 if AV_Config.showKillStats and creatureData then
-    local stats = AV_GetCreatureStats(creatureId)
-    if stats then
+    local stats = AV_CreatureStats[creatureId]
+    
+    -- Only show if we have data
+    if stats and stats.totalKills > 0 then
         tooltip:AddLine(" ")  -- Spacer
         tooltip:AddLine(AV_COLOR_GOLD .. "📊 Your Stats:" .. AV_COLOR_RESET)
         
-        -- Lifetime stats
-        local lifetimeText = string.format("Lifetime: %d kills, %d drops (%.1f%%)",
-            stats.totalKills, stats.totalDrops, stats.dropRate * 100)
+        -- Calculate drop chance
+        local dropChance = (stats.totalDrops / stats.totalKills) * 100
+        
+        -- Lifetime stats: X kills, Y drops (Z% drop chance)
+        local lifetimeText = string.format("Lifetime: %d kills, %d drops (%.1f%% drop chance)",
+            stats.totalKills, stats.totalDrops, dropChance)
         tooltip:AddLine(lifetimeText, 1, 1, 1)
         
-        -- Session stats (if any)
-        local sessionStats = AV_GetSessionStats(creatureId)
-        if sessionStats and sessionStats.sessionKills > 0 then
-            local sessionText = string.format("Session: %d kills, %d drops (%.1f%%)",
-                sessionStats.sessionKills, sessionStats.sessionDrops,
-                sessionStats.sessionDropRate * 100)
-            tooltip:AddLine(sessionText, 0.8, 0.8, 1)
-            
-            -- Efficiency
-            if sessionStats.killsPerHour > 0 then
-                local elapsed = AV_FormatTime(time() - AV_SessionStats.sessionStart)
-                local efficiencyText = string.format("⏱️ Session: %s (%.1f kills/hour)",
-                    elapsed, sessionStats.killsPerHour)
-                tooltip:AddLine(efficiencyText, 0.6, 0.8, 1)
+        -- Session stats (if any kills this session)
+        if AV_SessionStats.creatures[creatureId] then
+            local sessionStats = AV_SessionStats.creatures[creatureId]
+            if sessionStats.sessionKills > 0 then
+                -- Session: X kills, Y drops (only if drops > 0)
+                local sessionText = string.format("Session: %d kills, %d drops",
+                    sessionStats.sessionKills, sessionStats.sessionDrops)
+                tooltip:AddLine(sessionText, 0.8, 0.8, 1)
+                
+                -- Efficiency (kills per hour)
+                local elapsed = time() - sessionStats.firstKillTime
+                if elapsed > 60 then  -- At least 1 minute of data
+                    local killsPerHour = (sessionStats.sessionKills / elapsed) * 3600
+                    local hours = math.floor(elapsed / 3600)
+                    local minutes = math.floor((elapsed % 3600) / 60)
+                    
+                    local timeText = hours > 0 
+                        and string.format("%dh %dm", hours, minutes)
+                        or string.format("%dm", minutes)
+                    
+                    local efficiencyText = string.format("⏱️ Session: %s (%.1f kills/hour)",
+                        timeText, killsPerHour)
+                    tooltip:AddLine(efficiencyText, 0.6, 0.8, 1)
+                end
             end
         end
         
-        -- Unlucky streak warning
-        if AV_Config.showUnluckyStreak and stats.unluckyStreak >= 20 then
-            local streakColor = stats.unluckyStreak >= 50 and AV_COLOR_RED or AV_COLOR_GOLD
-            tooltip:AddLine(streakColor .. "💀 Unlucky Streak: " .. stats.unluckyStreak .. " kills")
+        -- Unlucky streak warning (kills since last drop)
+        if AV_Config.showUnluckyStreak then
+            local killsSinceLastDrop = stats.totalKills
+            if stats.totalDrops > 0 and stats.lastDropDate > 0 then
+                -- Calculate kills since last drop
+                -- (This is simplified - actual implementation would track kill counter at drop time)
+                local unluckyThreshold = AV_Config.unluckyStreakThreshold or 20
+                if killsSinceLastDrop >= unluckyThreshold then
+                    local streakColor = killsSinceLastDrop >= 50 and AV_COLOR_RED or AV_COLOR_GOLD
+                    tooltip:AddLine(streakColor .. "💀 Unlucky Streak: " .. killsSinceLastDrop .. " kills since last drop")
+                end
+            elseif stats.totalKills >= 20 and stats.totalDrops == 0 then
+                -- Never had a drop and high kill count
+                tooltip:AddLine(AV_COLOR_RED .. "💀 No drops yet after " .. stats.totalKills .. " kills")
+            end
+        end
+        
+        -- Optional: Show when data is limited
+        if AV_Config.showDataDisclaimer and stats.totalKills < 10 then
+            tooltip:AddLine(AV_COLOR_GRAY .. "💡 Limited data - drop chance may not be accurate", 0.7, 0.7, 0.7)
         end
     end
 end
 ```
+
+**Key Points:**
+1. **Always show "X kills, Y drops (Z% chance)"** for lifetime stats
+2. **Session shows kills and drops** (no percentage - not enough data)
+3. **Drop chance is calculated** from totalDrops / totalKills
+4. **No data disclaimer** when kill count is low
+5. **Unlucky streak** prominently displayed when threshold exceeded
 
 ---
 
