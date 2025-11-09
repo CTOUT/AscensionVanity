@@ -4,8 +4,20 @@ All notable changes to the AscensionVanity project will be documented in this fi
 
 ## [Unreleased] - v2.3-dev
 
-### Planned
-- Future features and improvements will be documented here
+### Planned Features
+See `FEATURE_ROADMAP_V2.3.md` for complete roadmap and implementation details.
+
+**Core Features (Phase 1-3):**
+- 📊 Kill/Drop Statistics Tracking - Track kills, drops, and unlucky streaks per creature
+- ⚔️ Creature Combat Stats - Attack speed, level, and elite status in tooltips
+- 🗺️ Minimap Button Integration - Quick access with LibDBIcon-1.0
+- 📈 Farming Session Analytics - Kills/hour, time estimates, session summaries
+- 📄 Database Browser Pagination - 50 items per page for better performance
+- 🗺️ Zone/Subzone Standardization - Consistent location descriptions
+- 🔧 Creature ID Corrections System - Fix wrong creature references
+
+**Timeline:** 6-week development cycle (4 phases)  
+**Status:** 🚀 Planning Phase Complete
 
 ## [2.2-beta] - 2025-11-08
 
