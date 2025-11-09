@@ -4,6 +4,7 @@
 ## Author: CTout
 ## Version: 2.3-dev
 ## SavedVariables: AscensionVanityDB, AscensionVanityDump
+## SavedVariablesPerCharacter: AV_CreatureStats
 
 # Shared constants (loads first - used by all other files)
 AscensionVanityConstants.lua
@@ -32,6 +33,9 @@ RegionalGuide.lua
 
 # Database Browser (v2.2+ comprehensive database explorer and regional guide)
 DatabaseBrowser.lua
+
+# Statistics Tracker (v2.3+ kill/drop tracking for farming efficiency)
+StatisticsTracker.lua
 
 # Debug Tools (development only - uncomment when needed)
 # DEBUG_Measurements.lua

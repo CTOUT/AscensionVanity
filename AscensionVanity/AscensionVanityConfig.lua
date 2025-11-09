@@ -21,7 +21,16 @@ local defaults = {
     showIDs = false,             -- Show item/creature IDs in tooltips (v2.2 - useful for debugging)
     showLearnedStatus = true,    -- Show "Learned" or "Not Learned" in tooltips
     showQuestWarnings = true,    -- Show quest-locked NPC warnings (v2.2)
-    showRegions = false          -- Show region/location information (not yet implemented)
+    showRegions = false,         -- Show region/location information (not yet implemented)
+    
+    -- Statistics Tracking (v2.3)
+    enableKillTracking = true,   -- Track kills per creature
+    showKillStats = true,        -- Show kill/drop stats in tooltips
+    chatNotifyKills = false,     -- Print kill notifications to chat
+    showDropRaidWarning = true,  -- Show big raid warning when item drops
+    flashScreenOnDrop = true,    -- Flash screen when item drops (celebratory effect)
+    showUnluckyStreak = true,    -- Warn about long streaks without drops
+    unluckyStreakThreshold = 20  -- Number of kills before showing unlucky warning
 }
 
 -- Initialize configuration with defaults if not already set
