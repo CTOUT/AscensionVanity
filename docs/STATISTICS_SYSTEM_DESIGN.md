@@ -231,11 +231,11 @@ Or in Settings UI:
 **Research Question:** Does your character class affect vanity item drop rates?
 
 **Hypotheses to Test:**
-1. **Beast Affinity:** Hunters get more Beastmaster's Whistle drops
-2. **Elemental Affinity:** Shamans get more Elemental Lodestone drops
-3. **Dragon Affinity:** Paladins/Warriors get more Draconic Warhorn drops
-4. **Demon Affinity:** Warlocks get more Blood Soaked Vellum drops
-5. **Undead Affinity:** Death Knights/Priests get more Summoner's Stone drops
+1. **Beast Affinity:** Hunters get more Beastmaster's Whistle drops (Beast pets)
+2. **Elemental Affinity:** Shamans get more Elemental Lodestone drops (Elemental pets)
+3. **Dragonkin Affinity:** Mages get more Draconic Warhorn drops (Dragonkin pets)
+4. **Demon Affinity:** Warlocks get more Summoner's Stone drops (Demon pets)
+5. **Undead Affinity:** Death Knights get more Blood Soaked Vellum drops (Undead pets)
 
 ### Data Collection Strategy
 
@@ -247,14 +247,15 @@ Or in Settings UI:
 
 **Example Research Data:**
 
-| Character | Class | Total Kills | Beast Drops | Elemental Drops | Dragon Drops | Overall Rate |
-|-----------|-------|-------------|-------------|-----------------|--------------|--------------|
-| Huntard | Hunter | 100 | **8** | 1 | 0 | 9.0% |
-| Shamanator | Shaman | 100 | 2 | **6** | 1 | 9.0% |
-| Tankadin | Paladin | 100 | 1 | 2 | **5** | 8.0% |
-| Mageface | Mage | 100 | 2 | 2 | 2 | 6.0% |
+| Character | Class | Total Kills | Beast Drops | Elemental Drops | Dragon Drops | Demon Drops | Undead Drops | Overall Rate |
+|-----------|-------|-------------|-------------|-----------------|--------------|-------------|--------------|--------------|
+| Huntard | Hunter | 100 | **8** | 1 | 1 | 0 | 0 | 10.0% |
+| Shamanator | Shaman | 100 | 2 | **6** | 0 | 1 | 0 | 9.0% |
+| Mageface | Mage | 100 | 1 | 1 | **6** | 0 | 1 | 9.0% |
+| Warlockula | Warlock | 100 | 0 | 1 | 1 | **5** | 1 | 8.0% |
+| Dethknight | Death Knight | 100 | 1 | 0 | 0 | 1 | **6** | 8.0% |
 
-**Analysis:** Hunters get 4x more Beast drops, Shamans get 3x more Elemental drops!
+**Analysis:** Each class gets 3-6x more drops for their thematic pet type!
 
 ### Implementation: Drop Category Tracking
 
