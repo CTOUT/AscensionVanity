@@ -285,6 +285,111 @@ local function GetCreatureTypeFromTooltip()
     return nil
 end
 
+-- ============================================================================
+-- Kill/Drop Statistics Display (v2.3+)
+-- ============================================================================
+-- NOTE: This function is defined BEFORE AddVanityInfoToTooltip because
+--       AddVanityInfoToTooltip calls it. In Lua, local functions must be
+--       defined before they can be called.
+
+local function AddKillStatsToTooltip(tooltip, creatureID)
+    if not creatureID then return end
+    
+    local stats = AV_GetCreatureStats(creatureID)
+    
+    -- Only show if we have data (check for both old and new field names)
+    local totalKilled = stats and (stats.totalKilled or stats.totalKills or 0)
+    if not stats or totalKilled == 0 then
+        return
+    end
+    
+    tooltip:AddLine(" ")  -- Spacer
+    tooltip:AddLine(AV_COLOR_GOLD .. "[Stats] Your Farming Stats:" .. AV_COLOR_RESET)
+    
+    -- Calculate drop chance (based on looted creatures only, if available)
+    local totalLooted = stats.totalLooted or stats.totalKills or 0  -- Fallback for old data
+    local dropChance = totalLooted > 0 and (stats.totalDrops / totalLooted) * 100 or 0
+    
+    -- Lifetime stats with killed vs looted distinction
+    local lifetimeText
+    if stats.totalLooted and stats.totalKilled ~= stats.totalLooted then
+        -- New tracking: show killed vs looted
+        lifetimeText = string.format("Killed: %d | Looted: %d | Drops: %d (%.1f%%)",
+            stats.totalKilled, stats.totalLooted, stats.totalDrops, dropChance)
+    else
+        -- Old data or all were looted
+        lifetimeText = string.format("Looted: %d | Drops: %d (%.1f%%)",
+            totalLooted, stats.totalDrops, dropChance)
+    end
+    tooltip:AddLine(lifetimeText, 1, 1, 1, true)
+    
+    -- Session stats (if any kills this session)
+    if AV_SessionStats and AV_SessionStats.creatures and AV_SessionStats.creatures[creatureID] then
+        local sessionStats = AV_SessionStats.creatures[creatureID]
+        local sessionKilled = sessionStats.sessionKilled or sessionStats.sessionKills or 0
+        local sessionLooted = sessionStats.sessionLooted or sessionStats.sessionKills or 0
+        
+        if sessionKilled > 0 then
+            -- Session stats with killed vs looted
+            local sessionText
+            if sessionKilled ~= sessionLooted then
+                -- Show both if they differ
+                sessionText = string.format("Session: %d killed | %d looted | %d drops",
+                    sessionKilled, sessionLooted, sessionStats.sessionDrops)
+            else
+                -- Only show looted if all were looted
+                sessionText = string.format("Session: %d looted | %d drops",
+                    sessionLooted, sessionStats.sessionDrops)
+            end
+            tooltip:AddLine(sessionText, 0.8, 0.8, 1, true)
+            
+            -- Efficiency (looted per hour)
+            local elapsed = time() - sessionStats.firstKillTime
+            if elapsed > 60 then  -- At least 1 minute of data
+                local lootedPerHour = (sessionLooted / elapsed) * 3600
+                local hours = math.floor(elapsed / 3600)
+                local minutes = math.floor((elapsed % 3600) / 60)
+                
+                local timeText = hours > 0 
+                    and string.format("%dh %dm", hours, minutes)
+                    or string.format("%dm", minutes)
+                
+                local efficiencyText = string.format("[Time] %s farming (%.1f looted/hour)",
+                    timeText, lootedPerHour)
+                tooltip:AddLine(efficiencyText, 0.6, 0.8, 1, true)
+            end
+        end
+    end
+    
+    -- Unlucky streak warning (looted creatures without drops)
+    if AscensionVanityDB.showUnluckyStreak then
+        local threshold = AscensionVanityDB.unluckyStreakThreshold or 20
+        if totalLooted >= threshold and stats.totalDrops == 0 then
+            -- Never had a drop and high loot count
+            local streakText = string.format("[!] No drops yet after looting %d", totalLooted)
+            tooltip:AddLine(AV_COLOR_RED .. streakText .. AV_COLOR_RESET, 1, 1, 1, true)
+        elseif stats.totalDrops > 0 and stats.lastDropDate and stats.lastDropDate > 0 then
+            -- Has had drops before - check loot count since last drop
+            -- (This is simplified - actual streak tracking would need loot counter at drop time)
+            -- For now, just warn if total looted is much higher than expected based on drop rate
+            local expectedLootForDrop = stats.totalDrops > 0 and (totalLooted / stats.totalDrops) or 0
+            local currentStreak = totalLooted - (stats.totalDrops * expectedLootForDrop)
+            
+            if currentStreak >= threshold then
+                local streakColor = currentStreak >= 50 and AV_COLOR_RED or AV_COLOR_GOLD
+                local streakText = string.format("[!] Dry streak (%.0f looted above average)", currentStreak)
+                tooltip:AddLine(streakColor .. streakText .. AV_COLOR_RESET, 1, 1, 1, true)
+            end
+        end
+    end
+    
+    tooltip:Show()
+end
+
+-- ============================================================================
+-- Vanity Item Information Display
+-- ============================================================================
+
 -- Core: Add vanity item information to tooltip
 local function AddVanityInfoToTooltip(tooltip, unit)
     if not AscensionVanityDB.enabled then
@@ -615,83 +720,6 @@ local function AddVanityInfoToTooltip(tooltip, unit)
     end
 end
 
--- ============================================================================
--- Kill/Drop Statistics Display (v2.3+)
--- ============================================================================
-
-local function AddKillStatsToTooltip(tooltip, creatureID)
-    if not creatureID then return end
-    
-    local stats = AV_GetCreatureStats(creatureID)
-    
-    -- Only show if we have data
-    if not stats or stats.totalKills == 0 then
-        return
-    end
-    
-    tooltip:AddLine(" ")  -- Spacer
-    tooltip:AddLine(AV_COLOR_GOLD .. "📊 Your Stats:" .. AV_COLOR_RESET)
-    
-    -- Calculate drop chance
-    local dropChance = (stats.totalDrops / stats.totalKills) * 100
-    
-    -- Lifetime stats: X kills, Y drops (Z% drop chance)
-    local lifetimeText = string.format("Lifetime: %d kills, %d drops (%.1f%% drop chance)",
-        stats.totalKills, stats.totalDrops, dropChance)
-    tooltip:AddLine(lifetimeText, 1, 1, 1, true)
-    
-    -- Session stats (if any kills this session)
-    if AV_SessionStats and AV_SessionStats.creatures and AV_SessionStats.creatures[creatureID] then
-        local sessionStats = AV_SessionStats.creatures[creatureID]
-        if sessionStats.sessionKills > 0 then
-            -- Session: X kills, Y drops
-            local sessionText = string.format("Session: %d kills, %d drops",
-                sessionStats.sessionKills, sessionStats.sessionDrops)
-            tooltip:AddLine(sessionText, 0.8, 0.8, 1, true)
-            
-            -- Efficiency (kills per hour)
-            local elapsed = time() - sessionStats.firstKillTime
-            if elapsed > 60 then  -- At least 1 minute of data
-                local killsPerHour = (sessionStats.sessionKills / elapsed) * 3600
-                local hours = math.floor(elapsed / 3600)
-                local minutes = math.floor((elapsed % 3600) / 60)
-                
-                local timeText = hours > 0 
-                    and string.format("%dh %dm", hours, minutes)
-                    or string.format("%dm", minutes)
-                
-                local efficiencyText = string.format("⏱️ Session: %s (%.1f kills/hour)",
-                    timeText, killsPerHour)
-                tooltip:AddLine(efficiencyText, 0.6, 0.8, 1, true)
-            end
-        end
-    end
-    
-    -- Unlucky streak warning (kills since last drop)
-    if AscensionVanityDB.showUnluckyStreak then
-        local threshold = AscensionVanityDB.unluckyStreakThreshold or 20
-        if stats.totalKills >= threshold and stats.totalDrops == 0 then
-            -- Never had a drop and high kill count
-            local streakText = string.format("💀 No drops yet after %d kills", stats.totalKills)
-            tooltip:AddLine(AV_COLOR_RED .. streakText .. AV_COLOR_RESET, 1, 1, 1, true)
-        elseif stats.totalDrops > 0 and stats.lastDropDate and stats.lastDropDate > 0 then
-            -- Has had drops before - check kill count since last drop
-            -- (This is simplified - actual streak tracking would need kill counter at drop time)
-            -- For now, just warn if total kills is much higher than expected based on drop rate
-            local expectedKillsForDrop = stats.totalDrops > 0 and (stats.totalKills / stats.totalDrops) or 0
-            local currentStreak = stats.totalKills - (stats.totalDrops * expectedKillsForDrop)
-            
-            if currentStreak >= threshold then
-                local streakColor = currentStreak >= 50 and AV_COLOR_RED or AV_COLOR_GOLD
-                local streakText = string.format("💀 Possible dry streak (%.0f kills above average)", currentStreak)
-                tooltip:AddLine(streakColor .. streakText .. AV_COLOR_RESET, 1, 1, 1, true)
-            end
-        end
-    end
-    
-    tooltip:Show()
-end
-
 -- Hook into tooltip display
 local function OnTooltipSetUnit(tooltip)
     local _, unit = tooltip:GetUnit()
@@ -794,7 +822,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
             -- Compare versions
             if currentVersion ~= "Unknown" and dbVersion ~= "Unknown" then
                 if currentVersion ~= dbVersion then
-                    print("|cFFFFAA00⚠ Database is from a different build!|r Consider rescanning with |cFFFFFF00/avanity scan|r")
+                    print("|cFFFFAA00[WARNING] Database is from a different build!|r Consider rescanning with |cFFFFFF00/avanity scan|r")
                 end
             end
         end

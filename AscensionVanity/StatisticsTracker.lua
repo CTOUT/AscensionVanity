@@ -15,10 +15,9 @@ local realmName
 -- ============================================================================
 
 function statsFrame:Initialize()
-    -- Get character info for metadata
-    local className
-    _, playerClassDisplayName, _, _, _, className = GetPlayerInfoByGUID(UnitGUID("player"))
-    playerClass = className
+    -- Get character info for metadata (simplified for Ascension compatibility)
+    playerClass = select(2, UnitClass("player"))  -- Returns "HUNTER", "MAGE", etc.
+    playerClassDisplayName = UnitClass("player")  -- Returns "Hunter", "Mage", etc.
     realmName = GetRealmName()
     
     -- Initialize creature stats if not exists
@@ -64,42 +63,61 @@ function statsFrame:OnEvent(event, ...)
     if event == "PLAYER_LOGIN" then
         self:Initialize()
     elseif event == "COMBAT_LOG_EVENT_UNFILTERED" then
-        self:OnCombatLog()
-    elseif event == "LOOT_READY" then
+        self:OnCombatLog(...)  -- Pass combat log args
+    elseif event == "LOOT_OPENED" then
+        -- Ascension uses LOOT_OPENED instead of LOOT_READY
         self:OnLootReady()
     elseif event == "PLAYER_LOGOUT" then
         -- Data is saved automatically by SavedVariablesPerCharacter
     end
 end
 
-function statsFrame:OnCombatLog()
-    local timestamp, subevent, _, sourceGUID, sourceName, _, _, 
-          destGUID, destName, destFlags = CombatLogGetCurrentEventInfo()
+function statsFrame:OnCombatLog(...)
+    -- Ascension combat log format (different from standard WOTLK!):
+    -- arg1 = timestamp
+    -- arg2 = subevent (PARTY_KILL, UNIT_DIED, etc.)
+    -- arg3 = sourceGUID (hex)
+    -- arg4 = sourceName (string)
+    -- arg5 = sourceID (number)
+    -- arg6 = destGUID (hex) ← WE NEED THIS!
+    -- arg7 = destName (string) ← AND THIS!
+    -- arg8 = destID (number)
+    local timestamp, subevent, sourceGUID, sourceName, sourceID, 
+          destGUID, destName, destID = ...
     
-    -- Only track PARTY_KILL events (we or our group killed something)
+    -- Only track PARTY_KILL (you or your group got kill credit)
     if subevent ~= "PARTY_KILL" then
         return
     end
     
-    -- Extract creature ID from GUID
+    -- Extract creature ID from hex GUID
     local creatureId = self:ExtractCreatureID(destGUID)
     if not creatureId then
         return
     end
     
-    -- Record the kill
-    self:RecordKill(creatureId, destName)
+    -- Store last killed creature for loot correlation (always track for loot detection)
+    self.lastKilledCreatureId = creatureId
+    self.lastKilledCreatureName = destName
+    self.lastKilledGUID = destGUID
+    self.lastKillTime = time()
+    
+    -- Only track stats for creatures in VanityDB (creatures that can drop vanity items)
+    if self:IsVanityCreature(creatureId) then
+        self:RecordKill(creatureId, destName, false)  -- wasLooted = false (not looted yet)
+    end
 end
 
 -- ============================================================================
 -- Kill Tracking
 -- ============================================================================
 
-function statsFrame:RecordKill(creatureId, creatureName)
+function statsFrame:RecordKill(creatureId, creatureName, wasLooted)
     -- Initialize creature stats if first kill
     if not AV_CreatureStats[creatureId] then
         AV_CreatureStats[creatureId] = {
-            totalKills = 0,
+            totalKilled = 0,      -- All kills (looted + skipped)
+            totalLooted = 0,      -- Only looted creatures
             totalDrops = 0,
             firstKillDate = time(),
             lastKillDate = 0,
@@ -110,13 +128,29 @@ function statsFrame:RecordKill(creatureId, creatureName)
     
     -- Update lifetime stats
     local stats = AV_CreatureStats[creatureId]
-    stats.totalKills = stats.totalKills + 1
+    
+    -- Migrate old data format (totalKills -> totalKilled/totalLooted)
+    if stats.totalKills and not stats.totalKilled then
+        stats.totalKilled = stats.totalKills
+        stats.totalLooted = stats.totalKills  -- Assume all were looted in old version
+        stats.totalKills = nil  -- Remove old field
+    end
+    
+    -- Ensure fields exist (for partial migrations)
+    stats.totalKilled = stats.totalKilled or 0
+    stats.totalLooted = stats.totalLooted or 0
+    
+    stats.totalKilled = stats.totalKilled + 1
+    if wasLooted then
+        stats.totalLooted = stats.totalLooted + 1
+    end
     stats.lastKillDate = time()
     
     -- Update session stats
     if not AV_SessionStats.creatures[creatureId] then
         AV_SessionStats.creatures[creatureId] = {
-            sessionKills = 0,
+            sessionKilled = 0,
+            sessionLooted = 0,
             sessionDrops = 0,
             firstKillTime = time(),
             lastKillTime = 0,
@@ -124,7 +158,22 @@ function statsFrame:RecordKill(creatureId, creatureName)
     end
     
     local sessionStats = AV_SessionStats.creatures[creatureId]
-    sessionStats.sessionKills = sessionStats.sessionKills + 1
+    
+    -- Migrate old session data format
+    if sessionStats.sessionKills and not sessionStats.sessionKilled then
+        sessionStats.sessionKilled = sessionStats.sessionKills
+        sessionStats.sessionLooted = sessionStats.sessionKills  -- Assume all were looted
+        sessionStats.sessionKills = nil  -- Remove old field
+    end
+    
+    -- Ensure fields exist
+    sessionStats.sessionKilled = sessionStats.sessionKilled or 0
+    sessionStats.sessionLooted = sessionStats.sessionLooted or 0
+    
+    sessionStats.sessionKilled = sessionStats.sessionKilled + 1
+    if wasLooted then
+        sessionStats.sessionLooted = sessionStats.sessionLooted + 1
+    end
     sessionStats.lastKillTime = time()
     
     -- Update session summary
@@ -142,8 +191,9 @@ function statsFrame:RecordKill(creatureId, creatureName)
     local topKills = 0
     local topCreature = nil
     for cid, cstats in pairs(AV_SessionStats.creatures) do
-        if cstats.sessionKills > topKills then
-            topKills = cstats.sessionKills
+        local killed = cstats.sessionKilled or cstats.sessionKills or 0  -- Support both old and new field names
+        if killed > topKills then
+            topKills = killed
             topCreature = cid
         end
     end
@@ -153,7 +203,7 @@ function statsFrame:RecordKill(creatureId, creatureName)
     -- Optional: Print to chat if configured
     if AV_Config and AV_Config.chatNotifyKills then
         print(string.format("|cFF00FF96AscensionVanity:|r Kill #%d: %s",
-            stats.totalKills, creatureName or "Unknown"))
+            stats.totalKilled, creatureName or "Unknown"))
     end
 end
 
@@ -162,28 +212,107 @@ end
 -- ============================================================================
 
 function statsFrame:OnLootReady()
-    -- Get currently targeted creature
-    local guid = UnitGUID("target")
-    if not guid then return end
+    -- Use the last killed creature (from PARTY_KILL event)
+    local creatureId = self.lastKilledCreatureId
+    local creatureName = self.lastKilledCreatureName
+    local creatureGUID = self.lastKilledGUID
     
-    local creatureId = self:ExtractCreatureID(guid)
+    if not creatureId then
+        -- Fallback: try to get from target
+        local guid = UnitGUID("target")
+        if guid then
+            creatureId = self:ExtractCreatureID(guid)
+            creatureName = UnitName("target")
+            creatureGUID = guid
+        end
+    end
+    
     if not creatureId then return end
     
-    -- Check loot slots for vanity items
-    for slot = 1, GetNumLootItems() do
-        local itemLink = GetLootSlotLink(slot)
-        if itemLink then
-            local itemId = tonumber(itemLink:match("item:(%d+)"))
-            if itemId and self:IsVanityItem(itemId) then
-                self:RecordDrop(creatureId, itemId)
+    -- Only track loot stats for creatures in VanityDB
+    if self:IsVanityCreature(creatureId) then
+        -- Check if we've already looted this specific creature (by GUID)
+        -- This prevents counting the same corpse multiple times
+        if self.lastLootedGUID == creatureGUID then
+            -- Already looted this creature - don't count again
+            -- But still check for vanity items (in case user didn't take them first time)
+            print(string.format("|cFF888888AscensionVanity:|r Already counted loot from %s", creatureName or "creature"))
+        else
+            -- First time looting this creature - increment counters
+            self.lastLootedGUID = creatureGUID
+            
+            local stats = AV_CreatureStats[creatureId]
+            if stats then
+                stats.totalLooted = stats.totalLooted + 1
+            end
+            
+            local sessionStats = AV_SessionStats and AV_SessionStats.creatures and AV_SessionStats.creatures[creatureId]
+            if sessionStats then
+                sessionStats.sessionLooted = sessionStats.sessionLooted + 1
             end
         end
     end
+    
+    -- Check loot slots for vanity items
+    local foundVanity = false
+    local numSlots = GetNumLootItems()
+    print(string.format("|cFFFF0000[DEBUG]|r Checking %d loot slots for vanity items", numSlots))
+    
+    for slot = 1, numSlots do
+        local itemLink = GetLootSlotLink(slot)
+        if itemLink then
+            local itemId = tonumber(itemLink:match("item:(%d+)"))
+            print(string.format("|cFFFF0000[DEBUG]|r Slot %d: Item ID %s", slot, tostring(itemId)))
+            
+            if itemId then
+                local isVanity = self:IsVanityItem(itemId)
+                print(string.format("|cFFFF0000[DEBUG]|r Item %d is vanity: %s", itemId, tostring(isVanity)))
+                
+                if isVanity then
+                    -- Check if this is an unexpected drop (creature not in VanityDB)
+                    local isExpected = self:IsVanityCreature(creatureId)
+                    if not isExpected then
+                        print(string.format("|cFFFF0000[ALERT]|r Unexpected vanity drop from %s (ID: %d) - NOT IN DATABASE!", 
+                            creatureName or "Unknown", creatureId))
+                    end
+                    
+                    self:RecordDrop(creatureId, itemId, not isExpected)
+                    foundVanity = true
+                end
+            end
+        end
+    end
+    
+    -- Print result
+    if foundVanity then
+        print(string.format("|cFF00FF96AscensionVanity:|r Looted %s (ID: %d) - *** VANITY ITEM! ***", 
+            creatureName or "Unknown", creatureId))
+    end
+    
+    -- Clear last killed creature
+    self.lastKilledCreatureId = nil
+    self.lastKilledCreatureName = nil
+    self.lastKilledGUID = nil
 end
 
-function statsFrame:RecordDrop(creatureId, itemId)
-    -- Update lifetime stats
+function statsFrame:RecordDrop(creatureId, itemId, isUnexpected)
+    -- Update lifetime stats (or create if unexpected)
     local stats = AV_CreatureStats[creatureId]
+    if not stats and isUnexpected then
+        -- Create entry for unexpected drop
+        stats = {
+            totalKilled = 0,
+            totalLooted = 1,  -- We know it was looted (we got the drop)
+            totalDrops = 0,
+            firstKillDate = time(),
+            lastKillDate = time(),
+            lastDropDate = 0,
+            dropsByCategory = {},
+            unexpected = true  -- Mark as unexpected
+        }
+        AV_CreatureStats[creatureId] = stats
+    end
+    
     if stats then
         stats.totalDrops = stats.totalDrops + 1
         stats.lastDropDate = time()
@@ -219,16 +348,16 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     -- Play achievement sound
     PlaySoundFile("Sound\\Interface\\LevelUp.ogg")
     
-    -- Get drop chance for context
+    -- Get drop chance for context (based on looted creatures only)
     local dropChance = 0
-    if stats and stats.totalKills > 0 then
-        dropChance = (stats.totalDrops / stats.totalKills) * 100
+    if stats and stats.totalLooted > 0 then
+        dropChance = (stats.totalDrops / stats.totalLooted) * 100
     end
     
     -- Format the announcement
     local category = self:GetItemCategory(itemId) or "Combat Pet"
-    local killsText = stats and stats.totalKills > 1 
-        and string.format(" after %d kills", stats.totalKills)
+    local killsText = stats and stats.totalLooted > 1 
+        and string.format(" after looting %d", stats.totalLooted)
         or ""
     
     -- Big announcement in chat (multiple lines for impact!)
@@ -240,9 +369,11 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     print(string.format("    %s", itemLink))
     print(" ")
     print(string.format("    |cFF00FF96Category:|r %s", category))
-    if stats and stats.totalKills > 0 then
-        print(string.format("    |cFF00FF96Drop Chance:|r %.2f%% (based on your data)", dropChance))
-        print(string.format("    |cFF00FF96Total Kills:|r %d", stats.totalKills))
+    if stats and stats.totalLooted > 0 then
+        print(string.format("    |cFF00FF96Drop Chance:|r %.2f%% (from %d looted)", dropChance, stats.totalLooted))
+        if stats.totalKilled > stats.totalLooted then
+            print(string.format("    |cFF888888Killed %d total (%d not looted)|r", stats.totalKilled, stats.totalKilled - stats.totalLooted))
+        end
     end
     print(" ")
     print("|cFFFFFF00" .. string.rep("=", 60) .. "|r")
@@ -290,9 +421,41 @@ end
 function statsFrame:ExtractCreatureID(guid)
     if not guid then return nil end
     
-    -- GUID format: Creature-0-Server-Map-Reserved-CreatureID-SpawnID
-    local creatureId = tonumber(guid:match("Creature%-0%-%d+%-%d+%-%d+%-(%d+)"))
-    return creatureId
+    -- Ascension uses hex GUID format: 0xF130001D0DC005B0F
+    -- Format: 0x [F1] [3000] [1D0DC0] [05B0F]
+    --            ^    ^      ^        ^
+    --            |    |      |        spawn UID
+    --            |    |      creature ID (middle 6 hex digits)
+    --            |    type
+    --            flags
+    
+    if type(guid) == "string" then
+        -- Remove 0x prefix if present
+        local hexGuid = guid:gsub("^0x", "")
+        
+        -- Extract creature ID from hex GUID (bits 32-63, middle section)
+        -- For 0xF130001D0DC005B0F, creature ID is 0x1D0DC0 = 1904064
+        if #hexGuid >= 10 then
+            local creatureIDHex = hexGuid:sub(5, 10)  -- Get middle 6 hex digits
+            local creatureID = tonumber(creatureIDHex, 16)  -- Convert from hex to decimal
+            return creatureID
+        end
+    end
+    
+    return nil
+end
+
+function statsFrame:IsVanityCreature(creatureId)
+    -- Check if creature is in our vanity database (can drop vanity items)
+    if not AV_VanityItems then return false end
+    
+    -- Use VanityDB_Loader's lookup function if available
+    if AV_GetVanityItemsForCreature then
+        local items = AV_GetVanityItemsForCreature(creatureId)
+        return items and #items > 0
+    end
+    
+    return false
 end
 
 function statsFrame:IsVanityItem(itemId)
@@ -362,6 +525,25 @@ function AV_ResetSession()
     end
 end
 
+function AV_CleanupNonVanityStats()
+    -- Remove stats for creatures not in VanityDB
+    local removed = 0
+    local kept = 0
+    
+    for creatureId, stats in pairs(AV_CreatureStats) do
+        if creatureId ~= "_metadata" then
+            if not statsFrame:IsVanityCreature(creatureId) then
+                AV_CreatureStats[creatureId] = nil
+                removed = removed + 1
+            else
+                kept = kept + 1
+            end
+        end
+    end
+    
+    print(string.format("|cFF00FF96AscensionVanity:|r Cleanup complete: Removed %d non-vanity creatures, kept %d vanity creatures", removed, kept))
+end
+
 function AV_ResetAllStats()
     -- Confirmation required (should be called from UI with confirmation dialog)
     AV_CreatureStats = {
@@ -383,7 +565,7 @@ end
 
 statsFrame:RegisterEvent("PLAYER_LOGIN")
 statsFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-statsFrame:RegisterEvent("LOOT_READY")
+statsFrame:RegisterEvent("LOOT_OPENED")  -- Ascension uses LOOT_OPENED, not LOOT_READY
 statsFrame:RegisterEvent("PLAYER_LOGOUT")
 
 statsFrame:SetScript("OnEvent", function(self, event, ...)
