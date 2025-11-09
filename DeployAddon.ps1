@@ -54,16 +54,19 @@ function Deploy-Addon {
     }
     
     try {
-        # Create destination folder if it doesn't exist
-        if (-not (Test-Path $destinationFolder)) {
-            New-Item -ItemType Directory -Path $destinationFolder -Force | Out-Null
-            Write-Host "[$timestamp] Created destination folder" -ForegroundColor $colorSuccess
+        # Remove existing destination folder to eliminate stale files
+        if (Test-Path $destinationFolder) {
+            Remove-Item -Path $destinationFolder -Recurse -Force
+            Write-Host "[$timestamp] Removed existing addon folder" -ForegroundColor $colorWarning
         }
+        
+        # Create fresh destination folder
+        New-Item -ItemType Directory -Path $destinationFolder -Force | Out-Null
+        Write-Host "[$timestamp] Created fresh destination folder" -ForegroundColor $colorSuccess
         
         # Get all files to copy
         $filesToCopy = Get-ChildItem -Path $sourceFolder -File -Recurse
         $copiedCount = 0
-        $skippedCount = 0
         
         foreach ($file in $filesToCopy) {
             $relativePath = $file.FullName.Substring($sourceFolder.Length + 1)
@@ -75,39 +78,23 @@ function Deploy-Addon {
                 New-Item -ItemType Directory -Path $destDir -Force | Out-Null
             }
             
-            # Copy if file doesn't exist or is newer or Force flag is set
-            $shouldCopy = $Force
-            if (-not $shouldCopy) {
-                if (-not (Test-Path $destPath)) {
-                    $shouldCopy = $true
-                } else {
-                    $sourceTime = $file.LastWriteTime
-                    $destTime = (Get-Item $destPath).LastWriteTime
-                    $shouldCopy = $sourceTime -gt $destTime
-                }
-            }
+            # Copy file (always copy since we removed the folder)
+            Copy-Item -Path $file.FullName -Destination $destPath -Force
+            $copiedCount++
             
-            if ($shouldCopy) {
-                Copy-Item -Path $file.FullName -Destination $destPath -Force
-                $copiedCount++
-                
-                if (-not $IsWatchMode) {
-                    Write-Host "  Copied: $relativePath" -ForegroundColor Gray
-                }
-            } else {
-                $skippedCount++
+            if (-not $IsWatchMode) {
+                Write-Host "  Copied: $relativePath" -ForegroundColor Gray
             }
         }
         
         # Summary
         if ($IsWatchMode) {
             if ($copiedCount -gt 0) {
-                Write-Host "[$timestamp] Updated $copiedCount file(s)" -ForegroundColor $colorSuccess
+                Write-Host "[$timestamp] Deployed $copiedCount file(s)" -ForegroundColor $colorSuccess
             }
         } else {
             Write-Host "`n[$timestamp] Deployment complete!" -ForegroundColor $colorSuccess
             Write-Host "  Files copied: $copiedCount" -ForegroundColor $colorSuccess
-            Write-Host "  Files skipped (up-to-date): $skippedCount" -ForegroundColor Gray
             Write-Host ""
         }
         
