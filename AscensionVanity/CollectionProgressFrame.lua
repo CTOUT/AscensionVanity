@@ -594,14 +594,21 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
             local sessionText = ""
             if item.creatureId and AV_GetSessionStats then
                 local sessionStats = AV_GetSessionStats(item.creatureId)
-                if sessionStats then
-                    local killed = sessionStats.sessionKilled or 0
-                    local looted = sessionStats.sessionLooted or 0
-                    local drops = sessionStats.sessionDrops or 0
+                local lifetimeStats = AV_GetCreatureStats and AV_GetCreatureStats(item.creatureId)
+                
+                if sessionStats or lifetimeStats then
+                    local sessionKilled = sessionStats and sessionStats.sessionKilled or 0
+                    local sessionLooted = sessionStats and sessionStats.sessionLooted or 0
+                    local sessionDrops = sessionStats and sessionStats.sessionDrops or 0
                     
-                    if killed > 0 or looted > 0 or drops > 0 then
-                        sessionText = string.format("  |cFFFFD700K%d|r/|cFF00FF00L%d|r/|cFFFF6B6BD%d|r",
-                            killed, looted, drops)
+                    local lifetimeKilled = lifetimeStats and lifetimeStats.totalKilled or 0
+                    local lifetimeLooted = lifetimeStats and lifetimeStats.totalLooted or 0
+                    local lifetimeDrops = lifetimeStats and lifetimeStats.totalDrops or 0
+                    
+                    if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
+                       lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
+                        sessionText = string.format("  |cFFFFD700K%d/%d|r |cFF00FF00L%d/%d|r |cFFFF6B6BD%d/%d|r",
+                            sessionKilled, lifetimeKilled, sessionLooted, lifetimeLooted, sessionDrops, lifetimeDrops)
                     end
                 end
             end
@@ -616,14 +623,21 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
             local sessionText = ""
             if item.creatureId and AV_GetSessionStats then
                 local sessionStats = AV_GetSessionStats(item.creatureId)
-                if sessionStats then
-                    local killed = sessionStats.sessionKilled or 0
-                    local looted = sessionStats.sessionLooted or 0
-                    local drops = sessionStats.sessionDrops or 0
+                local lifetimeStats = AV_GetCreatureStats and AV_GetCreatureStats(item.creatureId)
+                
+                if sessionStats or lifetimeStats then
+                    local sessionKilled = sessionStats and sessionStats.sessionKilled or 0
+                    local sessionLooted = sessionStats and sessionStats.sessionLooted or 0
+                    local sessionDrops = sessionStats and sessionStats.sessionDrops or 0
                     
-                    if killed > 0 or looted > 0 or drops > 0 then
-                        sessionText = string.format("  |cFFFFD700K%d|r/|cFF00FF00L%d|r/|cFFFF6B6BD%d|r",
-                            killed, looted, drops)
+                    local lifetimeKilled = lifetimeStats and lifetimeStats.totalKilled or 0
+                    local lifetimeLooted = lifetimeStats and lifetimeStats.totalLooted or 0
+                    local lifetimeDrops = lifetimeStats and lifetimeStats.totalDrops or 0
+                    
+                    if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
+                       lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
+                        sessionText = string.format("  |cFFFFD700K%d/%d|r |cFF00FF00L%d/%d|r |cFFFF6B6BD%d/%d|r",
+                            sessionKilled, lifetimeKilled, sessionLooted, lifetimeLooted, sessionDrops, lifetimeDrops)
                     end
                 end
             end
@@ -1154,6 +1168,8 @@ end)
 progressFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")  -- Zone changes
 progressFrame:RegisterEvent("ASCENSION_STORE_COLLECTION_ITEM_LEARNED")  -- Item learned
 progressFrame:RegisterEvent("APPEARANCE_COLLECTED")  -- Fallback item learned event
+progressFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")  -- Real-time kill tracking
+progressFrame:RegisterEvent("LOOT_OPENED")  -- Real-time loot tracking
 
 progressFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ZONE_CHANGED_NEW_AREA" then
@@ -1168,6 +1184,26 @@ progressFrame:SetScript("OnEvent", function(self, event, ...)
                 UpdateProgressBars()
             end
         end)
+    elseif event == "COMBAT_LOG_EVENT_UNFILTERED" then
+        -- Real-time kill tracking - refresh expanded items if visible
+        local timestamp, subevent = ...
+        if subevent == "PARTY_KILL" and self:IsVisible() then
+            -- Quick refresh of expanded items only (don't recalculate everything)
+            if RefreshExpandedItems then
+                C_Timer.After(0.1, function()  -- Small delay for data processing
+                    RefreshExpandedItems()
+                end)
+            end
+        end
+    elseif event == "LOOT_OPENED" then
+        -- Real-time loot tracking - refresh expanded items if visible
+        if self:IsVisible() then
+            if RefreshExpandedItems then
+                C_Timer.After(0.1, function()  -- Small delay for data processing
+                    RefreshExpandedItems()
+                end)
+            end
+        end
     end
 end)
 
