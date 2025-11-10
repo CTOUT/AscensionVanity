@@ -296,6 +296,9 @@ function statsFrame:OnLootReady()
 end
 
 function statsFrame:RecordDrop(creatureId, itemId, isUnexpected)
+    print(string.format("|cFFFF0000[DEBUG]|r RecordDrop called: creature=%d, item=%d, unexpected=%s", 
+        creatureId or 0, itemId or 0, tostring(isUnexpected)))
+    
     -- Update lifetime stats (or create if unexpected)
     local stats = AV_CreatureStats[creatureId]
     if not stats and isUnexpected then
@@ -333,6 +336,7 @@ function statsFrame:RecordDrop(creatureId, itemId, isUnexpected)
     -- Update session summary
     AV_SessionStats.summary.totalDrops = AV_SessionStats.summary.totalDrops + 1
     
+    print("|cFFFF0000[DEBUG]|r Calling CelebrateDrop...")
     -- 🎉 CELEBRATION TIME! 🎉
     self:CelebrateDrop(creatureId, itemId, stats)
 end
@@ -343,7 +347,14 @@ end
 
 function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     local itemName, itemLink, itemRarity, _, _, _, _, _, _, itemTexture = GetItemInfo(itemId)
-    if not itemName then return end
+    
+    -- Item info might not be cached yet - retry after a short delay
+    if not itemName then
+        C_Timer.After(0.5, function()
+            self:CelebrateDrop(creatureId, itemId, stats)
+        end)
+        return
+    end
     
     -- Play achievement sound
     PlaySoundFile("Sound\\Interface\\LevelUp.ogg")
