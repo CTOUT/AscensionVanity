@@ -525,7 +525,8 @@ local function GetCategoryItems(category)
                 table.insert(items, {
                     id = itemId,
                     name = petName,
-                    learned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false
+                    learned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId) or false,
+                    creatureId = itemData.creatureId  -- Add creature ID for stats lookup
                 })
             end
         end
@@ -607,10 +608,27 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
             
             itemText:SetText(icon .. color .. item.name .. string.format(" (%d/%d)", item.learned, item.total) .. sessionText .. AV_COLOR_RESET)
         else
-            -- Show item name
+            -- Show item name (in creatures mode)
             local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
             local icon = item.learned and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
-            itemText:SetText(icon .. color .. item.name .. AV_COLOR_RESET)
+            
+            -- Get session stats for this item's creature (if available)
+            local sessionText = ""
+            if item.creatureId and AV_GetSessionStats then
+                local sessionStats = AV_GetSessionStats(item.creatureId)
+                if sessionStats then
+                    local killed = sessionStats.sessionKilled or 0
+                    local looted = sessionStats.sessionLooted or 0
+                    local drops = sessionStats.sessionDrops or 0
+                    
+                    if killed > 0 or looted > 0 or drops > 0 then
+                        sessionText = string.format("  |cFFFFD700K%d|cFFFFFFFF||cFF00FF00L%d|cFFFFFFFF||cFFFF6B6BD%d|r",
+                            killed, looted, drops)
+                    end
+                end
+            end
+            
+            itemText:SetText(icon .. color .. item.name .. sessionText .. AV_COLOR_RESET)
         end
         
         table.insert(progressFrame.expandedItems[category], itemText)
