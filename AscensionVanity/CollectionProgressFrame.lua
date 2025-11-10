@@ -607,8 +607,10 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
                     
                     if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
                        lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
-                        sessionText = string.format("  |cFFFFD700K%d/%d|r |cFF00FF00L%d/%d|r |cFFFF6B6BD%d/%d|r",
-                            sessionKilled, lifetimeKilled, sessionLooted, lifetimeLooted, sessionDrops, lifetimeDrops)
+                        -- Format: Creature (X/Y)  |Lifetime K#L#D#|  |Session K#L#D#|
+                        sessionText = string.format("  |cFFFFFFFF%s%d%s%d%s%d|r  |cFFFFD700%s%d%s%d%s%d|r",
+                            "|cFFFFD700K|r", lifetimeKilled, "|cFF00FF00L|r", lifetimeLooted, "|cFFFF6B6BD|r", lifetimeDrops,
+                            "|cFFFFD700K|r", sessionKilled, "|cFF00FF00L|r", sessionLooted, "|cFFFF6B6BD|r", sessionDrops)
                     end
                 end
             end
@@ -636,8 +638,10 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
                     
                     if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
                        lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
-                        sessionText = string.format("  |cFFFFD700K%d/%d|r |cFF00FF00L%d/%d|r |cFFFF6B6BD%d/%d|r",
-                            sessionKilled, lifetimeKilled, sessionLooted, lifetimeLooted, sessionDrops, lifetimeDrops)
+                        -- Format: Pet Name  |Lifetime K#L#D#|  |Session K#L#D#|
+                        sessionText = string.format("  |cFFFFFFFF%s%d%s%d%s%d|r  |cFFFFD700%s%d%s%d%s%d|r",
+                            "|cFFFFD700K|r", lifetimeKilled, "|cFF00FF00L|r", lifetimeLooted, "|cFFFF6B6BD|r", lifetimeDrops,
+                            "|cFFFFD700K|r", sessionKilled, "|cFF00FF00L|r", sessionLooted, "|cFFFF6B6BD|r", sessionDrops)
                     end
                 end
             end
