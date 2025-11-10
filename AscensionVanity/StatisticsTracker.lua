@@ -351,10 +351,10 @@ local celebrationFrame = nil
 local function CreateCelebrationFrame()
     if celebrationFrame then return celebrationFrame end
     
-    -- Main frame
+    -- Main frame (made larger for visibility)
     local frame = CreateFrame("Frame", "AV_CelebrationFrame", UIParent)
-    frame:SetSize(300, 80)
-    frame:SetPoint("TOP", UIParent, "TOP", 0, -150)
+    frame:SetSize(400, 100)  -- Increased from 300x80
+    frame:SetPoint("TOP", UIParent, "TOP", 0, -120)  -- Slightly higher on screen
     frame:SetFrameStrata("HIGH")
     frame:SetFrameLevel(100)
     frame:Hide()
@@ -373,10 +373,10 @@ local function CreateCelebrationFrame()
     glow:SetBlendMode("ADD")
     glow:SetAlpha(0)
     
-    -- Icon frame
+    -- Icon frame (larger)
     local iconFrame = CreateFrame("Frame", nil, frame)
-    iconFrame:SetSize(52, 52)
-    iconFrame:SetPoint("LEFT", frame, "LEFT", 8, 0)
+    iconFrame:SetSize(64, 64)  -- Increased from 52x52
+    iconFrame:SetPoint("LEFT", frame, "LEFT", 12, 0)
     
     -- Icon border
     local iconBorder = iconFrame:CreateTexture(nil, "OVERLAY")
@@ -384,33 +384,33 @@ local function CreateCelebrationFrame()
     iconBorder:SetTexture("Interface\\AchievementFrame\\UI-Achievement-IconFrame")
     iconBorder:SetTexCoord(0, 0.5625, 0, 0.5625)
     
-    -- Icon texture
+    -- Icon texture (larger)
     local icon = iconFrame:CreateTexture(nil, "ARTWORK")
-    icon:SetSize(42, 42)
+    icon:SetSize(54, 54)  -- Increased from 42x42
     icon:SetPoint("CENTER")
     icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
-    -- Title text
-    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    title:SetPoint("TOPLEFT", iconFrame, "TOPRIGHT", 10, -5)
-    title:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -5)
+    -- Title text (larger font)
+    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    title:SetPoint("TOPLEFT", iconFrame, "TOPRIGHT", 12, -8)
+    title:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -8)
     title:SetJustifyH("LEFT")
     title:SetTextColor(1, 1, 0)  -- Yellow
     title:SetText("Vanity Item Acquired!")
     
-    -- Item name
-    local itemText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    -- Item name (even larger font)
+    local itemText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalHuge")
     itemText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
-    itemText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -4)
+    itemText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
     itemText:SetJustifyH("LEFT")
     itemText:SetTextColor(1, 0.82, 0)  -- Gold
     
-    -- Stats text
-    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    statsText:SetPoint("TOPLEFT", itemText, "BOTTOMLEFT", 0, -2)
-    statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -2)
+    -- Stats text (slightly larger)
+    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    statsText:SetPoint("TOPLEFT", itemText, "BOTTOMLEFT", 0, -4)
+    statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
     statsText:SetJustifyH("LEFT")
-    statsText:SetTextColor(0.7, 0.7, 0.7)
+    statsText:SetTextColor(0.8, 0.8, 0.8)
     
     -- Store references
     frame.glow = glow
@@ -419,17 +419,17 @@ local function CreateCelebrationFrame()
     frame.itemText = itemText
     frame.statsText = statsText
     
-    -- Animation groups for glow (WOTLK 3.3.5 compatible)
+    -- Animation groups for glow (WOTLK 3.3.5 compatible) - slower animations
     frame.glowAnimIn = glow:CreateAnimationGroup()
     local glowFadeIn = frame.glowAnimIn:CreateAnimation("Alpha")
     glowFadeIn:SetChange(1)
-    glowFadeIn:SetDuration(0.2)
+    glowFadeIn:SetDuration(0.4)  -- Increased from 0.2
     
     frame.glowAnimOut = glow:CreateAnimationGroup()
     local glowFadeOut = frame.glowAnimOut:CreateAnimation("Alpha")
     glowFadeOut:SetChange(-1)
-    glowFadeOut:SetDuration(0.5)
-    glowFadeOut:SetStartDelay(0.2)
+    glowFadeOut:SetDuration(1.0)  -- Increased from 0.5
+    glowFadeOut:SetStartDelay(0.5)  -- Increased from 0.2
     
     -- Chain animations
     frame.glowAnimIn:SetScript("OnFinished", function()
@@ -457,8 +457,8 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
         return
     end
     
-    -- Play achievement sound
-    PlaySoundFile("Sound\\Interface\\AchievementEarned.ogg")
+    -- Play achievement sound (use PlaySound for better compatibility)
+    PlaySound("LevelUp")  -- Classic level-up sound, guaranteed to work
     
     -- Get drop chance for context (based on looted creatures only)
     local dropChance = 0
