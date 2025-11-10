@@ -419,28 +419,24 @@ local function CreateCelebrationFrame()
     frame.itemText = itemText
     frame.statsText = statsText
     
-    -- Animation groups
-    frame.showAnim = frame:CreateAnimationGroup()
+    -- Animation groups for glow (WOTLK 3.3.5 compatible)
+    frame.glowAnimIn = glow:CreateAnimationGroup()
+    local glowFadeIn = frame.glowAnimIn:CreateAnimation("Alpha")
+    glowFadeIn:SetChange(1)
+    glowFadeIn:SetDuration(0.2)
     
-    -- Glow fade in
-    local glowIn = frame.showAnim:CreateAnimation("Alpha")
-    glowIn:SetTarget(glow)
-    glowIn:SetFromAlpha(0)
-    glowIn:SetToAlpha(1)
-    glowIn:SetDuration(0.2)
-    glowIn:SetOrder(1)
+    frame.glowAnimOut = glow:CreateAnimationGroup()
+    local glowFadeOut = frame.glowAnimOut:CreateAnimation("Alpha")
+    glowFadeOut:SetChange(-1)
+    glowFadeOut:SetDuration(0.5)
+    glowFadeOut:SetStartDelay(0.2)
     
-    -- Glow fade out
-    local glowOut = frame.showAnim:CreateAnimation("Alpha")
-    glowOut:SetTarget(glow)
-    glowOut:SetFromAlpha(1)
-    glowOut:SetToAlpha(0)
-    glowOut:SetDuration(0.5)
-    glowOut:SetStartDelay(0.2)
-    glowOut:SetOrder(2)
+    -- Chain animations
+    frame.glowAnimIn:SetScript("OnFinished", function()
+        frame.glowAnimOut:Play()
+    end)
     
-    -- Hide frame after animation
-    frame.showAnim:SetScript("OnFinished", function()
+    frame.glowAnimOut:SetScript("OnFinished", function()
         C_Timer.After(5, function()
             frame:Hide()
         end)
@@ -484,8 +480,9 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     frame.statsText:SetText(statsLine)
     
     -- Show and animate
+    frame.glow:SetAlpha(0)  -- Start transparent
     frame:Show()
-    frame.showAnim:Play()
+    frame.glowAnimIn:Play()  -- Start glow fade in
     
     -- Simple chat message (one line)
     print(string.format("|cFF00FF96AscensionVanity:|r %s - %s!", itemLink, statsLine))
