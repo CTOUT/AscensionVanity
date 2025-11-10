@@ -351,9 +351,9 @@ local celebrationFrame = nil
 local function CreateCelebrationFrame()
     if celebrationFrame then return celebrationFrame end
     
-    -- Main frame (made larger for visibility)
+    -- Main frame (larger to fit all text on two lines)
     local frame = CreateFrame("Frame", "AV_CelebrationFrame", UIParent)
-    frame:SetSize(400, 100)  -- Increased from 300x80
+    frame:SetSize(420, 120)  -- Increased height to 120 for two-line text
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)  -- Slightly higher on screen
     frame:SetFrameStrata("HIGH")
     frame:SetFrameLevel(100)
