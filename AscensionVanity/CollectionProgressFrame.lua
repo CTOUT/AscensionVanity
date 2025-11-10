@@ -593,11 +593,15 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
             local sessionText = ""
             if item.creatureId and AV_GetSessionStats then
                 local sessionStats = AV_GetSessionStats(item.creatureId)
-                if sessionStats and (sessionStats.kills > 0 or sessionStats.loots > 0 or sessionStats.drops > 0) then
-                    sessionText = string.format("  |cFFFFD700K%d|cFFFFFFFF||cFF00FF00L%d|cFFFFFFFF||cFFFF6B6BD%d|r",
-                        sessionStats.kills or 0,
-                        sessionStats.loots or 0,
-                        sessionStats.drops or 0)
+                if sessionStats then
+                    local killed = sessionStats.sessionKilled or 0
+                    local looted = sessionStats.sessionLooted or 0
+                    local drops = sessionStats.sessionDrops or 0
+                    
+                    if killed > 0 or looted > 0 or drops > 0 then
+                        sessionText = string.format("  |cFFFFD700K%d|cFFFFFFFF||cFF00FF00L%d|cFFFFFFFF||cFFFF6B6BD%d|r",
+                            killed, looted, drops)
+                    end
                 end
             end
             
