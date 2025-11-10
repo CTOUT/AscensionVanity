@@ -578,6 +578,33 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
     local maxItemsToShow = 10  -- Limit to prevent screen overflow
     local itemsToDisplay = math.min(#items, maxItemsToShow)
     
+    -- Add header row if any items have stats
+    local hasAnyStats = false
+    for i = 1, itemsToDisplay do
+        local item = items[i]
+        if item.creatureId and (AV_GetSessionStats(item.creatureId) or AV_GetCreatureStats(item.creatureId)) then
+            hasAnyStats = true
+            break
+        end
+    end
+    
+    if hasAnyStats then
+        local headerText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        headerText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
+        headerText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
+        headerText:SetJustifyH("LEFT")
+        
+        -- Color-coded header: Lifetime (white) | Session (pale blue like tooltip)
+        if groupMode == "subzones" then
+            headerText:SetText("|cFFCCCCCCCreature (Progress)|r  |cFFFFFFFFLifetime|r  |cFF82C5FFSession|r")
+        else
+            headerText:SetText("|cFFCCCCCCPet Name|r  |cFFFFFFFFLifetime|r  |cFF82C5FFSession|r")
+        end
+        
+        table.insert(progressFrame.expandedItems[category], headerText)
+        currentY = currentY - itemHeight
+    end
+    
     for i = 1, itemsToDisplay do
         local item = items[i]
         local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
@@ -607,10 +634,11 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
                     
                     if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
                        lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
-                        -- Format: Creature (X/Y)  |Lifetime K#L#D#|  |Session K#L#D#|
-                        sessionText = string.format("  |cFFFFFFFF%s%d%s%d%s%d|r  |cFFFFD700%s%d%s%d%s%d|r",
-                            "|cFFFFD700K|r", lifetimeKilled, "|cFF00FF00L|r", lifetimeLooted, "|cFFFF6B6BD|r", lifetimeDrops,
-                            "|cFFFFD700K|r", sessionKilled, "|cFF00FF00L|r", sessionLooted, "|cFFFF6B6BD|r", sessionDrops)
+                        -- Format: Pet Name  Lifetime K#|L#|D#  Session K#|L#|D#
+                        -- Lifetime = White, Session = Pale Blue (matching tooltip)
+                        sessionText = string.format("  |cFFFFFFFFK%d|cFFFFFFFF||r|cFFFFFFFFL%d|cFFFFFFFF||r|cFFFFFFFFD%d|r  |cFF82C5FFK%d|cFF82C5FF||r|cFF82C5FFL%d|cFF82C5FF||r|cFF82C5FFD%d|r",
+                            lifetimeKilled, lifetimeLooted, lifetimeDrops,
+                            sessionKilled, sessionLooted, sessionDrops)
                     end
                 end
             end
@@ -638,10 +666,11 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
                     
                     if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
                        lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
-                        -- Format: Pet Name  |Lifetime K#L#D#|  |Session K#L#D#|
-                        sessionText = string.format("  |cFFFFFFFF%s%d%s%d%s%d|r  |cFFFFD700%s%d%s%d%s%d|r",
-                            "|cFFFFD700K|r", lifetimeKilled, "|cFF00FF00L|r", lifetimeLooted, "|cFFFF6B6BD|r", lifetimeDrops,
-                            "|cFFFFD700K|r", sessionKilled, "|cFF00FF00L|r", sessionLooted, "|cFFFF6B6BD|r", sessionDrops)
+                        -- Format: Pet Name  Lifetime K#|L#|D#  Session K#|L#|D#
+                        -- Lifetime = White, Session = Pale Blue (matching tooltip)
+                        sessionText = string.format("  |cFFFFFFFFK%d|cFFFFFFFF||r|cFFFFFFFFL%d|cFFFFFFFF||r|cFFFFFFFFD%d|r  |cFF82C5FFK%d|cFF82C5FF||r|cFF82C5FFL%d|cFF82C5FF||r|cFF82C5FFD%d|r",
+                            lifetimeKilled, lifetimeLooted, lifetimeDrops,
+                            sessionKilled, sessionLooted, sessionDrops)
                     end
                 end
             end
