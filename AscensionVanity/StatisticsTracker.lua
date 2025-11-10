@@ -398,16 +398,23 @@ local function CreateCelebrationFrame()
     title:SetTextColor(1, 1, 0)  -- Yellow
     title:SetText("Vanity Item Acquired!")
     
-    -- Item name (even larger font)
-    local itemText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalHuge")
-    itemText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
-    itemText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
-    itemText:SetJustifyH("LEFT")
-    itemText:SetTextColor(1, 0.82, 0)  -- Gold
+    -- Item type (first line - e.g., "Beastmaster's Whistle:")
+    local itemType = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    itemType:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
+    itemType:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
+    itemType:SetJustifyH("LEFT")
+    itemType:SetTextColor(1, 0.82, 0)  -- Gold
+    
+    -- Pet name (second line - e.g., "Highland Thrasher")
+    local petName = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalHuge")
+    petName:SetPoint("TOPLEFT", itemType, "BOTTOMLEFT", 0, -2)
+    petName:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -2)
+    petName:SetJustifyH("LEFT")
+    petName:SetTextColor(1, 1, 1)  -- White
     
     -- Stats text (slightly larger)
     local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    statsText:SetPoint("TOPLEFT", itemText, "BOTTOMLEFT", 0, -4)
+    statsText:SetPoint("TOPLEFT", petName, "BOTTOMLEFT", 0, -4)
     statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
     statsText:SetJustifyH("LEFT")
     statsText:SetTextColor(0.8, 0.8, 0.8)
@@ -416,7 +423,8 @@ local function CreateCelebrationFrame()
     frame.glow = glow
     frame.icon = icon
     frame.title = title
-    frame.itemText = itemText
+    frame.itemType = itemType
+    frame.petName = petName
     frame.statsText = statsText
     
     -- Animation groups for glow (WOTLK 3.3.5 compatible) - slower animations
@@ -473,10 +481,19 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
         statsLine = statsLine .. string.format(" - %.1f%% after %d attempts", dropChance, stats.totalLooted)
     end
     
+    -- Split item name at colon (e.g., "Beastmaster's Whistle: Highland Thrasher")
+    local itemTypePart, petNamePart = itemName:match("^(.-):%s*(.*)$")
+    if not itemTypePart then
+        -- No colon found, use full name
+        itemTypePart = itemName
+        petNamePart = ""
+    end
+    
     -- Create/show celebration frame
     local frame = CreateCelebrationFrame()
     frame.icon:SetTexture(itemTexture or "Interface\\Icons\\INV_Misc_QuestionMark")
-    frame.itemText:SetText(itemName)
+    frame.itemType:SetText(itemTypePart .. (petNamePart ~= "" and ":" or ""))
+    frame.petName:SetText(petNamePart)
     frame.statsText:SetText(statsLine)
     
     -- Show and animate
