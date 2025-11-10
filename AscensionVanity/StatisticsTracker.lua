@@ -474,44 +474,29 @@ function statsFrame:IsVanityItem(itemId)
     -- This requires VanityDB to be loaded first
     if not AV_VanityItems then return false end
     
-    -- Search through all creatures and items
-    for creatureName, creatureData in pairs(AV_VanityItems) do
-        if creatureData.items then
-            for _, item in ipairs(creatureData.items) do
-                if item.id == itemId then
-                    return true
-                end
-            end
-        end
-    end
-    
-    return false
+    -- V2.2+ database structure: AV_VanityItems is keyed by itemId
+    return AV_VanityItems[itemId] ~= nil
 end
 
 function statsFrame:GetItemCategory(itemId)
     -- Get category from item name prefix
     if not AV_VanityItems then return nil end
     
-    -- Search for the item and return its category
-    for creatureName, creatureData in pairs(AV_VanityItems) do
-        if creatureData.items then
-            for _, item in ipairs(creatureData.items) do
-                if item.id == itemId then
-                    -- Category is determined by the prefix in the item name
-                    if item.name:find("Beastmaster's Whistle") then
-                        return "Beast"
-                    elseif item.name:find("Elemental Lodestone") then
-                        return "Elemental"
-                    elseif item.name:find("Draconic Warhorn") then
-                        return "Dragonkin"
-                    elseif item.name:find("Summoner's Stone") then
-                        return "Demon"
-                    elseif item.name:find("Blood Soaked Vellum") then
-                        return "Undead"
-                    end
-                end
-            end
-        end
+    -- V2.2+ database structure: AV_VanityItems is keyed by itemId
+    local itemData = AV_VanityItems[itemId]
+    if not itemData or not itemData.name then return nil end
+    
+    -- Category is determined by the prefix in the item name
+    if itemData.name:find("Beastmaster's Whistle") then
+        return "Beast"
+    elseif itemData.name:find("Elemental Lodestone") then
+        return "Elemental"
+    elseif itemData.name:find("Draconic Warhorn") then
+        return "Dragonkin"
+    elseif itemData.name:find("Summoner's Stone") then
+        return "Demon"
+    elseif itemData.name:find("Blood Soaked Vellum") then
+        return "Undead"
     end
     
     return nil
