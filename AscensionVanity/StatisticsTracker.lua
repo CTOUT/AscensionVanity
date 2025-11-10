@@ -345,6 +345,111 @@ end
 -- Drop Celebration (Achievement-style Announcement)
 -- ============================================================================
 
+-- Create achievement-style popup frame (created once, reused)
+local celebrationFrame = nil
+
+local function CreateCelebrationFrame()
+    if celebrationFrame then return celebrationFrame end
+    
+    -- Main frame
+    local frame = CreateFrame("Frame", "AV_CelebrationFrame", UIParent)
+    frame:SetSize(300, 80)
+    frame:SetPoint("TOP", UIParent, "TOP", 0, -150)
+    frame:SetFrameStrata("HIGH")
+    frame:SetFrameLevel(100)
+    frame:Hide()
+    
+    -- Background
+    local bg = frame:CreateTexture(nil, "BACKGROUND")
+    bg:SetAllPoints()
+    bg:SetTexture("Interface\\AchievementFrame\\UI-Achievement-Alert-Background")
+    bg:SetTexCoord(0, 0.605, 0, 0.703)
+    
+    -- Glow animation
+    local glow = frame:CreateTexture(nil, "BACKGROUND")
+    glow:SetAllPoints()
+    glow:SetTexture("Interface\\AchievementFrame\\UI-Achievement-Alert-Glow")
+    glow:SetTexCoord(0, 0.78125, 0, 0.66796875)
+    glow:SetBlendMode("ADD")
+    glow:SetAlpha(0)
+    
+    -- Icon frame
+    local iconFrame = CreateFrame("Frame", nil, frame)
+    iconFrame:SetSize(52, 52)
+    iconFrame:SetPoint("LEFT", frame, "LEFT", 8, 0)
+    
+    -- Icon border
+    local iconBorder = iconFrame:CreateTexture(nil, "OVERLAY")
+    iconBorder:SetAllPoints()
+    iconBorder:SetTexture("Interface\\AchievementFrame\\UI-Achievement-IconFrame")
+    iconBorder:SetTexCoord(0, 0.5625, 0, 0.5625)
+    
+    -- Icon texture
+    local icon = iconFrame:CreateTexture(nil, "ARTWORK")
+    icon:SetSize(42, 42)
+    icon:SetPoint("CENTER")
+    icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    
+    -- Title text
+    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    title:SetPoint("TOPLEFT", iconFrame, "TOPRIGHT", 10, -5)
+    title:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -5)
+    title:SetJustifyH("LEFT")
+    title:SetTextColor(1, 1, 0)  -- Yellow
+    title:SetText("Vanity Item Acquired!")
+    
+    -- Item name
+    local itemText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    itemText:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
+    itemText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -4)
+    itemText:SetJustifyH("LEFT")
+    itemText:SetTextColor(1, 0.82, 0)  -- Gold
+    
+    -- Stats text
+    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    statsText:SetPoint("TOPLEFT", itemText, "BOTTOMLEFT", 0, -2)
+    statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -2)
+    statsText:SetJustifyH("LEFT")
+    statsText:SetTextColor(0.7, 0.7, 0.7)
+    
+    -- Store references
+    frame.glow = glow
+    frame.icon = icon
+    frame.title = title
+    frame.itemText = itemText
+    frame.statsText = statsText
+    
+    -- Animation groups
+    frame.showAnim = frame:CreateAnimationGroup()
+    
+    -- Glow fade in
+    local glowIn = frame.showAnim:CreateAnimation("Alpha")
+    glowIn:SetTarget(glow)
+    glowIn:SetFromAlpha(0)
+    glowIn:SetToAlpha(1)
+    glowIn:SetDuration(0.2)
+    glowIn:SetOrder(1)
+    
+    -- Glow fade out
+    local glowOut = frame.showAnim:CreateAnimation("Alpha")
+    glowOut:SetTarget(glow)
+    glowOut:SetFromAlpha(1)
+    glowOut:SetToAlpha(0)
+    glowOut:SetDuration(0.5)
+    glowOut:SetStartDelay(0.2)
+    glowOut:SetOrder(2)
+    
+    -- Hide frame after animation
+    frame.showAnim:SetScript("OnFinished", function()
+        C_Timer.After(5, function()
+            frame:Hide()
+        end)
+    end)
+    
+    celebrationFrame = frame
+    return frame
+end
+
 function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     local itemName, itemLink, itemRarity, _, _, _, _, _, _, itemTexture = GetItemInfo(itemId)
     
@@ -357,7 +462,7 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     end
     
     -- Play achievement sound
-    PlaySoundFile("Sound\\Interface\\LevelUp.ogg")
+    PlaySoundFile("Sound\\Interface\\AchievementEarned.ogg")
     
     -- Get drop chance for context (based on looted creatures only)
     local dropChance = 0
@@ -365,64 +470,25 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
         dropChance = (stats.totalDrops / stats.totalLooted) * 100
     end
     
-    -- Format the announcement
+    -- Format the stats text
     local category = self:GetItemCategory(itemId) or "Combat Pet"
-    local killsText = stats and stats.totalLooted > 1 
-        and string.format(" after looting %d", stats.totalLooted)
-        or ""
-    
-    -- Big announcement in chat (multiple lines for impact!)
-    print(" ")
-    print("|cFFFFFF00" .. string.rep("=", 60) .. "|r")
-    print("|cFFFF6600        🎉 VANITY ITEM ACQUIRED! 🎉|r")
-    print("|cFFFFFF00" .. string.rep("=", 60) .. "|r")
-    print(" ")
-    print(string.format("    %s", itemLink))
-    print(" ")
-    print(string.format("    |cFF00FF96Category:|r %s", category))
+    local statsLine = category
     if stats and stats.totalLooted > 0 then
-        print(string.format("    |cFF00FF96Drop Chance:|r %.2f%% (from %d looted)", dropChance, stats.totalLooted))
-        if stats.totalKilled > stats.totalLooted then
-            print(string.format("    |cFF888888Killed %d total (%d not looted)|r", stats.totalKilled, stats.totalKilled - stats.totalLooted))
-        end
-    end
-    print(" ")
-    print("|cFFFFFF00" .. string.rep("=", 60) .. "|r")
-    print(" ")
-    
-    -- Also send a raid warning style message (if enabled)
-    if AV_Config and AV_Config.showDropRaidWarning ~= false then
-        local simpleMessage = string.format("VANITY ITEM: %s%s!", itemName, killsText)
-        RaidNotice_AddMessage(RaidWarningFrame, simpleMessage, ChatTypeInfo["RAID_WARNING"])
+        statsLine = statsLine .. string.format(" - %.1f%% after %d attempts", dropChance, stats.totalLooted)
     end
     
-    -- Screen flash effect (optional, if enabled)
-    if AV_Config and AV_Config.flashScreenOnDrop then
-        self:FlashScreen()
-    end
-end
-
-function statsFrame:FlashScreen()
-    -- Create a brief screen flash animation
-    local flash = UIParent:CreateTexture(nil, "FULLSCREEN_DIALOG")
-    flash:SetAllPoints(UIParent)
-    flash:SetTexture(1, 1, 1, 0.3)
-    flash:SetBlendMode("ADD")
+    -- Create/show celebration frame
+    local frame = CreateCelebrationFrame()
+    frame.icon:SetTexture(itemTexture or "Interface\\Icons\\INV_Misc_QuestionMark")
+    frame.itemText:SetText(itemName)
+    frame.statsText:SetText(statsLine)
     
-    -- Fade out animation
-    local fadeOut = flash:CreateAnimationGroup()
-    local alpha = fadeOut:CreateAnimation("Alpha")
-    alpha:SetFromAlpha(0.3)
-    alpha:SetToAlpha(0)
-    alpha:SetDuration(0.5)
-    alpha:SetSmoothing("OUT")
+    -- Show and animate
+    frame:Show()
+    frame.showAnim:Play()
     
-    fadeOut:SetScript("OnFinished", function()
-        flash:Hide()
-        flash:SetParent(nil)
-    end)
-    
-    fadeOut:Play()
+    -- Simple chat message (one line)
+    print(string.format("|cFF00FF96AscensionVanity:|r %s - %s!", itemLink, statsLine))
 end
 
 -- ============================================================================
@@ -567,3 +633,46 @@ statsFrame:RegisterEvent("PLAYER_LOGOUT")
 statsFrame:SetScript("OnEvent", function(self, event, ...)
     self:OnEvent(event, ...)
 end)
+
+-- ============================================================================
+-- Test Commands (for development/testing)
+-- ============================================================================
+
+-- Test celebration with an item (use item link from bag)
+SLASH_AVTESTDROP1 = "/avtestdrop"
+SlashCmdList["AVTESTDROP"] = function(msg)
+    -- Extract item ID from item link or direct number
+    local itemId = tonumber(msg)
+    
+    if not itemId and msg ~= "" then
+        -- Try to extract from item link
+        itemId = tonumber(msg:match("item:(%d+)"))
+    end
+    
+    if not itemId then
+        print("|cFF00FF96AscensionVanity:|r Usage: /avtestdrop <itemId or shift-click item link>")
+        print("  Example: /avtestdrop 79549")
+        print("  Or shift-click an item from your bags and type: /avtestdrop [link]")
+        return
+    end
+    
+    -- Check if it's a vanity item
+    if not statsFrame:IsVanityItem(itemId) then
+        print(string.format("|cFFFF0000AscensionVanity:|r Item %d is not a vanity item!", itemId))
+        return
+    end
+    
+    print(string.format("|cFF00FF96AscensionVanity:|r Testing celebration for item %d...", itemId))
+    
+    -- Create fake stats for testing
+    local fakeStats = {
+        totalKilled = 42,
+        totalLooted = 35,
+        totalDrops = 1,
+        dropsByCategory = {}
+    }
+    
+    -- Trigger celebration
+    statsFrame:CelebrateDrop(0, itemId, fakeStats)
+end
+
