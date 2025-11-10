@@ -1858,8 +1858,9 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Elder Gray Bear",
         creaturePreview = 2356,
         creatureId = 2356,
-        description = "Has a chance to drop from Elder Gray Bear within Thoradin's Wall.",
-        zone = "Thoradin's Wall",
+        description = "Has a chance to drop from Elder Gray Bear within Hillsbrad Foothills.",
+        zone = "Hillsbrad Foothills",
+        subzone = "Nethander Stead",
         icon = 1
     },
     [79537] = {
