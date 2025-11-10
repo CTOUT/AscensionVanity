@@ -13,7 +13,7 @@ progressFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -50, -200)
 progressFrame:SetMovable(true)
 progressFrame:EnableMouse(true)
 progressFrame:SetClampedToScreen(true)
-progressFrame:SetFrameStrata("MEDIUM")
+progressFrame:SetFrameStrata("LOW")  -- Below character frame (MEDIUM)
 progressFrame:SetFrameLevel(10)
 
 -- Storage for expanded item lists
