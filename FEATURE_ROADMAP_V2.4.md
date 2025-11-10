@@ -250,7 +250,121 @@ Items in this zone: 6 total (2 learned, 4 unlearned)
 
 ---
 
-### 5. Data Quality: Zone Name Normalization 📝
+### 5. Multi-ID Creature Tracking 🔍
+**Priority:** ⭐⭐ Medium  
+**Complexity:** Medium  
+**Status:** 📋 Planned
+
+**Problem:**  
+Same creature name can have multiple creature IDs that all drop the same vanity items. This affects:
+- Drop rate accuracy (tracking only one ID gives incomplete stats)
+- Farming guides (players might farm wrong version)
+- Data completeness (missing duplicate IDs means missing drops)
+
+**Example Found:**
+- **Zelemar the Wrathful (Creature ID 17830)** drops Item 83115
+- **Zelemar the Wrathful (Unknown ID)** drops Item 141150
+- Same creature, different IDs, potentially same drops!
+
+**Root Cause:**
+- Project Ascension content patches add new versions
+- Difficulty scaling creates multiple IDs
+- Item updates/replacements create duplicates
+- Current database only tracks ONE creature ID per item
+
+**Solution: Creature ID Aliases**
+
+Add `creatureIdAliases` field to track all known IDs:
+
+```json
+{
+  "itemId": 83115,
+  "name": "Summoner's Stone: Zelemar the Wrathful",
+  "creatureId": 17830,
+  "creatureIdAliases": [17830, 141150],  // NEW FIELD!
+  "zone": "Ragefire Chasm"
+}
+```
+
+**Benefits:**
+- ✅ Track kills/loots across ALL versions of a creature
+- ✅ Show comprehensive drop rates
+- ✅ Warn players about multiple versions
+- ✅ Detect missing item IDs automatically
+- ✅ Better farming recommendations
+
+**Implementation:**
+
+**Phase 1: Detection Script**
+```powershell
+# FindDuplicateCreatures.ps1
+
+# Find creatures with same name but different IDs
+$creatureNames = @{}
+foreach ($item in $items) {
+    $creatureName = $item.creatureName
+    if (!$creatureNames.ContainsKey($creatureName)) {
+        $creatureNames[$creatureName] = @()
+    }
+    $creatureNames[$creatureName] += $item.creatureId
+}
+
+# Report duplicates
+$duplicates = $creatureNames.Where({ $_.Value.Count -gt 1 })
+foreach ($dup in $duplicates) {
+    Write-Host "$($dup.Key): IDs $($dup.Value -join ', ')"
+}
+```
+
+**Phase 2: Database Enhancement**
+1. Add `creatureIdAliases` array to VanityDB
+2. Update stats tracking to check ALL aliases
+3. Update tooltips to show "Multiple versions" warning
+
+**Phase 3: UI Enhancements**
+1. Tooltip: "(Creature has multiple versions - stats combined)"
+2. Database Browser: Show all known IDs
+3. Statistics: Aggregate across all aliases
+
+**Tooltip Example:**
+```
+Zelemar the Wrathful (Boss) Doomguard
+Has a chance to drop from Zelemar the Wrathful.
+
+⚠️ Multiple Versions: This creature has 2 known IDs
+   Stats combined across all versions
+
+[Stats] Your Farming Stats:
+Lifetime K5|L5|D2 (40.0%)  Session K2|L2|D1 (50.0%)
+```
+
+**Statistics Tracking:**
+```lua
+-- Check all aliases when recording kills
+local function RecordCreatureKill(creatureId)
+    local item = GetItemByCreatureId(creatureId)
+    if item and item.creatureIdAliases then
+        -- This is an alias - use primary ID for tracking
+        creatureId = item.creatureIdAliases[1]  -- Primary ID is first
+    end
+    
+    -- Record stats under primary ID
+    IncrementKillCount(creatureId)
+end
+```
+
+**Files to Update:**
+- `utilities/FindDuplicateCreatures.ps1` (NEW)
+- `utilities/GenerateVanityDB_Master.ps1`
+- `AscensionVanity/StatisticsTracker.lua`
+- `AscensionVanity/Core.lua` (tooltip warnings)
+- `AscensionVanity/DatabaseBrowser.lua`
+
+**Timeline:** 1-2 weeks
+
+---
+
+### 6. Data Quality: Zone Name Normalization 📝
 **Priority:** ⭐ Low  
 **Complexity:** Low  
 **Status:** 📋 Planned
@@ -293,11 +407,12 @@ if ($ZoneNameMappings.aliases.ContainsKey($item.zone)) {
 
 ## Development Timeline
 
-**Total Estimated Time:** 3-4 weeks
+**Total Estimated Time:** 4-5 weeks
 
 **Week 1: Core Infrastructure**
 - Feature #1: Parent Zone Implementation (data + code)
 - Feature #3: Automated dungeon detection script
+- Feature #5: Multi-ID creature detection script
 
 **Week 2: UI Integration**
 - Feature #1: Update all UI components for parent zones
@@ -305,9 +420,15 @@ if ($ZoneNameMappings.aliases.ContainsKey($item.zone)) {
 
 **Week 3: Advanced Features**
 - Feature #2: Multi-level hierarchy (if needed)
-- Feature #5: Zone name normalization
+- Feature #5: Multi-ID creature tracking implementation
+- Feature #6: Zone name normalization
 
-**Week 4: Testing & Polish**
+**Week 4: Stats & Tracking**
+- Feature #5: Update StatisticsTracker for creature aliases
+- Feature #5: Tooltip warnings for multiple versions
+- Feature #5: Database Browser enhancements
+
+**Week 5: Testing & Polish**
 - Comprehensive testing of all zone filtering
 - Edge case handling
 - Performance optimization
@@ -333,6 +454,14 @@ if ($ZoneNameMappings.aliases.ContainsKey($item.zone)) {
 - ✅ Clearly shows zone relationships
 - ✅ Helpful for debugging filtering issues
 - ✅ Accessible via slash command
+
+### Feature #5: Multi-ID Creature Tracking
+- ✅ Detects all duplicate creature IDs automatically
+- ✅ Stats aggregate across all versions
+- ✅ Tooltips show warning when multiple IDs exist
+- ✅ Drop rates combine data from all aliases
+- ✅ Database shows all known IDs per creature
+- ✅ No data loss when tracking merged IDs
 
 ---
 
