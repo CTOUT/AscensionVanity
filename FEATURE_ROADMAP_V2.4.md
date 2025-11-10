@@ -11,16 +11,19 @@
 
 ## Overview
 
-Version 2.4 focuses on **Enhanced Zone/Dungeon Relationships** and **Data Quality Improvements** to solve issues with dungeon visibility and improve the overall data model for better filtering and discovery.
+Version 2.4 focuses on **Enhanced Geographic Hierarchies** and **Data Quality Improvements** to solve issues with dungeon visibility and improve location-based filtering.
 
-**Key Problem Solved:**  
-Dungeons exist in a dual state - they are both **subzones of cities** (e.g., Ragefire Chasm is a subzone of Orgrimmar) AND **zones themselves** with their own internal areas. Current filtering doesn't handle this properly, causing items to disappear when you enter the dungeon.
+**Key Problems Solved:**  
+1. **Dungeon Visibility**: Dungeons are both subzones (Ragefire is in Orgrimmar) AND zones (Ragefire has internal areas). Items disappear when you enter.
+2. **Geographic Grouping**: No way to filter by continent (e.g., "Show all Eastern Kingdoms items")
+3. **Multi-ID Creatures**: Same creature name with different IDs = incomplete drop rate tracking
 
 **Design Philosophy:**
 - Improve data model without breaking existing features
 - Backwards compatible with v2.3 database
-- Better support for complex zone hierarchies
-- Foundation for future location-based features
+- Better support for complex geographic hierarchies
+- Scalable for future expansions (Cataclysm, etc.)
+- Foundation for regional collection tracking
 
 ---
 
@@ -119,52 +122,75 @@ end
 
 ---
 
-### 2. Multi-Level Zone Hierarchies 🌳
-**Priority:** ⭐⭐ Medium  
-**Complexity:** Medium-High  
-**Status:** 📋 Planned (Dependent on Feature #1)
+### 2. Continent-Based Filtering �
+**Priority:** ⭐⭐⭐ High  
+**Complexity:** Low-Medium  
+**Status:** 📋 Planned
 
 **Problem:**  
-Some locations have more complex hierarchies than just zone → subzone:
-- Cities with districts that have subzones
-- Dungeons with wings/levels/areas
-- Outdoor zones with named landmarks inside subzones
+No way to group or filter items by continent. Players want to:
+- "Show me all items in Eastern Kingdoms"
+- "Track my Kalimdor collection progress"
+- "Filter to Outland content only"
+- "See which continent has the most unlearned items"
 
-**Examples:**
-```
-Stormwind City (Zone)
-  ├─ Trade District (Subzone)
-  │   ├─ The Stockade (Dungeon - also a Zone!)
-  │   │   ├─ Cell Block (Subzone of Stockade)
-  │   │   └─ Warden's Room (Subzone of Stockade)
-  │   └─ Auction House (Landmark)
-  └─ Cathedral Square (Subzone)
-```
+**Why Continents (Not Planets)?**
+- **Planets too broad**: Only Azeroth vs Outland distinction (90%+ is Azeroth)
+- **Continents just right**: Eastern Kingdoms, Kalimdor, Northrend, Outland zones
+- **Meaningful grouping**: Players actually think in continent terms
+- **Future-proof**: Scales to Cataclysm+ with more zones per continent
 
-**Solution: Extend Parent Zone Model**
-
-Allow multiple levels of parent zones:
+**Solution: Add Continent Field**
 
 ```json
 {
-  "itemId": 79999,
-  "zone": "Cell Block",
-  "subzone": "East Wing",
-  "parentZone": "The Stockade",
-  "grandparentZone": "Stormwind City"  // NEW!
+  "itemId": 79123,
+  "zone": "Ragefire Chasm",
+  "subzone": "Lava Pool",
+  "parentZone": "Orgrimmar",
+  "continent": "Kalimdor"  // NEW!
 }
 ```
 
-**Matching Logic:**
-```lua
--- Check zone hierarchy from bottom to top
-local currentZone = GetZoneText()
-local matches = (currentZone == itemData.zone or
-                 currentZone == itemData.parentZone or
-                 currentZone == itemData.grandparentZone)
+**WotLK Continents:**
+- **Eastern Kingdoms**: Stormwind, Ironforge, Undercity, Stranglethorn, etc.
+- **Kalimdor**: Orgrimmar, Thunder Bluff, Darnassus, Barrens, etc.
+- **Northrend**: Dalaran, Icecrown, Borean Tundra, etc.
+- **Outland**: Hellfire Peninsula, Zangarmarsh, Nagrand, etc.
+
+**UI Enhancements:**
+
+**Progress Frame:**
+```
+View: [Continent ▼] [Eastern Kingdoms ▼]
+
+Overall: 234/500 (46.8%)
+  Beast: 80/150 (53.3%)
+  Demon: 45/100 (45.0%)
+  ...
 ```
 
-**Timeline:** 1 week (after Feature #1 is stable)
+**Database Browser:**
+- Continent filter dropdown
+- "Show only Eastern Kingdoms creatures"
+
+**Statistics:**
+```
+Collection by Continent:
+  Eastern Kingdoms: 120/250 (48.0%)
+  Kalimdor: 90/200 (45.0%)
+  Northrend: 24/50 (48.0%)
+  Outland: 0/0 (0.0%)
+```
+
+**Benefits:**
+- ✅ Meaningful geographic grouping
+- ✅ Progress tracking per continent
+- ✅ Farming optimization ("Clear EK first")
+- ✅ Simple UI addition (one dropdown)
+- ✅ Scales to future expansions
+
+**Timeline:** 1 week (data enrichment + UI integration)
 
 ---
 
@@ -411,17 +437,19 @@ if ($ZoneNameMappings.aliases.ContainsKey($item.zone)) {
 
 **Week 1: Core Infrastructure**
 - Feature #1: Parent Zone Implementation (data + code)
+- Feature #2: Continent field enrichment
 - Feature #3: Automated dungeon detection script
 - Feature #5: Multi-ID creature detection script
 
 **Week 2: UI Integration**
 - Feature #1: Update all UI components for parent zones
+- Feature #2: Continent filtering in Progress Frame & Browser
 - Feature #4: Zone relationship viewer
 
 **Week 3: Advanced Features**
-- Feature #2: Multi-level hierarchy (if needed)
 - Feature #5: Multi-ID creature tracking implementation
 - Feature #6: Zone name normalization
+- Feature #2: Continent-based statistics
 
 **Week 4: Stats & Tracking**
 - Feature #5: Update StatisticsTracker for creature aliases
@@ -449,6 +477,14 @@ if ($ZoneNameMappings.aliases.ContainsKey($item.zone)) {
 - ✅ Detects 95%+ of dungeons automatically
 - ✅ Generates accurate parent zone mappings
 - ✅ Flags conflicts/ambiguities for manual review
+
+### Feature #2: Continent Filtering
+- ✅ All items have continent field assigned
+- ✅ Progress frame shows continent-based filtering
+- ✅ Database Browser filters by continent
+- ✅ Statistics show per-continent progress
+- ✅ UI handles missing/unknown continents gracefully
+- ✅ Outland items correctly grouped separately from Azeroth
 
 ### Feature #4: Zone Viewer
 - ✅ Clearly shows zone relationships
@@ -514,13 +550,31 @@ if ($ZoneNameMappings.aliases.ContainsKey($item.zone)) {
 
 ## Future Considerations (v2.5+)
 
-Based on parent zone infrastructure:
+### Deferred Features (Not in v2.4)
 
-1. **Nearby Dungeons**: Show dungeons in current zone
+**Planet-Level Hierarchy** 🌌
+- **Why Deferred**: Too broad for current use cases
+- **Value**: Only Azeroth vs Outland distinction (90%+ is Azeroth)
+- **Decision**: Continents provide better granularity
+- **Revisit When**: User demand for "Show Outland only" filtering
+- **Implementation**: Simple `planet` field, only show in UI if multiple planets exist
+
+**Multi-Level Zone Hierarchies** 🏰
+- **Why Deferred**: Rare edge cases, adds complexity
+- **Example**: City → District → Dungeon → Wing → Room
+- **Decision**: parentZone covers 99% of cases
+- **Revisit When**: Encounter 3+ level hierarchies in practice
+- **Implementation**: `grandparentZone` field if needed
+
+### Planned for v2.5+
+
+Based on v2.4 infrastructure:
+
+1. **Nearby Dungeons**: Show dungeons in current continent/zone
 2. **Dungeon Progress**: Track completion per dungeon
 3. **Breadcrumb Navigation**: "Items in Ragefire Chasm (from here)"
-4. **Regional Collections**: Group by continent/region
-5. **Instance Difficulty**: Normal/Heroic/Mythic tracking
+4. **Cross-Continent Comparison**: "You've cleared 60% of EK but only 20% of Kalimdor"
+5. **Instance Difficulty**: Normal/Heroic/Mythic tracking (Project Ascension specific)
 
 ---
 
