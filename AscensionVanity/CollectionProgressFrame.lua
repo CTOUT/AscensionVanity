@@ -600,7 +600,7 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
                     local drops = sessionStats.sessionDrops or 0
                     
                     if killed > 0 or looted > 0 or drops > 0 then
-                        sessionText = string.format("  |cFFFFD700K%d|cFFFFFFFF||cFF00FF00L%d|cFFFFFFFF||cFFFF6B6BD%d|r",
+                        sessionText = string.format("  |cFFFFD700K%d|r/|cFF00FF00L%d|r/|cFFFF6B6BD%d|r",
                             killed, looted, drops)
                     end
                 end
@@ -622,7 +622,7 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
                     local drops = sessionStats.sessionDrops or 0
                     
                     if killed > 0 or looted > 0 or drops > 0 then
-                        sessionText = string.format("  |cFFFFD700K%d|cFFFFFFFF||cFF00FF00L%d|cFFFFFFFF||cFFFF6B6BD%d|r",
+                        sessionText = string.format("  |cFFFFD700K%d|r/|cFF00FF00L%d|r/|cFFFF6B6BD%d|r",
                             killed, looted, drops)
                     end
                 end
