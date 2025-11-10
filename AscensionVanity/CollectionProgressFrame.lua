@@ -585,10 +585,23 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
         itemText:SetJustifyH("LEFT")
         
         if groupMode == "subzones" then
-            -- Show creature name with progress (X/Y items)
+            -- Show creature name with progress (X/Y items) and session stats
             local color = (item.learned == item.total) and AV_COLOR_GREEN or "|cFFCCCCCC"
             local icon = (item.learned == item.total) and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
-            itemText:SetText(icon .. color .. item.name .. string.format(" (%d/%d)", item.learned, item.total) .. AV_COLOR_RESET)
+            
+            -- Get session stats for this creature (if available)
+            local sessionText = ""
+            if item.creatureId and AV_GetSessionStats then
+                local sessionStats = AV_GetSessionStats(item.creatureId)
+                if sessionStats and (sessionStats.kills > 0 or sessionStats.loots > 0 or sessionStats.drops > 0) then
+                    sessionText = string.format("  |cFFFFD700K%d|cFFFFFFFF||cFF00FF00L%d|cFFFFFFFF||cFFFF6B6BD%d|r",
+                        sessionStats.kills or 0,
+                        sessionStats.loots or 0,
+                        sessionStats.drops or 0)
+                end
+            end
+            
+            itemText:SetText(icon .. color .. item.name .. string.format(" (%d/%d)", item.learned, item.total) .. sessionText .. AV_COLOR_RESET)
         else
             -- Show item name
             local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
@@ -721,7 +734,12 @@ GetCreaturesInSubzone = function(subzone)
                 end
                 
                 if not creatures[creatureName] then
-                    creatures[creatureName] = { total = 0, learned = 0, items = {} }
+                    creatures[creatureName] = { 
+                        total = 0, 
+                        learned = 0, 
+                        items = {},
+                        creatureId = itemData.creatureId  -- Store creature ID for session stats
+                    }
                 end
                 
                 creatures[creatureName].total = creatures[creatureName].total + 1
@@ -746,7 +764,8 @@ GetCreaturesInSubzone = function(subzone)
             name = name,
             total = data.total,
             learned = data.learned,
-            items = data.items
+            items = data.items,
+            creatureId = data.creatureId  -- Include creature ID for session stats lookup
         })
     end
     
