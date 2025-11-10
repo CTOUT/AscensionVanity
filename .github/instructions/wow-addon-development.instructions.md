@@ -364,6 +364,42 @@ $safeName = $name -replace '\\', '\\\\' -replace '"', '\"'
 **Affected Items**: Count Ungula (79631), Maury "Club Foot" Wilkins (87655), Chucky "Ten Thumbs" (87657)
 **⚠️ CRITICAL**: This fix has been lost multiple times. DO NOT remove or "simplify" the escaping logic without testing these specific items!
 
+### Gotcha: Database Structure Changed in V2.2+ (CRITICAL!)
+**Date**: November 10, 2025
+**Problem**: Drop celebration not firing! `IsVanityItem()` returning false for ALL items!
+**Root Cause**: Code was searching **V2.1 database structure** (nested by creature name) but V2.2+ uses **flat structure keyed by itemId**
+**Old Structure (V2.1)**:
+```lua
+AV_VanityItems = {
+    ["Creature Name"] = {
+        type = "Beast",
+        items = { {id=123, name="..."}, ... }
+    }
+}
+```
+**New Structure (V2.2+)**:
+```lua
+AV_VanityItems = {
+    [123] = { name="...", creatureId=456, ... },  -- Keyed by itemId!
+    [124] = { name="...", creatureId=789, ... }
+}
+```
+**Fix**: Change from nested loop search to direct key lookup:
+```lua
+-- OLD (V2.1 - WRONG!)
+for creatureName, creatureData in pairs(AV_VanityItems) do
+    for _, item in ipairs(creatureData.items) do
+        if item.id == itemId then return true end
+    end
+end
+
+-- NEW (V2.2+ - CORRECT!)
+return AV_VanityItems[itemId] ~= nil
+```
+**Files Affected**: StatisticsTracker.lua (`IsVanityItem`, `GetItemCategory`)
+**Impact**: Without this fix, NO vanity drops are detected → NO celebration, NO stats tracking!
+**⚠️ CRITICAL**: Always check database structure version when accessing AV_VanityItems! Use `AV_GetItemData(itemId)` from VanityDB_Loader for safe access.
+
 ---
 
 *Add new gotchas here as discovered*
