@@ -351,73 +351,90 @@ local celebrationFrame = nil
 local function CreateCelebrationFrame()
     if celebrationFrame then return celebrationFrame end
     
-    -- Main frame (taller & narrower for better text fit)
+    -- Main frame (custom design, properly sized for content)
     local frame = CreateFrame("Frame", "AV_CelebrationFrame", UIParent)
-    frame:SetSize(320, 140)  -- Much narrower width (420→320), taller (120→140)
-    frame:SetPoint("TOP", UIParent, "TOP", 0, -120)  -- Slightly higher on screen
+    frame:SetSize(350, 90)  -- Reasonable proportions for our 4 lines of text
+    frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetFrameStrata("HIGH")
     frame:SetFrameLevel(100)
     frame:Hide()
     
-    -- Background
+    -- Custom background (solid with border, not stretched texture)
     local bg = frame:CreateTexture(nil, "BACKGROUND")
     bg:SetAllPoints()
-    bg:SetTexture("Interface\\AchievementFrame\\UI-Achievement-Alert-Background")
-    bg:SetTexCoord(0, 0.605, 0, 0.703)
+    bg:SetColorTexture(0.1, 0.1, 0.1, 0.9)  -- Dark background
     
-    -- Glow animation
-    local glow = frame:CreateTexture(nil, "BACKGROUND")
-    glow:SetAllPoints()
-    glow:SetTexture("Interface\\AchievementFrame\\UI-Achievement-Alert-Glow")
-    glow:SetTexCoord(0, 0.78125, 0, 0.66796875)
+    -- Gold border (like achievement frames)
+    local border = CreateFrame("Frame", nil, frame, "BackdropTemplate")
+    border:SetAllPoints()
+    border:SetBackdrop({
+        edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+        edgeSize = 16,
+    })
+    border:SetBackdropBorderColor(1, 0.8, 0, 1)  -- Gold border
+    
+    -- Simple glow effect (animated border glow)
+    local glow = border:CreateTexture(nil, "OVERLAY")
+    glow:SetAllPoints(border)
+    glow:SetTexture("Interface\\Glues\\Common\\Glue-Tooltip-Background")
     glow:SetBlendMode("ADD")
+    glow:SetVertexColor(1, 0.8, 0, 0.3)  -- Subtle gold glow
     glow:SetAlpha(0)
     
-    -- Icon frame (smaller for narrower layout)
+    -- Simple icon frame (no stretched textures)
     local iconFrame = CreateFrame("Frame", nil, frame)
-    iconFrame:SetSize(56, 56)  -- Slightly smaller to fit narrower frame
-    iconFrame:SetPoint("LEFT", frame, "LEFT", 10, 0)  -- Less left padding
+    iconFrame:SetSize(48, 48)
+    iconFrame:SetPoint("LEFT", frame, "LEFT", 15, 0)
+    
+    -- Icon with simple border
+    local icon = iconFrame:CreateTexture(nil, "ARTWORK")
+    icon:SetSize(44, 44)
+    icon:SetPoint("CENTER")
+    icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
     -- Icon border
     local iconBorder = iconFrame:CreateTexture(nil, "OVERLAY")
     iconBorder:SetAllPoints()
-    iconBorder:SetTexture("Interface\\AchievementFrame\\UI-Achievement-IconFrame")
-    iconBorder:SetTexCoord(0, 0.5625, 0, 0.5625)
+    iconBorder:SetColorTexture(0.8, 0.6, 0, 1)  -- Gold border
     
-    -- Icon texture (sized to match frame)
-    local icon = iconFrame:CreateTexture(nil, "ARTWORK")
-    icon:SetSize(48, 48)  -- Smaller to fit in narrower layout
-    icon:SetPoint("CENTER")
+    local iconBg = iconFrame:CreateTexture(nil, "BACKGROUND")
+    iconBg:SetPoint("TOPLEFT", 2, -2)
+    iconBg:SetPoint("BOTTOMRIGHT", -2, 2)
+    iconBg:SetColorTexture(0, 0, 0, 0.8)  -- Dark background for icon
     icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
-    -- Title text (adjusted for narrower frame)
+    -- Text layout (optimized for custom frame)
+    local textX = 70  -- Start after icon + padding
+    local textWidth = 270  -- Remaining width for text
+    
+    -- Title text
     local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", iconFrame, "TOPRIGHT", 8, -6)  -- Less gap, higher position
-    title:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -6)  -- Less right padding
+    title:SetPoint("TOPLEFT", frame, "TOPLEFT", textX, -12)
+    title:SetSize(textWidth, 0)
     title:SetJustifyH("LEFT")
     title:SetTextColor(1, 1, 0)  -- Yellow
     title:SetText("Vanity Item Acquired!")
     
-    -- Item type (first line - e.g., "Beastmaster's Whistle:")
-    local itemType = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")  -- Smaller font for fit
-    itemType:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -3)  -- Tighter spacing
-    itemType:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -3)
+    -- Item type line
+    local itemType = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    itemType:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -2)
+    itemType:SetSize(textWidth, 0)
     itemType:SetJustifyH("LEFT")
     itemType:SetTextColor(1, 0.82, 0)  -- Gold
     
-    -- Pet name (second line - e.g., "Highland Thrasher")
-    local petName = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")  -- Smaller than Huge
-    petName:SetPoint("TOPLEFT", itemType, "BOTTOMLEFT", 0, -2)
-    petName:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -2)
+    -- Pet name line
+    local petName = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    petName:SetPoint("TOPLEFT", itemType, "BOTTOMLEFT", 0, -1)
+    petName:SetSize(textWidth, 0)
     petName:SetJustifyH("LEFT")
     petName:SetTextColor(1, 1, 1)  -- White
     
-    -- Stats text (compact)
-    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")  -- Smaller font
-    statsText:SetPoint("TOPLEFT", petName, "BOTTOMLEFT", 0, -3)  -- Tighter spacing
-    statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -3)
+    -- Stats line
+    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    statsText:SetPoint("TOPLEFT", petName, "BOTTOMLEFT", 0, -2)
+    statsText:SetSize(textWidth, 0)
     statsText:SetJustifyH("LEFT")
-    statsText:SetTextColor(0.8, 0.8, 0.8)
+    statsText:SetTextColor(0.8, 0.8, 0.8)  -- Light gray
     
     -- Store references
     frame.glow = glow
