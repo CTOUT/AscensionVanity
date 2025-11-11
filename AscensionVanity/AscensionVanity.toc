@@ -4,7 +4,7 @@
 ## Author: CTout
 ## Version: 2.3-dev
 ## SavedVariables: AscensionVanityDB, AscensionVanityDump
-## SavedVariablesPerCharacter: AV_CreatureStats
+## SavedVariablesPerCharacter: AV_CreatureStats, AV_SessionStats, AV_CreatureStatsCache
 
 # Shared constants (loads first - used by all other files)
 AscensionVanityConstants.lua
@@ -36,6 +36,12 @@ DatabaseBrowser.lua
 
 # Statistics Tracker (v2.3+ kill/drop tracking for farming efficiency)
 StatisticsTracker.lua
+
+# Creature Information (v2.3+ enhanced creature data display)
+CreatureInfo.lua
+
+# Collection UI Enhancer (v2.3+ adds stats to collection preview)
+CollectionUIEnhancer.lua
 
 # Debug Tools (development only - uncomment when needed)
 # DEBUG_Measurements.lua

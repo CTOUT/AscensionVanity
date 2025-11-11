@@ -18,7 +18,7 @@ local defaults = {
     debug = false,               -- Enable debug logging
     enabled = true,              -- Enable/disable the addon
     eventSpy = false,            -- Event spy (developer tool)
-    showIDs = false,             -- Show item/creature IDs in tooltips (v2.2 - useful for debugging)
+    -- showIDs removed - use built-in WoW option (Interface -> Display -> Show IDs in Tooltips)
     showLearnedStatus = true,    -- Show "Learned" or "Not Learned" in tooltips
     showQuestWarnings = true,    -- Show quest-locked NPC warnings (v2.2)
     showRegions = false,         -- Show region/location information (not yet implemented)
@@ -30,7 +30,16 @@ local defaults = {
     showDropRaidWarning = true,  -- Show big raid warning when item drops
     flashScreenOnDrop = true,    -- Flash screen when item drops (celebratory effect)
     showUnluckyStreak = true,    -- Warn about long streaks without drops
-    unluckyStreakThreshold = 20  -- Number of kills before showing unlucky warning
+    unluckyStreakThreshold = 20, -- Number of kills before showing unlucky warning
+    
+    -- Creature Information (v2.3 Phase 2A)
+    showCreatureInfo = true,     -- Show enhanced creature info in tooltips (master toggle)
+    creatureInfoFilter = "vanity", -- When to show creature info: "all", "vanity", "tameable", "vanity_and_tameable"
+    showCreatureType = true,     -- Show creature type/family (e.g., Beast (Wolf))
+    showAttackSpeed = true,      -- Show creature attack speed
+    showHealth = true,           -- Show creature max health
+    showDamage = true,           -- Show creature damage range
+    showArmor = false            -- Show creature armor (disabled by default - can be noisy)
 }
 
 -- Initialize configuration with defaults if not already set

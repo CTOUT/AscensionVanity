@@ -151,20 +151,49 @@ local showKillStatsCheckbox = CreateCheckbox(
     -10
 )
 
-local showIDsCheckbox = CreateCheckbox(
-    settingsPanel,
-    "Show Item/Creature IDs",
-    "Display internal game IDs in tooltips.\n\n" .. AV_COLOR_YELLOW .. "[Dev Tool]" .. AV_COLOR_RESET .. "\n- Shows Item ID for vanity items\n- Shows Creature ID for NPCs\n- Useful for debugging and research\n\n" .. AV_COLOR_GRAY .. "Example:" .. AV_COLOR_RESET .. " " .. AV_COLOR_BRIGHT_ORANGE .. "[Item: 82875]" .. AV_COLOR_RESET .. " Beastmaster's Whistle: Pet Name\n" .. AV_COLOR_GRAY .. "          Creature ID:" .. AV_COLOR_RESET .. " " .. AV_COLOR_WHITE .. "12345" .. AV_COLOR_RESET,
-    questWarningsCheckbox,  -- Anchor to left column (questWarningsCheckbox)
-    0,  -- Left column
-    -10
-)
+-- Note: "Show Item/Creature IDs" removed - use built-in WoW option instead
+-- (Interface -> Display -> Show IDs in Tooltips)
+
+-- Creature Info Filter Label (v2.3 Phase 2A)
+local creatureInfoLabel = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+creatureInfoLabel:SetPoint("TOPLEFT", questWarningsCheckbox, "BOTTOMLEFT", 0, -20)
+creatureInfoLabel:SetText("Show Creature Stats For:")
+
+-- Creature Info Filter Dropdown
+local creatureInfoDropdown = CreateFrame("Frame", "AV_CreatureInfoDropdown", settingsPanel, "UIDropDownMenuTemplate")
+creatureInfoDropdown:SetPoint("TOPLEFT", creatureInfoLabel, "BOTTOMLEFT", -15, -5)
+
+-- Dropdown options
+local creatureInfoOptions = {
+    {value = "all", text = "All Creatures", desc = "Show stats for every NPC"},
+    {value = "vanity", text = "Vanity Drop Creatures Only", desc = "Only creatures that can drop combat pets"},
+    {value = "tameable", text = "Tameable Beasts Only", desc = "Only beasts that can be tamed by hunters"},
+    {value = "vanity_and_tameable", text = "Vanity + Tameable", desc = "Creatures that drop pets OR tameable beasts"}
+}
+
+-- Initialize dropdown
+UIDropDownMenu_SetWidth(creatureInfoDropdown, 200)
+UIDropDownMenu_Initialize(creatureInfoDropdown, function(self, level)
+    local info = UIDropDownMenu_CreateInfo()
+    for _, option in ipairs(creatureInfoOptions) do
+        info.text = option.text
+        info.value = option.value
+        info.tooltipTitle = option.text
+        info.tooltipText = option.desc
+        info.func = function()
+            AscensionVanityDB.creatureInfoFilter = option.value
+            UIDropDownMenu_SetSelectedValue(creatureInfoDropdown, option.value)
+        end
+        info.checked = (AscensionVanityDB.creatureInfoFilter == option.value)
+        UIDropDownMenu_AddButton(info, level)
+    end
+end)
 
 -- Separator before category filters
--- Anchor to the lowest checkbox (left column has 3 items: learned, questWarnings, showIDs)
+-- Anchor below dropdown (left column: learned, questWarnings, creatureInfo dropdown)
 local separatorCategories = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCategories:SetHeight(1)
-separatorCategories:SetPoint("TOP", showIDsCheckbox, "BOTTOM", 0, -16)  -- showIDsCheckbox is lowest
+separatorCategories:SetPoint("TOP", creatureInfoDropdown, "BOTTOM", 15, -10)  -- Dropdown is lowest
 separatorCategories:SetPoint("LEFT", 30, 0)
 separatorCategories:SetPoint("RIGHT", -30, 0)
 separatorCategories:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -487,7 +516,10 @@ local function UpdateCheckboxes()
     questWarningsCheckbox:SetChecked(AscensionVanityDB.showQuestWarnings == nil and true or AscensionVanityDB.showQuestWarnings)
     enableKillTrackingCheckbox:SetChecked(AscensionVanityDB.enableKillTracking == nil and true or AscensionVanityDB.enableKillTracking)  -- Default to true (matches config)
     showKillStatsCheckbox:SetChecked(AscensionVanityDB.showKillStats == nil and true or AscensionVanityDB.showKillStats)  -- Default to true (matches config)
-    showIDsCheckbox:SetChecked(AscensionVanityDB.showIDs == nil and false or AscensionVanityDB.showIDs)
+    -- showIDs removed - use built-in WoW option
+    
+    -- Update creature info filter dropdown (v2.3 Phase 2A)
+    UIDropDownMenu_SetSelectedValue(creatureInfoDropdown, AscensionVanityDB.creatureInfoFilter or "vanity")
     
     -- Update category filter checkboxes (v2.1+)
     if AscensionVanityDB.categoryFilters then
@@ -546,7 +578,7 @@ local function SaveSettings()
     AscensionVanityDB.showQuestWarnings = questWarningsCheckbox:GetChecked() and true or false
     AscensionVanityDB.enableKillTracking = enableKillTrackingCheckbox:GetChecked() and true or false
     AscensionVanityDB.showKillStats = showKillStatsCheckbox:GetChecked() and true or false
-    AscensionVanityDB.showIDs = showIDsCheckbox:GetChecked() and true or false
+    -- showIDs removed - use built-in WoW option
     
     -- Note: Progress frame visibility managed by toggle button, not checkbox
     
@@ -594,7 +626,7 @@ colorCheckbox:HookScript("OnClick", SaveSettings)
 questWarningsCheckbox:HookScript("OnClick", SaveSettings)
 enableKillTrackingCheckbox:HookScript("OnClick", SaveSettings)
 showKillStatsCheckbox:HookScript("OnClick", SaveSettings)
-showIDsCheckbox:HookScript("OnClick", SaveSettings)
+-- showIDs checkbox removed - use built-in WoW option
 
 -- Add auto-save to category filter checkboxes (v2.1+)
 for category, checkbox in pairs(settingsPanel.categoryCheckboxes) do

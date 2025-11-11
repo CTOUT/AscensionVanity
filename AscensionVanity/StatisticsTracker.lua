@@ -720,8 +720,8 @@ end)
 -- ============================================================================
 
 -- Test celebration with an item (use item link from bag)
-SLASH_AVTESTDROP1 = "/avtestdrop"
-SlashCmdList["AVTESTDROP"] = function(msg)
+-- Integrated into main /avanity command - use: /avanity testdrop <itemId>
+function AV_TestDropCelebration(msg)
     -- Extract item ID from item link or direct number
     local itemId = tonumber(msg)
     
@@ -731,8 +731,8 @@ SlashCmdList["AVTESTDROP"] = function(msg)
     end
     
     if not itemId then
-        print("|cFF00FF96AscensionVanity:|r Usage: /avtestdrop <itemId or shift-click item link>")
-        print("  Example: /avtestdrop 79549")
+        print("|cFF00FF96AscensionVanity:|r Usage: /avanity testdrop <itemId or shift-click item link>")
+        print("  Example: /avanity testdrop 79549")
         print("  Or shift-click an item from your bags and type: /avtestdrop [link]")
         return
     end

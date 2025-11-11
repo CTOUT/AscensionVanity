@@ -440,23 +440,31 @@ local function AddVanityInfoToTooltip(tooltip, unit)
     end
     
     -- Check if this is an NPC (not a player, pet, etc.)
-    -- IMPORTANT: Exclude companion pets/battle pets/minions to prevent false positives
+    -- IMPORTANT: We now ALLOW player-controlled pets through (for v2.3 Phase 2A)
     if not UnitIsPlayer(unit) and UnitExists(unit) then
-        -- Filter out companion pets and player-owned units
-        -- Check if unit is player-controlled (pets, minions, guardians)
-        -- This catches hunter pets, warlock demons, companion pets, etc.
-        if UnitPlayerControlled(unit) and not UnitIsPlayer(unit) then
-            DebugPrint("Skipping player pet/minion:", UnitName(unit), "CreatureID:", creatureID)
-            return
+        -- Add enhanced creature information (v2.3 Phase 2A)
+        -- Shows level, elite status, creature type, attack speed
+        -- Note: This now supports player-controlled pets (your own combat pets)
+        if AV_AddCreatureInfoToTooltip then
+            AV_AddCreatureInfoToTooltip(tooltip, unit, creatureID)
         end
         
-        -- Show Creature ID for ALL NPCs if enabled (v2.2+)
-        -- This helps identify creatures that don't have vanity items yet
-        if AscensionVanityDB.showIDs and creatureID then
-            tooltip:AddLine(" ")  -- Blank line for spacing
-            local creatureIDText = AV_COLOR_GRAY .. "Creature ID: " .. AV_COLOR_WHITE .. creatureID .. AV_COLOR_RESET
-            tooltip:AddLine(creatureIDText, 1, 1, 1, false)
-            tooltip:Show()
+        -- For player-controlled pets, we don't need to show vanity item drops
+        -- (they already own this pet!)
+        -- Check multiple ways to detect player ownership
+        local isPlayerPet = false
+        if UnitPlayerControlled(unit) then
+            isPlayerPet = true
+        elseif UnitIsOwnerOrControllerOfUnit and UnitIsOwnerOrControllerOfUnit("player", unit) then
+            isPlayerPet = true
+        elseif UnitIsUnit(unit, "pet") or UnitIsUnit(unit, "playerpet") then
+            isPlayerPet = true
+        end
+        
+        -- Skip vanity item display for player pets
+        if isPlayerPet then
+            DebugPrint("Skipping vanity item display for player pet:", UnitName(unit))
+            return
         end
         
         -- Look up vanity items for this creature by ID
@@ -476,12 +484,12 @@ local function AddVanityInfoToTooltip(tooltip, unit)
             for _, itemID in ipairs(vanityItems) do
                 local itemData = AV_GetItemData(itemID)
                 if not itemData then
-                    local itemName = GetItemInfo(itemID)
-                    if itemName then
-                        itemData = { name = itemName, icon = nil }
-                    else
-                        itemData = { name = "Loading...", icon = nil }
-                    end
+                    -- Fallback for edge cases (database corruption, etc.)
+                    -- No server calls - instant display
+                    itemData = { 
+                        name = "Unknown Item (ID: " .. itemID .. ")", 
+                        icon = AV_ICON_QUESTION_MARK 
+                    }
                 end
                 
                 local itemName = itemData.name
@@ -602,12 +610,7 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                     
                 tooltip:AddLine(itemText, 1, 1, 1, true) -- White text, word wrap enabled
                 
-                -- Add Item ID on separate line if enabled (v2.2)
-                -- Consistent 4-space indent for all sub-info
-                if AscensionVanityDB.showIDs then
-                    local itemIDText = "    " .. AV_COLOR_GRAY .. "ID: " .. AV_COLOR_WHITE .. itemID .. AV_COLOR_RESET
-                    tooltip:AddLine(itemIDText, 1, 1, 1, true)
-                end
+                -- Note: Item ID display removed - use built-in WoW option (Interface -> Display -> Show IDs in Tooltips)
                 
                 -- Add region information (optional feature)
                 if AscensionVanityDB.showRegions then
@@ -729,9 +732,9 @@ local function OnTooltipSetUnit(tooltip)
     end
 end
 
--- Hook into item tooltip display (for showing Item IDs)
+-- Hook into item tooltip display (for showing creature preview stats)
 local function OnTooltipSetItem(tooltip)
-    if not AscensionVanityDB.enabled or not AscensionVanityDB.showIDs then
+    if not AscensionVanityDB.enabled then
         return
     end
     
@@ -742,20 +745,21 @@ local function OnTooltipSetItem(tooltip)
     end
     
     -- Extract item ID from item link
-    -- Format: |cffffffff|Hitem:12345:0:0:0:0:0:0:0|h[Item Name]|h|r
     local itemID = tonumber(itemLink:match("item:(%d+)"))
     if not itemID then
         return
     end
     
-    -- Check if this is a vanity item (in our database)
+    -- Check if this is a vanity item (combat pet)
     local itemData = AV_GetItemData(itemID)
-    if itemData then
-        -- Add Item ID line
-        tooltip:AddLine(" ")
-        local itemIDText = AV_COLOR_BRIGHT_ORANGE .. "Item ID: " .. AV_COLOR_WHITE .. itemID .. AV_COLOR_RESET
-        tooltip:AddLine(itemIDText, 1, 1, 1, false)
-        tooltip:Show()
+    if not itemData or not itemData.creatureId then
+        return
+    end
+    
+    -- Add creature preview stats (v2.3 Phase 2A)
+    -- Shows what the pet's stats will be when summoned
+    if AV_AddCreaturePreviewToTooltip then
+        AV_AddCreaturePreviewToTooltip(tooltip, itemData.creatureId, itemData.name)
     end
 end
 
@@ -2088,13 +2092,28 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         
         print("|cFF00FF96========================================|r")
     
+    elseif msg == "creature" then
+        -- Show creature info for mouseover (v2.3 Phase 2A)
+        if AV_PrintCreatureInfo then
+            AV_PrintCreatureInfo("mouseover")
+        else
+            print("|cFF00FF96AscensionVanity:|r Creature info module not loaded")
+        end
+    
+    elseif msg:match("^testdrop") then
+        -- Test drop celebration (v2.3)
+        local itemArg = msg:match("^testdrop%s+(.+)")
+        if AV_TestDropCelebration then
+            AV_TestDropCelebration(itemArg or "")
+        else
+            print("|cFF00FF96AscensionVanity:|r Statistics tracker not loaded")
+        end
+    
     elseif msg == "help" then
         print("|cFF00FF96AscensionVanity v" .. AV_GetFullVersion() .. " Commands:|r")
         print(" ")
         print("|cFFFFFF00=== Available Slash Commands ===|r")
-        print("  |cFFFFFF00/avanity|r - Primary command")
-        print("  |cFFFFFF00/ascvan|r - Short alternative")
-        print("  |cFFFFFF00/ascensionvanity|r - Full name")
+        print("  |cFFFFFF00/avanity|r or |cFFFFFF00/ascvan|r - Base command")
         print(" ")
         print("|cFFFFFF00=== Basic Commands ===|r")
         print("  |cFFFFFF00/avanity|r - Open settings UI")
@@ -2104,15 +2123,15 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("  |cFFFFFF00/avanity color|r - Toggle color coding")
         print("  |cFFFFFF00/avanity debug|r - Toggle debug mode")
         print(" ")
-        print("|cFFFFFF00=== Collection Progress & Regional Guide (v2.2+) ===|r")
+        print("|cFFFFFF00=== User Interface (v2.2+) ===|r")
         print("  |cFFFFFF00/avanity progress|r - Toggle Collection Progress Tracker")
-        print("    |cFF808080Shows overall and per-category progress with zone filtering|r")
-        print("  |cFFFFFF00/avanity browser|r - Open Database Browser / Regional Guide")
-        print("    |cFF808080Aliases: /avanity db, /avanity database|r")
-        print("    |cFF808080Explore full database with zone and category filters|r")
-        print("  |cFFFFFF00/avanity zone|r - Show unlearned items in current zone (chat)")
-        print("    |cFF808080Aliases: /avanity regional, /avanity guide|r")
-        print("    |cFF808080Chat-based list of creatures in current zone|r")
+        print("  |cFFFFFF00/avanity browser|r - Open Database Browser")
+        print("  |cFFFFFF00/avanity zone|r - Show unlearned items in current zone")
+        print(" ")
+        print("|cFFFFFF00=== Statistics & Tracking (v2.3) ===|r")
+        print("  |cFFFFFF00/avanity stats|r - View kill/drop statistics")
+        print("  |cFFFFFF00/avanity creature|r - Show mouseover creature info")
+        print("  |cFFFFFF00/avanity testdrop <itemId>|r - Test drop celebration")
         print(" ")
         print("|cFFFFFF00=== Cache Management ===|r")
         print("  |cFFFFFF00/avanity clearcache|r - Manually clear learned status cache")
