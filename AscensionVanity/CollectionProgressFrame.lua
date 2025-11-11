@@ -22,7 +22,7 @@ progressFrame.expandedItems = {}  -- Stores FontStrings for expanded items
 -- Background
 local bg = progressFrame:CreateTexture(nil, "BACKGROUND")
 bg:SetAllPoints()
-bg:SetColorTexture(0, 0, 0, 0.8)
+bg:SetColorTexture(0, 0, 0, 0.6)  -- Reduced opacity from 0.8 to 0.6 for more transparency
 
 -- Border
 local border = progressFrame:CreateTexture(nil, "BORDER")
@@ -932,7 +932,7 @@ local function ResizeFrame()
     local totalHeight = headerHeight + buttonBarHeight
     
     -- Calculate required width
-    local minWidth = 280  -- Increased to properly fit all 4 buttons (Zone, Creatures, All, Details)
+    local minWidth = 260  -- Increased to properly fit all 4 buttons (Zone, Creatures, All, Details)
     local statsWidth = 380  -- Width needed when showing stats columns
     local hasAnyStats = false
     
