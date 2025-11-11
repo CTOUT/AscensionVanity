@@ -678,17 +678,84 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
             
             table.insert(progressFrame.expandedItems[category], rowFrame)
         else
-            -- Creatures mode - show item name only (no stats)
-            local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-            itemText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
-            itemText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
-            itemText:SetJustifyH("LEFT")
+            -- Creatures mode - show item name with stats (if available)
+            local hasStatsForItem = false
+            local sessionStats, lifetimeStats
             
-            local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
-            local icon = item.learned and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
-            itemText:SetText(icon .. color .. item.name .. AV_COLOR_RESET)
+            if item.creatureId and AV_GetSessionStats and AV_GetCreatureStats then
+                sessionStats = AV_GetSessionStats(item.creatureId)
+                lifetimeStats = AV_GetCreatureStats(item.creatureId)
+                if sessionStats or lifetimeStats then
+                    local sk = sessionStats and sessionStats.sessionKilled or 0
+                    local sl = sessionStats and sessionStats.sessionLooted or 0
+                    local sd = sessionStats and sessionStats.sessionDrops or 0
+                    local lk = lifetimeStats and lifetimeStats.totalKilled or 0
+                    local ll = lifetimeStats and lifetimeStats.totalLooted or 0
+                    local ld = lifetimeStats and lifetimeStats.totalDrops or 0
+                    hasStatsForItem = (sk > 0 or sl > 0 or sd > 0 or lk > 0 or ll > 0 or ld > 0)
+                end
+            end
             
-            table.insert(progressFrame.expandedItems[category], itemText)
+            if hasStatsForItem then
+                -- Create row frame with columns (like subzones mode)
+                local rowFrame = CreateFrame("Frame", nil, progressFrame)
+                rowFrame:SetSize(400, itemHeight)
+                rowFrame:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
+                
+                local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
+                local icon = item.learned and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
+                
+                -- Pet name (left column)
+                local nameText = rowFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+                nameText:SetPoint("LEFT", rowFrame, "LEFT", 0, 0)
+                nameText:SetWidth(160)
+                nameText:SetJustifyH("LEFT")
+                nameText:SetText(icon .. color .. item.name .. AV_COLOR_RESET)
+                
+                -- Lifetime stats (center column)
+                local lifetimeText = rowFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+                lifetimeText:SetPoint("LEFT", nameText, "RIGHT", 10, 0)
+                lifetimeText:SetWidth(80)
+                lifetimeText:SetJustifyH("CENTER")
+                
+                if lifetimeStats and (lifetimeStats.totalKilled > 0 or lifetimeStats.totalLooted > 0 or lifetimeStats.totalDrops > 0) then
+                    lifetimeText:SetText(string.format("|cFFFFFFFFK%d|L%d|D%d|r",
+                        lifetimeStats.totalKilled or 0,
+                        lifetimeStats.totalLooted or 0,
+                        lifetimeStats.totalDrops or 0))
+                else
+                    lifetimeText:SetText("|cFF666666-|r")
+                end
+                
+                -- Session stats (right column)
+                local sessionText = rowFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+                sessionText:SetPoint("LEFT", lifetimeText, "RIGHT", 5, 0)
+                sessionText:SetWidth(80)
+                sessionText:SetJustifyH("CENTER")
+                
+                if sessionStats and (sessionStats.sessionKilled > 0 or sessionStats.sessionLooted > 0 or sessionStats.sessionDrops > 0) then
+                    sessionText:SetText(string.format("|cFF82C5FFK%d|L%d|D%d|r",
+                        sessionStats.sessionKilled or 0,
+                        sessionStats.sessionLooted or 0,
+                        sessionStats.sessionDrops or 0))
+                else
+                    sessionText:SetText("|cFF666666-|r")
+                end
+                
+                table.insert(progressFrame.expandedItems[category], rowFrame)
+            else
+                -- No stats - simple item display
+                local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+                itemText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
+                itemText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
+                itemText:SetJustifyH("LEFT")
+                
+                local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
+                local icon = item.learned and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
+                itemText:SetText(icon .. color .. item.name .. AV_COLOR_RESET)
+                
+                table.insert(progressFrame.expandedItems[category], itemText)
+            end
         end
         currentY = currentY - itemHeight
     end
@@ -864,6 +931,27 @@ local function ResizeFrame()
     local padding = -5  -- Reduced from 10 for tighter UI
     local totalHeight = headerHeight + buttonBarHeight
     
+    -- Calculate required width
+    local minWidth = 240  -- Minimum for buttons: Zone, Subzones, All, Details
+    local statsWidth = 380  -- Width needed when showing stats columns
+    local hasAnyStats = false
+    
+    -- Check if any expanded items have stats
+    for category, items in pairs(progressFrame.expandedItems) do
+        if items and #items > 0 then
+            for _, element in ipairs(items) do
+                -- Check if this is a frame (stats layout) vs FontString (simple layout)
+                if element.CreateFontString then  -- It's a frame
+                    hasAnyStats = true
+                    break
+                end
+            end
+            if hasAnyStats then break end
+        end
+    end
+    
+    local frameWidth = hasAnyStats and statsWidth or minWidth
+    
     -- Add overall bar
     totalHeight = totalHeight + barHeight
     
@@ -898,6 +986,7 @@ local function ResizeFrame()
     
     totalHeight = totalHeight + padding
     progressFrame:SetHeight(totalHeight)
+    progressFrame:SetWidth(frameWidth)
 end
 
 -- Helper function to calculate progress for current view mode
