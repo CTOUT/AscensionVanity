@@ -8,7 +8,7 @@
 
 -- Create main frame
 local progressFrame = CreateFrame("Frame", "AV_CollectionProgressFrame", UIParent)
-progressFrame:SetSize(260, 260)  -- Initial size, will be resized dynamically
+progressFrame:SetSize(380, 260)  -- Wider to accommodate stats columns (was 260)
 progressFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -50, -200)
 progressFrame:SetMovable(true)
 progressFrame:EnableMouse(true)
@@ -547,9 +547,9 @@ ClearExpandedItems = function(category)
         return 
     end
     
-    for _, fontString in ipairs(progressFrame.expandedItems[category]) do
-        fontString:Hide()
-        -- Don't use SetParent(nil) for FontStrings - just hide and remove reference
+    for _, element in ipairs(progressFrame.expandedItems[category]) do
+        element:Hide()
+        -- Works for both frames and FontStrings
     end
     progressFrame.expandedItems[category] = {}
 end
@@ -589,96 +589,107 @@ ShowExpandedItems = function(category, anchorBar, yOffset)
     end
     
     if hasAnyStats then
-        local headerText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-        headerText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
-        headerText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
-        headerText:SetJustifyH("LEFT")
+        -- Create header with three separate text elements for proper alignment
+        local headerFrame = CreateFrame("Frame", nil, progressFrame)
+        headerFrame:SetSize(400, itemHeight)
+        headerFrame:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
         
-        -- Color-coded header: Lifetime (white) | Session (pale blue like tooltip)
+        -- Pet Name header (left-aligned)
+        local nameHeader = headerFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        nameHeader:SetPoint("LEFT", headerFrame, "LEFT", 0, 0)
+        nameHeader:SetWidth(160)  -- Fixed width for name column
+        nameHeader:SetJustifyH("LEFT")
         if groupMode == "subzones" then
-            headerText:SetText("|cFFCCCCCCCreature (Progress)|r  |cFFFFFFFFLifetime|r  |cFF82C5FFSession|r")
+            nameHeader:SetText("|cFFFFD700Creature (Progress)|r")  -- Bold gold
         else
-            headerText:SetText("|cFFCCCCCCPet Name|r  |cFFFFFFFFLifetime|r  |cFF82C5FFSession|r")
+            nameHeader:SetText("|cFFFFD700Pet Name|r")  -- Bold gold
         end
         
-        table.insert(progressFrame.expandedItems[category], headerText)
+        -- Lifetime header (centered in its column)
+        local lifetimeHeader = headerFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        lifetimeHeader:SetPoint("LEFT", nameHeader, "RIGHT", 10, 0)
+        lifetimeHeader:SetWidth(80)  -- Fixed width for lifetime stats
+        lifetimeHeader:SetJustifyH("CENTER")
+        lifetimeHeader:SetText("|cFFFFFFFFLifetime|r")
+        
+        -- Session header (centered in its column)
+        local sessionHeader = headerFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        sessionHeader:SetPoint("LEFT", lifetimeHeader, "RIGHT", 5, 0)
+        sessionHeader:SetWidth(80)  -- Fixed width for session stats
+        sessionHeader:SetJustifyH("CENTER")
+        sessionHeader:SetText("|cFF82C5FFSession|r")
+        
+        table.insert(progressFrame.expandedItems[category], headerFrame)
         currentY = currentY - itemHeight
     end
     
     for i = 1, itemsToDisplay do
         local item = items[i]
-        local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-        itemText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)  -- Indent items
-        itemText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
-        itemText:SetJustifyH("LEFT")
         
         if groupMode == "subzones" then
-            -- Show creature name with progress (X/Y items) and session stats
+            -- Create row frame with separate columns for proper alignment
+            local rowFrame = CreateFrame("Frame", nil, progressFrame)
+            rowFrame:SetSize(400, itemHeight)
+            rowFrame:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
+            
             local color = (item.learned == item.total) and AV_COLOR_GREEN or "|cFFCCCCCC"
             local icon = (item.learned == item.total) and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
             
-            -- Get session stats for this creature (if available)
-            local sessionText = ""
-            if item.creatureId and AV_GetSessionStats then
-                local sessionStats = AV_GetSessionStats(item.creatureId)
-                local lifetimeStats = AV_GetCreatureStats and AV_GetCreatureStats(item.creatureId)
-                
-                if sessionStats or lifetimeStats then
-                    local sessionKilled = sessionStats and sessionStats.sessionKilled or 0
-                    local sessionLooted = sessionStats and sessionStats.sessionLooted or 0
-                    local sessionDrops = sessionStats and sessionStats.sessionDrops or 0
-                    
-                    local lifetimeKilled = lifetimeStats and lifetimeStats.totalKilled or 0
-                    local lifetimeLooted = lifetimeStats and lifetimeStats.totalLooted or 0
-                    local lifetimeDrops = lifetimeStats and lifetimeStats.totalDrops or 0
-                    
-                    if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
-                       lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
-                        -- Format: Pet Name  Lifetime K#|L#|D#  Session K#|L#|D#
-                        -- Lifetime = White, Session = Pale Blue (matching tooltip)
-                        sessionText = string.format("  |cFFFFFFFFK%d|cFFFFFFFF||r|cFFFFFFFFL%d|cFFFFFFFF||r|cFFFFFFFFD%d|r  |cFF82C5FFK%d|cFF82C5FF||r|cFF82C5FFL%d|cFF82C5FF||r|cFF82C5FFD%d|r",
-                            lifetimeKilled, lifetimeLooted, lifetimeDrops,
-                            sessionKilled, sessionLooted, sessionDrops)
-                    end
-                end
+            -- Creature name + progress (left column)
+            local nameText = rowFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+            nameText:SetPoint("LEFT", rowFrame, "LEFT", 0, 0)
+            nameText:SetWidth(160)
+            nameText:SetJustifyH("LEFT")
+            nameText:SetText(icon .. color .. item.name .. string.format(" (%d/%d)", item.learned, item.total) .. AV_COLOR_RESET)
+            
+            -- Get stats for this creature
+            local sessionStats = item.creatureId and AV_GetSessionStats and AV_GetSessionStats(item.creatureId)
+            local lifetimeStats = item.creatureId and AV_GetCreatureStats and AV_GetCreatureStats(item.creatureId)
+            
+            -- Lifetime stats (center column)
+            local lifetimeText = rowFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+            lifetimeText:SetPoint("LEFT", nameText, "RIGHT", 10, 0)
+            lifetimeText:SetWidth(80)
+            lifetimeText:SetJustifyH("CENTER")
+            
+            if lifetimeStats and (lifetimeStats.totalKilled > 0 or lifetimeStats.totalLooted > 0 or lifetimeStats.totalDrops > 0) then
+                lifetimeText:SetText(string.format("|cFFFFFFFFK%d|L%d|D%d|r",
+                    lifetimeStats.totalKilled or 0,
+                    lifetimeStats.totalLooted or 0,
+                    lifetimeStats.totalDrops or 0))
+            else
+                lifetimeText:SetText("|cFF666666-|r")
             end
             
-            itemText:SetText(icon .. color .. item.name .. string.format(" (%d/%d)", item.learned, item.total) .. sessionText .. AV_COLOR_RESET)
+            -- Session stats (right column)
+            local sessionText = rowFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+            sessionText:SetPoint("LEFT", lifetimeText, "RIGHT", 5, 0)
+            sessionText:SetWidth(80)
+            sessionText:SetJustifyH("CENTER")
+            
+            if sessionStats and (sessionStats.sessionKilled > 0 or sessionStats.sessionLooted > 0 or sessionStats.sessionDrops > 0) then
+                sessionText:SetText(string.format("|cFF82C5FFK%d|L%d|D%d|r",
+                    sessionStats.sessionKilled or 0,
+                    sessionStats.sessionLooted or 0,
+                    sessionStats.sessionDrops or 0))
+            else
+                sessionText:SetText("|cFF666666-|r")
+            end
+            
+            table.insert(progressFrame.expandedItems[category], rowFrame)
         else
-            -- Show item name (in creatures mode)
+            -- Creatures mode - show item name only (no stats)
+            local itemText = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+            itemText:SetPoint("TOPLEFT", anchorBar, "BOTTOMLEFT", 20, currentY)
+            itemText:SetPoint("TOPRIGHT", anchorBar, "BOTTOMRIGHT", -8, currentY)
+            itemText:SetJustifyH("LEFT")
+            
             local color = item.learned and AV_COLOR_GREEN or "|cFFCCCCCC"
             local icon = item.learned and "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t " or "   "
+            itemText:SetText(icon .. color .. item.name .. AV_COLOR_RESET)
             
-            -- Get session stats for this item's creature (if available)
-            local sessionText = ""
-            if item.creatureId and AV_GetSessionStats then
-                local sessionStats = AV_GetSessionStats(item.creatureId)
-                local lifetimeStats = AV_GetCreatureStats and AV_GetCreatureStats(item.creatureId)
-                
-                if sessionStats or lifetimeStats then
-                    local sessionKilled = sessionStats and sessionStats.sessionKilled or 0
-                    local sessionLooted = sessionStats and sessionStats.sessionLooted or 0
-                    local sessionDrops = sessionStats and sessionStats.sessionDrops or 0
-                    
-                    local lifetimeKilled = lifetimeStats and lifetimeStats.totalKilled or 0
-                    local lifetimeLooted = lifetimeStats and lifetimeStats.totalLooted or 0
-                    local lifetimeDrops = lifetimeStats and lifetimeStats.totalDrops or 0
-                    
-                    if sessionKilled > 0 or sessionLooted > 0 or sessionDrops > 0 or 
-                       lifetimeKilled > 0 or lifetimeLooted > 0 or lifetimeDrops > 0 then
-                        -- Format: Pet Name  Lifetime K#|L#|D#  Session K#|L#|D#
-                        -- Lifetime = White, Session = Pale Blue (matching tooltip)
-                        sessionText = string.format("  |cFFFFFFFFK%d|cFFFFFFFF||r|cFFFFFFFFL%d|cFFFFFFFF||r|cFFFFFFFFD%d|r  |cFF82C5FFK%d|cFF82C5FF||r|cFF82C5FFL%d|cFF82C5FF||r|cFF82C5FFD%d|r",
-                            lifetimeKilled, lifetimeLooted, lifetimeDrops,
-                            sessionKilled, sessionLooted, sessionDrops)
-                    end
-                end
-            end
-            
-            itemText:SetText(icon .. color .. item.name .. sessionText .. AV_COLOR_RESET)
+            table.insert(progressFrame.expandedItems[category], itemText)
         end
-        
-        table.insert(progressFrame.expandedItems[category], itemText)
         currentY = currentY - itemHeight
     end
     
