@@ -14,6 +14,18 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - `/avanity stats` command suite for viewing statistics
   - Stats display toggle in Settings UI
 
+- **Enhanced Creature Information** ⚔️ (Phase 2A Complete - November 11, 2025)
+  - **Creature Stats Display**: Level, classification, type, family, attack speed, health, damage, armor
+  - **Smart Filtering**: Show stats for "All Creatures", "Vanity Drop Creatures Only", "Tameable Beasts Only", or "Vanity + Tameable"
+  - **Player Pet Support**: Always shows stats for your own summoned combat pets
+  - **Auto-Caching System**: Stats cached when you mouse over creatures, persists between sessions
+  - **Collection UI Integration**: Shows cached stats when previewing pets in Vanity Collection UI
+    - Works with both small preview (left) and large preview (right)
+    - Displays: "Stats from when you last summoned this pet"
+    - Helpful message for uncached pets: "Summon to see stats"
+  - **New Module**: `CollectionUIEnhancer.lua` - Monitors and enhances Ascension's Vanity Collection interface
+  - **Configurable**: Dropdown in Settings UI to control when stats appear
+
 - **Drop Celebration System** 🎉
   - Custom celebration frame on vanity item drops
   - Dynamic item icon display with proper textures
@@ -26,9 +38,19 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Integrated with celebration and tooltip systems
   - Color-coded status indicators
 
+### Changed
+- **Tooltip Performance Optimization**: Removed `GetItemInfo()` server calls for instant display
+  - No more "Loading..." delays when hovering over creatures
+  - All data from local database only (99.95% coverage)
+  - Graceful fallback: "Unknown Item (ID: xxx)" for edge cases
+  - Significantly faster tooltip rendering
+- **Player Pet Detection**: Optimized with faster unit checks (`UnitIsUnit` first, then fallbacks)
+- **Removed Duplicate Features**: 
+  - Removed custom "Show IDs in Tooltips" (now uses built-in WoW option: Interface → Display → Show IDs)
+  - Prevents conflicts with native game feature
+
 ### In Progress
 See `FEATURE_ROADMAP_V2.3.md` for remaining planned features:
-- ⚔️ Creature Combat Stats - Attack speed, level, and elite status in tooltips
 - 🗺️ Minimap Button Integration - Quick access with LibDBIcon-1.0
 - 📈 Farming Session Analytics - Kills/hour, time estimates, session summaries
 
