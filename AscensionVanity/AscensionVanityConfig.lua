@@ -39,13 +39,20 @@ local defaults = {
     showAttackSpeed = true,      -- Show creature attack speed
     showHealth = true,           -- Show creature max health
     showDamage = true,           -- Show creature damage range
-    showArmor = false            -- Show creature armor (disabled by default - can be noisy)
+    showArmor = false,           -- Show creature armor (disabled by default - can be noisy)
+    
+    -- Version tracking for migrations
+    configVersion = 2            -- Increment when adding new settings that need migration
 }
 
 -- Initialize configuration with defaults if not already set
 function AscensionVanity_InitConfig()
+    -- Check version BEFORE applying defaults (so we can detect upgrades)
+    local currentVersion = AscensionVanityDB.configVersion or 0
+    
+    -- First-time initialization: Apply all defaults (EXCEPT configVersion which we check separately)
     for key, value in pairs(defaults) do
-        if AscensionVanityDB[key] == nil then
+        if key ~= "configVersion" and AscensionVanityDB[key] == nil then
             if type(value) == "table" then
                 -- Deep copy for nested tables (like categoryFilters)
                 AscensionVanityDB[key] = {}
@@ -66,6 +73,39 @@ function AscensionVanity_InitConfig()
         if AscensionVanityDB.categoryFilters[category] == nil then
             AscensionVanityDB.categoryFilters[category] = enabled
         end
+    end
+    
+    -- Migration System: Handle version upgrades
+    if currentVersion < 2 then
+        -- Migration to v2: Phase 2A Enhanced Creature Information
+        -- Force-apply Phase 2A settings for users upgrading from pre-2.3 versions
+        print(AV_COLOR_CYAN .. "[AscensionVanity] Upgrading config to v2 (Phase 2A features)..." .. AV_COLOR_RESET)
+        
+        -- Apply Phase 2A defaults if they don't exist
+        local phase2ASettings = {
+            "showCreatureInfo",
+            "creatureInfoFilter", 
+            "showCreatureType",
+            "showAttackSpeed",
+            "showHealth",
+            "showDamage",
+            "showArmor"
+        }
+        
+        for _, setting in ipairs(phase2ASettings) do
+            if AscensionVanityDB[setting] == nil then
+                AscensionVanityDB[setting] = defaults[setting]
+                print(AV_COLOR_GREEN .. "  ✓ Applied: " .. setting .. " = " .. tostring(defaults[setting]) .. AV_COLOR_RESET)
+            end
+        end
+        
+        AscensionVanityDB.configVersion = 2
+        print(AV_COLOR_GREEN .. "[AscensionVanity] Config upgrade complete!" .. AV_COLOR_RESET)
+    end
+    
+    -- Always ensure configVersion is set
+    if not AscensionVanityDB.configVersion then
+        AscensionVanityDB.configVersion = defaults.configVersion
     end
 end
 

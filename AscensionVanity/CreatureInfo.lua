@@ -263,23 +263,6 @@ function AV_AddCreatureInfoToTooltip(tooltip, unit, creatureId)
     -- Build info line
     local infoLine = ""
     
-    -- Level
-    if level then
-        if isBoss then
-            infoLine = AV_COLOR_RED .. "?? (Boss)" .. AV_COLOR_RESET
-        elseif isScaled then
-            infoLine = AV_COLOR_YELLOW .. level .. " (scales)" .. AV_COLOR_RESET
-        else
-            infoLine = AV_COLOR_WHITE .. level .. AV_COLOR_RESET
-        end
-    end
-    
-    -- Classification
-    if classText ~= "" then
-        local r, g, b = classColor[1], classColor[2], classColor[3]
-        infoLine = infoLine .. " " .. string.format("|cFF%02x%02x%02x%s|r", r*255, g*255, b*255, classText)
-    end
-    
     -- Creature Type with icon (and family for beasts)
     if creatureType and AscensionVanityDB.showCreatureType then
         if familyIcon then

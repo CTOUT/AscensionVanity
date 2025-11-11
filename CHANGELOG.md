@@ -15,7 +15,7 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Stats display toggle in Settings UI
 
 - **Enhanced Creature Information** ⚔️ (Phase 2A Complete - November 11, 2025)
-  - **Creature Stats Display**: Level, classification, type, family, attack speed, health, damage, armor
+  - **Creature Stats Display**: Type/family, attack speed, health, damage, armor (level removed - redundant with default tooltip)
   - **Smart Filtering**: Show stats for "All Creatures", "Vanity Drop Creatures Only", "Tameable Beasts Only", or "Vanity + Tameable"
   - **Player Pet Support**: Always shows stats for your own summoned combat pets
   - **Auto-Caching System**: Stats cached when you mouse over creatures, persists between sessions
@@ -27,7 +27,9 @@ All notable changes to the AscensionVanity project will be documented in this fi
     - Displays: "Baseline stats - out of combat"
     - Helpful message for uncached pets: "Summon out of combat to see baseline stats"
   - **New Module**: `CollectionUIEnhancer.lua` - Monitors and enhances Ascension's Vanity Collection interface
-  - **Configurable**: Dropdown in Settings UI to control when stats appear
+  - **Configurable**: Master toggle + dropdown in Settings UI to control when stats appear
+  - **Granular Settings**: Individual toggles for attack speed, health, damage, armor display
+  - **Migration System**: Config v2 ensures Phase 2A settings applied for users upgrading from v2.2
 
 - **Drop Celebration System** 🎉
   - Custom celebration frame on vanity item drops
@@ -48,6 +50,11 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Graceful fallback: "Unknown Item (ID: xxx)" for edge cases
   - Significantly faster tooltip rendering
 - **Player Pet Detection**: Optimized with faster unit checks (`UnitIsUnit` first, then fallbacks)
+- **Creature Info Display**: Removed redundant level display (already shown by WoW's default tooltip)
+
+### Fixed
+- **Phase 2A Migration**: Config version system ensures individual stat settings (showAttackSpeed, showHealth, showDamage) are properly initialized for users upgrading from v2.2
+- **Missing Master Toggle**: Added "Show Creature Stats" checkbox to Settings UI (was defined in code but missing from UI)
 - **Removed Duplicate Features**: 
   - Removed custom "Show IDs in Tooltips" (now uses built-in WoW option: Interface → Display → Show IDs)
   - Prevents conflicts with native game feature

@@ -237,5 +237,6 @@ function AV_CacheCreatureStats(creatureID, unit)
     end
     
     -- Save to cache
+    -- Save to cache
     AV_CreatureStatsCache[creatureID] = stats
 end
