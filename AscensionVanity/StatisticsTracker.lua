@@ -538,10 +538,10 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     local statusColor = {1, 1, 1}  -- White default
     
     if isAlreadyLearned then
-        statusText = "|TInterface\\RAIDFRAME\\ReadyCheck-NotReady:16|t DUPLICATE (Can Sell)"
+        statusText = "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t You already know this."
         statusColor = {0.8, 0.8, 0.8}  -- Gray
     else
-        statusText = "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t NEW COLLECTION!"
+        statusText = "|TInterface\\RAIDFRAME\\ReadyCheck-NotReady:16|t You haven't collected this"
         statusColor = {0, 1, 0}  -- Green
     end
     
