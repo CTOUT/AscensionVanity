@@ -1,7 +1,8 @@
 -- AscensionVanity - Scanner UI Panel
 -- Provides a simple interface for managing API scans
 
-local AddonName = "AscensionVanity"
+-- Use shared constants from AscensionVanityConstants.lua
+local AddonName = AV_ADDON_NAME
 
 -- ============================================================================
 -- Main Scanner Frame (Standalone)
@@ -40,10 +41,10 @@ local title = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge
 title:SetPoint("TOP", 0, -20)
 title:SetText("AscensionVanity Scanner")
 
--- Version (use shared constant)
+-- Version (use shared constant with release type)
 local version = scannerPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
 version:SetPoint("TOP", title, "BOTTOM", 0, -4)
-version:SetText("Version " .. AV_VERSION)
+version:SetText("Version " .. AV_GetFullVersion())
 
 -- Description
 local desc = scannerPanel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")

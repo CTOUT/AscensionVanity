@@ -2,11 +2,29 @@
 -- Icons, colors, version info, and other constants used across multiple files
 
 -- ============================================================================
+-- Addon Information
+-- ============================================================================
+
+AV_ADDON_NAME = "AscensionVanity"  -- Used throughout addon for consistency
+
+-- ============================================================================
 -- Version Information
 -- ============================================================================
 
-AV_VERSION = "2.2"
+AV_VERSION = "2.3"
 AV_RELEASE_TYPE = "dev"  -- "prd", "tst", "dev"
+
+-- Helper function to get full version string
+-- Returns: "2.3-dev", "2.3-beta", or "2.3" (for production)
+function AV_GetFullVersion()
+    if AV_RELEASE_TYPE == "dev" then
+        return AV_VERSION .. "-dev"
+    elseif AV_RELEASE_TYPE == "tst" then
+        return AV_VERSION .. "-beta"
+    else
+        return AV_VERSION
+    end
+end
 
 -- Get current Ascension build version string
 -- Returns: version string like "2025-11-02 @ 22:44:06 GMT Not Available"
@@ -57,8 +75,18 @@ AV_COLOR_LIGHT_RED = "|cFFFF4444"  -- Light red (faction warnings)
 AV_COLOR_PINK = "|cFFFF8888"       -- Pink (warning messages)
 AV_COLOR_LIGHT_GRAY = "|cFFAAAAAA" -- Light gray (supplemental notes)
 
+-- Debug/Development colors (v2.3)
+AV_COLOR_CYAN = "|cFF00FFFF"       -- Cyan (debug messages)
+
 -- Color reset
 AV_COLOR_RESET = "|r"
+
+-- ============================================================================
+-- Texture Paths
+-- ============================================================================
+
+-- Default/fallback icon
+AV_ICON_QUESTION_MARK = "Interface\\Icons\\INV_Misc_QuestionMark"
 
 -- ============================================================================
 -- Category Icons

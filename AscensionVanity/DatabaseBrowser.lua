@@ -1,7 +1,8 @@
 -- AscensionVanity - Database Browser / Regional Guide
 -- Comprehensive interface for exploring the vanity database with filtering options
 
-local AddonName = "AscensionVanity"
+-- Use shared constants from AscensionVanityConstants.lua
+local AddonName = AV_ADDON_NAME
 
 -- ============================================================================
 -- Frame Setup

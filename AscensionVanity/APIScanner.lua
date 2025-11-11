@@ -6,7 +6,8 @@
 -- - PowerShell: All category/group/exclusion filtering for flexibility
 -- - Benefits: Complete data preservation, audit trail, no re-scans for filter changes
 
-local AddonName = "AscensionVanity"
+-- Use shared constants from AscensionVanityConstants.lua
+local AddonName = AV_ADDON_NAME
 
 -- Saved variable for API dump (separate from main addon config)
 AscensionVanityDump = AscensionVanityDump or {
@@ -134,13 +135,13 @@ function AV_ScanAllItems()
     
     -- Initialize metadata FIRST (alphabetically sorted, APIDump will be added LAST)
     AscensionVanityDump = {
-        AddonVersion = GetAddOnMetadata(AddonName, "Version") or "2.1",
+        AddonVersion = GetAddOnMetadata(AddonName, "Version") or AV_GetFullVersion(),
         AscensionVersion = ascensionVersion,
         GameBuild = build or "Unknown",
         GameBuildDate = buildDate or "Unknown",
         GameVersion = version or "Unknown",
         LastScanDate = date("%Y-%m-%d %H:%M:%S"),
-        ScanVersion = "2.1",
+        ScanVersion = AV_GetFullVersion(),
         TotalItems = 0,  -- Will be updated after scan
         APIDump = {}     -- Populated last
     }

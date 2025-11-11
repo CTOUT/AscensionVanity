@@ -18,7 +18,26 @@ Write-Host "========================================`n" -ForegroundColor Cyan
 
 # Paths
 $SourcePath = "$PSScriptRoot\AscensionVanity"
-$TargetPath = "$WoWPath\Interface\AddOns\AscensionVanity"
+
+# Handle different WoW folder structures
+$InterfaceAddOnsPath = "$WoWPath\Interface\AddOns"
+if (Test-Path $InterfaceAddOnsPath) {
+    # Standard structure: WoW\Interface\AddOns
+    $TargetPath = "$InterfaceAddOnsPath\AscensionVanity"
+    $wowAddOnsPath = $InterfaceAddOnsPath
+    Write-Host "Detected: Standard WoW structure" -ForegroundColor Green
+} elseif ((Get-ChildItem $WoWPath -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -like "*Blizzard*" -or $_.Name -like "*Titan*" -or $_.Name -like "AscensionVanity" }).Count -gt 2) {
+    # Direct AddOns folder (OneDrive symlink case)
+    $TargetPath = "$WoWPath\AscensionVanity"
+    $wowAddOnsPath = $WoWPath
+    Write-Host "Detected: Direct AddOns folder structure" -ForegroundColor Green
+} else {
+    Write-Host "ERROR: Cannot detect WoW AddOns structure!" -ForegroundColor Red
+    Write-Host "Checked:" -ForegroundColor Yellow
+    Write-Host "  Standard: $InterfaceAddOnsPath" -ForegroundColor Yellow
+    Write-Host "  Direct:   $WoWPath" -ForegroundColor Yellow
+    exit 1
+}
 
 Write-Host "Source:  $SourcePath" -ForegroundColor Yellow
 Write-Host "Target:  $TargetPath" -ForegroundColor Yellow
@@ -26,13 +45,6 @@ Write-Host "Target:  $TargetPath" -ForegroundColor Yellow
 # Validate paths
 if (-not (Test-Path $SourcePath)) {
     Write-Host "ERROR: Source path not found!" -ForegroundColor Red
-    exit 1
-}
-
-$wowAddOnsPath = "$WoWPath\Interface\AddOns"
-if (-not (Test-Path $wowAddOnsPath)) {
-    Write-Host "ERROR: WoW AddOns folder not found!" -ForegroundColor Red
-    Write-Host "Expected: $wowAddOnsPath" -ForegroundColor Yellow
     exit 1
 }
 

@@ -37,9 +37,6 @@ DatabaseBrowser.lua
 # Statistics Tracker (v2.3+ kill/drop tracking for farming efficiency)
 StatisticsTracker.lua
 
-# Titan Scroll Filter Demo (proof-of-concept for XanAscTweaks)
-TitanScrollFilter.lua
-
 # Debug Tools (development only - uncomment when needed)
 # DEBUG_Measurements.lua
 

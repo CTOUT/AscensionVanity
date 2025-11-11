@@ -551,7 +551,7 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     -- Resize frame based on text content before setting text
     local newTextWidth = frame:ResizeForContent(itemTypePart, petNamePart)
     
-    frame.icon:SetTexture(itemTexture or "Interface\\Icons\\INV_Misc_QuestionMark")
+    frame.icon:SetTexture(itemTexture or AV_ICON_QUESTION_MARK)
     frame.itemType:SetText(itemTypePart .. (petNamePart ~= "" and ":" or ""))
     frame.petName:SetText(petNamePart)
     frame.statsText:SetText(statsLine)

@@ -1,12 +1,13 @@
 -- AscensionVanity - Core Functionality
 -- Hooks into tooltips to display vanity item information
 
-local AddonName = "AscensionVanity"
+-- Use shared constants from AscensionVanityConstants.lua
+local AddonName = AV_ADDON_NAME
 
 -- Saved variables initialized in AscensionVanityConfig.lua
 AscensionVanityDB = AscensionVanityDB or {}
 
--- Use shared constants from AscensionVanityConstants.lua
+-- Version and color constants
 local VERSION = AV_VERSION
 local COLOR_VANITY_HEADER = AV_COLOR_HEADER
 local COLOR_VANITY_LEARNED = AV_COLOR_LEARNED
@@ -197,7 +198,7 @@ local FALLBACK_EVENTS_ENABLED = true  -- Enabled by default with smart debouncin
 -- MUST be defined before cache functions that use it
 local function DebugPrint(...)
     if AscensionVanityDB and AscensionVanityDB.debug then
-        print("|cFF00FFFF[AV Debug]|r", ...)
+        print(AV_COLOR_CYAN .. "[AV Debug]|r", ...)
     end
 end
 
@@ -796,7 +797,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
     elseif event == "PLAYER_LOGIN" then
         -- Show addon status after all addons loaded (better visibility)
-        print("|cFF00FF96AscensionVanity|r v" .. VERSION .. " loaded!")
+        print("|cFF00FF96AscensionVanity|r v" .. AV_GetFullVersion() .. " loaded!")
         print("Type |cFFFFFF00/avanity|r for settings or |cFFFFFF00/avanity help|r for commands")
         
         -- Check if Ascension's vanity collection API is available
@@ -849,8 +850,8 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         -- Event spy notification (if enabled)
         if AscensionVanityDB.eventSpy then
             -- arg1 is already captured from the function signature: function(self, event, arg1)
-            print("|cFF00FFFF[Event Spy]|r |cFF00FF00ASCENSION_STORE_COLLECTION_ITEM_LEARNED|r")
-            print("  |cFFFFFF00Parameter (arg1):|r " .. tostring(arg1 or "none"))
+            print(AV_COLOR_CYAN .. "[Event Spy]|r " .. AV_COLOR_GREEN .. "ASCENSION_STORE_COLLECTION_ITEM_LEARNED|r")
+            print("  " .. AV_COLOR_YELLOW .. "Parameter (arg1):|r " .. tostring(arg1 or "none"))
         end
         
         -- Clear entire cache to ensure fresh data
@@ -863,7 +864,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
         -- Event spy notification (if enabled)
         if AscensionVanityDB.eventSpy then
-            print("|cFF00FFFF[Event Spy]|r |cFF00FF00" .. event .. "|r - arg1:", arg1 or "none")
+            print(AV_COLOR_CYAN .. "[Event Spy]|r " .. AV_COLOR_GREEN .. event .. "|r - arg1:", arg1 or "none")
         end
         
         DebugPrint("APPEARANCE_COLLECTED: Clearing cache (backup event)")
@@ -875,7 +876,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
         -- Event spy notification (if enabled)
         if AscensionVanityDB.eventSpy then
-            print("|cFF00FFFF[Event Spy]|r |cFFFFAA00" .. event .. "|r - Fallback event fired")
+            print(AV_COLOR_CYAN .. "[Event Spy]|r " .. AV_COLOR_ORANGE .. event .. "|r - Fallback event fired")
         end
         
         -- Smart debouncing: Only clear cache once per second to prevent spam
@@ -909,7 +910,7 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
         for _, spyEvent in ipairs(spyEvents) do
             if event == spyEvent then
-                print("|cFF00FFFF[Event Spy]|r |cFF888888" .. event .. "|r - Generic event fired")
+                print(AV_COLOR_CYAN .. "[Event Spy]|r " .. AV_COLOR_GRAY .. event .. "|r - Generic event fired")
                 break
             end
         end
@@ -2088,7 +2089,7 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
         print("|cFF00FF96========================================|r")
     
     elseif msg == "help" then
-        print("|cFF00FF96AscensionVanity v" .. VERSION .. " Commands:|r")
+        print("|cFF00FF96AscensionVanity v" .. AV_GetFullVersion() .. " Commands:|r")
         print(" ")
         print("|cFFFFFF00=== Available Slash Commands ===|r")
         print("  |cFFFFFF00/avanity|r - Primary command")

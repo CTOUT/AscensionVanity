@@ -4,20 +4,36 @@ All notable changes to the AscensionVanity project will be documented in this fi
 
 ## [Unreleased] - v2.3-dev
 
-### Planned Features
-See `FEATURE_ROADMAP_V2.3.md` for complete roadmap and implementation details.
+### Added
+- **Kill/Drop Statistics Tracking** 📊 (Phase 1 Complete - November 2025)
+  - Lifetime and session kill counters per creature
+  - Drop tracking with percentage calculations
+  - Unlucky streak detection (kills since last drop)
+  - Per-character stats via SavedVariablesPerCharacter
+  - Real-time stats in creature tooltips
+  - `/avanity stats` command suite for viewing statistics
+  - Stats display toggle in Settings UI
 
-**Core Features (Phase 1-3):**
-- 📊 Kill/Drop Statistics Tracking - Track kills, drops, and unlucky streaks per creature
+- **Drop Celebration System** 🎉
+  - Custom celebration frame on vanity item drops
+  - Dynamic item icon display with proper textures
+  - Collection status indicator (learned/unlearned)
+  - Auto-dismissing popup with visual feedback
+  - Multiple design iterations for optimal UX
+
+- **Enhanced Collection Messages** ✨
+  - Clear "Already learned!" vs "New item!" messaging
+  - Integrated with celebration and tooltip systems
+  - Color-coded status indicators
+
+### In Progress
+See `FEATURE_ROADMAP_V2.3.md` for remaining planned features:
 - ⚔️ Creature Combat Stats - Attack speed, level, and elite status in tooltips
 - 🗺️ Minimap Button Integration - Quick access with LibDBIcon-1.0
 - 📈 Farming Session Analytics - Kills/hour, time estimates, session summaries
-- 📄 Database Browser Pagination - 50 items per page for better performance
-- 🗺️ Zone/Subzone Standardization - Consistent location descriptions
-- 🔧 Creature ID Corrections System - Fix wrong creature references
 
-**Timeline:** 6-week development cycle (4 phases)  
-**Status:** 🚀 Planning Phase Complete
+**Development Status:** 🔨 Active Development - Phase 1 Complete  
+**Timeline:** 4-5 week development cycle
 
 ## [2.2-beta] - 2025-11-08
 

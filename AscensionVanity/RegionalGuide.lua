@@ -1,7 +1,8 @@
 -- AscensionVanity - Regional Hunting Guide
 -- Shows creatures in the player's current zone that drop unlearned vanity items
 
-local AddonName = "AscensionVanity"
+-- Use shared constants from AscensionVanityConstants.lua
+local AddonName = AV_ADDON_NAME
 
 -- ============================================================================
 -- Zone Index (Built on Load)

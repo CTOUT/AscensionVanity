@@ -1,9 +1,8 @@
 -- AscensionVanity - Settings UI
 -- User interface for addon configuration
 
-local AddonName = "AscensionVanity"
-
 -- Use shared constants from AscensionVanityConstants.lua
+local AddonName = AV_ADDON_NAME
 local VERSION = AV_VERSION
 
 -- ============================================================================
@@ -40,10 +39,10 @@ title:SetText("AscensionVanity Settings")
 local closeButton = CreateFrame("Button", nil, settingsPanel, "UIPanelCloseButton")
 closeButton:SetPoint("TOPRIGHT", -5, -5)
 
--- Version info
+-- Version info (use full version string with release type)
 local versionText = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 versionText:SetPoint("TOP", title, "BOTTOM", 0, -4)
-versionText:SetText("Version " .. VERSION)
+versionText:SetText("Version " .. AV_GetFullVersion())
 
 -- Description
 local desc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
