@@ -52,6 +52,13 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Removed custom "Show IDs in Tooltips" (now uses built-in WoW option: Interface → Display → Show IDs)
   - Prevents conflicts with native game feature
 
+### Fixed
+- **Settings UI - Show Creature Stats**: Added missing master checkbox for creature info feature
+  - Feature was working but had no UI toggle to enable/disable
+  - Added "Show Creature Stats" checkbox above filter dropdown
+  - Defaults to enabled (matches config)
+  - Auto-saves on change
+
 ### In Progress
 See `FEATURE_ROADMAP_V2.3.md` for remaining planned features:
 - 🗺️ Minimap Button Integration - Quick access with LibDBIcon-1.0
