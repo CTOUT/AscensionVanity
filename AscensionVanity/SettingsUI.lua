@@ -154,9 +154,19 @@ local showKillStatsCheckbox = CreateCheckbox(
 -- Note: "Show Item/Creature IDs" removed - use built-in WoW option instead
 -- (Interface -> Display -> Show IDs in Tooltips)
 
+-- Show Creature Info Checkbox (v2.3 Phase 2A - Master Toggle)
+local showCreatureInfoCheckbox = CreateCheckbox(
+    settingsPanel,
+    "Show Creature Stats",
+    "Display enhanced creature information in tooltips.\n\n" .. AV_COLOR_BLUE .. "[Creature Stats]" .. AV_COLOR_RESET .. "\n- Level and classification\n- Health, attack speed, damage\n- Creature type and family\n\nUse the dropdown below to control which creatures show stats.",
+    questWarningsCheckbox,  -- Anchor to questWarningsCheckbox (left column)
+    0,  -- Left column x-offset
+    -15
+)
+
 -- Creature Info Filter Label (v2.3 Phase 2A)
 local creatureInfoLabel = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-creatureInfoLabel:SetPoint("TOPLEFT", questWarningsCheckbox, "BOTTOMLEFT", 0, -20)
+creatureInfoLabel:SetPoint("TOPLEFT", showCreatureInfoCheckbox, "BOTTOMLEFT", 25, -10)
 creatureInfoLabel:SetText("Show Creature Stats For:")
 
 -- Creature Info Filter Dropdown
@@ -516,6 +526,7 @@ local function UpdateCheckboxes()
     questWarningsCheckbox:SetChecked(AscensionVanityDB.showQuestWarnings == nil and true or AscensionVanityDB.showQuestWarnings)
     enableKillTrackingCheckbox:SetChecked(AscensionVanityDB.enableKillTracking == nil and true or AscensionVanityDB.enableKillTracking)  -- Default to true (matches config)
     showKillStatsCheckbox:SetChecked(AscensionVanityDB.showKillStats == nil and true or AscensionVanityDB.showKillStats)  -- Default to true (matches config)
+    showCreatureInfoCheckbox:SetChecked(AscensionVanityDB.showCreatureInfo == nil and true or AscensionVanityDB.showCreatureInfo)  -- Default to true (matches config)
     -- showIDs removed - use built-in WoW option
     
     -- Update creature info filter dropdown (v2.3 Phase 2A)
@@ -578,6 +589,7 @@ local function SaveSettings()
     AscensionVanityDB.showQuestWarnings = questWarningsCheckbox:GetChecked() and true or false
     AscensionVanityDB.enableKillTracking = enableKillTrackingCheckbox:GetChecked() and true or false
     AscensionVanityDB.showKillStats = showKillStatsCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showCreatureInfo = showCreatureInfoCheckbox:GetChecked() and true or false
     -- showIDs removed - use built-in WoW option
     
     -- Note: Progress frame visibility managed by toggle button, not checkbox
@@ -626,6 +638,7 @@ colorCheckbox:HookScript("OnClick", SaveSettings)
 questWarningsCheckbox:HookScript("OnClick", SaveSettings)
 enableKillTrackingCheckbox:HookScript("OnClick", SaveSettings)
 showKillStatsCheckbox:HookScript("OnClick", SaveSettings)
+showCreatureInfoCheckbox:HookScript("OnClick", SaveSettings)
 -- showIDs checkbox removed - use built-in WoW option
 
 -- Add auto-save to category filter checkboxes (v2.1+)
