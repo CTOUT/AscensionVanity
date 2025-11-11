@@ -353,11 +353,30 @@ local function CreateCelebrationFrame()
     
     -- Main frame (custom design, properly sized for content)
     local frame = CreateFrame("Frame", "AV_CelebrationFrame", UIParent)
-    frame:SetSize(350, 90)  -- Reasonable proportions for our 4 lines of text
+    frame:SetSize(350, 90)  -- Base size, will be adjusted dynamically
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)
     frame:SetFrameStrata("HIGH")
     frame:SetFrameLevel(100)
     frame:Hide()
+    
+    -- Function to resize frame based on text content
+    frame.ResizeForContent = function(self, itemTypePart, petNamePart)
+        -- Calculate required width based on longest text line
+        local titleWidth = 220  -- "Vanity Item Acquired!" - roughly 180px, +40 buffer
+        local typeWidth = (itemTypePart and string.len(itemTypePart) * 7) or 0  -- Rough char width
+        local petWidth = (petNamePart and string.len(petNamePart) * 10) or 0    -- Larger font
+        local statsWidth = 200  -- "Beast - 2.9% after 35 attempts" - roughly 180px
+        
+        local maxTextWidth = math.max(titleWidth, typeWidth, petWidth, statsWidth)
+        local totalWidth = math.max(350, 80 + maxTextWidth)  -- 80px for icon + padding, min 350
+        local totalHeight = 90  -- Keep height consistent
+        
+        self:SetSize(totalWidth, totalHeight)
+        
+        -- Update text width for new frame size
+        local newTextWidth = totalWidth - 80  -- Account for icon + padding
+        return newTextWidth
+    end
     
     -- Custom background (solid with border, not stretched texture)
     local bg = frame:CreateTexture(nil, "BACKGROUND")
@@ -386,27 +405,22 @@ local function CreateCelebrationFrame()
     iconFrame:SetSize(48, 48)
     iconFrame:SetPoint("LEFT", frame, "LEFT", 15, 0)
     
-    -- Icon background
-    local iconBg = iconFrame:CreateTexture(nil, "BACKGROUND")
-    iconBg:SetAllPoints()
-    iconBg:SetColorTexture(0, 0, 0, 0.8)  -- Dark background for icon
-    
-    -- The actual icon
-    local icon = iconFrame:CreateTexture(nil, "ARTWORK")
-    icon:SetSize(42, 42)  -- Slightly smaller to leave room for border
-    icon:SetPoint("CENTER")
-    icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-    
-    -- Icon border (thin gold frame)
-    local iconBorder = iconFrame:CreateTexture(nil, "OVERLAY")
+    -- Icon border (behind the icon)
+    local iconBorder = iconFrame:CreateTexture(nil, "BACKGROUND")
     iconBorder:SetAllPoints()
     iconBorder:SetColorTexture(0.8, 0.6, 0, 1)  -- Gold border
     
-    -- Create a mask effect - border only on edges
-    local iconMask = iconFrame:CreateTexture(nil, "OVERLAY", nil, 1)  -- Higher sublevel
-    iconMask:SetPoint("TOPLEFT", 2, -2)
-    iconMask:SetPoint("BOTTOMRIGHT", -2, 2)
-    iconMask:SetColorTexture(0, 0, 0, 1)  -- Hide the center, show border
+    -- Icon background (behind the icon)
+    local iconBg = iconFrame:CreateTexture(nil, "BACKGROUND", nil, 1)
+    iconBg:SetPoint("TOPLEFT", 2, -2)
+    iconBg:SetPoint("BOTTOMRIGHT", -2, 2)
+    iconBg:SetColorTexture(0, 0, 0, 0.8)  -- Dark background for icon
+    
+    -- The actual icon (on top)
+    local icon = iconFrame:CreateTexture(nil, "ARTWORK")
+    icon:SetPoint("TOPLEFT", 3, -3)  -- Inset to show border
+    icon:SetPoint("BOTTOMRIGHT", -3, 3)
+    icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
     -- Text layout (optimized for custom frame)
@@ -524,21 +538,30 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
     local statusColor = {1, 1, 1}  -- White default
     
     if isAlreadyLearned then
-        statusText = "✓ DUPLICATE (Can Sell)"
+        statusText = "|TInterface\\RAIDFRAME\\ReadyCheck-NotReady:16|t DUPLICATE (Can Sell)"
         statusColor = {0.8, 0.8, 0.8}  -- Gray
     else
-        statusText = "★ NEW COLLECTION!"
+        statusText = "|TInterface\\RAIDFRAME\\ReadyCheck-Ready:16|t NEW COLLECTION!"
         statusColor = {0, 1, 0}  -- Green
     end
     
     -- Create/show celebration frame
     local frame = CreateCelebrationFrame()
+    
+    -- Resize frame based on text content before setting text
+    local newTextWidth = frame:ResizeForContent(itemTypePart, petNamePart)
+    
     frame.icon:SetTexture(itemTexture or "Interface\\Icons\\INV_Misc_QuestionMark")
     frame.itemType:SetText(itemTypePart .. (petNamePart ~= "" and ":" or ""))
     frame.petName:SetText(petNamePart)
     frame.statsText:SetText(statsLine)
     frame.statusText:SetText(statusText)
     frame.statusText:SetTextColor(statusColor[1], statusColor[2], statusColor[3])
+    
+    -- Update text widths for new frame size
+    frame.itemType:SetSize(newTextWidth, 0)
+    frame.petName:SetSize(newTextWidth, 0)
+    frame.statsText:SetSize(newTextWidth, 0)
     
     -- Show and animate
     frame.glow:SetAlpha(0)  -- Start transparent
