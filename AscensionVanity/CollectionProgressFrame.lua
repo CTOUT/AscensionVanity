@@ -22,20 +22,20 @@ progressFrame.expandedItems = {}  -- Stores FontStrings for expanded items
 -- Background (translucent dark overlay)
 local bg = progressFrame:CreateTexture(nil, "BACKGROUND")
 bg:SetAllPoints()
-bg:SetColorTexture(0.1, 0.1, 0.1, 0.7)  -- Dark gray with transparency instead of solid black
+bg:SetColorTexture(0.1, 0.1, 0.1, 0.5)  -- Dark gray with transparency instead of solid black
 
 -- Border (softer)
 local border = progressFrame:CreateTexture(nil, "BORDER")
 border:SetPoint("TOPLEFT", -1, 1)
 border:SetPoint("BOTTOMRIGHT", 1, -1)
-border:SetColorTexture(0.4, 0.4, 0.4, 0.8)  -- Lighter and slightly transparent
+border:SetColorTexture(0.4, 0.4, 0.4, 0.5)  -- Lighter and slightly transparent
 
 -- Header background (also more transparent)
 local headerBg = progressFrame:CreateTexture(nil, "ARTWORK")
 headerBg:SetHeight(24)
 headerBg:SetPoint("TOPLEFT", 1, -1)
 headerBg:SetPoint("TOPRIGHT", -1, -1)
-headerBg:SetColorTexture(0.15, 0.15, 0.15, 0.8)  -- Slightly lighter and more transparent
+headerBg:SetColorTexture(0.15, 0.15, 0.15, 0.5)  -- Slightly lighter and more transparent
 
 -- Title
 local title = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
@@ -314,14 +314,14 @@ local function CreateProgressBar(parent, label, anchor, yOffset)
     bg:SetHeight(18)
     bg:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 8, yOffset)
     bg:SetPoint("TOPRIGHT", anchor, "BOTTOMRIGHT", -8, yOffset)
-    bg:SetColorTexture(0.15, 0.15, 0.15, 0.9)
+    bg:SetColorTexture(0.15, 0.15, 0.15, 0.5)
     
     -- Bar fill (progress indicator)
     local fill = parent:CreateTexture(nil, "ARTWORK")
     fill:SetHeight(16)
     fill:SetPoint("TOPLEFT", bg, "TOPLEFT", 1, -1)
     fill:SetWidth(1)  -- Will be updated dynamically
-    fill:SetColorTexture(0.2, 0.6, 0.2, 1)  -- Green by default
+    fill:SetColorTexture(0.2, 0.6, 0.2, 0.5)  -- Green by default
     
     -- Bar text (category name + progress)
     local text = parent:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
@@ -341,15 +341,15 @@ local function CreateProgressBar(parent, label, anchor, yOffset)
             
             -- Color code based on completion
             if percent >= 1.0 then
-                self.fill:SetColorTexture(0.2, 0.8, 0.2, 1)  -- Bright green (100%)
+                self.fill:SetColorTexture(0.2, 0.8, 0.2, 0.5)  -- Bright green (100%)
             elseif percent >= 0.75 then
-                self.fill:SetColorTexture(0.4, 0.7, 0.3, 1)  -- Yellow-green (75%+)
+                self.fill:SetColorTexture(0.4, 0.7, 0.3, 0.5)  -- Yellow-green (75%+)
             elseif percent >= 0.5 then
-                self.fill:SetColorTexture(0.8, 0.8, 0.2, 1)  -- Yellow (50%+)
+                self.fill:SetColorTexture(0.8, 0.8, 0.2, 0.5)  -- Yellow (50%+)
             elseif percent >= 0.25 then
-                self.fill:SetColorTexture(0.9, 0.6, 0.2, 1)  -- Orange (25%+)
+                self.fill:SetColorTexture(0.9, 0.6, 0.2, 0.5)  -- Orange (25%+)
             else
-                self.fill:SetColorTexture(0.8, 0.2, 0.2, 1)  -- Red (< 25%)
+                self.fill:SetColorTexture(0.8, 0.2, 0.2, 0.5)  -- Red (< 25%)
             end
             
             -- Update text
@@ -1092,13 +1092,13 @@ UpdateProgressBars = function(skipRefresh)
                 -- Create new bar dynamically
                 local bg = progressFrame:CreateTexture(nil, "BACKGROUND")
                 bg:SetHeight(18)
-                bg:SetColorTexture(0.15, 0.15, 0.15, 0.9)
+                bg:SetColorTexture(0.15, 0.15, 0.15, 0.5)
                 
                 local fill = progressFrame:CreateTexture(nil, "ARTWORK")
                 fill:SetHeight(16)
                 fill:SetPoint("TOPLEFT", bg, "TOPLEFT", 1, -1)
                 fill:SetWidth(1)
-                fill:SetColorTexture(0.2, 0.6, 0.2, 1)
+                fill:SetColorTexture(0.2, 0.6, 0.2, 0.5)
                 
                 local text = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
                 text:SetPoint("LEFT", bg, "LEFT", 22, 0)
@@ -1135,15 +1135,15 @@ UpdateProgressBars = function(skipRefresh)
                         self.fill:SetWidth(math.max(1, width * percent))
                         
                         if percent >= 1.0 then
-                            self.fill:SetColorTexture(0.2, 0.8, 0.2, 1)
+                            self.fill:SetColorTexture(0.2, 0.8, 0.2, 0.5)
                         elseif percent >= 0.75 then
-                            self.fill:SetColorTexture(0.4, 0.7, 0.3, 1)
+                            self.fill:SetColorTexture(0.4, 0.7, 0.3, 0.5)
                         elseif percent >= 0.5 then
-                            self.fill:SetColorTexture(0.8, 0.8, 0.2, 1)
+                            self.fill:SetColorTexture(0.8, 0.8, 0.2, 0.5)
                         elseif percent >= 0.25 then
-                            self.fill:SetColorTexture(0.9, 0.6, 0.2, 1)
+                            self.fill:SetColorTexture(0.9, 0.6, 0.2, 0.5)
                         else
-                            self.fill:SetColorTexture(0.8, 0.2, 0.2, 1)
+                            self.fill:SetColorTexture(0.8, 0.2, 0.2, 0.5)
                         end
                         
                         self.text:SetText(string.format("%s: %d/%d (%.1f%%)", self.label, learned, total, percent * 100))
