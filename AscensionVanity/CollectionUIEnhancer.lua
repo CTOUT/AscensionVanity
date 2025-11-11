@@ -102,12 +102,12 @@ local function FormatStatsText(creatureID, itemName)
         
         if #lines > 0 then
             return AV_COLOR_BLUE .. table.concat(lines, " | ") .. AV_COLOR_RESET .. "\n" ..
-                   AV_COLOR_GRAY .. "(Stats from when you last summoned this pet)" .. AV_COLOR_RESET
+                   AV_COLOR_GRAY .. "(Baseline stats - out of combat)" .. AV_COLOR_RESET
         end
     end
     
     -- No cached stats - show helpful message
-    return AV_COLOR_GRAY .. "Summon this pet to see its combat stats\n" ..
+    return AV_COLOR_GRAY .. "Summon this pet out of combat to see baseline stats\n" ..
            "Stats will be cached for future previews" .. AV_COLOR_RESET
 end
 
@@ -209,6 +209,12 @@ function AV_CacheCreatureStats(creatureID, unit)
         return
     end
     
+    -- Only cache baseline stats (out of combat)
+    -- In-combat stats can be skewed by buffs, debuffs, and temporary effects
+    if UnitAffectingCombat("player") or UnitAffectingCombat(unit) then
+        return  -- Skip caching during combat
+    end
+    
     -- Initialize cache
     if not AV_CreatureStatsCache then
         AV_CreatureStatsCache = {}
@@ -219,7 +225,8 @@ function AV_CacheCreatureStats(creatureID, unit)
         health = UnitHealthMax(unit),
         attackSpeed = UnitAttackSpeed(unit),
         armor = UnitArmor(unit),
-        timestamp = time()
+        timestamp = time(),
+        sampleType = "baseline"  -- Mark as clean, out-of-combat data
     }
     
     -- Capture damage

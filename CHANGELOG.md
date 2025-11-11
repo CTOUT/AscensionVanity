@@ -19,10 +19,13 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - **Smart Filtering**: Show stats for "All Creatures", "Vanity Drop Creatures Only", "Tameable Beasts Only", or "Vanity + Tameable"
   - **Player Pet Support**: Always shows stats for your own summoned combat pets
   - **Auto-Caching System**: Stats cached when you mouse over creatures, persists between sessions
+    - **Baseline Stats Only**: Only caches stats out of combat (Phase 1 - November 11, 2025)
+    - Prevents skewed stats from combat buffs, debuffs, and temporary effects
+    - Ensures fair comparison across all pets (apples to apples)
   - **Collection UI Integration**: Shows cached stats when previewing pets in Vanity Collection UI
     - Works with both small preview (left) and large preview (right)
-    - Displays: "Stats from when you last summoned this pet"
-    - Helpful message for uncached pets: "Summon to see stats"
+    - Displays: "Baseline stats - out of combat"
+    - Helpful message for uncached pets: "Summon out of combat to see baseline stats"
   - **New Module**: `CollectionUIEnhancer.lua` - Monitors and enhances Ascension's Vanity Collection interface
   - **Configurable**: Dropdown in Settings UI to control when stats appear
 
