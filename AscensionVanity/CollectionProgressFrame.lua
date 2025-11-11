@@ -932,7 +932,7 @@ local function ResizeFrame()
     local totalHeight = headerHeight + buttonBarHeight
     
     -- Calculate required width
-    local minWidth = 240  -- Minimum for buttons: Zone, Subzones, All, Details
+    local minWidth = 280  -- Increased to properly fit all 4 buttons (Zone, Creatures, All, Details)
     local statsWidth = 380  -- Width needed when showing stats columns
     local hasAnyStats = false
     
