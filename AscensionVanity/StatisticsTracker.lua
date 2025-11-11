@@ -351,9 +351,9 @@ local celebrationFrame = nil
 local function CreateCelebrationFrame()
     if celebrationFrame then return celebrationFrame end
     
-    -- Main frame (larger to fit all text on two lines)
+    -- Main frame (taller & narrower for better text fit)
     local frame = CreateFrame("Frame", "AV_CelebrationFrame", UIParent)
-    frame:SetSize(420, 120)  -- Increased height to 120 for two-line text
+    frame:SetSize(320, 140)  -- Much narrower width (420→320), taller (120→140)
     frame:SetPoint("TOP", UIParent, "TOP", 0, -120)  -- Slightly higher on screen
     frame:SetFrameStrata("HIGH")
     frame:SetFrameLevel(100)
@@ -373,10 +373,10 @@ local function CreateCelebrationFrame()
     glow:SetBlendMode("ADD")
     glow:SetAlpha(0)
     
-    -- Icon frame (larger)
+    -- Icon frame (smaller for narrower layout)
     local iconFrame = CreateFrame("Frame", nil, frame)
-    iconFrame:SetSize(64, 64)  -- Increased from 52x52
-    iconFrame:SetPoint("LEFT", frame, "LEFT", 12, 0)
+    iconFrame:SetSize(56, 56)  -- Slightly smaller to fit narrower frame
+    iconFrame:SetPoint("LEFT", frame, "LEFT", 10, 0)  -- Less left padding
     
     -- Icon border
     local iconBorder = iconFrame:CreateTexture(nil, "OVERLAY")
@@ -384,38 +384,38 @@ local function CreateCelebrationFrame()
     iconBorder:SetTexture("Interface\\AchievementFrame\\UI-Achievement-IconFrame")
     iconBorder:SetTexCoord(0, 0.5625, 0, 0.5625)
     
-    -- Icon texture (larger)
+    -- Icon texture (sized to match frame)
     local icon = iconFrame:CreateTexture(nil, "ARTWORK")
-    icon:SetSize(54, 54)  -- Increased from 42x42
+    icon:SetSize(48, 48)  -- Smaller to fit in narrower layout
     icon:SetPoint("CENTER")
     icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
-    -- Title text (larger font)
+    -- Title text (adjusted for narrower frame)
     local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", iconFrame, "TOPRIGHT", 12, -8)
-    title:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -8)
+    title:SetPoint("TOPLEFT", iconFrame, "TOPRIGHT", 8, -6)  -- Less gap, higher position
+    title:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -6)  -- Less right padding
     title:SetJustifyH("LEFT")
     title:SetTextColor(1, 1, 0)  -- Yellow
     title:SetText("Vanity Item Acquired!")
     
     -- Item type (first line - e.g., "Beastmaster's Whistle:")
-    local itemType = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    itemType:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
-    itemType:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
+    local itemType = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")  -- Smaller font for fit
+    itemType:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -3)  -- Tighter spacing
+    itemType:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -3)
     itemType:SetJustifyH("LEFT")
     itemType:SetTextColor(1, 0.82, 0)  -- Gold
     
     -- Pet name (second line - e.g., "Highland Thrasher")
-    local petName = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalHuge")
+    local petName = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")  -- Smaller than Huge
     petName:SetPoint("TOPLEFT", itemType, "BOTTOMLEFT", 0, -2)
-    petName:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -2)
+    petName:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -2)
     petName:SetJustifyH("LEFT")
     petName:SetTextColor(1, 1, 1)  -- White
     
-    -- Stats text (slightly larger)
-    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    statsText:SetPoint("TOPLEFT", petName, "BOTTOMLEFT", 0, -4)
-    statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -12, -4)
+    -- Stats text (compact)
+    local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")  -- Smaller font
+    statsText:SetPoint("TOPLEFT", petName, "BOTTOMLEFT", 0, -3)  -- Tighter spacing
+    statsText:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -8, -3)
     statsText:SetJustifyH("LEFT")
     statsText:SetTextColor(0.8, 0.8, 0.8)
     
