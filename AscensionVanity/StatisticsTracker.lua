@@ -386,21 +386,27 @@ local function CreateCelebrationFrame()
     iconFrame:SetSize(48, 48)
     iconFrame:SetPoint("LEFT", frame, "LEFT", 15, 0)
     
-    -- Icon with simple border
+    -- Icon background
+    local iconBg = iconFrame:CreateTexture(nil, "BACKGROUND")
+    iconBg:SetAllPoints()
+    iconBg:SetColorTexture(0, 0, 0, 0.8)  -- Dark background for icon
+    
+    -- The actual icon
     local icon = iconFrame:CreateTexture(nil, "ARTWORK")
-    icon:SetSize(44, 44)
+    icon:SetSize(42, 42)  -- Slightly smaller to leave room for border
     icon:SetPoint("CENTER")
     icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
-    -- Icon border
+    -- Icon border (thin gold frame)
     local iconBorder = iconFrame:CreateTexture(nil, "OVERLAY")
     iconBorder:SetAllPoints()
     iconBorder:SetColorTexture(0.8, 0.6, 0, 1)  -- Gold border
     
-    local iconBg = iconFrame:CreateTexture(nil, "BACKGROUND")
-    iconBg:SetPoint("TOPLEFT", 2, -2)
-    iconBg:SetPoint("BOTTOMRIGHT", -2, 2)
-    iconBg:SetColorTexture(0, 0, 0, 0.8)  -- Dark background for icon
+    -- Create a mask effect - border only on edges
+    local iconMask = iconFrame:CreateTexture(nil, "OVERLAY", nil, 1)  -- Higher sublevel
+    iconMask:SetPoint("TOPLEFT", 2, -2)
+    iconMask:SetPoint("BOTTOMRIGHT", -2, 2)
+    iconMask:SetColorTexture(0, 0, 0, 1)  -- Hide the center, show border
     icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     
     -- Text layout (optimized for custom frame)
@@ -429,12 +435,17 @@ local function CreateCelebrationFrame()
     petName:SetJustifyH("LEFT")
     petName:SetTextColor(1, 1, 1)  -- White
     
-    -- Stats line
+    -- Stats line with collection status
     local statsText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     statsText:SetPoint("TOPLEFT", petName, "BOTTOMLEFT", 0, -2)
     statsText:SetSize(textWidth, 0)
     statsText:SetJustifyH("LEFT")
     statsText:SetTextColor(0.8, 0.8, 0.8)  -- Light gray
+    
+    -- Collection status indicator (NEW vs DUPLICATE)
+    local statusText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    statusText:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -10, 8)
+    statusText:SetJustifyH("RIGHT")
     
     -- Store references
     frame.glow = glow
@@ -443,6 +454,7 @@ local function CreateCelebrationFrame()
     frame.itemType = itemType
     frame.petName = petName
     frame.statsText = statsText
+    frame.statusText = statusText
     
     -- Animation groups for glow (WOTLK 3.3.5 compatible) - slower animations
     frame.glowAnimIn = glow:CreateAnimationGroup()
@@ -506,12 +518,27 @@ function statsFrame:CelebrateDrop(creatureId, itemId, stats)
         petNamePart = ""
     end
     
+    -- Check if item is already learned (duplicate = can sell)
+    local isAlreadyLearned = AV_IsVanityItemLearned and AV_IsVanityItemLearned(itemId, itemName)
+    local statusText = ""
+    local statusColor = {1, 1, 1}  -- White default
+    
+    if isAlreadyLearned then
+        statusText = "✓ DUPLICATE (Can Sell)"
+        statusColor = {0.8, 0.8, 0.8}  -- Gray
+    else
+        statusText = "★ NEW COLLECTION!"
+        statusColor = {0, 1, 0}  -- Green
+    end
+    
     -- Create/show celebration frame
     local frame = CreateCelebrationFrame()
     frame.icon:SetTexture(itemTexture or "Interface\\Icons\\INV_Misc_QuestionMark")
     frame.itemType:SetText(itemTypePart .. (petNamePart ~= "" and ":" or ""))
     frame.petName:SetText(petNamePart)
     frame.statsText:SetText(statsLine)
+    frame.statusText:SetText(statusText)
+    frame.statusText:SetTextColor(statusColor[1], statusColor[2], statusColor[3])
     
     -- Show and animate
     frame.glow:SetAlpha(0)  -- Start transparent
