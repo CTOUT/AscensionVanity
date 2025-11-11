@@ -19,23 +19,23 @@ progressFrame:SetFrameLevel(10)
 -- Storage for expanded item lists
 progressFrame.expandedItems = {}  -- Stores FontStrings for expanded items
 
--- Background
+-- Background (translucent dark overlay)
 local bg = progressFrame:CreateTexture(nil, "BACKGROUND")
 bg:SetAllPoints()
-bg:SetColorTexture(0, 0, 0, 0.6)  -- Reduced opacity from 0.8 to 0.6 for more transparency
+bg:SetColorTexture(0.1, 0.1, 0.1, 0.7)  -- Dark gray with transparency instead of solid black
 
--- Border
+-- Border (softer)
 local border = progressFrame:CreateTexture(nil, "BORDER")
 border:SetPoint("TOPLEFT", -1, 1)
 border:SetPoint("BOTTOMRIGHT", 1, -1)
-border:SetColorTexture(0.3, 0.3, 0.3, 1)
+border:SetColorTexture(0.4, 0.4, 0.4, 0.8)  -- Lighter and slightly transparent
 
--- Header background
+-- Header background (also more transparent)
 local headerBg = progressFrame:CreateTexture(nil, "ARTWORK")
 headerBg:SetHeight(24)
 headerBg:SetPoint("TOPLEFT", 1, -1)
 headerBg:SetPoint("TOPRIGHT", -1, -1)
-headerBg:SetColorTexture(0.1, 0.1, 0.1, 0.9)
+headerBg:SetColorTexture(0.15, 0.15, 0.15, 0.8)  -- Slightly lighter and more transparent
 
 -- Title
 local title = progressFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
