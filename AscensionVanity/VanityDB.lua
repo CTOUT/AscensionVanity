@@ -1,8 +1,8 @@
 -- AscensionVanity Full Database v2.2
--- Generated: 2025-11-12 20:36:47
+-- Generated: 2025-11-12 21:04:45
 -- Total Items: 2355
--- Source Scan: Ascension 2025-11-08 @ 10:03:28 GMT Not Available
--- Scan Date: 2025-11-09 11:07:37
+-- Source Scan: Ascension 2025-11-11 @ 23:29:34 GMT Not Available
+-- Scan Date: 2025-11-12 19:51:26
 -- 
 -- Database Structure:
 --   AV_IconList: Deduplicated icon paths referenced by index
@@ -32,9 +32,9 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-12 20:36:47",
-    ascensionVersion = "2025-11-08 @ 10:03:28 GMT Not Available",
-    scanDate = "2025-11-09 11:07:37",
+    generatedDate = "2025-11-12 21:04:45",
+    ascensionVersion = "2025-11-11 @ 23:29:34 GMT Not Available",
+    scanDate = "2025-11-12 19:51:26",
     totalItems = 2355,
     schemaVersion = "2.2",
     questLockedCount = 13
