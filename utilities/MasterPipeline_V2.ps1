@@ -314,24 +314,25 @@ function Invoke-EnrichStep {
 # ============================================================================
 
 function Invoke-GenerateStep {
-    Write-Step "4" "Generate VanityDB.lua"
+    Write-Step "4" "Generate VanityDB.lua (to temp location)"
     
     if ($DryRun) {
         Write-Info "[DRY RUN] Would generate VanityDB.lua"
         return
     }
     
-    Write-Info "Running GenerateVanityDB_Master.ps1..."
-    & "$PSScriptRoot\GenerateVanityDB_Master.ps1"
+    # Generate to temporary location first
+    $tempVanityDB = Join-Path $PSScriptRoot '..\data\VanityDB_NEW.lua'
+    Write-Info "Generating to temporary location: $tempVanityDB"
+    & "$PSScriptRoot\GenerateVanityDB_Master.ps1" -OutputDB $tempVanityDB
     
-    # Validate output file instead of exit code
-    $vanityDB = Join-Path $PSScriptRoot '..\AscensionVanity\VanityDB.lua'
-    if (-not (Test-FileExists $vanityDB "VanityDB.lua")) {
+    # Validate output file
+    if (-not (Test-FileExists $tempVanityDB "VanityDB_NEW.lua")) {
         throw "Generation did not produce expected output file"
     }
     
     # Check for zone data in output
-    $content = Get-Content $vanityDB -Raw
+    $content = Get-Content $tempVanityDB -Raw
     if ($content -match 'zone\s*=\s*"') {
         Write-Success "VanityDB.lua generated with zone data"
     } else {
@@ -340,18 +341,79 @@ function Invoke-GenerateStep {
 }
 
 # ============================================================================
-# STEP 5: DEPLOY TO WOW
+# STEP 5: VALIDATE & DEPLOY VANITYDB.LUA
+# ============================================================================
+
+function Invoke-ValidateStep {
+    Write-Step "5" "Validate & Deploy VanityDB.lua"
+    
+    $deployedDB = Join-Path $PSScriptRoot '..\AscensionVanity\VanityDB.lua'
+    $newDB = Join-Path $PSScriptRoot '..\data\VanityDB_NEW.lua'
+    
+    # Check if we have an old version to compare against
+    if (-not (Test-Path $deployedDB)) {
+        Write-Warning "No existing VanityDB.lua found - deploying without validation (first-time generation)"
+        if (-not $DryRun) {
+            Copy-Item $newDB $deployedDB -Force
+            Write-Success "VanityDB.lua deployed"
+        }
+        return
+    }
+    
+    if ($DryRun) {
+        Write-Info "[DRY RUN] Would validate and deploy VanityDB.lua"
+        return
+    }
+    
+    Write-Info "Comparing new version against deployed version..."
+    Write-Info "This ensures data quality before deployment"
+    Write-Host ""
+    
+    # Run validation script
+    $validateScript = Join-Path $PSScriptRoot 'ValidateVanityDB.ps1'
+    & $validateScript -OldDB $deployedDB -NewDB $newDB
+    
+    if ($LASTEXITCODE -eq 0) {
+        Write-Success "Validation PASSED - deploying new VanityDB.lua"
+        Copy-Item $newDB $deployedDB -Force
+        Write-Success "VanityDB.lua deployed to: $deployedDB"
+    } elseif ($LASTEXITCODE -eq 2) {
+        Write-Warning "Validation passed with WARNINGS - review above before proceeding"
+        
+        # Prompt user
+        Write-Host ""
+        $response = Read-Host "Deploy anyway? (Y/n)"
+        if ($response -eq 'n' -or $response -eq 'N') {
+            Write-Host "New VanityDB.lua saved to: $newDB" -ForegroundColor Yellow
+            Write-Host "To deploy manually: Copy-Item '$newDB' '$deployedDB' -Force" -ForegroundColor Gray
+            throw "Deployment cancelled by user"
+        }
+        # User said yes - deploy
+        Copy-Item $newDB $deployedDB -Force
+        Write-Success "VanityDB.lua deployed to: $deployedDB"
+    } else {
+        Write-Error "Validation FAILED - deployment blocked"
+        Write-Host "New VanityDB.lua saved to: $newDB" -ForegroundColor Yellow
+        Write-Host "Review the validation report above and fix issues before deploying" -ForegroundColor Yellow
+        throw "Validation failed - deployment blocked"
+    }
+    
+    Write-Host ""
+}
+
+# ============================================================================
+# STEP 6: DEPLOY TO WOW
 # ============================================================================
 
 function Invoke-DeployStep {
     param([string]$WoWPath)
     
     if ($SkipDeploy -or -not $WoWPath) {
-        Write-Step "5" "Deploy to WoW - SKIPPED"
+        Write-Step "6" "Deploy to WoW - SKIPPED"
         return
     }
     
-    Write-Step "5" "Deploy to WoW"
+    Write-Step "6" "Deploy to WoW"
     
     if ($DryRun) {
         Write-Info "[DRY RUN] Would deploy to: $WoWPath"
@@ -421,7 +483,10 @@ try {
     # Step 4: Generate
     Invoke-GenerateStep
     
-    # Step 5: Deploy (optional)
+    # Step 5: Validate
+    Invoke-ValidateStep
+    
+    # Step 6: Deploy (optional)
     Invoke-DeployStep -WoWPath $WoWPath
     
     # Summary

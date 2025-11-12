@@ -1,8 +1,8 @@
 -- AscensionVanity Full Database v2.2
--- Generated: 2025-11-07 16:26:42
+-- Generated: 2025-11-12 20:36:47
 -- Total Items: 2355
--- Source Scan: Ascension 2025-11-07 @ 06:00:59 GMT Not Available
--- Scan Date: 2025-11-07 07:40:59
+-- Source Scan: Ascension 2025-11-08 @ 10:03:28 GMT Not Available
+-- Scan Date: 2025-11-09 11:07:37
 -- 
 -- Database Structure:
 --   AV_IconList: Deduplicated icon paths referenced by index
@@ -32,9 +32,9 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-07 16:26:42",
-    ascensionVersion = "2025-11-07 @ 06:00:59 GMT Not Available",
-    scanDate = "2025-11-07 07:40:59",
+    generatedDate = "2025-11-12 20:36:47",
+    ascensionVersion = "2025-11-08 @ 10:03:28 GMT Not Available",
+    scanDate = "2025-11-09 11:07:37",
     totalItems = 2355,
     schemaVersion = "2.2",
     questLockedCount = 13
@@ -1858,9 +1858,8 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Elder Gray Bear",
         creaturePreview = 2356,
         creatureId = 2356,
-        description = "Has a chance to drop from Elder Gray Bear within Hillsbrad Foothills.",
-        zone = "Hillsbrad Foothills",
-        subzone = "Nethander Stead",
+        description = "Has a chance to drop from Elder Gray Bear within Thoradin's Wall.",
+        zone = "Thoradin's Wall",
         icon = 1
     },
     [79537] = {

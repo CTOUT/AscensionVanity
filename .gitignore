@@ -40,6 +40,7 @@ data/*_Analysis.json
 data/*_Validated.json
 data/MasterFullValidated.json
 data/VanityDB.lua
+data/VanityDB_NEW.lua
 
 # But KEEP corrections and documentation (version controlled)
 !data/corrections/
