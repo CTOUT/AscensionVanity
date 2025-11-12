@@ -43,6 +43,18 @@ All notable changes to the AscensionVanity project will be documented in this fi
   - Integrated with celebration and tooltip systems
   - Color-coded status indicators
 
+- **Pre-Deployment Validation System** 🛡️ (November 12, 2025)
+  - **Validation Before Deployment**: Database changes validated against deployed version before replacing
+  - **Safety Checks**: Item count comparison, category breakdown, enrichment coverage, data quality
+  - **Change Detection**: Reports items added/removed with detailed diff
+  - **Smart Exit Codes**: 
+    - 0 = PASS (auto-deploy)
+    - 1 = FAIL (block deployment - >10% loss, missing fields, duplicates)
+    - 2 = WARN (prompt user - 5-10% loss, minor issues)
+  - **Temp File Workflow**: Generates to `data/VanityDB_NEW.lua` → validates → deploys only if passing
+  - **Integrated in Pipeline**: `MasterPipeline_V2.ps1` now includes validation as Step 5
+  - **Prevents Regressions**: Catches data loss, corruption, or quality issues before they reach production
+
 ### Changed
 - **Tooltip Performance Optimization**: Removed `GetItemInfo()` server calls for instant display
   - No more "Loading..." delays when hovering over creatures
