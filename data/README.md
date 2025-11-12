@@ -50,9 +50,23 @@ data/
 
 ### Full Pipeline (After Fresh Scan)
 ```powershell
-# Run the master pipeline
-.\utilities\MasterPipeline.ps1
+# Run the master pipeline (includes validation)
+.\utilities\MasterPipeline_V2.ps1
 ```
+
+**Pipeline Steps:**
+1. Import fresh scan from SavedVariables
+2. Normalize descriptions (fix formatting)
+3. Enrich zone data (extract from descriptions)
+4. **Generate VanityDB.lua to temp location** (`data/VanityDB_NEW.lua`)
+5. **Validate against deployed version** (comparison report)
+6. **Deploy only if validation passes** (automatic copy to addon folder)
+
+**Validation Safety:**
+- ✅ Blocks deployment if critical issues detected (>10% item loss, missing fields)
+- ⚠️ Prompts user for warnings (5-10% loss, minor issues)
+- 📊 Detailed report showing changes (items added/removed, enrichment coverage)
+- 💾 Preserves temp file on failure for manual review
 
 ### Adding a Correction
 1. **Never edit** `sources/API_to_GameID_Mapping.json`
