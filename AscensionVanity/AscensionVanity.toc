@@ -22,7 +22,7 @@ VanityDB_Loader.lua
 APIScanner.lua
 
 # User Interface (settings and scanner panels)
-SettingsUI.lua
+SettingsUI_Tabbed.lua
 ScannerUI.lua
 
 # Collection Progress Frame (v2.2+ standalone progress display)
