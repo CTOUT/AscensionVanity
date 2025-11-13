@@ -11,8 +11,9 @@ local VERSION = AV_VERSION
 
 -- Create the main settings panel
 local settingsPanel = CreateFrame("Frame", "AscensionVanitySettingsPanel", UIParent)
-settingsPanel:SetSize(750, 720)  -- Extended height for horizontal button layout at bottom
+settingsPanel:SetSize(700, 680)  -- Much more compact - removed button descriptions, tighter spacing
 settingsPanel:SetPoint("CENTER")
+settingsPanel:SetScale(1.0)  -- Back to normal scale for readability
 settingsPanel:SetFrameStrata("DIALOG")  -- Higher strata to prevent overlap
 settingsPanel:SetBackdrop({
     bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -154,14 +155,22 @@ local showKillStatsCheckbox = CreateCheckbox(
 -- Note: "Show Item/Creature IDs" removed - use built-in WoW option instead
 -- (Interface -> Display -> Show IDs in Tooltips)
 
+-- Separator before Creature Stats section
+local separatorCreatureStats = settingsPanel:CreateTexture(nil, "ARTWORK")
+separatorCreatureStats:SetHeight(1)
+separatorCreatureStats:SetPoint("TOP", questWarningsCheckbox, "BOTTOM", 0, -12)  -- Tighter spacing (was -16)
+separatorCreatureStats:SetPoint("LEFT", 30, 0)
+separatorCreatureStats:SetPoint("RIGHT", -30, 0)
+separatorCreatureStats:SetColorTexture(0.25, 0.25, 0.25, 1)
+
 -- Show Creature Info Checkbox (v2.3 Phase 2A - Master Toggle)
 local showCreatureInfoCheckbox = CreateCheckbox(
     settingsPanel,
     "Show Creature Stats",
     "Display enhanced creature information in tooltips.\n\n" .. AV_COLOR_BLUE .. "[Creature Stats]" .. AV_COLOR_RESET .. "\n- Level and classification\n- Health, attack speed, damage\n- Creature type and family\n\nUse the dropdown below to control which creatures show stats.",
-    questWarningsCheckbox,  -- Anchor to questWarningsCheckbox (left column)
-    0,  -- Left column x-offset
-    -15
+    separatorCreatureStats,  -- Anchor to separator (better spacing)
+    30,  -- Indent from left edge
+    -10  -- Tighter spacing (was -12)
 )
 
 -- Creature Info Filter Label (v2.3 Phase 2A)
@@ -199,11 +208,74 @@ UIDropDownMenu_Initialize(creatureInfoDropdown, function(self, level)
     end
 end)
 
+-- Individual Stat Checkboxes (v2.3 Phase 2A - Horizontal compact layout)
+-- Positioned below dropdown in a single row to save vertical space
+-- Use absolute positioning for perfect alignment
+local statCheckboxY = -35  -- Y offset from dropdown
+local statCheckboxBaseX = 12  -- Starting X position
+
+local showAttackSpeedCheckbox = CreateCheckbox(
+    settingsPanel,
+    "Attack Speed",
+    "Show creature attack speed in stats line",
+    creatureInfoDropdown,
+    statCheckboxBaseX,
+    statCheckboxY
+)
+
+-- Health - use LEFT anchor with TOP constraint for alignment
+local showHealthCheckbox = CreateFrame("CheckButton", nil, settingsPanel, "UICheckButtonTemplate")
+showHealthCheckbox:SetPoint("TOPLEFT", creatureInfoDropdown, "BOTTOMLEFT", statCheckboxBaseX + 125, statCheckboxY)
+local healthLabel = showHealthCheckbox:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+healthLabel:SetPoint("LEFT", showHealthCheckbox, "RIGHT", 5, 0)
+healthLabel:SetText("Health")
+showHealthCheckbox.label = healthLabel
+showHealthCheckbox:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:SetText("Show creature maximum health in stats line", nil, nil, nil, nil, true)
+    GameTooltip:Show()
+end)
+showHealthCheckbox:SetScript("OnLeave", function(self)
+    GameTooltip:Hide()
+end)
+
+-- Damage - aligned to same Y
+local showDamageCheckbox = CreateFrame("CheckButton", nil, settingsPanel, "UICheckButtonTemplate")
+showDamageCheckbox:SetPoint("TOPLEFT", creatureInfoDropdown, "BOTTOMLEFT", statCheckboxBaseX + 215, statCheckboxY)
+local damageLabel = showDamageCheckbox:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+damageLabel:SetPoint("LEFT", showDamageCheckbox, "RIGHT", 5, 0)
+damageLabel:SetText("Damage")
+showDamageCheckbox.label = damageLabel
+showDamageCheckbox:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:SetText("Show creature damage range in stats line", nil, nil, nil, nil, true)
+    GameTooltip:Show()
+end)
+showDamageCheckbox:SetScript("OnLeave", function(self)
+    GameTooltip:Hide()
+end)
+
+-- Armor - aligned to same Y
+local showArmorCheckbox = CreateFrame("CheckButton", nil, settingsPanel, "UICheckButtonTemplate")
+showArmorCheckbox:SetPoint("TOPLEFT", creatureInfoDropdown, "BOTTOMLEFT", statCheckboxBaseX + 305, statCheckboxY)
+local armorLabel = showArmorCheckbox:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+armorLabel:SetPoint("LEFT", showArmorCheckbox, "RIGHT", 5, 0)
+armorLabel:SetText("Armor")
+showArmorCheckbox.label = armorLabel
+showArmorCheckbox:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:SetText("Show creature armor value in stats line", nil, nil, nil, nil, true)
+    GameTooltip:Show()
+end)
+showArmorCheckbox:SetScript("OnLeave", function(self)
+    GameTooltip:Hide()
+end)
+
 -- Separator before category filters
--- Anchor below dropdown (left column: learned, questWarnings, creatureInfo dropdown)
+-- Anchor below stat checkboxes (increased spacing from -10 to -15 for clarity)
 local separatorCategories = settingsPanel:CreateTexture(nil, "ARTWORK")
 separatorCategories:SetHeight(1)
-separatorCategories:SetPoint("TOP", creatureInfoDropdown, "BOTTOM", 15, -10)  -- Dropdown is lowest
+separatorCategories:SetPoint("TOP", showAttackSpeedCheckbox, "BOTTOM", 0, -15)  -- Below stat checkboxes
 separatorCategories:SetPoint("LEFT", 30, 0)
 separatorCategories:SetPoint("RIGHT", -30, 0)
 separatorCategories:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -452,7 +524,7 @@ end)
 -- Both columns have 3 items, so use either as anchor
 local separator2 = settingsPanel:CreateTexture(nil, "ARTWORK")
 separator2:SetHeight(1)
-separator2:SetPoint("TOP", combatRadios.hide, "BOTTOM", 0, -16)
+separator2:SetPoint("TOP", combatRadios.hide, "BOTTOM", 0, -12)  -- Tighter spacing (was -16)
 separator2:SetPoint("LEFT", 30, 0)
 separator2:SetPoint("RIGHT", -30, 0)
 separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
@@ -464,7 +536,7 @@ separator2:SetColorTexture(0.25, 0.25, 0.25, 1)
 -- Bottom buttons (horizontal layout)
 -- Collection Progress button (left) - toggles the frame on/off
 local progressButton = CreateFrame("Button", nil, settingsPanel, "UIPanelButtonTemplate")
-progressButton:SetPoint("TOP", separator2, "BOTTOM", -240, -16)
+progressButton:SetPoint("TOP", separator2, "BOTTOM", -240, -12)  -- Tighter spacing (was -16)
 progressButton:SetSize(220, 30)
 progressButton:SetText("Collection Progress")
 progressButton:SetScript("OnClick", function()
@@ -495,24 +567,7 @@ scannerButton:SetScript("OnClick", function()
     AscensionVanity_ShowScanner()
 end)
 
--- Button descriptions (below buttons, horizontal)
-local progressDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-progressDesc:SetPoint("TOP", progressButton, "BOTTOM", 0, -4)
-progressDesc:SetWidth(220)
-progressDesc:SetText(AV_COLOR_GRAY .. "Track your collection progress" .. AV_COLOR_RESET)
-
-local browserDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-browserDesc:SetPoint("TOP", browserButton, "BOTTOM", 0, -4)
-browserDesc:SetWidth(220)
-browserDesc:SetText(AV_COLOR_GRAY .. "Database & hunting guide" .. AV_COLOR_RESET)
-
-local scannerDesc = settingsPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-scannerDesc:SetPoint("TOP", scannerButton, "BOTTOM", 0, -4)
-scannerDesc:SetWidth(220)
-scannerDesc:SetText(AV_COLOR_GRAY .. "Developer tool" .. AV_COLOR_RESET)
-
--- Footer separator removed - no longer needed since we removed the auto-save notice
--- (Auto-saving is standard behavior, no need to announce it)
+-- Note: Button descriptions removed for space savings - button text is self-explanatory
 
 -- ============================================================================
 -- Settings Management
@@ -529,8 +584,23 @@ local function UpdateCheckboxes()
     showCreatureInfoCheckbox:SetChecked(AscensionVanityDB.showCreatureInfo == nil and true or AscensionVanityDB.showCreatureInfo)  -- Default to true (matches config)
     -- showIDs removed - use built-in WoW option
     
+    -- Update individual stat checkboxes (v2.3 Phase 2A)
+    showAttackSpeedCheckbox:SetChecked(AscensionVanityDB.showAttackSpeed == nil and true or AscensionVanityDB.showAttackSpeed)
+    showHealthCheckbox:SetChecked(AscensionVanityDB.showHealth == nil and true or AscensionVanityDB.showHealth)
+    showDamageCheckbox:SetChecked(AscensionVanityDB.showDamage == nil and true or AscensionVanityDB.showDamage)
+    showArmorCheckbox:SetChecked(AscensionVanityDB.showArmor == nil and false or AscensionVanityDB.showArmor)  -- Default to false (matches config)
+    
     -- Update creature info filter dropdown (v2.3 Phase 2A)
-    UIDropDownMenu_SetSelectedValue(creatureInfoDropdown, AscensionVanityDB.creatureInfoFilter or "vanity")
+    local currentFilter = AscensionVanityDB.creatureInfoFilter or "vanity"
+    UIDropDownMenu_SetSelectedValue(creatureInfoDropdown, currentFilter)
+    
+    -- Update dropdown display text (SetSelectedValue doesn't update text, need to find and set it manually)
+    for _, option in ipairs(creatureInfoOptions) do
+        if option.value == currentFilter then
+            UIDropDownMenu_SetText(creatureInfoDropdown, option.text)
+            break
+        end
+    end
     
     -- Update category filter checkboxes (v2.1+)
     if AscensionVanityDB.categoryFilters then
@@ -592,6 +662,12 @@ local function SaveSettings()
     AscensionVanityDB.showCreatureInfo = showCreatureInfoCheckbox:GetChecked() and true or false
     -- showIDs removed - use built-in WoW option
     
+    -- Individual stat checkboxes (v2.3 Phase 2A)
+    AscensionVanityDB.showAttackSpeed = showAttackSpeedCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showHealth = showHealthCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showDamage = showDamageCheckbox:GetChecked() and true or false
+    AscensionVanityDB.showArmor = showArmorCheckbox:GetChecked() and true or false
+    
     -- Note: Progress frame visibility managed by toggle button, not checkbox
     
     -- Save category filter settings (v2.1+)
@@ -640,6 +716,12 @@ enableKillTrackingCheckbox:HookScript("OnClick", SaveSettings)
 showKillStatsCheckbox:HookScript("OnClick", SaveSettings)
 showCreatureInfoCheckbox:HookScript("OnClick", SaveSettings)
 -- showIDs checkbox removed - use built-in WoW option
+
+-- Individual stat checkboxes auto-save (v2.3 Phase 2A)
+showAttackSpeedCheckbox:HookScript("OnClick", SaveSettings)
+showHealthCheckbox:HookScript("OnClick", SaveSettings)
+showDamageCheckbox:HookScript("OnClick", SaveSettings)
+showArmorCheckbox:HookScript("OnClick", SaveSettings)
 
 -- Add auto-save to category filter checkboxes (v2.1+)
 for category, checkbox in pairs(settingsPanel.categoryCheckboxes) do
