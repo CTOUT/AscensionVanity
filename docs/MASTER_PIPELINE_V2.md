@@ -58,6 +58,7 @@
 | 2 | Normalize | `NormalizeDescriptions.ps1` | `-SkipNormalize` |
 | 3 | Enrich Zones | `EnrichZoneData.ps1` | `-SkipEnrich` |
 | 4 | Generate DB | `GenerateVanityDB_Master.ps1` | Never |
+| 4.5 | **Validate** | Manual comparison | **CRITICAL** |
 | 5 | Deploy | `DeployAddon.ps1` | `-SkipDeploy` or no `-WoWPath` |
 
 ---
@@ -101,6 +102,58 @@
 # Generate database but don't deploy
 .\utilities\MasterPipeline_V2.ps1 -SkipImport
 ```
+
+---
+
+## ⚠️ CRITICAL: Manual Validation Step (Step 4.5)
+
+**ALWAYS validate before deploying!** After Step 4 (Generate DB), the new `VanityDB.lua` is created but **NOT YET committed**. You MUST:
+
+### Validation Workflow
+
+```powershell
+# 1. Save new VanityDB as temporary file
+Copy-Item "AscensionVanity\VanityDB.lua" "AscensionVanity\VanityDB_NEW.lua" -Force
+
+# 2. Restore old VanityDB from git
+git restore "AscensionVanity\VanityDB.lua"
+
+# 3. Compare item counts
+$old = (Get-Content "AscensionVanity\VanityDB.lua" -Raw | Select-String -Pattern '\[\d+\]\s*=\s*\{' -AllMatches).Matches.Count
+$new = (Get-Content "AscensionVanity\VanityDB_NEW.lua" -Raw | Select-String -Pattern '\[\d+\]\s*=\s*\{' -AllMatches).Matches.Count
+Write-Host "Old VanityDB: $old items"
+Write-Host "New VanityDB: $new items"
+Write-Host "Difference: $($new - $old) items"
+
+# 4. Run validation script
+.\utilities\ValidateCreatureIds.ps1 -All
+
+# 5. Review anomaly report
+# Check: data\CreatureId_Anomalies_Report.csv
+# Look for unexpected increases in extreme/highRange counts
+
+# 6. If happy, replace old with new
+Copy-Item "AscensionVanity\VanityDB_NEW.lua" "AscensionVanity\VanityDB.lua" -Force
+Remove-Item "AscensionVanity\VanityDB_NEW.lua"
+
+# 7. Commit changes
+git add -A
+git commit -m "data: Update VanityDB with fresh scan (YYYY-MM-DD, X items, no drift)"
+```
+
+### What to Check
+
+- **Item count drift**: Should be minimal (±10 items is normal)
+- **Large drops**: If count drops >100, investigate missing items
+- **Large increases**: If count increases >100, verify new items are legitimate
+- **Anomaly trends**: Check if extreme/highRange counts increased significantly
+
+### Red Flags 🚩
+
+- ❌ Item count dropped by >100
+- ❌ Extreme anomalies increased by >50
+- ❌ Many items have `creatureId = 0` or null descriptions
+- ❌ Quest-locked NPC count changed unexpectedly
 
 ---
 
