@@ -636,51 +636,53 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         local questCompleted = false
                         local questActive = false
                         
-                        -- Try multiple WoW API methods for quest status
-                        -- Method 1: IsQuestFlaggedCompleted (most reliable for WOTLK)
-                        if C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted then
-                            questCompleted = C_QuestLog.IsQuestFlaggedCompleted(questLock.questId)
-                        -- Method 2: IsQuestComplete (Classic/WOTLK fallback)
-                        elseif IsQuestComplete then
-                            questCompleted = IsQuestComplete(questLock.questId)
+                        -- FIRST: Check if quest is in quest log (most important check)
+                        -- Try multiple methods for compatibility across WoW versions
+                        -- Method 1: C_QuestLog.GetLogIndexForQuestID (WOTLK/Retail API)
+                        if C_QuestLog and C_QuestLog.GetLogIndexForQuestID then
+                            local questIndex = C_QuestLog.GetLogIndexForQuestID(questLock.questId)
+                            questActive = (questIndex ~= nil and questIndex > 0)
+                        -- Method 2: GetQuestLogIndexByID (Classic/WOTLK fallback)
+                        elseif GetQuestLogIndexByID then
+                            local questIndex = GetQuestLogIndexByID(questLock.questId)
+                            questActive = (questIndex ~= nil and questIndex > 0)
+                        -- Method 3: Manual iteration (last resort)
+                        else
+                            local numEntries = GetNumQuestLogEntries()
+                            for i = 1, numEntries do
+                                local questTitle, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
+                                if questID == questLock.questId then
+                                    questActive = true
+                                    break
+                                end
+                            end
                         end
                         
-                        -- Check if quest is active in quest log
-                        -- Try multiple methods for compatibility across WoW versions
-                        if not questCompleted then
-                            -- Method 1: C_QuestLog.GetLogIndexForQuestID (WOTLK/Retail API)
-                            if C_QuestLog and C_QuestLog.GetLogIndexForQuestID then
-                                local questIndex = C_QuestLog.GetLogIndexForQuestID(questLock.questId)
-                                questActive = (questIndex ~= nil and questIndex > 0)
-                            -- Method 2: GetQuestLogIndexByID (Classic/WOTLK fallback)
-                            elseif GetQuestLogIndexByID then
-                                local questIndex = GetQuestLogIndexByID(questLock.questId)
-                                questActive = (questIndex ~= nil and questIndex > 0)
-                            -- Method 3: Manual iteration (last resort)
-                            else
-                                local numEntries = GetNumQuestLogEntries()
-                                for i = 1, numEntries do
-                                    local questTitle, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
-                                    if questID == questLock.questId then
-                                        questActive = true
-                                        break
-                                    end
-                                end
+                        -- SECOND: Check if quest has been turned in (only matters if not in quest log)
+                        -- Try multiple WoW API methods for quest status
+                        if not questActive then
+                            -- Method 1: IsQuestFlaggedCompleted (most reliable for WOTLK)
+                            if C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted then
+                                questCompleted = C_QuestLog.IsQuestFlaggedCompleted(questLock.questId)
+                            -- Method 2: IsQuestComplete (Classic/WOTLK fallback)
+                            elseif IsQuestComplete then
+                                questCompleted = IsQuestComplete(questLock.questId)
                             end
                         end
                         
                         -- Condensed quest warning (single line with icon + status)
                         local statusIcon, statusColor, statusText
-                        if questCompleted then
-                            -- Already completed - RED (too late!)
-                            statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:12:12|t"
-                            statusColor = AV_COLOR_RED
-                            statusText = "Completed"
-                        elseif questActive then
-                            -- Quest is active - GREEN (farm now!)
+                        if questActive then
+                            -- Quest is active (in quest log) - GREEN (farm now!)
+                            -- This includes both "in progress" and "objectives complete"
                             statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-Ready:12:12|t"
                             statusColor = AV_COLOR_GREEN
                             statusText = "Active - Farm Now!"
+                        elseif questCompleted then
+                            -- Quest flagged as complete (likely turned in) - RED (too late!)
+                            statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-NotReady:12:12|t"
+                            statusColor = AV_COLOR_RED
+                            statusText = "Turned In"
                         else
                             -- Haven't started quest yet - ORANGE (warning)
                             statusIcon = "|TInterface\\RaidFrame\\ReadyCheck-Waiting:12:12|t"
@@ -699,13 +701,31 @@ local function AddVanityInfoToTooltip(tooltip, unit)
                         )
                         tooltip:AddLine(questLine, 1, 1, 1, true)
                         
-                        -- Optional second line for faction restrictions or critical warnings
+                        -- Optional second line for warnings and restrictions
                         if questCompleted and questLock.warning then
-                            -- Show warning for completed quests (NPC despawned)
-                            local warningText = "    " .. AV_COLOR_RED .. "⚠ " .. questLock.warning .. AV_COLOR_RESET
+                            -- Show warning for completed quests (NPC despawned) - use skull icon for prominence
+                            local skullIcon = "|TInterface\\TargetingFrame\\UI-TargetingFrame-Skull:14:14|t"
+                            local warningText = "    " .. skullIcon .. " " .. AV_COLOR_RED .. questLock.warning .. AV_COLOR_RESET
                             tooltip:AddLine(warningText, 1, 1, 1, true)
-                        elseif questLock.faction and questLock.faction ~= "Both" then
-                            -- Show faction restriction
+                        elseif questActive and questLock.warning then
+                            -- Show reminder for active quests (don't turn in!)
+                            local hourglassIcon = "|TInterface\\FriendsFrame\\StatusIcon-Away:14:14|t"
+                            local reminderText = "    " .. hourglassIcon .. " " .. AV_COLOR_GOLD .. "Quest-limited spawn! Don't turn in!" .. AV_COLOR_RESET
+                            tooltip:AddLine(reminderText, 1, 1, 1, true)
+                        elseif not questActive and questLock.warning then
+                            -- Show info for not-started quests (need quest to spawn it yourself)
+                            local hourglassIcon = "|TInterface\\FriendsFrame\\StatusIcon-Away:14:14|t"
+                            local infoText = string.format("    %s %sStart quest '%s' to farm this%s", 
+                                hourglassIcon,
+                                AV_COLOR_BRIGHT_ORANGE,
+                                questLock.questName,
+                                AV_COLOR_RESET
+                            )
+                            tooltip:AddLine(infoText, 1, 1, 1, true)
+                        end
+                        
+                        -- Show faction restriction (if applicable)
+                        if questLock.faction and questLock.faction ~= "Both" then
                             local factionText = "    " .. AV_COLOR_LIGHT_RED .. questLock.faction .. " Only" .. AV_COLOR_RESET
                             tooltip:AddLine(factionText, 1, 1, 1, true)
                         end

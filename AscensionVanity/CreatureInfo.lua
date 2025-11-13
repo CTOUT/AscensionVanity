@@ -304,11 +304,11 @@ function AV_AddCreatureInfoToTooltip(tooltip, unit, creatureId)
         table.insert(combatStats, healthStr)
     end
     
-    if minDamage and maxDamage and AscensionVanityDB.showDamage then
+    if minDamage and maxDamage and maxDamage > 0 and AscensionVanityDB.showDamage then
         table.insert(combatStats, string.format("%d-%d dmg", minDamage, maxDamage))
     end
     
-    if armor and AscensionVanityDB.showArmor then
+    if armor and armor > 0 and AscensionVanityDB.showArmor then
         -- Format armor with K suffix for thousands
         local armorStr
         if armor >= 1000 then
