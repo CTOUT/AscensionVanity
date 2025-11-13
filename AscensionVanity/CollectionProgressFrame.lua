@@ -431,6 +431,9 @@ RefreshExpandedItems = function()
             end
         end
     end
+    
+    -- Resize frame to accommodate new content (stats columns may have appeared)
+    ResizeFrame()
 end
 
 -- Add expand/collapse button for OVERALL bar (master collapse)
