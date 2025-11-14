@@ -133,11 +133,20 @@ function Parse-VanityDB {
         $categories[$cat] = ([regex]::Matches($itemsContent, [regex]::Escape($cat))).Count
     }
     
-    # Count enrichments (approximate)
-    $descCount = ([regex]::Matches($itemsContent, 'desc\s*=')).Count
-    $zoneCount = ([regex]::Matches($itemsContent, 'zone\s*=')).Count
-    $subzoneCount = ([regex]::Matches($itemsContent, 'subzone\s*=')).Count
-    $questLockCount = ([regex]::Matches($itemsContent, 'questLock\s*=')).Count
+    # Count enrichments (count items that have each field, not total field occurrences)
+    $itemBlocks = [regex]::Matches($itemsContent, '\[(\d+)\]\s*=\s*\{([^}]+)\}')
+    $descCount = 0
+    $zoneCount = 0
+    $subzoneCount = 0
+    $questLockCount = 0
+    
+    foreach ($block in $itemBlocks) {
+        $blockContent = $block.Groups[2].Value
+        if ($blockContent -match 'description\s*=\s*"[^"]+') { $descCount++ }
+        if ($blockContent -match 'zone\s*=') { $zoneCount++ }
+        if ($blockContent -match 'subzone\s*=') { $subzoneCount++ }
+        if ($blockContent -match 'questLock\s*=') { $questLockCount++ }
+    }
     
     return @{
         Path = $Path

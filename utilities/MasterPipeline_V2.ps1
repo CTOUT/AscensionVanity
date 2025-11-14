@@ -15,9 +15,10 @@
     1. Import fresh scan from SavedVariables or data folder
     2. Normalize descriptions (fix formatting)
     3. Enrich zone data (extract from descriptions)
-    4. Apply enriched data (automatic copy)
+    4. Mark unverified descriptions (transparency markers)
     5. Generate VanityDB.lua with quest locks
-    6. Optional: Deploy to WoW AddOns folder
+    6. Validate output
+    7. Optional: Deploy to WoW AddOns folder
 
 .PARAMETER SavedVariablesPath
     Path to AscensionVanity.lua SavedVariables file. If omitted, auto-detects from data folder.
@@ -34,8 +35,11 @@
 .PARAMETER SkipEnrich
     Skip Step 3 (use existing zone enrichment)
 
+.PARAMETER SkipMarking
+    Skip Step 4 (don't mark unverified descriptions)
+
 .PARAMETER SkipDeploy
-    Skip Step 6 (don't copy to WoW folder)
+    Skip Step 7 (don't copy to WoW folder)
 
 .PARAMETER DryRun
     Test mode - shows what would be done without making changes
@@ -80,6 +84,7 @@ param(
     [switch]$SkipImport,
     [switch]$SkipNormalize,
     [switch]$SkipEnrich,
+    [switch]$SkipMarking,
     [switch]$SkipDeploy,
     [switch]$DryRun
 )
@@ -240,7 +245,10 @@ function Invoke-ImportStep {
     Write-Info "Running MasterAPIDumpImport.ps1..."
     & "$PSScriptRoot\MasterAPIDumpImport.ps1" -SavedVariablesPath $SavedVariablesPath
     
-    # Validate output file instead of exit code
+    Write-Info "Building MasterFullValidated.json from Group IDs..."
+    & "$PSScriptRoot\BuildMasterFromGroupIDs.ps1"
+    
+    # Validate output file
     $masterJson = Join-Path $PSScriptRoot '..\data\MasterFullValidated.json'
     if (-not (Test-FileExists $masterJson "MasterFullValidated.json")) {
         throw "Import did not produce expected output file"
@@ -310,11 +318,49 @@ function Invoke-EnrichStep {
 }
 
 # ============================================================================
-# STEP 4: GENERATE VANITYDB.LUA
+# STEP 4: MARK UNVERIFIED DESCRIPTIONS
+# ============================================================================
+
+function Invoke-MarkingStep {
+    Write-Step "4" "Mark Unverified Descriptions"
+    
+    if ($DryRun) {
+        Write-Info "[DRY RUN] Would mark unverified descriptions"
+        return
+    }
+    
+    Write-Info "Running MarkUnverifiedDescriptions.ps1..."
+    $scanFile = Join-Path $PSScriptRoot '..\data\AscensionVanity_Fresh_Scan_LATEST.lua'
+    if (-not (Test-Path $scanFile)) {
+        Write-Warning "Fresh scan not found at $scanFile - using oldest available"
+        $scanFile = Join-Path $PSScriptRoot '..\data\AscensionVanity.lua'
+    }
+    
+    & "$PSScriptRoot\MarkUnverifiedDescriptions.ps1" -FreshScanPath $scanFile
+    
+    # Apply verified version
+    $verifiedJson = Join-Path $PSScriptRoot '..\data\MasterFullValidated_Verified.json'
+    $masterJson = Join-Path $PSScriptRoot '..\data\MasterFullValidated.json'
+    
+    if (-not (Test-FileExists $verifiedJson "Verified JSON")) {
+        throw "Marking did not produce expected output file"
+    }
+    
+    Copy-Item $verifiedJson $masterJson -Force
+    
+    # Show statistics
+    $data = Get-Content $masterJson -Raw | ConvertFrom-Json
+    $unverified = ($data | Where-Object { $_.Description -match '^\|cFFFF8800\[Unverified\]' }).Count
+    $percentage = [math]::Round(($unverified / $data.Count) * 100, 2)
+    Write-Success "Marked $unverified / $($data.Count) items as unverified ($percentage%)"
+}
+
+# ============================================================================
+# STEP 5: GENERATE VANITYDB.LUA
 # ============================================================================
 
 function Invoke-GenerateStep {
-    Write-Step "4" "Generate VanityDB.lua (to temp location)"
+    Write-Step "5" "Generate VanityDB.lua (to temp location)"
     
     if ($DryRun) {
         Write-Info "[DRY RUN] Would generate VanityDB.lua"
@@ -341,7 +387,7 @@ function Invoke-GenerateStep {
 }
 
 # ============================================================================
-# STEP 5: VALIDATE & DEPLOY VANITYDB.LUA
+# STEP 6: VALIDATE & DEPLOY VANITYDB.LUA
 # ============================================================================
 
 function Invoke-ValidateStep {
@@ -402,7 +448,7 @@ function Invoke-ValidateStep {
 }
 
 # ============================================================================
-# STEP 6: DEPLOY TO WOW
+# STEP 7: DEPLOY TO WOW
 # ============================================================================
 
 function Invoke-DeployStep {
@@ -480,13 +526,20 @@ try {
         Write-Warning "Make sure MasterFullValidated.json has zone data!"
     }
     
-    # Step 4: Generate
+    # Step 4: Mark Unverified
+    if (-not $SkipMarking) {
+        Invoke-MarkingStep
+    } else {
+        Write-Step "4" "Mark Unverified Descriptions - SKIPPED"
+    }
+    
+    # Step 5: Generate
     Invoke-GenerateStep
     
-    # Step 5: Validate
+    # Step 6: Validate
     Invoke-ValidateStep
     
-    # Step 6: Deploy (optional)
+    # Step 7: Deploy (optional)
     Invoke-DeployStep -WoWPath $WoWPath
     
     # Summary

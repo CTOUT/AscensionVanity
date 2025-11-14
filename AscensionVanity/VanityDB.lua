@@ -1,8 +1,8 @@
 -- AscensionVanity Full Database v2.2
--- Generated: 2025-11-13 18:00:11
--- Total Items: 2355
--- Source Scan: Ascension 2025-11-13 @ 13:24:34 GMT Not Available
--- Scan Date: 2025-11-13 17:44:19
+-- Generated: 2025-11-14 12:37:23
+-- Total Items: 4150
+-- Source Scan: Ascension 2025-11-14 @ 11:16:29 GMT Not Available
+-- Scan Date: 2025-11-14 11:44:17
 -- 
 -- Database Structure:
 --   AV_IconList: Deduplicated icon paths referenced by index
@@ -27,24 +27,9457 @@
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs (8 total):
---   Dropped: 16777217, 16777220, 16777218, 16777224, 16777232
---   Seasonal: 553648129, 553648130, 553648136
+--   Combat Pets (Dropped): 16777217, 16777220, 16777218, 16777224, 16777232
+--   Combat Pets (Seasonal): 553648129, 553648130, 553648136
+--   Cosmetic Abilities: 134217728
+--   Mounts: 67108864
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-13 18:00:11",
-    ascensionVersion = "2025-11-13 @ 13:24:34 GMT Not Available",
-    scanDate = "2025-11-13 17:44:19",
-    totalItems = 2355,
+    generatedDate = "2025-11-14 12:37:23",
+    ascensionVersion = "2025-11-14 @ 11:16:29 GMT Not Available",
+    scanDate = "2025-11-14 11:44:17",
+    totalItems = 4150,
     schemaVersion = "2.2",
     questLockedCount = 13
 }
 
 AV_IconList = {
-    [1] = "Ability_Hunter_BeastCall",    [2] = "custom_T_Nhance_RPG_Icons_ArcaneStone_Border",    [3] = "custom_T_Nhance_RPG_Icons_FireStone_Border",    [4] = "custom_T_Nhance_RPG_Icons_GhostStone_Border",    [5] = "custom_T_Nhance_RPG_Icons_IceStone_Border",    [6] = "custom_T_Nhance_RPG_Icons_NatureStone_Border",    [7] = "inv_argusfelstalkermountgrey",    [8] = "inv_argustalbukmount_felpurple",    [9] = "inv_felbatmountforsaken",    [10] = "inv_felstalkermount",    [11] = "inv_glyph_primedeathknight",    [12] = "inv_misc_horn_01",    [13] = "inv_misc_uncutgemnormal1",    [14] = "inv_soulhoundmount_white"
+    [1] = "Ability_Creature_Disease_05",    [2] = "Ability_Creature_Poison_06",    [3] = "Ability_Druid_ChallangingRoar",    [4] = "Ability_Druid_ForceofNature",    [5] = "Ability_Hunter_AspectOfTheMonkey",    [6] = "Ability_Hunter_BeastCall",    [7] = "Ability_Hunter_Pet_Bat",    [8] = "ability_hunter_pet_bear",    [9] = "ability_hunter_pet_corehound",    [10] = "Ability_Hunter_Pet_DragonHawk",    [11] = "Ability_Hunter_Pet_Raptor",    [12] = "ability_hunter_pet_rhino",    [13] = "Ability_Hunter_Pet_Sporebat",    [14] = "Ability_Hunter_Pet_TallStrider",    [15] = "Ability_Hunter_Pet_Turtle",    [16] = "Ability_Mount_Awakening",    [17] = "ability_mount_blackbattlestrider",    [18] = "Ability_Mount_BlackDireWolf",    [19] = "Ability_Mount_BlackPanther",    [20] = "ability_mount_camel_brown",    [21] = "ability_mount_camel_gray",    [22] = "ability_mount_camel_tan",    [23] = "ability_mount_celestialhorse",    [24] = "ability_mount_charger",    [25] = "ability_mount_clockworkhorse",    [26] = "Ability_Mount_CockatriceMount_Black",    [27] = "Ability_Mount_CockatriceMountElite_White",    [28] = "ability_mount_dkmountunholy",    [29] = "Ability_Mount_Drake_Blue",    [30] = "Ability_Mount_Drake_Proto",    [31] = "Ability_Mount_Dreadsteed",    [32] = "ability_mount_elekkdraenormount",    [33] = "ability_mount_felreavermount",    [34] = "ability_mount_felreavermount_blue",    [35] = "ability_mount_felreavermount_orange",    [36] = "ability_mount_felreavermount_red",    [37] = "ability_mount_fireravengodmount",    [38] = "ability_mount_fireravengodmountpurple",    [39] = "ability_mount_fossilizedraptor",    [40] = "ability_mount_goatmountblack",    [41] = "ability_mount_goatmountbrown",    [42] = "ability_mount_goatmountwhite",    [43] = "ability_mount_hordescorpionamber",    [44] = "ability_mount_ironjuggernautmount",    [45] = "Ability_Mount_JungleTiger",    [46] = "Ability_Mount_Kodo_03",    [47] = "ability_mount_korkronprotodrake",    [48] = "ability_mount_mawhorsespikes_blue",    [49] = "ability_mount_mawhorsespikes_leagueyellow",    [50] = "ability_mount_mawhorsespikes_purple",    [51] = "ability_mount_mawhorsespikes_scarlet",    [52] = "ability_mount_mawhorsespikes_yellow",    [53] = "Ability_Mount_MountainRam",    [54] = "Ability_Mount_NetherDrakeElite",    [55] = "Ability_Mount_NightmareHorse",    [56] = "ability_mount_pandarenkitemount",    [57] = "Ability_Mount_PinkTiger",    [58] = "Ability_Mount_PolarBear_Black",    [59] = "Ability_Mount_Raptor",    [60] = "ability_mount_ravager2mount",    [61] = "Ability_Mount_RidingElekkElite_Green",    [62] = "ability_mount_ridinghorse",    [63] = "ability_mount_spectraltiger",    [64] = "ability_mount_steelwarhorse",    [65] = "ability_mount_steelwarhorse_red",    [66] = "ability_mount_triceratopsmount",    [67] = "ability_mount_triceratopsmount_blue",    [68] = "ability_mount_triceratopsmount_green",    [69] = "ability_mount_triceratopsmount_grey",    [70] = "ability_mount_triceratopsmount_orange",    [71] = "ability_mount_triceratopsmount_red",    [72] = "ability_mount_triceratopsmount_yellow",    [73] = "ability_mount_tyraelmount",    [74] = "ability_mount_tyraelmount_paladin",    [75] = "Ability_Mount_Undeadhorse",    [76] = "ability_mount_viciouswarraptor",    [77] = "ability_mount_voidelfstridermount.blp",    [78] = "ability_mount_warnightsaber",    [79] = "ability_mount_yakmountgrey",    [80] = "ability_pet_baneling",    [81] = "Ability_Repair",    [82] = "achievement_boss_ji-kun",    [83] = "achievement_boss_oregorger",    [84] = "achievement_character_dwarf_female",    [85] = "Achievement_Character_Human_Male",    [86] = "achievement_dungeon_coinoperatedcrowdpummeler",    [87] = "achievement_faction_celestials",    [88] = "Achievement_Halloween_Cat_01",    [89] = "anduin_mount",    [90] = "black_inv_goblinspidertank",    [91] = "blue_inv_goblinspidertank",    [92] = "creatureportrait_sword_2h_denathrius_d_01",    [93] = "custom_12_summon_imp_army",    [94] = "custom_slime_b_01_Border",    [95] = "custom_snapdragon_icon_cream",    [96] = "custom_snapdragon_icon_darkpurple",    [97] = "custom_snapdragon_icon_greenyellow",    [98] = "custom_snapdragon_icon_purple",    [99] = "custom_snapdragon_icon_red",    [100] = "custom_snapdragon_icon_white",    [101] = "custom_T_Nhance_RPG_Icons_ArcaneStone_Border",    [102] = "custom_T_Nhance_RPG_Icons_FireStone_Border",    [103] = "custom_T_Nhance_RPG_Icons_GhostStone_Border",    [104] = "custom_T_Nhance_RPG_Icons_IceStone_Border",    [105] = "custom_T_Nhance_RPG_Icons_NatureStone_Border",    [106] = "FoxMountIcon",    [107] = "inv_alliancepvpmount",    [108] = "inv_alpaca_pinky",    [109] = "inv_alpacamount_black",    [110] = "inv_alpacamount_brown",    [111] = "inv_alpacamount_ivory",    [112] = "inv_alpacamount_white",    [113] = "inv_alpacamount_yellow",    [114] = "inv_ardenwealdstagmount_blue",    [115] = "inv_ardenwealdstagmount_dark",    [116] = "inv_ardenwealdstagmount_teal",    [117] = "inv_ardenwealdstagmount_white",    [118] = "inv_ardenwealdstagmount2_blue",    [119] = "inv_ardenwealdstagmount2_dark",    [120] = "inv_ardenwealdstagmount2_teal",    [121] = "inv_ardenwealdstagmount2_white",    [122] = "INV_ArfusPet",    [123] = "INV_ArfusPet_Black",    [124] = "INV_ArfusPet_Brown",    [125] = "INV_ArfusPet_Classic",    [126] = "INV_ArfusPet_Cream",    [127] = "inv_argusfelstalkermount_blue",    [128] = "inv_argusfelstalkermount_orange",    [129] = "inv_argusfelstalkermount_pink",    [130] = "inv_argusfelstalkermount_purple",    [131] = "inv_argusfelstalkermount_red",    [132] = "inv_argusfelstalkermountblue",    [133] = "inv_argusfelstalkermountgrey",    [134] = "inv_argustalbukmount_felpurple",    [135] = "inv_armoredraptor",    [136] = "inv_armoredraptorundead",    [137] = "inv_azmerlothmurlocpet_brown",    [138] = "inv_babyalpaca_black",    [139] = "inv_babyalpaca_gold",    [140] = "inv_babyalpaca_snow",    [141] = "inv_babyhippo01",    [142] = "inv_babyhippo01_blue",    [143] = "inv_babyhippo01_purple",    [144] = "inv_babyhippo01_white",    [145] = "inv_babyhornswog_black",    [146] = "inv_babyhornswog_green",    [147] = "inv_babyhornswog_orange",    [148] = "inv_babyhornswog_red",    [149] = "inv_babyhorse2_ardenweald_blue",    [150] = "inv_babyhyena_black",    [151] = "inv_babyhyena_blue",    [152] = "inv_babyhyena_green",    [153] = "inv_babyhyena_purple",    [154] = "inv_babynagablack",    [155] = "inv_babysaurolophus_pink",    [156] = "inv_babysaurolophus_red",    [157] = "inv_babysteward_dark",    [158] = "inv_babysteward_gold",    [159] = "inv_babysteward_silver",    [160] = "inv_batloamount",    [161] = "inv_bearmountblizzard",    [162] = "Inv_bearmountutility",    [163] = "inv_beaverprimalpet_blue",    [164] = "inv_bee_black",    [165] = "inv_bee_default",    [166] = "inv_bee_red",    [167] = "INV_Belt_05",    [168] = "inv_belt_39b",    [169] = "inv_birdsofprey_barrenforestfalcon",    [170] = "inv_birdsofprey_brownfalcon",    [171] = "inv_birdsofprey_harrishawk",    [172] = "inv_birdsofprey_kestrelfalcon",    [173] = "inv_birdsofprey_osprey",    [174] = "inv_birdsofprey_redtailhawk",    [175] = "inv_birdsofprey_whitefalcon",    [176] = "inv_black_hyena2goblinmount",    [177] = "inv_bloodtrollbeast_mount_blue",    [178] = "inv_blue_hyena2goblinmount",    [179] = "inv_boastfulsquire_hd",    [180] = "inv_bookmount",    [181] = "INV_Box_PetCarrier_01",    [182] = "inv_brontosaurusmount",    [183] = "inv_broommount2_green",    [184] = "inv_butterflymount_pearl",    [185] = "inv_butterflymount_pink",    [186] = "inv_butterflymount_purple",    [187] = "inv_camelmount2",    [188] = "inv_camelmount2_explorer",    [189] = "inv_camelmount2_explorerwhite",    [190] = "inv_catslime_rainbow",    [191] = "inv_catslimemount",    [192] = "inv_catslimemount_purple",    [193] = "inv_catslimemount_rainbow",    [194] = "inv_catslimemount_red",    [195] = "inv_catslimemount_yellow",    [196] = "inv_celestialserpentmount",    [197] = "INV_Chest_Awakening",    [198] = "inv_chickenmount_white",    [199] = "inv_chihuahuadogpet_body_black",    [200] = "inv_chihuahuadogpet_body_brown",    [201] = "inv_chihuahuadogpet_body_tan",    [202] = "inv_chihuahuadogpet_body_white",    [203] = "inv_chimerabossmount",    [204] = "inv_cloudserpent_egg_black",    [205] = "inv_cloudserpent_egg_yellow",    [206] = "inv_companiondrake_netherwing_black",    [207] = "inv_companiondrake_netherwing_orange",    [208] = "inv_companiondrake_netherwing_purple",    [209] = "inv_companiondrake_netherwing_teal",    [210] = "inv_corgi2",    [211] = "inv_crabmount",    [212] = "inv_crawlinghandpet_yellow",    [213] = "inv_custom_30thbatmount",    [214] = "inv_custom_harronirbatpet_purple",    [215] = "inv_custom_reindeermount",    [216] = "inv_custom_turtle_mount_lava",    [217] = "inv_darkhoundmount",    [218] = "inv_darkhoundmount_draka_blue",    [219] = "inv_darkhoundmount_draka_dusky",    [220] = "inv_darkhoundmount_draka_green",    [221] = "inv_darkhoundmount_draka_obsidian",    [222] = "inv_darkhoundmount_draka_pale",    [223] = "inv_darkhoundmount_draka_sallow",    [224] = "inv_darkhoundmount_draka_violaceous",    [225] = "inv_darkhoundmount_draka_viridescent",    [226] = "INV_DarkIronDwarfCoreHound",    [227] = "inv_dawnsaber",    [228] = "inv_deathelementalmount_purple",    [229] = "inv_deathwargmount2black",    [230] = "inv_deathwargmountblack",    [231] = "inv_deathwargmountbrown",    [232] = "inv_deathwargmountgray",    [233] = "inv_deathwargmountpurple",    [234] = "inv_deathwargmountred",    [235] = "inv_deathwargmountstone",    [236] = "inv_deathwargmountwhite",    [237] = "inv_dhmount_blue",    [238] = "inv_dhmount_brown",    [239] = "inv_dhmount_felsaber",    [240] = "inv_dhmount_green",    [241] = "inv_dhmount_purple",    [242] = "inv_dhmurloc",    [243] = "INV_DiabloStone",    [244] = "inv_dogpetgolden",    [245] = "inv_dragonchromaticmount_new",    [246] = "inv_dragonelementiummount",    [247] = "inv_dragonwhelpcataclysm",    [248] = "inv_drakemountemerald",    [249] = "inv_drakemountemeraldautumn",    [250] = "inv_drakemountemeraldfrost",    [251] = "inv_dreadravenmount_wind",    [252] = "inv_dreamowl_firemount",    [253] = "inv_dreamowl_firemount_blue",    [254] = "inv_dreamowl_firemount_dark",    [255] = "inv_dreamowl_firemount_green",    [256] = "inv_dreampanda_dark",    [257] = "inv_dreampanda_polar",    [258] = "inv_dreampanda_red",    [259] = "inv_drivemount",    [260] = "inv_drivemount_blue",    [261] = "inv_drivemount_green",    [262] = "inv_drivemount_red",    [263] = "inv_drivemount_yellow",    [264] = "inv_dwarfpaladinram_gold",    [265] = "inv_eagle2windmount_red",    [266] = "inv_eagle2windmount_sepia",    [267] = "inv_eagle2windmount_white",    [268] = "INV_Egg_02",    [269] = "INV_Egg_03",    [270] = "inv_electriceelviciousmount_blue",    [271] = "inv_electriceelviciousmount_red",    [272] = "inv_elemental_eternal_shadow",    [273] = "inv_encrypted05",    [274] = "inv_encrypted09",    [275] = "inv_encrypted0a",    [276] = "inv_encrypted12",    [277] = "inv_encrypted13",    [278] = "inv_encrypted21",    [279] = "inv_eng_gearspringparts",    [280] = "inv_eng_gizmo1",    [281] = "inv_explorergyrocopter",    [282] = "inv_eyeballjellyfishmount",    [283] = "inv_faeriedragonmount",    [284] = "inv_falcosaurosblack",    [285] = "inv_falcosaurosgreen",    [286] = "inv_falcosaurosred",    [287] = "inv_falcosauroswhite",    [288] = "INV_Feather_13",    [289] = "inv_feathereddragon_blue",    [290] = "inv_feathereddragon_orange",    [291] = "inv_feathereddragon_pink",    [292] = "inv_felbatmountforsaken",    [293] = "inv_felbatmountforsaken_red",    [294] = "inv_felhound3_shadow_fire",    [295] = "inv_fellessergronnmount",    [296] = "inv_fellessergronnmount_dark",    [297] = "inv_fellessergronnmount_pale",    [298] = "inv_felstalkermount",    [299] = "inv_firecatmount",    [300] = "inv_fishing_innards_bones",    [301] = "Inv_FlyingBook_Ascended",    [302] = "inv_flyingsquirrelmount_darkchocolate",    [303] = "inv_flyingsquirrelmount_walnut",    [304] = "inv_flymaldraxxusmount_green",    [305] = "inv_foxpet",    [306] = "inv_foxpet_Blue",    [307] = "inv_foxpet_Holy",    [308] = "inv_foxpet_Red",    [309] = "inv_foxpet_Violet",    [310] = "inv_foxwyvernmountblack",    [311] = "inv_foxwyvernmountwhite",    [312] = "inv_foxwyvernmountyellow",    [313] = "inv_foxwyvernpetblack",    [314] = "inv_foxwyvernpetred",    [315] = "inv_foxwyvernpetwhite",    [316] = "inv_foxwyvernpetyellow",    [317] = "inv_ghostlycharger",    [318] = "inv_giantboarmount_armoredblue",    [319] = "inv_giantboarmount_armoredbrown",    [320] = "inv_giantboarmount_armoredfel",    [321] = "inv_giantboarmount_armoredpurple",    [322] = "inv_giantboarmount_armoredredpale",    [323] = "inv_giantboarmount_darkbrown",    [324] = "INV_Gizmo_GoblingTonkController",    [325] = "inv_gizmo_khoriumpowercore",    [326] = "inv_glyph_primedeathknight",    [327] = "inv_gnollkid_albino",    [328] = "inv_goblinspidertank",    [329] = "inv_gravegolempet",    [330] = "inv_green_hyena2goblinmount",    [331] = "inv_gryphonstormmount",    [332] = "inv_gryphonstormmount_red",    [333] = "inv_gryphonstormmount_yellow",    [334] = "inv_gryphonstormpet_blue",    [335] = "inv_gryphonstormpet_red",    [336] = "inv_gryphonstormpet_yellow",    [337] = "inv_headlesshorsemanmount2_green",    [338] = "inv_hedgehogmount_green",    [339] = "inv_hedgehogmount_pink",    [340] = "inv_hedgehogmount_red",    [341] = "inv_hippo_green",    [342] = "inv_hivemind",    [343] = "inv_hordepvpmount_black",    [344] = "inv_horse2ardenwealdmount_blue",    [345] = "inv_horse2bastionmount_yellow",    [346] = "inv_horse2mountelite",    [347] = "inv_horse2mountelite_blue",    [348] = "inv_horse2mountelite_grey",    [349] = "inv_horse2mountelite_pink",    [350] = "inv_horse2purple",    [351] = "inv_horsebastionmount_dark",    [352] = "inv_horsebastionmount_gold",    [353] = "inv_horsebastionmount_green",    [354] = "inv_horsebastionmount_pink",    [355] = "inv_horsebastionmount_silver",    [356] = "inv_huntermount_blue",    [357] = "inv_huntermount_green",    [358] = "inv_huntermount_orange",    [359] = "inv_hunterpet_warpstalker",    [360] = "inv_hydrax2",    [361] = "inv_hyena2mount_brown",    [362] = "inv_hyena2mount_light",    [363] = "inv_hyena2mount_orange",    [364] = "inv_hyena2mount_red",    [365] = "inv_hyena2mount_teal",    [366] = "inv_hyena2mount_yellow",    [367] = "inv_icon_wing03b",    [368] = "inv_infernalmounice",    [369] = "inv_infernalmountblue",    [370] = "inv_infernalmountgreen",    [371] = "inv_infernalmountred",    [372] = "inv_iron_horde_elekk",    [373] = "inv_item_felcrystal",    [374] = "inv_item_stonea",    [375] = "inv_jailerhoundmount_black",    [376] = "inv_jengibre_01",    [377] = "INV_Jewelcrafting_BlackPearlPanther",    [378] = "INV_Jewelcrafting_CrimsonHare",    [379] = "INV_Jewelcrafting_Gem_06",    [380] = "inv_jewelry_frostwolftrinket_02",    [381] = "inv_jewelry_frostwolftrinket_04",    [382] = "INV_Jewelry_FrostwolfTrinket_05",    [383] = "inv_jewelry_trinket_06",    [384] = "INV_Jewelry_TrinketPVP_01",    [385] = "INV_Jewelry_TrinketPVP_02",    [386] = "inv_kirinmount_blue",    [387] = "inv_kirinmount_dark",    [388] = "inv_kirinmount_pale",    [389] = "inv_larva2_blackred",    [390] = "inv_larva2_bloodgod",    [391] = "inv_larva2_bluered",    [392] = "inv_larva2_darkbrown",    [393] = "inv_larva2_darkpurple",    [394] = "inv_larva2_darkred",    [395] = "inv_larva2_gray",    [396] = "inv_larva2_green",    [397] = "inv_larva2_limegreen",    [398] = "inv_larva2_redpurple",    [399] = "inv_larva2_white",    [400] = "inv_larva2_yellow",    [401] = "inv_lavahorse_Fel",    [402] = "inv_lightforgedelekk",    [403] = "inv_magemount",    [404] = "inv_magicalfishmount",    [405] = "inv_magicalfishmount_blue",    [406] = "inv_magicalowlbearbaby_black",    [407] = "inv_magicalowlbearbaby_blue",    [408] = "inv_magicalowlbearbaby_brown",    [409] = "inv_magicalowlbearbaby_dark",    [410] = "inv_magicalowlbearbaby_emerald",    [411] = "inv_magicalowlbearbaby_green",    [412] = "inv_magicalowlbearbaby_pink",    [413] = "inv_magicalowlbearbaby_purple",    [414] = "inv_magicalowlbearbaby_red",    [415] = "inv_magicalowlbearbaby_white",    [416] = "inv_magicbutterfly_blue",    [417] = "inv_magicbutterfly_dark",    [418] = "inv_magicbutterfly_pink",    [419] = "inv_maldraxxusboarmount_black",    [420] = "inv_maldraxxusboarmount_green",    [421] = "inv_maldraxxusboarmount_purple",    [422] = "inv_mammoth2lavamount_blue",    [423] = "inv_mammoth2lavamount_orange",    [424] = "inv_mammoth2lavamount_red",    [425] = "inv_mammoth2lavamount_yellow",    [426] = "inv_mammoth2mount_blue",    [427] = "inv_mammoth2mount_gray",    [428] = "inv_mammoth2mount_green",    [429] = "inv_mammoth2mount_orange",    [430] = "inv_marmosetpet",    [431] = "inv_mawexpansionbearmount_green",    [432] = "inv_mawexpansionbearmount_light",    [433] = "inv_mawexpansionbearmount_purple",    [434] = "inv_mawexpansionbearmount_red",    [435] = "inv_mawexpansionbearmount_yellow",    [436] = "inv_mawguardhandmountblue",    [437] = "inv_mawguardhandmountgold",    [438] = "inv_mechacyclejunk",    [439] = "inv_mechacyclejunk_2",    [440] = "inv_mechacyclejunk_3",    [441] = "inv_mechadevilsaurmount_yellow",    [442] = "inv_mechagnomestrider",    [443] = "inv_mechagonspidertank_brass",    [444] = "inv_mechagonspidertank_junker",    [445] = "inv_mechagonspidertank_silver",    [446] = "inv_mechanicalprairiedog_classic",    [447] = "inv_mechanicalspider",    [448] = "inv_mechanicaltiger_grey",    [449] = "INV_Misc_AhnQirajTrinket_01",    [450] = "inv_misc_archstone_01",    [451] = "inv_misc_babyarmadillopet",    [452] = "inv_misc_balloon_02",    [453] = "inv_misc_balloon_04",    [454] = "INV_Misc_Bandage_08",    [455] = "inv_misc_bearpaw_green",    [456] = "inv_misc_bearpaw_white",    [457] = "INV_Misc_Bomb_04",    [458] = "INV_Misc_Bone_02",    [459] = "INV_Misc_Bone_ElfSkull_01",    [460] = "INV_Misc_Bone_OrcSkull_01",    [461] = "INV_Misc_Cape_03",    [462] = "INV_Misc_Coin_03",    [463] = "INV_Misc_DragonKite_02",    [464] = "inv_misc_elitehippogryph",    [465] = "INV_Misc_ElvenCoins",    [466] = "INV_Misc_EngGizmos_RocketChicken",    [467] = "inv_misc_eye_04",    [468] = "inv_misc_fish_49",    [469] = "INV_Misc_Food_02",    [470] = "INV_Misc_Food_24",    [471] = "inv_misc_foxkit",    [472] = "INV_Misc_Gem_Stone_01",    [473] = "inv_misc_gem_x4_rare_uncut_green",    [474] = "INV_Misc_Head_ClockworkGnome_01",    [475] = "INV_Misc_Head_Dragon_Black",    [476] = "INV_Misc_Head_Dragon_Blue",    [477] = "INV_Misc_Head_Murloc_01",    [478] = "INV_Misc_Head_Tiger_01",    [479] = "INV_Misc_Herb_06",    [480] = "inv_misc_herb_winterskiss",    [481] = "inv_misc_herb_wldsteelbloom_petal",    [482] = "inv_misc_horn_01",    [483] = "INV_Misc_Lantern_01",    [484] = "inv_misc_monsterhorn_07",    [485] = "inv_misc_moosehoof_black",    [486] = "INV_Misc_Orb_03",    [487] = "INV_Misc_Pelt_Bear_Ruin_02",    [488] = "INV_Misc_Pelt_Bear_Ruin_03",    [489] = "inv_misc_penguinpet",    [490] = "inv_misc_pet_01",    [491] = "inv_misc_pet_03",    [492] = "inv_misc_pet_04",    [493] = "inv_misc_pet_pandaren_yeti_grey",    [494] = "inv_misc_petmoonkinne",    [495] = "inv_misc_petmoonkinta",    [496] = "INV_Misc_Plant_03",    [497] = "INV_Misc_QirajiCrystal_01",    [498] = "inv_misc_qirajicrystal_02",    [499] = "INV_Misc_QirajiCrystal_03",    [500] = "INV_Misc_QirajiCrystal_04",    [501] = "INV_Misc_QirajiCrystal_05",    [502] = "inv_misc_reforgedarchstone_01",    [503] = "inv_misc_seagullpet_01",    [504] = "INV_Misc_Shell_04",    [505] = "inv_misc_summerfest_braziergreen",    [506] = "Inv_Misc_SummerFest_BrazierOrange",    [507] = "INV_Misc_Ticket_Darkmoon_01",    [508] = "inv_misc_uncutgemnormal1",    [509] = "INV_Misc_Urn_01",    [510] = "inv_monkmount_Green",    [511] = "inv_monkmount_Silver",    [512] = "inv_moosebullmount_black",    [513] = "inv_moosebullmount_brown",    [514] = "inv_moosebullmount_dark",    [515] = "inv_moosemount",    [516] = "inv_moosemount2",    [517] = "inv_moosemount2fel",    [518] = "inv_moosemount2frost",    [519] = "inv_moosemount2nightmare",    [520] = "inv_mothardenwealdmount_dark",    [521] = "inv_mothardenwealdmount_mint",    [522] = "inv_mothardenwealdmount_red",    [523] = "inv_motorcyclefelreavermount_blue",    [524] = "inv_motorcyclefelreavermount_fel",    [525] = "inv_motorcyclefelreavermount_fire",    [526] = "inv_motorcyclefelreavermount_shadow",    [527] = "inv_motorcyclefelreavermount_yellow",    [528] = "inv_mount_arcaneraven_frost",    [529] = "inv_mount_bluehoundmoun",    [530] = "inv_mount_darkphoenixa",    [531] = "inv_mount_felcorehoundmoun",    [532] = "inv_mount_hordescorpion_blackg",    [533] = "inv_mount_spectralhorse",    [534] = "inv_mount_voidhoundmoun",    [535] = "inv_murlocmount",    [536] = "inv_mushanbeastmount",    [537] = "inv_mushanbeastmountblack",    [538] = "inv_nethergorgedgreatwyrm_black",    [539] = "inv_nethergorgedgreatwyrm_purple",    [540] = "INV_Netherwhelp",    [541] = "inv_nightbane2mount",    [542] = "inv_nightsaber2mount",    [543] = "inv_nightsaber2mountyellow",    [544] = "inv_nzothserpentmount_purple",    [545] = "inv_nzothserpentmount_warlock",    [546] = "inv_offhand_stratholme_a_02",    [547] = "inv_orcclanworg",    [548] = "INV_Ore_Gold_Nugget2",    [549] = "INV_Ore_Tin_01",    [550] = "inv_paladinmount_purple",    [551] = "inv_paladinmount_yellow",    [552] = "inv_pandarenserpentgodmount_black",    [553] = "inv_peacockmount_dark",    [554] = "inv_peacockmount_orange",    [555] = "inv_peacockmount_purple",    [556] = "inv_perkypug_grey",    [557] = "inv_personalskyship_brown",    [558] = "inv_pet_cats_orangetabbycat",    [559] = "inv_pet_celestialdragon",    [560] = "inv_pet_chromaticdragon",    [561] = "inv_pet_cookbot",    [562] = "inv_pet_cranegod",    [563] = "inv_pet_deweaonizedmechcompanion",    [564] = "inv_pet_felkitten_red",    [565] = "inv_pet_felkitten_yellow",    [566] = "inv_pet_frostwolfpup",    [567] = "INV_PET_FROSTWYRM",    [568] = "inv_pet_inquisitoreye",    [569] = "inv_pet_lilsmoky",    [570] = "inv_pet_naaru",    [571] = "inv_pet_owl2_moonwarden",    [572] = "inv_pet_owl2_sunwarden",    [573] = "inv_pet_pandarenelemental_fire",    [574] = "inv_pet_pinkmurlocegg",    [575] = "inv_pet_scorchedstone",    [576] = "inv_pet_speedy",    [577] = "inv_pet_spiderdemon",    [578] = "inv_pet_sunbladeprotector_green",    [579] = "inv_pet_wisp_gold",    [580] = "inv_pet_yakgod",    [581] = "inv_priestmount",    [582] = "inv_primaldragonflymount_black",    [583] = "inv_primaldragonflymount_blue",    [584] = "inv_primaldragonflymount_green",    [585] = "inv_primaldragonflymount_orange",    [586] = "inv_protodrakegladiatormount_black",    [587] = "inv_protodrakegladiatormount_blue",    [588] = "inv_protodrakegladiatormount_gold",    [589] = "inv_protodrakegladiatormount_green",    [590] = "inv_protodrakegladiatormount_pale",    [591] = "inv_protodrakegladiatormount_purple",    [592] = "inv_protodrakegladiatormount_red",    [593] = "inv_purple_hyena2goblinmount",    [594] = "INV_Qiraj_OuroHide",    [595] = "INV_QirajIdol_War",    [596] = "inv_rabbitshaggy_brown",    [597] = "inv_rabbitshaggy_dark",    [598] = "inv_rabbitshaggy_green",    [599] = "inv_rabbitshaggy_white",    [600] = "inv_rat2undermine_grey",    [601] = "INV_RatMount",    [602] = "inv_ratmounthearthstone",    [603] = "inv_ravenlordpetTurquoise",    [604] = "inv_red_hyena2goblinmount",    [605] = "inv_redbird_pink",    [606] = "inv_redpandamount_gray",    [607] = "inv_redpandamount_orange",    [608] = "inv_redpandamount_red",    [609] = "inv_redpandamount_violet",    [610] = "inv_redpandapet_gray",    [611] = "inv_redpandapet_orange",    [612] = "inv_redpandapet_red",    [613] = "inv_redpandapet_violet",    [614] = "inv_rhinoprimalmountfire",    [615] = "inv_rhinoprimalmountice",    [616] = "inv_riverotterlargemount01_blue",    [617] = "inv_riverotterlargemount01_brown",    [618] = "inv_riverotterlargemount01_white",    [619] = "inv_riverotterlargemount01_yellow",    [620] = "inv_riverotterlargemount02_ano",    [621] = "inv_riverotterlargemount02_black",    [622] = "inv_riverotterlargemount02_brown",    [623] = "inv_riverotterlargemount02_white",    [624] = "inv_riverotterlargemount02_yellow",    [625] = "inv_roguemount_blue",    [626] = "inv_saber2mount",    [627] = "inv_sabretoothraptormount_black",    [628] = "inv_sabretoothraptormount_blue",    [629] = "inv_sabretoothraptormount_green",    [630] = "inv_sabretoothraptormount_white",    [631] = "inv_salamanderwatermount_blue",    [632] = "inv_salamanderwatermount_green",    [633] = "inv_salamanderwatermount_pink",    [634] = "inv_salamanderwatermount_purple",    [635] = "inv_scarabmount_copper",    [636] = "inv_scarabmount_green",    [637] = "inv_scroll_03_bluenew",    [638] = "inv_serpentmountgladiator_cromatico",    [639] = "inv_shadowstalkerpantherpet",    [640] = "inv_shamanmount",    [641] = "inv_shamanmount_arcane",    [642] = "inv_shamanmount_felfire",    [643] = "inv_shamanmount_ice",    [644] = "inv_shamanmount_sand",    [645] = "inv_sharkraymount_3",    [646] = "inv_shaserpentmount",    [647] = "inv_shatigermount",    [648] = "INV_Shield_23",    [649] = "inv_shield_26",    [650] = "inv_skeletalwarhorse_01_brown",    [651] = "inv_skeletalwarhorse_01_purple",    [652] = "inv_skeletalwarhorse_blue",    [653] = "inv_skydreamermount_tier1",    [654] = "inv_skydreamermount_tier2",    [655] = "inv_skydreamermount_tier3",    [656] = "inv_skydreamermount_tier4",    [657] = "inv_slugmount_yellow",    [658] = "inv_snailmount_red",    [659] = "inv_snapdragonmount01",    [660] = "inv_snowelementalmount",    [661] = "inv_soulhoundmount_black",    [662] = "inv_soulhoundmount_blue",    [663] = "inv_soulhoundmount_white",    [664] = "INV_SpiderMount",    [665] = "inv_squirrelflying",    [666] = "inv_squirrelflying_albino",    [667] = "inv_squirrelflying_chestnut",    [668] = "inv_squirrelflying_pistachio",    [669] = "inv_squirrelflying_silver",    [670] = "inv_squirrelflying_walnut",    [671] = "INV_StagForm",    [672] = "inv_stormdragonmount2",    [673] = "inv_stormdragonmount2_fel",    [674] = "inv_stormdragonmount2blue",    [675] = "inv_stormdragonmount2dark",    [676] = "inv_stormdragonmount2green",    [677] = "inv_stormdragonmount2light",    [678] = "inv_stormdragonmount2yellow",    [679] = "INV_SummerFest_FireFlower",    [680] = "INV_Sword_07",    [681] = "inv_tallstriderprimalmount_black",    [682] = "inv_tallstriderprimalmount_green",    [683] = "inv_tallstriderprimalmount_red",    [684] = "inv_tallstriderprimalmount_white",    [685] = "inv_thunderlizardprimal_black",    [686] = "inv_thunderlizardprimal_blue",    [687] = "inv_thunderlizardprimal_brown",    [688] = "inv_thunderlizardprimal_green",    [689] = "inv_toadardenwealdmount",    [690] = "inv_toadardenwealdmount_blue",    [691] = "inv_toadardenwealdmount_orange",    [692] = "inv_toadardenwealdmount_purple",    [693] = "inv_toadardenwealdmount_red",    [694] = "inv_toadardenwealdmount_yellow",    [695] = "inv_triceratopszandalari",    [696] = "inv_trilobitemount_blue",    [697] = "inv_trilobitemount_red",    [698] = "inv_turkeymount_black",    [699] = "inv_tyraelpet_paladin",    [700] = "inv_valentinepinkrocket",    [701] = "inv_viciousalliancespider",    [702] = "inv_vicioushordespider",    [703] = "inv_voiddragonmount",    [704] = "inv_vulperamount2",    [705] = "inv_VulpineFox_Green",    [706] = "inv_warlockmount",    [707] = "inv_warlockmountshadow",    [708] = "inv_warnightsabermount_skyblue",    [709] = "inv_waterelementalmount",    [710] = "inv_wolfboss_icon",    [711] = "inv_wolfdraenormountbrown",    [712] = "inv_wolfdraenormountfrost",    [713] = "inv_wolfdraenormountred",    [714] = "inv_wolfdraenormountshadow",    [715] = "INV_WolfSerpentMountWhite",    [716] = "inv_wrathionmount",    [717] = "inv_zeppelinmount",    [718] = "INV-Mount_Raven_54",    [719] = "ivn_toadloamount",    [720] = "Mekkatorque_suit_custom_mount",    [721] = "misc_drogbartotem02",    [722] = "nhi_corruptiongold_Border",    [723] = "nhi_shadowgold_Border",    [724] = "purple_inv_goblinspidertank",    [725] = "ratmount2",    [726] = "spell_arcane_blast_nightborne",    [727] = "spell_druid_bearhug",    [728] = "spell_druid_wildmushroom_bloom",    [729] = "spell_fire_rune",    [730] = "Spell_Holy_SummonLightwell",    [731] = "spell_mekkatorque_bot_redwrench",    [732] = "spell_nature_earthelemental_totem",    [733] = "spell_nature_swiftness",    [734] = "Spell_Nature_WispSplode",    [735] = "Spell_Shadow_EvilEye",    [736] = "Spell_Shadow_SoulGem",    [737] = "Spell_Shadow_SummonFelHunter",    [738] = "Spell_Shadow_SummonImp",    [739] = "t_roboticon",    [740] = "Tzar_icono",    [741] = "warlock_summon_beholder",    [742] = "xuen3",    [743] = "yellow_inv_goblinspidertank"
 }
 
 AV_VanityItems = {
+    [10732] = {
+        itemid = 10732,
+        name = "Wonderous Wavewhisker",
+        creaturePreview = 50988,
+        creatureId = 50988,
+        description = "Available from the Webstore.",
+        icon = 404
+    },
+    [10733] = {
+        itemid = 10733,
+        name = "Fabulous Foamfin",
+        creaturePreview = 50989,
+        creatureId = 50989,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 405
+    },
+    [13086] = {
+        itemid = 13086,
+        name = "Reins of the Winterspring Frostsaber",
+        creaturePreview = 11021,
+        creatureId = 11021,
+        description = "Can be purchased from Rivern Frostwind after reaching exalted within the Wintersaber Trainers.",
+        zone = "the Wintersaber Trainers",
+        icon = 57
+    },
+    [13582] = {
+        itemid = 13582,
+        name = "Zergling Leash",
+        creaturePreview = 11327,
+        creatureId = 11327,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 737
+    },
+    [13583] = {
+        itemid = 13583,
+        name = "Panda Collar",
+        creaturePreview = 11325,
+        creatureId = 11325,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 167
+    },
+    [13584] = {
+        itemid = 13584,
+        name = "Diablo Stone",
+        creaturePreview = 11326,
+        creatureId = 11326,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 243
+    },
+    [19872] = {
+        itemid = 19872,
+        name = "Swift Razzashi Raptor",
+        creaturePreview = 15090,
+        creatureId = 15090,
+        description = "Has a chance to drop from Bloodlord Mandokir in Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 59
+    },
+    [20371] = {
+        itemid = 20371,
+        name = "Blue Murloc Egg",
+        creaturePreview = 15186,
+        creatureId = 15186,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 269
+    },
+    [20651] = {
+        itemid = 20651,
+        name = "Orange Murloc Egg",
+        creaturePreview = 15361,
+        creatureId = 15361,
+        description = "Reward from Hardcore - Feelin' Fishy Trial.",
+        icon = 269
+    },
+    [21176] = {
+        itemid = 21176,
+        name = "Black Qiraji Resonating Crystal",
+        creaturePreview = 15711,
+        creatureId = 15711,
+        description = "Obtained from completing the Shifting Sands questline during the Ahn'Qiraj War Effort.",
+        icon = 501
+    },
+    [22114] = {
+        itemid = 22114,
+        name = "Pink Murloc Egg",
+        creaturePreview = 16069,
+        creatureId = 16069,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 574
+    },
+    [22780] = {
+        itemid = 22780,
+        name = "White Murloc Egg",
+        creaturePreview = 16445,
+        creatureId = 16445,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 269
+    },
+    [23713] = {
+        itemid = 23713,
+        name = "Hippogryph Hatchling",
+        creaturePreview = 17255,
+        creatureId = 17255,
+        description = "Available on the Webstore from the Grove Warden's Grace Bundle.",
+        icon = 268
+    },
+    [23720] = {
+        itemid = 23720,
+        name = "Riding Turtle",
+        creaturePreview = 17266,
+        creatureId = 17266,
+        description = "The slowest mount in ALL of Azeroth.",
+        zone = "ALL of Azeroth",
+        icon = 15
+    },
+    [25535] = {
+        itemid = 25535,
+        name = "Netherwhelp's Collar",
+        creaturePreview = 18381,
+        creatureId = 18381,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 540
+    },
+    [29465] = {
+        itemid = 29465,
+        name = "Black Battlestrider",
+        creaturePreview = 14334,
+        creatureId = 14334,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 17
+    },
+    [29466] = {
+        itemid = 29466,
+        name = "Black War Kodo",
+        creaturePreview = 14333,
+        creatureId = 14333,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 46
+    },
+    [29467] = {
+        itemid = 29467,
+        name = "Black War Ram",
+        creaturePreview = 14335,
+        creatureId = 14335,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 53
+    },
+    [29468] = {
+        itemid = 29468,
+        name = "Black War Steed Bridle",
+        creaturePreview = 14332,
+        creatureId = 14332,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 55
+    },
+    [29469] = {
+        itemid = 29469,
+        name = "Horn of the Black War Wolf",
+        creaturePreview = 14329,
+        creatureId = 14329,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 18
+    },
+    [29470] = {
+        itemid = 29470,
+        name = "Red Skeletal Warhorse",
+        creaturePreview = 14331,
+        creatureId = 14331,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 75
+    },
+    [29471] = {
+        itemid = 29471,
+        name = "Reins of the Black War Tiger",
+        creaturePreview = 14336,
+        creatureId = 14336,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 19
+    },
+    [29472] = {
+        itemid = 29472,
+        name = "Whistle of the Black War Raptor",
+        creaturePreview = 14330,
+        creatureId = 14330,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 59
+    },
+    [30609] = {
+        itemid = 30609,
+        name = "Swift Nether Drake",
+        creaturePreview = 21510,
+        creatureId = 21510,
+        description = "Obtained by becoming the best of the best in Arena.",
+        zone = "Arena",
+        icon = 54
+    },
+    [32458] = {
+        itemid = 32458,
+        name = "Ashes of Al'ar",
+        creaturePreview = 18545,
+        creatureId = 18545,
+        description = "Has a chance to drop from Kael'thas Sunstrider in Tempest Keep.",
+        zone = "Netherstorm",
+        subzone = "Tempest Keep",
+        icon = 506
+    },
+    [32498] = {
+        itemid = 32498,
+        name = "Fortune Coin",
+        creaturePreview = 25146,
+        creatureId = 25146,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 465
+    },
+    [32588] = {
+        itemid = 32588,
+        name = "Banana Charm",
+        creaturePreview = 23234,
+        creatureId = 23234,
+        description = "Cute as H*ck.",
+        icon = 470
+    },
+    [32768] = {
+        itemid = 32768,
+        name = "Reins of the Raven Lord",
+        creaturePreview = 23408,
+        creatureId = 23408,
+        description = "Has a chance to drops from Anzu in Sethekk Halls on Heroic or Mythic difficulty.",
+        zone = "Sethekk Halls on Heroic or Mythic difficulty",
+        icon = 718
+    },
+    [33225] = {
+        itemid = 33225,
+        name = "Reins of the Swift Spectral Tiger",
+        creaturePreview = 24004,
+        creatureId = 24004,
+        description = "Teaches you both Regular and Armored versions of Swift Spectral Tiger.",
+        icon = 63
+    },
+    [33809] = {
+        itemid = 33809,
+        name = "Amani War Bear",
+        creaturePreview = 24379,
+        creatureId = 24379,
+        description = "Obtainable within the Zul'Aman Raid.",
+        zone = "the Zul'Aman Raid",
+        icon = 3
+    },
+    [34092] = {
+        itemid = 34092,
+        name = "Merciless Nether Drake",
+        creaturePreview = 24743,
+        creatureId = 24743,
+        description = "Obtained by becoming the best of the best in Arena.",
+        zone = "Arena",
+        icon = 54
+    },
+    [34129] = {
+        itemid = 34129,
+        name = "Swift Warstrider",
+        creaturePreview = 20225,
+        creatureId = 20225,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 26
+    },
+    [34492] = {
+        itemid = 34492,
+        name = "Rocket Chicken",
+        creaturePreview = 25109,
+        creatureId = 25109,
+        description = "The Ideal Chicken companion.",
+        icon = 466
+    },
+    [34493] = {
+        itemid = 34493,
+        name = "Dragon Kite",
+        creaturePreview = 25110,
+        creatureId = 25110,
+        description = "Available from the Webstore.",
+        icon = 463
+    },
+    [34519] = {
+        itemid = 34519,
+        name = "Silver Pig Coin",
+        creaturePreview = 25147,
+        creatureId = 25147,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 462
+    },
+    [34535] = {
+        itemid = 34535,
+        name = "Azure Whelpling",
+        creaturePreview = 7547,
+        creatureId = 7547,
+        description = "Has a chance to drop from Elite Blue Dragonkin found in Azshara.",
+        zone = "Azshara",
+        icon = 476
+    },
+    [34955] = {
+        itemid = 34955,
+        name = "Scorched Stone",
+        creaturePreview = 25706,
+        creatureId = 25706,
+        description = "|cFFFF8800[Unverified]|r ",
+        icon = 575
+    },
+    [35513] = {
+        itemid = 35513,
+        name = "Swift White Hawkstrider",
+        creaturePreview = 26131,
+        creatureId = 26131,
+        description = "Has a chance to drops from Kael'thas Sunstrider in Magister Terrace on Heroic or Mythic difficulty.",
+        subzone = "Magister Terrace on Heroic or Mythic difficulty",
+        icon = 27
+    },
+    [35906] = {
+        itemid = 35906,
+        name = "Reins of the Black War Elekk",
+        creaturePreview = 26439,
+        creatureId = 26439,
+        description = "Can be purchased from Merul or Honor Quartermasters within Booty Bay.",
+        zone = "Stranglethorn Vale",
+        subzone = "Booty Bay",
+        icon = 61
+    },
+    [37676] = {
+        itemid = 37676,
+        name = "Vengeful Nether Drake",
+        creaturePreview = 27637,
+        creatureId = 27637,
+        description = "Obtained by becoming the best of the best in Arena.",
+        zone = "Arena",
+        icon = 54
+    },
+    [37719] = {
+        itemid = 37719,
+        name = "Swift Zhevra",
+        creaturePreview = 27684,
+        creatureId = 27684,
+        description = "A rare Zhevracorn.",
+        icon = 24
+    },
+    [39286] = {
+        itemid = 39286,
+        name = "Frosty's Collar",
+        creaturePreview = 28883,
+        creatureId = 28883,
+        description = "Available on the Webstore from the Ascension: Wrath of the Lich King - Alpha Bundle.",
+        icon = 567
+    },
+    [39656] = {
+        itemid = 39656,
+        name = "Tyrael's Hilt",
+        creaturePreview = 29089,
+        creatureId = 29089,
+        description = "Has some MAD dance moves.",
+        icon = 680
+    },
+    [41133] = {
+        itemid = 41133,
+        name = "Unhatched Mr. Chilly",
+        creaturePreview = 29726,
+        creatureId = 29726,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 489
+    },
+    [43516] = {
+        itemid = 43516,
+        name = "Brutal Nether Drake",
+        creaturePreview = 31124,
+        creatureId = 31124,
+        description = "Obtained by becoming the best of the best in Arena.",
+        zone = "Arena",
+        icon = 54
+    },
+    [44177] = {
+        itemid = 44177,
+        name = "Reins of the Violet Proto-Drake",
+        creaturePreview = 32157,
+        creatureId = 32157,
+        description = "Achievement Reward: What a long strange trip it's been.",
+        icon = 30
+    },
+    [44178] = {
+        itemid = 44178,
+        name = "Reins of the Albino Drake",
+        creaturePreview = 32158,
+        creatureId = 32158,
+        description = "Achievement reward - Leading the Cavalry (Collect 50 Total Mounts).",
+        icon = 29
+    },
+    [44223] = {
+        itemid = 44223,
+        name = "Reins of the Black War Bear (Purple)",
+        creaturePreview = 32203,
+        creatureId = 32203,
+        description = "Achievment reward - For The Alliance!.",
+        icon = 58
+    },
+    [44224] = {
+        itemid = 44224,
+        name = "Reins of the Black War Bear (Brown)",
+        creaturePreview = 32205,
+        creatureId = 32205,
+        description = "Achievment reward - For The Horde!.",
+        icon = 58
+    },
+    [44738] = {
+        itemid = 44738,
+        name = "Kirin Tor Familiar",
+        creaturePreview = 32643,
+        creatureId = 32643,
+        description = "Available on the Webstore from the Archmage's Reliquary Bundle.",
+        icon = 1
+    },
+    [44842] = {
+        itemid = 44842,
+        name = "Red Dragonhawk Mount",
+        creaturePreview = 32944,
+        creatureId = 32944,
+        description = "Achievement reward - Mountain o' Mounts (Horde) (Collect 100 Total Mounts).",
+        icon = 10
+    },
+    [44843] = {
+        itemid = 44843,
+        name = "Blue Dragonhawk Mount",
+        creaturePreview = 31239,
+        creatureId = 31239,
+        description = "Achievement reward - Mountain o' Mounts (Alliance) (Collect 100 Total Mounts).",
+        icon = 10
+    },
+    [46102] = {
+        itemid = 46102,
+        name = "Whistle of the Venomhide Ravasaur",
+        creaturePreview = 34156,
+        creatureId = 34156,
+        description = "Obtained from Mor'vek via the quest - They Grow Up So Fast.",
+        icon = 59
+    },
+    [46325] = {
+        itemid = 46325,
+        name = "Withers",
+        creaturePreview = 34278,
+        creatureId = 34278,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 4
+    },
+    [46353] = {
+        itemid = 46353,
+        name = "Sky-Touched Dread Raven Hatchling",
+        creaturePreview = 500155,
+        creatureId = 500155,
+        description = "Available from Harrison Jones for Adventurer's Coins.",
+        icon = 603
+    },
+    [46778] = {
+        itemid = 46778,
+        name = "Magic Rooster Egg",
+        creaturePreview = 34655,
+        creatureId = 34655,
+        description = "The Most Magical Rooster on Azeroth.",
+        icon = 269
+    },
+    [46802] = {
+        itemid = 46802,
+        name = "Heavy Murloc Egg",
+        creaturePreview = 34694,
+        creatureId = 34694,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 269
+    },
+    [46894] = {
+        itemid = 46894,
+        name = "Enchanted Jade",
+        creaturePreview = 34930,
+        creatureId = 34930,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 472
+    },
+    [48527] = {
+        itemid = 48527,
+        name = "Enchanted Onyx",
+        creaturePreview = 35468,
+        creatureId = 35468,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 501
+    },
+    [49093] = {
+        itemid = 49093,
+        name = "Arktos",
+        creaturePreview = 40555,
+        creatureId = 40555,
+        description = "Has a chance to drop from The Frozen Reach Manastorm.",
+        icon = 161
+    },
+    [49282] = {
+        itemid = 49282,
+        name = "Big Battle Bear",
+        creaturePreview = 28363,
+        creatureId = 28363,
+        description = "Now that is one Big Bear.",
+        icon = 3
+    },
+    [49287] = {
+        itemid = 49287,
+        name = "Tuskarr Kite",
+        creaturePreview = 36482,
+        creatureId = 36482,
+        description = "Available on the Webstore.",
+        icon = 490
+    },
+    [49343] = {
+        itemid = 49343,
+        name = "Spectral Tiger Cub",
+        creaturePreview = 36511,
+        creatureId = 36511,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 63
+    },
+    [49362] = {
+        itemid = 49362,
+        name = "Onyxian Whelpling",
+        creaturePreview = 36607,
+        creatureId = 36607,
+        description = "Whelplings are looking for new homes.",
+        icon = 475
+    },
+    [49663] = {
+        itemid = 49663,
+        name = "Wind Rider Cub",
+        creaturePreview = 36909,
+        creatureId = 36909,
+        description = "Reward for reaching level 30 during February CoA Open Beta event.",
+        icon = 492
+    },
+    [49664] = {
+        itemid = 49664,
+        name = "Enchanted Purple Jade",
+        creaturePreview = 36910,
+        creatureId = 36910,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 379
+    },
+    [49665] = {
+        itemid = 49665,
+        name = "Pandaren Monk",
+        creaturePreview = 36911,
+        creatureId = 36911,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 491
+    },
+    [49693] = {
+        itemid = 49693,
+        name = "Lil' Phylactery",
+        creaturePreview = 36979,
+        creatureId = 36979,
+        description = "Summon the Dreaded Lil' K.T.",
+        icon = 509
+    },
+    [50250] = {
+        itemid = 50250,
+        name = "Big Love Rocket",
+        creaturePreview = 38204,
+        creatureId = 38204,
+        description = "Has a chance to drop from the Heart-Shaped Box during the Love is in the Air.",
+        zone = "the Air",
+        icon = 700
+    },
+    [54068] = {
+        itemid = 54068,
+        name = "Wooly White Rhino",
+        creaturePreview = 40191,
+        creatureId = 40191,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 12
+    },
+    [54810] = {
+        itemid = 54810,
+        name = "Celestial Dragon",
+        creaturePreview = 40624,
+        creatureId = 40624,
+        description = "Available on the Webstore from the Celestial Observer's Master Warchest (Season 9 Bundle).",
+        icon = 559
+    },
+    [54811] = {
+        itemid = 54811,
+        name = "Celestial Steed",
+        creaturePreview = 40625,
+        creatureId = 40625,
+        description = "A Supernatural Steed made of Stardust.",
+        icon = 23
+    },
+    [54864] = {
+        itemid = 54864,
+        name = "SquirrelGirl_3",
+        creaturePreview = 10119,
+        creatureId = 10119,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 461
+    },
+    [56806] = {
+        itemid = 56806,
+        name = "Mini Thor",
+        creaturePreview = 42078,
+        creatureId = 42078,
+        description = "Available from the Webstore.",
+        icon = 739
+    },
+    [56925] = {
+        itemid = 56925,
+        name = "Sigil of Sergeant Brashclaw",
+        creaturePreview = 43303,
+        creatureId = 43303,
+        description = "Has a chance to drop from Sergeant Brashclaw within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56926] = {
+        itemid = 56926,
+        name = "Sigil of Fenros",
+        creaturePreview = 43304,
+        creatureId = 43304,
+        description = "Has a chance to drop from Fenros within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56927] = {
+        itemid = 56927,
+        name = "Sigil of Slark",
+        creaturePreview = 43305,
+        creatureId = 43305,
+        description = "Has a chance to drop from Slark within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56928] = {
+        itemid = 56928,
+        name = "Sigil of Brack",
+        creaturePreview = 43306,
+        creatureId = 43306,
+        description = "Has a chance to drop from Brack within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56929] = {
+        itemid = 56929,
+        name = "Sigil of Lupos",
+        creaturePreview = 43307,
+        creatureId = 43307,
+        description = "Has a chance to drop from Lupos within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56930] = {
+        itemid = 56930,
+        name = "Sigil of Nefaru",
+        creaturePreview = 43308,
+        creatureId = 43308,
+        description = "Has a chance to drop from Nefaru within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56931] = {
+        itemid = 56931,
+        name = "Sigil of Leprithus",
+        creaturePreview = 43309,
+        creatureId = 43309,
+        description = "Has a chance to drop from Leprithus within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56932] = {
+        itemid = 56932,
+        name = "Sigil of Foe Reaper 4000",
+        creaturePreview = 43310,
+        creatureId = 43310,
+        description = "Has a chance to drop from Foe Reaper 4000 within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56933] = {
+        itemid = 56933,
+        name = "Sigil of Naraxis",
+        creaturePreview = 43311,
+        creatureId = 43311,
+        description = "Has a chance to drop from Naraxis within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56934] = {
+        itemid = 56934,
+        name = "Sigil of Kazon",
+        creaturePreview = 43312,
+        creatureId = 43312,
+        description = "Has a chance to drop from Kazon within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56935] = {
+        itemid = 56935,
+        name = "Sigil of Brainwashed Noble",
+        creaturePreview = 43313,
+        creatureId = 43313,
+        description = "Has a chance to drop from Brainwashed Noble within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56936] = {
+        itemid = 56936,
+        name = "Sigil of Marisa du'Paige",
+        creaturePreview = 43314,
+        creatureId = 43314,
+        description = "Has a chance to drop from Marisa du'Paige within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56938] = {
+        itemid = 56938,
+        name = "Sigil of Chatter",
+        creaturePreview = 43316,
+        creatureId = 43316,
+        description = "Has a chance to drop from Chatter within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56939] = {
+        itemid = 56939,
+        name = "Sigil of Edwin VanCleef",
+        creaturePreview = 639,
+        creatureId = 639,
+        description = "Has a chance to drop from Edwin VanCleef within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [56940] = {
+        itemid = 56940,
+        name = "Sigil of Sneed",
+        creaturePreview = 642,
+        creatureId = 642,
+        description = "Can be obtained as a rare drop from The Deadmines dungeon.",
+        icon = 486
+    },
+    [56941] = {
+        itemid = 56941,
+        name = "Sigil of Rhahk'Zor",
+        creaturePreview = 644,
+        creatureId = 644,
+        description = "Has a chance to drop from Rhahk'Zor within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [56942] = {
+        itemid = 56942,
+        name = "Sigil of Cookie",
+        creaturePreview = 645,
+        creatureId = 645,
+        description = "Has a chance to drop from Cookie within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [56943] = {
+        itemid = 56943,
+        name = "Sigil of Mr. Smite",
+        creaturePreview = 646,
+        creatureId = 646,
+        description = "Has a chance to drop from Mr. Smite within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [56944] = {
+        itemid = 56944,
+        name = "Sigil of Captain Greenskin",
+        creaturePreview = 647,
+        creatureId = 647,
+        description = "Has a chance to drop from Captain Greenskin within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [56945] = {
+        itemid = 56945,
+        name = "Sigil of Lost One Chieftain",
+        creaturePreview = 43324,
+        creatureId = 43324,
+        description = "Has a chance to drop from Lost One Chieftain within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56946] = {
+        itemid = 56946,
+        name = "Sigil of Commander Felstrom",
+        creaturePreview = 43325,
+        creatureId = 43325,
+        description = "Has a chance to drop from Commander Felstrom within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56948] = {
+        itemid = 56948,
+        name = "Sigil of Rohh the Silent",
+        creaturePreview = 43327,
+        creatureId = 43327,
+        description = "Has a chance to drop from Rohh the Silent within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56950] = {
+        itemid = 56950,
+        name = "Sigil of Dragonmaw Battlemaster",
+        creaturePreview = 43329,
+        creatureId = 43329,
+        description = "Has a chance to drop from Dragonmaw Battlemaster within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56951] = {
+        itemid = 56951,
+        name = "Sigil of Jade",
+        creaturePreview = 43330,
+        creatureId = 43330,
+        description = "Has a chance to drop from Jade within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56952] = {
+        itemid = 56952,
+        name = "Sigil of Lost One Cook",
+        creaturePreview = 43331,
+        creatureId = 43331,
+        description = "Has a chance to drop from Lost One Cook within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56953] = {
+        itemid = 56953,
+        name = "Sigil of Leech Widow",
+        creaturePreview = 43332,
+        creatureId = 43332,
+        description = "Has a chance to drop from Leech Widow within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56954] = {
+        itemid = 56954,
+        name = "Sigil of Hammerspine",
+        creaturePreview = 43333,
+        creatureId = 43333,
+        description = "Has a chance to drop from Hammerspine within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56955] = {
+        itemid = 56955,
+        name = "Sigil of Bjarn",
+        creaturePreview = 43334,
+        creatureId = 43334,
+        description = "Has a chance to drop from Bjarn within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56956] = {
+        itemid = 56956,
+        name = "Sigil of Timber",
+        creaturePreview = 43335,
+        creatureId = 43335,
+        description = "Has a chance to drop from Timber within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56957] = {
+        itemid = 56957,
+        name = "Sigil of Edan the Howler",
+        creaturePreview = 43336,
+        creatureId = 43336,
+        description = "Has a chance to drop from Edan the Howler within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56958] = {
+        itemid = 56958,
+        name = "Sigil of Razormaw Matriarch",
+        creaturePreview = 43337,
+        creatureId = 43337,
+        description = "Has a chance to drop from Razormaw Matriarch within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56959] = {
+        itemid = 56959,
+        name = "Sigil of Great Father Arctikus",
+        creaturePreview = 43338,
+        creatureId = 43338,
+        description = "Has a chance to drop from Great Father Arctikus within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56961] = {
+        itemid = 56961,
+        name = "Sigil of Boss Galgosh",
+        creaturePreview = 43340,
+        creatureId = 43340,
+        description = "Has a chance to drop from Boss Galgosh within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56962] = {
+        itemid = 56962,
+        name = "Sigil of Magosh",
+        creaturePreview = 43341,
+        creatureId = 43341,
+        description = "Has a chance to drop from Magosh within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56963] = {
+        itemid = 56963,
+        name = "Sigil of Master Digger",
+        creaturePreview = 43342,
+        creatureId = 43342,
+        description = "Has a chance to drop from Master Digger within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56964] = {
+        itemid = 56964,
+        name = "Sigil of Grizlak",
+        creaturePreview = 43343,
+        creatureId = 43343,
+        description = "Has a chance to drop from Grizlak within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56965] = {
+        itemid = 56965,
+        name = "Sigil of Lost Soul",
+        creaturePreview = 43344,
+        creatureId = 43344,
+        description = "Has a chance to drop from Lost Soul within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56966] = {
+        itemid = 56966,
+        name = "Sigil of Tormented Spirit",
+        creaturePreview = 43345,
+        creatureId = 43345,
+        description = "Has a chance to drop from Tormented Spirit within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56967] = {
+        itemid = 56967,
+        name = "Sigil of Scale Belly",
+        creaturePreview = 43346,
+        creatureId = 43346,
+        description = "Has a chance to drop from Scale Belly within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56969] = {
+        itemid = 56969,
+        name = "Sigil of Dextren Ward",
+        creaturePreview = 43347,
+        creatureId = 43347,
+        description = "Has a chance to drop from Dextren Ward within Stormwind Stockade.",
+        zone = "Stormwind Stockade",
+        icon = 486
+    },
+    [56970] = {
+        itemid = 56970,
+        name = "Sigil of Kam Deepfury",
+        creaturePreview = 43348,
+        creatureId = 43348,
+        description = "Has a chance to drop from Kam Deepfury within Stormwind Stockade.",
+        zone = "Stormwind Stockade",
+        icon = 486
+    },
+    [56971] = {
+        itemid = 56971,
+        name = "Sigil of Targorr the Dread",
+        creaturePreview = 43349,
+        creatureId = 43349,
+        description = "Has a chance to drop from Targorr the Dread within Stormwind Stockade.",
+        zone = "Stormwind Stockade",
+        icon = 486
+    },
+    [56972] = {
+        itemid = 56972,
+        name = "Sigil of Bazil Thredd",
+        creaturePreview = 43350,
+        creatureId = 43350,
+        description = "Has a chance to drop from Bazil Thredd within Stormwind Stockade.",
+        zone = "Stormwind Stockade",
+        icon = 486
+    },
+    [56973] = {
+        itemid = 56973,
+        name = "Sigil of Hamhock",
+        creaturePreview = 43351,
+        creatureId = 43351,
+        description = "Has a chance to drop from Hamhock within Stormwind Stockade.",
+        zone = "Stormwind Stockade",
+        icon = 486
+    },
+    [56974] = {
+        itemid = 56974,
+        name = "Sigil of Bruegal Ironknuckle",
+        creaturePreview = 43352,
+        creatureId = 43352,
+        description = "Has a chance to drop from Bruegal Ironknuckle within Stormwind Stockade.",
+        zone = "Stormwind Stockade",
+        icon = 486
+    },
+    [56975] = {
+        itemid = 56975,
+        name = "Sigil of Highlord Bolvar Fordragon",
+        creaturePreview = 43353,
+        creatureId = 43353,
+        description = "Has a chance to drop from Highlord Bolvar Fordragon within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56976] = {
+        itemid = 56976,
+        name = "Sigil of Gilnid",
+        creaturePreview = 1763,
+        creatureId = 1763,
+        description = "Has a chance to drop from Gilnid within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [56977] = {
+        itemid = 56977,
+        name = "Sigil of Scarlet Judge",
+        creaturePreview = 43355,
+        creatureId = 43355,
+        description = "Has a chance to drop from Scarlet Judge within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56978] = {
+        itemid = 56978,
+        name = "Sigil of Scarlet Interrogator",
+        creaturePreview = 43356,
+        creatureId = 43356,
+        description = "Has a chance to drop from Scarlet Interrogator within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56979] = {
+        itemid = 56979,
+        name = "Sigil of Scarlet High Clerist",
+        creaturePreview = 43357,
+        creatureId = 43357,
+        description = "Has a chance to drop from Scarlet High Clerist within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56980] = {
+        itemid = 56980,
+        name = "Sigil of Scarlet Executioner",
+        creaturePreview = 43358,
+        creatureId = 43358,
+        description = "Has a chance to drop from Scarlet Executioner within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56981] = {
+        itemid = 56981,
+        name = "Sigil of Foreman Jerris",
+        creaturePreview = 43359,
+        creatureId = 43359,
+        description = "Has a chance to drop from Foreman Jerris within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56982] = {
+        itemid = 56982,
+        name = "Sigil of Foreman Marcrid",
+        creaturePreview = 43360,
+        creatureId = 43360,
+        description = "Has a chance to drop from Foreman Marcrid within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56983] = {
+        itemid = 56983,
+        name = "Sigil of Foulmane",
+        creaturePreview = 43361,
+        creatureId = 43361,
+        description = "Has a chance to drop from Foulmane within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56984] = {
+        itemid = 56984,
+        name = "Sigil of Lord Maldazzar",
+        creaturePreview = 43362,
+        creatureId = 43362,
+        description = "Has a chance to drop from Lord Maldazzar within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56985] = {
+        itemid = 56985,
+        name = "Sigil of Dreadwhisper",
+        creaturePreview = 43363,
+        creatureId = 43363,
+        description = "Has a chance to drop from Dreadwhisper within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56986] = {
+        itemid = 56986,
+        name = "Sigil of Putridius",
+        creaturePreview = 43364,
+        creatureId = 43364,
+        description = "Has a chance to drop from Putridius within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56987] = {
+        itemid = 56987,
+        name = "Sigil of The Husk",
+        creaturePreview = 43365,
+        creatureId = 43365,
+        description = "Has a chance to drop from The Husk within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56988] = {
+        itemid = 56988,
+        name = "Sigil of Darkmaster Gandling",
+        creaturePreview = 1853,
+        creatureId = 1853,
+        description = "Has a chance to drop from Darkmaster Gandling within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [56989] = {
+        itemid = 56989,
+        name = "Sigil of Scarlet Smith",
+        creaturePreview = 43367,
+        creatureId = 43367,
+        description = "Has a chance to drop from Scarlet Smith within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56990] = {
+        itemid = 56990,
+        name = "Sigil of Muad",
+        creaturePreview = 43368,
+        creatureId = 43368,
+        description = "Has a chance to drop from Muad within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56991] = {
+        itemid = 56991,
+        name = "Sigil of Deeb",
+        creaturePreview = 43369,
+        creatureId = 43369,
+        description = "Has a chance to drop from Deeb within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56992] = {
+        itemid = 56992,
+        name = "Sigil of Dalaran Spellscribe",
+        creaturePreview = 43370,
+        creatureId = 43370,
+        description = "Has a chance to drop from Dalaran Spellscribe within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56993] = {
+        itemid = 56993,
+        name = "Sigil of Farmer Solliden",
+        creaturePreview = 43371,
+        creatureId = 43371,
+        description = "Has a chance to drop from Farmer Solliden within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56994] = {
+        itemid = 56994,
+        name = "Sigil of Rot Hide Bruiser",
+        creaturePreview = 43372,
+        creatureId = 43372,
+        description = "Has a chance to drop from Rot Hide Bruiser within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56995] = {
+        itemid = 56995,
+        name = "Sigil of Snarlmane",
+        creaturePreview = 43373,
+        creatureId = 43373,
+        description = "Has a chance to drop from Snarlmane within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56996] = {
+        itemid = 56996,
+        name = "Sigil of Ma'ruk Wyrmscale",
+        creaturePreview = 43374,
+        creatureId = 43374,
+        description = "Has a chance to drop from Ma'ruk Wyrmscale within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56997] = {
+        itemid = 56997,
+        name = "Sigil of Garneg Charskull",
+        creaturePreview = 43375,
+        creatureId = 43375,
+        description = "Has a chance to drop from Garneg Charskull within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [56998] = {
+        itemid = 56998,
+        name = "Sigil of Strider Clutchmother",
+        creaturePreview = 43376,
+        creatureId = 43376,
+        description = "Has a chance to drop from Strider Clutchmother within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [56999] = {
+        itemid = 56999,
+        name = "Sigil of Shadowclaw",
+        creaturePreview = 43377,
+        creatureId = 43377,
+        description = "Has a chance to drop from Shadowclaw within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57000] = {
+        itemid = 57000,
+        name = "Lootbot 3000",
+        creaturePreview = 44022,
+        creatureId = 44022,
+        description = "Automatically Loot your items!.",
+        icon = 569
+    },
+    [57001] = {
+        itemid = 57001,
+        name = "Sigil of Lady Moongazer",
+        creaturePreview = 43378,
+        creatureId = 43378,
+        description = "Has a chance to drop from Lady Moongazer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57003] = {
+        itemid = 57003,
+        name = "Sigil of Carnivous the Breaker",
+        creaturePreview = 43379,
+        creatureId = 43379,
+        description = "Has a chance to drop from Carnivous the Breaker within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57004] = {
+        itemid = 57004,
+        name = "Sigil of Licillin",
+        creaturePreview = 43380,
+        creatureId = 43380,
+        description = "Has a chance to drop from Licillin within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57040] = {
+        itemid = 57040,
+        name = "Sigil of Firecaller Radison",
+        creaturePreview = 43381,
+        creatureId = 43381,
+        description = "Has a chance to drop from Firecaller Radison within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57041] = {
+        itemid = 57041,
+        name = "Sigil of Stone Fury",
+        creaturePreview = 43382,
+        creatureId = 43382,
+        description = "Has a chance to drop from Stone Fury within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57042] = {
+        itemid = 57042,
+        name = "Sigil of Ravenclaw Regent",
+        creaturePreview = 43383,
+        creatureId = 43383,
+        description = "Has a chance to drop from Ravenclaw Regent within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57044] = {
+        itemid = 57044,
+        name = "Sigil of Narillasanz",
+        creaturePreview = 43385,
+        creatureId = 43385,
+        description = "Has a chance to drop from Narillasanz within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57045] = {
+        itemid = 57045,
+        name = "Sigil of Skhowl",
+        creaturePreview = 43386,
+        creatureId = 43386,
+        description = "Has a chance to drop from Skhowl within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57046] = {
+        itemid = 57046,
+        name = "Sigil of Lo'Grosh",
+        creaturePreview = 43387,
+        creatureId = 43387,
+        description = "Has a chance to drop from Lo'Grosh within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57047] = {
+        itemid = 57047,
+        name = "Sigil of Large Loch Crocolisk",
+        creaturePreview = 43388,
+        creatureId = 43388,
+        description = "Has a chance to drop from Large Loch Crocolisk within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57048] = {
+        itemid = 57048,
+        name = "Sigil of Lord Sakrasis",
+        creaturePreview = 43389,
+        creatureId = 43389,
+        description = "Has a chance to drop from Lord Sakrasis within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57049] = {
+        itemid = 57049,
+        name = "Sigil of Darbel Montrose",
+        creaturePreview = 43390,
+        creatureId = 43390,
+        description = "Has a chance to drop from Darbel Montrose within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57050] = {
+        itemid = 57050,
+        name = "Sigil of Singer",
+        creaturePreview = 43391,
+        creatureId = 43391,
+        description = "Has a chance to drop from Singer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57051] = {
+        itemid = 57051,
+        name = "Sigil of Foulbelly",
+        creaturePreview = 43392,
+        creatureId = 43392,
+        description = "Has a chance to drop from Foulbelly within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57052] = {
+        itemid = 57052,
+        name = "Sigil of Ruul Onestone",
+        creaturePreview = 43393,
+        creatureId = 43393,
+        description = "Has a chance to drop from Ruul Onestone within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57053] = {
+        itemid = 57053,
+        name = "Sigil of Kovork",
+        creaturePreview = 43394,
+        creatureId = 43394,
+        description = "Has a chance to drop from Kovork within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57054] = {
+        itemid = 57054,
+        name = "Sigil of Molok the Crusher",
+        creaturePreview = 43395,
+        creatureId = 43395,
+        description = "Has a chance to drop from Molok the Crusher within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57055] = {
+        itemid = 57055,
+        name = "Sigil of Zalas Witherbark",
+        creaturePreview = 43396,
+        creatureId = 43396,
+        description = "Has a chance to drop from Zalas Witherbark within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57056] = {
+        itemid = 57056,
+        name = "Sigil of Nimar the Slayer",
+        creaturePreview = 43397,
+        creatureId = 43397,
+        description = "Has a chance to drop from Nimar the Slayer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57057] = {
+        itemid = 57057,
+        name = "Sigil of Geomancer Flintdagger",
+        creaturePreview = 43398,
+        creatureId = 43398,
+        description = "Has a chance to drop from Geomancer Flintdagger within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57103] = {
+        itemid = 57103,
+        name = "Sigil of Shadowforge Commander",
+        creaturePreview = 43399,
+        creatureId = 43399,
+        description = "Has a chance to drop from Shadowforge Commander within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57105] = {
+        itemid = 57105,
+        name = "Sigil of Siege Golem",
+        creaturePreview = 43401,
+        creatureId = 43401,
+        description = "Has a chance to drop from Siege Golem within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57106] = {
+        itemid = 57106,
+        name = "Sigil of War Golem",
+        creaturePreview = 43402,
+        creatureId = 43402,
+        description = "Has a chance to drop from War Golem within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57107] = {
+        itemid = 57107,
+        name = "Sigil of Rumbler",
+        creaturePreview = 43403,
+        creatureId = 43403,
+        description = "Has a chance to drop from Rumbler within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57108] = {
+        itemid = 57108,
+        name = "Sigil of Barnabus",
+        creaturePreview = 43404,
+        creatureId = 43404,
+        description = "Has a chance to drop from Barnabus within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57109] = {
+        itemid = 57109,
+        name = "Sigil of Anathemus",
+        creaturePreview = 43405,
+        creatureId = 43405,
+        description = "Has a chance to drop from Anathemus within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57123] = {
+        itemid = 57123,
+        name = "Sigil of Prince Nazjak",
+        creaturePreview = 43406,
+        creatureId = 43406,
+        description = "Has a chance to drop from Prince Nazjak within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57124] = {
+        itemid = 57124,
+        name = "Sigil of King Magni Bronzebeard",
+        creaturePreview = 43407,
+        creatureId = 43407,
+        description = "Has a chance to drop from King Magni Bronzebeard within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57141] = {
+        itemid = 57141,
+        name = "Sigil of Broken Tooth",
+        creaturePreview = 43408,
+        creatureId = 43408,
+        description = "Has a chance to drop from Broken Tooth within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57249] = {
+        itemid = 57249,
+        name = "Sigil of Zaricotl",
+        creaturePreview = 43409,
+        creatureId = 43409,
+        description = "Has a chance to drop from Zaricotl within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57250] = {
+        itemid = 57250,
+        name = "Sigil of Ghost Howl",
+        creaturePreview = 43410,
+        creatureId = 43410,
+        description = "Has a chance to drop from Ghost Howl within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57564] = {
+        itemid = 57564,
+        name = "Sigil of Cairne Bloodhoof",
+        creaturePreview = 43411,
+        creatureId = 43411,
+        description = "Has a chance to drop from Cairne Bloodhoof within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57565] = {
+        itemid = 57565,
+        name = "Sigil of Mazzranache",
+        creaturePreview = 43412,
+        creatureId = 43412,
+        description = "Has a chance to drop from Mazzranache within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57573] = {
+        itemid = 57573,
+        name = "Sigil of Silithid Harvester",
+        creaturePreview = 43413,
+        creatureId = 43413,
+        description = "Has a chance to drop from Silithid Harvester within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57586] = {
+        itemid = 57586,
+        name = "Sigil of Elder Mystic Razorsnout",
+        creaturePreview = 43414,
+        creatureId = 43414,
+        description = "Has a chance to drop from Elder Mystic Razorsnout within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57587] = {
+        itemid = 57587,
+        name = "Sigil of Sludge Beast",
+        creaturePreview = 43415,
+        creatureId = 43415,
+        description = "Has a chance to drop from Sludge Beast within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57588] = {
+        itemid = 57588,
+        name = "Sigil of Gesharahan",
+        creaturePreview = 43416,
+        creatureId = 43416,
+        description = "Has a chance to drop from Gesharahan within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57589] = {
+        itemid = 57589,
+        name = "Sigil of Rathorian",
+        creaturePreview = 43417,
+        creatureId = 43417,
+        description = "Has a chance to drop from Rathorian within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57591] = {
+        itemid = 57591,
+        name = "Sigil of Blackmoss the Fetid",
+        creaturePreview = 43419,
+        creatureId = 43419,
+        description = "Has a chance to drop from Blackmoss the Fetid within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57592] = {
+        itemid = 57592,
+        name = "Sigil of Sewer Beast",
+        creaturePreview = 43420,
+        creatureId = 43420,
+        description = "Has a chance to drop from Sewer Beast within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57593] = {
+        itemid = 57593,
+        name = "Sigil of Miner Johnson",
+        creaturePreview = 3586,
+        creatureId = 3586,
+        description = "Has a chance to drop from Miner Johnson within Deadmines.",
+        subzone = "Deadmines",
+        icon = 486
+    },
+    [57595] = {
+        itemid = 57595,
+        name = "Sigil of Trigore the Lasher",
+        creaturePreview = 43423,
+        creatureId = 43423,
+        description = "Has a chance to drop from Trigore the Lasher within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57596] = {
+        itemid = 57596,
+        name = "Sigil of Kresh",
+        creaturePreview = 3653,
+        creatureId = 3653,
+        description = "Has a chance to drop from Kresh within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57597] = {
+        itemid = 57597,
+        name = "Sigil of Mutanus the Devourer",
+        creaturePreview = 3654,
+        creatureId = 3654,
+        description = "Can be obtained as a rare drop from Wailing Caverns dungeon.",
+        icon = 486
+    },
+    [57598] = {
+        itemid = 57598,
+        name = "Sigil of Lord Cobrahn",
+        creaturePreview = 3669,
+        creatureId = 3669,
+        description = "Has a chance to drop from Lord Cobrahn within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57599] = {
+        itemid = 57599,
+        name = "Sigil of Lord Pythas",
+        creaturePreview = 3670,
+        creatureId = 3670,
+        description = "Has a chance to drop from Lord Pythas within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57600] = {
+        itemid = 57600,
+        name = "Sigil of Lady Anacondra",
+        creaturePreview = 3671,
+        creatureId = 3671,
+        description = "Has a chance to drop from Lady Anacondra within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57601] = {
+        itemid = 57601,
+        name = "Sigil of Boahn",
+        creaturePreview = 43429,
+        creatureId = 43429,
+        description = "Has a chance to drop from Boahn within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57602] = {
+        itemid = 57602,
+        name = "Sigil of Lord Serpentis",
+        creaturePreview = 3673,
+        creatureId = 3673,
+        description = "Has a chance to drop from Lord Serpentis within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57603] = {
+        itemid = 57603,
+        name = "Sigil of Skum",
+        creaturePreview = 3674,
+        creatureId = 3674,
+        description = "Has a chance to drop from Skum within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57605] = {
+        itemid = 57605,
+        name = "Sigil of Apothecary Falthis",
+        creaturePreview = 43433,
+        creatureId = 43433,
+        description = "Has a chance to drop from Apothecary Falthis within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57606] = {
+        itemid = 57606,
+        name = "Sigil of Darkslayer Mordenthal",
+        creaturePreview = 43434,
+        creatureId = 43434,
+        description = "Has a chance to drop from Darkslayer Mordenthal within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57607] = {
+        itemid = 57607,
+        name = "Sigil of Akkrilus",
+        creaturePreview = 43435,
+        creatureId = 43435,
+        description = "Has a chance to drop from Akkrilus within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57608] = {
+        itemid = 57608,
+        name = "Sigil of Terrowulf Packlord",
+        creaturePreview = 43436,
+        creatureId = 43436,
+        description = "Has a chance to drop from Terrowulf Packlord within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57610] = {
+        itemid = 57610,
+        name = "Sigil of Deathsworn Captain",
+        creaturePreview = 43438,
+        creatureId = 43438,
+        description = "Has a chance to drop from Deathsworn Captain within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57611] = {
+        itemid = 57611,
+        name = "Sigil of Razorclaw the Butcher",
+        creaturePreview = 43439,
+        creatureId = 43439,
+        description = "Has a chance to drop from Razorclaw the Butcher within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57612] = {
+        itemid = 57612,
+        name = "Sigil of Baron Silverlaine",
+        creaturePreview = 43440,
+        creatureId = 43440,
+        description = "Has a chance to drop from Baron Silverlaine within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57613] = {
+        itemid = 57613,
+        name = "Sigil of Rethilgore",
+        creaturePreview = 43441,
+        creatureId = 43441,
+        description = "Has a chance to drop from Rethilgore within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57614] = {
+        itemid = 57614,
+        name = "Sigil of Wolf Master Nandos",
+        creaturePreview = 43442,
+        creatureId = 43442,
+        description = "Has a chance to drop from Wolf Master dos within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57616] = {
+        itemid = 57616,
+        name = "Sigil of Houndmaster Loksey",
+        creaturePreview = 43444,
+        creatureId = 43444,
+        description = "Has a chance to drop from Houndmaster Loksey within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [57617] = {
+        itemid = 57617,
+        name = "Sigil of Herod",
+        creaturePreview = 43445,
+        creatureId = 43445,
+        description = "Has a chance to drop from Herod within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [57618] = {
+        itemid = 57618,
+        name = "Sigil of High Inquisitor Whitemane",
+        creaturePreview = 43446,
+        creatureId = 43446,
+        description = "Has a chance to drop from High Inquisitor Whitemane within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [57619] = {
+        itemid = 57619,
+        name = "Sigil of Interrogator Vishas",
+        creaturePreview = 43447,
+        creatureId = 43447,
+        description = "Has a chance to drop from Interrogator Vishas within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [57620] = {
+        itemid = 57620,
+        name = "Sigil of Pridewing Patriarch",
+        creaturePreview = 43448,
+        creatureId = 43448,
+        description = "Has a chance to drop from Pridewing Patriarch within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57621] = {
+        itemid = 57621,
+        name = "Sigil of Vengeful Ancient",
+        creaturePreview = 43449,
+        creatureId = 43449,
+        description = "Has a chance to drop from Vengeful Ancient within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57622] = {
+        itemid = 57622,
+        name = "Sigil of Nal'taszar",
+        creaturePreview = 43450,
+        creatureId = 43450,
+        description = "Has a chance to drop from Nal'taszar within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57623] = {
+        itemid = 57623,
+        name = "Sigil of Silithid Ravager",
+        creaturePreview = 43451,
+        creatureId = 43451,
+        description = "Has a chance to drop from Silithid Ravager within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57624] = {
+        itemid = 57624,
+        name = "Sigil of Fenrus the Devourer",
+        creaturePreview = 43452,
+        creatureId = 43452,
+        description = "Has a chance to drop from Fenrus the Devourer within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57625] = {
+        itemid = 57625,
+        name = "Sigil of Archmage Arugal",
+        creaturePreview = 43453,
+        creatureId = 43453,
+        description = "Has a chance to drop from Archmage Arugal within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57626] = {
+        itemid = 57626,
+        name = "Sigil of Commander Springvale",
+        creaturePreview = 43454,
+        creatureId = 43454,
+        description = "Has a chance to drop from Commander Springvale within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57627] = {
+        itemid = 57627,
+        name = "Sigil of Odo the Blindwatcher",
+        creaturePreview = 43455,
+        creatureId = 43455,
+        description = "Has a chance to drop from Odo the Blindwatcher within Shadowfang Keep.",
+        zone = "Silverpine Forest",
+        subzone = "Shadowfang Keep",
+        icon = 486
+    },
+    [57628] = {
+        itemid = 57628,
+        name = "Sigil of Darkmist Widow",
+        creaturePreview = 43456,
+        creatureId = 43456,
+        description = "Has a chance to drop from Darkmist Widow within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57629] = {
+        itemid = 57629,
+        name = "Sigil of Overlord Ramtusk",
+        creaturePreview = 43457,
+        creatureId = 43457,
+        description = "Has a chance to drop from Overlord Ramtusk within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57630] = {
+        itemid = 57630,
+        name = "Sigil of Charlga Razorflank",
+        creaturePreview = 43458,
+        creatureId = 43458,
+        description = "Has a chance to drop from Charlga Razorflank within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57631] = {
+        itemid = 57631,
+        name = "Sigil of Agathelos the Raging",
+        creaturePreview = 43459,
+        creatureId = 43459,
+        description = "Has a chance to drop from Agathelos the Raging within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57632] = {
+        itemid = 57632,
+        name = "Sigil of Aggem Thorncurse",
+        creaturePreview = 43460,
+        creatureId = 43460,
+        description = "Has a chance to drop from Aggem Thorncurse within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57633] = {
+        itemid = 57633,
+        name = "Sigil of Blind Hunter",
+        creaturePreview = 43461,
+        creatureId = 43461,
+        description = "Has a chance to drop from Blind Hunter within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57634] = {
+        itemid = 57634,
+        name = "Sigil of Death Speaker Jargba",
+        creaturePreview = 43462,
+        creatureId = 43462,
+        description = "Has a chance to drop from Death Speaker Jargba within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57635] = {
+        itemid = 57635,
+        name = "Sigil of Razorfen Spearhide",
+        creaturePreview = 43463,
+        creatureId = 43463,
+        description = "Has a chance to drop from Razorfen Spearhide within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57636] = {
+        itemid = 57636,
+        name = "Sigil of High Inquisitor Fairbanks",
+        creaturePreview = 43464,
+        creatureId = 43464,
+        description = "Has a chance to drop from High Inquisitor Fairbanks within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [57637] = {
+        itemid = 57637,
+        name = "Sigil of Bloodmage Thalnos",
+        creaturePreview = 43465,
+        creatureId = 43465,
+        description = "Has a chance to drop from Bloodmage Thalnos within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [57638] = {
+        itemid = 57638,
+        name = "Sigil of Aku'mai",
+        creaturePreview = 43466,
+        creatureId = 43466,
+        description = "Has a chance to drop from Aku'mai within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [57639] = {
+        itemid = 57639,
+        name = "Sigil of Old Serra'kis",
+        creaturePreview = 43467,
+        creatureId = 43467,
+        description = "Has a chance to drop from Old Serra'kis within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [57640] = {
+        itemid = 57640,
+        name = "Sigil of Lady Sarevess",
+        creaturePreview = 43468,
+        creatureId = 43468,
+        description = "Has a chance to drop from Lady Sarevess within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [57641] = {
+        itemid = 57641,
+        name = "Sigil of Twilight Lord Kelris",
+        creaturePreview = 43469,
+        creatureId = 43469,
+        description = "Has a chance to drop from Twilight Lord Kelris within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [57642] = {
+        itemid = 57642,
+        name = "Sigil of Earthcaller Halmgar",
+        creaturePreview = 43470,
+        creatureId = 43470,
+        description = "Has a chance to drop from Earthcaller Halmgar within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [57643] = {
+        itemid = 57643,
+        name = "Sigil of Grimlok",
+        creaturePreview = 43471,
+        creatureId = 43471,
+        description = "Has a chance to drop from Grimlok within Uldaman.",
+        zone = "Uldaman",
+        icon = 486
+    },
+    [57644] = {
+        itemid = 57644,
+        name = "Sigil of Ghamoo-ra",
+        creaturePreview = 43472,
+        creatureId = 43472,
+        description = "Has a chance to drop from Ghamoo-ra within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [57645] = {
+        itemid = 57645,
+        name = "Sigil of Thrall",
+        creaturePreview = 43473,
+        creatureId = 43473,
+        description = "Has a chance to drop from Thrall within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57647] = {
+        itemid = 57647,
+        name = "Sigil of Lady Szallah",
+        creaturePreview = 43475,
+        creatureId = 43475,
+        description = "Has a chance to drop from Lady Szallah within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57648] = {
+        itemid = 57648,
+        name = "Sigil of Diamond Head",
+        creaturePreview = 43476,
+        creatureId = 43476,
+        description = "Has a chance to drop from Diamond Head within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57649] = {
+        itemid = 57649,
+        name = "Sigil of Bloodroar the Stalker",
+        creaturePreview = 43477,
+        creatureId = 43477,
+        description = "Has a chance to drop from Bloodroar the Stalker within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57650] = {
+        itemid = 57650,
+        name = "Sigil of Antilus the Soarer",
+        creaturePreview = 43478,
+        creatureId = 43478,
+        description = "Has a chance to drop from Antilus the Soarer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57651] = {
+        itemid = 57651,
+        name = "Sigil of Dreamwatcher Forktongue",
+        creaturePreview = 43479,
+        creatureId = 43479,
+        description = "Has a chance to drop from Dreamwatcher Forktongue within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [57652] = {
+        itemid = 57652,
+        name = "Sigil of Arash-ethis",
+        creaturePreview = 43480,
+        creatureId = 43480,
+        description = "Has a chance to drop from Arash-ethis within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57653] = {
+        itemid = 57653,
+        name = "Sigil of Qirot",
+        creaturePreview = 43481,
+        creatureId = 43481,
+        description = "Has a chance to drop from Qirot within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57654] = {
+        itemid = 57654,
+        name = "Sigil of Old Grizzlegut",
+        creaturePreview = 43482,
+        creatureId = 43482,
+        description = "Has a chance to drop from Old Grizzlegut within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57655] = {
+        itemid = 57655,
+        name = "Sigil of Gnarl Leafbrother",
+        creaturePreview = 43483,
+        creatureId = 43483,
+        description = "Has a chance to drop from Gnarl Leafbrother within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57656] = {
+        itemid = 57656,
+        name = "Sigil of Snarler",
+        creaturePreview = 43484,
+        creatureId = 43484,
+        description = "Has a chance to drop from Snarler within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57658] = {
+        itemid = 57658,
+        name = "Sigil of Veyzhak the Cannibal",
+        creaturePreview = 43486,
+        creatureId = 43486,
+        description = "Has a chance to drop Veyzhak the Cannibal within the Sunken Temple.",
+        zone = "the Sunken Temple",
+        icon = 486
+    },
+    [57659] = {
+        itemid = 57659,
+        name = "Sigil of Zekkis",
+        creaturePreview = 43487,
+        creatureId = 43487,
+        description = "Has a chance to drop Zekkis within the Sunken Temple.",
+        zone = "the Sunken Temple",
+        icon = 486
+    },
+    [57660] = {
+        itemid = 57660,
+        name = "Sigil of Spawn of Hakkar",
+        creaturePreview = 43488,
+        creatureId = 43488,
+        description = "Has a chance to drop from Spawn of Hakkar within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [57661] = {
+        itemid = 57661,
+        name = "Sigil of Shade of Eranikus",
+        creaturePreview = 43489,
+        creatureId = 43489,
+        description = "Can be obtained as a rare drop from Sunken Temple dungeon.",
+        icon = 486
+    },
+    [57662] = {
+        itemid = 57662,
+        name = "Sigil of Jammal'an the Prophet",
+        creaturePreview = 43490,
+        creatureId = 43490,
+        description = "Has a chance to drop from Jammal'an the Prophet within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [57663] = {
+        itemid = 57663,
+        name = "Sigil of Morphaz",
+        creaturePreview = 43491,
+        creatureId = 43491,
+        description = "Has a chance to drop from Morphaz within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [57664] = {
+        itemid = 57664,
+        name = "Sigil of Weaver",
+        creaturePreview = 43492,
+        creatureId = 43492,
+        description = "Has a chance to drop from Weaver within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [57665] = {
+        itemid = 57665,
+        name = "Sigil of Dreamscythe",
+        creaturePreview = 43493,
+        creatureId = 43493,
+        description = "Has a chance to drop from Dreamscythe within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [57666] = {
+        itemid = 57666,
+        name = "Sigil of Hazzas",
+        creaturePreview = 43494,
+        creatureId = 43494,
+        description = "Has a chance to drop from Hazzas within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [57667] = {
+        itemid = 57667,
+        name = "Sigil of Verdan the Everliving",
+        creaturePreview = 5775,
+        creatureId = 5775,
+        description = "Has a chance to drop from Verdan the Everliving within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [57668] = {
+        itemid = 57668,
+        name = "Sigil of Sister Hatelash",
+        creaturePreview = 43496,
+        creatureId = 43496,
+        description = "Has a chance to drop from Sister Hatelash within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57669] = {
+        itemid = 57669,
+        name = "Sigil of Snagglespear",
+        creaturePreview = 43497,
+        creatureId = 43497,
+        description = "Has a chance to drop from Snagglespear within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57670] = {
+        itemid = 57670,
+        name = "Sigil of Enforcer Emilgund",
+        creaturePreview = 43498,
+        creatureId = 43498,
+        description = "Has a chance to drop from Enforcer Emilgund within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57677] = {
+        itemid = 57677,
+        name = "Sigil of Aean Swiftriver",
+        creaturePreview = 43505,
+        creatureId = 43505,
+        description = "Has a chance to drop from Aean Swiftriver within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57678] = {
+        itemid = 57678,
+        name = "Sigil of Thora Feathermoon",
+        creaturePreview = 43506,
+        creatureId = 43506,
+        description = "Has a chance to drop from Thora Feathermoon within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57679] = {
+        itemid = 57679,
+        name = "Sigil of Hannah Bladeleaf",
+        creaturePreview = 43507,
+        creatureId = 43507,
+        description = "Has a chance to drop from Hannah Bladeleaf within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57680] = {
+        itemid = 57680,
+        name = "Sigil of Marcus Bel",
+        creaturePreview = 43508,
+        creatureId = 43508,
+        description = "Has a chance to drop from Marcus Bel within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57681] = {
+        itemid = 57681,
+        name = "Sigil of The Rake",
+        creaturePreview = 43509,
+        creatureId = 43509,
+        description = "Has a chance to drop from The Rake within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57759] = {
+        itemid = 57759,
+        name = "Sigil of Warlord Kolkanis",
+        creaturePreview = 43510,
+        creatureId = 43510,
+        description = "Has a chance to drop from Warlord Kolkanis within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57760] = {
+        itemid = 57760,
+        name = "Sigil of Watch Commander Zalaphil",
+        creaturePreview = 43511,
+        creatureId = 43511,
+        description = "Has a chance to drop from Watch Commander Zalaphil within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57876] = {
+        itemid = 57876,
+        name = "Sigil of Felweaver Scornn",
+        creaturePreview = 43512,
+        creatureId = 43512,
+        description = "Has a chance to drop from Felweaver Scornn within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57880] = {
+        itemid = 57880,
+        name = "Sigil of Death Flayer",
+        creaturePreview = 43513,
+        creatureId = 43513,
+        description = "Has a chance to drop from Death Flayer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57881] = {
+        itemid = 57881,
+        name = "Sigil of Captain Flat Tusk",
+        creaturePreview = 43514,
+        creatureId = 43514,
+        description = "Has a chance to drop from Captain Flat Tusk within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57882] = {
+        itemid = 57882,
+        name = "Sigil of Geolord Mottle",
+        creaturePreview = 43515,
+        creatureId = 43515,
+        description = "Has a chance to drop from Geolord Mottle within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57883] = {
+        itemid = 57883,
+        name = "Sigil of Brontus",
+        creaturePreview = 43516,
+        creatureId = 43516,
+        description = "Has a chance to drop from Brontus within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57887] = {
+        itemid = 57887,
+        name = "Sigil of Humar the Pridelord",
+        creaturePreview = 43517,
+        creatureId = 43517,
+        description = "Has a chance to drop from Humar the Pridelord within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57890] = {
+        itemid = 57890,
+        name = "Sigil of Snort the Heckler",
+        creaturePreview = 43518,
+        creatureId = 43518,
+        description = "Has a chance to drop from Snort the Heckler within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57893] = {
+        itemid = 57893,
+        name = "Sigil of Sister Rathtalon",
+        creaturePreview = 43519,
+        creatureId = 43519,
+        description = "Has a chance to drop from Sister Rathtalon within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57897] = {
+        itemid = 57897,
+        name = "Sigil of Swiftmane",
+        creaturePreview = 43520,
+        creatureId = 43520,
+        description = "Has a chance to drop from Swiftmane within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57900] = {
+        itemid = 57900,
+        name = "Sigil of Thunderstomp",
+        creaturePreview = 43521,
+        creatureId = 43521,
+        description = "Has a chance to drop from Thunderstomp within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57908] = {
+        itemid = 57908,
+        name = "Sigil of Azzere the Skyblade",
+        creaturePreview = 43522,
+        creatureId = 43522,
+        description = "Has a chance to drop from Azzere the Skyblade within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57992] = {
+        itemid = 57992,
+        name = "Sigil of Foreman Grills",
+        creaturePreview = 43523,
+        creatureId = 43523,
+        description = "Has a chance to drop from Foreman Grills within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57993] = {
+        itemid = 57993,
+        name = "Sigil of Engineer Whirleygig",
+        creaturePreview = 43524,
+        creatureId = 43524,
+        description = "Has a chance to drop from Engineer Whirleygig within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57994] = {
+        itemid = 57994,
+        name = "Sigil of Stonearm",
+        creaturePreview = 43525,
+        creatureId = 43525,
+        description = "Has a chance to drop from Stonearm within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57995] = {
+        itemid = 57995,
+        name = "Sigil of Brokespear",
+        creaturePreview = 43526,
+        creatureId = 43526,
+        description = "Has a chance to drop from Brokespear within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57996] = {
+        itemid = 57996,
+        name = "Sigil of Rocklance",
+        creaturePreview = 43527,
+        creatureId = 43527,
+        description = "Has a chance to drop from Rocklance within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57997] = {
+        itemid = 57997,
+        name = "Sigil of Takk the Leaper",
+        creaturePreview = 43528,
+        creatureId = 43528,
+        description = "Has a chance to drop from Takk the Leaper within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [57998] = {
+        itemid = 57998,
+        name = "Sigil of Heggin Stonewhisker",
+        creaturePreview = 43529,
+        creatureId = 43529,
+        description = "Has a chance to drop from Heggin Stonewhisker within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58080] = {
+        itemid = 58080,
+        name = "Sigil of Malgin Barleybrew",
+        creaturePreview = 43530,
+        creatureId = 43530,
+        description = "Has a chance to drop from Malgin Barleybrew within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58081] = {
+        itemid = 58081,
+        name = "Sigil of Digger Flameforge",
+        creaturePreview = 43531,
+        creatureId = 43531,
+        description = "Has a chance to drop from Digger Flameforge within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58149] = {
+        itemid = 58149,
+        name = "Sigil of Captain Gerogg Hammertoe",
+        creaturePreview = 43532,
+        creatureId = 43532,
+        description = "Has a chance to drop from Captain Gerogg Hammertoe within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58206] = {
+        itemid = 58206,
+        name = "Sigil of Hagg Taurenbane",
+        creaturePreview = 43533,
+        creatureId = 43533,
+        description = "Has a chance to drop from Hagg Taurenbane within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58207] = {
+        itemid = 58207,
+        name = "Sigil of Geopriest Gukk'rok",
+        creaturePreview = 43534,
+        creatureId = 43534,
+        description = "Has a chance to drop from Geopriest Gukk'rok within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58210] = {
+        itemid = 58210,
+        name = "Sigil of Swinegart Spearhide",
+        creaturePreview = 43535,
+        creatureId = 43535,
+        description = "Has a chance to drop from Swinegart Spearhide within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58211] = {
+        itemid = 58211,
+        name = "Sigil of Dishu",
+        creaturePreview = 43536,
+        creatureId = 43536,
+        description = "Has a chance to drop from Dishu within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58212] = {
+        itemid = 58212,
+        name = "Sigil of Deviate Faerie Dragon",
+        creaturePreview = 5912,
+        creatureId = 5912,
+        description = "Has a chance to drop from Deviate Faerie Dragon within Wailing Caverns.",
+        zone = "The Barrens",
+        subzone = "Wailing Caverns",
+        icon = 486
+    },
+    [58213] = {
+        itemid = 58213,
+        name = "Sigil of Brother Ravenoak",
+        creaturePreview = 43538,
+        creatureId = 43538,
+        description = "Has a chance to drop from Brother Ravenoak within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58214] = {
+        itemid = 58214,
+        name = "Sigil of Sentinel Amarassan",
+        creaturePreview = 43539,
+        creatureId = 43539,
+        description = "Has a chance to drop from Sentinel Amarassan within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58215] = {
+        itemid = 58215,
+        name = "Sigil of Sorrow Wing",
+        creaturePreview = 43540,
+        creatureId = 43540,
+        description = "Has a chance to drop from Sorrow Wing within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58218] = {
+        itemid = 58218,
+        name = "Sigil of Sister Riven",
+        creaturePreview = 43541,
+        creatureId = 43541,
+        description = "Has a chance to drop from Sister Riven within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58219] = {
+        itemid = 58219,
+        name = "Sigil of Taskmaster Whipfang",
+        creaturePreview = 43542,
+        creatureId = 43542,
+        description = "Has a chance to drop from Taskmaster Whipfang within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58220] = {
+        itemid = 58220,
+        name = "Sigil of Achellios the Banished",
+        creaturePreview = 43543,
+        creatureId = 43543,
+        description = "Has a chance to drop from Achellios the Banished within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58221] = {
+        itemid = 58221,
+        name = "Sigil of Heartrazor",
+        creaturePreview = 43544,
+        creatureId = 43544,
+        description = "Has a chance to drop from Heartrazor within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58222] = {
+        itemid = 58222,
+        name = "Sigil of Ironeye the Invincible",
+        creaturePreview = 43545,
+        creatureId = 43545,
+        description = "Has a chance to drop from Ironeye the Invincible within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58223] = {
+        itemid = 58223,
+        name = "Sigil of Vile Sting",
+        creaturePreview = 43546,
+        creatureId = 43546,
+        description = "Has a chance to drop from Vile Sting within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58226] = {
+        itemid = 58226,
+        name = "Sigil of Azuregos",
+        creaturePreview = 43547,
+        creatureId = 43547,
+        description = "Has a chance to drop from Azeregos within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58227] = {
+        itemid = 58227,
+        name = "Sigil of Varo'then's Ghost",
+        creaturePreview = 43548,
+        creatureId = 43548,
+        description = "Has a chance to drop from Varo'then's Ghost within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58229] = {
+        itemid = 58229,
+        name = "Sigil of Roogug",
+        creaturePreview = 43549,
+        creatureId = 43549,
+        description = "Has a chance to drop from Roogug within Razorfen Kraul.",
+        zone = "The Barrens",
+        subzone = "Razorfen Kraul",
+        icon = 486
+    },
+    [58230] = {
+        itemid = 58230,
+        name = "Sigil of Dark Iron Ambassador",
+        creaturePreview = 6228,
+        creatureId = 6228,
+        description = "Has a chance to drop from Dark Iron Ambassador within Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
+        icon = 486
+    },
+    [58359] = {
+        itemid = 58359,
+        name = "Sigil of Crowd Pummeler 9-60",
+        creaturePreview = 6229,
+        creatureId = 6229,
+        description = "Has a chance to drop from Crowd Pummeler 9-60 within Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
+        icon = 486
+    },
+    [58360] = {
+        itemid = 58360,
+        name = "Sigil of Electrocutioner 6000",
+        creaturePreview = 6235,
+        creatureId = 6235,
+        description = "Has a chance to drop from Electrocutioner 6000 within Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
+        icon = 486
+    },
+    [58401] = {
+        itemid = 58401,
+        name = "Sigil of Gelihast",
+        creaturePreview = 43553,
+        creatureId = 43553,
+        description = "Has a chance to drop from Gelihast within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [58411] = {
+        itemid = 58411,
+        name = "Sigil of Arcanist Doan",
+        creaturePreview = 43554,
+        creatureId = 43554,
+        description = "Has a chance to drop from Arcanist Doan within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [58493] = {
+        itemid = 58493,
+        name = "Sigil of Fallen Champion",
+        creaturePreview = 6488,
+        creatureId = 6488,
+        description = "Has a chance to drop from Fallen Champion within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [58494] = {
+        itemid = 58494,
+        name = "Sigil of Ironspine",
+        creaturePreview = 43556,
+        creatureId = 43556,
+        description = "Has a chance to drop from Ironspine within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [58495] = {
+        itemid = 58495,
+        name = "Sigil of Azshir the Sleepless",
+        creaturePreview = 43557,
+        creatureId = 43557,
+        description = "Has a chance to drop from Azshir the Sleepless within Scarlet Monastery.",
+        zone = "Scarlet Monastery",
+        icon = 486
+    },
+    [58496] = {
+        itemid = 58496,
+        name = "Sigil of Ravasaur Matriarch",
+        creaturePreview = 43558,
+        creatureId = 43558,
+        description = "Has a chance to drop from Ravasaur Matriarch within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58497] = {
+        itemid = 58497,
+        name = "Sigil of Clutchmother Zavas",
+        creaturePreview = 43559,
+        creatureId = 43559,
+        description = "Has a chance to drop from Clutchmother Zavas within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58498] = {
+        itemid = 58498,
+        name = "Sigil of Gruff",
+        creaturePreview = 43560,
+        creatureId = 43560,
+        description = "Has a chance to drop from Gruff within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58780] = {
+        itemid = 58780,
+        name = "Sigil of King Mosh",
+        creaturePreview = 43561,
+        creatureId = 43561,
+        description = "Has a chance to drop from King Mosh within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58781] = {
+        itemid = 58781,
+        name = "Sigil of Uhk'loc",
+        creaturePreview = 43562,
+        creatureId = 43562,
+        description = "Has a chance to drop from Uhk'loc within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58785] = {
+        itemid = 58785,
+        name = "Sigil of Magister Hawkhelm",
+        creaturePreview = 43564,
+        creatureId = 43564,
+        description = "Has a chance to drop from Magister Hawkhelm within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58786] = {
+        itemid = 58786,
+        name = "Sigil of Antilos",
+        creaturePreview = 43565,
+        creatureId = 43565,
+        description = "Has a chance to drop from Antilos within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58807] = {
+        itemid = 58807,
+        name = "Sigil of Lady Sesspira",
+        creaturePreview = 43566,
+        creatureId = 43566,
+        description = "Has a chance to drop from Lady Sesspira within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58808] = {
+        itemid = 58808,
+        name = "Sigil of General Fangferror",
+        creaturePreview = 43567,
+        creatureId = 43567,
+        description = "Has a chance to drop from General Fangferror within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58814] = {
+        itemid = 58814,
+        name = "Sigil of Gatekeeper Rageroar",
+        creaturePreview = 43568,
+        creatureId = 43568,
+        description = "Has a chance to drop from Gatekeeper Rageroar within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58823] = {
+        itemid = 58823,
+        name = "Sigil of Master Feardred",
+        creaturePreview = 43569,
+        creatureId = 43569,
+        description = "Has a chance to drop from Master Feardred within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58847] = {
+        itemid = 58847,
+        name = "Sigil of Baelog",
+        creaturePreview = 43570,
+        creatureId = 43570,
+        description = "Has a chance to drop from Baelog within Uldaman.",
+        zone = "Uldaman",
+        icon = 486
+    },
+    [58848] = {
+        itemid = 58848,
+        name = "Sigil of Revelosh",
+        creaturePreview = 43571,
+        creatureId = 43571,
+        description = "Has a chance to drop from Revelosh within Uldaman.",
+        zone = "Uldaman",
+        icon = 486
+    },
+    [58849] = {
+        itemid = 58849,
+        name = "Sigil of Flagglemurk the Cruel",
+        creaturePreview = 43572,
+        creatureId = 43572,
+        description = "Has a chance to drop from Flagglemurk the Cruel within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58850] = {
+        itemid = 58850,
+        name = "Sigil of Lady Vespira",
+        creaturePreview = 43573,
+        creatureId = 43573,
+        description = "Has a chance to drop from Lady Vespira within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58851] = {
+        itemid = 58851,
+        name = "Sigil of Lord Sinslayer",
+        creaturePreview = 43574,
+        creatureId = 43574,
+        description = "Has a chance to drop from Lord Sinslayer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58852] = {
+        itemid = 58852,
+        name = "Sigil of Digmaster Shovelphlange",
+        creaturePreview = 43575,
+        creatureId = 43575,
+        description = "Has a chance to drop from Digmaster Shovelphlange within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [58853] = {
+        itemid = 58853,
+        name = "Sigil of Viscous Fallout",
+        creaturePreview = 7079,
+        creatureId = 7079,
+        description = "Has a chance to drop from Viscous Fallout within Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
+        icon = 486
+    },
+    [58854] = {
+        itemid = 58854,
+        name = "Sigil of Dessecus",
+        creaturePreview = 43577,
+        creatureId = 43577,
+        description = "Has a chance to drop from Dessecus within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58855] = {
+        itemid = 58855,
+        name = "Sigil of Immolatus",
+        creaturePreview = 43578,
+        creatureId = 43578,
+        description = "Has a chance to drop from Immolatus within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [58857] = {
+        itemid = 58857,
+        name = "Sigil of Ancient Stone Keeper",
+        creaturePreview = 43579,
+        creatureId = 43579,
+        description = "Has a chance to drop from Ancient Stone Keeper within Uldaman.",
+        zone = "Uldaman",
+        icon = 486
+    },
+    [58858] = {
+        itemid = 58858,
+        name = "Sigil of Ironaya",
+        creaturePreview = 43580,
+        creatureId = 43580,
+        description = "Has a chance to drop from Ironaya within Uldaman.",
+        zone = "Uldaman",
+        icon = 486
+    },
+    [58859] = {
+        itemid = 58859,
+        name = "Sigil of Chief Ukorz Sandscalp",
+        creaturePreview = 43581,
+        creatureId = 43581,
+        description = "Has a chance to drop from Chief Ukorz Sandscalp within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58861] = {
+        itemid = 58861,
+        name = "Sigil of Witch Doctor Zum'rah",
+        creaturePreview = 43582,
+        creatureId = 43582,
+        description = "Has a chance to drop from Witch Doctor Zum'rah within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58862] = {
+        itemid = 58862,
+        name = "Sigil of Theka the Martyr",
+        creaturePreview = 43583,
+        creatureId = 43583,
+        description = "Has a chance to drop from Theka the Martyr within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58863] = {
+        itemid = 58863,
+        name = "Sigil of Gahz'rilla",
+        creaturePreview = 43584,
+        creatureId = 43584,
+        description = "Has a chance to drop from Gahz'rilla Sandscalp within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58868] = {
+        itemid = 58868,
+        name = "Sigil of Shadowpriest Sezz'ziz",
+        creaturePreview = 43585,
+        creatureId = 43585,
+        description = "Has a chance to drop from Shadowpriest Sezz'ziz within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58869] = {
+        itemid = 58869,
+        name = "Sigil of Galgann Firehammer",
+        creaturePreview = 43586,
+        creatureId = 43586,
+        description = "Has a chance to drop from Galgann Firehammer within Uldaman.",
+        zone = "Uldaman",
+        icon = 486
+    },
+    [58870] = {
+        itemid = 58870,
+        name = "Sigil of Tuten'kash",
+        creaturePreview = 43587,
+        creatureId = 43587,
+        description = "Has a chance to drop from Tuten'kash within Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
+        icon = 486
+    },
+    [58872] = {
+        itemid = 58872,
+        name = "Sigil of Mordresh Fire Eye",
+        creaturePreview = 43588,
+        creatureId = 43588,
+        description = "Has a chance to drop from Mordresh Fire Eye within Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
+        icon = 486
+    },
+    [58874] = {
+        itemid = 58874,
+        name = "Sigil of Amnennar the Coldbringer",
+        creaturePreview = 43589,
+        creatureId = 43589,
+        description = "Has a chance to drop from Amnennar the Coldbringer within Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
+        icon = 486
+    },
+    [58875] = {
+        itemid = 58875,
+        name = "Sigil of Grubbis",
+        creaturePreview = 7361,
+        creatureId = 7361,
+        description = "Can be obtained as a rare drop from Gnomeregan dungeon.",
+        icon = 486
+    },
+    [58876] = {
+        itemid = 58876,
+        name = "Sigil of Hydromancer Velratha",
+        creaturePreview = 43591,
+        creatureId = 43591,
+        description = "Has a chance to drop from Hydromancer Velratha within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58878] = {
+        itemid = 58878,
+        name = "Sigil of Nekrum Gutchewer",
+        creaturePreview = 43592,
+        creatureId = 43592,
+        description = "Has a chance to drop from Nekrum Gutchewer within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [58879] = {
+        itemid = 58879,
+        name = "Sigil of Mekgineer Thermaplugg",
+        creaturePreview = 7800,
+        creatureId = 7800,
+        description = "Has a chance to drop from Mekgineer Thermaplugg within Gnomeregan.",
+        zone = "Dun Morogh",
+        subzone = "Gnomeregan",
+        icon = 486
+    },
+    [58900] = {
+        itemid = 58900,
+        name = "Sigil of Ambassador Bloodrage",
+        creaturePreview = 43594,
+        creatureId = 43594,
+        description = "Has a chance to drop from Ambassador Bloodrage within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59055] = {
+        itemid = 59055,
+        name = "Sigil of High Tinker Mekkatorque",
+        creaturePreview = 43595,
+        creatureId = 43595,
+        description = "Has a chance to drop from High Tinker Mekkatorque within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59124] = {
+        itemid = 59124,
+        name = "Sigil of Antu'sul",
+        creaturePreview = 43597,
+        creatureId = 43597,
+        description = "Has a chance to drop from Antu'sul within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [59125] = {
+        itemid = 59125,
+        name = "Sigil of Warleader Krazzilak",
+        creaturePreview = 43598,
+        creatureId = 43598,
+        description = "Has a chance to drop from Warleader Krazzilak within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59126] = {
+        itemid = 59126,
+        name = "Sigil of Jin'Zallah the Sandbringer",
+        creaturePreview = 43599,
+        creatureId = 43599,
+        description = "Has a chance to drop from Jin'Zallah the Sandbringer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59127] = {
+        itemid = 59127,
+        name = "Sigil of Omgorn the Lost",
+        creaturePreview = 43600,
+        creatureId = 43600,
+        description = "Has a chance to drop from Omgorn the Lost within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59128] = {
+        itemid = 59128,
+        name = "Sigil of Cyclok the Mad",
+        creaturePreview = 43601,
+        creatureId = 43601,
+        description = "Has a chance to drop from Cyclok the Mad within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59129] = {
+        itemid = 59129,
+        name = "Sigil of Kregg Keelhaul",
+        creaturePreview = 43602,
+        creatureId = 43602,
+        description = "Has a chance to drop from Kregg Keelhaul within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59130] = {
+        itemid = 59130,
+        name = "Sigil of Soriid the Devourer",
+        creaturePreview = 43603,
+        creatureId = 43603,
+        description = "Has a chance to drop from Soriid the Devourer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59131] = {
+        itemid = 59131,
+        name = "Sigil of Haarka the Ravenous",
+        creaturePreview = 43604,
+        creatureId = 43604,
+        description = "Has a chance to drop from Haarka the Ravenous within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59133] = {
+        itemid = 59133,
+        name = "Sigil of Greater Firebird",
+        creaturePreview = 43606,
+        creatureId = 43606,
+        description = "Has a chance to drop from Greater Firebird within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59134] = {
+        itemid = 59134,
+        name = "Sigil of Murderous Blisterpaw",
+        creaturePreview = 43607,
+        creatureId = 43607,
+        description = "Has a chance to drop from Murderous Blisterpaw within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59135] = {
+        itemid = 59135,
+        name = "Sigil of Razortalon",
+        creaturePreview = 43608,
+        creatureId = 43608,
+        description = "Has a chance to drop from Razortalon within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59136] = {
+        itemid = 59136,
+        name = "Sigil of Old Cliff Jumper",
+        creaturePreview = 43609,
+        creatureId = 43609,
+        description = "Has a chance to drop from Old Cliff Jumper within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59137] = {
+        itemid = 59137,
+        name = "Sigil of The Reak",
+        creaturePreview = 43610,
+        creatureId = 43610,
+        description = "Has a chance to drop from The Reak within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59138] = {
+        itemid = 59138,
+        name = "Sigil of Ironback",
+        creaturePreview = 43611,
+        creatureId = 43611,
+        description = "Has a chance to drop from Ironback within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59139] = {
+        itemid = 59139,
+        name = "Sigil of Jalinde Summerdrake",
+        creaturePreview = 43612,
+        creatureId = 43612,
+        description = "Has a chance to drop from Jalinde Summerdrake within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59155] = {
+        itemid = 59155,
+        name = "Sigil of Retherokk the Berserker",
+        creaturePreview = 43614,
+        creatureId = 43614,
+        description = "Has a chance to drop from Retherokk the Berserker within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59338] = {
+        itemid = 59338,
+        name = "Sigil of Mith'rethis the Enchanter",
+        creaturePreview = 43615,
+        creatureId = 43615,
+        description = "Has a chance to drop from Mith'rethis the Enchanter within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59339] = {
+        itemid = 59339,
+        name = "Sigil of Witherheart the Stalker",
+        creaturePreview = 43616,
+        creatureId = 43616,
+        description = "Has a chance to drop from Witherheart the Stalker within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59360] = {
+        itemid = 59360,
+        name = "Sigil of Zul'arek Hatefowler",
+        creaturePreview = 43617,
+        creatureId = 43617,
+        description = "Has a chance to drop from Zul'arek Hatefowler within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59365] = {
+        itemid = 59365,
+        name = "Sigil of Rekk'tilac",
+        creaturePreview = 43618,
+        creatureId = 43618,
+        description = "Has a chance to drop from Rekk'tilac within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59366] = {
+        itemid = 59366,
+        name = "Sigil of Smoldar",
+        creaturePreview = 43619,
+        creatureId = 43619,
+        description = "Has a chance to drop from Smoldar within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59445] = {
+        itemid = 59445,
+        name = "Sigil of Faulty War Golem",
+        creaturePreview = 43620,
+        creatureId = 43620,
+        description = "Has a chance to drop from Faulty War Golem within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59446] = {
+        itemid = 59446,
+        name = "Sigil of Shleipnarr",
+        creaturePreview = 43621,
+        creatureId = 43621,
+        description = "Has a chance to drop from Shleipnarr within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59447] = {
+        itemid = 59447,
+        name = "Sigil of Scald",
+        creaturePreview = 43622,
+        creatureId = 43622,
+        description = "Has a chance to drop from Scald within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59488] = {
+        itemid = 59488,
+        name = "Sigil of Highlord Mastrogonde",
+        creaturePreview = 43623,
+        creatureId = 43623,
+        description = "Has a chance to drop from Highlord Mastrogonde within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59527] = {
+        itemid = 59527,
+        name = "Sigil of Slave Master Blackheart",
+        creaturePreview = 43624,
+        creatureId = 43624,
+        description = "Has a chance to drop from Slave Master Blackheart within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59528] = {
+        itemid = 59528,
+        name = "Sigil of Mojo the Twisted",
+        creaturePreview = 43625,
+        creatureId = 43625,
+        description = "Has a chance to drop from Mojo the Twisted within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59811] = {
+        itemid = 59811,
+        name = "Sigil of Magronos the Unyielding",
+        creaturePreview = 43626,
+        creatureId = 43626,
+        description = "Has a chance to drop from Magronos the Unyielding within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59812] = {
+        itemid = 59812,
+        name = "Sigil of Akubar the Seer",
+        creaturePreview = 43627,
+        creatureId = 43627,
+        description = "Has a chance to drop from Akubar the Seer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59813] = {
+        itemid = 59813,
+        name = "Sigil of Spiteflayer",
+        creaturePreview = 43628,
+        creatureId = 43628,
+        description = "Has a chance to drop from Spiteflayer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59814] = {
+        itemid = 59814,
+        name = "Sigil of Ravage",
+        creaturePreview = 43629,
+        creatureId = 43629,
+        description = "Has a chance to drop from Ravage within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59815] = {
+        itemid = 59815,
+        name = "Sigil of Clack the Reaver",
+        creaturePreview = 43630,
+        creatureId = 43630,
+        description = "Has a chance to drop from Clack the Reaver within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59816] = {
+        itemid = 59816,
+        name = "Sigil of Deatheye",
+        creaturePreview = 43631,
+        creatureId = 43631,
+        description = "Has a chance to drop from Deatheye within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59817] = {
+        itemid = 59817,
+        name = "Sigil of Grunter",
+        creaturePreview = 43632,
+        creatureId = 43632,
+        description = "Has a chance to drop from Grunter within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59818] = {
+        itemid = 59818,
+        name = "Sigil of Dreadscorn",
+        creaturePreview = 43633,
+        creatureId = 43633,
+        description = "Has a chance to drop from Dreadscorn within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59819] = {
+        itemid = 59819,
+        name = "Sigil of Avatar of Hakkar",
+        creaturePreview = 43634,
+        creatureId = 43634,
+        description = "Has a chance to drop from Avatar of Hakkar within Sunken Temple.",
+        zone = "Sunken Temple",
+        icon = 486
+    },
+    [59820] = {
+        itemid = 59820,
+        name = "Sigil of Gibblewilt",
+        creaturePreview = 43635,
+        creatureId = 43635,
+        description = "Has a chance to drop from Gibblewilt within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59821] = {
+        itemid = 59821,
+        name = "Sigil of Glutton",
+        creaturePreview = 43636,
+        creatureId = 43636,
+        description = "Has a chance to drop from Glutton within Razorfen Downs.",
+        zone = "The Barrens",
+        subzone = "Razorfen Downs",
+        icon = 486
+    },
+    [59822] = {
+        itemid = 59822,
+        name = "Sigil of Atal'alarion",
+        creaturePreview = 43587,
+        creatureId = 43587,
+        description = "Has a chance to drop from Atal'alarion within The Temple of Atal'Hakkar.",
+        zone = "The Temple of Atal'Hakkar",
+        icon = 486
+    },
+    [59823] = {
+        itemid = 59823,
+        name = "Sigil of The Evalcharr",
+        creaturePreview = 43638,
+        creatureId = 43638,
+        description = "Has a chance to drop from The Evalcharr within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59824] = {
+        itemid = 59824,
+        name = "Sigil of Panzor the Invincible",
+        creaturePreview = 43639,
+        creatureId = 43639,
+        description = "Has a chance to drop from Panzor the Invincible within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59825] = {
+        itemid = 59825,
+        name = "Sigil of The Behemoth",
+        creaturePreview = 43640,
+        creatureId = 43640,
+        description = "Has a chance to drop from The Behemoth within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59826] = {
+        itemid = 59826,
+        name = "Sigil of Hematos",
+        creaturePreview = 43641,
+        creatureId = 43641,
+        description = "Has a chance to drop from Hematos within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59827] = {
+        itemid = 59827,
+        name = "Sigil of Thauris Balgarr",
+        creaturePreview = 43642,
+        creatureId = 43642,
+        description = "Has a chance to drop from Thauris Balgarr within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59828] = {
+        itemid = 59828,
+        name = "Sigil of Gruklash",
+        creaturePreview = 43643,
+        creatureId = 43643,
+        description = "Has a chance to drop from Gruklash within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59829] = {
+        itemid = 59829,
+        name = "Sigil of Malfunctioning Reaver",
+        creaturePreview = 43644,
+        creatureId = 43644,
+        description = "Has a chance to drop from Malfunctioning Reaver within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59830] = {
+        itemid = 59830,
+        name = "Sigil of Golem Lord Argelmach",
+        creaturePreview = 43645,
+        creatureId = 43645,
+        description = "Has a chance to drop from Golem Lord Argelmach within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59831] = {
+        itemid = 59831,
+        name = "Sigil of Bael'Gar",
+        creaturePreview = 43646,
+        creatureId = 43646,
+        description = "Has a chance to drop from Bael'Gar within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59832] = {
+        itemid = 59832,
+        name = "Sigil of Lord Incendius",
+        creaturePreview = 43647,
+        creatureId = 43647,
+        description = "Has a chance to drop from Lord Incendius within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59833] = {
+        itemid = 59833,
+        name = "Sigil of High Interrogator Gerstahn",
+        creaturePreview = 43648,
+        creatureId = 43648,
+        description = "Has a chance to drop from High Interrogator Gerstahn within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59834] = {
+        itemid = 59834,
+        name = "Sigil of Emperor Dagran Thaurissan",
+        creaturePreview = 43649,
+        creatureId = 43649,
+        description = "Has a chance to drop from Emperor Dagran Thaurissan within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59835] = {
+        itemid = 59835,
+        name = "Sigil of Pyromancer Loregrain",
+        creaturePreview = 43650,
+        creatureId = 43650,
+        description = "Has a chance to drop from Pyromancer Loregrain within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59836] = {
+        itemid = 59836,
+        name = "Sigil of Lord Roccor",
+        creaturePreview = 43651,
+        creatureId = 43651,
+        description = "Has a chance to drop from Lord Roccor within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59837] = {
+        itemid = 59837,
+        name = "Sigil of General Angerforge",
+        creaturePreview = 43652,
+        creatureId = 43652,
+        description = "Has a chance to drop from General Angerforge within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59838] = {
+        itemid = 59838,
+        name = "Sigil of Warder Stilgiss",
+        creaturePreview = 43653,
+        creatureId = 43653,
+        description = "Has a chance to drop from Warder Stilgiss within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59839] = {
+        itemid = 59839,
+        name = "Sigil of Verek",
+        creaturePreview = 43654,
+        creatureId = 43654,
+        description = "Has a chance to drop from Verek within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59840] = {
+        itemid = 59840,
+        name = "Sigil of Scarshield Quartermaster",
+        creaturePreview = 43655,
+        creatureId = 43655,
+        description = "Has a chance to drop from Scarshield Quartermaster within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59841] = {
+        itemid = 59841,
+        name = "Sigil of Fineous Darkvire",
+        creaturePreview = 43656,
+        creatureId = 43656,
+        description = "Has a chance to drop from Fineous Darkvire within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59843] = {
+        itemid = 59843,
+        name = "Sigil of Ambassador Flamelash",
+        creaturePreview = 43658,
+        creatureId = 43658,
+        description = "Has a chance to drop from Ambassador Flamelash within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59844] = {
+        itemid = 59844,
+        name = "Sigil of Highlord Omokk",
+        creaturePreview = 43659,
+        creatureId = 43659,
+        description = "Has a chance to drop from Highlord Omokk within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59845] = {
+        itemid = 59845,
+        name = "Sigil of Spirestone Lord Magus",
+        creaturePreview = 43660,
+        creatureId = 43660,
+        description = "Has a chance to drop from Spirestone Lord Magus within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59846] = {
+        itemid = 59846,
+        name = "Sigil of Spirestone Battle Lord",
+        creaturePreview = 43661,
+        creatureId = 43661,
+        description = "Has a chance to drop from Spirestone Battle Lord within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59847] = {
+        itemid = 59847,
+        name = "Sigil of Spirestone Butcher",
+        creaturePreview = 43662,
+        creatureId = 43662,
+        description = "Has a chance to drop from Spirestone Butcher within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59848] = {
+        itemid = 59848,
+        name = "Sigil of Shadow Hunter Vosh'gajin",
+        creaturePreview = 43663,
+        creatureId = 43663,
+        description = "Has a chance to drop from Shadow Hunter Vosh'gajin within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59849] = {
+        itemid = 59849,
+        name = "Sigil of War Master Voone",
+        creaturePreview = 43664,
+        creatureId = 43664,
+        description = "Has a chance to drop from War Master Voone within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59850] = {
+        itemid = 59850,
+        name = "Sigil of Houndmaster Grebmar",
+        creaturePreview = 43665,
+        creatureId = 43665,
+        description = "Has a chance to drop from Houndmaster Grebmar within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59852] = {
+        itemid = 59852,
+        name = "Sigil of Plugger Spazzring",
+        creaturePreview = 43667,
+        creatureId = 43667,
+        description = "Has a chance to drop from Plugger Spazzring within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59853] = {
+        itemid = 59853,
+        name = "Sigil of Phalanx",
+        creaturePreview = 43668,
+        creatureId = 43668,
+        description = "Has a chance to drop from Phalanx within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59854] = {
+        itemid = 59854,
+        name = "Sigil of Hurley Blackbreath",
+        creaturePreview = 43669,
+        creatureId = 43669,
+        description = "Has a chance to drop from Hurley Blackbreath within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59855] = {
+        itemid = 59855,
+        name = "Sigil of Ribbly Screwspigot",
+        creaturePreview = 43670,
+        creatureId = 43670,
+        description = "Has a chance to drop from Ribbly Screwspigot within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59856] = {
+        itemid = 59856,
+        name = "Sigil of Overlord Wyrmthalak",
+        creaturePreview = 43671,
+        creatureId = 43671,
+        description = "Has a chance to drop from Overlord Wyrmthalak within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59857] = {
+        itemid = 59857,
+        name = "Sigil of Bannok Grimaxe",
+        creaturePreview = 43672,
+        creatureId = 43672,
+        description = "Has a chance to drop from Bannok Grimaxe within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59858] = {
+        itemid = 59858,
+        name = "Sigil of Hahk'Zor",
+        creaturePreview = 43673,
+        creatureId = 43673,
+        description = "Has a chance to drop from Hahk'Zor within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59859] = {
+        itemid = 59859,
+        name = "Sigil of Gorgon'och",
+        creaturePreview = 43674,
+        creatureId = 43674,
+        description = "Has a chance to drop from Gorgon'och within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59860] = {
+        itemid = 59860,
+        name = "Sigil of Ghok Bashguud",
+        creaturePreview = 43675,
+        creatureId = 43675,
+        description = "Has a chance to drop from Ghok Bashguud within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59861] = {
+        itemid = 59861,
+        name = "Sigil of Quartermaster Zigris",
+        creaturePreview = 43676,
+        creatureId = 43676,
+        description = "Has a chance to drop from Quartermaster Zigris within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59862] = {
+        itemid = 59862,
+        name = "Sigil of Pyroguard Emberseer",
+        creaturePreview = 43677,
+        creatureId = 43677,
+        description = "Has a chance to drop from Pyroguard Emberseer within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59863] = {
+        itemid = 59863,
+        name = "Sigil of Magmus",
+        creaturePreview = 43678,
+        creatureId = 43678,
+        description = "Has a chance to drop from Magmus within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59864] = {
+        itemid = 59864,
+        name = "Sigil of Deathmaw",
+        creaturePreview = 43679,
+        creatureId = 43679,
+        description = "Has a chance to drop from Deathmaw within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59865] = {
+        itemid = 59865,
+        name = "Sigil of Terrorspark",
+        creaturePreview = 43680,
+        creatureId = 43680,
+        description = "Has a chance to drop from Terrorspark within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59866] = {
+        itemid = 59866,
+        name = "Sigil of Sandarr Dunereaver",
+        creaturePreview = 43681,
+        creatureId = 43681,
+        description = "Has a chance to drop from Sandarr Dunereaver within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [59867] = {
+        itemid = 59867,
+        name = "Sigil of Dustwraith",
+        creaturePreview = 43682,
+        creatureId = 43682,
+        description = "Has a chance to drop from Dustwraith within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [59868] = {
+        itemid = 59868,
+        name = "Sigil of Zerillis",
+        creaturePreview = 43683,
+        creatureId = 43683,
+        description = "Has a chance to drop from Zerillis within Zul'Farrak.",
+        zone = "Tanaris",
+        subzone = "Zul'Farrak",
+        icon = 486
+    },
+    [59869] = {
+        itemid = 59869,
+        name = "Sigil of Volchan",
+        creaturePreview = 43684,
+        creatureId = 43684,
+        description = "Has a chance to drop from Volchan within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59872] = {
+        itemid = 59872,
+        name = "Sigil of Lady Sylvanas Windrunner",
+        creaturePreview = 43687,
+        creatureId = 43687,
+        description = "Has a chance to drop from Lady Sylvanas Windrunner within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59874] = {
+        itemid = 59874,
+        name = "Sigil of General Colbatann",
+        creaturePreview = 43689,
+        creatureId = 43689,
+        description = "Has a chance to drop from General Colbatann within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59875] = {
+        itemid = 59875,
+        name = "Sigil of Mezzir the Howler",
+        creaturePreview = 43690,
+        creatureId = 43690,
+        description = "Has a chance to drop from Mezzir the Howler within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59876] = {
+        itemid = 59876,
+        name = "Sigil of Kashoch the Reaver",
+        creaturePreview = 43678,
+        creatureId = 43678,
+        description = "Has a chance to drop from Magmus within Blackrock Depths.",
+        subzone = "Blackrock Depths",
+        icon = 486
+    },
+    [59877] = {
+        itemid = 59877,
+        name = "Sigil of Grizzle Snowpaw",
+        creaturePreview = 43692,
+        creatureId = 43692,
+        description = "Has a chance to drop from Grizzle Snowpaw within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59878] = {
+        itemid = 59878,
+        name = "Sigil of Rak'shiri",
+        creaturePreview = 43693,
+        creatureId = 43693,
+        description = "Has a chance to drop from Rak'shiri within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59879] = {
+        itemid = 59879,
+        name = "Sigil of Lady Hederine",
+        creaturePreview = 43694,
+        creatureId = 43694,
+        description = "Has a chance to drop from Lady Hederine within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59880] = {
+        itemid = 59880,
+        name = "Sigil of Azurous",
+        creaturePreview = 43695,
+        creatureId = 43695,
+        description = "Has a chance to drop from Azurous within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59882] = {
+        itemid = 59882,
+        name = "Sigil of Halycon",
+        creaturePreview = 43697,
+        creatureId = 43697,
+        description = "Has a chance to drop from Halycon within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59883] = {
+        itemid = 59883,
+        name = "Sigil of Wep",
+        creaturePreview = 43698,
+        creatureId = 43698,
+        description = "Has a chance to drop from Wep within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59885] = {
+        itemid = 59885,
+        name = "Sigil of Staggon",
+        creaturePreview = 43700,
+        creatureId = 43700,
+        description = "Has a chance to drop from Staggon within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59887] = {
+        itemid = 59887,
+        name = "Sigil of Burning Felguard",
+        creaturePreview = 43702,
+        creatureId = 43702,
+        description = "Has a chance to drop from Burning Felguard within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59888] = {
+        itemid = 59888,
+        name = "Sigil of Solakar Flamewreath",
+        creaturePreview = 43703,
+        creatureId = 43703,
+        description = "Has a chance to drop from Solakar Flamewreath within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59889] = {
+        itemid = 59889,
+        name = "Sigil of Gizrul the Slavener",
+        creaturePreview = 43704,
+        creatureId = 43704,
+        description = "Has a chance to drop from Gizrul the Slavener within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59890] = {
+        itemid = 59890,
+        name = "Sigil of Bayne",
+        creaturePreview = 43705,
+        creatureId = 43705,
+        description = "Has a chance to drop from Bayne within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59891] = {
+        itemid = 59891,
+        name = "Sigil of Ressan the Needler",
+        creaturePreview = 43706,
+        creatureId = 43706,
+        description = "Has a chance to drop from Ressan the Needler within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59892] = {
+        itemid = 59892,
+        name = "Sigil of Fellicent's Shade",
+        creaturePreview = 43707,
+        creatureId = 43707,
+        description = "Has a chance to drop from Fellicent's Shade within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59893] = {
+        itemid = 59893,
+        name = "Sigil of Sri'skulk",
+        creaturePreview = 43708,
+        creatureId = 43708,
+        description = "Has a chance to drop from Sri'skulk within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59894] = {
+        itemid = 59894,
+        name = "Sigil of General Drakkisath",
+        creaturePreview = 43709,
+        creatureId = 43709,
+        description = "Has a chance to drop from General Drakkisath within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59895] = {
+        itemid = 59895,
+        name = "Sigil of Crystal Fang",
+        creaturePreview = 43710,
+        creatureId = 43710,
+        description = "Has a chance to drop from Crystal Fang within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59896] = {
+        itemid = 59896,
+        name = "Sigil of Skul",
+        creaturePreview = 43711,
+        creatureId = 43711,
+        description = "Has a chance to drop from Skul within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59897] = {
+        itemid = 59897,
+        name = "Sigil of Warchief Rend Blackhand",
+        creaturePreview = 43712,
+        creatureId = 43712,
+        description = "Has a chance to drop from Warchief Rend Blackhand within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59898] = {
+        itemid = 59898,
+        name = "Sigil of The Beast",
+        creaturePreview = 43713,
+        creatureId = 43713,
+        description = "Has a chance to drop from The Beast within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59899] = {
+        itemid = 59899,
+        name = "Sigil of Vectus",
+        creaturePreview = 10432,
+        creatureId = 10432,
+        description = "Has a chance to drop from Vectus within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59900] = {
+        itemid = 59900,
+        name = "Sigil of Marduk Blackpool",
+        creaturePreview = 10433,
+        creatureId = 10433,
+        description = "Has a chance to drop from Marduk Blackpool within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59902] = {
+        itemid = 59902,
+        name = "Sigil of Magistrate Barthilas",
+        creaturePreview = 43716,
+        creatureId = 43716,
+        description = "Has a chance to drop from Magistrate Barthilas within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59903] = {
+        itemid = 59903,
+        name = "Sigil of Baroness Anastari",
+        creaturePreview = 43717,
+        creatureId = 43717,
+        description = "Has a chance to drop from Baroness Anastari within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59904] = {
+        itemid = 59904,
+        name = "Sigil of Nerub'enkan",
+        creaturePreview = 43718,
+        creatureId = 43718,
+        description = "Has a chance to drop from Nerub'enkan within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59905] = {
+        itemid = 59905,
+        name = "Sigil of Maleki the Pallid",
+        creaturePreview = 43719,
+        creatureId = 43719,
+        description = "Has a chance to drop from Maleki the Pallid within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59906] = {
+        itemid = 59906,
+        name = "Sigil of Ramstein the Gorger",
+        creaturePreview = 43720,
+        creatureId = 43720,
+        description = "Has a chance to drop from The Beast within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59907] = {
+        itemid = 59907,
+        name = "Sigil of Baron Rivendare",
+        creaturePreview = 43721,
+        creatureId = 43721,
+        description = "Has a chance to drop from Baron Rivendare within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59908] = {
+        itemid = 59908,
+        name = "Sigil of Lady Illucia Barov",
+        creaturePreview = 10502,
+        creatureId = 10502,
+        description = "Has a chance to drop from Lady Illucia Barov within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59909] = {
+        itemid = 59909,
+        name = "Sigil of Jandice Barov",
+        creaturePreview = 10503,
+        creatureId = 10503,
+        description = "Has a chance to drop from Jandice Barov within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59910] = {
+        itemid = 59910,
+        name = "Sigil of Lord Alexei Barov",
+        creaturePreview = 10504,
+        creatureId = 10504,
+        description = "Has a chance to drop from Lord Alexei Barov within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59911] = {
+        itemid = 59911,
+        name = "Sigil of Instructor Malicia",
+        creaturePreview = 10505,
+        creatureId = 10505,
+        description = "Has a chance to drop from Instructor Malicia within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59912] = {
+        itemid = 59912,
+        name = "Sigil of Kirtonos the Herald",
+        creaturePreview = 10506,
+        creatureId = 10506,
+        description = "Can be obtained as a rare drop from Scholomance dungeon.",
+        icon = 486
+    },
+    [59913] = {
+        itemid = 59913,
+        name = "Sigil of The Ravenian",
+        creaturePreview = 10507,
+        creatureId = 10507,
+        description = "Has a chance to drop from The Ravenian within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59914] = {
+        itemid = 59914,
+        name = "Sigil of Ras Frostwhisper",
+        creaturePreview = 10508,
+        creatureId = 10508,
+        description = "Has a chance to drop from Ras Frostwhisper within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59915] = {
+        itemid = 59915,
+        name = "Sigil of Jed Runewatcher",
+        creaturePreview = 43729,
+        creatureId = 43729,
+        description = "Has a chance to drop from Jed Runewatcher within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59916] = {
+        itemid = 59916,
+        name = "Sigil of The Unforgiven",
+        creaturePreview = 43730,
+        creatureId = 43730,
+        description = "Has a chance to drop from The Unforgiven within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59917] = {
+        itemid = 59917,
+        name = "Sigil of Vol'jin",
+        creaturePreview = 43731,
+        creatureId = 43731,
+        description = "Has a chance to drop from Vol'jin within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59918] = {
+        itemid = 59918,
+        name = "Sigil of Hearthsinger Forresten",
+        creaturePreview = 43732,
+        creatureId = 43732,
+        description = "Has a chance to drop from Hearthsinger Forresten within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59919] = {
+        itemid = 59919,
+        name = "Sigil of Lady Vespia",
+        creaturePreview = 43733,
+        creatureId = 43733,
+        description = "Has a chance to drop from Lady Vespia within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59920] = {
+        itemid = 59920,
+        name = "Sigil of Urok Doomhowl",
+        creaturePreview = 43734,
+        creatureId = 43734,
+        description = "Has a chance to drop from Urok Doomhowl within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59921] = {
+        itemid = 59921,
+        name = "Sigil of Mother Smolderweb",
+        creaturePreview = 43735,
+        creatureId = 43735,
+        description = "Has a chance to drop from Mother Smolderweb within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59922] = {
+        itemid = 59922,
+        name = "Sigil of Rorgish Jowl",
+        creaturePreview = 43736,
+        creatureId = 43736,
+        description = "Has a chance to drop from Rorgish Jowl within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59923] = {
+        itemid = 59923,
+        name = "Sigil of Oakpaw",
+        creaturePreview = 43737,
+        creatureId = 43737,
+        description = "Has a chance to drop from Oakpaw within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59924] = {
+        itemid = 59924,
+        name = "Sigil of Branch Snapper",
+        creaturePreview = 43738,
+        creatureId = 43738,
+        description = "Has a chance to drop from Branch Snapper within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59925] = {
+        itemid = 59925,
+        name = "Sigil of Eck'alom",
+        creaturePreview = 43739,
+        creatureId = 43739,
+        description = "Has a chance to drop from Eck'alom within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59926] = {
+        itemid = 59926,
+        name = "Sigil of Mugglefin",
+        creaturePreview = 43740,
+        creatureId = 43740,
+        description = "Has a chance to drop from Mugglefin within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59927] = {
+        itemid = 59927,
+        name = "Sigil of Mist Howler",
+        creaturePreview = 43741,
+        creatureId = 43741,
+        description = "Has a chance to drop from Mist Howler within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59928] = {
+        itemid = 59928,
+        name = "Sigil of Prince Raze",
+        creaturePreview = 43742,
+        creatureId = 43742,
+        description = "Has a chance to drop from Prince Raze within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59929] = {
+        itemid = 59929,
+        name = "Sigil of Timmy the Cruel",
+        creaturePreview = 43743,
+        creatureId = 43743,
+        description = "Has a chance to drop from Timmy the Cruel within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59930] = {
+        itemid = 59930,
+        name = "Sigil of Stonespine",
+        creaturePreview = 43744,
+        creatureId = 43744,
+        description = "Has a chance to drop from Stonespine within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59932] = {
+        itemid = 59932,
+        name = "Sigil of Archivist Galford",
+        creaturePreview = 43746,
+        creatureId = 43746,
+        description = "Has a chance to drop from Archivist Galford within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59933] = {
+        itemid = 59933,
+        name = "Sigil of Balnazzar",
+        creaturePreview = 43747,
+        creatureId = 43747,
+        description = "Has a chance to drop from Balnazzar within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59934] = {
+        itemid = 59934,
+        name = "Sigil of Duggan Wildhammer",
+        creaturePreview = 43748,
+        creatureId = 43748,
+        description = "Has a chance to drop from Duggan Wildhammer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59935] = {
+        itemid = 59935,
+        name = "Sigil of Death Knight Soulbearer",
+        creaturePreview = 43749,
+        creatureId = 43749,
+        description = "Has a chance to drop from Death Knight Soulbearer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59936] = {
+        itemid = 59936,
+        name = "Sigil of Baron Bloodbane",
+        creaturePreview = 43750,
+        creatureId = 43750,
+        description = "Has a chance to drop from Baron Bloodbane within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59937] = {
+        itemid = 59937,
+        name = "Sigil of Duke Ragereaver",
+        creaturePreview = 43751,
+        creatureId = 43751,
+        description = "Has a chance to drop from Duke Ragereaver within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59938] = {
+        itemid = 59938,
+        name = "Sigil of Hed'mush the Rotting",
+        creaturePreview = 43752,
+        creatureId = 43752,
+        description = "Has a chance to drop from Hed'mush the Rotting within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59939] = {
+        itemid = 59939,
+        name = "Sigil of Warlord Thresh'jin",
+        creaturePreview = 43753,
+        creatureId = 43753,
+        description = "Has a chance to drop from Warlord Thresh'jin within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59940] = {
+        itemid = 59940,
+        name = "Sigil of Zul'Brin Warpbranch",
+        creaturePreview = 43754,
+        creatureId = 43754,
+        description = "Has a chance to drop from Zul'Brin Warpbranch within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59941] = {
+        itemid = 59941,
+        name = "Sigil of Ranger Lord Hawkspear",
+        creaturePreview = 43755,
+        creatureId = 43755,
+        description = "Has a chance to drop from Ranger Lord Hawkspear within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59942] = {
+        itemid = 59942,
+        name = "Sigil of Gish the Unmoving",
+        creaturePreview = 43756,
+        creatureId = 43756,
+        description = "Has a chance to drop from Gish the Unmoving within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59943] = {
+        itemid = 59943,
+        name = "Sigil of Lord Darkscythe",
+        creaturePreview = 43757,
+        creatureId = 43757,
+        description = "Has a chance to drop from Lord Darkscythe within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59944] = {
+        itemid = 59944,
+        name = "Sigil of Deathspeaker Selendre",
+        creaturePreview = 43758,
+        creatureId = 43758,
+        description = "Has a chance to drop from Deathspeaker Selendre within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59945] = {
+        itemid = 59945,
+        name = "Sigil of High General Abbendis",
+        creaturePreview = 43759,
+        creatureId = 43759,
+        description = "Has a chance to drop from High General Abbendis within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59946] = {
+        itemid = 59946,
+        name = "Sigil of Goraluk Anvilcrack",
+        creaturePreview = 43760,
+        creatureId = 43760,
+        description = "Has a chance to drop from Goraluk Anvilcrack within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [59947] = {
+        itemid = 59947,
+        name = "Sigil of Lorekeeper Polkelt",
+        creaturePreview = 10901,
+        creatureId = 10901,
+        description = "Has a chance to drop from Lorekeeper Polkelt within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59949] = {
+        itemid = 59949,
+        name = "Sigil of Cannon Master Willey",
+        creaturePreview = 43763,
+        creatureId = 43763,
+        description = "Has a chance to drop from Cannon Master Willey within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59950] = {
+        itemid = 59950,
+        name = "Sigil of Malor the Zealous",
+        creaturePreview = 43764,
+        creatureId = 43764,
+        description = "Has a chance to drop from Malor the Zealous within Stratholme.",
+        zone = "Eastern Plaguelands",
+        subzone = "Stratholme",
+        icon = 486
+    },
+    [59951] = {
+        itemid = 59951,
+        name = "Sigil of Doctor Theolen Krastinov",
+        creaturePreview = 11261,
+        creatureId = 11261,
+        description = "Has a chance to drop from Doctor Theolen Krastinov within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59952] = {
+        itemid = 59952,
+        name = "Sigil of Jin'do the Hexxer",
+        creaturePreview = 43766,
+        creatureId = 43766,
+        description = "Has a chance to drop from Jin'do the Hexxer within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [59953] = {
+        itemid = 59953,
+        name = "Sigil of Bloodlord Mandokir",
+        creaturePreview = 43767,
+        creatureId = 43767,
+        description = "Has a chance to drop from Bloodlord Mandokir within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [59954] = {
+        itemid = 59954,
+        name = "Sigil of High Priestess Hai'watna",
+        creaturePreview = 43768,
+        creatureId = 43768,
+        description = "Has a chance to drop from High Priestess Hai'watna within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59955] = {
+        itemid = 59955,
+        name = "Sigil of Mushgog",
+        creaturePreview = 43769,
+        creatureId = 43769,
+        description = "Has a chance to drop from Mushgog within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59956] = {
+        itemid = 59956,
+        name = "Sigil of Tsu'zee",
+        creaturePreview = 43770,
+        creatureId = 43770,
+        description = "Has a chance to drop from Tsu'zee within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59957] = {
+        itemid = 59957,
+        name = "Sigil of Prince Tortheldrin",
+        creaturePreview = 43771,
+        creatureId = 43771,
+        description = "Has a chance to drop from Prince Tortheldrin within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59958] = {
+        itemid = 59958,
+        name = "Sigil of Magister Kalendris",
+        creaturePreview = 43772,
+        creatureId = 43772,
+        description = "Has a chance to drop from Magister Kalendris within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59959] = {
+        itemid = 59959,
+        name = "Sigil of Illyanna Ravenoak",
+        creaturePreview = 43773,
+        creatureId = 43773,
+        description = "Has a chance to drop from Illyanna Ravenoak within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59961] = {
+        itemid = 59961,
+        name = "Sigil of Zevrim Thornhoof",
+        creaturePreview = 43775,
+        creatureId = 43775,
+        description = "Has a chance to drop from Zevrim Thornhoof within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59962] = {
+        itemid = 59962,
+        name = "Sigil of Alzzin the Wildshaper",
+        creaturePreview = 43776,
+        creatureId = 43776,
+        description = "Has a chance to drop from Alzzin the Wildshaper within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59963] = {
+        itemid = 59963,
+        name = "Sigil of Immol'thar",
+        creaturePreview = 43777,
+        creatureId = 43777,
+        description = "Has a chance to drop from Immol'thar within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59964] = {
+        itemid = 59964,
+        name = "Sigil of The Razza",
+        creaturePreview = 43778,
+        creatureId = 43778,
+        description = "Has a chance to drop from The Razza within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59965] = {
+        itemid = 59965,
+        name = "Sigil of Skarr the Unbreakable",
+        creaturePreview = 43779,
+        creatureId = 43779,
+        description = "Has a chance to drop from Skarr the Unbreakable within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59966] = {
+        itemid = 59966,
+        name = "Sigil of King Gordok",
+        creaturePreview = 43780,
+        creatureId = 43780,
+        description = "Has a chance to drop from King Gordok within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [59968] = {
+        itemid = 59968,
+        name = "Sigil of Oggleflint",
+        creaturePreview = 11517,
+        creatureId = 11517,
+        description = "Has a chance to drop from Oggleflint within Ragefire Chasm.",
+        zone = "Orgrimmar",
+        subzone = "Ragefire Chasm",
+        icon = 486
+    },
+    [59969] = {
+        itemid = 59969,
+        name = "Sigil of Jergosh the Invoker",
+        creaturePreview = 11518,
+        creatureId = 11518,
+        description = "Has a chance to drop from Jergosh the Invoker within Ragefire Chasm.",
+        zone = "Orgrimmar",
+        subzone = "Ragefire Chasm",
+        icon = 486
+    },
+    [59970] = {
+        itemid = 59970,
+        name = "Sigil of Bazzalan",
+        creaturePreview = 11519,
+        creatureId = 11519,
+        description = "Has a chance to drop from Bazzalan within Ragefire Chasm.",
+        zone = "Orgrimmar",
+        subzone = "Ragefire Chasm",
+        icon = 486
+    },
+    [59971] = {
+        itemid = 59971,
+        name = "Sigil of Taragaman the Hungerer",
+        creaturePreview = 11520,
+        creatureId = 11520,
+        description = "Has a chance to drop from Taragaman the Hungerer within Ragefire Chasm.",
+        zone = "Orgrimmar",
+        subzone = "Ragefire Chasm",
+        icon = 486
+    },
+    [59974] = {
+        itemid = 59974,
+        name = "Sigil of Rattlegore",
+        creaturePreview = 11622,
+        creatureId = 11622,
+        description = "Has a chance to drop from Rattlegore within Scholomance.",
+        zone = "Scholomance",
+        icon = 486
+    },
+    [59976] = {
+        itemid = 59976,
+        name = "Sigil of Cursed Centaur",
+        creaturePreview = 43790,
+        creatureId = 43790,
+        description = "Has a chance to drop from Cursed Centaur within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59977] = {
+        itemid = 59977,
+        name = "Sigil of Princess Moira Bronzebeard",
+        creaturePreview = 43991,
+        creatureId = 43991,
+        description = "Has a chance to drop from King Magni Bronzebeard within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [59982] = {
+        itemid = 59982,
+        name = "Sigil of Flamegor",
+        creaturePreview = 43796,
+        creatureId = 43796,
+        description = "Can be obtained as a rare drop from Ruins of Ahn'Qiraj raid.",
+        icon = 486
+    },
+    [59984] = {
+        itemid = 59984,
+        name = "Sigil of Firemaw",
+        creaturePreview = 43798,
+        creatureId = 43798,
+        description = "Has a chance to drop from Firemaw within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [59986] = {
+        itemid = 59986,
+        name = "Sigil of Broodlord Lashlayer",
+        creaturePreview = 43801,
+        creatureId = 43801,
+        description = "Has a chance to drop from Broodlord Lashlayer within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [59988] = {
+        itemid = 59988,
+        name = "Sigil of Ursol'lok",
+        creaturePreview = 43803,
+        creatureId = 43803,
+        description = "Has a chance to drop from Ursol'lok within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [59989] = {
+        itemid = 59989,
+        name = "Sigil of Baron Geddon",
+        creaturePreview = 43804,
+        creatureId = 43804,
+        description = "Has a chance to drop from Baron Geddon within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [59990] = {
+        itemid = 59990,
+        name = "Sigil of Garr",
+        creaturePreview = 43805,
+        creatureId = 43805,
+        description = "Has a chance to drop from Garr within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [59991] = {
+        itemid = 59991,
+        name = "Sigil of Sulfuron Harbinger",
+        creaturePreview = 43806,
+        creatureId = 43806,
+        description = "Has a chance to drop from Sulfuron Harbinger within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [59993] = {
+        itemid = 59993,
+        name = "Sigil of Lucifron",
+        creaturePreview = 43808,
+        creatureId = 43808,
+        description = "Has a chance to drop from Lucifron within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [59995] = {
+        itemid = 59995,
+        name = "Sigil of Princess Theradras",
+        creaturePreview = 43810,
+        creatureId = 43810,
+        description = "Has a chance to drop from Princess Theradras within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [59997] = {
+        itemid = 59997,
+        name = "Sigil of Celebras the Cursed",
+        creaturePreview = 43812,
+        creatureId = 43812,
+        description = "Has a chance to drop from Celebras the Cursed within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [59998] = {
+        itemid = 59998,
+        name = "Sigil of Lord Vyletongue",
+        creaturePreview = 43813,
+        creatureId = 43813,
+        description = "Has a chance to drop from Lord Vyletongue within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [59999] = {
+        itemid = 59999,
+        name = "Sigil of Meshlok the Harvester",
+        creaturePreview = 43814,
+        creatureId = 43814,
+        description = "Has a chance to drop from Meshlok the Harvester within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [60000] = {
+        itemid = 60000,
+        name = "Sigil of Razorlash",
+        creaturePreview = 43815,
+        creatureId = 43815,
+        description = "Has a chance to drop from Razorlash within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [60001] = {
+        itemid = 60001,
+        name = "Sigil of Gehennas",
+        creaturePreview = 43816,
+        creatureId = 43816,
+        description = "Has a chance to drop from Gehennas within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [60002] = {
+        itemid = 60002,
+        name = "Sigil of Shazzrah",
+        creaturePreview = 43817,
+        creatureId = 43817,
+        description = "Has a chance to drop from Shazzrah within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [60004] = {
+        itemid = 60004,
+        name = "Sigil of Gorefang",
+        creaturePreview = 43819,
+        creatureId = 43819,
+        description = "Has a chance to drop from Gorefang within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60005] = {
+        itemid = 60005,
+        name = "Sigil of Old Vicejaw",
+        creaturePreview = 43820,
+        creatureId = 43820,
+        description = "Has a chance to drop from Old Vicejaw within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60006] = {
+        itemid = 60006,
+        name = "Sigil of Krethis Shadowspinner",
+        creaturePreview = 43821,
+        creatureId = 43821,
+        description = "Has a chance to drop from Krethis Shadowspinner within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60007] = {
+        itemid = 60007,
+        name = "Sigil of Razorgore the Untamed",
+        creaturePreview = 43822,
+        creatureId = 43822,
+        description = "Has a chance to drop from Razorgore the Untamed within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [60010] = {
+        itemid = 60010,
+        name = "Sigil of Lorgus Jett",
+        creaturePreview = 43825,
+        creatureId = 43825,
+        description = "Has a chance to drop from Lorgus Jett within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [60012] = {
+        itemid = 60012,
+        name = "Sigil of Hydrospawn",
+        creaturePreview = 43827,
+        creatureId = 43827,
+        description = "Has a chance to drop from Hydrospawn within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60013] = {
+        itemid = 60013,
+        name = "Sigil of Noxxion",
+        creaturePreview = 43828,
+        creatureId = 43828,
+        description = "Has a chance to drop from Noxxion within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [60014] = {
+        itemid = 60014,
+        name = "Sigil of Rotgrip",
+        creaturePreview = 43829,
+        creatureId = 43829,
+        description = "Has a chance to drop from Rotgrip within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [60015] = {
+        itemid = 60015,
+        name = "Sigil of Tinkerer Gizlock",
+        creaturePreview = 43830,
+        creatureId = 43830,
+        description = "Has a chance to drop from Tinkerer Gizlock within Maraudon.",
+        zone = "Maraudon",
+        icon = 486
+    },
+    [60016] = {
+        itemid = 60016,
+        name = "Sigil of Scalebeard",
+        creaturePreview = 43831,
+        creatureId = 43831,
+        description = "Has a chance to drop from Scalebeard within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60021] = {
+        itemid = 60021,
+        name = "Sigil of Chromaggus",
+        creaturePreview = 43836,
+        creatureId = 43836,
+        description = "Has a chance to drop from Chromaggus within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [60022] = {
+        itemid = 60022,
+        name = "Sigil of Gravis Slipknot",
+        creaturePreview = 43837,
+        creatureId = 43837,
+        description = "Has a chance to drop from Gravis Slipknot within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60023] = {
+        itemid = 60023,
+        name = "Sigil of Araga",
+        creaturePreview = 43838,
+        creatureId = 43838,
+        description = "Has a chance to drop from Araga within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60024] = {
+        itemid = 60024,
+        name = "Sigil of Cranky Benj",
+        creaturePreview = 43839,
+        creatureId = 43839,
+        description = "Has a chance to drop from Cranky Benj within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60025] = {
+        itemid = 60025,
+        name = "Sigil of 7:XT",
+        creaturePreview = 43840,
+        creatureId = 43840,
+        description = "Has a chance to drop from 7:XT within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60026] = {
+        itemid = 60026,
+        name = "Sigil of Prince Kellen",
+        creaturePreview = 43841,
+        creatureId = 43841,
+        description = "Has a chance to drop from Prince Kellen within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60027] = {
+        itemid = 60027,
+        name = "Sigil of Kaskk",
+        creaturePreview = 43842,
+        creatureId = 43842,
+        description = "Has a chance to drop from Kaskk within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60028] = {
+        itemid = 60028,
+        name = "Sigil of Hissperak",
+        creaturePreview = 43843,
+        creatureId = 43843,
+        description = "Has a chance to drop from Hissperak within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60029] = {
+        itemid = 60029,
+        name = "Sigil of Giggler",
+        creaturePreview = 43844,
+        creatureId = 43844,
+        description = "Has a chance to drop from Giggler within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60030] = {
+        itemid = 60030,
+        name = "Sigil of Accursed Slitherblade",
+        creaturePreview = 43845,
+        creatureId = 43845,
+        description = "Has a chance to drop from Accursed Slitherblade within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60031] = {
+        itemid = 60031,
+        name = "Sigil of Burgle Eye",
+        creaturePreview = 43846,
+        creatureId = 43846,
+        description = "Has a chance to drop from Burgle Eye within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60032] = {
+        itemid = 60032,
+        name = "Sigil of Drogoth the Roamer",
+        creaturePreview = 43847,
+        creatureId = 43847,
+        description = "Has a chance to drop from Drogoth the Roamer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60033] = {
+        itemid = 60033,
+        name = "Sigil of Dart",
+        creaturePreview = 43848,
+        creatureId = 43848,
+        description = "Has a chance to drop from Dart within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60034] = {
+        itemid = 60034,
+        name = "Sigil of Ripscale",
+        creaturePreview = 43849,
+        creatureId = 43849,
+        description = "Has a chance to drop from Ripscale within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60035] = {
+        itemid = 60035,
+        name = "Sigil of Hayoc",
+        creaturePreview = 43850,
+        creatureId = 43850,
+        description = "Has a chance to drop from Hayoc within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60036] = {
+        itemid = 60036,
+        name = "Sigil of The Rot",
+        creaturePreview = 43851,
+        creatureId = 43851,
+        description = "Has a chance to drop from The Rot within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60037] = {
+        itemid = 60037,
+        name = "Sigil of Lord Angler",
+        creaturePreview = 43852,
+        creatureId = 43852,
+        description = "Has a chance to drop from Lord Angler within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60038] = {
+        itemid = 60038,
+        name = "Sigil of Oozeworm",
+        creaturePreview = 43853,
+        creatureId = 43853,
+        description = "Has a chance to drop from Oozeworm within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60039] = {
+        itemid = 60039,
+        name = "Sigil of Shanda the Spinner",
+        creaturePreview = 43854,
+        creatureId = 43854,
+        description = "Has a chance to drop from Shanda the Spinner within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60040] = {
+        itemid = 60040,
+        name = "Sigil of Emogg the Crusher",
+        creaturePreview = 43855,
+        creatureId = 43855,
+        description = "Has a chance to drop from Emogg the Crusher within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60041] = {
+        itemid = 60041,
+        name = "Sigil of Lord Condar",
+        creaturePreview = 43856,
+        creatureId = 43856,
+        description = "Has a chance to drop from Lord Condar within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60042] = {
+        itemid = 60042,
+        name = "Sigil of Seeker Aqualon",
+        creaturePreview = 43857,
+        creatureId = 43857,
+        description = "Has a chance to drop from Seeker Aqualon within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60043] = {
+        itemid = 60043,
+        name = "Sigil of Squiddic",
+        creaturePreview = 43858,
+        creatureId = 43858,
+        description = "Has a chance to drop from Squiddic within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60044] = {
+        itemid = 60044,
+        name = "Sigil of Ribchaser",
+        creaturePreview = 43859,
+        creatureId = 43859,
+        description = "Has a chance to drop from Ribchaser within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60045] = {
+        itemid = 60045,
+        name = "Sigil of Snarlflare",
+        creaturePreview = 43860,
+        creatureId = 43860,
+        description = "Has a chance to drop from Snarlflare within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60047] = {
+        itemid = 60047,
+        name = "Sigil of Tamra Stormpike",
+        creaturePreview = 43862,
+        creatureId = 43862,
+        description = "Has a chance to drop from Tamra Stormpike within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60048] = {
+        itemid = 60048,
+        name = "Sigil of Scargil",
+        creaturePreview = 43863,
+        creatureId = 43863,
+        description = "Has a chance to drop from Scargil within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60049] = {
+        itemid = 60049,
+        name = "Sigil of Lady Zephris",
+        creaturePreview = 43864,
+        creatureId = 43864,
+        description = "Has a chance to drop from Lady Zephris within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60050] = {
+        itemid = 60050,
+        name = "Sigil of Ro'Bark",
+        creaturePreview = 43865,
+        creatureId = 43865,
+        description = "Has a chance to drop from Ro'Bark within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60051] = {
+        itemid = 60051,
+        name = "Sigil of Creepthess",
+        creaturePreview = 43866,
+        creatureId = 43866,
+        description = "Has a chance to drop from Creepthess within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60052] = {
+        itemid = 60052,
+        name = "Sigil of Big Samras",
+        creaturePreview = 43867,
+        creatureId = 43867,
+        description = "Has a chance to drop from Big Samras within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60053] = {
+        itemid = 60053,
+        name = "Sigil of Jimmy the Bleeder",
+        creaturePreview = 43868,
+        creatureId = 43868,
+        description = "Has a chance to drop from Jimmy the Bleeder within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60054] = {
+        itemid = 60054,
+        name = "Sigil of Guard Fengus",
+        creaturePreview = 43869,
+        creatureId = 43869,
+        description = "Has a chance to drop from Guard Fengus within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60055] = {
+        itemid = 60055,
+        name = "Sigil of Stomper Kreeg",
+        creaturePreview = 43870,
+        creatureId = 43870,
+        description = "Has a chance to drop from Stomper Kreeg within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60056] = {
+        itemid = 60056,
+        name = "Sigil of Guard Slip'kik",
+        creaturePreview = 43871,
+        creatureId = 43871,
+        description = "Has a chance to drop from Guard Slip'kik within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60057] = {
+        itemid = 60057,
+        name = "Sigil of Cho'Rush the Observer",
+        creaturePreview = 43872,
+        creatureId = 43872,
+        description = "Has a chance to drop from Cho'Rush the Observer within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60058] = {
+        itemid = 60058,
+        name = "Sigil of Captain Kromcrush",
+        creaturePreview = 43873,
+        creatureId = 43873,
+        description = "Has a chance to drop from Captain Kromcrush within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60059] = {
+        itemid = 60059,
+        name = "Sigil of Guard Mol'dar",
+        creaturePreview = 43874,
+        creatureId = 43874,
+        description = "Has a chance to drop from Guard Mol'dar within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60060] = {
+        itemid = 60060,
+        name = "Sigil of Lethtendris",
+        creaturePreview = 43875,
+        creatureId = 43875,
+        description = "Has a chance to drop from Lethtendris within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60061] = {
+        itemid = 60061,
+        name = "Sigil of Death Howl",
+        creaturePreview = 43876,
+        creatureId = 43876,
+        description = "Has a chance to drop from Death Howl within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60062] = {
+        itemid = 60062,
+        name = "Sigil of Alshirr Banebreath",
+        creaturePreview = 43877,
+        creatureId = 43877,
+        description = "Has a chance to drop from Alshirr Banebreath within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60063] = {
+        itemid = 60063,
+        name = "Sigil of Felendor the Accuser",
+        creaturePreview = 43878,
+        creatureId = 43878,
+        description = "Has a chance to drop from Felendor the Accuser within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60064] = {
+        itemid = 60064,
+        name = "Sigil of Ragepaw",
+        creaturePreview = 43879,
+        creatureId = 43879,
+        description = "Has a chance to drop from Ragepaw within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60065] = {
+        itemid = 60065,
+        name = "Sigil of Olm the Wise",
+        creaturePreview = 43880,
+        creatureId = 43880,
+        description = "Has a chance to drop from Olm the Wise within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60066] = {
+        itemid = 60066,
+        name = "Sigil of Mongress",
+        creaturePreview = 43881,
+        creatureId = 43881,
+        description = "Has a chance to drop from Mongress within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60067] = {
+        itemid = 60067,
+        name = "Sigil of The Ongar",
+        creaturePreview = 43882,
+        creatureId = 43882,
+        description = "Has a chance to drop from The Ongar within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60070] = {
+        itemid = 60070,
+        name = "Sigil of Mirelow",
+        creaturePreview = 43885,
+        creatureId = 43885,
+        description = "Has a chance to drop from Mirelow within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60071] = {
+        itemid = 60071,
+        name = "Sigil of Gnawbone",
+        creaturePreview = 43886,
+        creatureId = 43886,
+        description = "Has a chance to drop from Gnawbone within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60072] = {
+        itemid = 60072,
+        name = "Sigil of Harb Foulmountain",
+        creaturePreview = 43887,
+        creatureId = 43887,
+        description = "Has a chance to drop from Harb Foulmountain within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60073] = {
+        itemid = 60073,
+        name = "Sigil of Gibblesnik",
+        creaturePreview = 43888,
+        creatureId = 43888,
+        description = "Has a chance to drop from Gibblesnik within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60074] = {
+        itemid = 60074,
+        name = "Sigil of Uruson",
+        creaturePreview = 43889,
+        creatureId = 43889,
+        description = "Has a chance to drop from Uruson within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60075] = {
+        itemid = 60075,
+        name = "Sigil of Grimmaw",
+        creaturePreview = 43890,
+        creatureId = 43890,
+        description = "Has a chance to drop from Grimmaw within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60076] = {
+        itemid = 60076,
+        name = "Sigil of Duskstalker",
+        creaturePreview = 43891,
+        creatureId = 43891,
+        description = "Has a chance to drop from Duskstalker within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60077] = {
+        itemid = 60077,
+        name = "Sigil of Fury Shelda",
+        creaturePreview = 43892,
+        creatureId = 43892,
+        description = "Has a chance to drop from Fury Shelda within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60078] = {
+        itemid = 60078,
+        name = "Sigil of Threggil",
+        creaturePreview = 43893,
+        creatureId = 43893,
+        description = "Has a chance to drop from Threggil within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60079] = {
+        itemid = 60079,
+        name = "Sigil of Sludginn",
+        creaturePreview = 43894,
+        creatureId = 43894,
+        description = "Has a chance to drop from Sludginn within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60081] = {
+        itemid = 60081,
+        name = "Sigil of Lord Captain Wyrmak",
+        creaturePreview = 43896,
+        creatureId = 43896,
+        description = "Has a chance to drop from Lord Captain Wyrmak within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60082] = {
+        itemid = 60082,
+        name = "Sigil of Fingat",
+        creaturePreview = 43897,
+        creatureId = 43897,
+        description = "Has a chance to drop from Fingat within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60083] = {
+        itemid = 60083,
+        name = "Sigil of Gilmorian",
+        creaturePreview = 43898,
+        creatureId = 43898,
+        description = "Has a chance to drop from Gilmorian within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60084] = {
+        itemid = 60084,
+        name = "Sigil of Molt Thorn",
+        creaturePreview = 43899,
+        creatureId = 43899,
+        description = "Has a chance to drop from Molt Thorn within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60086] = {
+        itemid = 60086,
+        name = "Sigil of Gretheer",
+        creaturePreview = 43901,
+        creatureId = 43901,
+        description = "Has a chance to drop from Gretheer within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60087] = {
+        itemid = 60087,
+        name = "Sigil of Lapress",
+        creaturePreview = 43902,
+        creatureId = 43902,
+        description = "Has a chance to drop from Lapress within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60088] = {
+        itemid = 60088,
+        name = "Sigil of Zora",
+        creaturePreview = 43903,
+        creatureId = 43903,
+        description = "Has a chance to drop from Zora within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60089] = {
+        itemid = 60089,
+        name = "Sigil of Rex Ashil",
+        creaturePreview = 43904,
+        creatureId = 43904,
+        description = "Has a chance to drop from Rex Ashil within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60090] = {
+        itemid = 60090,
+        name = "Sigil of Krellack",
+        creaturePreview = 43905,
+        creatureId = 43905,
+        description = "Has a chance to drop from Krellack within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60091] = {
+        itemid = 60091,
+        name = "Sigil of Grubthor",
+        creaturePreview = 43906,
+        creatureId = 43906,
+        description = "Has a chance to drop from Grubthor within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60092] = {
+        itemid = 60092,
+        name = "Sigil of Huricanian",
+        creaturePreview = 43907,
+        creatureId = 43907,
+        description = "Has a chance to drop from Huricanian within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60093] = {
+        itemid = 60093,
+        name = "Sigil of Twilight Lord Everun",
+        creaturePreview = 43908,
+        creatureId = 43908,
+        description = "Has a chance to drop from Twilight Lord Everun within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60094] = {
+        itemid = 60094,
+        name = "Sigil of Gluggle",
+        creaturePreview = 43909,
+        creatureId = 43909,
+        description = "Has a chance to drop from Gluggle within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60095] = {
+        itemid = 60095,
+        name = "Sigil of Roloch",
+        creaturePreview = 43910,
+        creatureId = 43910,
+        description = "Has a chance to drop from Roloch within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60096] = {
+        itemid = 60096,
+        name = "Sigil of Rippa",
+        creaturePreview = 43911,
+        creatureId = 43911,
+        description = "Has a chance to drop from Rippa within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60097] = {
+        itemid = 60097,
+        name = "Sigil of Kurmokk",
+        creaturePreview = 43912,
+        creatureId = 43912,
+        description = "Has a chance to drop from Kurmokk within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60098] = {
+        itemid = 60098,
+        name = "Sigil of Verifonix",
+        creaturePreview = 43913,
+        creatureId = 43913,
+        description = "Has a chance to drop from Verifonix within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60099] = {
+        itemid = 60099,
+        name = "Sigil of Lord Hel'nurath",
+        creaturePreview = 43914,
+        creatureId = 43914,
+        description = "Has a chance to drop from Lord Hel'nurath within Dire Maul.",
+        zone = "Feralas",
+        subzone = "Dire Maul",
+        icon = 486
+    },
+    [60100] = {
+        itemid = 60100,
+        name = "Sigil of High Priest Venoxis",
+        creaturePreview = 43915,
+        creatureId = 43915,
+        description = "Has a chance to drop from High Priest Venoxis within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60101] = {
+        itemid = 60101,
+        name = "Sigil of High Priest Thekal",
+        creaturePreview = 43917,
+        creatureId = 43917,
+        description = "Has a chance to drop from High Priest Thekal within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60102] = {
+        itemid = 60102,
+        name = "Sigil of High Priestess Mar'li",
+        creaturePreview = 43918,
+        creatureId = 43918,
+        description = "Has a chance to drop from High Priestess Mar'li within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60103] = {
+        itemid = 60103,
+        name = "Sigil of High Priestess Arlokk",
+        creaturePreview = 43919,
+        creatureId = 43919,
+        description = "Has a chance to drop from High Priestess Arlokk within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60104] = {
+        itemid = 60104,
+        name = "Sigil of High Priestess Jeklik",
+        creaturePreview = 43920,
+        creatureId = 43920,
+        description = "Has a chance to drop from High Priestess Jeklik within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60105] = {
+        itemid = 60105,
+        name = "Sigil of Ebonroc",
+        creaturePreview = 43921,
+        creatureId = 43921,
+        description = "Can be obtained as a rare drop from Ruins of Ahn'Qiraj raid.",
+        icon = 486
+    },
+    [60106] = {
+        itemid = 60106,
+        name = "Sigil of Lumbering Horror",
+        creaturePreview = 43922,
+        creatureId = 43922,
+        description = "Has a chance to drop from Lumbering Horror Smotts within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60108] = {
+        itemid = 60108,
+        name = "Sigil of Hakkar",
+        creaturePreview = 43924,
+        creatureId = 43924,
+        description = "Has a chance to drop from Hakkar within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60116] = {
+        itemid = 60116,
+        name = "Sigil of Gri'lek",
+        creaturePreview = 43932,
+        creatureId = 43932,
+        description = "Has a chance to drop from Gri'lek within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60117] = {
+        itemid = 60117,
+        name = "Sigil of Hazza'rah",
+        creaturePreview = 43933,
+        creatureId = 43933,
+        description = "Has a chance to drop from Hazza'rah within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60118] = {
+        itemid = 60118,
+        name = "Sigil of Renataki",
+        creaturePreview = 43592,
+        creatureId = 43592,
+        description = "Has a chance to drop from Renataki within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60119] = {
+        itemid = 60119,
+        name = "Sigil of Wushoolay",
+        creaturePreview = 43935,
+        creatureId = 43935,
+        description = "Has a chance to drop from Wushoolay within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60120] = {
+        itemid = 60120,
+        name = "Sigil of Gahz'ranka",
+        creaturePreview = 43936,
+        creatureId = 43936,
+        description = "Has a chance to drop from Gahz'ranka within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [60122] = {
+        itemid = 60122,
+        name = "Sigil of Prince Skaldrenox",
+        creaturePreview = 43938,
+        creatureId = 43938,
+        description = "Has a chance to drop from Prince Skaldrenox within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60123] = {
+        itemid = 60123,
+        name = "Sigil of High Marshal Whirlaxis",
+        creaturePreview = 43939,
+        creatureId = 43939,
+        description = "Has a chance to drop from High Marshal Whirlaxis within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60126] = {
+        itemid = 60126,
+        name = "Sigil of The Prophet Skeram",
+        creaturePreview = 43942,
+        creatureId = 43942,
+        description = "Has a chance to drop from The Prophet Skeram within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60127] = {
+        itemid = 60127,
+        name = "Sigil of Emperor Vek'nilash",
+        creaturePreview = 43943,
+        creatureId = 43943,
+        description = "Has a chance to drop from Emperor Vek'nilash within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60128] = {
+        itemid = 60128,
+        name = "Sigil of Emperor Vek'lor",
+        creaturePreview = 43944,
+        creatureId = 43944,
+        description = "Has a chance to drop from Emperor Vek'nilash within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60129] = {
+        itemid = 60129,
+        name = "Sigil of Viscidus",
+        creaturePreview = 43945,
+        creatureId = 43945,
+        description = "Has a chance to drop from Viscidus within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60131] = {
+        itemid = 60131,
+        name = "Sigil of Lord Skwol",
+        creaturePreview = 43947,
+        creatureId = 43947,
+        description = "Has a chance to drop from Lord Skwol within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60132] = {
+        itemid = 60132,
+        name = "Sigil of Ossirian the Unscarred",
+        creaturePreview = 43948,
+        creatureId = 43948,
+        description = "Has a chance to drop from Ossirian the Unscarred within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [60133] = {
+        itemid = 60133,
+        name = "Sigil of Moam",
+        creaturePreview = 43949,
+        creatureId = 43949,
+        description = "Has a chance to drop from Moam within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [60134] = {
+        itemid = 60134,
+        name = "Sigil of General Rajaxx",
+        creaturePreview = 43950,
+        creatureId = 43950,
+        description = "Has a chance to drop from General Rajaxx within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [60135] = {
+        itemid = 60135,
+        name = "Sigil of Kurinnaxx",
+        creaturePreview = 43951,
+        creatureId = 43951,
+        description = "Has a chance to drop from Kurinnaxx within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [60137] = {
+        itemid = 60137,
+        name = "Sigil of Ayamiss the Hunter",
+        creaturePreview = 43953,
+        creatureId = 43953,
+        description = "Has a chance to drop from Ayamiss the Hunter within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [60138] = {
+        itemid = 60138,
+        name = "Sigil of Buru the Gorger",
+        creaturePreview = 43954,
+        creatureId = 43954,
+        description = "Has a chance to drop from Buru the Gorger within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [60153] = {
+        itemid = 60153,
+        name = "Sigil of Princess Huhuran",
+        creaturePreview = 43969,
+        creatureId = 43969,
+        description = "Has a chance to drop from Princess Huhuran within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60154] = {
+        itemid = 60154,
+        name = "Sigil of Fankriss the Unyielding",
+        creaturePreview = 43970,
+        creatureId = 43970,
+        description = "Has a chance to drop from Fankriss the Unyielding within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60155] = {
+        itemid = 60155,
+        name = "Sigil of Lord Kri",
+        creaturePreview = 43971,
+        creatureId = 43971,
+        description = "Has a chance to drop from Lord Kri within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60156] = {
+        itemid = 60156,
+        name = "Sigil of Battleguard Sartura",
+        creaturePreview = 43972,
+        creatureId = 43972,
+        description = "Has a chance to drop from Battleguard Sartura within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60157] = {
+        itemid = 60157,
+        name = "Sigil of Ouro",
+        creaturePreview = 43973,
+        creatureId = 43973,
+        description = "Has a chance to drop from Ouro within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60158] = {
+        itemid = 60158,
+        name = "Sigil of Princess Yauj",
+        creaturePreview = 43974,
+        creatureId = 43974,
+        description = "Has a chance to drop from Lord Kri within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60159] = {
+        itemid = 60159,
+        name = "Sigil of Vem",
+        creaturePreview = 43975,
+        creatureId = 43975,
+        description = "Has a chance to drop from Lord Kri within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60161] = {
+        itemid = 60161,
+        name = "Sigil of Maws",
+        creaturePreview = 15571,
+        creatureId = 15571,
+        description = "Has a chance to drop from Maws and Neptune within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60166] = {
+        itemid = 60166,
+        name = "Sigil of Moroes",
+        creaturePreview = 43982,
+        creatureId = 43982,
+        description = "Has a chance to drop from Moroes within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60167] = {
+        itemid = 60167,
+        name = "Sigil of Terestian Illhoof",
+        creaturePreview = 43983,
+        creatureId = 43983,
+        description = "Has a chance to drop from Terestian Illhoof within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60169] = {
+        itemid = 60169,
+        name = "Sigil of Prince Malchezaar",
+        creaturePreview = 43985,
+        creatureId = 43985,
+        description = "Has a chance to drop from Prince Malchezaar within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60170] = {
+        itemid = 60170,
+        name = "Sigil of The Curator",
+        creaturePreview = 43986,
+        creatureId = 43986,
+        description = "Has a chance to drop from The Curator within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60171] = {
+        itemid = 60171,
+        name = "Sigil of C'Thun",
+        creaturePreview = 43987,
+        creatureId = 43987,
+        description = "Has a chance to drop from C'Thun within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [60173] = {
+        itemid = 60173,
+        name = "Sigil of Thaddius",
+        creaturePreview = 43989,
+        creatureId = 43989,
+        description = "Has a chance to drop from Thaddius within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60176] = {
+        itemid = 60176,
+        name = "Sigil of Grobbulus",
+        creaturePreview = 43992,
+        creatureId = 43992,
+        description = "Has a chance to drop from Grobbulus within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60177] = {
+        itemid = 60177,
+        name = "Sigil of Gluth",
+        creaturePreview = 43993,
+        creatureId = 43993,
+        description = "Has a chance to drop from Gluth within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60178] = {
+        itemid = 60178,
+        name = "Sigil of Heigan the Unclean",
+        creaturePreview = 43994,
+        creatureId = 43994,
+        description = "Has a chance to drop from Heigan the Unclean within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60179] = {
+        itemid = 60179,
+        name = "Sigil of Maexxna",
+        creaturePreview = 43995,
+        creatureId = 43995,
+        description = "Has a chance to drop from Maexxna within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60180] = {
+        itemid = 60180,
+        name = "Sigil of Grand Widow Faerlina",
+        creaturePreview = 43996,
+        creatureId = 43996,
+        description = "Has a chance to drop from Grand Widow Faerlina within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60181] = {
+        itemid = 60181,
+        name = "Sigil of Noth the Plaguebringer",
+        creaturePreview = 43997,
+        creatureId = 43997,
+        description = "Has a chance to drop from Noth the Plaguebringer within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60182] = {
+        itemid = 60182,
+        name = "Sigil of Anub'Rekhan",
+        creaturePreview = 43998,
+        creatureId = 43998,
+        description = "Has a chance to drop from Anub'Rekhan within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60184] = {
+        itemid = 60184,
+        name = "Sigil of Sapphiron",
+        creaturePreview = 44000,
+        creatureId = 44000,
+        description = "Has a chance to drop from Sapphiron within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60185] = {
+        itemid = 60185,
+        name = "Sigil of Kel'Thuzad",
+        creaturePreview = 44001,
+        creatureId = 44001,
+        description = "Has a chance to drop from Kel'Thuzad within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60186] = {
+        itemid = 60186,
+        name = "Sigil of Loatheb",
+        creaturePreview = 44002,
+        creatureId = 44002,
+        description = "Has a chance to drop from Loatheb within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60187] = {
+        itemid = 60187,
+        name = "Sigil of Patchwerk",
+        creaturePreview = 44003,
+        creatureId = 44003,
+        description = "Has a chance to drop from Patchwerk within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60188] = {
+        itemid = 60188,
+        name = "Sigil of Lord Valthalak",
+        creaturePreview = 44004,
+        creatureId = 44004,
+        description = "Has a chance to drop from Lord Valthalak within Blackrock Spire.",
+        zone = "Blackrock Spire",
+        icon = 486
+    },
+    [60189] = {
+        itemid = 60189,
+        name = "Sigil of Gothik the Harvester",
+        creaturePreview = 44005,
+        creatureId = 44005,
+        description = "Has a chance to drop from Gothik the Harvester within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60190] = {
+        itemid = 60190,
+        name = "Sigil of Instructor Razuvious",
+        creaturePreview = 44006,
+        creatureId = 44006,
+        description = "Has a chance to drop from Instructor Razuvious within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [60195] = {
+        itemid = 60195,
+        name = "Sigil of Tidelord Rrurgaz",
+        creaturePreview = 44011,
+        creatureId = 44011,
+        description = "Has a chance to drop from Tidelord Rrurgaz within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60200] = {
+        itemid = 60200,
+        name = "Sigil of Shadikith the Glider",
+        creaturePreview = 44016,
+        creatureId = 44016,
+        description = "Has a chance to drop from Shadikith the Glider within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60216] = {
+        itemid = 60216,
+        name = "De-Weaponized Mechanical Companion",
+        creaturePreview = 43916,
+        creatureId = 43916,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 563
+    },
+    [60365] = {
+        itemid = 60365,
+        name = "Sigil of Rokad the Ravager",
+        creaturePreview = 44017,
+        creatureId = 44017,
+        description = "Has a chance to drop from Shadikith the Glider within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60366] = {
+        itemid = 60366,
+        name = "Sigil of Nerubian Overseer",
+        creaturePreview = 44018,
+        creatureId = 44018,
+        description = "Has a chance to drop from Nerubian Overseer within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60367] = {
+        itemid = 60367,
+        name = "Sigil of Spirit of the Damned",
+        creaturePreview = 44019,
+        creatureId = 44019,
+        description = "Has a chance to drop from Spirit of the Damned within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [60368] = {
+        itemid = 60368,
+        name = "Sigil of Bone Witch",
+        creaturePreview = 44020,
+        creatureId = 44020,
+        description = "Has a chance to drop from Bone Witch within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [60372] = {
+        itemid = 60372,
+        name = "Sigil of Shade of Aran",
+        creaturePreview = 44024,
+        creatureId = 44024,
+        description = "Has a chance to drop from Shade of Aran within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60546] = {
+        itemid = 60546,
+        name = "Sigil of Grand Warlock Nethekurse",
+        creaturePreview = 44033,
+        creatureId = 44033,
+        description = "Has a chance to drop from Grand Warlock Nethekurse within Hellfire Citadel: The Shattered Halls.",
+        zone = "Hellfire Citadel: The Shattered Halls",
+        icon = 486
+    },
+    [60547] = {
+        itemid = 60547,
+        name = "Sigil of Warchief Kargath Bladefist",
+        creaturePreview = 44034,
+        creatureId = 44034,
+        description = "Has a chance to drop from Warchief Kargath Bladefist within Hellfire Citadel: The Shattered Halls.",
+        zone = "Hellfire Citadel: The Shattered Halls",
+        icon = 486
+    },
+    [60548] = {
+        itemid = 60548,
+        name = "Sigil of Warbringer O'mrogg",
+        creaturePreview = 44035,
+        creatureId = 44035,
+        description = "Has a chance to drop from Warbringer O'mrogg within Hellfire Citadel: The Shattered Halls.",
+        zone = "Hellfire Citadel: The Shattered Halls",
+        icon = 486
+    },
+    [60550] = {
+        itemid = 60550,
+        name = "Sigil of Eldinarcus",
+        creaturePreview = 44037,
+        creatureId = 44037,
+        description = "Has a chance to drop from Eldinarcus within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [60572] = {
+        itemid = 60572,
+        name = "Sigil of Tregla",
+        creaturePreview = 44038,
+        creatureId = 44038,
+        description = "Has a chance to drop from Tregla within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [60818] = {
+        itemid = 60818,
+        name = "Sigil of Goretooth",
+        creaturePreview = 44047,
+        creatureId = 44047,
+        description = "Has a chance to drop from Goretooth within Nagrand.",
+        zone = "Nagrand",
+        icon = 486
+    },
+    [60869] = {
+        itemid = 60869,
+        name = "Pebble",
+        creaturePreview = 45247,
+        creatureId = 45247,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 732
+    },
+    [60944] = {
+        itemid = 60944,
+        name = "Sigil of Hellfire Channeler",
+        creaturePreview = 44051,
+        creatureId = 44051,
+        description = "Has a chance to drop from Hellfire Channeler within The Blood Furnace.",
+        zone = "The Blood Furnace",
+        icon = 486
+    },
+    [60945] = {
+        itemid = 60945,
+        name = "Sigil of Magtheridon",
+        creaturePreview = 44052,
+        creatureId = 44052,
+        description = "Has a chance to drop from Magtheridon within Magtheridon's Lair.",
+        zone = "Magtheridon's Lair",
+        icon = 486
+    },
+    [60946] = {
+        itemid = 60946,
+        name = "Sigil of Watchkeeper Gargolmar",
+        creaturePreview = 44053,
+        creatureId = 44053,
+        description = "Has a chance to drop from Watchkeeper Gargolmar within Hellfire Citadel: Ramparts.",
+        zone = "Hellfire Citadel: Ramparts",
+        icon = 486
+    },
+    [60947] = {
+        itemid = 60947,
+        name = "Sigil of Omor the Unscarred",
+        creaturePreview = 44054,
+        creatureId = 44054,
+        description = "Has a chance to drop from Omor the Unscarred within Hellfire Citadel: Ramparts.",
+        zone = "Hellfire Citadel: Ramparts",
+        icon = 486
+    },
+    [60948] = {
+        itemid = 60948,
+        name = "Sigil of Keli'dan the Breaker",
+        creaturePreview = 44055,
+        creatureId = 44055,
+        description = "Has a chance to drop from Keli'dan the Breaker within Hellfire Citadel: The Blood Furnace.",
+        zone = "Hellfire Citadel: The Blood Furnace",
+        icon = 486
+    },
+    [60949] = {
+        itemid = 60949,
+        name = "Sigil of Broggok",
+        creaturePreview = 44056,
+        creatureId = 44056,
+        description = "Has a chance to drop from Broggok within Hellfire Citadel: The Blood Furnace.",
+        zone = "Hellfire Citadel: The Blood Furnace",
+        icon = 486
+    },
+    [60950] = {
+        itemid = 60950,
+        name = "Sigil of The Maker",
+        creaturePreview = 44057,
+        creatureId = 44057,
+        description = "Has a chance to drop from The Maker within Hellfire Citadel: The Blood Furnace.",
+        zone = "Hellfire Citadel: The Blood Furnace",
+        icon = 486
+    },
+    [60991] = {
+        itemid = 60991,
+        name = "Sigil of The Big Bad Wolf",
+        creaturePreview = 44060,
+        creatureId = 44060,
+        description = "Has a chance to drop from The Big Bad Wolf within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [60992] = {
+        itemid = 60992,
+        name = "Sigil of Romulo",
+        creaturePreview = 44061,
+        creatureId = 44061,
+        description = "Has a chance to drop from Romulo within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [61022] = {
+        itemid = 61022,
+        name = "Sigil of Julianne",
+        creaturePreview = 44062,
+        creatureId = 44062,
+        description = "Has a chance to drop from Julianne within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [61024] = {
+        itemid = 61024,
+        name = "Sigil of Nazan",
+        creaturePreview = 44064,
+        creatureId = 44064,
+        description = "Has a chance to drop from Nazan within Hellfire Ramparts.",
+        zone = "Hellfire Ramparts",
+        icon = 486
+    },
+    [61025] = {
+        itemid = 61025,
+        name = "Sigil of Vazruden",
+        creaturePreview = 44065,
+        creatureId = 44065,
+        description = "Has a chance to drop from Vazruden within Hellfire Ramparts.",
+        zone = "Hellfire Ramparts",
+        icon = 486
+    },
+    [61196] = {
+        itemid = 61196,
+        name = "Sigil of Rage Winterchill",
+        creaturePreview = 44073,
+        creatureId = 44073,
+        description = "Has a chance to drop from Rage Winterchill within The Battle for Mount Hyjal.",
+        zone = "The Battle for Mount Hyjal",
+        icon = 486
+    },
+    [61197] = {
+        itemid = 61197,
+        name = "Sigil of Hungarfen",
+        creaturePreview = 44074,
+        creatureId = 44074,
+        description = "Has a chance to drop from Hungarfen within Coilfang: The Underbog.",
+        zone = "Coilfang: The Underbog",
+        icon = 486
+    },
+    [61199] = {
+        itemid = 61199,
+        name = "Sigil of Mekgineer Steamrigger",
+        creaturePreview = 44076,
+        creatureId = 44076,
+        description = "Has a chance to drop from Mekgineer Steamrigger within Coilfang: The Steamvault.",
+        zone = "Coilfang: The Steamvault",
+        icon = 486
+    },
+    [61200] = {
+        itemid = 61200,
+        name = "Sigil of Hydromancer Thespia",
+        creaturePreview = 44077,
+        creatureId = 44077,
+        description = "Has a chance to drop from Hydromancer Thespia within Coilfang: The Steamvault.",
+        zone = "Coilfang: The Steamvault",
+        icon = 486
+    },
+    [61286] = {
+        itemid = 61286,
+        name = "Sigil of Warlord Kalithresh",
+        creaturePreview = 44078,
+        creatureId = 44078,
+        description = "Has a chance to drop from Warlord Kalithresh within Coilfang: The Steamvault.",
+        zone = "Coilfang: The Steamvault",
+        icon = 486
+    },
+    [61287] = {
+        itemid = 61287,
+        name = "Sigil of Anetheron",
+        creaturePreview = 44079,
+        creatureId = 44079,
+        description = "Has a chance to drop from Chromie within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [61288] = {
+        itemid = 61288,
+        name = "Sigil of Swamplord Musel'ek",
+        creaturePreview = 44080,
+        creatureId = 44080,
+        description = "Has a chance to drop from Swamplord Musel'ek within The Underbog.",
+        zone = "The Underbog",
+        icon = 486
+    },
+    [61289] = {
+        itemid = 61289,
+        name = "Sigil of Azgalor",
+        creaturePreview = 44081,
+        creatureId = 44081,
+        description = "Has a chance to drop from Azgalor within The Battle for Mount Hyjal.",
+        zone = "The Battle for Mount Hyjal",
+        icon = 486
+    },
+    [61393] = {
+        itemid = 61393,
+        name = "Sigil of The Black Stalker",
+        creaturePreview = 44089,
+        creatureId = 44089,
+        description = "Has a chance to drop from The Black Stalker within Coilfang: The Underbog.",
+        zone = "Coilfang: The Underbog",
+        icon = 486
+    },
+    [61537] = {
+        itemid = 61537,
+        name = "Sigil of Mennu the Betrayer",
+        creaturePreview = 44091,
+        creatureId = 44091,
+        description = "Has a chance to drop from Mennu the Betrayer within Coilfang: The Slave Pens.",
+        zone = "Coilfang: The Slave Pens",
+        icon = 486
+    },
+    [61539] = {
+        itemid = 61539,
+        name = "Sigil of Quagmirran",
+        creaturePreview = 44092,
+        creatureId = 44092,
+        description = "Has a chance to drop from Quagmirran within Coilfang: The Slave Pens.",
+        zone = "Coilfang: The Slave Pens",
+        icon = 486
+    },
+    [61557] = {
+        itemid = 61557,
+        name = "Sigil of Archimonde",
+        creaturePreview = 44095,
+        creatureId = 44095,
+        description = "Has a chance to drop from Archimonde within The Battle for Mount Hyjal.",
+        zone = "The Battle for Mount Hyjal",
+        icon = 486
+    },
+    [61559] = {
+        itemid = 61559,
+        name = "Sigil of High Botanist Freywinn",
+        creaturePreview = 44096,
+        creatureId = 44096,
+        description = "Has a chance to drop from High Botanist Freywinn within Tempest Keep: The Botanica.",
+        subzone = "Tempest Keep: The Botanica",
+        icon = 486
+    },
+    [61561] = {
+        itemid = 61561,
+        name = "Sigil of Commander Sarannis",
+        creaturePreview = 44097,
+        creatureId = 44097,
+        description = "Has a chance to drop from Commander Sarannis within Tempest Keep: The Botanica.",
+        subzone = "Tempest Keep: The Botanica",
+        icon = 486
+    },
+    [61565] = {
+        itemid = 61565,
+        name = "Sigil of Thorngrin the Tender",
+        creaturePreview = 44099,
+        creatureId = 44099,
+        description = "Has a chance to drop from Thorngrin the Tender within Tempest Keep: The Botanica.",
+        subzone = "Tempest Keep: The Botanica",
+        icon = 486
+    },
+    [61567] = {
+        itemid = 61567,
+        name = "Sigil of Laj",
+        creaturePreview = 44100,
+        creatureId = 44100,
+        description = "Has a chance to drop from Laj within Tempest Keep: The Botanica.",
+        subzone = "Tempest Keep: The Botanica",
+        icon = 486
+    },
+    [61569] = {
+        itemid = 61569,
+        name = "Sigil of Rokmar the Crackler",
+        creaturePreview = 44101,
+        creatureId = 44101,
+        description = "Has a chance to drop from Rokmar the Crackler within Coilfang: The Slave Pens.",
+        zone = "Coilfang: The Slave Pens",
+        icon = 486
+    },
+    [61585] = {
+        itemid = 61585,
+        name = "Sigil of Ghaz'an",
+        creaturePreview = 44109,
+        creatureId = 44109,
+        description = "Has a chance to drop from Ghaz'an within Coilfang: The Underbog.",
+        zone = "Coilfang: The Underbog",
+        icon = 486
+    },
+    [61590] = {
+        itemid = 61590,
+        name = "Sigil of The Crone",
+        creaturePreview = 44111,
+        creatureId = 44111,
+        description = "Has a chance to drop from The Crone within Karazhan.",
+        zone = "Deadwind Pass",
+        subzone = "Karazhan",
+        icon = 486
+    },
+    [61593] = {
+        itemid = 61593,
+        name = "Sigil of Crusty",
+        creaturePreview = 44113,
+        creatureId = 44113,
+        description = "Has a chance to drop from Crusty within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [61599] = {
+        itemid = 61599,
+        name = "Sigil of Pandemonius",
+        creaturePreview = 44116,
+        creatureId = 44116,
+        description = "Has a chance to drop from Pandemonius within Auchindoun: Mana-Tombs.",
+        zone = "Auchindoun: Mana-Tombs",
+        icon = 486
+    },
+    [61601] = {
+        itemid = 61601,
+        name = "Sigil of Tavarok",
+        creaturePreview = 44117,
+        creatureId = 44117,
+        description = "Has a chance to drop from Tavarok within Auchindoun: Mana-Tombs.",
+        zone = "Auchindoun: Mana-Tombs",
+        icon = 486
+    },
+    [61603] = {
+        itemid = 61603,
+        name = "Sigil of Nexus-Prince Shaffar",
+        creaturePreview = 44118,
+        creatureId = 44118,
+        description = "Has a chance to drop from Nexus-Prince Shaffar within Auchindoun: Mana-Tombs.",
+        zone = "Auchindoun: Mana-Tombs",
+        icon = 486
+    },
+    [61605] = {
+        itemid = 61605,
+        name = "Sigil of Shirrak the Dead Watcher",
+        creaturePreview = 44119,
+        creatureId = 44119,
+        description = "Has a chance to drop from Shirrak the Dead Watcher within Auchindoun: Auchenai Crypts.",
+        zone = "Auchindoun: Auchenai Crypts",
+        icon = 486
+    },
+    [61607] = {
+        itemid = 61607,
+        name = "Sigil of Exarch Maladaar",
+        creaturePreview = 44120,
+        creatureId = 44120,
+        description = "Has a chance to drop from Exarch Maladaar within Auchindoun: Auchenai Crypts.",
+        zone = "Auchindoun: Auchenai Crypts",
+        icon = 486
+    },
+    [61619] = {
+        itemid = 61619,
+        name = "Sigil of Darkweaver Syth",
+        creaturePreview = 44126,
+        creatureId = 44126,
+        description = "Has a chance to drop from Darkweaver Syth within Auchindoun: Sethekk Halls.",
+        zone = "Auchindoun: Sethekk Halls",
+        icon = 486
+    },
+    [61621] = {
+        itemid = 61621,
+        name = "Sigil of Talon King Ikiss",
+        creaturePreview = 44127,
+        creatureId = 44127,
+        description = "Has a chance to drop from Talon King Ikiss within Sethekk Halls.",
+        zone = "Sethekk Halls",
+        icon = 486
+    },
+    [61629] = {
+        itemid = 61629,
+        name = "Sigil of Blackheart the Inciter",
+        creaturePreview = 44131,
+        creatureId = 44131,
+        description = "Has a chance to drop from Blackheart the Inciter within Auchindoun: Shadow Labyrinth.",
+        zone = "Auchindoun: Shadow Labyrinth",
+        icon = 486
+    },
+    [61631] = {
+        itemid = 61631,
+        name = "Sigil of Mekthorg the Wild",
+        creaturePreview = 44132,
+        creatureId = 44132,
+        description = "Has a chance to drop from Mekthorg the Wild within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [61932] = {
+        itemid = 61932,
+        name = "Sigil of Fulgorge",
+        creaturePreview = 44133,
+        creatureId = 44133,
+        description = "Has a chance to drop from Fulgorge within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [61933] = {
+        itemid = 61933,
+        name = "Sigil of Vorakem Doomspeaker",
+        creaturePreview = 44134,
+        creatureId = 44134,
+        description = "Has a chance to drop from Vorakem Doomspeaker within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62030] = {
+        itemid = 62030,
+        name = "Sigil of Coilfang Emissary",
+        creaturePreview = 44136,
+        creatureId = 44136,
+        description = "Has a chance to drop from Coilfang Emissary within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62031] = {
+        itemid = 62031,
+        name = "Sigil of Bog Lurker",
+        creaturePreview = 44137,
+        creatureId = 44137,
+        description = "Has a chance to drop from Bog Lurker within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62041] = {
+        itemid = 62041,
+        name = "Sigil of Voidhunter Yar",
+        creaturePreview = 44138,
+        creatureId = 44138,
+        description = "Has a chance to drop from Voidhunter Yar within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62042] = {
+        itemid = 62042,
+        name = "Sigil of Bro'Gaz the Clanless",
+        creaturePreview = 44139,
+        creatureId = 44139,
+        description = "Has a chance to drop from Bro'Gaz the Clanless within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62250] = {
+        itemid = 62250,
+        name = "Sigil of Okrek",
+        creaturePreview = 44140,
+        creatureId = 44140,
+        description = "Has a chance to drop from Okrek within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62291] = {
+        itemid = 62291,
+        name = "Sigil of Doomsayer Jurim",
+        creaturePreview = 44141,
+        creatureId = 44141,
+        description = "Has a chance to drop from Doomsayer Jurim within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62292] = {
+        itemid = 62292,
+        name = "Sigil of Crippler",
+        creaturePreview = 44142,
+        creatureId = 44142,
+        description = "Has a chance to drop from Crippler within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62293] = {
+        itemid = 62293,
+        name = "Sigil of Morcrush",
+        creaturePreview = 44143,
+        creatureId = 44143,
+        description = "Has a chance to drop from Morcrush within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62295] = {
+        itemid = 62295,
+        name = "Sigil of Speaker Mar'grom",
+        creaturePreview = 44145,
+        creatureId = 44145,
+        description = "Has a chance to drop from Speaker Mar'grom within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62296] = {
+        itemid = 62296,
+        name = "Sigil of Collidus the Warp-Watcher",
+        creaturePreview = 44146,
+        creatureId = 44146,
+        description = "Has a chance to drop from Collidus the Warp-Watcher within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62297] = {
+        itemid = 62297,
+        name = "Sigil of Ambassador Jerrikar",
+        creaturePreview = 44147,
+        creatureId = 44147,
+        description = "Has a chance to drop from Ambassador Jerrikar within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62299] = {
+        itemid = 62299,
+        name = "Sigil of Kraator",
+        creaturePreview = 44148,
+        creatureId = 44148,
+        description = "Has a chance to drop from Kraator within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62300] = {
+        itemid = 62300,
+        name = "Sigil of Chief Engineer Lorthander",
+        creaturePreview = 44149,
+        creatureId = 44149,
+        description = "Has a chance to drop from Chief Engineer Lorthander within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62301] = {
+        itemid = 62301,
+        name = "Sigil of Ever-Core the Punisher",
+        creaturePreview = 44150,
+        creatureId = 44150,
+        description = "Has a chance to drop from Ever-Core the Punisher within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [62303] = {
+        itemid = 62303,
+        name = "Sigil of Murmur",
+        creaturePreview = 44152,
+        creatureId = 44152,
+        description = "Has a chance to drop from Murmur within Auchindoun: Shadow Labyrinth.",
+        zone = "Auchindoun: Shadow Labyrinth",
+        icon = 486
+    },
+    [62306] = {
+        itemid = 62306,
+        name = "Sigil of Ambassador Hellmaw",
+        creaturePreview = 44154,
+        creatureId = 44154,
+        description = "Has a chance to drop from Ambassador Hellmaw within Auchindoun: Shadow Labyrinth.",
+        zone = "Auchindoun: Shadow Labyrinth",
+        icon = 486
+    },
+    [62307] = {
+        itemid = 62307,
+        name = "Sigil of Grandmaster Vorpil",
+        creaturePreview = 44155,
+        creatureId = 44155,
+        description = "Has a chance to drop from Grandmaster Vorpil within Auchindoun: Shadow Labyrinth.",
+        zone = "Auchindoun: Shadow Labyrinth",
+        icon = 486
+    },
+    [62309] = {
+        itemid = 62309,
+        name = "Sigil of High Astromancer Solarian",
+        creaturePreview = 44157,
+        creatureId = 44157,
+        description = "Has a chance to drop from High Astromancer Solarian within Tempest Keep.",
+        zone = "Netherstorm",
+        subzone = "Tempest Keep",
+        icon = 486
+    },
+    [62311] = {
+        itemid = 62311,
+        name = "Sigil of High King Maulgar",
+        creaturePreview = 44159,
+        creatureId = 44159,
+        description = "Has a chance to drop from High King Maulgar within Gruul's Lair.",
+        zone = "Blade's Edge Mountains",
+        subzone = "Gruul's Lair",
+        icon = 486
+    },
+    [62403] = {
+        itemid = 62403,
+        name = "Sigil of Gatewatcher Gyro-Kill",
+        creaturePreview = 44167,
+        creatureId = 44167,
+        description = "Has a chance to drop from Gatewatcher Gyro-Kill within Tempest Keep: The Mechanar.",
+        subzone = "Tempest Keep: The Mechanar",
+        icon = 486
+    },
+    [62411] = {
+        itemid = 62411,
+        name = "Sigil of Mechano-Lord Capacitus",
+        creaturePreview = 44168,
+        creatureId = 44168,
+        description = "Has a chance to drop from Mechano-Lord Capacitus within Tempest Keep: The Mechanar.",
+        subzone = "Tempest Keep: The Mechanar",
+        icon = 486
+    },
+    [62419] = {
+        itemid = 62419,
+        name = "Sigil of Pathaleon the Calculator",
+        creaturePreview = 44169,
+        creatureId = 44169,
+        description = "Has a chance to drop from Pathaleon the Calculator within Tempest Keep: The Mechanar.",
+        subzone = "Tempest Keep: The Mechanar",
+        icon = 486
+    },
+    [62442] = {
+        itemid = 62442,
+        name = "Sigil of Nethermancer Sepethrea",
+        creaturePreview = 44170,
+        creatureId = 44170,
+        description = "Has a chance to drop from Nethermancer Sepethrea within Tempest Keep: The Mechanar.",
+        subzone = "Tempest Keep: The Mechanar",
+        icon = 486
+    },
+    [62443] = {
+        itemid = 62443,
+        name = "Sigil of Al'ar",
+        creaturePreview = 44171,
+        creatureId = 44171,
+        description = "Has a chance to drop from Al'ar within Tempest Keep.",
+        zone = "Netherstorm",
+        subzone = "Tempest Keep",
+        icon = 486
+    },
+    [62498] = {
+        itemid = 62498,
+        name = "Sigil of Kael'thas Sunstrider",
+        creaturePreview = 44176,
+        creatureId = 44176,
+        description = "Has a chance to drop from Kael'thas Sunstrider within Tempest Keep.",
+        zone = "Netherstorm",
+        subzone = "Tempest Keep",
+        icon = 486
+    },
+    [62500] = {
+        itemid = 62500,
+        name = "Sigil of Gatewatcher Iron-Hand",
+        creaturePreview = 44178,
+        creatureId = 44178,
+        description = "Has a chance to drop from Gatewatcher Iron-Hand within Tempest Keep: The Mechanar.",
+        subzone = "Tempest Keep: The Mechanar",
+        icon = 486
+    },
+    [62540] = {
+        itemid = 62540,
+        name = "Lil' Deathwing",
+        creaturePreview = 46896,
+        creatureId = 46896,
+        description = "Available from the Webstore.",
+        icon = 247
+    },
+    [63289] = {
+        itemid = 63289,
+        name = "Sigil of Zereketh the Unbound",
+        creaturePreview = 44214,
+        creatureId = 44214,
+        description = "Has a chance to drop from Zereketh the Unbound within Tempest Keep: The Arcatraz.",
+        subzone = "Tempest Keep: The Arcatraz",
+        icon = 486
+    },
+    [63290] = {
+        itemid = 63290,
+        name = "Sigil of Dalliah the Doomsayer",
+        creaturePreview = 44215,
+        creatureId = 44215,
+        description = "Has a chance to drop from Dalliah the Doomsayer within Tempest Keep: The Arcatraz.",
+        subzone = "Tempest Keep: The Arcatraz",
+        icon = 486
+    },
+    [63294] = {
+        itemid = 63294,
+        name = "Sigil of Wrath-Scryer Soccothrates",
+        creaturePreview = 44216,
+        creatureId = 44216,
+        description = "Has a chance to drop from Wrath-Scryer Soccothrates within Tempest Keep: The Arcatraz.",
+        subzone = "Tempest Keep: The Arcatraz",
+        icon = 486
+    },
+    [63295] = {
+        itemid = 63295,
+        name = "Sigil of Harbinger Skyriss",
+        creaturePreview = 44217,
+        creatureId = 44217,
+        description = "Has a chance to drop from Harbinger Skyriss within Tempest Keep: The Arcatraz.",
+        subzone = "Tempest Keep: The Arcatraz",
+        icon = 486
+    },
+    [63297] = {
+        itemid = 63297,
+        name = "Sigil of Blood Guard Porung",
+        creaturePreview = 44218,
+        creatureId = 44218,
+        description = "Has a chance to drop from Blood Guard Porung within Hellfire Citadel: The Shattered Halls.",
+        zone = "Hellfire Citadel: The Shattered Halls",
+        icon = 486
+    },
+    [63298] = {
+        itemid = 63298,
+        name = "Sigil of Nuramoc",
+        creaturePreview = 44219,
+        creatureId = 44219,
+        description = "Has a chance to drop from Nuramoc within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [63320] = {
+        itemid = 63320,
+        name = "Sigil of Lady Vashj",
+        creaturePreview = 44222,
+        creatureId = 44222,
+        description = "Has a chance to drop from Lady Vashj within Coilfang: Serpentshrine Cavern.",
+        subzone = "Coilfang: Serpentshrine Cavern",
+        icon = 486
+    },
+    [63325] = {
+        itemid = 63325,
+        name = "Sigil of Fathom-Lord Karathress",
+        creaturePreview = 44224,
+        creatureId = 44224,
+        description = "Has a chance to drop from Fathom-Lord Karathress within Coilfang: Serpentshrine Cavern.",
+        subzone = "Coilfang: Serpentshrine Cavern",
+        icon = 486
+    },
+    [63326] = {
+        itemid = 63326,
+        name = "Sigil of Leotheras the Blind",
+        creaturePreview = 44225,
+        creatureId = 44225,
+        description = "Has a chance to drop from Leotheras the Blind within Coilfang: Serpentshrine Cavern.",
+        subzone = "Coilfang: Serpentshrine Cavern",
+        icon = 486
+    },
+    [63338] = {
+        itemid = 63338,
+        name = "Sigil of Hydross the Unstable",
+        creaturePreview = 44226,
+        creatureId = 44226,
+        description = "Has a chance to drop from Hydross the Unstable within Coilfang: Serpentshrine Cavern.",
+        subzone = "Coilfang: Serpentshrine Cavern",
+        icon = 486
+    },
+    [63355] = {
+        itemid = 63355,
+        name = "Rustberg Gull",
+        creaturePreview = 48107,
+        creatureId = 48107,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 503
+    },
+    [63394] = {
+        itemid = 63394,
+        name = "Sigil of Fenissa the Assassin",
+        creaturePreview = 44248,
+        creatureId = 44248,
+        description = "Has a chance to drop from Fenissa the Assassin within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [63397] = {
+        itemid = 63397,
+        name = "Sigil of Dr. Whitherlimb",
+        creaturePreview = 44249,
+        creatureId = 44249,
+        description = "Has a chance to drop from Dr. Whitherlimb within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [63398] = {
+        itemid = 63398,
+        name = "Armadillo Pup",
+        creaturePreview = 48242,
+        creatureId = 48242,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 451
+    },
+    [63425] = {
+        itemid = 63425,
+        name = "Sigil of Shade of Akama",
+        creaturePreview = 44261,
+        creatureId = 44261,
+        description = "Has a chance to drop from Shade of Akama within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63443] = {
+        itemid = 63443,
+        name = "Sigil of Teron Gorefiend",
+        creaturePreview = 44263,
+        creatureId = 44263,
+        description = "Has a chance to drop from Teron Gorefiend within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63451] = {
+        itemid = 63451,
+        name = "Sigil of High Warlord Naj'entus",
+        creaturePreview = 44264,
+        creatureId = 44264,
+        description = "Has a chance to drop from High Warlord Naj'entus within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63510] = {
+        itemid = 63510,
+        name = "Sigil of Supremus",
+        creaturePreview = 44265,
+        creatureId = 44265,
+        description = "Has a chance to drop from Supremus within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63511] = {
+        itemid = 63511,
+        name = "Sigil of Illidan Stormrage",
+        creaturePreview = 44266,
+        creatureId = 44266,
+        description = "Has a chance to drop from Illidan Stormrage within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63512] = {
+        itemid = 63512,
+        name = "Sigil of Yor",
+        creaturePreview = 44267,
+        creatureId = 44267,
+        description = "Has a chance to drop from Yor within Auchindoun: Mana-Tombs.",
+        zone = "Auchindoun: Mana-Tombs",
+        icon = 486
+    },
+    [63520] = {
+        itemid = 63520,
+        name = "Sigil of Mother Shahraz",
+        creaturePreview = 44268,
+        creatureId = 44268,
+        description = "Has a chance to drop from Mother Shahraz within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63521] = {
+        itemid = 63521,
+        name = "Sigil of Gurtogg Bloodboil",
+        creaturePreview = 44269,
+        creatureId = 44269,
+        description = "Has a chance to drop from Gurtogg Bloodboil within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63529] = {
+        itemid = 63529,
+        name = "Sigil of Gathios the Shatterer",
+        creaturePreview = 44270,
+        creatureId = 44270,
+        description = "Has a chance to drop from Illidari Council within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63690] = {
+        itemid = 63690,
+        name = "Sigil of High Nethermancer Zerevor",
+        creaturePreview = 44271,
+        creatureId = 44271,
+        description = "Has a chance to drop from Illidari Council within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63928] = {
+        itemid = 63928,
+        name = "Sigil of Lady Malande",
+        creaturePreview = 44272,
+        creatureId = 44272,
+        description = "Has a chance to drop from Lady Malande within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63929] = {
+        itemid = 63929,
+        name = "Sigil of Veras Darkshadow",
+        creaturePreview = 44273,
+        creatureId = 44273,
+        description = "Has a chance to drop from Illidari Council within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63932] = {
+        itemid = 63932,
+        name = "Sigil of Anzu",
+        creaturePreview = 44276,
+        creatureId = 44276,
+        description = "Has a chance to drop from Anzu within Auchindoun: Sethekk Halls.",
+        zone = "Auchindoun: Sethekk Halls",
+        icon = 486
+    },
+    [63940] = {
+        itemid = 63940,
+        name = "Sigil of Essence of Anger",
+        creaturePreview = 44284,
+        creatureId = 44284,
+        description = "Has a chance to drop from Reliquary of the Lost within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [63943] = {
+        itemid = 63943,
+        name = "Sigil of Akil'zon",
+        creaturePreview = 44287,
+        creatureId = 44287,
+        description = "Has a chance to drop from Akil'zon within Zul'Aman.",
+        zone = "Zul'Aman",
+        icon = 486
+    },
+    [63944] = {
+        itemid = 63944,
+        name = "Sigil of Nalorakk",
+        creaturePreview = 44288,
+        creatureId = 44288,
+        description = "Has a chance to drop from Nalorakk within Zul'Aman.",
+        zone = "Zul'Aman",
+        icon = 486
+    },
+    [63945] = {
+        itemid = 63945,
+        name = "Sigil of Halazzi",
+        creaturePreview = 44289,
+        creatureId = 44289,
+        description = "Has a chance to drop from Halazzi within Zul'Aman.",
+        zone = "Zul'Aman",
+        icon = 486
+    },
+    [63946] = {
+        itemid = 63946,
+        name = "Sigil of Jan'alai",
+        creaturePreview = 44290,
+        creatureId = 44290,
+        description = "Has a chance to drop from Jan'alai within Zul'Aman.",
+        zone = "Zul'Aman",
+        icon = 486
+    },
+    [63949] = {
+        itemid = 63949,
+        name = "Sigil of Zul'jin",
+        creaturePreview = 44293,
+        creatureId = 44293,
+        description = "Has a chance to drop from Zul'jin within Zul'Aman.",
+        zone = "Zul'Aman",
+        icon = 486
+    },
+    [63957] = {
+        itemid = 63957,
+        name = "Sigil of Prince Keleseth",
+        creaturePreview = 44301,
+        creatureId = 44301,
+        description = "Has a chance to drop from Prince Keleseth within Utgarde Keep.",
+        zone = "Howling Fjord",
+        subzone = "Utgarde Keep",
+        icon = 486
+    },
+    [63958] = {
+        itemid = 63958,
+        name = "Sigil of Ingvar the Plunderer",
+        creaturePreview = 44302,
+        creatureId = 44302,
+        description = "Has a chance to drop from Ingvar the Plunderer within Utgarde.",
+        zone = "Utgarde",
+        icon = 486
+    },
+    [63960] = {
+        itemid = 63960,
+        name = "Sigil of Dalronn the Controller",
+        creaturePreview = 44304,
+        creatureId = 44304,
+        description = "Has a chance to drop from Dalronn the Controller within Utgarde Keep.",
+        zone = "Howling Fjord",
+        subzone = "Utgarde Keep",
+        icon = 486
+    },
+    [63962] = {
+        itemid = 63962,
+        name = "Sigil of Hex Lord Malacrass",
+        creaturePreview = 44306,
+        creatureId = 44306,
+        description = "Has a chance to drop from Hex Lord Malacrass within Zul'Aman.",
+        zone = "Zul'Aman",
+        icon = 486
+    },
+    [63969] = {
+        itemid = 63969,
+        name = "Sigil of Priestess Delrissa",
+        creaturePreview = 44313,
+        creatureId = 44313,
+        description = "Has a chance to drop from Priestess Delrissa within Magister's Terrace.",
+        subzone = "Magister's Terrace",
+        icon = 486
+    },
+    [63970] = {
+        itemid = 63970,
+        name = "Sigil of Kael'thas Sunstrider",
+        creaturePreview = 44314,
+        creatureId = 44314,
+        description = "Has a chance to drop from Kael'thas Sunstrider within Magister's Terrace.",
+        subzone = "Magister's Terrace",
+        icon = 486
+    },
+    [63971] = {
+        itemid = 63971,
+        name = "Sigil of Selin Fireheart",
+        creaturePreview = 44315,
+        creatureId = 44315,
+        description = "Has a chance to drop from Selin Fireheart within Magister's Terrace.",
+        subzone = "Magister's Terrace",
+        icon = 486
+    },
+    [63972] = {
+        itemid = 63972,
+        name = "Sigil of Vexallus",
+        creaturePreview = 44316,
+        creatureId = 44316,
+        description = "Has a chance to drop from Vexallus within Magister's Terrace.",
+        subzone = "Magister's Terrace",
+        icon = 486
+    },
+    [63976] = {
+        itemid = 63976,
+        name = "Sigil of Brutallus",
+        creaturePreview = 44320,
+        creatureId = 44320,
+        description = "Has a chance to drop from Brutallus within Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
+        icon = 486
+    },
+    [63978] = {
+        itemid = 63978,
+        name = "Sigil of Sathrovarr the Corruptor",
+        creaturePreview = 44322,
+        creatureId = 44322,
+        description = "Has a chance to drop from Sathrovarr the Corruptor within The Sunwell.",
+        zone = "The Sunwell",
+        icon = 486
+    },
+    [63980] = {
+        itemid = 63980,
+        name = "Sigil of Felmyst",
+        creaturePreview = 44324,
+        creatureId = 44324,
+        description = "Has a chance to drop from Felmyst Within Sunwell Plateau.",
+        subzone = "Sunwell Plateau",
+        icon = 486
+    },
+    [63984] = {
+        itemid = 63984,
+        name = "Sigil of Lady Sacrolash",
+        creaturePreview = 44328,
+        creatureId = 44328,
+        description = "Has a chance to drop from Lady Sacrolash within The Sunwell.",
+        zone = "The Sunwell",
+        icon = 486
+    },
+    [63985] = {
+        itemid = 63985,
+        name = "Sigil of Grand Warlock Alythess",
+        creaturePreview = 44329,
+        creatureId = 44329,
+        description = "Has a chance to drop from Grand Warlock Alythess within The Sunwell.",
+        zone = "The Sunwell",
+        icon = 486
+    },
+    [63988] = {
+        itemid = 63988,
+        name = "Sigil of Kil'jaeden",
+        creaturePreview = 44332,
+        creatureId = 44332,
+        description = "Has a chance to drop from Kil'jaeden within Sunwell.",
+        zone = "Sunwell",
+        icon = 486
+    },
+    [64004] = {
+        itemid = 64004,
+        name = "Sigil of Entropius",
+        creaturePreview = 44348,
+        creatureId = 44348,
+        description = "Has a chance to drop from Entropius within Sunwell.",
+        zone = "Sunwell",
+        icon = 486
+    },
+    [64010] = {
+        itemid = 64010,
+        name = "Sigil of Meathook",
+        creaturePreview = 44354,
+        creatureId = 44354,
+        description = "Has a chance to drop from Meathook within The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
+        icon = 486
+    },
+    [64011] = {
+        itemid = 64011,
+        name = "Sigil of Salramm the Fleshcrafter",
+        creaturePreview = 44355,
+        creatureId = 44355,
+        description = "Has a chance to drop from Salramm the Fleshcrafter within The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
+        icon = 486
+    },
+    [64012] = {
+        itemid = 64012,
+        name = "Sigil of Chrono-Lord Epoch",
+        creaturePreview = 44356,
+        creatureId = 44356,
+        description = "Has a chance to drop from Chrono-Lord Epoch within The Culling of Stratholme.",
+        zone = "The Culling of Stratholme",
+        icon = 486
+    },
+    [64013] = {
+        itemid = 64013,
+        name = "Sigil of Trollgore",
+        creaturePreview = 44357,
+        creatureId = 44357,
+        description = "Has a chance to drop from Trollgore within Drak'Tharon Keep.",
+        zone = "Grizzly Hills",
+        subzone = "Drak'Tharon Keep",
+        icon = 486
+    },
+    [64014] = {
+        itemid = 64014,
+        name = "Sigil of Novos the Summoner",
+        creaturePreview = 44358,
+        creatureId = 44358,
+        description = "Has a chance to drop from Novos the Summoner within Drak'Tharon Keep.",
+        zone = "Grizzly Hills",
+        subzone = "Drak'Tharon Keep",
+        icon = 486
+    },
+    [64016] = {
+        itemid = 64016,
+        name = "Sigil of Svala Sorrowgrave",
+        creaturePreview = 44360,
+        creatureId = 44360,
+        description = "Has a chance to drop from Svala Sorrowgrave within Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
+        icon = 486
+    },
+    [64017] = {
+        itemid = 64017,
+        name = "Sigil of Gortok Palehoof",
+        creaturePreview = 44361,
+        creatureId = 44361,
+        description = "Has a chance to drop from Gortok Palehoof within Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
+        icon = 486
+    },
+    [64018] = {
+        itemid = 64018,
+        name = "Sigil of Skadi the Ruthless",
+        creaturePreview = 44362,
+        creatureId = 44362,
+        description = "Has a chance to drop from Skadi the Ruthless within Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
+        icon = 486
+    },
+    [64019] = {
+        itemid = 64019,
+        name = "Sigil of Keristrasza",
+        creaturePreview = 44363,
+        creatureId = 44363,
+        description = "Has a chance to drop from Keristrasza within The Nexus.",
+        zone = "Borean Tundra",
+        subzone = "The Nexus",
+        icon = 486
+    },
+    [64020] = {
+        itemid = 64020,
+        name = "Sigil of Grand Magus Telestra",
+        creaturePreview = 44364,
+        creatureId = 44364,
+        description = "Has a chance to drop from Grand Magus Telestra within The Nexus.",
+        zone = "Borean Tundra",
+        subzone = "The Nexus",
+        icon = 486
+    },
+    [64021] = {
+        itemid = 64021,
+        name = "Sigil of Anomalus",
+        creaturePreview = 44365,
+        creatureId = 44365,
+        description = "Has a chance to drop from Anomalus within The Nexus.",
+        zone = "Borean Tundra",
+        subzone = "The Nexus",
+        icon = 486
+    },
+    [64023] = {
+        itemid = 64023,
+        name = "Sigil of Ormorok the Tree-Shaper",
+        creaturePreview = 44367,
+        creatureId = 44367,
+        description = "Has a chance to drop from Ormorok the Tree-Shaper within The Nexus.",
+        zone = "Borean Tundra",
+        subzone = "The Nexus",
+        icon = 486
+    },
+    [64024] = {
+        itemid = 64024,
+        name = "Sigil of Commander Stoutbeard",
+        creaturePreview = 44368,
+        creatureId = 44368,
+        description = "Has a chance to drop from Commander Stoutbeard within The Nexus.",
+        zone = "Borean Tundra",
+        subzone = "The Nexus",
+        icon = 486
+    },
+    [64025] = {
+        itemid = 64025,
+        name = "Sigil of King Ymiron",
+        creaturePreview = 44369,
+        creatureId = 44369,
+        description = "Has a chance to drop from King Ymiron within Utgarde Pinnacle.",
+        zone = "Utgarde Pinnacle",
+        icon = 486
+    },
+    [64036] = {
+        itemid = 64036,
+        name = "Sigil of Varos Cloudstrider",
+        creaturePreview = 44380,
+        creatureId = 44380,
+        description = "Has a chance to drop from Varos Cloudstrider within The Oculus.",
+        zone = "The Oculus",
+        icon = 486
+    },
+    [64039] = {
+        itemid = 64039,
+        name = "Sigil of King Dred",
+        creaturePreview = 44383,
+        creatureId = 44383,
+        description = "Has a chance to drop from King Dred within Drak'Tharon Keep.",
+        zone = "Grizzly Hills",
+        subzone = "Drak'Tharon Keep",
+        icon = 486
+    },
+    [64040] = {
+        itemid = 64040,
+        name = "Sigil of Drakos the Interrogator",
+        creaturePreview = 44384,
+        creatureId = 44384,
+        description = "Has a chance to drop from Drakos the Interrogator within The Oculus.",
+        zone = "The Oculus",
+        icon = 486
+    },
+    [64041] = {
+        itemid = 64041,
+        name = "Sigil of Mage-Lord Urom",
+        creaturePreview = 44385,
+        creatureId = 44385,
+        description = "Has a chance to drop from Mage-Lord Urom within The Oculus.",
+        zone = "The Oculus",
+        icon = 486
+    },
+    [64042] = {
+        itemid = 64042,
+        name = "Sigil of Ley-Guardian Eregos",
+        creaturePreview = 44386,
+        creatureId = 44386,
+        description = "Has a chance to drop from Ley-Guardian Eregos within The Oculus.",
+        zone = "The Oculus",
+        icon = 486
+    },
+    [64065] = {
+        itemid = 64065,
+        name = "Sigil of Maiden of Grief",
+        creaturePreview = 44409,
+        creatureId = 44409,
+        description = "Has a chance to drop from Maiden of Grief within Halls of Stone.",
+        zone = "Halls of Stone",
+        icon = 486
+    },
+    [64066] = {
+        itemid = 64066,
+        name = "Sigil of Krystallus",
+        creaturePreview = 44410,
+        creatureId = 44410,
+        description = "Has a chance to drop from Krystallus within Halls of Stone.",
+        zone = "Halls of Stone",
+        icon = 486
+    },
+    [64067] = {
+        itemid = 64067,
+        name = "Sigil of Sjonnir The Ironshaper",
+        creaturePreview = 44411,
+        creatureId = 44411,
+        description = "Has a chance to drop from Sjonnir The Ironshaper within Halls of Stone.",
+        zone = "Halls of Stone",
+        icon = 486
+    },
+    [64089] = {
+        itemid = 64089,
+        name = "Sigil of Ionar",
+        creaturePreview = 44433,
+        creatureId = 44433,
+        description = "Has a chance to drop from Ionar within Halls of Lightning.",
+        zone = "Halls of Lightning",
+        icon = 486
+    },
+    [64091] = {
+        itemid = 64091,
+        name = "Sigil of General Bjarngrim",
+        creaturePreview = 44435,
+        creatureId = 44435,
+        description = "Has a chance to drop from General Bjarngrim within Halls of Lightning.",
+        zone = "Halls of Lightning",
+        icon = 486
+    },
+    [64092] = {
+        itemid = 64092,
+        name = "Sigil of Volkhan",
+        creaturePreview = 44436,
+        creatureId = 44436,
+        description = "Has a chance to drop from Volkhan within Halls of Lightning.",
+        zone = "Halls of Lightning",
+        icon = 486
+    },
+    [64094] = {
+        itemid = 64094,
+        name = "Sigil of Krik'thir the Gatewatcher",
+        creaturePreview = 44438,
+        creatureId = 44438,
+        description = "Has a chance to drop from Krik'thir the Gatewatcher within Azjol-Nerub.",
+        zone = "Azjol-Nerub",
+        icon = 486
+    },
+    [64098] = {
+        itemid = 64098,
+        name = "Sigil of Sartharion",
+        creaturePreview = 44442,
+        creatureId = 44442,
+        description = "Has a chance to drop from Sartharion within The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
+        icon = 486
+    },
+    [64100] = {
+        itemid = 64100,
+        name = "Sigil of Hadronox",
+        creaturePreview = 44444,
+        creatureId = 44444,
+        description = "Has a chance to drop from Hadronox within Azjol-Nerub.",
+        zone = "Azjol-Nerub",
+        icon = 486
+    },
+    [64101] = {
+        itemid = 64101,
+        name = "Sigil of Loken",
+        creaturePreview = 44445,
+        creatureId = 44445,
+        description = "Has a chance to drop from Loken within Halls of Lightning.",
+        zone = "Halls of Lightning",
+        icon = 486
+    },
+    [64110] = {
+        itemid = 64110,
+        name = "Sigil of Anub'arak",
+        creaturePreview = 44454,
+        creatureId = 44454,
+        description = "Has a chance to drop from Anub'arak within Azjol-Nerub.",
+        zone = "Azjol-Nerub",
+        icon = 486
+    },
+    [64119] = {
+        itemid = 64119,
+        name = "Sigil of Slad'ran",
+        creaturePreview = 44463,
+        creatureId = 44463,
+        description = "Has a chance to drop from Slad'ran within Gundrak.",
+        zone = "Zul'Drak",
+        subzone = "Gundrak",
+        icon = 486
+    },
+    [64120] = {
+        itemid = 64120,
+        name = "Sigil of Moorabi",
+        creaturePreview = 44464,
+        creatureId = 44464,
+        description = "Has a chance to drop from Moorabi within Gundrak.",
+        zone = "Zul'Drak",
+        subzone = "Gundrak",
+        icon = 486
+    },
+    [64121] = {
+        itemid = 64121,
+        name = "Sigil of Gal'darah",
+        creaturePreview = 44465,
+        creatureId = 44465,
+        description = "Has a chance to drop from Gal'darah within Gundrak.",
+        zone = "Zul'Drak",
+        subzone = "Gundrak",
+        icon = 486
+    },
+    [64122] = {
+        itemid = 64122,
+        name = "Sigil of Prince Taldaram",
+        creaturePreview = 44466,
+        creatureId = 44466,
+        description = "Has a chance to drop from Prince Taldaram within Ahn'kahet: The Old Kingdom.",
+        zone = "Ahn'kahet: The Old Kingdom",
+        icon = 486
+    },
+    [64123] = {
+        itemid = 64123,
+        name = "Sigil of Elder Nadox",
+        creaturePreview = 44467,
+        creatureId = 44467,
+        description = "Has a chance to drop from Elder Nadox within Ahn'kahet: The Old Kingdom.",
+        zone = "Ahn'kahet: The Old Kingdom",
+        icon = 486
+    },
+    [64124] = {
+        itemid = 64124,
+        name = "Sigil of Jedoga Shadowseeker",
+        creaturePreview = 44468,
+        creatureId = 44468,
+        description = "Has a chance to drop from Jedoga Shadowseeker within Ahn'kahet: The Old Kingdom.",
+        zone = "Ahn'kahet: The Old Kingdom",
+        icon = 486
+    },
+    [64125] = {
+        itemid = 64125,
+        name = "Sigil of Herald Volazj",
+        creaturePreview = 44469,
+        creatureId = 44469,
+        description = "Has a chance to drop from Herald Volazj within Ahn'kahet: The Old Kingdom.",
+        zone = "Ahn'kahet: The Old Kingdom",
+        icon = 486
+    },
+    [64126] = {
+        itemid = 64126,
+        name = "Sigil of Erekem",
+        creaturePreview = 44470,
+        creatureId = 44470,
+        description = "Has a chance to drop from Erekem within Violet Hold.",
+        subzone = "Violet Hold",
+        icon = 486
+    },
+    [64127] = {
+        itemid = 64127,
+        name = "Sigil of Moragg",
+        creaturePreview = 44471,
+        creatureId = 44471,
+        description = "Has a chance to drop from Moragg within Violet Hold.",
+        subzone = "Violet Hold",
+        icon = 486
+    },
+    [64137] = {
+        itemid = 64137,
+        name = "Sigil of Drakkari Elemental",
+        creaturePreview = 44481,
+        creatureId = 44481,
+        description = "Has a chance to drop from Drakkari Elemental within Gun'Drak.",
+        zone = "Gun'Drak",
+        icon = 486
+    },
+    [64144] = {
+        itemid = 64144,
+        name = "Sigil of Eck the Ferocious",
+        creaturePreview = 44488,
+        creatureId = 44488,
+        description = "Has a chance to drop from Eck the Ferocious within Gun'Drak.",
+        zone = "Gun'Drak",
+        icon = 486
+    },
+    [64152] = {
+        itemid = 64152,
+        name = "Sigil of Amanitar",
+        creaturePreview = 44496,
+        creatureId = 44496,
+        description = "Has a chance to drop from Amanitar within Ahn'kahet: The Old Kingdom.",
+        zone = "Ahn'kahet: The Old Kingdom",
+        icon = 486
+    },
+    [64162] = {
+        itemid = 64162,
+        name = "Sigil of Vesperon",
+        creaturePreview = 44506,
+        creatureId = 44506,
+        description = "Has a chance to drop from Vesperon within The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
+        icon = 486
+    },
+    [64163] = {
+        itemid = 64163,
+        name = "Sigil of Shadron",
+        creaturePreview = 44507,
+        creatureId = 44507,
+        description = "Has a chance to drop from Shadron within The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
+        icon = 486
+    },
+    [64164] = {
+        itemid = 64164,
+        name = "Sigil of Tenebron",
+        creaturePreview = 44508,
+        creatureId = 44508,
+        description = "Has a chance to drop from Tenebron within The Obsidian Sanctum.",
+        zone = "The Obsidian Sanctum",
+        icon = 486
+    },
+    [64198] = {
+        itemid = 64198,
+        name = "Sigil of Archavon the Stone Watcher",
+        creaturePreview = 44542,
+        creatureId = 44542,
+        description = "Has a chance to drop from Archavon the Stone Watcher within Vault of Archavon.",
+        zone = "Vault of Archavon",
+        icon = 486
+    },
+    [64199] = {
+        itemid = 64199,
+        name = "Sigil of Cyanigosa",
+        creaturePreview = 44543,
+        creatureId = 44543,
+        description = "Has a chance to drop from Cyanigosa within The Violet Hold.",
+        zone = "Dalaran",
+        subzone = "The Violet Hold",
+        icon = 486
+    },
+    [64245] = {
+        itemid = 64245,
+        name = "Sigil of Old Crystalbark",
+        creaturePreview = 44589,
+        creatureId = 44589,
+        description = "Has a chance to drop from Old Crystalbark within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64246] = {
+        itemid = 64246,
+        name = "Sigil of Fumblub Gearwind",
+        creaturePreview = 44590,
+        creatureId = 44590,
+        description = "Has a chance to drop from Fumblub Gearwind within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64247] = {
+        itemid = 64247,
+        name = "Sigil of Icehorn",
+        creaturePreview = 44591,
+        creatureId = 44591,
+        description = "Has a chance to drop from Icehorn within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64251] = {
+        itemid = 64251,
+        name = "Sigil of Perobas the Bloodthirster",
+        creaturePreview = 44595,
+        creatureId = 44595,
+        description = "Has a chance to drop from Perobas the Bloodthirster within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64252] = {
+        itemid = 64252,
+        name = "Sigil of Vigdis the War Maiden",
+        creaturePreview = 44596,
+        creatureId = 44596,
+        description = "Has a chance to drop from Vigdis the War Maiden within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64253] = {
+        itemid = 64253,
+        name = "Sigil of King Ping",
+        creaturePreview = 44597,
+        creatureId = 44597,
+        description = "Has a chance to drop from King Ping within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64254] = {
+        itemid = 64254,
+        name = "Sigil of Tukemuth",
+        creaturePreview = 44598,
+        creatureId = 44598,
+        description = "Has a chance to drop from Tukemuth within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64257] = {
+        itemid = 64257,
+        name = "Sigil of Crazed Indu'le Survivor",
+        creaturePreview = 44601,
+        creatureId = 44601,
+        description = "Has a chance to drop from Crazed Indu'le Survivor within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64258] = {
+        itemid = 64258,
+        name = "Sigil of Scarlet Highlord Daion",
+        creaturePreview = 44602,
+        creatureId = 44602,
+        description = "Has a chance to drop from Scarlet Highlord Daion within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64259] = {
+        itemid = 64259,
+        name = "Sigil of Grocklar",
+        creaturePreview = 44603,
+        creatureId = 44603,
+        description = "Has a chance to drop from Grocklar within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64260] = {
+        itemid = 64260,
+        name = "Sigil of Seething Hate",
+        creaturePreview = 44604,
+        creatureId = 44604,
+        description = "Has a chance to drop from Seething Hate within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64262] = {
+        itemid = 64262,
+        name = "Sigil of Syreian the Bonecarver",
+        creaturePreview = 44606,
+        creatureId = 44606,
+        description = "Has a chance to drop from Syreian the Bonecarver within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64265] = {
+        itemid = 64265,
+        name = "Sigil of Zul'drak Sentinel",
+        creaturePreview = 44609,
+        creatureId = 44609,
+        description = "Has a chance to drop from Zul'drak Sentinel within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64266] = {
+        itemid = 64266,
+        name = "Sigil of Griegen",
+        creaturePreview = 44610,
+        creatureId = 44610,
+        description = "Has a chance to drop from Griegen within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64267] = {
+        itemid = 64267,
+        name = "Sigil of Terror Spinner",
+        creaturePreview = 44611,
+        creatureId = 44611,
+        description = "Has a chance to drop from Terror Spinner within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64268] = {
+        itemid = 64268,
+        name = "Sigil of Aotona",
+        creaturePreview = 44612,
+        creatureId = 44612,
+        description = "Has a chance to drop from Aotona within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64270] = {
+        itemid = 64270,
+        name = "Sigil of King Krush",
+        creaturePreview = 44614,
+        creatureId = 44614,
+        description = "Has a chance to drop from King Krush within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64271] = {
+        itemid = 64271,
+        name = "Sigil of Putridus the Ancient",
+        creaturePreview = 44615,
+        creatureId = 44615,
+        description = "Has a chance to drop from Putridus the Ancient within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64272] = {
+        itemid = 64272,
+        name = "Sigil of Time-Lost Proto Drake",
+        creaturePreview = 44616,
+        creatureId = 44616,
+        description = "Has a chance to drop from Time-Lost Proto Drake within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64273] = {
+        itemid = 64273,
+        name = "Sigil of Hildana Deathstealer",
+        creaturePreview = 44617,
+        creatureId = 44617,
+        description = "Has a chance to drop from Hildana Deathstealer within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64274] = {
+        itemid = 64274,
+        name = "Sigil of Dirkee",
+        creaturePreview = 44618,
+        creatureId = 44618,
+        description = "Has a chance to drop from Dirkee within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64275] = {
+        itemid = 64275,
+        name = "Sigil of High Thane Jorfus",
+        creaturePreview = 44619,
+        creatureId = 44619,
+        description = "Has a chance to drop from High Thane Jorfus within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64277] = {
+        itemid = 64277,
+        name = "Sigil of Loque'nahak",
+        creaturePreview = 44621,
+        creatureId = 44621,
+        description = "Has a chance to drop from Loque'nahak within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64283] = {
+        itemid = 64283,
+        name = "Sigil of Vyragosa",
+        creaturePreview = 44627,
+        creatureId = 44627,
+        description = "Has a chance to drop from Vyragosa within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [64288] = {
+        itemid = 64288,
+        name = "Sigil of Stormcaller Brundir",
+        creaturePreview = 44632,
+        creatureId = 44632,
+        description = "Has a chance to drop from Stormcaller Brundir within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64290] = {
+        itemid = 64290,
+        name = "Sigil of Steelbreaker",
+        creaturePreview = 44634,
+        creatureId = 44634,
+        description = "Has a chance to drop from Steelbreaker within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64295] = {
+        itemid = 64295,
+        name = "Sigil of Elder Brightleaf",
+        creaturePreview = 44639,
+        creatureId = 44639,
+        description = "Has a chance to drop from Elder Brightleaf within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64296] = {
+        itemid = 64296,
+        name = "Sigil of Runemaster Molgeim",
+        creaturePreview = 44640,
+        creatureId = 44640,
+        description = "Has a chance to drop from Runemaster Molgeim within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64323] = {
+        itemid = 64323,
+        name = "Sigil of Ignis the Furnace Master",
+        creaturePreview = 44646,
+        creatureId = 44646,
+        description = "Has a chance to drop from Ignis the Furnace Master within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64327] = {
+        itemid = 64327,
+        name = "Sigil of Razorscale",
+        creaturePreview = 44650,
+        creatureId = 44650,
+        description = "Has a chance to drop from Razorscale within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64336] = {
+        itemid = 64336,
+        name = "Sigil of General Vezax",
+        creaturePreview = 44659,
+        creatureId = 44659,
+        description = "Has a chance to drop from General Vezax within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64338] = {
+        itemid = 64338,
+        name = "Sigil of Yogg-Saron",
+        creaturePreview = 44660,
+        creatureId = 44660,
+        description = "Has a chance to drop from Yogg-Saron within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64359] = {
+        itemid = 64359,
+        name = "Sigil of XT-002 Deconstructor",
+        creaturePreview = 44661,
+        creatureId = 44661,
+        description = "Has a chance to drop from XT-002 Deconstructor within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64369] = {
+        itemid = 64369,
+        name = "Sigil of Elder Brightleaf (1)",
+        creaturePreview = 44666,
+        creatureId = 44666,
+        description = "Has a chance to drop from Elder Brightleaf within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64372] = {
+        itemid = 64372,
+        name = "Clockwork Gnome",
+        creaturePreview = 48609,
+        creatureId = 48609,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 474
+    },
+    [64403] = {
+        itemid = 64403,
+        name = "Fox Kit",
+        creaturePreview = 48641,
+        creatureId = 48641,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 471
+    },
+    [64423] = {
+        itemid = 64423,
+        name = "Sigil of Leviathan Mk II",
+        creaturePreview = 44673,
+        creatureId = 44673,
+        description = "Has a chance to drop from Leviathan Mk II within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64427] = {
+        itemid = 64427,
+        name = "Sigil of Auriaya",
+        creaturePreview = 44677,
+        creatureId = 44677,
+        description = "Has a chance to drop from Auriaya within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [64494] = {
+        itemid = 64494,
+        name = "Tiny Shale Spider",
+        creaturePreview = 48982,
+        creatureId = 48982,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 499
+    },
+    [65157] = {
+        itemid = 65157,
+        name = "Sigil of Gondria",
+        creaturePreview = 44692,
+        creatureId = 44692,
+        description = "Has a chance to drop from Gondria within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [65390] = {
+        itemid = 65390,
+        name = "Sigil of Emalon the Storm Watcher",
+        creaturePreview = 44702,
+        creatureId = 44702,
+        description = "Has a chance to drop from Emalon the Storm Watcher within Vault of Archavon.",
+        zone = "Vault of Archavon",
+        icon = 486
+    },
+    [65397] = {
+        itemid = 65397,
+        name = "Sigil of Leviathan Mk II (1)",
+        creaturePreview = 44709,
+        creatureId = 44709,
+        description = "Has a chance to drop from Leviathan Mk II within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [66073] = {
+        itemid = 66073,
+        name = "Snail Shell",
+        creaturePreview = 51635,
+        creatureId = 51635,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 504
+    },
+    [66076] = {
+        itemid = 66076,
+        name = "Mr. Grubbs",
+        creaturePreview = 50586,
+        creatureId = 50586,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 594
+    },
+    [67263] = {
+        itemid = 67263,
+        name = "Sigil of Eydis Darkbane",
+        creaturePreview = 44751,
+        creatureId = 44751,
+        description = "Has a chance to drop from Eydis Darkbane within Trial of the Crusader.",
+        zone = "Trial of the Crusader",
+        icon = 486
+    },
+    [67264] = {
+        itemid = 67264,
+        name = "Sigil of Fjola Lightbane",
+        creaturePreview = 44752,
+        creatureId = 44752,
+        description = "Has a chance to drop from Fjola Lightbane within Trial of the Crusader.",
+        zone = "Trial of the Crusader",
+        icon = 486
+    },
+    [67274] = {
+        itemid = 67274,
+        name = "Enchanted Lantern",
+        creaturePreview = 46898,
+        creatureId = 46898,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 483
+    },
+    [67275] = {
+        itemid = 67275,
+        name = "Magic Lamp",
+        creaturePreview = 50545,
+        creatureId = 50545,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 649
+    },
+    [67282] = {
+        itemid = 67282,
+        name = "Elementium Geode",
+        creaturePreview = 50722,
+        creatureId = 50722,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 450
+    },
+    [67432] = {
+        itemid = 67432,
+        name = "Sigil of Lord Jaraxxus",
+        creaturePreview = 44759,
+        creatureId = 44759,
+        description = "Has a chance to drop from Lord Jaraxxus within Trial of the Crusader.",
+        zone = "Trial of the Crusader",
+        icon = 486
+    },
+    [67441] = {
+        itemid = 67441,
+        name = "Sigil of Icehowl",
+        creaturePreview = 44761,
+        creatureId = 44761,
+        description = "Has a chance to drop from Icehowl within Trial of the Crusader.",
+        zone = "Trial of the Crusader",
+        icon = 486
+    },
+    [67490] = {
+        itemid = 67490,
+        name = "Sigil of Koralon the Flame Watcher",
+        creaturePreview = 44769,
+        creatureId = 44769,
+        description = "Has a chance to drop from Koralon the Flame Watcher within Vault of Archavon.",
+        zone = "Vault of Archavon",
+        icon = 486
+    },
+    [67512] = {
+        itemid = 67512,
+        name = "Sigil of Skoll",
+        creaturePreview = 44773,
+        creatureId = 44773,
+        description = "Has a chance to drop from Skoll within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [67905] = {
+        itemid = 67905,
+        name = "Sigil of Ick",
+        creaturePreview = 44905,
+        creatureId = 44905,
+        description = "Has a chance to drop from Ick within Pit of Saron.",
+        zone = "Pit of Saron",
+        icon = 486
+    },
+    [67906] = {
+        itemid = 67906,
+        name = "Sigil of Forgemaster Garfrost",
+        creaturePreview = 44906,
+        creatureId = 44906,
+        description = "Has a chance to drop from Forgemaster Garfrost within Pit of Saron.",
+        zone = "Pit of Saron",
+        icon = 486
+    },
+    [67907] = {
+        itemid = 67907,
+        name = "Sigil of Bronjahm",
+        creaturePreview = 44907,
+        creatureId = 44907,
+        description = "Has a chance to drop from Bronjahm within The Forge of Souls.",
+        zone = "The Forge of Souls",
+        icon = 486
+    },
+    [67908] = {
+        itemid = 67908,
+        name = "Sigil of Devourer of Souls",
+        creaturePreview = 44908,
+        creatureId = 44908,
+        description = "Has a chance to drop from Devourer of Souls within The Forge of Souls.",
+        zone = "The Forge of Souls",
+        icon = 486
+    },
+    [67910] = {
+        itemid = 67910,
+        name = "Sigil of The Lich King",
+        creaturePreview = 44910,
+        creatureId = 44910,
+        description = "Has a chance to drop from The Lich King within Icecrown Citadel.",
+        zone = "Icecrown",
+        subzone = "Icecrown Citadel",
+        icon = 486
+    },
+    [67913] = {
+        itemid = 67913,
+        name = "Sigil of Lord Marrowgar",
+        creaturePreview = 44913,
+        creatureId = 44913,
+        description = "Has a chance to drop from Lord Marrowgar within Icecrown Citadel.",
+        zone = "Icecrown",
+        subzone = "Icecrown Citadel",
+        icon = 486
+    },
+    [67914] = {
+        itemid = 67914,
+        name = "Sigil of Festergut",
+        creaturePreview = 44914,
+        creatureId = 44914,
+        description = "Has a chance to drop from Festergut within Icecrown Citadel.",
+        zone = "Icecrown",
+        subzone = "Icecrown Citadel",
+        icon = 486
+    },
+    [67915] = {
+        itemid = 67915,
+        name = "Sigil of Rotface",
+        creaturePreview = 44915,
+        creatureId = 44915,
+        description = "Has a chance to drop from Rotface within Icecrown Citadel.",
+        zone = "Icecrown",
+        subzone = "Icecrown Citadel",
+        icon = 486
+    },
+    [67918] = {
+        itemid = 67918,
+        name = "Sigil of Scourgelord Tyrannus",
+        creaturePreview = 44918,
+        creatureId = 44918,
+        description = "Has a chance to drop from Scourgelord Tyrannus within Pit of Saron.",
+        zone = "Pit of Saron",
+        icon = 486
+    },
+    [68243] = {
+        itemid = 68243,
+        name = "Sigil of Blood-Queen Lana'thel",
+        creaturePreview = 44969,
+        creatureId = 44969,
+        description = "Has a chance to drop from Blood-Queen Lana'thel within Icecrown Citadel.",
+        zone = "Icecrown",
+        subzone = "Icecrown Citadel",
+        icon = 486
+    },
+    [68391] = {
+        itemid = 68391,
+        name = "Sigil of Falric",
+        creaturePreview = 44982,
+        creatureId = 44982,
+        description = "Has a chance to drop from Falric within Halls of Reflection.",
+        zone = "Halls of Reflection",
+        icon = 486
+    },
+    [68392] = {
+        itemid = 68392,
+        name = "Sigil of Marwyn",
+        creaturePreview = 44983,
+        creatureId = 44983,
+        description = "Has a chance to drop from Marwyn within Halls of Reflection.",
+        zone = "Halls of Reflection",
+        icon = 486
+    },
+    [68481] = {
+        itemid = 68481,
+        name = "Sigil of Essence of Suffering",
+        creaturePreview = 44114,
+        creatureId = 44114,
+        description = "Has a chance to drop from Reliquary of the Lost within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [68482] = {
+        itemid = 68482,
+        name = "Sigil of Essence of Desire",
+        creaturePreview = 44115,
+        creatureId = 44115,
+        description = "Has a chance to drop from Reliquary of the Lost within Black Temple.",
+        zone = "Shadowmoon Valley",
+        subzone = "Black Temple",
+        icon = 486
+    },
+    [68605] = {
+        itemid = 68605,
+        name = "Sigil of Toravon the Ice Watcher",
+        creaturePreview = 45000,
+        creatureId = 45000,
+        description = "Has a chance to drop from Toravon the Ice Watcher within Vault of Archavon.",
+        zone = "Vault of Archavon",
+        icon = 486
+    },
+    [68615] = {
+        itemid = 68615,
+        name = "Sigil of Arcturis",
+        creaturePreview = 45004,
+        creatureId = 45004,
+        description = "Has a chance to drop from Arcturis within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [68618] = {
+        itemid = 68618,
+        name = "Owlkin Hatchling",
+        creaturePreview = 51649,
+        creatureId = 51649,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 494
+    },
+    [68619] = {
+        itemid = 68619,
+        name = "Moonkin Hatchling",
+        creaturePreview = 51601,
+        creatureId = 51601,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 495
+    },
+    [68708] = {
+        itemid = 68708,
+        name = "Sigil of General Zarithrian",
+        creaturePreview = 45062,
+        creatureId = 45062,
+        description = "Has a chance to drop from General Zarithrian within The Ruby Sanctum.",
+        zone = "The Ruby Sanctum",
+        icon = 486
+    },
+    [68723] = {
+        itemid = 68723,
+        name = "Sigil of Saviana Ragefire",
+        creaturePreview = 45063,
+        creatureId = 45063,
+        description = "Has a chance to drop from Saviana Ragefire within The Ruby Sanctum.",
+        zone = "The Ruby Sanctum",
+        icon = 486
+    },
+    [68725] = {
+        itemid = 68725,
+        name = "Sigil of Baltharus the Warborn",
+        creaturePreview = 45064,
+        creatureId = 45064,
+        description = "Has a chance to drop from Baltharus the Warborn within The Ruby Sanctum.",
+        zone = "The Ruby Sanctum",
+        icon = 486
+    },
+    [68726] = {
+        itemid = 68726,
+        name = "Sigil of Halion",
+        creaturePreview = 45065,
+        creatureId = 45065,
+        description = "Can be obtained as a rare drop from Ruby Sanctum raid.",
+        icon = 486
+    },
+    [68733] = {
+        itemid = 68733,
+        name = "Sigil of Zaytoven",
+        creaturePreview = 45068,
+        creatureId = 45068,
+        description = "Has a chance to drop from Loque'nahak within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [68738] = {
+        itemid = 68738,
+        name = "Sigil of Widowed Murloc Queen",
+        creaturePreview = 45073,
+        creatureId = 45073,
+        description = "Has a chance to drop from Mugglefin within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [68827] = {
+        itemid = 68827,
+        name = "Sigil of Phaeton",
+        creaturePreview = 45081,
+        creatureId = 45081,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [68828] = {
+        itemid = 68828,
+        name = "Sigil of Grut'ak",
+        creaturePreview = 45082,
+        creatureId = 45082,
+        description = "Has a chance to drop from Grut'ak.",
+        icon = 486
+    },
+    [68841] = {
+        itemid = 68841,
+        name = "Nightsaber Cub",
+        creaturePreview = 98495,
+        creatureId = 98495,
+        description = "Cute as H*ck.",
+        icon = 45
+    },
+    [69228] = {
+        itemid = 69228,
+        name = "Savage Raptor",
+        creaturePreview = 52813,
+        creatureId = 52813,
+        description = "A Savage Raptor to Ride across Azeroth.",
+        icon = 59
+    },
+    [69251] = {
+        itemid = 69251,
+        name = "Lashtail Hatchling",
+        creaturePreview = 52894,
+        creatureId = 52894,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 11
+    },
+    [69648] = {
+        itemid = 69648,
+        name = "Legs",
+        creaturePreview = 53048,
+        creatureId = 53048,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 13
+    },
+    [69657] = {
+        itemid = 69657,
+        name = "Sigil of Cucurbitus",
+        creaturePreview = 45442,
+        creatureId = 45442,
+        description = "Has a chance to drop from Cucurbitus.",
+        icon = 486
+    },
+    [70160] = {
+        itemid = 70160,
+        name = "Crimson Lasher",
+        creaturePreview = 53661,
+        creatureId = 53661,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 679
+    },
+    [70677] = {
+        itemid = 70677,
+        name = "Sigil of Abhorrent Aberration",
+        creaturePreview = 45573,
+        creatureId = 45573,
+        description = "Has a chance to drop from Abhorrent Aberration.",
+        icon = 486
+    },
+    [71124] = {
+        itemid = 71124,
+        name = "Sigil of The Nightmare Before Winter Veil",
+        creaturePreview = 45642,
+        creatureId = 45642,
+        description = "Has a chance to drop from The Nightmare Before Winter Veil.",
+        icon = 486
+    },
+    [71126] = {
+        itemid = 71126,
+        name = "Sigil of Professor Slate",
+        creaturePreview = 45644,
+        creatureId = 45644,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [71140] = {
+        itemid = 71140,
+        name = "Nuts' Acorn",
+        creaturePreview = 54227,
+        creatureId = 54227,
+        description = "Delete me.",
+        icon = 469
+    },
+    [71185] = {
+        itemid = 71185,
+        name = "Sigil of Taskmaster Barphul",
+        creaturePreview = 45657,
+        creatureId = 45657,
+        description = "Has a chance to drop from Taskmaster Barphul within Quel'Danas.",
+        zone = "Quel'Danas",
+        icon = 486
+    },
+    [71187] = {
+        itemid = 71187,
+        name = "Sigil of Keeper of Chaos",
+        creaturePreview = 45659,
+        creatureId = 45659,
+        description = "Has a chance to drop from Keeper of Chaos.",
+        icon = 486
+    },
+    [71188] = {
+        itemid = 71188,
+        name = "Sigil of Biggelrott",
+        creaturePreview = 45660,
+        creatureId = 45660,
+        description = "Has a chance to drop from Biggelrott within Quel'Danas.",
+        zone = "Quel'Danas",
+        icon = 486
+    },
+    [71207] = {
+        itemid = 71207,
+        name = "Sigil of Dar'Khos",
+        creaturePreview = 45661,
+        creatureId = 45661,
+        description = "Has a chance to drop from Dar'Khos within Quel'Danas.",
+        zone = "Quel'Danas",
+        icon = 486
+    },
+    [71220] = {
+        itemid = 71220,
+        name = "Sigil of Tarphel The Animator",
+        creaturePreview = 45663,
+        creatureId = 45663,
+        description = "Has a chance to drop from Tarphel The Animator.",
+        icon = 486
+    },
+    [71718] = {
+        itemid = 71718,
+        name = "Swift Shorestrider",
+        creaturePreview = 54423,
+        creatureId = 54423,
+        description = "Everyone Loves it.",
+        icon = 14
+    },
+    [72116] = {
+        itemid = 72116,
+        name = "Sigil of Captain Sayana Stormrunner",
+        creaturePreview = 45860,
+        creatureId = 45860,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72121] = {
+        itemid = 72121,
+        name = "Sigil of Horde Guard",
+        creaturePreview = 45862,
+        creatureId = 45862,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72122] = {
+        itemid = 72122,
+        name = "Sigil of Mag'har Grunt",
+        creaturePreview = 45863,
+        creatureId = 45863,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72123] = {
+        itemid = 72123,
+        name = "Sigil of High Overlord Saurfang",
+        creaturePreview = 45864,
+        creatureId = 45864,
+        description = "Has a chance to drop from High Overlord Saurfang within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [72129] = {
+        itemid = 72129,
+        name = "Sigil of Scourge Overlord animator PH hyjal",
+        creaturePreview = 45867,
+        creatureId = 45867,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72131] = {
+        itemid = 72131,
+        name = "Sigil of Neptune",
+        creaturePreview = 45869,
+        creatureId = 45869,
+        description = "Has a chance to drop from Maws and Neptune within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [72134] = {
+        itemid = 72134,
+        name = "Grell Moss",
+        creaturePreview = 54730,
+        creatureId = 54730,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 479
+    },
+    [72135] = {
+        itemid = 72135,
+        name = "Sigil of Sharptooth Frenzy",
+        creaturePreview = 45870,
+        creatureId = 45870,
+        description = "Has a chance to drop from Rippa within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [72151] = {
+        itemid = 72151,
+        name = "Sigil of High Priestess Jeklik",
+        creaturePreview = 46004,
+        creatureId = 46004,
+        description = "Has a chance to drop from High Priestess Jeklik within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72157] = {
+        itemid = 72157,
+        name = "Sigil of High Priestess Arlokk",
+        creaturePreview = 46003,
+        creatureId = 46003,
+        description = "Has a chance to drop from High Priestess Arlokk within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72169] = {
+        itemid = 72169,
+        name = "Sigil of Reek",
+        creaturePreview = 45891,
+        creatureId = 45891,
+        description = "Has a chance to drop from Reek within Quel'Danas.",
+        zone = "Quel'Danas",
+        icon = 486
+    },
+    [72171] = {
+        itemid = 72171,
+        name = "Sigil of Alliance Guard",
+        creaturePreview = 45893,
+        creatureId = 45893,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72172] = {
+        itemid = 72172,
+        name = "Sigil of 8th Legion Marine",
+        creaturePreview = 45894,
+        creatureId = 45894,
+        description = "Has a chance to drop from Captain Hecklebury Smotts within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [72173] = {
+        itemid = 72173,
+        name = "Sigil of High Tinker Mekkatorque",
+        creaturePreview = 45895,
+        creatureId = 45895,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72241] = {
+        itemid = 72241,
+        name = "Sigil of Arch Mage Merlin",
+        creaturePreview = 45924,
+        creatureId = 45924,
+        description = "Can be obtained as a rare drop from Shadowfang Keep dungeon.",
+        icon = 486
+    },
+    [72290] = {
+        itemid = 72290,
+        name = "Sigil of Ava",
+        creaturePreview = 45929,
+        creatureId = 45929,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72292] = {
+        itemid = 72292,
+        name = "Sigil of Fazethan",
+        creaturePreview = 45930,
+        creatureId = 45930,
+        description = "Can be obtained as a rare drop from Icecrown Citadel raid.",
+        icon = 486
+    },
+    [72295] = {
+        itemid = 72295,
+        name = "Sigil of Tilian",
+        creaturePreview = 45931,
+        creatureId = 45931,
+        description = "Can be obtained as a rare drop from Eastern Kingdom Zones.",
+        icon = 486
+    },
+    [72303] = {
+        itemid = 72303,
+        name = "Sigil of Hyjal Bear",
+        creaturePreview = 45933,
+        creatureId = 45933,
+        description = "Has a chance to drop from Hyjal Bear within Hyjal Summit.",
+        zone = "Hyjal Summit",
+        icon = 486
+    },
+    [72541] = {
+        itemid = 72541,
+        name = "Sigil of Soul of The Harvester",
+        creaturePreview = 45968,
+        creatureId = 45968,
+        description = "Has a chance to drop from Soul of The Harvester within Naxxramas.",
+        zone = "Dragonblight",
+        subzone = "Naxxramas",
+        icon = 486
+    },
+    [72543] = {
+        itemid = 72543,
+        name = "Sigil of Yoarg Spellfist",
+        creaturePreview = 45970,
+        creatureId = 45970,
+        description = "Has a chance to drop from Deadwind Ogre Mage within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [72547] = {
+        itemid = 72547,
+        name = "Sigil of Skreeg",
+        creaturePreview = 45974,
+        creatureId = 45974,
+        description = "Has a chance to drop from Skreeg within Twisting Nether.",
+        zone = "Twisting Nether",
+        icon = 486
+    },
+    [72555] = {
+        itemid = 72555,
+        name = "Sigil of Jin'do the Hexxer",
+        creaturePreview = 45981,
+        creatureId = 45981,
+        description = "Has a chance to drop from Jin'do the Hexxer within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72556] = {
+        itemid = 72556,
+        name = "Sigil of Bloodlord Mandokir",
+        creaturePreview = 45982,
+        creatureId = 45982,
+        description = "Has a chance to drop from Bloodlord Mandokir within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72559] = {
+        itemid = 72559,
+        name = "Sigil of Flamegor",
+        creaturePreview = 45985,
+        creatureId = 45985,
+        description = "Has a chance to drop from Flamegor within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [72561] = {
+        itemid = 72561,
+        name = "Sigil of Firemaw",
+        creaturePreview = 45987,
+        creatureId = 45987,
+        description = "Has a chance to drop from Firemaw within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [72563] = {
+        itemid = 72563,
+        name = "Sigil of Broodlord Lashlayer",
+        creaturePreview = 45989,
+        creatureId = 45989,
+        description = "Has a chance to drop from Broodlord Lashlayer within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [72571] = {
+        itemid = 72571,
+        name = "Sigil of Razorgore the Untamed",
+        creaturePreview = 45997,
+        creatureId = 45997,
+        description = "Has a chance to drop from Razorgore the Untamed within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [72572] = {
+        itemid = 72572,
+        name = "Sigil of Vaelastrasz the Corrupt",
+        creaturePreview = 45998,
+        creatureId = 45998,
+        description = "Has a chance to drop from Vaelastrasz the Corrupt within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [72576] = {
+        itemid = 72576,
+        name = "Sigil of High Priest Venoxis",
+        creaturePreview = 46000,
+        creatureId = 46000,
+        description = "Has a chance to drop from High Priest Venoxis within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72580] = {
+        itemid = 72580,
+        name = "Sigil of High Priestess Arlokk",
+        creaturePreview = 46003,
+        creatureId = 46003,
+        description = "Has a chance to drop from High Priestess Arlokk within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72581] = {
+        itemid = 72581,
+        name = "Sigil of High Priestess Jeklik",
+        creaturePreview = 46004,
+        creatureId = 46004,
+        description = "Has a chance to drop from High Priestess Jeklik within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72588] = {
+        itemid = 72588,
+        name = "Sigil of Ebonroc",
+        creaturePreview = 46005,
+        creatureId = 46005,
+        description = "Has a chance to drop from Ebonroc within Blackwing Lair.",
+        zone = "Blackwing Lair",
+        icon = 486
+    },
+    [72591] = {
+        itemid = 72591,
+        name = "Sigil of Gri'lek",
+        creaturePreview = 45981,
+        creatureId = 45981,
+        description = "Has a chance to drop from Gri'lek within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72592] = {
+        itemid = 72592,
+        name = "Sigil of Hazza'rah",
+        creaturePreview = 43933,
+        creatureId = 43933,
+        description = "Has a chance to drop from Hazza'rah within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72593] = {
+        itemid = 72593,
+        name = "Sigil of Renataki",
+        creaturePreview = 46009,
+        creatureId = 46009,
+        description = "Has a chance to drop from Renataki within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72594] = {
+        itemid = 72594,
+        name = "Sigil of Wushoolay",
+        creaturePreview = 46010,
+        creatureId = 46010,
+        description = "Has a chance to drop from Wushoolay within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72595] = {
+        itemid = 72595,
+        name = "Sigil of Gahz'ranka",
+        creaturePreview = 46011,
+        creatureId = 46011,
+        description = "Has a chance to drop from Gahz'ranka within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72598] = {
+        itemid = 72598,
+        name = "Sigil of Emperor Vek'nilash",
+        creaturePreview = 46013,
+        creatureId = 46013,
+        description = "Has a chance to drop from Emperor Vek'nilash within Temple of Ahn'Qiraj.",
+        zone = "Temple of Ahn'Qiraj",
+        icon = 486
+    },
+    [72599] = {
+        itemid = 72599,
+        name = "Sigil of Emperor Vek'lor",
+        creaturePreview = 46014,
+        creatureId = 46014,
+        description = "Has a chance to drop from Emperor Vek'lor within Temple of Ahn'Qiraj.",
+        zone = "Temple of Ahn'Qiraj",
+        icon = 486
+    },
+    [72600] = {
+        itemid = 72600,
+        name = "Sigil of Viscidus",
+        creaturePreview = 46015,
+        creatureId = 46015,
+        description = "Has a chance to drop from Viscidus within Temple of Ahn'Qiraj.",
+        zone = "Temple of Ahn'Qiraj",
+        icon = 486
+    },
+    [72602] = {
+        itemid = 72602,
+        name = "Sigil of Moam",
+        creaturePreview = 46017,
+        creatureId = 46017,
+        description = "Has a chance to drop from Moam within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [72619] = {
+        itemid = 72619,
+        name = "Sigil of General Rajaxx",
+        creaturePreview = 46018,
+        creatureId = 46018,
+        description = "Has a chance to drop from General Rajaxx within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [72620] = {
+        itemid = 72620,
+        name = "Sigil of Kurinnaxx",
+        creaturePreview = 46019,
+        creatureId = 46019,
+        description = "Has a chance to drop from Kurinnaxx within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [72654] = {
+        itemid = 72654,
+        name = "Sigil of Ayamiss the Hunter",
+        creaturePreview = 46020,
+        creatureId = 46020,
+        description = "Has a chance to drop from Ayamiss the Hunter within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [72680] = {
+        itemid = 72680,
+        name = "Sigil of Buru the Gorger",
+        creaturePreview = 46021,
+        creatureId = 46021,
+        description = "Has a chance to drop from Buru the Gorger within Ruins of Ahn'Qiraj.",
+        subzone = "Ruins of Ahn'Qiraj",
+        icon = 486
+    },
+    [72711] = {
+        itemid = 72711,
+        name = "Sigil of Fankriss the Unyielding",
+        creaturePreview = 46026,
+        creatureId = 46026,
+        description = "Has a chance to drop from Fankriss the Unyielding within Temple of Ahn'Qiraj.",
+        zone = "Temple of Ahn'Qiraj",
+        icon = 486
+    },
+    [72713] = {
+        itemid = 72713,
+        name = "Sigil of Battleguard Sartura",
+        creaturePreview = 46028,
+        creatureId = 46028,
+        description = "Has a chance to drop from Battleguard Sartura within Temple of Ahn'Qiraj.",
+        zone = "Temple of Ahn'Qiraj",
+        icon = 486
+    },
+    [72714] = {
+        itemid = 72714,
+        name = "Sigil of Ouro",
+        creaturePreview = 43973,
+        creatureId = 43973,
+        description = "Has a chance to drop from Ouro within Ahn'Qiraj Temple.",
+        zone = "Ahn'Qiraj Temple",
+        icon = 486
+    },
+    [72747] = {
+        itemid = 72747,
+        name = "Sigil of Gehennas",
+        creaturePreview = 46062,
+        creatureId = 46062,
+        description = "Has a chance to drop from Gehennas within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [72753] = {
+        itemid = 72753,
+        name = "Sigil of Majordomo Executus",
+        creaturePreview = 46068,
+        creatureId = 46068,
+        description = "Has a chance to drop from Majordomo Executus within Molten Core.",
+        zone = "Molten Core",
+        icon = 486
+    },
+    [72755] = {
+        itemid = 72755,
+        name = "Sigil of High Priest Venoxis",
+        creaturePreview = 46070,
+        creatureId = 46070,
+        description = "Has a chance to drop from High Priest Venoxis within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72756] = {
+        itemid = 72756,
+        name = "Sigil of High Priestess Jeklik",
+        creaturePreview = 46071,
+        creatureId = 46071,
+        description = "Has a chance to drop from Soul of The Harvester within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72757] = {
+        itemid = 72757,
+        name = "Sigil of Gri'lek",
+        creaturePreview = 45981,
+        creatureId = 45981,
+        description = "Has a chance to drop from Gri'lek within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72758] = {
+        itemid = 72758,
+        name = "Sigil of Terror Spinner",
+        creaturePreview = 46073,
+        creatureId = 46073,
+        description = "Has a chance to drop from Terror Spinner within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [72759] = {
+        itemid = 72759,
+        name = "Sigil of The Harbringer",
+        creaturePreview = 46074,
+        creatureId = 46074,
+        description = "Has a chance to drop from Terror Spinner within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [72760] = {
+        itemid = 72760,
+        name = "Sigil of Prognar",
+        creaturePreview = 46075,
+        creatureId = 46075,
+        description = "Has a chance to drop from Terror Spinner within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [72761] = {
+        itemid = 72761,
+        name = "Sigil of The Odd One",
+        creaturePreview = 46076,
+        creatureId = 46076,
+        description = "Has a chance to drop from Terror Spinner within Northrend.",
+        zone = "Northrend",
+        icon = 486
+    },
+    [72775] = {
+        itemid = 72775,
+        name = "Sigil of Aku'mai",
+        creaturePreview = 46090,
+        creatureId = 46090,
+        description = "Has a chance to drop from Aku'mai within Zul'Gurub.",
+        zone = "Stranglethorn Vale",
+        subzone = "Zul'Gurub",
+        icon = 486
+    },
+    [72776] = {
+        itemid = 72776,
+        name = "Sigil of Old Serra'kis",
+        creaturePreview = 46091,
+        creatureId = 46091,
+        description = "Has a chance to drop from Old Serra'kis within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [72777] = {
+        itemid = 72777,
+        name = "Sigil of Lady Sarevess",
+        creaturePreview = 46092,
+        creatureId = 46092,
+        description = "Has a chance to drop from Lady Sarevess within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [72778] = {
+        itemid = 72778,
+        name = "Sigil of Twilight Lord Kelris",
+        creaturePreview = 46093,
+        creatureId = 46093,
+        description = "Has a chance to drop from Twilight Lord Kelris within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [72780] = {
+        itemid = 72780,
+        name = "Sigil of Gelihast",
+        creaturePreview = 46095,
+        creatureId = 46095,
+        description = "Has a chance to drop from Gelihast within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [72781] = {
+        itemid = 72781,
+        name = "Sigil of Baron Aquanis",
+        creaturePreview = 46096,
+        creatureId = 46096,
+        description = "Has a chance to drop from Baron Aquanis within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [72782] = {
+        itemid = 72782,
+        name = "Sigil of Lorgus Jett",
+        creaturePreview = 46097,
+        creatureId = 46097,
+        description = "Has a chance to drop from Lorgus Jett within Blackfathom Deeps.",
+        zone = "Blackfathom Deeps",
+        icon = 486
+    },
+    [72790] = {
+        itemid = 72790,
+        name = "Sigil of Razorscale",
+        creaturePreview = 46105,
+        creatureId = 46105,
+        description = "Has a chance to drop from Razorscale within Ulduar.",
+        zone = "The Storm Peaks",
+        subzone = "Ulduar",
+        icon = 486
+    },
+    [72797] = {
+        itemid = 72797,
+        name = "Sigil of Highlord Bolvar Fordragon",
+        creaturePreview = 46109,
+        creatureId = 46109,
+        description = "Has a chance to drop from Highlord Bolvar Fordragon within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [72885] = {
+        itemid = 72885,
+        name = "Sigil of Thrall",
+        creaturePreview = 46110,
+        creatureId = 46110,
+        description = "Has a chance to drop from Thrall within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [72927] = {
+        itemid = 72927,
+        name = "Sigil of Vol'jin",
+        creaturePreview = 46111,
+        creatureId = 46111,
+        description = "Has a chance to drop from Vol'jin within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [72928] = {
+        itemid = 72928,
+        name = "Sigil of King Magni Bronzebeard",
+        creaturePreview = 46112,
+        creatureId = 46112,
+        description = "Has a chance to drop from King Magni Bronzebeard within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [72953] = {
+        itemid = 72953,
+        name = "Sigil of High Tinker Mekkatorque",
+        creaturePreview = 46113,
+        creatureId = 46113,
+        description = "Has a chance to drop from High Tinker Mekkatorque within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [73037] = {
+        itemid = 73037,
+        name = "Sigil of Cairne Bloodhoof",
+        creaturePreview = 46114,
+        creatureId = 46114,
+        description = "Has a chance to drop from Cairne Bloodhoof within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [73073] = {
+        itemid = 73073,
+        name = "Sigil of Lady Sylvanas Windrunner",
+        creaturePreview = 46115,
+        creatureId = 46115,
+        description = "Has a chance to drop from Lady Sylvanas Windrunner within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [73074] = {
+        itemid = 73074,
+        name = "Sigil of Tyrande Whisperwind",
+        creaturePreview = 46116,
+        creatureId = 46116,
+        description = "Has a chance to drop from Tyrande Whisperwind within Kalimdor.",
+        zone = "Kalimdor",
+        icon = 486
+    },
+    [73081] = {
+        itemid = 73081,
+        name = "Sigil of Chief Engineer Lorthander",
+        creaturePreview = 46123,
+        creatureId = 46123,
+        description = "Has a chance to drop from Chief Engineer Lorthander within Outland.",
+        zone = "Outland",
+        icon = 486
+    },
+    [73082] = {
+        itemid = 73082,
+        name = "Sigil of Ranger Lord Hawkspear",
+        creaturePreview = 46124,
+        creatureId = 46124,
+        description = "Has a chance to drop from Ranger Lord Hawkspear within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [73764] = {
+        itemid = 73764,
+        name = "Darkmoon Monkey",
+        creaturePreview = 54491,
+        creatureId = 54491,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 5
+    },
+    [73765] = {
+        itemid = 73765,
+        name = "Darkmoon Turtle",
+        creaturePreview = 54487,
+        creatureId = 54487,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 576
+    },
+    [73905] = {
+        itemid = 73905,
+        name = "Darkmoon Zeppelin",
+        creaturePreview = 55367,
+        creatureId = 55367,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 324
+    },
+    [74981] = {
+        itemid = 74981,
+        name = "Darkmoon Cub",
+        creaturePreview = 56031,
+        creatureId = 56031,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 45
+    },
+    [79175] = {
+        itemid = 79175,
+        name = "Sigil of G'eras",
+        creaturePreview = 44007,
+        creatureId = 44007,
+        description = "Available from G'eras in Shattrath City for 500 Badge of Justice.",
+        icon = 486
+    },
+    [79239] = {
+        itemid = 79239,
+        name = "Living Infernal Core",
+        creaturePreview = 79005,
+        creatureId = 79005,
+        description = "Felforged Heroes can purchase this item from Azzazel for Legion Crests.",
+        icon = 370
+    },
+    [79243] = {
+        itemid = 79243,
+        name = "Dim Coldflame Core",
+        creaturePreview = 79006,
+        creatureId = 79006,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 369
+    },
+    [79245] = {
+        itemid = 79245,
+        name = "Biting Frostshard Core",
+        creaturePreview = 79007,
+        creatureId = 79007,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 368
+    },
+    [79248] = {
+        itemid = 79248,
+        name = "Fiendish Hellfire Core",
+        creaturePreview = 79009,
+        creatureId = 79009,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 371
+    },
     [79256] = {
         itemid = 79256,
         name = "Beastmaster's Whistle: Felhound",
@@ -90,7 +9523,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Forest Spider",
         creaturePreview = 30,
         creatureId = 30,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79336] = {
@@ -108,7 +9541,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Timber Wolf",
         creaturePreview = 69,
         creatureId = 69,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79345] = {
@@ -116,7 +9549,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Stonetusk Boar",
         creaturePreview = 113,
         creatureId = 113,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79346] = {
@@ -133,7 +9566,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Greater Fleshripper",
         creaturePreview = 154,
         creatureId = 154,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79349] = {
@@ -373,7 +9806,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Young Stranglethorn Tiger",
         creaturePreview = 681,
         creatureId = 681,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79374] = {
@@ -409,7 +9842,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Stranglethorn Raptor",
         creaturePreview = 685,
         creatureId = 685,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79378] = {
@@ -550,7 +9983,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Young Forest Bear",
         creaturePreview = 822,
         creatureId = 822,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79393] = {
@@ -558,7 +9991,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Sand Crawler",
         creaturePreview = 830,
         creatureId = 830,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79394] = {
@@ -778,7 +10211,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Sawtooth Crocolisk",
         creaturePreview = 1082,
         creatureId = 1082,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79419] = {
@@ -824,7 +10257,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Mistvale Gorilla",
         creaturePreview = 1108,
         creatureId = 1108,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79424] = {
@@ -1219,7 +10652,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Duskbat",
         creaturePreview = 1512,
         creatureId = 1512,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79466] = {
@@ -1522,7 +10955,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Strigid Owl",
         creaturePreview = 1995,
         creatureId = 1995,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79498] = {
@@ -1699,7 +11132,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Strider Clutchmother",
         creaturePreview = 2172,
         creatureId = 2172,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79520] = {
@@ -1905,7 +11338,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Snapjaw",
         creaturePreview = 2408,
         creatureId = 2408,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79543] = {
@@ -2462,7 +11895,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Scorpid Worker",
         creaturePreview = 3124,
         creatureId = 3124,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79602] = {
@@ -2590,7 +12023,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Thunderhawk Hatchling",
         creaturePreview = 3247,
         creatureId = 3247,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79616] = {
@@ -2730,7 +12163,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Sewer Beast",
         creaturePreview = 3581,
         creatureId = 3581,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79631] = {
@@ -2993,7 +12426,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Fledgling Chimaera",
         creaturePreview = 4031,
         creatureId = 4031,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79658] = {
@@ -3078,7 +12511,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Hecklefang Hyena",
         creaturePreview = 4127,
         creatureId = 4127,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79667] = {
@@ -3105,7 +12538,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Silithid Ravager",
         creaturePreview = 4132,
         creatureId = 4132,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79670] = {
@@ -3296,7 +12729,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Bloodfen Raptor",
         creaturePreview = 4351,
         creatureId = 4351,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79690] = {
@@ -3664,7 +13097,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Deviate Adder",
         creaturePreview = 5048,
         creatureId = 5048,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79752] = {
@@ -3710,7 +13143,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Murk Worm",
         creaturePreview = 5226,
         creatureId = 5226,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79758] = {
@@ -4201,7 +13634,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Devilsaur",
         creaturePreview = 6498,
         creatureId = 6498,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79893] = {
@@ -4209,7 +13642,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Ironhide Devilsaur",
         creaturePreview = 6499,
         creatureId = 6499,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [79918] = {
@@ -4518,6 +13951,14 @@ AV_VanityItems = {
         zone = "Frostfire Hot Springs",
         icon = 1
     },
+    [80008] = {
+        itemid = 80008,
+        name = "Darkmoon Rabbit",
+        creaturePreview = 59358,
+        creatureId = 59358,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 378
+    },
     [80030] = {
         itemid = 80030,
         name = "Beastmaster's Whistle: Elder Shardtooth",
@@ -4561,7 +14002,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Chillwind Ravager",
         creaturePreview = 7449,
         creatureId = 7449,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80035] = {
@@ -4805,7 +14246,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Felpaw Wolf",
         creaturePreview = 8959,
         creatureId = 8959,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80064] = {
@@ -4966,7 +14407,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Spire Spiderling",
         creaturePreview = 10375,
         creatureId = 10375,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80089] = {
@@ -5037,7 +14478,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Soulflayer",
         creaturePreview = 11359,
         creatureId = 11359,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80098] = {
@@ -5045,7 +14486,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Zulian Tiger",
         creaturePreview = 11361,
         creatureId = 11361,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80099] = {
@@ -5053,7 +14494,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Zulian Panther",
         creaturePreview = 11365,
         creatureId = 11365,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80105] = {
@@ -5070,7 +14511,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Ancient Core Hound",
         creaturePreview = 11673,
         creatureId = 11673,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80107] = {
@@ -5563,7 +15004,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Feral Dragonhawk Hatchling",
         creaturePreview = 15649,
         creatureId = 15649,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80298] = {
@@ -5689,7 +15130,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Vale Moth",
         creaturePreview = 16520,
         creatureId = 16520,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80344] = {
@@ -5780,7 +15221,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Goretooth",
         creaturePreview = 17144,
         creatureId = 17144,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80354] = {
@@ -5788,7 +15229,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Ravager Specimen",
         creaturePreview = 17199,
         creatureId = 17199,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80355] = {
@@ -5925,7 +15366,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: The Kurken",
         creaturePreview = 17447,
         creatureId = 17447,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80475] = {
@@ -6099,7 +15540,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Bloodfalcon",
         creaturePreview = 18155,
         creatureId = 18155,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80526] = {
@@ -6330,7 +15771,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Cobalt Serpent",
         creaturePreview = 19428,
         creatureId = 19428,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80608] = {
@@ -6680,7 +16121,7 @@ AV_VanityItems = {
         name = "Beastmaster's Whistle: Blackwind Sabercat",
         creaturePreview = 21723,
         creatureId = 21723,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
     },
     [80650] = {
@@ -8174,7 +17615,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Aligar the Tormentor",
         creaturePreview = 3898,
         creatureId = 3898,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 976,
@@ -8190,7 +17631,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Caedakar the Vicious",
         creaturePreview = 3900,
         creatureId = 3900,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 976,
@@ -8523,7 +17964,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Razelikh the Defiler",
         creaturePreview = 7664,
         creatureId = 7664,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 3628,
@@ -8572,6 +18013,14 @@ AV_VanityItems = {
         subzone = "Shadow Hold",
         icon = 3
     },
+    [82775] = {
+        itemid = 82775,
+        name = "Sapphire Cub",
+        creaturePreview = 61883,
+        creatureId = 61883,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 377
+    },
     [82776] = {
         itemid = 82776,
         name = "Summoner's Stone: Prince Xavalis",
@@ -8586,7 +18035,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Xabraxxis",
         creaturePreview = 10373,
         creatureId = 10373,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 4763,
@@ -8621,7 +18070,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Balnazzar",
         creaturePreview = 10813,
         creatureId = 10813,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3
     },
     [82781] = {
@@ -8756,7 +18205,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Demon Spirit",
         creaturePreview = 11876,
         creatureId = 11876,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 5381,
@@ -8820,7 +18269,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Xorothian Dreadsteed",
         creaturePreview = 14502,
         creatureId = 14502,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 7631,
@@ -9365,7 +18814,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Ekkorash the Inquisitor",
         creaturePreview = 19493,
         creatureId = 19493,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 10173,
@@ -9550,7 +18999,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Doomcryer",
         creaturePreview = 19963,
         creatureId = 19963,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 10821,
@@ -9749,7 +19198,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Wrathbringer Laz-tarash",
         creaturePreview = 20789,
         creatureId = 20789,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3
     },
     [84585] = {
@@ -9987,7 +19436,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Illidari Satyr",
         creaturePreview = 21656,
         creatureId = 21656,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3
     },
     [85156] = {
@@ -10063,7 +19512,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Galvanoth",
         creaturePreview = 22281,
         creatureId = 22281,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 11079,
@@ -10089,7 +19538,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Matron Li-sahar",
         creaturePreview = 22825,
         creatureId = 22825,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3
     },
     [85247] = {
@@ -10097,7 +19546,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Gorgolon the All-seeing",
         creaturePreview = 22827,
         creatureId = 22827,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3
     },
     [85257] = {
@@ -10105,7 +19554,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Trelopades",
         creaturePreview = 22828,
         creatureId = 22828,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3
     },
     [85258] = {
@@ -10137,6 +19586,14 @@ AV_VanityItems = {
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
         icon = 3
+    },
+    [85262] = {
+        itemid = 85262,
+        name = "Reins of the Amber Scorpion",
+        creaturePreview = 63502,
+        creatureId = 63502,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 43
     },
     [85503] = {
         itemid = 85503,
@@ -10192,7 +19649,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Braxxus",
         creaturePreview = 23353,
         creatureId = 23353,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 11079,
@@ -10208,7 +19665,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Zarcsin",
         creaturePreview = 23355,
         creatureId = 23355,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 3,
         questLock = {
             questId = 11079,
@@ -10317,7 +19774,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Flesh Eater",
         creaturePreview = 3,
         creatureId = 3,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [85719] = {
@@ -10325,7 +19782,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Skeletal Warrior",
         creaturePreview = 48,
         creatureId = 48,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [85720] = {
@@ -10361,7 +19818,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Eliza",
         creaturePreview = 314,
         creatureId = 314,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [85745] = {
@@ -10652,7 +20109,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Bleeding Horror",
         creaturePreview = 1529,
         creatureId = 1529,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [86077] = {
@@ -10670,7 +20127,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Lost Soul",
         creaturePreview = 1531,
         creatureId = 1531,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [86085] = {
@@ -10728,7 +20185,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Devlin Agamand",
         creaturePreview = 1657,
         creatureId = 1657,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [86106] = {
@@ -10832,7 +20289,7 @@ AV_VanityItems = {
         name = "Blood Soaked Vellum: Searing Ghoul",
         creaturePreview = 1795,
         creatureId = 1795,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 2
     },
     [86506] = {
@@ -13533,6 +22990,14 @@ AV_VanityItems = {
         subzone = "Temple City of En'kilah",
         icon = 2
     },
+    [89362] = {
+        itemid = 89362,
+        name = "Reins of the Brown Riding Goat",
+        creaturePreview = 66150,
+        creatureId = 66150,
+        description = "Available from the Webstore.",
+        icon = 41
+    },
     [89369] = {
         itemid = 89369,
         name = "Blood Soaked Vellum: En'kilah Crypt Fiend",
@@ -13569,6 +23034,22 @@ AV_VanityItems = {
         description = "Has a chance to drop from Naxxanar Skeletal Mage within Naxxanar.",
         zone = "Naxxanar",
         icon = 2
+    },
+    [89390] = {
+        itemid = 89390,
+        name = "Reins of the White Riding Goat",
+        creaturePreview = 66176,
+        creatureId = 66176,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 42
+    },
+    [89391] = {
+        itemid = 89391,
+        name = "Reins of the Black Riding Goat",
+        creaturePreview = 66177,
+        creatureId = 66177,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 40
     },
     [89436] = {
         itemid = 89436,
@@ -13751,6 +23232,14 @@ AV_VanityItems = {
         zone = "Grizzly Hills",
         subzone = "Drak'Tharon Keep",
         icon = 2
+    },
+    [89783] = {
+        itemid = 89783,
+        name = "Son of Galleon's Saddle",
+        creaturePreview = 66645,
+        creatureId = 66645,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 536
     },
     [89801] = {
         itemid = 89801,
@@ -14015,6 +23504,86 @@ AV_VanityItems = {
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 2
     },
+    [90177] = {
+        itemid = 90177,
+        name = "Baneling",
+        creaturePreview = 66984,
+        creatureId = 66984,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 80
+    },
+    [91003] = {
+        itemid = 91003,
+        name = "Darkmoon Hatchling",
+        creaturePreview = 67319,
+        creatureId = 67319,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 269
+    },
+    [91040] = {
+        itemid = 91040,
+        name = "Darkmoon Eye",
+        creaturePreview = 67332,
+        creatureId = 67332,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 735
+    },
+    [93035] = {
+        itemid = 93035,
+        name = "Core of Hardened Ash",
+        creaturePreview = 68666,
+        creatureId = 68666,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 272
+    },
+    [97320] = {
+        itemid = 97320,
+        name = "Lil' Al'ar",
+        creaturePreview = 80051,
+        creatureId = 80051,
+        description = "Previously available from Reborn Supporter's Master Warchest (Season 7 Bundle).",
+        icon = 506
+    },
+    [97321] = {
+        itemid = 97321,
+        name = "Reins of the Prestigious Bloodforged Courser",
+        creaturePreview = 79054,
+        creatureId = 79054,
+        description = "Available on the Webstore from the Conquest of Azeroth: Alpha Blundle.",
+        icon = 346
+    },
+    [97330] = {
+        itemid = 97330,
+        name = "Fix-o-Tron 5000",
+        creaturePreview = 80879,
+        creatureId = 80879,
+        description = "Available from the Webstore.",
+        icon = 81
+    },
+    [97331] = {
+        itemid = 97331,
+        name = "Lil' Chromaggus Whistle",
+        creaturePreview = 79055,
+        creatureId = 79055,
+        description = "Available on the Webstore from the Conquest of Azeroth: Alpha Blundle.",
+        icon = 383
+    },
+    [97390] = {
+        itemid = 97390,
+        name = "Biletooth Gnasher",
+        creaturePreview = 80530,
+        creatureId = 80530,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy).",
+        icon = 132
+    },
+    [97393] = {
+        itemid = 97393,
+        name = "Sigil of Goldilocks",
+        creaturePreview = 80541,
+        creatureId = 80541,
+        description = "Obtainable by Purchasing a Ticket on Goldilocks.",
+        icon = 722
+    },
     [97743] = {
         itemid = 97743,
         name = "Elemental Lodestone: Afflicted Treemouth",
@@ -14022,6 +23591,422 @@ AV_VanityItems = {
         creatureId = 139999,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 5
+    },
+    [97754] = {
+        itemid = 97754,
+        name = "Lil' Bangalash",
+        creaturePreview = 80883,
+        creatureId = 80883,
+        description = "Reward from Ironman - King of the Jungle.",
+        icon = 478
+    },
+    [97755] = {
+        itemid = 97755,
+        name = "Lil' Hogger",
+        creaturePreview = 80884,
+        creatureId = 80884,
+        description = "Reward from Ironman - Hogger Must Die.",
+        icon = 327
+    },
+    [97762] = {
+        itemid = 97762,
+        name = "Sigil of Graves",
+        creaturePreview = 80887,
+        creatureId = 80887,
+        description = "Reward from Hardcore - Dungeon Diver Trial.",
+        icon = 329
+    },
+    [97763] = {
+        itemid = 97763,
+        name = "Sigil of the Void Shardling",
+        creaturePreview = 80888,
+        creatureId = 80888,
+        description = "Reward from Nightmare II Trial.",
+        icon = 726
+    },
+    [97872] = {
+        itemid = 97872,
+        name = "Backswimmer Timbertooth",
+        creaturePreview = 400982,
+        creatureId = 400982,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 163
+    },
+    [98073] = {
+        itemid = 98073,
+        name = "Celestial Treasure Keeper",
+        creaturePreview = 80918,
+        creatureId = 80918,
+        description = "Available on the Webstore from the Celestial Observer's Elite/Master Warchest (Season 9 Bundle).",
+        icon = 87
+    },
+    [98074] = {
+        itemid = 98074,
+        name = "Cogsley",
+        creaturePreview = 80919,
+        creatureId = 80919,
+        description = "Available from the Webstore.",
+        icon = 279
+    },
+    [98467] = {
+        itemid = 98467,
+        name = "Warhorse",
+        creaturePreview = 9158,
+        creatureId = 9158,
+        description = "Can be obtained this mount by completing the original epic quest chain!.",
+        icon = 733
+    },
+    [98468] = {
+        itemid = 98468,
+        name = "Felsteed",
+        creaturePreview = 304,
+        creatureId = 304,
+        description = "Can be obtained this mount by completing the original epic quest chain!.",
+        icon = 733
+    },
+    [98472] = {
+        itemid = 98472,
+        name = "Darkmoon Bear",
+        creaturePreview = 76120,
+        creatureId = 76120,
+        description = "Available from the Webstore.",
+        icon = 8
+    },
+    [98473] = {
+        itemid = 98473,
+        name = "Ghostly Charger",
+        creaturePreview = 76121,
+        creatureId = 76121,
+        description = "Available from the Webstore.",
+        icon = 317
+    },
+    [98476] = {
+        itemid = 98476,
+        name = "Misty Fox",
+        creaturePreview = 100222,
+        creatureId = 100222,
+        description = "Available from the Webstore.",
+        icon = 106
+    },
+    [98477] = {
+        itemid = 98477,
+        name = "Royalfang Widow",
+        creaturePreview = 100223,
+        creatureId = 100223,
+        description = "Available on the Webstore from the Revenant's Coffer.",
+        icon = 664
+    },
+    [98479] = {
+        itemid = 98479,
+        name = "Ratstallion",
+        creaturePreview = 100227,
+        creatureId = 100227,
+        description = "Available on the Webstore from the Assassin's Arsenal.",
+        icon = 601
+    },
+    [98480] = {
+        itemid = 98480,
+        name = "Tear of Elune",
+        creaturePreview = 100226,
+        creatureId = 100226,
+        description = "Available from the Webstore.",
+        icon = 671
+    },
+    [98490] = {
+        itemid = 98490,
+        name = "Reins of the Spectral Steed",
+        creaturePreview = 100228,
+        creatureId = 100228,
+        description = "Available on the Webstore from Recruit-a-Friend.",
+        icon = 533
+    },
+    [98882] = {
+        itemid = 98882,
+        name = "Cocoa Armadillo Pup",
+        creaturePreview = 40609,
+        creatureId = 40609,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 451
+    },
+    [98883] = {
+        itemid = 98883,
+        name = "Mossy Armadillo Pup",
+        creaturePreview = 40610,
+        creatureId = 40610,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 451
+    },
+    [98884] = {
+        itemid = 98884,
+        name = "Stone Armadillo Pup",
+        creaturePreview = 40611,
+        creatureId = 40611,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 451
+    },
+    [99385] = {
+        itemid = 99385,
+        name = "Crawling Claw",
+        creaturePreview = 98597,
+        creatureId = 98597,
+        description = "Seasonal Reward previously available during Season 4.",
+        icon = 546
+    },
+    [99473] = {
+        itemid = 99473,
+        name = "Crimson Geode Heart",
+        creaturePreview = 50040,
+        creatureId = 50040,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 498
+    },
+    [99474] = {
+        itemid = 99474,
+        name = "Solstice Corestone",
+        creaturePreview = 50041,
+        creatureId = 50041,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 575
+    },
+    [99475] = {
+        itemid = 99475,
+        name = "Enigmatic Jadeite",
+        creaturePreview = 50042,
+        creatureId = 50042,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 473
+    },
+    [99477] = {
+        itemid = 99477,
+        name = "Core Hound",
+        creaturePreview = 101223,
+        creatureId = 101223,
+        description = "Available on the Webstore from the Executioner's War Cache Bundle.",
+        icon = 9
+    },
+    [99478] = {
+        itemid = 99478,
+        name = "Shadow Fel Hound",
+        creaturePreview = 101224,
+        creatureId = 101224,
+        description = "Available from the Webstore.",
+        icon = 294
+    },
+    [99479] = {
+        itemid = 99479,
+        name = "Reins of the Highmountain Elderhorn",
+        creaturePreview = 101225,
+        creatureId = 101225,
+        description = "Available on the Webstore from the Grove Warden's Grace bundle.",
+        icon = 516
+    },
+    [99480] = {
+        itemid = 99480,
+        name = "Snowy Hyena",
+        creaturePreview = 101226,
+        creatureId = 101226,
+        description = "Available from the Webstore.",
+        icon = 362
+    },
+    [99481] = {
+        itemid = 99481,
+        name = "Grinning Reaver",
+        creaturePreview = 101227,
+        creatureId = 101227,
+        description = "Obtainable by guild members on Temple of Ahn'Qiraj event.",
+        icon = 60
+    },
+    [99482] = {
+        itemid = 99482,
+        name = "Mystic Runesaber",
+        creaturePreview = 101228,
+        creatureId = 101228,
+        description = "Available on the Webstore from The Archmage's Reliquary Bundle.",
+        icon = 626
+    },
+    [99483] = {
+        itemid = 99483,
+        name = "Reins of the Westfall Donkey",
+        creaturePreview = 101229,
+        creatureId = 101229,
+        description = "Available from the Webstore.",
+        icon = 62
+    },
+    [99484] = {
+        itemid = 99484,
+        name = "Reins of the Valorous Charger",
+        creaturePreview = 101230,
+        creatureId = 101230,
+        description = "Available from the Webstore.",
+        icon = 551
+    },
+    [99485] = {
+        itemid = 99485,
+        name = "Reins of the Accursed Wrathsteed",
+        creaturePreview = 101231,
+        creatureId = 101231,
+        description = "Available from the Webstore.",
+        icon = 707
+    },
+    [99489] = {
+        itemid = 99489,
+        name = "Felflame Talbuk",
+        creaturePreview = 10111375,
+        creatureId = 10111375,
+        description = "Available on the Webstore from the Fel Crusader Warchest.",
+        icon = 134
+    },
+    [99491] = {
+        itemid = 99491,
+        name = "Treasure Keeper",
+        creaturePreview = 10111377,
+        creatureId = 10111377,
+        description = "Available from the Webstore.",
+        icon = 723
+    },
+    [99492] = {
+        itemid = 99492,
+        name = "Pit Lord's Eye",
+        creaturePreview = 10111378,
+        creatureId = 10111378,
+        description = "Available on the Webstore from the Fel Crusader Warchest.",
+        icon = 568
+    },
+    [99936] = {
+        itemid = 99936,
+        name = "Arfus's Collar",
+        creaturePreview = 81031,
+        creatureId = 81031,
+        description = "Available from Webstore.",
+        icon = 122
+    },
+    [99937] = {
+        itemid = 99937,
+        name = "Fangus's Collar",
+        creaturePreview = 81032,
+        creatureId = 81032,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 123
+    },
+    [99938] = {
+        itemid = 99938,
+        name = "Fluffus's Collar",
+        creaturePreview = 81033,
+        creatureId = 81033,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 124
+    },
+    [99939] = {
+        itemid = 99939,
+        name = "Tobias's Collar",
+        creaturePreview = 81034,
+        creatureId = 81034,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 126
+    },
+    [99940] = {
+        itemid = 99940,
+        name = "Ruffin's Collar",
+        creaturePreview = 81035,
+        creatureId = 81035,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 125
+    },
+    [99985] = {
+        itemid = 99985,
+        name = "Chaotic Saber Cub",
+        creaturePreview = 98497,
+        creatureId = 98497,
+        description = "Seasonal Reward previously available during Season 3.",
+        icon = 639
+    },
+    [100003] = {
+        itemid = 100003,
+        name = "Scarab Shell",
+        creaturePreview = 100003,
+        creatureId = 100003,
+        description = "Previously available from War Effort Commendation Vendors during the original Ahn'Qirj War Effort.",
+        icon = 449
+    },
+    [100006] = {
+        itemid = 100006,
+        name = "Rotting Carcass",
+        creaturePreview = 100006,
+        creatureId = 100006,
+        description = "Previously available from War Effort Commendation Vendors during the Ahn'Qirj War Effort.",
+        icon = 487
+    },
+    [100007] = {
+        itemid = 100007,
+        name = "Idol of the Watcher",
+        creaturePreview = 100007,
+        creatureId = 100007,
+        description = "Previously available from War Effort Commendation Vendors during the Ahn'Qirj War Effort.",
+        icon = 595
+    },
+    [100008] = {
+        itemid = 100008,
+        name = "Giant Qiraji Shell",
+        creaturePreview = 100008,
+        creatureId = 100008,
+        description = "Previously available from War Effort Commendation Vendors during the Ahn'Qirj War Effort.",
+        icon = 648
+    },
+    [100016] = {
+        itemid = 100016,
+        name = "Bloody Rags",
+        creaturePreview = 100016,
+        creatureId = 100016,
+        description = "Reward from Winning on Blood Bowl event.",
+        icon = 454
+    },
+    [100018] = {
+        itemid = 100018,
+        name = "Decaying Flesh",
+        creaturePreview = 100009,
+        creatureId = 100009,
+        description = "Previously available from War Effort Commendation Vendors during the Ahn'Qirj War Effort.",
+        icon = 488
+    },
+    [100019] = {
+        itemid = 100019,
+        name = "Rattling Bones",
+        creaturePreview = 100010,
+        creatureId = 100010,
+        description = "Previously available from War Effort Commendation Vendors during the Ahn'Qirj War Effort.",
+        icon = 458
+    },
+    [100020] = {
+        itemid = 100020,
+        name = "Burning Skull",
+        creaturePreview = 100011,
+        creatureId = 100011,
+        description = "Previously available from War Effort Commendation Vendors during the Ahn'Qirj War Effort.",
+        icon = 459
+    },
+    [100140] = {
+        itemid = 100140,
+        name = "Reins of the Soulhound",
+        creaturePreview = 100037,
+        creatureId = 100037,
+        description = "Available from the Webstore.",
+        icon = 662
+    },
+    [100566] = {
+        itemid = 100566,
+        name = "Felfire Impling",
+        creaturePreview = 100566,
+        creatureId = 100566,
+        description = "Has a chance to drop from Legion Invasions.",
+        icon = 738
+    },
+    [100567] = {
+        itemid = 100567,
+        name = "Lil' Evil Eye",
+        creaturePreview = 100567,
+        creatureId = 100567,
+        description = "Has a chance to drop from Legion Invasions.",
+        icon = 741
     },
     [101049] = {
         itemid = 101049,
@@ -14918,6 +24903,71 @@ AV_VanityItems = {
         zone = "Outland",
         icon = 2
     },
+    [101172] = {
+        itemid = 101172,
+        name = "Kleptomanic Demon Leash",
+        creaturePreview = 79026,
+        creatureId = 79026,
+        description = "Previously available during League 2 from the Felforged Supporter's Warchest.",
+        icon = 548
+    },
+    [101173] = {
+        itemid = 101173,
+        name = "Transmogrifier Gimbly",
+        creaturePreview = 79027,
+        creatureId = 79027,
+        description = "Previously available during League 2 from the Felforged Supporter's Warchest.",
+        icon = 93
+    },
+    [101178] = {
+        itemid = 101178,
+        name = "Alliance Balloon",
+        creaturePreview = 79031,
+        creatureId = 79031,
+        description = "Can be purchased from Purified Soul Traders for Purified Souls.",
+        icon = 453
+    },
+    [101179] = {
+        itemid = 101179,
+        name = "Horde Balloon",
+        creaturePreview = 79032,
+        creatureId = 79032,
+        description = "Can be purchased from Purified Soul Traders for Purified Souls.",
+        icon = 452
+    },
+    [101180] = {
+        itemid = 101180,
+        name = "Unstable Lightwell",
+        creaturePreview = 79033,
+        creatureId = 79033,
+        description = "Can be purchased from Purified Soul Traders for Purified Souls.",
+        icon = 730
+    },
+    [101227] = {
+        itemid = 101227,
+        name = "Tyrael's Charger",
+        creaturePreview = 79034,
+        creatureId = 79034,
+        description = "Can be purchased from Purified Soul Traders for Purified Souls.",
+        icon = 73
+    },
+    [101255] = {
+        itemid = 101255,
+        name = "Felforged Reins of the Illidari Felstalker",
+        creaturePreview = 499940,
+        creatureId = 499940,
+        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon.",
+        icon = 298
+    },
+    [101401] = {
+        itemid = 101401,
+        name = "Sigil of Skibble",
+        creaturePreview = 79037,
+        creatureId = 79037,
+        description = "Has a chance to drop from Skibble within Twisting Nether.",
+        zone = "Twisting Nether",
+        icon = 736
+    },
     [101412] = {
         itemid = 101412,
         name = "Beastmaster's Whistle: Hamlet",
@@ -15006,6 +25056,126 @@ AV_VanityItems = {
         description = "Available from the Webstore.",
         icon = 1
     },
+    [102100] = {
+        itemid = 102100,
+        name = "Kromlin's Candle",
+        creaturePreview = 102100,
+        creatureId = 102100,
+        description = "Available from the Webstore.",
+        icon = 374
+    },
+    [102103] = {
+        itemid = 102103,
+        name = "Spiteful Apparition",
+        creaturePreview = 102103,
+        creatureId = 102103,
+        description = "Available on the Webstore from the Cache Revenant's Coffer Bundle.",
+        icon = 460
+    },
+    [102105] = {
+        itemid = 102105,
+        name = "Illustrious Insignia of the Alliance",
+        creaturePreview = 102105,
+        creatureId = 102105,
+        description = "Has a chance to drop from Spoils of War.",
+        icon = 384
+    },
+    [102106] = {
+        itemid = 102106,
+        name = "Illustrious Insignia of the Horde",
+        creaturePreview = 102106,
+        creatureId = 102106,
+        description = "Has a chance to drop from Spoils of War.",
+        icon = 385
+    },
+    [102107] = {
+        itemid = 102107,
+        name = "Reins of the Magmatic Steed",
+        creaturePreview = 102107,
+        creatureId = 102107,
+        description = "Has a chance to drop from Ragnaros within the Molten Core on Mythic & Ascended difficulty.",
+        icon = 55
+    },
+    [103725] = {
+        itemid = 103725,
+        name = "Sigil of Thuros Lightfingers",
+        creaturePreview = 43295,
+        creatureId = 43295,
+        description = "Has a chance to drop from Thuros Lightfingers within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103726] = {
+        itemid = 103726,
+        name = "Sigil of Narg the Taskmaster",
+        creaturePreview = 43296,
+        creatureId = 43296,
+        description = "Has a chance to drop from Narg the Taskmaster within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103727] = {
+        itemid = 103727,
+        name = "Sigil of Morgaine the Sly",
+        creaturePreview = 43297,
+        creatureId = 43297,
+        description = "Has a chance to drop from Morgaine the Sly within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103728] = {
+        itemid = 103728,
+        name = "Sigil of Gruff Swiftbite",
+        creaturePreview = 43298,
+        creatureId = 43298,
+        description = "Has a chance to drop from Gruff Swiftbite within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103729] = {
+        itemid = 103729,
+        name = "Sigil of Vultros",
+        creaturePreview = 43299,
+        creatureId = 43299,
+        description = "Has a chance to drop from Vultros within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103730] = {
+        itemid = 103730,
+        name = "Sigil of Mother Fang",
+        creaturePreview = 43300,
+        creatureId = 43300,
+        description = "Has a chance to drop from Mother Fang within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103731] = {
+        itemid = 103731,
+        name = "Sigil of Fedfennel",
+        creaturePreview = 43301,
+        creatureId = 43301,
+        description = "Has a chance to drop from Fedfennel within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [103732] = {
+        itemid = 103732,
+        name = "Sigil of Lord Malathrom",
+        creaturePreview = 43302,
+        creatureId = 43302,
+        description = "Has a chance to drop from Lord Malathrom within Eastern Kingdoms.",
+        zone = "Eastern Kingdoms",
+        icon = 486
+    },
+    [110411] = {
+        itemid = 110411,
+        name = "King’s Noble Charger",
+        creaturePreview = 357487,
+        creatureId = 357487,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 89
+    },
     [113671] = {
         itemid = 113671,
         name = "Beastmaster's Whistle: Solar Tracker",
@@ -15021,6 +25191,54 @@ AV_VanityItems = {
         creatureId = 292303,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
+    },
+    [120306] = {
+        itemid = 120306,
+        name = "Reins of the Infernal Direwolf",
+        creaturePreview = 357717,
+        creatureId = 357717,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 381
+    },
+    [120307] = {
+        itemid = 120307,
+        name = "Reins of the Radiant Direwolf",
+        creaturePreview = 357719,
+        creatureId = 357719,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 380
+    },
+    [120308] = {
+        itemid = 120308,
+        name = "Reins of the Blazefang Direwolf",
+        creaturePreview = 357718,
+        creatureId = 357718,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 382
+    },
+    [120599] = {
+        itemid = 120599,
+        name = "Lavaborn Steed of Xoroth",
+        creaturePreview = 203858,
+        creatureId = 203858,
+        description = "Available from the Webstore.",
+        icon = 65
+    },
+    [121503] = {
+        itemid = 121503,
+        name = "Azure Spiritclaw",
+        creaturePreview = 358174,
+        creatureId = 358174,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 742
+    },
+    [121815] = {
+        itemid = 121815,
+        name = "Voidtalon of the Dark Star",
+        creaturePreview = 499656,
+        creatureId = 499656,
+        description = "Obtained from Void Portals found across Azeroth.",
+        icon = 38
     },
     [121824] = {
         itemid = 121824,
@@ -15061,6 +25279,22 @@ AV_VanityItems = {
         creatureId = 590024,
         description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor).",
         icon = 5
+    },
+    [134947] = {
+        itemid = 134947,
+        name = "Reins of the Sha-touched Spiritclaw",
+        creaturePreview = 319021,
+        creatureId = 319021,
+        description = "Available from the Webstore.",
+        icon = 647
+    },
+    [136925] = {
+        itemid = 136925,
+        name = "Corgi Pup",
+        creaturePreview = 67832,
+        creatureId = 67832,
+        description = "Available from Tiraxis' Ethereal Bazaar or the Webstore.",
+        icon = 210
     },
     [138255] = {
         itemid = 138255,
@@ -15224,6 +25458,222 @@ AV_VanityItems = {
         subzone = "Sunwell Plateau",
         icon = 3
     },
+    [140320] = {
+        itemid = 140320,
+        name = "Corgnelius",
+        creaturePreview = 67833,
+        creatureId = 67833,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 210
+    },
+    [152189] = {
+        itemid = 152189,
+        name = "Pooftalon",
+        creaturePreview = 4761,
+        creatureId = 4761,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 408
+    },
+    [152190] = {
+        itemid = 152190,
+        name = "Gooftalon",
+        creaturePreview = 4762,
+        creatureId = 4762,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 411
+    },
+    [152191] = {
+        itemid = 152191,
+        name = "Flufftalon",
+        creaturePreview = 4763,
+        creatureId = 4763,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 406
+    },
+    [152192] = {
+        itemid = 152192,
+        name = "Pufftalon",
+        creaturePreview = 4764,
+        creatureId = 4764,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 407
+    },
+    [152193] = {
+        itemid = 152193,
+        name = "Grufftalon",
+        creaturePreview = 4765,
+        creatureId = 4765,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 409
+    },
+    [152194] = {
+        itemid = 152194,
+        name = "Snooftalon",
+        creaturePreview = 4766,
+        creatureId = 4766,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 412
+    },
+    [152195] = {
+        itemid = 152195,
+        name = "Bufftalon",
+        creaturePreview = 4767,
+        creatureId = 4767,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 410
+    },
+    [152196] = {
+        itemid = 152196,
+        name = "Tufftalon",
+        creaturePreview = 4768,
+        creatureId = 4768,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 413
+    },
+    [152197] = {
+        itemid = 152197,
+        name = "Hufftalon",
+        creaturePreview = 4769,
+        creatureId = 4769,
+        description = "Available from Tiraxis' Ethereal Bazaar or the Webstore.",
+        icon = 414
+    },
+    [155655] = {
+        itemid = 155655,
+        name = "Archmage's Prismatic Disc: Arcane",
+        creaturePreview = 313039,
+        creatureId = 313039,
+        description = "Has a chance to drop from Season 9 Ethereal Box of Wares.",
+        icon = 403
+    },
+    [170000] = {
+        itemid = 170000,
+        name = "Ironclad War Wolf",
+        creaturePreview = 170001,
+        creatureId = 170001,
+        description = "Reward from Ironman Trial.",
+        icon = 713
+    },
+    [170001] = {
+        itemid = 170001,
+        name = "Flametouched Raven",
+        creaturePreview = 170002,
+        creatureId = 170002,
+        description = "Available on the Webstore from the Dawnforged Battle Bundle.",
+        icon = 37
+    },
+    [170002] = {
+        itemid = 170002,
+        name = "Frostcharger",
+        creaturePreview = 170003,
+        creatureId = 170003,
+        description = "Available on the Webstore from the Cache of the Frostwalker Bundle.",
+        icon = 64
+    },
+    [170005] = {
+        itemid = 170005,
+        name = "Prestigious War Horse",
+        creaturePreview = 170008,
+        creatureId = 170008,
+        description = "Has a chance to drop from Battleground Spoils.",
+        icon = 107
+    },
+    [170006] = {
+        itemid = 170006,
+        name = "Prestigious War Wolf",
+        creaturePreview = 170009,
+        creatureId = 170009,
+        description = "Has a chance to drop from Battleground Spoils.",
+        icon = 343
+    },
+    [170007] = {
+        itemid = 170007,
+        name = "Gilded Ravasaur",
+        creaturePreview = 170010,
+        creatureId = 170010,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy).",
+        icon = 135
+    },
+    [170008] = {
+        itemid = 170008,
+        name = "Undead Ravasaur",
+        creaturePreview = 170011,
+        creatureId = 170011,
+        description = "Reward from Winning on Blood Bowl event.",
+        icon = 136
+    },
+    [170009] = {
+        itemid = 170009,
+        name = "Gurubashi Blood Raptor",
+        creaturePreview = 170012,
+        creatureId = 170012,
+        description = "Reward from Winning on Blood Bowl event.",
+        icon = 76
+    },
+    [173178] = {
+        itemid = 173178,
+        name = "Rudolthorn's Reins",
+        creaturePreview = 216493,
+        creatureId = 216493,
+        description = "Available on the Webstore during the Feast of Winter Veil.",
+        icon = 215
+    },
+    [176142] = {
+        itemid = 176142,
+        name = "Rikki's Pith Helmet",
+        creaturePreview = 629,
+        creatureId = 629,
+        description = "Available on the Webstore from the Bronzebeard: Original 9 Class Realm Bundle.",
+        icon = 430
+    },
+    [176482] = {
+        itemid = 176482,
+        name = "Seraph's Hilt",
+        creaturePreview = 148911,
+        creatureId = 148911,
+        description = "Available from the Webstore.",
+        icon = 699
+    },
+    [177567] = {
+        itemid = 177567,
+        name = "Skyreaver Deathcycle's Keys",
+        creaturePreview = 915321,
+        creatureId = 915321,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 523
+    },
+    [177568] = {
+        itemid = 177568,
+        name = "Worldreaver Deathcycle's Keys",
+        creaturePreview = 915322,
+        creatureId = 915322,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 527
+    },
+    [181260] = {
+        itemid = 181260,
+        name = "Reins of the Alliance Electro Eel",
+        creaturePreview = 129282,
+        creatureId = 129282,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 270
+    },
+    [181261] = {
+        itemid = 181261,
+        name = "Reins of the Horde Electro Eel",
+        creaturePreview = 129283,
+        creatureId = 129283,
+        description = "Available from the Webstore.",
+        icon = 271
+    },
+    [184190] = {
+        itemid = 184190,
+        name = "Flooftalon",
+        creaturePreview = 1219,
+        creatureId = 1219,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 415
+    },
     [184998] = {
         itemid = 184998,
         name = "Beastmaster's Whistle: Gargantuan Grrloc",
@@ -15232,6 +25682,46 @@ AV_VanityItems = {
         description = "Seasonal Reward. Introduced in Season 9, Chapter 1.",
         icon = 1
     },
+    [187323] = {
+        itemid = 187323,
+        name = "Reins of the Brilliant Sunburst Peafowl",
+        creaturePreview = 213038,
+        creatureId = 213038,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 554
+    },
+    [187324] = {
+        itemid = 187324,
+        name = "Reins of the Starry Twilight Peafowl",
+        creaturePreview = 213039,
+        creatureId = 213039,
+        description = "Available from the Webstore.",
+        icon = 555
+    },
+    [187325] = {
+        itemid = 187325,
+        name = "Reins of the Dazzling Moonshadow Peafowl",
+        creaturePreview = 213040,
+        creatureId = 213040,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 553
+    },
+    [190197] = {
+        itemid = 190197,
+        name = "Mildly Munched Gingerboard",
+        creaturePreview = 53531,
+        creatureId = 53531,
+        description = "Available from the Webstore during Winterveil.",
+        icon = 376
+    },
+    [191541] = {
+        itemid = 191541,
+        name = "Emberback Plodder's Saddle",
+        creaturePreview = 915323,
+        creatureId = 915323,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 216
+    },
     [191686] = {
         itemid = 191686,
         name = "Beastmaster's Whistle: Clarabelle",
@@ -15239,6 +25729,86 @@ AV_VanityItems = {
         creatureId = 103888,
         description = "Seasonal Reward. Introduced in Season 9, Chapter 2.",
         icon = 1
+    },
+    [192632] = {
+        itemid = 192632,
+        name = "Ochre Dreamtalon's Reins",
+        creaturePreview = 526,
+        creatureId = 526,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 629
+    },
+    [192634] = {
+        itemid = 192634,
+        name = "Springtide Dreamtalon's Reins",
+        creaturePreview = 528,
+        creatureId = 528,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 630
+    },
+    [192635] = {
+        itemid = 192635,
+        name = "Mischievous Dreamtalon's Reins",
+        creaturePreview = 529,
+        creatureId = 529,
+        description = "Available from the Webstore.",
+        icon = 627
+    },
+    [192636] = {
+        itemid = 192636,
+        name = "Elusive Dreamtalon's Reins",
+        creaturePreview = 530,
+        creatureId = 530,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 628
+    },
+    [193026] = {
+        itemid = 193026,
+        name = "Ratticus",
+        creaturePreview = 110273,
+        creatureId = 110273,
+        description = "Not much is known about this rat- only that it once was cared for by a copperless storyteller.",
+        icon = 600
+    },
+    [193373] = {
+        itemid = 193373,
+        name = "PUR-PL3 D.R.I.V.E Kart's Keys",
+        creaturePreview = 110517,
+        creatureId = 110517,
+        description = "Available from the Webstore.",
+        icon = 259
+    },
+    [193374] = {
+        itemid = 193374,
+        name = "0CN-DRFT D.R.I.V.E Kart's Keys",
+        creaturePreview = 110518,
+        creatureId = 110518,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 260
+    },
+    [193375] = {
+        itemid = 193375,
+        name = "GR-33N D.R.I.V.E Kart's Keys",
+        creaturePreview = 110519,
+        creatureId = 110519,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 261
+    },
+    [193376] = {
+        itemid = 193376,
+        name = "SC-4RL3T D.R.I.V.E Kart's Keys",
+        creaturePreview = 110520,
+        creatureId = 110520,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 262
+    },
+    [193377] = {
+        itemid = 193377,
+        name = "G-0LD D.R.I.V.E Kart's Keys",
+        creaturePreview = 110521,
+        creatureId = 110521,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 263
     },
     [194340] = {
         itemid = 194340,
@@ -15295,6 +25865,95 @@ AV_VanityItems = {
         creatureId = 50512,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
+    },
+    [196325] = {
+        itemid = 196325,
+        name = "Vibrant Kelpfin",
+        creaturePreview = 2193,
+        creatureId = 2193,
+        description = "Reward for participating in the Bronzebeard Stress Test.",
+        zone = "the Bronzebeard Stress Test",
+        icon = 154
+    },
+    [196507] = {
+        itemid = 196507,
+        name = "Periwinkle Calf",
+        creaturePreview = 123376,
+        creatureId = 123376,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 141
+    },
+    [196508] = {
+        itemid = 196508,
+        name = "River Calf",
+        creaturePreview = 123377,
+        creatureId = 123377,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 142
+    },
+    [196510] = {
+        itemid = 196510,
+        name = "Mudback Calf",
+        creaturePreview = 123379,
+        creatureId = 123379,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 143
+    },
+    [196511] = {
+        itemid = 196511,
+        name = "Albino River Calf",
+        creaturePreview = 123380,
+        creatureId = 123380,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 144
+    },
+    [196728] = {
+        itemid = 196728,
+        name = "Keys to the Explorer's Jungle Hopper",
+        creaturePreview = 357328,
+        creatureId = 357328,
+        description = "Available on the Webstore from the Bronzebeard: Original 9 Class Realm Bundle.",
+        icon = 281
+    },
+    [199156] = {
+        itemid = 199156,
+        name = "Reins of the Feral Armored Growler",
+        creaturePreview = 111083,
+        creatureId = 111083,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 176
+    },
+    [199157] = {
+        itemid = 199157,
+        name = "Reins of the Savage Armored Growler",
+        creaturePreview = 111084,
+        creatureId = 111084,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 178
+    },
+    [199158] = {
+        itemid = 199158,
+        name = "Reins of the Verdant Armored Growler",
+        creaturePreview = 111085,
+        creatureId = 111085,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 330
+    },
+    [199159] = {
+        itemid = 199159,
+        name = "Reins of the Rabid Armored Growler",
+        creaturePreview = 111086,
+        creatureId = 111086,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 593
+    },
+    [199160] = {
+        itemid = 199160,
+        name = "Reins of the Crimson Armored Growler",
+        creaturePreview = 111087,
+        creatureId = 111087,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 604
     },
     [199336] = {
         itemid = 199336,
@@ -15360,6 +26019,150 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
     },
+    [199658] = {
+        itemid = 199658,
+        name = "Darkmaul",
+        creaturePreview = 217615,
+        creatureId = 217615,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 433
+    },
+    [199659] = {
+        itemid = 199659,
+        name = "Amber Shardhide",
+        creaturePreview = 222999,
+        creatureId = 222999,
+        description = "Available on the Webstore from the Amber Shardhide Companion Bundle.",
+        icon = 435
+    },
+    [199660] = {
+        itemid = 199660,
+        name = "Beryl Shardhide",
+        creaturePreview = 222300,
+        creatureId = 222300,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 431
+    },
+    [199661] = {
+        itemid = 199661,
+        name = "Crimson Shardhide",
+        creaturePreview = 222301,
+        creatureId = 222301,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 434
+    },
+    [199662] = {
+        itemid = 199662,
+        name = "Cerulean Shardhide",
+        creaturePreview = 222302,
+        creatureId = 222302,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 432
+    },
+    [199666] = {
+        itemid = 199666,
+        name = "High Tinker Mekkatorque's Suit",
+        creaturePreview = 222306,
+        creatureId = 222306,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 720
+    },
+    [199667] = {
+        itemid = 199667,
+        name = "Bound Blizzard",
+        creaturePreview = 357913,
+        creatureId = 357913,
+        description = "Available from the Webstore.",
+        icon = 660
+    },
+    [199735] = {
+        itemid = 199735,
+        name = "Prophet's Great Raven Cache",
+        creaturePreview = 123340,
+        creatureId = 123340,
+        description = "Available from the Webstore.",
+        icon = 197
+    },
+    [199736] = {
+        itemid = 199736,
+        name = "Archmage's Great Raven Cache",
+        creaturePreview = 123341,
+        creatureId = 123341,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 197
+    },
+    [201266] = {
+        itemid = 201266,
+        name = "Mr. Giggle's Favourite Chew-Wrench",
+        creaturePreview = 104865,
+        creatureId = 104865,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 151
+    },
+    [201267] = {
+        itemid = 201267,
+        name = "Eepy's Favourite Chew-Wrench",
+        creaturePreview = 104866,
+        creatureId = 104866,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 152
+    },
+    [201268] = {
+        itemid = 201268,
+        name = "Snarla's Favourite Chew-Wrench",
+        creaturePreview = 104867,
+        creatureId = 104867,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 153
+    },
+    [201271] = {
+        itemid = 201271,
+        name = "Yena's Favourite Chew-Wrench",
+        creaturePreview = 104864,
+        creatureId = 104864,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 150
+    },
+    [202773] = {
+        itemid = 202773,
+        name = "Sunny's Leash",
+        creaturePreview = 38290,
+        creatureId = 38290,
+        description = "Reward for reaching level 58 during June CoA Open Beta event.",
+        icon = 244
+    },
+    [203079] = {
+        itemid = 203079,
+        name = "Anu'relos's Reins",
+        creaturePreview = 119925,
+        creatureId = 119925,
+        description = "Available from the Webstore.",
+        icon = 252
+    },
+    [203080] = {
+        itemid = 203080,
+        name = "Lumi'ara's Reins",
+        creaturePreview = 119926,
+        creatureId = 119926,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 253
+    },
+    [203081] = {
+        itemid = 203081,
+        name = "Verdara's Reins",
+        creaturePreview = 119927,
+        creatureId = 119927,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 255
+    },
+    [203082] = {
+        itemid = 203082,
+        name = "Nyxaroth's Reins",
+        creaturePreview = 119928,
+        creatureId = 119928,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 254
+    },
     [204016] = {
         itemid = 204016,
         name = "Summoner's Stone: Subdued Mistress",
@@ -15367,6 +26170,86 @@ AV_VanityItems = {
         creatureId = 45906,
         description = "Seasonal Reward. Introduced in Season 9, Chapter 3.",
         icon = 3
+    },
+    [205629] = {
+        itemid = 205629,
+        name = "Dark Ranger General's Dreadwing Saddle",
+        creaturePreview = 123228,
+        creatureId = 123228,
+        description = "Available from the Webstore as part of the Dark Ranger General's Hoard only.",
+        icon = 213
+    },
+    [210849] = {
+        itemid = 210849,
+        name = "Juvenile Golden Armored Storm Gryphon",
+        creaturePreview = 321264,
+        creatureId = 321264,
+        description = "Available from the Webstore as part of the Golden Gryphon Rider's Bundle.",
+        icon = 334
+    },
+    [210851] = {
+        itemid = 210851,
+        name = "Juvenile Dark Armored Storm Gryphon",
+        creaturePreview = 321266,
+        creatureId = 321266,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 335
+    },
+    [210852] = {
+        itemid = 210852,
+        name = "Juvenile Silver Armored Storm Gryphon",
+        creaturePreview = 321267,
+        creatureId = 321267,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 336
+    },
+    [213209] = {
+        itemid = 213209,
+        name = "Reins of the Scribe's Trusted Trailbear",
+        creaturePreview = 117992,
+        creatureId = 117992,
+        description = "Translator's Reward: Contest Reward.",
+        icon = 162
+    },
+    [218185] = {
+        itemid = 218185,
+        name = "Reins of the Excavator's Dunetrekker",
+        creaturePreview = 97606,
+        creatureId = 97606,
+        description = "Available from the Webstore.",
+        icon = 189
+    },
+    [218187] = {
+        itemid = 218187,
+        name = "Reins of the Steadfast Dunetrekker",
+        creaturePreview = 97608,
+        creatureId = 97608,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 188
+    },
+    [225859] = {
+        itemid = 225859,
+        name = "Reins of the Autumn Harvesthog",
+        creaturePreview = 201697,
+        creatureId = 201697,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 340
+    },
+    [225860] = {
+        itemid = 225860,
+        name = "Reins of the Spring Harvesthog",
+        creaturePreview = 201698,
+        creatureId = 201698,
+        description = "Available from the Webstore.",
+        icon = 338
+    },
+    [225861] = {
+        itemid = 225861,
+        name = "Reins of the Summer Harvesthog",
+        creaturePreview = 201699,
+        creatureId = 201699,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 339
     },
     [231309] = {
         itemid = 231309,
@@ -15408,6 +26291,30 @@ AV_VanityItems = {
         description = "Available from the Webstore.",
         icon = 5
     },
+    [233000] = {
+        itemid = 233000,
+        name = "Felreaver Deathcycle's Keys",
+        creaturePreview = 915318,
+        creatureId = 915318,
+        description = "Available from the Webstore.",
+        icon = 524
+    },
+    [233001] = {
+        itemid = 233001,
+        name = "Flamereaver Deathcycle's Keys",
+        creaturePreview = 915319,
+        creatureId = 915319,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 525
+    },
+    [233002] = {
+        itemid = 233002,
+        name = "Shadowreaver Deathcycle's Keys",
+        creaturePreview = 915320,
+        creatureId = 915320,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 526
+    },
     [234628] = {
         itemid = 234628,
         name = "Beastmaster's Whistle: Arcane Bound Core Hound",
@@ -15415,6 +26322,278 @@ AV_VanityItems = {
         creatureId = 50517,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
+    },
+    [236293] = {
+        itemid = 236293,
+        name = "Fel Beast",
+        creaturePreview = 50512,
+        creatureId = 50512,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 531
+    },
+    [236294] = {
+        itemid = 236294,
+        name = "Arcane Bound Core Hound",
+        creaturePreview = 50517,
+        creatureId = 50517,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 534
+    },
+    [236296] = {
+        itemid = 236296,
+        name = "Void Borne Core Hound",
+        creaturePreview = 50959,
+        creatureId = 50959,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 529
+    },
+    [236415] = {
+        itemid = 236415,
+        name = "Celestial Glitterplume",
+        creaturePreview = 114259,
+        creatureId = 114259,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 528
+    },
+    [240141] = {
+        itemid = 240141,
+        name = "Reins of the Serene Loyal Snapdragon",
+        creaturePreview = 119309,
+        creatureId = 119309,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 95
+    },
+    [240142] = {
+        itemid = 240142,
+        name = "Reins of the Eldritch Loyal Snapdragon",
+        creaturePreview = 119310,
+        creatureId = 119310,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 96
+    },
+    [240144] = {
+        itemid = 240144,
+        name = "Reins of the Sunspine Loyal Snapdragon",
+        creaturePreview = 119312,
+        creatureId = 119312,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 97
+    },
+    [240145] = {
+        itemid = 240145,
+        name = "Reins of the Starshade Loyal Snapdragon",
+        creaturePreview = 119313,
+        creatureId = 119313,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 98
+    },
+    [240146] = {
+        itemid = 240146,
+        name = "Reins of the Blazing Loyal Snapdragon",
+        creaturePreview = 119314,
+        creatureId = 119314,
+        description = "Available from the Webstore.",
+        icon = 99
+    },
+    [240147] = {
+        itemid = 240147,
+        name = "Reins of the Radiant Loyal Snapdragon",
+        creaturePreview = 119315,
+        creatureId = 119315,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 100
+    },
+    [244248] = {
+        itemid = 244248,
+        name = "Sunrise Sentinel",
+        creaturePreview = 2660,
+        creatureId = 2660,
+        description = "Available from the Webstore as part of the Gleaming Hoard of Unrelenting Justice Bundle.",
+        icon = 572
+    },
+    [244249] = {
+        itemid = 244249,
+        name = "Sunset Sentinel",
+        creaturePreview = 2661,
+        creatureId = 2661,
+        description = "Available from the Webstore as part of the Moonlit Hoard of Unrelenting Justice Bundle.",
+        icon = 571
+    },
+    [246192] = {
+        itemid = 246192,
+        name = "Darkmoon Dirigible",
+        creaturePreview = 79059,
+        creatureId = 79059,
+        description = "Can be purchased from Silas Darkmoon for Darkmoon Tickets.",
+        icon = 717
+    },
+    [249038] = {
+        itemid = 249038,
+        name = "Llamour, the Pink Alpaca",
+        creaturePreview = 50492,
+        creatureId = 50492,
+        description = "|cFFFF8800[Unverified]|r ",
+        icon = 108
+    },
+    [250451] = {
+        itemid = 250451,
+        name = "Bloody Carrion Worm's Saddle",
+        creaturePreview = 357777,
+        creatureId = 357777,
+        description = "Available from the Webstore.",
+        icon = 390
+    },
+    [250452] = {
+        itemid = 250452,
+        name = "Purple Carrion Worm's Saddle",
+        creaturePreview = 357778,
+        creatureId = 357778,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 391
+    },
+    [250453] = {
+        itemid = 250453,
+        name = "Dirty Carrion Worm's Saddle",
+        creaturePreview = 357779,
+        creatureId = 357779,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 392
+    },
+    [250454] = {
+        itemid = 250454,
+        name = "Pink Carrion Worm's Saddle",
+        creaturePreview = 357780,
+        creatureId = 357780,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 393
+    },
+    [250455] = {
+        itemid = 250455,
+        name = "Garnet Carrion Worm's Saddle",
+        creaturePreview = 357781,
+        creatureId = 357781,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 394
+    },
+    [250456] = {
+        itemid = 250456,
+        name = "Pale Carrion Worm's Saddle",
+        creaturePreview = 357782,
+        creatureId = 357782,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 395
+    },
+    [250457] = {
+        itemid = 250457,
+        name = "Shrub Carrion Worm's Saddle",
+        creaturePreview = 357783,
+        creatureId = 357783,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 396
+    },
+    [250458] = {
+        itemid = 250458,
+        name = "Dark Carrion Worm's Saddle",
+        creaturePreview = 357784,
+        creatureId = 357784,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 389
+    },
+    [250459] = {
+        itemid = 250459,
+        name = "Verdant Carrion Worm's Saddle",
+        creaturePreview = 357785,
+        creatureId = 357785,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 397
+    },
+    [250460] = {
+        itemid = 250460,
+        name = "Reddish Carrion Worm's Saddle",
+        creaturePreview = 357786,
+        creatureId = 357786,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 398
+    },
+    [250461] = {
+        itemid = 250461,
+        name = "White Carrion Worm's Saddle",
+        creaturePreview = 357787,
+        creatureId = 357787,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 399
+    },
+    [250462] = {
+        itemid = 250462,
+        name = "Golden Carrion Worm's Saddle",
+        creaturePreview = 357788,
+        creatureId = 357788,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 400
+    },
+    [252676] = {
+        itemid = 252676,
+        name = "Essence of the Blue Flight",
+        creaturePreview = 224845,
+        creatureId = 224845,
+        description = "A rare Mount that can be obtained from Kil'jaeden inside the Sunwell Plateau, on Normal Difficulty.",
+        icon = 653
+    },
+    [252677] = {
+        itemid = 252677,
+        name = "Essence of Madrigosa",
+        creaturePreview = 224846,
+        creatureId = 224846,
+        description = "A rare Mount that can be obtained from Kil'jaeden inside the Sunwell Plateau, on Heroic Difficulty.",
+        icon = 654
+    },
+    [252678] = {
+        itemid = 252678,
+        name = "Essence of Kalecgos",
+        creaturePreview = 224847,
+        creatureId = 224847,
+        description = "A rare Mount that can be obtained from Kil'jaeden inside the Sunwell Plateau, on Mythic Difficulty.",
+        icon = 655
+    },
+    [252679] = {
+        itemid = 252679,
+        name = "Essence of Anveena",
+        creaturePreview = 224848,
+        creatureId = 224848,
+        description = "A rare Mount that can be obtained from Kil'jaeden inside the Sunwell Plateau, on Ascended Difficulty.",
+        icon = 656
+    },
+    [254028] = {
+        itemid = 254028,
+        name = "Mystic Dreamrunner",
+        creaturePreview = 254053,
+        creatureId = 254053,
+        description = "Achievement Reward from Mystic Seeker.",
+        icon = 344
+    },
+    [254029] = {
+        itemid = 254029,
+        name = "Mystic Dreamfoal",
+        creaturePreview = 254057,
+        creatureId = 254057,
+        description = "Achievement Reward from Mystic Hunter.",
+        icon = 149
+    },
+    [254030] = {
+        itemid = 254030,
+        name = "Forest Sproutling",
+        creaturePreview = 254068,
+        creatureId = 254068,
+        description = "Has a chance to drop from herbing Motherlodes.",
+        icon = 481
+    },
+    [254031] = {
+        itemid = 254031,
+        name = "Stonechewer",
+        creaturePreview = 254069,
+        creatureId = 254069,
+        description = "Has a chance to drop from Mining Motherlodes.",
+        icon = 83
     },
     [254054] = {
         itemid = 254054,
@@ -15435,6 +26614,69 @@ AV_VanityItems = {
         zone = "Terokkar Forest",
         subzone = "Firewing Point",
         icon = 3
+    },
+    [254067] = {
+        itemid = 254067,
+        name = "Sigil of Dryn Miel",
+        creaturePreview = 254488,
+        creatureId = 254488,
+        description = "Has a chance to drop from Dryn Miel in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
+    },
+    [254068] = {
+        itemid = 254068,
+        name = "Sigil of Cynfael",
+        creaturePreview = 254489,
+        creatureId = 254489,
+        description = "Has a chance to drop from Cynfael in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
+    },
+    [254069] = {
+        itemid = 254069,
+        name = "Sigil of Kurgoth Doomreaver",
+        creaturePreview = 254490,
+        creatureId = 254490,
+        description = "Has a chance to drop from Kurgoth Doomreaver in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
+    },
+    [254070] = {
+        itemid = 254070,
+        name = "Sigil of Sinners",
+        creaturePreview = 254491,
+        creatureId = 254491,
+        description = "Has a chance to drop from The Judgement of Sinners in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
+    },
+    [254078] = {
+        itemid = 254078,
+        name = "Sigil of Kelivex Autumnvale",
+        creaturePreview = 254488,
+        creatureId = 254488,
+        description = "Has a chance to drop from Kelivex Autumnvale in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
+    },
+    [254079] = {
+        itemid = 254079,
+        name = "Sigil of Vorixus the Forlorn",
+        creaturePreview = 254488,
+        creatureId = 254488,
+        description = "Has a chance to drop from Vorixus the Forlorn in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
+    },
+    [254080] = {
+        itemid = 254080,
+        name = "Sigil of Captain Taveir",
+        creaturePreview = 254488,
+        creatureId = 254488,
+        description = "Has a chance to drop from Captain Taveir in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 486
     },
     [257058] = {
         itemid = 257058,
@@ -15628,6 +26870,46 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 5
     },
+    [264464] = {
+        itemid = 264464,
+        name = "Gill'dan",
+        creaturePreview = 223957,
+        creatureId = 223957,
+        description = "Available from the Webstore.",
+        icon = 137
+    },
+    [264465] = {
+        itemid = 264465,
+        name = "Bronze Swoglet",
+        creaturePreview = 46412,
+        creatureId = 46412,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 147
+    },
+    [264467] = {
+        itemid = 264467,
+        name = "Dusky Swoglet",
+        creaturePreview = 46414,
+        creatureId = 46414,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 145
+    },
+    [264468] = {
+        itemid = 264468,
+        name = "Crimson Swoglet",
+        creaturePreview = 46415,
+        creatureId = 46415,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 148
+    },
+    [264470] = {
+        itemid = 264470,
+        name = "Emerald Swoglet",
+        creaturePreview = 46417,
+        creatureId = 46417,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 146
+    },
     [274194] = {
         itemid = 274194,
         name = "Summoner's Stone: Aetherax",
@@ -15635,6 +26917,86 @@ AV_VanityItems = {
         creatureId = 211497,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 4.",
         icon = 3
+    },
+    [274437] = {
+        itemid = 274437,
+        name = "Obsidian Shredder Tank",
+        creaturePreview = 41209,
+        creatureId = 41209,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 90
+    },
+    [274438] = {
+        itemid = 274438,
+        name = "Azure Shredder Tank",
+        creaturePreview = 41210,
+        creatureId = 41210,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 91
+    },
+    [274440] = {
+        itemid = 274440,
+        name = "Amethyst Shredder Tank",
+        creaturePreview = 41212,
+        creatureId = 41212,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 724
+    },
+    [274441] = {
+        itemid = 274441,
+        name = "Crimson Shredder Tank",
+        creaturePreview = 41213,
+        creatureId = 41213,
+        description = "Available from the Webstore as part of the Crimson Junkwalker's Bundle.",
+        icon = 328
+    },
+    [274442] = {
+        itemid = 274442,
+        name = "Amber Shredder Tank",
+        creaturePreview = 41214,
+        creatureId = 41214,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 743
+    },
+    [278707] = {
+        itemid = 278707,
+        name = "Flarendo the Furious",
+        creaturePreview = 41216,
+        creatureId = 41216,
+        description = "Available from the Webstore.",
+        icon = 441
+    },
+    [278735] = {
+        itemid = 278735,
+        name = "Veluna's Collar",
+        creaturePreview = 54905,
+        creatureId = 54905,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 256
+    },
+    [278736] = {
+        itemid = 278736,
+        name = "Baixue's Collar",
+        creaturePreview = 54906,
+        creatureId = 54906,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 257
+    },
+    [278737] = {
+        itemid = 278737,
+        name = "Cindara's Collar",
+        creaturePreview = 54907,
+        creatureId = 54907,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 258
+    },
+    [280760] = {
+        itemid = 280760,
+        name = "S.A.V.I.O.R",
+        creaturePreview = 207016,
+        creatureId = 207016,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 731
     },
     [281749] = {
         itemid = 281749,
@@ -15700,6 +27062,159 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 3
     },
+    [283040] = {
+        itemid = 283040,
+        name = "Reins of The Headless Horseman's Ghoulish Charger",
+        creaturePreview = 41247,
+        creatureId = 41247,
+        description = "Available on the Webstore during Hallow's End.",
+        icon = 337
+    },
+    [287849] = {
+        itemid = 287849,
+        name = "Reins of Sha-touched Cloud Serpent",
+        creaturePreview = 319022,
+        creatureId = 319022,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 646
+    },
+    [293805] = {
+        itemid = 293805,
+        name = "Forest Falcon's Lure",
+        creaturePreview = 116128,
+        creatureId = 116128,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 169
+    },
+    [293806] = {
+        itemid = 293806,
+        name = "Brown Falcon's Lure",
+        creaturePreview = 116129,
+        creatureId = 116129,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 170
+    },
+    [293807] = {
+        itemid = 293807,
+        name = "Hunting Hawk's Lure",
+        creaturePreview = 116130,
+        creatureId = 116130,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 171
+    },
+    [293808] = {
+        itemid = 293808,
+        name = "Windhover Falcon's Lure",
+        creaturePreview = 116131,
+        creatureId = 116131,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 172
+    },
+    [293809] = {
+        itemid = 293809,
+        name = "Sea Hawk's Lure",
+        creaturePreview = 116132,
+        creatureId = 116132,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 173
+    },
+    [293824] = {
+        itemid = 293824,
+        name = "Redplume Hawk's Lure",
+        creaturePreview = 116134,
+        creatureId = 116134,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 174
+    },
+    [293825] = {
+        itemid = 293825,
+        name = "White Falcon's Lure",
+        creaturePreview = 116135,
+        creatureId = 116135,
+        description = "Obtained from Narkk's Unhatched Egg.",
+        icon = 175
+    },
+    [304496] = {
+        itemid = 304496,
+        name = "Addie's Collar",
+        creaturePreview = 122985,
+        creatureId = 122985,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 201
+    },
+    [304497] = {
+        itemid = 304497,
+        name = "Mia's Collar",
+        creaturePreview = 122986,
+        creatureId = 122986,
+        description = "Available from the Webstore.",
+        icon = 199
+    },
+    [304498] = {
+        itemid = 304498,
+        name = "Weechi's Collar",
+        creaturePreview = 122987,
+        creatureId = 122987,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 200
+    },
+    [304499] = {
+        itemid = 304499,
+        name = "Button's Collar",
+        creaturePreview = 122988,
+        creatureId = 122988,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 202
+    },
+    [305685] = {
+        itemid = 305685,
+        name = "Reins of the Astral Cloud Serpent",
+        creaturePreview = 800020,
+        creatureId = 800020,
+        description = "Available on the Webstore from the Celestial Observer's Master/Elite Warchest (Season 9 Bundle).",
+        icon = 196
+    },
+    [320548] = {
+        itemid = 320548,
+        name = "Core Hound Pup",
+        creaturePreview = 207115,
+        creatureId = 207115,
+        description = "Reward for participating in the Bronzebeard Stress Test.",
+        zone = "the Bronzebeard Stress Test",
+        icon = 9
+    },
+    [320554] = {
+        itemid = 320554,
+        name = "Fel Pup",
+        creaturePreview = 80899,
+        creatureId = 80899,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 531
+    },
+    [326514] = {
+        itemid = 326514,
+        name = "Void Borne Core Pup",
+        creaturePreview = 89000,
+        creatureId = 89000,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 529
+    },
+    [326770] = {
+        itemid = 326770,
+        name = "Enthralled Gravewing's Chitter-Call",
+        creaturePreview = 216247,
+        creatureId = 216247,
+        description = "Available from the Webstore as part of the Dark Ranger General's Hoard only.",
+        icon = 214
+    },
+    [329559] = {
+        itemid = 329559,
+        name = "Arcane Bound Core Pup",
+        creaturePreview = 207118,
+        creatureId = 207118,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 534
+    },
     [333413] = {
         itemid = 333413,
         name = "Beastmaster's Whistle: Fel-infused Mana Ray",
@@ -15756,6 +27271,130 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
     },
+    [334410] = {
+        itemid = 334410,
+        name = "Corrupted Gladiator's Proto-Drake",
+        creaturePreview = 347771,
+        creatureId = 347771,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 586
+    },
+    [334411] = {
+        itemid = 334411,
+        name = "Sinister Gladiator's Proto-Drake",
+        creaturePreview = 347772,
+        creatureId = 347772,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 587
+    },
+    [334412] = {
+        itemid = 334412,
+        name = "Spiteful Gladiator's Proto-Drake",
+        creaturePreview = 347773,
+        creatureId = 347773,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 588
+    },
+    [334413] = {
+        itemid = 334413,
+        name = "Vile Gladiator's Proto-Drake",
+        creaturePreview = 347774,
+        creatureId = 347774,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 589
+    },
+    [334414] = {
+        itemid = 334414,
+        name = "Malevolent Gladiator's Proto-Drake",
+        creaturePreview = 347775,
+        creatureId = 347775,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 590
+    },
+    [334415] = {
+        itemid = 334415,
+        name = "Dread Gladiator's Proto-Drake",
+        creaturePreview = 347776,
+        creatureId = 347776,
+        description = "Reward from Arena Frenzy.",
+        icon = 592
+    },
+    [334416] = {
+        itemid = 334416,
+        name = "Notorious Gladiator's Proto-Drake",
+        creaturePreview = 347777,
+        creatureId = 347777,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 591
+    },
+    [343204] = {
+        itemid = 343204,
+        name = "Azure Sky Stalker's Reins",
+        creaturePreview = 119921,
+        creatureId = 119921,
+        description = "Achievement Reward from Black Temple - Normal.",
+        icon = 209
+    },
+    [343205] = {
+        itemid = 343205,
+        name = "Cadmium Sky Stalker's Reins",
+        creaturePreview = 119922,
+        creatureId = 119922,
+        description = "Achievement Reward from Black Temple - Heroic.",
+        icon = 207
+    },
+    [343206] = {
+        itemid = 343206,
+        name = "Violet Sky Stalker's Reins",
+        creaturePreview = 119923,
+        creatureId = 119923,
+        description = "Achievement Reward from Black Temple- Mythic.",
+        icon = 208
+    },
+    [343207] = {
+        itemid = 343207,
+        name = "Stygian Sky Stalker's Reins",
+        creaturePreview = 119924,
+        creatureId = 119924,
+        description = "Achievement Reward from Black Temple - Ascended.",
+        icon = 206
+    },
+    [343208] = {
+        itemid = 343208,
+        name = "Reins of the Betrayer's Savage Spire Terror",
+        creaturePreview = 119929,
+        creatureId = 119929,
+        description = "Has a chance to drop from Illidan Stormrage within the Black Temple on normal difficulty.",
+        zone = "the Black Temple on normal difficulty",
+        icon = 238
+    },
+    [343209] = {
+        itemid = 343209,
+        name = "Reins of the Betrayer's Felsworn Spire Terror",
+        creaturePreview = 119930,
+        creatureId = 119930,
+        description = "Has a chance to drop from Illidan Stormrage within the Black Temple on heroic difficulty.",
+        zone = "the Black Temple on heroic difficulty",
+        icon = 240
+    },
+    [343210] = {
+        itemid = 343210,
+        name = "Reins of the Betrayer's Supreme Spire Terror",
+        creaturePreview = 119931,
+        creatureId = 119931,
+        description = "Has a chance to drop from Illidan Stormrage within the Black Temple on mythic difficulty.",
+        zone = "the Black Temple on mythic difficulty",
+        icon = 237
+    },
+    [343211] = {
+        itemid = 343211,
+        name = "Reins of the Betrayer's Unscarred Spire Terror",
+        creaturePreview = 119932,
+        creatureId = 119932,
+        description = "Has a chance to drop from Illidan Stormrage within the Black Temple on ascended difficulty.",
+        zone = "the Black Temple on ascended difficulty",
+        icon = 241
+    },
     [347302] = {
         itemid = 347302,
         name = "Beastmaster's Whistle: Alvajar War Wolf",
@@ -15773,6 +27412,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Risen Alvajar within Frozen Reach.",
         zone = "Frozen Reach",
         icon = 2
+    },
+    [348378] = {
+        itemid = 348378,
+        name = "Scribe's Kooky Quill",
+        creaturePreview = 139981,
+        creatureId = 139981,
+        description = "Translator's Reward: Milstone 4.",
+        icon = 637
     },
     [348634] = {
         itemid = 348634,
@@ -15806,6 +27453,38 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
     },
+    [348731] = {
+        itemid = 348731,
+        name = "Eve's Green Ghastly Rider",
+        creaturePreview = 357902,
+        creatureId = 357902,
+        description = "Available on the Webstore during Hallow's End.",
+        icon = 183
+    },
+    [350183] = {
+        itemid = 350183,
+        name = "Golden Armored Storm Gryphon",
+        creaturePreview = 407656,
+        creatureId = 407656,
+        description = "Available from the Webstore as part of the Golden Gryphon Rider's Bundle.",
+        icon = 331
+    },
+    [350185] = {
+        itemid = 350185,
+        name = "Dark Armored Storm Gryphon",
+        creaturePreview = 407658,
+        creatureId = 407658,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 332
+    },
+    [350186] = {
+        itemid = 350186,
+        name = "Silver Armored Storm Gryphon",
+        creaturePreview = 407659,
+        creatureId = 407659,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 333
+    },
     [354048] = {
         itemid = 354048,
         name = "Elemental Lodestone: Stone Fury",
@@ -15814,6 +27493,22 @@ AV_VanityItems = {
         description = "Has a chance to drop from Stone Fury within Eastern Kingdoms.",
         zone = "Eastern Kingdoms",
         icon = 5
+    },
+    [354119] = {
+        itemid = 354119,
+        name = "Docile Mystwood Lasher",
+        creaturePreview = 254609,
+        creatureId = 254609,
+        description = "Found in the open world!.",
+        icon = 480
+    },
+    [354157] = {
+        itemid = 354157,
+        name = "Frightened Kitten",
+        creaturePreview = 254610,
+        creatureId = 254610,
+        description = "Found in the open world!.",
+        icon = 558
     },
     [355070] = {
         itemid = 355070,
@@ -15833,6 +27528,14 @@ AV_VanityItems = {
         zone = "Azshara",
         icon = 4
     },
+    [360869] = {
+        itemid = 360869,
+        name = "Rockling",
+        creaturePreview = 453247,
+        creatureId = 453247,
+        description = "Available from the Webstore.",
+        icon = 732
+    },
     [392169] = {
         itemid = 392169,
         name = "Summoner's Stone: Shadow of Xavius",
@@ -15840,6 +27543,118 @@ AV_VanityItems = {
         creatureId = 79058,
         description = "Available from the Webstore.",
         icon = 3
+    },
+    [393445] = {
+        itemid = 393445,
+        name = "Reins of the Kaleidoscale Slitherdrake",
+        creaturePreview = 357896,
+        creatureId = 357896,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 638
+    },
+    [393446] = {
+        itemid = 393446,
+        name = "Otterreal Thundertrotter's Saddle",
+        creaturePreview = 357682,
+        creatureId = 357682,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 620
+    },
+    [393447] = {
+        itemid = 393447,
+        name = "Horn of Fenrir",
+        creaturePreview = 357872,
+        creatureId = 357872,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 710
+    },
+    [393449] = {
+        itemid = 393449,
+        name = "Ash'adar, Harbinger of Dusk",
+        creaturePreview = 52809,
+        creatureId = 52809,
+        description = "Available from the Webstore as part of the Moonlit Hoard of Unrelenting Justice Bundle.",
+        icon = 227
+    },
+    [393450] = {
+        itemid = 393450,
+        name = "Ash'adar, Harbinger of the Dawn",
+        creaturePreview = 357864,
+        creatureId = 357864,
+        description = "Available from the Webstore as part of the Gleaming Hoard of Unrelenting Justice Bundle.",
+        icon = 227
+    },
+    [393610] = {
+        itemid = 393610,
+        name = "Warcraft Reborn Book of Ascension",
+        creaturePreview = 108586,
+        creatureId = 108586,
+        description = "Available from the Webstore.",
+        icon = 301
+    },
+    [398247] = {
+        itemid = 398247,
+        name = "Huntmaster's Fierce Wolfhawk",
+        creaturePreview = 40629,
+        creatureId = 40629,
+        description = "Available from the Webstore as part of the Verdant Eagletalon Bundle.",
+        icon = 357
+    },
+    [398248] = {
+        itemid = 398248,
+        name = "Huntmaster's Loyal Wolfhawk",
+        creaturePreview = 40630,
+        creatureId = 40630,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 358
+    },
+    [398249] = {
+        itemid = 398249,
+        name = "Huntmaster's Dire Wolfhawk",
+        creaturePreview = 40631,
+        creatureId = 40631,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 356
+    },
+    [400015] = {
+        itemid = 400015,
+        name = "Reins of the Ruby Scorpion",
+        creaturePreview = 100261,
+        creatureId = 100261,
+        description = "Available from the Webstore.",
+        icon = 532
+    },
+    [400016] = {
+        itemid = 400016,
+        name = "Horrific Serpent of N'Zoth",
+        creaturePreview = 100262,
+        creatureId = 100262,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 545
+    },
+    [400017] = {
+        itemid = 400017,
+        name = "Lightsworn Wyvern",
+        creaturePreview = 100263,
+        creatureId = 100263,
+        description = "Available from the Webstore.",
+        icon = 245
+    },
+    [400018] = {
+        itemid = 400018,
+        name = "Seraph's Charger",
+        creaturePreview = 100264,
+        creatureId = 100264,
+        description = "Available from the Webstore.",
+        icon = 74
+    },
+    [400024] = {
+        itemid = 400024,
+        name = "Prized Turkey's Saddle",
+        creaturePreview = 100277,
+        creatureId = 100277,
+        description = "Few things inspire fear like a fully armored turkey charging at you.",
+        icon = 698
     },
     [400070] = {
         itemid = 400070,
@@ -15921,6 +27736,62 @@ AV_VanityItems = {
         description = "Can be purchased from the Argent Quartermaster.",
         icon = 3
     },
+    [400285] = {
+        itemid = 400285,
+        name = "Stressed Murloc - League 4 Stress Test Exclusive",
+        creaturePreview = 300285,
+        creatureId = 300285,
+        description = "Obtained by participating of League 4 Stress Test.",
+        icon = 477
+    },
+    [400563] = {
+        itemid = 400563,
+        name = "Reins of the Emerald Hippogryph",
+        creaturePreview = 578796,
+        creatureId = 578796,
+        description = "Born of wild jade canopies, this Emerald Hippogryph soars within nature’s boundless grace.",
+        icon = 464
+    },
+    [428236] = {
+        itemid = 428236,
+        name = "Reins of Silvershine Sentinel",
+        creaturePreview = 404525,
+        creatureId = 404525,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 448
+    },
+    [428545] = {
+        itemid = 428545,
+        name = "Reins of the Mechagon Assault Tank",
+        creaturePreview = 325865,
+        creatureId = 325865,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 444
+    },
+    [428546] = {
+        itemid = 428546,
+        name = "Reins of the Mechagon Enforcer Unit",
+        creaturePreview = 325866,
+        creatureId = 325866,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 445
+    },
+    [439040] = {
+        itemid = 439040,
+        name = "Tinkertrot",
+        creaturePreview = 7535,
+        creatureId = 7535,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 442
+    },
+    [442008] = {
+        itemid = 442008,
+        name = "Pet Cage - World First Archimonde",
+        creaturePreview = 42008,
+        creatureId = 42008,
+        description = "Obtained by achieving World First Archimonde.",
+        icon = 181
+    },
     [442009] = {
         itemid = 442009,
         name = "Elemental Lodestone: Wretched Treemouth",
@@ -15953,13 +27824,969 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 5
     },
+    [448724] = {
+        itemid = 448724,
+        name = "Hailstorm Armoredon's Saddle",
+        creaturePreview = 357890,
+        creatureId = 357890,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 615
+    },
+    [448725] = {
+        itemid = 448725,
+        name = "Inferno Armoredon's Saddle",
+        creaturePreview = 357889,
+        creatureId = 357889,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 614
+    },
+    [448726] = {
+        itemid = 448726,
+        name = "Tzar, Lord of Steeds",
+        creaturePreview = 357589,
+        creatureId = 357589,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 740
+    },
+    [450886] = {
+        itemid = 450886,
+        name = "The \"Kodo Egg\"",
+        creaturePreview = 519908,
+        creatureId = 519908,
+        description = "Found in the open world!.",
+        icon = 268
+    },
+    [454011] = {
+        itemid = 454011,
+        name = "Lesser Psychophage",
+        creaturePreview = 454009,
+        creatureId = 454009,
+        description = "Has a chance to drop from The Will of Soggoth.",
+        icon = 467
+    },
     [480382] = {
         itemid = 480382,
         name = "Beastmaster's Whistle: Captain Claws",
         creaturePreview = 417217,
         creatureId = 417217,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 1
+    },
+    [492179] = {
+        itemid = 492179,
+        name = "Pet Cage - World First Chromius",
+        creaturePreview = 492179,
+        creatureId = 492179,
+        description = "Obtained by achieving World First Chromius.",
+        icon = 181
+    },
+    [499181] = {
+        itemid = 499181,
+        name = "Arboreal Gulper",
+        creaturePreview = 499448,
+        creatureId = 499448,
+        description = "Drops from the Arboreal Gulper: a rare in Zangarmarsh!.",
+        icon = 689
+    },
+    [499183] = {
+        itemid = 499183,
+        name = "Brilliant Kaliri",
+        creaturePreview = 54374,
+        creatureId = 54374,
+        description = "Achievement Reward from Menagerie (Collect 125 Pets).",
+        icon = 288
+    },
+    [499184] = {
+        itemid = 499184,
+        name = "Nuts' Acorn",
+        creaturePreview = 54227,
+        creatureId = 54227,
+        description = "Achievement Reward from Petting Zoo (Collect 100 Pets).",
+        icon = 469
+    },
+    [499192] = {
+        itemid = 499192,
+        name = "Lump of Coal",
+        creaturePreview = 499454,
+        creatureId = 499454,
+        description = "Has a chance to drop from Grumpus during the Feast of Winter Veil.",
+        icon = 549
+    },
+    [499202] = {
+        itemid = 499202,
+        name = "Aeon",
+        creaturePreview = 499456,
+        creatureId = 499456,
+        description = "Available on the Webstore from the Warcache of Radiant Glory.",
+        icon = 325
+    },
+    [499203] = {
+        itemid = 499203,
+        name = "Reins of the Vigilant Charger",
+        creaturePreview = 499457,
+        creatureId = 499457,
+        description = "Available on the Webstore from the Warcache of Radiant Glory.",
+        icon = 550
+    },
+    [499304] = {
+        itemid = 499304,
+        name = "Wriggling Parasite",
+        creaturePreview = 499458,
+        creatureId = 499458,
+        description = "Available from the Webstore.",
+        icon = 544
+    },
+    [499305] = {
+        itemid = 499305,
+        name = "Syd",
+        creaturePreview = 499459,
+        creatureId = 499459,
+        description = "Available from the Webstore.",
+        icon = 468
+    },
+    [499306] = {
+        itemid = 499306,
+        name = "Soul of the Aspects",
+        creaturePreview = 499460,
+        creatureId = 499460,
+        description = "Available on the Webstore from Cache of the Colossus bundle.",
+        icon = 560
+    },
+    [499307] = {
+        itemid = 499307,
+        name = "Glorious Felcrusher",
+        creaturePreview = 499461,
+        creatureId = 499461,
+        description = "Available on the Webstore from Cache of Chosen Legends bundle.",
+        icon = 402
+    },
+    [499308] = {
+        itemid = 499308,
+        name = "Spawn of Galakras",
+        creaturePreview = 499474,
+        creatureId = 499474,
+        description = "Available from the Webstore.",
+        icon = 47
+    },
+    [499309] = {
+        itemid = 499309,
+        name = "Valarjar Stormwing",
+        creaturePreview = 499947,
+        creatureId = 499947,
+        description = "Available from the Webstore.",
+        icon = 672
+    },
+    [499363] = {
+        itemid = 499363,
+        name = "Ny'alotha Allseer",
+        creaturePreview = 499475,
+        creatureId = 499475,
+        description = "Reward from Nightmare - Personal Nightmare Trial.",
+        icon = 282
+    },
+    [499364] = {
+        itemid = 499364,
+        name = "Razor-Lined Reins of Dark Portent",
+        creaturePreview = 499476,
+        creatureId = 499476,
+        description = "Has a chance to drop from Crow's Cache.",
+        icon = 625
+    },
+    [499367] = {
+        itemid = 499367,
+        name = "Uncorrupted Voidwing",
+        creaturePreview = 499477,
+        creatureId = 499477,
+        description = "Reward from Nightmare Trial.",
+        icon = 703
+    },
+    [499378] = {
+        itemid = 499378,
+        name = "Pandaren Kite String",
+        creaturePreview = 499478,
+        creatureId = 499478,
+        description = "Available from the Webstore.",
+        icon = 56
+    },
+    [499379] = {
+        itemid = 499379,
+        name = "Reins of The Wind Raven",
+        creaturePreview = 499480,
+        creatureId = 499480,
+        description = "Achievement Reward from Mount Parade (Collect 200 Mounts).",
+        icon = 251
+    },
+    [499386] = {
+        itemid = 499386,
+        name = "Felfire Hawk",
+        creaturePreview = 499483,
+        creatureId = 499483,
+        description = "Obtained from Felfire Portals found across Outland.",
+        icon = 505
+    },
+    [499387] = {
+        itemid = 499387,
+        name = "Silent Glider",
+        creaturePreview = 499484,
+        creatureId = 499484,
+        description = "Achievement Reward from We're Going to Need More Saddles (Collect 150 Mounts).",
+        icon = 645
+    },
+    [499388] = {
+        itemid = 499388,
+        name = "Sunblade Rune of Activation",
+        creaturePreview = 499485,
+        creatureId = 499485,
+        description = "Available on the Webstore from the Executioner's War Cache bundle.",
+        icon = 578
+    },
+    [499389] = {
+        itemid = 499389,
+        name = "Decaying Reins of the Vilebrood Vanquisher",
+        creaturePreview = 499486,
+        creatureId = 499486,
+        description = "Available on the Webstore from the Deathlord's Onslaught bundle.",
+        icon = 28
+    },
+    [499390] = {
+        itemid = 499390,
+        name = "Onyx Serpent Hatchling",
+        creaturePreview = 499487,
+        creatureId = 499487,
+        description = "Available on the Webstore from the Raven's Eclipse bundle.",
+        icon = 204
+    },
+    [499391] = {
+        itemid = 499391,
+        name = "Reins of the Heavenly Onyx Cloud Serpent",
+        creaturePreview = 499488,
+        creatureId = 499488,
+        description = "Available on the Webstore from the Raven's Eclipse bundle.",
+        icon = 552
+    },
+    [499420] = {
+        itemid = 499420,
+        name = "Pandaren Fire Spirit",
+        creaturePreview = 499493,
+        creatureId = 499493,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 573
+    },
+    [499421] = {
+        itemid = 499421,
+        name = "K'ute",
+        creaturePreview = 499494,
+        creatureId = 499494,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 570
+    },
+    [499422] = {
+        itemid = 499422,
+        name = "Chi-Chi, Hatchling of Chi-Ji",
+        creaturePreview = 499495,
+        creatureId = 499495,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 562
+    },
+    [499423] = {
+        itemid = 499423,
+        name = "Ra' Kim",
+        creaturePreview = 499501,
+        creatureId = 499501,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 367
+    },
+    [499424] = {
+        itemid = 499424,
+        name = "Netherlord's Chaotic Wrathsteed",
+        creaturePreview = 499496,
+        creatureId = 499496,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy).",
+        icon = 706
+    },
+    [499425] = {
+        itemid = 499425,
+        name = "Clutch of Ji-Kun",
+        creaturePreview = 499497,
+        creatureId = 499497,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy).",
+        icon = 82
+    },
+    [499426] = {
+        itemid = 499426,
+        name = "Enchanted Fey Dragon",
+        creaturePreview = 499499,
+        creatureId = 499499,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy).",
+        icon = 283
+    },
+    [499438] = {
+        itemid = 499438,
+        name = "Smoldering Ember Wyrm",
+        creaturePreview = 499811,
+        creatureId = 499811,
+        description = "Has a chance to drop from Prince Malchezaar within Karazhan on Ascended difficulty.",
+        zone = "Karazhan on Ascended difficulty",
+        icon = 541
+    },
+    [499475] = {
+        itemid = 499475,
+        name = "Rabid Worg (White)",
+        creaturePreview = 499519,
+        creatureId = 499519,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 236
+    },
+    [499476] = {
+        itemid = 499476,
+        name = "Rabid Worg (Stone)",
+        creaturePreview = 499520,
+        creatureId = 499520,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 235
+    },
+    [499477] = {
+        itemid = 499477,
+        name = "Rabid Worg (Red)",
+        creaturePreview = 499521,
+        creatureId = 499521,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 234
+    },
+    [499478] = {
+        itemid = 499478,
+        name = "Rabid Worg (Purple)",
+        creaturePreview = 499522,
+        creatureId = 499522,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 233
+    },
+    [499479] = {
+        itemid = 499479,
+        name = "Rabid Worg (Gray)",
+        creaturePreview = 499523,
+        creatureId = 499523,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 232
+    },
+    [499480] = {
+        itemid = 499480,
+        name = "Rabid Worg (Brown)",
+        creaturePreview = 499524,
+        creatureId = 499524,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 231
+    },
+    [499481] = {
+        itemid = 499481,
+        name = "Vulpin Hyena",
+        creaturePreview = 499557,
+        creatureId = 499557,
+        description = "Available on the Webstore from the Marauder's Battle Cache.",
+        icon = 704
+    },
+    [499482] = {
+        itemid = 499482,
+        name = "Rabid Worg (Black)",
+        creaturePreview = 499566,
+        creatureId = 499566,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 230
+    },
+    [499483] = {
+        itemid = 499483,
+        name = "Witchwood Stag (White)",
+        creaturePreview = 499531,
+        creatureId = 499531,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 121
+    },
+    [499484] = {
+        itemid = 499484,
+        name = "Witchwood Stag (Teal)",
+        creaturePreview = 499532,
+        creatureId = 499532,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 120
+    },
+    [499485] = {
+        itemid = 499485,
+        name = "Witchwood Stag (Dark)",
+        creaturePreview = 499533,
+        creatureId = 499533,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 119
+    },
+    [499486] = {
+        itemid = 499486,
+        name = "Witchwood Stag (Blue)",
+        creaturePreview = 499534,
+        creatureId = 499534,
+        description = "Available on the Webstore from the Ascension: Wrath of the Lich King - Alpha Bundle.",
+        icon = 118
+    },
+    [499487] = {
+        itemid = 499487,
+        name = "Coven Talbuk (White)",
+        creaturePreview = 499546,
+        creatureId = 499546,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 117
+    },
+    [499488] = {
+        itemid = 499488,
+        name = "Coven Talbuk (Teal)",
+        creaturePreview = 499547,
+        creatureId = 499547,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 116
+    },
+    [499489] = {
+        itemid = 499489,
+        name = "Coven Talbuk (Dark)",
+        creaturePreview = 499548,
+        creatureId = 499548,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 115
+    },
+    [499490] = {
+        itemid = 499490,
+        name = "Coven Talbuk (Blue)",
+        creaturePreview = 499549,
+        creatureId = 499549,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 114
+    },
+    [499539] = {
+        itemid = 499539,
+        name = "Dawnforge Ram",
+        creaturePreview = 499593,
+        creatureId = 499593,
+        description = "Available on the Webstore from the Dawnforged Battle bundle.",
+        icon = 264
+    },
+    [499576] = {
+        itemid = 499576,
+        name = "Ancient Guardian of Dawn",
+        creaturePreview = 499592,
+        creatureId = 499592,
+        description = "Available on the Webstore from the Dawnforged Battle Bundle.",
+        icon = 280
+    },
+    [499577] = {
+        itemid = 499577,
+        name = "Zao, Calfling of Niuzao",
+        creaturePreview = 499595,
+        creatureId = 499595,
+        description = "Available on the Webstore from the Yaungol Slayer Battle Bundle.",
+        icon = 580
+    },
+    [499578] = {
+        itemid = 499578,
+        name = "Reins of the Grey Riding Yak",
+        creaturePreview = 499594,
+        creatureId = 499594,
+        description = "Available on the Webstore from the Yaungol Slayer Battle Bundle.",
+        icon = 79
+    },
+    [499579] = {
+        itemid = 499579,
+        name = "Predatory Bloodgazer",
+        creaturePreview = 499600,
+        creatureId = 499600,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 284
+    },
+    [499580] = {
+        itemid = 499580,
+        name = "Viridian Sharptalon",
+        creaturePreview = 499599,
+        creatureId = 499599,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 285
+    },
+    [499581] = {
+        itemid = 499581,
+        name = "Brilliant Direbeak",
+        creaturePreview = 499598,
+        creatureId = 499598,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 286
+    },
+    [499582] = {
+        itemid = 499582,
+        name = "Snowfeather Hunter",
+        creaturePreview = 499597,
+        creatureId = 499597,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 287
+    },
+    [499583] = {
+        itemid = 499583,
+        name = "Lucid Nightmare",
+        creaturePreview = 499596,
+        creatureId = 499596,
+        description = "Available from the Webstore.",
+        icon = 350
+    },
+    [499633] = {
+        itemid = 499633,
+        name = "Lil' Nefarian",
+        creaturePreview = 499918,
+        creatureId = 499918,
+        description = "Available from the Webstore.",
+        icon = 276
+    },
+    [499636] = {
+        itemid = 499636,
+        name = "Warforged Nightmare",
+        creaturePreview = 499753,
+        creatureId = 499753,
+        description = "Obtained by Placing in the Top 10 of 1v1 or 2v2 in PvP Progression (Classic).",
+        icon = 25
+    },
+    [499637] = {
+        itemid = 499637,
+        name = "Wisper",
+        creaturePreview = 499754,
+        creatureId = 499754,
+        description = "Available on the Webstore from the Tempest's Treasure.",
+        icon = 579
+    },
+    [499638] = {
+        itemid = 499638,
+        name = "High Priest's Lightsworn Seeker",
+        creaturePreview = 499755,
+        creatureId = 499755,
+        description = "Available on the Webstore from the Tempest's Treasure.",
+        icon = 581
+    },
+    [499639] = {
+        itemid = 499639,
+        name = "Kor'kron Juggernaut",
+        creaturePreview = 499756,
+        creatureId = 499756,
+        description = "Unused Sheet.",
+        icon = 44
+    },
+    [499659] = {
+        itemid = 499659,
+        name = "Coaldust Alpaca",
+        creaturePreview = 499809,
+        creatureId = 499809,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 109
+    },
+    [499660] = {
+        itemid = 499660,
+        name = "Mollie",
+        creaturePreview = 499808,
+        creatureId = 499808,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 110
+    },
+    [499661] = {
+        itemid = 499661,
+        name = "Snowdust Alpaca",
+        creaturePreview = 499807,
+        creatureId = 499807,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 111
+    },
+    [499662] = {
+        itemid = 499662,
+        name = "Alterac Alpaca",
+        creaturePreview = 499806,
+        creatureId = 499806,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 112
+    },
+    [499663] = {
+        itemid = 499663,
+        name = "Springfur Alpaca",
+        creaturePreview = 499805,
+        creatureId = 499805,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 113
+    },
+    [499664] = {
+        itemid = 499664,
+        name = "Squeakers, the Trickster",
+        creaturePreview = 499810,
+        creatureId = 499810,
+        description = "Available from the Webstore.",
+        icon = 725
+    },
+    [499674] = {
+        itemid = 499674,
+        name = "Reins of the Explorer's Dunetrekker",
+        creaturePreview = 499812,
+        creatureId = 499812,
+        description = "Available from the Webstore.",
+        icon = 187
+    },
+    [499675] = {
+        itemid = 499675,
+        name = "Reins of the Brown Riding Camel",
+        creaturePreview = 499814,
+        creatureId = 499814,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 20
+    },
+    [499676] = {
+        itemid = 499676,
+        name = "Reins of the Tan Riding Camel",
+        creaturePreview = 499813,
+        creatureId = 499813,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 22
+    },
+    [499677] = {
+        itemid = 499677,
+        name = "Reins of the Grey Riding Camel",
+        creaturePreview = 499815,
+        creatureId = 499815,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 21
+    },
+    [499678] = {
+        itemid = 499678,
+        name = "Reins of the White Riding Camel",
+        creaturePreview = 499816,
+        creatureId = 499816,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 21
+    },
+    [499679] = {
+        itemid = 499679,
+        name = "Minion of Grumpus",
+        creaturePreview = 499817,
+        creatureId = 499817,
+        description = "Has a chance to drop from Grumpus during the Feast of Winter Veil.",
+        icon = 493
+    },
+    [499869] = {
+        itemid = 499869,
+        name = "Vicious White Bonesteed",
+        creaturePreview = 499874,
+        creatureId = 499874,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 651
+    },
+    [499870] = {
+        itemid = 499870,
+        name = "Honeyback Hivemother",
+        creaturePreview = 499875,
+        creatureId = 499875,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 164
+    },
+    [499871] = {
+        itemid = 499871,
+        name = "Honeyback Drone",
+        creaturePreview = 499876,
+        creatureId = 499876,
+        description = "Available from the Webstore.",
+        icon = 166
+    },
+    [499872] = {
+        itemid = 499872,
+        name = "Honeyback Harvester's Harness",
+        creaturePreview = 499877,
+        creatureId = 499877,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 165
+    },
+    [499873] = {
+        itemid = 499873,
+        name = "Rubyshell Krolusk",
+        creaturePreview = 499878,
+        creatureId = 499878,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 697
+    },
+    [499874] = {
+        itemid = 499874,
+        name = "Azureshell Krolusk",
+        creaturePreview = 499879,
+        creatureId = 499879,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 696
+    },
+    [499875] = {
+        itemid = 499875,
+        name = "Risen Mare",
+        creaturePreview = 499880,
+        creatureId = 499880,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 75
+    },
+    [499876] = {
+        itemid = 499876,
+        name = "Stonehide Elderhorn",
+        creaturePreview = 499881,
+        creatureId = 499881,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 485
+    },
+    [499877] = {
+        itemid = 499877,
+        name = "Vicious Black Bonesteed",
+        creaturePreview = 499882,
+        creatureId = 499882,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 650
+    },
+    [499878] = {
+        itemid = 499878,
+        name = "Vicious Black Warsaber",
+        creaturePreview = 499883,
+        creatureId = 499883,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 78
+    },
+    [499879] = {
+        itemid = 499879,
+        name = "G.M.O.D",
+        creaturePreview = 499884,
+        creatureId = 499884,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 86
+    },
+    [499880] = {
+        itemid = 499880,
+        name = "Yellow Marsh Hopper",
+        creaturePreview = 499885,
+        creatureId = 499885,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 719
+    },
+    [499881] = {
+        itemid = 499881,
+        name = "Green Marsh Hopper",
+        creaturePreview = 499886,
+        creatureId = 499886,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 719
+    },
+    [499882] = {
+        itemid = 499882,
+        name = "Blue Marsh Hopper",
+        creaturePreview = 499887,
+        creatureId = 499887,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 719
+    },
+    [499883] = {
+        itemid = 499883,
+        name = "Captured Umber Nightsaber",
+        creaturePreview = 499888,
+        creatureId = 499888,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 542
+    },
+    [499884] = {
+        itemid = 499884,
+        name = "Sandy Nightsaber",
+        creaturePreview = 499889,
+        creatureId = 499889,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 543
+    },
+    [499885] = {
+        itemid = 499885,
+        name = "Frightened Kodo",
+        creaturePreview = 499890,
+        creatureId = 499890,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 46
+    },
+    [499886] = {
+        itemid = 499886,
+        name = "Kaldorei Nightsaber",
+        creaturePreview = 499891,
+        creatureId = 499891,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 542
+    },
+    [499887] = {
+        itemid = 499887,
+        name = "Blackpaw",
+        creaturePreview = 499892,
+        creatureId = 499892,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 727
+    },
+    [499933] = {
+        itemid = 499933,
+        name = "Reins of the Golden Vulpine Familiar",
+        creaturePreview = 499933,
+        creatureId = 499933,
+        description = "Reward from Hardcore Resolute - 1x Experience Trial.",
+        icon = 275
+    },
+    [499937] = {
+        itemid = 499937,
+        name = "Reins of the Mighty Caravan Brutosaur",
+        creaturePreview = 499937,
+        creatureId = 499937,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 182
+    },
+    [499940] = {
+        itemid = 499940,
+        name = "Reins of the Illidari Felstalker",
+        creaturePreview = 499940,
+        creatureId = 499940,
+        description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon.",
+        icon = 298
+    },
+    [499942] = {
+        itemid = 499942,
+        name = "Reins of the Mechagon Peacekeeper",
+        creaturePreview = 499924,
+        creatureId = 499924,
+        description = "Available from the Webstore.",
+        icon = 443
+    },
+    [499943] = {
+        itemid = 499943,
+        name = "Reins of the Felsaber",
+        creaturePreview = 499943,
+        creatureId = 499943,
+        description = "Reward from Hardcore Trial.",
+        icon = 239
+    },
+    [499944] = {
+        itemid = 499944,
+        name = "Reins of the Royal Snapdragon",
+        creaturePreview = 499930,
+        creatureId = 499930,
+        description = "Available from the Webstore.",
+        icon = 659
+    },
+    [499945] = {
+        itemid = 499945,
+        name = "Reins of the Bloodgorged Crawg",
+        creaturePreview = 499921,
+        creatureId = 499921,
+        description = "Available from the Webstore.",
+        icon = 177
+    },
+    [499984] = {
+        itemid = 499984,
+        name = "Reins of the Warsong Wolf",
+        creaturePreview = 53985,
+        creatureId = 53985,
+        description = "Can be purchased from Honor Quartermasters after reaching exalted within the Warsong Outriders.",
+        zone = "the Warsong Outriders",
+        icon = 343
+    },
+    [499987] = {
+        itemid = 499987,
+        name = "Reins of the Silverwing Nightsaber",
+        creaturePreview = 499987,
+        creatureId = 499987,
+        description = "Can be purchased from Honor Quartermasters after reaching exalted within the Silverwing Sentinels.",
+        zone = "the Silverwing Sentinels",
+        icon = 708
+    },
+    [499990] = {
+        itemid = 499990,
+        name = "Reins of the Vulpine Familiar",
+        creaturePreview = 499990,
+        creatureId = 499990,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 274
+    },
+    [499995] = {
+        itemid = 499995,
+        name = "Reins of the Mag'har Direwolf",
+        creaturePreview = 499995,
+        creatureId = 499995,
+        description = "Available from the Webstore.",
+        icon = 547
+    },
+    [499998] = {
+        itemid = 499998,
+        name = "Reins of the Scourgelord's Deathcharger",
+        creaturePreview = 499998,
+        creatureId = 499998,
+        description = "Previously was obtainable from Scourge Invasions.",
+        icon = 652
+    },
+    [500002] = {
+        itemid = 500002,
+        name = "The Hivemind",
+        creaturePreview = 500022,
+        creatureId = 500022,
+        description = "Reward from Hardcore Trio - Holy Trinity Trial.",
+        icon = 342
+    },
+    [500005] = {
+        itemid = 500005,
+        name = "Heart of the Nightwing",
+        creaturePreview = 500145,
+        creatureId = 500145,
+        description = "Reward from Hardcore Duo - Pair in the Lair Trial.",
+        zone = "the Lair Trial",
+        icon = 502
+    },
+    [500006] = {
+        itemid = 500006,
+        name = "Reins of the Spirited Scarlet Steed",
+        creaturePreview = 300148,
+        creatureId = 300148,
+        description = "Can be purchased from Vearn Buildbeard.",
+        icon = 51
+    },
+    [501000] = {
+        itemid = 501000,
+        name = "Reins of the Ashhide Mushan Beast",
+        creaturePreview = 100230,
+        creatureId = 100230,
+        description = "Available from the Webstore.",
+        icon = 537
+    },
+    [503291] = {
+        itemid = 503291,
+        name = "Feline Familiar",
+        creaturePreview = 519906,
+        creatureId = 519906,
+        description = "Reward for reaching level 30 during Hallow's End CoA event.",
+        icon = 88
+    },
+    [503292] = {
+        itemid = 503292,
+        name = "Frightened Bush Chicken",
+        creaturePreview = 519907,
+        creatureId = 519907,
+        description = "Reward for reaching level 30 during Pilgrim’s Bounty CoA event.",
+        icon = 288
+    },
+    [503294] = {
+        itemid = 503294,
+        name = "Frostwolf Pup",
+        creaturePreview = 519909,
+        creatureId = 519909,
+        description = "Reward for reaching level 30 during Winterveil CoA event.",
+        icon = 566
+    },
+    [509884] = {
+        itemid = 509884,
+        name = "Palomino",
+        creaturePreview = 306,
+        creatureId = 306,
+        description = "Available from the Webstore.",
+        icon = 62
+    },
+    [509902] = {
+        itemid = 509902,
+        name = "Dark Iron Core Hound",
+        creaturePreview = 509902,
+        creatureId = 509902,
+        description = "Reward from Hardcore - Road to Ragnaros Trial.",
+        icon = 226
     },
     [509906] = {
         itemid = 509906,
@@ -15968,6 +28795,86 @@ AV_VanityItems = {
         creatureId = 347300,
         description = "Reward from Hardcore/Nightmare Plains Stalker Trial.",
         icon = 1
+    },
+    [509909] = {
+        itemid = 509909,
+        name = "Argent Dawn Squire",
+        creaturePreview = 11000097,
+        creatureId = 11000097,
+        description = "Can be purchased from the Argent Quartermaster.",
+        icon = 179
+    },
+    [510004] = {
+        itemid = 510004,
+        name = "Elementium Dragon",
+        creaturePreview = 357895,
+        creatureId = 357895,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 246
+    },
+    [510006] = {
+        itemid = 510006,
+        name = "Wicked Soul Distorter",
+        creaturePreview = 357681,
+        creatureId = 357681,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 661
+    },
+    [515044] = {
+        itemid = 515044,
+        name = "Docile Night Web Hatchling",
+        creaturePreview = 519910,
+        creatureId = 519910,
+        description = "Found in the open world!.",
+        icon = 577
+    },
+    [515323] = {
+        itemid = 515323,
+        name = "Bottled Oozeling",
+        creaturePreview = 254678,
+        creatureId = 254678,
+        description = "Found in the open world!.",
+        icon = 94
+    },
+    [515412] = {
+        itemid = 515412,
+        name = "Friendly Sludgemonster",
+        creaturePreview = 254677,
+        creatureId = 254677,
+        description = "Found in the open world!.",
+        icon = 728
+    },
+    [532570] = {
+        itemid = 532570,
+        name = "Pip",
+        creaturePreview = 98477,
+        creatureId = 98477,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 446
+    },
+    [532571] = {
+        itemid = 532571,
+        name = "Boomer",
+        creaturePreview = 98479,
+        creatureId = 98479,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 457
+    },
+    [532572] = {
+        itemid = 532572,
+        name = "Steel Spinner",
+        creaturePreview = 98481,
+        creatureId = 98481,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 447
+    },
+    [532573] = {
+        itemid = 532573,
+        name = "Gnomefeaster",
+        creaturePreview = 98482,
+        creatureId = 98482,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 2
     },
     [532578] = {
         itemid = 532578,
@@ -15985,6 +28892,54 @@ AV_VanityItems = {
         description = "Can be purchased from Millhouse Manastorm.",
         icon = 5
     },
+    [532580] = {
+        itemid = 532580,
+        name = "Rusted Keys to the Junkheap Drifter",
+        creaturePreview = 98485,
+        creatureId = 98485,
+        description = "Can be purchased from Millhouse Manastorm.",
+        icon = 438
+    },
+    [532581] = {
+        itemid = 532581,
+        name = "Dirty Keys to the Scrapyard Ride",
+        creaturePreview = 98487,
+        creatureId = 98487,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 440
+    },
+    [532582] = {
+        itemid = 532582,
+        name = "Forgotten Keys to the Scrapmetal Roamer",
+        creaturePreview = 98488,
+        creatureId = 98488,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 439
+    },
+    [532589] = {
+        itemid = 532589,
+        name = "Dwayne",
+        creaturePreview = 98476,
+        creatureId = 98476,
+        description = "Has a chance to drop from Teralis.",
+        icon = 721
+    },
+    [535757] = {
+        itemid = 535757,
+        name = "Sigil of Sacrolash",
+        creaturePreview = 430306,
+        creatureId = 430306,
+        description = "|cFFFF8800[Unverified]|r ",
+        icon = 486
+    },
+    [535759] = {
+        itemid = 535759,
+        name = "Sigil of Sacro'Lythess",
+        creaturePreview = 430308,
+        creatureId = 430308,
+        description = "|cFFFF8800[Unverified]|r ",
+        icon = 486
+    },
     [541299] = {
         itemid = 541299,
         name = "Beastmaster's Whistle: Core Hound",
@@ -16000,6 +28955,95 @@ AV_VanityItems = {
         creatureId = 50959,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
+    },
+    [546725] = {
+        itemid = 546725,
+        name = "Pearlescent Butterfly's Saddle",
+        creaturePreview = 116298,
+        creatureId = 116298,
+        description = "Available from the Webstore as part of the Pearlescent Monarch's Treasure Trove Bundle.",
+        icon = 184
+    },
+    [546726] = {
+        itemid = 546726,
+        name = "Spring Butterfly's Saddle",
+        creaturePreview = 116299,
+        creatureId = 116299,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 185
+    },
+    [546728] = {
+        itemid = 546728,
+        name = "Midnight Butterfly's Saddle",
+        creaturePreview = 116301,
+        creatureId = 116301,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 186
+    },
+    [546729] = {
+        itemid = 546729,
+        name = "Pearlescent Flutterling",
+        creaturePreview = 116302,
+        creatureId = 116302,
+        description = "Available from the Webstore as part of the Pearlescent Monarch's Treasure Trove Bundle.",
+        icon = 184
+    },
+    [546730] = {
+        itemid = 546730,
+        name = "Spring Flutterling",
+        creaturePreview = 116303,
+        creatureId = 116303,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 185
+    },
+    [546732] = {
+        itemid = 546732,
+        name = "Midnight Flutterling",
+        creaturePreview = 116305,
+        creatureId = 116305,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 186
+    },
+    [549663] = {
+        itemid = 549663,
+        name = "Little Zanzrakka",
+        creaturePreview = 454021,
+        creatureId = 454021,
+        description = "Reward for reaching level 45 during March CoA Open Beta event.",
+        icon = 360
+    },
+    [558822] = {
+        itemid = 558822,
+        name = "Ren'dorei Hawkstrider",
+        creaturePreview = 357485,
+        creatureId = 357485,
+        description = "Available from the Webstore as part of the Bundle of Ren'dorei.",
+        icon = 77
+    },
+    [559202] = {
+        itemid = 559202,
+        name = "Undead Warhorse",
+        creaturePreview = 378831,
+        creatureId = 378831,
+        description = "Can be obtained this mount by completing the custom epic quest chain for Undead Paladin!.",
+        icon = 733
+    },
+    [559203] = {
+        itemid = 559203,
+        name = "Undead Charger",
+        creaturePreview = 378832,
+        creatureId = 378832,
+        description = "Can be obtained this mount by completing the custom epic quest chain for Undead Paladin!.",
+        icon = 24
+    },
+    [597601] = {
+        itemid = 597601,
+        name = "Seabiscuit's Reins",
+        creaturePreview = 69696,
+        creatureId = 69696,
+        description = "Previously available on the Webstore in the Founder's Pack Bundle.",
+        zone = "the Founder's Pack Bundle",
+        icon = 16
     },
     [600369] = {
         itemid = 600369,
@@ -16591,7 +29635,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Al'ar",
         creaturePreview = 19514,
         creatureId = 19514,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [600870] = {
@@ -16644,7 +29688,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Hydross the Unstable",
         creaturePreview = 21216,
         creatureId = 21216,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [600885] = {
@@ -16776,7 +29820,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Surging Water Elemental",
         creaturePreview = 37703,
         creatureId = 37703,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [601016] = {
@@ -17209,7 +30253,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Swamp Spirit",
         creaturePreview = 6932,
         creatureId = 6932,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [601068] = {
@@ -17385,7 +30429,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Plague Shambler",
         creaturePreview = 97808,
         creatureId = 97808,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [601103] = {
@@ -17618,7 +30662,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Bloodpetal Thirster",
         creaturePreview = 97825,
         creatureId = 97825,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [601667] = {
@@ -17721,7 +30765,7 @@ AV_VanityItems = {
         name = "Elemental Lodestone: Stone Warden",
         creaturePreview = 6561,
         creatureId = 6561,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
     },
     [601678] = {
@@ -18162,13 +31206,77 @@ AV_VanityItems = {
         zone = "The Bone Wastes",
         icon = 5
     },
+    [603200] = {
+        itemid = 603200,
+        name = "Branch of the Wandering Ancient",
+        creaturePreview = 130104,
+        creatureId = 130104,
+        description = "Available from the Webstore.",
+        icon = 496
+    },
     [603976] = {
         itemid = 603976,
         name = "Elemental Lodestone: Silver Golem",
         creaturePreview = 76,
         creatureId = 76,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 5
+    },
+    [612826] = {
+        itemid = 612826,
+        name = "Snapback Scuttler",
+        creaturePreview = 357970,
+        creatureId = 357970,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 211
+    },
+    [612827] = {
+        itemid = 612827,
+        name = "Fossilized Raptor",
+        creaturePreview = 358032,
+        creatureId = 358032,
+        description = "Obtained from the A class above Achievement.",
+        icon = 39
+    },
+    [612828] = {
+        itemid = 612828,
+        name = "Primal Flamesaber",
+        creaturePreview = 357310,
+        creatureId = 357310,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 299
+    },
+    [612830] = {
+        itemid = 612830,
+        name = "Armored Obsidian Drake",
+        creaturePreview = 357807,
+        creatureId = 357807,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 716
+    },
+    [612831] = {
+        itemid = 612831,
+        name = "Corrupted Grinning Reaver",
+        creaturePreview = 358262,
+        creatureId = 358262,
+        description = "Obtained from completing Raid Trial Ahn'Qiraj Temple (Level 10).",
+        icon = 60
+    },
+    [612832] = {
+        itemid = 612832,
+        name = "Qiraji Corpsefly",
+        creaturePreview = 357276,
+        creatureId = 357276,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 304
+    },
+    [612833] = {
+        itemid = 612833,
+        name = "Meat Wagon",
+        creaturePreview = 357791,
+        creatureId = 357791,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 273
     },
     [612859] = {
         itemid = 612859,
@@ -18187,6 +31295,292 @@ AV_VanityItems = {
         description = "Has a chance to drop from Sacro'lythess within Sunwell Plateau.",
         subzone = "Sunwell Plateau",
         icon = 3
+    },
+    [612892] = {
+        itemid = 612892,
+        name = "Winter Wilderling Harness",
+        creaturePreview = 449216,
+        creatureId = 449216,
+        description = "Unleash the frost-touched fury of the wild.",
+        icon = 715
+    },
+    [666451] = {
+        itemid = 666451,
+        name = "Young Plaguebat",
+        creaturePreview = 668600,
+        creatureId = 668600,
+        description = "Found in the open world!.",
+        icon = 7
+    },
+    [699636] = {
+        itemid = 699636,
+        name = "Primal Gladiator's Felblood Gronnling",
+        creaturePreview = 699753,
+        creatureId = 699753,
+        description = "Obtained by Placing in the Top 10 of 1v1 or 2v2 in PvP Progression (Classic).",
+        icon = 295
+    },
+    [699637] = {
+        itemid = 699637,
+        name = "Wild Gladiator's Felblood Gronnling",
+        creaturePreview = 699754,
+        creatureId = 699754,
+        description = "Obtained by Placing in the Top 10 of 1v1 or 2v2 in PvP Progression (Classic).",
+        icon = 297
+    },
+    [699638] = {
+        itemid = 699638,
+        name = "Warmongering Gladiator's Felblood Gronnling",
+        creaturePreview = 699755,
+        creatureId = 699755,
+        description = "Obtained by Placing in the Top 10 of 1v1 or 2v2 in PvP Progression (Classic).",
+        icon = 296
+    },
+    [699639] = {
+        itemid = 699639,
+        name = "Demonic Gladiator's Storm Dragon",
+        creaturePreview = 866924,
+        creatureId = 866924,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2600 Arena Rating.",
+        icon = 673
+    },
+    [800555] = {
+        itemid = 800555,
+        name = "Vilemus' Fel Crystal",
+        creaturePreview = 800555,
+        creatureId = 800555,
+        description = "Available from the Webstore Bloodforged Supporter's Elite Warchest - Limited Edition.",
+        icon = 373
+    },
+    [803729] = {
+        itemid = 803729,
+        name = "Sigil of Nyx",
+        creaturePreview = 94054,
+        creatureId = 94054,
+        description = "Has a chance to drop from Nyx within Manastorms.",
+        zone = "Manastorms",
+        icon = 486
+    },
+    [803730] = {
+        itemid = 803730,
+        name = "Sigil of Noctura",
+        creaturePreview = 94055,
+        creatureId = 94055,
+        description = "Has a chance to drop from Noctura within Manastorms.",
+        zone = "Manastorms",
+        icon = 486
+    },
+    [803731] = {
+        itemid = 803731,
+        name = "Sigil of Xyron the Corruptor",
+        creaturePreview = 94056,
+        creatureId = 94056,
+        description = "Has a chance to drop from Xyron the Corruptor within Manastorms.",
+        zone = "Manastorms",
+        icon = 486
+    },
+    [803732] = {
+        itemid = 803732,
+        name = "Sigil of Leafborn Sentinel",
+        creaturePreview = 94057,
+        creatureId = 94057,
+        description = "Has a chance to drop from Leafborn Sentinel within Manastorms.",
+        zone = "Manastorms",
+        icon = 486
+    },
+    [803734] = {
+        itemid = 803734,
+        name = "Sigil of Mechatron",
+        creaturePreview = 94058,
+        creatureId = 94058,
+        description = "Has a chance to drop from Mechatron within Manastorms.",
+        zone = "Manastorms",
+        icon = 486
+    },
+    [803735] = {
+        itemid = 803735,
+        name = "Sigil of Corrupted Primrose",
+        creaturePreview = 94059,
+        creatureId = 94059,
+        description = "Has a chance to drop from the Corrupted Primrose within the Manastorm.",
+        zone = "the Manastorm",
+        icon = 486
+    },
+    [815143] = {
+        itemid = 815143,
+        name = "Vigilant Guardian",
+        creaturePreview = 34652,
+        creatureId = 34652,
+        description = "Granted to heroes who spot trouble before it starts. Your swift report kept Azeroth's adventures fun for all.",
+        icon = 635
+    },
+    [815145] = {
+        itemid = 815145,
+        name = "Jeweled Jade Scarab",
+        creaturePreview = 67330,
+        creatureId = 67330,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 636
+    },
+    [820031] = {
+        itemid = 820031,
+        name = "Reins of the Dark Phoenix",
+        creaturePreview = 47841,
+        creatureId = 47841,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 530
+    },
+    [829140] = {
+        itemid = 829140,
+        name = "Meeksi Softpaw's Saddle",
+        creaturePreview = 125321,
+        creatureId = 125321,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 606
+    },
+    [829141] = {
+        itemid = 829141,
+        name = "Meeksi Rollingpaw's Saddle",
+        creaturePreview = 125322,
+        creatureId = 125322,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 607
+    },
+    [829142] = {
+        itemid = 829142,
+        name = "Meeksi Teatuft's Saddle",
+        creaturePreview = 125323,
+        creatureId = 125323,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 608
+    },
+    [829143] = {
+        itemid = 829143,
+        name = "Meeksi Brewthief's Saddle",
+        creaturePreview = 125324,
+        creatureId = 125324,
+        description = "Available from the Webstore.",
+        icon = 609
+    },
+    [829145] = {
+        itemid = 829145,
+        name = "Softpaw Cub",
+        creaturePreview = 125326,
+        creatureId = 125326,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 610
+    },
+    [829146] = {
+        itemid = 829146,
+        name = "Rollingpaw Cub",
+        creaturePreview = 125327,
+        creatureId = 125327,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 611
+    },
+    [829147] = {
+        itemid = 829147,
+        name = "Teatuft Cub",
+        creaturePreview = 125328,
+        creatureId = 125328,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 612
+    },
+    [829148] = {
+        itemid = 829148,
+        name = "Brewthief Cub",
+        creaturePreview = 125329,
+        creatureId = 125329,
+        description = "Available from the Webstore.",
+        icon = 613
+    },
+    [842001] = {
+        itemid = 842001,
+        name = "Pet Cage - World First Gruul",
+        creaturePreview = 42001,
+        creatureId = 42001,
+        description = "Obtained by achieving World First Gruul.",
+        icon = 181
+    },
+    [842002] = {
+        itemid = 842002,
+        name = "Pet Cage - World First Malchezaar",
+        creaturePreview = 42002,
+        creatureId = 42002,
+        description = "Obtained by achieving World First Malchezaar.",
+        icon = 181
+    },
+    [842003] = {
+        itemid = 842003,
+        name = "Pet Cage - World First Nightbane",
+        creaturePreview = 42003,
+        creatureId = 42003,
+        description = "Obtained by achieving World First Nightbane.",
+        icon = 181
+    },
+    [842004] = {
+        itemid = 842004,
+        name = "Pet Cage - World First Magtheridon <sure>",
+        creaturePreview = 42004,
+        creatureId = 42004,
+        description = "Obtained by achieving World First Magtheridon.",
+        icon = 181
+    },
+    [842005] = {
+        itemid = 842005,
+        name = "Pet Cage - World First Zul'Jin (Ascended 10 Player)",
+        creaturePreview = 42005,
+        creatureId = 42005,
+        description = "Obtained by achieving World First Zul'Jin.",
+        icon = 181
+    },
+    [842006] = {
+        itemid = 842006,
+        name = "Pet Cage - World First Lady Vashj Ascended (10 Player)",
+        creaturePreview = 42006,
+        creatureId = 42006,
+        description = "Obtained by achieving World First Lady Vashj Ascended (10 Player).",
+        icon = 181
+    },
+    [842007] = {
+        itemid = 842007,
+        name = "Pet Cage - World First Kael'thas Sunstrider (Ascended 10)",
+        creaturePreview = 42007,
+        creatureId = 42007,
+        description = "Obtained by achieving World First Kael'thas Sunstrider.",
+        icon = 181
+    },
+    [842009] = {
+        itemid = 842009,
+        name = "Pet Cage - World First Illidan Stormrage",
+        creaturePreview = 42009,
+        creatureId = 42009,
+        description = "Obtained by achieving World First Illidan Stormrage.",
+        icon = 181
+    },
+    [842010] = {
+        itemid = 842010,
+        name = "Pet Cage - World First Kil'Jaeden 10 Player",
+        creaturePreview = 42010,
+        creatureId = 42010,
+        description = "Achieved by <we go AGAIN> on Area 52 for seccuring the World First kill of Kil'jaeden on Ascended 10 Player difficulty.",
+        icon = 181
+    },
+    [842104] = {
+        itemid = 842104,
+        name = "Pet Cage - World First Magtheridon <Realm Second>",
+        creaturePreview = 42104,
+        creatureId = 42104,
+        description = "Obtained by achieving World First Magtheridon.",
+        icon = 181
+    },
+    [842105] = {
+        itemid = 842105,
+        name = "Pet Cage - World First Illidan Stormrage",
+        creaturePreview = 42009,
+        creatureId = 42009,
+        description = "Obtained by achieving World First Illidan Stormrage.",
+        icon = 181
     },
     [844513] = {
         itemid = 844513,
@@ -18228,6 +31622,102 @@ AV_VanityItems = {
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 1
     },
+    [872768] = {
+        itemid = 872768,
+        name = "Sigil of Stony Tark",
+        creaturePreview = 10157256,
+        creatureId = 10157256,
+        description = "Has a chance to drop from Ironclad Treasure (Level 60) of Ironman Mode.",
+        icon = 486
+    },
+    [942010] = {
+        itemid = 942010,
+        name = "Pet Cage - World First Kil'Jaeden 25 Player",
+        creaturePreview = 842010,
+        creatureId = 842010,
+        description = "Achieved by <Brutallus Enjoyers> on Area 52 for seccuring the World First kill of Kil'jaeden on Ascended 25 Player difficulty.",
+        icon = 181
+    },
+    [942100] = {
+        itemid = 942100,
+        name = "Pet Cage - World First Lady Vashj Ascended (25 Player)",
+        creaturePreview = 942100,
+        creatureId = 942100,
+        description = "Obtained by achieving World First Lady Vashj Ascended (25 Player).",
+        icon = 181
+    },
+    [942101] = {
+        itemid = 942101,
+        name = "Pet Cage - Wildcard World First Lady Vashj Ascended (10 Player)",
+        creaturePreview = 942100,
+        creatureId = 942100,
+        description = "Obtained by achieving Wildcard World First Lady Vashj Ascended (10 Player).",
+        icon = 181
+    },
+    [942102] = {
+        itemid = 942102,
+        name = "Pet Cage - Wildcard World First Lady Vashj Ascended (25 Player)",
+        creaturePreview = 942100,
+        creatureId = 942100,
+        description = "Obtained by achieving Wildcard World First Lady Vashj Ascended (25 Player).",
+        icon = 181
+    },
+    [978310] = {
+        itemid = 978310,
+        name = "Vindictive Gladiator's Storm Dragon",
+        creaturePreview = 402064,
+        creatureId = 402064,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2500 Arena Rating.",
+        icon = 672
+    },
+    [978311] = {
+        itemid = 978311,
+        name = "Fearless Gladiator's Storm Dragon",
+        creaturePreview = 402065,
+        creatureId = 402065,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2500 Arena Rating.",
+        icon = 674
+    },
+    [978312] = {
+        itemid = 978312,
+        name = "Cruel Gladiator's Storm Dragon",
+        creaturePreview = 402066,
+        creatureId = 402066,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2500 Arena Rating.",
+        icon = 675
+    },
+    [978313] = {
+        itemid = 978313,
+        name = "Ferocious Gladiator's Storm Dragon",
+        creaturePreview = 402067,
+        creatureId = 402067,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2500 Arena Rating.",
+        icon = 676
+    },
+    [978314] = {
+        itemid = 978314,
+        name = "Fierce Gladiator's Storm Dragon",
+        creaturePreview = 402068,
+        creatureId = 402068,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2500 Arena Rating.",
+        icon = 677
+    },
+    [978315] = {
+        itemid = 978315,
+        name = "Dominant Gladiator's Storm Dragon",
+        creaturePreview = 402069,
+        creatureId = 402069,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2500 Arena Rating.",
+        icon = 678
+    },
+    [978317] = {
+        itemid = 978317,
+        name = "Alabaster Thunderwing",
+        creaturePreview = 49412,
+        creatureId = 49412,
+        description = "Can be obtained this mount by completing the epic quest chain The Enigmatic Explorer!.",
+        icon = 278
+    },
     [980060] = {
         itemid = 980060,
         name = "Beastmaster's Whistle: Pink Elekk",
@@ -18235,6 +31725,126 @@ AV_VanityItems = {
         creatureId = 338957,
         description = "Can be purchased from Millhouse Manastorm.",
         icon = 1
+    },
+    [984600] = {
+        itemid = 984600,
+        name = "Sack of Greed",
+        creaturePreview = 75120,
+        creatureId = 75120,
+        description = "Available from the Webstore.",
+        icon = 548
+    },
+    [998100] = {
+        itemid = 998100,
+        name = "Portable Silas Darkmoon",
+        creaturePreview = 642827,
+        creatureId = 642827,
+        description = "Available from the Webstore.",
+        icon = 507
+    },
+    [1001619] = {
+        itemid = 1001619,
+        name = "Felsteel Annihilator’s Control Module",
+        creaturePreview = 100237,
+        creatureId = 100237,
+        description = "Has a chance to drop from Archimonde within The Battle for Mount Hyjal (Heroic).",
+        icon = 33
+    },
+    [1001620] = {
+        itemid = 1001620,
+        name = "Frostbitten Annihilator’s Control Module",
+        creaturePreview = 100238,
+        creatureId = 100238,
+        description = "Has a chance to drop from Archimonde within The Battle for Mount Hyjal (Normal).",
+        icon = 34
+    },
+    [1001621] = {
+        itemid = 1001621,
+        name = "Defiled Annihilator’s Control Module",
+        creaturePreview = 100240,
+        creatureId = 100240,
+        description = "Has a chance to drop from Archimonde within The Battle for Mount Hyjal (Mythic).",
+        icon = 35
+    },
+    [1001622] = {
+        itemid = 1001622,
+        name = "Corrupted Annihilator’s Control Module",
+        creaturePreview = 100239,
+        creatureId = 100239,
+        description = "Has a chance to drop from Archimonde within The Battle for Mount Hyjal (Ascended).",
+        icon = 36
+    },
+    [1001627] = {
+        itemid = 1001627,
+        name = "Reins of the Grove Warden",
+        creaturePreview = 100000,
+        creatureId = 100000,
+        description = "Achievement Reward from Conqueror of Mount Hyjal - Heroic.",
+        icon = 515
+    },
+    [1001628] = {
+        itemid = 1001628,
+        name = "Reins of the Frostbitten Elderhorn",
+        creaturePreview = 100219,
+        creatureId = 100219,
+        description = "Achievement Reward from Conqueror of Mount Hyjal - Normal.",
+        icon = 518
+    },
+    [1001629] = {
+        itemid = 1001629,
+        name = "Reins of the Grove Defiler",
+        creaturePreview = 100233,
+        creatureId = 100233,
+        description = "Achievement Reward from Conqueror of Mount Hyjal - Mythic.",
+        icon = 519
+    },
+    [1001630] = {
+        itemid = 1001630,
+        name = "Reins of the Corrupted Elderhorn",
+        creaturePreview = 100236,
+        creatureId = 100236,
+        description = "Achievement Reward from Conqueror of Mount Hyjal - Ascended.",
+        icon = 517
+    },
+    [1001680] = {
+        itemid = 1001680,
+        name = "Vexmar, the Spiteful's Harness",
+        creaturePreview = 800005,
+        creatureId = 800005,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 129
+    },
+    [1001681] = {
+        itemid = 1001681,
+        name = "Azgorm, the Hazardous's Harness",
+        creaturePreview = 800006,
+        creatureId = 800006,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 128
+    },
+    [1001682] = {
+        itemid = 1001682,
+        name = "Vorakar, the Vindictive's Harness",
+        creaturePreview = 800007,
+        creatureId = 800007,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 130
+    },
+    [1001683] = {
+        itemid = 1001683,
+        name = "Gormul, the Wrathful's Harness",
+        creaturePreview = 800008,
+        creatureId = 800008,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 127
+    },
+    [1001684] = {
+        itemid = 1001684,
+        name = "Kragthor, the Voracious's Harness",
+        creaturePreview = 800009,
+        creatureId = 800009,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 131
     },
     [1001685] = {
         itemid = 1001685,
@@ -18275,6 +31885,134 @@ AV_VanityItems = {
         creatureId = 1000011,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 3.",
         icon = 4
+    },
+    [1001846] = {
+        itemid = 1001846,
+        name = "Reins of the Goldenback Cloudstrider",
+        creaturePreview = 800010,
+        creatureId = 800010,
+        description = "Available on the Webstore from the Aspiring Aspirant's Ensemble.",
+        icon = 352
+    },
+    [1001847] = {
+        itemid = 1001847,
+        name = "Reins of the Silverplume Cloudstrider",
+        creaturePreview = 800011,
+        creatureId = 800011,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 355
+    },
+    [1001848] = {
+        itemid = 1001848,
+        name = "Reins of the Duskdown Cloudstrider",
+        creaturePreview = 800012,
+        creatureId = 800012,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 351
+    },
+    [1001849] = {
+        itemid = 1001849,
+        name = "Reins of the Verdanttuft Cloudstrider",
+        creaturePreview = 800013,
+        creatureId = 800013,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 353
+    },
+    [1001850] = {
+        itemid = 1001850,
+        name = "Reins of the Rosequill Cloudstrider",
+        creaturePreview = 800014,
+        creatureId = 800014,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 354
+    },
+    [1001851] = {
+        itemid = 1001851,
+        name = "Ruffle",
+        creaturePreview = 1000012,
+        creatureId = 1000012,
+        description = "Available on the Webstore from the Aspiring Aspirant's Ensemble.",
+        icon = 158
+    },
+    [1001852] = {
+        itemid = 1001852,
+        name = "Digallo",
+        creaturePreview = 1000013,
+        creatureId = 1000013,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 157
+    },
+    [1001853] = {
+        itemid = 1001853,
+        name = "Flounce",
+        creaturePreview = 1000014,
+        creatureId = 1000014,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 159
+    },
+    [1002011] = {
+        itemid = 1002011,
+        name = "Bound Blue Qiraji Resonating Crystal",
+        creaturePreview = 15666,
+        creatureId = 15666,
+        description = "Obtainable during the Ahn'Qiraj War Effort.",
+        icon = 500
+    },
+    [1002012] = {
+        itemid = 1002012,
+        name = "Bound Red Qiraji Resonating Crystal",
+        creaturePreview = 15716,
+        creatureId = 15716,
+        description = "Obtainable during the Ahn'Qiraj War Effort.",
+        icon = 498
+    },
+    [1002013] = {
+        itemid = 1002013,
+        name = "Bound Green Qiraji Resonating Crystal",
+        creaturePreview = 15715,
+        creatureId = 15715,
+        description = "Obtainable during the Ahn'Qiraj War Effort.",
+        icon = 499
+    },
+    [1002014] = {
+        itemid = 1002014,
+        name = "Bound Yellow Qiraji Resonating Crystal",
+        creaturePreview = 15714,
+        creatureId = 15714,
+        description = "Obtainable during the Ahn'Qiraj War Effort.",
+        icon = 497
+    },
+    [1002087] = {
+        itemid = 1002087,
+        name = "Portable Transmogrifier",
+        creaturePreview = 1002087,
+        creatureId = 1002087,
+        description = "Previously available from the Webstore.",
+        icon = 734
+    },
+    [1175625] = {
+        itemid = 1175625,
+        name = "Sigil of the Crimson Skyblazer",
+        creaturePreview = 79056,
+        creatureId = 79056,
+        description = "Previously had a chance to drop during Season 7 from Ethereal Box of Wares.",
+        icon = 729
+    },
+    [1175634] = {
+        itemid = 1175634,
+        name = "Dreadsteed",
+        creaturePreview = 14505,
+        creatureId = 14505,
+        description = "Can be obtained this mount by completing the original epic quest chain!.",
+        icon = 31
+    },
+    [1175635] = {
+        itemid = 1175635,
+        name = "Charger",
+        creaturePreview = 14565,
+        creatureId = 14565,
+        description = "Can be obtained this mount by completing the original epic quest chain!.",
+        icon = 24
     },
     [1178958] = {
         itemid = 1178958,
@@ -18846,6 +32584,127 @@ AV_VanityItems = {
         creatureId = 79142,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 2
+    },
+    [1179128] = {
+        itemid = 1179128,
+        name = "Blisterback Bloodtusk",
+        creaturePreview = 80259,
+        creatureId = 80259,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 419
+    },
+    [1179129] = {
+        itemid = 1179129,
+        name = "Gorespine",
+        creaturePreview = 80261,
+        creatureId = 80261,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 420
+    },
+    [1179130] = {
+        itemid = 1179130,
+        name = "Lurid Bloodtusk",
+        creaturePreview = 80263,
+        creatureId = 80263,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 421
+    },
+    [1179132] = {
+        itemid = 1179132,
+        name = "Reins of the Fallen Charger",
+        creaturePreview = 80267,
+        creatureId = 80267,
+        description = "Can be purchased from Darith Trophyvane.",
+        icon = 52
+    },
+    [1179133] = {
+        itemid = 1179133,
+        name = "Aima, Steed of the Second Eidolon",
+        creaturePreview = 80269,
+        creatureId = 80269,
+        description = "Dropped by Dryn Miel in the Karazhan Crypts.",
+        zone = "the Karazhan Crypts",
+        icon = 48
+    },
+    [1179134] = {
+        itemid = 1179134,
+        name = "Reins of the Sanctum Gloomcharger",
+        creaturePreview = 80271,
+        creatureId = 80271,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 50
+    },
+    [1179139] = {
+        itemid = 1179139,
+        name = "Corridor Creeper",
+        creaturePreview = 80281,
+        creatureId = 80281,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 375
+    },
+    [1179149] = {
+        itemid = 1179149,
+        name = "Vicious War Spider (Alliance)",
+        creaturePreview = 80301,
+        creatureId = 80301,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2000 Arena Rating.",
+        icon = 701
+    },
+    [1179152] = {
+        itemid = 1179152,
+        name = "Vicious War Spider (Horde)",
+        creaturePreview = 80307,
+        creatureId = 80307,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2000 Arena Rating.",
+        icon = 702
+    },
+    [1179171] = {
+        itemid = 1179171,
+        name = "Winterborn Runestag",
+        creaturePreview = 80345,
+        creatureId = 80345,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 117
+    },
+    [1179176] = {
+        itemid = 1179176,
+        name = "Gold-White Bastion Dreamrunner",
+        creaturePreview = 80355,
+        creatureId = 80355,
+        description = "Available from the Webstore during the month of January.",
+        icon = 345
+    },
+    [1179185] = {
+        itemid = 1179185,
+        name = "Battle Gargon Vrednic",
+        creaturePreview = 80370,
+        creatureId = 80370,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 229
+    },
+    [1179209] = {
+        itemid = 1179209,
+        name = "Amber Ardenmoth",
+        creaturePreview = 80394,
+        creatureId = 80394,
+        description = "Available from the Webstore.",
+        icon = 522
+    },
+    [1179210] = {
+        itemid = 1179210,
+        name = "Duskflutter Ardenmoth",
+        creaturePreview = 80395,
+        creatureId = 80395,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 520
+    },
+    [1179212] = {
+        itemid = 1179212,
+        name = "Vibrant Flutterwing",
+        creaturePreview = 80397,
+        creatureId = 80397,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 521
     },
     [1180107] = {
         itemid = 1180107,
@@ -20098,7 +33957,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Sleeping Dragon",
         creaturePreview = 9417,
         creatureId = 9417,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180290] = {
@@ -20288,7 +34147,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Chromatic Whelp",
         creaturePreview = 148069,
         creatureId = 148069,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180318] = {
@@ -20314,7 +34173,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Chromatic Dragonspawn",
         creaturePreview = 148070,
         creatureId = 148070,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180322] = {
@@ -21077,7 +34936,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Blackscale",
         creaturePreview = 21497,
         creatureId = 21497,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180511] = {
@@ -21085,7 +34944,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Blackscale",
         creaturePreview = 148115,
         creatureId = 148115,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180516] = {
@@ -21130,7 +34989,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Infinite Whelp",
         creaturePreview = 21818,
         creatureId = 21818,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180527] = {
@@ -21263,7 +35122,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Smolderwing",
         creaturePreview = 23789,
         creatureId = 23789,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4,
         questLock = {
             questId = 11162,
@@ -21625,7 +35484,7 @@ AV_VanityItems = {
         name = "Draconic Warhorn: Tempus Wyrm",
         creaturePreview = 32180,
         creatureId = 32180,
-        description = "",
+        description = "|cFFFF8800[Unverified]|r ",
         icon = 4
     },
     [1180852] = {
@@ -21787,6 +35646,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Profession Master within.",
         icon = 4
     },
+    [1233809] = {
+        itemid = 1233809,
+        name = "Reins of the Purple Amani War Bear",
+        creaturePreview = 124379,
+        creatureId = 124379,
+        description = "Achievement Reward from Zul'Gurub(Bear-ly Made It) - Heroic.",
+        icon = 3
+    },
     [1234940] = {
         itemid = 1234940,
         name = "Beastmaster's Whistle: Thokian Devilsaur",
@@ -21797,6 +35664,30 @@ AV_VanityItems = {
         subzone = "The Dead Mire",
         icon = 1
     },
+    [1333809] = {
+        itemid = 1333809,
+        name = "Reins of the Pink Amani War Bear",
+        creaturePreview = 224379,
+        creatureId = 224379,
+        description = "Achievement Reward from Zul'Gurub(Bear-ly Made It) - Normal.",
+        icon = 3
+    },
+    [1433809] = {
+        itemid = 1433809,
+        name = "Reins of the Red Amani War Bear",
+        creaturePreview = 324379,
+        creatureId = 324379,
+        description = "Achievement Reward from Zul'Gurub(Bear-ly Made It) - Mythic.",
+        icon = 3
+    },
+    [1500589] = {
+        itemid = 1500589,
+        name = "Defias Pillager - Season 9 Stress Test Exclusive",
+        creaturePreview = 500589,
+        creatureId = 500589,
+        description = "Obtained by participating of Season 9 Stress Test.",
+        icon = 85
+    },
     [1519393] = {
         itemid = 1519393,
         name = "Beastmaster's Whistle: Arktos",
@@ -21804,6 +35695,14 @@ AV_VanityItems = {
         creatureId = 440555,
         description = "Has a chance to drop from The Frozen Reach Manastorm.",
         icon = 1
+    },
+    [1533809] = {
+        itemid = 1533809,
+        name = "Reins of the Yellow Amani War Bear",
+        creaturePreview = 424379,
+        creatureId = 424379,
+        description = "Can be purchased from G'eras.",
+        icon = 3
     },
     [1554439] = {
         itemid = 1554439,
@@ -21828,6 +35727,22 @@ AV_VanityItems = {
         creatureId = 317775,
         description = "Available from Tiraxis' Ethereal Bazaar.",
         icon = 2
+    },
+    [1633809] = {
+        itemid = 1633809,
+        name = "Reins of the Green Amani War Bear",
+        creaturePreview = 524379,
+        creatureId = 524379,
+        description = "Achievement Reward from Grand Theft Amani.",
+        icon = 3
+    },
+    [1733809] = {
+        itemid = 1733809,
+        name = "Reins of the Black Amani War Bear",
+        creaturePreview = 624379,
+        creatureId = 624379,
+        description = "Achievement Reward from Zul'Gurub(Bear-ly Made It) - Ascended.",
+        icon = 3
     },
     [1777000] = {
         itemid = 1777000,
@@ -21899,6 +35814,414 @@ AV_VanityItems = {
         subzone = "Elemental Plateau",
         icon = 5
     },
+    [1777038] = {
+        itemid = 1777038,
+        name = "Hand of Hrestimorak",
+        creaturePreview = 36985,
+        creatureId = 36985,
+        description = "Available on the Webstore from the Deathspeaker Master Warchest.",
+        icon = 436
+    },
+    [1777039] = {
+        itemid = 1777039,
+        name = "Hand of Nilganihmaht",
+        creaturePreview = 36986,
+        creatureId = 36986,
+        description = "Can be purchased from Chromie for Tokens of Prestige.",
+        icon = 437
+    },
+    [1777060] = {
+        itemid = 1777060,
+        name = "Sunwarmed Furline",
+        creaturePreview = 80403,
+        creatureId = 80403,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy) or rarely obtainable via Goldilock's Lottery.",
+        icon = 558
+    },
+    [1777068] = {
+        itemid = 1777068,
+        name = "Viridian Phase-Hunter",
+        creaturePreview = 130101,
+        creatureId = 130101,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 359
+    },
+    [1777069] = {
+        itemid = 1777069,
+        name = "Dark Iron Hound",
+        creaturePreview = 130100,
+        creatureId = 130100,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 217
+    },
+    [1777070] = {
+        itemid = 1777070,
+        name = "Mobile Stable Master",
+        creaturePreview = 10960,
+        creatureId = 10960,
+        description = "Available from the Webstore.",
+        icon = 84
+    },
+    [1777071] = {
+        itemid = 1777071,
+        name = "Thalassian Charger",
+        creaturePreview = 20030,
+        creatureId = 20030,
+        description = "Can be obtained this mount by completing the original epic quest chain!.",
+        icon = 24
+    },
+    [1777077] = {
+        itemid = 1777077,
+        name = "Obsidian Worldbreaker",
+        creaturePreview = 499917,
+        creatureId = 499917,
+        description = "Reward from Nightmare - Absolute Resolve 1x Trial.",
+        icon = 277
+    },
+    [1777230] = {
+        itemid = 1777230,
+        name = "Tiny Amani Elite War Bear (Green)",
+        creaturePreview = 480510,
+        creatureId = 480510,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 3
+    },
+    [1777231] = {
+        itemid = 1777231,
+        name = "Tiny Amani Elite War Bear (Brown)",
+        creaturePreview = 480511,
+        creatureId = 480511,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 3
+    },
+    [1777232] = {
+        itemid = 1777232,
+        name = "Tiny Amani Elite War Bear (Yellow)",
+        creaturePreview = 480512,
+        creatureId = 480512,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 3
+    },
+    [1777233] = {
+        itemid = 1777233,
+        name = "Tiny Amani Elite War Bear (Red)",
+        creaturePreview = 480513,
+        creatureId = 480513,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 3
+    },
+    [1777234] = {
+        itemid = 1777234,
+        name = "Tiny Amani Elite War Bear (Pink)",
+        creaturePreview = 480515,
+        creatureId = 480515,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 3
+    },
+    [1777235] = {
+        itemid = 1777235,
+        name = "Tiny Amani Elite War Bear (Purple)",
+        creaturePreview = 480516,
+        creatureId = 480516,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 3
+    },
+    [1777248] = {
+        itemid = 1777248,
+        name = "Francois",
+        creaturePreview = 81059,
+        creatureId = 81059,
+        description = "Seasonal Achievement Reward. Unlocked by reaching Tier 4 during Season 8: Chapter 1.",
+        icon = 205
+    },
+    [1777283] = {
+        itemid = 1777283,
+        name = "Baby Crawg",
+        creaturePreview = 81095,
+        creatureId = 81095,
+        description = "Available on the Webstore from the Blood Troll Fanatic's Hoard.",
+        icon = 484
+    },
+    [1777317] = {
+        itemid = 1777317,
+        name = "Blacksteel Battleboar",
+        creaturePreview = 599789,
+        creatureId = 599789,
+        description = "Available from the Webstore.",
+        icon = 321
+    },
+    [1777318] = {
+        itemid = 1777318,
+        name = "Armored Razorback",
+        creaturePreview = 599790,
+        creatureId = 599790,
+        description = "Available during Boar-times of the year.",
+        icon = 319
+    },
+    [1777320] = {
+        itemid = 1777320,
+        name = "Rocktusk Battleboar",
+        creaturePreview = 599792,
+        creatureId = 599792,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2000 Arena Rating.",
+        icon = 322
+    },
+    [1777322] = {
+        itemid = 1777322,
+        name = "Deathtusk Felboar",
+        creaturePreview = 599794,
+        creatureId = 599794,
+        description = "Available from the Webstore.",
+        icon = 320
+    },
+    [1777324] = {
+        itemid = 1777324,
+        name = "Frostplains Battleboar",
+        creaturePreview = 599796,
+        creatureId = 599796,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 318
+    },
+    [1777325] = {
+        itemid = 1777325,
+        name = "Reins of the Cobalt Primordial Direhorn ",
+        creaturePreview = 69829,
+        creatureId = 69829,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 67
+    },
+    [1777326] = {
+        itemid = 1777326,
+        name = "Reins of the Slate Primordial Direhorn",
+        creaturePreview = 69830,
+        creatureId = 69830,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 69
+    },
+    [1777327] = {
+        itemid = 1777327,
+        name = "Reins of the Jade Primordial Direhorn",
+        creaturePreview = 69831,
+        creatureId = 69831,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 68
+    },
+    [1777328] = {
+        itemid = 1777328,
+        name = "Spawn of Horridon",
+        creaturePreview = 69204,
+        creatureId = 69204,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 66
+    },
+    [1777329] = {
+        itemid = 1777329,
+        name = "Reins of the Crimson Primal Direhorn",
+        creaturePreview = 70525,
+        creatureId = 70525,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 71
+    },
+    [1777330] = {
+        itemid = 1777330,
+        name = "Reins of the Golden Primal Direhorn",
+        creaturePreview = 70524,
+        creatureId = 70524,
+        description = "Previously available from Mr. Muhn E. Bagz (Very Rich Guy).",
+        icon = 70
+    },
+    [1777331] = {
+        itemid = 1777331,
+        name = "Reins of the Palehide Direhorn",
+        creaturePreview = 599797,
+        creatureId = 599797,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 72
+    },
+    [1777332] = {
+        itemid = 1777332,
+        name = "Reins of the Zandalari Direhorn",
+        creaturePreview = 599798,
+        creatureId = 599798,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 695
+    },
+    [1777338] = {
+        itemid = 1777338,
+        name = "Tuskarr Shoreglider",
+        creaturePreview = 599800,
+        creatureId = 599800,
+        description = "Available on the Webstore for LP.",
+        icon = 300
+    },
+    [1777339] = {
+        itemid = 1777339,
+        name = "Sapphire Riverbeast",
+        creaturePreview = 599806,
+        creatureId = 599806,
+        description = "Available from the Webstore.",
+        icon = 341
+    },
+    [1777340] = {
+        itemid = 1777340,
+        name = "Mosshide Riverwallow",
+        creaturePreview = 599807,
+        creatureId = 599807,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 341
+    },
+    [1777341] = {
+        itemid = 1777341,
+        name = "Mudback Riverbeast",
+        creaturePreview = 599808,
+        creatureId = 599808,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 341
+    },
+    [1777342] = {
+        itemid = 1777342,
+        name = "Trained Riverwallow",
+        creaturePreview = 599809,
+        creatureId = 599809,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 341
+    },
+    [1777360] = {
+        itemid = 1777360,
+        name = "Farseer's Raging Tempest (Water)",
+        creaturePreview = 599810,
+        creatureId = 599810,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Water.",
+        icon = 640
+    },
+    [1777361] = {
+        itemid = 1777361,
+        name = "Farseer's Raging Tempest (Fire)",
+        creaturePreview = 599811,
+        creatureId = 599811,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Fire.",
+        icon = 640
+    },
+    [1777362] = {
+        itemid = 1777362,
+        name = "Farseer's Raging Tempest (Wind)",
+        creaturePreview = 599812,
+        creatureId = 599812,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Lightning.",
+        icon = 640
+    },
+    [1777363] = {
+        itemid = 1777363,
+        name = "Mottled Meadowstomper",
+        creaturePreview = 599815,
+        creatureId = 599815,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 32
+    },
+    [1777364] = {
+        itemid = 1777364,
+        name = "Trained Meadowstomper",
+        creaturePreview = 599816,
+        creatureId = 599816,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 32
+    },
+    [1777365] = {
+        itemid = 1777365,
+        name = "Shadowhide Pearltusk",
+        creaturePreview = 599817,
+        creatureId = 599817,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 32
+    },
+    [1777366] = {
+        itemid = 1777366,
+        name = "Dusty Rockhide",
+        creaturePreview = 599818,
+        creatureId = 599818,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 32
+    },
+    [1777367] = {
+        itemid = 1777367,
+        name = "Armored Irontusk",
+        creaturePreview = 599819,
+        creatureId = 599819,
+        description = "Available from the Webstore.",
+        icon = 372
+    },
+    [1777368] = {
+        itemid = 1777368,
+        name = "Riding Harness",
+        creaturePreview = 599820,
+        creatureId = 599820,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 168
+    },
+    [1777370] = {
+        itemid = 1777370,
+        name = "Garn Nighthowl",
+        creaturePreview = 599822,
+        creatureId = 599822,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 711
+    },
+    [1777371] = {
+        itemid = 1777371,
+        name = "Garn Steelmaw",
+        creaturePreview = 599823,
+        creatureId = 599823,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 714
+    },
+    [1777372] = {
+        itemid = 1777372,
+        name = "Warsong Direfang",
+        creaturePreview = 599824,
+        creatureId = 599824,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 711
+    },
+    [1777373] = {
+        itemid = 1777373,
+        name = "Armored Frostwolf",
+        creaturePreview = 599825,
+        creatureId = 599825,
+        description = "Available from the Webstore.",
+        icon = 712
+    },
+    [1777374] = {
+        itemid = 1777374,
+        name = "Ironside Warwolf",
+        creaturePreview = 599826,
+        creatureId = 599826,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 713
+    },
+    [1777375] = {
+        itemid = 1777375,
+        name = "Smoky Direwolf",
+        creaturePreview = 599827,
+        creatureId = 599827,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 711
+    },
+    [1777376] = {
+        itemid = 1777376,
+        name = "Swift Frostwolf",
+        creaturePreview = 599828,
+        creatureId = 599828,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 712
+    },
+    [1777377] = {
+        itemid = 1777377,
+        name = "Trained Snarler",
+        creaturePreview = 599829,
+        creatureId = 599829,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 711
+    },
     [1777378] = {
         itemid = 1777378,
         name = "Elemental Lodestone: Living Cyclone",
@@ -21922,6 +36245,22 @@ AV_VanityItems = {
         creatureId = 149399,
         description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Ice.",
         icon = 5
+    },
+    [1777413] = {
+        itemid = 1777413,
+        name = "Glacial Tidestorm",
+        creaturePreview = 599814,
+        creatureId = 599814,
+        description = "Previously had a chance to drop during Season 8 from Ethereal Box of Wares.",
+        icon = 709
+    },
+    [1777416] = {
+        itemid = 1777416,
+        name = "Restoration Deathwalker",
+        creaturePreview = 599854,
+        creatureId = 599854,
+        description = "Previously had a chance to drop during Season 8 from Ethereal Box of Wares.",
+        icon = 228
     },
     [1777420] = {
         itemid = 1777420,
@@ -21976,6 +36315,942 @@ AV_VanityItems = {
         zone = "Sethekk Halls",
         icon = 5
     },
+    [1777436] = {
+        itemid = 1777436,
+        name = "Umberhoof Warboar",
+        creaturePreview = 200173,
+        creatureId = 200173,
+        description = "Can be purchased from \"Merul\" in Booty Bay, or Shattrath City while at or above 2000 Arena Rating.",
+        icon = 323
+    },
+    [1842005] = {
+        itemid = 1842005,
+        name = "Pet Cage - World First Zul'Jin (Ascended 25 Player)",
+        creaturePreview = 842005,
+        creatureId = 842005,
+        description = "Obtained by achieving Pet Cage - World First Zul'Jin.",
+        icon = 181
+    },
+    [1842007] = {
+        itemid = 1842007,
+        name = "Pet Cage - World First Kael'thas Sunstrider (Ascended 25)",
+        creaturePreview = 842007,
+        creatureId = 842007,
+        description = "Obtained by achieving Pet Cage - World First Kael'thas Sunstrider (25 Player).",
+        icon = 181
+    },
+    [1877071] = {
+        itemid = 1877071,
+        name = "Thalassian Warhorse",
+        creaturePreview = 20029,
+        creatureId = 20029,
+        description = "Can be obtained this mount by completing the original epic quest chain!.",
+        icon = 733
+    },
+    [8199945] = {
+        itemid = 8199945,
+        name = "Reins of the Soaring Spelltome",
+        creaturePreview = 11000014,
+        creatureId = 11000014,
+        description = "Can be purchased from Darith Trophyvane.",
+        icon = 180
+    },
+    [8199947] = {
+        itemid = 8199947,
+        name = "Reins of the Green Longhorn Thunderspine",
+        creaturePreview = 10500032,
+        creatureId = 10500032,
+        description = "Available from the Webstore.",
+        icon = 688
+    },
+    [8199948] = {
+        itemid = 8199948,
+        name = "Reins of the Brown Longhorn Thunderspine",
+        creaturePreview = 10500031,
+        creatureId = 10500031,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 687
+    },
+    [8199949] = {
+        itemid = 8199949,
+        name = "Reins of the Blue Longhorn Thunderspine",
+        creaturePreview = 10500030,
+        creatureId = 10500030,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 686
+    },
+    [8199950] = {
+        itemid = 8199950,
+        name = "Reins of the Black Longhorn Thunderspine",
+        creaturePreview = 10500029,
+        creatureId = 10500029,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 685
+    },
+    [8199951] = {
+        itemid = 8199951,
+        name = "Reins of the Silver Hornstrider",
+        creaturePreview = 10500038,
+        creatureId = 10500038,
+        description = "Available from the Webstore.",
+        icon = 684
+    },
+    [8199952] = {
+        itemid = 8199952,
+        name = "Reins of the Brown Hornstrider",
+        creaturePreview = 10500037,
+        creatureId = 10500037,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 683
+    },
+    [8199953] = {
+        itemid = 8199953,
+        name = "Reins of the Restless Hornstrider",
+        creaturePreview = 10500036,
+        creatureId = 10500036,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 682
+    },
+    [8199955] = {
+        itemid = 8199955,
+        name = "Reins of the Black Hornstrider",
+        creaturePreview = 10500034,
+        creatureId = 10500034,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 681
+    },
+    [8199957] = {
+        itemid = 8199957,
+        name = "Reins of the Red Magmashell",
+        creaturePreview = 10500018,
+        creatureId = 10500018,
+        description = "Previously had a chance to drop during Season 8 from Ethereal Box of Wares.",
+        icon = 658
+    },
+    [8199960] = {
+        itemid = 8199960,
+        name = "Reins of the Yellow Magma Slug",
+        creaturePreview = 10500015,
+        creatureId = 10500015,
+        description = "Reward from Slow and Steady Challenge.",
+        icon = 657
+    },
+    [8199964] = {
+        itemid = 8199964,
+        name = "Reins of the Purple Salamanther",
+        creaturePreview = 10500043,
+        creatureId = 10500043,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 634
+    },
+    [8199965] = {
+        itemid = 8199965,
+        name = "Reins of the Pink Salamanther",
+        creaturePreview = 10500042,
+        creatureId = 10500042,
+        description = "Available from the Webstore.",
+        icon = 633
+    },
+    [8199967] = {
+        itemid = 8199967,
+        name = "Reins of the Green Salamanther",
+        creaturePreview = 10500040,
+        creatureId = 10500040,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 632
+    },
+    [8199968] = {
+        itemid = 8199968,
+        name = "Reins of the Blue Salamanther",
+        creaturePreview = 10500039,
+        creatureId = 10500039,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 631
+    },
+    [8199969] = {
+        itemid = 8199969,
+        name = "Reins of the Yellow War Ottuk",
+        creaturePreview = 10500048,
+        creatureId = 10500048,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 624
+    },
+    [8199970] = {
+        itemid = 8199970,
+        name = "Reins of the White War Ottuk",
+        creaturePreview = 10500047,
+        creatureId = 10500047,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 623
+    },
+    [8199971] = {
+        itemid = 8199971,
+        name = "Reins of the Brown War Ottuk",
+        creaturePreview = 10500046,
+        creatureId = 10500046,
+        description = "Available from the Webstore.",
+        icon = 622
+    },
+    [8199973] = {
+        itemid = 8199973,
+        name = "Reins of the Black War Ottuk",
+        creaturePreview = 10500044,
+        creatureId = 10500044,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 621
+    },
+    [8199974] = {
+        itemid = 8199974,
+        name = "Reins of the Yellow Scouting Ottuk",
+        creaturePreview = 10500053,
+        creatureId = 10500053,
+        description = "Available from the Webstore.",
+        icon = 619
+    },
+    [8199975] = {
+        itemid = 8199975,
+        name = "Reins of the White Scouting Ottuk",
+        creaturePreview = 10500052,
+        creatureId = 10500052,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 618
+    },
+    [8199976] = {
+        itemid = 8199976,
+        name = "Reins of the Brown Scouting Ottuk",
+        creaturePreview = 10500051,
+        creatureId = 10500051,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 617
+    },
+    [8199977] = {
+        itemid = 8199977,
+        name = "Reins of the Blue Scouting Ottuk",
+        creaturePreview = 10500050,
+        creatureId = 10500050,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 616
+    },
+    [8199980] = {
+        itemid = 8199980,
+        name = "Reins of the Orange Skitterfly",
+        creaturePreview = 10500060,
+        creatureId = 10500060,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 585
+    },
+    [8199981] = {
+        itemid = 8199981,
+        name = "Reins of the Verdant Skitterfly",
+        creaturePreview = 10500059,
+        creatureId = 10500059,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 584
+    },
+    [8199982] = {
+        itemid = 8199982,
+        name = "Reins of the Azure Skitterfly",
+        creaturePreview = 10500058,
+        creatureId = 10500058,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 583
+    },
+    [8199983] = {
+        itemid = 8199983,
+        name = "Reins of the Tamed Skitterfly",
+        creaturePreview = 10500057,
+        creatureId = 10500057,
+        description = "Available from the Webstore.",
+        icon = 582
+    },
+    [8199984] = {
+        itemid = 8199984,
+        name = "Reins of the Dark Moose Bull",
+        creaturePreview = 10500056,
+        creatureId = 10500056,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 514
+    },
+    [8199985] = {
+        itemid = 8199985,
+        name = "Reins of the Brown Moose Bull",
+        creaturePreview = 10500055,
+        creatureId = 10500055,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 513
+    },
+    [8199986] = {
+        itemid = 8199986,
+        name = "Reins of the Black Moose Bull",
+        creaturePreview = 10500054,
+        creatureId = 10500054,
+        description = "Available from the Webstore.",
+        icon = 512
+    },
+    [8199987] = {
+        itemid = 8199987,
+        name = "Reins of the Orange Plainswalker Bearer",
+        creaturePreview = 10500028,
+        creatureId = 10500028,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 429
+    },
+    [8199988] = {
+        itemid = 8199988,
+        name = "Reins of the Green Plainswalker Bearer",
+        creaturePreview = 10500027,
+        creatureId = 10500027,
+        description = "Available from the Webstore.",
+        icon = 428
+    },
+    [8199989] = {
+        itemid = 8199989,
+        name = "Reins of the Gray Plainswalker Bearer",
+        creaturePreview = 10500026,
+        creatureId = 10500026,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 427
+    },
+    [8199991] = {
+        itemid = 8199991,
+        name = "Reins of the Blue Plainswalker Bearer",
+        creaturePreview = 10500024,
+        creatureId = 10500024,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 426
+    },
+    [8199992] = {
+        itemid = 8199992,
+        name = "Reins of the Yellow Magmammoth",
+        creaturePreview = 10500023,
+        creatureId = 10500023,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 425
+    },
+    [8199993] = {
+        itemid = 8199993,
+        name = "Reins of the Red Magmammoth",
+        creaturePreview = 10500022,
+        creatureId = 10500022,
+        description = "Available from the Webstore.",
+        icon = 424
+    },
+    [8199994] = {
+        itemid = 8199994,
+        name = "Reins of the Orange Magmammoth",
+        creaturePreview = 10500021,
+        creatureId = 10500021,
+        description = "Can be purchased from Harrison Jones for Adventurer's Coins.",
+        icon = 423
+    },
+    [8199995] = {
+        itemid = 8199995,
+        name = "Reins of the Blue Magmammoth",
+        creaturePreview = 10500020,
+        creatureId = 10500020,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 422
+    },
+    [8199996] = {
+        itemid = 8199996,
+        name = "Reins of the Majestic Armored Vorquin",
+        creaturePreview = 10500011,
+        creatureId = 10500011,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 388
+    },
+    [8199997] = {
+        itemid = 8199997,
+        name = "Reins of the Dark Armored Vorquin",
+        creaturePreview = 10500010,
+        creatureId = 10500010,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 387
+    },
+    [8199999] = {
+        itemid = 8199999,
+        name = "Reins of the Armored Vorquin Leystrider",
+        creaturePreview = 10500008,
+        creatureId = 10500008,
+        description = "Available from the Webstore.",
+        icon = 386
+    },
+    [8200000] = {
+        itemid = 8200000,
+        name = "Reins of the White Wind Eagle",
+        creaturePreview = 10500007,
+        creatureId = 10500007,
+        description = "Available from the Webstore.",
+        icon = 267
+    },
+    [8200001] = {
+        itemid = 8200001,
+        name = "Reins of the Sepia Wind Eagle",
+        creaturePreview = 10500006,
+        creatureId = 10500006,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 266
+    },
+    [8200002] = {
+        itemid = 8200002,
+        name = "Reins of the Red Wind Eagle",
+        creaturePreview = 10500005,
+        creatureId = 10500005,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 265
+    },
+    [8200004] = {
+        itemid = 8200004,
+        name = "Reins of the Gold Slyvern",
+        creaturePreview = 10500003,
+        creatureId = 10500003,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 312
+    },
+    [8200005] = {
+        itemid = 8200005,
+        name = "Reins of the Pale Slyvern",
+        creaturePreview = 10500002,
+        creatureId = 10500002,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 311
+    },
+    [8200006] = {
+        itemid = 8200006,
+        name = "Reins of the Liberated Slyvern",
+        creaturePreview = 10500001,
+        creatureId = 10500001,
+        description = "Available from the Webstore.",
+        icon = 310
+    },
+    [8200008] = {
+        itemid = 8200008,
+        name = "Reins of the Undercity Plaguebat",
+        creaturePreview = 81371,
+        creatureId = 81371,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 292
+    },
+    [8200009] = {
+        itemid = 8200009,
+        name = "Blinky's Egg",
+        creaturePreview = 11000013,
+        creatureId = 11000013,
+        description = "Available from the Webstore.",
+        icon = 268
+    },
+    [8200011] = {
+        itemid = 8200011,
+        name = "Havoc",
+        creaturePreview = 11000016,
+        creatureId = 11000016,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 565
+    },
+    [8200012] = {
+        itemid = 8200012,
+        name = "Chase",
+        creaturePreview = 11000015,
+        creatureId = 11000015,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 564
+    },
+    [8200013] = {
+        itemid = 8200013,
+        name = "Cap'n Berry",
+        creaturePreview = 11000017,
+        creatureId = 11000017,
+        description = "Available from Tiraxis' Ethereal Bazaar or the Webstore.",
+        icon = 605
+    },
+    [8200016] = {
+        itemid = 8200016,
+        name = "Pierre",
+        creaturePreview = 70082,
+        creatureId = 70082,
+        description = "Available from the Webstore.",
+        icon = 561
+    },
+    [8200017] = {
+        itemid = 8200017,
+        name = "Remornia",
+        creaturePreview = 11000046,
+        creatureId = 11000046,
+        description = "Available from the Webstore.",
+        icon = 92
+    },
+    [8200019] = {
+        itemid = 8200019,
+        name = "Sarge's Tale",
+        creaturePreview = 11000068,
+        creatureId = 11000068,
+        description = "Available from the Webstore.",
+        icon = 602
+    },
+    [8200028] = {
+        itemid = 8200028,
+        name = "Felfire Steed",
+        creaturePreview = 11000084,
+        creatureId = 11000084,
+        description = "Can be obtained this mount by completing the quest Fanning the Flames.",
+        icon = 401
+    },
+    [8200037] = {
+        itemid = 8200037,
+        name = "Murkidan",
+        creaturePreview = 11000092,
+        creatureId = 11000092,
+        description = "Can be purchased from the Argent Quartermaster.",
+        icon = 242
+    },
+    [8200038] = {
+        itemid = 8200038,
+        name = "Lu-Wu, The Tiger of Fortune",
+        creaturePreview = 11000058,
+        creatureId = 11000058,
+        description = "Available from the Webstore.",
+        icon = 510
+    },
+    [8200039] = {
+        itemid = 8200039,
+        name = "Argent Courser (Grey)",
+        creaturePreview = 11000094,
+        creatureId = 11000094,
+        description = "Can be purchased from the Argent Quartermaster.",
+        icon = 348
+    },
+    [8200040] = {
+        itemid = 8200040,
+        name = "Argent Courser (Blue)",
+        creaturePreview = 11000095,
+        creatureId = 11000095,
+        description = "Can be purchased from the Argent Quartermaster.",
+        icon = 347
+    },
+    [8200041] = {
+        itemid = 8200041,
+        name = "Argent Courser (Pink)",
+        creaturePreview = 11000096,
+        creatureId = 11000096,
+        description = "Can be purchased from the Argent Quartermaster.",
+        icon = 349
+    },
+    [8200043] = {
+        itemid = 8200043,
+        name = "Bi-An, The Tiger of Discipline",
+        creaturePreview = 11000059,
+        creatureId = 11000059,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 511
+    },
+    [8200044] = {
+        itemid = 8200044,
+        name = "Farseer's Raging Tempest (Arcane)",
+        creaturePreview = 11000107,
+        creatureId = 11000107,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Arcane.",
+        icon = 641
+    },
+    [8200045] = {
+        itemid = 8200045,
+        name = "Farseer's Raging Tempest (Felfire)",
+        creaturePreview = 11000106,
+        creatureId = 11000106,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Fel.",
+        icon = 642
+    },
+    [8200046] = {
+        itemid = 8200046,
+        name = "Farseer's Raging Tempest (Ice)",
+        creaturePreview = 11000108,
+        creatureId = 11000108,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Ice.",
+        icon = 643
+    },
+    [8200047] = {
+        itemid = 8200047,
+        name = "Farseer's Raging Tempest (Earth)",
+        creaturePreview = 11000109,
+        creatureId = 11000109,
+        description = "Available on the webstore from the Unleashed Elemental Master Warchest: Cache of Earth.",
+        icon = 644
+    },
+    [8200049] = {
+        itemid = 8200049,
+        name = "Reins of the Vulpine Familiar (Green)",
+        creaturePreview = 11000099,
+        creatureId = 11000099,
+        description = "Can be purchased from Vearn Buildbeard.",
+        icon = 705
+    },
+    [8200056] = {
+        itemid = 8200056,
+        name = "Reins of the Bloodthirsty Armored Direbat",
+        creaturePreview = 11000110,
+        creatureId = 11000110,
+        description = "Available from the Webstore.",
+        icon = 293
+    },
+    [8200058] = {
+        itemid = 8200058,
+        name = "Reins of the Sandy Hyena",
+        creaturePreview = 11000115,
+        creatureId = 11000115,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 361
+    },
+    [8200059] = {
+        itemid = 8200059,
+        name = "Reins of the Terracotta Hyena",
+        creaturePreview = 11000116,
+        creatureId = 11000116,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 363
+    },
+    [8200060] = {
+        itemid = 8200060,
+        name = "Reins of the Ruby Hyena",
+        creaturePreview = 11000117,
+        creatureId = 11000117,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 364
+    },
+    [8200061] = {
+        itemid = 8200061,
+        name = "Reins of the Amber Hyena",
+        creaturePreview = 11000118,
+        creatureId = 11000118,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 366
+    },
+    [8200062] = {
+        itemid = 8200062,
+        name = "Reins of the Teal Hyena",
+        creaturePreview = 11000119,
+        creatureId = 11000119,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 365
+    },
+    [8200063] = {
+        itemid = 8200063,
+        name = "Elvis",
+        creaturePreview = 11000120,
+        creatureId = 11000120,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 138
+    },
+    [8200064] = {
+        itemid = 8200064,
+        name = "Nugget",
+        creaturePreview = 11000121,
+        creatureId = 11000121,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 139
+    },
+    [8200066] = {
+        itemid = 8200066,
+        name = "Snowy",
+        creaturePreview = 11000123,
+        creatureId = 11000123,
+        description = "Available from the Webstore.",
+        icon = 140
+    },
+    [8200068] = {
+        itemid = 8200068,
+        name = "Reins of the White Magical Rooster",
+        creaturePreview = 11000125,
+        creatureId = 11000125,
+        description = "Available from the Webstore during Pilgrim's Bounty 2024.",
+        icon = 198
+    },
+    [8200069] = {
+        itemid = 8200069,
+        name = "Reins of the Dusky Undying Darkhound",
+        creaturePreview = 11000126,
+        creatureId = 11000126,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 219
+    },
+    [8200070] = {
+        itemid = 8200070,
+        name = "Reins of the Obsidian Undying Darkhound",
+        creaturePreview = 11000127,
+        creatureId = 11000127,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 221
+    },
+    [8200071] = {
+        itemid = 8200071,
+        name = "Reins of the Pale Undying Darkhound",
+        creaturePreview = 11000128,
+        creatureId = 11000128,
+        description = "Available from the Webstore.",
+        icon = 222
+    },
+    [8200072] = {
+        itemid = 8200072,
+        name = "Reins of the Sallow Undying Darkhound",
+        creaturePreview = 11000129,
+        creatureId = 11000129,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 223
+    },
+    [8200073] = {
+        itemid = 8200073,
+        name = "Reins of the Violaceous Undying Darkhound",
+        creaturePreview = 11000130,
+        creatureId = 11000130,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 224
+    },
+    [8200074] = {
+        itemid = 8200074,
+        name = "Reins of the Viridescent Undying Darkhound",
+        creaturePreview = 11000131,
+        creatureId = 11000131,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 225
+    },
+    [8200076] = {
+        itemid = 8200076,
+        name = "Reins of the Battle-Bound Warhound",
+        creaturePreview = 11000133,
+        creatureId = 11000133,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 220
+    },
+    [8200077] = {
+        itemid = 8200077,
+        name = "Reins of the Warstitched Darkhound",
+        creaturePreview = 11000132,
+        creatureId = 11000132,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 218
+    },
+    [8200080] = {
+        itemid = 8200080,
+        name = "Reins of the Tangled Dreamweaver",
+        creaturePreview = 11000135,
+        creatureId = 11000135,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 248
+    },
+    [8200081] = {
+        itemid = 8200081,
+        name = "Reins of the Wintertide Dreamweaver",
+        creaturePreview = 11000136,
+        creatureId = 11000136,
+        description = "Available from the Webstore.",
+        icon = 250
+    },
+    [8200082] = {
+        itemid = 8200082,
+        name = "Reins of the Autumnal Dreamweaver",
+        creaturePreview = 11000137,
+        creatureId = 11000137,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 249
+    },
+    [8200083] = {
+        itemid = 8200083,
+        name = "Reins of the Sapphire Gulper",
+        creaturePreview = 11000138,
+        creatureId = 11000138,
+        description = "Available from the Webstore.",
+        icon = 690
+    },
+    [8200084] = {
+        itemid = 8200084,
+        name = "Reins of the Ochre Gulper",
+        creaturePreview = 11000139,
+        creatureId = 11000139,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 691
+    },
+    [8200085] = {
+        itemid = 8200085,
+        name = "Reins of the Amethyst Gulper",
+        creaturePreview = 11000140,
+        creatureId = 11000140,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 692
+    },
+    [8200086] = {
+        itemid = 8200086,
+        name = "Reins of the Cardinal Gulper",
+        creaturePreview = 11000141,
+        creatureId = 11000141,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 693
+    },
+    [8200087] = {
+        itemid = 8200087,
+        name = "Reins of the Russet Gulper",
+        creaturePreview = 11000142,
+        creatureId = 11000142,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 694
+    },
+    [8200093] = {
+        itemid = 8200093,
+        name = "Stella",
+        creaturePreview = 11000045,
+        creatureId = 11000045,
+        description = "Available from the Webstore.",
+        icon = 556
+    },
+    [8200094] = {
+        itemid = 8200094,
+        name = "Reins of the Arctic Bear",
+        creaturePreview = 11000150,
+        creatureId = 11000150,
+        description = "Available on the Webstore from the Arctic Bear Bundle.",
+        icon = 456
+    },
+    [8200095] = {
+        itemid = 8200095,
+        name = "Reins of the Plagued Bear",
+        creaturePreview = 11000151,
+        creatureId = 11000151,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 455
+    },
+    [8200096] = {
+        itemid = 8200096,
+        name = "Reins of the Violet Dreamer",
+        creaturePreview = 11000156,
+        creatureId = 11000156,
+        description = "Available from the Webstore.",
+        icon = 291
+    },
+    [8200097] = {
+        itemid = 8200097,
+        name = "Reins of the Russet Dreamer",
+        creaturePreview = 11000157,
+        creatureId = 11000157,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 290
+    },
+    [8200100] = {
+        itemid = 8200100,
+        name = "Reins of the Sylverian Dreamer",
+        creaturePreview = 11000160,
+        creatureId = 11000160,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 289
+    },
+    [8200102] = {
+        itemid = 8200102,
+        name = "White Pricklefury Hare",
+        creaturePreview = 11000057,
+        creatureId = 11000057,
+        description = "Available from the Webstore.",
+        icon = 599
+    },
+    [8200103] = {
+        itemid = 8200103,
+        name = "Black Slyvern Pup",
+        creaturePreview = 11000155,
+        creatureId = 11000155,
+        description = "Available from the Webstore.",
+        icon = 313
+    },
+    [8200104] = {
+        itemid = 8200104,
+        name = "Tufted Flying Squirrel",
+        creaturePreview = 11000048,
+        creatureId = 11000048,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 669
+    },
+    [8200105] = {
+        itemid = 8200105,
+        name = "Chestnut",
+        creaturePreview = 11000049,
+        creatureId = 11000049,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 667
+    },
+    [8200106] = {
+        itemid = 8200106,
+        name = "Brown Pricklefury Hare",
+        creaturePreview = 11000054,
+        creatureId = 11000054,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 596
+    },
+    [8200107] = {
+        itemid = 8200107,
+        name = "Dark Pricklefury Hare",
+        creaturePreview = 11000055,
+        creatureId = 11000055,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 597
+    },
+    [8200108] = {
+        itemid = 8200108,
+        name = "Green Pricklefury Hare",
+        creaturePreview = 11000056,
+        creatureId = 11000056,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 598
+    },
+    [8200109] = {
+        itemid = 8200109,
+        name = "Yellow Slyvern Pup",
+        creaturePreview = 11000152,
+        creatureId = 11000152,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 316
+    },
+    [8200110] = {
+        itemid = 8200110,
+        name = "White Slyvern Pup",
+        creaturePreview = 11000153,
+        creatureId = 11000153,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 315
+    },
+    [8200111] = {
+        itemid = 8200111,
+        name = "Red Slyvern Pup",
+        creaturePreview = 11000154,
+        creatureId = 11000154,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 314
+    },
+    [8200112] = {
+        itemid = 8200112,
+        name = "Bucky's Reins",
+        creaturePreview = 11000165,
+        creatureId = 11000165,
+        description = "Available from the Webstore.",
+        icon = 302
+    },
+    [8200113] = {
+        itemid = 8200113,
+        name = "Hammy's Reins",
+        creaturePreview = 11000166,
+        creatureId = 11000166,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 303
+    },
+    [8200114] = {
+        itemid = 8200114,
+        name = "Reins of the Arcane Infused Great-Wyrm",
+        creaturePreview = 11000161,
+        creatureId = 11000161,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 539
+    },
+    [8200116] = {
+        itemid = 8200116,
+        name = "Reins of the Shadow Touched Great-Wyrm",
+        creaturePreview = 11000163,
+        creatureId = 11000163,
+        description = "Available from the Webstore.",
+        icon = 538
+    },
     [8200118] = {
         itemid = 8200118,
         name = "Beastmaster's Whistle: Arctic Bear",
@@ -21983,6 +37258,119 @@ AV_VanityItems = {
         creatureId = 11000167,
         description = "Available from the Webstore.",
         icon = 1
+    },
+    [8200119] = {
+        itemid = 8200119,
+        name = "Buttercup",
+        creaturePreview = 11000053,
+        creatureId = 11000053,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 665
+    },
+    [8200120] = {
+        itemid = 8200120,
+        name = "Hazel",
+        creaturePreview = 11000052,
+        creatureId = 11000052,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 666
+    },
+    [8200121] = {
+        itemid = 8200121,
+        name = "Walnut",
+        creaturePreview = 11000047,
+        creatureId = 11000047,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 670
+    },
+    [8200122] = {
+        itemid = 8200122,
+        name = "Pistachio",
+        creaturePreview = 11000050,
+        creatureId = 11000050,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 668
+    },
+    [8200123] = {
+        itemid = 8200123,
+        name = "Severed Claw",
+        creaturePreview = 11000176,
+        creatureId = 11000176,
+        description = "Available from the Webstore.",
+        icon = 212
+    },
+    [8200126] = {
+        itemid = 8200126,
+        name = "Gargantuan Grrloc",
+        creaturePreview = 11000170,
+        creatureId = 11000170,
+        description = "Can be purchased from Vearn Buildbeard.",
+        icon = 535
+    },
+    [8200174] = {
+        itemid = 8200174,
+        name = "Plucky",
+        creaturePreview = 11000186,
+        creatureId = 11000186,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 156
+    },
+    [8200175] = {
+        itemid = 8200175,
+        name = "Lucky-Dee",
+        creaturePreview = 11000187,
+        creatureId = 11000187,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 155
+    },
+    [8200176] = {
+        itemid = 8200176,
+        name = "Prismatic Slimesaber Kitten",
+        creaturePreview = 11000188,
+        creatureId = 11000188,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 190
+    },
+    [8200177] = {
+        itemid = 8200177,
+        name = "Jigglesworth Sr.'s Reins",
+        creaturePreview = 11000189,
+        creatureId = 11000189,
+        description = "Has a chance to drop from Viscidus within Temple of Ahn'Qiraj.",
+        zone = "Temple of Ahn'Qiraj",
+        icon = 191
+    },
+    [8200178] = {
+        itemid = 8200178,
+        name = "Prismatic Slimesaber's Reins",
+        creaturePreview = 11000190,
+        creatureId = 11000190,
+        description = "Can be purchased from Mazoga Museda for Triumphant Raider Tokens.",
+        icon = 193
+    },
+    [8200180] = {
+        itemid = 8200180,
+        name = "Violet Slimesaber's Reins",
+        creaturePreview = 11000192,
+        creatureId = 11000192,
+        description = "Reward from Nightmare - Spellbind Roulette Trial.",
+        icon = 192
+    },
+    [8200181] = {
+        itemid = 8200181,
+        name = "Scarlet Slimesaber's Reins",
+        creaturePreview = 11000193,
+        creatureId = 11000193,
+        description = "Reward from Ironman - Spellbind Roulette Trial.",
+        icon = 194
+    },
+    [8200182] = {
+        itemid = 8200182,
+        name = "Saffron Slimesaber's Reins",
+        creaturePreview = 11000194,
+        creatureId = 11000194,
+        description = "Reward from Hardcore - Spellbind Roulette Trial.",
+        icon = 195
     },
     [8200184] = {
         itemid = 8200184,
@@ -21999,5 +37387,141 @@ AV_VanityItems = {
         creatureId = 11000199,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 2.",
         icon = 1
+    },
+    [8200189] = {
+        itemid = 8200189,
+        name = "Blue Glimmerfly",
+        creaturePreview = 11000201,
+        creatureId = 11000201,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 416
+    },
+    [8200190] = {
+        itemid = 8200190,
+        name = "Dark Glimmerfly",
+        creaturePreview = 11000202,
+        creatureId = 11000202,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 417
+    },
+    [8200191] = {
+        itemid = 8200191,
+        name = "Fuchsia  Glimmerfly",
+        creaturePreview = 11000203,
+        creatureId = 11000203,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 418
+    },
+    [8200193] = {
+        itemid = 8200193,
+        name = "Green Glimmerfly",
+        creaturePreview = 11000205,
+        creatureId = 11000205,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 417
+    },
+    [8200195] = {
+        itemid = 8200195,
+        name = "Rosy Glimmerfly",
+        creaturePreview = 11000207,
+        creatureId = 11000207,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 418
+    },
+    [8200197] = {
+        itemid = 8200197,
+        name = "Aqua Glimmerfly",
+        creaturePreview = 11000209,
+        creatureId = 11000209,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 416
+    },
+    [8200198] = {
+        itemid = 8200198,
+        name = "Sunny Glimmerfly",
+        creaturePreview = 11000210,
+        creatureId = 11000210,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 417
+    },
+    [8200199] = {
+        itemid = 8200199,
+        name = "Shadow the Fox",
+        creaturePreview = 11000025,
+        creatureId = 11000025,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 305
+    },
+    [8200200] = {
+        itemid = 8200200,
+        name = "Xanthous",
+        creaturePreview = 11000023,
+        creatureId = 11000023,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 307
+    },
+    [8200201] = {
+        itemid = 8200201,
+        name = "Infernando",
+        creaturePreview = 11000022,
+        creatureId = 11000022,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 308
+    },
+    [8200202] = {
+        itemid = 8200202,
+        name = "Carna",
+        creaturePreview = 11000021,
+        creatureId = 11000021,
+        description = "Available from the Webstore.",
+        icon = 309
+    },
+    [8200203] = {
+        itemid = 8200203,
+        name = "Ingie",
+        creaturePreview = 11000020,
+        creatureId = 11000020,
+        description = "Available from Tiraxis' Ethereal Bazaar.",
+        icon = 306
+    },
+    [8200204] = {
+        itemid = 8200204,
+        name = "Personal Skyship",
+        creaturePreview = 11000211,
+        creatureId = 11000211,
+        description = "Available from the Webstore.",
+        icon = 557
+    },
+    [8200205] = {
+        itemid = 8200205,
+        name = "Reins of the Subdued Bat Loa",
+        creaturePreview = 11000212,
+        creatureId = 11000212,
+        description = "Available on the Webstore from the Blood Troll Fanatic's Hoard.",
+        icon = 160
+    },
+    [8200214] = {
+        itemid = 8200214,
+        name = "Reins of the Saprophyte Amalgam",
+        creaturePreview = 11000230,
+        creatureId = 11000230,
+        description = "Available from the Webstore.",
+        icon = 203
+    },
+    [8200215] = {
+        itemid = 8200215,
+        name = "Reins of the Spirited War Steed",
+        creaturePreview = 11000224,
+        creatureId = 11000224,
+        description = "Available on the Webstore from the Challenger’s Master Warchest (League 4 Bundle).",
+        icon = 49
+    },
+    [8388604] = {
+        itemid = 8388604,
+        name = "Swift Springstrider",
+        creaturePreview = 54741,
+        creatureId = 54741,
+        description = "Can be purchased from a Noblegarden Vendor during Noblegarden event.",
+        icon = 14
     },
 }

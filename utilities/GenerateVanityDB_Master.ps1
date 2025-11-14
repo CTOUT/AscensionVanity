@@ -60,13 +60,14 @@ if (Test-Path $zoneMappingsFile) {
     Write-Warning "Zone mappings file not found: $zoneMappingsFile (subzones will be treated as zones)"
 }
 
-# Icon mapping (same as final generator)
+# Icon mapping - combat pets use fixed indices, others use actual icon from data
 $iconMap = @{
     "Beastmaster's Whistle" = 1
     "Blood Soaked Vellum"   = 2
     "Summoner's Stone"      = 3
     "Draconic Warhorn"      = 4
     "Elemental Lodestone"   = 5
+    # Cosmetic Abilities and Mounts use their actual icon string (not index)
 }
 
 $emitted = @{}
@@ -78,8 +79,19 @@ foreach ($it in $items) {
     if ($emitted.ContainsKey($id)) { continue }
     if (-not $it.Name -or -not $it.Category) { $skipped++; continue }
     $emitted[$id] = $true
-    $iconIndex = $iconMap[$it.Category]
-    if (-not $iconIndex) { $skipped++; continue }
+    
+    # Get icon - either fixed index (combat pets) or lookup in array (cosmetics/mounts)
+    $iconRef = $null
+    if ($iconMap.ContainsKey($it.Category)) {
+        # Combat pets use fixed indices
+        $iconRef = $iconMap[$it.Category]
+    } elseif ($it.Category -in @("Cosmetic Ability", "Mount") -and $it.Icon) {
+        # Cosmetics/mounts - will look up index in icon array later
+        $iconRef = $it.Icon  # Store icon name for now
+    } else {
+        $skipped++
+        continue
+    }
     # Use zone/subzone fields from JSON (v2.2 enhancement)
     # Zone enrichment now happens in EnrichZoneData.ps1 before generation
     $zone = $it.zone
@@ -115,7 +127,7 @@ foreach ($it in $items) {
         description = $(if ($it.Description) { $it.Description } else { "" })
         zone = $zone  # v2.1: Primary zone
         subzone = $subzone  # v2.1: Specific location
-        icon = $iconIndex
+        icon = $iconRef  # Icon index (number) or icon name (string to be looked up)
         questLock = $questLock  # v2.2: Quest lock information (null if not quest-locked)
     }
 }
@@ -128,16 +140,24 @@ Write-Host "Analyzing unique icons from combat pet categories..." -ForegroundCol
 $scanFile = ".\data\AscensionVanity.lua"
 $uniqueIcons = @{}
 
-# Combat pet Group IDs we care about (8 total)
-# Dropped pets (5 Group IDs):
+# Collectible Group IDs (10 total)
+# Combat pets - Dropped (5 Group IDs):
 #   16777217 = Beastmaster's Whistle (Beasts)
 #   16777220 = Blood Soaked Vellum (Undead)
 #   16777218 = Summoner's Stone (Demons)
 #   16777224 = Draconic Warhorn (Dragonkin)
 #   16777232 = Elemental Lodestone (Elementals)
-# Seasonal/Event rewards (3 Group IDs):
+# Combat pets - Seasonal/Event rewards (3 Group IDs):
 #   553648129, 553648130, 553648136 = Seasonal reward pets
+# Cosmetic Abilities (1 Group ID):
+#   134217728 = Sigils and other cosmetic abilities (960 sigils + 289 other cosmetics)
+# Mounts (1 Group ID):
+#   67108864 = Mounts (604 total, ~28 farmable drops)
 $combatPetGroups = @(16777217, 16777220, 16777218, 16777224, 16777232, 553648129, 553648130, 553648136)
+$nonCombatCompanionGroups = @(134217728)  # Sigils, Calves, Cubs, etc.
+$mountGroups = @(67108864, 671088640)  # Regular + Seasonal mounts
+$bookGroups = @(167772160)  # Books of Ascension
+$allCollectibleGroups = $combatPetGroups + $nonCombatCompanionGroups + $mountGroups + $bookGroups
 
 if (Test-Path $scanFile) {
     $scanContent = Get-Content $scanFile -Raw
@@ -157,13 +177,13 @@ if (Test-Path $scanFile) {
             if ($blockContent -match '\["group"\]\s*=\s*(\d+)') {
                 $groupId = [int]$Matches[1]
                 
-                # Only process items from our 5 combat pet categories
-                if ($combatPetGroups -contains $groupId) {
+                # Only process items from our collectible categories
+                if ($allCollectibleGroups -contains $groupId) {
                     # Extract icon from this block
                     if ($blockContent -match '\["icon"\]\s*=\s*"([^"]+)"') {
                         $iconName = $Matches[1]
-                        # Clean up icon path
-                        $cleanIcon = $iconName -replace 'Interface\\\\Icons\\\\', '' -replace 'Interface\\Icons\\', ''
+                        # Clean up icon path - handle both escaped and normal slashes
+                        $cleanIcon = $iconName -replace 'Interface\\\\Icons\\\\', '' -replace 'Interface\\Icons\\', '' -replace 'Interface/Icons/', ''
                         if ($cleanIcon -and -not $uniqueIcons.ContainsKey($cleanIcon)) {
                             $uniqueIcons[$cleanIcon] = $true
                         }
@@ -179,7 +199,30 @@ if (Test-Path $scanFile) {
 }
 
 $iconArray = $uniqueIcons.Keys | Sort-Object
-Write-Host "  Found $($iconArray.Count) unique icons from combat pet categories" -ForegroundColor Gray
+Write-Host "  Found $($iconArray.Count) unique icons from collectible categories" -ForegroundColor Gray
+
+# Build icon name to index lookup
+$iconNameToIndex = @{}
+$idx = 1
+foreach ($icon in $iconArray) {
+    $iconNameToIndex[$icon] = $idx
+    $idx++
+}
+
+# Convert string icon references to indices in processed items
+foreach ($item in $processed) {
+    if ($item.icon -is [string]) {
+        # Clean the icon name
+        $cleanIcon = $item.icon -replace 'Interface\\\\Icons\\\\', '' -replace 'Interface\\Icons\\', '' -replace 'Interface/Icons/', ''
+        if ($iconNameToIndex.ContainsKey($cleanIcon)) {
+            $item.icon = $iconNameToIndex[$cleanIcon]
+        } else {
+            # Icon not in array - this shouldn't happen, but handle gracefully
+            Write-Warning "Icon not found in array: $cleanIcon (item $($item.itemid))"
+            $item.icon = 1  # Default to first icon
+        }
+    }
+}
 
 # Build DB content with metadata
 $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
@@ -247,9 +290,13 @@ $header = @"
 --     - notes: Additional context (summon method, etc.)
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
--- Group IDs (8 total):
---   Dropped: 16777217, 16777220, 16777218, 16777224, 16777232
---   Seasonal: 553648129, 553648130, 553648136
+-- Group IDs (10 total):
+--   Combat Pets (Dropped): 16777217, 16777220, 16777218, 16777224, 16777232
+--   Combat Pets (Seasonal): 553648129, 553648130, 553648136
+--   Non-Combat Companions: 134217728 (Sigils, Calves, Cubs, etc.)
+--   Mounts (Regular): 67108864
+--   Mounts (Seasonal): 671088640
+--   Books of Ascension: 167772160
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {

@@ -302,6 +302,7 @@ local ClearExpandedItems
 local UpdateProgressBars
 local GetCreaturesInSubzone
 local RefreshExpandedItems
+local ResizeFrame
 
 -- Progress bars container
 progressFrame.progressBars = {}
@@ -927,7 +928,7 @@ GetCreaturesInSubzone = function(subzone)
 end
 
 -- Helper function to resize frame based on visible content
-local function ResizeFrame()
+ResizeFrame = function()
     local headerHeight = 45  -- Title bar height
     local buttonBarHeight = 22  -- Button bar below title
     local barHeight = 25
