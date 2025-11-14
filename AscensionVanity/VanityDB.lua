@@ -25,12 +25,14 @@
 --     - warning: Custom warning message
 --     - notes: Additional context (summon method, etc.)
 -- 
--- Categories: Beast, Demon, Elemental, Dragonkin, Undead
--- Group IDs (8 total):
---   Combat Pets (Dropped): 16777217, 16777220, 16777218, 16777224, 16777232
---   Combat Pets (Seasonal): 553648129, 553648130, 553648136
---   Cosmetic Abilities: 134217728
---   Mounts: 67108864
+-- Categories: Beast, Demon, Elemental, Dragonkin, Undead, Non-Combat Companion, Mount, Book of Ascension
+-- Group IDs (10 total, 4,221 items):
+--   Combat Pets (Dropped): 16777217, 16777220, 16777218, 16777224, 16777232 (2,345 items)
+--   Combat Pets (Seasonal): 553648129, 553648130, 553648136 (10 items)
+--   Non-Combat Companions: 134217728 - Sigils, Calves, Cubs, etc. (1,249 items)
+--   Mounts (Regular): 67108864 (548 items)
+--   Mounts (Seasonal): 671088640 (56 items)
+--   Books of Ascension: 167772160 (13 items)
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
