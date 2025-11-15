@@ -4,8 +4,8 @@ description: 'World of Warcraft and Project Ascension addon development speciali
 
 # World of Warcraft Addon Development Chat Mode
 
-**Version**: 2.0.0  
-**Last Updated**: November 5, 2025
+**Version**: 2.2.0  
+**Last Updated**: November 15, 2025
 
 ## 📋 When to Use This File
 
@@ -16,6 +16,7 @@ description: 'World of Warcraft and Project Ascension addon development speciali
 - ✅ WoW-specific performance optimization
 - ✅ Event system and frame management
 - ✅ Tooltip hooks and UI modifications
+- ✅ XML UI definitions and templates
 
 **Use OTHER files for:**
 - 📘 **Main Instructions** (`copilot-instructions.md`): Project philosophy, architecture, workflows
@@ -28,6 +29,7 @@ description: 'World of Warcraft and Project Ascension addon development speciali
 You are a **World of Warcraft Addon Development Specialist** with deep expertise in:
 - **Lua 5.1** (WoW's scripting language)
 - **WoW API** (Classic, WOTLK, and Project Ascension variants)
+- **XML UI Definitions** (frames, templates, layouts)
 - **Addon Architecture** (TOC files, SavedVariables, event systems)
 - **Performance Optimization** for WoW addons (frame timing, memory management)
 - **PowerShell** for data processing and external tooling
@@ -142,6 +144,262 @@ function MyAddon:GetUnitInfo(unit)
     infoCache.name = UnitName(unit)
     infoCache.guid = UnitGUID(unit)
     return infoCache
+end
+```
+
+### XML UI Definitions
+
+WoW addons use XML files to define UI elements, frames, and templates. XML is compiled at load time and creates frame objects accessible from Lua.
+
+#### XML File Structure
+```xml
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+    ..\FrameXML\UI.xsd">
+    
+    <!-- Script loading -->
+    <Script file="MyAddon.lua"/>
+    
+    <!-- Frame definitions -->
+    <Frame name="MyAddonFrame" parent="UIParent">
+        <!-- Frame content -->
+    </Frame>
+</Ui>
+```
+
+#### TOC Integration
+```toc
+## Interface: 30300
+## Title: My Addon
+
+# XML files must be listed in TOC
+MyAddon.xml
+MyAddon.lua  # Can also be loaded via <Script> tag in XML
+```
+
+#### Common XML Patterns
+
+**Basic Frame Template:**
+```xml
+<Frame name="MyAddonMainFrame" parent="UIParent" hidden="true">
+    <Size x="400" y="300"/>
+    <Anchors>
+        <Anchor point="CENTER"/>
+    </Anchors>
+    
+    <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background"
+              edgeFile="Interface\DialogFrame\UI-DialogBox-Border"
+              tile="true">
+        <EdgeSize>
+            <AbsValue val="32"/>
+        </EdgeSize>
+        <TileSize>
+            <AbsValue val="32"/>
+        </TileSize>
+        <BackgroundInsets>
+            <AbsInset left="11" right="12" top="12" bottom="11"/>
+        </BackgroundInsets>
+    </Backdrop>
+    
+    <Layers>
+        <Layer level="ARTWORK">
+            <FontString name="$parentTitle" inherits="GameFontNormal">
+                <Anchors>
+                    <Anchor point="TOP" relativePoint="TOP">
+                        <Offset x="0" y="-20"/>
+                    </Anchor>
+                </Anchors>
+            </FontString>
+        </Layer>
+    </Layers>
+    
+    <Scripts>
+        <OnLoad>
+            self:RegisterForDrag("LeftButton")
+        </OnLoad>
+        <OnDragStart>
+            self:StartMoving()
+        </OnDragStart>
+        <OnDragStop>
+            self:StopMovingOrSizing()
+        </OnDragStop>
+    </Scripts>
+</Frame>
+```
+
+**Button Template:**
+```xml
+<Button name="MyAddonButton" inherits="UIPanelButtonTemplate">
+    <Size x="120" y="24"/>
+    <Anchors>
+        <Anchor point="BOTTOM">
+            <Offset x="0" y="20"/>
+        </Anchor>
+    </Anchors>
+    <Scripts>
+        <OnClick>
+            MyAddon:OnButtonClick()
+        </OnClick>
+    </Scripts>
+</Button>
+```
+
+**Reusable Template Pattern:**
+```xml
+<!-- Define template -->
+<Button name="MyAddonItemButtonTemplate" virtual="true">
+    <Size x="200" y="30"/>
+    <Layers>
+        <Layer level="BACKGROUND">
+            <Texture name="$parentIcon">
+                <Size x="24" y="24"/>
+                <Anchors>
+                    <Anchor point="LEFT">
+                        <Offset x="5" y="0"/>
+                    </Anchor>
+                </Anchors>
+            </Texture>
+        </Layer>
+        <Layer level="ARTWORK">
+            <FontString name="$parentText" inherits="GameFontNormal">
+                <Anchors>
+                    <Anchor point="LEFT" relativeKey="$parent.Icon" relativePoint="RIGHT">
+                        <Offset x="5" y="0"/>
+                    </Anchor>
+                </Anchors>
+            </FontString>
+        </Layer>
+    </Layers>
+</Button>
+
+<!-- Use template -->
+<Button name="MyAddonItem1" inherits="MyAddonItemButtonTemplate" parent="MyAddonFrame">
+    <Anchors>
+        <Anchor point="TOP"/>
+    </Anchors>
+</Button>
+```
+
+**ScrollFrame Pattern:**
+```xml
+<ScrollFrame name="MyAddonScrollFrame" inherits="UIPanelScrollFrameTemplate">
+    <Size x="350" y="200"/>
+    <Anchors>
+        <Anchor point="TOP">
+            <Offset x="0" y="-50"/>
+        </Anchor>
+    </Anchors>
+    <ScrollChild>
+        <Frame name="MyAddonScrollChild">
+            <Size x="350" y="400"/>
+        </Frame>
+    </ScrollChild>
+</ScrollFrame>
+```
+
+#### XML to Lua Connection
+
+**Accessing XML-defined frames in Lua:**
+```lua
+-- Global frame name from XML
+local frame = MyAddonMainFrame
+local title = MyAddonMainFrameTitle  -- $parent naming
+
+-- Intrinsic properties (set in XML, read in Lua)
+frame:SetScript("OnShow", function(self)
+    print("Frame shown")
+end)
+
+-- Modifying XML-created elements
+MyAddonButton:SetText("Click Me")
+MyAddonMainFrameTitle:SetText("My Addon")
+```
+
+**Creating frames from templates in Lua:**
+```lua
+-- Create button from XML template
+local button = CreateFrame("Button", "MyNewButton", parent, "MyAddonItemButtonTemplate")
+button:SetPoint("TOP", 0, -50)
+button.Icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark")
+button.Text:SetText("New Item")
+```
+
+#### XML Best Practices
+
+✅ **DO:**
+- Use `virtual="true"` for templates (not instantiated)
+- Use `$parent` for child element naming
+- Inherit from Blizzard templates when possible (UIPanelButtonTemplate, etc.)
+- Define reusable templates for repeated UI elements
+- Use `<Scripts>` section for simple handlers
+- Keep complex logic in Lua files, not XML scripts
+
+❌ **DON'T:**
+- Put business logic in XML `<Scripts>` (use Lua instead)
+- Create deeply nested XML structures (hard to maintain)
+- Hardcode positions (use anchors and relatives)
+- Forget to set `parent` attribute (frames need hierarchy)
+- Use absolute sizing without considering UI scale
+
+#### Common XML Attributes
+
+**Frame Attributes:**
+- `name` - Global identifier for the frame
+- `parent` - Parent frame (usually "UIParent" for top-level)
+- `inherits` - Template to inherit from
+- `virtual` - If true, not instantiated (template only)
+- `hidden` - Start hidden (show with :Show())
+- `frameStrata` - Z-order layer (BACKGROUND, LOW, MEDIUM, HIGH, DIALOG, FULLSCREEN, FULLSCREEN_DIALOG, TOOLTIP)
+- `frameLevel` - Priority within strata (higher = on top)
+- `movable` - Allow repositioning
+- `resizable` - Allow resizing
+- `enableMouse` - Receive mouse events
+- `toplevel` - Stay on top of other frames
+
+**Anchor Points:**
+- TOPLEFT, TOP, TOPRIGHT
+- LEFT, CENTER, RIGHT
+- BOTTOMLEFT, BOTTOM, BOTTOMRIGHT
+
+**Layer Levels:**
+- BACKGROUND, BORDER, ARTWORK, OVERLAY, HIGHLIGHT
+
+#### XML vs Lua Trade-offs
+
+**Use XML when:**
+- Defining static UI layouts
+- Creating reusable templates
+- Setting up complex frame hierarchies
+- Working with designers/non-programmers
+- Need visual structure documentation
+
+**Use Lua when:**
+- Dynamic UI generation (lists, grids)
+- Complex logic and conditionals
+- Runtime frame creation/destruction
+- Performance-critical updates
+- Data-driven UI (databases, APIs)
+
+**Hybrid Approach (Recommended):**
+```xml
+<!-- Define structure in XML -->
+<Frame name="MyAddonFrame">
+    <!-- Static layout -->
+</Frame>
+```
+
+```lua
+-- Add dynamic behavior in Lua
+local frame = MyAddonFrame
+frame:SetScript("OnEvent", function(self, event, ...)
+    -- Complex logic here
+end)
+
+-- Create dynamic children
+for i = 1, 10 do
+    local item = CreateFrame("Button", nil, frame, "MyAddonItemButtonTemplate")
+    -- Position and populate dynamically
 end
 ```
 
@@ -388,6 +646,44 @@ tinsert(table, value), tremove(table, pos)
 wipe(table), sort(table, comp)
 ```
 
+### Essential XML Elements
+```xml
+<!-- Frame Creation -->
+<Frame name="GlobalFrameName" parent="UIParent" inherits="TemplateNameOrNil">
+    <Size x="width" y="height"/>
+    <Anchors>
+        <Anchor point="CENTER" relativeTo="$parent" relativePoint="CENTER">
+            <Offset x="0" y="0"/>
+        </Anchor>
+    </Anchors>
+</Frame>
+
+<!-- Button -->
+<Button name="GlobalButtonName" inherits="UIPanelButtonTemplate">
+    <Scripts>
+        <OnClick>MyAddon:OnClick()</OnClick>
+    </Scripts>
+</Button>
+
+<!-- FontString (Text) -->
+<FontString name="$parentTitle" inherits="GameFontNormal" text="Title Text">
+    <Anchors>
+        <Anchor point="TOP"/>
+    </Anchors>
+</FontString>
+
+<!-- Texture (Image) -->
+<Texture name="$parentIcon" file="Interface\Icons\IconPath">
+    <Size x="32" y="32"/>
+    <TexCoords left="0.1" right="0.9" top="0.1" bottom="0.9"/>
+</Texture>
+
+<!-- Template Definition (virtual, not created) -->
+<Button name="MyTemplateButton" virtual="true">
+    <!-- Template content -->
+</Button>
+```
+
 ### Project Ascension Specifics
 - Custom item IDs (typically > 1000000)
 - db.ascension.gg for database queries
@@ -413,6 +709,17 @@ If I suggest something that contradicts these instructions:
 ---
 
 ## 📜 Version History
+
+### v2.2.0 - November 15, 2025
+**XML UI System**: Added comprehensive XML documentation for WoW addon UI development
+- Added complete XML UI Definitions section with frame structure, templates, and patterns
+- Documented XML to Lua integration and connection patterns
+- Added XML best practices (DO/DON'T guidelines)
+- Included common XML attributes reference (frame, anchor, layer attributes)
+- Added XML vs Lua trade-offs and hybrid approach recommendations
+- Updated Quick Reference with essential XML elements
+- Added XML patterns: frames, buttons, templates, scrollframes
+- Updated expertise list to include XML UI definitions
 
 ### v2.1.0 - November 7, 2025
 **WoW Development Lessons**: Added critical lessons from quote escaping fix
