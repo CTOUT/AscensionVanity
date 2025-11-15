@@ -114,7 +114,7 @@ foreach ($item in $items) {
             $response = $httpClient.GetStringAsync($url).Result
             $httpClient.Dispose()
             
-            # Extract pet family data from JavaScript
+            # Strategy 1: Extract pet family data from JavaScript listview
             if ($response -match 'new Listview\(\{"template":"pet","id":"pet-family".*?"data":(\[.*?\])') {
                 $json = $Matches[1]
                 $family = $json | ConvertFrom-Json | Select-Object -First 1
@@ -133,23 +133,69 @@ foreach ($item in $items) {
                         familyType = $familyType
                         icon = "Interface\Icons\$($family.icon)"
                         isExotic = [bool]$family.exotic
+                        source = "pet-family-listview"
                     }
                     
                     $found++
                     Write-Host "    ✓ Found: $($family.name) ($familyType)" -ForegroundColor Green
                     $success = $true
                     break
-                } else {
-                    $notFound++
-                    Write-Host "    ✗ No family data in JSON" -ForegroundColor Yellow
+                }
+            }
+            
+            # Strategy 2: Extract species from item tooltip (e.g., "Man'ari Eredar")
+            # Pattern in JavaScript tooltip: <span class=\"q2\">SPECIES<\/span>
+            if ($response -match '<span class=\\"q2\\">([^<]+)<\\/span><br \\/>' -and 
+                $Matches[1] -notmatch '^(Binds|Unique|Soulbound|Use:|Requires|Item Level)') {
+                
+                $speciesName = $Matches[1].Trim()
+                
+                # Validate it's not empty and looks like a species name
+                if ($speciesName.Length -gt 3) {
+                    
+                    # Attempt to map species to known family types
+                    $familyType = "Unknown"
+                    if ($speciesName -match 'Demon|Doomguard|Fel|Satyr|Eredar|Shivarra|Nathrezim') {
+                        $familyType = "Demon"
+                    } elseif ($speciesName -match 'Undead|Skeleton|Ghoul|Zombie|Wraith|Lich|Shade|Banshee') {
+                        $familyType = "Undead"
+                    } elseif ($speciesName -match 'Elemental|Revenant|Golem|Phoenix|Lasher|Treant|Ancient') {
+                        $familyType = "Elemental"
+                    } elseif ($speciesName -match 'Dragon|Drake|Whelp|Wyrm|Wyrmkin') {
+                        $familyType = "Dragonkin"
+                    }
+                    
+                    $enriched[$itemId] = @{
+                        itemId = [int]$itemId
+                        itemName = $item.ItemName
+                        creatureId = if ($item.CreatureId) { [int]$item.CreatureId } else { 0 }
+                        familyId = 0
+                        familyName = $speciesName
+                        familyType = $familyType
+                        icon = ""
+                        isExotic = $false
+                        source = "item-tooltip-species"
+                    }
+                    
+                    $found++
+                    Write-Host "    ✓ Found species in tooltip: $speciesName ($familyType)" -ForegroundColor Green
                     $success = $true
                     break
                 }
-            } else {
+            }
+            
+            # Strategy 3: Check for spell link (e.g., spell=944444)
+            if ($response -match 'spell=(\d+)') {
+                $spellId = $Matches[1]
+                Write-Host "    → Found spell link: $spellId (could scrape for creature type)" -ForegroundColor Gray
+                # Note: Could add spell scraping here in future
+            }
+            
+            # No data found
+            if (-not $success) {
                 $notFound++
-                Write-Host "    ✗ No pet-family section found" -ForegroundColor Yellow
+                Write-Host "    ✗ No family data or species found" -ForegroundColor Yellow
                 $success = $true
-                break
             }
             
         } catch {
