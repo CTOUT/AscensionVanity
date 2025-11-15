@@ -1,7 +1,7 @@
 # AscensionVanity v2.4 Feature Roadmap
 
 **Date:** November 10, 2025  
-**Last Updated:** November 10, 2025  
+**Last Updated:** November 15, 2025  
 **Current Version:** v2.3-dev (Active Development)  
 **Next Version:** v2.4 (Planning)  
 **Development Branch:** TBD  
@@ -11,7 +11,7 @@
 
 ## Overview
 
-Version 2.4 focuses on **Enhanced Geographic Hierarchies** and **Data Quality Improvements** to solve issues with dungeon visibility and improve location-based filtering.
+Version 2.4 focuses on **Database Optimization**, **UI Integration**, and **Enhanced Geographic Hierarchies** to reduce database size and expose pet family data in-game.
 
 **Key Problems Solved:**  
 1. **Dungeon Visibility**: Dungeons are both subzones (Ragefire is in Orgrimmar) AND zones (Ragefire has internal areas). Items disappear when you enter.
@@ -29,7 +29,275 @@ Version 2.4 focuses on **Enhanced Geographic Hierarchies** and **Data Quality Im
 
 ## v2.4 Core Features
 
-### 1. Dungeon Parent Zone Relationships 🗺️
+### 1. Database Optimization & Indexing 🗜️
+**Priority:** ⭐⭐⭐⭐ Critical  
+**Complexity:** High  
+**Status:** 📋 Planned  
+**Impact:** Reduces VanityDB.lua from 1,370 KB → ~800-900 KB (35-40% reduction)
+
+**Problem:**  
+Current database (1,370 KB) has massive duplication:
+- Pet family data copied for every creature (2,089 copies of ~40 unique families)
+- Zone names repeated thousands of times ("Orgrimmar", "Stormwind", etc.)
+- Subzone names repeated hundreds of times
+- Description patterns repeated with minor variations
+
+**Current Size Breakdown (estimated):**
+```
+Pet Family Data:  ~400 KB (2,089 items × ~200 bytes each)
+Zone Strings:     ~150 KB (repeated ~2,000+ times)
+Subzone Strings:  ~100 KB (repeated ~1,000+ times)
+Descriptions:     ~300 KB (many similar patterns)
+Other Data:       ~420 KB (names, IDs, icons, etc.)
+= Total: 1,370 KB
+```
+
+**Solution: Index-Based Referencing**
+
+Create lookup tables and use indices instead of copying strings:
+
+```lua
+-- NEW: Indexed lookup tables
+AV_PetFamilies = {
+    [1] = {id=1, name="Wolf", type="Ferocity", icon="...", isExotic=false},
+    [2] = {id=2, name="Cat", type="Ferocity", icon="...", isExotic=false},
+    [3] = {id=3, name="Spider", type="Cunning", icon="...", isExotic=false},
+    -- ... 155 total families
+}
+
+AV_Zones = {
+    [1] = "Orgrimmar",
+    [2] = "Stormwind City",
+    [3] = "Ironforge",
+    -- ... ~200 unique zones
+}
+
+AV_Subzones = {
+    [1] = "Valley of Strength",
+    [2] = "The Drag",
+    [3] = "Ragefire Chasm",
+    -- ... ~1,000 unique subzones
+}
+
+-- Items reference indices instead of duplicating strings
+AV_VanityItems = {
+    [79256] = {
+        itemid = 79256,
+        name = "Beastmaster's Whistle: Felhound",
+        creatureId = 79010,
+        zone = 1,           -- INDEX into AV_Zones ("Orgrimmar")
+        subzone = 127,      -- INDEX into AV_Subzones ("Valley of Trials")
+        petFamily = 8,      -- INDEX into AV_PetFamilies (Demon family)
+        icon = 1
+    }
+}
+```
+
+**Size Savings:**
+- **Pet Families**: 400 KB → ~15 KB (indexed table) + ~40 KB (references) = **~345 KB saved**
+- **Zones**: 150 KB → ~5 KB (indexed table) + ~10 KB (references) = **~135 KB saved**
+- **Subzones**: 100 KB → ~20 KB (indexed table) + ~10 KB (references) = **~70 KB saved**
+- **Total Reduction**: ~550 KB savings = **40% smaller database**
+
+**Implementation:**
+
+1. **Update GenerateVanityDB_Master.ps1:**
+   - Build unique family/zone/subzone lists
+   - Create indexed lookup tables
+   - Convert item fields to indices
+   - Generate optimized VanityDB.lua
+
+2. **Update VanityDB_Loader.lua:**
+   - Add lookup functions: `AV_GetPetFamily(index)`, `AV_GetZone(index)`, `AV_GetSubzone(index)`
+   - Update existing code to use indexed lookups
+   - Backwards compatible fallback for old code
+
+3. **Test Performance:**
+   - Measure load time impact
+   - Verify memory usage reduction
+   - Ensure no lag when accessing indexed data
+
+**Benefits:**
+- ✅ 40% smaller addon download
+- ✅ Faster addon load time
+- ✅ Lower memory footprint in-game
+- ✅ Foundation for future data expansion
+- ✅ Easier to maintain (change family once, affects all items)
+
+---
+
+### 2. Pet Family UI Integration 🐾
+**Priority:** ⭐⭐⭐⭐ Critical  
+**Complexity:** Medium  
+**Status:** 📋 Planned  
+**Depends On:** Database Optimization (Feature #1)
+
+**Problem:**  
+Pet family data now exists in database but isn't displayed anywhere in-game. Players can't see:
+- What family a pet belongs to (Wolf, Spider, Demon, etc.)
+- What type the family is (Ferocity, Tenacity, Cunning, etc.)
+- Whether a family is exotic (requires Beast Mastery spec)
+- Family icon for visual identification
+
+**Solution: Add Family Info to Multiple UIs**
+
+**A) Tooltip Enhancement:**
+```lua
+-- Add after item name in tooltip
+GameTooltip:AddLine("Family: Wolf (Ferocity)", 0.7, 0.7, 1.0)  -- Light blue
+-- Or with icon:
+GameTooltip:AddLine("|T" .. familyIcon .. ":16|t Wolf (Ferocity)", 0.7, 0.7, 1.0)
+-- If exotic:
+GameTooltip:AddLine("Requires: Beast Mastery", 1.0, 0.5, 0.0)  -- Orange warning
+```
+
+**B) Database Browser Enhancement:**
+Add family column and filter:
+```lua
+-- Add column header
+local familyHeader = browser:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+familyHeader:SetText("Family")
+
+-- Add family filter dropdown
+local familyFilter = CreateFrame("Frame", "AVDatabaseBrowserFamilyFilter", browser, "UIDropDownMenuTemplate")
+-- Populate with: All Families, Ferocity, Tenacity, Cunning, Demon, Undead, Elemental, Dragonkin
+```
+
+**C) Collection Progress Frame Enhancement:**
+Add family-based statistics:
+```lua
+-- Current: Shows progress by category (Beasts, Demons, etc.)
+-- New: Show progress by FAMILY within category
+-- Example:
+--   Beasts (342/910)
+--     ├─ Wolf: 23/45
+--     ├─ Cat: 18/32
+--     ├─ Spider: 15/28
+--     └─ ...
+```
+
+**D) Regional Guide Enhancement:**
+Show family distribution in current zone:
+```lua
+-- Add family summary section
+"Available Families in Elwynn Forest:"
+"  Wolf (12 items), Spider (8 items), Bear (3 items)"
+```
+
+**Implementation:**
+
+1. **Update Core.lua (Tooltips):**
+   - Add family display after item name
+   - Show exotic requirement warning
+   - Add family icon (optional, size permitting)
+
+2. **Update DatabaseBrowser.lua:**
+   - Add family column to item list
+   - Add family filter dropdown
+   - Update search to include family name
+   - Add "Group by Family" toggle
+
+3. **Update CollectionProgressFrame.lua:**
+   - Add expandable family tree view
+   - Show per-family progress bars
+   - Add family icons to tree
+
+4. **Update RegionalGuide.lua:**
+   - Add family distribution summary
+   - Add family filter to guide
+   - Show family icons in item list
+
+**Benefits:**
+- ✅ Players can see family information at a glance
+- ✅ Easy to filter by specific families they want
+- ✅ Better understanding of pet diversity in each zone
+- ✅ Helps hunters plan farming routes by family needs
+- ✅ Visual feedback with family icons
+
+---
+
+### 3. Description Parameterization 📝
+**Priority:** ⭐⭐⭐ High  
+**Complexity:** Medium  
+**Status:** 📋 Planned  
+**Impact:** Additional 100-150 KB savings
+
+**Problem:**  
+Descriptions have repeated patterns with minor variations:
+- "Has a chance to drop from X within Y" (repeated 2,000+ times)
+- "Available from Tiraxis' Ethereal Bazaar" (repeated 100+ times)
+- "Seasonal Reward. Introduced in Season X, Chapter Y" (repeated 50+ times)
+- "Can be purchased from X" (repeated 30+ times)
+
+**Current Duplication:**
+```lua
+description = "Has a chance to drop from Timber Wolf within Elwynn Forest"
+description = "Has a chance to drop from Mine Spider within Elwynn Forest"
+description = "Has a chance to drop from Defias Bandit within Westfall"
+-- 2,000+ variations of the same pattern!
+```
+
+**Solution: Template-Based Descriptions**
+
+Create description templates with parameters:
+
+```lua
+-- NEW: Description templates
+AV_DescriptionTemplates = {
+    [1] = "Has a chance to drop from %s within %s",
+    [2] = "Available from Tiraxis' Ethereal Bazaar",
+    [3] = "Seasonal Reward. Introduced in Season %d, Chapter %d",
+    [4] = "Can be purchased from %s",
+    [5] = "Quest Reward",
+    [6] = "Vendor Item",
+    [7] = "%s",  -- Custom description (fallback)
+}
+
+-- Items reference template + parameters
+AV_VanityItems = {
+    [79256] = {
+        itemid = 79256,
+        name = "Beastmaster's Whistle: Felhound",
+        descTemplate = 4,  -- "Can be purchased from %s"
+        descParams = {"High Inquisitor Qormaladon"},
+        -- Runtime: string.format(AV_DescriptionTemplates[4], "High Inquisitor Qormaladon")
+        -- Result: "Can be purchased from High Inquisitor Qormaladon"
+    }
+}
+```
+
+**Implementation:**
+
+1. **Analyze Description Patterns:**
+   - Extract all unique description templates
+   - Identify common parameters (creature names, zone names, season numbers)
+   - Build template dictionary
+
+2. **Update GenerateVanityDB_Master.ps1:**
+   - Pattern matching to identify template + parameters
+   - Generate template dictionary
+   - Convert descriptions to template indices + params
+
+3. **Update VanityDB_Loader.lua:**
+   - Add `AV_GetDescription(item)` function
+   - Format templates with parameters at runtime
+   - Cache formatted strings for performance
+
+**Size Savings:**
+- **Templates**: ~50 templates × 50 bytes = ~2.5 KB
+- **Parameters**: ~2,000 items × ~20 bytes = ~40 KB
+- **vs Current**: ~300 KB raw descriptions
+- **Savings**: ~257 KB = **86% reduction in description data**
+
+**Benefits:**
+- ✅ Massive size reduction
+- ✅ Consistent description formatting
+- ✅ Easy to update descriptions globally
+- ✅ Localization-friendly (templates can be translated)
+
+---
+
+### 4. Dungeon Parent Zone Relationships 🗺️
 **Priority:** ⭐⭐⭐ High  
 **Complexity:** Medium  
 **Status:** 📋 Planned
