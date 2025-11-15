@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Scrapes "Pet - " skills from db.ascension.gg to discover hidden pet families
+    Scrapes "Pet" skills from db.ascension.gg to discover hidden pet families
 
 .DESCRIPTION
     Complements ScrapePetFamilies.ps1 by finding pet families that don't appear
@@ -9,7 +9,7 @@
     Discovery: Many combat pets belong to families only documented in the 
     skills database (e.g., "Pet - Dreadwood Treant").
     
-    Source: https://db.ascension.gg/?skills#0+2+1 (392 "Pet - " results)
+    Source: https://db.ascension.gg/?skills (392 "Pet" results)
     
     Output: data/PetSkillsMapping.json
 
@@ -57,7 +57,7 @@ if (-not (Test-Path $outputDir)) {
 
 Write-Host "=== Pet Skills Scraper for db.ascension.gg ===" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "Source: https://db.ascension.gg/?skills#0+2+1" -ForegroundColor Gray
+Write-Host "Source: https://db.ascension.gg/?skills" -ForegroundColor Gray
 Write-Host "Output: $outputFile" -ForegroundColor Gray
 Write-Host "Rate Limit: $RateLimit seconds" -ForegroundColor Gray
 Write-Host "Max Results: $MaxResults" -ForegroundColor Gray
@@ -66,7 +66,7 @@ Write-Host ""
 # Initialize result structure
 $result = @{
     generatedDate = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
-    source = "https://db.ascension.gg/?skills#0+2+1"
+    source = "https://db.ascension.gg/?skills"
     totalSkills = 0
     petFamilies = @{}
 }
@@ -86,7 +86,7 @@ Write-Host "Step 1: Fetching skill list..." -ForegroundColor Yellow
 
 try {
     # Search for "Pet" in skills category
-    $skillsPage = Invoke-WebRequest -Uri "https://db.ascension.gg/?skills=0.0#0+2+1" -UseBasicParsing
+    $skillsPage = Invoke-WebRequest -Uri "https://db.ascension.gg/?skills" -UseBasicParsing
     
     # Extract listview JSON (skills are in a Listview)
     # Pattern: new Listview({"template":"spell","id":"skills",...,"data":[...]})
@@ -94,8 +94,8 @@ try {
         $jsonData = $Matches[1]
         $skills = $jsonData | ConvertFrom-Json
         
-        # Filter to only "Pet - " skills
-        $petSkills = $skills | Where-Object { $_.name -like "Pet - *" }
+        # Filter to only "Pet" skills
+        $petSkills = $skills | Where-Object { $_.name -like "Pet*" }
         
         Write-Host "  Found $($petSkills.Count) pet skills (from $($skills.Count) total)" -ForegroundColor Green
         
@@ -130,8 +130,8 @@ foreach ($skill in $petSkills) {
     $skillId = $skill.id
     $skillName = $skill.name
     
-    # Extract family name (remove "Pet - " prefix)
-    $familyName = $skillName -replace '^Pet - ', ''
+    # Extract family name (remove "Pet - " or "Pet- " prefix)
+    $familyName = $skillName -replace '^Pet-?\s*', ''
     
     Write-Host "  [$processed/$($petSkills.Count) - $percentComplete%] Processing: $familyName (Skill: $skillId)" -ForegroundColor Cyan
     

@@ -87,6 +87,37 @@ if (Test-Path $petFamilyFile) {
     Write-Warning "Pet family mappings file not found: $petFamilyFile (no family data will be included)"
 }
 
+# Load additional enriched pet family data (v2.3 - Phase 2)
+Write-Host "Loading additional pet family enrichments..." -ForegroundColor Cyan
+
+# Load tooltip-extracted species data
+$tooltipEnrichedFile = 'data/MissingPetFamilies_Final_Enriched.json'
+$tooltipEnriched = @{}
+
+if (Test-Path $tooltipEnrichedFile) {
+    $tooltipData = Get-Content $tooltipEnrichedFile -Raw | ConvertFrom-Json
+    foreach ($entry in $tooltipData) {
+        $tooltipEnriched[$entry.itemId.ToString()] = $entry
+    }
+    Write-Host "  Loaded $($tooltipEnriched.Count) tooltip-extracted families" -ForegroundColor Gray
+} else {
+    Write-Host "  No tooltip enrichment file found (optional)" -ForegroundColor Gray
+}
+
+# Load manual pet family mappings
+$manualFamilyFile = 'data/ManualPetFamilyMappings.json'
+$manualFamilies = @{}
+
+if (Test-Path $manualFamilyFile) {
+    $manualData = Get-Content $manualFamilyFile -Raw | ConvertFrom-Json
+    foreach ($entry in $manualData.manualMappings) {
+        $manualFamilies[$entry.itemId.ToString()] = $entry
+    }
+    Write-Host "  Loaded $($manualFamilies.Count) manual family mappings" -ForegroundColor Gray
+} else {
+    Write-Host "  No manual mappings file found (optional)" -ForegroundColor Gray
+}
+
 # Icon mapping - combat pets use fixed indices, others use actual icon from data
 $iconMap = @{
     "Beastmaster's Whistle" = 1
@@ -146,9 +177,40 @@ foreach ($it in $items) {
     # Check for quest lock data (v2.2)
     $questLock = $questLockedData[$id]
     
-    # Check for pet family data (v2.3) - use CreatureId, not itemId!
+    # Check for pet family data (v2.3) - Three-tier lookup system
+    # Priority: Manual Mappings > Tooltip Extraction > Tameable Pets (creatureId lookup)
     $petFamily = $null
-    if ($it.CreatureId) {
+    
+    # Tier 1: Manual mappings (highest priority - covers edge cases)
+    $manualFamily = $manualFamilies[$id.ToString()]
+    if ($manualFamily) {
+        $petFamily = [pscustomobject]@{
+            familyId = 0  # Manual mappings don't have family IDs
+            familyName = $manualFamily.familyName
+            familyType = $manualFamily.familyType
+            icon = ""  # Manual mappings don't have icons
+            isExotic = $false
+            source = "manual"
+        }
+    }
+    
+    # Tier 2: Tooltip extraction (mid priority - species from item pages)
+    if (-not $petFamily) {
+        $tooltipFamily = $tooltipEnriched[$id.ToString()]
+        if ($tooltipFamily) {
+            $petFamily = [pscustomobject]@{
+                familyId = if ($tooltipFamily.familyId) { $tooltipFamily.familyId } else { 0 }
+                familyName = $tooltipFamily.familyName
+                familyType = $tooltipFamily.familyType
+                icon = if ($tooltipFamily.icon) { $tooltipFamily.icon } else { "" }
+                isExotic = if ($tooltipFamily.isExotic) { $tooltipFamily.isExotic } else { $false }
+                source = "tooltip"
+            }
+        }
+    }
+    
+    # Tier 3: Tameable pets lookup (lowest priority - full data from pet families)
+    if (-not $petFamily -and $it.CreatureId) {
         $familyBasic = $petFamilyLookup[$it.CreatureId.ToString()]
         if ($familyBasic) {
             # Get full family details
@@ -160,6 +222,7 @@ foreach ($it in $items) {
                     familyType = $fullFamily.familyType
                     icon = $fullFamily.icon
                     isExotic = $fullFamily.isExotic
+                    source = "tameable"
                 }
             }
         }

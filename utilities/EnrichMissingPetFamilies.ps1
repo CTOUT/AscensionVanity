@@ -67,6 +67,17 @@ if (Test-Path $outputFile) {
     Write-Host "Loaded $($enriched.Count) existing enrichments" -ForegroundColor Gray
 }
 
+# Load manual mappings (edge cases that can't be scraped)
+$manualMappingsFile = Join-Path $projectRoot "data\ManualPetFamilyMappings.json"
+$manualMappings = @{}
+if (Test-Path $manualMappingsFile) {
+    $manualData = Get-Content $manualMappingsFile -Raw | ConvertFrom-Json
+    foreach ($mapping in $manualData.manualMappings) {
+        $manualMappings[$mapping.itemId.ToString()] = $mapping
+    }
+    Write-Host "Loaded $($manualMappings.Count) manual mappings" -ForegroundColor Gray
+}
+
 # Family type mapping
 $familyTypes = @{
     0 = "Ferocity"
@@ -93,6 +104,28 @@ foreach ($item in $items) {
     # Skip if already enriched
     if ($enriched.ContainsKey($itemId)) {
         Write-Host "  [$processed/$($items.Count)] Skipping $itemId (already enriched)" -ForegroundColor Gray
+        continue
+    }
+    
+    # Check manual mappings first (for edge cases)
+    if ($manualMappings.ContainsKey($itemId)) {
+        $manual = $manualMappings[$itemId]
+        
+        $enriched[$itemId] = @{
+            itemId = [int]$itemId
+            itemName = $manual.itemName
+            creatureId = if ($item.CreatureId) { [int]$item.CreatureId } else { 0 }
+            familyId = 0
+            familyName = $manual.familyName
+            familyType = $manual.familyType
+            icon = ""
+            isExotic = $false
+            source = "manual-mapping"
+            reason = $manual.reason
+        }
+        
+        $found++
+        Write-Host "    ✓ Manual mapping: $($manual.familyName) ($($manual.familyType)) - $($manual.reason)" -ForegroundColor Magenta
         continue
     }
     
@@ -155,7 +188,7 @@ foreach ($item in $items) {
                     
                     # Attempt to map species to known family types
                     $familyType = "Unknown"
-                    if ($speciesName -match 'Demon|Doomguard|Fel|Satyr|Eredar|Shivarra|Nathrezim') {
+                    if ($speciesName -match 'Demon|Doomguard|Fel|Satyr|Eredar|Shivarra|Nathrezim|Imp') {
                         $familyType = "Demon"
                     } elseif ($speciesName -match 'Undead|Skeleton|Ghoul|Zombie|Wraith|Lich|Shade|Banshee') {
                         $familyType = "Undead"
@@ -163,6 +196,20 @@ foreach ($item in $items) {
                         $familyType = "Elemental"
                     } elseif ($speciesName -match 'Dragon|Drake|Whelp|Wyrm|Wyrmkin') {
                         $familyType = "Dragonkin"
+                    }
+                    
+                    # Edge case mappings for non-3.3.5 families (map to closest 3.3.5 equivalent)
+                    # Retail "Scalehide" → 3.3.5 "Rhino"
+                    if ($speciesName -match 'Thunder Lizard') {
+                        $speciesName = "Rhino"  # Scalehide family closest match
+                    }
+                    # Retail "Mammoth" → 3.3.5 "Rhino" 
+                    elseif ($speciesName -match 'Elekk') {
+                        $speciesName = "Rhino"  # Elekk use Mammoth abilities, map to Rhino
+                    }
+                    # Mechanical Dog → Wolf (no Dog family in 3.3.5)
+                    elseif ($speciesName -match 'Dog|Hound') {
+                        $speciesName = "Wolf"  # Dog family doesn't exist in 3.3.5
                     }
                     
                     $enriched[$itemId] = @{

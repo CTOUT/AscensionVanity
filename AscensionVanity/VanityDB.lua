@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.3
--- Generated: 2025-11-15 15:56:39
+-- Generated: 2025-11-15 20:16:14
 -- Total Items: 2957
 -- Source Scan: Ascension 2025-11-14 @ 14:07:35 GMT Not Available
 -- Scan Date: 2025-11-15 11:19:18
@@ -42,17 +42,17 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-15 15:56:39",
+    generatedDate = "2025-11-15 20:16:14",
     ascensionVersion = "2025-11-14 @ 14:07:35 GMT Not Available",
     scanDate = "2025-11-15 11:19:18",
     totalItems = 2957,
     schemaVersion = "2.3",
     questLockedCount = 13,
-    petFamilyCount = 2004
+    petFamilyCount = 2089
 }
 
 AV_IconList = {
-    [1] = "Ability_Creature_Disease_05",    [2] = "Ability_Creature_Poison_06",    [3] = "ability_deathwing_bloodcorruption_earth",    [4] = "Ability_Druid_ChallangingRoar",    [5] = "Ability_Druid_ForceofNature",    [6] = "Ability_Hunter_AspectOfTheMonkey",    [7] = "Ability_Hunter_BeastCall",    [8] = "Ability_Hunter_Pet_Bat",    [9] = "ability_hunter_pet_bear",    [10] = "ability_hunter_pet_corehound",    [11] = "Ability_Hunter_Pet_DragonHawk",    [12] = "Ability_Hunter_Pet_Raptor",    [13] = "ability_hunter_pet_rhino",    [14] = "Ability_Hunter_Pet_Sporebat",    [15] = "Ability_Hunter_Pet_TallStrider",    [16] = "Ability_Hunter_Pet_Turtle",    [17] = "Ability_Mount_Awakening",    [18] = "ability_mount_blackbattlestrider",    [19] = "Ability_Mount_BlackDireWolf",    [20] = "Ability_Mount_BlackPanther",    [21] = "ability_mount_camel_brown",    [22] = "ability_mount_camel_gray",    [23] = "ability_mount_camel_tan",    [24] = "ability_mount_celestialhorse",    [25] = "ability_mount_charger",    [26] = "ability_mount_clockworkhorse",    [27] = "Ability_Mount_CockatriceMount_Black",    [28] = "Ability_Mount_CockatriceMountElite_White",    [29] = "ability_mount_dkmountunholy",    [30] = "Ability_Mount_Drake_Blue",    [31] = "Ability_Mount_Drake_Proto",    [32] = "Ability_Mount_Dreadsteed",    [33] = "ability_mount_elekkdraenormount",    [34] = "ability_mount_felreavermount",    [35] = "ability_mount_felreavermount_blue",    [36] = "ability_mount_felreavermount_orange",    [37] = "ability_mount_felreavermount_red",    [38] = "ability_mount_fireravengodmount",    [39] = "ability_mount_fireravengodmountpurple",    [40] = "ability_mount_fossilizedraptor",    [41] = "ability_mount_goatmountblack",    [42] = "ability_mount_goatmountbrown",    [43] = "ability_mount_goatmountwhite",    [44] = "ability_mount_hordescorpionamber",    [45] = "ability_mount_ironjuggernautmount",    [46] = "Ability_Mount_JungleTiger",    [47] = "Ability_Mount_Kodo_03",    [48] = "ability_mount_korkronprotodrake",    [49] = "ability_mount_mawhorsespikes_blue",    [50] = "ability_mount_mawhorsespikes_leagueyellow",    [51] = "ability_mount_mawhorsespikes_purple",    [52] = "ability_mount_mawhorsespikes_scarlet",    [53] = "ability_mount_mawhorsespikes_yellow",    [54] = "Ability_Mount_MountainRam",    [55] = "Ability_Mount_NetherDrakeElite",    [56] = "Ability_Mount_NightmareHorse",    [57] = "ability_mount_pandarenkitemount",    [58] = "Ability_Mount_PinkTiger",    [59] = "Ability_Mount_PolarBear_Black",    [60] = "Ability_Mount_Raptor",    [61] = "ability_mount_ravager2mount",    [62] = "Ability_Mount_RidingElekkElite_Green",    [63] = "ability_mount_ridinghorse",    [64] = "ability_mount_spectraltiger",    [65] = "ability_mount_steelwarhorse",    [66] = "ability_mount_steelwarhorse_red",    [67] = "ability_mount_triceratopsmount",    [68] = "ability_mount_triceratopsmount_blue",    [69] = "ability_mount_triceratopsmount_green",    [70] = "ability_mount_triceratopsmount_grey",    [71] = "ability_mount_triceratopsmount_orange",    [72] = "ability_mount_triceratopsmount_red",    [73] = "ability_mount_triceratopsmount_yellow",    [74] = "ability_mount_tyraelmount",    [75] = "ability_mount_tyraelmount_paladin",    [76] = "Ability_Mount_Undeadhorse",    [77] = "ability_mount_viciouswarraptor",    [78] = "ability_mount_voidelfstridermount.blp",    [79] = "ability_mount_warnightsaber",    [80] = "ability_mount_yakmountgrey",    [81] = "ability_pet_baneling",    [82] = "Ability_Repair",    [83] = "achievement_boss_ji-kun",    [84] = "achievement_boss_oregorger",    [85] = "achievement_character_dwarf_female",    [86] = "Achievement_Character_Human_Male",    [87] = "achievement_dungeon_coinoperatedcrowdpummeler",    [88] = "achievement_faction_celestials",    [89] = "Achievement_Halloween_Cat_01",    [90] = "anduin_mount",    [91] = "black_inv_goblinspidertank",    [92] = "blue_inv_goblinspidertank",    [93] = "blue_inv_mechanicalhandpet",    [94] = "creatureportrait_sword_2h_denathrius_d_01",    [95] = "custom_12_summon_imp_army",    [96] = "custom_slime_b_01_Border",    [97] = "custom_snapdragon_icon_cream",    [98] = "custom_snapdragon_icon_darkpurple",    [99] = "custom_snapdragon_icon_greenyellow",    [100] = "custom_snapdragon_icon_purple",    [101] = "custom_snapdragon_icon_red",    [102] = "custom_snapdragon_icon_white",    [103] = "custom_T_Nhance_RPG_Icons_ArcaneStone_Border",    [104] = "custom_T_Nhance_RPG_Icons_FireStone_Border",    [105] = "custom_T_Nhance_RPG_Icons_GhostStone_Border",    [106] = "custom_T_Nhance_RPG_Icons_IceStone_Border",    [107] = "custom_T_Nhance_RPG_Icons_NatureStone_Border",    [108] = "FoxMountIcon",    [109] = "grey_inv_mechanicalhandpet",    [110] = "inv_alliancepvpmount",    [111] = "inv_alpaca_pinky",    [112] = "inv_alpacamount_black",    [113] = "inv_alpacamount_brown",    [114] = "inv_alpacamount_ivory",    [115] = "inv_alpacamount_white",    [116] = "inv_alpacamount_yellow",    [117] = "inv_ardenwealdstagmount_blue",    [118] = "inv_ardenwealdstagmount_dark",    [119] = "inv_ardenwealdstagmount_teal",    [120] = "inv_ardenwealdstagmount_white",    [121] = "inv_ardenwealdstagmount2_blue",    [122] = "inv_ardenwealdstagmount2_dark",    [123] = "inv_ardenwealdstagmount2_teal",    [124] = "inv_ardenwealdstagmount2_white",    [125] = "INV_ArfusPet",    [126] = "INV_ArfusPet_Black",    [127] = "INV_ArfusPet_Brown",    [128] = "INV_ArfusPet_Classic",    [129] = "INV_ArfusPet_Cream",    [130] = "inv_argusfelstalkermount_blue",    [131] = "inv_argusfelstalkermount_orange",    [132] = "inv_argusfelstalkermount_pink",    [133] = "inv_argusfelstalkermount_purple",    [134] = "inv_argusfelstalkermount_red",    [135] = "inv_argusfelstalkermountblue",    [136] = "inv_argusfelstalkermountgrey",    [137] = "inv_argustalbukmount_felpurple",    [138] = "inv_armoredraptor",    [139] = "inv_armoredraptorundead",    [140] = "inv_azmerlothmurlocpet_brown",    [141] = "inv_babyalpaca_black",    [142] = "inv_babyalpaca_gold",    [143] = "inv_babyalpaca_pink",    [144] = "inv_babyalpaca_snow",    [145] = "inv_babydemonpet_blue",    [146] = "inv_babydemonpet_purple",    [147] = "inv_babydemonpet_red",    [148] = "inv_babyhippo01",    [149] = "inv_babyhippo01_blue",    [150] = "inv_babyhippo01_purple",    [151] = "inv_babyhippo01_white",    [152] = "inv_babyhornswog_black",    [153] = "inv_babyhornswog_green",    [154] = "inv_babyhornswog_orange",    [155] = "inv_babyhornswog_red",    [156] = "inv_babyhorse2_ardenweald_blue",    [157] = "inv_babyhyena_black",    [158] = "inv_babyhyena_blue",    [159] = "inv_babyhyena_green",    [160] = "inv_babyhyena_purple",    [161] = "inv_babynagablack",    [162] = "inv_babynagasilver",    [163] = "inv_babypig_black",    [164] = "inv_babysabretoothraptor_blue",    [165] = "inv_babysabretoothraptor_purple",    [166] = "inv_babysabretoothraptor_white",    [167] = "inv_babysaurolophus_green",    [168] = "inv_babysaurolophus_pink",    [169] = "inv_babysaurolophus_red",    [170] = "inv_babysteward_dark",    [171] = "inv_babysteward_gold",    [172] = "inv_babysteward_silver",    [173] = "inv_batloamount",    [174] = "inv_bearmountblizzard",    [175] = "Inv_bearmountutility",    [176] = "inv_beaverprimalpet_blue",    [177] = "inv_beaverprimalpet_dark",    [178] = "inv_bee_black",    [179] = "inv_bee_default",    [180] = "inv_bee_red",    [181] = "INV_Belt_05",    [182] = "inv_belt_39b",    [183] = "inv_birdsofprey_barrenforestfalcon",    [184] = "inv_birdsofprey_brownfalcon",    [185] = "inv_birdsofprey_harrishawk",    [186] = "inv_birdsofprey_kestrelfalcon",    [187] = "inv_birdsofprey_osprey",    [188] = "inv_birdsofprey_peregrinefalcon",    [189] = "inv_birdsofprey_redtailhawk",    [190] = "inv_birdsofprey_whitefalcon",    [191] = "inv_birdsofprey_whitehawk",    [192] = "inv_black_hyena2goblinmount",    [193] = "inv_bloodtrollbeast_mount_blue",    [194] = "inv_blue_hyena2goblinmount",    [195] = "inv_boastfulgruntling_hd",    [196] = "inv_boastfulsquire_hd",    [197] = "inv_bookmount",    [198] = "INV_Box_PetCarrier_01",    [199] = "inv_brontosaurusmount",    [200] = "inv_broommount2_green",    [201] = "inv_butterflymount_pearl",    [202] = "inv_butterflymount_pink",    [203] = "inv_butterflymount_purple",    [204] = "inv_camelmount2",    [205] = "inv_camelmount2_explorer",    [206] = "inv_camelmount2_explorerwhite",    [207] = "inv_capybara_albino",    [208] = "inv_capybara_brown",    [209] = "inv_capybara_purple",    [210] = "inv_catslime_rainbow",    [211] = "inv_catslimemount",    [212] = "inv_catslimemount_purple",    [213] = "inv_catslimemount_rainbow",    [214] = "inv_catslimemount_red",    [215] = "inv_catslimemount_yellow",    [216] = "inv_celestialserpentmount",    [217] = "INV_Chest_Awakening",    [218] = "inv_chickenmount_white",    [219] = "inv_chihuahuadogpet_body_black",    [220] = "inv_chihuahuadogpet_body_brown",    [221] = "inv_chihuahuadogpet_body_tan",    [222] = "inv_chihuahuadogpet_body_white",    [223] = "inv_chimerabossmount",    [224] = "inv_clockworkbeagle_gold",    [225] = "inv_clockworkbeagle_purple",    [226] = "inv_cloudserpent_egg_black",    [227] = "inv_cloudserpent_egg_yellow",    [228] = "inv_companiondrake_netherwing_black",    [229] = "inv_companiondrake_netherwing_orange",    [230] = "inv_companiondrake_netherwing_purple",    [231] = "inv_companiondrake_netherwing_teal",    [232] = "inv_corgi2",    [233] = "inv_crab2alliance",    [234] = "inv_crab2horde",    [235] = "inv_crabmount",    [236] = "inv_crawlinghandpet_iceblue",    [237] = "inv_crawlinghandpet_yellow",    [238] = "inv_custom_30thbatmount",    [239] = "inv_custom_FlyingBookWC",    [240] = "inv_custom_harronirbatpet_purple",    [241] = "inv_custom_reindeermount",    [242] = "inv_custom_trainerBook",    [243] = "inv_custom_turtle_mount_lava",    [244] = "inv_darkhoundmount",    [245] = "inv_darkhoundmount_draka_blue",    [246] = "inv_darkhoundmount_draka_dusky",    [247] = "inv_darkhoundmount_draka_green",    [248] = "inv_darkhoundmount_draka_obsidian",    [249] = "inv_darkhoundmount_draka_pale",    [250] = "inv_darkhoundmount_draka_sallow",    [251] = "inv_darkhoundmount_draka_violaceous",    [252] = "inv_darkhoundmount_draka_viridescent",    [253] = "INV_DarkIronDwarfCoreHound",    [254] = "inv_dawnsaber",    [255] = "inv_deathelementalmount_purple",    [256] = "inv_deathwargmount2black",    [257] = "inv_deathwargmountblack",    [258] = "inv_deathwargmountbrown",    [259] = "inv_deathwargmountgray",    [260] = "inv_deathwargmountpurple",    [261] = "inv_deathwargmountred",    [262] = "inv_deathwargmountstone",    [263] = "inv_deathwargmountwhite",    [264] = "inv_demongoat",    [265] = "inv_dhmount_blue",    [266] = "inv_dhmount_brown",    [267] = "inv_dhmount_felsaber",    [268] = "inv_dhmount_green",    [269] = "inv_dhmount_purple",    [270] = "inv_dhmurloc",    [271] = "inv_dhmurloc_blue",    [272] = "inv_dhmurloc_purple",    [273] = "inv_dhmurloc_red",    [274] = "inv_dhmurloc_yellow",    [275] = "INV_DiabloStone",    [276] = "inv_dogpetgolden",    [277] = "inv_dragonchromaticmount_new",    [278] = "inv_dragonelementiummount",    [279] = "inv_dragonwhelpcataclysm",    [280] = "inv_drakemountemerald",    [281] = "inv_drakemountemeraldautumn",    [282] = "inv_drakemountemeraldfrost",    [283] = "inv_dreadravenmount_wind",    [284] = "inv_dreamowl_firemount",    [285] = "inv_dreamowl_firemount_blue",    [286] = "inv_dreamowl_firemount_dark",    [287] = "inv_dreamowl_firemount_green",    [288] = "inv_dreampanda_dark",    [289] = "inv_dreampanda_polar",    [290] = "inv_dreampanda_red",    [291] = "inv_drivemount",    [292] = "inv_drivemount_blue",    [293] = "inv_drivemount_green",    [294] = "inv_drivemount_red",    [295] = "inv_drivemount_yellow",    [296] = "inv_dwarfpaladinram_gold",    [297] = "inv_eagle2windmount_red",    [298] = "inv_eagle2windmount_sepia",    [299] = "inv_eagle2windmount_white",    [300] = "INV_Egg_02",    [301] = "INV_Egg_03",    [302] = "inv_electriceelviciousmount_blue",    [303] = "inv_electriceelviciousmount_red",    [304] = "inv_elemental_eternal_shadow",    [305] = "inv_encrypted05",    [306] = "inv_encrypted09",    [307] = "inv_encrypted0a",    [308] = "inv_encrypted12",    [309] = "inv_encrypted13",    [310] = "inv_encrypted21",    [311] = "inv_eng_gearspringparts",    [312] = "inv_eng_gizmo1",    [313] = "inv_explorergyrocopter",    [314] = "inv_eyeballjellyfishmount",    [315] = "inv_faeriedragonmount",    [316] = "inv_falcosaurosblack",    [317] = "inv_falcosaurosgreen",    [318] = "inv_falcosaurosred",    [319] = "inv_falcosauroswhite",    [320] = "INV_Feather_13",    [321] = "inv_feathereddragon_blue",    [322] = "inv_feathereddragon_orange",    [323] = "inv_feathereddragon_pink",    [324] = "inv_felbatmountforsaken",    [325] = "inv_felbatmountforsaken_red",    [326] = "inv_felhound3_shadow_fire",    [327] = "inv_fellessergronnmount",    [328] = "inv_fellessergronnmount_dark",    [329] = "inv_fellessergronnmount_pale",    [330] = "inv_felstalkermount",    [331] = "inv_firecatmount",    [332] = "inv_fishing_innards_bones",    [333] = "Inv_FlyingBook_Ascended",    [334] = "inv_flyingsquirrelmount_darkchocolate",    [335] = "inv_flyingsquirrelmount_walnut",    [336] = "inv_flymaldraxxusmount_green",    [337] = "inv_foxpet",    [338] = "inv_foxpet_Blue",    [339] = "inv_foxpet_Holy",    [340] = "inv_foxpet_Red",    [341] = "inv_foxpet_Violet",    [342] = "inv_foxwyvernmountblack",    [343] = "inv_foxwyvernmountwhite",    [344] = "inv_foxwyvernmountyellow",    [345] = "inv_foxwyvernpetblack",    [346] = "inv_foxwyvernpetred",    [347] = "inv_foxwyvernpetwhite",    [348] = "inv_foxwyvernpetyellow",    [349] = "inv_ghostlycharger",    [350] = "inv_giantboarmount_armoredblue",    [351] = "inv_giantboarmount_armoredbrown",    [352] = "inv_giantboarmount_armoredfel",    [353] = "inv_giantboarmount_armoredpurple",    [354] = "inv_giantboarmount_armoredredpale",    [355] = "inv_giantboarmount_darkbrown",    [356] = "INV_Gizmo_GoblingTonkController",    [357] = "inv_gizmo_khoriumpowercore",    [358] = "inv_glyph_primedeathknight",    [359] = "inv_gnollkid_albino",    [360] = "inv_goblinspidertank",    [361] = "inv_gravegolempet",    [362] = "inv_green_hyena2goblinmount",    [363] = "inv_gryphonstormmount",    [364] = "inv_gryphonstormmount_red",    [365] = "inv_gryphonstormmount_yellow",    [366] = "inv_gryphonstormpet_blue",    [367] = "inv_gryphonstormpet_red",    [368] = "inv_gryphonstormpet_yellow",    [369] = "inv_harvestgolempet",    [370] = "inv_headlesshorsemanmount2_green",    [371] = "inv_hedgehogmount_green",    [372] = "inv_hedgehogmount_pink",    [373] = "inv_hedgehogmount_red",    [374] = "inv_hippo_green",    [375] = "inv_hivemind",    [376] = "inv_hordepvpmount_black",    [377] = "inv_horse2ardenwealdmount_blue",    [378] = "inv_horse2bastionmount_yellow",    [379] = "inv_horse2mountelite",    [380] = "inv_horse2mountelite_blue",    [381] = "inv_horse2mountelite_grey",    [382] = "inv_horse2mountelite_pink",    [383] = "inv_horse2purple",    [384] = "inv_horsebastionmount_dark",    [385] = "inv_horsebastionmount_gold",    [386] = "inv_horsebastionmount_green",    [387] = "inv_horsebastionmount_pink",    [388] = "inv_horsebastionmount_silver",    [389] = "inv_huntermount_blue",    [390] = "inv_huntermount_green",    [391] = "inv_huntermount_orange",    [392] = "inv_hunterpet_warpstalker",    [393] = "inv_hydrax2",    [394] = "inv_hyena2mount_brown",    [395] = "inv_hyena2mount_light",    [396] = "inv_hyena2mount_orange",    [397] = "inv_hyena2mount_red",    [398] = "inv_hyena2mount_teal",    [399] = "inv_hyena2mount_yellow",    [400] = "inv_icon_wing03b",    [401] = "inv_infernalmounice",    [402] = "inv_infernalmountblue",    [403] = "inv_infernalmountgreen",    [404] = "inv_infernalmountred",    [405] = "inv_iron_horde_elekk",    [406] = "inv_item_felcrystal",    [407] = "inv_item_stonea",    [408] = "inv_jailerhoundmount_black",    [409] = "inv_jengibre_01",    [410] = "INV_Jewelcrafting_BlackPearlPanther",    [411] = "INV_Jewelcrafting_CrimsonHare",    [412] = "INV_Jewelcrafting_Gem_06",    [413] = "inv_jewelry_frostwolftrinket_02",    [414] = "inv_jewelry_frostwolftrinket_04",    [415] = "INV_Jewelry_FrostwolfTrinket_05",    [416] = "inv_jewelry_trinket_06",    [417] = "INV_Jewelry_TrinketPVP_01",    [418] = "INV_Jewelry_TrinketPVP_02",    [419] = "inv_kirinmount_blue",    [420] = "inv_kirinmount_dark",    [421] = "inv_kirinmount_pale",    [422] = "inv_larva2_blackred",    [423] = "inv_larva2_bloodgod",    [424] = "inv_larva2_bluered",    [425] = "inv_larva2_darkbrown",    [426] = "inv_larva2_darkpurple",    [427] = "inv_larva2_darkred",    [428] = "inv_larva2_gray",    [429] = "inv_larva2_green",    [430] = "inv_larva2_limegreen",    [431] = "inv_larva2_redpurple",    [432] = "inv_larva2_white",    [433] = "inv_larva2_yellow",    [434] = "inv_lavahorse_Fel",    [435] = "inv_lightforgedelekk",    [436] = "inv_magemount",    [437] = "inv_magicalfishmount",    [438] = "inv_magicalfishmount_blue",    [439] = "inv_magicalowlbearbaby_black",    [440] = "inv_magicalowlbearbaby_blue",    [441] = "inv_magicalowlbearbaby_brown",    [442] = "inv_magicalowlbearbaby_dark",    [443] = "inv_magicalowlbearbaby_emerald",    [444] = "inv_magicalowlbearbaby_green",    [445] = "inv_magicalowlbearbaby_pink",    [446] = "inv_magicalowlbearbaby_purple",    [447] = "inv_magicalowlbearbaby_red",    [448] = "inv_magicalowlbearbaby_white",    [449] = "inv_magicbutterfly_blue",    [450] = "inv_magicbutterfly_dark",    [451] = "inv_magicbutterfly_pink",    [452] = "inv_maldraxxusboarmount_black",    [453] = "inv_maldraxxusboarmount_green",    [454] = "inv_maldraxxusboarmount_purple",    [455] = "inv_mammoth2lavamount_blue",    [456] = "inv_mammoth2lavamount_orange",    [457] = "inv_mammoth2lavamount_red",    [458] = "inv_mammoth2lavamount_yellow",    [459] = "inv_mammoth2mount_blue",    [460] = "inv_mammoth2mount_gray",    [461] = "inv_mammoth2mount_green",    [462] = "inv_mammoth2mount_orange",    [463] = "inv_marmosetpet",    [464] = "inv_mawexpansionbearmount_green",    [465] = "inv_mawexpansionbearmount_light",    [466] = "inv_mawexpansionbearmount_purple",    [467] = "inv_mawexpansionbearmount_red",    [468] = "inv_mawexpansionbearmount_yellow",    [469] = "inv_mawguardhandmountblue",    [470] = "inv_mawguardhandmountgold",    [471] = "inv_mechacyclejunk",    [472] = "inv_mechacyclejunk_2",    [473] = "inv_mechacyclejunk_3",    [474] = "inv_mechadevilsaurmount_yellow",    [475] = "inv_mechagnomestrider",    [476] = "inv_mechagonspidertank_brass",    [477] = "inv_mechagonspidertank_junker",    [478] = "inv_mechagonspidertank_silver",    [479] = "inv_mechanicalhandpet",    [480] = "inv_mechanicalprairiedog_classic",    [481] = "inv_mechanicalspider",    [482] = "inv_mechanicaltiger_grey",    [483] = "INV_Misc_AhnQirajTrinket_01",    [484] = "inv_misc_archstone_01",    [485] = "inv_misc_babyarmadillopet",    [486] = "inv_misc_balloon_02",    [487] = "inv_misc_balloon_04",    [488] = "INV_Misc_Bandage_08",    [489] = "inv_misc_bearpaw_green",    [490] = "inv_misc_bearpaw_white",    [491] = "INV_Misc_Bomb_04",    [492] = "INV_Misc_Bone_02",    [493] = "INV_Misc_Bone_ElfSkull_01",    [494] = "INV_Misc_Bone_OrcSkull_01",    [495] = "INV_Misc_Cape_03",    [496] = "INV_Misc_Coin_03",    [497] = "INV_Misc_DragonKite_02",    [498] = "inv_misc_elitehippogryph",    [499] = "INV_Misc_ElvenCoins",    [500] = "INV_Misc_EngGizmos_RocketChicken",    [501] = "inv_misc_eye_04",    [502] = "inv_misc_fish_49",    [503] = "INV_Misc_Food_02",    [504] = "INV_Misc_Food_24",    [505] = "inv_misc_foxkit",    [506] = "INV_Misc_Gem_Stone_01",    [507] = "inv_misc_gem_x4_rare_uncut_green",    [508] = "INV_Misc_Head_ClockworkGnome_01",    [509] = "INV_Misc_Head_Dragon_Black",    [510] = "INV_Misc_Head_Dragon_Blue",    [511] = "INV_Misc_Head_Murloc_01",    [512] = "INV_Misc_Head_Tiger_01",    [513] = "INV_Misc_Herb_06",    [514] = "inv_misc_herb_winterskiss",    [515] = "inv_misc_herb_wldsteelbloom_petal",    [516] = "inv_misc_horn_01",    [517] = "INV_Misc_Lantern_01",    [518] = "inv_misc_monsterhorn_07",    [519] = "inv_misc_moosehoof_black",    [520] = "INV_Misc_Orb_03",    [521] = "INV_Misc_Pelt_Bear_Ruin_02",    [522] = "INV_Misc_Pelt_Bear_Ruin_03",    [523] = "inv_misc_penguinpet",    [524] = "inv_misc_pet_01",    [525] = "inv_misc_pet_03",    [526] = "inv_misc_pet_04",    [527] = "inv_misc_pet_pandaren_yeti_grey",    [528] = "inv_misc_petmoonkinne",    [529] = "inv_misc_petmoonkinta",    [530] = "INV_Misc_Plant_03",    [531] = "INV_Misc_QirajiCrystal_01",    [532] = "inv_misc_qirajicrystal_02",    [533] = "INV_Misc_QirajiCrystal_03",    [534] = "INV_Misc_QirajiCrystal_04",    [535] = "INV_Misc_QirajiCrystal_05",    [536] = "inv_misc_reforgedarchstone_01",    [537] = "inv_misc_seagullpet_01",    [538] = "INV_Misc_Shell_04",    [539] = "inv_misc_summerfest_braziergreen",    [540] = "Inv_Misc_SummerFest_BrazierOrange",    [541] = "INV_Misc_Ticket_Darkmoon_01",    [542] = "inv_misc_uncutgemnormal1",    [543] = "INV_Misc_Urn_01",    [544] = "inv_monkmount_Green",    [545] = "inv_monkmount_Silver",    [546] = "inv_moosebullmount_black",    [547] = "inv_moosebullmount_brown",    [548] = "inv_moosebullmount_dark",    [549] = "inv_moosemount",    [550] = "inv_moosemount2",    [551] = "inv_moosemount2fel",    [552] = "inv_moosemount2frost",    [553] = "inv_moosemount2nightmare",    [554] = "inv_mothardenwealdmount_dark",    [555] = "inv_mothardenwealdmount_mint",    [556] = "inv_mothardenwealdmount_red",    [557] = "inv_motorcyclefelreavermount_blue",    [558] = "inv_motorcyclefelreavermount_fel",    [559] = "inv_motorcyclefelreavermount_fire",    [560] = "inv_motorcyclefelreavermount_shadow",    [561] = "inv_motorcyclefelreavermount_yellow",    [562] = "inv_mount_arcaneraven_frost",    [563] = "inv_mount_bluehoundmoun",    [564] = "inv_mount_darkphoenixa",    [565] = "inv_mount_felcorehoundmoun",    [566] = "inv_mount_hordescorpion_blackg",    [567] = "inv_mount_spectralhorse",    [568] = "inv_mount_voidhoundmoun",    [569] = "inv_mummypet",    [570] = "inv_mummypet_purple",    [571] = "inv_mummypet_red",    [572] = "inv_murlocmount",    [573] = "inv_mushanbeastmount",    [574] = "inv_mushanbeastmountblack",    [575] = "inv_nethergorgedgreatwyrm_black",    [576] = "inv_nethergorgedgreatwyrm_purple",    [577] = "INV_Netherwhelp",    [578] = "inv_nightbane2mount",    [579] = "inv_nightsaber2mount",    [580] = "inv_nightsaber2mountyellow",    [581] = "inv_nzothserpentmount_purple",    [582] = "inv_nzothserpentmount_warlock",    [583] = "inv_offhand_stratholme_a_02",    [584] = "inv_ogrepet_blue",    [585] = "inv_orcclanworg",    [586] = "INV_Ore_Gold_Nugget2",    [587] = "INV_Ore_Tin_01",    [588] = "inv_paladinmount_purple",    [589] = "inv_paladinmount_yellow",    [590] = "inv_pandarenserpentgodmount_black",    [591] = "inv_peacockmount_dark",    [592] = "inv_peacockmount_orange",    [593] = "inv_peacockmount_purple",    [594] = "inv_perkypug_grey",    [595] = "inv_personalskyship_brown",    [596] = "inv_pet_cats_orangetabbycat",    [597] = "inv_pet_celestialdragon",    [598] = "inv_pet_chromaticdragon",    [599] = "inv_pet_cookbot",    [600] = "inv_pet_cranegod",    [601] = "inv_pet_deweaonizedmechcompanion",    [602] = "inv_pet_felkitten_blue",    [603] = "inv_pet_felkitten_red",    [604] = "inv_pet_felkitten_yellow",    [605] = "inv_pet_frostwolfpup",    [606] = "INV_PET_FROSTWYRM",    [607] = "inv_pet_frostwyrm_green",    [608] = "inv_pet_futurebotpet",    [609] = "inv_pet_futurebotpet_orange",    [610] = "inv_pet_futurebotpet_purple",    [611] = "inv_pet_inquisitoreye",    [612] = "inv_pet_lilsmoky",    [613] = "inv_pet_maggot",    [614] = "inv_pet_naaru",    [615] = "inv_pet_owl2_moonwarden",    [616] = "inv_pet_owl2_sunwarden",    [617] = "inv_pet_pandarenelemental_fire",    [618] = "inv_pet_pinkmurlocegg",    [619] = "inv_pet_scorchedstone",    [620] = "inv_pet_speedy",    [621] = "inv_pet_spiderdemon",    [622] = "inv_pet_sunbladeprotector_green",    [623] = "inv_pet_wisp_gold",    [624] = "inv_pet_yakgod",    [625] = "inv_priestmount",    [626] = "inv_primaldragonflymount_black",    [627] = "inv_primaldragonflymount_blue",    [628] = "inv_primaldragonflymount_green",    [629] = "inv_primaldragonflymount_orange",    [630] = "inv_protodrakegladiatormount_black",    [631] = "inv_protodrakegladiatormount_blue",    [632] = "inv_protodrakegladiatormount_gold",    [633] = "inv_protodrakegladiatormount_green",    [634] = "inv_protodrakegladiatormount_pale",    [635] = "inv_protodrakegladiatormount_purple",    [636] = "inv_protodrakegladiatormount_red",    [637] = "inv_purple_hyena2goblinmount",    [638] = "INV_Qiraj_OuroHide",    [639] = "INV_QirajIdol_War",    [640] = "inv_rabbitshaggy_brown",    [641] = "inv_rabbitshaggy_dark",    [642] = "inv_rabbitshaggy_green",    [643] = "inv_rabbitshaggy_white",    [644] = "inv_rat2undermine_grey",    [645] = "INV_RatMount",    [646] = "inv_ratmounthearthstone",    [647] = "inv_ravenlordpetTurquoise",    [648] = "inv_red_hyena2goblinmount",    [649] = "inv_redbird_pink",    [650] = "inv_redpandamount_gray",    [651] = "inv_redpandamount_orange",    [652] = "inv_redpandamount_red",    [653] = "inv_redpandamount_violet",    [654] = "inv_redpandapet_gray",    [655] = "inv_redpandapet_orange",    [656] = "inv_redpandapet_red",    [657] = "inv_redpandapet_violet",    [658] = "inv_rhinoprimalmountfire",    [659] = "inv_rhinoprimalmountice",    [660] = "inv_riverotterlargemount01_blue",    [661] = "inv_riverotterlargemount01_brown",    [662] = "inv_riverotterlargemount01_white",    [663] = "inv_riverotterlargemount01_yellow",    [664] = "inv_riverotterlargemount02_ano",    [665] = "inv_riverotterlargemount02_black",    [666] = "inv_riverotterlargemount02_brown",    [667] = "inv_riverotterlargemount02_white",    [668] = "inv_riverotterlargemount02_yellow",    [669] = "inv_roguemount_blue",    [670] = "inv_saber2mount",    [671] = "inv_sabretoothraptormount_black",    [672] = "inv_sabretoothraptormount_blue",    [673] = "inv_sabretoothraptormount_green",    [674] = "inv_sabretoothraptormount_white",    [675] = "inv_salamanderwaterbaby_green",    [676] = "inv_salamanderwaterbaby_purple",    [677] = "inv_salamanderwatermount_blue",    [678] = "inv_salamanderwatermount_green",    [679] = "inv_salamanderwatermount_pink",    [680] = "inv_salamanderwatermount_purple",    [681] = "inv_scarabmount_copper",    [682] = "inv_scarabmount_green",    [683] = "inv_scroll_03_bluenew",    [684] = "inv_serpentmountgladiator_cromatico",    [685] = "inv_shadowstalkerpantherpet",    [686] = "inv_shamanmount",    [687] = "inv_shamanmount_arcane",    [688] = "inv_shamanmount_felfire",    [689] = "inv_shamanmount_ice",    [690] = "inv_shamanmount_sand",    [691] = "inv_sharkraymount_3",    [692] = "inv_shaserpentmount",    [693] = "inv_shatigermount",    [694] = "INV_Shield_23",    [695] = "inv_shield_26",    [696] = "inv_skeletalwarhorse_01_brown",    [697] = "inv_skeletalwarhorse_01_purple",    [698] = "inv_skeletalwarhorse_blue",    [699] = "inv_skydreamermount_tier1",    [700] = "inv_skydreamermount_tier2",    [701] = "inv_skydreamermount_tier3",    [702] = "inv_skydreamermount_tier4",    [703] = "inv_slugmount_yellow",    [704] = "inv_snailmount_red",    [705] = "inv_snapdragonmount01",    [706] = "inv_snowelementalmount",    [707] = "inv_soulhoundmount_black",    [708] = "inv_soulhoundmount_blue",    [709] = "inv_soulhoundmount_white",    [710] = "INV_SpiderMount",    [711] = "inv_squirrelflying",    [712] = "inv_squirrelflying_albino",    [713] = "inv_squirrelflying_chestnut",    [714] = "inv_squirrelflying_darkchocolate",    [715] = "inv_squirrelflying_pistachio",    [716] = "inv_squirrelflying_silver",    [717] = "inv_squirrelflying_walnut",    [718] = "INV_StagForm",    [719] = "inv_stormdragonmount2",    [720] = "inv_stormdragonmount2_fel",    [721] = "inv_stormdragonmount2blue",    [722] = "inv_stormdragonmount2dark",    [723] = "inv_stormdragonmount2green",    [724] = "inv_stormdragonmount2light",    [725] = "inv_stormdragonmount2yellow",    [726] = "INV_SummerFest_FireFlower",    [727] = "INV_Sword_07",    [728] = "inv_tallstriderprimalmount_black",    [729] = "inv_tallstriderprimalmount_green",    [730] = "inv_tallstriderprimalmount_red",    [731] = "inv_tallstriderprimalmount_white",    [732] = "inv_thunderlizardprimal_black",    [733] = "inv_thunderlizardprimal_blue",    [734] = "inv_thunderlizardprimal_brown",    [735] = "inv_thunderlizardprimal_green",    [736] = "inv_toadardenwealdmount",    [737] = "inv_toadardenwealdmount_blue",    [738] = "inv_toadardenwealdmount_orange",    [739] = "inv_toadardenwealdmount_purple",    [740] = "inv_toadardenwealdmount_red",    [741] = "inv_toadardenwealdmount_yellow",    [742] = "inv_treepetpurple",    [743] = "inv_treepetred",    [744] = "inv_triceratopszandalari",    [745] = "inv_trilobitemount_blue",    [746] = "inv_trilobitemount_red",    [747] = "inv_turkeymount_black",    [748] = "inv_tyraelpet_paladin",    [749] = "inv_valentinepinkrocket",    [750] = "inv_valkierpet_human",    [751] = "inv_viciousalliancespider",    [752] = "inv_vicioushordespider",    [753] = "inv_voiddragonmount",    [754] = "inv_vulperamount2",    [755] = "inv_VulpineFox_Green",    [756] = "inv_warlockmount",    [757] = "inv_warlockmountshadow",    [758] = "inv_warnightsabermount_skyblue",    [759] = "inv_waterelementalmount",    [760] = "inv_wolfboss_icon",    [761] = "inv_wolfdraenormountbrown",    [762] = "inv_wolfdraenormountfrost",    [763] = "inv_wolfdraenormountred",    [764] = "inv_wolfdraenormountshadow",    [765] = "INV_WolfSerpentMountWhite",    [766] = "inv_wrathionmount",    [767] = "inv_zeppelinmount",    [768] = "INV-Mount_Raven_54",    [769] = "ivn_toadloamount",    [770] = "Mekkatorque_suit_custom_mount",    [771] = "misc_drogbartotem02",    [772] = "nhi_bookofskills_Border",    [773] = "nhi_corruptiongold_Border",    [774] = "nhi_shadowgold_Border",    [775] = "purple_inv_goblinspidertank",    [776] = "ratmount2",    [777] = "spell_arcane_blast_nightborne",    [778] = "spell_druid_bearhug",    [779] = "spell_druid_wildmushroom_bloom",    [780] = "spell_fire_rune",    [781] = "Spell_Holy_SummonLightwell",    [782] = "spell_mekkatorque_bot_redwrench",    [783] = "spell_nature_earthelemental_totem",    [784] = "spell_nature_swiftness",    [785] = "Spell_Nature_WispSplode",    [786] = "Spell_Shadow_EvilEye",    [787] = "Spell_Shadow_SoulGem",    [788] = "Spell_Shadow_SummonFelHunter",    [789] = "Spell_Shadow_SummonImp",    [790] = "t_roboticon",    [791] = "Tzar_icono",    [792] = "warlock_summon_beholder",    [793] = "xuen3",    [794] = "yellow_inv_goblinspidertank"
+    [1] = "Ability_Creature_Disease_05",    [2] = "Ability_Creature_Poison_06",    [3] = "ability_deathwing_bloodcorruption_earth",    [4] = "Ability_Druid_ChallangingRoar",    [5] = "Ability_Druid_ForceofNature",    [6] = "Ability_Hunter_AspectOfTheMonkey",    [7] = "Ability_Hunter_BeastCall",    [8] = "Ability_Hunter_Pet_Bat",    [9] = "ability_hunter_pet_bear",    [10] = "ability_hunter_pet_corehound",    [11] = "Ability_Hunter_Pet_DragonHawk",    [12] = "Ability_Hunter_Pet_Raptor",    [13] = "ability_hunter_pet_rhino",    [14] = "Ability_Hunter_Pet_Sporebat",    [15] = "Ability_Hunter_Pet_TallStrider",    [16] = "Ability_Hunter_Pet_Turtle",    [17] = "Ability_Mount_Awakening",    [18] = "ability_mount_blackbattlestrider",    [19] = "Ability_Mount_BlackDireWolf",    [20] = "Ability_Mount_BlackPanther",    [21] = "ability_mount_camel_brown",    [22] = "ability_mount_camel_gray",    [23] = "ability_mount_camel_tan",    [24] = "ability_mount_celestialhorse",    [25] = "ability_mount_charger",    [26] = "ability_mount_clockworkhorse",    [27] = "Ability_Mount_CockatriceMount_Black",    [28] = "Ability_Mount_CockatriceMountElite_White",    [29] = "ability_mount_dkmountunholy",    [30] = "Ability_Mount_Drake_Blue",    [31] = "Ability_Mount_Drake_Proto",    [32] = "Ability_Mount_Dreadsteed",    [33] = "ability_mount_elekkdraenormount",    [34] = "ability_mount_felreavermount",    [35] = "ability_mount_felreavermount_blue",    [36] = "ability_mount_felreavermount_orange",    [37] = "ability_mount_felreavermount_red",    [38] = "ability_mount_fireravengodmount",    [39] = "ability_mount_fireravengodmountpurple",    [40] = "ability_mount_fossilizedraptor",    [41] = "ability_mount_goatmountblack",    [42] = "ability_mount_goatmountbrown",    [43] = "ability_mount_goatmountwhite",    [44] = "ability_mount_hordescorpionamber",    [45] = "ability_mount_ironjuggernautmount",    [46] = "Ability_Mount_JungleTiger",    [47] = "Ability_Mount_Kodo_03",    [48] = "ability_mount_korkronprotodrake",    [49] = "ability_mount_mawhorsespikes_blue",    [50] = "ability_mount_mawhorsespikes_leagueyellow",    [51] = "ability_mount_mawhorsespikes_purple",    [52] = "ability_mount_mawhorsespikes_scarlet",    [53] = "ability_mount_mawhorsespikes_yellow",    [54] = "Ability_Mount_MountainRam",    [55] = "Ability_Mount_NetherDrakeElite",    [56] = "Ability_Mount_NightmareHorse",    [57] = "ability_mount_pandarenkitemount",    [58] = "Ability_Mount_PinkTiger",    [59] = "Ability_Mount_PolarBear_Black",    [60] = "Ability_Mount_Raptor",    [61] = "ability_mount_ravager2mount",    [62] = "Ability_Mount_RidingElekkElite_Green",    [63] = "ability_mount_ridinghorse",    [64] = "ability_mount_spectraltiger",    [65] = "ability_mount_steelwarhorse",    [66] = "ability_mount_steelwarhorse_red",    [67] = "ability_mount_triceratopsmount",    [68] = "ability_mount_triceratopsmount_blue",    [69] = "ability_mount_triceratopsmount_green",    [70] = "ability_mount_triceratopsmount_grey",    [71] = "ability_mount_triceratopsmount_orange",    [72] = "ability_mount_triceratopsmount_red",    [73] = "ability_mount_triceratopsmount_yellow",    [74] = "ability_mount_tyraelmount",    [75] = "ability_mount_tyraelmount_paladin",    [76] = "Ability_Mount_Undeadhorse",    [77] = "ability_mount_viciouswarraptor",    [78] = "ability_mount_voidelfstridermount.blp",    [79] = "ability_mount_warnightsaber",    [80] = "ability_mount_yakmountgrey",    [81] = "ability_pet_baneling",    [82] = "Ability_Repair",    [83] = "achievement_boss_ji-kun",    [84] = "achievement_boss_oregorger",    [85] = "achievement_character_dwarf_female",    [86] = "Achievement_Character_Human_Male",    [87] = "achievement_dungeon_coinoperatedcrowdpummeler",    [88] = "achievement_faction_celestials",    [89] = "Achievement_Halloween_Cat_01",    [90] = "anduin_mount",    [91] = "black_inv_goblinspidertank",    [92] = "blue_inv_goblinspidertank",    [93] = "blue_inv_mechanicalhandpet",    [94] = "creatureportrait_sword_2h_denathrius_d_01",    [95] = "custom_12_summon_imp_army",    [96] = "custom_slime_b_01_Border",    [97] = "custom_snapdragon_icon_cream",    [98] = "custom_snapdragon_icon_darkpurple",    [99] = "custom_snapdragon_icon_greenyellow",    [100] = "custom_snapdragon_icon_purple",    [101] = "custom_snapdragon_icon_red",    [102] = "custom_snapdragon_icon_white",    [103] = "custom_T_Nhance_RPG_Icons_ArcaneStone_Border",    [104] = "custom_T_Nhance_RPG_Icons_FireStone_Border",    [105] = "custom_T_Nhance_RPG_Icons_GhostStone_Border",    [106] = "custom_T_Nhance_RPG_Icons_IceStone_Border",    [107] = "custom_T_Nhance_RPG_Icons_NatureStone_Border",    [108] = "FoxMountIcon",    [109] = "grey_inv_mechanicalhandpet",    [110] = "inv_alliancepvpmount",    [111] = "inv_alpaca_pinky",    [112] = "inv_alpacamount_black",    [113] = "inv_alpacamount_brown",    [114] = "inv_alpacamount_ivory",    [115] = "inv_alpacamount_white",    [116] = "inv_alpacamount_yellow",    [117] = "inv_ardenwealdstagmount_blue",    [118] = "inv_ardenwealdstagmount_dark",    [119] = "inv_ardenwealdstagmount_teal",    [120] = "inv_ardenwealdstagmount_white",    [121] = "inv_ardenwealdstagmount2_blue",    [122] = "inv_ardenwealdstagmount2_dark",    [123] = "inv_ardenwealdstagmount2_teal",    [124] = "inv_ardenwealdstagmount2_white",    [125] = "INV_ArfusPet",    [126] = "INV_ArfusPet_Black",    [127] = "INV_ArfusPet_Brown",    [128] = "INV_ArfusPet_Classic",    [129] = "INV_ArfusPet_Cream",    [130] = "inv_argusfelstalkermount_blue",    [131] = "inv_argusfelstalkermount_orange",    [132] = "inv_argusfelstalkermount_pink",    [133] = "inv_argusfelstalkermount_purple",    [134] = "inv_argusfelstalkermount_red",    [135] = "inv_argusfelstalkermountblue",    [136] = "inv_argusfelstalkermountgrey",    [137] = "inv_argustalbukmount_felpurple",    [138] = "inv_armoredraptor",    [139] = "inv_armoredraptorundead",    [140] = "inv_azmerlothmurlocpet_brown",    [141] = "inv_babyalpaca_black",    [142] = "inv_babyalpaca_gold",    [143] = "inv_babyalpaca_pink",    [144] = "inv_babyalpaca_snow",    [145] = "inv_babydemonpet_blue",    [146] = "inv_babydemonpet_purple",    [147] = "inv_babydemonpet_red",    [148] = "inv_babyhippo01",    [149] = "inv_babyhippo01_blue",    [150] = "inv_babyhippo01_purple",    [151] = "inv_babyhippo01_white",    [152] = "inv_babyhornswog_black",    [153] = "inv_babyhornswog_green",    [154] = "inv_babyhornswog_orange",    [155] = "inv_babyhornswog_red",    [156] = "inv_babyhorse2_ardenweald_blue",    [157] = "inv_babyhyena_black",    [158] = "inv_babyhyena_blue",    [159] = "inv_babyhyena_green",    [160] = "inv_babyhyena_purple",    [161] = "inv_babynagablack",    [162] = "inv_babynagasilver",    [163] = "inv_babypig_black",    [164] = "inv_babysabretoothraptor_blue",    [165] = "inv_babysabretoothraptor_purple",    [166] = "inv_babysabretoothraptor_white",    [167] = "inv_babysaurolophus_green",    [168] = "inv_babysaurolophus_pink",    [169] = "inv_babysaurolophus_red",    [170] = "inv_babysteward_dark",    [171] = "inv_babysteward_gold",    [172] = "inv_babysteward_silver",    [173] = "inv_batloamount",    [174] = "inv_bearmountblizzard",    [175] = "Inv_bearmountutility",    [176] = "inv_beaverprimalpet_blue",    [177] = "inv_beaverprimalpet_dark",    [178] = "inv_bee_black",    [179] = "inv_bee_default",    [180] = "inv_bee_red",    [181] = "INV_Belt_05",    [182] = "inv_belt_39b",    [183] = "inv_birdsofprey_barrenforestfalcon",    [184] = "inv_birdsofprey_brownfalcon",    [185] = "inv_birdsofprey_harrishawk",    [186] = "inv_birdsofprey_kestrelfalcon",    [187] = "inv_birdsofprey_osprey",    [188] = "inv_birdsofprey_peregrinefalcon",    [189] = "inv_birdsofprey_redtailhawk",    [190] = "inv_birdsofprey_whitefalcon",    [191] = "inv_birdsofprey_whitehawk",    [192] = "inv_black_hyena2goblinmount",    [193] = "inv_bloodtrollbeast_mount_blue",    [194] = "inv_blue_hyena2goblinmount",    [195] = "inv_boastfulgruntling_hd",    [196] = "inv_boastfulsquire_hd",    [197] = "inv_bookmount",    [198] = "INV_Box_PetCarrier_01",    [199] = "inv_brontosaurusmount",    [200] = "inv_broommount2_green",    [201] = "inv_butterflymount_pearl",    [202] = "inv_butterflymount_pink",    [203] = "inv_butterflymount_purple",    [204] = "inv_camelmount2",    [205] = "inv_camelmount2_explorer",    [206] = "inv_camelmount2_explorerwhite",    [207] = "inv_capybara_albino",    [208] = "inv_capybara_brown",    [209] = "inv_capybara_purple",    [210] = "inv_catslime_rainbow",    [211] = "inv_catslimemount",    [212] = "inv_catslimemount_purple",    [213] = "inv_catslimemount_rainbow",    [214] = "inv_catslimemount_red",    [215] = "inv_catslimemount_yellow",    [216] = "inv_celestialserpentmount",    [217] = "INV_Chest_Awakening",    [218] = "inv_chickenmount_white",    [219] = "inv_chihuahuadogpet_body_black",    [220] = "inv_chihuahuadogpet_body_brown",    [221] = "inv_chihuahuadogpet_body_tan",    [222] = "inv_chihuahuadogpet_body_white",    [223] = "inv_chimerabossmount",    [224] = "inv_clockworkbeagle_gold",    [225] = "inv_clockworkbeagle_purple",    [226] = "inv_cloudserpent_egg_black",    [227] = "inv_cloudserpent_egg_yellow",    [228] = "inv_companiondrake_netherwing_black",    [229] = "inv_companiondrake_netherwing_orange",    [230] = "inv_companiondrake_netherwing_purple",    [231] = "inv_companiondrake_netherwing_teal",    [232] = "inv_corgi2",    [233] = "inv_crab2alliance",    [234] = "inv_crab2horde",    [235] = "inv_crabmount",    [236] = "inv_crawlinghandpet_iceblue",    [237] = "inv_crawlinghandpet_yellow",    [238] = "inv_custom_30thbatmount",    [239] = "inv_custom_FlyingBookWC",    [240] = "inv_custom_harronirbatpet_purple",    [241] = "inv_custom_reindeermount",    [242] = "inv_custom_trainerBook",    [243] = "inv_custom_turtle_mount_lava",    [244] = "inv_darkhoundmount",    [245] = "inv_darkhoundmount_draka_blue",    [246] = "inv_darkhoundmount_draka_dusky",    [247] = "inv_darkhoundmount_draka_green",    [248] = "inv_darkhoundmount_draka_obsidian",    [249] = "inv_darkhoundmount_draka_pale",    [250] = "inv_darkhoundmount_draka_sallow",    [251] = "inv_darkhoundmount_draka_violaceous",    [252] = "inv_darkhoundmount_draka_viridescent",    [253] = "INV_DarkIronDwarfCoreHound",    [254] = "inv_dawnsaber",    [255] = "inv_deathelementalmount_purple",    [256] = "inv_deathwargmount2black",    [257] = "inv_deathwargmountblack",    [258] = "inv_deathwargmountbrown",    [259] = "inv_deathwargmountgray",    [260] = "inv_deathwargmountpurple",    [261] = "inv_deathwargmountred",    [262] = "inv_deathwargmountstone",    [263] = "inv_deathwargmountwhite",    [264] = "inv_demongoat",    [265] = "inv_dhmount_blue",    [266] = "inv_dhmount_brown",    [267] = "inv_dhmount_felsaber",    [268] = "inv_dhmount_green",    [269] = "inv_dhmount_purple",    [270] = "inv_dhmurloc",    [271] = "inv_dhmurloc_blue",    [272] = "inv_dhmurloc_purple",    [273] = "inv_dhmurloc_red",    [274] = "inv_dhmurloc_yellow",    [275] = "INV_DiabloStone",    [276] = "inv_dogpetgolden",    [277] = "inv_dragonchromaticmount_new",    [278] = "inv_dragonelementiummount",    [279] = "inv_dragonwhelpcataclysm",    [280] = "inv_drakemountemerald",    [281] = "inv_drakemountemeraldautumn",    [282] = "inv_drakemountemeraldfrost",    [283] = "inv_dreadravenmount_wind",    [284] = "inv_dreamowl_firemount",    [285] = "inv_dreamowl_firemount_blue",    [286] = "inv_dreamowl_firemount_dark",    [287] = "inv_dreamowl_firemount_green",    [288] = "inv_dreampanda_dark",    [289] = "inv_dreampanda_polar",    [290] = "inv_dreampanda_red",    [291] = "inv_drivemount",    [292] = "inv_drivemount_blue",    [293] = "inv_drivemount_green",    [294] = "inv_drivemount_red",    [295] = "inv_drivemount_yellow",    [296] = "inv_dwarfpaladinram_gold",    [297] = "inv_eagle2windmount_red",    [298] = "inv_eagle2windmount_sepia",    [299] = "inv_eagle2windmount_white",    [300] = "INV_Egg_02",    [301] = "INV_Egg_03",    [302] = "inv_electriceelviciousmount_blue",    [303] = "inv_electriceelviciousmount_red",    [304] = "inv_elemental_eternal_shadow",    [305] = "inv_encrypted05",    [306] = "inv_encrypted09",    [307] = "inv_encrypted0a",    [308] = "inv_encrypted12",    [309] = "inv_encrypted13",    [310] = "inv_encrypted21",    [311] = "inv_eng_gearspringparts",    [312] = "inv_eng_gizmo1",    [313] = "inv_explorergyrocopter",    [314] = "inv_eyeballjellyfishmount",    [315] = "inv_faeriedragonmount",    [316] = "inv_falcosaurosblack",    [317] = "inv_falcosaurosgreen",    [318] = "inv_falcosaurosred",    [319] = "inv_falcosauroswhite",    [320] = "inv_feather_13",    [321] = "inv_feathereddragon_blue",    [322] = "inv_feathereddragon_orange",    [323] = "inv_feathereddragon_pink",    [324] = "inv_felbatmountforsaken",    [325] = "inv_felbatmountforsaken_red",    [326] = "inv_felhound3_shadow_fire",    [327] = "inv_fellessergronnmount",    [328] = "inv_fellessergronnmount_dark",    [329] = "inv_fellessergronnmount_pale",    [330] = "inv_felstalkermount",    [331] = "inv_firecatmount",    [332] = "inv_fishing_innards_bones",    [333] = "Inv_FlyingBook_Ascended",    [334] = "inv_flyingsquirrelmount_darkchocolate",    [335] = "inv_flyingsquirrelmount_walnut",    [336] = "inv_flymaldraxxusmount_green",    [337] = "inv_foxpet",    [338] = "inv_foxpet_Blue",    [339] = "inv_foxpet_Holy",    [340] = "inv_foxpet_Red",    [341] = "inv_foxpet_Violet",    [342] = "inv_foxwyvernmountblack",    [343] = "inv_foxwyvernmountwhite",    [344] = "inv_foxwyvernmountyellow",    [345] = "inv_foxwyvernpetblack",    [346] = "inv_foxwyvernpetred",    [347] = "inv_foxwyvernpetwhite",    [348] = "inv_foxwyvernpetyellow",    [349] = "inv_ghostlycharger",    [350] = "inv_giantboarmount_armoredblue",    [351] = "inv_giantboarmount_armoredbrown",    [352] = "inv_giantboarmount_armoredfel",    [353] = "inv_giantboarmount_armoredpurple",    [354] = "inv_giantboarmount_armoredredpale",    [355] = "inv_giantboarmount_darkbrown",    [356] = "INV_Gizmo_GoblingTonkController",    [357] = "inv_gizmo_khoriumpowercore",    [358] = "inv_glyph_primedeathknight",    [359] = "inv_gnollkid_albino",    [360] = "inv_goblinspidertank",    [361] = "inv_gravegolempet",    [362] = "inv_green_hyena2goblinmount",    [363] = "inv_gryphonstormmount",    [364] = "inv_gryphonstormmount_red",    [365] = "inv_gryphonstormmount_yellow",    [366] = "inv_gryphonstormpet_blue",    [367] = "inv_gryphonstormpet_red",    [368] = "inv_gryphonstormpet_yellow",    [369] = "inv_harvestgolempet",    [370] = "inv_headlesshorsemanmount2_green",    [371] = "inv_hedgehogmount_green",    [372] = "inv_hedgehogmount_pink",    [373] = "inv_hedgehogmount_red",    [374] = "inv_hippo_green",    [375] = "inv_hivemind",    [376] = "inv_hordepvpmount_black",    [377] = "inv_horse2ardenwealdmount_blue",    [378] = "inv_horse2bastionmount_yellow",    [379] = "inv_horse2mountelite",    [380] = "inv_horse2mountelite_blue",    [381] = "inv_horse2mountelite_grey",    [382] = "inv_horse2mountelite_pink",    [383] = "inv_horse2purple",    [384] = "inv_horsebastionmount_dark",    [385] = "inv_horsebastionmount_gold",    [386] = "inv_horsebastionmount_green",    [387] = "inv_horsebastionmount_pink",    [388] = "inv_horsebastionmount_silver",    [389] = "inv_huntermount_blue",    [390] = "inv_huntermount_green",    [391] = "inv_huntermount_orange",    [392] = "inv_hunterpet_warpstalker",    [393] = "inv_hydrax2",    [394] = "inv_hyena2mount_brown",    [395] = "inv_hyena2mount_light",    [396] = "inv_hyena2mount_orange",    [397] = "inv_hyena2mount_red",    [398] = "inv_hyena2mount_teal",    [399] = "inv_hyena2mount_yellow",    [400] = "inv_icon_wing03b",    [401] = "inv_infernalmounice",    [402] = "inv_infernalmountblue",    [403] = "inv_infernalmountgreen",    [404] = "inv_infernalmountred",    [405] = "inv_iron_horde_elekk",    [406] = "inv_item_felcrystal",    [407] = "inv_item_stonea",    [408] = "inv_jailerhoundmount_black",    [409] = "inv_jengibre_01",    [410] = "INV_Jewelcrafting_BlackPearlPanther",    [411] = "INV_Jewelcrafting_CrimsonHare",    [412] = "INV_Jewelcrafting_Gem_06",    [413] = "inv_jewelry_frostwolftrinket_02",    [414] = "inv_jewelry_frostwolftrinket_04",    [415] = "INV_Jewelry_FrostwolfTrinket_05",    [416] = "inv_jewelry_trinket_06",    [417] = "INV_Jewelry_TrinketPVP_01",    [418] = "INV_Jewelry_TrinketPVP_02",    [419] = "inv_kirinmount_blue",    [420] = "inv_kirinmount_dark",    [421] = "inv_kirinmount_pale",    [422] = "inv_larva2_blackred",    [423] = "inv_larva2_bloodgod",    [424] = "inv_larva2_bluered",    [425] = "inv_larva2_darkbrown",    [426] = "inv_larva2_darkpurple",    [427] = "inv_larva2_darkred",    [428] = "inv_larva2_gray",    [429] = "inv_larva2_green",    [430] = "inv_larva2_limegreen",    [431] = "inv_larva2_redpurple",    [432] = "inv_larva2_white",    [433] = "inv_larva2_yellow",    [434] = "inv_lavahorse_Fel",    [435] = "inv_lightforgedelekk",    [436] = "inv_magemount",    [437] = "inv_magicalfishmount",    [438] = "inv_magicalfishmount_blue",    [439] = "inv_magicalowlbearbaby_black",    [440] = "inv_magicalowlbearbaby_blue",    [441] = "inv_magicalowlbearbaby_brown",    [442] = "inv_magicalowlbearbaby_dark",    [443] = "inv_magicalowlbearbaby_emerald",    [444] = "inv_magicalowlbearbaby_green",    [445] = "inv_magicalowlbearbaby_pink",    [446] = "inv_magicalowlbearbaby_purple",    [447] = "inv_magicalowlbearbaby_red",    [448] = "inv_magicalowlbearbaby_white",    [449] = "inv_magicbutterfly_blue",    [450] = "inv_magicbutterfly_dark",    [451] = "inv_magicbutterfly_pink",    [452] = "inv_maldraxxusboarmount_black",    [453] = "inv_maldraxxusboarmount_green",    [454] = "inv_maldraxxusboarmount_purple",    [455] = "inv_mammoth2lavamount_blue",    [456] = "inv_mammoth2lavamount_orange",    [457] = "inv_mammoth2lavamount_red",    [458] = "inv_mammoth2lavamount_yellow",    [459] = "inv_mammoth2mount_blue",    [460] = "inv_mammoth2mount_gray",    [461] = "inv_mammoth2mount_green",    [462] = "inv_mammoth2mount_orange",    [463] = "inv_marmosetpet",    [464] = "inv_mawexpansionbearmount_green",    [465] = "inv_mawexpansionbearmount_light",    [466] = "inv_mawexpansionbearmount_purple",    [467] = "inv_mawexpansionbearmount_red",    [468] = "inv_mawexpansionbearmount_yellow",    [469] = "inv_mawguardhandmountblue",    [470] = "inv_mawguardhandmountgold",    [471] = "inv_mechacyclejunk",    [472] = "inv_mechacyclejunk_2",    [473] = "inv_mechacyclejunk_3",    [474] = "inv_mechadevilsaurmount_yellow",    [475] = "inv_mechagnomestrider",    [476] = "inv_mechagonspidertank_brass",    [477] = "inv_mechagonspidertank_junker",    [478] = "inv_mechagonspidertank_silver",    [479] = "inv_mechanicalhandpet",    [480] = "inv_mechanicalprairiedog_classic",    [481] = "inv_mechanicalspider",    [482] = "inv_mechanicaltiger_grey",    [483] = "INV_Misc_AhnQirajTrinket_01",    [484] = "inv_misc_archstone_01",    [485] = "inv_misc_babyarmadillopet",    [486] = "inv_misc_balloon_02",    [487] = "inv_misc_balloon_04",    [488] = "INV_Misc_Bandage_08",    [489] = "inv_misc_bearpaw_green",    [490] = "inv_misc_bearpaw_white",    [491] = "INV_Misc_Bomb_04",    [492] = "INV_Misc_Bone_02",    [493] = "INV_Misc_Bone_ElfSkull_01",    [494] = "INV_Misc_Bone_OrcSkull_01",    [495] = "INV_Misc_Cape_03",    [496] = "INV_Misc_Coin_03",    [497] = "INV_Misc_DragonKite_02",    [498] = "inv_misc_elitehippogryph",    [499] = "INV_Misc_ElvenCoins",    [500] = "INV_Misc_EngGizmos_RocketChicken",    [501] = "inv_misc_eye_04",    [502] = "inv_misc_fish_49",    [503] = "INV_Misc_Food_02",    [504] = "INV_Misc_Food_24",    [505] = "inv_misc_foxkit",    [506] = "INV_Misc_Gem_Stone_01",    [507] = "inv_misc_gem_x4_rare_uncut_green",    [508] = "INV_Misc_Head_ClockworkGnome_01",    [509] = "INV_Misc_Head_Dragon_Black",    [510] = "INV_Misc_Head_Dragon_Blue",    [511] = "INV_Misc_Head_Murloc_01",    [512] = "INV_Misc_Head_Tiger_01",    [513] = "INV_Misc_Herb_06",    [514] = "inv_misc_herb_winterskiss",    [515] = "inv_misc_herb_wldsteelbloom_petal",    [516] = "inv_misc_horn_01",    [517] = "INV_Misc_Lantern_01",    [518] = "inv_misc_monsterhorn_07",    [519] = "inv_misc_moosehoof_black",    [520] = "INV_Misc_Orb_03",    [521] = "INV_Misc_Pelt_Bear_Ruin_02",    [522] = "INV_Misc_Pelt_Bear_Ruin_03",    [523] = "inv_misc_penguinpet",    [524] = "inv_misc_pet_01",    [525] = "inv_misc_pet_03",    [526] = "inv_misc_pet_04",    [527] = "inv_misc_pet_pandaren_yeti_grey",    [528] = "inv_misc_petmoonkinne",    [529] = "inv_misc_petmoonkinta",    [530] = "INV_Misc_Plant_03",    [531] = "INV_Misc_QirajiCrystal_01",    [532] = "inv_misc_qirajicrystal_02",    [533] = "INV_Misc_QirajiCrystal_03",    [534] = "INV_Misc_QirajiCrystal_04",    [535] = "INV_Misc_QirajiCrystal_05",    [536] = "inv_misc_reforgedarchstone_01",    [537] = "inv_misc_seagullpet_01",    [538] = "INV_Misc_Shell_04",    [539] = "inv_misc_summerfest_braziergreen",    [540] = "Inv_Misc_SummerFest_BrazierOrange",    [541] = "INV_Misc_Ticket_Darkmoon_01",    [542] = "inv_misc_uncutgemnormal1",    [543] = "INV_Misc_Urn_01",    [544] = "inv_monkmount_Green",    [545] = "inv_monkmount_Silver",    [546] = "inv_moosebullmount_black",    [547] = "inv_moosebullmount_brown",    [548] = "inv_moosebullmount_dark",    [549] = "inv_moosemount",    [550] = "inv_moosemount2",    [551] = "inv_moosemount2fel",    [552] = "inv_moosemount2frost",    [553] = "inv_moosemount2nightmare",    [554] = "inv_mothardenwealdmount_dark",    [555] = "inv_mothardenwealdmount_mint",    [556] = "inv_mothardenwealdmount_red",    [557] = "inv_motorcyclefelreavermount_blue",    [558] = "inv_motorcyclefelreavermount_fel",    [559] = "inv_motorcyclefelreavermount_fire",    [560] = "inv_motorcyclefelreavermount_shadow",    [561] = "inv_motorcyclefelreavermount_yellow",    [562] = "inv_mount_arcaneraven_frost",    [563] = "inv_mount_bluehoundmoun",    [564] = "inv_mount_darkphoenixa",    [565] = "inv_mount_felcorehoundmoun",    [566] = "inv_mount_hordescorpion_blackg",    [567] = "inv_mount_spectralhorse",    [568] = "inv_mount_voidhoundmoun",    [569] = "inv_mummypet",    [570] = "inv_mummypet_purple",    [571] = "inv_mummypet_red",    [572] = "inv_murlocmount",    [573] = "inv_mushanbeastmount",    [574] = "inv_mushanbeastmountblack",    [575] = "inv_nethergorgedgreatwyrm_black",    [576] = "inv_nethergorgedgreatwyrm_purple",    [577] = "INV_Netherwhelp",    [578] = "inv_nightbane2mount",    [579] = "inv_nightsaber2mount",    [580] = "inv_nightsaber2mountyellow",    [581] = "inv_nzothserpentmount_purple",    [582] = "inv_nzothserpentmount_warlock",    [583] = "inv_offhand_stratholme_a_02",    [584] = "inv_ogrepet_blue",    [585] = "inv_orcclanworg",    [586] = "INV_Ore_Gold_Nugget2",    [587] = "INV_Ore_Tin_01",    [588] = "inv_paladinmount_purple",    [589] = "inv_paladinmount_yellow",    [590] = "inv_pandarenserpentgodmount_black",    [591] = "inv_peacockmount_dark",    [592] = "inv_peacockmount_orange",    [593] = "inv_peacockmount_purple",    [594] = "inv_perkypug_grey",    [595] = "inv_personalskyship_brown",    [596] = "inv_pet_cats_orangetabbycat",    [597] = "inv_pet_celestialdragon",    [598] = "inv_pet_chromaticdragon",    [599] = "inv_pet_cookbot",    [600] = "inv_pet_cranegod",    [601] = "inv_pet_deweaonizedmechcompanion",    [602] = "inv_pet_felkitten_blue",    [603] = "inv_pet_felkitten_red",    [604] = "inv_pet_felkitten_yellow",    [605] = "inv_pet_frostwolfpup",    [606] = "INV_PET_FROSTWYRM",    [607] = "inv_pet_frostwyrm_green",    [608] = "inv_pet_futurebotpet",    [609] = "inv_pet_futurebotpet_orange",    [610] = "inv_pet_futurebotpet_purple",    [611] = "inv_pet_inquisitoreye",    [612] = "inv_pet_lilsmoky",    [613] = "inv_pet_maggot",    [614] = "inv_pet_naaru",    [615] = "inv_pet_owl2_moonwarden",    [616] = "inv_pet_owl2_sunwarden",    [617] = "inv_pet_pandarenelemental_fire",    [618] = "inv_pet_pinkmurlocegg",    [619] = "inv_pet_scorchedstone",    [620] = "inv_pet_speedy",    [621] = "inv_pet_spiderdemon",    [622] = "inv_pet_sunbladeprotector_green",    [623] = "inv_pet_wisp_gold",    [624] = "inv_pet_yakgod",    [625] = "inv_priestmount",    [626] = "inv_primaldragonflymount_black",    [627] = "inv_primaldragonflymount_blue",    [628] = "inv_primaldragonflymount_green",    [629] = "inv_primaldragonflymount_orange",    [630] = "inv_protodrakegladiatormount_black",    [631] = "inv_protodrakegladiatormount_blue",    [632] = "inv_protodrakegladiatormount_gold",    [633] = "inv_protodrakegladiatormount_green",    [634] = "inv_protodrakegladiatormount_pale",    [635] = "inv_protodrakegladiatormount_purple",    [636] = "inv_protodrakegladiatormount_red",    [637] = "inv_purple_hyena2goblinmount",    [638] = "INV_Qiraj_OuroHide",    [639] = "INV_QirajIdol_War",    [640] = "inv_rabbitshaggy_brown",    [641] = "inv_rabbitshaggy_dark",    [642] = "inv_rabbitshaggy_green",    [643] = "inv_rabbitshaggy_white",    [644] = "inv_rat2undermine_grey",    [645] = "INV_RatMount",    [646] = "inv_ratmounthearthstone",    [647] = "inv_ravenlordpetTurquoise",    [648] = "inv_red_hyena2goblinmount",    [649] = "inv_redbird_pink",    [650] = "inv_redpandamount_gray",    [651] = "inv_redpandamount_orange",    [652] = "inv_redpandamount_red",    [653] = "inv_redpandamount_violet",    [654] = "inv_redpandapet_gray",    [655] = "inv_redpandapet_orange",    [656] = "inv_redpandapet_red",    [657] = "inv_redpandapet_violet",    [658] = "inv_rhinoprimalmountfire",    [659] = "inv_rhinoprimalmountice",    [660] = "inv_riverotterlargemount01_blue",    [661] = "inv_riverotterlargemount01_brown",    [662] = "inv_riverotterlargemount01_white",    [663] = "inv_riverotterlargemount01_yellow",    [664] = "inv_riverotterlargemount02_ano",    [665] = "inv_riverotterlargemount02_black",    [666] = "inv_riverotterlargemount02_brown",    [667] = "inv_riverotterlargemount02_white",    [668] = "inv_riverotterlargemount02_yellow",    [669] = "inv_roguemount_blue",    [670] = "inv_saber2mount",    [671] = "inv_sabretoothraptormount_black",    [672] = "inv_sabretoothraptormount_blue",    [673] = "inv_sabretoothraptormount_green",    [674] = "inv_sabretoothraptormount_white",    [675] = "inv_salamanderwaterbaby_green",    [676] = "inv_salamanderwaterbaby_purple",    [677] = "inv_salamanderwatermount_blue",    [678] = "inv_salamanderwatermount_green",    [679] = "inv_salamanderwatermount_pink",    [680] = "inv_salamanderwatermount_purple",    [681] = "inv_scarabmount_copper",    [682] = "inv_scarabmount_green",    [683] = "inv_scroll_03_bluenew",    [684] = "inv_serpentmountgladiator_cromatico",    [685] = "inv_shadowstalkerpantherpet",    [686] = "inv_shamanmount",    [687] = "inv_shamanmount_arcane",    [688] = "inv_shamanmount_felfire",    [689] = "inv_shamanmount_ice",    [690] = "inv_shamanmount_sand",    [691] = "inv_sharkraymount_3",    [692] = "inv_shaserpentmount",    [693] = "inv_shatigermount",    [694] = "INV_Shield_23",    [695] = "inv_shield_26",    [696] = "inv_skeletalwarhorse_01_brown",    [697] = "inv_skeletalwarhorse_01_purple",    [698] = "inv_skeletalwarhorse_blue",    [699] = "inv_skydreamermount_tier1",    [700] = "inv_skydreamermount_tier2",    [701] = "inv_skydreamermount_tier3",    [702] = "inv_skydreamermount_tier4",    [703] = "inv_slugmount_yellow",    [704] = "inv_snailmount_red",    [705] = "inv_snapdragonmount01",    [706] = "inv_snowelementalmount",    [707] = "inv_soulhoundmount_black",    [708] = "inv_soulhoundmount_blue",    [709] = "inv_soulhoundmount_white",    [710] = "INV_SpiderMount",    [711] = "inv_squirrelflying",    [712] = "inv_squirrelflying_albino",    [713] = "inv_squirrelflying_chestnut",    [714] = "inv_squirrelflying_darkchocolate",    [715] = "inv_squirrelflying_pistachio",    [716] = "inv_squirrelflying_silver",    [717] = "inv_squirrelflying_walnut",    [718] = "INV_StagForm",    [719] = "inv_stormdragonmount2",    [720] = "inv_stormdragonmount2_fel",    [721] = "inv_stormdragonmount2blue",    [722] = "inv_stormdragonmount2dark",    [723] = "inv_stormdragonmount2green",    [724] = "inv_stormdragonmount2light",    [725] = "inv_stormdragonmount2yellow",    [726] = "INV_SummerFest_FireFlower",    [727] = "INV_Sword_07",    [728] = "inv_tallstriderprimalmount_black",    [729] = "inv_tallstriderprimalmount_green",    [730] = "inv_tallstriderprimalmount_red",    [731] = "inv_tallstriderprimalmount_white",    [732] = "inv_thunderlizardprimal_black",    [733] = "inv_thunderlizardprimal_blue",    [734] = "inv_thunderlizardprimal_brown",    [735] = "inv_thunderlizardprimal_green",    [736] = "inv_toadardenwealdmount",    [737] = "inv_toadardenwealdmount_blue",    [738] = "inv_toadardenwealdmount_orange",    [739] = "inv_toadardenwealdmount_purple",    [740] = "inv_toadardenwealdmount_red",    [741] = "inv_toadardenwealdmount_yellow",    [742] = "inv_treepetpurple",    [743] = "inv_treepetred",    [744] = "inv_triceratopszandalari",    [745] = "inv_trilobitemount_blue",    [746] = "inv_trilobitemount_red",    [747] = "inv_turkeymount_black",    [748] = "inv_tyraelpet_paladin",    [749] = "inv_valentinepinkrocket",    [750] = "inv_valkierpet_human",    [751] = "inv_viciousalliancespider",    [752] = "inv_vicioushordespider",    [753] = "inv_voiddragonmount",    [754] = "inv_vulperamount2",    [755] = "inv_VulpineFox_Green",    [756] = "inv_warlockmount",    [757] = "inv_warlockmountshadow",    [758] = "inv_warnightsabermount_skyblue",    [759] = "inv_waterelementalmount",    [760] = "inv_wolfboss_icon",    [761] = "inv_wolfdraenormountbrown",    [762] = "inv_wolfdraenormountfrost",    [763] = "inv_wolfdraenormountred",    [764] = "inv_wolfdraenormountshadow",    [765] = "INV_WolfSerpentMountWhite",    [766] = "inv_wrathionmount",    [767] = "inv_zeppelinmount",    [768] = "INV-Mount_Raven_54",    [769] = "ivn_toadloamount",    [770] = "Mekkatorque_suit_custom_mount",    [771] = "misc_drogbartotem02",    [772] = "nhi_bookofskills_Border",    [773] = "nhi_corruptiongold_Border",    [774] = "nhi_shadowgold_Border",    [775] = "purple_inv_goblinspidertank",    [776] = "ratmount2",    [777] = "spell_arcane_blast_nightborne",    [778] = "spell_druid_bearhug",    [779] = "spell_druid_wildmushroom_bloom",    [780] = "spell_fire_rune",    [781] = "Spell_Holy_SummonLightwell",    [782] = "spell_mekkatorque_bot_redwrench",    [783] = "spell_nature_earthelemental_totem",    [784] = "spell_nature_swiftness",    [785] = "Spell_Nature_WispSplode",    [786] = "Spell_Shadow_EvilEye",    [787] = "Spell_Shadow_SoulGem",    [788] = "Spell_Shadow_SummonFelHunter",    [789] = "Spell_Shadow_SummonImp",    [790] = "t_roboticon",    [791] = "Tzar_icono",    [792] = "warlock_summon_beholder",    [793] = "xuen3",    [794] = "yellow_inv_goblinspidertank"
 }
 
 AV_VanityItems = {
@@ -16527,7 +16527,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Subjugator Yalqiz within The Legion Front",
         zone = "Hellfire Peninsula",
         subzone = "The Legion Front",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [84103] = {
         itemid = 84103,
@@ -24374,7 +24381,14 @@ AV_VanityItems = {
         creaturePreview = 139999,
         creatureId = 139999,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [97874] = {
         itemid = 97874,
@@ -26330,7 +26344,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Prince Malchezaa within Karazhan",
         zone = "Deadwind Pass",
         subzone = "Karazhan",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138259] = {
         itemid = 138259,
@@ -26340,7 +26361,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Demos, Overseer of Hate within Forge Camp: Hate",
         zone = "Nagrand",
         subzone = "Forge Camp: Hate",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138288] = {
         itemid = 138288,
@@ -26350,7 +26378,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Arazzius the Cruel within Pools of Aggonar",
         zone = "Hellfire Peninsula",
         subzone = "Pools of Aggonar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138304] = {
         itemid = 138304,
@@ -26360,7 +26395,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Baelmon the Hound-Master within Death's Door",
         zone = "Blade's Edge Mountains",
         subzone = "Death's Door",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138443] = {
         itemid = 138443,
@@ -26369,7 +26411,14 @@ AV_VanityItems = {
         creatureId = 19847,
         description = "Has a chance to drop from Levixus within Auchindoun",
         zone = "Auchindoun",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138465] = {
         itemid = 138465,
@@ -26379,7 +26428,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Socrethar within Socrethar's Seat",
         zone = "Netherstorm",
         subzone = "Socrethar's Seat",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138890] = {
         itemid = 138890,
@@ -26388,7 +26444,14 @@ AV_VanityItems = {
         creatureId = 20879,
         description = "Has a chance to drop from Eredar Soul-Eater within The Arcatraz",
         zone = "The Arcatraz",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [138984] = {
         itemid = 138984,
@@ -26397,7 +26460,14 @@ AV_VanityItems = {
         creatureId = 20880,
         description = "Has a chance to drop from Eredar Deathbringer within The Arcatraz",
         zone = "The Arcatraz",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139053] = {
         itemid = 139053,
@@ -26407,7 +26477,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Solus the Eterna within Karazhan",
         zone = "Deadwind Pass",
         subzone = "Karazhan",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139354] = {
         itemid = 139354,
@@ -26417,7 +26494,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Warbringer Razuun within The Deathforge",
         zone = "Shadowmoon Valley",
         subzone = "The Deathforge",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139359] = {
         itemid = 139359,
@@ -26427,7 +26511,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Deathbringer Jovaan within Karazhan",
         zone = "Deadwind Pass",
         subzone = "Karazhan",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139429] = {
         itemid = 139429,
@@ -26437,7 +26528,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Reth'hedron the Subduer within The Twilight Ridge",
         zone = "Nagrand",
         subzone = "The Twilight Ridge",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139454] = {
         itemid = 139454,
@@ -26446,7 +26544,14 @@ AV_VanityItems = {
         creatureId = 23427,
         description = "Has a chance to drop from Illidari Lord Balthas within Dragonmaw Base Camp",
         subzone = "Dragonmaw Base Camp",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139517] = {
         itemid = 139517,
@@ -26455,7 +26560,14 @@ AV_VanityItems = {
         creatureId = 25033,
         description = "Has a chance to drop from Eredar Sorcerer within The Dead Scar",
         zone = "The Dead Scar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139581] = {
         itemid = 139581,
@@ -26464,7 +26576,14 @@ AV_VanityItems = {
         creatureId = 449185,
         description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
         subzone = "Sunwell Plateau",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139796] = {
         itemid = 139796,
@@ -26473,7 +26592,14 @@ AV_VanityItems = {
         creatureId = 449186,
         description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
         subzone = "Sunwell Plateau",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [139797] = {
         itemid = 139797,
@@ -26482,7 +26608,14 @@ AV_VanityItems = {
         creatureId = 449187,
         description = "Has a chance to drop from Kil'jaeden within Sunwell Plateau.",
         subzone = "Sunwell Plateau",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [155655] = {
         itemid = 155655,
@@ -26940,7 +27073,14 @@ AV_VanityItems = {
         creaturePreview = 105764,
         creatureId = 105764,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199580] = {
         itemid = 199580,
@@ -26948,7 +27088,14 @@ AV_VanityItems = {
         creaturePreview = 105765,
         creatureId = 105765,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199581] = {
         itemid = 199581,
@@ -26956,7 +27103,14 @@ AV_VanityItems = {
         creaturePreview = 105766,
         creatureId = 105766,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199582] = {
         itemid = 199582,
@@ -26964,7 +27118,14 @@ AV_VanityItems = {
         creaturePreview = 105767,
         creatureId = 105767,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199658] = {
         itemid = 199658,
@@ -27084,7 +27245,14 @@ AV_VanityItems = {
         creaturePreview = 45906,
         creatureId = 45906,
         description = "Seasonal Reward. Introduced in Season 9, Chapter 3",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [205629] = {
         itemid = 205629,
@@ -27545,7 +27713,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Sulkaia within Kil'sorrow Fortress",
         zone = "Nagrand",
         subzone = "Kil'sorrow Fortress",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [254055] = {
         itemid = 254055,
@@ -27555,7 +27730,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Lady Vaalethri within Firewing Point",
         zone = "Terokkar Forest",
         subzone = "Firewing Point",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [257058] = {
         itemid = 257058,
@@ -27846,7 +28028,14 @@ AV_VanityItems = {
         creaturePreview = 211497,
         creatureId = 211497,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 4",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [274437] = {
         itemid = 274437,
@@ -27910,7 +28099,14 @@ AV_VanityItems = {
         creaturePreview = 41236,
         creatureId = 41236,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281750] = {
         itemid = 281750,
@@ -27918,7 +28114,14 @@ AV_VanityItems = {
         creaturePreview = 41237,
         creatureId = 41237,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281751] = {
         itemid = 281751,
@@ -27926,7 +28129,14 @@ AV_VanityItems = {
         creaturePreview = 41238,
         creatureId = 41238,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281752] = {
         itemid = 281752,
@@ -27934,7 +28144,14 @@ AV_VanityItems = {
         creaturePreview = 41239,
         creatureId = 41239,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281753] = {
         itemid = 281753,
@@ -27942,7 +28159,14 @@ AV_VanityItems = {
         creaturePreview = 41240,
         creatureId = 41240,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281754] = {
         itemid = 281754,
@@ -27950,7 +28174,14 @@ AV_VanityItems = {
         creaturePreview = 41241,
         creatureId = 41241,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281755] = {
         itemid = 281755,
@@ -27958,7 +28189,14 @@ AV_VanityItems = {
         creaturePreview = 41242,
         creatureId = 41242,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [281756] = {
         itemid = 281756,
@@ -27966,7 +28204,14 @@ AV_VanityItems = {
         creaturePreview = 41243,
         creatureId = 41243,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Imp",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [283040] = {
         itemid = 283040,
@@ -28309,7 +28554,14 @@ AV_VanityItems = {
         creaturePreview = 392241,
         creatureId = 392241,
         description = "Seasonal Reward. Introduced in Season 9, Chapter 4",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [348636] = {
         itemid = 348636,
@@ -28366,7 +28618,14 @@ AV_VanityItems = {
         creatureId = 43382,
         description = "Has a chance to drop from Stone Fury within Eastern Kingdoms.",
         zone = "Eastern Kingdoms",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [355070] = {
         itemid = 355070,
@@ -28375,7 +28634,14 @@ AV_VanityItems = {
         creatureId = 916589,
         description = "Has a chance to drop from Hungry Whelp in Azshara",
         zone = "Azshara",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dragonkin",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [355071] = {
         itemid = 355071,
@@ -28384,7 +28650,14 @@ AV_VanityItems = {
         creatureId = 916588,
         description = "Has a chance to drop from Draconic Matron in Azshara",
         zone = "Azshara",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dragonkin",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [392169] = {
         itemid = 392169,
@@ -28645,7 +28918,14 @@ AV_VanityItems = {
         creaturePreview = 139995,
         creatureId = 139995,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [442010] = {
         itemid = 442010,
@@ -28653,7 +28933,14 @@ AV_VanityItems = {
         creaturePreview = 139996,
         creatureId = 139996,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [442011] = {
         itemid = 442011,
@@ -28661,7 +28948,14 @@ AV_VanityItems = {
         creaturePreview = 139997,
         creatureId = 139997,
         description = "Available from the Webstore.",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [442012] = {
         itemid = 442012,
@@ -28669,7 +28963,14 @@ AV_VanityItems = {
         creaturePreview = 139998,
         creatureId = 139998,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [448724] = {
         itemid = 448724,
@@ -29490,7 +29791,14 @@ AV_VanityItems = {
         creaturePreview = 347300,
         creatureId = 347300,
         description = "Reward from Hardcore/Nightmare Plains Stalker Trial",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Rhino",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [510004] = {
         itemid = 510004,
@@ -29514,7 +29822,14 @@ AV_VanityItems = {
         creaturePreview = 98483,
         creatureId = 98483,
         description = "Can be purchased from Millhouse Manastorm",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [532579] = {
         itemid = 532579,
@@ -30668,7 +30983,14 @@ AV_VanityItems = {
         creaturePreview = 19514,
         creatureId = 19514,
         description = "",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Phoenix",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600870] = {
         itemid = 600870,
@@ -32798,7 +33120,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Petrified Treant within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601819] = {
         itemid = 601819,
@@ -32808,7 +33137,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Warpwood Guardian within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601820] = {
         itemid = 601820,
@@ -32818,7 +33154,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Warpwood Treant within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601821] = {
         itemid = 601821,
@@ -32828,7 +33171,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Warpwood Tangler within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601822] = {
         itemid = 601822,
@@ -32838,7 +33188,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Warpwood Stomper within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601823] = {
         itemid = 601823,
@@ -32847,7 +33204,14 @@ AV_VanityItems = {
         creatureId = 13142,
         description = "Has a chance to drop from Deeprot Tangler within Maraudon",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601824] = {
         itemid = 601824,
@@ -32856,7 +33220,14 @@ AV_VanityItems = {
         creatureId = 13743,
         description = "Has a chance to drop from Corrupt Force of Nature within Maraudon",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601825] = {
         itemid = 601825,
@@ -32866,7 +33237,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Petrified Guardian within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601832] = {
         itemid = 601832,
@@ -32874,7 +33252,14 @@ AV_VanityItems = {
         creaturePreview = 36070,
         creatureId = 36070,
         description = "Has a chance to drop from Treant within Kalimdor/Eastern Kingdom",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601834] = {
         itemid = 601834,
@@ -32884,7 +33269,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Cursed Sycamore within High Wilderness",
         zone = "Feralas",
         subzone = "High Wilderness",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601835] = {
         itemid = 601835,
@@ -32893,7 +33285,14 @@ AV_VanityItems = {
         creatureId = 83616,
         description = "Has a chance to drop from Wandering Forest Walker within Feralas.",
         zone = "Feralas",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601836] = {
         itemid = 601836,
@@ -32901,7 +33300,14 @@ AV_VanityItems = {
         creaturePreview = 1964,
         creatureId = 1964,
         description = "Has a chance to drop from Treant within Kalimdor/Eastern Kingdom",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601837] = {
         itemid = 601837,
@@ -32910,7 +33316,14 @@ AV_VanityItems = {
         creatureId = 3834,
         description = "Has a chance to drop from Crazed Ancient within Nightsong Woods",
         zone = "Nightsong Woods",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601838] = {
         itemid = 601838,
@@ -32919,7 +33332,14 @@ AV_VanityItems = {
         creatureId = 3919,
         description = "Has a chance to drop from Withered Ancient within Nightsong Woods",
         zone = "Nightsong Woods",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601839] = {
         itemid = 601839,
@@ -32946,7 +33366,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Vengeful Ancient within The Charred Vale",
         zone = "Stonetalon Mountains",
         subzone = "The Charred Vale",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601843] = {
         itemid = 601843,
@@ -32954,7 +33381,14 @@ AV_VanityItems = {
         creaturePreview = 5806,
         creatureId = 5806,
         description = "Has a chance to drop from Treant within Kalimdor/Eastern Kingdom",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601845] = {
         itemid = 601845,
@@ -32964,7 +33398,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Irontree Wanderer within Irontree Woods",
         zone = "Felwood",
         subzone = "Irontree Woods",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601846] = {
         itemid = 601846,
@@ -32974,7 +33415,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Irontree Stomper within Irontree Woods",
         zone = "Felwood",
         subzone = "Irontree Woods",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601847] = {
         itemid = 601847,
@@ -32983,7 +33431,14 @@ AV_VanityItems = {
         creatureId = 7143,
         description = "Has a chance to drop from Decaying Treant within Felwood",
         zone = "Felwood",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601848] = {
         itemid = 601848,
@@ -32992,7 +33447,14 @@ AV_VanityItems = {
         creatureId = 7144,
         description = "Has a chance to drop from Withered Treant within Felwood",
         zone = "Felwood",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601849] = {
         itemid = 601849,
@@ -33000,7 +33462,14 @@ AV_VanityItems = {
         creaturePreview = 7146,
         creatureId = 7146,
         description = "Has a chance to drop from Treant Protector within Kalimdor/Eastern Kingdom",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Hardwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601851] = {
         itemid = 601851,
@@ -33009,7 +33478,14 @@ AV_VanityItems = {
         creatureId = 9601,
         description = "Has a chance to drop from Treant Spirit within Felwood",
         zone = "Felwood",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601853] = {
         itemid = 601853,
@@ -33019,7 +33495,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Tender within Sunstrider Isle",
         zone = "Eversong Woods",
         subzone = "Sunstrider Isle",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Softwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601854] = {
         itemid = 601854,
@@ -33029,7 +33512,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Feral Tender within Sunstrider Isle",
         zone = "Eversong Woods",
         subzone = "Sunstrider Isle",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Softwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601855] = {
         itemid = 601855,
@@ -33039,7 +33529,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Old Whitebark within The Scorched Grove",
         zone = "Eversong Woods",
         subzone = "The Scorched Grove",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601857] = {
         itemid = 601857,
@@ -33048,7 +33545,14 @@ AV_VanityItems = {
         creatureId = 15636,
         description = "Has a chance to drop from Eversong Green Keeper within Eversong Woods.",
         zone = "Eversong Woods",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Softwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601858] = {
         itemid = 601858,
@@ -33058,7 +33562,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Withered Green Keeper within The Scorched Grove",
         zone = "Eversong Woods",
         subzone = "The Scorched Grove",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601859] = {
         itemid = 601859,
@@ -33068,7 +33579,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Corrupted Treant within Middenvale",
         zone = "Bloodmyst Isle",
         subzone = "Middenvale",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601862] = {
         itemid = 601862,
@@ -33078,7 +33596,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Outraged Raven's Wood Sapling within Ruuan Weald",
         zone = "Blade's Edge Mountains",
         subzone = "Ruuan Weald",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601864] = {
         itemid = 601864,
@@ -33104,7 +33629,14 @@ AV_VanityItems = {
         creatureId = 22095,
         description = "Has a chance to drop from Infested Root-Walker within The Bone Wastes",
         zone = "The Bone Wastes",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [603200] = {
         itemid = 603200,
@@ -33194,7 +33726,14 @@ AV_VanityItems = {
         creatureId = 449184,
         description = "Has a chance to drop from Sacro'lythess within Sunwell Plateau.",
         subzone = "Sunwell Plateau",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Man'ari Eredar",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [612892] = {
         itemid = 612892,
@@ -33394,7 +33933,14 @@ AV_VanityItems = {
         creaturePreview = 338957,
         creatureId = 338957,
         description = "Can be purchased from Millhouse Manastorm",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Rhino",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [1001619] = {
         itemid = 1001619,
@@ -39359,7 +39905,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Unbound Water Spirit within Elemental Plateau",
         zone = "Nagrand",
         subzone = "Elemental Plateau",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777004] = {
         itemid = 1777004,
@@ -39369,7 +39922,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Unbound Wind Spirit within Elemental Plateau",
         zone = "Nagrand",
         subzone = "Elemental Plateau",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wind Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777005] = {
         itemid = 1777005,
@@ -39379,7 +39939,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Unbound Earth Spirit within Elemental Plateau",
         zone = "Nagrand",
         subzone = "Elemental Plateau",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777006] = {
         itemid = 1777006,
@@ -39389,7 +39956,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Unbound Fire Spirit within Elemental Plateau",
         zone = "Nagrand",
         subzone = "Elemental Plateau",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Fire Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777038] = {
         itemid = 1777038,
@@ -39866,7 +40440,14 @@ AV_VanityItems = {
         creatureId = 13141,
         description = "Has a chance to drop from Deeprot Stomper within Maraudon",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777422] = {
         itemid = 1777422,
@@ -39875,7 +40456,14 @@ AV_VanityItems = {
         creatureId = 13142,
         description = "Has a chance to drop from Deeprot Tangler within Maraudon.",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777423] = {
         itemid = 1777423,
@@ -39884,7 +40472,14 @@ AV_VanityItems = {
         creatureId = 13142,
         description = "Has a chance to drop from Deeprot Tangler within Maraudon",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Dreadwood Treant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [1777426] = {
         itemid = 1777426,
