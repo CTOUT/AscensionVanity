@@ -833,23 +833,8 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         
         -- Check database version vs current Ascension build (v2.1+)
         if AV_DatabaseInfo then
-            local dbVersion = AV_DatabaseInfo.ascensionVersion or "Unknown"
             local dbDate = AV_DatabaseInfo.scanDate or "Unknown"
-            
-            -- Get current Ascension build info (shared function)
-            local currentVersion = AV_GetCurrentAscensionVersion()
-            
-            -- Show database info
-            print("|cFF00FF96AscensionVanity:|r Database from: " .. dbDate)
-            print("  → Database build: " .. dbVersion)
-            print("  → Current build:  " .. currentVersion)
-            
-            -- Compare versions
-            if currentVersion ~= "Unknown" and dbVersion ~= "Unknown" then
-                if currentVersion ~= dbVersion then
-                    print("|cFFFFAA00[WARNING] Database is from a different build!|r Consider rescanning with |cFFFFFF00/avanity scan|r")
-                end
-            end
+            print("|cFF00FF96AscensionVanity:|r Database from scan: " .. dbDate)
         end
         
         -- Hook into GameTooltip after player login
@@ -1037,6 +1022,12 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             else
                 print("|cFFFF0000Error:|r API Scanner not loaded")
             end
+        elseif scanCmd == "debug" then
+            if AV_DebugDumpAPIFields then
+                AV_DebugDumpAPIFields()
+            else
+                print("|cFFFF0000Error:|r API Scanner not loaded")
+            end
         elseif scanCmd == "help" then
             print("|cFF00FF96========================================|r")
             print("|cFF00FF96API Scanner Commands|r")
@@ -1045,6 +1036,7 @@ SlashCmdList["ASCENSIONVANITY"] = function(msg)
             print("  |cFFFFFF00/avanity scan clear|r - Clear dump data")
             print("  |cFFFFFF00/avanity scan stats|r - Show scan statistics")
             print("  |cFFFFFF00/avanity scan cancel|r - Cancel ongoing scan")
+            print("  |cFFFFFF00/avanity scan debug|r - Dump ALL API fields (dev)")
             print("  |cFFFFFF00/avanity scan help|r - Show this help")
             print("|cFF00FF96========================================|r")
         else

@@ -5,6 +5,23 @@ All notable changes to the AscensionVanity project will be documented in this fi
 ## [Unreleased] - v2.3-dev
 
 ### Added
+
+- **Pet Family Data System** 🐾 (November 15, 2025)
+  - **96.7% Coverage**: 2,278 out of 2,355 combat pets now have pet family information
+  - **Dual-Source Enrichment**:
+    - Creature-based mapping: 9,292 tameable creatures → families (2,004 items)
+    - Item-based enrichment: 274 items from individual page scraping
+  - **Comprehensive Data**: Family ID, name, type (Ferocity/Tenacity/Cunning/Demon/Undead/Elemental/Dragonkin), icon, exotic status
+  - **New Scrapers**:
+    - `ScrapePetFamilies.ps1`: Scrapes 155 pet families from db.ascension.gg
+    - `EnrichMissingPetFamilies.ps1`: Individual item page scraping with retry logic
+  - **Master Enrichment Script**: `MasterWebEnrichment.ps1` consolidates all web scraping
+    - Phase 1: Pet family data (creature + item-based)
+    - Phase 2: Item descriptions
+    - Phase 3: Zone/location extraction
+    - Smart caching (7-day TTL)
+    - Rate limiting and resumable
+
 - **Kill/Drop Statistics Tracking** 📊 (Phase 1 Complete - November 2025)
   - Lifetime and session kill counters per creature
   - Drop tracking with percentage calculations

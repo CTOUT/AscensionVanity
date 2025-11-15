@@ -261,6 +261,55 @@ StaticPopupDialogs["AV_CONFIRM_CLEAR_DUMP"] = {
     preferredIndex = 3,
 }
 
+-- DEBUG: Dump ALL API fields from sample items
+function AV_DebugDumpAPIFields()
+    Print("=== DEBUG: Dumping ALL C_VanityCollection API fields ===")
+    
+    local allItems = C_VanityCollection.GetAllItems() or {}
+    if #allItems == 0 then
+        Print("ERROR: C_VanityCollection.GetAllItems() returned no items!")
+        return
+    end
+    
+    Print("Total items available: " .. #allItems)
+    Print("Sampling first 5 items to show ALL available fields...")
+    Print("")
+    
+    for i = 1, math.min(5, #allItems) do
+        local itemData = allItems[i]
+        if type(itemData) == "table" then
+            Print("--- Item #" .. i .. " ---")
+            Print("  Name: " .. tostring(itemData.name or "Unknown"))
+            Print("  ItemID: " .. tostring(itemData.itemid or "0"))
+            Print("")
+            Print("  ALL FIELDS:")
+            
+            -- Sort keys for consistent output
+            local keys = {}
+            for k in pairs(itemData) do
+                table.insert(keys, k)
+            end
+            table.sort(keys)
+            
+            for _, key in ipairs(keys) do
+                local value = itemData[key]
+                local valueType = type(value)
+                local valueStr = tostring(value)
+                
+                -- Truncate long strings
+                if valueType == "string" and #valueStr > 50 then
+                    valueStr = valueStr:sub(1, 50) .. "..."
+                end
+                
+                Print("    " .. key .. " (" .. valueType .. "): " .. valueStr)
+            end
+            Print("")
+        end
+    end
+    
+    Print("=== Dump complete! Look for 'creatureFamily', 'petFamily', 'family', or similar fields ===")
+end
+
 -- Startup message
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("ADDON_LOADED")

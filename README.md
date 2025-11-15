@@ -1,9 +1,10 @@
 # AscensionVanity - Combat Pet Tracker
 
 [![Coverage](https://img.shields.io/badge/Description_Coverage-99.95%25-brightgreen)](docs/development/logs/DESCRIPTION_ENRICHMENT_FINAL_REPORT.md)
+[![Pet Families](https://img.shields.io/badge/Pet_Family_Coverage-96.7%25-brightgreen)](docs/WEB_ENRICHMENT_WORKFLOW.md)
 [![Items](https://img.shields.io/badge/Combat_Pets-2,174-blue)](AscensionVanity/VanityDB.lua)
 [![Version](https://img.shields.io/badge/Version-2.3--dev-orange)](AscensionVanity/AscensionVanity.toc)
-[![Automation](https://img.shields.io/badge/Workflow-95%25_Automated-success)](utilities/MasterDescriptionEnrichment.ps1)
+[![Automation](https://img.shields.io/badge/Workflow-95%25_Automated-success)](utilities/MasterWebEnrichment.ps1)
 
 ## Overview
 
@@ -47,16 +48,22 @@ AscensionVanity is a World of Warcraft addon for **Project Ascension** that help
 
 The project includes a fully automated enrichment workflow:
 
-**Master Script**: `utilities/MasterDescriptionEnrichment.ps1`
+**Master Script**: `utilities/MasterWebEnrichment.ps1`
 
 - **95-97% Automation**: Only 3-5% need manual research
+- **Pet Family Data**: 96.7% coverage (2,278 / 2,355 combat pets)
+  - Creature-based mapping: 9,292 tameable creatures
+  - Item-based enrichment: 274 additional items
 - **Multi-Source Search**: db.ascension.gg (primary) + Wowhead WOTLK (fallback)
-- **Safe Updates**: Pattern matching + dry-run mode
-- **Comprehensive Reporting**: CSV, JSON, and manual research lists
+- **Smart Caching**: 7-day TTL, resumable, rate-limited
+- **Three Enrichment Phases**:
+  1. Pet family data (creature + item scraping)
+  2. Item descriptions
+  3. Zone/location extraction
 
-**Run anytime**: Simply execute the master script to find and enrich any empty descriptions automatically.
+**Run anytime**: Execute `.\utilities\MasterWebEnrichment.ps1` to refresh all data.
 
-See [Master Enrichment Workflow](docs/MASTER_ENRICHMENT_WORKFLOW.md) for complete documentation.
+See [Web Enrichment Workflow](docs/WEB_ENRICHMENT_WORKFLOW.md) for complete documentation.
 
 ## Installation
 

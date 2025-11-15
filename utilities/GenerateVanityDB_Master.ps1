@@ -60,6 +60,33 @@ if (Test-Path $zoneMappingsFile) {
     Write-Warning "Zone mappings file not found: $zoneMappingsFile (subzones will be treated as zones)"
 }
 
+# Load pet family mappings (v2.3)
+Write-Host "Loading pet family mappings..." -ForegroundColor Cyan
+$petFamilyFile = 'data/PetFamilyMapping.json'
+$petFamilyLookup = @{}
+$petFamilyDetails = @{}
+
+if (Test-Path $petFamilyFile) {
+    $petFamilyData = Get-Content $petFamilyFile -Raw | ConvertFrom-Json
+    
+    # Build creatureId → family lookup (use creatures, not items!)
+    foreach ($creatureId in $petFamilyData.creatureToFamily.PSObject.Properties.Name) {
+        $familyData = $petFamilyData.creatureToFamily.$creatureId
+        $petFamilyLookup[$creatureId] = $familyData
+    }
+    
+    # Also store full family details for enrichment
+    foreach ($familyId in $petFamilyData.families.PSObject.Properties.Name) {
+        $family = $petFamilyData.families.$familyId
+        $petFamilyDetails[$familyId] = $family
+    }
+    
+    Write-Host "  Loaded $($petFamilyLookup.Count) creature → family mappings" -ForegroundColor Gray
+    Write-Host "  Loaded $($petFamilyDetails.Count) family definitions" -ForegroundColor Gray
+} else {
+    Write-Warning "Pet family mappings file not found: $petFamilyFile (no family data will be included)"
+}
+
 # Icon mapping - combat pets use fixed indices, others use actual icon from data
 $iconMap = @{
     "Beastmaster's Whistle" = 1
@@ -119,6 +146,25 @@ foreach ($it in $items) {
     # Check for quest lock data (v2.2)
     $questLock = $questLockedData[$id]
     
+    # Check for pet family data (v2.3) - use CreatureId, not itemId!
+    $petFamily = $null
+    if ($it.CreatureId) {
+        $familyBasic = $petFamilyLookup[$it.CreatureId.ToString()]
+        if ($familyBasic) {
+            # Get full family details
+            $fullFamily = $petFamilyDetails[$familyBasic.familyId.ToString()]
+            if ($fullFamily) {
+                $petFamily = [pscustomobject]@{
+                    familyId = $fullFamily.id
+                    familyName = $fullFamily.name
+                    familyType = $fullFamily.familyType
+                    icon = $fullFamily.icon
+                    isExotic = $fullFamily.isExotic
+                }
+            }
+        }
+    }
+    
     $processed += [pscustomobject]@{
         itemid = $id
         name = $it.Name
@@ -129,6 +175,7 @@ foreach ($it in $items) {
         subzone = $subzone  # v2.1: Specific location
         icon = $iconRef  # Icon index (number) or icon name (string to be looked up)
         questLock = $questLock  # v2.2: Quest lock information (null if not quest-locked)
+        petFamily = $petFamily  # v2.3: Pet family data (null if not a combat pet)
     }
 }
 
@@ -264,7 +311,7 @@ if (Test-Path $scanFile) {
 }
 
 $header = @"
--- AscensionVanity Full Database v2.2
+-- AscensionVanity Full Database v2.3
 -- Generated: $timestamp
 -- Total Items: $($processed.Count)$scanMetadata
 -- 
@@ -272,7 +319,7 @@ $header = @"
 --   AV_IconList: Deduplicated icon paths referenced by index
 --   AV_VanityItems: Combat pet items indexed by game item ID
 -- 
--- Schema v2.2 Fields:
+-- Schema v2.3 Fields:
 --   itemid: Game item ID
 --   name: Full item name with prefix
 --   creaturePreview: Visual model ID (immutable from API)
@@ -288,6 +335,12 @@ $header = @"
 --     - faction: "Horde", "Alliance", "Both"
 --     - warning: Custom warning message
 --     - notes: Additional context (summon method, etc.)
+--   petFamily: Pet family information (optional v2.3)
+--     - familyId: Pet family ID (1-155)
+--     - familyName: Family display name (Wolf, Cat, Spider, etc.)
+--     - familyType: Family role type (Ferocity, Tenacity, Cunning, Demon, Undead, Elemental, Dragonkin)
+--     - icon: Family icon path
+--     - isExotic: Whether family requires Beast Mastery specialization
 -- 
 -- Categories: Beast, Demon, Elemental, Dragonkin, Undead
 -- Group IDs (10 total):
@@ -304,8 +357,9 @@ AV_DatabaseInfo = {
     ascensionVersion = "$ascensionVersion",
     scanDate = "$scanDate",
     totalItems = $($processed.Count),
-    schemaVersion = "2.2",
-    questLockedCount = $(($processed | Where-Object { $_.questLock }).Count)
+    schemaVersion = "2.3",
+    questLockedCount = $(($processed | Where-Object { $_.questLock }).Count),
+    petFamilyCount = $(($processed | Where-Object { $_.petFamily }).Count)
 }
 
 AV_IconList = {
@@ -353,10 +407,25 @@ foreach ($p in ($processed | Sort-Object itemid)) {
         $db += ('            faction = "' + $p.questLock.faction + '",')
         $db += ('            warning = "' + $safeWarning + '",')
         $db += ('            notes = "' + $safeNotes + '"')
+        $db += '        },'
+    }
+    
+    # Add pet family data if present (v2.3)
+    if ($p.petFamily) {
+        $safeFamilyName = $p.petFamily.familyName -replace '\\', '\\\\' -replace '"', '\"'
+        $safeFamilyType = $p.petFamily.familyType -replace '\\', '\\\\' -replace '"', '\"'
+        $safeFamilyIcon = $p.petFamily.icon -replace '\\', '\\\\' -replace '"', '\"'
+        
+        $db += '        petFamily = {'
+        $db += ('            familyId = ' + $p.petFamily.familyId + ',')
+        $db += ('            familyName = "' + $safeFamilyName + '",')
+        $db += ('            familyType = "' + $safeFamilyType + '",')
+        $db += ('            icon = "' + $safeFamilyIcon + '",')
+        $db += ('            isExotic = ' + $(if ($p.petFamily.isExotic) { 'true' } else { 'false' }))
         $db += '        }'
     }
     else {
-        # Remove trailing comma from icon line if no questLock
+        # Remove trailing comma from last line if no petFamily
         $db[-1] = $db[-1] -replace ',$', ''
     }
     

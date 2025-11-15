@@ -236,7 +236,6 @@ function statsFrame:OnLootReady()
         if self.lastLootedGUID == creatureGUID then
             -- Already looted this creature - don't count again
             -- But still check for vanity items (in case user didn't take them first time)
-            print(string.format("|cFF888888AscensionVanity:|r Already counted loot from %s", creatureName or "creature"))
         else
             -- First time looting this creature - increment counters
             self.lastLootedGUID = creatureGUID
@@ -256,17 +255,14 @@ function statsFrame:OnLootReady()
     -- Check loot slots for vanity items
     local foundVanity = false
     local numSlots = GetNumLootItems()
-    print(string.format("|cFFFF0000[DEBUG]|r Checking %d loot slots for vanity items", numSlots))
     
     for slot = 1, numSlots do
         local itemLink = GetLootSlotLink(slot)
         if itemLink then
             local itemId = tonumber(itemLink:match("item:(%d+)"))
-            print(string.format("|cFFFF0000[DEBUG]|r Slot %d: Item ID %s", slot, tostring(itemId)))
             
             if itemId then
                 local isVanity = self:IsVanityItem(itemId)
-                print(string.format("|cFFFF0000[DEBUG]|r Item %d is vanity: %s", itemId, tostring(isVanity)))
                 
                 if isVanity then
                     -- Check if this is an unexpected drop (creature not in VanityDB)
@@ -296,9 +292,6 @@ function statsFrame:OnLootReady()
 end
 
 function statsFrame:RecordDrop(creatureId, itemId, isUnexpected)
-    print(string.format("|cFFFF0000[DEBUG]|r RecordDrop called: creature=%d, item=%d, unexpected=%s", 
-        creatureId or 0, itemId or 0, tostring(isUnexpected)))
-    
     -- Update lifetime stats (or create if unexpected)
     local stats = AV_CreatureStats[creatureId]
     if not stats and isUnexpected then
@@ -336,7 +329,6 @@ function statsFrame:RecordDrop(creatureId, itemId, isUnexpected)
     -- Update session summary
     AV_SessionStats.summary.totalDrops = AV_SessionStats.summary.totalDrops + 1
     
-    print("|cFFFF0000[DEBUG]|r Calling CelebrateDrop...")
     -- 🎉 CELEBRATION TIME! 🎉
     self:CelebrateDrop(creatureId, itemId, stats)
 end
