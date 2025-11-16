@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.3
--- Generated: 2025-11-16 07:47:17
+-- Generated: 2025-11-16 08:13:03
 -- Total Items: 2957
 -- Source Scan: Ascension 2025-11-14 @ 14:07:35 GMT Not Available
 -- Scan Date: 2025-11-15 11:19:18
@@ -42,7 +42,7 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-16 07:47:17",
+    generatedDate = "2025-11-16 08:13:03",
     ascensionVersion = "2025-11-14 @ 14:07:35 GMT Not Available",
     scanDate = "2025-11-15 11:19:18",
     totalItems = 2957,
@@ -17212,7 +17212,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Wrathbringer Laz-tarash",
         creaturePreview = 20789,
         creatureId = 20789,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Netherstorm",
         icon = 3,
         petFamily = {
             familyId = 123,
@@ -17790,7 +17790,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Matron Li-sahar",
         creaturePreview = 22825,
         creatureId = 22825,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
         icon = 3
     },
     [85247] = {
@@ -17798,7 +17798,7 @@ AV_VanityItems = {
         name = "Summoner's Stone: Gorgolon the All-seeing",
         creaturePreview = 22827,
         creatureId = 22827,
-        description = "",
+        description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
         icon = 3
     },
     [85257] = {
