@@ -484,8 +484,14 @@ foreach ($p in ($processed | Sort-Object itemid)) {
         $db += ('            familyId = ' + $p.petFamily.familyId + ',')
         $db += ('            familyName = "' + $safeFamilyName + '",')
         $db += ('            familyType = "' + $safeFamilyType + '",')
-        $db += ('            icon = "' + $safeFamilyIcon + '",')
-        $db += ('            isExotic = ' + $(if ($p.petFamily.isExotic) { 'true' } else { 'false' }))
+        $db += ('            icon = "' + $safeFamilyIcon + '"')
+        
+        # Only include isExotic if true (default is false in addon)
+        if ($p.petFamily.isExotic) {
+            $db[-1] = $db[-1] + ','
+            $db += '            isExotic = true'
+        }
+        
         $db += '        }'
     }
     else {

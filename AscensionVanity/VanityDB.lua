@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.3
--- Generated: 2025-11-16 10:51:14
+-- Generated: 2025-11-16 11:05:45
 -- Total Items: 2957
 -- Source Scan: Ascension 2025-11-15 @ 20:04:15 GMT Not Available
 -- Scan Date: 2025-11-16 10:19:36
@@ -42,7 +42,7 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-16 10:51:14",
+    generatedDate = "2025-11-16 11:05:45",
     ascensionVersion = "2025-11-15 @ 20:04:15 GMT Not Available",
     scanDate = "2025-11-16 10:19:36",
     totalItems = 2957,
@@ -470,8 +470,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [79258] = {
@@ -485,8 +484,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [79260] = {
@@ -500,8 +498,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [79262] = {
@@ -515,8 +512,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Devilsaur",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [79263] = {
@@ -530,8 +526,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Devilsaur",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [79317] = {
@@ -545,8 +540,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79336] = {
@@ -562,8 +556,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79337] = {
@@ -577,8 +570,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79345] = {
@@ -592,8 +584,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79346] = {
@@ -608,8 +599,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79348] = {
@@ -623,8 +613,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79349] = {
@@ -640,8 +629,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79350] = {
@@ -657,8 +645,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79351] = {
@@ -674,8 +661,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79352] = {
@@ -691,8 +677,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79353] = {
@@ -708,8 +693,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79354] = {
@@ -725,8 +709,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79355] = {
@@ -741,8 +724,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79356] = {
@@ -758,8 +740,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79357] = {
@@ -774,8 +755,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79358] = {
@@ -791,8 +771,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79359] = {
@@ -807,8 +786,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79360] = {
@@ -823,8 +801,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79361] = {
@@ -840,8 +817,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79362] = {
@@ -856,8 +832,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79363] = {
@@ -873,8 +848,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79364] = {
@@ -889,8 +863,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79365] = {
@@ -906,8 +879,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79366] = {
@@ -923,8 +895,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79367] = {
@@ -939,8 +910,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79368] = {
@@ -956,8 +926,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79369] = {
@@ -973,8 +942,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79370] = {
@@ -989,8 +957,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79371] = {
@@ -1006,8 +973,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79372] = {
@@ -1023,8 +989,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79373] = {
@@ -1038,8 +1003,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79374] = {
@@ -1055,8 +1019,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79375] = {
@@ -1071,8 +1034,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79376] = {
@@ -1087,8 +1049,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79377] = {
@@ -1102,8 +1063,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79378] = {
@@ -1118,8 +1078,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79379] = {
@@ -1134,8 +1093,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79380] = {
@@ -1151,8 +1109,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79381] = {
@@ -1168,8 +1125,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79382] = {
@@ -1185,8 +1141,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79383] = {
@@ -1201,8 +1156,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79384] = {
@@ -1217,8 +1171,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79385] = {
@@ -1234,8 +1187,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79386] = {
@@ -1250,8 +1202,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79387] = {
@@ -1267,8 +1218,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79388] = {
@@ -1284,8 +1234,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79389] = {
@@ -1301,8 +1250,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79390] = {
@@ -1317,8 +1265,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79391] = {
@@ -1333,8 +1280,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79392] = {
@@ -1348,8 +1294,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79393] = {
@@ -1363,8 +1308,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79394] = {
@@ -1379,8 +1323,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79395] = {
@@ -1395,8 +1338,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79396] = {
@@ -1412,8 +1354,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79397] = {
@@ -1429,8 +1370,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79398] = {
@@ -1445,8 +1385,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79399] = {
@@ -1461,8 +1400,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79400] = {
@@ -1477,8 +1415,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79401] = {
@@ -1494,8 +1431,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79402] = {
@@ -1511,8 +1447,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79403] = {
@@ -1528,8 +1463,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79404] = {
@@ -1545,8 +1479,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79407] = {
@@ -1562,8 +1495,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79408] = {
@@ -1579,8 +1511,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79409] = {
@@ -1595,8 +1526,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79410] = {
@@ -1611,8 +1541,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79411] = {
@@ -1627,8 +1556,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79412] = {
@@ -1644,8 +1572,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79413] = {
@@ -1661,8 +1588,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79414] = {
@@ -1678,8 +1604,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79415] = {
@@ -1695,8 +1620,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79416] = {
@@ -1712,8 +1636,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79417] = {
@@ -1729,8 +1652,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79418] = {
@@ -1744,8 +1666,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79419] = {
@@ -1760,8 +1681,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79420] = {
@@ -1776,8 +1696,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79421] = {
@@ -1793,8 +1712,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79422] = {
@@ -1810,8 +1728,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79423] = {
@@ -1825,8 +1742,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79424] = {
@@ -1842,8 +1758,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79425] = {
@@ -1858,8 +1773,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79426] = {
@@ -1874,8 +1788,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79427] = {
@@ -1890,8 +1803,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79428] = {
@@ -1906,8 +1818,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79429] = {
@@ -1922,8 +1833,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79430] = {
@@ -1938,8 +1848,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79431] = {
@@ -1955,8 +1864,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79432] = {
@@ -1971,8 +1879,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79433] = {
@@ -1987,8 +1894,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79434] = {
@@ -2003,8 +1909,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79435] = {
@@ -2020,8 +1925,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79436] = {
@@ -2037,8 +1941,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79437] = {
@@ -2053,8 +1956,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79438] = {
@@ -2070,8 +1972,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79439] = {
@@ -2086,8 +1987,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79440] = {
@@ -2102,8 +2002,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79441] = {
@@ -2119,8 +2018,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79442] = {
@@ -2135,8 +2033,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79443] = {
@@ -2151,8 +2048,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79444] = {
@@ -2168,8 +2064,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79445] = {
@@ -2184,8 +2079,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79446] = {
@@ -2200,8 +2094,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79447] = {
@@ -2217,8 +2110,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79448] = {
@@ -2233,8 +2125,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79449] = {
@@ -2249,8 +2140,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79450] = {
@@ -2266,8 +2156,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79451] = {
@@ -2283,8 +2172,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79452] = {
@@ -2299,8 +2187,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79453] = {
@@ -2316,8 +2203,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79454] = {
@@ -2332,8 +2218,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79455] = {
@@ -2348,8 +2233,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79456] = {
@@ -2365,8 +2249,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79457] = {
@@ -2382,8 +2265,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79458] = {
@@ -2399,8 +2281,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79459] = {
@@ -2415,8 +2296,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79460] = {
@@ -2431,8 +2311,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79461] = {
@@ -2448,8 +2327,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79462] = {
@@ -2465,8 +2343,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79463] = {
@@ -2482,8 +2359,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79464] = {
@@ -2499,8 +2375,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79465] = {
@@ -2514,8 +2389,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79466] = {
@@ -2531,8 +2405,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79467] = {
@@ -2547,8 +2420,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79468] = {
@@ -2563,8 +2435,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79469] = {
@@ -2580,8 +2451,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79470] = {
@@ -2596,8 +2466,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79471] = {
@@ -2612,8 +2481,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79472] = {
@@ -2629,8 +2497,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79473] = {
@@ -2646,8 +2513,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79474] = {
@@ -2662,8 +2528,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79475] = {
@@ -2678,8 +2543,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79476] = {
@@ -2694,8 +2558,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79477] = {
@@ -2710,8 +2573,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79478] = {
@@ -2726,8 +2588,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79479] = {
@@ -2742,8 +2603,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79480] = {
@@ -2759,8 +2619,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79481] = {
@@ -2775,8 +2634,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79482] = {
@@ -2792,8 +2650,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79483] = {
@@ -2809,8 +2666,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79484] = {
@@ -2826,8 +2682,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79485] = {
@@ -2843,8 +2698,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79486] = {
@@ -2860,8 +2714,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79487] = {
@@ -2877,8 +2730,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79488] = {
@@ -2894,8 +2746,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79489] = {
@@ -2911,8 +2762,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79490] = {
@@ -2927,8 +2777,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79491] = {
@@ -2943,8 +2792,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79492] = {
@@ -2960,8 +2808,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79493] = {
@@ -2977,8 +2824,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79494] = {
@@ -2994,8 +2840,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79495] = {
@@ -3010,8 +2855,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79496] = {
@@ -3026,8 +2870,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79497] = {
@@ -3041,8 +2884,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [79498] = {
@@ -3057,8 +2899,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [79499] = {
@@ -3073,8 +2914,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [79500] = {
@@ -3089,8 +2929,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79501] = {
@@ -3105,8 +2944,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79502] = {
@@ -3121,8 +2959,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79503] = {
@@ -3137,8 +2974,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79504] = {
@@ -3154,8 +2990,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79505] = {
@@ -3171,8 +3006,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79506] = {
@@ -3188,8 +3022,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79507] = {
@@ -3205,8 +3038,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79508] = {
@@ -3221,8 +3053,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79509] = {
@@ -3237,8 +3068,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79510] = {
@@ -3253,8 +3083,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79511] = {
@@ -3270,8 +3099,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79512] = {
@@ -3286,8 +3114,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79516] = {
@@ -3303,8 +3130,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79517] = {
@@ -3319,8 +3145,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79518] = {
@@ -3336,8 +3161,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79519] = {
@@ -3351,8 +3175,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79520] = {
@@ -3367,8 +3190,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79521] = {
@@ -3384,8 +3206,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79522] = {
@@ -3400,8 +3221,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79523] = {
@@ -3416,8 +3236,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79524] = {
@@ -3433,8 +3252,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79525] = {
@@ -3449,8 +3267,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79526] = {
@@ -3465,8 +3282,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79527] = {
@@ -3482,8 +3298,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79528] = {
@@ -3498,8 +3313,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79529] = {
@@ -3514,8 +3328,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79530] = {
@@ -3531,8 +3344,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79531] = {
@@ -3548,8 +3360,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79532] = {
@@ -3565,8 +3376,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79533] = {
@@ -3582,8 +3392,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79534] = {
@@ -3598,8 +3407,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79535] = {
@@ -3614,8 +3422,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79536] = {
@@ -3630,8 +3437,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79537] = {
@@ -3646,8 +3452,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79539] = {
@@ -3663,8 +3468,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79540] = {
@@ -3679,8 +3483,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79541] = {
@@ -3696,8 +3499,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79542] = {
@@ -3711,8 +3513,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79543] = {
@@ -3728,8 +3529,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79544] = {
@@ -3745,8 +3545,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79545] = {
@@ -3762,8 +3561,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79546] = {
@@ -3779,8 +3577,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79547] = {
@@ -3795,8 +3592,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79548] = {
@@ -3811,8 +3607,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79549] = {
@@ -3827,8 +3622,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79550] = {
@@ -3843,8 +3637,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79551] = {
@@ -3859,8 +3652,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79552] = {
@@ -3875,8 +3667,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79553] = {
@@ -3891,8 +3682,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79554] = {
@@ -3907,8 +3697,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79555] = {
@@ -3923,8 +3712,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79556] = {
@@ -3939,8 +3727,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79557] = {
@@ -3956,8 +3743,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79558] = {
@@ -3973,8 +3759,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79559] = {
@@ -3990,8 +3775,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79560] = {
@@ -4006,8 +3790,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79561] = {
@@ -4022,8 +3805,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79562] = {
@@ -4038,8 +3820,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79563] = {
@@ -4054,8 +3835,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79564] = {
@@ -4070,8 +3850,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79565] = {
@@ -4086,8 +3865,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79566] = {
@@ -4103,8 +3881,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79567] = {
@@ -4120,8 +3897,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79568] = {
@@ -4136,8 +3912,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79569] = {
@@ -4152,8 +3927,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79570] = {
@@ -4168,8 +3942,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79571] = {
@@ -4184,8 +3957,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79572] = {
@@ -4200,8 +3972,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79573] = {
@@ -4217,8 +3988,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79574] = {
@@ -4234,8 +4004,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79575] = {
@@ -4250,8 +4019,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79576] = {
@@ -4266,8 +4034,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79577] = {
@@ -4283,8 +4050,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79578] = {
@@ -4300,8 +4066,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79579] = {
@@ -4317,8 +4082,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79580] = {
@@ -4333,8 +4097,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79581] = {
@@ -4349,8 +4112,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79582] = {
@@ -4366,8 +4128,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79583] = {
@@ -4383,8 +4144,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79584] = {
@@ -4400,8 +4160,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79585] = {
@@ -4417,8 +4176,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79586] = {
@@ -4433,8 +4191,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79587] = {
@@ -4450,8 +4207,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79588] = {
@@ -4467,8 +4223,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79589] = {
@@ -4484,8 +4239,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79590] = {
@@ -4501,8 +4255,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79591] = {
@@ -4518,8 +4271,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79592] = {
@@ -4534,8 +4286,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79593] = {
@@ -4550,8 +4301,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79594] = {
@@ -4567,8 +4317,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79595] = {
@@ -4584,8 +4333,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79596] = {
@@ -4601,8 +4349,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79597] = {
@@ -4617,8 +4364,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79598] = {
@@ -4634,8 +4380,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79599] = {
@@ -4650,8 +4395,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79600] = {
@@ -4666,8 +4410,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79601] = {
@@ -4681,8 +4424,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79602] = {
@@ -4697,8 +4439,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79603] = {
@@ -4713,8 +4454,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79604] = {
@@ -4730,8 +4470,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79605] = {
@@ -4746,8 +4485,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79606] = {
@@ -4762,8 +4500,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79607] = {
@@ -4778,8 +4515,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79608] = {
@@ -4795,8 +4531,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79609] = {
@@ -4811,8 +4546,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79610] = {
@@ -4827,8 +4561,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79611] = {
@@ -4843,8 +4576,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79612] = {
@@ -4859,8 +4591,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79613] = {
@@ -4876,8 +4607,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79614] = {
@@ -4892,8 +4622,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [79615] = {
@@ -4907,8 +4636,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79616] = {
@@ -4923,8 +4651,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79617] = {
@@ -4940,8 +4667,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79618] = {
@@ -4957,8 +4683,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79619] = {
@@ -4973,8 +4698,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79620] = {
@@ -4989,8 +4713,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79621] = {
@@ -5005,8 +4728,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79622] = {
@@ -5022,8 +4744,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79623] = {
@@ -5038,8 +4759,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79624] = {
@@ -5054,8 +4774,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79625] = {
@@ -5070,8 +4789,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79626] = {
@@ -5086,8 +4804,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79627] = {
@@ -5103,8 +4820,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79628] = {
@@ -5120,8 +4836,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79629] = {
@@ -5137,8 +4852,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79630] = {
@@ -5152,8 +4866,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79631] = {
@@ -5169,8 +4882,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79632] = {
@@ -5186,8 +4898,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79633] = {
@@ -5203,8 +4914,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79634] = {
@@ -5220,8 +4930,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79635] = {
@@ -5237,8 +4946,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79636] = {
@@ -5254,8 +4962,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79637] = {
@@ -5271,8 +4978,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79638] = {
@@ -5288,8 +4994,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79639] = {
@@ -5305,8 +5010,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79640] = {
@@ -5321,8 +5025,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79641] = {
@@ -5338,8 +5041,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79642] = {
@@ -5355,8 +5057,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79643] = {
@@ -5372,8 +5073,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79644] = {
@@ -5388,8 +5088,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79645] = {
@@ -5404,8 +5103,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79646] = {
@@ -5421,8 +5119,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79647] = {
@@ -5438,8 +5135,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79648] = {
@@ -5454,8 +5150,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79649] = {
@@ -5470,8 +5165,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79650] = {
@@ -5487,8 +5181,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79651] = {
@@ -5504,8 +5197,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79652] = {
@@ -5521,8 +5213,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79653] = {
@@ -5538,8 +5229,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79654] = {
@@ -5555,8 +5245,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79655] = {
@@ -5572,8 +5261,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79656] = {
@@ -5589,8 +5277,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79657] = {
@@ -5637,8 +5324,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79660] = {
@@ -5654,8 +5340,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79661] = {
@@ -5670,8 +5355,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79662] = {
@@ -5686,8 +5370,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79663] = {
@@ -5703,8 +5386,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79664] = {
@@ -5720,8 +5402,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79665] = {
@@ -5737,8 +5418,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79666] = {
@@ -5752,8 +5432,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79667] = {
@@ -5768,8 +5447,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79668] = {
@@ -5785,8 +5463,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79669] = {
@@ -5817,8 +5494,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79671] = {
@@ -5834,8 +5510,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79672] = {
@@ -5851,8 +5526,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79673] = {
@@ -5868,8 +5542,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79674] = {
@@ -5885,8 +5558,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79675] = {
@@ -5902,8 +5574,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79676] = {
@@ -5918,8 +5589,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79677] = {
@@ -5935,8 +5605,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79678] = {
@@ -5951,8 +5620,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79679] = {
@@ -5967,8 +5635,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79680] = {
@@ -5983,8 +5650,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79681] = {
@@ -5999,8 +5665,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79682] = {
@@ -6015,8 +5680,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79683] = {
@@ -6032,8 +5696,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79684] = {
@@ -6049,8 +5712,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79685] = {
@@ -6065,8 +5727,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79686] = {
@@ -6082,8 +5743,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79687] = {
@@ -6099,8 +5759,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79688] = {
@@ -6116,8 +5775,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79689] = {
@@ -6131,8 +5789,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79690] = {
@@ -6147,8 +5804,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79691] = {
@@ -6164,8 +5820,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79692] = {
@@ -6181,8 +5836,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79693] = {
@@ -6198,8 +5852,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79694] = {
@@ -6215,8 +5868,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79695] = {
@@ -6232,8 +5884,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79696] = {
@@ -6249,8 +5900,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79697] = {
@@ -6266,8 +5916,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79698] = {
@@ -6282,8 +5931,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79699] = {
@@ -6299,8 +5947,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79700] = {
@@ -6315,8 +5962,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79701] = {
@@ -6332,8 +5978,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79702] = {
@@ -6349,8 +5994,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79703] = {
@@ -6366,8 +6010,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79704] = {
@@ -6383,8 +6026,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79705] = {
@@ -6400,8 +6042,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79706] = {
@@ -6417,8 +6058,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79707] = {
@@ -6433,8 +6073,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79708] = {
@@ -6450,8 +6089,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79709] = {
@@ -6466,8 +6104,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79714] = {
@@ -6482,8 +6119,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79725] = {
@@ -6498,8 +6134,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79726] = {
@@ -6514,8 +6149,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79727] = {
@@ -6530,8 +6164,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79728] = {
@@ -6546,8 +6179,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79729] = {
@@ -6563,8 +6195,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79730] = {
@@ -6579,8 +6210,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79732] = {
@@ -6595,8 +6225,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79733] = {
@@ -6611,8 +6240,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79736] = {
@@ -6627,8 +6255,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79737] = {
@@ -6643,8 +6270,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79738] = {
@@ -6659,8 +6285,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [79739] = {
@@ -6675,8 +6300,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79741] = {
@@ -6691,8 +6315,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79742] = {
@@ -6708,8 +6331,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79743] = {
@@ -6724,8 +6346,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [79747] = {
@@ -6740,8 +6361,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79748] = {
@@ -6757,8 +6377,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79751] = {
@@ -6772,8 +6391,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [79752] = {
@@ -6789,8 +6407,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [79754] = {
@@ -6806,8 +6423,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79755] = {
@@ -6822,8 +6438,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [79756] = {
@@ -6838,8 +6453,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [79757] = {
@@ -6870,8 +6484,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79759] = {
@@ -6887,8 +6500,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79760] = {
@@ -6904,8 +6516,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79761] = {
@@ -6921,8 +6532,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79762] = {
@@ -6938,8 +6548,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79763] = {
@@ -6955,8 +6564,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79764] = {
@@ -6972,8 +6580,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79765] = {
@@ -6989,8 +6596,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79766] = {
@@ -7005,8 +6611,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79767] = {
@@ -7022,8 +6627,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79768] = {
@@ -7039,8 +6643,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79770] = {
@@ -7056,8 +6659,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79772] = {
@@ -7073,8 +6675,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79773] = {
@@ -7090,8 +6691,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79774] = {
@@ -7106,8 +6706,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79776] = {
@@ -7123,8 +6722,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79777] = {
@@ -7139,8 +6737,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79778] = {
@@ -7156,8 +6753,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79779] = {
@@ -7172,8 +6768,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79781] = {
@@ -7188,8 +6783,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79782] = {
@@ -7205,8 +6799,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79783] = {
@@ -7222,8 +6815,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79794] = {
@@ -7238,8 +6830,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79814] = {
@@ -7255,8 +6846,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79815] = {
@@ -7272,8 +6862,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79816] = {
@@ -7320,8 +6909,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79821] = {
@@ -7337,8 +6925,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [79822] = {
@@ -7354,8 +6941,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79861] = {
@@ -7371,8 +6957,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79862] = {
@@ -7387,8 +6972,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79863] = {
@@ -7403,8 +6987,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79865] = {
@@ -7419,8 +7002,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79872] = {
@@ -7435,8 +7017,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [79873] = {
@@ -7451,8 +7032,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79874] = {
@@ -7468,8 +7048,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79876] = {
@@ -7485,8 +7064,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79877] = {
@@ -7501,8 +7079,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79878] = {
@@ -7517,8 +7094,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79879] = {
@@ -7534,8 +7110,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79881] = {
@@ -7551,8 +7126,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79882] = {
@@ -7568,8 +7142,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79883] = {
@@ -7585,8 +7158,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79886] = {
@@ -7602,8 +7174,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [79887] = {
@@ -7619,8 +7190,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79888] = {
@@ -7635,8 +7205,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [79889] = {
@@ -7669,8 +7238,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79891] = {
@@ -7686,8 +7254,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [79892] = {
@@ -7750,8 +7317,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79920] = {
@@ -7766,8 +7332,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79921] = {
@@ -7783,8 +7348,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79922] = {
@@ -7800,8 +7364,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79923] = {
@@ -7817,8 +7380,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79924] = {
@@ -7834,8 +7396,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79925] = {
@@ -7851,8 +7412,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79926] = {
@@ -7884,8 +7444,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [79928] = {
@@ -7934,8 +7493,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [79943] = {
@@ -7950,8 +7508,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79944] = {
@@ -7966,8 +7523,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79945] = {
@@ -7982,8 +7538,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79946] = {
@@ -7998,8 +7553,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [79947] = {
@@ -8014,8 +7568,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79948] = {
@@ -8030,8 +7583,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [79949] = {
@@ -8047,8 +7599,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [79950] = {
@@ -8064,8 +7615,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [79951] = {
@@ -8081,8 +7631,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [79981] = {
@@ -8097,8 +7646,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [79982] = {
@@ -8113,8 +7661,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [79991] = {
@@ -8129,8 +7676,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [79992] = {
@@ -8146,8 +7692,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79993] = {
@@ -8163,8 +7708,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79994] = {
@@ -8179,8 +7723,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79995] = {
@@ -8196,8 +7739,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79996] = {
@@ -8213,8 +7755,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [79997] = {
@@ -8230,8 +7771,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [79998] = {
@@ -8246,8 +7786,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80030] = {
@@ -8262,8 +7801,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80031] = {
@@ -8279,8 +7817,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80032] = {
@@ -8344,8 +7881,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80036] = {
@@ -8361,8 +7897,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80037] = {
@@ -8378,8 +7913,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80038] = {
@@ -8427,8 +7961,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80042] = {
@@ -8443,8 +7976,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [80043] = {
@@ -8459,8 +7991,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80044] = {
@@ -8476,8 +8007,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80045] = {
@@ -8492,8 +8022,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80046] = {
@@ -8508,8 +8037,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80047] = {
@@ -8524,8 +8052,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [80048] = {
@@ -8541,8 +8068,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80049] = {
@@ -8557,8 +8083,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [80050] = {
@@ -8573,8 +8098,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80051] = {
@@ -8589,8 +8113,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80052] = {
@@ -8605,8 +8128,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80053] = {
@@ -8622,8 +8144,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80054] = {
@@ -8655,8 +8176,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80056] = {
@@ -8704,8 +8224,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80060] = {
@@ -8721,8 +8240,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80062] = {
@@ -8738,8 +8256,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80063] = {
@@ -8753,8 +8270,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80064] = {
@@ -8770,8 +8286,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80065] = {
@@ -8787,8 +8302,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80066] = {
@@ -8803,8 +8317,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80075] = {
@@ -8820,8 +8333,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [80076] = {
@@ -8837,8 +8349,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80077] = {
@@ -8854,8 +8365,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80078] = {
@@ -8870,8 +8380,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80079] = {
@@ -8886,8 +8395,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80080] = {
@@ -8902,8 +8410,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80081] = {
@@ -8918,8 +8425,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80082] = {
@@ -8934,8 +8440,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80083] = {
@@ -8951,8 +8456,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80084] = {
@@ -8968,8 +8472,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80085] = {
@@ -8984,8 +8487,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80086] = {
@@ -9001,8 +8503,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80087] = {
@@ -9018,8 +8519,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80088] = {
@@ -9033,8 +8533,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80089] = {
@@ -9049,8 +8548,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [80090] = {
@@ -9065,8 +8563,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80091] = {
@@ -9081,8 +8578,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80092] = {
@@ -9121,8 +8617,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [80094] = {
@@ -9153,8 +8648,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80098] = {
@@ -9168,8 +8662,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80099] = {
@@ -9183,8 +8676,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80105] = {
@@ -9214,8 +8706,7 @@ AV_VanityItems = {
             familyId = 45,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound"
         }
     },
     [80107] = {
@@ -9297,8 +8788,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80112] = {
@@ -9313,8 +8803,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80113] = {
@@ -9329,8 +8818,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80114] = {
@@ -9345,8 +8833,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80115] = {
@@ -9361,8 +8848,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80117] = {
@@ -9460,8 +8946,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80160] = {
@@ -9477,8 +8962,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80161] = {
@@ -9493,8 +8977,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80162] = {
@@ -9510,8 +8993,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [80163] = {
@@ -9527,8 +9009,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80164] = {
@@ -9543,8 +9024,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80165] = {
@@ -9560,8 +9040,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80166] = {
@@ -9645,8 +9124,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [80172] = {
@@ -9661,8 +9139,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80173] = {
@@ -9678,8 +9155,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80174] = {
@@ -9695,8 +9171,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80175] = {
@@ -9712,8 +9187,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80178] = {
@@ -9729,8 +9203,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80201] = {
@@ -9745,8 +9218,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [80210] = {
@@ -9761,8 +9233,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80224] = {
@@ -9777,8 +9248,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [80225] = {
@@ -9793,8 +9263,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80226] = {
@@ -9826,8 +9295,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80242] = {
@@ -9842,8 +9310,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80243] = {
@@ -9859,8 +9326,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80244] = {
@@ -9876,8 +9342,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80247] = {
@@ -9892,8 +9357,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80248] = {
@@ -9909,8 +9373,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80249] = {
@@ -9925,8 +9388,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80250] = {
@@ -9941,8 +9403,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80251] = {
@@ -9957,8 +9418,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80252] = {
@@ -9990,8 +9450,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80254] = {
@@ -10022,8 +9481,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [80293] = {
@@ -10039,8 +9497,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80296] = {
@@ -10056,8 +9513,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80297] = {
@@ -10071,8 +9527,7 @@ AV_VanityItems = {
             familyId = 30,
             familyName = "Dragonhawk",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk"
         }
     },
     [80298] = {
@@ -10087,8 +9542,7 @@ AV_VanityItems = {
             familyId = 30,
             familyName = "Dragonhawk",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk"
         }
     },
     [80299] = {
@@ -10103,8 +9557,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80300] = {
@@ -10119,8 +9572,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80320] = {
@@ -10136,8 +9588,7 @@ AV_VanityItems = {
             familyId = 5,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_boar"
         }
     },
     [80325] = {
@@ -10152,8 +9603,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80326] = {
@@ -10168,8 +9618,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80327] = {
@@ -10184,8 +9633,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80336] = {
@@ -10200,8 +9648,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80338] = {
@@ -10216,8 +9663,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80339] = {
@@ -10232,8 +9678,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80340] = {
@@ -10248,8 +9693,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80341] = {
@@ -10264,8 +9708,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80342] = {
@@ -10280,8 +9723,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80343] = {
@@ -10295,8 +9737,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80344] = {
@@ -10311,8 +9752,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80345] = {
@@ -10327,8 +9767,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80346] = {
@@ -10343,8 +9782,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80347] = {
@@ -10360,8 +9798,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80348] = {
@@ -10376,8 +9813,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80349] = {
@@ -10392,8 +9828,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80350] = {
@@ -10408,8 +9843,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80351] = {
@@ -10425,8 +9859,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80352] = {
@@ -10441,8 +9874,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80353] = {
@@ -10456,8 +9888,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [80354] = {
@@ -10471,8 +9902,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80355] = {
@@ -10487,8 +9917,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80356] = {
@@ -10503,8 +9932,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80381] = {
@@ -10520,8 +9948,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80382] = {
@@ -10537,8 +9964,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80383] = {
@@ -10553,8 +9979,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80392] = {
@@ -10569,8 +9994,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80393] = {
@@ -10585,8 +10009,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80402] = {
@@ -10602,8 +10025,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80435] = {
@@ -10618,8 +10040,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80436] = {
@@ -10634,8 +10055,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80438] = {
@@ -10650,8 +10070,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80439] = {
@@ -10666,8 +10085,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [80440] = {
@@ -10682,8 +10100,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [80473] = {
@@ -10698,8 +10115,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [80474] = {
@@ -10713,8 +10129,7 @@ AV_VanityItems = {
             familyId = 45,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound"
         }
     },
     [80475] = {
@@ -10730,8 +10145,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80501] = {
@@ -10747,8 +10161,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80502] = {
@@ -10763,8 +10176,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80507] = {
@@ -10779,8 +10191,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80508] = {
@@ -10795,8 +10206,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80509] = {
@@ -10811,8 +10221,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80510] = {
@@ -10827,8 +10236,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80512] = {
@@ -10844,8 +10252,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80514] = {
@@ -10860,8 +10267,7 @@ AV_VanityItems = {
             familyId = 33,
             familyName = "Sporebat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat"
         }
     },
     [80515] = {
@@ -10876,8 +10282,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80516] = {
@@ -10892,8 +10297,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80517] = {
@@ -10909,8 +10313,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80518] = {
@@ -10925,8 +10328,7 @@ AV_VanityItems = {
             familyId = 33,
             familyName = "Sporebat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat"
         }
     },
     [80519] = {
@@ -10941,8 +10343,7 @@ AV_VanityItems = {
             familyId = 33,
             familyName = "Sporebat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat"
         }
     },
     [80520] = {
@@ -10957,8 +10358,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80521] = {
@@ -10973,8 +10373,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80523] = {
@@ -10989,8 +10388,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80524] = {
@@ -11005,8 +10403,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80525] = {
@@ -11020,8 +10417,7 @@ AV_VanityItems = {
             familyId = 30,
             familyName = "Dragonhawk",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk"
         }
     },
     [80526] = {
@@ -11036,8 +10432,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80527] = {
@@ -11052,8 +10447,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80530] = {
@@ -11068,8 +10462,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80531] = {
@@ -11085,8 +10478,7 @@ AV_VanityItems = {
             familyId = 33,
             familyName = "Sporebat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat"
         }
     },
     [80532] = {
@@ -11102,8 +10494,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80533] = {
@@ -11118,8 +10509,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80534] = {
@@ -11135,8 +10525,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80536] = {
@@ -11151,8 +10540,7 @@ AV_VanityItems = {
             familyId = 32,
             familyName = "Warp Stalker",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker"
         }
     },
     [80547] = {
@@ -11167,8 +10555,7 @@ AV_VanityItems = {
             familyId = 32,
             familyName = "Warp Stalker",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker"
         }
     },
     [80564] = {
@@ -11183,8 +10570,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80573] = {
@@ -11199,8 +10585,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80574] = {
@@ -11215,8 +10600,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80575] = {
@@ -11231,8 +10615,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80576] = {
@@ -11248,8 +10631,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80577] = {
@@ -11264,8 +10646,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80579] = {
@@ -11280,8 +10661,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80582] = {
@@ -11296,8 +10676,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80583] = {
@@ -11312,8 +10691,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80601] = {
@@ -11328,8 +10706,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80602] = {
@@ -11344,8 +10721,7 @@ AV_VanityItems = {
             familyId = 32,
             familyName = "Warp Stalker",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker"
         }
     },
     [80603] = {
@@ -11360,8 +10736,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80604] = {
@@ -11377,8 +10752,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80605] = {
@@ -11394,8 +10768,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80606] = {
@@ -11411,8 +10784,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80607] = {
@@ -11426,8 +10798,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80608] = {
@@ -11442,8 +10813,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80609] = {
@@ -11459,8 +10829,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80611] = {
@@ -11476,8 +10845,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80612] = {
@@ -11492,8 +10860,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80613] = {
@@ -11509,8 +10876,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [80616] = {
@@ -11526,8 +10892,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80617] = {
@@ -11542,8 +10907,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80619] = {
@@ -11558,8 +10922,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80620] = {
@@ -11574,8 +10937,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [80621] = {
@@ -11590,8 +10952,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80622] = {
@@ -11606,8 +10967,7 @@ AV_VanityItems = {
             familyId = 33,
             familyName = "Sporebat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_sporebat"
         }
     },
     [80623] = {
@@ -11622,8 +10982,7 @@ AV_VanityItems = {
             familyId = 30,
             familyName = "Dragonhawk",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_dragonhawk"
         }
     },
     [80624] = {
@@ -11639,8 +10998,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80625] = {
@@ -11656,8 +11014,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80626] = {
@@ -11673,8 +11030,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80627] = {
@@ -11689,8 +11045,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80628] = {
@@ -11705,8 +11060,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80629] = {
@@ -11722,8 +11076,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80630] = {
@@ -11738,8 +11091,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80631] = {
@@ -11754,8 +11106,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80632] = {
@@ -11771,8 +11122,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80633] = {
@@ -11788,8 +11138,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80634] = {
@@ -11805,8 +11154,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [80635] = {
@@ -11822,8 +11170,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80636] = {
@@ -11872,8 +11219,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80639] = {
@@ -11888,8 +11234,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80640] = {
@@ -11921,8 +11266,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80642] = {
@@ -11937,8 +11281,7 @@ AV_VanityItems = {
             familyId = 45,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound"
         }
     },
     [80643] = {
@@ -11953,8 +11296,7 @@ AV_VanityItems = {
             familyId = 45,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_corehound"
         }
     },
     [80644] = {
@@ -11970,8 +11312,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [80645] = {
@@ -11987,8 +11328,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80647] = {
@@ -12003,8 +11343,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80648] = {
@@ -12020,8 +11359,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80649] = {
@@ -12035,8 +11373,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80650] = {
@@ -12052,8 +11389,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80651] = {
@@ -12068,8 +11404,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80652] = {
@@ -12100,8 +11435,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80654] = {
@@ -12116,8 +11450,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80655] = {
@@ -12132,8 +11465,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80656] = {
@@ -12149,8 +11481,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80657] = {
@@ -12165,8 +11496,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80658] = {
@@ -12182,8 +11512,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80659] = {
@@ -12198,8 +11527,7 @@ AV_VanityItems = {
             familyId = 20,
             familyName = "Scorpid",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_scorpid"
         }
     },
     [80660] = {
@@ -12215,8 +11543,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80661] = {
@@ -12231,8 +11558,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80662] = {
@@ -12248,8 +11574,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80663] = {
@@ -12265,8 +11590,7 @@ AV_VanityItems = {
             familyId = 32,
             familyName = "Warp Stalker",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker"
         }
     },
     [80664] = {
@@ -12281,8 +11605,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80665] = {
@@ -12297,8 +11620,7 @@ AV_VanityItems = {
             familyId = 12,
             familyName = "Tallstrider",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_tallstrider"
         }
     },
     [80667] = {
@@ -12314,8 +11636,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80668] = {
@@ -12330,8 +11651,7 @@ AV_VanityItems = {
             familyId = 32,
             familyName = "Warp Stalker",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker"
         }
     },
     [80669] = {
@@ -12347,8 +11667,7 @@ AV_VanityItems = {
             familyId = 32,
             familyName = "Warp Stalker",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_warpstalker"
         }
     },
     [80671] = {
@@ -12363,8 +11682,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80672] = {
@@ -12380,8 +11698,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [80673] = {
@@ -12396,8 +11713,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80674] = {
@@ -12412,8 +11728,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80675] = {
@@ -12429,8 +11744,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [80676] = {
@@ -12446,8 +11760,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80680] = {
@@ -12462,8 +11775,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80681] = {
@@ -12479,8 +11791,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [80682] = {
@@ -12496,8 +11807,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [80683] = {
@@ -12512,8 +11822,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80684] = {
@@ -12528,8 +11837,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80805] = {
@@ -12544,8 +11852,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [80813] = {
@@ -12560,8 +11867,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80814] = {
@@ -12576,8 +11882,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80815] = {
@@ -12592,8 +11897,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80819] = {
@@ -12608,8 +11912,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80820] = {
@@ -12624,8 +11927,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80821] = {
@@ -12640,8 +11942,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80823] = {
@@ -12656,8 +11957,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80825] = {
@@ -12672,8 +11972,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [80826] = {
@@ -12688,8 +11987,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80833] = {
@@ -12705,8 +12003,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [80834] = {
@@ -12737,8 +12034,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80836] = {
@@ -12753,8 +12049,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80837] = {
@@ -12769,8 +12064,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80838] = {
@@ -12785,8 +12079,7 @@ AV_VanityItems = {
             familyId = 31,
             familyName = "Ravager",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_ravager"
         }
     },
     [80843] = {
@@ -12817,8 +12110,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80845] = {
@@ -12833,8 +12125,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [80846] = {
@@ -12849,8 +12140,7 @@ AV_VanityItems = {
             familyId = 21,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_turtle"
         }
     },
     [80847] = {
@@ -12913,8 +12203,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [80851] = {
@@ -12929,8 +12218,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80904] = {
@@ -12945,8 +12233,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80905] = {
@@ -12961,8 +12248,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80940] = {
@@ -12977,8 +12263,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [80941] = {
@@ -12993,8 +12278,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [80942] = {
@@ -13009,8 +12293,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [80943] = {
@@ -13091,8 +12374,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81119] = {
@@ -13107,8 +12389,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [81120] = {
@@ -13123,8 +12404,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81121] = {
@@ -13139,8 +12419,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [81144] = {
@@ -13155,8 +12434,7 @@ AV_VanityItems = {
             familyId = 8,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crab"
         }
     },
     [81173] = {
@@ -13171,8 +12449,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81226] = {
@@ -13188,8 +12465,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [81227] = {
@@ -13205,8 +12481,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81228] = {
@@ -13221,8 +12496,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [81278] = {
@@ -13237,8 +12511,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [81322] = {
@@ -13253,8 +12526,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81323] = {
@@ -13270,8 +12542,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81363] = {
@@ -13286,8 +12557,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81374] = {
@@ -13302,8 +12572,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81377] = {
@@ -13319,8 +12588,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [81378] = {
@@ -13335,8 +12603,7 @@ AV_VanityItems = {
             familyId = 7,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_vulture"
         }
     },
     [81379] = {
@@ -13351,8 +12618,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81380] = {
@@ -13368,8 +12634,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81381] = {
@@ -13384,8 +12649,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81382] = {
@@ -13400,8 +12664,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [81383] = {
@@ -13416,8 +12679,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [81386] = {
@@ -13432,8 +12694,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81387] = {
@@ -13448,8 +12709,7 @@ AV_VanityItems = {
             familyId = 37,
             familyName = "Moth",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_moth"
         }
     },
     [81392] = {
@@ -13480,8 +12740,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81398] = {
@@ -13496,8 +12755,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [81399] = {
@@ -13512,8 +12770,7 @@ AV_VanityItems = {
             familyId = 6,
             familyName = "Crocolisk",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_crocolisk"
         }
     },
     [81416] = {
@@ -13528,8 +12785,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81419] = {
@@ -13560,8 +12816,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [81421] = {
@@ -13576,8 +12831,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [81422] = {
@@ -13592,8 +12846,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [81423] = {
@@ -13608,8 +12861,7 @@ AV_VanityItems = {
             familyId = 44,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wasp"
         }
     },
     [81424] = {
@@ -13624,8 +12876,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [81425] = {
@@ -13640,8 +12891,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [81426] = {
@@ -13656,8 +12906,7 @@ AV_VanityItems = {
             familyId = 9,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_gorilla"
         }
     },
     [81428] = {
@@ -13672,8 +12921,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81429] = {
@@ -13688,8 +12936,7 @@ AV_VanityItems = {
             familyId = 24,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bat"
         }
     },
     [81431] = {
@@ -13704,8 +12951,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [81432] = {
@@ -13720,8 +12966,7 @@ AV_VanityItems = {
             familyId = 35,
             familyName = "Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\inv_giantsnake_green",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_giantsnake_green"
         }
     },
     [81433] = {
@@ -13737,8 +12982,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [81434] = {
@@ -13754,8 +12998,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [81435] = {
@@ -13770,8 +13013,7 @@ AV_VanityItems = {
             familyId = 25,
             familyName = "Hyena",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_hyena"
         }
     },
     [81436] = {
@@ -13786,8 +13028,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81437] = {
@@ -13802,8 +13043,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81438] = {
@@ -13818,8 +13058,7 @@ AV_VanityItems = {
             familyId = 2,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat"
         }
     },
     [81439] = {
@@ -13834,8 +13073,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [81558] = {
@@ -13851,8 +13089,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81893] = {
@@ -13884,8 +13121,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81895] = {
@@ -13900,8 +13136,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81896] = {
@@ -13917,8 +13152,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81897] = {
@@ -13933,8 +13167,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81898] = {
@@ -13966,8 +13199,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81900] = {
@@ -13998,8 +13230,7 @@ AV_VanityItems = {
             familyId = 27,
             familyName = "Wind Serpent",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_windserpent"
         }
     },
     [81903] = {
@@ -14014,8 +13245,7 @@ AV_VanityItems = {
             familyId = 11,
             familyName = "Raptor",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_raptor"
         }
     },
     [81904] = {
@@ -14031,8 +13261,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81905] = {
@@ -14047,8 +13276,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81907] = {
@@ -14064,8 +13292,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [81908] = {
@@ -14096,8 +13323,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81910] = {
@@ -14113,8 +13339,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81911] = {
@@ -14146,8 +13371,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81913] = {
@@ -14179,8 +13403,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81915] = {
@@ -14229,8 +13452,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81931] = {
@@ -14245,8 +13467,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [81932] = {
@@ -14262,8 +13483,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81933] = {
@@ -14294,8 +13514,7 @@ AV_VanityItems = {
             familyId = 3,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_spider"
         }
     },
     [81935] = {
@@ -14310,8 +13529,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [81936] = {
@@ -14408,8 +13626,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82354] = {
@@ -14425,8 +13642,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82355] = {
@@ -14441,8 +13657,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82356] = {
@@ -14457,8 +13672,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82357] = {
@@ -14473,8 +13687,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82358] = {
@@ -14489,8 +13702,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82359] = {
@@ -14506,8 +13718,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82360] = {
@@ -14523,8 +13734,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82361] = {
@@ -14540,8 +13750,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82362] = {
@@ -14557,8 +13766,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82363] = {
@@ -14574,8 +13782,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82364] = {
@@ -14591,8 +13798,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82365] = {
@@ -14608,8 +13814,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82366] = {
@@ -14624,8 +13829,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82367] = {
@@ -14641,8 +13845,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [82368] = {
@@ -14664,8 +13867,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82370] = {
@@ -14687,8 +13889,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82371] = {
@@ -14703,8 +13904,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82372] = {
@@ -14720,8 +13920,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82373] = {
@@ -14737,8 +13936,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82374] = {
@@ -14754,8 +13952,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82375] = {
@@ -14771,8 +13968,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82376] = {
@@ -14788,8 +13984,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82377] = {
@@ -14805,8 +14000,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82378] = {
@@ -14822,8 +14016,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [82379] = {
@@ -14838,8 +14031,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82380] = {
@@ -14854,8 +14046,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82385] = {
@@ -14870,8 +14061,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82386] = {
@@ -14886,8 +14076,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82390] = {
@@ -14903,8 +14092,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [82391] = {
@@ -14919,8 +14107,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [82452] = {
@@ -14935,8 +14122,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [82454] = {
@@ -14952,8 +14138,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82455] = {
@@ -14969,8 +14154,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82456] = {
@@ -14986,8 +14170,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82457] = {
@@ -15002,8 +14185,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82458] = {
@@ -15019,8 +14201,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82459] = {
@@ -15036,8 +14217,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82461] = {
@@ -15053,8 +14233,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82466] = {
@@ -15070,8 +14249,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82724] = {
@@ -15086,8 +14264,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82725] = {
@@ -15103,8 +14280,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82726] = {
@@ -15119,8 +14295,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82727] = {
@@ -15135,8 +14310,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82728] = {
@@ -15151,8 +14325,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82729] = {
@@ -15168,8 +14341,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82730] = {
@@ -15184,8 +14356,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82731] = {
@@ -15201,8 +14372,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [82732] = {
@@ -15218,8 +14388,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [82733] = {
@@ -15235,8 +14404,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [82734] = {
@@ -15258,8 +14426,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82744] = {
@@ -15274,8 +14441,7 @@ AV_VanityItems = {
             familyId = 129,
             familyName = "Felsteed",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_mount_dreadsteed",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_dreadsteed"
         }
     },
     [82763] = {
@@ -15291,8 +14457,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [82766] = {
@@ -15308,8 +14473,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82768] = {
@@ -15324,8 +14488,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [82776] = {
@@ -15340,8 +14503,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82777] = {
@@ -15363,8 +14525,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82778] = {
@@ -15380,8 +14541,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82779] = {
@@ -15396,8 +14556,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82780] = {
@@ -15411,8 +14570,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82781] = {
@@ -15428,8 +14586,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82782] = {
@@ -15445,8 +14602,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82786] = {
@@ -15462,8 +14618,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82801] = {
@@ -15479,8 +14634,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82804] = {
@@ -15496,8 +14650,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82805] = {
@@ -15513,8 +14666,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82806] = {
@@ -15530,8 +14682,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82863] = {
@@ -15547,8 +14698,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82865] = {
@@ -15564,8 +14714,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82871] = {
@@ -15581,8 +14730,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Void Terror",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82872] = {
@@ -15597,8 +14745,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82873] = {
@@ -15613,8 +14760,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82874] = {
@@ -15629,8 +14775,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82875] = {
@@ -15652,8 +14797,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82876] = {
@@ -15668,8 +14812,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82887] = {
@@ -15685,8 +14828,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [82890] = {
@@ -15702,8 +14844,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82981] = {
@@ -15718,8 +14859,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [82982] = {
@@ -15735,8 +14875,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [82983] = {
@@ -15758,8 +14897,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadsteed",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [82985] = {
@@ -15775,8 +14913,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [82996] = {
@@ -15791,8 +14928,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [83017] = {
@@ -15807,8 +14943,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [83033] = {
@@ -15823,8 +14958,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [83035] = {
@@ -15840,8 +14974,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83036] = {
@@ -15856,8 +14989,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83053] = {
@@ -15873,8 +15005,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83067] = {
@@ -15890,8 +15021,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [83068] = {
@@ -15907,8 +15037,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [83069] = {
@@ -15923,8 +15052,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [83070] = {
@@ -15940,8 +15068,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [83077] = {
@@ -15957,8 +15084,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [83091] = {
@@ -15974,8 +15100,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [83093] = {
@@ -15991,8 +15116,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [83098] = {
@@ -16008,8 +15132,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [83100] = {
@@ -16024,8 +15147,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [83102] = {
@@ -16041,8 +15163,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83103] = {
@@ -16058,8 +15179,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83104] = {
@@ -16075,8 +15195,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83105] = {
@@ -16092,8 +15211,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83106] = {
@@ -16109,8 +15227,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83108] = {
@@ -16125,8 +15242,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83111] = {
@@ -16141,8 +15257,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83112] = {
@@ -16158,8 +15273,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83113] = {
@@ -16175,8 +15289,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83115] = {
@@ -16192,8 +15305,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [83132] = {
@@ -16209,8 +15321,7 @@ AV_VanityItems = {
             familyId = 101,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [83133] = {
@@ -16226,8 +15337,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83139] = {
@@ -16242,8 +15352,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83140] = {
@@ -16259,8 +15368,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83154] = {
@@ -16276,8 +15384,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [83155] = {
@@ -16293,8 +15400,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [83240] = {
@@ -16309,8 +15415,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [83241] = {
@@ -16326,8 +15431,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83242] = {
@@ -16342,8 +15446,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [83244] = {
@@ -16358,8 +15461,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [83250] = {
@@ -16374,8 +15476,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83251] = {
@@ -16390,8 +15491,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [83252] = {
@@ -16407,8 +15507,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83253] = {
@@ -16424,8 +15523,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83254] = {
@@ -16440,8 +15538,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83620] = {
@@ -16457,8 +15554,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [83631] = {
@@ -16473,8 +15569,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83632] = {
@@ -16490,8 +15585,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83635] = {
@@ -16506,8 +15600,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83636] = {
@@ -16522,8 +15615,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [83637] = {
@@ -16539,8 +15631,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83640] = {
@@ -16555,8 +15646,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [83641] = {
@@ -16571,8 +15661,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [83642] = {
@@ -16588,8 +15677,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83643] = {
@@ -16605,8 +15693,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [83762] = {
@@ -16621,8 +15708,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [83797] = {
@@ -16638,8 +15724,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [84103] = {
@@ -16655,8 +15740,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [84104] = {
@@ -16672,8 +15756,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [84106] = {
@@ -16695,8 +15778,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [84108] = {
@@ -16712,8 +15794,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84109] = {
@@ -16728,8 +15809,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84110] = {
@@ -16744,8 +15824,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84113] = {
@@ -16760,8 +15839,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84114] = {
@@ -16776,8 +15854,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84115] = {
@@ -16792,8 +15869,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84116] = {
@@ -16808,8 +15884,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [84156] = {
@@ -16824,8 +15899,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [84175] = {
@@ -16841,8 +15915,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84268] = {
@@ -16857,8 +15930,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84269] = {
@@ -16873,8 +15945,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84270] = {
@@ -16889,8 +15960,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [84271] = {
@@ -16906,8 +15976,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [84296] = {
@@ -16923,8 +15992,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [84297] = {
@@ -16939,8 +16007,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84298] = {
@@ -16956,8 +16023,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84299] = {
@@ -16973,8 +16039,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [84300] = {
@@ -16990,8 +16055,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84301] = {
@@ -17013,8 +16077,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [84304] = {
@@ -17029,8 +16092,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84305] = {
@@ -17045,8 +16107,7 @@ AV_VanityItems = {
             familyId = 119,
             familyName = "Abyssal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonabyssal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonabyssal"
         }
     },
     [84306] = {
@@ -17062,8 +16123,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84307] = {
@@ -17079,8 +16139,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84308] = {
@@ -17096,8 +16155,7 @@ AV_VanityItems = {
             familyId = 140,
             familyName = "Void Terror",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84309] = {
@@ -17113,8 +16171,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84310] = {
@@ -17130,8 +16187,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [84311] = {
@@ -17147,8 +16203,7 @@ AV_VanityItems = {
             familyId = 140,
             familyName = "Void Terror",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84312] = {
@@ -17164,8 +16219,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [84313] = {
@@ -17181,8 +16235,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84314] = {
@@ -17198,8 +16251,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84315] = {
@@ -17215,8 +16267,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [84316] = {
@@ -17231,8 +16282,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84317] = {
@@ -17247,8 +16297,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [84318] = {
@@ -17263,8 +16312,7 @@ AV_VanityItems = {
             familyId = 109,
             familyName = "Fel Beast",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_mount_felcorehoundmoun",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_mount_felcorehoundmoun"
         }
     },
     [84319] = {
@@ -17279,8 +16327,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [84350] = {
@@ -17296,8 +16343,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [84368] = {
@@ -17313,8 +16359,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [84398] = {
@@ -17329,8 +16374,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84496] = {
@@ -17344,8 +16388,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [84585] = {
@@ -17361,8 +16404,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84615] = {
@@ -17378,8 +16420,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84616] = {
@@ -17395,8 +16436,7 @@ AV_VanityItems = {
             familyId = 101,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84645] = {
@@ -17411,8 +16451,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [84647] = {
@@ -17427,8 +16466,7 @@ AV_VanityItems = {
             familyId = 140,
             familyName = "Void Terror",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84648] = {
@@ -17443,8 +16481,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [84649] = {
@@ -17459,8 +16496,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [84653] = {
@@ -17476,8 +16512,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84654] = {
@@ -17492,8 +16527,7 @@ AV_VanityItems = {
             familyId = 119,
             familyName = "Abyssal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonabyssal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonabyssal"
         }
     },
     [84657] = {
@@ -17508,8 +16542,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [84658] = {
@@ -17524,8 +16557,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84659] = {
@@ -17540,8 +16572,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84664] = {
@@ -17557,8 +16588,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [84665] = {
@@ -17574,8 +16604,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [84666] = {
@@ -17591,8 +16620,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84667] = {
@@ -17607,8 +16635,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [84754] = {
@@ -17624,8 +16651,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [84755] = {
@@ -17641,8 +16667,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [84756] = {
@@ -17658,8 +16683,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [84760] = {
@@ -17675,8 +16699,7 @@ AV_VanityItems = {
             familyId = 101,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84761] = {
@@ -17692,8 +16715,7 @@ AV_VanityItems = {
             familyId = 101,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [84768] = {
@@ -17709,8 +16731,7 @@ AV_VanityItems = {
             familyId = 101,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [85152] = {
@@ -17726,8 +16747,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [85154] = {
@@ -17742,8 +16762,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [85155] = {
@@ -17757,8 +16776,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [85156] = {
@@ -17774,8 +16792,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [85157] = {
@@ -17790,8 +16807,7 @@ AV_VanityItems = {
             familyId = 134,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius"
         }
     },
     [85195] = {
@@ -17807,8 +16823,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [85197] = {
@@ -17824,8 +16839,7 @@ AV_VanityItems = {
             familyId = 128,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_thenighthold_tichondrius"
         }
     },
     [85201] = {
@@ -17840,8 +16854,7 @@ AV_VanityItems = {
             familyId = 106,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard"
         }
     },
     [85202] = {
@@ -17857,8 +16870,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [85207] = {
@@ -17874,8 +16886,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [85209] = {
@@ -17897,8 +16908,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85243] = {
@@ -17914,8 +16924,7 @@ AV_VanityItems = {
             familyId = 144,
             familyName = "Mo'arg Engineer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [85246] = {
@@ -17929,8 +16938,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85247] = {
@@ -17944,8 +16952,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85257] = {
@@ -17959,8 +16966,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85258] = {
@@ -17976,8 +16982,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85259] = {
@@ -17993,8 +16998,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Nathrezim",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85260] = {
@@ -18010,8 +17014,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85262] = {
@@ -18034,8 +17037,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85511] = {
@@ -18051,8 +17053,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85564] = {
@@ -18068,8 +17069,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85565] = {
@@ -18085,8 +17085,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [85579] = {
@@ -18102,8 +17101,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85586] = {
@@ -18125,8 +17123,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fel Beast",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85637] = {
@@ -18148,8 +17145,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85690] = {
@@ -18165,8 +17161,7 @@ AV_VanityItems = {
             familyId = 124,
             familyName = "Gan'arg",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [85702] = {
@@ -18182,8 +17177,7 @@ AV_VanityItems = {
             familyId = 123,
             familyName = "Wrathguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonwrathguard"
         }
     },
     [85703] = {
@@ -18198,8 +17192,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [85704] = {
@@ -18214,8 +17207,7 @@ AV_VanityItems = {
             familyId = 118,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_summoninfernal"
         }
     },
     [85705] = {
@@ -18230,8 +17222,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [85710] = {
@@ -18246,8 +17237,7 @@ AV_VanityItems = {
             familyId = 114,
             familyName = "Terrorfiend",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_warlock_summonterrorguard"
         }
     },
     [85713] = {
@@ -18262,8 +17252,7 @@ AV_VanityItems = {
             familyId = 131,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_eyeballclam_blue"
         }
     },
     [85714] = {
@@ -18278,8 +17267,7 @@ AV_VanityItems = {
             familyId = 140,
             familyName = "Void Terror",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\inv_pet_voidhound",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_voidhound"
         }
     },
     [85715] = {
@@ -18295,8 +17283,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Observer",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [85717] = {
@@ -18311,8 +17298,7 @@ AV_VanityItems = {
             familyId = 136,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan"
         }
     },
     [85718] = {
@@ -18326,8 +17312,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85719] = {
@@ -18341,8 +17326,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85720] = {
@@ -18357,8 +17341,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85721] = {
@@ -18374,8 +17357,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85722] = {
@@ -18390,8 +17372,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85723] = {
@@ -18405,8 +17386,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85745] = {
@@ -18421,8 +17401,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [85746] = {
@@ -18437,8 +17416,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85747] = {
@@ -18454,8 +17432,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85753] = {
@@ -18470,8 +17447,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85775] = {
@@ -18487,8 +17463,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85779] = {
@@ -18503,8 +17478,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85855] = {
@@ -18519,8 +17493,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85856] = {
@@ -18535,8 +17508,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85858] = {
@@ -18551,8 +17523,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85859] = {
@@ -18567,8 +17538,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85860] = {
@@ -18583,8 +17553,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85872] = {
@@ -18599,8 +17568,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85873] = {
@@ -18615,8 +17583,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85874] = {
@@ -18631,8 +17598,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85876] = {
@@ -18647,8 +17613,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85877] = {
@@ -18663,8 +17628,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85878] = {
@@ -18680,8 +17644,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85879] = {
@@ -18696,8 +17659,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85880] = {
@@ -18713,8 +17675,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85881] = {
@@ -18729,8 +17690,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85934] = {
@@ -18746,8 +17706,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85964] = {
@@ -18763,8 +17722,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85965] = {
@@ -18780,8 +17738,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85966] = {
@@ -18797,8 +17754,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85967] = {
@@ -18814,8 +17770,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85968] = {
@@ -18831,8 +17786,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [85969] = {
@@ -18847,8 +17801,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85970] = {
@@ -18864,8 +17817,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [85971] = {
@@ -18881,8 +17833,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86008] = {
@@ -18898,8 +17849,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86072] = {
@@ -18913,8 +17863,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86077] = {
@@ -18930,8 +17879,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86078] = {
@@ -18945,8 +17893,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [86085] = {
@@ -18962,8 +17909,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [86101] = {
@@ -18979,8 +17925,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [86102] = {
@@ -18996,8 +17941,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86103] = {
@@ -19013,8 +17957,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [86104] = {
@@ -19030,8 +17973,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86105] = {
@@ -19045,8 +17987,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86106] = {
@@ -19061,8 +18002,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86107] = {
@@ -19078,8 +18018,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86108] = {
@@ -19095,8 +18034,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86109] = {
@@ -19111,8 +18049,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86423] = {
@@ -19128,8 +18065,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86424] = {
@@ -19145,8 +18081,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86426] = {
@@ -19162,8 +18097,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86466] = {
@@ -19179,8 +18113,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86474] = {
@@ -19196,8 +18129,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86475] = {
@@ -19211,8 +18143,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86488] = {
@@ -19226,8 +18157,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [86506] = {
@@ -19243,8 +18173,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86528] = {
@@ -19260,8 +18189,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [86530] = {
@@ -19277,8 +18205,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [86531] = {
@@ -19294,8 +18221,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [86535] = {
@@ -19310,8 +18236,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [86543] = {
@@ -19327,8 +18252,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [86555] = {
@@ -19344,8 +18268,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [86556] = {
@@ -19361,8 +18284,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [86557] = {
@@ -19378,8 +18300,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87207] = {
@@ -19394,8 +18315,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87211] = {
@@ -19410,8 +18330,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87255] = {
@@ -19426,8 +18345,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87479] = {
@@ -19443,8 +18361,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87480] = {
@@ -19460,8 +18377,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87481] = {
@@ -19477,8 +18393,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87482] = {
@@ -19494,8 +18409,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87483] = {
@@ -19511,8 +18425,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87563] = {
@@ -19527,8 +18440,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87564] = {
@@ -19544,8 +18456,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87567] = {
@@ -19561,8 +18472,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87568] = {
@@ -19577,8 +18487,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [87644] = {
@@ -19594,8 +18503,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [87645] = {
@@ -19611,8 +18519,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87653] = {
@@ -19628,8 +18535,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [87654] = {
@@ -19645,8 +18551,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87655] = {
@@ -19662,8 +18567,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87656] = {
@@ -19679,8 +18583,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87657] = {
@@ -19696,8 +18599,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87668] = {
@@ -19713,8 +18615,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87674] = {
@@ -19729,8 +18630,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87675] = {
@@ -19746,8 +18646,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87676] = {
@@ -19762,8 +18661,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87677] = {
@@ -19778,8 +18676,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87690] = {
@@ -19794,8 +18691,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87691] = {
@@ -19810,8 +18706,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87692] = {
@@ -19826,8 +18721,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87693] = {
@@ -19842,8 +18736,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87694] = {
@@ -19858,8 +18751,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87697] = {
@@ -19874,8 +18766,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87698] = {
@@ -19890,8 +18781,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87699] = {
@@ -19906,8 +18796,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87700] = {
@@ -19922,8 +18811,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87711] = {
@@ -19938,8 +18826,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87717] = {
@@ -19954,8 +18841,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87718] = {
@@ -19970,8 +18856,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87719] = {
@@ -19986,8 +18871,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [87720] = {
@@ -20002,8 +18886,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87731] = {
@@ -20018,8 +18901,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87732] = {
@@ -20034,8 +18916,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87733] = {
@@ -20050,8 +18931,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [87734] = {
@@ -20066,8 +18946,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87735] = {
@@ -20083,8 +18962,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87736] = {
@@ -20100,8 +18978,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87737] = {
@@ -20117,8 +18994,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87749] = {
@@ -20134,8 +19010,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [87765] = {
@@ -20151,8 +19026,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [87766] = {
@@ -20168,8 +19042,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [87767] = {
@@ -20185,8 +19058,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [87778] = {
@@ -20202,8 +19074,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [87808] = {
@@ -20219,8 +19090,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [87809] = {
@@ -20236,8 +19106,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87810] = {
@@ -20253,8 +19122,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87818] = {
@@ -20270,8 +19138,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87819] = {
@@ -20287,8 +19154,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87820] = {
@@ -20304,8 +19170,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87840] = {
@@ -20321,8 +19186,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87842] = {
@@ -20338,8 +19202,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87845] = {
@@ -20355,8 +19218,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87847] = {
@@ -20372,8 +19234,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [87851] = {
@@ -20389,8 +19250,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [87852] = {
@@ -20406,8 +19266,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87857] = {
@@ -20423,8 +19282,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87858] = {
@@ -20440,8 +19298,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87859] = {
@@ -20457,8 +19314,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [87860] = {
@@ -20473,8 +19329,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [87861] = {
@@ -20490,8 +19345,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87863] = {
@@ -20507,8 +19361,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [87865] = {
@@ -20524,8 +19377,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87867] = {
@@ -20541,8 +19393,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [87868] = {
@@ -20558,8 +19409,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87869] = {
@@ -20575,8 +19425,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87870] = {
@@ -20592,8 +19441,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87873] = {
@@ -20609,8 +19457,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87876] = {
@@ -20625,8 +19472,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87877] = {
@@ -20642,8 +19488,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87879] = {
@@ -20657,8 +19502,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [87904] = {
@@ -20674,8 +19518,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87905] = {
@@ -20691,8 +19534,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87906] = {
@@ -20708,8 +19550,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [87907] = {
@@ -20724,8 +19565,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [87908] = {
@@ -20740,8 +19580,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [87909] = {
@@ -20757,8 +19596,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [87910] = {
@@ -20774,8 +19612,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [87997] = {
@@ -20791,8 +19628,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [88002] = {
@@ -20808,8 +19644,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [88003] = {
@@ -20825,8 +19660,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [88261] = {
@@ -20842,8 +19676,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88262] = {
@@ -20859,8 +19692,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88304] = {
@@ -20876,8 +19708,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88305] = {
@@ -20892,8 +19723,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88306] = {
@@ -20908,8 +19738,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88307] = {
@@ -20924,8 +19753,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88308] = {
@@ -20940,8 +19768,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88309] = {
@@ -20957,8 +19784,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88310] = {
@@ -20973,8 +19799,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88311] = {
@@ -20990,8 +19815,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88312] = {
@@ -21007,8 +19831,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88313] = {
@@ -21024,8 +19847,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88314] = {
@@ -21041,8 +19863,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88315] = {
@@ -21057,8 +19878,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88316] = {
@@ -21074,8 +19894,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88317] = {
@@ -21091,8 +19910,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88318] = {
@@ -21108,8 +19926,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88319] = {
@@ -21125,8 +19942,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88320] = {
@@ -21141,8 +19957,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88321] = {
@@ -21158,8 +19973,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88322] = {
@@ -21175,8 +19989,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88323] = {
@@ -21192,8 +20005,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88324] = {
@@ -21209,8 +20021,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [88325] = {
@@ -21225,8 +20036,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [88326] = {
@@ -21242,8 +20052,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [88327] = {
@@ -21259,8 +20068,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [88328] = {
@@ -21276,8 +20084,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88329] = {
@@ -21293,8 +20100,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88330] = {
@@ -21310,8 +20116,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88331] = {
@@ -21327,8 +20132,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88332] = {
@@ -21344,8 +20148,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88333] = {
@@ -21360,8 +20163,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88334] = {
@@ -21377,8 +20179,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88363] = {
@@ -21394,8 +20195,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88364] = {
@@ -21411,8 +20211,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88365] = {
@@ -21427,8 +20226,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88366] = {
@@ -21444,8 +20242,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [88367] = {
@@ -21461,8 +20258,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [88372] = {
@@ -21477,8 +20273,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88373] = {
@@ -21492,8 +20287,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88374] = {
@@ -21508,8 +20302,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88383] = {
@@ -21523,8 +20316,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88415] = {
@@ -21539,8 +20331,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88434] = {
@@ -21555,8 +20346,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88436] = {
@@ -21571,8 +20361,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88467] = {
@@ -21587,8 +20376,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [88534] = {
@@ -21603,8 +20391,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88539] = {
@@ -21619,8 +20406,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88540] = {
@@ -21635,8 +20421,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88546] = {
@@ -21651,8 +20436,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88547] = {
@@ -21667,8 +20451,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88552] = {
@@ -21683,8 +20466,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88560] = {
@@ -21699,8 +20481,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88561] = {
@@ -21715,8 +20496,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88562] = {
@@ -21732,8 +20512,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88565] = {
@@ -21749,8 +20528,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88670] = {
@@ -21766,8 +20544,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88671] = {
@@ -21783,8 +20560,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88672] = {
@@ -21800,8 +20576,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88673] = {
@@ -21816,8 +20591,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88674] = {
@@ -21832,8 +20606,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [88675] = {
@@ -21849,8 +20622,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88676] = {
@@ -21865,8 +20637,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88677] = {
@@ -21881,8 +20652,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88679] = {
@@ -21897,8 +20667,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88680] = {
@@ -21913,8 +20682,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88681] = {
@@ -21929,8 +20697,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88689] = {
@@ -21945,8 +20712,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88713] = {
@@ -21961,8 +20727,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88716] = {
@@ -21978,8 +20743,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88717] = {
@@ -21995,8 +20759,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88718] = {
@@ -22012,8 +20775,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88719] = {
@@ -22029,8 +20791,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [88720] = {
@@ -22046,8 +20807,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88721] = {
@@ -22063,8 +20823,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88722] = {
@@ -22080,8 +20839,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88753] = {
@@ -22097,8 +20855,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88754] = {
@@ -22113,8 +20870,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88755] = {
@@ -22130,8 +20886,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88757] = {
@@ -22146,8 +20901,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88758] = {
@@ -22163,8 +20917,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88759] = {
@@ -22180,8 +20933,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88760] = {
@@ -22197,8 +20949,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [88761] = {
@@ -22213,8 +20964,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88762] = {
@@ -22230,8 +20980,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88795] = {
@@ -22247,8 +20996,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88796] = {
@@ -22263,8 +21011,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88803] = {
@@ -22279,8 +21026,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88852] = {
@@ -22295,8 +21041,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88858] = {
@@ -22311,8 +21056,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [88859] = {
@@ -22328,8 +21072,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88860] = {
@@ -22345,8 +21088,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [88870] = {
@@ -22361,8 +21103,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88871] = {
@@ -22378,8 +21119,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88891] = {
@@ -22395,8 +21135,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88899] = {
@@ -22412,8 +21151,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88900] = {
@@ -22428,8 +21166,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88901] = {
@@ -22444,8 +21181,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88902] = {
@@ -22461,8 +21197,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [88903] = {
@@ -22477,8 +21212,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [88904] = {
@@ -22494,8 +21228,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88906] = {
@@ -22510,8 +21243,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88908] = {
@@ -22527,8 +21259,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88909] = {
@@ -22544,8 +21275,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88957] = {
@@ -22561,8 +21291,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88964] = {
@@ -22577,8 +21306,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88965] = {
@@ -22593,8 +21321,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88968] = {
@@ -22610,8 +21337,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88969] = {
@@ -22627,8 +21353,7 @@ AV_VanityItems = {
             familyId = 222,
             familyName = "Plague Eruptor",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [88972] = {
@@ -22644,8 +21369,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [88973] = {
@@ -22661,8 +21385,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88974] = {
@@ -22678,8 +21401,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [88975] = {
@@ -22695,8 +21417,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [88976] = {
@@ -22711,8 +21432,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [88977] = {
@@ -22728,8 +21448,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88978] = {
@@ -22743,8 +21462,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [88979] = {
@@ -22760,8 +21478,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88980] = {
@@ -22777,8 +21494,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88981] = {
@@ -22794,8 +21510,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [88982] = {
@@ -22811,8 +21526,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [88983] = {
@@ -22828,8 +21542,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88984] = {
@@ -22845,8 +21558,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88988] = {
@@ -22861,8 +21573,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88989] = {
@@ -22877,8 +21588,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88990] = {
@@ -22893,8 +21603,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88991] = {
@@ -22909,8 +21618,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88992] = {
@@ -22925,8 +21633,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88993] = {
@@ -22941,8 +21648,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88994] = {
@@ -22957,8 +21663,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [88996] = {
@@ -22973,8 +21678,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [88997] = {
@@ -22989,8 +21693,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [88998] = {
@@ -23006,8 +21709,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89008] = {
@@ -23022,8 +21724,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [89084] = {
@@ -23038,8 +21739,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [89085] = {
@@ -23055,8 +21755,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89086] = {
@@ -23072,8 +21771,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89097] = {
@@ -23089,8 +21787,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [89098] = {
@@ -23105,8 +21802,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89099] = {
@@ -23122,8 +21818,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89100] = {
@@ -23139,8 +21834,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [89101] = {
@@ -23156,8 +21850,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89106] = {
@@ -23173,8 +21866,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89107] = {
@@ -23189,8 +21881,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89110] = {
@@ -23206,8 +21897,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89134] = {
@@ -23222,8 +21912,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89140] = {
@@ -23238,8 +21927,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89141] = {
@@ -23254,8 +21942,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89142] = {
@@ -23271,8 +21958,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89164] = {
@@ -23288,8 +21974,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89165] = {
@@ -23305,8 +21990,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89166] = {
@@ -23322,8 +22006,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89167] = {
@@ -23339,8 +22022,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89168] = {
@@ -23355,8 +22037,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89177] = {
@@ -23371,8 +22052,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89186] = {
@@ -23387,8 +22067,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89187] = {
@@ -23403,8 +22082,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89188] = {
@@ -23419,8 +22097,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89198] = {
@@ -23435,8 +22112,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [89199] = {
@@ -23451,8 +22127,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89200] = {
@@ -23467,8 +22142,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89201] = {
@@ -23483,8 +22157,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [89203] = {
@@ -23499,8 +22172,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89204] = {
@@ -23515,8 +22187,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89206] = {
@@ -23531,8 +22202,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89207] = {
@@ -23547,8 +22217,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89208] = {
@@ -23563,8 +22232,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89210] = {
@@ -23580,8 +22248,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [89211] = {
@@ -23597,8 +22264,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89212] = {
@@ -23614,8 +22280,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89213] = {
@@ -23630,8 +22295,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89214] = {
@@ -23646,8 +22310,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89215] = {
@@ -23662,8 +22325,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89217] = {
@@ -23678,8 +22340,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [89218] = {
@@ -23694,8 +22355,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [89219] = {
@@ -23710,8 +22370,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89220] = {
@@ -23727,8 +22386,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89231] = {
@@ -23743,8 +22401,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89281] = {
@@ -23760,8 +22417,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [89283] = {
@@ -23776,8 +22432,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89284] = {
@@ -23792,8 +22447,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89354] = {
@@ -23808,8 +22462,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89355] = {
@@ -23824,8 +22477,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89356] = {
@@ -23840,8 +22492,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89357] = {
@@ -23856,8 +22507,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89358] = {
@@ -23872,8 +22522,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [89359] = {
@@ -23888,8 +22537,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [89361] = {
@@ -23905,8 +22553,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89362] = {
@@ -23930,8 +22577,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89370] = {
@@ -23946,8 +22592,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [89371] = {
@@ -23962,8 +22607,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89372] = {
@@ -23978,8 +22622,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89390] = {
@@ -24010,8 +22653,7 @@ AV_VanityItems = {
             familyId = 223,
             familyName = "Undead Quilboar",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [89547] = {
@@ -24026,8 +22668,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89604] = {
@@ -24042,8 +22683,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89615] = {
@@ -24058,8 +22698,7 @@ AV_VanityItems = {
             familyId = 222,
             familyName = "Plague Eruptor",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [89616] = {
@@ -24074,8 +22713,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89617] = {
@@ -24090,8 +22728,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89618] = {
@@ -24106,8 +22743,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89619] = {
@@ -24122,8 +22758,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [89620] = {
@@ -24138,8 +22773,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89621] = {
@@ -24154,8 +22788,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89625] = {
@@ -24170,8 +22803,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89626] = {
@@ -24186,8 +22818,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [89627] = {
@@ -24202,8 +22833,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89629] = {
@@ -24218,8 +22848,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89637] = {
@@ -24233,8 +22862,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [89638] = {
@@ -24249,8 +22877,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89771] = {
@@ -24265,8 +22892,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89772] = {
@@ -24282,8 +22908,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [89773] = {
@@ -24299,8 +22924,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [89782] = {
@@ -24316,8 +22940,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89783] = {
@@ -24341,8 +22964,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89838] = {
@@ -24358,8 +22980,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89840] = {
@@ -24375,8 +22996,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [89845] = {
@@ -24391,8 +23011,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89846] = {
@@ -24408,8 +23027,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89850] = {
@@ -24425,8 +23043,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89851] = {
@@ -24442,8 +23059,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89852] = {
@@ -24458,8 +23074,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89853] = {
@@ -24475,8 +23090,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89854] = {
@@ -24490,8 +23104,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [89855] = {
@@ -24507,8 +23120,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89859] = {
@@ -24523,8 +23135,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [89860] = {
@@ -24540,8 +23151,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89866] = {
@@ -24556,8 +23166,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89867] = {
@@ -24572,8 +23181,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89878] = {
@@ -24589,8 +23197,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [89879] = {
@@ -24605,8 +23212,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89889] = {
@@ -24621,8 +23227,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [89890] = {
@@ -24637,8 +23242,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89891] = {
@@ -24653,8 +23257,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89892] = {
@@ -24670,8 +23273,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [89904] = {
@@ -24686,8 +23288,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [89905] = {
@@ -24702,8 +23303,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [89913] = {
@@ -24719,8 +23319,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [89914] = {
@@ -24735,8 +23334,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [89915] = {
@@ -24752,8 +23350,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [89995] = {
@@ -24768,8 +23365,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [89998] = {
@@ -24783,8 +23379,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [97321] = {
@@ -24814,8 +23409,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [97874] = {
@@ -24998,8 +23592,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101050] = {
@@ -25014,8 +23607,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [101051] = {
@@ -25030,8 +23622,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101053] = {
@@ -25046,8 +23637,7 @@ AV_VanityItems = {
             familyId = 207,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_nerubian_01"
         }
     },
     [101054] = {
@@ -25062,8 +23652,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101055] = {
@@ -25079,8 +23668,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101056] = {
@@ -25096,8 +23684,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101057] = {
@@ -25112,8 +23699,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101058] = {
@@ -25129,8 +23715,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101059] = {
@@ -25145,8 +23730,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101060] = {
@@ -25161,8 +23745,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101061] = {
@@ -25177,8 +23760,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [101062] = {
@@ -25194,8 +23776,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101064] = {
@@ -25211,8 +23792,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101065] = {
@@ -25228,8 +23808,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [101066] = {
@@ -25244,8 +23823,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101067] = {
@@ -25260,8 +23838,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [101068] = {
@@ -25276,8 +23853,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101069] = {
@@ -25292,8 +23868,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101071] = {
@@ -25309,8 +23884,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101073] = {
@@ -25326,8 +23900,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [101075] = {
@@ -25342,8 +23915,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101076] = {
@@ -25357,8 +23929,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [101077] = {
@@ -25373,8 +23944,7 @@ AV_VanityItems = {
             familyId = 229,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_holy_senseundead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_holy_senseundead"
         }
     },
     [101078] = {
@@ -25389,8 +23959,7 @@ AV_VanityItems = {
             familyId = 204,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_banshee"
         }
     },
     [101079] = {
@@ -25405,8 +23974,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [101080] = {
@@ -25422,8 +23990,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101081] = {
@@ -25439,8 +24006,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101083] = {
@@ -25456,8 +24022,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101084] = {
@@ -25472,8 +24037,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101085] = {
@@ -25488,8 +24052,7 @@ AV_VanityItems = {
             familyId = 224,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_shadetruesight"
         }
     },
     [101086] = {
@@ -25504,8 +24067,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101087] = {
@@ -25521,8 +24083,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101088] = {
@@ -25538,8 +24099,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [101089] = {
@@ -25555,8 +24115,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101090] = {
@@ -25572,8 +24131,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101091] = {
@@ -25589,8 +24147,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101092] = {
@@ -25605,8 +24162,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101093] = {
@@ -25621,8 +24177,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [101095] = {
@@ -25637,8 +24192,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101096] = {
@@ -25653,8 +24207,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101097] = {
@@ -25669,8 +24222,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101098] = {
@@ -25685,8 +24237,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101099] = {
@@ -25701,8 +24252,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101100] = {
@@ -25718,8 +24268,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101102] = {
@@ -25734,8 +24283,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101103] = {
@@ -25751,8 +24299,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [101104] = {
@@ -25768,8 +24315,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101105] = {
@@ -25785,8 +24331,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101106] = {
@@ -25802,8 +24347,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101107] = {
@@ -25817,8 +24361,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [101108] = {
@@ -25834,8 +24377,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101109] = {
@@ -25851,8 +24393,7 @@ AV_VanityItems = {
             familyId = 222,
             familyName = "Plague Eruptor",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [101110] = {
@@ -25868,8 +24409,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101111] = {
@@ -25885,8 +24425,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101112] = {
@@ -25901,8 +24440,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101114] = {
@@ -25917,8 +24455,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101116] = {
@@ -25933,8 +24470,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101117] = {
@@ -25950,8 +24486,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101118] = {
@@ -25967,8 +24502,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101122] = {
@@ -25983,8 +24517,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101123] = {
@@ -25999,8 +24532,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101124] = {
@@ -26015,8 +24547,7 @@ AV_VanityItems = {
             familyId = 208,
             familyName = "Crypt Lord",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_anubarak"
         }
     },
     [101125] = {
@@ -26032,8 +24563,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101126] = {
@@ -26048,8 +24578,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101127] = {
@@ -26064,8 +24593,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101128] = {
@@ -26080,8 +24608,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101129] = {
@@ -26096,8 +24623,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101130] = {
@@ -26113,8 +24639,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101131] = {
@@ -26129,8 +24654,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101132] = {
@@ -26145,8 +24669,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101133] = {
@@ -26162,8 +24685,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101134] = {
@@ -26179,8 +24701,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101135] = {
@@ -26196,8 +24717,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101136] = {
@@ -26213,8 +24733,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101137] = {
@@ -26229,8 +24748,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [101138] = {
@@ -26246,8 +24764,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101139] = {
@@ -26263,8 +24780,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101140] = {
@@ -26279,8 +24795,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101141] = {
@@ -26294,8 +24809,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101142] = {
@@ -26310,8 +24824,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101143] = {
@@ -26326,8 +24839,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101144] = {
@@ -26342,8 +24854,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101149] = {
@@ -26359,8 +24870,7 @@ AV_VanityItems = {
             familyId = 233,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101150] = {
@@ -26376,8 +24886,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101154] = {
@@ -26391,8 +24900,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101155] = {
@@ -26408,8 +24916,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101156] = {
@@ -26425,8 +24932,7 @@ AV_VanityItems = {
             familyId = 205,
             familyName = "Bone Golem",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_boneshield"
         }
     },
     [101157] = {
@@ -26442,8 +24948,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101158] = {
@@ -26459,8 +24964,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101159] = {
@@ -26476,8 +24980,7 @@ AV_VanityItems = {
             familyId = 215,
             familyName = "Gargoyle",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_deathknight_summongargoyle"
         }
     },
     [101160] = {
@@ -26493,8 +24996,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [101161] = {
@@ -26510,8 +25012,7 @@ AV_VanityItems = {
             familyId = 203,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ui_darkshore_warfront_horde_abomination"
         }
     },
     [101163] = {
@@ -26526,8 +25027,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101165] = {
@@ -26542,8 +25042,7 @@ AV_VanityItems = {
             familyId = 225,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\spell_shadow_raisedead"
         }
     },
     [101227] = {
@@ -26573,8 +25072,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Boar",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101414] = {
@@ -26588,8 +25086,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101415] = {
@@ -26603,8 +25100,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Turtle",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101416] = {
@@ -26618,8 +25114,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101417] = {
@@ -26633,8 +25128,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101418] = {
@@ -26648,8 +25142,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Carrion Bird",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101419] = {
@@ -26663,8 +25156,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bat",
             familyType = "Cunning",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101421] = {
@@ -26678,8 +25170,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101422] = {
@@ -26693,8 +25184,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101423] = {
@@ -26708,8 +25198,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Spider",
             familyType = "Cunning",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [101426] = {
@@ -26723,8 +25212,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [102107] = {
@@ -26754,8 +25242,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [113672] = {
@@ -26769,8 +25256,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [120306] = {
@@ -26832,8 +25318,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [121825] = {
@@ -26847,8 +25332,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [121826] = {
@@ -26862,8 +25346,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [123162] = {
@@ -26877,8 +25360,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Revenant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [123163] = {
@@ -26892,8 +25374,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Air Revenant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [134947] = {
@@ -26917,8 +25398,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138259] = {
@@ -26934,8 +25414,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138288] = {
@@ -26951,8 +25430,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138304] = {
@@ -26968,8 +25446,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138443] = {
@@ -26984,8 +25461,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138465] = {
@@ -27001,8 +25477,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138890] = {
@@ -27017,8 +25492,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [138984] = {
@@ -27033,8 +25507,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139053] = {
@@ -27050,8 +25523,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139354] = {
@@ -27067,8 +25539,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139359] = {
@@ -27084,8 +25555,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139429] = {
@@ -27101,8 +25571,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139454] = {
@@ -27117,8 +25586,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139517] = {
@@ -27133,8 +25601,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139581] = {
@@ -27149,8 +25616,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139796] = {
@@ -27165,8 +25631,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [139797] = {
@@ -27181,8 +25646,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [155655] = {
@@ -27308,8 +25772,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [187323] = {
@@ -27387,8 +25850,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Rhino",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [192632] = {
@@ -27474,8 +25936,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [194341] = {
@@ -27489,8 +25950,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [194342] = {
@@ -27504,8 +25964,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [194344] = {
@@ -27519,8 +25978,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [194345] = {
@@ -27534,8 +25992,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [194346] = {
@@ -27549,8 +26006,7 @@ AV_VanityItems = {
             familyId = 1,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_wolf"
         }
     },
     [195593] = {
@@ -27564,8 +26020,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [196328] = {
@@ -27635,8 +26090,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Gorilla",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199337] = {
@@ -27650,8 +26104,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199338] = {
@@ -27665,8 +26118,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199339] = {
@@ -27680,8 +26132,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wasp",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199579] = {
@@ -27695,8 +26146,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199580] = {
@@ -27710,8 +26160,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199581] = {
@@ -27725,8 +26174,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199582] = {
@@ -27740,8 +26188,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [199658] = {
@@ -27867,8 +26314,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [205629] = {
@@ -27978,8 +26424,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [231311] = {
@@ -27993,8 +26438,7 @@ AV_VanityItems = {
             familyId = 303,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [231313] = {
@@ -28008,8 +26452,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [231314] = {
@@ -28023,8 +26466,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [231324] = {
@@ -28054,8 +26496,7 @@ AV_VanityItems = {
             familyId = 303,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [233000] = {
@@ -28093,8 +26534,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [236293] = {
@@ -28342,8 +26782,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [254055] = {
@@ -28359,8 +26798,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257058] = {
@@ -28374,8 +26812,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Entropic Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257060] = {
@@ -28389,8 +26826,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257062] = {
@@ -28404,8 +26840,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257063] = {
@@ -28419,8 +26854,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257064] = {
@@ -28434,8 +26868,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257065] = {
@@ -28449,8 +26882,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257066] = {
@@ -28464,8 +26896,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257067] = {
@@ -28479,8 +26910,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257069] = {
@@ -28494,8 +26924,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257070] = {
@@ -28509,8 +26938,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257071] = {
@@ -28524,8 +26952,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257073] = {
@@ -28539,8 +26966,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257074] = {
@@ -28554,8 +26980,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257076] = {
@@ -28569,8 +26994,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257078] = {
@@ -28584,8 +27008,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [257079] = {
@@ -28599,8 +27022,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257080] = {
@@ -28614,8 +27036,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257084] = {
@@ -28629,8 +27050,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257085] = {
@@ -28644,8 +27064,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257086] = {
@@ -28659,8 +27078,7 @@ AV_VanityItems = {
             familyId = 303,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257087] = {
@@ -28674,8 +27092,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257089] = {
@@ -28689,8 +27106,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257090] = {
@@ -28704,8 +27120,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [257091] = {
@@ -28719,8 +27134,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [274194] = {
@@ -28734,8 +27148,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [274437] = {
@@ -28805,8 +27218,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281750] = {
@@ -28820,8 +27232,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281751] = {
@@ -28835,8 +27246,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281752] = {
@@ -28850,8 +27260,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281753] = {
@@ -28865,8 +27274,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281754] = {
@@ -28880,8 +27288,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281755] = {
@@ -28895,8 +27302,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [281756] = {
@@ -28910,8 +27316,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Imp",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [283040] = {
@@ -29005,8 +27410,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [333414] = {
@@ -29020,8 +27424,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [333415] = {
@@ -29035,8 +27438,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [333417] = {
@@ -29050,8 +27452,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [333418] = {
@@ -29065,8 +27466,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [333419] = {
@@ -29080,8 +27480,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [333420] = {
@@ -29095,8 +27494,7 @@ AV_VanityItems = {
             familyId = 34,
             familyName = "Nether Ray",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_netherray"
         }
     },
     [334410] = {
@@ -29235,8 +27633,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [347303] = {
@@ -29251,8 +27648,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [348634] = {
@@ -29266,8 +27662,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [348635] = {
@@ -29281,8 +27676,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [348636] = {
@@ -29296,8 +27690,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [348637] = {
@@ -29311,8 +27704,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [348731] = {
@@ -29359,8 +27751,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [355070] = {
@@ -29375,8 +27766,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dragonkin",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [355071] = {
@@ -29391,8 +27781,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dragonkin",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [392169] = {
@@ -29406,8 +27795,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [393445] = {
@@ -29525,8 +27913,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400071] = {
@@ -29540,8 +27927,7 @@ AV_VanityItems = {
             familyId = 219,
             familyName = "Lich",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_boss_kelthuzad_01",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_kelthuzad_01"
         }
     },
     [400072] = {
@@ -29555,8 +27941,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400074] = {
@@ -29570,8 +27955,7 @@ AV_VanityItems = {
             familyId = 218,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_ghoulnorthrend"
         }
     },
     [400075] = {
@@ -29585,8 +27969,7 @@ AV_VanityItems = {
             familyId = 228,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_undeadhorse"
         }
     },
     [400076] = {
@@ -29600,8 +27983,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400077] = {
@@ -29615,8 +27997,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400078] = {
@@ -29630,8 +28011,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400079] = {
@@ -29645,8 +28025,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Infernal",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400080] = {
@@ -29660,8 +28039,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [400563] = {
@@ -29715,8 +28093,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [442010] = {
@@ -29730,8 +28107,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [442011] = {
@@ -29745,8 +28121,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [442012] = {
@@ -29760,8 +28135,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [448724] = {
@@ -29799,8 +28173,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crab",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [492219] = {
@@ -30595,8 +28968,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Rhino",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [510004] = {
@@ -30626,8 +28998,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [532579] = {
@@ -30641,8 +29012,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [532580] = {
@@ -30680,8 +29050,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [541300] = {
@@ -30695,8 +29064,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Core Hound",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [546725] = {
@@ -30832,8 +29200,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600370] = {
@@ -30849,8 +29216,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600373] = {
@@ -30865,8 +29231,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600376] = {
@@ -30881,8 +29246,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600378] = {
@@ -30897,8 +29261,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600379] = {
@@ -30914,8 +29277,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600380] = {
@@ -30931,8 +29293,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600381] = {
@@ -30948,8 +29309,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600383] = {
@@ -30965,8 +29325,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600387] = {
@@ -30982,8 +29341,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600388] = {
@@ -30997,8 +29355,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600390] = {
@@ -31013,8 +29370,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600391] = {
@@ -31029,8 +29385,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600392] = {
@@ -31046,8 +29401,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600393] = {
@@ -31063,8 +29417,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600396] = {
@@ -31079,8 +29432,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600397] = {
@@ -31096,8 +29448,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600398] = {
@@ -31113,8 +29464,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600399] = {
@@ -31130,8 +29480,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600400] = {
@@ -31147,8 +29496,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600408] = {
@@ -31163,8 +29511,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600410] = {
@@ -31180,8 +29527,7 @@ AV_VanityItems = {
             familyId = 309,
             familyName = "Entropic Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600411] = {
@@ -31196,8 +29542,7 @@ AV_VanityItems = {
             familyId = 309,
             familyName = "Entropic Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600412] = {
@@ -31212,8 +29557,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600413] = {
@@ -31229,8 +29573,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600414] = {
@@ -31246,8 +29589,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600417] = {
@@ -31263,8 +29605,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600418] = {
@@ -31280,8 +29621,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600419] = {
@@ -31297,8 +29637,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600420] = {
@@ -31314,8 +29653,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600421] = {
@@ -31330,8 +29668,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600422] = {
@@ -31346,8 +29683,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600423] = {
@@ -31362,8 +29698,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600425] = {
@@ -31378,8 +29713,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600426] = {
@@ -31394,8 +29728,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600428] = {
@@ -31410,8 +29743,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600429] = {
@@ -31426,8 +29758,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600430] = {
@@ -31442,8 +29773,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600432] = {
@@ -31458,8 +29788,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600435] = {
@@ -31474,8 +29803,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600436] = {
@@ -31491,8 +29819,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600437] = {
@@ -31507,8 +29834,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600761] = {
@@ -31524,8 +29850,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600766] = {
@@ -31540,8 +29865,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600767] = {
@@ -31556,8 +29880,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600769] = {
@@ -31573,8 +29896,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600770] = {
@@ -31589,8 +29911,7 @@ AV_VanityItems = {
             familyId = 305,
             familyName = "Magma Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600772] = {
@@ -31606,8 +29927,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600773] = {
@@ -31623,8 +29943,7 @@ AV_VanityItems = {
             familyId = 324,
             familyName = "Arcane Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600774] = {
@@ -31640,8 +29959,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600775] = {
@@ -31657,8 +29975,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600777] = {
@@ -31674,8 +29991,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600781] = {
@@ -31690,8 +30006,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600782] = {
@@ -31706,8 +30021,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600783] = {
@@ -31722,8 +30036,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600786] = {
@@ -31738,8 +30051,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600789] = {
@@ -31755,8 +30067,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600790] = {
@@ -31771,8 +30082,7 @@ AV_VanityItems = {
             familyId = 324,
             familyName = "Arcane Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600861] = {
@@ -31787,8 +30097,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600864] = {
@@ -31803,8 +30112,7 @@ AV_VanityItems = {
             familyId = 324,
             familyName = "Arcane Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600865] = {
@@ -31819,8 +30127,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600866] = {
@@ -31835,8 +30142,7 @@ AV_VanityItems = {
             familyId = 311,
             familyName = "Shadow Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600867] = {
@@ -31850,8 +30156,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Phoenix",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600870] = {
@@ -31866,8 +30171,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600871] = {
@@ -31882,8 +30186,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600873] = {
@@ -31898,8 +30201,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600875] = {
@@ -31914,8 +30216,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600876] = {
@@ -31930,8 +30231,7 @@ AV_VanityItems = {
             familyId = 309,
             familyName = "Entropic Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600878] = {
@@ -31945,8 +30245,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600885] = {
@@ -31961,8 +30260,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600886] = {
@@ -31977,8 +30275,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600888] = {
@@ -31993,8 +30290,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600889] = {
@@ -32010,8 +30306,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600894] = {
@@ -32026,8 +30321,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600899] = {
@@ -32043,8 +30337,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600900] = {
@@ -32059,8 +30352,7 @@ AV_VanityItems = {
             familyId = 309,
             familyName = "Entropic Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600908] = {
@@ -32076,8 +30368,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600921] = {
@@ -32092,8 +30383,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Arcane Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600934] = {
@@ -32107,8 +30397,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600967] = {
@@ -32122,8 +30411,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600968] = {
@@ -32137,8 +30425,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [600969] = {
@@ -32152,8 +30439,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [600970] = {
@@ -32167,8 +30453,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [601009] = {
@@ -32182,8 +30467,7 @@ AV_VanityItems = {
             familyId = 304,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [601016] = {
@@ -32197,8 +30481,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601022] = {
@@ -32212,8 +30495,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [601023] = {
@@ -32227,8 +30509,7 @@ AV_VanityItems = {
             familyId = 303,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [601024] = {
@@ -32244,8 +30525,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601025] = {
@@ -32260,8 +30540,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601026] = {
@@ -32276,8 +30555,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601027] = {
@@ -32293,8 +30571,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601028] = {
@@ -32310,8 +30587,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601029] = {
@@ -32327,8 +30603,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601030] = {
@@ -32344,8 +30619,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601032] = {
@@ -32361,8 +30635,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601033] = {
@@ -32378,8 +30651,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601034] = {
@@ -32395,8 +30667,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601035] = {
@@ -32412,8 +30683,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601036] = {
@@ -32429,8 +30699,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601037] = {
@@ -32445,8 +30714,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601038] = {
@@ -32461,8 +30729,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601039] = {
@@ -32478,8 +30745,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601040] = {
@@ -32495,8 +30761,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601041] = {
@@ -32512,8 +30777,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601042] = {
@@ -32529,8 +30793,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601043] = {
@@ -32546,8 +30809,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601044] = {
@@ -32563,8 +30825,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601045] = {
@@ -32580,8 +30841,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601046] = {
@@ -32596,8 +30856,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601048] = {
@@ -32613,8 +30872,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601049] = {
@@ -32630,8 +30888,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601050] = {
@@ -32647,8 +30904,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601051] = {
@@ -32664,8 +30920,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601052] = {
@@ -32681,8 +30936,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601053] = {
@@ -32698,8 +30952,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601054] = {
@@ -32714,8 +30967,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601055] = {
@@ -32730,8 +30982,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601056] = {
@@ -32746,8 +30997,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601057] = {
@@ -32762,8 +31012,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601058] = {
@@ -32779,8 +31028,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601059] = {
@@ -32796,8 +31044,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601060] = {
@@ -32813,8 +31060,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601061] = {
@@ -32830,8 +31076,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601062] = {
@@ -32847,8 +31092,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601063] = {
@@ -32864,8 +31108,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601064] = {
@@ -32881,8 +31124,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601065] = {
@@ -32898,8 +31140,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601066] = {
@@ -32915,8 +31156,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601067] = {
@@ -32930,8 +31170,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601068] = {
@@ -32947,8 +31186,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601069] = {
@@ -32964,8 +31202,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601070] = {
@@ -32981,8 +31218,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601071] = {
@@ -32997,8 +31233,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601072] = {
@@ -33014,8 +31249,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601074] = {
@@ -33030,8 +31264,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601075] = {
@@ -33046,8 +31279,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601076] = {
@@ -33062,8 +31294,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601077] = {
@@ -33078,8 +31309,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601078] = {
@@ -33095,8 +31325,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601079] = {
@@ -33112,8 +31341,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601083] = {
@@ -33128,8 +31356,7 @@ AV_VanityItems = {
             familyId = 383,
             familyName = "Fungal Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601084] = {
@@ -33144,8 +31371,7 @@ AV_VanityItems = {
             familyId = 383,
             familyName = "Fungal Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601085] = {
@@ -33160,8 +31386,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601086] = {
@@ -33176,8 +31401,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601087] = {
@@ -33192,8 +31416,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601088] = {
@@ -33208,8 +31431,7 @@ AV_VanityItems = {
             familyId = 383,
             familyName = "Fungal Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601091] = {
@@ -33224,8 +31446,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fungal Bog Beast",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601102] = {
@@ -33239,8 +31460,7 @@ AV_VanityItems = {
             familyId = 382,
             familyName = "Verdant Bog Beast",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_loatheb"
         }
     },
     [601103] = {
@@ -33256,8 +31476,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601104] = {
@@ -33273,8 +31492,7 @@ AV_VanityItems = {
             familyId = 363,
             familyName = "Bloodpetal Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601195] = {
@@ -33290,8 +31508,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601196] = {
@@ -33306,8 +31523,7 @@ AV_VanityItems = {
             familyId = 363,
             familyName = "Bloodpetal Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601197] = {
@@ -33323,8 +31539,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601198] = {
@@ -33339,8 +31554,7 @@ AV_VanityItems = {
             familyId = 367,
             familyName = "Deathpetal Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601199] = {
@@ -33355,8 +31569,7 @@ AV_VanityItems = {
             familyId = 359,
             familyName = "Constrictor Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601200] = {
@@ -33371,8 +31584,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Frostpetal Lasher",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601201] = {
@@ -33388,8 +31600,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601202] = {
@@ -33405,8 +31616,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601203] = {
@@ -33422,8 +31632,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601204] = {
@@ -33439,8 +31648,7 @@ AV_VanityItems = {
             familyId = 365,
             familyName = "Frostpetal Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601206] = {
@@ -33455,8 +31663,7 @@ AV_VanityItems = {
             familyId = 360,
             familyName = "Mutated Orchid",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple"
         }
     },
     [601208] = {
@@ -33471,8 +31678,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601209] = {
@@ -33487,8 +31693,7 @@ AV_VanityItems = {
             familyId = 359,
             familyName = "Constrictor Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601210] = {
@@ -33503,8 +31708,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601211] = {
@@ -33519,8 +31723,7 @@ AV_VanityItems = {
             familyId = 358,
             familyName = "Constrictor Orchid",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple"
         }
     },
     [601212] = {
@@ -33535,8 +31738,7 @@ AV_VanityItems = {
             familyId = 360,
             familyName = "Mutated Orchid",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple"
         }
     },
     [601213] = {
@@ -33551,8 +31753,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601214] = {
@@ -33567,8 +31768,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601225] = {
@@ -33583,8 +31783,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601226] = {
@@ -33599,8 +31798,7 @@ AV_VanityItems = {
             familyId = 360,
             familyName = "Mutated Orchid",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_desertlasherorchid_purple"
         }
     },
     [601235] = {
@@ -33616,8 +31814,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601236] = {
@@ -33632,8 +31829,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601664] = {
@@ -33647,8 +31843,7 @@ AV_VanityItems = {
             familyId = 363,
             familyName = "Bloodpetal Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601667] = {
@@ -33664,8 +31859,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601668] = {
@@ -33681,8 +31875,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601669] = {
@@ -33697,8 +31890,7 @@ AV_VanityItems = {
             familyId = 370,
             familyName = "Dark Iron War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601670] = {
@@ -33714,8 +31906,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601671] = {
@@ -33730,8 +31921,7 @@ AV_VanityItems = {
             familyId = 369,
             familyName = "Stone Siege Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601672] = {
@@ -33746,8 +31936,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601673] = {
@@ -33762,8 +31951,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601674] = {
@@ -33778,8 +31966,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601675] = {
@@ -33795,8 +31982,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601676] = {
@@ -33812,8 +31998,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601677] = {
@@ -33827,8 +32012,7 @@ AV_VanityItems = {
             familyId = 368,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601678] = {
@@ -33844,8 +32028,7 @@ AV_VanityItems = {
             familyId = 370,
             familyName = "Dark Iron War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601679] = {
@@ -33860,8 +32043,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601680] = {
@@ -33876,8 +32058,7 @@ AV_VanityItems = {
             familyId = 372,
             familyName = "Ragereaver War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601682] = {
@@ -33892,8 +32073,7 @@ AV_VanityItems = {
             familyId = 372,
             familyName = "Ragereaver War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601683] = {
@@ -33908,8 +32088,7 @@ AV_VanityItems = {
             familyId = 373,
             familyName = "Ragereaver Siege Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601684] = {
@@ -33924,8 +32103,7 @@ AV_VanityItems = {
             familyId = 374,
             familyName = "Molten War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601685] = {
@@ -33940,8 +32118,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Stone Siege Golem",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601686] = {
@@ -33957,8 +32134,7 @@ AV_VanityItems = {
             familyId = 370,
             familyName = "Dark Iron War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601687] = {
@@ -33973,8 +32149,7 @@ AV_VanityItems = {
             familyId = 375,
             familyName = "Molten Siege Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601688] = {
@@ -33989,8 +32164,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Ragereaver Siege Golem",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601700] = {
@@ -34005,8 +32179,7 @@ AV_VanityItems = {
             familyId = 376,
             familyName = "Iron War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601705] = {
@@ -34021,8 +32194,7 @@ AV_VanityItems = {
             familyId = 376,
             familyName = "Iron War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601714] = {
@@ -34037,8 +32209,7 @@ AV_VanityItems = {
             familyId = 380,
             familyName = "Runic War Golem",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_mc_golemagg"
         }
     },
     [601716] = {
@@ -34053,8 +32224,7 @@ AV_VanityItems = {
             familyId = 105,
             familyName = "Darkhound",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_warlock_demonicempowerment"
         }
     },
     [601745] = {
@@ -34068,8 +32238,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [601818] = {
@@ -34085,8 +32254,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601819] = {
@@ -34102,8 +32270,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601820] = {
@@ -34119,8 +32286,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601821] = {
@@ -34136,8 +32302,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601822] = {
@@ -34153,8 +32318,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601823] = {
@@ -34169,8 +32333,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601824] = {
@@ -34185,8 +32348,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601825] = {
@@ -34202,8 +32364,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601832] = {
@@ -34217,8 +32378,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601834] = {
@@ -34234,8 +32394,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601835] = {
@@ -34250,8 +32409,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601836] = {
@@ -34265,8 +32423,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601837] = {
@@ -34281,8 +32438,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601838] = {
@@ -34297,8 +32453,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601839] = {
@@ -34314,8 +32469,7 @@ AV_VanityItems = {
             familyId = 302,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [601840] = {
@@ -34331,8 +32485,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601843] = {
@@ -34346,8 +32499,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601845] = {
@@ -34363,8 +32515,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601846] = {
@@ -34380,8 +32531,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601847] = {
@@ -34396,8 +32546,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601848] = {
@@ -34412,8 +32561,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601849] = {
@@ -34427,8 +32575,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Hardwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601851] = {
@@ -34443,8 +32590,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601853] = {
@@ -34460,8 +32606,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Softwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601854] = {
@@ -34477,8 +32622,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Softwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601855] = {
@@ -34494,8 +32638,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601857] = {
@@ -34510,8 +32653,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Softwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601858] = {
@@ -34527,8 +32669,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601859] = {
@@ -34544,8 +32685,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601862] = {
@@ -34561,8 +32701,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [601864] = {
@@ -34578,8 +32717,7 @@ AV_VanityItems = {
             familyId = 356,
             familyName = "Lasher",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\epic_rpg_icon_pack_nature_icon_0001s_0000_root"
         }
     },
     [601866] = {
@@ -34594,8 +32732,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [603200] = {
@@ -34617,8 +32754,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Stone War Golem",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [612826] = {
@@ -34689,8 +32825,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Pit Lord",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [612860] = {
@@ -34705,8 +32840,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Man'ari Eredar",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [612892] = {
@@ -34816,8 +32950,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [844514] = {
@@ -34831,8 +32964,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [844515] = {
@@ -34846,8 +32978,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [844516] = {
@@ -34861,8 +32992,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [844517] = {
@@ -34876,8 +33006,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [978310] = {
@@ -34947,8 +33076,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Rhino",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1001619] = {
@@ -35066,8 +33194,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1001686] = {
@@ -35081,8 +33208,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1001687] = {
@@ -35096,8 +33222,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1001688] = {
@@ -35111,8 +33236,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wolf",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1001707] = {
@@ -35150,8 +33274,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1001846] = {
@@ -35261,8 +33384,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wraith",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1178959] = {
@@ -35276,8 +33398,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1178962] = {
@@ -35291,8 +33412,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179001] = {
@@ -35306,8 +33426,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179002] = {
@@ -35321,8 +33440,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179003] = {
@@ -35336,8 +33454,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179004] = {
@@ -35351,8 +33468,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179005] = {
@@ -35366,8 +33482,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wight",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179006] = {
@@ -35381,8 +33496,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179007] = {
@@ -35396,8 +33510,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179008] = {
@@ -35411,8 +33524,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179009] = {
@@ -35426,8 +33538,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179010] = {
@@ -35441,8 +33552,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179011] = {
@@ -35456,8 +33566,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179012] = {
@@ -35471,8 +33580,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179013] = {
@@ -35486,8 +33594,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179014] = {
@@ -35501,8 +33608,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179015] = {
@@ -35516,8 +33622,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179016] = {
@@ -35531,8 +33636,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179017] = {
@@ -35546,8 +33650,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179018] = {
@@ -35561,8 +33664,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Banshee",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179019] = {
@@ -35576,8 +33678,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179020] = {
@@ -35593,8 +33694,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Shade",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179027] = {
@@ -35609,8 +33709,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Lich",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179028] = {
@@ -35624,8 +33723,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179029] = {
@@ -35639,8 +33737,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179030] = {
@@ -35654,8 +33751,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179031] = {
@@ -35669,8 +33765,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeletal Mage",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179036] = {
@@ -35684,8 +33779,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179037] = {
@@ -35699,8 +33793,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179038] = {
@@ -35714,8 +33807,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179039] = {
@@ -35729,8 +33821,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179040] = {
@@ -35744,8 +33835,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179041] = {
@@ -35759,8 +33849,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179042] = {
@@ -35774,8 +33863,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179043] = {
@@ -35789,8 +33877,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179044] = {
@@ -35804,8 +33891,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179045] = {
@@ -35819,8 +33905,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179046] = {
@@ -35834,8 +33919,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179047] = {
@@ -35849,8 +33933,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179048] = {
@@ -35864,8 +33947,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179049] = {
@@ -35879,8 +33961,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179050] = {
@@ -35894,8 +33975,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179051] = {
@@ -35909,8 +33989,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179052] = {
@@ -35924,8 +34003,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179053] = {
@@ -35939,8 +34017,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179054] = {
@@ -35954,8 +34031,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179055] = {
@@ -35969,8 +34045,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179057] = {
@@ -35984,8 +34059,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179058] = {
@@ -35999,8 +34073,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179059] = {
@@ -36014,8 +34087,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179060] = {
@@ -36029,8 +34101,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179061] = {
@@ -36044,8 +34115,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179062] = {
@@ -36059,8 +34129,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Skeleton",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179063] = {
@@ -36074,8 +34143,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179064] = {
@@ -36089,8 +34157,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179065] = {
@@ -36104,8 +34171,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179066] = {
@@ -36119,8 +34185,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179067] = {
@@ -36134,8 +34199,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179068] = {
@@ -36149,8 +34213,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179069] = {
@@ -36164,8 +34227,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179070] = {
@@ -36179,8 +34241,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179071] = {
@@ -36194,8 +34255,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Abomination",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179072] = {
@@ -36209,8 +34269,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179073] = {
@@ -36224,8 +34283,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179074] = {
@@ -36239,8 +34297,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179075] = {
@@ -36254,8 +34311,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Crypt Fiend",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179077] = {
@@ -36269,8 +34325,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179078] = {
@@ -36284,8 +34339,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179079] = {
@@ -36299,8 +34353,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179080] = {
@@ -36314,8 +34367,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Ghoul",
             familyType = "Undead",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1179128] = {
@@ -36451,8 +34503,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180109] = {
@@ -36467,8 +34518,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180110] = {
@@ -36483,8 +34533,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180111] = {
@@ -36499,8 +34548,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180112] = {
@@ -36515,8 +34563,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180113] = {
@@ -36531,8 +34578,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180114] = {
@@ -36547,8 +34593,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180115] = {
@@ -36563,8 +34608,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180116] = {
@@ -36579,8 +34623,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180117] = {
@@ -36595,8 +34638,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180119] = {
@@ -36612,8 +34654,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180120] = {
@@ -36629,8 +34670,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180121] = {
@@ -36645,8 +34685,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180122] = {
@@ -36661,8 +34700,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180123] = {
@@ -36677,8 +34715,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180124] = {
@@ -36694,8 +34731,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180125] = {
@@ -36711,8 +34747,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180126] = {
@@ -36727,8 +34762,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180129] = {
@@ -36743,8 +34777,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180130] = {
@@ -36759,8 +34792,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180131] = {
@@ -36775,8 +34807,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180132] = {
@@ -36791,8 +34822,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180133] = {
@@ -36807,8 +34837,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180134] = {
@@ -36823,8 +34852,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180136] = {
@@ -36839,8 +34867,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180137] = {
@@ -36855,8 +34882,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Wyrmkin",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180139] = {
@@ -36871,8 +34897,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Wyrmkin",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180140] = {
@@ -36887,8 +34912,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180141] = {
@@ -36903,8 +34927,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180142] = {
@@ -36919,8 +34942,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180143] = {
@@ -36935,8 +34957,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180144] = {
@@ -36951,8 +34972,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180145] = {
@@ -36967,8 +34987,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180146] = {
@@ -36983,8 +35002,7 @@ AV_VanityItems = {
             familyId = 455,
             familyName = "Red Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180151] = {
@@ -36999,8 +35017,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180152] = {
@@ -37015,8 +35032,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180153] = {
@@ -37031,8 +35047,7 @@ AV_VanityItems = {
             familyId = 450,
             familyName = "Red Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180168] = {
@@ -37047,8 +35062,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180169] = {
@@ -37064,8 +35078,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180172] = {
@@ -37081,8 +35094,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180173] = {
@@ -37098,8 +35110,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180174] = {
@@ -37114,8 +35125,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180175] = {
@@ -37131,8 +35141,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180176] = {
@@ -37147,8 +35156,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180177] = {
@@ -37163,8 +35171,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180188] = {
@@ -37179,8 +35186,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180189] = {
@@ -37196,8 +35202,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180190] = {
@@ -37213,8 +35218,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180191] = {
@@ -37230,8 +35234,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180192] = {
@@ -37247,8 +35250,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180193] = {
@@ -37263,8 +35265,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180194] = {
@@ -37279,8 +35280,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180195] = {
@@ -37295,8 +35295,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180196] = {
@@ -37311,8 +35310,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180197] = {
@@ -37327,8 +35325,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180198] = {
@@ -37344,8 +35341,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180200] = {
@@ -37360,8 +35356,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180201] = {
@@ -37376,8 +35371,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180204] = {
@@ -37392,8 +35386,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180206] = {
@@ -37409,8 +35402,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180207] = {
@@ -37426,8 +35418,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180208] = {
@@ -37443,8 +35434,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180209] = {
@@ -37460,8 +35450,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180210] = {
@@ -37476,8 +35465,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180211] = {
@@ -37492,8 +35480,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180212] = {
@@ -37508,8 +35495,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180213] = {
@@ -37524,8 +35510,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180214] = {
@@ -37540,8 +35525,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180215] = {
@@ -37556,8 +35540,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180216] = {
@@ -37572,8 +35555,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180217] = {
@@ -37588,8 +35570,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180218] = {
@@ -37605,8 +35586,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180219] = {
@@ -37622,8 +35602,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180220] = {
@@ -37639,8 +35618,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180222] = {
@@ -37655,8 +35633,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180223] = {
@@ -37671,8 +35648,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180224] = {
@@ -37687,8 +35663,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180225] = {
@@ -37703,8 +35678,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180226] = {
@@ -37719,8 +35693,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Green Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180227] = {
@@ -37736,8 +35709,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180228] = {
@@ -37753,8 +35725,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180229] = {
@@ -37769,8 +35740,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180230] = {
@@ -37785,8 +35755,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180231] = {
@@ -37801,8 +35770,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180232] = {
@@ -37817,8 +35785,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180233] = {
@@ -37834,8 +35801,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180234] = {
@@ -37850,8 +35816,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Blue Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180235] = {
@@ -37867,8 +35832,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180236] = {
@@ -37884,8 +35848,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180237] = {
@@ -37901,8 +35864,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180238] = {
@@ -37917,8 +35879,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180239] = {
@@ -37934,8 +35895,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180240] = {
@@ -37951,8 +35911,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180242] = {
@@ -37968,8 +35927,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180243] = {
@@ -37985,8 +35943,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180245] = {
@@ -38002,8 +35959,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180246] = {
@@ -38018,8 +35974,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180247] = {
@@ -38034,8 +35989,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180248] = {
@@ -38050,8 +36004,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180249] = {
@@ -38066,8 +36019,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180250] = {
@@ -38083,8 +36035,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180252] = {
@@ -38100,8 +36051,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180253] = {
@@ -38116,8 +36066,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180254] = {
@@ -38132,8 +36081,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180255] = {
@@ -38148,8 +36096,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180256] = {
@@ -38164,8 +36111,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180257] = {
@@ -38181,8 +36127,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180258] = {
@@ -38198,8 +36143,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180259] = {
@@ -38215,8 +36159,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180260] = {
@@ -38232,8 +36175,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180261] = {
@@ -38249,8 +36191,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180262] = {
@@ -38266,8 +36207,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180264] = {
@@ -38283,8 +36223,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180265] = {
@@ -38300,8 +36239,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180266] = {
@@ -38317,8 +36255,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180267] = {
@@ -38334,8 +36271,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180268] = {
@@ -38351,8 +36287,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180269] = {
@@ -38368,8 +36303,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180270] = {
@@ -38384,8 +36318,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180271] = {
@@ -38400,8 +36333,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180272] = {
@@ -38416,8 +36348,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180273] = {
@@ -38432,8 +36363,7 @@ AV_VanityItems = {
             familyId = 427,
             familyName = "Bronze Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180274] = {
@@ -38449,8 +36379,7 @@ AV_VanityItems = {
             familyId = 427,
             familyName = "Bronze Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180275] = {
@@ -38466,8 +36395,7 @@ AV_VanityItems = {
             familyId = 427,
             familyName = "Bronze Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180276] = {
@@ -38483,8 +36411,7 @@ AV_VanityItems = {
             familyId = 427,
             familyName = "Bronze Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180277] = {
@@ -38500,8 +36427,7 @@ AV_VanityItems = {
             familyId = 427,
             familyName = "Bronze Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180278] = {
@@ -38516,8 +36442,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180279] = {
@@ -38532,8 +36457,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180281] = {
@@ -38548,8 +36472,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180282] = {
@@ -38564,8 +36487,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180285] = {
@@ -38580,8 +36502,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180286] = {
@@ -38596,8 +36517,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180287] = {
@@ -38612,8 +36532,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180288] = {
@@ -38627,8 +36546,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180290] = {
@@ -38643,8 +36561,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180291] = {
@@ -38659,8 +36576,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180292] = {
@@ -38675,8 +36591,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180294] = {
@@ -38691,8 +36606,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180295] = {
@@ -38707,8 +36621,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180298] = {
@@ -38723,8 +36636,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180299] = {
@@ -38740,8 +36652,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180300] = {
@@ -38757,8 +36668,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180301] = {
@@ -38773,8 +36683,7 @@ AV_VanityItems = {
             familyId = 415,
             familyName = "Blue Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180305] = {
@@ -38789,8 +36698,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180307] = {
@@ -38805,8 +36713,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180308] = {
@@ -38821,8 +36728,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Chromatic Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180309] = {
@@ -38837,8 +36743,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180310] = {
@@ -38853,8 +36758,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180311] = {
@@ -38869,8 +36773,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180312] = {
@@ -38885,8 +36788,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180313] = {
@@ -38901,8 +36803,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180314] = {
@@ -38917,8 +36818,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180315] = {
@@ -38933,8 +36833,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180316] = {
@@ -38949,8 +36848,7 @@ AV_VanityItems = {
             familyId = 462,
             familyName = "Chromatic Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180317] = {
@@ -38964,8 +36862,7 @@ AV_VanityItems = {
             familyId = 462,
             familyName = "Chromatic Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180318] = {
@@ -38980,8 +36877,7 @@ AV_VanityItems = {
             familyId = 462,
             familyName = "Chromatic Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180319] = {
@@ -38996,8 +36892,7 @@ AV_VanityItems = {
             familyId = 467,
             familyName = "Chromatic Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180320] = {
@@ -39011,8 +36906,7 @@ AV_VanityItems = {
             familyId = 467,
             familyName = "Chromatic Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180322] = {
@@ -39027,8 +36921,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180323] = {
@@ -39044,8 +36937,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180324] = {
@@ -39061,8 +36953,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180325] = {
@@ -39078,8 +36969,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180326] = {
@@ -39095,8 +36985,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180327] = {
@@ -39112,8 +37001,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180328] = {
@@ -39129,8 +37017,7 @@ AV_VanityItems = {
             familyId = 415,
             familyName = "Blue Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180329] = {
@@ -39146,8 +37033,7 @@ AV_VanityItems = {
             familyId = 415,
             familyName = "Blue Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180330] = {
@@ -39162,8 +37048,7 @@ AV_VanityItems = {
             familyId = 415,
             familyName = "Blue Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180332] = {
@@ -39178,8 +37063,7 @@ AV_VanityItems = {
             familyId = 415,
             familyName = "Blue Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180333] = {
@@ -39194,8 +37078,7 @@ AV_VanityItems = {
             familyId = 510,
             familyName = "Plagued Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_misc_head_dragon_green_nightmare",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_misc_head_dragon_green_nightmare"
         }
     },
     [1180338] = {
@@ -39210,8 +37093,7 @@ AV_VanityItems = {
             familyId = 491,
             familyName = "Twilight Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180344] = {
@@ -39226,8 +37108,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180345] = {
@@ -39242,8 +37123,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180346] = {
@@ -39259,8 +37139,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180352] = {
@@ -39275,8 +37154,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180353] = {
@@ -39291,8 +37169,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180354] = {
@@ -39307,8 +37184,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180355] = {
@@ -39323,8 +37199,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180356] = {
@@ -39339,8 +37214,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180357] = {
@@ -39355,8 +37229,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180358] = {
@@ -39371,8 +37244,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180359] = {
@@ -39387,8 +37259,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180360] = {
@@ -39403,8 +37274,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180361] = {
@@ -39419,8 +37289,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180362] = {
@@ -39435,8 +37304,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180364] = {
@@ -39451,8 +37319,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180366] = {
@@ -39467,8 +37334,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180367] = {
@@ -39483,8 +37349,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180369] = {
@@ -39500,8 +37365,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180370] = {
@@ -39517,8 +37381,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180371] = {
@@ -39534,8 +37397,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180372] = {
@@ -39551,8 +37413,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180373] = {
@@ -39568,8 +37429,7 @@ AV_VanityItems = {
             familyId = 444,
             familyName = "Green Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180374] = {
@@ -39585,8 +37445,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180375] = {
@@ -39602,8 +37461,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180376] = {
@@ -39619,8 +37477,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180377] = {
@@ -39636,8 +37493,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180378] = {
@@ -39653,8 +37509,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180379] = {
@@ -39670,8 +37525,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180380] = {
@@ -39687,8 +37541,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180386] = {
@@ -39703,8 +37556,7 @@ AV_VanityItems = {
             familyId = 451,
             familyName = "Red Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_red",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_red"
         }
     },
     [1180387] = {
@@ -39720,8 +37572,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180388] = {
@@ -39737,8 +37588,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180389] = {
@@ -39753,8 +37603,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180392] = {
@@ -39769,8 +37618,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Chromatic Drakeadon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180402] = {
@@ -39785,8 +37633,7 @@ AV_VanityItems = {
             familyId = 430,
             familyName = "Bronze Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180410] = {
@@ -39801,8 +37648,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180415] = {
@@ -39818,8 +37664,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180416] = {
@@ -39835,8 +37680,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180417] = {
@@ -39852,8 +37696,7 @@ AV_VanityItems = {
             familyId = 443,
             familyName = "Green Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180434] = {
@@ -39868,8 +37711,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180440] = {
@@ -39884,8 +37726,7 @@ AV_VanityItems = {
             familyId = 479,
             familyName = "Infinite Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180442] = {
@@ -39900,8 +37741,7 @@ AV_VanityItems = {
             familyId = 479,
             familyName = "Infinite Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180443] = {
@@ -39916,8 +37756,7 @@ AV_VanityItems = {
             familyId = 478,
             familyName = "Infinite Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180444] = {
@@ -39932,8 +37771,7 @@ AV_VanityItems = {
             familyId = 475,
             familyName = "Infinite Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180445] = {
@@ -39948,8 +37786,7 @@ AV_VanityItems = {
             familyId = 476,
             familyName = "Infinite Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180449] = {
@@ -39965,8 +37802,7 @@ AV_VanityItems = {
             familyId = 475,
             familyName = "Infinite Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180450] = {
@@ -39982,8 +37818,7 @@ AV_VanityItems = {
             familyId = 479,
             familyName = "Infinite Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180451] = {
@@ -39999,8 +37834,7 @@ AV_VanityItems = {
             familyId = 480,
             familyName = "Infinite Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180452] = {
@@ -40016,8 +37850,7 @@ AV_VanityItems = {
             familyId = 479,
             familyName = "Infinite Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180456] = {
@@ -40033,8 +37866,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180457] = {
@@ -40050,8 +37882,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180460] = {
@@ -40067,8 +37898,7 @@ AV_VanityItems = {
             familyId = 499,
             familyName = "Netherwing Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180470] = {
@@ -40083,8 +37913,7 @@ AV_VanityItems = {
             familyId = 486,
             familyName = "Twilight Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180472] = {
@@ -40100,8 +37929,7 @@ AV_VanityItems = {
             familyId = 500,
             familyName = "Netherwing Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180473] = {
@@ -40116,8 +37944,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180474] = {
@@ -40132,8 +37959,7 @@ AV_VanityItems = {
             familyId = 541,
             familyName = "Faerie Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_babyfaeriedragon"
         }
     },
     [1180476] = {
@@ -40148,8 +37974,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Chromatic Drakonid",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180477] = {
@@ -40164,8 +37989,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180479] = {
@@ -40181,8 +38005,7 @@ AV_VanityItems = {
             familyId = 499,
             familyName = "Netherwing Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180480] = {
@@ -40198,8 +38021,7 @@ AV_VanityItems = {
             familyId = 440,
             familyName = "Green Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180482] = {
@@ -40214,8 +38036,7 @@ AV_VanityItems = {
             familyId = 480,
             familyName = "Infinite Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180484] = {
@@ -40230,8 +38051,7 @@ AV_VanityItems = {
             familyId = 480,
             familyName = "Infinite Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180502] = {
@@ -40246,8 +38066,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180503] = {
@@ -40262,8 +38081,7 @@ AV_VanityItems = {
             familyId = 402,
             familyName = "Black Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180504] = {
@@ -40278,8 +38096,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180505] = {
@@ -40294,8 +38111,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180508] = {
@@ -40310,8 +38126,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180509] = {
@@ -40326,8 +38141,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180510] = {
@@ -40341,8 +38155,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180511] = {
@@ -40356,8 +38169,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180516] = {
@@ -40373,8 +38185,7 @@ AV_VanityItems = {
             familyId = 499,
             familyName = "Netherwing Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180520] = {
@@ -40389,8 +38200,7 @@ AV_VanityItems = {
             familyId = 486,
             familyName = "Twilight Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1180521] = {
@@ -40405,8 +38215,7 @@ AV_VanityItems = {
             familyId = 499,
             familyName = "Netherwing Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180525] = {
@@ -40421,8 +38230,7 @@ AV_VanityItems = {
             familyId = 499,
             familyName = "Netherwing Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180526] = {
@@ -40436,8 +38244,7 @@ AV_VanityItems = {
             familyId = 474,
             familyName = "Infinite Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_infinitecorruptor"
         }
     },
     [1180527] = {
@@ -40452,8 +38259,7 @@ AV_VanityItems = {
             familyId = 499,
             familyName = "Netherwing Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180540] = {
@@ -40469,8 +38275,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180541] = {
@@ -40486,8 +38291,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180549] = {
@@ -40503,8 +38307,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180550] = {
@@ -40520,8 +38323,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180560] = {
@@ -40536,8 +38338,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180561] = {
@@ -40552,8 +38353,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180569] = {
@@ -40568,8 +38368,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180570] = {
@@ -40584,8 +38383,7 @@ AV_VanityItems = {
             familyId = 404,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180595] = {
@@ -40601,8 +38399,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180596] = {
@@ -40618,8 +38415,7 @@ AV_VanityItems = {
             familyId = 403,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180597] = {
@@ -40635,8 +38431,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180598] = {
@@ -40652,8 +38447,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180599] = {
@@ -40675,8 +38469,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180603] = {
@@ -40692,8 +38485,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180641] = {
@@ -40708,8 +38500,7 @@ AV_VanityItems = {
             familyId = 418,
             familyName = "Blue Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180642] = {
@@ -40724,8 +38515,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180645] = {
@@ -40741,8 +38531,7 @@ AV_VanityItems = {
             familyId = 500,
             familyName = "Netherwing Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180646] = {
@@ -40758,8 +38547,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180647] = {
@@ -40775,8 +38563,7 @@ AV_VanityItems = {
             familyId = 418,
             familyName = "Blue Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180648] = {
@@ -40792,8 +38579,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180649] = {
@@ -40809,8 +38595,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180650] = {
@@ -40826,8 +38611,7 @@ AV_VanityItems = {
             familyId = 500,
             familyName = "Netherwing Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180651] = {
@@ -40843,8 +38627,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180653] = {
@@ -40860,8 +38643,7 @@ AV_VanityItems = {
             familyId = 418,
             familyName = "Blue Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180659] = {
@@ -40877,8 +38659,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180663] = {
@@ -40893,8 +38674,7 @@ AV_VanityItems = {
             familyId = 416,
             familyName = "Blue Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180669] = {
@@ -40909,8 +38689,7 @@ AV_VanityItems = {
             familyId = 500,
             familyName = "Netherwing Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180670] = {
@@ -40925,8 +38704,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180678] = {
@@ -40942,8 +38720,7 @@ AV_VanityItems = {
             familyId = 418,
             familyName = "Blue Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180690] = {
@@ -40958,8 +38735,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180695] = {
@@ -40974,8 +38750,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180696] = {
@@ -40990,8 +38765,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180697] = {
@@ -41006,8 +38780,7 @@ AV_VanityItems = {
             familyId = 414,
             familyName = "Blue Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180700] = {
@@ -41022,8 +38795,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180701] = {
@@ -41038,8 +38810,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Blue Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180727] = {
@@ -41054,8 +38825,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Red Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180729] = {
@@ -41070,8 +38840,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180732] = {
@@ -41086,8 +38855,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Black Dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180741] = {
@@ -41102,8 +38870,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Blue Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180743] = {
@@ -41118,8 +38885,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Blue Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180767] = {
@@ -41134,8 +38900,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Twilight Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180768] = {
@@ -41150,8 +38915,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Twilight Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180769] = {
@@ -41166,8 +38930,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Twilight Drake",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180770] = {
@@ -41182,8 +38945,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180789] = {
@@ -41198,8 +38960,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180790] = {
@@ -41214,8 +38975,7 @@ AV_VanityItems = {
             familyId = 408,
             familyName = "Black Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180791] = {
@@ -41230,8 +38990,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180829] = {
@@ -41247,8 +39006,7 @@ AV_VanityItems = {
             familyId = 416,
             familyName = "Blue Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180830] = {
@@ -41264,8 +39022,7 @@ AV_VanityItems = {
             familyId = 419,
             familyName = "Blue Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180831] = {
@@ -41280,8 +39037,7 @@ AV_VanityItems = {
             familyId = 420,
             familyName = "Blue Wyrmkin",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180833] = {
@@ -41295,8 +39051,7 @@ AV_VanityItems = {
             familyId = 427,
             familyName = "Bronze Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1180852] = {
@@ -41312,8 +39067,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bronze Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180853] = {
@@ -41329,8 +39083,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bronze Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180855] = {
@@ -41346,8 +39099,7 @@ AV_VanityItems = {
             familyId = 418,
             familyName = "Blue Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180856] = {
@@ -41363,8 +39115,7 @@ AV_VanityItems = {
             familyId = 416,
             familyName = "Blue Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180857] = {
@@ -41380,8 +39131,7 @@ AV_VanityItems = {
             familyId = 416,
             familyName = "Blue Dragon",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_azure"
         }
     },
     [1180858] = {
@@ -41396,8 +39146,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Infinite Proto-dragon",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180859] = {
@@ -41412,8 +39161,7 @@ AV_VanityItems = {
             familyId = 439,
             familyName = "Green Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1180884] = {
@@ -41428,8 +39176,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1180894] = {
@@ -41444,8 +39191,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180898] = {
@@ -41460,8 +39206,7 @@ AV_VanityItems = {
             familyId = 406,
             familyName = "Black Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1180914] = {
@@ -41477,8 +39222,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1180915] = {
@@ -41494,8 +39238,7 @@ AV_VanityItems = {
             familyId = 502,
             familyName = "Netherwing Drakonid",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_netherdrakepurple"
         }
     },
     [1181505] = {
@@ -41510,8 +39253,7 @@ AV_VanityItems = {
             familyId = 462,
             familyName = "Chromatic Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_twilight"
         }
     },
     [1181520] = {
@@ -41526,8 +39268,7 @@ AV_VanityItems = {
             familyId = 407,
             familyName = "Black Scalebane",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia"
         }
     },
     [1181572] = {
@@ -41541,8 +39282,7 @@ AV_VanityItems = {
             familyId = 438,
             familyName = "Green Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\inv_drakemountemerald",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_drakemountemerald"
         }
     },
     [1181573] = {
@@ -41558,8 +39298,7 @@ AV_VanityItems = {
             familyId = 426,
             familyName = "Bronze Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1181574] = {
@@ -41573,8 +39312,7 @@ AV_VanityItems = {
             familyId = 426,
             familyName = "Bronze Whelp",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_mount_drake_bronze"
         }
     },
     [1233809] = {
@@ -41629,8 +39367,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1533809] = {
@@ -41652,8 +39389,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [1554440] = {
@@ -41667,8 +39403,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [1554441] = {
@@ -41682,8 +39417,7 @@ AV_VanityItems = {
             familyId = 230,
             familyName = "Zombie",
             familyType = "Undead",
-            icon = "Interface\\\\Icons\\\\achievement_character_undead_male",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\achievement_character_undead_male"
         }
     },
     [1633809] = {
@@ -41715,8 +39449,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777001] = {
@@ -41732,8 +39465,7 @@ AV_VanityItems = {
             familyId = 302,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777002] = {
@@ -41749,8 +39481,7 @@ AV_VanityItems = {
             familyId = 303,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777003] = {
@@ -41766,8 +39497,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Water Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777004] = {
@@ -41783,8 +39513,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Wind Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777005] = {
@@ -41800,8 +39529,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777006] = {
@@ -41817,8 +39545,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777038] = {
@@ -42224,8 +39951,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777379] = {
@@ -42239,8 +39965,7 @@ AV_VanityItems = {
             familyId = 308,
             familyName = "Mana Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777380] = {
@@ -42254,8 +39979,7 @@ AV_VanityItems = {
             familyId = 306,
             familyName = "Ice Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777413] = {
@@ -42285,8 +40009,7 @@ AV_VanityItems = {
             familyId = 302,
             familyName = "Earth Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777421] = {
@@ -42301,8 +40024,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777422] = {
@@ -42317,8 +40039,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777423] = {
@@ -42333,8 +40054,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Dreadwood Treant",
             familyType = "Elemental",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [1777426] = {
@@ -42349,8 +40069,7 @@ AV_VanityItems = {
             familyId = 303,
             familyName = "Fire Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777428] = {
@@ -42365,8 +40084,7 @@ AV_VanityItems = {
             familyId = 301,
             familyName = "Air Elemental",
             familyType = "Elemental",
-            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\inv_pet_pandarenelemental"
         }
     },
     [1777436] = {
@@ -43188,8 +40906,7 @@ AV_VanityItems = {
             familyId = 4,
             familyName = "Bear",
             familyType = "Tenacity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_bear"
         }
     },
     [8200124] = {
@@ -43276,8 +40993,7 @@ AV_VanityItems = {
             familyId = 26,
             familyName = "Bird of Prey",
             familyType = "Cunning",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl",
-            isExotic = false
+            icon = "Interface\\\\Icons\\\\ability_hunter_pet_owl"
         }
     },
     [8200187] = {
@@ -43291,8 +41007,7 @@ AV_VanityItems = {
             familyId = 0,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "",
-            isExotic = false
+            icon = ""
         }
     },
     [8200192] = {
