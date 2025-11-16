@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.3
--- Generated: 2025-11-16 08:13:03
+-- Generated: 2025-11-16 09:44:23
 -- Total Items: 2957
 -- Source Scan: Ascension 2025-11-14 @ 14:07:35 GMT Not Available
 -- Scan Date: 2025-11-15 11:19:18
@@ -42,14 +42,14 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-16 08:13:03",
+    generatedDate = "2025-11-16 09:44:23",
     ascensionVersion = "2025-11-14 @ 14:07:35 GMT Not Available",
     scanDate = "2025-11-15 11:19:18",
     totalItems = 2957,
     schemaVersion = "2.3",
     questLockedCount = 13,
-    itemsWithFamilyData = 2089,
-    uniqueFamilies = 139
+    itemsWithFamilyData = 2355,
+    uniqueFamilies = 152
 }
 
 AV_IconList = {
@@ -465,7 +465,14 @@ AV_VanityItems = {
         creaturePreview = 79010,
         creatureId = 79010,
         description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Boar",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [79258] = {
         itemid = 79258,
@@ -473,7 +480,14 @@ AV_VanityItems = {
         creaturePreview = 79011,
         creatureId = 79011,
         description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bat",
+            familyType = "Cunning",
+            icon = "",
+            isExotic = false
+        }
     },
     [79260] = {
         itemid = 79260,
@@ -481,7 +495,14 @@ AV_VanityItems = {
         creaturePreview = 347310,
         creatureId = 347310,
         description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Boar",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [79262] = {
         itemid = 79262,
@@ -489,7 +510,14 @@ AV_VanityItems = {
         creaturePreview = 79013,
         creatureId = 79013,
         description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Devilsaur",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [79263] = {
         itemid = 79263,
@@ -497,7 +525,14 @@ AV_VanityItems = {
         creaturePreview = 79014,
         creatureId = 79014,
         description = "Felforged Heroes can purchase this item from Azzazel for Legion Crests",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Devilsaur",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [79317] = {
         itemid = 79317,
@@ -9009,7 +9044,14 @@ AV_VanityItems = {
         creatureId = 10430,
         description = "Has a chance to drop from The Beast within Blackrock Spire",
         zone = "Blackrock Spire",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Core Hound",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [80090] = {
         itemid = 80090,
@@ -9076,10 +9118,10 @@ AV_VanityItems = {
             notes = "Free the panther by right-clicking cage with Panther Cage Key. Elite mob. Long respawn timer - farm carefully! Horde only."
         },
         petFamily = {
-            familyId = 2,
+            familyId = 0,
             familyName = "Cat",
             familyType = "Ferocity",
-            icon = "Interface\\\\Icons\\\\ability_hunter_pet_cat",
+            icon = "",
             isExotic = false
         }
     },
@@ -14619,10 +14661,10 @@ AV_VanityItems = {
             notes = "Summoned during quest in Darkshore. Not repeatable. Alliance only."
         },
         petFamily = {
-            familyId = 134,
+            familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
+            icon = "",
             isExotic = false
         }
     },
@@ -14642,10 +14684,10 @@ AV_VanityItems = {
             notes = "Summoned during quest in Darkshore. Not repeatable. Alliance only."
         },
         petFamily = {
-            familyId = 134,
+            familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
+            icon = "",
             isExotic = false
         }
     },
@@ -15211,6 +15253,13 @@ AV_VanityItems = {
             faction = "Both",
             warning = "Quest summon only! Don't complete until you get the drop!",
             notes = "Summoned during quest in Blasted Lands. Not repeatable."
+        },
+        petFamily = {
+            familyId = 0,
+            familyName = "Nathrezim",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
         }
     },
     [82744] = {
@@ -15311,10 +15360,10 @@ AV_VanityItems = {
             notes = "Summoned during quest in Darkshore. Not repeatable. Alliance only."
         },
         petFamily = {
-            familyId = 134,
+            familyId = 0,
             familyName = "Satyr",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_emeraldnightmare_xavius",
+            icon = "",
             isExotic = false
         }
     },
@@ -15357,7 +15406,14 @@ AV_VanityItems = {
         creaturePreview = 10813,
         creatureId = 10813,
         description = "Has a chance to drop from Balnazzar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Nathrezim",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [82781] = {
         itemid = 82781,
@@ -15486,7 +15542,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Zevrim Thornhoof within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [82865] = {
         itemid = 82865,
@@ -15496,7 +15559,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Alzzin the Wildshaper within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [82871] = {
         itemid = 82871,
@@ -15506,7 +15576,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Immol'thar within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Void Terror",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [82872] = {
         itemid = 82872,
@@ -15572,10 +15649,10 @@ AV_VanityItems = {
             notes = "Summoned using Demon Pick on Demon Box. One-time quest - NPC permanently unavailable after completion. Horde only."
         },
         petFamily = {
-            familyId = 106,
+            familyId = 0,
             familyName = "Doomguard",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\warlock_summon_doomguard",
+            icon = "",
             isExotic = false
         }
     },
@@ -15678,10 +15755,10 @@ AV_VanityItems = {
             notes = "Summoned during Warlock epic mount quest in Dire Maul. Not repeatable. Warlock only."
         },
         petFamily = {
-            familyId = 130,
+            familyId = 0,
             familyName = "Dreadsteed",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\ability_mount_dreadsteed",
+            icon = "",
             isExotic = false
         }
     },
@@ -15709,7 +15786,14 @@ AV_VanityItems = {
         creatureId = 14530,
         description = "Has a chance to drop from Solenor the Slayer within Silithus",
         zone = "Silithus",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Nathrezim",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [83017] = {
         itemid = 83017,
@@ -15718,7 +15802,14 @@ AV_VanityItems = {
         creatureId = 14535,
         description = "Has a chance to drop from Artorius the Doombringer within Winterspring",
         zone = "Winterspring",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Doomguard",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [83033] = {
         itemid = 83033,
@@ -15727,7 +15818,14 @@ AV_VanityItems = {
         creatureId = 15625,
         description = "Has a chance to drop from Twilight Corrupter within Twilight Grove",
         zone = "Twilight Grove",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [83035] = {
         itemid = 83035,
@@ -15787,7 +15885,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Mo'arg Forgefiend within Forge Camp: Mageddon",
         zone = "Hellfire Peninsula",
         subzone = "Forge Camp: Mageddon",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Mo'arg Engineer",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [83068] = {
         itemid = 83068,
@@ -16545,7 +16650,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Arzeth the Merciless within Ruins of Sha'naar",
         zone = "Hellfire Peninsula",
         subzone = "Ruins of Sha'naar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Terrorfiend",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [84104] = {
         itemid = 84104,
@@ -16580,10 +16692,10 @@ AV_VanityItems = {
             notes = "Summoned during quest in Netherstorm. Not repeatable."
         },
         petFamily = {
-            familyId = 136,
+            familyId = 0,
             familyName = "Shivarra",
             familyType = "Demon",
-            icon = "Interface\\\\Icons\\\\achievement_boss_argus_shivan",
+            icon = "",
             isExotic = false
         }
     },
@@ -16896,6 +17008,13 @@ AV_VanityItems = {
             faction = "Both",
             warning = "Quest summon only! Don't complete until you get the drop!",
             notes = "Summoned during quest in Blade's Edge Mountains. Not repeatable."
+        },
+        petFamily = {
+            familyId = 0,
+            familyName = "Shivarra",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
         }
     },
     [84304] = {
@@ -17172,7 +17291,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Prophetess Cavrylin within Legion Hold",
         zone = "Shadowmoon Valley",
         subzone = "Legion Hold",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shivarra",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [84368] = {
         itemid = 84368,
@@ -17766,6 +17892,13 @@ AV_VanityItems = {
             faction = "Both",
             warning = "Random quest summon! Don't complete until you get the drop!",
             notes = "Random summon during quest in Blade's Edge Mountains. Not repeatable."
+        },
+        petFamily = {
+            familyId = 0,
+            familyName = "Pit Lord",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
         }
     },
     [85243] = {
@@ -17791,7 +17924,14 @@ AV_VanityItems = {
         creaturePreview = 22825,
         creatureId = 22825,
         description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shivarra",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85247] = {
         itemid = 85247,
@@ -17799,7 +17939,14 @@ AV_VanityItems = {
         creaturePreview = 22827,
         creatureId = 22827,
         description = "Has a chance to spawn from Etherium Prison Key or Stasis Chamber opening within Blade's Edge Mountains",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Observer",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85257] = {
         itemid = 85257,
@@ -17807,7 +17954,14 @@ AV_VanityItems = {
         creaturePreview = 22828,
         creatureId = 22828,
         description = "Has a chance to drop from Trelopades",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Pit Lord",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85258] = {
         itemid = 85258,
@@ -17817,7 +17971,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Illidari Defiler within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85259] = {
         itemid = 85259,
@@ -17827,7 +17988,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Illidari Nightlord within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Nathrezim",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85260] = {
         itemid = 85260,
@@ -17837,7 +18005,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Illidari Boneslicer within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85262] = {
         itemid = 85262,
@@ -17854,7 +18029,14 @@ AV_VanityItems = {
         creatureId = 22954,
         description = "Has a chance to drop from Illidari Fearbringer within Illidari Training Grounds",
         zone = "Illidari Training Grounds",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Terrorfiend",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85511] = {
         itemid = 85511,
@@ -17864,7 +18046,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Priestess of Dementia within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shivarra",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85564] = {
         itemid = 85564,
@@ -17874,7 +18063,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Priestess of Delight within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shivarra",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85565] = {
         itemid = 85565,
@@ -17901,7 +18097,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Illidari Heartseeker within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85586] = {
         itemid = 85586,
@@ -17917,6 +18120,13 @@ AV_VanityItems = {
             faction = "Both",
             warning = "Random quest summon! Don't complete until you get the drop!",
             notes = "Random summon during quest in Blade's Edge Mountains. Not repeatable."
+        },
+        petFamily = {
+            familyId = 0,
+            familyName = "Fel Beast",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
         }
     },
     [85637] = {
@@ -17933,6 +18143,13 @@ AV_VanityItems = {
             faction = "Both",
             warning = "Random quest summon! Don't complete until you get the drop!",
             notes = "Random summon during quest in Blade's Edge Mountains. Not repeatable."
+        },
+        petFamily = {
+            familyId = 0,
+            familyName = "Terrorfiend",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
         }
     },
     [85690] = {
@@ -18073,7 +18290,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Moragg within The Violet Hold",
         zone = "Dalaran",
         subzone = "The Violet Hold",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Observer",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [85717] = {
         itemid = 85717,
@@ -19565,7 +19789,14 @@ AV_VanityItems = {
         creatureId = 4543,
         description = "Has a chance to drop from Bloodmage Thalnos within Scarlet Monastery",
         zone = "Scarlet Monastery",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87691] = {
         itemid = 87691,
@@ -19654,7 +19885,14 @@ AV_VanityItems = {
         creatureId = 5712,
         description = "Has a chance to drop from Zolo within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87699] = {
         itemid = 87699,
@@ -19663,7 +19901,14 @@ AV_VanityItems = {
         creatureId = 5713,
         description = "Has a chance to drop from Gasher within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87700] = {
         itemid = 87700,
@@ -19672,7 +19917,14 @@ AV_VanityItems = {
         creatureId = 5714,
         description = "Has a chance to drop from Loro within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87711] = {
         itemid = 87711,
@@ -19681,7 +19933,14 @@ AV_VanityItems = {
         creatureId = 5715,
         description = "Has a chance to drop from Hukku within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87717] = {
         itemid = 87717,
@@ -19690,7 +19949,14 @@ AV_VanityItems = {
         creatureId = 5716,
         description = "Has a chance to drop from Zul'Lor within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87718] = {
         itemid = 87718,
@@ -19699,7 +19965,14 @@ AV_VanityItems = {
         creatureId = 5717,
         description = "Has a chance to drop from Mijan within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87719] = {
         itemid = 87719,
@@ -20162,7 +20435,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Tuten'kash within Razorfen Downs",
         zone = "The Barrens",
         subzone = "Razorfen Downs",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87859] = {
         itemid = 87859,
@@ -20172,7 +20452,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Mordresh Fire Eye within Razorfen Downs",
         zone = "The Barrens",
         subzone = "Razorfen Downs",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [87860] = {
         itemid = 87860,
@@ -20665,7 +20952,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Glutton within Razorfen Downs",
         zone = "The Barrens",
         subzone = "Razorfen Downs",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88310] = {
         itemid = 88310,
@@ -20674,7 +20968,14 @@ AV_VanityItems = {
         creatureId = 9031,
         description = "Has a chance to drop from Anub'shiah within the Blackrock Depths",
         subzone = "the Blackrock Depths",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88311] = {
         itemid = 88311,
@@ -20819,7 +21120,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Skul within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88320] = {
         itemid = 88320,
@@ -21047,7 +21355,14 @@ AV_VanityItems = {
         creatureId = 10432,
         description = "Has a chance to drop from Vectus within Scholomance",
         zone = "Scholomance",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88334] = {
         itemid = 88334,
@@ -21057,7 +21372,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Magistrate Barthilas within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88363] = {
         itemid = 88363,
@@ -21067,7 +21389,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Baroness Anastari within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88364] = {
         itemid = 88364,
@@ -21077,7 +21406,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Nerub'enkan within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88365] = {
         itemid = 88365,
@@ -21086,7 +21422,14 @@ AV_VanityItems = {
         creatureId = 10439,
         description = "Has a chance to drop from Ramstein the Gorger within Eastern Kingdoms",
         zone = "Eastern Kingdoms",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88366] = {
         itemid = 88366,
@@ -21351,7 +21694,14 @@ AV_VanityItems = {
         creatureId = 10506,
         description = "Has a chance to drop from Kirtonos the Herald within Eastern Kingdoms",
         zone = "Eastern Kingdoms",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Gargoyle",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88561] = {
         itemid = 88561,
@@ -21360,7 +21710,14 @@ AV_VanityItems = {
         creatureId = 10507,
         description = "Has a chance to drop from The Ravenian within Scholomance",
         zone = "Scholomance",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88562] = {
         itemid = 88562,
@@ -21370,7 +21727,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from The Unforgiven within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wraith",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88565] = {
         itemid = 88565,
@@ -21414,7 +21778,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Timmy the Cruel within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88672] = {
         itemid = 88672,
@@ -21424,7 +21795,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Stonespine within Stratholme",
         zone = "Eastern Plaguelands",
         subzone = "Stratholme",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Gargoyle",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88673] = {
         itemid = 88673,
@@ -21498,7 +21876,14 @@ AV_VanityItems = {
         creatureId = 10901,
         description = "Has a chance to drop from Lorekeeper Polkelt within Scholomance",
         zone = "Scholomance",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88679] = {
         itemid = 88679,
@@ -21571,7 +21956,14 @@ AV_VanityItems = {
         creatureId = 11121,
         description = "Has a chance to drop from Black Guard Swordsmith within Naxxaramas",
         zone = "Naxxaramas",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88716] = {
         itemid = 88716,
@@ -21749,7 +22141,14 @@ AV_VanityItems = {
         creatureId = 11622,
         description = "Has a chance to drop from Rattlegore within Scholomance",
         zone = "Scholomance",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bone Golem",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88758] = {
         itemid = 88758,
@@ -21941,7 +22340,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Lady Falther'ess within Razorfen Downs",
         zone = "The Barrens",
         subzone = "Razorfen Downs",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [88870] = {
         itemid = 88870,
@@ -23169,7 +23575,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Wrathbone Flayer within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [89211] = {
         itemid = 89211,
@@ -23815,7 +24228,14 @@ AV_VanityItems = {
         creaturePreview = 301421,
         creatureId = 301421,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [89638] = {
         itemid = 89638,
@@ -23950,7 +24370,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Trollgore within Drak'Tharon Keep",
         zone = "Grizzly Hills",
         subzone = "Drak'Tharon Keep",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wight",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [89845] = {
         itemid = 89845,
@@ -24910,7 +25337,14 @@ AV_VanityItems = {
         creatureId = 29120,
         description = "Has a chance to drop from Anub'arak within Passage of Lost Fiends",
         zone = "Passage of Lost Fiends",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Lord",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [101076] = {
         itemid = 101076,
@@ -25903,7 +26337,14 @@ AV_VanityItems = {
         creatureId = 36476,
         description = "Has a chance to drop from Ick within Pit of Saron",
         zone = "Pit of Saron",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [101149] = {
         itemid = 101149,
@@ -26127,7 +26568,14 @@ AV_VanityItems = {
         creaturePreview = 79038,
         creatureId = 79038,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Boar",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [101414] = {
         itemid = 101414,
@@ -26135,7 +26583,14 @@ AV_VanityItems = {
         creaturePreview = 79040,
         creatureId = 79040,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Carrion Bird",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [101415] = {
         itemid = 101415,
@@ -26143,7 +26598,14 @@ AV_VanityItems = {
         creaturePreview = 79041,
         creatureId = 79041,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Turtle",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [101416] = {
         itemid = 101416,
@@ -26151,7 +26613,14 @@ AV_VanityItems = {
         creaturePreview = 79042,
         creatureId = 79042,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Spider",
+            familyType = "Cunning",
+            icon = "",
+            isExotic = false
+        }
     },
     [101417] = {
         itemid = 101417,
@@ -26159,7 +26628,14 @@ AV_VanityItems = {
         creaturePreview = 79043,
         creatureId = 79043,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crab",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [101418] = {
         itemid = 101418,
@@ -26167,7 +26643,14 @@ AV_VanityItems = {
         creaturePreview = 79044,
         creatureId = 79044,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Carrion Bird",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [101419] = {
         itemid = 101419,
@@ -26175,7 +26658,14 @@ AV_VanityItems = {
         creaturePreview = 79045,
         creatureId = 79045,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bat",
+            familyType = "Cunning",
+            icon = "",
+            isExotic = false
+        }
     },
     [101421] = {
         itemid = 101421,
@@ -26183,7 +26673,14 @@ AV_VanityItems = {
         creaturePreview = 79047,
         creatureId = 79047,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Spider",
+            familyType = "Cunning",
+            icon = "",
+            isExotic = false
+        }
     },
     [101422] = {
         itemid = 101422,
@@ -26191,7 +26688,14 @@ AV_VanityItems = {
         creaturePreview = 79048,
         creatureId = 79048,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Spider",
+            familyType = "Cunning",
+            icon = "",
+            isExotic = false
+        }
     },
     [101423] = {
         itemid = 101423,
@@ -26199,7 +26703,14 @@ AV_VanityItems = {
         creaturePreview = 79049,
         creatureId = 79049,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Spider",
+            familyType = "Cunning",
+            icon = "",
+            isExotic = false
+        }
     },
     [101426] = {
         itemid = 101426,
@@ -26207,7 +26718,14 @@ AV_VanityItems = {
         creaturePreview = 79052,
         creatureId = 79052,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Cat",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [102107] = {
         itemid = 102107,
@@ -26231,7 +26749,14 @@ AV_VanityItems = {
         creaturePreview = 292302,
         creatureId = 292302,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Cat",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [113672] = {
         itemid = 113672,
@@ -26239,7 +26764,14 @@ AV_VanityItems = {
         creaturePreview = 292303,
         creatureId = 292303,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Cat",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [120306] = {
         itemid = 120306,
@@ -26295,7 +26827,14 @@ AV_VanityItems = {
         creaturePreview = 50109,
         creatureId = 50109,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [121825] = {
         itemid = 121825,
@@ -26303,7 +26842,14 @@ AV_VanityItems = {
         creaturePreview = 50110,
         creatureId = 50110,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [121826] = {
         itemid = 121826,
@@ -26311,7 +26857,14 @@ AV_VanityItems = {
         creaturePreview = 50111,
         creatureId = 50111,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [123162] = {
         itemid = 123162,
@@ -26319,7 +26872,14 @@ AV_VanityItems = {
         creaturePreview = 590007,
         creatureId = 590007,
         description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor)",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Revenant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [123163] = {
         itemid = 123163,
@@ -26327,7 +26887,14 @@ AV_VanityItems = {
         creaturePreview = 590024,
         creatureId = 590024,
         description = "Can be purchased from Darith Trophyvane (Trial Master's Rewards Vendor)",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Air Revenant",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [134947] = {
         itemid = 134947,
@@ -26736,7 +27303,14 @@ AV_VanityItems = {
         creaturePreview = 26013,
         creatureId = 26013,
         description = "Seasonal Reward. Introduced in Season 9, Chapter 1",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Gorilla",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [187323] = {
         itemid = 187323,
@@ -26808,7 +27382,14 @@ AV_VanityItems = {
         creaturePreview = 103888,
         creatureId = 103888,
         description = "Seasonal Reward. Introduced in Season 9, Chapter 2",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Rhino",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [192632] = {
         itemid = 192632,
@@ -26978,7 +27559,14 @@ AV_VanityItems = {
         creaturePreview = 50512,
         creatureId = 50512,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Core Hound",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [196328] = {
         itemid = 196328,
@@ -27042,7 +27630,14 @@ AV_VanityItems = {
         creaturePreview = 11000214,
         creatureId = 11000214,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Gorilla",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199337] = {
         itemid = 199337,
@@ -27050,7 +27645,14 @@ AV_VanityItems = {
         creaturePreview = 11000215,
         creatureId = 11000215,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wasp",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199338] = {
         itemid = 199338,
@@ -27058,7 +27660,14 @@ AV_VanityItems = {
         creaturePreview = 11000216,
         creatureId = 11000216,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wasp",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199339] = {
         itemid = 199339,
@@ -27066,7 +27675,14 @@ AV_VanityItems = {
         creaturePreview = 11000217,
         creatureId = 11000217,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wasp",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [199579] = {
         itemid = 199579,
@@ -27472,7 +28088,14 @@ AV_VanityItems = {
         creaturePreview = 50517,
         creatureId = 50517,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Core Hound",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [236293] = {
         itemid = 236293,
@@ -27746,7 +28369,14 @@ AV_VanityItems = {
         creaturePreview = 218937,
         creatureId = 218937,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Entropic Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257060] = {
         itemid = 257060,
@@ -27754,7 +28384,14 @@ AV_VanityItems = {
         creaturePreview = 218939,
         creatureId = 218939,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Fire Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257062] = {
         itemid = 257062,
@@ -27762,7 +28399,14 @@ AV_VanityItems = {
         creaturePreview = 218941,
         creatureId = 218941,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257063] = {
         itemid = 257063,
@@ -27770,7 +28414,14 @@ AV_VanityItems = {
         creaturePreview = 218942,
         creatureId = 218942,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257064] = {
         itemid = 257064,
@@ -27778,7 +28429,14 @@ AV_VanityItems = {
         creaturePreview = 218943,
         creatureId = 218943,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257065] = {
         itemid = 257065,
@@ -27786,7 +28444,14 @@ AV_VanityItems = {
         creaturePreview = 218944,
         creatureId = 218944,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257066] = {
         itemid = 257066,
@@ -27794,7 +28459,14 @@ AV_VanityItems = {
         creaturePreview = 218945,
         creatureId = 218945,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257067] = {
         itemid = 257067,
@@ -27802,7 +28474,14 @@ AV_VanityItems = {
         creaturePreview = 218946,
         creatureId = 218946,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257069] = {
         itemid = 257069,
@@ -27870,7 +28549,14 @@ AV_VanityItems = {
         creaturePreview = 218953,
         creatureId = 218953,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257076] = {
         itemid = 257076,
@@ -27878,7 +28564,14 @@ AV_VanityItems = {
         creaturePreview = 218955,
         creatureId = 218955,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Fire Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257078] = {
         itemid = 257078,
@@ -27886,7 +28579,14 @@ AV_VanityItems = {
         creaturePreview = 218957,
         creatureId = 218957,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Fire Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [257079] = {
         itemid = 257079,
@@ -28530,7 +29230,14 @@ AV_VanityItems = {
         creatureId = 347302,
         description = "Has a chance to drop from Alvajar War Wolf within Frozen Reach",
         zone = "Frozen Reach",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [347303] = {
         itemid = 347303,
@@ -28539,7 +29246,14 @@ AV_VanityItems = {
         creatureId = 347303,
         description = "Has a chance to drop from Risen Alvajar within Frozen Reach",
         zone = "Frozen Reach",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [348634] = {
         itemid = 348634,
@@ -28547,7 +29261,14 @@ AV_VanityItems = {
         creaturePreview = 392240,
         creatureId = 392240,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [348635] = {
         itemid = 348635,
@@ -28570,7 +29291,14 @@ AV_VanityItems = {
         creaturePreview = 392242,
         creatureId = 392242,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [348637] = {
         itemid = 348637,
@@ -28578,7 +29306,14 @@ AV_VanityItems = {
         creaturePreview = 392243,
         creatureId = 392243,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [348731] = {
         itemid = 348731,
@@ -28666,7 +29401,14 @@ AV_VanityItems = {
         creaturePreview = 79058,
         creatureId = 79058,
         description = "Available from the Webstore",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Satyr",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [393445] = {
         itemid = 393445,
@@ -28778,7 +29520,14 @@ AV_VanityItems = {
         creaturePreview = 300156,
         creatureId = 300156,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [400071] = {
         itemid = 400071,
@@ -28801,7 +29550,14 @@ AV_VanityItems = {
         creaturePreview = 300157,
         creatureId = 300157,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [400074] = {
         itemid = 400074,
@@ -28839,7 +29595,14 @@ AV_VanityItems = {
         creaturePreview = 476019,
         creatureId = 476019,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [400077] = {
         itemid = 400077,
@@ -28847,7 +29610,14 @@ AV_VanityItems = {
         creaturePreview = 476020,
         creatureId = 476020,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [400078] = {
         itemid = 400078,
@@ -28855,7 +29625,14 @@ AV_VanityItems = {
         creaturePreview = 476022,
         creatureId = 476022,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Doomguard",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [400079] = {
         itemid = 400079,
@@ -28863,7 +29640,14 @@ AV_VanityItems = {
         creaturePreview = 476023,
         creatureId = 476023,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Infernal",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [400080] = {
         itemid = 400080,
@@ -28871,7 +29655,14 @@ AV_VanityItems = {
         creaturePreview = 476024,
         creatureId = 476024,
         description = "Can be purchased from the Argent Quartermaster",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Pit Lord",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [400563] = {
         itemid = 400563,
@@ -29003,7 +29794,14 @@ AV_VanityItems = {
         creaturePreview = 417217,
         creatureId = 417217,
         description = "Not a drop-based item",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crab",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [492219] = {
         itemid = 492219,
@@ -29838,7 +30636,14 @@ AV_VanityItems = {
         creaturePreview = 98484,
         creatureId = 98484,
         description = "Can be purchased from Millhouse Manastorm",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [532580] = {
         itemid = 532580,
@@ -29870,7 +30675,14 @@ AV_VanityItems = {
         creaturePreview = 55963,
         creatureId = 55963,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Core Hound",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [541300] = {
         itemid = 541300,
@@ -29878,7 +30690,14 @@ AV_VanityItems = {
         creaturePreview = 50959,
         creatureId = 50959,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Core Hound",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [546725] = {
         itemid = 546725,
@@ -30173,7 +30992,14 @@ AV_VanityItems = {
         creaturePreview = 218931,
         creatureId = 218931,
         description = "Available from the Webstore",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Mana Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600390] = {
         itemid = 600390,
@@ -30215,7 +31041,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Viscous Fallout within Gnomeregan",
         zone = "Dun Morogh",
         subzone = "Gnomeregan",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600393] = {
         itemid = 600393,
@@ -30325,7 +31158,14 @@ AV_VanityItems = {
         creatureId = 9025,
         description = "Has a chance to drop from Lord Roccor within Blackrock Depths",
         subzone = "Blackrock Depths",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Magma Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600410] = {
         itemid = 600410,
@@ -30533,7 +31373,14 @@ AV_VanityItems = {
         creatureId = 12057,
         description = "Has a chance to drop from Garr within Molten Core",
         zone = "Molten Core",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Magma Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600426] = {
         itemid = 600426,
@@ -30639,7 +31486,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Hydrospawn within Dire Maul",
         zone = "Feralas",
         subzone = "Dire Maul",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600437] = {
         itemid = 600437,
@@ -30648,7 +31502,14 @@ AV_VanityItems = {
         creatureId = 13282,
         description = "Has a chance to drop from Noxxion within Maraudon",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600761] = {
         itemid = 600761,
@@ -31079,7 +31940,14 @@ AV_VanityItems = {
         creaturePreview = 21216,
         creatureId = 21216,
         description = "Has a chance to drop from Hydross the Unstable within Coilfang: Serpentshrine Cavern",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600885] = {
         itemid = 600885,
@@ -31153,7 +32021,14 @@ AV_VanityItems = {
         creatureId = 22009,
         description = "Has a chance to drop from Tainted Elemental within Serpentshrine Cavern",
         subzone = "Serpentshrine Cavern",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600899] = {
         itemid = 600899,
@@ -31196,7 +32071,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Aqueous Lord within Black Temple",
         zone = "Shadowmoon Valley",
         subzone = "Black Temple",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Water Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600921] = {
         itemid = 600921,
@@ -31205,7 +32087,14 @@ AV_VanityItems = {
         creatureId = 24744,
         description = "Has a chance to drop from Vexallus within Magisters' Terrace.",
         subzone = "Magisters' Terrace",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Arcane Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600934] = {
         itemid = 600934,
@@ -31228,7 +32117,14 @@ AV_VanityItems = {
         creaturePreview = 218934,
         creatureId = 218934,
         description = "Available from the Webstore",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Fire Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600968] = {
         itemid = 600968,
@@ -31236,7 +32132,14 @@ AV_VanityItems = {
         creaturePreview = 218929,
         creatureId = 218929,
         description = "Available from the Webstore",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Earth Elemental",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [600969] = {
         itemid = 600969,
@@ -31289,7 +32192,14 @@ AV_VanityItems = {
         creaturePreview = 80493,
         creatureId = 80493,
         description = "Felforged Heroes can purchase this item from High Inquisitor Qormaladon ",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shivarra",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [601022] = {
         itemid = 601022,
@@ -31932,7 +32842,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Verdan the Everliving within Wailing Caverns",
         zone = "The Barrens",
         subzone = "Wailing Caverns",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Verdant Bog Beast",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601063] = {
         itemid = 601063,
@@ -32302,7 +33219,14 @@ AV_VanityItems = {
         creatureId = 21863,
         description = "Has a chance to drop from Serpentshrine Lurker within Serpentshrine Cavern",
         subzone = "Serpentshrine Cavern",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Fungal Bog Beast",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601102] = {
         itemid = 601102,
@@ -32442,7 +33366,14 @@ AV_VanityItems = {
         creatureId = 12258,
         description = "Has a chance to drop from Razorlash within Maraudon",
         zone = "Maraudon",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Frostpetal Lasher",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601201] = {
         itemid = 601201,
@@ -32615,7 +33546,14 @@ AV_VanityItems = {
         creatureId = 17980,
         description = "Has a chance to drop from Laj within The Botanica",
         zone = "The Botanica",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Lasher",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601214] = {
         itemid = 601214,
@@ -32917,7 +33855,14 @@ AV_VanityItems = {
         creatureId = 7206,
         description = "Has a chance to drop from Ancient Stone Keeper within Uldaman",
         zone = "Uldaman",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Stone War Golem",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601680] = {
         itemid = 601680,
@@ -32990,7 +33935,14 @@ AV_VanityItems = {
         creatureId = 8923,
         description = "Has a chance to drop from Panzor the Invincible within Blackrock Depths",
         subzone = "Blackrock Depths",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Stone Siege Golem",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601686] = {
         itemid = 601686,
@@ -33032,7 +33984,14 @@ AV_VanityItems = {
         creatureId = 9502,
         description = "Has a chance to drop from Phalanx within Blackrock Depths",
         subzone = "Blackrock Depths",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Ragereaver Siege Golem",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [601700] = {
         itemid = 601700,
@@ -33653,7 +34612,14 @@ AV_VanityItems = {
         creaturePreview = 76,
         creatureId = 76,
         description = "Not a drop-based item",
-        icon = 5
+        icon = 5,
+        petFamily = {
+            familyId = 0,
+            familyName = "Stone War Golem",
+            familyType = "Elemental",
+            icon = "",
+            isExotic = false
+        }
     },
     [612826] = {
         itemid = 612826,
@@ -33718,7 +34684,14 @@ AV_VanityItems = {
         creatureId = 449183,
         description = "Has a chance to drop from Brutallus within Sunwell Plateau.",
         subzone = "Sunwell Plateau",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Pit Lord",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [612860] = {
         itemid = 612860,
@@ -33838,7 +34811,14 @@ AV_VanityItems = {
         creaturePreview = 222999,
         creatureId = 222999,
         description = "Available from the Webstore",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [844514] = {
         itemid = 844514,
@@ -33846,7 +34826,14 @@ AV_VanityItems = {
         creaturePreview = 217615,
         creatureId = 217615,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [844515] = {
         itemid = 844515,
@@ -33854,7 +34841,14 @@ AV_VanityItems = {
         creaturePreview = 222300,
         creatureId = 222300,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [844516] = {
         itemid = 844516,
@@ -33862,7 +34856,14 @@ AV_VanityItems = {
         creaturePreview = 222302,
         creatureId = 222302,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [844517] = {
         itemid = 844517,
@@ -33870,7 +34871,14 @@ AV_VanityItems = {
         creaturePreview = 222301,
         creatureId = 222301,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [978310] = {
         itemid = 978310,
@@ -34053,7 +35061,14 @@ AV_VanityItems = {
         creaturePreview = 1000002,
         creatureId = 1000002,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 3",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [1001686] = {
         itemid = 1001686,
@@ -34061,7 +35076,14 @@ AV_VanityItems = {
         creaturePreview = 1000003,
         creatureId = 1000003,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [1001687] = {
         itemid = 1001687,
@@ -34069,7 +35091,14 @@ AV_VanityItems = {
         creaturePreview = 1000004,
         creatureId = 1000004,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [1001688] = {
         itemid = 1001688,
@@ -34077,7 +35106,14 @@ AV_VanityItems = {
         creaturePreview = 1000001,
         creatureId = 1000001,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 3",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wolf",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [1001707] = {
         itemid = 1001707,
@@ -34220,7 +35256,14 @@ AV_VanityItems = {
         creaturePreview = 79060,
         creatureId = 79060,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wraith",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1178959] = {
         itemid = 1178959,
@@ -34228,7 +35271,14 @@ AV_VanityItems = {
         creaturePreview = 79061,
         creatureId = 79061,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Ghoul",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1178962] = {
         itemid = 1178962,
@@ -34236,7 +35286,14 @@ AV_VanityItems = {
         creaturePreview = 79062,
         creatureId = 79062,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Zombie",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179001] = {
         itemid = 1179001,
@@ -34244,7 +35301,14 @@ AV_VanityItems = {
         creaturePreview = 79063,
         creatureId = 79063,
         description = "Available from the Webstore",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Doomguard",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179002] = {
         itemid = 1179002,
@@ -34252,7 +35316,14 @@ AV_VanityItems = {
         creaturePreview = 79064,
         creatureId = 79064,
         description = "Available from Tiraxis' Ethereal Bazaar or the Webstore",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Doomguard",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179003] = {
         itemid = 1179003,
@@ -34260,7 +35331,14 @@ AV_VanityItems = {
         creaturePreview = 79065,
         creatureId = 79065,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Doomguard",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179004] = {
         itemid = 1179004,
@@ -34268,7 +35346,14 @@ AV_VanityItems = {
         creaturePreview = 79066,
         creatureId = 79066,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 3
+        icon = 3,
+        petFamily = {
+            familyId = 0,
+            familyName = "Doomguard",
+            familyType = "Demon",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179005] = {
         itemid = 1179005,
@@ -34276,7 +35361,14 @@ AV_VanityItems = {
         creaturePreview = 79067,
         creatureId = 79067,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Wight",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179006] = {
         itemid = 1179006,
@@ -34284,7 +35376,14 @@ AV_VanityItems = {
         creaturePreview = 79068,
         creatureId = 79068,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179007] = {
         itemid = 1179007,
@@ -34292,7 +35391,14 @@ AV_VanityItems = {
         creaturePreview = 79069,
         creatureId = 79069,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179008] = {
         itemid = 1179008,
@@ -34300,7 +35406,14 @@ AV_VanityItems = {
         creaturePreview = 79070,
         creatureId = 79070,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179009] = {
         itemid = 1179009,
@@ -34308,7 +35421,14 @@ AV_VanityItems = {
         creaturePreview = 79071,
         creatureId = 79071,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179010] = {
         itemid = 1179010,
@@ -34316,7 +35436,14 @@ AV_VanityItems = {
         creaturePreview = 79072,
         creatureId = 79072,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179011] = {
         itemid = 1179011,
@@ -34324,7 +35451,14 @@ AV_VanityItems = {
         creaturePreview = 79073,
         creatureId = 79073,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179012] = {
         itemid = 1179012,
@@ -34332,7 +35466,14 @@ AV_VanityItems = {
         creaturePreview = 79074,
         creatureId = 79074,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179013] = {
         itemid = 1179013,
@@ -34340,7 +35481,14 @@ AV_VanityItems = {
         creaturePreview = 79075,
         creatureId = 79075,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179014] = {
         itemid = 1179014,
@@ -34348,7 +35496,14 @@ AV_VanityItems = {
         creaturePreview = 79076,
         creatureId = 79076,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179015] = {
         itemid = 1179015,
@@ -34356,7 +35511,14 @@ AV_VanityItems = {
         creaturePreview = 79077,
         creatureId = 79077,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179016] = {
         itemid = 1179016,
@@ -34364,7 +35526,14 @@ AV_VanityItems = {
         creaturePreview = 79078,
         creatureId = 79078,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179017] = {
         itemid = 1179017,
@@ -34372,7 +35541,14 @@ AV_VanityItems = {
         creaturePreview = 79079,
         creatureId = 79079,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179018] = {
         itemid = 1179018,
@@ -34380,7 +35556,14 @@ AV_VanityItems = {
         creaturePreview = 79080,
         creatureId = 79080,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Banshee",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179019] = {
         itemid = 1179019,
@@ -34388,7 +35571,14 @@ AV_VanityItems = {
         creaturePreview = 79081,
         creatureId = 79081,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shade",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179020] = {
         itemid = 1179020,
@@ -34398,7 +35588,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from The Mass of Souls within Naxxramas",
         zone = "Dragonblight",
         subzone = "Naxxramas",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Shade",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179027] = {
         itemid = 1179027,
@@ -34407,7 +35604,14 @@ AV_VanityItems = {
         creatureId = 79089,
         description = "Has a chance to drop from Lich Lord within Eastern Kingdoms",
         zone = "Eastern Kingdoms",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Lich",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179028] = {
         itemid = 1179028,
@@ -34415,7 +35619,14 @@ AV_VanityItems = {
         creaturePreview = 79090,
         creatureId = 79090,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179029] = {
         itemid = 1179029,
@@ -34423,7 +35634,14 @@ AV_VanityItems = {
         creaturePreview = 79091,
         creatureId = 79091,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179030] = {
         itemid = 1179030,
@@ -34431,7 +35649,14 @@ AV_VanityItems = {
         creaturePreview = 79092,
         creatureId = 79092,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179031] = {
         itemid = 1179031,
@@ -34439,7 +35664,14 @@ AV_VanityItems = {
         creaturePreview = 79093,
         creatureId = 79093,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeletal Mage",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179036] = {
         itemid = 1179036,
@@ -34447,7 +35679,14 @@ AV_VanityItems = {
         creaturePreview = 79098,
         creatureId = 79098,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179037] = {
         itemid = 1179037,
@@ -34455,7 +35694,14 @@ AV_VanityItems = {
         creaturePreview = 79099,
         creatureId = 79099,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179038] = {
         itemid = 1179038,
@@ -34463,7 +35709,14 @@ AV_VanityItems = {
         creaturePreview = 79100,
         creatureId = 79100,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179039] = {
         itemid = 1179039,
@@ -34471,7 +35724,14 @@ AV_VanityItems = {
         creaturePreview = 79101,
         creatureId = 79101,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179040] = {
         itemid = 1179040,
@@ -34479,7 +35739,14 @@ AV_VanityItems = {
         creaturePreview = 79102,
         creatureId = 79102,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179041] = {
         itemid = 1179041,
@@ -34487,7 +35754,14 @@ AV_VanityItems = {
         creaturePreview = 79103,
         creatureId = 79103,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179042] = {
         itemid = 1179042,
@@ -34495,7 +35769,14 @@ AV_VanityItems = {
         creaturePreview = 79104,
         creatureId = 79104,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179043] = {
         itemid = 1179043,
@@ -34503,7 +35784,14 @@ AV_VanityItems = {
         creaturePreview = 79105,
         creatureId = 79105,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179044] = {
         itemid = 1179044,
@@ -34511,7 +35799,14 @@ AV_VanityItems = {
         creaturePreview = 79106,
         creatureId = 79106,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179045] = {
         itemid = 1179045,
@@ -34519,7 +35814,14 @@ AV_VanityItems = {
         creaturePreview = 79107,
         creatureId = 79107,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179046] = {
         itemid = 1179046,
@@ -34527,7 +35829,14 @@ AV_VanityItems = {
         creaturePreview = 79108,
         creatureId = 79108,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179047] = {
         itemid = 1179047,
@@ -34535,7 +35844,14 @@ AV_VanityItems = {
         creaturePreview = 79109,
         creatureId = 79109,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179048] = {
         itemid = 1179048,
@@ -34543,7 +35859,14 @@ AV_VanityItems = {
         creaturePreview = 79110,
         creatureId = 79110,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179049] = {
         itemid = 1179049,
@@ -34551,7 +35874,14 @@ AV_VanityItems = {
         creaturePreview = 79111,
         creatureId = 79111,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179050] = {
         itemid = 1179050,
@@ -34559,7 +35889,14 @@ AV_VanityItems = {
         creaturePreview = 79112,
         creatureId = 79112,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179051] = {
         itemid = 1179051,
@@ -34567,7 +35904,14 @@ AV_VanityItems = {
         creaturePreview = 79113,
         creatureId = 79113,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179052] = {
         itemid = 1179052,
@@ -34575,7 +35919,14 @@ AV_VanityItems = {
         creaturePreview = 79114,
         creatureId = 79114,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179053] = {
         itemid = 1179053,
@@ -34583,7 +35934,14 @@ AV_VanityItems = {
         creaturePreview = 79115,
         creatureId = 79115,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179054] = {
         itemid = 1179054,
@@ -34591,7 +35949,14 @@ AV_VanityItems = {
         creaturePreview = 79116,
         creatureId = 79116,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179055] = {
         itemid = 1179055,
@@ -34599,7 +35964,14 @@ AV_VanityItems = {
         creaturePreview = 79117,
         creatureId = 79117,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179057] = {
         itemid = 1179057,
@@ -34607,7 +35979,14 @@ AV_VanityItems = {
         creaturePreview = 79119,
         creatureId = 79119,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179058] = {
         itemid = 1179058,
@@ -34615,7 +35994,14 @@ AV_VanityItems = {
         creaturePreview = 79120,
         creatureId = 79120,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179059] = {
         itemid = 1179059,
@@ -34623,7 +36009,14 @@ AV_VanityItems = {
         creaturePreview = 79121,
         creatureId = 79121,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179060] = {
         itemid = 1179060,
@@ -34631,7 +36024,14 @@ AV_VanityItems = {
         creaturePreview = 79122,
         creatureId = 79122,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179061] = {
         itemid = 1179061,
@@ -34639,7 +36039,14 @@ AV_VanityItems = {
         creaturePreview = 79123,
         creatureId = 79123,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179062] = {
         itemid = 1179062,
@@ -34647,7 +36054,14 @@ AV_VanityItems = {
         creaturePreview = 79124,
         creatureId = 79124,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Skeleton",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179063] = {
         itemid = 1179063,
@@ -34655,7 +36069,14 @@ AV_VanityItems = {
         creaturePreview = 79125,
         creatureId = 79125,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179064] = {
         itemid = 1179064,
@@ -34663,7 +36084,14 @@ AV_VanityItems = {
         creaturePreview = 79126,
         creatureId = 79126,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179065] = {
         itemid = 1179065,
@@ -34671,7 +36099,14 @@ AV_VanityItems = {
         creaturePreview = 79127,
         creatureId = 79127,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179066] = {
         itemid = 1179066,
@@ -34679,7 +36114,14 @@ AV_VanityItems = {
         creaturePreview = 79128,
         creatureId = 79128,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179067] = {
         itemid = 1179067,
@@ -34687,7 +36129,14 @@ AV_VanityItems = {
         creaturePreview = 79129,
         creatureId = 79129,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179068] = {
         itemid = 1179068,
@@ -34695,7 +36144,14 @@ AV_VanityItems = {
         creaturePreview = 79130,
         creatureId = 79130,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179069] = {
         itemid = 1179069,
@@ -34703,7 +36159,14 @@ AV_VanityItems = {
         creaturePreview = 79131,
         creatureId = 79131,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179070] = {
         itemid = 1179070,
@@ -34711,7 +36174,14 @@ AV_VanityItems = {
         creaturePreview = 79132,
         creatureId = 79132,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179071] = {
         itemid = 1179071,
@@ -34719,7 +36189,14 @@ AV_VanityItems = {
         creaturePreview = 79133,
         creatureId = 79133,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Abomination",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179072] = {
         itemid = 1179072,
@@ -34727,7 +36204,14 @@ AV_VanityItems = {
         creaturePreview = 79134,
         creatureId = 79134,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179073] = {
         itemid = 1179073,
@@ -34735,7 +36219,14 @@ AV_VanityItems = {
         creaturePreview = 79135,
         creatureId = 79135,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179074] = {
         itemid = 1179074,
@@ -34743,7 +36234,14 @@ AV_VanityItems = {
         creaturePreview = 79136,
         creatureId = 79136,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179075] = {
         itemid = 1179075,
@@ -34751,7 +36249,14 @@ AV_VanityItems = {
         creaturePreview = 79137,
         creatureId = 79137,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Crypt Fiend",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179077] = {
         itemid = 1179077,
@@ -34759,7 +36264,14 @@ AV_VanityItems = {
         creaturePreview = 79139,
         creatureId = 79139,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Ghoul",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179078] = {
         itemid = 1179078,
@@ -34767,7 +36279,14 @@ AV_VanityItems = {
         creaturePreview = 79140,
         creatureId = 79140,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Ghoul",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179079] = {
         itemid = 1179079,
@@ -34775,7 +36294,14 @@ AV_VanityItems = {
         creaturePreview = 79141,
         creatureId = 79141,
         description = "Available from the Webstore",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Ghoul",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179080] = {
         itemid = 1179080,
@@ -34783,7 +36309,14 @@ AV_VanityItems = {
         creaturePreview = 79142,
         creatureId = 79142,
         description = "Available from Tiraxis' Ethereal Bazaar",
-        icon = 2
+        icon = 2,
+        petFamily = {
+            familyId = 0,
+            familyName = "Ghoul",
+            familyType = "Undead",
+            icon = "",
+            isExotic = false
+        }
     },
     [1179128] = {
         itemid = 1179128,
@@ -35317,7 +36850,14 @@ AV_VanityItems = {
         creatureId = 1046,
         description = "Has a chance to drop from Red Wyrmkin within Eastern Kingdoms",
         zone = "Eastern Kingdoms",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Wyrmkin",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180139] = {
         itemid = 1180139,
@@ -35326,7 +36866,14 @@ AV_VanityItems = {
         creatureId = 148012,
         description = "Has a chance to drop from Red Wyrmkin within Dragonmaw Gates",
         subzone = "Dragonmaw Gates",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Wyrmkin",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180140] = {
         itemid = 1180140,
@@ -35399,7 +36946,14 @@ AV_VanityItems = {
         creatureId = 1049,
         description = "Has a chance to drop from Wyrmkin Firebrand within Dragonmaw Gates",
         subzone = "Dragonmaw Gates",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180145] = {
         itemid = 1180145,
@@ -35408,7 +36962,14 @@ AV_VanityItems = {
         creatureId = 148015,
         description = "Has a chance to drop from Wyrmkin Firebrand within Dragonmaw Gates",
         subzone = "Dragonmaw Gates",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180146] = {
         itemid = 1180146,
@@ -35481,7 +37042,14 @@ AV_VanityItems = {
         creatureId = 2538,
         description = "Has a chance to drop from Narillasanz within Eastern Kingdoms",
         zone = "Eastern Kingdoms",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180169] = {
         itemid = 1180169,
@@ -35491,7 +37059,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Narillasanz within Chillwind Point",
         zone = "Alterac Mountains",
         subzone = "Chillwind Point",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180172] = {
         itemid = 1180172,
@@ -36139,7 +37714,14 @@ AV_VanityItems = {
         creatureId = 5709,
         description = "Has a chance to drop from Shade of Eranikus within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Green Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180227] = {
         itemid = 1180227,
@@ -36182,7 +37764,14 @@ AV_VanityItems = {
         creatureId = 5719,
         description = "Has a chance to drop from Morphaz within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Green Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180230] = {
         itemid = 1180230,
@@ -36207,7 +37796,14 @@ AV_VanityItems = {
         creatureId = 215721,
         description = "Has a chance to drop from Dreamscythe within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Green Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180232] = {
         itemid = 1180232,
@@ -36216,7 +37812,14 @@ AV_VanityItems = {
         creatureId = 5722,
         description = "Has a chance to drop from Hazzas within The Temple of Atal'Hakkar",
         zone = "The Temple of Atal'Hakkar",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Green Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180233] = {
         itemid = 1180233,
@@ -36242,7 +37845,14 @@ AV_VanityItems = {
         creatureId = 6109,
         description = "Has a chance to drop from Azuregos within Kalimdor",
         zone = "Kalimdor",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Blue Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180235] = {
         itemid = 1180235,
@@ -37060,7 +38670,14 @@ AV_VanityItems = {
         creatureId = 9568,
         description = "Has a chance to drop from Overlord Wyrmthalak within Blackrock Spire",
         zone = "Blackrock Spire",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180294] = {
         itemid = 1180294,
@@ -37118,7 +38735,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Onyxia within Onyxia's Lair",
         zone = "Dustwallow Marsh",
         subzone = "Onyxia's Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180300] = {
         itemid = 1180300,
@@ -37160,7 +38784,14 @@ AV_VanityItems = {
         creatureId = 10264,
         description = "Has a chance to drop from Solakar Flamewreath within Blackrock Spire",
         zone = "Blackrock Spire",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180307] = {
         itemid = 1180307,
@@ -37169,7 +38800,14 @@ AV_VanityItems = {
         creatureId = 10321,
         description = "Has a chance to drop from Emberstrife within Emberstrife's Den",
         subzone = "Emberstrife's Den",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180308] = {
         itemid = 1180308,
@@ -37178,7 +38816,14 @@ AV_VanityItems = {
         creatureId = 10339,
         description = "Has a chance to drop from Warchief Rend Blackhand within Blackrock Spire",
         zone = "Blackrock Spire",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Chromatic Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180309] = {
         itemid = 1180309,
@@ -37187,7 +38832,14 @@ AV_VanityItems = {
         creatureId = 10363,
         description = "Has a chance to drop from General Drakkisath within Blackrock Spire",
         zone = "Blackrock Spire",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180310] = {
         itemid = 1180310,
@@ -37569,7 +39221,14 @@ AV_VanityItems = {
         creatureId = 11983,
         description = "Has a chance to drop from Firemaw within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180345] = {
         itemid = 1180345,
@@ -37578,7 +39237,14 @@ AV_VanityItems = {
         creatureId = 12017,
         description = "Has a chance to drop from Broodlord Lashlayer within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Drakonid",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180346] = {
         itemid = 1180346,
@@ -37604,7 +39270,14 @@ AV_VanityItems = {
         creatureId = 12435,
         description = "Has a chance to drop from Razorgore the Untamed within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180353] = {
         itemid = 1180353,
@@ -38075,7 +39748,14 @@ AV_VanityItems = {
         creatureId = 13020,
         description = "Has a chance to drop from Vaelastrasz the Corrupt within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180392] = {
         itemid = 1180392,
@@ -38084,7 +39764,14 @@ AV_VanityItems = {
         creatureId = 14020,
         description = "Has a chance to drop from Chromaggus within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Chromatic Drakeadon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180402] = {
         itemid = 1180402,
@@ -38176,7 +39863,14 @@ AV_VanityItems = {
         creatureId = 16042,
         description = "Has a chance to drop from Lord Valthalak within Blackrock Spire",
         zone = "Blackrock Spire",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Drakonid",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180440] = {
         itemid = 1180440,
@@ -38449,7 +40143,14 @@ AV_VanityItems = {
         creatureId = 20910,
         description = "Has a chance to drop from Twilight Drakonaar within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Chromatic Drakonid",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180477] = {
         itemid = 1180477,
@@ -38458,7 +40159,14 @@ AV_VanityItems = {
         creatureId = 20911,
         description = "Has a chance to drop from Blackwing Drakonaar within Blackwing Lair",
         zone = "Blackwing Lair",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Drakonid",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180479] = {
         itemid = 1180479,
@@ -38888,7 +40596,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Plagued Proto-Dragon within Halgrind",
         zone = "Howling Fjord",
         subzone = "Halgrind",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180596] = {
         itemid = 1180596,
@@ -38915,7 +40630,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Proto-Whelp within Ember Clutch",
         zone = "Howling Fjord",
         subzone = "Ember Clutch",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180598] = {
         itemid = 1180598,
@@ -38925,7 +40647,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Proto-Drake within Ember Clutch",
         zone = "Howling Fjord",
         subzone = "Ember Clutch",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180599] = {
         itemid = 1180599,
@@ -38943,10 +40672,10 @@ AV_VanityItems = {
             notes = "Summoned during quest in Dustwallow Marsh. Not repeatable."
         },
         petFamily = {
-            familyId = 403,
+            familyId = 0,
             familyName = "Black Drake",
             familyType = "Dragonkin",
-            icon = "Interface\\\\Icons\\\\achievement_boss_onyxia",
+            icon = "",
             isExotic = false
         }
     },
@@ -38958,7 +40687,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Enslaved Proto-Drake within Utgarde Keep",
         zone = "Howling Fjord",
         subzone = "Utgarde Keep",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180641] = {
         itemid = 1180641,
@@ -39136,7 +40872,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Keristrasza within The Nexus",
         zone = "Borean Tundra",
         subzone = "The Nexus",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180663] = {
         itemid = 1180663,
@@ -39210,7 +40953,14 @@ AV_VanityItems = {
         creatureId = 27447,
         description = "Has a chance to drop from Varos Cloudstrider within The Oculus",
         zone = "The Oculus",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Netherwing Drakonid",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180695] = {
         itemid = 1180695,
@@ -39267,7 +41017,14 @@ AV_VanityItems = {
         creatureId = 27654,
         description = "Has a chance to drop from Drakos the Interrogator within The Oculus",
         zone = "The Oculus",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Blue Scalebane",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180701] = {
         itemid = 1180701,
@@ -39276,7 +41033,14 @@ AV_VanityItems = {
         creatureId = 27656,
         description = "Has a chance to drop from Ley-Guardian Eregos within The Oculus",
         zone = "The Oculus",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Blue Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180727] = {
         itemid = 1180727,
@@ -39285,7 +41049,14 @@ AV_VanityItems = {
         creatureId = 28378,
         description = "Has a chance to drop from Primordial Drake within Sholazar Basin",
         zone = "Sholazar Basin",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Red Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180729] = {
         itemid = 1180729,
@@ -39294,7 +41065,14 @@ AV_VanityItems = {
         creatureId = 28467,
         description = "Has a chance to drop from Broodmother Slivina within Sholazar Basin",
         zone = "Sholazar Basin",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180732] = {
         itemid = 1180732,
@@ -39303,7 +41081,14 @@ AV_VanityItems = {
         creatureId = 28860,
         description = "Has a chance to drop from Sartharion within The Obsidian Sanctum",
         zone = "The Obsidian Sanctum",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Black Dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180741] = {
         itemid = 1180741,
@@ -39312,7 +41097,14 @@ AV_VanityItems = {
         creatureId = 29753,
         description = "Has a chance to drop from Stormpeak Wyrm within The Storm Peaks",
         zone = "The Storm Peaks",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Blue Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180743] = {
         itemid = 1180743,
@@ -39321,7 +41113,14 @@ AV_VanityItems = {
         creatureId = 29755,
         description = "Has a chance to drop from Stormpeak Hatchling within Dragonspine Peaks",
         zone = "Dragonspine Peaks",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Blue Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180767] = {
         itemid = 1180767,
@@ -39330,7 +41129,14 @@ AV_VanityItems = {
         creatureId = 30449,
         description = "Has a chance to drop from Vesperon within The Obsidian Sanctum",
         zone = "The Obsidian Sanctum",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Twilight Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180768] = {
         itemid = 1180768,
@@ -39339,7 +41145,14 @@ AV_VanityItems = {
         creatureId = 30451,
         description = "Has a chance to drop from Shadron within The Obsidian Sanctum",
         zone = "The Obsidian Sanctum",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Twilight Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180769] = {
         itemid = 1180769,
@@ -39348,7 +41161,14 @@ AV_VanityItems = {
         creatureId = 30452,
         description = "Has a chance to drop from Tenebron within The Obsidian Sanctum",
         zone = "The Obsidian Sanctum",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Twilight Drake",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180770] = {
         itemid = 1180770,
@@ -39487,7 +41307,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Time-Lost Proto Drake within Terrace of the Makers",
         zone = "The Storm Peaks",
         subzone = "Terrace of the Makers",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bronze Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180853] = {
         itemid = 1180853,
@@ -39497,7 +41324,14 @@ AV_VanityItems = {
         description = "Has a chance to drop from Time-Lost Proto Drake within Terrace of the Makers",
         zone = "The Storm Peaks",
         subzone = "Terrace of the Makers",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bronze Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180855] = {
         itemid = 1180855,
@@ -39557,7 +41391,14 @@ AV_VanityItems = {
         creatureId = 33186,
         description = "Has a chance to drop from Razorscale within Razorscale's Aerie",
         zone = "Razorscale's Aerie",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Infinite Proto-dragon",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180859] = {
         itemid = 1180859,
@@ -39582,7 +41423,14 @@ AV_VanityItems = {
         creatureId = 39698,
         description = "Has a chance to drop from Karsh Steelbender within Blackrock Caverns",
         subzone = "Blackrock Caverns",
-        icon = 4
+        icon = 4,
+        petFamily = {
+            familyId = 0,
+            familyName = "Netherwing Drakonid",
+            familyType = "Dragonkin",
+            icon = "",
+            isExotic = false
+        }
     },
     [1180894] = {
         itemid = 1180894,
@@ -39776,7 +41624,14 @@ AV_VanityItems = {
         creaturePreview = 440555,
         creatureId = 440555,
         description = "Has a chance to drop from The Frozen Reach Manastorm ",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Bear",
+            familyType = "Tenacity",
+            icon = "",
+            isExotic = false
+        }
     },
     [1533809] = {
         itemid = 1533809,
@@ -41431,7 +43286,14 @@ AV_VanityItems = {
         creaturePreview = 11000199,
         creatureId = 11000199,
         description = "Seasonal Reward. Introduced in Season 8, Chapter 2",
-        icon = 1
+        icon = 1,
+        petFamily = {
+            familyId = 0,
+            familyName = "Cat",
+            familyType = "Ferocity",
+            icon = "",
+            isExotic = false
+        }
     },
     [8200192] = {
         itemid = 8200192,
