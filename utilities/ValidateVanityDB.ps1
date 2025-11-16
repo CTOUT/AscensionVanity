@@ -136,13 +136,17 @@ function Parse-VanityDB {
     # Count enrichments (count items that have each field, not total field occurrences)
     $itemBlocks = [regex]::Matches($itemsContent, '\[(\d+)\]\s*=\s*\{([^}]+)\}')
     $descCount = 0
+    $emptyDescCount = 0
     $zoneCount = 0
     $subzoneCount = 0
     $questLockCount = 0
     
     foreach ($block in $itemBlocks) {
         $blockContent = $block.Groups[2].Value
+        # Count descriptions with content
         if ($blockContent -match 'description\s*=\s*"[^"]+') { $descCount++ }
+        # Count empty descriptions (NEW - critical validation!)
+        if ($blockContent -match 'description\s*=\s*""') { $emptyDescCount++ }
         if ($blockContent -match 'zone\s*=') { $zoneCount++ }
         if ($blockContent -match 'subzone\s*=') { $subzoneCount++ }
         if ($blockContent -match 'questLock\s*=') { $questLockCount++ }
@@ -154,6 +158,7 @@ function Parse-VanityDB {
         Categories = $categories
         IconCount = $iconCount
         DescriptionCount = $descCount
+        EmptyDescriptionCount = $emptyDescCount
         ZoneCount = $zoneCount
         SubzoneCount = $subzoneCount
         QuestLockCount = $questLockCount
@@ -227,6 +232,25 @@ function Test-EnrichmentCoverage {
     $oldDescPercent = ($Old.DescriptionCount / $Old.TotalItems) * 100
     $newDescPercent = ($New.DescriptionCount / $New.TotalItems) * 100
     
+    # Report empty descriptions (CRITICAL - catches missing enrichment)
+    if ($New.EmptyDescriptionCount -gt 0) {
+        $emptyPercent = ($New.EmptyDescriptionCount / $New.TotalItems) * 100
+        if ($emptyPercent -le 1) {
+            Write-Check "Empty Descriptions" "PASS" "$($New.EmptyDescriptionCount) items ($($emptyPercent.ToString('0.00'))%)"
+            $results += "PASS"
+        } elseif ($emptyPercent -le 5) {
+            Write-Check "Empty Descriptions" "WARN" "$($New.EmptyDescriptionCount) items ($($emptyPercent.ToString('0.00'))%) - enrichment needed"
+            $results += "WARN"
+        } else {
+            Write-Check "Empty Descriptions" "FAIL" "$($New.EmptyDescriptionCount) items ($($emptyPercent.ToString('0.00'))%) - critical enrichment gap!"
+            $results += "FAIL"
+        }
+    } else {
+        Write-Check "Empty Descriptions" "PASS" "None (100% coverage)"
+        $results += "PASS"
+    }
+    
+    # Overall description coverage percentage
     if ($newDescPercent -ge 99) {
         Write-Check "Description Coverage" "PASS" "$($newDescPercent.ToString('0.00'))% ($($New.DescriptionCount)/$($New.TotalItems))"
         $results += "PASS"
