@@ -1,5 +1,5 @@
 -- AscensionVanity Full Database v2.3
--- Generated: 2025-11-15 20:16:14
+-- Generated: 2025-11-16 07:29:20
 -- Total Items: 2957
 -- Source Scan: Ascension 2025-11-14 @ 14:07:35 GMT Not Available
 -- Scan Date: 2025-11-15 11:19:18
@@ -42,13 +42,14 @@
 
 -- Database metadata for version checking
 AV_DatabaseInfo = {
-    generatedDate = "2025-11-15 20:16:14",
+    generatedDate = "2025-11-16 07:29:20",
     ascensionVersion = "2025-11-14 @ 14:07:35 GMT Not Available",
     scanDate = "2025-11-15 11:19:18",
     totalItems = 2957,
     schemaVersion = "2.3",
     questLockedCount = 13,
-    petFamilyCount = 2089
+    itemsWithFamilyData = 2089,
+    uniqueFamilies = 139
 }
 
 AV_IconList = {

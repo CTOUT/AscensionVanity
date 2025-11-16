@@ -422,7 +422,8 @@ AV_DatabaseInfo = {
     totalItems = $($processed.Count),
     schemaVersion = "2.3",
     questLockedCount = $(($processed | Where-Object { $_.questLock }).Count),
-    petFamilyCount = $(($processed | Where-Object { $_.petFamily }).Count)
+    itemsWithFamilyData = $(($processed | Where-Object { $_.petFamily }).Count),
+    uniqueFamilies = $(($processed | Where-Object { $_.petFamily } | Select-Object -ExpandProperty petFamily | Select-Object -ExpandProperty familyName -Unique).Count)
 }
 
 AV_IconList = {
