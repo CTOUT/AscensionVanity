@@ -241,6 +241,27 @@
         "pantherCageKey": "https://db.ascension.gg/?item=12942",
         "hypercapacitorGizmo": "https://db.ascension.gg/?item=12946"
       }
+    },
+    {
+      "itemId": 600786,
+      "itemName": "Elemental Lodestone: Naias",
+      "creatureId": 17207,
+      "creatureName": "Naias",
+      "questId": 9457,
+      "questName": "An Unusual Patron",
+      "lockType": "completion",
+      "warning": "Quest summon only! Don't complete until you get the drop!",
+      "notes": "Summoned using Heart of Naias quest item. Not repeatable. Horde only.",
+      "questRequirements": "Heart of Naias (item ID 23681, provided by quest)",
+      "faction": "Horde",
+      "verificationDate": "2025-11-19",
+      "verifiedBy": "CTOUT",
+      "references": {
+        "quest": "https://db.ascension.gg/?quest=9457",
+        "npc": "https://db.ascension.gg/?npc=17207",
+        "item": "https://db.ascension.gg/?item=600786",
+        "questItem": "https://db.ascension.gg/?item=23681"
+      }
     }
   ]
 }
